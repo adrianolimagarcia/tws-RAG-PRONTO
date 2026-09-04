@@ -73,3 +73,35 @@ runbooks do lab WSL.
   serverinst-no-skip-twsinst-0001, serverinst-full-success-0001.
 - Validação cruzada com o runbook WSL2 (`hwa-10.2.8-wsl-lab.md`): mesmas mensagens
   (WAINST077I/052I, AWSJCL074I, Batchman LIVES) e mesmos schemas.
+
+---
+
+# HWA 10.2.8 DWC (Dynamic Workload Console) — container RHEL 9 (Docker)
+
+Status: installed and validated in the same container (RHEL 9.8 UBI-init) on 2026-09-04.
+
+## Procedimento (após o MDM)
+
+1. Extrair o kit DWC (`HWA_10.2.8_DWC_LINUX_X86_64.zip`) — o kit tem `configureDb.sh`,
+   `dwcinst.sh` e os properties NA RAIZ (diferente do kit MDM, que usa TWS/LINUX_X86_64/).
+2. `configureDb.sh -f configureDbPostgresql.properties` do DWC: COMPONENT_TYPE=DWC,
+   DB_NAME=**TDWC** (não DWC), role dedicada `postgresdwc` (criar antes com LOGIN PASSWORD).
+   → WAINST077I/WAINST052I.
+3. `dwcinst.sh -f dwcinst.properties`: DWC_INST_DIR=/opt/hwa/DWC,
+   WLP_INSTALL_DIR=/opt/liberty/wlp, RDBMS_TYPE=POSTGRESQL + credenciais TDWC,
+   **DWC_ADMIN_USER + DWC_ADMIN_PW obrigatórios** (sem → WAINST024E), SSL_KEY_FOLDER,
+   START_WLP=false (início manual). → WAINST023I; console em https://HOST:9443/console/.
+4. **Criar o usuário SO do admin** (o dwcinst NÃO cria): `useradd -m -s /bin/bash dwcadmin`
+   + `chown -R dwcadmin:dwcadmin /opt/hwa/DWC` — o `startAppServer.sh` só roda como o owner.
+5. Iniciar: `su - dwcadmin -c 'cd /opt/hwa/DWC/appservertools && ./startAppServer.sh'`.
+6. Login/validação via curl exige **headers de browser** (User-Agent + Origin + Referer do
+   login.jsp): GET em URL protegida (cookie WASReqURL) → POST j_security_check com headers →
+   302 + LtpaToken2 → GET /console/ → 200. Sem os headers: 400 silencioso (sem log).
+
+## Achados DWC (evidências lab-validation-2026-09-04-dwc-*.jsonl)
+
+- `dwc-configuredb-rhel9-0001` — configureDb DWC OK (TDWC) cross-plataforma WSL 0052.
+- `dwcinst-full-success-0001` — dwcinst OK; DWC_ADMIN_USER/PW obrigatórios; usuário SO do
+  admin não é criado pelo instalador (startAppServer "only the owner").
+- `dwc-login-requires-browser-headers-0001` — POST j_security_check sem headers de browser
+  → 400 silencioso; com headers → 302 + LtpaToken2 + dashboard 200 (não documentado no WSL).
