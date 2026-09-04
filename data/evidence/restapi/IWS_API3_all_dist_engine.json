@@ -1,0 +1,1320 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "HCL Workload Automation API",
+    "description" : "HCL Workload Automation REST API, to consult instead the API V2, enter in the Swagger search bar: WA_API3_v2.json",
+    "version" : "1.0.1"
+  },
+  "servers" : [ {
+    "url" : "/twsd"
+  } ],
+  "security" : [ {
+    "basicAuth" : [ ],
+    "bearerAuth" : [ ]
+  } ],
+  "paths" : {
+    "/engine/info" : {
+      "get" : {
+        "tags" : [ "Engine" ],
+        "summary" : "Get Engine Info",
+        "description" : "Retrieves the information about an engine.",
+        "operationId" : "getEngineInfo",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "The engine information has been correctly retrieved.",
+            "headers" : {
+              "Context-Locale" : {
+                "$ref" : "#/components/headers/Context-Locale"
+              }
+            },
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/EngineInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/engine/mailbox_fill_percentage" : {
+      "get" : {
+        "tags" : [ "Engine" ],
+        "summary" : "Get Mailbox Filling Percentage",
+        "description" : "Retrieves the mailbox filling percentage of an engine.",
+        "operationId" : "getMailboxFillingPercentage",
+        "parameters" : [ {
+          "name" : "mailboxName",
+          "in" : "query",
+          "description" : "The name of the mailbox",
+          "schema" : {
+            "type" : "string",
+            
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "The mailbox filling percentage has been correctly retrieved.",
+            "headers" : {
+              "Context-Locale" : {
+                "$ref" : "#/components/headers/Context-Locale"
+              }
+            },
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "integer",
+                  "format" : "int32",
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "ZosStatusObjectCount" : {
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "description" : "Number of jobs",
+            
+          },
+          "fieldValue" : {
+            "type" : "object",
+            "properties" : {
+              "charValue" : {
+                "type" : "string",
+                "description" : "'H':held,'W':waiting,'B':blocked,'R':ready,'S':started,'O':complete,'E':error,'U':undecided,'X':suppressed by condition",
+                
+              }
+            },
+            
+          }
+        },
+        
+      },
+      "NoResponse" : {
+        "type" : "object",
+        
+      },
+      "Created" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            
+          }
+        },
+        
+      },
+      "StringMapObj" : {
+        "required" : [ "key", "value" ],
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string",
+            
+          },
+          "value" : {
+            "type" : "string",
+            
+          }
+        },
+        
+      },
+      "KeyValues" : {
+        "type" : "array",
+        
+        "items" : {
+          "$ref" : "#/components/schemas/StringMapObj"
+        }
+      },
+      "AdminRoles" : {
+        "type" : "object",
+        "properties" : {
+          "admin" : {
+            "type" : "array",
+            
+            "items" : {
+              "$ref" : "#/components/schemas/RolePrivilege"
+            }
+          }
+        },
+        
+      },
+      "EngineInfo" : {
+        "type" : "object",
+        "properties" : {
+          "hasDatabasePlan" : {
+            "type" : "boolean",
+            
+          },
+          "locale" : {
+            "type" : "string",
+            
+          },
+          "timezone" : {
+            "type" : "string",
+            
+          },
+          "timezoneEnable" : {
+            "type" : "boolean",
+            
+          },
+          "roleBasedSecurityEnabled" : {
+            "type" : "boolean",
+            
+          },
+          "type" : {
+            "type" : "string",
+            
+          },
+          "version" : {
+            "type" : "string",
+            
+          },
+          "fullVersion" : {
+            "type" : "string",
+            
+          },
+          "displayVersion" : {
+            "type" : "string",
+            
+          },
+          "apiLevel" : {
+            "type" : "integer",
+            "format" : "int64",
+            
+          },
+          "featureLevel" : {
+            "type" : "integer",
+            "format" : "int64",
+            
+          },
+          "hasModel" : {
+            "type" : "boolean",
+            
+          },
+          "hasPlan" : {
+            "type" : "boolean",
+            
+          },
+          "enableRerunOpt" : {
+            "type" : "boolean",
+            
+          },
+          "engineType" : {
+            "type" : "string",
+            
+          },
+          "ltpStartDate" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            "format" : "date-time",
+            
+          },
+          "ltpEndDate" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            "format" : "date-time",
+            
+          },
+          "dbTimezone" : {
+            "type" : "string",
+            
+          },
+          "planTimezone" : {
+            "type" : "string",
+            
+          },
+          "workstationName" : {
+            "type" : "string",
+            
+          },
+          "domainName" : {
+            "type" : "string",
+            
+          },
+          "synphonyRunNumber" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "synphonyScheduledDate" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            "format" : "date-time",
+            
+          },
+          "synphonyBatchManStatus" : {
+            "type" : "string",
+            
+          },
+          "synphonyStartOfDay" : {
+            "type" : "integer",
+            "format" : "int64",
+            
+          },
+          "masterDomain" : {
+            "type" : "string",
+            
+          },
+          "masterWorkstation" : {
+            "type" : "string",
+            
+          },
+          "synphonyFileName" : {
+            "type" : "string",
+            
+          },
+          "synphonyPlanStart" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            "format" : "date-time",
+            
+          },
+          "synphonyPlanEnd" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            "format" : "date-time",
+            
+          },
+          "synphonySize" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "synphonyStartTime" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            "format" : "date-time",
+            
+          },
+          "synphonyFound" : {
+            "type" : "boolean",
+            
+          },
+          "enableLegacyStartOdDayEvaluation" : {
+            "type" : "boolean",
+            
+          },
+          "dbStartOfDay" : {
+            "type" : "string",
+            "description" : "Time in ISO 8601 UTC with format yyyy-MM-dd'T'HH:mm:ss",
+            
+          },
+          "rdbmsSchema" : {
+            "type" : "string",
+            
+          },
+          "rdbmsUser" : {
+            "type" : "string",
+            
+          },
+          "rdbmsType" : {
+            "type" : "string",
+            
+          },
+          "rdbmsUrl" : {
+            "type" : "string",
+            
+          },
+          "fipsEnabled" : {
+            "type" : "boolean",
+            
+          },
+          "regardlessOfStatusFilterEnabled" : {
+            "type" : "boolean",
+            
+          },
+          "executorList" : {
+            "type" : "array",
+            
+            "items" : {
+              "$ref" : "#/components/schemas/Executor"
+            }
+          },
+          "auditStore" : {
+            "type" : "string",
+            
+          },
+          "auditModel" : {
+            "type" : "string",
+            
+          },
+          "auditPlan" : {
+            "type" : "string",
+            
+          },
+          "licenseType" : {
+            "type" : "string",
+            
+          },
+          "referenceId" : {
+            "type" : "string",
+            
+          },
+          "capabilities" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "type" : "string",
+                
+              },
+              
+            },
+            
+          },
+          "adminRoles" : {
+            "$ref" : "#/components/schemas/AdminRoles"
+          },
+          "zVersion" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "zRelease" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "maintenance" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "brand" : {
+            "type" : "string",
+            
+          },
+          "pifLevel" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "functionalLevel" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "defCalendar" : {
+            "type" : "string",
+            
+          },
+          "jclExpert" : {
+            "type" : "boolean",
+            
+          },
+          "gmtOffset" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "codepage" : {
+            "type" : "string",
+            
+          },
+          "licenseJobNumber" : {
+            "type" : "integer",
+            "format" : "int32",
+            
+          },
+          "licenseSendDate" : {
+            "type" : "integer",
+            "format" : "int64",
+            
+          },
+          "wasFirstStartDate" : {
+            "type" : "integer",
+            "format" : "int64",
+            
+          },
+          "licenseError" : {
+            "type" : "string",
+            
+          }
+        },
+        
+      },
+      "Executor" : {
+        "type" : "object",
+        "properties" : {
+          "application" : {
+            "type" : "string",
+            
+          },
+          "namespace" : {
+            "type" : "string",
+            
+          },
+          "schemaLocation" : {
+            "type" : "string",
+            
+          },
+          "version" : {
+            "type" : "string",
+            
+          },
+          "factory" : {
+            "type" : "string",
+            
+          },
+          "supportedWs" : {
+            "type" : "string",
+            
+          },
+          "supportedOs" : {
+            "type" : "string",
+            
+          },
+          "stoppable" : {
+            "type" : "boolean",
+            
+          },
+          "produceLog" : {
+            "type" : "boolean",
+            
+          },
+          "restartable" : {
+            "type" : "boolean",
+            
+          },
+          "produceLogWhenRunning" : {
+            "type" : "boolean",
+            
+          },
+          "labels" : {
+            "type" : "array",
+            
+            "items" : {
+              "$ref" : "#/components/schemas/StringMapObj"
+            }
+          },
+          "tags" : {
+            "type" : "array",
+            
+            "items" : {
+              "type" : "string",
+              
+            }
+          },
+          "category" : {
+            "type" : "string",
+            
+          }
+        },
+        
+      },
+      "RolePrivilege" : {
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string",
+            
+          },
+          "label" : {
+            "type" : "string",
+            
+          },
+          "description" : {
+            "type" : "string",
+            
+          }
+        },
+        
+      }
+    },
+    "responses" : {
+      "200_no_body" : {
+        "description" : "No response body is supplied for this operation."
+      },
+      "201_id" : {
+        "description" : "Action Result"
+      },
+      "StringResponse" : {
+        "description" : "StringResponse",
+        "content" : { }
+      }
+    },
+    "parameters" : {
+      "planId" : {
+        "name" : "planId",
+        "in" : "path",
+        "description" : "Current plan ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "engine" : {
+        "name" : "engine",
+        "in" : "path",
+        "description" : "Name of the engine to connect",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "workstationId" : {
+        "name" : "workstationId",
+        "in" : "path",
+        "description" : "Workstation ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "domainId" : {
+        "name" : "domainId",
+        "in" : "path",
+        "description" : "Domain ID ",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "criticalJobId" : {
+        "name" : "criticalJobId",
+        "in" : "path",
+        "description" : "Critical job ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "actionrunId" : {
+        "name" : "actionrunId",
+        "in" : "path",
+        "description" : "ActionRun ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "auditRecordId" : {
+        "name" : "auditRecordId",
+        "in" : "path",
+        "description" : "Auditrecord ID ",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "messagelogrecordId" : {
+        "name" : "messagelogrecordId",
+        "in" : "path",
+        "description" : "MessageLogRecord ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "ruleinstanceId" : {
+        "name" : "ruleinstanceId",
+        "in" : "path",
+        "description" : "Rule instance ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "eventruleId" : {
+        "name" : "eventruleId",
+        "in" : "path",
+        "description" : "Event rule ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "fileId" : {
+        "name" : "fileId",
+        "in" : "path",
+        "description" : "File ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "operationId" : {
+        "name" : "operationId",
+        "in" : "path",
+        "description" : "Operation ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "jobId" : {
+        "name" : "jobId",
+        "in" : "path",
+        "description" : "Job ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "jobstreamId" : {
+        "name" : "jobstreamId",
+        "in" : "path",
+        "description" : "Job stream ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "promptId" : {
+        "name" : "promptId",
+        "in" : "path",
+        "description" : "Prompt ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "resourceId" : {
+        "name" : "resourceId",
+        "in" : "path",
+        "description" : "Resource ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "userId" : {
+        "name" : "userId",
+        "in" : "path",
+        "description" : "User ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "accessControlListId" : {
+        "name" : "accessControlListId",
+        "in" : "path",
+        "description" : "Access control list ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "securityDomainId" : {
+        "name" : "securityDomainId",
+        "in" : "path",
+        "description" : "Security domain ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "securityRoleId" : {
+        "name" : "securityRoleId",
+        "in" : "path",
+        "description" : "Security role ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "calendarId" : {
+        "name" : "calendarId",
+        "in" : "path",
+        "description" : "Calendar ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "folderId" : {
+        "name" : "folderId",
+        "in" : "path",
+        "description" : "Folder ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "jobdefinitionId" : {
+        "name" : "jobdefinitionId",
+        "in" : "path",
+        "description" : "Job definition ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "jobdetailedstatisticid" : {
+        "name" : "jobdetailedstatisticid",
+        "in" : "path",
+        "description" : "Job detailed statistic ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "runcyclegroupId" : {
+        "name" : "runcyclegroupId",
+        "in" : "path",
+        "description" : "Run cycle group ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "serviceId" : {
+        "name" : "serviceId",
+        "in" : "path",
+        "description" : "Service ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "variableId" : {
+        "name" : "variableId",
+        "in" : "path",
+        "description" : "Variable ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "variableTableId" : {
+        "name" : "variableTableId",
+        "in" : "path",
+        "description" : "Variable table ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "workloadapplicationId" : {
+        "name" : "workloadapplicationId",
+        "in" : "path",
+        "description" : "Workload application ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "workstationClassId" : {
+        "name" : "workstationClassId",
+        "in" : "path",
+        "description" : "Workstation class ID",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "scratch" : {
+        "name" : "scratch",
+        "in" : "query",
+        "description" : "Set it to true to rebuild the entire XML file, or false to build only the rules that have been activated or modified.",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "newname" : {
+        "name" : "newname",
+        "in" : "query",
+        "description" : "The new name for the object",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "from" : {
+        "name" : "from",
+        "in" : "query",
+        "description" : "The date when the evaluation starts. This parameter is required",
+        "schema" : {
+          "type" : "string",
+          
+        },
+        "example" : "yyyy-mm-dd"
+      },
+      "to" : {
+        "name" : "to",
+        "in" : "query",
+        "description" : "The date when the evaluation ends. This parameter is required",
+        "schema" : {
+          "type" : "string",
+          
+        },
+        "example" : "yyyy-mm-dd"
+      },
+      "maxResults" : {
+        "name" : "maxResults",
+        "in" : "query",
+        "description" : "The maximum number of results to be returned by the evaluation."
+      },
+      "Query-PageSize" : {
+        "name" : "Query-PageSize",
+        "in" : "header",
+        "description" : "The number of elements (max 10000) contained in a single returned page in plan queries. It is used only with the current plan and mirroring enabled. The default value is 10000. It is mutual exclusive with How-Many.",
+        "schema" : {
+          "type" : "integer",
+          "format" : "int32",
+          
+        }
+      },
+      "Query-PageNumber" : {
+        "name" : "Query-PageNumber",
+        "in" : "header",
+        "description" : "The offset of the first object to return in the plan queries. It is used only with the current plan and mirroring enabled. The default value is 0. It is mutual exclusive with How-Many.",
+        "schema" : {
+          "type" : "integer",
+          "format" : "int32",
+          
+        }
+      },
+      "Last-Object" : {
+        "name" : "Last-Object",
+        "in" : "header",
+        "description" : "Identificative string of the last object (or objects) returned in the last query",
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "How-Many_inQuery" : {
+        "name" : "How-Many",
+        "in" : "query",
+        "description" : "How many objects (max 10000)",
+        "required" : true,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "howManyHeader" : {
+        "name" : "How-Many",
+        "in" : "header",
+        "description" : "The number of objects (max 10000) to be retrieved with a query on a first bunch of object. Use 0 (zero) to retrieve all the objects that match the given filter in one shot. It is mutual exclusive with Query-PageSize and Query-PageNumber.",
+        "schema" : {
+          "type" : "integer",
+          "format" : "int32",
+          
+        }
+      },
+      "howManyHeaderNotMutual" : {
+        "name" : "How-Many",
+        "in" : "header",
+        "description" : "The number of objects (max 10000) to be retrieved with a query on a first bunch of object. Use 0 (zero) to retrieve all the objects that match the filter simultaneously.",
+        "required" : true,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "force" : {
+        "name" : "force",
+        "in" : "query",
+        "description" : "Set it to true if the object must be unlocked even if the requesting user is currently holding the lock using another session or if the lock is held by another user and the requesting user has sufficient rights to unlock it.",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "isLocked" : {
+        "name" : "isLocked",
+        "in" : "query",
+        "description" : "Set it to true if the object is expected to be locked by the user or false if it is expected to be unlocked.",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "unlock" : {
+        "name" : "unlock",
+        "in" : "query",
+        "description" : "Set it to true if the object must be unlocked after the requested update has been applied.",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "lock" : {
+        "name" : "lock",
+        "in" : "query",
+        "description" : "Set it to true if the object must be locked while being retrieved. By default, it is false.",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "verbose" : {
+        "name" : "verbose",
+        "in" : "query",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "askconfirm" : {
+        "name" : "askconfirm",
+        "in" : "query",
+        "schema" : {
+          "type" : "boolean",
+          
+        }
+      },
+      "language" : {
+        "name" : "Accept-Language",
+        "in" : "header",
+        "required" : false,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "name" : {
+        "name" : "name",
+        "in" : "query",
+        "description" : "This parameter is mutually exclusive with the \"key\" parameter. Either \"key\" or \"name\" is required.",
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "key" : {
+        "name" : "key",
+        "in" : "query",
+        "description" : "This parameter is mutually exclusive with the \"name\" parameter. Either \"key\" or \"name\" is required.",
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "contextSessionHeader" : {
+        "name" : "Context-Session",
+        "in" : "header",
+        "description" : "Name of the session. It is required for lock and unlock operations",
+        "required" : false,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "contextSessionForInternalLockHeader" : {
+        "name" : "Context-Session",
+        "in" : "header",
+        "description" : "Name of the session. It is required if the lock parameter is true.",
+        "required" : false,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "contextPlanIdHeader" : {
+        "name" : "Context-PlanId",
+        "in" : "header",
+        "required" : false,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "contextJobStreamScopeHeader" : {
+        "name" : "Context-JobStreamScope",
+        "in" : "header",
+        "description" : "1=The scope integer used to identify the properties of a job stream<br/> 2=The scope integer used to identify a job stream with the related run cycles only <br/>3=The scope integer used to identify the whole content of a job stream, except for run cycles <br/>4=The scope integer used to identify the whole content of a job stream, except for job definitions <br/>5=The scope integer used to identify the whole content of a job stream",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextPlanDependenciesScopeHeader" : {
+        "name" : "Context-PlanDependenciesScope",
+        "in" : "header",
+        "description" : "0=Disables loading of dependencies in plan queries <br/>1=Enables loading of dependencies in plan queries",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextTransferModeHeader" : {
+        "name" : "Context-TransferMode",
+        "in" : "header",
+        "description" : "Defines how data are retrieved by engine. 0=The transfer mode integer used to specify that plan query results must be transferred in objects <br/>1=The transfer mode integer used to specify that plan query results must be transferred in bytes",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextObjectCountHeader" : {
+        "name" : "Context-ObjectCount",
+        "in" : "header",
+        "description" : "0=The integer used to specify that no object count is requested in queries <br/>1=The integer used to specify that object count is requested in queries",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextStatusScopeHeader" : {
+        "name" : "Context-StatusScope",
+        "in" : "header",
+        "description" : "0=The integer used to specify old behaviour in plan queries <br/>1=The integer used to specify that workstation fence must not be considered for job status in plan queries",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextUseCacheHeader" : {
+        "name" : "Context-UseCache",
+        "in" : "header",
+        "description" : "0=Load Information without using the cache <br/>1=Load Information using the cache",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextHasMoreObjectsHeader" : {
+        "name" : "Context-HasMoreObjects",
+        "in" : "header",
+        "description" : "0=The integer used to specify that no more objects exist than the returned in plan view queries <br/>1=The integer used to specify that more objects exist than the returned in plan view queries",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextBrokerInfoRequestedHeader" : {
+        "name" : "Context-BrokerInfoRequested",
+        "in" : "header",
+        "description" : "0=The integer used to specify that the broker information is not requested <br/>1=The integer used to specify that the broker information is requested",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextForceCommandHeader" : {
+        "name" : "Context-ForceCommand",
+        "in" : "header",
+        "description" : "0=The integer used to specify that no forced action is requested on model command <br/>1=The integer used to specify that forced action is requested on model command",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextDatabasePlanHeader" : {
+        "name" : "Context-DatabasePlan",
+        "in" : "header",
+        "description" : "0=Disables loading of plan on database 1=Enables loading of plan on database",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "contextJobHistoryScopeHeader" : {
+        "name" : "Context-JobHistoryScope",
+        "in" : "header",
+        "description" : "0=The integer used to specify to get all the job history information while running queries <br/>1=The integer used to specify to get only the latest status of the job history while running queries",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Id-Encoding" : {
+        "name" : "Id-Encoding",
+        "in" : "header",
+        "description" : "0=ID with old layout not encoded, 1= ID Base64 encoded layout (default).",
+        "required" : false,
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "startTime" : {
+        "name" : "startTime",
+        "in" : "query",
+        "description" : "The input arrival time of the job stream. Specify it in the format yyyy.mm.dd.hh.mm",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "jsName" : {
+        "name" : "jsName",
+        "in" : "query",
+        "description" : "The name of the job stream to which the operation belongs.",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "jobNum" : {
+        "name" : "jobNum",
+        "in" : "query",
+        "description" : "The operation number.",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          
+        }
+      }
+    },
+    "headers" : {
+      "Context-Locale" : {
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "Context-JobStreamScope" : {
+        "description" : "1=The scope integer used to identify the properties of a job stream  <br/>2=The scope integer used to identify a job stream with its run cycles only <br/>3=The scope integer used to identify the whole content of a job stream, except for run cycles 4=The scope integer used to identify the whole content of a job stream without job definitions 5=The scope integer used to identify the whole content of a job stream",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-ObjectCount" : {
+        "description" : "0=The integer used to specify that no object count is requested in plan queries <br/>1=The integer used to specify that object count is requested in plan queries",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-BrokerInfoRequested" : {
+        "description" : "0=The integer used to specify that the broker information is not requested  <br/>1=The integer used to specify that the broker information is requested",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-ForceCommand" : {
+        "description" : "0=The integer used to specify that no forced action is requested on model command <br/>1=The integer used to specify that forced action is requested on model command",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-CheckResync" : {
+        "description" : "0=Disables force resync check <br/>1=Enables force resync check",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-JobHistoryScope" : {
+        "description" : "0=The integer used to specify to get all the job history information while running queries <br/>1=The integer used to specify to get only the last status of the job history while running queries",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "How-Many-Returned" : {
+        "description" : "The total number of returned items - used for query next API. Use 0 (zero) to retrieve all the objects that match the filter simultaneously",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Last-Object" : {
+        "description" : "The latest object identifier - used for query next API",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-PlanId" : {
+        "description" : "The plan id",
+        "schema" : {
+          "type" : "string",
+          
+        }
+      },
+      "Context-DatabasePlan" : {
+        "description" : "0=Disables loading of plan on database <br/>1=Enables loading of plan on database",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-UseCache" : {
+        "description" : "0=Load information without using the cache <br/>1=Load information using the cache",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-StatusScope" : {
+        "description" : "0=The integer used to specify old behaviour in plan queries <br/>1=The integer used to specify that workstation fence must not be considered for job status in plan queries",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      },
+      "Context-PlanDependenciesScope" : {
+        "description" : "0=Disables loading of dependencies in plan queries <br/>1=Enables loading of dependencies in plan queries",
+        "schema" : {
+          "type" : "integer",
+          
+        }
+      }
+    },
+    "securitySchemes" : {
+      "basicAuth" : {
+        "type" : "http",
+        "scheme" : "basic"
+      },
+      "bearerAuth" : {
+        "type" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT"
+      }
+    }
+  }
+}

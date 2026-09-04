@@ -1,0 +1,28 @@
+{"timestamp": "2026-08-22T13:00:00BRT", "claim_ids": ["hwa-10.2.8-composer-js-name-limit-0114"], "result": "AWSBHW007E when name > 16 bytes"}
+{"timestamp": "2026-08-22T13:01:00BRT", "claim_ids": ["hwa-10.2.8-composer-keyword-order-0115"], "result": "AWSJOM915E when RECOVERY after PRIORITY"}
+{"timestamp": "2026-08-22T13:02:00BRT", "claim_ids": ["hwa-10.2.8-composer-vartable-position-0116"], "result": "AWSJOM915E when VARTABLE after ON RUNCYCLE"}
+{"timestamp": "2026-08-22T13:03:00BRT", "claim_ids": ["hwa-10.2.8-conman-submit-into-plan-0117"], "result": "Job not visible in plan until stream submitted first"}
+{"timestamp": "2026-08-22T13:04:00BRT", "claim_ids": ["hwa-10.2.8-composer-jsdl-validation-0119"], "result": "AWSJCS029E on invalid JSDL JSON"}
+{"timestamp": "2026-08-22T13:05:00BRT", "claim_ids": ["hwa-10.2.8-composer-new-interactive-0122"], "result": "AWSBIA003E on composer new folder NAME"}
+{"timestamp": "2026-08-22T13:06:00BRT", "claim_ids": ["hwa-10.2.8-conman-submit-adhoc-into-joins-0118"], "result": "Job goes to JOBS without into="}
+{"timestamp": "2026-08-22T13:07:00BRT", "claim_ids": ["hwa-10.2.8-composer-every-position-0120"], "result": "EVERY outside ON RUNCYCLE rejected"}
+{"timestamp": "2026-08-22T15:44:00BRT", "claim_ids": ["hwa-10.2.8-composer-priority-in-jobs-NNNN"], "result": "AWSJOM915E - PRIORITY 10 rejected in $JOBS at line 7 (RECOVERY STOP before PRIORITY)"}
+{"timestamp": "2026-08-22T15:44:30BRT", "claim_ids": ["hwa-10.2.8-composer-priority-in-jobs-NNNN"], "result": "AWSJOM915E - PRIORITY HI rejected in $JOBS - same error line 7"}
+{"timestamp": "2026-08-22T15:44:45BRT", "claim_ids": ["hwa-10.2.8-composer-priority-in-jobs-NNNN"], "result": "AWSJOM915E - PRIORITY 99 rejected in $JOBS - same error line 7"}
+{"timestamp": "2026-08-22T15:45:00BRT", "claim_ids": ["hwa-10.2.8-composer-priority-in-jobs-NNNN"], "result": "AWSJOM915E - PRIORITY 10 before RECOVERY also rejected line 6 (position independent)"}
+{"timestamp": "2026-08-22T15:45:15BRT", "claim_ids": ["hwa-10.2.8-composer-priority-in-jobs-NNNN"], "result": "POSITIVE CONTROL: PRIORITY 10 in $SCHEDULES validates OK (AWSJCL003I)"}
+{"timestamp": "2026-08-22T15:45:30BRT", "claim_ids": ["hwa-10.2.8-composer-priority-in-jobs-NNNN"], "result": "POSITIVE CONTROL: priority=10 in sbd ad-hoc works (Submitted OK)"}
+{"timestamp": "2026-08-22T19:29:00BRT", "claim_ids": ["hwa-10.2.8-composer-opens-workstation-0125"], "result": "AWSJOM115E - OPENS \"file\" sem workstation; OPENS MDMDA#file aceito"}
+{"timestamp": "2026-08-22T19:29:30BRT", "claim_ids": ["hwa-10.2.8-composer-prompt-name-limit-0126"], "result": "AWSJOM012E - PROMPT DS_PROMPT1 (10 bytes) > max 8; PROMPT1 (8 bytes) aceito"}
+{"timestamp": "2026-08-22T19:30:00BRT", "claim_ids": ["hwa-10.2.8-composer-prompt-db-object-0127"], "result": "AWSJDB311E - prom=PROMPT1 nao existe; $PROMPT PROMPT1 \"texto?\" criado OK (AWSJCL003I)"}
+{"timestamp": "2026-08-22T19:30:30BRT", "claim_ids": ["hwa-10.2.8-composer-vartable-exists-0128"], "result": "AWSJDB322E - vt=DS_VALID_TBL nao existe"}
+{"timestamp": "2026-08-22T19:31:00BRT", "claim_ids": ["hwa-10.2.8-composer-stream-keyword-order-0129"], "result": "AWSJOM915E - DS_CHAIN_C apos PROMPT em linha anterior; reordenacao resolve"}
+{"timestamp": "2026-08-22T19:42:00BRT", "claim_ids": ["hwa-10.2.8-conman-submit-at-nextday-0131"], "result": "sbd at=1750 -> job HOLD agendado 08/23 (plano termina 08/23 02:59) - Lacuna E reconfirmada"}
+{"timestamp": "2026-08-22T19:42:30BRT", "claim_ids": ["hwa-10.2.8-conman-submit-until-deadline-0132"], "result": "sbd until=1800 -> SUCC imediato RC=0; sbd deadline=1800 -> SUCC RC=0 com nota <08/23"}
+{"timestamp": "2026-08-22T19:43:00BRT", "claim_ids": ["hwa-10.2.8-conman-submit-into-multi-instance-0130"], "result": "sbd into=JOBS -> AWSBHU152E (2 instancias: 08/17 ABEND + 08/22 READY); into=JOBS(0300 08/22) -> SUCC"}
+{"timestamp": "2026-08-22T19:43:30BRT", "claim_ids": ["hwa-10.2.8-conman-submit-follows-hold-0134"], "result": "sbd follows JOBS.AT_TEST_001 -> job HOLD esperando AT_TEST_001 (HOLD ate 08/23) - dependencia funciona"}
+{"timestamp": "2026-08-22T19:43:45BRT", "claim_ids": ["hwa-10.2.8-composer-runcycle-weekly-every-0133"], "result": "FREQ=WEEKLY;BYDAY=TH (AT 0700) validado OK + adicionado ao banco"}
+{"timestamp": "2026-08-22T19:43:50BRT", "claim_ids": ["hwa-10.2.8-composer-runcycle-weekly-every-0133"], "result": "(AT 0600 EVERY 0002 EVERYENDTIME 1200) validado OK + adicionado ao banco"}
+{"timestamp": "2026-08-22T19:47:00BRT", "claim_ids": ["hwa-10.2.8-conman-submit-into-multi-instance-0130"], "result": "into=JOBS#CF26233AAAAAAAAA (ID) -> AWSBHU025E - ID nao aceito nesta sintaxe"}
+{"timestamp": "2026-08-22T19:47:10BRT", "claim_ids": ["hwa-10.2.8-conman-submit-into-multi-instance-0130"], "result": "into=JOBS(0300 08/22) -> SUCC; into=JOBS(0300) so hora -> SUCC; schedtime= keyword separada -> AWSBHU152E"}
+{"timestamp": "2026-08-22T19:47:30BRT", "claim_ids": ["hwa-10.2.8-conman-submit-into-multi-instance-0130"], "result": "Jobs submetidos com into=JOBS(hhmm [mm/dd]) foram para instancia correta (08/22 READY)"}

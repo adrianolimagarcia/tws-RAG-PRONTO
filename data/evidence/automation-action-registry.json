@@ -1,0 +1,766 @@
+{
+ "schema_version": "1.0",
+ "execution_model": "structured_action_only",
+ "parameter_schemas": {
+  "empty": {
+   "required": [],
+   "optional": {},
+   "additional_properties": false
+  },
+  "job_query": {
+   "required": [],
+   "optional": {
+    "selector": "selector",
+    "format": [
+     "deps",
+     "props"
+    ]
+   },
+   "additional_properties": false
+  },
+  "optional_selector": {
+   "required": [],
+   "optional": {
+    "selector": "selector"
+   },
+   "additional_properties": false
+  },
+  "workstation_query": {
+   "required": [],
+   "optional": {
+    "format": [
+     "link"
+    ]
+   },
+   "additional_properties": false
+  },
+  "selector": {
+   "required": [
+    "selector"
+   ],
+   "optional": {},
+   "additional_properties": false
+  },
+  "composer_object": {
+   "required": [
+    "object_selector"
+   ],
+   "optional": {},
+   "additional_properties": false
+  },
+  "approved_input": {
+   "required": [
+    "input_ref"
+   ],
+   "optional": {},
+   "additional_properties": false
+  },
+  "host_workstation": {
+   "required": [
+    "host_workstation"
+   ],
+   "optional": {},
+   "additional_properties": false
+  },
+  "ocli_selector": {
+   "required": [
+    "selector"
+   ],
+   "optional": {},
+   "additional_properties": false
+  },
+  "ocli_docommand": {
+   "required": [
+    "selector",
+    "command"
+   ],
+   "optional": {},
+   "additional_properties": false
+  },
+  "certman_generate": {
+   "required": [
+    "outpath"
+   ],
+   "optional": {
+    "days": "positive_int",
+    "subj": "openssl_subject",
+    "keysize": "positive_int",
+    "cadays": "positive_int"
+   },
+   "additional_properties": false
+  },
+  "event_query": {
+   "required": [
+    "event_type",
+    "source"
+   ],
+   "optional": {
+    "attributes": "selector",
+    "hostname": "hostname",
+    "port": "positive_int",
+    "sslport": "positive_int"
+   },
+   "additional_properties": false
+  }
+ },
+ "refusal_schema": {
+  "required": [
+   "refusal",
+   "requested_operation",
+   "confirmation_required",
+   "executable_action"
+  ],
+  "allowed_refusals": [
+    "mutating_action_disabled",
+    "destructive_action_blocked",
+    "approved_input_reference_required",
+    "origin_not_allowed",
+    "version_not_supported",
+    "missing_required_parameter",
+    "invalid_parameter"
+  ],
+  "additional_properties": false
+ },
+ "actions": [
+  {
+   "name": "conman_show_jobs",
+   "command": "showjobs",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "supported_versions": [
+    "10.2.x",
+    "10.2.4"
+   ],
+   "parameter_schema": "job_query",
+   "confirmation_required": false
+  },
+  {
+   "name": "conman_show_job_streams",
+   "command": "showscheds",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "supported_versions": [
+    "10.2.x",
+    "10.2.0"
+   ],
+   "parameter_schema": "optional_selector",
+   "confirmation_required": false
+  },
+  {
+   "name": "conman_show_workstations",
+   "command": "showcpus",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta",
+    "standard_agent"
+   ],
+   "supported_versions": [
+    "10.2.4"
+   ],
+   "parameter_schema": "workstation_query",
+   "confirmation_required": false
+  },
+  {
+   "name": "conman_show_status",
+   "command": "status",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta",
+    "standard_agent"
+   ],
+   "supported_versions": [
+    "10.2.0"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": false
+  },
+  {
+   "name": "conman_list_successors",
+   "command": "listsucc",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta",
+    "dynamic_agent"
+   ],
+   "supported_versions": [
+    "10.2.0"
+   ],
+   "parameter_schema": "selector",
+   "confirmation_required": false
+  },
+  {
+   "name": "composer_display",
+   "command": "display",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.x"
+   ],
+   "parameter_schema": "composer_object",
+   "confirmation_required": false
+  },
+  {
+   "name": "composer_list",
+   "command": "list",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.x"
+   ],
+   "parameter_schema": "composer_object",
+   "confirmation_required": false
+  },
+  {
+   "name": "composer_validate",
+   "command": "validate",
+   "risk": "read_only",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.x"
+   ],
+   "parameter_schema": "approved_input",
+   "confirmation_required": false,
+   "automation_policy": "approved_input_store_required"
+  },
+  {
+   "name": "composer_check_hosted_xagents",
+   "command": "display workstation",
+   "risk": "read_only",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.0"
+   ],
+   "required_parameters": [
+    "host_workstation"
+   ],
+   "confirmation_required": false,
+   "automation_policy": "resetfta_precondition_only",
+   "result_contract": {
+    "block_resetfta_if": "any workstation definition has type x-agent and host equal to host_workstation",
+    "association_key": "host is HWA workstation name, not node hostname"
+   }
+  },
+  {
+   "name": "conman_check_hosted_xagents",
+   "command": "showcpus",
+   "risk": "read_only",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "supported_versions": [
+    "10.2.0",
+    "10.2.7"
+   ],
+   "required_parameters": [
+    "host_workstation"
+   ],
+   "confirmation_required": false,
+   "automation_policy": "resetfta_precondition_only",
+   "result_contract": {
+    "commands": [
+     "sc @!@",
+     "sc @!@;link"
+    ],
+    "block_resetfta_if": "a standard-format X-AGENT row correlates to a link-format HOST equal to host_workstation",
+    "association_key": "HWA workstation name"
+   }
+  },
+  {
+   "name": "conman_rerun",
+   "command": "rerun",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "confirmation_required": true
+  },
+  {
+   "name": "conman_release_job",
+   "command": "release job",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "confirmation_required": true
+  },
+  {
+   "name": "conman_submit_job_stream",
+   "command": "submit sched",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "fta",
+    "standard_agent"
+   ],
+   "confirmation_required": true
+  },
+  {
+   "name": "conman_cancel_job",
+   "command": "cancel job",
+   "risk": "destructive",
+   "enabled": false,
+   "confirmation_required": true
+  },
+  {
+   "name": "conman_cancel_job_stream",
+   "command": "cancel sched",
+   "risk": "destructive",
+   "enabled": false,
+   "confirmation_required": true
+  },
+  {
+   "name": "composer_delete",
+   "command": "delete",
+   "risk": "destructive",
+   "enabled": false,
+   "confirmation_required": true
+  },
+  {
+   "name": "conman_reset_fta",
+   "command": "resetFTA",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "supported_versions": [
+    "10.2.0",
+    "10.2.1",
+    "10.2.2"
+   ],
+   "confirmation_required": true,
+   "automation_policy": "emergency_only",
+   "preconditions": [
+    "target_is_physical_fta",
+    "symphony_corruption_diagnosed",
+    "no_hosted_extended_agents",
+    "documented_link_recovery_failed",
+    "human_change_approval",
+    "post_action_workload_reconciliation"
+   ]
+  },
+  {
+   "name": "planman_showinfo",
+   "command": "planman showinfo",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": false
+  },
+  {
+   "name": "planman_unlock",
+   "command": "planman unlock",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true,
+   "automation_policy": "privileged_recovery_only",
+   "preconditions": [
+    "build_access_prodsked",
+    "human_change_approval",
+    "abnormal_plan_processing_confirmed"
+   ]
+  },
+  {
+   "name": "planman_reset_scratch",
+   "command": "planman reset -scratch",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true,
+   "automation_policy": "emergency_only",
+   "preconditions": [
+    "preproduction_plan_rebuild_intent",
+    "human_change_approval",
+    "dbrunstats_before_jnextplan"
+   ]
+  },
+  {
+   "name": "resetplan_scratch",
+   "command": "ResetPlan -scratch",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true,
+   "automation_policy": "emergency_only",
+   "preconditions": [
+    "production_plan_discard_intent",
+    "human_change_approval",
+    "dbrunstats_before_jnextplan"
+   ]
+  },
+  {
+   "name": "certman_generate",
+   "command": "certman generate",
+   "risk": "credential_sensitive",
+   "enabled": false,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "certman_generate",
+   "confirmation_required": true,
+   "automation_policy": "credentials_env_or_vault",
+   "preconditions": [
+    "keypasswd_min_length_6",
+    "ca_key_backup",
+    "human_change_approval"
+   ]
+  },
+  {
+   "name": "certman_version",
+   "command": "certman version",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": false
+  },
+  {
+   "name": "ocli_model_delete",
+   "command": "ocli model delete",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.2",
+    "10.2.3",
+    "10.2.8"
+   ],
+   "parameter_schema": "ocli_selector",
+   "confirmation_required": true,
+   "automation_policy": "no_force_no_ask",
+   "preconditions": [
+    "explicit_target",
+    "human_change_approval",
+    "no_force_flag"
+   ]
+  },
+  {
+   "name": "ocli_plan_rerun",
+   "command": "ocli plan rerun",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "ocli_selector",
+   "confirmation_required": true,
+   "automation_policy": "no_force_no_ask",
+   "preconditions": [
+    "explicit_target",
+    "human_change_approval",
+    "no_force_flag"
+   ]
+  },
+  {
+   "name": "ocli_plan_submit_docommand",
+   "command": "ocli plan submit docommand",
+   "risk": "credential_sensitive",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "ocli_docommand",
+   "confirmation_required": true,
+   "automation_policy": "credentials_env_or_vault",
+   "preconditions": [
+    "logon_credentials_in_env",
+    "human_change_approval"
+   ]
+  },
+  {
+   "name": "ocli_model_list",
+   "command": "ocli model list",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.2",
+    "10.2.3",
+    "10.2.8"
+   ],
+   "parameter_schema": "optional_selector",
+   "confirmation_required": false
+  },
+  {
+   "name": "composer_modify",
+   "command": "composer modify",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "composer_object",
+   "confirmation_required": true
+  },
+  {
+   "name": "composer_update",
+   "command": "composer update",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "composer_object",
+   "confirmation_required": true
+  },
+  {
+   "name": "ocli_plan_showjobs",
+   "command": "ocli plan showjobs",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "ocli_selector",
+   "confirmation_required": false
+  },
+  {
+   "name": "ocli_version",
+   "command": "ocli version",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": false
+  },
+  {
+   "name": "ocli_context_list",
+   "command": "ocli context list",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": false
+  },
+  {
+   "name": "ocli_context_new",
+   "command": "ocli context new",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true
+  },
+  {
+   "name": "ocli_context_set",
+   "command": "ocli context set",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true
+  },
+  {
+   "name": "ocli_context_switch",
+   "command": "ocli context switch",
+   "risk": "mutating",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true
+  },
+  {
+   "name": "ocli_context_remove",
+   "command": "ocli context remove",
+   "risk": "destructive",
+   "enabled": false,
+   "allowed_origins": [
+    "command_line_client"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": true
+  },
+  {
+   "name": "conman_show_domain",
+   "command": "showdomain",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "empty",
+   "confirmation_required": false
+  },
+  {
+   "name": "conman_show_cpus_link",
+   "command": "showcpus",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm",
+    "fta"
+   ],
+   "supported_versions": [
+    "10.2.4",
+    "10.2.8"
+   ],
+   "parameter_schema": "workstation_query",
+   "confirmation_required": false,
+   "automation_policy": "link_format_required",
+   "result_contract": {
+    "commands": [
+     "sc @!@;link"
+    ],
+    "block_resetfta_if": "an X-AGENT row maps to the target FTA HOST"
+   }
+  },
+  {
+   "name": "conman_send_event",
+   "command": "sendevent",
+   "risk": "read_only",
+   "enabled": true,
+   "allowed_origins": [
+    "mdm"
+   ],
+   "supported_versions": [
+    "10.2.8"
+   ],
+   "parameter_schema": "event_query",
+   "confirmation_required": true,
+   "automation_policy": "event_rules_may_trigger_actions",
+   "preconditions": [
+    "explicit_event_type_and_source",
+    "no_credentials_in_attributes"
+   ]
+  }
+ ],
+ "blocked_patterns": [
+  "arbitrary_shell",
+  "system-command",
+  "curl -k",
+  ";noask",
+  "altpass",
+  "authenticate",
+  "wildcard_destructive_target",
+  "resetFTA_with_hosted_extended_agent",
+  "ocli_model_delete_force",
+  "ocli_rerun_force",
+  "planman_unlock_without_approval"
+ ]
+}
