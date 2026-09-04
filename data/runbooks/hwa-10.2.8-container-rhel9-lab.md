@@ -105,3 +105,15 @@ Status: installed and validated in the same container (RHEL 9.8 UBI-init) on 202
   admin não é criado pelo instalador (startAppServer "only the owner").
 - `dwc-login-requires-browser-headers-0001` — POST j_security_check sem headers de browser
   → 400 silencioso; com headers → 302 + LtpaToken2 + dashboard 200 (não documentado no WSL).
+
+## Environment do usuário de instalação (wauser) no login
+
+- **Sintoma**: `su - wauser` (ou SSH) → `conman: command not found`; variáveis TWS_* ausentes.
+- **Causa raiz (difere do WSL!)**: no UBI/RHEL o `useradd -m` cria `~/.bash_profile`
+  (que mascara o `~/.profile` do runbook WSL). O source do env deve ir no `.bash_profile`.
+- **Fix**: adicionar ao `/home/wauser/.bash_profile`:
+  `if [ -f /opt/hwa/TWS/tws_env.sh ]; then . /opt/hwa/TWS/tws_env.sh; fi`
+  (mesmo padrão com `/opt/hwa/DWC/dwc_env.sh` para o `dwcadmin`).
+- **Validação**: `su - wauser -c 'conman showcpus'` → "Environment Successfully Set" +
+  CPUID MDM/MDMXA. SSH com comando direto não lê login profile → usar sessão interativa
+  ou `bash -lc "..."`.
