@@ -117,3 +117,28 @@ Status: installed and validated in the same container (RHEL 9.8 UBI-init) on 202
 - **Validação**: `su - wauser -c 'conman showcpus'` → "Environment Successfully Set" +
   CPUID MDM/MDMXA. SSH com comando direto não lê login profile → usar sessão interativa
   ou `bash -lc "..."`.
+
+## Sfinal — job streams FINAL e FINALPOSTREPORTS (IMPORTANTÍSSIMO)
+
+O Sfinal é o coração da automação do plano de produção: os streams de exemplo
+que o HWA instala para automatizar o ciclo diário (JnextPlan + relatórios).
+
+- **O instalador JÁ importa o Sfinal** (serverinst/twsinst): os objetos existem no
+  banco como `MDMXA#FINAL` e `MDMXA#FINALPOSTREPORTS` — verificado neste lab com
+  `composer display js=MDMXA#FINAL` (AWSBIA291I Total objects: 1). NÃO é preciso
+  `composer add Sfinal` (se rodar: AWSJCL015W "already exists").
+- Arquivo fonte: `/opt/hwa/TWS/Sfinal` (idêntico a `/opt/hwa/TWS/config/Sfinal`).
+- **Definição** (do arquivo): `SCHEDULE MDMXA#FINAL ON EVERYDAY AT 2359 MATCHING
+  SAMEDAY CARRYFORWARD`; `FINALPOSTREPORTS` com `SCHEDTIME 2359`. O FINAL segue o
+  SWITCHPLAN do ciclo anterior (PREVIOUS); o FINALPOSTREPORTS segue o SWITCHPLAN
+  do FINAL.
+- **Jobs**: FINAL = STARTAPPSERVER (roda startAppServer.sh), MAKEPLAN, SWITCHPLAN;
+  FINALPOSTREPORTS = CHECKSYNC, CREATEPOSTREPORTS, UPDATESTATS (6 jobs + 2 streams
+  no MDMXA — cross-check com o lab WSL `hwa-lab-10.2.8-sfinal-import-0006`).
+- **Validação do plano (lição WSL 0007, replicada aqui)**:
+  - `JnextPlan -for 0000` → plano zero-duration, SEM instâncias (horizonte zero).
+  - `JnextPlan -for 2400` → instancia o FINAL às 23:59 do dia de produção.
+  - ⚠️ Fora do timing (madrugada, depois do run 2400 do dia já ter passado) o
+    `-for 2400` processa com "0 Jobs Logged" e o plano fica sem instâncias —
+    validar DENTRO do dia de produção (antes das 23:59) ou conferir no ciclo
+    noturno automático (batchman processa o run 2400 às 23:59).
