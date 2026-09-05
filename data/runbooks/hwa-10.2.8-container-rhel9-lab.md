@@ -142,3 +142,39 @@ que o HWA instala para automatizar o ciclo diário (JnextPlan + relatórios).
     `-for 2400` processa com "0 Jobs Logged" e o plano fica sem instâncias —
     validar DENTRO do dia de produção (antes das 23:59) ou conferir no ciclo
     noturno automático (batchman processa o run 2400 às 23:59).
+
+## Modelo de plano (dia vigente 00:05 + D+1 automático) e timezone
+
+**Modelo documentado (WSL, evidência startofday-0005)**: o dia de produção inicia às
+`00:05` (`optman chg sd=0005` → AWSJCL050I), o plano é o do dia vigente e sempre avança
+para D+1 automaticamente. O mecanismo de virada é o **Sfinal** (streams FINAL +
+FINALPOSTREPORTS no MDMXA): o FINAL roda às 23:59 e executa STARTAPPSERVER → MAKEPLAN
+(gera o plano de D+1) → SWITCHPLAN (ativa); o FINALPOSTREPORTS (após o SWITCHPLAN) roda
+CHECKSYNC → CREATEPOSTREPORTS → UPDATESTATS. A corrente se auto-sustenta: cada plano
+gerado contém o FINAL do dia seguinte.
+
+**Aplicado no container (2026-09-05)**:
+1. `optman chg sd=0005` → startOfDay = 0005 (AWSJCL050I; efetiva após o próximo JnextPlan).
+2. `composer add Sfinal` → re-adiciona `MDMXA#FINAL` e `MDMXA#FINALPOSTREPORTS` (importados
+   pelo instalador; removidos 2026-09-04 a pedido do dono — evidência sfinal-definitions-removed;
+   re-adicionados pois são o mecanismo de virada D+1; NUNCA deletá-los: quebram o rollover,
+   claim destructive-cleanup-lesson-0100).
+3. `conman "lc MDM;10;noask"` + `conman "lc MDMXA;10;noask"` → LIMIT 10 (default pós-instalação
+   é 0 = "no jobs run at any time"; a forma longa `limit cpu` dá AWSBHU048E de ambiguidade).
+4. **Timezone**: o container nasceu UTC (default docker) → o "dia vigente" do TWS ficava 3h
+   adiantado do fuso do dono (America/Sao_Paulo). Trocado via `ln -sf
+   /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime` + `/etc/timezone`.
+   ⚠️ A troca só vale p/ processos NOVOS: o domínio MDM roda como processos manuais não-systemd
+   (engineServer Java Liberty + netman ppid=1, orquestrados pelo agente ITA — unit
+   `tebctl-tws_cpa_agent_wauser.service` — e por `/opt/hwa/TWS/config/start_tws.sh`, que
+   condiciona o start do netman a um arquivo Symphony ausente no 10.2.8). Para o fuso valer
+   100% é preciso reiniciar o domínio (evidência timezone-sao-paulo-0001).
+
+**Comandos do modelo (evitar -for 0000/default que só estendem sem instanciar o Sfinal)**:
+- `JnextPlan -for 2400` → instancia FINAL/FINALPOSTREPORTS no plano do dia de produção.
+- Extensão explícita: `JnextPlan -for 24:00` / `-days 1` / `-for 48:00`.
+- JnextPlan repetidos com `-for 0000`/default (2026-09-04) esticaram o plano até ~09/25 sem
+  instanciar o FINAL e deixaram um FINAL atrasado de 09/04 que rodou fora de hora
+  (STARTAPPSERVER SUCC → MAKEPLAN ABEND rc8 → SWITCHPLAN/FINALPOSTREPORTS HOLD), travando a
+  corrente. Recuperação documentada (runbook WSL, seção ResetPlan): `ResetPlan` sem `-scratch`
+  (com backup) + rebuild `JnextPlan -from <dia> 0000 -for 2400`.
