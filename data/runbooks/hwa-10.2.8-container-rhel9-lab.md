@@ -259,3 +259,20 @@ linha ou linha única; `/` não é suportado como separador de bloco.)
 aceito, jobs referenciados devem existir), mas a representação com `/` descrita ali é a
 do display — recomendado ajustar a redação do claim para evitar que o `/` seja copiado
 como sintaxe de entrada (candidato a revisão).
+
+## Dependência por arquivo OPENS + resolução de hostname (2026-09-05)
+
+**OPENS** (dependência de recurso/arquivo): job com `OPENS /tmp/arquivo` fica HOLD com o
+arquivo listado em Dependencies até ele existir. Validado no container: após criar o
+arquivo o job executou SUCC rc0.
+
+**Achado crítico de configuração**: o OPENS não liberava mesmo após criar o arquivo, com o
+`JobManager_message.log` cheio de `AWSITA081E` (agent can not send resource information a
+`https://tws-hwa.lab:31116/JobManagerRESTWeb/JobScheduler/resource`) + `AWSITA366E Could
+not resolve hostname`. Causa: o hostname `tws-hwa.lab` (definido na instalação via
+`-hostname tws-hwa.lab`) NÃO estava no `/etc/hosts` do container (o hostname real do
+container UBI é o ID do docker, ex. `8189d3570cc2`). O conman/composer funcionavam (outro
+caminho de resolução), mascarando o problema até o teste de recurso de arquivo. **Fix**:
+adicionar `tws-hwa.lab` → loopback no `/etc/hosts` (é o que o jobman usa para POSTar o
+estado do recurso ao engine REST na 31116). Depois disso o OPENS passou a funcionar.
+Evidência `opens-file-dep-hostname-0001`.
