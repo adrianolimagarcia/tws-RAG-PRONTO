@@ -210,3 +210,24 @@ postgresql-18`; (2) `systemctl start tebctl-tws_cpa_agent_wauser` (agente ITA); 
 `startAppServer.sh` (engineServer); (4) `conman "start&link @!/@/@;noask"` + `startmon`
 (batchman). O engine Java só pega o timezone novo no boot (stopAppServer.sh → trocar
 localtime → startAppServer.sh).
+
+## Exploração: jobs complexos com dependências e abend (2026-09-05)
+
+Definições estilo Sfinal (keyword por linha, sem `/`) adicionadas via `composer add`; jobs
+podem ser inline no SCHEDULE (como o Sfinal) — a forma com `$JOBS` + separador `/` falhou
+com AWSJOM918E.
+
+**Submit**: `sbj` é para JOB individual; para um job stream/schedule use `sbs` —
+`conman "sbs = WS#STREAM;noask"` (com `=`; `sbj` em stream dá AWSBHU072E). O erro
+AWSBHU711E (job name not supplied) ocorre ao emitir `rr` sem o nome do job.
+
+**Comportamento coletado (evidências)**: numa cadeia A→B→C com ramo A→D→E, o job B
+(`exit 5`) foi ABEND rc5 e parou o C (HOLD, dependência quebrada) mas os ramos paralelos
+D/E executaram SUCC — dependências FOLLOWS independentes não bloqueiam paralelismo. Stream
+fica STUCK enquanto há ABEND. Rerun manual do job ABEND (`conman "rr = WS#STREAM.JOB;noask"`)
+re-executa e re-falha se o comando ainda falha. Confirmar/cancelar o ABEND libera os jobs
+dependentes. **RECOVERY RERUN** num job que falha (rc1) dispara rerun automático de
+recuperação (`>>rerun as ... [Recovery]`) que também ABEND. Jobs executam nativamente no
+master MDM (via seu JobManager) — diferente do WSL onde dynamic agent ficava READY.
+
+**Limpeza**: objetos de teste deletados via `composer delete` (Sfinal/FINAL preservado).
