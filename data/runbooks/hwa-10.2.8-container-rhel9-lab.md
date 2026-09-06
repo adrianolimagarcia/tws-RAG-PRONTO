@@ -231,3 +231,31 @@ recuperação (`>>rerun as ... [Recovery]`) que também ABEND. Jobs executam nat
 master MDM (via seu JobManager) — diferente do WSL onde dynamic agent ficava READY.
 
 **Limpeza**: objetos de teste deletados via `composer delete` (Sfinal/FINAL preservado).
+
+## Composer: matriz de sintaxe de entrada (2026-09-05) — esclarece claim 0104
+
+Experimento controlado (6 variações, todas no container) para determinar a sintaxe de
+arquivo aceita por `composer add` — investigação da aparente contradição com o claim
+WSL `composer-syntax-format-0104` (que documentava `$JOBS` + separador `/`):
+
+| # | Formato testado | Resultado |
+|---|---|---|
+| 1 | `$JOBS` + `JOB / DOCOMMAND "..." / STREAMLOGON ...` (com `/`) | **AWSJOM918E** syntax error line 2 |
+| 2 | linha solta com `/` (sem `$JOBS`) | AWSBCZ021E (keyword esperada) |
+| 3 | linha única sem `/` (sem `$JOBS`) | AWSBCZ021E |
+| 4 | `$JOBS` + multilinha: `JOBNAME` na linha 1, keyword por linha | **FUNCIONA** (`AWSJCL003I`) |
+| 5 | `$JOBS` + linha única `JOBNAME DOCOMMAND "..." STREAMLOGON ...` | **FUNCIONA** |
+| 6 | `SCHEDULE` com jobs inline (keyword por linha, estilo Sfinal) | **FUNCIONA** (8 objetos) |
+
+**Conclusão**: o separador `/` documentado no claim 0104 era o **formato de serialização
+do `composer display`/extract** (como o composer *mostra* blocos), NÃO a sintaxe de
+entrada. A sintaxe real de entrada aceita é: `$JOBS` header + job name numa linha e
+keywords em linhas próprias (ou linha única); dentro de SCHEDULE os jobs inline seguem o
+formato nativo do Sfinal (keyword por linha, sem `/`). O `/` como separador na entrada
+dispara AWSJOM918E. (A pesquisa Perplexity corroborou: a forma canônica é keyword por
+linha ou linha única; `/` não é suportado como separador de bloco.)
+
+**Nota de precisão ao claim 0104**: o claim está correto no que VALIDA (formato nativo
+aceito, jobs referenciados devem existir), mas a representação com `/` descrita ali é a
+do display — recomendado ajustar a redação do claim para evitar que o `/` seja copiado
+como sintaxe de entrada (candidato a revisão).
