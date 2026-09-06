@@ -178,3 +178,35 @@ gerado contém o FINAL do dia seguinte.
   (STARTAPPSERVER SUCC → MAKEPLAN ABEND rc8 → SWITCHPLAN/FINALPOSTREPORTS HOLD), travando a
   corrente. Recuperação documentada (runbook WSL, seção ResetPlan): `ResetPlan` sem `-scratch`
   (com backup) + rebuild `JnextPlan -from <dia> 0000 -for 2400`.
+
+## Correção do modelo: dia de produção 00:05 BR + D+1 automático (2026-09-05)
+
+**Sintoma**: JnextPlan com `-from <dia> 0000` ancorava o início do dia de produção em
+`21:00 BR` (herança da meia-noite UTC do container original, criado em UTC) → o dia
+vigente ficava deslocado 3h do calendário local. Aviso `AWSJPL206W`: timezones habilitados
+no banco mas o MDM não inclui timezone → usa o do sistema.
+
+**Causa raiz**: o `-from ... 0000` explícito força um corte de dia que não respeita o
+`startOfDay`; a doc adverte que `-from` sem timezone explícito pode ser deslocado.
+
+**Correção**: `optman chg sd=0005` (startOfDay 00:05) + timezone do SO
+`America/Sao_Paulo` + **`JnextPlan` SEM `-from`** (após `ResetPlan -scratch`) →
+`Plan creation start time: 09/05/2026 00:05 TZ America/Sao_Paulo`; production plan
+09/05 00:05 → 09/06 00:04. Dia vigente alinhado ao calendário BR, sempre D+1.
+
+**Ciclo FINAL validado (evidência final-cycle-d1-rollover)**: o FINAL do dia executa
+STARTAPPSERVER→MAKEPLAN→SWITCHPLAN (SUCC rc0), o FINALPOSTREPORTS roda
+CHECKSYNC→CREATEPOSTREPORTS→UPDATESTATS, e o plano de D+1 é ativado com o próximo
+FINAL 23:59 já agendado (HOLD) — corrente auto-sustentável.
+
+**ResetPlan**: sem `-scratch` preserva o preproduction plan (se o plano antigo estiver
+viciado, o rebuild gera production vazio "0 streams"); `-scratch` zera produção E
+preprodução → rebuild limpo do zero.
+
+**Restart do domínio (evidência postgres-disabled-after-container-restart)**: o unit
+`postgresql-18` é DISABLED — após `docker stop/start` o postgres não volta sozinho e o
+engine entra em loop de `5432 refused` (AWSJDB802E). Ordem correta: (1) `systemctl start
+postgresql-18`; (2) `systemctl start tebctl-tws_cpa_agent_wauser` (agente ITA); (3)
+`startAppServer.sh` (engineServer); (4) `conman "start&link @!/@/@;noask"` + `startmon`
+(batchman). O engine Java só pega o timezone novo no boot (stopAppServer.sh → trocar
+localtime → startAppServer.sh).
