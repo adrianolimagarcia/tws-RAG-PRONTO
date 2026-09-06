@@ -286,3 +286,32 @@ Achado: unit tebctl original com `User=wauser`+`Type=forking`+`PIDFile=` falha p
 status.info é gravado como wauser e o systemd recusa PID file não-root — remover
 `User=`/`PIDFile=` resolve (o script tebctl já faz `su - wauser`). Backup da unit em
 `/etc/systemd/system/*.bak-*`; scripts em `/usr/local/sbin/{fix-tws-hosts,fix-tebctl-unit-boot,tws-domain-start}.sh`.
+
+## Event rules (EDWA) — fluxo E2E validado no container (2026-09-06)
+
+**Arquitetura**: enEventDrivenWorkloadAutomation (ed)=YES; event processor no engineServer
+(Liberty); monman/ssmagent para alguns providers; 3 rules default (UPDATEFAILURE etc.).
+Event rules = objetos XML via composer (`add <file>`, `validate <file>;syntax`), validados
+contra EventRules.xsd. XML sem atributo encoding (senão AWSBIA358E).
+
+**Fluxo validado (evidência edwa-event-rule-e2e-container)**: rule `LAB_EVT_SBS`
+(ruleType=filter, GenericEventPlugIn `Event1`, filtros Param1=TRIGGER_LAB + Workstation=MDM,
+ação TWSAction `sbs`) → composer add (AWSJCL003I, status *activation pending*) → ativou
+sozinha em ~5min (deploymentFrequency=5) → `sendevent Event1 GenericEventPlugIn
+Param1=TRIGGER_LAB Workstation=MDM` (AWSGTW113I) → ação sbs submeteu o job stream alvo →
+EVTJOB1 executou SUCC rc0.
+
+**Sintaxe do XML da event rule (erros AWSVAL descobertos)**:
+- Ação TWSAction `sbs` exige **2 parâmetros**: `JobStreamName` (nome do stream) +
+  `JobStreamWorkstationName` (workstation). `JobStream` não é válido (AWSVAL005E);
+  JobStreamWorkstationName é obrigatório (AWSVAL006E).
+- `eventType` deve ser um dos definidos no GenericEventPlugIn (config em
+  `/opt/hwa/TWSDATA/eventPlugIn/config/GenericEventPlugIn/TWSPluginConfiguration.xml`):
+  `Event1` (params Param1+Workstation) ou `Upgrade` (Message+Workstation+UpgradeStatus).
+  Nome arbitrário → AWSVAL011E.
+- `Workstation` do Event1 **não aceita wildcard** (wildcardAllowed=false) → AWSVAL021E.
+- Ativação imediata via REST `PUT /twsd/eventrule/deployment/rule_builder/start` retorna
+  HTTP 401 no container (exige autenticação) → usar a ativação automática (deploymentFrequency).
+
+**Eventos custom**: definir no GenericEventPlugIn via `evtdef loaddef <file>` / `dumpdef`
+(config XML em eventDefinitions.xsd).
