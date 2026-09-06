@@ -276,3 +276,13 @@ caminho de resolução), mascarando o problema até o teste de recurso de arquiv
 adicionar `tws-hwa.lab` → loopback no `/etc/hosts` (é o que o jobman usa para POSTar o
 estado do recurso ao engine REST na 31116). Depois disso o OPENS passou a funcionar.
 Evidência `opens-file-dep-hostname-0001`.
+
+## Boot automático (2026-09-05) — evidência boot-auto-container-mdm
+
+Três units garantem o domínio de pé após `docker restart` (validadas com restart real):
+`tws-boot-fixes` (hosts + conserta unit tebctl) → `tebctl-tws_cpa_agent_wauser`
+(agent+JobManager) → `tws-domain-start` (postgres + engine + start&link + startmon).
+Achado: unit tebctl original com `User=wauser`+`Type=forking`+`PIDFile=` falha porque o
+status.info é gravado como wauser e o systemd recusa PID file não-root — remover
+`User=`/`PIDFile=` resolve (o script tebctl já faz `su - wauser`). Backup da unit em
+`/etc/systemd/system/*.bak-*`; scripts em `/usr/local/sbin/{fix-tws-hosts,fix-tebctl-unit-boot,tws-domain-start}.sh`.
