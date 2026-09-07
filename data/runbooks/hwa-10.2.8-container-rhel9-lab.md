@@ -315,3 +315,26 @@ EVTJOB1 executou SUCC rc0.
 
 **Eventos custom**: definir no GenericEventPlugIn via `evtdef loaddef <file>` / `dumpdef`
 (config XML em eventDefinitions.xsd).
+
+## Backup/restore do MDM — validado (2026-09-07)
+
+Evidência `hwa-lab-10.2.8-mdm-backup-restore-0001`. Preenchia lacuna: no corpus o backup
+de master data era só claim de doc (hwa-10.2.8-backup-backup-master-data-0001).
+
+**Master data files do MDM** (o que faz backup):
+- Banco PostgreSQL (DBs `TWS` ~17MB e `TDWC`), acessado via `runuser -l postgres` (socket local).
+- Master data file `Symphony` em `/opt/hwa/TWSDATA/Symphony` (~55KB, plano serializado).
+
+**Procedimento validado (backup)**:
+- `runuser -l postgres -c "pg_dump -Fc TWS -f /data/bkp_tws_<ts>.dump"` (444KB) e TDWC (350KB).
+- `cp -a /opt/hwa/TWSDATA/Symphony /data/bkp_symphony_<ts>`.
+
+**Prova de RESTAURABILIDADE (reversível, sem tocar produção)**:
+1. `createdb TWS_BKPTEST` (clone)
+2. `pg_restore -d TWS_BKPTEST /data/bkp_tws_<ts>.dump` → rc=0, sem erros
+3. Validação: clone idêntico ao original — 137/137 tabelas; 2 job streams de modelo
+   (`mdl.ajs_abstract_job_streams`); 30 instâncias de job stream (`mdl.jsi_job_stream_instances`).
+4. `dropdb TWS_BKPTEST` (reversibilidade).
+
+**Nota**: `pg_dump -Fc` (custom) + restore num clone é a forma segura de validar um backup
+no lab — prova íntegro e restaurável sem risco ao ambiente de produção.
