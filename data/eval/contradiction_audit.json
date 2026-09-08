@@ -1,0 +1,56 @@
+[
+  {
+    "topic": "topology_ha/mdm",
+    "shared_terms": [
+      "workstation",
+      "using",
+      "field",
+      "returned",
+      "each"
+    ],
+    "claim1": {
+      "id": "hwa-lab-10.2.8-cleanup-orphans-0083",
+      "text": "In the HWA laboratory, remaining test/orphan model objects were removed from the database, leaving a"
+    },
+    "claim2": {
+      "id": "hwa-lab-10.2.8-rest-v2-submit-action-200-0082",
+      "text": "In the HWA laboratory, the REST API V2 full job lifecycle was validated end-to-end on the live /twsd"
+    }
+  },
+  {
+    "topic": "topology_ha/mdm",
+    "shared_terms": [
+      "wauser",
+      "action",
+      "31116",
+      "http",
+      "mdmda"
+    ],
+    "claim1": {
+      "id": "hwa-lab-10.2.8-eventrule-rest-discovery-0097",
+      "text": "No laboratório HWA 10.2.8, os endpoints REST reais do event-rule engine foram descobertos por decomp"
+    },
+    "claim2": {
+      "id": "hwa-lab-10.2.8-rest-v2-submit-action-200-0082",
+      "text": "In the HWA laboratory, the REST API V2 full job lifecycle was validated end-to-end on the live /twsd"
+    }
+  },
+  {
+    "topic": "aida/alerts",
+    "shared_terms": [
+      "alertas",
+      "continuous",
+      "data",
+      "ficam",
+      "instala"
+    ],
+    "claim1": {
+      "id": "hwa-10.2.8-aida-alert-definitions-0008",
+      "text": "No HCL Workload Automation 10.2.8, o AI Data Advisor define alertas de anomalia por KPI com schema: "
+    },
+    "claim2": {
+      "id": "hwa-10.2.8-aida-alerts-default-0015",
+      "text": "No HCL Workload Automation 10.2.8, as alert definitions do AI Data Advisor ficam em um arquivo JSON "
+    }
+  }
+]

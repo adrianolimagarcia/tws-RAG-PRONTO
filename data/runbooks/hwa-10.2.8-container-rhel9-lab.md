@@ -442,3 +442,21 @@ Evidências `hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001` e `hwa-lab-10.2.8
 - **Ordem Obrigatória no Job Stream**: A diretiva `VARTABLE <nome>` deve vir obrigatoriamente **antes** de `ON RUNCYCLE`. Colocar após causa `AWSJOM915E`.
 - **Substituição Caret**: Em jobs nativos (UNIX/WINDOWS), variáveis são referenciadas como `^VARNAME^` e expandidas no JCL pelo `jobmanrc` no momento da submissão.
 - **Comportamento com Variável Ausente**: Se um job referenciar uma variável que não existe na VARTABLE vinculada (ex: `^VAR_INEXISTENTE^`), o HWA **não** bloqueia o agendamento nem gera erro de sintaxe; a string literal com os circunflexos é passada intacta para o comando de execução.
+
+## EDWA: TWSObjectsMonitor (JobStatusChanged) e Sincronização a Quente (`planman resync`) (2026-09-08)
+
+Evidências `hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001` e `hwa-lab-10.2.8-planman-resync-hot-recovery-0001`.
+
+### 1. TWSObjectsMonitor e Ação MessageLogger (MSGLOG)
+- **Evento JobStatusChanged**: Requer atributos `JobName`, `Workstation` e `Status`. O valor de `Status` deve ser capitalizado (`Successful`, `Abend`, `Error`), pois usar mnemônicos como `SUCC` é rejeitado pelo validador.
+- **Parâmetros da Ação MSGLOG**:
+  - `Message`: Texto da notificação.
+  - `ObjectKey`: **Obrigatório**. A omissão gera o erro `AWSVAL006E`.
+  - `Severity`: Aceita `Info`, `Warning` ou `Error`. Informar `Information` causa erro `AWSVAL018E`.
+
+### 2. Recuperação de Plano a Quente via `planman resync`
+- **Comportamento Operacional**:
+  1. O comando encaminha a requisição concorrentemente ao `batchman` e ao `engineServer` (`AWSBEH119I`).
+  2. Inicia o dump transacional do arquivo `Symphony` para a base relacional (`AWSJCL070I`).
+  3. Notifica a conclusão com `AWSJCL074I Symphony file successfully loaded in Database`.
+- **Vantagem**: Permite restaurar a integridade entre o estado em memória do plano e o banco sem derrubar ou reiniciar o motor de produção.
