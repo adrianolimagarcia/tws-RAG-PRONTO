@@ -1,0 +1,37 @@
+{
+  "total_claims": 1449,
+  "missing_fields": {},
+  "malformed_claim_ids": 0,
+  "contrast_pairs_count": 16,
+  "broken_contrast_refs": 0,
+  "risk_mismatches": 1,
+  "unverifiable_sources": 0,
+  "evidence_tier_distribution": {
+    "community_reviewed": 14,
+    "official_corroborated": 328,
+    "official_primary": 929,
+    "official_lab": 178
+  },
+  "knowledge_status_distribution": {
+    "current": 1408,
+    "version_dependent": 40,
+    "obsolete": 1
+  },
+  "review_status_distribution": {
+    "draft": 565,
+    "verified": 737,
+    "lab_validated": 124,
+    "reviewed": 21,
+    "community_reviewed": 2
+  },
+  "total_lab_evidences_files": 130,
+  "total_lab_evidence_ids": 178,
+  "risk_mismatches_details": [
+    [
+      "hwa-10.2.8-message-jdb402e-0040",
+      "read_only",
+      "contém ação destrutiva evidente: delete"
+    ]
+  ],
+  "broken_contrast_details": []
+}

@@ -12,9 +12,9 @@
       "question": "Qual é a ordem correta para configurar o modelo de plano 00:05 D+1 no HWA 10.2.8 e por que o JnextPlan não deve usar a opção -from?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-conman-planman-0001",
         "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001",
-        "hwa-lab-10.2.8-final-cycle-d1-rollover-0001"
+        "hwa-lab-10.2.8-final-cycle-d1-rollover-0001",
+        "hwa-10.2.8-conman-planman-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -89,8 +89,8 @@
       "question": "No HCL Workload Automation, a barra inclinada (/) pode ser usada na entrada de comandos do composer add?",
       "rank": 147,
       "expected_claims": [
-        "composer-syntax-format-0104",
-        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001"
+        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001",
+        "composer-syntax-format-0104"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -105,8 +105,8 @@
       "question": "Como funciona o recovery automático com RERUN em um job nativo do HWA 10.2.8?",
       "rank": 1,
       "expected_claims": [
-        "hwa-lab-10.2.8-recovery-rerun-container-0001",
-        "hwa-10.2.8-vm-9f-0006"
+        "hwa-10.2.8-vm-9f-0006",
+        "hwa-lab-10.2.8-recovery-rerun-container-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -121,8 +121,8 @@
       "question": "Quais são os parâmetros obrigatórios da ação TWSAction 'sbs' em uma Event Rule do EDWA?",
       "rank": 1,
       "expected_claims": [
-        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001",
-        "hwa-10.2.8-conman-eventrules-0001"
+        "hwa-10.2.8-conman-eventrules-0001",
+        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -152,8 +152,8 @@
       "question": "Quais são os arquivos e componentes essenciais para backup do Master Domain Manager no HWA 10.2.8?",
       "rank": 7,
       "expected_claims": [
-        "hwa-lab-10.2.8-mdm-backup-restore-0001",
-        "hwa-10.2.8-backup-backup-master-data-0001"
+        "hwa-10.2.8-backup-backup-master-data-0001",
+        "hwa-lab-10.2.8-mdm-backup-restore-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -321,8 +321,8 @@
       "question": "Qual comando do HWA ressincroniza o arquivo Symphony em memória com a base de dados relacional a quente?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.7-planman-resync-0051",
-        "hwa-lab-10.2.8-planman-resync-hot-recovery-0001"
+        "hwa-lab-10.2.8-planman-resync-hot-recovery-0001",
+        "hwa-10.2.7-planman-resync-0051"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -382,8 +382,8 @@
       "question": "Como o status do job deve ser informado no filtro do evento JobStatusChanged do TWSObjectsMonitor?",
       "rank": 1,
       "expected_claims": [
-        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001",
-        "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094"
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094",
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -428,8 +428,8 @@
       "question": "Qual é a sintaxe correta para definir múltiplos jobs inline dentro de uma definição de SCHEDULE no composer?",
       "rank": 76,
       "expected_claims": [
-        "hwa-lab-10.2.8-deps-chain-abend-rollover-0001",
-        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001"
+        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001",
+        "hwa-lab-10.2.8-deps-chain-abend-rollover-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -475,8 +475,8 @@
       "question": "Qual é a função do job CHECKSYNC na esteira noturna FINALPOSTREPORTS?",
       "rank": 66,
       "expected_claims": [
-        "hwa-10.2.8-conman-planman-0001",
-        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001"
+        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001",
+        "hwa-10.2.8-conman-planman-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -506,8 +506,8 @@
       "question": "Qual é a porta padrão exclusiva utilizada para acesso HTTPS da REST API V2 no HWA Distributed?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-vm-9f-0007",
-        "hwa-10.2.8-dwc-restv2-https-tls-0018"
+        "hwa-10.2.8-dwc-restv2-https-tls-0018",
+        "hwa-10.2.8-vm-9f-0007"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
