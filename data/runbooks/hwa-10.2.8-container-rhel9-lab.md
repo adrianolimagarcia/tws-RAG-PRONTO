@@ -389,3 +389,23 @@ Evidência `hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001`. Validação comp
 
 4. **Comandos de Componente / Engine**:
    - `PUT /twsd/api/v2/engine/run-component-command`: retorna payload estruturado; para comandos de executor/componente, restrito a workstations do tipo `AGENT` (`AWSJCS027E` se executado contra o MDM do tipo MANAGER).
+
+## Padronização Operacional — Usuário Único (`wauser`) para Todo o Ecossistema (2026-09-08)
+
+Evidência `hwa-lab-10.2.8-single-user-wauser-unification-0001`.
+
+**Regra Padrão do Ambiente**:
+Por diretriz operacional, não se pulverizam contas no SO para cada serviço. Todos os serviços e componentes do HWA no host/container pertencem e rodam sob o usuário do produto:
+- **Usuário SO**: `wauser` (UID 1000)
+- **TWS Engine / Agente**: `wauser`
+- **Liberty engineServer (31116)**: `wauser`
+- **Liberty dwcServer (9443)**: `wauser`
+- **Mesma senha para todos os serviços TWS/Liberty**.
+- **Apenas o SGBD** (PostgreSQL / DB2) mantém usuário e credencial dedicados (`postgres`).
+
+**Ajuste realizado no DWC para eliminar o usuário separado (`dwcadmin`)**:
+1. Ownership: `chown -R wauser:wauser /opt/hwa/DWC`
+2. Configuração de ambiente do script: em `/opt/hwa/DWC/appservertools/setEnv.sh`, definido `WA_USER=wauser`.
+3. Variáveis do Liberty: em `/opt/hwa/DWC/DWC_DATA/usr/servers/dwcServer/configDropins/overrides/wauser_variables.xml`, definido `user.twsuser.id` como `wauser`, com a mesma chave `{aes}` de senha do engine.
+4. Execução: `su - wauser -c 'cd /opt/hwa/DWC/appservertools && ./startAppServer.sh -direct'` inicia o `dwcServer` como `wauser` na porta 9443.
+5. Remoção: conta `dwcadmin` deletada do sistema operacional (`userdel`).
