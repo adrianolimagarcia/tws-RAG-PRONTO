@@ -4,7 +4,7 @@
   "hit_rate_at_3": 0.5857142857142857,
   "hit_rate_at_5": 0.6571428571428571,
   "hit_rate_at_10": 0.7285714285714285,
-  "mrr": 0.49634072408806956,
+  "mrr": 0.49634045979569896,
   "details": [
     {
       "id": "eval-0001",
@@ -42,7 +42,7 @@
       "id": "eval-0003",
       "domain": "troubleshooting_plano",
       "question": "Por que o comando ResetPlan sem a flag -scratch pode manter instâncias antigas de planos indesejados?",
-      "rank": 460,
+      "rank": 462,
       "expected_claims": [
         "hwa-lab-10.2.8-final-cycle-d1-rollover-0001"
       ],
@@ -89,8 +89,8 @@
       "question": "No HCL Workload Automation, a barra inclinada (/) pode ser usada na entrada de comandos do composer add?",
       "rank": 104,
       "expected_claims": [
-        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001",
-        "composer-syntax-format-0104"
+        "composer-syntax-format-0104",
+        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -152,8 +152,8 @@
       "question": "Quais são os arquivos e componentes essenciais para backup do Master Domain Manager no HWA 10.2.8?",
       "rank": 3,
       "expected_claims": [
-        "hwa-lab-10.2.8-mdm-backup-restore-0001",
-        "hwa-10.2.8-backup-backup-master-data-0001"
+        "hwa-10.2.8-backup-backup-master-data-0001",
+        "hwa-lab-10.2.8-mdm-backup-restore-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -350,7 +350,7 @@
       "id": "eval-0023",
       "domain": "troubleshooting_conman",
       "question": "Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?",
-      "rank": 573,
+      "rank": 576,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
@@ -382,8 +382,8 @@
       "question": "Como o status do job deve ser informado no filtro do evento JobStatusChanged do TWSObjectsMonitor?",
       "rank": 1,
       "expected_claims": [
-        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001",
-        "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094"
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094",
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -428,8 +428,8 @@
       "question": "Qual é a sintaxe correta para definir múltiplos jobs inline dentro de uma definição de SCHEDULE no composer?",
       "rank": 6,
       "expected_claims": [
-        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001",
-        "hwa-lab-10.2.8-deps-chain-abend-rollover-0001"
+        "hwa-lab-10.2.8-deps-chain-abend-rollover-0001",
+        "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -584,8 +584,8 @@
       "question": "Quais combinações de chaveamento o comando switchmgr suporta no HWA Distributed 10.2.8?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-ha-switchmgr-0001",
-        "hwa-9.5-real-switchmgr-0003"
+        "hwa-9.5-real-switchmgr-0003",
+        "hwa-10.2.8-ha-switchmgr-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -645,8 +645,8 @@
       "question": "Onde a API Key (JWT) do Orchestration CLI é armazenada e qual a expiração padrão?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-sec-api-key-0018",
-        "hwa-10.2.8-sec-api-key-0017"
+        "hwa-10.2.8-sec-api-key-0017",
+        "hwa-10.2.8-sec-api-key-0018"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -661,8 +661,8 @@
       "question": "Qual a URL base e o esquema de autenticação da REST API V2 no HWA 10.2.8 Distributed?",
       "rank": 16,
       "expected_claims": [
-        "hwa-10.2.8-restv2-endpoints-0148",
-        "hwa-10.2.8-restapi-auth-jwt-0003"
+        "hwa-10.2.8-restapi-auth-jwt-0003",
+        "hwa-10.2.8-restv2-endpoints-0148"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -692,10 +692,10 @@
       "question": "Qual o papel do Dynamic Workload Broker e de seus componentes Resource Advisor e Job Dispatcher?",
       "rank": 4,
       "expected_claims": [
-        "hwa-10.2.8-dynagent-job-dispatcher-0028",
-        "hwa-10.2.8-dynagent-resource-advisor-0027",
         "hwa-10.2.8-dynagent-broker-0010",
-        "hwa-10.2.8-dynagent-broker-0011"
+        "hwa-10.2.8-dynagent-job-dispatcher-0028",
+        "hwa-10.2.8-dynagent-broker-0011",
+        "hwa-10.2.8-dynagent-resource-advisor-0027"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -727,8 +727,8 @@
       "question": "Como implantar manualmente event rules e o que faz planman deploy -scratch?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-incident-deploy-swap-space-0100",
-        "hwa-10.2.8-event-planman-deploy-0028"
+        "hwa-10.2.8-event-planman-deploy-0028",
+        "hwa-10.2.8-incident-deploy-swap-space-0100"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -758,8 +758,8 @@
       "question": "O JnextPlan falha com AWSJPL017E. Qual a ação recomendada de recuperação?",
       "rank": 9,
       "expected_claims": [
-        "hwa-10.2.8-incident-jpl017e-reset-0055",
-        "hwa-10.2.8-incident-makeplan-retry-0032"
+        "hwa-10.2.8-incident-makeplan-retry-0032",
+        "hwa-10.2.8-incident-jpl017e-reset-0055"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -836,8 +836,8 @@
       "question": "Por que excluir uma workstation via Composer/DWC falha com AWSJOM179E?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-trouble-awsjom179e-0010",
         "hwa-10.2.8-incident-jom179e-0047",
+        "hwa-10.2.8-trouble-awsjom179e-0010",
         "hwa-10.2.8-incident-awsjom179-e-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
@@ -944,8 +944,8 @@
       "question": "Como o backup master domain manager aponta para o banco na instalação?",
       "rank": 8,
       "expected_claims": [
-        "hwa-install-1028-bkmdm-0001",
-        "hwa-10.2.8-install-backup-mdm-existing-db-0004"
+        "hwa-10.2.8-install-backup-mdm-existing-db-0004",
+        "hwa-install-1028-bkmdm-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -960,8 +960,8 @@
       "question": "Após instalar o BMDM, qual comando pode ser executado opcionalmente e com que efeito?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-install-jnextplan-after-backup-0008",
-        "hwa-lab-10.2.8-plan-timezone-consolidated-0047"
+        "hwa-lab-10.2.8-plan-timezone-consolidated-0047",
+        "hwa-10.2.8-install-jnextplan-after-backup-0008"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -1037,8 +1037,8 @@
       "question": "Qual o fluxo de login do Dynamic Workload Console (DWC)?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-dwc-login-0001",
-        "hwa-10.2.8-dwc-sso-basic-0005"
+        "hwa-10.2.8-dwc-sso-basic-0005",
+        "hwa-10.2.8-dwc-login-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [

@@ -518,3 +518,26 @@ Evidências `hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001` e `hwa-
   - `deploymentFrequency / df = 5`: Janela de sincronização automática de event rules (5 minutos).
   - `enAutomaticFailover / af = YES`: Failover automático habilitado para Master de backup.
   - `enRoleBasedSecurityFileCreation / rs = YES`: Geração de arquivos de segurança baseada em papéis.
+
+## Trilha 3 — Restrições de escopo para EDWA/FileMonitor e failover (2026-09-08)
+
+Estado factual do lab container (tws-hwa.lab, plano #22) registrado em
+`lab-validation-2026-09-08-trilha3-edwa-failover-scope-constraints.jsonl`:
+
+1. **Failover/switchmgr (hwa-10.2.8-ha-switchmgr-0001): NÃO é empiricamente validável
+   nesta topologia** — existe apenas UM Master Domain Manager (MDM *UNIX MASTER) mais
+   agentes (MDMDA UNIX AGENT, MDMXA X-AGENT, broker MDM_DWB, pools LABPOOL/MASTERAGENTS).
+   Sem um BMDM/FTA full-status e banco espelhado não há segundo engine para `conman
+   switchmgr`. Manter tais claims como `official_primary` (não promovê-las a
+   `lab_validated`). Pré-requisito: provisionar BMDM.
+
+2. **EDWA/FileMonitor (event engine ATIVO, mas CLI evtdef bloqueado por TLS):** o event
+   processor está rodando (ssmagent.bin com 2 configs) e a porta EIF SSL **31131 está em
+   LISTEN** (globalopts: ed=YES eh=YES ef=31131). Contudo `evtdef -host 127.0.0.1 -port
+   31131 [-protocol https] dumpdef` falha com AWSBEH023E/AWSBEH029E (handshake SSL do
+   cliente). A regra EDWA LAB_STATUS_RULE (TWSObjectsMonitor→MSGLOG) existe e está active
+   na base, mas a manipulação de event definitions via CLI está bloqueada até configurar a
+   confiança TLS do cliente (TWSClientKeyStore/TrustStore.p12). Resultado: PARTIAL.
+
+Trilhas de lab futuras (fora do escopo deste boot): (a) provisionar BMDM p/ failover;
+(b) habilitar truststore de cliente do evtdef e validar E2E FileMonitor FileCreated→MSGLOG.
