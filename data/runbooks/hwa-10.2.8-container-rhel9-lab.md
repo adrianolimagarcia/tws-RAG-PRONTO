@@ -409,3 +409,36 @@ Por diretriz operacional, não se pulverizam contas no SO para cada serviço. To
 3. Variáveis do Liberty: em `/opt/hwa/DWC/DWC_DATA/usr/servers/dwcServer/configDropins/overrides/wauser_variables.xml`, definido `user.twsuser.id` como `wauser`, com a mesma chave `{aes}` de senha do engine.
 4. Execução: `su - wauser -c 'cd /opt/hwa/DWC/appservertools && ./startAppServer.sh -direct'` inicia o `dwcServer` como `wauser` na porta 9443.
 5. Remoção: conta `dwcadmin` deletada do sistema operacional (`userdel`).
+
+## Dynamic Pools e Resolução de Variáveis (VARTABLE) no Container (2026-09-08)
+
+Evidências `hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001` e `hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001`.
+
+### 1. Workstations do Tipo POOL (Dynamic Workstations)
+- **Regra de Gramática do Composer**: Na cláusula `FOR MAESTRO HOST <host>`, o host fornecido deve ser obrigatoriamente do tipo `BROKER` (ex: `MDM_DWB`). Tentar vincular a um `MANAGER` (`MDM`) resulta no erro `AWSJCO049E`.
+- **Sintaxe Validada**:
+  ```text
+  CPUNAME LABPOOL
+    DESCRIPTION "Dynamic pool de teste sob broker MDM_DWB"
+    OS OTHER
+    FOR MAESTRO HOST MDM_DWB
+      TYPE POOL
+    MEMBERS
+      MDMDA
+  END
+  ```
+- **Comportamento do Scheduler**: Jobs agendados na estação virtual `LABPOOL` são despachados dinamicamente para os agentes membros (`MDMDA`), marcando `{MDMDA}` na saída do `conman sj`. O limite da CPU deve ser liberado (`conman lc LABPOOL;10;noask`).
+
+### 2. Tabelas de Variáveis (`VARTABLE`) e Substituição Caret (`^VAR^`)
+- **Definição no Composer**: Declarada como objeto standalone:
+  ```text
+  VARTABLE LAB_VAR_TBL
+    DESCRIPTION "Tabela de variaveis do lab"
+    MEMBERS
+      LAB_MSG "MSG_VAL_CONTAINER_RHEL9"
+      LAB_PORT "9090"
+  END
+  ```
+- **Ordem Obrigatória no Job Stream**: A diretiva `VARTABLE <nome>` deve vir obrigatoriamente **antes** de `ON RUNCYCLE`. Colocar após causa `AWSJOM915E`.
+- **Substituição Caret**: Em jobs nativos (UNIX/WINDOWS), variáveis são referenciadas como `^VARNAME^` e expandidas no JCL pelo `jobmanrc` no momento da submissão.
+- **Comportamento com Variável Ausente**: Se um job referenciar uma variável que não existe na VARTABLE vinculada (ex: `^VAR_INEXISTENTE^`), o HWA **não** bloqueia o agendamento nem gera erro de sintaxe; a string literal com os circunflexos é passada intacta para o comando de execução.
