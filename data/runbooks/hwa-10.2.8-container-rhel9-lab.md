@@ -478,3 +478,22 @@ Evidências `hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001` e `hwa-
 ### 3. CI Quality Gate e Watchdog Operacional
 - **Quality Gate**: `scripts/ci_dataset_gate.py` integrado ao `publish.sh`, validando integridade de JSONL, scan anti-vazamento de credenciais e execução do benchmark de retrieval antes de qualquer commit.
 - **Watchdog do Container**: `scripts/watchdog_tws_container.sh` monitora a saúde em tempo real (estado do container, porta 31116 do Liberty, processo `Batchman LIVES` e end time do plano de produção), emitindo relatório em JSON (`HEALTHY`).
+
+## Operador CLI (`tws-op`) e Watchdog com Alertas por E-mail (2026-09-08)
+
+### 1. Ferramenta de Operação do Agente (`tws-op`)
+- Instalada em `/usr/local/bin/tws-op` no host CachyOS.
+- Comandos suportados:
+  - `tws-op status`: Exibe o estado do `conman` (Batchman) e da REST API V2 (`engine/info`).
+  - `tws-op sj [filtro]`: Consulta jobs no plano (ex.: `tws-op sj @#FINAL.@`).
+  - `tws-op submit-adhoc <nome> <cmd>`: Submete job ad-hoc na stream `#JOBS` via REST.
+  - `tws-op action <job_id> <release|hold|cancel|rerun>`: Executa ação de ciclo de vida no plano via REST.
+  - `tws-op joblog <run_id>`: Recupera a saída completa de execução (`jobmanrc` + `JOBINFO`).
+  - `tws-op resync`: Executa o `planman resync` a quente.
+
+### 2. Monitoramento Contínuo e Alerta por E-mail
+- **Script**: `scripts/notify_watchdog_email.py`.
+- **Destinatário**: `adrianolimagarcia@gmail.com`.
+- **Remetente**: `twstest@haos.fyi` via SMTP SSL (`mail.haos.fyi:465`).
+- **Agendamento**: Unit `tws-watchdog.service` com timer `tws-watchdog.timer` no systemd do host, executando checagens de saúde a cada 30 minutos.
+- **Disparo**: Em caso de falha (queda do container, perda da porta 31116, Batchman inativo ou estagnação do plano), um e-mail de alerta detalhado é transmitido imediatamente.

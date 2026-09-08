@@ -1,0 +1,8 @@
+[Unit]
+Description=Watchdog de Integridade e Alerta do HWA 10.2.8
+After=docker.service network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/scripts/notify_watchdog_email.py
+User=root
