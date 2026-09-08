@@ -368,3 +368,24 @@ O engine valida a senha do usuário contra o campo **interno `user.twsuser.passw
 4. Basic auth passa a funcionar.
 - Credenciais de lab consolidadas em `sdb/hermes/docker/tws-hwa/data/CREDENCIAIS-LAB.env`
   (chmod 600, FORA do repo git público — não commitar).
+
+## REST API V2 — Gerenciamento de Modelo, Submissão Ad-Hoc e Ações de Ciclo de Vida (2026-09-07)
+
+Evidência `hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001`. Validação completa do ciclo operacional via REST V2 no container:
+
+1. **Modelo de Objetos**:
+   - `GET /twsd/api/v2/model/jobdefinition` e `GET /twsd/api/v2/model/jobstream`: retornam as definições do banco (MDM), contendo o objeto de tarefa `task.other` (`taskString`, `userName`, `isCommand: true`).
+
+2. **Submissão Ad-Hoc de Jobs no Plano**:
+   - `POST /twsd/api/v2/plan/job/submit-ad-hoc-job`
+   - Payload: `SubmitAdHocJobOptionsV2` com `workstationKey: "/MDM"`, `jobName`, e bloco `task.other`.
+   - Comportamento: job é instanciado na stream default `#JOBS` em estado `HOLD` com id retornado `{"id": "MDM;JOBS;<NAME>"}`.
+
+3. **Ações de Plano (Interação Dinâmica)**:
+   - **Update Priority**: `PUT /twsd/api/v2/plan/job/{job_id}/action/update-priority?priority=50` → HTTP 200 (reflete como `+10` no conman sj).
+   - **Release**: `PUT /twsd/api/v2/plan/job/{job_id}/action/release` → HTTP 200 (sai de HOLD e transita para EXEC e SUCC).
+   - **Job Log**: `GET /twsd/api/v2/plan/job/run/{run_id}/joblog` → HTTP 200 (traz a saída completa do `jobmanrc` e `JOBINFO` com timestamp, tempos de CPU e Exit Status).
+   - **Rerun**: `PUT /twsd/api/v2/plan/job/run/{run_id}/action/rerun` → HTTP 200 (exige header `Content-Type: application/json` com corpo `{}`; sem o header retorna HTTP 415). Gera a entrada `>>rerun step` no plano.
+
+4. **Comandos de Componente / Engine**:
+   - `PUT /twsd/api/v2/engine/run-component-command`: retorna payload estruturado; para comandos de executor/componente, restrito a workstations do tipo `AGENT` (`AWSJCS027E` se executado contra o MDM do tipo MANAGER).
