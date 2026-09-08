@@ -338,3 +338,33 @@ de master data era só claim de doc (hwa-10.2.8-backup-backup-master-data-0001).
 
 **Nota**: `pg_dump -Fc` (custom) + restore num clone é a forma segura de validar um backup
 no lab — prova íntegro e restaurável sem risco ao ambiente de produção.
+
+## REST API V2 (engine 31116) — auth validada + mecanismo da senha (2026-09-07)
+
+Evidência `hwa-lab-10.2.8-rest-api-v2-auth-0001`. Cobre o maior gap de valor: claims de
+REST V2 existiam como doc; agora validadas no container com dados reais do plano.
+
+**Endpoints validados** (GETs, basic auth usuário TWS):
+- `GET /twsd/api/v2/engine/info` → 200 `{licenseType:PERSERVER, timezone America/Sao_Paulo}`
+- `GET /twsd/api/v2/plan/job/count` → 200 `{"count":13}` (jobs do plano do dia vigente)
+- `GET /twsd/api/v2/plan/jobstream?limit=5` → 200 envelope `{count,results}` (UUIDs,
+  workstation `/MDM`, schedTime UTC + timeZone America/Sao_Paulo, carriedForward)
+- Spec OpenAPI em `/twsd/WA_API3_v2.json`: 212 paths (`plan/job`, `plan/jobstream`,
+  `plan/job/*/action/*`, `model/*`, `engine/*`)
+- `POST /twsd/api/v2/login` → 401 (usar basic auth direto nos recursos, como o WSL)
+
+**DESCOBERTA CRÍTICA — mecanismo de autenticação da senha (aviso do dono confirmado)**:
+O engine valida a senha do usuário contra o campo **interno `user.twsuser.password`**
+(encriptado `{aes}`), NÃO só contra a senha do SO. Trocar só `chpasswd` mantém a REST em
+401. Para redefinir a senha de forma a valer na REST:
+1. Reencriptar a nova senha com a MESMA chave do servidor:
+   `/opt/liberty/wlp/bin/securityUtility encode --encoding=aes --key=<wlp.password.encryption.key> <nova>`
+   (chave em passphrase_variables.xml → `wlp.password.encryption.key`, 10 dígitos).
+2. Atualizar `user.twsuser.password` nos `wauser_variables.xml` do engineServer
+   (`/opt/hwa/TWSDATA/usr/servers/engineServer/configDropins/overrides/`) E do dwcServer
+   (`/opt/hwa/DWC/DWC_DATA/...`). O `securityUtility` imprime warnings JVM no stdout antes
+   do `{aes}` — filtrar a linha que começa com `{aes}`.
+3. Reiniciar o engineServer: `stopAppServer.sh`/`startAppServer.sh` (AWSBHU622I stop issued).
+4. Basic auth passa a funcionar.
+- Credenciais de lab consolidadas em `sdb/hermes/docker/tws-hwa/data/CREDENCIAIS-LAB.env`
+  (chmod 600, FORA do repo git público — não commitar).
