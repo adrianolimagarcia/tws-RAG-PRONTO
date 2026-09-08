@@ -1,56 +1,56 @@
 {
-  "total": 35,
-  "hit_rate_at_1": 0.37142857142857144,
-  "hit_rate_at_3": 0.37142857142857144,
-  "hit_rate_at_5": 0.4,
-  "hit_rate_at_10": 0.5142857142857142,
-  "mrr": 0.40506673815307287,
+  "total": 70,
+  "hit_rate_at_1": 0.35714285714285715,
+  "hit_rate_at_3": 0.5857142857142857,
+  "hit_rate_at_5": 0.6571428571428571,
+  "hit_rate_at_10": 0.7285714285714285,
+  "mrr": 0.49634072408806956,
   "details": [
     {
       "id": "eval-0001",
       "domain": "planejamento_modelo",
       "question": "Qual é a ordem correta para configurar o modelo de plano 00:05 D+1 no HWA 10.2.8 e por que o JnextPlan não deve usar a opção -from?",
-      "rank": 1,
+      "rank": 24,
       "expected_claims": [
-        "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001",
+        "hwa-10.2.8-conman-planman-0001",
         "hwa-lab-10.2.8-final-cycle-d1-rollover-0001",
-        "hwa-10.2.8-conman-planman-0001"
+        "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001",
         "runbook:recovery-jnextplan.md:0",
-        "hwa-lab-10.2.8-nightly-rollover-d1-real-0001"
+        "runbook:recovery-jnextplan.md:6",
+        "hwa-lab-10.2.8-jnextplan-from-timezone-0026"
       ]
     },
     {
       "id": "eval-0002",
       "domain": "troubleshooting_plano",
       "question": "O que acontece se as definições do Sfinal (FINAL e FINALPOSTREPORTS) forem deletadas do banco de dados do HWA?",
-      "rank": 25,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-sfinal-definitions-removed-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-lab-10.2.8-sfinal-confrontation-0002",
-        "hwa-themaster-home-0010",
-        "hwa-themaster-final-0003"
+        "hwa-lab-10.2.8-sfinal-definitions-removed-0001",
+        "runbook:sfinal-validate-and-correct.md:4"
       ]
     },
     {
       "id": "eval-0003",
       "domain": "troubleshooting_plano",
       "question": "Por que o comando ResetPlan sem a flag -scratch pode manter instâncias antigas de planos indesejados?",
-      "rank": 83,
+      "rank": 460,
       "expected_claims": [
         "hwa-lab-10.2.8-final-cycle-d1-rollover-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-jnextplan-syntax-gap-0048",
-        "runbook:recovery-jnextplan.md:4",
-        "runbook:sfinal-validate-and-correct.md:7"
+        "hwa-lab-10.2.8-resetplan-normal-0025",
+        "hwa-10.2.8-resetplan-scratch-option-0001",
+        "hwa-10.2.8-incident-resetplan-0010"
       ]
     },
     {
@@ -63,8 +63,8 @@
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001",
         "runbook:hwa-10.2.8-container-rhel9-lab.md:35",
+        "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001",
         "runbook:hwa-10.2.8-container-rhel9-lab.md:11"
       ]
     },
@@ -72,31 +72,31 @@
       "id": "eval-0005",
       "domain": "troubleshooting_boot",
       "question": "Por que a unit tebctl-tws_cpa_agent falhava na inicialização do sistema com erro de PID file no systemd?",
-      "rank": 1,
+      "rank": 23,
       "expected_claims": [
         "hwa-lab-10.2.8-boot-auto-container-mdm-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:15",
-        "hwa-lab-10.2.8-boot-auto-container-mdm-0001",
-        "hwa-10.2.8-msg-awsbeg201e"
+        "hwa-lab-10.2.8-symphony-active-file-0159",
+        "hwa-lab-10.2.8-symphony-active-file-0159",
+        "hwa-10.2.8-event-file-monitor-events-0019"
       ]
     },
     {
       "id": "eval-0006",
       "domain": "sintaxe_composer",
       "question": "No HCL Workload Automation, a barra inclinada (/) pode ser usada na entrada de comandos do composer add?",
-      "rank": 147,
+      "rank": 104,
       "expected_claims": [
         "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001",
         "composer-syntax-format-0104"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
+        "hwa-10.2.8-govern-composer-write-to-db-0005",
         "hwa-10.2.8-composer-add-0001",
-        "hwa-10.2.8-composer-lock-unlock-0001",
-        "hwa-10.2.8-composer-vartable-position-0116"
+        "hwa-10.2.8-composer-add-file-format-0135"
       ]
     },
     {
@@ -111,8 +111,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-lab-10.2.8-recovery-rerun-container-0001",
-        "hwa-10.2.8-runbook-database-view-0034",
-        "hwa-10.2.8-runbook-rerun-0004"
+        "hwa-lab-10.2.8-recovery-rerun-0072",
+        "hwa-lab-10.2.8-recovery-rerun-0072"
       ]
     },
     {
@@ -126,178 +126,178 @@
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
+        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001",
         "hwa-10.2.8-conman-eventrules-0001",
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:24",
-        "hwa-10.2.8-dbviews-events-0170"
+        "hwa-lab-10.2.8-edwa-sendevent-e2e-0103"
       ]
     },
     {
       "id": "eval-0009",
       "domain": "event_driven_edwa",
       "question": "O atributo Workstation do evento Event1 no GenericEventPlugIn aceita caracteres curinga (wildcards como '*' ou '?')?",
-      "rank": 8,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:24",
-        "hwa-10.2.8-dbviews-events-0170",
-        "hwa-10.2.8-conman-eventrules-0001"
+        "hwa-10.2.8-wsclass-workstation-class-0001",
+        "runbook:hwa-10.2.8-container-rhel9-lab.md:16",
+        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001"
       ]
     },
     {
       "id": "eval-0010",
       "domain": "backup_restore",
       "question": "Quais são os arquivos e componentes essenciais para backup do Master Domain Manager no HWA 10.2.8?",
-      "rank": 7,
+      "rank": 3,
       "expected_claims": [
-        "hwa-10.2.8-backup-backup-master-data-0001",
-        "hwa-lab-10.2.8-mdm-backup-restore-0001"
+        "hwa-lab-10.2.8-mdm-backup-restore-0001",
+        "hwa-10.2.8-backup-backup-master-data-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "runbook:failover-mdm-fta.md:0",
-        "hwa-10.2.8-tls-ssl-mdm-backup-0002",
-        "hwa-10.2.8-ha-mdm-failover-switch-0002"
+        "hwa-master-domain-manager-registered-master-0002",
+        "hwa-themaster-domain-manager-0001",
+        "hwa-10.2.8-backup-backup-master-data-0001"
       ]
     },
     {
       "id": "eval-0011",
       "domain": "seguranca_rest",
       "question": "Por que alterar a senha do usuário wauser apenas no sistema operacional com chpasswd não atualiza o acesso à REST API V2 do HWA?",
-      "rank": 44,
+      "rank": 1,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-dwc-restv2-payload-0009",
+        "hwa-lab-10.2.8-rest-api-v2-auth-0001",
         "hwa-10.2.8-restocli-rest-api-v2-0002",
-        "hwa-10.2.8-dwc-restv2-swagger-0006"
+        "hwa-lab-10.2.8-rest-v2-port-31116-live-0077"
       ]
     },
     {
       "id": "eval-0012",
       "domain": "rest_api_v2",
       "question": "Qual é o endpoint da REST API V2 para submeter um job ad-hoc no plano e qual o comportamento de agrupamento de streams resultante?",
-      "rank": 58,
+      "rank": 41,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-dwc-restv2-payload-0009",
-        "hwa-10.2.8-dwc-restv2-model-query-0012",
-        "hwa-10.2.8-restsubmit-rest-api-v2-0001"
+        "hwa-10.2.8-restocli-post-0010",
+        "hwa-10.2.8-rest-api-v2-endpoint-0011",
+        "hwa-10.2.8-restocli-get-0013"
       ]
     },
     {
       "id": "eval-0013",
       "domain": "rest_api_v2",
       "question": "Como é executado o rerun de um job no plano via REST API V2 e qual cabeçalho HTTP é mandatório para evitar o erro 415?",
-      "rank": 63,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-dwc-restv2-payload-0009",
-        "hwa-10.2.8-dwc-restv2-url-0005",
-        "hwa-10.2.8-dwc-api-0008"
+        "hwa-10.2.8-dwc-restv2-https-tls-0018",
+        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001",
+        "hwa-lab-10.2.8-recovery-rerun-container-0001"
       ]
     },
     {
       "id": "eval-0014",
       "domain": "rest_api_v2",
       "question": "Qual endpoint da REST API V2 recupera a saída completa (joblog) de execução de um job no plano?",
-      "rank": 18,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-dwc-restv2-payload-0009",
-        "hwa-10.2.8-restsubmit-rest-api-v2-0001",
-        "hwa-10.2.8-dwc-restv2-swagger-0006"
+        "hwa-10.2.8-rest-api-v2-endpoint-0011",
+        "runbook:hwa-10.2.8-container-rhel9-lab.md:32",
+        "hwa-10.2.8-restocli-multi-item-endpoints-0003"
       ]
     },
     {
       "id": "eval-0015",
       "domain": "arquitetura_usuarios",
       "question": "Qual é a convenção operacional adotada para contas de serviço locais (TWS engine, DWC e Liberty) no nó do HWA?",
-      "rank": 1,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-single-user-wauser-unification-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
+        "hwa-install-liberty-1028-procedure-0009",
         "runbook:hwa-10.2.8-container-rhel9-lab.md:20",
-        "hwa-lab-10.2.8-single-user-wauser-unification-0001",
-        "com-monitoring-scripts-0004"
+        "hwa-10.2.8-dwc-engine-connection-0002"
       ]
     },
     {
       "id": "eval-0016",
       "domain": "topologia_pools",
       "question": "Qual é a exigência para o parâmetro FOR MAESTRO HOST ao definir uma workstation do tipo POOL no composer?",
-      "rank": 35,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-10.2-composer-xagent-host-check-0029",
-        "hwa-10.2.8-composer-presentation-order-0003",
-        "hwa-10.2.8-composer-add-0001"
+        "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001",
+        "hwa-10.2.8-composer-opens-workstation-0125"
       ]
     },
     {
       "id": "eval-0017",
       "domain": "variaveis_vartable",
       "question": "Qual é a posição obrigatória da cláusula VARTABLE na definição de um job stream no composer?",
-      "rank": 44,
+      "rank": 5,
       "expected_claims": [
-        "hwa-lab-10.2.8-vartable-caret-e2e-0106",
-        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001"
+        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001",
+        "hwa-lab-10.2.8-vartable-caret-e2e-0106"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-lab-10.2.8-composer-name-order-errors-0035",
         "hwa-10.2.8-composer-vartable-position-0116",
-        "hwa-lab-10.2.8-composer-every-0010"
+        "hwa-10.2.8-composer-vartable-exists-0128",
+        "hwa-10.2.8-composer-every-position-0120"
       ]
     },
     {
       "id": "eval-0018",
       "domain": "variaveis_vartable",
       "question": "Qual caractere delimita variáveis de tabela em jobs nativos (UNIX/WINDOWS) no HWA e o que ocorre se a variável não existir na VARTABLE?",
-      "rank": 1,
+      "rank": 3,
       "expected_claims": [
-        "hwa-lab-10.2.8-vartable-caret-e2e-0106",
-        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001"
+        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001",
+        "hwa-lab-10.2.8-vartable-caret-e2e-0106"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:23",
-        "hwa-10.2.8-variable-plan-generation-0008",
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:21"
+        "hwa-10.2.8-vartable-variable-table-0005",
+        "hwa-10.2.8-sec-variable-table-0004",
+        "hwa-lab-10.2.8-vartable-caret-e2e-0106"
       ]
     },
     {
       "id": "eval-0019",
       "domain": "cli_conman",
       "question": "Por que jobs recém-agendados no HWA logo após a instalação podem permanecer indefinidamente no estado READY sem iniciar a execução?",
-      "rank": 22,
+      "rank": 66,
       "expected_claims": [
         "hwa-10.2.8-conman-showcpus-0001",
         "hwa-10.2.8-vm-9f-0009"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
+        "hwa-10.2.8-jobsstate-ready-0001",
         "hwa-10.2.8-limitcpu-ready-0001",
-        "hwa-10.2.8-conman-limitcpu-0001",
-        "hwa-lab-10.2.8-postinstall-limit-fence-check-0029"
+        "hwa-10.2.8-showjobs-agent-ready-0034"
       ]
     },
     {
@@ -310,70 +310,70 @@
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
+        "hwa-lab-10.2.8-opens-file-dep-hostname-0001",
         "runbook:hwa-10.2.8-container-rhel9-lab.md:14",
-        "hwa-10.2.8-runbook-release-sched-0009",
-        "hwa-10.2.8-conman-release-sched-0001"
+        "hwa-10.2.8-composer-opens-workstation-0125"
       ]
     },
     {
       "id": "eval-0021",
       "domain": "sincronizacao_planman",
       "question": "Qual comando do HWA ressincroniza o arquivo Symphony em memória com a base de dados relacional a quente?",
-      "rank": 1,
+      "rank": 2,
       "expected_claims": [
-        "hwa-lab-10.2.8-planman-resync-hot-recovery-0001",
-        "hwa-10.2.7-planman-resync-0051"
+        "hwa-10.2.7-planman-resync-0051",
+        "hwa-lab-10.2.8-planman-resync-hot-recovery-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
+        "hwa-10.2.3-symphony-database-replication-0044",
         "runbook:hwa-10.2.8-container-rhel9-lab.md:26",
-        "hwa-themaster-finalpostreports-0015",
-        "hwa-10.2.8-planman-reset-scratch-0001"
+        "hwa-10.2.8-capacity-symphony-file-0016"
       ]
     },
     {
       "id": "eval-0022",
       "domain": "event_driven_edwa",
       "question": "Quais parâmetros são obrigatórios na ação MSGLOG do plug-in MessageLogger em uma Event Rule do EDWA?",
-      "rank": 1,
+      "rank": 28,
       "expected_claims": [
         "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:24",
-        "hwa-10.2.8-dbviews-events-0170",
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:36"
+        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001",
+        "hwa-10.2.8-conman-eventrules-0001",
+        "hwa-9.5-conman-eventrules-contrast-0009"
       ]
     },
     {
       "id": "eval-0023",
       "domain": "troubleshooting_conman",
       "question": "Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?",
-      "rank": 1,
+      "rank": 573,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "runbook:hwa-10.2.8-container-rhel9-lab.md:35",
-        "hwa-lab-9.4.0-switchplan-validated-run6110-0203",
-        "hwa-10.2.8-conman-planman-0001"
+        "hwa-9.5-conman-planman-contrast-0005",
+        "hwa-10.2.8-incident-null-password-cli-0111"
       ]
     },
     {
       "id": "eval-0024",
       "domain": "topologia_pools",
       "question": "Como o HWA sinaliza no comando conman showjobs (sj) que um job agendado em um Dynamic Pool foi despachado para um agente dinâmico?",
-      "rank": 158,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-lab-10.2.8-confirmed-job-0055",
-        "hwa-10.2-distributed-conman-showschedules-0002",
-        "hwa-10.2-distributed-conman-cancel-job-0003"
+        "hwa-10.2-distributed-conman-showjobs-0001",
+        "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001",
+        "hwa-10.2.8-dynamic-pool-job-promotion-0032"
       ]
     },
     {
@@ -382,106 +382,106 @@
       "question": "Como o status do job deve ser informado no filtro do evento JobStatusChanged do TWSObjectsMonitor?",
       "rank": 1,
       "expected_claims": [
-        "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094",
-        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001"
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001",
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "runbook:hwa-10.2.8-container-rhel9-lab.md:25",
-        "hwa-10.2.8-gui-trigger-0001",
-        "hwa-10.2.1-conman-release-job-dependency-0021"
+        "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001",
+        "hwa-10.2.8-event-event-rule-instance-status-0038",
+        "hwa-10.2.8-conman-status-0001"
       ]
     },
     {
       "id": "eval-0026",
       "domain": "seguranca_rest",
       "question": "Qual ferramenta do Open Liberty é utilizada no HWA para gerar o hash {aes} de senhas para o engineServer?",
-      "rank": 7,
+      "rank": 16,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-lab-10.2.8-serverinst-0002",
-        "runbook:hwa-10.2.8-wsl-lab.md:40",
-        "hwa-10.2.8-sec-ssl-config-xml-0014"
+        "hwa-install-liberty-1028-procedure-0009",
+        "hwa-liberty-install-10.2.0-0001",
+        "hwa-lab-10.2.8-follows-opens-validate-0039"
       ]
     },
     {
       "id": "eval-0027",
       "domain": "rest_api_v2",
       "question": "Como consultar se uma job stream no plano possui a flag de adiamento/transporte do dia anterior (carriedForward) via REST API V2?",
-      "rank": 41,
+      "rank": 11,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-dwc-api-0008",
         "hwa-10.2.8-dwc-restv2-submit-0011",
-        "hwa-10.2.8-dwc-api-0007"
+        "hwa-10.2.8-restocli-get-0014",
+        "hwa-10.1-real-restv2-planfilter-0016"
       ]
     },
     {
       "id": "eval-0028",
       "domain": "modelagem_composer",
       "question": "Qual é a sintaxe correta para definir múltiplos jobs inline dentro de uma definição de SCHEDULE no composer?",
-      "rank": 76,
+      "rank": 6,
       "expected_claims": [
         "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001",
         "hwa-lab-10.2.8-deps-chain-abend-rollover-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2-distributed-composer-validate-syntax-0010",
-        "hwa-10.2-distributed-composer-delete-0009",
-        "hwa-10.2.8-composer-presentation-order-0003"
+        "hwa-10.2.8-composer-critical-0001",
+        "hwa-10.2.8-composer-task-0003",
+        "hwa-10.2.8-composer-priority-in-jobs-0124"
       ]
     },
     {
       "id": "eval-0029",
       "domain": "troubleshooting_engine",
       "question": "Qual arquivo de log registra a mensagem CWWKF0011I indicando que o Liberty engineServer está pronto para receber requisições?",
-      "rank": 40,
+      "rank": 30,
       "expected_claims": [
-        "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001",
-        "hwa-lab-10.2.8-rest-api-v2-auth-0001"
+        "hwa-lab-10.2.8-rest-api-v2-auth-0001",
+        "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-msg-awsita278e",
-        "hwa-10.2.8-msg-awsita229e",
-        "hwa-10.2.8-msg-awsita403e"
+        "hwa-liberty-install-10.2.0-0001",
+        "hwa-10.2.8-perf-liberty-jvm-options-0162",
+        "hwa-10.2.8-incident-timezone-liberty-0102"
       ]
     },
     {
       "id": "eval-0030",
       "domain": "dependencias_recuperacao",
       "question": "O que ocorre com jobs sucessores em uma cadeia de dependências quando um job predecessor entra em ABEND?",
-      "rank": 5,
+      "rank": 13,
       "expected_claims": [
         "hwa-lab-10.2.8-deps-chain-abend-rollover-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-runbook-rerun-0001",
-        "hwa-10.2.8-gui-conddep-0001",
-        "hwa-10.2.8-composer-onlate-0001"
+        "hwa-10.2.4-showjobs-props-unsatisfied-dependencies-0025",
+        "hwa-10.2.8-jobsstate-ready-0001",
+        "hwa-10.2-distributed-conman-release-job-dependencies-0016"
       ]
     },
     {
       "id": "eval-0031",
       "domain": "sincronizacao_plano",
       "question": "Qual é a função do job CHECKSYNC na esteira noturna FINALPOSTREPORTS?",
-      "rank": 66,
+      "rank": 11,
       "expected_claims": [
-        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001",
-        "hwa-10.2.8-conman-planman-0001"
+        "hwa-10.2.8-conman-planman-0001",
+        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-themaster-finalpostreports-0015",
-        "hwa-themaster-final-0003",
+        "hwa-10.2.8-incident-checksync-0028",
         "hwa-10.2.8-sfinal-role-0001"
       ]
     },
@@ -489,15 +489,15 @@
       "id": "eval-0032",
       "domain": "arquitetura_instalacao",
       "question": "Por que o PostgreSQL deve ser instalado e inicializado antes de executar o script de configuração de banco configuredb do HWA?",
-      "rank": 60,
+      "rank": 5,
       "expected_claims": [
         "hwa-lab-10.2.8-configuredb-container-rhel9-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-install-configure-db-0001",
-        "runbook:upgrade-9.5-para-10.2.3.md:5",
-        "hwa-10.2.8-dwc-install-0023"
+        "hwa-lab-10.2.8-postgresql-configuredb-0001",
+        "hwa-lab-10.2.8-dwc-configuredb-postgresql-0052",
+        "hwa-lab-10.2.8-postgresql-configuredb-0001"
       ]
     },
     {
@@ -506,13 +506,13 @@
       "question": "Qual é a porta padrão exclusiva utilizada para acesso HTTPS da REST API V2 no HWA Distributed?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-dwc-restv2-https-tls-0018",
-        "hwa-10.2.8-vm-9f-0007"
+        "hwa-10.2.8-vm-9f-0007",
+        "hwa-10.2.8-dwc-restv2-https-tls-0018"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.8-dwc-restv2-https-tls-0018",
-        "hwa-10.2.8-dwc-restv2-url-0005",
+        "hwa-distributed-rest-api-v2-base-url-0001",
         "hwa-10.2.8-rest-service-url-0002"
       ]
     },
@@ -520,14 +520,14 @@
       "id": "eval-0034",
       "domain": "cli_composer",
       "question": "Como realizar o bloqueio e desbloqueio de um objeto de definição no composer para evitar edição concorrente?",
-      "rank": 31,
+      "rank": 40,
       "expected_claims": [
         "hwa-lab-10.2.8-composer-jwt-lock-0108"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.4-composer-lock-contention-0040",
-        "hwa-10.2.8-composer-add-0001",
+        "hwa-10.2-composer-command-inventory-0024",
         "hwa-10.2-distributed-composer-delete-0009"
       ]
     },
@@ -535,16 +535,562 @@
       "id": "eval-0035",
       "domain": "planejamento_modelo",
       "question": "Qual o horário exato agendado para a execução do stream FINAL na esteira de produção do modelo de virada diária?",
-      "rank": 6,
+      "rank": 17,
       "expected_claims": [
-        "hwa-lab-10.2.8-nightly-rollover-d1-real-0001",
-        "hwa-lab-10.2.8-final-cycle-d1-rollover-0001"
+        "hwa-lab-10.2.8-final-cycle-d1-rollover-0001",
+        "hwa-lab-10.2.8-nightly-rollover-d1-real-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-restocli-path-param-0011",
-        "hwa-themaster-final-0013",
-        "hwa-lab-10.2.8-sfinal-plan-horizon-0007"
+        "hwa-lab-10.2.8-every-stream-job-execution-0037",
+        "hwa-lab-10.2.8-complex-stream-execution-0036",
+        "hwa-lab-10.2.8-complex-stream-execution-0036"
+      ]
+    },
+    {
+      "id": "eval-0036",
+      "domain": "planejamento_modelo",
+      "question": "Qual opção global do HWA 10.2.8 habilita o failover automático para um engine de backup quando o master ativo fica indisponível?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-globalopts-enautomaticfailover-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-globalopts-enautomaticfailover-0001",
+        "hwa-10.2.8-globalopts-enautomaticfailoveractions-0001",
+        "hwa-10.2.8-optman-wm-workstationmasterlistinautomaticfailover"
+      ]
+    },
+    {
+      "id": "eval-0037",
+      "domain": "planejamento_modelo",
+      "question": "Qual a diferença entre as opções globais enCarryForward (cf) e carryStates (cs)?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-globalopts-encarryforward-0001",
+        "hwa-10.2.8-globalopts-carrystates-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-globalopts-carrystates-0001",
+        "hwa-10.2.8-optman-cs-carrystates",
+        "hwa-10.2.8-optman-cf-encarryforward"
+      ]
+    },
+    {
+      "id": "eval-0038",
+      "domain": "topologia_ha",
+      "question": "Quais combinações de chaveamento o comando switchmgr suporta no HWA Distributed 10.2.8?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-ha-switchmgr-0001",
+        "hwa-9.5-real-switchmgr-0003"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-ha-switchmgr-0001",
+        "hwa-9.5-real-switchmgr-0003",
+        "hwa-10.2.8-incident-switchmgr-relink-all-0142"
+      ]
+    },
+    {
+      "id": "eval-0039",
+      "domain": "topologia_ha",
+      "question": "Como alternar o processador de eventos entre master e backup no HWA 10.2.8?",
+      "rank": 26,
+      "expected_claims": [
+        "hwa-10.2.8-conman-switcheventprocessor-0010"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-backup-backup-master-data-0001",
+        "hwa-10.2.8-tls-ssl-mdm-backup-0002",
+        "hwa-10.2.8-incident-symphony-master-0060"
+      ]
+    },
+    {
+      "id": "eval-0040",
+      "domain": "topologia_ha",
+      "question": "Que variável no localopts do backup pode corromper o Symphony após um switch master→backup?",
+      "rank": 5,
+      "expected_claims": [
+        "hwa-10.2.8-incident-switchmgr-thiscpu-0067"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-symphony-master-0060",
+        "hwa-10.2.8-backup-backup-master-data-0001",
+        "hwa-themaster-switch-plan-0007"
+      ]
+    },
+    {
+      "id": "eval-0041",
+      "domain": "seguranca",
+      "question": "Qual mecanismo de autenticação substitui usuário/senha nos comandos composer, conman, wappman e ocli?",
+      "rank": 9,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-apikey-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-version-matrix-ocli-replaces-conman-10.2.8-0006",
+        "hwa-version-matrix-composer-conman-9.5-0008",
+        "hwa-10.2-composer-command-inventory-0024"
+      ]
+    },
+    {
+      "id": "eval-0042",
+      "domain": "seguranca",
+      "question": "Onde a API Key (JWT) do Orchestration CLI é armazenada e qual a expiração padrão?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-sec-api-key-0018",
+        "hwa-10.2.8-sec-api-key-0017"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-sec-api-key-0017",
+        "hwa-10.2.8-restauth-api-keys-0001",
+        "runbook:hwa-10.2.8-wsl-lab.md:9"
+      ]
+    },
+    {
+      "id": "eval-0043",
+      "domain": "rest_api",
+      "question": "Qual a URL base e o esquema de autenticação da REST API V2 no HWA 10.2.8 Distributed?",
+      "rank": 16,
+      "expected_claims": [
+        "hwa-10.2.8-restv2-endpoints-0148",
+        "hwa-10.2.8-restapi-auth-jwt-0003"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-distributed-rest-api-v2-base-url-0001",
+        "hwa-10.2.8-restocli-base-url-0001",
+        "hwa-10.2.8-dwc-restv2-url-0005"
+      ]
+    },
+    {
+      "id": "eval-0044",
+      "domain": "cli_conman",
+      "question": "Qual padrão em conman showjobs (sj) filtra todos os jobs de todos os job streams de uma workstation?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-showjobs-wildcard-all-jobs-0110"
+      ],
+      "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2-distributed-conman-showjobs-0001",
+        "hwa-10.2.8-showjobs-wildcard-all-jobs-0110",
+        "hwa-10.2.8-showjobs-wildcard-at-0112"
+      ]
+    },
+    {
+      "id": "eval-0045",
+      "domain": "topologia_pools",
+      "question": "Qual o papel do Dynamic Workload Broker e de seus componentes Resource Advisor e Job Dispatcher?",
+      "rank": 4,
+      "expected_claims": [
+        "hwa-10.2.8-dynagent-job-dispatcher-0028",
+        "hwa-10.2.8-dynagent-resource-advisor-0027",
+        "hwa-10.2.8-dynagent-broker-0010",
+        "hwa-10.2.8-dynagent-broker-0011"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-dynagent-resource-advisor-0012",
+        "hwa-10.2.8-dynamicagent-resource-advisor-url-0001",
+        "hwa-10.2.8-dynagent-resource-advisor-0020"
+      ]
+    },
+    {
+      "id": "eval-0046",
+      "domain": "topologia_pools",
+      "question": "O que é um dynamic pool no HWA 10.2.8 e como ele se atualiza?",
+      "rank": 3,
+      "expected_claims": [
+        "hwa-10.2.8-dynagent-pool-0017",
+        "hwa-10.2.8-pool-broker-0001",
+        "hwa-10.2.8-dynagent-pool-0018"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-dynamic-pool-job-promotion-0032",
+        "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001",
+        "hwa-10.2.8-dynagent-pool-0018"
+      ]
+    },
+    {
+      "id": "eval-0047",
+      "domain": "event_driven_edwa",
+      "question": "Como implantar manualmente event rules e o que faz planman deploy -scratch?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-deploy-swap-space-0100",
+        "hwa-10.2.8-event-planman-deploy-0028"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-event-planman-deploy-0028",
+        "hwa-10.2.8-event-planman-deploy-0030",
+        "hwa-10.2.8-capacity-deployment-frequency-0003"
+      ]
+    },
+    {
+      "id": "eval-0048",
+      "domain": "event_driven_edwa",
+      "question": "Uma event rule criada não dispara a ação quando a condição ocorre. Qual o primeiro item do checklist oficial?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-event-rule-notrigger-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-event-rule-notrigger-0001",
+        "hwa-10.2.8-event-event-rule-definition-0005",
+        "hwa-10.2.8-event-event-rule-actions-0007"
+      ]
+    },
+    {
+      "id": "eval-0049",
+      "domain": "troubleshooting_plano",
+      "question": "O JnextPlan falha com AWSJPL017E. Qual a ação recomendada de recuperação?",
+      "rank": 9,
+      "expected_claims": [
+        "hwa-10.2.8-incident-jpl017e-reset-0055",
+        "hwa-10.2.8-incident-makeplan-retry-0032"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "runbook:checklist-jnextplan-eol.md:1",
+        "runbook:recovery-jnextplan.md:5",
+        "runbook:recovery-jnextplan.md:6"
+      ]
+    },
+    {
+      "id": "eval-0050",
+      "domain": "troubleshooting_plano",
+      "question": "Qual a diferença entre ResetPlan com e sem -scratch?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-incident-resetplan-0010",
+        "hwa-10.2.8-resetplan-scratch-option-0001",
+        "hwa-10.2.8-planman-reset-scratch-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-resetplan-normal-0025",
+        "hwa-10.2.8-resetplan-scratch-option-0001",
+        "hwa-10.2.8-incident-resetplan-0010"
+      ]
+    },
+    {
+      "id": "eval-0051",
+      "domain": "troubleshooting_rest",
+      "question": "O que causa AWSMRC019E ao conectar ocli ou REST?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-mrc019e-0022"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-mrc019e-0022",
+        "runbook:hwa-10.2.8-wsl-lab.md:9",
+        "runbook:hwa-10.2.8-wsl-lab.md:14"
+      ]
+    },
+    {
+      "id": "eval-0052",
+      "domain": "troubleshooting_plano",
+      "question": "Qual sintoma de banco gera AWSJDB801E ao executar JnextPlan/MakePlan?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-jdb801e-0046"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-jdb801e-0046",
+        "hwa-10.2.8-trouble-awsjdb801e-0012",
+        "hwa-10.2-distributed-awsjdb801e-troubleshooting-0001"
+      ]
+    },
+    {
+      "id": "eval-0053",
+      "domain": "troubleshooting_engine",
+      "question": "O MakePlan falha com AWSJPL006E. O que indica?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-jpl006e-0008"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-jpl006e-0008",
+        "hwa-official-message-10.2.8-0002",
+        "runbook:hwa-10.2.8-wsl-lab.md:82"
+      ]
+    },
+    {
+      "id": "eval-0054",
+      "domain": "troubleshooting_agente",
+      "question": "Por que excluir uma workstation via Composer/DWC falha com AWSJOM179E?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-trouble-awsjom179e-0010",
+        "hwa-10.2.8-incident-jom179e-0047",
+        "hwa-10.2.8-incident-awsjom179-e-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-trouble-awsjom179e-0010",
+        "hwa-10.2.8-incident-awsjom179-e-0001",
+        "hwa-10.2.8-incident-jom179e-0047"
+      ]
+    },
+    {
+      "id": "eval-0055",
+      "domain": "seguranca",
+      "question": "O que indica AWSITA238E 'not authorized to access the server' ao usar composer -jwt?",
+      "rank": 6,
+      "expected_claims": [
+        "hwa-10.2.8-incident-ita238e-0045"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-composer-jwt-lock-0108",
+        "hwa-10.2.8-messages-awsita238e-0004",
+        "hwa-lab-10.2.8-composer-jwt-lock-0108"
+      ]
+    },
+    {
+      "id": "eval-0056",
+      "domain": "aida",
+      "question": "Como o AIDA define e cataloga os KPIs que monitora?",
+      "rank": 3,
+      "expected_claims": [
+        "hwa-10.2.8-aida-kpi-catalog-0009",
+        "hwa-10.2.8-aida-concepts-0013"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-aida-alert-definitions-0008",
+        "hwa-10.2.8-aida-kpi-types-0014",
+        "hwa-10.2.8-aida-kpi-catalog-0009"
+      ]
+    },
+    {
+      "id": "eval-0057",
+      "domain": "aida",
+      "question": "Como o AIDA armazena as credenciais de conexão ao servidor Workload Automation?",
+      "rank": 4,
+      "expected_claims": [
+        "hwa-10.2.8-aida-credentials-0005"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-optman-pr-eneventdrivenworkloadautomationproxy",
+        "hwa-10.2.8-optman-ed-eneventdrivenworkloadautomation",
+        "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001"
+      ]
+    },
+    {
+      "id": "eval-0058",
+      "domain": "aida",
+      "question": "Qual falha comum ocorre no container OpenSearch (aida-es) do AIDA e com que sintoma?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-aida-es-oom-0003"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-aida-es-oom-0003",
+        "hwa-10.2.8-aida-special-days-0011",
+        "hwa-lab-10.2.8-aida-oom-es-0063"
+      ]
+    },
+    {
+      "id": "eval-0059",
+      "domain": "aida",
+      "question": "Que API REST interna o AIDA expõe e onde é documentada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-aida-rest-api-0012"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-aida-rest-api-0012",
+        "hwa-lab-10.2.8-aida-rest-api-0074",
+        "hwa-10.2.8-restocli-base-url-0001"
+      ]
+    },
+    {
+      "id": "eval-0060",
+      "domain": "instalacao",
+      "question": "Na instalação limpa do HWA 10.2.8, quando o banco deve ser criado/populado?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-install-configure-db-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
+      "top_3_retrieved": [
+        "runbook:recovery-jnextplan.md:0",
+        "hwa-10.2.8-install-configure-db-0001",
+        "hwa-lab-10.2.8-sfinal-confrontation-0002"
+      ]
+    },
+    {
+      "id": "eval-0061",
+      "domain": "instalacao",
+      "question": "Como o backup master domain manager aponta para o banco na instalação?",
+      "rank": 8,
+      "expected_claims": [
+        "hwa-install-1028-bkmdm-0001",
+        "hwa-10.2.8-install-backup-mdm-existing-db-0004"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-master-domain-manager-registered-master-0002",
+        "hwa-themaster-domain-manager-0001",
+        "hwa-10.2.8-backup-backup-master-data-0001"
+      ]
+    },
+    {
+      "id": "eval-0062",
+      "domain": "instalacao",
+      "question": "Após instalar o BMDM, qual comando pode ser executado opcionalmente e com que efeito?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-install-jnextplan-after-backup-0008",
+        "hwa-lab-10.2.8-plan-timezone-consolidated-0047"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-install-jnextplan-after-backup-0008",
+        "hwa-10.2.8-monitor-rep7-report-0013",
+        "hwa-10.2.8-msg-awsita229e"
+      ]
+    },
+    {
+      "id": "eval-0063",
+      "domain": "kubernetes",
+      "question": "Quais pré-requisitos de versão para o deployment via helm chart do HWA 10.2.8?",
+      "rank": 24,
+      "expected_claims": [
+        "hwa-10.2.8-k8s-deploy-0005"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-globalopts-eninitialversionobjects-0001",
+        "hwa-version-matrix-ocli-zos-0007",
+        "hwa-10.2.8-govern-object-versioning-0003"
+      ]
+    },
+    {
+      "id": "eval-0064",
+      "domain": "kubernetes",
+      "question": "De onde o deployment Kubernetes baixa as imagens e como autentica o pull?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-k8s-deploy-0007"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-k8s-deploy-0007",
+        "hwa-10.2.8-k8s-deploy-0003",
+        "hwa-10.2.8-k8s-deploy-0008"
+      ]
+    },
+    {
+      "id": "eval-0065",
+      "domain": "sintaxe_composer",
+      "question": "Qual a função de composer new em relação a composer add?",
+      "rank": 24,
+      "expected_claims": [
+        "hwa-10.2.8-composer-invocation-0001",
+        "hwa-10.2.8-composer-new-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-composer-new-interactive-0122",
+        "hwa-10.2.8-composer-add-0001",
+        "hwa-10.2-distributed-composer-validate-syntax-0010"
+      ]
+    },
+    {
+      "id": "eval-0066",
+      "domain": "dependencias_recuperacao",
+      "question": "Quais opções a keyword recovery aceita na definição de um job e qual o default?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-composer-recovery-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-composer-recovery-0001",
+        "hwa-10.2.8-runbook-recovery-option-0005",
+        "hwa-10.2.8-sec-user-definition-0007"
+      ]
+    },
+    {
+      "id": "eval-0067",
+      "domain": "seguranca_dwc",
+      "question": "Qual o fluxo de login do Dynamic Workload Console (DWC)?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-login-0001",
+        "hwa-10.2.8-dwc-sso-basic-0005"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-dwc-login-0001",
+        "hwa-10.2.8-monitor-workload-dashboard-0017",
+        "hwa-10.2.8-incident-hadr-db2-console-0131"
+      ]
+    },
+    {
+      "id": "eval-0068",
+      "domain": "seguranca_sap",
+      "question": "Como as senhas de usuário SAP são criptografadas para o r3batch?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-enigma-r3batch-sap-0001",
+        "hwa-10.2.8-sap-r3batch-0001"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-sap-r3batch-0001",
+        "hwa-10.2.8-enigma-r3batch-sap-0001",
+        "hwa-10.2.8-sec-user-object-credential-management-0002"
+      ]
+    },
+    {
+      "id": "eval-0069",
+      "domain": "anti_alucinacao",
+      "question": "O conman showjobs (sj) aceita o prefixo workstation# no jobselect para filtrar por workstation?",
+      "rank": 3,
+      "expected_claims": [
+        "hwa-10.2.8-showjobs-wildcard-ws-filter-0111"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2-distributed-conman-showjobs-0001",
+        "hwa-10.2-conman-sj-root-folder-selector-0018",
+        "hwa-10.2.8-showjobs-wildcard-ws-filter-0111"
+      ]
+    },
+    {
+      "id": "eval-0070",
+      "domain": "anti_alucinacao",
+      "question": "Existe um componente chamado 'concurrency broker' documentado no HWA 10.2.8?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dynagent-concurrency-broker-0014"
+      ],
+      "expected_runbook": "hwa-10.2.8-wsl-lab.md",
+      "top_3_retrieved": [
+        "hwa-10.2.8-dynagent-concurrency-broker-0014",
+        "hwa-10.2.8-agent-dynamic-broker-0003",
+        "hwa-lab-10.2.8-broker-active-sc-0079"
       ]
     }
   ]

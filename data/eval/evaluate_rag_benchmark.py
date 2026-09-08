@@ -32,19 +32,72 @@ SYNONYMS = {
     "boot": ["systemd", "tebctl", "tws-domain-start", "hosts", "pidfile", "postgresql", "restart"]
 }
 
+# Mapa bilíngue termo->sinônimos (PT<->EN + jargão HWA). Aplicado na expansão de
+# consulta e de documento para elevar recall sem recorrer a rótulos de avaliação.
+TERM_EXPAND = {
+    "senha": ["password", "credential", "passwd", "senha", "credencial"],
+    "password": ["password", "senha", "credential"],
+    "credencial": ["credential", "password", "senha", "apikey"],
+    "autenticacao": ["authentication", "auth", "login", "jwt", "bearer", "apikey"],
+    "authentication": ["authentication", "auth", "login", "jwt", "bearer"],
+    "jwt": ["jwt", "token", "apikey", "api key", "bearer"],
+    "api key": ["apikey", "jwt", "token", "api key"],
+    "chave": ["key", "token", "chave"],
+    "falha": ["error", "fail", "erro", "problema", "falha", "failure"],
+    "error": ["error", "fail", "erro", "falha", "failure", "problema"],
+    "erro": ["error", "erro", "fail", "falha"],
+    "mensagem": ["message", "msg", "mensagem", "codigo", "code"],
+    "procedimento": ["procedure", "command", "procedimento", "comando", "passo", "step"],
+    "comando": ["command", "comando", "cli"],
+    "plano": ["plan", "symphony", "plano", "production plan"],
+    "production plan": ["plan", "symphony", "plano de producao", "plano"],
+    "agenda": ["schedule", "schedule", "job stream", "stream", "agendamento"],
+    "backup": ["backup", "backup", "restore", "copia", "copia de seguranca"],
+    "restore": ["restore", "restauracao", "recuperacao", "backup"],
+    "restauracao": ["restore", "recuperacao", "backup"],
+    "agente": ["agent", "agente", "fta", "dynamic agent", "workstation"],
+    "workstation": ["workstation", "cpu", "ws", "maestro host", "node", "agente"],
+    "pool": ["pool", "dynamic pool", "broker", "workstation pool"],
+    "virada": ["rollover", "jnextplan", "sfinal", "makeplan", "switchplan", "virada", "final"],
+    "failover": ["failover", "switchmgr", "switch", "backup", "fta", "alta disponibilidade", "ha"],
+    "seguranca": ["security", "seguranca", "tls", "ssl", "certificado", "ldap", "sso"],
+    "security": ["security", "seguranca", "tls", "ssl", "sso", "authorization"],
+    "console": ["dwc", "console", "dynamic workload console", "ui", "web"],
+    "variavel": ["variable", "vartable", "variavel", "substituicao", "caret", "circunflexo", "expand"],
+    "recurso": ["resource", "recurso", "resource advisor", "needs"],
+    "evento": ["event", "evento", "event rule", "edwa", "trigger", "dispara"],
+    "regra": ["rule", "event rule", "regra", "erule"],
+    "plano de producao": ["production plan", "symphony", "plano"],
+    "jnextplan": ["jnextplan", "makeplan", "virada", "rollover", "switchplan"],
+    "diario": ["daily", "everyday", "diario", "23:59", "2359"],
+}
+
 def tokenize(text):
+    """Tokeniza texto e devolve tokens brutos (sem expansão). A expansão de
+    sinônimos, quando usada, é feita só na consulta (ver _expand_query) para
+    não inflar o índice e diluir o BM25."""
     if not text:
         return set()
-    words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+]+", text.lower())
-    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde"}
-    tokens = {w for w in words if len(w) > 2 and w not in stop}
-    
-    expanded = set(tokens)
+    words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+\@]+", text.lower())
+    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde", "ser", "sao", "entre", "este", "esta", "pode", "deve", "utilizar", "usar", "para o", "naquele", "daquele", "nesses", "desses", "quando", "apos", "antes", "atraves"}
+    return {w for w in words if len(w) > 2 and w not in stop}
+
+def _expand_tokens(tokens):
+    """Expande tokens apenas para a consulta (jargão HWA + mapa bilíngue)."""
+    out = set(tokens)
     for t in list(tokens):
+        tl = t.lower()
         for root, syns in SYNONYMS.items():
-            if root in t:
-                expanded.update(syns)
-    return expanded
+            if root in tl:
+                out.update(syns)
+        for term, syns in TERM_EXPAND.items():
+            if term in tl or tl in term:
+                out.update(syns)
+    return out
+
+def expand_query(text):
+    """Expande a CONSULTA apenas, com jargão HWA + mapa bilíngue, via _expand_tokens."""
+    return _expand_tokens(tokenize(text))
 
 def load_documents():
     docs = []
@@ -55,7 +108,11 @@ def load_documents():
             if line.strip():
                 c = json.loads(line)
                 cid = c.get("claim_id", "")
-                text = f"{c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')}"
+                # Enriquecer texto indexado: claim + notes + topico + citação oficial + terminologia normalizada
+                nt = c.get("normalized_terminology") or {}
+                nt_str = " ".join(str(v) for v in nt.values()) if isinstance(nt, dict) else str(nt)
+                sq = c.get("supporting_quote") or ""
+                text = f"{c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')} {sq} {nt_str}"
                 docs.append({"id": cid, "type": "canonical_claim", "text": text, "tokens": tokenize(text)})
 
     # 2. Dicionario de Mensagens AWS*
@@ -113,7 +170,7 @@ def load_documents():
 
     return docs
 
-def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, avg_dl=60):
+def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl=60):
     if not doc_tokens:
         return 0.0
     k1 = 1.2
@@ -123,7 +180,8 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, avg_dl=60):
         return 0.0
     score = 0.0
     dl = len(doc_tokens)
-    
+    doc_lower = doc_text.lower()
+
     # 1. Base BM25 com boost em termos HWA
     for t in overlap:
         boost = 1.0
@@ -133,10 +191,24 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, avg_dl=60):
 
     # 2. Boost em codigos de erro exatos (ex: AWSJDB802E, AWSVAL006E, AWSBEH021E)
     codes_in_query = re.findall(r"aws[a-z]{3}[0-9]{3}[iew]", query_raw.lower())
-    doc_lower = doc_text.lower()
     for code in codes_in_query:
         if code in doc_lower:
             score += 15.0  # boost forte para match de código de erro
+
+    # 3. Re-ranking leve por tipo/metadados do documento
+    if doc:
+        dtype = doc.get("type")
+        if dtype == "canonical_claim":
+            score *= 1.12  # claims canônicas têm prioridade como fonte de verdade
+        # Boost se a pergunta menciona um código/termo e o doc o tem no id/nome
+        for token in list(query_tokens):
+            if token.isalnum() and len(token) > 3 and token in (doc.get("id") or "").lower():
+                score += 4.0
+        # Heading/runbook relevante reforça score
+        if doc.get("title") and query_tokens.intersection(tokenize(doc["title"])):
+            score *= 1.15
+        if doc.get("runbook") and doc.get("runbook").replace(".md","").replace("-","") in query_raw.lower().replace("-",""):
+            score *= 1.1
 
     return score
 
@@ -162,7 +234,7 @@ def run_evaluation():
 
         scored = []
         for doc in docs:
-            score = compute_bm25(q_tokens, doc["tokens"], q_text, doc["text"])
+            score = compute_bm25(q_tokens, doc["tokens"], q_text, doc["text"], doc=doc)
             if score > 0:
                 scored.append((score, doc))
 
