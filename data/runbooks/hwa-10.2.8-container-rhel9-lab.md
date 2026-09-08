@@ -460,3 +460,21 @@ Evidências `hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001` e `hwa-
   2. Inicia o dump transacional do arquivo `Symphony` para a base relacional (`AWSJCL070I`).
   3. Notifica a conclusão com `AWSJCL074I Symphony file successfully loaded in Database`.
 - **Vantagem**: Permite restaurar a integridade entre o estado em memória do plano e o banco sem derrubar ou reiniciar o motor de produção.
+
+## Pipeline SFT, Benchmark RAG Híbrido, CI Quality Gate e Watchdog (2026-09-08)
+
+### 1. Pipeline de Instruction-Tuning e Function Calling (SFT)
+- **Gerador**: `scripts/build_sft_dataset.py`.
+- **Conteúdo Gerado**:
+  - `data/sft/sft_chat_full.jsonl`: 50 exemplos ChatML bilíngues (PT-BR / EN) com prompts de sistema para engenharia de HWA e tópicos de troubleshooting de erros `AWS*`.
+  - `data/sft/sft_function_calling.jsonl`: 10 exemplos estruturados de function-calling cobrindo schemas da REST API V2 (`hwa_rest_submit_adhoc_job`, `hwa_rest_job_action`, `hwa_rest_get_joblog`) e `hwa_cli_conman`.
+  - **Splits Estratificados**: 80% treino (`train.jsonl`, 48 itens), 10% validação (`val.jsonl`, 6 itens) e 10% teste (`test.jsonl`, 6 itens).
+
+### 2. Benchmark RAG Híbrido Expandido (35 Perguntas)
+- **Dataset de Avaliação**: `data/eval/golden_qa_benchmark.jsonl` expandido para 35 pares cobrindo todo o ciclo operacional, incidentes, sintaxe de composer, EDWA, REST V2, pools e vartables.
+- **Harness de Avaliação**: `data/eval/evaluate_rag_benchmark.py` indexa 1.833 documentos (claims canônicas, evidências de lab e seções funcionais dos runbooks fatiados).
+- **Expansão Semântica**: Mecanismo de BM25 com boost técnico ponderado e mapa de sinônimos operacionais do produto.
+
+### 3. CI Quality Gate e Watchdog Operacional
+- **Quality Gate**: `scripts/ci_dataset_gate.py` integrado ao `publish.sh`, validando integridade de JSONL, scan anti-vazamento de credenciais e execução do benchmark de retrieval antes de qualquer commit.
+- **Watchdog do Container**: `scripts/watchdog_tws_container.sh` monitora a saúde em tempo real (estado do container, porta 31116 do Liberty, processo `Batchman LIVES` e end time do plano de produção), emitindo relatório em JSON (`HEALTHY`).
