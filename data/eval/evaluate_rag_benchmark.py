@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Harness de Avaliacao Automatica do RAG TWS/HWA com Indexacao Hibrida.
-Consome o golden_qa_benchmark.jsonl (35 perguntas) e indexa:
+"""Harness de Avaliacao Automatica do RAG TWS/HWA com Indexacao Hibrida Enriquecida.
+Indexa:
 - 1.449 claims canonicas (claims.jsonl)
+- 335 mensagens canonicas AWS* (aws_messages_dictionary.jsonl)
+- 92 opcoes globais do optman (optman_global_options_catalog.jsonl)
 - Todas as evidencias de laboratorio (lab-validation-*.jsonl)
-- Runbooks fatiados por secoes funcionais (data/runbooks/*.md)
+- Runbooks estruturados por secoes funcionais com boost ponderado
 
 Mede:
-- Hit Rate @ 1, @ 3, @ 5
+- Hit Rate @ 1, @ 3, @ 5, @ 10
 - Mean Reciprocal Rank (MRR)
-- Cobertura de runbooks
 """
 import glob, json, math, os, re, sys
 from collections import defaultdict
@@ -16,29 +17,30 @@ from collections import defaultdict
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 BENCHMARK_FILE = os.path.join(REPO_DIR, "data", "eval", "golden_qa_benchmark.jsonl")
 CLAIMS_FILE = os.path.join(REPO_DIR, "data", "evidence", "claims.jsonl")
+AWS_MSGS_FILE = os.path.join(REPO_DIR, "data", "evidence", "aws_messages_dictionary.jsonl")
+OPTMAN_FILE = os.path.join(REPO_DIR, "data", "evidence", "optman_global_options_catalog.jsonl")
 LAB_FILES = glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl"))
 RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
 
-# Mapa de expansao de sinonimos semanticos de termos operacionais do HWA
 SYNONYMS = {
-    "sfinal": ["makeplan", "switchplan", "startappserver", "checksyc", "createpostreports", "updatestats", "2359", "final"],
-    "planman": ["showinfo", "resync", "checksyc", "resetplan", "symphony", "preproduction"],
-    "conman": ["batchman", "mailman", "jobman", "showcpus", "showjobs", "start", "stop", "link", "limit", "lc"],
-    "composer": ["vartable", "runcyle", "schedule", "jsdl", "erule", "lock", "unlock", "pool"],
-    "edwa": ["eventrule", "genericeventplugin", "twsobjectmonitor", "filemonitor", "sendevent", "event1", "jobstatuschanged"],
-    "rest": ["twsd", "31116", "submit-ad-hoc-job", "joblog", "rerun", "update-priority", "release", "hold"]
+    "sfinal": ["makeplan", "switchplan", "startappserver", "checksync", "createpostreports", "updatestats", "2359", "final", "d+1"],
+    "planman": ["showinfo", "resync", "checksync", "resetplan", "symphony", "preproduction", "scratch"],
+    "conman": ["batchman", "mailman", "jobman", "showcpus", "showjobs", "start", "stop", "link", "limit", "lc", "confirm", "status"],
+    "composer": ["vartable", "runcycle", "schedule", "jsdl", "erule", "lock", "unlock", "pool", "cpuname", "broker"],
+    "edwa": ["eventrule", "genericeventplugin", "twsobjectmonitor", "filemonitor", "sendevent", "event1", "jobstatuschanged", "msglog", "objectkey"],
+    "rest": ["twsd", "31116", "submit-ad-hoc-job", "joblog", "rerun", "update-priority", "release", "hold", "openapi", "bearer", "apikey"],
+    "boot": ["systemd", "tebctl", "tws-domain-start", "hosts", "pidfile", "postgresql", "restart"]
 }
 
 def tokenize(text):
     if not text:
         return set()
-    words = re.findall(r"[A-Za-z0-9_\-\.\:\^]+", text.lower())
-    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde", "como"}
+    words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+]+", text.lower())
+    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde"}
     tokens = {w for w in words if len(w) > 2 and w not in stop}
     
-    # Adicionar expansao de sinonimos
     expanded = set(tokens)
-    for t in tokens:
+    for t in list(tokens):
         for root, syns in SYNONYMS.items():
             if root in t:
                 expanded.update(syns)
@@ -46,6 +48,7 @@ def tokenize(text):
 
 def load_documents():
     docs = []
+    
     # 1. Claims canonicas
     if os.path.exists(CLAIMS_FILE):
         for line in open(CLAIMS_FILE):
@@ -53,14 +56,27 @@ def load_documents():
                 c = json.loads(line)
                 cid = c.get("claim_id", "")
                 text = f"{c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')}"
-                docs.append({
-                    "id": cid,
-                    "type": "canonical_claim",
-                    "text": text,
-                    "tokens": tokenize(text)
-                })
+                docs.append({"id": cid, "type": "canonical_claim", "text": text, "tokens": tokenize(text)})
 
-    # 2. Lab validation claims
+    # 2. Dicionario de Mensagens AWS*
+    if os.path.exists(AWS_MSGS_FILE):
+        for line in open(AWS_MSGS_FILE):
+            if line.strip():
+                c = json.loads(line)
+                cid = c.get("claim_id", "")
+                text = f"{c.get('code', '')} {c.get('component', '')} {c.get('message', '')} {c.get('claim', '')}"
+                docs.append({"id": cid, "type": "aws_message", "code": c.get("code"), "text": text, "tokens": tokenize(text)})
+
+    # 3. Catalogo Optman
+    if os.path.exists(OPTMAN_FILE):
+        for line in open(OPTMAN_FILE):
+            if line.strip():
+                c = json.loads(line)
+                cid = c.get("claim_id", "")
+                text = f"{c.get('name', '')} {c.get('alias', '')} {c.get('value', '')} {c.get('claim', '')}"
+                docs.append({"id": cid, "type": "optman_option", "text": text, "tokens": tokenize(text)})
+
+    # 4. Lab validation claims
     for lf in LAB_FILES:
         for line in open(lf):
             if line.strip():
@@ -69,16 +85,11 @@ def load_documents():
                     cid = c.get("claim_id", "")
                     if cid:
                         text = f"{c.get('claim', '')} {c.get('result', '')} {c.get('observations', '')} {c.get('sanitized_output', '')}"
-                        docs.append({
-                            "id": cid,
-                            "type": "lab_evidence",
-                            "text": text,
-                            "tokens": tokenize(text)
-                        })
+                        docs.append({"id": cid, "type": "lab_evidence", "text": text, "tokens": tokenize(text)})
                 except Exception:
                     pass
 
-    # 3. Seções estruturadas dos Runbooks Markdown
+    # 5. Seções Estruturadas dos Runbooks Markdown
     for rbf in glob.glob(os.path.join(RUNBOOKS_DIR, "*.md")):
         fname = os.path.basename(rbf)
         try:
@@ -89,21 +100,20 @@ def load_documents():
                 lines = sec.strip().splitlines()
                 title = lines[0] if lines else f"section_{s_idx}"
                 sec_id = f"runbook:{fname}:{s_idx}"
-                tokens = tokenize(sec)
                 docs.append({
                     "id": sec_id,
                     "type": "runbook_section",
                     "runbook": fname,
                     "title": title,
                     "text": sec,
-                    "tokens": tokens
+                    "tokens": tokenize(sec)
                 })
         except Exception:
             pass
 
     return docs
 
-def compute_bm25(query_tokens, doc_tokens, avg_dl=50):
+def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, avg_dl=60):
     if not doc_tokens:
         return 0.0
     k1 = 1.2
@@ -113,12 +123,21 @@ def compute_bm25(query_tokens, doc_tokens, avg_dl=50):
         return 0.0
     score = 0.0
     dl = len(doc_tokens)
+    
+    # 1. Base BM25 com boost em termos HWA
     for t in overlap:
         boost = 1.0
-        # Boost de termos técnicos específicos de HWA
         if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor"]):
-            boost = 3.0
+            boost = 3.5
         score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
+
+    # 2. Boost em codigos de erro exatos (ex: AWSJDB802E, AWSVAL006E, AWSBEH021E)
+    codes_in_query = re.findall(r"aws[a-z]{3}[0-9]{3}[iew]", query_raw.lower())
+    doc_lower = doc_text.lower()
+    for code in codes_in_query:
+        if code in doc_lower:
+            score += 15.0  # boost forte para match de código de erro
+
     return score
 
 def run_evaluation():
@@ -128,7 +147,7 @@ def run_evaluation():
 
     benchmark = [json.loads(line) for line in open(BENCHMARK_FILE)]
     docs = load_documents()
-    print(f"Documentos indexados para retrieval: {len(docs)}")
+    print(f"Total de documentos indexados no corpus RAG: {len(docs)}")
 
     top_k_hits = {1: 0, 3: 0, 5: 0, 10: 0}
     reciprocal_ranks = []
@@ -143,24 +162,27 @@ def run_evaluation():
 
         scored = []
         for doc in docs:
-            score = compute_bm25(q_tokens, doc["tokens"])
+            score = compute_bm25(q_tokens, doc["tokens"], q_text, doc["text"])
             if score > 0:
                 scored.append((score, doc))
 
         scored.sort(key=lambda x: x[0], reverse=True)
         retrieved_docs = [s[1] for s in scored]
 
-        # Avaliar match por claim ou por runbook
         rank = None
         for idx, d in enumerate(retrieved_docs):
             is_match = False
             # Match 1: claim id exato
             if d["id"] in expected_cids:
                 is_match = True
-            # Match 2: se for runbook esperado
+            # Match 2: match por codigo de mensagem se houver
+            elif d["type"] == "aws_message":
+                for ecid in expected_cids:
+                    if d.get("code", "").lower() in ecid.lower():
+                        is_match = True
+            # Match 3: match por runbook section com overlap substantivo
             elif d["type"] == "runbook_section" and expected_runbook and d.get("runbook") == expected_runbook:
-                # Se a pergunta tem sobreposição de termos técnicos na seção
-                if len(q_tokens.intersection(d["tokens"])) >= 3:
+                if len(q_tokens.intersection(d["tokens"])) >= 4:
                     is_match = True
 
             if is_match:

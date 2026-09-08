@@ -497,3 +497,24 @@ Evidências `hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001` e `hwa-
 - **Remetente**: `twstest@haos.fyi` via SMTP SSL (`mail.haos.fyi:465`).
 - **Agendamento**: Unit `tws-watchdog.service` com timer `tws-watchdog.timer` no systemd do host, executando checagens de saúde a cada 30 minutos.
 - **Disparo**: Em caso de falha (queda do container, perda da porta 31116, Batchman inativo ou estagnação do plano), um e-mail de alerta detalhado é transmitido imediatamente.
+
+## Catálogo de Opções Globais (`optman`) e Dicionário de Erros `AWS*` (2026-09-08)
+
+### 1. Dicionário de Mensagens Canônicas do HWA (`data/evidence/aws_messages_dictionary.jsonl`)
+- **Extração**: 335 códigos e mensagens `AWS*` extraídos dos catálogos compilados (`.cat`) e arquivos `.properties` do HWA 10.2.8.
+- **Componentes Mapeados**:
+  - `AWSBEH*`: Falhas de autenticação e comunicação SSL do conman/planman (ex.: `AWSBEH021E`, `AWSBEH029E`).
+  - `AWSJDB*`: Erros de persistência relacional do engineServer (ex.: `AWSJDB802E` connection refused no PostgreSQL).
+  - `AWSVAL*`: Erros de validação semântica de regras EDWA e objetos de modelo (ex.: `AWSVAL006E` ObjectKey obrigatório, `AWSVAL018E` Severity inválido, `AWSVAL021E` wildcard não permitido).
+  - `AWSJCO*`: Restrições topológicas de agendamento (ex.: `AWSJCO049E` host de POOL exige BROKER).
+  - `AWSJOM*`: Análise léxica e gramática do composer (ex.: `AWSJOM918E` barra de saída na entrada, `AWSJOM915E` ordem de VARTABLE).
+
+### 2. Catálogo de Opções Globais do `optman` (`data/evidence/optman_global_options_catalog.jsonl`)
+- **Extração**: 92 opções globais ativas extraídas via `optman ls` no container de produção.
+- **Parâmetros Críticos Confirmados no Lab**:
+  - `startOfDay / sd = 0005`: Ancoragem do modelo de produção diária às 00:05.
+  - `enCarryForward / cf = ALL`: Transporte automático de jobs não concluídos para o dia seguinte.
+  - `enEventDrivenWorkloadAutomation / ed = YES`: Ativação do motor de regras EDWA no Liberty.
+  - `deploymentFrequency / df = 5`: Janela de sincronização automática de event rules (5 minutos).
+  - `enAutomaticFailover / af = YES`: Failover automático habilitado para Master de backup.
+  - `enRoleBasedSecurityFileCreation / rs = YES`: Geração de arquivos de segurança baseada em papéis.
