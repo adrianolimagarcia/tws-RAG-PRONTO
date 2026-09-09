@@ -53,6 +53,13 @@ TERM_EXPAND = {
     "mensagem": ["message", "msg", "mensagem", "codigo", "code"],
     "procedimento": ["procedure", "command", "procedimento", "comando", "passo", "step"],
     "comando": ["command", "comando", "cli"],
+    "bloqueio": ["lockout", "lock", "bloqueio", "retry", "bind", "ldap"],
+    "critica": ["critical", "hot", "list", "wsa", "deadline", "hotlist"],
+    "dependencia": ["dependency", "deps", "dependencia", "predecessor", "follows", "conddep"],
+    "ad-hoc": ["ad-hoc", "adhoc", "submit", "pontual"],
+    "limpeza": ["cleanup", "purge", "limpeza", "logcleanupfrequency"],
+    "repeticao": ["repeat", "every", "periodic", "interval"],
+    "consulta": ["query", "showinfo", "display", "show", "consulta"],
     "plano": ["plan", "symphony", "plano", "production plan"],
     "production plan": ["plan", "symphony", "plano de producao", "plano"],
     "agenda": ["schedule", "schedule", "job stream", "stream", "agendamento"],
@@ -211,7 +218,7 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
     # 1. Base BM25 com boost em termos HWA
     for t in overlap:
         boost = 1.0
-        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl", "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt"]):
+        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl", "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt", "aida", "carryforward"]):
             boost = 4.0
         score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
 
