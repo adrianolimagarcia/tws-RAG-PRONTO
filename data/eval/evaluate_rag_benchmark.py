@@ -143,12 +143,13 @@ def load_documents():
             if line.strip():
                 c = json.loads(line)
                 cid = c.get("claim_id", "")
-                # Enriquecer texto indexado: claim + notes + topico + citação oficial + terminologia normalizada + perguntas sintéticas
+                # Enriquecer texto indexado: context_prefix (Anthropic) + claim + notes + topico + citação oficial + terminologia normalizada + perguntas sintéticas
                 nt = c.get("normalized_terminology") or {}
                 nt_str = " ".join(str(v) for v in nt.values()) if isinstance(nt, dict) else str(nt)
                 sq = c.get("supporting_quote") or ""
                 synth_q = " ".join(c.get("synthetic_questions", []))
-                text = f"{c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')} {sq} {nt_str} {synth_q}"
+                ctx_pref = c.get("context_prefix", "")
+                text = f"{ctx_pref} {c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')} {sq} {nt_str} {synth_q}"
                 docs.append({"id": cid, "type": "canonical_claim", "text": text, "tokens": tokenize(text)})
 
     # 2. Dicionario de Mensagens AWS*
