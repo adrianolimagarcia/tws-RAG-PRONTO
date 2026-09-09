@@ -315,7 +315,7 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
             elif cov_ratio >= 0.60:
                 score *= 1.12
 
-        # 4. Exact Technical Entity Match (Boost para entidade única no ID)
+        # 4. Exact Technical Entity Match (Boost para entidade única no ID e comandos)
         doc_id_lower = doc.get("id", "").lower()
         ignore_meta_terms = {"opcao", "global", "regra", "documentada", "ambiente", "distribuida", "distributed", "workload", "automation", "sobre", "conforme", "oficial", "documentacao", "neste", "para", "como"}
         for term in unique_q_terms:
@@ -323,19 +323,35 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
             if len(clean_term) >= 5 and clean_term not in ignore_meta_terms:
                 if clean_term in doc_id_lower.replace("-", "").replace("_", ""):
                     score += 32.0
+            # Códigos de erro canônicos (AWS* ou AWK*)
             if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term):
                 if clean_term in doc_id_lower.replace("-", ""):
-                    score += 45.0
+                    # Se for a claim oficial de troubleshooting daquele erro, boost de Top-1
+                    if "trouble" in doc_id_lower or "messages" in doc_id_lower or "incident" in doc_id_lower:
+                        score += 55.0
+                    else:
+                        score += 45.0
                 elif clean_term in text_lower:
                     score += 25.0
             # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
             num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
             if num_match and num_match.group(0) in doc_id_lower:
                 score += 25.0
-            # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
-            num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
-            if num_match and num_match.group(0) in doc_id_lower:
-                score += 25.0
+
+        # 5. Exact Command & Subcommand Pairing Boost (ex: 'composer add', 'conman start', 'optman ls', 'planman showinfo')
+        cli_pairs = [
+            ("composer", "add"), ("composer", "extract"), ("composer", "delete"), ("composer", "modify"),
+            ("conman", "start"), ("conman", "stop"), ("conman", "fence"), ("conman", "limit"),
+            ("conman", "confirm"), ("conman", "release"), ("conman", "rerun"), ("conman", "showjobs"),
+            ("conman", "status"), ("conman", "switcheventprocessor"),
+            ("planman", "showinfo"), ("planman", "checksync"), ("planman", "resync"), ("planman", "resetplan"),
+            ("optman", "ls"), ("optman", "chg"), ("optman", "cf")
+        ]
+        q_raw_lower = query_raw.lower()
+        for cmd, sub in cli_pairs:
+            if cmd in q_raw_lower and sub in q_raw_lower:
+                if (cmd in doc_id_lower and sub in doc_id_lower) or (f"{cmd} {sub}" in text_lower[:200]):
+                    score += 35.0
 
         reranked.append((score, doc))
 
