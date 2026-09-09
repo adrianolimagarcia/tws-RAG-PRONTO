@@ -323,8 +323,11 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
             if len(clean_term) >= 5 and clean_term not in ignore_meta_terms:
                 if clean_term in doc_id_lower.replace("-", "").replace("_", ""):
                     score += 32.0
-            if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term) and clean_term in doc_id_lower.replace("-", ""):
-                score += 35.0
+            if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term):
+                if clean_term in doc_id_lower.replace("-", ""):
+                    score += 45.0
+                elif clean_term in text_lower:
+                    score += 25.0
             # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
             num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
             if num_match and num_match.group(0) in doc_id_lower:
