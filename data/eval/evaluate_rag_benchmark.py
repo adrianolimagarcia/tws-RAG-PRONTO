@@ -307,18 +307,24 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
             elif cov_ratio >= 0.60:
                 score *= 1.12
 
-        # 4. Exact Technical Entity Match (Boost proporcional para ID e códigos de erro)
+        # 4. Exact Technical Entity Match (Boost para entidade única no ID)
         doc_id_lower = doc.get("id", "").lower()
+        ignore_meta_terms = {"opcao", "global", "regra", "documentada", "ambiente", "distribuida", "distributed", "workload", "automation", "sobre", "conforme", "oficial", "documentacao", "neste", "para", "como"}
         for term in unique_q_terms:
             clean_term = term.replace("-", "").replace("_", "")
-            if len(clean_term) >= 5 and clean_term in doc_id_lower.replace("-", "").replace("_", ""):
-                score += 18.0
+            if len(clean_term) >= 5 and clean_term not in ignore_meta_terms:
+                if clean_term in doc_id_lower.replace("-", "").replace("_", ""):
+                    score += 32.0
             if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term) and clean_term in doc_id_lower.replace("-", ""):
-                score += 25.0
-            # Casamento por sufixo numérico de erro (ex: 0100e, 001e)
+                score += 35.0
+            # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
             num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
             if num_match and num_match.group(0) in doc_id_lower:
-                score += 20.0
+                score += 25.0
+            # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
+            num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
+            if num_match and num_match.group(0) in doc_id_lower:
+                score += 25.0
 
         reranked.append((score, doc))
 
