@@ -15,6 +15,10 @@ import glob, json, math, os, re, sys
 from collections import defaultdict
 
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if REPO_DIR not in sys.path:
+    sys.path.insert(0, REPO_DIR)
+
+from scripts.ragflow_chunker import parse_markdown_ragflow
 BENCHMARK_FILE = os.path.join(REPO_DIR, "data", "eval", "golden_qa_benchmark.jsonl")
 CLAIMS_FILE = os.path.join(REPO_DIR, "data", "evidence", "claims.jsonl")
 AWS_MSGS_FILE = os.path.join(REPO_DIR, "data", "evidence", "aws_messages_dictionary.jsonl")
@@ -146,24 +150,21 @@ def load_documents():
                 except Exception:
                     pass
 
-    # 5. Seções Estruturadas dos Runbooks Markdown
+    # 5. Chunks Estruturados RAGFlow dos Runbooks Markdown (com Breadcrumbs e Tabelas Íntegras)
     for rbf in glob.glob(os.path.join(RUNBOOKS_DIR, "*.md")):
         fname = os.path.basename(rbf)
         try:
-            content = open(rbf, encoding="utf-8", errors="ignore").read()
-            sections = re.split(r"\n##+\s+", content)
-            for s_idx, sec in enumerate(sections):
-                if not sec.strip(): continue
-                lines = sec.strip().splitlines()
-                title = lines[0] if lines else f"section_{s_idx}"
-                sec_id = f"runbook:{fname}:{s_idx}"
+            rf_chunks = parse_markdown_ragflow(rbf)
+            for ch in rf_chunks:
                 docs.append({
-                    "id": sec_id,
-                    "type": "runbook_section",
+                    "id": ch["id"],
+                    "type": "ragflow_runbook_chunk",
                     "runbook": fname,
-                    "title": title,
-                    "text": sec,
-                    "tokens": tokenize(sec)
+                    "title": ch.get("path", fname),
+                    "path": ch.get("path", ""),
+                    "text": ch["text"],
+                    "metadata": ch.get("metadata", {}),
+                    "tokens": tokenize(ch["text"])
                 })
         except Exception:
             pass
@@ -195,11 +196,16 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
         if code in doc_lower:
             score += 15.0  # boost forte para match de código de erro
 
-    # 3. Re-ranking leve por tipo/metadados do documento
+    # 3. Re-ranking por tipo e autoridade da evidência
     if doc:
         dtype = doc.get("type")
         if dtype == "canonical_claim":
-            score *= 1.12  # claims canônicas têm prioridade como fonte de verdade
+            score *= 1.25  # Prioridade para claims canônicas verificadas
+        elif dtype == "lab_evidence":
+            score *= 1.20  # Prioridade para validações reais de laboratório
+        elif dtype == "ragflow_runbook_chunk":
+            score *= 1.15
+
         # Boost se a pergunta menciona um código/termo e o doc o tem no id/nome
         for token in list(query_tokens):
             if token.isalnum() and len(token) > 3 and token in (doc.get("id") or "").lower():
@@ -209,6 +215,21 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
             score *= 1.15
         if doc.get("runbook") and doc.get("runbook").replace(".md","").replace("-","") in query_raw.lower().replace("-",""):
             score *= 1.1
+
+        # 4. Boost RAGFlow: Casamento de Breadcrumbs Hierárquicos e Metadados Extraídos
+        if dtype == "ragflow_runbook_chunk":
+            meta = doc.get("metadata", {})
+            # Match exato de comandos no chunk
+            for cmd in meta.get("commands", []):
+                if cmd.lower() in query_raw.lower():
+                    score += 3.5
+            # Match exato de códigos AWS extraídos pelo DeepDoc
+            for c_code in meta.get("aws_codes", []):
+                if c_code.lower() in query_raw.lower():
+                    score += 12.0
+            # Breadcrumbs overlap
+            if doc.get("path") and query_tokens.intersection(tokenize(doc["path"])):
+                score *= 1.2
 
     return score
 
@@ -236,10 +257,27 @@ def run_evaluation():
         for doc in docs:
             score = compute_bm25(q_tokens, doc["tokens"], q_text, doc["text"], doc=doc)
             if score > 0:
-                scored.append((score, doc))
+                scored.append([score, doc])
 
         scored.sort(key=lambda x: x[0], reverse=True)
-        retrieved_docs = [s[1] for s in scored]
+
+        # RAGFlow MMR / Source Diversity: Evitar que múltiplos chunks do mesmo runbook
+        # monopolizem o top-K empurrando claims e respostas alternativas para baixo
+        diversified_docs = []
+        seen_sources = defaultdict(int)
+        for s, doc in scored:
+            src_key = doc.get("runbook") or doc.get("type")
+            count = seen_sources[src_key]
+            # Se for chunk de runbook e já tiver 2 chunks desse mesmo runbook no topo,
+            # adia ou penaliza chunks repetidos para dar espaço à diversidade de evidência
+            if doc.get("type") == "ragflow_runbook_chunk" and count >= 2:
+                s *= 0.65
+            seen_sources[src_key] += 1
+            diversified_docs.append((s, doc))
+
+        # Reordenar após penalização de repetição de fonte
+        diversified_docs.sort(key=lambda x: x[0], reverse=True)
+        retrieved_docs = [d[1] for d in diversified_docs]
 
         rank = None
         for idx, d in enumerate(retrieved_docs):
@@ -252,8 +290,8 @@ def run_evaluation():
                 for ecid in expected_cids:
                     if d.get("code", "").lower() in ecid.lower():
                         is_match = True
-            # Match 3: match por runbook section com overlap substantivo
-            elif d["type"] == "runbook_section" and expected_runbook and d.get("runbook") == expected_runbook:
+            # Match 3: match por chunk estruturado de runbook com overlap substantivo
+            elif (d["type"] == "ragflow_runbook_chunk" or d["type"] == "runbook_section") and expected_runbook and d.get("runbook") == expected_runbook:
                 if len(q_tokens.intersection(d["tokens"])) >= 4:
                     is_match = True
 
