@@ -8,9 +8,9 @@
   "unverifiable_sources": 0,
   "evidence_tier_distribution": {
     "community_reviewed": 14,
-    "official_corroborated": 328,
+    "official_corroborated": 319,
     "official_primary": 929,
-    "official_lab": 178
+    "official_lab": 187
   },
   "knowledge_status_distribution": {
     "current": 1408,
@@ -18,14 +18,14 @@
     "obsolete": 1
   },
   "review_status_distribution": {
-    "draft": 565,
-    "verified": 737,
-    "lab_validated": 124,
+    "draft": 559,
+    "verified": 732,
+    "lab_validated": 135,
     "reviewed": 21,
     "community_reviewed": 2
   },
-  "total_lab_evidences_files": 130,
-  "total_lab_evidence_ids": 178,
+  "total_lab_evidences_files": 135,
+  "total_lab_evidence_ids": 190,
   "risk_mismatches_details": [
     [
       "hwa-10.2.8-message-jdb402e-0040",
