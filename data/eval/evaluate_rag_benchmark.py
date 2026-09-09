@@ -89,6 +89,25 @@ def tokenize(text):
         w_clean = w.strip(".,;:?!'\"()[]{}")
         if len(w_clean) > 2 and w_clean not in stop:
             cleaned.add(w_clean)
+            # Normalização de códigos de erro divididos por hífen (ex: awkzsj-001e -> awkzsj001e)
+            if "-" in w_clean and any(w_clean.startswith(p) for p in ["aws", "awk", "eqq", "cww", "dsra"]):
+                cleaned.add(w_clean.replace("-", ""))
+            # Normalização de variações awswui -> awsui
+            if "awswui" in w_clean:
+                cleaned.add(w_clean.replace("awswui", "awsui"))
+            elif "awsui" in w_clean:
+                cleaned.add(w_clean.replace("awsui", "awswui"))
+
+            # CamelCase e Subword Decomposition (ex: enRetainNameOnRerunFrom -> enretain, mmResolveMaster -> mmresolve)
+            subwords = re.findall(r'[A-Za-z]?[a-z]+|[A-Z]+(?=[A-Z][a-z]|\d|\W|$)|[0-9]+', w)
+            if len(subwords) > 1:
+                for sw in subwords:
+                    if len(sw) > 2 and sw.lower() not in stop:
+                        cleaned.add(sw.lower())
+                # Prefixo composto (primeiras 2 partes)
+                combo = (subwords[0] + subwords[1]).lower()
+                if len(combo) > 3:
+                    cleaned.add(combo)
     return cleaned
 
 def _expand_tokens(tokens):
@@ -192,7 +211,7 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
     # 1. Base BM25 com boost em termos HWA
     for t in overlap:
         boost = 1.0
-        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i"]):
+        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl", "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt"]):
             boost = 4.0
         score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
 
@@ -287,6 +306,19 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
                 score *= 1.25
             elif cov_ratio >= 0.60:
                 score *= 1.12
+
+        # 4. Exact Technical Entity Match (Boost proporcional para ID e códigos de erro)
+        doc_id_lower = doc.get("id", "").lower()
+        for term in unique_q_terms:
+            clean_term = term.replace("-", "").replace("_", "")
+            if len(clean_term) >= 5 and clean_term in doc_id_lower.replace("-", "").replace("_", ""):
+                score += 18.0
+            if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term) and clean_term in doc_id_lower.replace("-", ""):
+                score += 25.0
+            # Casamento por sufixo numérico de erro (ex: 0100e, 001e)
+            num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
+            if num_match and num_match.group(0) in doc_id_lower:
+                score += 20.0
 
         reranked.append((score, doc))
 
