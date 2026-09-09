@@ -90,10 +90,52 @@ validando execução de jobs de ponta a ponta. Complementa o runbook do BMDM
 - Job: `AGTTESTJS/AGT_ECHO` → SUCC rc0 (2 instâncias); out.log contém
   `AGT_DYNAMIC_OK` + `Linux tws-agent.lab 7.2.2-1-cachyos x86_64 GNU/Linux`.
 
-## Evidências
+## 9. Modo Híbrido: Instalação com BOTH (FTA + Dynamic Agent Concomitantes)
 
-- `data/evidence/lab-validation-2026-09-09-agent-docker-container.jsonl`:
-  hwa-lab-10.2.8-agent-docker-install-0001, -registered-plan-0002, -job-executed-0003.
+O utilitário `twsinst` suporta o parâmetro `-agent both`, permitindo que um único nó execute
+tanto como Fault-Tolerant Agent clássico (Symphony / Netman / Mailman na porta 31111) quanto como
+Dynamic Agent moderno (Broker / JobManager na porta 31114).
+
+### Passos de Execução:
+1. **Marcar Workstation Antiga como Ignorada no Master (se aplicável)**:
+   ```bash
+   composer "update cpu=TWS-AGENT; set ignore=on; noask"
+   # Verifica com: composer "display cpu=TWS-AGENT" -> Coluna Ignored = Y
+   ```
+2. **Desinstalação Limpa do Agente Anterior**:
+   ```bash
+   # Deve ser executado a partir do diretório de instalação da instância:
+   cd /opt/HCL/TWA_wauser/TWS
+   ./twsinst -uninst -uname wauser -wait 0
+   ```
+3. **Instalação com -agent both**:
+   ```bash
+   cd /installers/extracted/TWS/LINUX_X86_64
+   ./twsinst -new -agent both -acceptlicense yes -uname wauser \
+     -thiscpu AGT1 -master MDM -port 31111 \
+     -tdwbhostname tws-hwa.lab -tdwbport 31116 \
+     -sslkeysfolder /opt/agent-ssl -sslpassword <pw> \
+     -wauser wauser -wapassword <pw>
+   # -> AWSFAB033I The installation has completed successfully.
+   ```
+4. **Cadastrar a Workstation FTA no Composer**:
+   ```bash
+   composer "add agt1_fta.def"
+   # CPUNAME AGT1
+   #   OS UNIX NODE tws-agent.lab TCPADDR 31111 DOMAIN MASTERDM
+   #   FOR MAESTRO TYPE FTA AUTOLINK ON FULLSTATUS ON
+   # END
+   ```
+5. **Estender o Plano e Liberar Limits**:
+   ```bash
+   JnextPlan -for 0000
+   conman "limit AGT1# 10"
+   conman "limit TWS-AGENT_1# 10"
+   ```
+6. **Validação**: Ambos os jobs executam em paralelo:
+   - `AGT1#FTA_JOBSTREAM.FTA_ECHO` -> `SUCC rc0` via Netman/Jobman.
+   - `TWS-AGENT_1#DYN_JOBSTREAM.DYN_ECHO` -> `SUCC rc0` via Broker/JobManager.
+
 
 ## Pitfalls (todos observados no lab)
 
