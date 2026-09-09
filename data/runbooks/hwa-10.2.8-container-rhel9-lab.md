@@ -593,3 +593,10 @@ Setup completo registrado em `lab-validation-2026-09-09-bmdm-container-failover-
 - Nomes com prefixo comum (MDM_BK vs MDM_BKA): usar sufixo `#` no limit p/ evitar AWSBHU048E.
 - Openliberty.zip gera diretorio duplo (wlp/wlp) — mover antes do serverinst.
 - BMDM compartilha o MESMO banco (nao roda configureDb proprio nem cria schemas).
+
+### Boot automatico do BMDM validado (restart real, 2026-09-09)
+- `docker restart tws-bmdm` -> units em cascata (tws-hosts-fix -> tebctl -> tws-domain-start)
+  restauram o BMDM sozinho como FTA full-status (evidencia ...-0005).
+- **Pitfall**: bind mount `/data` (sdb) vem como root:root apos restart; o `su - wauser` falha
+  ao gravar `/data/appserver-start.log` (Permission denied) e o engine nao sobe. Fix:
+  `chown wauser:wauser /data` + linha defensiva no topo do `/usr/local/sbin/tws-domain-start.sh`.
