@@ -1,10 +1,10 @@
 {
   "total": 70,
-  "hit_rate_at_1": 0.35714285714285715,
-  "hit_rate_at_3": 0.5857142857142857,
+  "hit_rate_at_1": 0.34285714285714286,
+  "hit_rate_at_3": 0.5714285714285714,
   "hit_rate_at_5": 0.6571428571428571,
   "hit_rate_at_10": 0.7285714285714285,
-  "mrr": 0.49634045979569896,
+  "mrr": 0.48562593625097383,
   "details": [
     {
       "id": "eval-0001",
@@ -12,9 +12,9 @@
       "question": "Qual é a ordem correta para configurar o modelo de plano 00:05 D+1 no HWA 10.2.8 e por que o JnextPlan não deve usar a opção -from?",
       "rank": 24,
       "expected_claims": [
-        "hwa-10.2.8-conman-planman-0001",
         "hwa-lab-10.2.8-final-cycle-d1-rollover-0001",
-        "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001"
+        "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001",
+        "hwa-10.2.8-conman-planman-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -42,7 +42,7 @@
       "id": "eval-0003",
       "domain": "troubleshooting_plano",
       "question": "Por que o comando ResetPlan sem a flag -scratch pode manter instâncias antigas de planos indesejados?",
-      "rank": 462,
+      "rank": 463,
       "expected_claims": [
         "hwa-lab-10.2.8-final-cycle-d1-rollover-0001"
       ],
@@ -121,8 +121,8 @@
       "question": "Quais são os parâmetros obrigatórios da ação TWSAction 'sbs' em uma Event Rule do EDWA?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-conman-eventrules-0001",
-        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001"
+        "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001",
+        "hwa-10.2.8-conman-eventrules-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -258,8 +258,8 @@
       "question": "Qual é a posição obrigatória da cláusula VARTABLE na definição de um job stream no composer?",
       "rank": 5,
       "expected_claims": [
-        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001",
-        "hwa-lab-10.2.8-vartable-caret-e2e-0106"
+        "hwa-lab-10.2.8-vartable-caret-e2e-0106",
+        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -274,8 +274,8 @@
       "question": "Qual caractere delimita variáveis de tabela em jobs nativos (UNIX/WINDOWS) no HWA e o que ocorre se a variável não existir na VARTABLE?",
       "rank": 3,
       "expected_claims": [
-        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001",
-        "hwa-lab-10.2.8-vartable-caret-e2e-0106"
+        "hwa-lab-10.2.8-vartable-caret-e2e-0106",
+        "hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -321,8 +321,8 @@
       "question": "Qual comando do HWA ressincroniza o arquivo Symphony em memória com a base de dados relacional a quente?",
       "rank": 2,
       "expected_claims": [
-        "hwa-10.2.7-planman-resync-0051",
-        "hwa-lab-10.2.8-planman-resync-hot-recovery-0001"
+        "hwa-lab-10.2.8-planman-resync-hot-recovery-0001",
+        "hwa-10.2.7-planman-resync-0051"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -350,7 +350,7 @@
       "id": "eval-0023",
       "domain": "troubleshooting_conman",
       "question": "Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?",
-      "rank": 576,
+      "rank": 580,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
@@ -444,8 +444,8 @@
       "question": "Qual arquivo de log registra a mensagem CWWKF0011I indicando que o Liberty engineServer está pronto para receber requisições?",
       "rank": 30,
       "expected_claims": [
-        "hwa-lab-10.2.8-rest-api-v2-auth-0001",
-        "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001"
+        "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001",
+        "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -475,8 +475,8 @@
       "question": "Qual é a função do job CHECKSYNC na esteira noturna FINALPOSTREPORTS?",
       "rank": 11,
       "expected_claims": [
-        "hwa-10.2.8-conman-planman-0001",
-        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001"
+        "hwa-lab-10.2.8-rest-api-v2-lifecycle-actions-0001",
+        "hwa-10.2.8-conman-planman-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -537,8 +537,8 @@
       "question": "Qual o horário exato agendado para a execução do stream FINAL na esteira de produção do modelo de virada diária?",
       "rank": 17,
       "expected_claims": [
-        "hwa-lab-10.2.8-final-cycle-d1-rollover-0001",
-        "hwa-lab-10.2.8-nightly-rollover-d1-real-0001"
+        "hwa-lab-10.2.8-nightly-rollover-d1-real-0001",
+        "hwa-lab-10.2.8-final-cycle-d1-rollover-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -568,8 +568,8 @@
       "question": "Qual a diferença entre as opções globais enCarryForward (cf) e carryStates (cs)?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-globalopts-encarryforward-0001",
-        "hwa-10.2.8-globalopts-carrystates-0001"
+        "hwa-10.2.8-globalopts-carrystates-0001",
+        "hwa-10.2.8-globalopts-encarryforward-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
@@ -584,8 +584,8 @@
       "question": "Quais combinações de chaveamento o comando switchmgr suporta no HWA Distributed 10.2.8?",
       "rank": 1,
       "expected_claims": [
-        "hwa-9.5-real-switchmgr-0003",
-        "hwa-10.2.8-ha-switchmgr-0001"
+        "hwa-10.2.8-ha-switchmgr-0001",
+        "hwa-9.5-real-switchmgr-0003"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -661,8 +661,8 @@
       "question": "Qual a URL base e o esquema de autenticação da REST API V2 no HWA 10.2.8 Distributed?",
       "rank": 16,
       "expected_claims": [
-        "hwa-10.2.8-restapi-auth-jwt-0003",
-        "hwa-10.2.8-restv2-endpoints-0148"
+        "hwa-10.2.8-restv2-endpoints-0148",
+        "hwa-10.2.8-restapi-auth-jwt-0003"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -692,10 +692,10 @@
       "question": "Qual o papel do Dynamic Workload Broker e de seus componentes Resource Advisor e Job Dispatcher?",
       "rank": 4,
       "expected_claims": [
-        "hwa-10.2.8-dynagent-broker-0010",
+        "hwa-10.2.8-dynagent-resource-advisor-0027",
         "hwa-10.2.8-dynagent-job-dispatcher-0028",
-        "hwa-10.2.8-dynagent-broker-0011",
-        "hwa-10.2.8-dynagent-resource-advisor-0027"
+        "hwa-10.2.8-dynagent-broker-0010",
+        "hwa-10.2.8-dynagent-broker-0011"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -710,9 +710,9 @@
       "question": "O que é um dynamic pool no HWA 10.2.8 e como ele se atualiza?",
       "rank": 3,
       "expected_claims": [
+        "hwa-10.2.8-dynagent-pool-0018",
         "hwa-10.2.8-dynagent-pool-0017",
-        "hwa-10.2.8-pool-broker-0001",
-        "hwa-10.2.8-dynagent-pool-0018"
+        "hwa-10.2.8-pool-broker-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -758,8 +758,8 @@
       "question": "O JnextPlan falha com AWSJPL017E. Qual a ação recomendada de recuperação?",
       "rank": 9,
       "expected_claims": [
-        "hwa-10.2.8-incident-makeplan-retry-0032",
-        "hwa-10.2.8-incident-jpl017e-reset-0055"
+        "hwa-10.2.8-incident-jpl017e-reset-0055",
+        "hwa-10.2.8-incident-makeplan-retry-0032"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -774,9 +774,9 @@
       "question": "Qual a diferença entre ResetPlan com e sem -scratch?",
       "rank": 2,
       "expected_claims": [
-        "hwa-10.2.8-incident-resetplan-0010",
+        "hwa-10.2.8-planman-reset-scratch-0001",
         "hwa-10.2.8-resetplan-scratch-option-0001",
-        "hwa-10.2.8-planman-reset-scratch-0001"
+        "hwa-10.2.8-incident-resetplan-0010"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -958,16 +958,16 @@
       "id": "eval-0062",
       "domain": "instalacao",
       "question": "Após instalar o BMDM, qual comando pode ser executado opcionalmente e com que efeito?",
-      "rank": 1,
+      "rank": 4,
       "expected_claims": [
-        "hwa-lab-10.2.8-plan-timezone-consolidated-0047",
-        "hwa-10.2.8-install-jnextplan-after-backup-0008"
+        "hwa-10.2.8-install-jnextplan-after-backup-0008",
+        "hwa-lab-10.2.8-plan-timezone-consolidated-0047"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
-        "hwa-10.2.8-install-jnextplan-after-backup-0008",
-        "hwa-10.2.8-monitor-rep7-report-0013",
-        "hwa-10.2.8-msg-awsita229e"
+        "hwa-lab-10.2.8-bmdm-aes-keys-copied-0002",
+        "hwa-lab-10.2.8-bmdm-switchmgr-failover-e2e-0004",
+        "hwa-lab-10.2.8-bmdm-fta-fullstatus-in-plan-0003"
       ]
     },
     {
@@ -1037,8 +1037,8 @@
       "question": "Qual o fluxo de login do Dynamic Workload Console (DWC)?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-dwc-sso-basic-0005",
-        "hwa-10.2.8-dwc-login-0001"
+        "hwa-10.2.8-dwc-login-0001",
+        "hwa-10.2.8-dwc-sso-basic-0005"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
@@ -1053,8 +1053,8 @@
       "question": "Como as senhas de usuário SAP são criptografadas para o r3batch?",
       "rank": 1,
       "expected_claims": [
-        "hwa-10.2.8-enigma-r3batch-sap-0001",
-        "hwa-10.2.8-sap-r3batch-0001"
+        "hwa-10.2.8-sap-r3batch-0001",
+        "hwa-10.2.8-enigma-r3batch-sap-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [

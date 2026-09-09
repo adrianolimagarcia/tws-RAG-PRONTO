@@ -541,3 +541,55 @@ Estado factual do lab container (tws-hwa.lab, plano #22) registrado em
 
 Trilhas de lab futuras (fora do escopo deste boot): (a) provisionar BMDM p/ failover;
 (b) habilitar truststore de cliente do evtdef e validar E2E FileMonitor FileCreated→MSGLOG.
+
+## BMDM em container proprio (tws-bmdm) — failover MDM<->BMDM validado (2026-09-09)
+
+Setup completo registrado em `lab-validation-2026-09-09-bmdm-container-failover-setup.jsonl`.
+
+### Arquitetura
+- MDM: container `tws-hwa` (172.18.0.10 na rede docker `hwa-mesh`), PostgreSQL local 172.18.0.10:5432/TWS.
+- BMDM: container `tws-bmdm` (172.18.0.11, RHEL 9.8 UBI-init, 4G/6G, privileged, mounts sdb
+  `hermes/docker/tws-bmdm/{data,ssl-certs}` + installers do tws-hwa).
+- Rede: `docker network create --driver bridge --subnet 172.18.0.0/24 hwa-mesh`; tws-hwa foi
+  conectado com `--ip 172.18.0.10` e o BMDM criado direto com `--ip 172.18.0.11`.
+
+### Liberacao do banco para a rede (feito no MDM)
+1. `sed -i "s/^#*listen_addresses.*/listen_addresses = '*'"'"'/ " postgresql.conf`
+2. pg_hba.conf += `host all all 172.18.0.0/24 scram-sha-256` (+ 172.17.0.0/16)
+3. `systemctl restart postgresql-18` (listen_addresses exige restart, nao reload)
+4. `ALTER USER postgres PASSWORD '<dedicada>'` (registrada em CREDENCIAIS-LAB.env, fora do git)
+5. Validar: `nc -w3 172.18.0.10 5432` a partir da rede hwa-mesh; engine MDM segue Batchman LIVES.
+
+### Instalacao BKM (container tws-bmdm)
+1. Pacotes: `dnf install -y --allowerasing unzip tar gzip openssl procps-ng passwd sudo hostname which curl diffutils libxcrypt-compat java-21-openjdk-headless`
+2. `useradd -m -s /bin/bash wauser` + chpasswd (mesma senha do ecossistema)
+3. `sysctl -w kernel.hostname=tws-bmdm.lab`; /etc/hosts += `172.18.0.10 tws-hwa.lab` e `127.0.0.1 tws-bmdm.lab`
+4. Extrair kit MDM (`/installers/HWA_10.2.8_MDM_LINUX_X86_64.zip` -> /tmp/kit) e openliberty.zip em /opt/liberty (atencao: zip cria /opt/liberty/wlp/wlp — mover conteudo p/ /opt/liberty/wlp)
+5. PEM SSL: reutilizar a CA lab (ca.crt/tls.key/tls.crt do /opt/ssl-certs do tws-hwa) — montado em /opt/ssl-certs:ro
+6. `serverinst.sh -f serverinst-bmdm.properties`: ACCEPTLICENSE=yes, INST_DIR=/opt/hwa/TWS,
+   THISCPU=MDM_BK, DISPLAYNAME=MDM_BKA, XANAME=MDM_BKXA, COMPONENT_TYPE=MDM,
+   RDBMS_TYPE=POSTGRESQL, DB_HOST_NAME=172.18.0.10, DB_PORT=5432, DB_NAME=TWS,
+   DB_USER=postgres, WA_USER=wauser, WLP_INSTALL_DIR=/opt/liberty/wlp,
+   SSL_KEY_FOLDER=/opt/ssl-certs, START_SERVER=true.
+   → WAINST054I Configuring BKM (detectou master existente) + WAINST023I success rc=0.
+   Binarios em /opt/hwa/TWS/TWS (UNISONHOME), dados em /opt/hwa/TWS/TWSDATA.
+7. Corrigir `~wauser/.bash_profile` para source de `/opt/hwa/TWS/TWS/tws_env.sh`.
+
+### Pos-instalacao (doc awspicfgbkmdm + awspiinstallMDMasBKM)
+1. Copiar chaves AES: `cp /opt/hwa/TWSDATA/ssl/aes/key.p12 key.sth` do MDM para o BMDM (mesmo caminho).
+2. `JnextPlan -for 0000` no MDM -> cria run novo e inclui MDM_BK no plano (workstation ja veio
+   TYPE FTA / AUTOLINK ON / FULLSTATUS ON criada pelo BKM install; NODE tws-bmdm.lab TCPADDR 31111).
+3. Limites: `conman "limit MDM_BK#;10"` e `conman "limit MDM_BKA#;10"` (o # evita AWSBHU048E
+   ambiguous selector porque MDM_BK e prefixo de MDM_BKA).
+4. Symphony chega ao BMDM automaticamente (52.768 bytes em /opt/hwa/TWS/TWSDATA/Symphony).
+
+### Failover testado (ida e volta)
+- `conman "switchmgr MASTERDM;MDM_BK"` -> AWSBHU120I changed MDM->MDM_BK; novo master mostra
+  MDM_BK *UNIX MASTER Batchman LIVES e o MDM vira UNIX FTA (doc: old manager vira FTA).
+- `conman "switchmgr MASTERDM;MDM"` (do BMDM) -> volta; estado final: MDM *UNIX MASTER, MDM_BK UNIX FTA.
+
+### Pitfalls
+- listen_addresses so muda com RESTART do postgres (pg_reload_conf nao basta).
+- Nomes com prefixo comum (MDM_BK vs MDM_BKA): usar sufixo `#` no limit p/ evitar AWSBHU048E.
+- Openliberty.zip gera diretorio duplo (wlp/wlp) — mover antes do serverinst.
+- BMDM compartilha o MESMO banco (nao roda configureDb proprio nem cria schemas).
