@@ -6,7 +6,7 @@ Aplica:
 3. Chunking Semântico de Procedimentos e Blocos de Código
 4. Enriquecimento de Metadados Técnicos (comandos, códigos AWS*, portas)
 """
-import os, re
+import os, sys, re, json
 
 def parse_markdown_ragflow(filepath, min_chunk_len=80, max_chunk_len=1200):
     """Lê um arquivo Markdown e gera chunks estruturados com breadcrumbs e tabelas íntegras."""
@@ -169,10 +169,34 @@ def parse_markdown_ragflow(filepath, min_chunk_len=80, max_chunk_len=1200):
             q_list.append("Quais pré-requisitos de versão para o deployment via helm chart do HWA 10.2.8?")
         if "awsbeh021e" in lower or "awsbeh029e" in lower:
             q_list.append("Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?")
+        if "awsbhv082e" in lower:
+            q_list.append("Como recuperar a esteira FINAL após erro AWSBHV082E no SwitchPlan sem executar MakePlan na mão?")
+            q_list.append("Qual a causa do erro AWSBHV082E quando o Symphony e Symnew possuem o mesmo run number?")
+        if "wa_pull_info" in lower:
+            q_list.append("Como coletar dados de diagnóstico do ambiente HWA com wa_pull_info para suporte?")
 
-        if not q_list:
-            return ""
-        return "\n\n[Perguntas Operacionais Respondidas Neste Chunk]\n" + "\n".join([f"- {q}" for q in q_list[:4]])
+        # 4. Injeção de Sinônimos Bilíngues Ontológicos
+        ontology_file = os.path.join(os.path.dirname(__file__), "..", "data", "ontology", "hwa_bilingual_terms.json")
+        bilingual_synonyms = []
+        if os.path.exists(ontology_file):
+            try:
+                ont = json.load(open(ontology_file))
+                for cat, data in ont.items():
+                    # Se algum termo em inglês está no chunk, injeta os sinônimos em português
+                    if any(en_term in lower for en_term in data.get("en", [])):
+                        bilingual_synonyms.extend(data.get("pt", []))
+            except:
+                pass
+
+        blocks = []
+        if bilingual_synonyms:
+            unique_syns = list(set(bilingual_synonyms))[:6]
+            blocks.append("\n\n[Termos Técnicos & Sinônimos Operacionais]\n" + ", ".join(unique_syns))
+
+        if q_list:
+            blocks.append("\n\n[Perguntas Operacionais Respondidas Neste Chunk]\n" + "\n".join([f"- {q}" for q in q_list[:4]]))
+
+        return "".join(blocks)
 
     # Extrair metadados e tags técnicas para cada chunk
     final_docs = []

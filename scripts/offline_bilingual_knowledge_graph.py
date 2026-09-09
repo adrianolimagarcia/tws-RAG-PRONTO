@@ -1,0 +1,87 @@
+#!/usr/bin/env python3
+"""Gera o mapa ontológico bilíngue (EN <-> PT-BR + Jargão HWA) para expansão estática nos chunks.
+Garante que termos usados por operadores em português casem diretamente com os manuais oficiais em inglês.
+"""
+import os, json
+
+BASE_DIR = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
+ONTOLOGY_DIR = os.path.join(BASE_DIR, "data", "ontology")
+os.makedirs(ONTOLOGY_DIR, exist_ok=True)
+OUT_FILE = os.path.join(ONTOLOGY_DIR, "hwa_bilingual_terms.json")
+
+BILINGUAL_ONTOLOGY = {
+    # 1. Autenticação, Segurança e Acesso
+    "account_lockout": {
+        "en": ["account lockout", "ldap retry bind", "user lockout", "authentication retry"],
+        "pt": ["bloqueio de conta", "bloqueio de usuario", "tentativas de login", "falha de autenticacao ldap"]
+    },
+    "credentials": {
+        "en": ["credential", "password", "security utility", "useropts", "jwt token", "bearer token"],
+        "pt": ["credenciais", "senha de acesso", "utilitario de seguranca", "token de autenticacao", "chave de api"]
+    },
+    
+    # 2. Planejamento, Symphony e Virada Diária
+    "production_plan": {
+        "en": ["production plan", "symphony file", "plan creation", "plan extension", "makeplan", "switchplan", "stageman", "symnew"],
+        "pt": ["plano de producao", "arquivo symphony", "criacao do plano", "extensao do plano", "virada de plano", "virada diaria", "troca de plano"]
+    },
+    "preproduction_plan": {
+        "en": ["preproduction plan", "preproduction", "carryforward", "carried forward", "draft job stream"],
+        "pt": ["plano de pre-producao", "pre-producao", "transporte de instancias", "adiamento de jobs", "job stream em rascunho"]
+    },
+    "critical_network": {
+        "en": ["critical network", "hot list", "critical job", "critical path", "workload service assurance", "wsa", "critical start time"],
+        "pt": ["rede critica", "lista de prioridade", "job critico", "caminho critico", "garantia de servico", "prazo fatal", "horario de inicio critico"]
+    },
+
+    # 3. Comandos CLI e Utilitários
+    "conman_operations": {
+        "en": ["conman", "showcpus", "showjobs", "showschedules", "fence", "limit", "link", "unlink", "start", "stop", "confirm", "rerun"],
+        "pt": ["linha de comando conman", "listar estacoes", "listar jobs", "listar agendas", "cerca de execucao", "limite de estacao", "conectar", "desconectar", "iniciar", "parar", "confirmar", "reexecutar job"]
+    },
+    "composer_definitions": {
+        "en": ["composer", "vartable", "runcycle", "schedule", "jsdl", "onlate", "follows", "needs", "opens", "prompt", "rename", "delete"],
+        "pt": ["modelagem composer", "tabela de variaveis", "ciclo de execucao", "definicao de job stream", "acao de atraso", "predecessor", "dependencia de recurso", "dependencia de arquivo", "renomear objeto", "excluir objeto"]
+    },
+    "planman_utilities": {
+        "en": ["planman", "showinfo", "resync", "checksync", "reset -scratch", "deploy"],
+        "pt": ["utilitario planman", "consultar informacoes do plano", "ressincronizar memoria", "verificar sincronismo", "limpar plano rascunho", "implantar plano"]
+    },
+    "optman_configuration": {
+        "en": ["optman", "global options", "riskconfidence", "logmanminmaxpolicy", "smtpservername", "licenseproxypassword", "enretainnameonrerunfrom"],
+        "pt": ["configuracao optman", "opcoes globais do master", "nivel de confianca de risco", "politica de logman", "servidor smtp", "senha de proxy de licenca", "retencao de nome no rerun"]
+    },
+
+    # 4. Agentes e Topologia Distribuída
+    "dynamic_agent": {
+        "en": ["dynamic agent", "dynamic workload broker", "jobmanager", "resource advisor", "pool", "dynamic pool", "resourceadvisorurl"],
+        "pt": ["agente dinamico", "broker de carga dinamica", "gerenciador de jobs", "assessor de recursos", "pool dinamico", "balanceamento de agentes", "url do broker"]
+    },
+    "fault_tolerant_agent": {
+        "en": ["fault-tolerant agent", "fta", "fullstatus", "autolink", "mailman", "batchman", "jobman", "evtsize"],
+        "pt": ["agente tolerante a falhas", "estacao fta", "status completo", "conexao automatica", "processo mailman", "tamanho do arquivo de eventos"]
+    },
+    "backup_master": {
+        "en": ["backup master domain manager", "bmdm", "switchmgr", "switcheventprocessor", "switchevtp", "failover", "shared database"],
+        "pt": ["servidor master de backup", "bmdm", "comutacao de master", "alternar processador de eventos", "chaveamento de contingencia", "banco compartilhado"]
+    },
+
+    # 5. Diagnóstico, Troubleshooting e Logs
+    "diagnostic_tools": {
+        "en": ["wa_pull_info", "snap", "trace", "joblog", "messages.log", "twsmerge.log", "netman.log"],
+        "pt": ["script wa_pull_info", "coleta de diagnostico", "logs de suporte", "saida de execucao joblog", "log de mensagens", "log consolidado de processos", "log do netman"]
+    },
+    "common_incidents": {
+        "en": ["awsbhv082e", "awsjpl017e", "awsita238e", "awsui0286e", "cwwkf0011i", "pidfile error", "hosts resolution", "symphony corrupted"],
+        "pt": ["erro awsbhv082e", "erro de plano awsjpl017e", "acesso nao autorizado awsita238e", "erro de console awsui0286e", "servidor liberty pronto cwwkf0011i", "erro de pidfile no systemd", "falha de resolucao de hostname", "symphony corrompido"]
+    }
+}
+
+def main():
+    print(f"Gerando mapa ontológico bilíngue do HWA em {OUT_FILE}...")
+    with open(OUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(BILINGUAL_ONTOLOGY, f, indent=2, ensure_ascii=False)
+    print(f"Mapa ontológico bilíngue gerado com sucesso ({len(BILINGUAL_ONTOLOGY)} categorias conceituais)!")
+
+if __name__ == "__main__":
+    main()
