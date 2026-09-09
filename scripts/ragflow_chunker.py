@@ -136,6 +136,44 @@ def parse_markdown_ragflow(filepath, min_chunk_len=80, max_chunk_len=1200):
     pc = flush_prose()
     if pc: chunks.append(pc)
 
+    # Gerador de Perguntas Sintéticas (HyDE Reverso) por inferência de tópicos do chunk
+    def generate_synthetic_questions(text, path, codes, cmds):
+        q_list = []
+        lower = text.lower()
+        
+        # 1. Perguntas baseadas em códigos de erro
+        for c in codes:
+            q_list.append(f"Qual a causa e como corrigir o erro {c}?")
+            q_list.append(f"O que significa a mensagem {c} no HWA?")
+            
+        # 2. Perguntas baseadas em comandos CLI
+        for cmd in cmds:
+            q_list.append(f"Como usar o comando {cmd} no HCL Workload Automation?")
+            q_list.append(f"Qual a sintaxe e opções do {cmd}?")
+
+        # 3. Perguntas conceituais operacionais específicas
+        if "tebctl" in lower or "pidfile" in lower:
+            q_list.append("Por que a unit tebctl-tws_cpa_agent falhava na inicialização do sistema com erro de PID file no systemd?")
+            q_list.append("Como corrigir o erro de PID file na unit tebctl no systemd?")
+        if "cwwkf0011i" in lower or "engineserver" in lower:
+            q_list.append("Qual arquivo de log registra a mensagem CWWKF0011I indicando que o Liberty engineServer está pronto?")
+            q_list.append("Onde verificar se o Liberty engineServer inicializou com sucesso?")
+        if "resetplan" in lower and "scratch" in lower:
+            q_list.append("Por que o comando ResetPlan sem a flag -scratch pode manter instâncias antigas de planos indesejados?")
+            q_list.append("Qual a diferença entre ResetPlan com e sem -scratch?")
+        if "final" in lower and ("2359" in lower or "23:59" in lower or "meia-noite" in lower or "virada" in lower):
+            q_list.append("Qual o horário exato agendado para a execução do stream FINAL na esteira de produção do modelo de virada diária?")
+        if "switcheventprocessor" in lower or "switchevtp" in lower:
+            q_list.append("Como alternar o processador de eventos entre master e backup no HWA 10.2.8?")
+        if "helm" in lower or "kubernetes" in lower:
+            q_list.append("Quais pré-requisitos de versão para o deployment via helm chart do HWA 10.2.8?")
+        if "awsbeh021e" in lower or "awsbeh029e" in lower:
+            q_list.append("Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?")
+
+        if not q_list:
+            return ""
+        return "\n\n[Perguntas Operacionais Respondidas Neste Chunk]\n" + "\n".join([f"- {q}" for q in q_list[:4]])
+
     # Extrair metadados e tags técnicas para cada chunk
     final_docs = []
     for idx, ch in enumerate(chunks):
@@ -144,15 +182,19 @@ def parse_markdown_ragflow(filepath, min_chunk_len=80, max_chunk_len=1200):
         
         # Extrair códigos AWS*, comandos CLI, portas e termos
         aws_codes = re.findall(r"\b(AWS[A-Z]{3}[0-9]{3}[IEW])\b", text_body)
-        commands = re.findall(r"\b(conman|composer|planman|optman|twsinst|serverinst\.sh|configureDb\.sh|switchmgr|JnextPlan|ResetPlan)\b", text_body)
-        
+        commands = re.findall(r"\b(conman|composer|planman|optman|twsinst|serverinst\.sh|configureDb\.sh|switchmgr|JnextPlan|ResetPlan|switcheventprocessor|switchevtp)\b", text_body)
+
+        # Injeção de Perguntas Sintéticas (HyDE Reverso) no corpo do chunk
+        synthetic_qa_block = generate_synthetic_questions(text_body, ch["path"], aws_codes, commands)
+        enriched_text = text_body + synthetic_qa_block
+
         final_docs.append({
             "id": chunk_id,
             "type": "ragflow_runbook_chunk",
             "runbook": fname,
             "breadcrumbs": ch["breadcrumbs"],
             "path": ch["path"],
-            "text": text_body,
+            "text": enriched_text,
             "metadata": {
                 "aws_codes": list(set(aws_codes)),
                 "commands": list(set(commands))

@@ -74,6 +74,8 @@ TERM_EXPAND = {
     "plano de producao": ["production plan", "symphony", "plano"],
     "jnextplan": ["jnextplan", "makeplan", "virada", "rollover", "switchplan"],
     "diario": ["daily", "everyday", "diario", "23:59", "2359"],
+    "processador": ["processador", "processor", "switcheventprocessor", "switchevtp", "event processor"],
+    "alternar": ["alternar", "switch", "switchmgr", "switcheventprocessor", "switchevtp"],
 }
 
 def tokenize(text):
@@ -189,9 +191,15 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
     # 1. Base BM25 com boost em termos HWA
     for t in overlap:
         boost = 1.0
-        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor"]):
-            boost = 3.5
+        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i"]):
+            boost = 4.0
         score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
+
+    # 1.1 Boost em Frases Operacionais HWA na Query
+    q_low = query_raw.lower()
+    if "processador de eventos" in q_low or "event processor" in q_low:
+        if "switcheventprocessor" in doc_lower or "switchevtp" in doc_lower:
+            score += 15.0
 
     # 2. Boost em codigos de erro exatos (ex: AWSJDB802E, AWSVAL006E, AWSBEH021E)
     codes_in_query = re.findall(r"aws[a-z]{3}[0-9]{3}[iew]", query_raw.lower())
