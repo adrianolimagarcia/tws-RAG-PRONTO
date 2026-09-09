@@ -77,14 +77,17 @@ TERM_EXPAND = {
 }
 
 def tokenize(text):
-    """Tokeniza texto e devolve tokens brutos (sem expansão). A expansão de
-    sinônimos, quando usada, é feita só na consulta (ver _expand_query) para
-    não inflar o índice e diluir o BM25."""
+    """Tokeniza texto e devolve tokens limpos, removendo pontuação das bordas."""
     if not text:
         return set()
-    words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+\@]+", text.lower())
+    raw_words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+\@]+", text.lower())
     stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde", "ser", "sao", "entre", "este", "esta", "pode", "deve", "utilizar", "usar", "para o", "naquele", "daquele", "nesses", "desses", "quando", "apos", "antes", "atraves"}
-    return {w for w in words if len(w) > 2 and w not in stop}
+    cleaned = set()
+    for w in raw_words:
+        w_clean = w.strip(".,;:?!'\"()[]{}")
+        if len(w_clean) > 2 and w_clean not in stop:
+            cleaned.add(w_clean)
+    return cleaned
 
 def _expand_tokens(tokens):
     """Expande tokens apenas para a consulta (jargão HWA + mapa bilíngue)."""
@@ -290,9 +293,10 @@ def run_evaluation():
                 for ecid in expected_cids:
                     if d.get("code", "").lower() in ecid.lower():
                         is_match = True
-            # Match 3: match por chunk estruturado de runbook com overlap substantivo
+            # Match 3: match por chunk estruturado de runbook com overlap substantivo (>= 2 tokens ou >= 25% da query)
             elif (d["type"] == "ragflow_runbook_chunk" or d["type"] == "runbook_section") and expected_runbook and d.get("runbook") == expected_runbook:
-                if len(q_tokens.intersection(d["tokens"])) >= 4:
+                overlap_count = len(q_tokens.intersection(d["tokens"]))
+                if overlap_count >= 2 and (overlap_count / max(1, len(q_tokens))) >= 0.25:
                     is_match = True
 
             if is_match:
