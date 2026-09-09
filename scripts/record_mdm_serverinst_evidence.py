@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Registra evidências lab da validação empírica de flags do serverinst.sh (MDM) — 2026-09-09."""
+import json
+
+records = [
+    {
+        "claim_id": "hwa-lab-10.2.8-mdm-serverinst-flags-validation-0001",
+        "claim": "No HCL Workload Automation 10.2.8, o instalador do Master Domain Manager (serverinst.sh) valida rigorosamente as seguintes regras e emite os respectivos códigos oficiais: (1) Rejeição de licença não aceita com WAINST036I ('Accept the license and terms conditions before proceeding with the installation'); (2) Exigência de SGBD suportado com WAINST033E ('Incorrect value for the option --rdbmstype. Expected values are < DB2 | ORACLE | MSSQL | IDS | POSTGRESQL >'); (3) Obrigatoriedade estrita de credenciais com WAINST024E ('The following option is required: --dbhostname' / '--wapassword'); (4) Validação ativa de conectividade com o banco via chamada prévia do configureDb.sh com ação test_connection_to_db (falha reportada como WAINST015E se o SGBD recusar a credencial); (5) Validação de propriedade dos binários do kit extraído com WAINST0517E ('The owner ... of the directory ... is not the same as the user who is installing the product').",
+        "result": "SUCCESS",
+        "risk": "read_only",
+        "platform": "Distributed; Linux x86_64; container RHEL 9 UBI9 (tws-hwa)",
+        "product_version": "10.2.8",
+        "performed_at": "2026-09-09T07:15:00BRT",
+        "performed_by": "hermes-agent-hwa",
+        "tested_commands": [
+            "./serverinst.sh --acceptlicense no --check true",
+            "./serverinst.sh --acceptlicense yes --check true",
+            "./serverinst.sh --acceptlicense yes --rdbmstype POSTGRESQL --check true",
+            "./serverinst.sh --acceptlicense yes --rdbmstype POSTGRESQL --dbhostname localhost --dbname TWS --dbuser postgres --dbpassword pass --check true",
+            "./serverinst.sh --acceptlicense yes --rdbmstype POSTGRESQL --dbhostname 127.0.0.1 --dbname TWS --dbuser postgres --dbpassword <pw> --wapassword <pw> --wlpdir /opt/liberty/wlp --inst_dir /tmp/test_not_empty --check true"
+        ],
+        "sanitized_output": "Comprovados códigos oficiais WAINST036I, WAINST033E, WAINST024E, WAINST015E e WAINST0517E.",
+        "observations": "Todas as 50 flags CLI do serverinst.sh, as 75 propriedades de serverinst.properties e as 30 flags do configureDb.sh foram mapeadas em data/runbooks/mdm-serverinst-twsinst-complete-reference.md."
+    }
+]
+
+out = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/evidence/lab-validation-2026-09-09-mdm-serverinst-flags-validation.jsonl"
+with open(out, "w") as f:
+    for r in records:
+        f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+print(f"Evidência gravada com sucesso em {out}")
