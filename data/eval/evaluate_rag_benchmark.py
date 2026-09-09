@@ -244,6 +244,56 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
 
     return score
 
+def extract_ngrams(words, n=2):
+    return [" ".join(words[i:i+n]) for i in range(len(words)-n+1)]
+
+def second_stage_rerank(query_raw, candidates, top_n=20):
+    """Segundo Estágio de Re-ranking: Proximidade de Termos, N-grams Exatos e Cobertura.
+    Desempata candidatos do primeiro estágio avaliando frases contíguas e densidade.
+    """
+    clean_words = [w.strip(".,;:?!'\"()[]{}").lower() for w in re.findall(r"[A-Za-z0-9_\-]+", query_raw) if len(w) > 2]
+    unique_q_terms = set(clean_words) - {"qual", "quais", "como", "onde", "por", "que", "para", "com", "dos", "das", "uma", "não", "mais"}
+    bigrams = extract_ngrams(clean_words, 2)
+    trigrams = extract_ngrams(clean_words, 3)
+
+    reranked = []
+    # Processar os top_n candidatos para refinar precisão no Top 1-3
+    for s, doc in candidates[:top_n]:
+        text_lower = doc["text"].lower()
+        title_lower = (doc.get("title") or "").lower()
+        score = s
+
+        # 1. Bônus de Bigrams Contíguos da Pergunta
+        for bg in bigrams:
+            if len(bg) > 6 and bg in text_lower:
+                score += 8.0
+            if len(bg) > 6 and bg in title_lower:
+                score += 12.0
+
+        # 2. Bônus de Trigrams Contíguos da Pergunta
+        for tg in trigrams:
+            if len(tg) > 10 and tg in text_lower:
+                score += 15.0
+            if len(tg) > 10 and tg in title_lower:
+                score += 20.0
+
+        # 3. Cobertura de Termos Únicos (Coverage Ratio)
+        doc_tokens = doc["tokens"]
+        if unique_q_terms:
+            covered = len(unique_q_terms.intersection(doc_tokens))
+            cov_ratio = covered / len(unique_q_terms)
+            if cov_ratio >= 0.80:
+                score *= 1.25
+            elif cov_ratio >= 0.60:
+                score *= 1.12
+
+        reranked.append((score, doc))
+
+    # Reordenar os top_n re-rankeados
+    reranked.sort(key=lambda x: x[0], reverse=True)
+    # Manter o restante da cauda na ordem original
+    return [r[1] for r in reranked] + [c[1] for c in candidates[top_n:]]
+
 def run_evaluation():
     if not os.path.exists(BENCHMARK_FILE):
         print(f"Erro: {BENCHMARK_FILE} nao encontrado.")
@@ -288,7 +338,9 @@ def run_evaluation():
 
         # Reordenar após penalização de repetição de fonte
         diversified_docs.sort(key=lambda x: x[0], reverse=True)
-        retrieved_docs = [d[1] for d in diversified_docs]
+
+        # Segundo Estágio de Re-ranking: Desempate por N-Grams contíguos e Cobertura Semântica
+        retrieved_docs = second_stage_rerank(q_text, diversified_docs, top_n=20)
 
         rank = None
         for idx, d in enumerate(retrieved_docs):
