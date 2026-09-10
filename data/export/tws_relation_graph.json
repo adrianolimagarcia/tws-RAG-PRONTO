@@ -1,0 +1,347 @@
+{
+  "total_nodes": 2548,
+  "total_edges": 68,
+  "sample_edges": [
+    {
+      "source": "hwa-10.2.8-composer-keyword-order-0115",
+      "target": "hwa-10.2.8-composer-priority-in-jobs-0124",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-10.2.8-incident-msp104e-0053",
+      "target": "hwa-10.2.8-trouble-awsmsp104e-0007",
+      "type": "complements"
+    },
+    {
+      "source": "hwa-10.2.8-restore-resolved-0017",
+      "target": "hwa-10.2.8-restore-0001",
+      "type": "references"
+    },
+    {
+      "source": "hwa-10.2.8-themaster-resolved-0018",
+      "target": "hwa-themaster-0001",
+      "type": "references"
+    },
+    {
+      "source": "hwa-10.2.8-vm-0002-contrast-0013",
+      "target": "hwa-10.2.8-vm-0002",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-10.2.8-vm-0006-contrast-0014",
+      "target": "hwa-10.2.8-vm-0006",
+      "type": "references"
+    },
+    {
+      "source": "hwa-10.2.8-vm-9f-0008-contrast-0015",
+      "target": "hwa-10.2.8-vm-9f-0008",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-10.2.8-vm-9f-0010-contrast-0016",
+      "target": "hwa-10.2.8-vm-9f-0010",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-cert-permissions-contrast-0015",
+      "target": "hwa-10.2.8-cert-permissions-version-dep-0015",
+      "type": "references"
+    },
+    {
+      "source": "hwa-9.5-conman-eventrules-contrast-0009",
+      "target": "hwa-10.2.8-conman-eventrules-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-fta-contrast-0008",
+      "target": "hwa-10.2.8-conman-fta-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-jobman-contrast-0004",
+      "target": "hwa-10.2.8-conman-jobman-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-mailman-logman-contrast-0006",
+      "target": "hwa-10.2.8-conman-mailman-logman-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-planman-contrast-0005",
+      "target": "hwa-10.2.8-conman-planman-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-recovery-contrast-0007",
+      "target": "hwa-10.2.8-conman-recovery-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-showcpus-contrast-0011",
+      "target": "hwa-10.2.8-conman-showcpus-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-conman-startstop-contrast-0010",
+      "target": "hwa-10.2.8-conman-startstop-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-jwtfile-contrast-0012",
+      "target": "hwa-10.2.8-jwtfile-0001",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-9.5-perfreport-contrast-0002",
+      "target": "hwa-10.2-perfreport-0002",
+      "type": "references"
+    },
+    {
+      "source": "hwa-9.5-perfreport-contrast-0003",
+      "target": "hwa-10.2-perfreport-0003",
+      "type": "requires"
+    },
+    {
+      "source": "hwa-lab-10.2.8-agent-docker-install-0001",
+      "target": "hwa-mesh",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-bmdm-container-install-0001",
+      "target": "hwa-mesh",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-broker-topology-correction-0080",
+      "target": "hwa-lab-10.2.8-broker-topology-0070",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-claims-recovery-incident-0088",
+      "target": "hwa-10.2.8-fence-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-claims-recovery-incident-0088",
+      "target": "hwa-10.2.8-limit-cpu-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-claims-recovery-incident-0088",
+      "target": "hwa-10.2.8-rest-api-v2-endpoint-0011",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-claims-recovery-incident-0088",
+      "target": "hwa-lab-10.2.8-fence-validation-0044",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-claims-recovery-incident-0088",
+      "target": "hwa-lab-10.2.8-limit-cpu-0074",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-claims-recovery-incident-0088",
+      "target": "hwa-lab-10.2.8-rest-v2-port-31116-live-0077",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-corpus-redaction-reclass-0101",
+      "target": "hwa-10.2-perfreport.pdf",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-destructive-cleanup-lesson-0100",
+      "target": "hwa-lab-10.2.8-cleanup-orphans-0083",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-destructive-cleanup-lesson-0100",
+      "target": "hwa-lab-10.2.8-plan-rollover-fix-0099",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-edwa-sendevent-e2e-0103",
+      "target": "hwa-lab-10.2.8-edwa-action-run-defect-0102",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-startmon-stopmon-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-srv-traces-0003",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-upgrade-certs-required-0005",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-upgrade-gskit-openssl-0004",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-upgrade-order-0006",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-dwc-trace-configdropins-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-dwc-trace-template-0002",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-ocli-release-job-persist-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-mdm-aes-keys-0005",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-empty-claims-resolved-0091",
+      "target": "hwa-10.2.8-dwc-mdm-distinct-0008",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-mdm-backup-restore-0001",
+      "target": "hwa-10.2.8-backup-backup-master-data-0001",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-source-verifier",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-dwc-mdm-distinct-0008",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-startmon-stopmon-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-srv-traces-0003",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-upgrade-certs-required-0005",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-upgrade-gskit-openssl-0004",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-upgrade-order-0006",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-dwc-trace-configdropins-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-dwc-trace-template-0002",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-ocli-release-job-persist-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-orphan-reverify-0090",
+      "target": "hwa-10.2.8-mdm-aes-keys-0005",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-runbook-conclusion-0052",
+      "target": "hwa-10.2.8-wsl-lab.md",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-audit-0075",
+      "target": "hwa-dataset-auditor",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-audit-0075",
+      "target": "hwa-10.2.8-composer-if-conddep-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-10.2.8-composer",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-lab-10.2.8-syntax-resolved-0069",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-lab-10.2.8-composer-name-order-errors-0035",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-10.2.8-wsa-0009",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-lab-10.2.8-task-jsdl-validation-0012",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-lab-10.2.8-recovery-rerun-0072",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-lab-10.2.8-deadline-onlate-0056",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-sft-m2m3-rework-0087",
+      "target": "hwa-10.2.8-gui-conddep-0001",
+      "type": "resolves"
+    },
+    {
+      "source": "hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001",
+      "target": "hwa-10.2.8-ha-switchmgr-0001",
+      "type": "references"
+    },
+    {
+      "source": "hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001",
+      "target": "hwa-10.2.8-globalopts-enautomaticfailover-0001",
+      "type": "references"
+    }
+  ],
+  "edges_by_type": {}
+}

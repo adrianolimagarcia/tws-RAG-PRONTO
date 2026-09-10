@@ -1,0 +1,87 @@
+{
+  "acronyms": {
+    "MDM": {
+      "full_name": "Master Domain Manager",
+      "role": "Nó central do domínio responsável pela compilação, orquestração e distribuição do plano Symphony."
+    },
+    "BMDM": {
+      "full_name": "Backup Master Domain Manager",
+      "role": "Nó redundante em standby quente pronto para assumir como Master via switchmgr com zero perda de estado."
+    },
+    "FTA": {
+      "full_name": "Fault-Tolerant Agent",
+      "role": "Agente autônomo com cópia local do arquivo Symphony no disco; continua executando jobs mesmo durante isolamento de rede."
+    },
+    "DA": {
+      "full_name": "Dynamic Agent",
+      "role": "Agente moderno que comunica via HTTPS porta 31116 com o Broker; alocação dinâmica baseada em requisitos de recursos."
+    },
+    "DWC": {
+      "full_name": "Dynamic Workload Console",
+      "role": "Interface gráfica web baseada em Open Liberty porta 9443 para monitoramento, modelagem e relatórios."
+    },
+    "DWB": {
+      "full_name": "Dynamic Workload Broker",
+      "role": "Mecanismo de roteamento inteligente e balanceamento de carga de tarefas entre pools dinâmicos."
+    },
+    "EDWA": {
+      "full_name": "Event-Driven Workload Automation",
+      "role": "Motor de orquestração reativa baseado em eventos (File Monitor, JobStatusChanged, generic events)."
+    }
+  },
+  "core_concepts": {
+    "Symphony": {
+      "description": "Arquivo binário contendo a cópia em memória/disco do plano de produção ativo executado pelo Batchman.",
+      "synonyms": [
+        "plano de producao",
+        "production plan",
+        "active plan"
+      ]
+    },
+    "Batchman": {
+      "description": "Processo central do TWS que monitora dependências, atualiza status de jobs e controla transições no Symphony.",
+      "synonyms": [
+        "batch manager",
+        "bm"
+      ]
+    },
+    "Mailman": {
+      "description": "Processo de transporte assíncrono responsável por trocar mensagens de eventos e sincronizar o Symphony com agentes remotos.",
+      "synonyms": [
+        "mm"
+      ]
+    },
+    "Netman": {
+      "description": "Daemon listener de rede (porta 31111/31113) que aceita conexões TCP/SSL e despacha para mailman/jobman.",
+      "synonyms": [
+        "network manager",
+        "nm"
+      ]
+    },
+    "Jobman": {
+      "description": "Processo executor local que cria o ambiente do usuário (jobmanrc), despacha processos filhos e coleta código de retorno.",
+      "synonyms": [
+        "job manager",
+        "jm"
+      ]
+    },
+    "Monman": {
+      "description": "Processo de escuta do Event Monitoring Manager (EDWA) responsável por filtrar eventos e acionar regras.",
+      "synonyms": [
+        "monitoring manager"
+      ]
+    }
+  },
+  "cli_aliases": {
+    "switchevtp": "switcheventprocessor",
+    "sj": "conman showjobs",
+    "ss": "conman showschedules",
+    "sc": "conman showcpu",
+    "sbj": "conman submitjob",
+    "sbs": "conman submitsched",
+    "rerun": "conman rerun",
+    "release": "conman release",
+    "hold": "conman hold",
+    "answer": "conman answer / conman reply"
+  }
+}
