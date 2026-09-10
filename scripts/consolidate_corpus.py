@@ -29,6 +29,13 @@ for fpath in evidence_files:
             except Exception as e:
                 print(f"Erro no parsing JSON {fname}:{line_num}: {e}")
                 continue
+            # Higienizar bytes nulos (binarios do HWA embutem \x00 em claims)
+            if isinstance(item, str):
+                pass
+            else:
+                for k, v in item.items():
+                    if isinstance(v, str) and "\x00" in v:
+                        item[k] = v.replace("\x00", "")
             
             cid = item.get("claim_id") or item.get("id")
             if not cid:

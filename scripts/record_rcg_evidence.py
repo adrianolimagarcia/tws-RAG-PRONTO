@@ -1,0 +1,22 @@
+import json
+base = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
+out = f"{base}/data/evidence/lab-validation-2026-09-10-runcyclegroup-schedule-syntax.jsonl"
+ev = {
+ "claim_id": "hwa-lab-10.2.8-runcyclegroup-schedule-reference-uses-calendar-name-0011",
+ "claim": "No HWA 10.2.8, referenciar um run cycle group a partir de um SCHEDULE no texto do composer NAO funciona como mapeamento direto de grupo. A clausula 'ON RUNCYCLE GROUP <x> <y>' e aceita sintaticamente, mas o parser interpreta 'x> <y>' como um objeto CALENDARIO e aborta com AWSJDB308E 'The calendar cal=<y> referenced by object js=... does not exist' quando nao existe um calendario com o nome do grupo. As variacoes 'ON RUNCYCLEGROUP <n>', 'ON RUN CYCLEGROUP <n>', 'RUN CYCLE GROUP <n>', 'RUN CYCLEGROUP <n>' e 'RCG <n>' sao rejeitadas com AWSJOM915E 'unexpected token'. Conclusao: no composer (linguagem de definicao textual), a associacao entre job stream e runcyclegroup com compensacao de dia livre (fdnext/fdprev) nao e expressavel; a sintaxe correta para isso existe via Graphical Designer/DWC (interface grafica), nao via arquivo de definicao. As clausulas de compensacao FDNEXT/FDPREV/FDIGNORE validas dentro do bloco 'runcyclegroup' nao sao, portanto, consumiveis ponta a ponta pela via textual sozinha.",
+ "result": "PARTIAL", "risk": "guided_action",
+ "platform": "Distributed; Linux x86_64; container tws-hwa; HWA 10.2.8",
+ "observed_at": "2026-09-10T15:50:00-03:00",
+ "test_procedure": "Sondadas 5 variacoes de keyword para referenciar rcg=LABRCG2 num SCHEDULE. A unica sintaticamente aceita (ON RUNCYCLE GROUP) produziu AWSJDB308E referenciando cal=LABRCG2 inexistente, comprovando que o parser mapeia o identificador para um calendario.",
+ "actual_output": "ON RUNCYCLE GROUP LABRCG2 -> AWSJDB308E (procura cal=LABRCG2); demais -> AWSJOM915E.",
+ "synthetic_questions": [
+   "Como referenciar um run cycle group em um job stream na linguagem do composer HWA?",
+   "Por que ON RUNCYCLE GROUP retorna AWSJDB308E procurando um calendario?",
+   "A compensacao de dia livre por runcyclegroup e possivel via arquivo de definicao no HWA?",
+   "O que significa AWSJDB308E no composer?"
+ ],
+ "context_prefix": "[Escopo: HCL Workload Automation 10.2.8 (Distributed) > Componente: Run Cycle Group / composer > Interface: CLI composer (linguagem de definicao) > Topico: scheduling > runcyclegroup [schedule_reference]]"
+}
+with open(out, "w", encoding="utf-8") as f:
+    f.write(json.dumps(ev, ensure_ascii=False) + "\n")
+print("OK")

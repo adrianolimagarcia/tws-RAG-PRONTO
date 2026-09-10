@@ -1,8 +1,8 @@
 # MANUAL CANONICO DO ESPECIALISTA HCL WORKLOAD AUTOMATION 10.2.8 (DISTRIBUTED) - V3 SOTA GOLD
 
-> **Base de Conhecimento Industrial Dual Index (2558 Registros Canonicos + 14 Runbooks SRE)**
-> Total de registros canonicos indexados: **2558**
-> Total de runbooks operacionais: **14**
+> **Base de Conhecimento Industrial Dual Index (2560 Registros Canonicos + 15 Runbooks SRE)**
+> Total de registros canonicos indexados: **2560**
+> Total de runbooks operacionais: **15**
 > Validacao: Laboratorio Distribuido Real (MDM, BMDM, FTA, Dynamic Agent, Broker, REST API v2).
 
 ---
@@ -25578,7 +25578,7 @@ O Workload Dashboard do Dynamic Workload Console no HCL Workload Automation 10.2
 No HCL Workload Automation 10.2.8, a mensagem AWSBAB001I (BAB) indica: "maestro.cat C @(#) 1.19 03/04/09 12:36:24 tws_main/src/catalog/maestro.xml, maestro_l10n_src, tws_dev @(#)AWSBAB002I @(#) Copyright IBM Corp. 1991, 2016. Copyright HCL Technologies Ltd. 2016.This is a dummy label. It must be the last label in every".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBAB001I AWSBAB002I 10.2.8 mensagem BAB indica maestro.cat 1.19 tws_main src catalog maestro.xml maestro_l10n_src tws_dev Copyright IBM Corp Technologies Ltd This dummy label must the last every`
+> `AWSBAB001I AWSBAB002I 10.2.8 mensagem BAB indica maestro.cat 1.19 tws_main src catalog maestro.xml maestro_l10n_src tws_dev Copyright IBM Corp Technologies Ltd 2016.This dummy label must the last every`
 
 ---
 
@@ -25593,7 +25593,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBAB001I (BAB) indica: "maestro.
 No HCL Workload Automation 10.2.8, a mensagem AWSBAK001I (BAK) indica: "EDITOR.PUB.SYS BASICENTRYMaestro                                                     !                                                              Page#:FILE EDTTEXT=!#:RUN EDITOR.PUB.SYS,BASICENTRY#%7¦8·".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBAK001I 10.2.8 mensagem BAK indica EDITOR.PUB.SYS BASICENTRY Maestro Page FILE EDTTEXT RUN`
+> `AWSBAK001I 10.2.8 mensagem BAK indica EDITOR.PUB.SYS BASICENTRYMaestro Page FILE EDTTEXT RUN BASICENTRY`
 
 ---
 
@@ -25608,7 +25608,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBAK001I (BAK) indica: "EDITOR.P
 No HCL Workload Automation 10.2.8, a mensagem AWSBAT001I (BAT) indica: "The event counter is successfully initializing: !1AWSBAT002I The event counter is successfully initializing, workstation counter on the hard drive has been updated : !1AWSBAT003E The event counter failed to initialize for the following reason: "!1"".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBAT001I AWSBAT002I AWSBAT003E 10.2.8 mensagem BAT indica The event counter successfully initializing workstation the hard drive has been updated failed initialize`
+> `AWSBAT001I 10.2.8 mensagem BAT indica The event counter successfully initializing 1AWSBAT002I workstation the hard drive has been updated 1AWSBAT003E failed initialize`
 
 ---
 
@@ -25623,7 +25623,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBAT001I (BAT) indica: "The even
 No HCL Workload Automation 10.2.8, a mensagem AWSBCS040W (BCS) indica: "Workstation "!1" was not found in the Symphony file on node "!2".AWSBCS041W Domain "!1" was not found in the Symphony file on node "!2".AWSBCS042W Node "!1" is not running.AWSBCS043W Nodes "!1" and "!2" are not linked.AWSBCS044I Nodes "!1" and "!".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCS040W AWSBCS041W AWSBCS042W AWSBCS043W AWSBCS044I 10.2.8 mensagem BCS indica Workstation was not found the Symphony file node Node running Nodes and are`
+> `AWSBCS040W AWSBCS041W AWSBCS042W AWSBCS043W AWSBCS044I 10.2.8 mensagem BCS indica Workstation was not found the Symphony file node Node running.AWSBCS043W Nodes and are linked.AWSBCS044I`
 
 ---
 
@@ -25698,7 +25698,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS055I (BCS) indica: "Verify t
 No HCL Workload Automation 10.2.8, a mensagem AWSBCS062I (BCS) indica: "Check the SSL configuration of node "!1".AWSBCS063I Check the SSL configuration of nodes "!1" and "!2".AWSBCS071I Verify that node "!1" is linked; if it is not, run Check Health Status on that node first.AWSBCS072I Run a link command on node "!1" ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCS062I AWSBCS063I AWSBCS071I AWSBCS072I 10.2.8 mensagem BCS indica Check the SSL configuration node nodes and Verify that linked not run Health Status first`
+> `AWSBCS062I AWSBCS063I AWSBCS071I AWSBCS072I 10.2.8 mensagem BCS indica Check the SSL configuration node nodes and Verify that linked not run Health Status first.AWSBCS072I`
 
 ---
 
@@ -25743,7 +25743,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS074I (BCS) indica: "Run a st
 No HCL Workload Automation 10.2.8, a mensagem AWSBCS075I (BCS) indica: "Use the evtsize utility to increase the maximum size of message files.AWSBCS076I If a workstation is planned to be offline for a long period, consider setting it to IGNORE to avoid that the pobox message file reaches its maximum size.AWSBCS077I Del".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCS075I AWSBCS076I AWSBCS077I 10.2.8 mensagem BCS indica Use the evtsize utility increase maximum size message files workstation planned offline for long period consider setting IGNORE avoid that pobox`
+> `AWSBCS075I AWSBCS076I AWSBCS077I 10.2.8 mensagem BCS indica Use the evtsize utility increase maximum size message files.AWSBCS076I workstation planned offline for long period consider setting IGNORE avoid that pobox file`
 
 ---
 
@@ -25773,7 +25773,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS078E (BCS) indica: "An inter
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT002E (BCT) indica: "A jcl file is required.AWSBCT003E The jcl file path must be no more than !1 charactersAWSBCT004E The -u option is available only for root users.AWSBCT005W The jcl is submitted as root, you must use -u <user>.AWSBCT006E No password entry for the u".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT002E AWSBCT003E AWSBCT004E AWSBCT005W AWSBCT006E 10.2.8 mensagem BCT indica jcl file required The path must more than characters option available only for root users submitted`
+> `AWSBCT002E AWSBCT003E AWSBCT005W AWSBCT006E 10.2.8 mensagem BCT indica jcl file required.AWSBCT003E The path must more than charactersAWSBCT004E option available only for root users.AWSBCT005W submitted you use`
 
 ---
 
@@ -25788,7 +25788,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT002E (BCT) indica: "A jcl fi
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT021E (BCT) indica: "Could not assign a schedule name, use -s option.AWSBCT022E Could not assign a job name, use -j option.AWSBCT023E Must assign date/time in the format YYMMDDHHmm.AWSBCT024E Date/time must have 10 digits in the format YYMMDDHHmm.AWSBCT025E Priority ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT021E AWSBCT022E AWSBCT023E AWSBCT024E AWSBCT025E 10.2.8 mensagem BCT indica Could not assign schedule name use option job Must date time the format YYMMDDHHmm Date`
+> `AWSBCT021E AWSBCT022E AWSBCT023E AWSBCT024E AWSBCT025E 10.2.8 mensagem BCT indica Could not assign schedule name use option.AWSBCT022E job option.AWSBCT023E Must date time the format YYMMDDHHmm.AWSBCT024E Date must have`
 
 ---
 
@@ -25803,7 +25803,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT021E (BCT) indica: "Could no
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT031E (BCT) indica: "You must start Netman manually on this system.AWSBCT032I You are not authorized to start any product.AWSBCT033E An error occurred starting the local system, Type: !1, Error: !2AWSBCT034E An error occurred starting the NS/DS system: !1, Error: !2A".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT031E AWSBCT032I AWSBCT033E AWSBCT034E 10.2.8 mensagem BCT indica You must start Netman manually this system are not authorized any product error occurred starting the local Type Error`
+> `AWSBCT031E AWSBCT032I AWSBCT033E 10.2.8 mensagem BCT indica You must start Netman manually this system.AWSBCT032I are not authorized any product.AWSBCT033E error occurred starting the local system Type Error 2AWSBCT034E`
 
 ---
 
@@ -25818,7 +25818,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT031E (BCT) indica: "You must
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT071W (BCT) indica: "Netman is already down.AWSBCT072E Stopping local Netman, Error: !1AWSBCT073W No Netman.AWSBCT074W Netman is already down.Usage: release [ -V | -U ]".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT071W AWSBCT072E AWSBCT073W AWSBCT074W 10.2.8 mensagem BCT indica Netman already down Stopping local Error Usage release`
+> `AWSBCT071W AWSBCT072E AWSBCT074W 10.2.8 mensagem BCT indica Netman already down.AWSBCT072E Stopping local Error 1AWSBCT073W Netman.AWSBCT074W down.Usage release`
 
 ---
 
@@ -25833,7 +25833,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT071W (BCT) indica: "Netman i
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT081E (BCT) indica: "Environment variable !1 was not found, not a HCL Workload Automation job.AWSBCT091E chmod error on !1, Error: !2AWSBCT092E chown error on !1, Error: !2Enter commands (!1)#AWSBCT094E No commands entered, the job has not been submitted.Usage: maes".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT081E AWSBCT091E AWSBCT092E AWSBCT094E 10.2.8 mensagem BCT indica Environment variable was not found job chmod error Error chown Enter commands entered the has been`
+> `AWSBCT081E AWSBCT091E AWSBCT094E 10.2.8 mensagem BCT indica Environment variable was not found job.AWSBCT091E chmod error Error 2AWSBCT092E chown 2Enter commands entered the job has been submitted.Usage`
 
 ---
 
@@ -25848,7 +25848,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT081E (BCT) indica: "Environm
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT104I (BCT) indica: "Option !1 requires an argument.AWSBCT105E Unrecognized option !1.Running dbexpand converts all the existing databases".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT104I AWSBCT105E 10.2.8 mensagem BCT indica Option requires argument Unrecognized option Running dbexpand converts all the existing databases`
+> `AWSBCT104I AWSBCT105E 10.2.8 mensagem BCT indica Option requires argument.AWSBCT105E Unrecognized option 1.Running dbexpand converts all the existing databases`
 
 ---
 
@@ -25863,7 +25863,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT104I (BCT) indica: "Option !
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT107E (BCT) indica: "Databases not converted. Exiting.AWSBCT108E The globalopts file does not exist.AWSBCT109E The globalopts file needs read and write permission. Check the permissions.The backup is done in !1 by default.#AWSBCT111W !1 is identical to !2.AWSBCT112E".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT107E AWSBCT108E AWSBCT109E AWSBCT111W AWSBCT112E 10.2.8 mensagem BCT indica Databases not converted Exiting The globalopts file does exist needs read and write permission Check the permissions backup`
+> `AWSBCT107E AWSBCT108E AWSBCT109E AWSBCT111W AWSBCT112E 10.2.8 mensagem BCT indica Databases not converted Exiting.AWSBCT108E The globalopts file does exist.AWSBCT109E needs read and write permission Check the permissions.The backup done default.#AWSBCT111W identical`
 
 ---
 
@@ -25893,7 +25893,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT134I (BCT) indica: "AWSBCT13
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT139I (BCT) indica: "AWSBCT140I AWSBCT141I AWSBCT142I AWSBCT200E You must enter the user manually.AWSBCT201E Incorrect option.AWSBCT202E The path is limited to !1 characters.AWSBCT203E The filename is the only argument available.Usage: delete { -V | -U | <file se".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT139I AWSBCT140I AWSBCT141I AWSBCT142I AWSBCT200E AWSBCT201E AWSBCT202E AWSBCT203E 10.2.8 mensagem BCT indica You must enter the user manually Incorrect option The path limited characters filename only argument available`
+> `AWSBCT139I AWSBCT140I AWSBCT141I AWSBCT142I AWSBCT200E AWSBCT201E AWSBCT202E AWSBCT203E 10.2.8 mensagem BCT indica You must enter the user manually.AWSBCT201E Incorrect option.AWSBCT202E The path limited characters.AWSBCT203E filename only argument available.Usage delete file`
 
 ---
 
@@ -25908,7 +25908,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT139I (BCT) indica: "AWSBCT14
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT706I (BCT) indica: "The -u and -d options cannot both be supplied.AWSBCT707I The -u option requires a usernameAWSBCT708E Incorrect username.AWSBCT709E Unknown argument %cAWSBCT710W The -u and -d options cannot both be supplied.AWSBCT711E No files specified.AWSBCT7".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT706I AWSBCT707I AWSBCT708E AWSBCT709E AWSBCT710W AWSBCT711E 10.2.8 mensagem BCT indica The and options cannot both supplied option requires username Incorrect Unknown argument`
+> `AWSBCT706I AWSBCT707I AWSBCT709E AWSBCT711E 10.2.8 mensagem BCT indica The and options cannot both supplied.AWSBCT707I option requires usernameAWSBCT708E Incorrect username.AWSBCT709E Unknown argument cAWSBCT710W supplied.AWSBCT711E files specified.AWSBCT7`
 
 ---
 
@@ -25923,7 +25923,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT706I (BCT) indica: "The -u a
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT727E (BCT) indica: "Unable to change owner for file %s (error %d)AWSBCT728E Unable to open file %s (error %d)AWSBCT729E Unable to reset restore privilege (error %d)AWSBCT751E Exception Message: !1AWSBCT752I Done Setting attribute 'TWSHomeDir' as !1.AWSBCT753I Engin".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT727E AWSBCT728E AWSBCT729E AWSBCT751E AWSBCT752I AWSBCT753I 10.2.8 mensagem BCT indica Unable change owner for file error open reset restore privilege Exception Message Done Setting attribute TWSHomeDir`
+> `AWSBCT727E AWSBCT728E AWSBCT729E AWSBCT751E AWSBCT753I 10.2.8 mensagem BCT indica Unable change owner for file error open reset restore privilege Exception Message 1AWSBCT752I Done Setting attribute TWSHomeDir`
 
 ---
 
@@ -25938,7 +25938,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT727E (BCT) indica: "Unable t
 No HCL Workload Automation 10.2.8, a mensagem AWSBCT864I (BCT) indica: "AWSBCT865E Error opening SC Manager. error = %d.AWSBCT866E -s option requires a service name.AWSBCT867E -u option requires a user name.AWSBCT868E -D option requires a dependency spec.AWSBCT869E -d option requires a display name.AWSBCT870E -l op".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCT864I AWSBCT865E AWSBCT866E AWSBCT867E AWSBCT868E AWSBCT869E AWSBCT870E 10.2.8 mensagem BCT indica Error opening error option requires service name user dependency spec display`
+> `AWSBCT864I AWSBCT865E AWSBCT866E AWSBCT867E AWSBCT868E AWSBCT869E AWSBCT870E 10.2.8 mensagem BCT indica Error opening error d.AWSBCT866E option requires service name.AWSBCT867E user name.AWSBCT868E dependency spec.AWSBCT869E display name.AWSBCT870E`
 
 ---
 
@@ -25953,7 +25953,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCT864I (BCT) indica: "AWSBCT86
 No HCL Workload Automation 10.2.8, a mensagem AWSBCU001E (BCU) indica: "Opening !1, error: !2AWSBCU002E Locking !1, error: !2AWSBCU003E Unable to allocate comarea !1AWSBCU004E Could not set file options on !1, error !2AWSBCU005E Closing !1, error: !2AWSBCU006E Purging !1, error: !2AWSBCU007E An error has occurred i".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCU001E AWSBCU002E AWSBCU003E AWSBCU004E AWSBCU005E AWSBCU006E AWSBCU007E 10.2.8 mensagem BCU indica Opening error Locking Unable allocate comarea Could not set file options Closing Purging has`
+> `AWSBCU001E 10.2.8 mensagem BCU indica Opening error 2AWSBCU002E Locking 2AWSBCU003E Unable allocate comarea 1AWSBCU004E Could not set file options 2AWSBCU005E Closing 2AWSBCU006E Purging 2AWSBCU007E has`
 
 ---
 
@@ -25968,7 +25968,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCU001E (BCU) indica: "Opening 
 No HCL Workload Automation 10.2.8, a mensagem AWSBCV001E (BCV) indica: "Batchman has failed with an internal error, producing the following status code: !1.AWSBCV002E Error building !1, Error !2AWSBCV003E Mailman was unable to start one of the internal components (!1) of batchman. The system error message is "!2"AWSBC".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCV001E AWSBCV002E AWSBCV003E 10.2.8 mensagem BCV indica Batchman has failed with internal error producing the following status code Error building Mailman was unable start one components batchman`
+> `AWSBCV001E AWSBCV002E 10.2.8 mensagem BCV indica Batchman has failed with internal error producing the following status code 1.AWSBCV002E Error building 2AWSBCV003E Mailman was unable start one components batchman`
 
 ---
 
@@ -25983,7 +25983,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCV001E (BCV) indica: "Batchman
 No HCL Workload Automation 10.2.8, a mensagem AWSBCV012E (BCV) indica: "Mailman cannot read a message in a message file. The following gives more details of the error: "!1".AWSBCV017I The total cpu time used by MAILMAN was !1 secondsAWSBCV018I !1/Operator command: !2AWSBCV021I Server !1 is available.AWSBCV024W Mailma".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCV012E AWSBCV017I AWSBCV018I AWSBCV021I AWSBCV024W 10.2.8 mensagem BCV indica Mailman cannot read message file The following gives more details the error total cpu time used MAILMAN was seconds Operator command`
+> `AWSBCV012E AWSBCV017I AWSBCV024W 10.2.8 mensagem BCV indica Mailman cannot read message file The following gives more details the error total cpu time used MAILMAN was secondsAWSBCV018I Operator command 2AWSBCV021I`
 
 ---
 
@@ -25998,7 +25998,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCV012E (BCV) indica: "Mailman 
 No HCL Workload Automation 10.2.8, a mensagem AWSBCV108I (BCV) indica: "Started batchman, pin !1AWSBCV109I Started jobman, pin !1AWSBCV116I Switching managers in domain !1 from workstation "!2" to workstation "!3".AWSBCV121E Mailman cannot link to the following workstation: !1, which is a domain manager but is running".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCV108I AWSBCV109I AWSBCV116I AWSBCV121E 10.2.8 mensagem BCV indica Started batchman pin jobman Switching managers from workstation Mailman cannot link the following which but running`
+> `AWSBCV108I AWSBCV121E 10.2.8 mensagem BCV indica Started batchman pin 1AWSBCV109I jobman 1AWSBCV116I Switching managers from workstation Mailman cannot link the following which but running`
 
 ---
 
@@ -26013,7 +26013,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCV108I (BCV) indica: "Started 
 No HCL Workload Automation 10.2.8, a mensagem AWSBCV124E (BCV) indica: "Mailman is unable to connect to workstation !1 using SSL due to an inconsistency in the HCL Workload Automation network configuration.AWSBCV130I Mailman has started the first phase of the replay protocol with the following workstation: !1. The remot".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCV124E AWSBCV130I 10.2.8 mensagem BCV indica Mailman unable connect workstation using SSL due inconsistency the network configuration has started first phase replay protocol with following`
+> `AWSBCV124E AWSBCV130I 10.2.8 mensagem BCV indica Mailman unable connect workstation using SSL due inconsistency the network configuration.AWSBCV130I has started first phase replay protocol with following The`
 
 ---
 
@@ -26028,7 +26028,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCV124E (BCV) indica: "Mailman 
 No HCL Workload Automation 10.2.8, a mensagem AWSBCW001W (BCW) indica: "Warning illegal option(s): !1AWSBCW003E Writer cannot connect to the remote mailman. The following gives more details of the error: "!1".AWSBCW004E Error non numeric sockfd: !1!1!1!1AWSBCW008E The following error has occurred while installing t".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCW001W AWSBCW003E AWSBCW004E AWSBCW008E 10.2.8 mensagem BCW indica Warning illegal option Writer cannot connect the remote mailman The following gives more details error Error non numeric sockfd`
+> `AWSBCW001W AWSBCW004E 10.2.8 mensagem BCW indica Warning illegal option 1AWSBCW003E Writer cannot connect the remote mailman The following gives more details error Error non numeric sockfd 1AWSBCW008E`
 
 ---
 
@@ -26043,7 +26043,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCW001W (BCW) indica: "Warning 
 No HCL Workload Automation 10.2.8, a mensagem AWSBCW002W (BCW) indica: "Writer cannot find a valid "wr read" value in the localopts file. The value found is as follows: !1. The default value is used.AWSBCW025E Writer is started by netman with an incorrect number of arguments.AWSBCW028I Started by !1/!2 from !3; worksta".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCW002W AWSBCW025E AWSBCW028I opcoes globais opcoes locais thiscpu 10.2.8 mensagem BCW indica Writer cannot find valid read value the localopts file The found follows default used started netman with incorrect number arguments`
+> `AWSBCW002W AWSBCW025E AWSBCW028I opcoes globais opcoes locais thiscpu 10.2.8 mensagem BCW indica Writer cannot find valid read value the localopts file The found follows default used.AWSBCW025E started netman with incorrect number arguments.AWSBCW028I Started`
 
 ---
 
@@ -26058,7 +26058,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCW002W (BCW) indica: "Writer c
 No HCL Workload Automation 10.2.8, a mensagem AWSBCW035I (BCW) indica: "Netman has told writer to quit, total cpu !1AWSBCW037E Writer cannot initialize this workstation because mailman is still active.AWSBCW038E Writer needs the exclusive access to the Symphony and Sinfonia files in order to initialize the workstation.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCW035I AWSBCW037E AWSBCW038E 10.2.8 mensagem BCW indica Netman has told writer quit total cpu Writer cannot initialize this workstation because mailman still active needs the exclusive access Symphony`
+> `AWSBCW035I AWSBCW038E 10.2.8 mensagem BCW indica Netman has told writer quit total cpu 1AWSBCW037E Writer cannot initialize this workstation because mailman still active.AWSBCW038E needs the exclusive access Symphony and`
 
 ---
 
@@ -26103,7 +26103,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX006I (BCX) indica: "Monman (
 No HCL Workload Automation 10.2.8, a mensagem AWSBCY001E (BCY) indica: "Could not allocate dbaccs comarea.AWSBCY002E Invalid comarea passed to dbaccs routines.AWSBCY003E Attempt to write to unopened file.AWSBCY004E Database not available or access not initialized.AWSBCY005W File newer than dbaccs.AWSBCY006I End of c".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCY001E AWSBCY002E AWSBCY003E AWSBCY004E AWSBCY005W AWSBCY006I 10.2.8 mensagem BCY indica Could not allocate dbaccs comarea Invalid passed routines Attempt write unopened file Database available access initialized File`
+> `AWSBCY001E AWSBCY002E AWSBCY003E AWSBCY004E AWSBCY005W AWSBCY006I 10.2.8 mensagem BCY indica Could not allocate dbaccs comarea.AWSBCY002E Invalid comarea passed routines.AWSBCY003E Attempt write unopened file.AWSBCY004E Database available access initialized.AWSBCY005W File newer than dbaccs.AWSBCY006I End`
 
 ---
 
@@ -26118,7 +26118,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCY001E (BCY) indica: "Could no
 No HCL Workload Automation 10.2.8, a mensagem AWSBCZ001E (BCZ) indica: "An error while opening !1: !2AWSBCZ002I The object ID is too long.AWSBCZ003E The object ID must start with an alphabetic character.AWSBCZ004E The object ID contains at least one character that is not valid. Valid characters are 0-9, a-z, dashes an".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCZ001E AWSBCZ002I AWSBCZ003E AWSBCZ004E 10.2.8 mensagem BCZ indica error while opening The object too long must start with alphabetic character contains least one that not`
+> `AWSBCZ001E AWSBCZ003E AWSBCZ004E 10.2.8 mensagem BCZ indica error while opening 2AWSBCZ002I The object too long.AWSBCZ003E must start with alphabetic character.AWSBCZ004E contains least one character that not valid Valid`
 
 ---
 
@@ -26133,7 +26133,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCZ001E (BCZ) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSBDA001W (BDA) indica: "A host has been specified for the master domain manager, and has been ignored.AWSBDA002W The domain manager "!1" is not defined as a fault-tolerant agent.AWSBDA003W The domain manager "!1" does not have "fullstatus" set to "on".AWSBDA004W The doma".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDA001W AWSBDA002W AWSBDA003W AWSBDA004W 10.2.8 mensagem BDA indica host has been specified for the and ignored The not defined fault-tolerant agent does have fullstatus set`
+> `AWSBDA001W AWSBDA002W AWSBDA003W AWSBDA004W 10.2.8 mensagem BDA indica host has been specified for the and ignored.AWSBDA002W The not defined fault-tolerant agent.AWSBDA003W does have fullstatus set doma`
 
 ---
 
@@ -26148,7 +26148,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDA001W (BDA) indica: "A host h
 No HCL Workload Automation 10.2.8, a mensagem AWSBDB001E (BDB) indica: "Error opening connection to conman, Error !1AWSBDB002E Error unable to create stdlistAWSBDB006E Error in ntoh (Symphony rec): !1AWSBDB007E Error sending scribner_response rec: !1AWSBDB008E Error receiving scribner_response rec: !1AWSBDB009E Erro".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDB001E AWSBDB002E AWSBDB006E AWSBDB007E AWSBDB008E AWSBDB009E 10.2.8 mensagem BDB indica Error opening connection conman unable create stdlist ntoh Symphony rec sending scribner_response receiving`
+> `AWSBDB001E 10.2.8 mensagem BDB indica Error opening connection conman 1AWSBDB002E unable create stdlistAWSBDB006E ntoh Symphony rec 1AWSBDB007E sending scribner_response 1AWSBDB008E receiving 1AWSBDB009E`
 
 ---
 
@@ -26163,7 +26163,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDB001E (BDB) indica: "Error op
 No HCL Workload Automation 10.2.8, a mensagem AWSBDB004W (BDB) indica: "The timeout value "!1" is not valid. The default value has been used.AWSBDB005E There is a syntax error. Too few parameters have been supplied.AWSBDB010I Started by !1/!2 from !3 Workstation platform: !4This is a dummy label. It must be the last l".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDB004W AWSBDB005E AWSBDB010I 10.2.8 mensagem BDB indica The timeout value not valid default has been used There syntax error Too few parameters have supplied Started from Workstation`
+> `AWSBDB004W AWSBDB005E AWSBDB010I 10.2.8 mensagem BDB indica The timeout value not valid default has been used.AWSBDB005E There syntax error Too few parameters have supplied.AWSBDB010I Started from Workstation platform 4This`
 
 ---
 
@@ -26178,7 +26178,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDB004W (BDB) indica: "The time
 No HCL Workload Automation 10.2.8, a mensagem AWSBDC001E (BDC) indica: "Error in !1, calling !2, for !3, error: !4AWSBDC002E Error allocating space in !1, error: !2AWSBDC003E Unknown parent for !1, id=!2AWSBDC004E Unknown node for !1, ID=!2AWSBDC005E Unknown network for !1, ID=!2AWSBDC006E Unknown workstation for !1".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDC001E AWSBDC002E AWSBDC003E AWSBDC004E AWSBDC005E AWSBDC006E 10.2.8 mensagem BDC indica Error calling for error allocating space Unknown parent node network workstation`
+> `AWSBDC001E 10.2.8 mensagem BDC indica Error calling for error 4AWSBDC002E allocating space 2AWSBDC003E Unknown parent 2AWSBDC004E node 2AWSBDC005E network 2AWSBDC006E workstation`
 
 ---
 
@@ -26193,7 +26193,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDC001E (BDC) indica: "Error in
 No HCL Workload Automation 10.2.8, a mensagem AWSBDC101W (BDC) indica: "Openview is not running on this system: !1AWSBDC102E HCL Workload Automation is not correctly installed on this system: "!1".AWSBDC103E Initialization failed.AWSBDC104E No object for !1.AWSBDC105E Non-valid state packet received: !1AWSBDC106E No".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDC101W AWSBDC102E AWSBDC103E AWSBDC104E AWSBDC105E AWSBDC106E 10.2.8 mensagem BDC indica Openview not running this system correctly installed Initialization failed object for Non-valid state packet received`
+> `AWSBDC101W AWSBDC103E AWSBDC104E AWSBDC105E 10.2.8 mensagem BDC indica Openview not running this system 1AWSBDC102E correctly installed Initialization failed.AWSBDC104E object for 1.AWSBDC105E Non-valid state packet received 1AWSBDC106E`
 
 ---
 
@@ -26208,7 +26208,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDC101W (BDC) indica: "Openview
 No HCL Workload Automation 10.2.8, a mensagem AWSBDC205E (BDC) indica: "Initialization failed.AWSBDC206E Error opening !1, error: !2AWSBDC207E Error returned from select operation: !1AWSBDC208E Error opening snmp connection to !1: !2AWSBDC209E Error in !1, invalid packet: !2AWSBDC210E Error in sigact: !1AWSBDC211E ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDC205E AWSBDC206E AWSBDC207E AWSBDC208E AWSBDC209E AWSBDC210E AWSBDC211E 10.2.8 mensagem BDC indica Initialization failed Error opening error returned from select operation snmp connection invalid packet sigact`
+> `AWSBDC205E AWSBDC206E 10.2.8 mensagem BDC indica Initialization failed.AWSBDC206E Error opening error 2AWSBDC207E returned from select operation 1AWSBDC208E snmp connection 2AWSBDC209E invalid packet 2AWSBDC210E sigact 1AWSBDC211E`
 
 ---
 
@@ -26223,7 +26223,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDC205E (BDC) indica: "Initiali
 No HCL Workload Automation 10.2.8, a mensagem AWSBDC305E (BDC) indica: "Initialization failed.AWSBDC306E Error opening !1, error: !2AWSBDC307E Error returned from select operation: !1AWSBDC308W Process does not have a pid: !1AWSBDC309E Process has a non-valid pid: !1AWSBDC310E Error writing "!2" to !1: !3AWSBDC311E".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDC305E AWSBDC306E AWSBDC307E AWSBDC308W AWSBDC309E AWSBDC310E AWSBDC311E 10.2.8 mensagem BDC indica Initialization failed Error opening error returned from select operation Process does not have pid has non-valid`
+> `AWSBDC305E AWSBDC306E 10.2.8 mensagem BDC indica Initialization failed.AWSBDC306E Error opening error 2AWSBDC307E returned from select operation 1AWSBDC308W Process does not have pid 1AWSBDC309E has non-valid 1AWSBDC310E writing`
 
 ---
 
@@ -26238,7 +26238,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDC305E (BDC) indica: "Initiali
 No HCL Workload Automation 10.2.8, a mensagem AWSBDC500E (BDC) indica: "not stringAWSBDC501E bad lengthAWSBDC502E not print %xAWSBDC503E need error message for work != node6i·à".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDC500E AWSBDC501E AWSBDC502E AWSBDC503E 10.2.8 mensagem BDC indica not string bad length print need error message for work node`
+> `AWSBDC500E 10.2.8 mensagem BDC indica not stringAWSBDC501E bad lengthAWSBDC502E print xAWSBDC503E need error message for work node`
 
 ---
 
@@ -26253,7 +26253,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDC500E (BDC) indica: "not stri
 No HCL Workload Automation 10.2.8, a mensagem AWSBDD001E (BDD) indica: "BmEvents error allocating space for !1: !2AWSBDD002E BmEvents option !1 is not supported.AWSBDD003E BmEvents error opening !1: !2AWSBDD004E BmEvents error writing !1: !2AWSBDD101I BmEvents will write to !1 type !2This is a dummy label. It must b".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDD001E AWSBDD002E AWSBDD003E AWSBDD004E AWSBDD101I 10.2.8 mensagem BDD indica BmEvents error allocating space for option not supported opening writing will write type This dummy`
+> `AWSBDD001E AWSBDD003E 10.2.8 mensagem BDD indica BmEvents error allocating space for 2AWSBDD002E option not supported.AWSBDD003E opening 2AWSBDD004E writing 2AWSBDD101I will write type 2This dummy label`
 
 ---
 
@@ -26268,7 +26268,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDD001E (BDD) indica: "BmEvents
 No HCL Workload Automation 10.2.8, a mensagem AWSBDE004E (BDE) indica: "A non-valid value for the timeout "!1" has been supplied.AWSBDE005E The "chkstat" command has not been supplied with the correct number of parameters.AWSBDE006E Unable to send a response record. The error is: !1.AWSBDE007E Unable to receive a requ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE004E AWSBDE005E AWSBDE006E AWSBDE007E 10.2.8 mensagem BDE indica non-valid value for the timeout has been supplied The chkstat command not with correct number parameters Unable send response`
+> `AWSBDE004E AWSBDE005E AWSBDE006E AWSBDE007E 10.2.8 mensagem BDE indica non-valid value for the timeout has been supplied.AWSBDE005E The chkstat command not supplied with correct number parameters.AWSBDE006E Unable send response record`
 
 ---
 
@@ -26283,7 +26283,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE004E (BDE) indica: "A non-va
 No HCL Workload Automation 10.2.8, a mensagem AWSBDF001E (BDF) indica: "Unable to open a connection to the chkstat service: !1AWSBDF002E Unable to start the chkstat service: !1AWSBDF003E Error: !1AWSBDF004E Cannot get a reply from the chkstat service: !1AWSBDF005E Cannot send a request to the chkstat service: !1AWSB".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF001E AWSBDF002E AWSBDF003E AWSBDF004E AWSBDF005E 10.2.8 mensagem BDF indica Unable open connection the chkstat service start Error Cannot get reply from send`
+> `AWSBDF001E 10.2.8 mensagem BDF indica Unable open connection the chkstat service 1AWSBDF002E start 1AWSBDF003E Error 1AWSBDF004E Cannot get reply from 1AWSBDF005E send`
 
 ---
 
@@ -26298,7 +26298,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF001E (BDF) indica: "Unable t
 No HCL Workload Automation 10.2.8, a mensagem AWSBDG001E (BDG) indica: "Downloader cannot connect to the remote client. The socket descriptor passed to downloader by netman is not valid. The following gives more details of the error: !1.AWSBDG002E Downloader is unable to create the stdlist file.Usage: downloader [ -V |".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG001E AWSBDG002E 10.2.8 mensagem BDG indica Downloader cannot connect the remote client The socket descriptor passed downloader netman not valid following gives more details error unable create`
+> `AWSBDG001E AWSBDG002E 10.2.8 mensagem BDG indica Downloader cannot connect the remote client The socket descriptor passed downloader netman not valid following gives more details error 1.AWSBDG002E unable create`
 
 ---
 
@@ -26313,7 +26313,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG001E (BDG) indica: "Download
 No HCL Workload Automation 10.2.8, a mensagem AWSBDH001E (BDH) indica: "The action code !1 specified in the !2 native method is invalidAWSBDH002E The object type !1 specified in the !2 native method is invalidThis is a dummy label. It must be the last label in every subcomponent. It ensures that a Label or Message endi".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDH001E AWSBDH002E 10.2.8 mensagem BDH indica The action code specified the native method invalid object type This dummy label must last every`
+> `AWSBDH001E 10.2.8 mensagem BDH indica The action code specified the native method invalidAWSBDH002E object type invalidThis dummy label must last every subcomponent ensures`
 
 ---
 
@@ -26373,7 +26373,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDW001E (BDW) indica: "Jobman c
 No HCL Workload Automation 10.2.8, a mensagem AWSBDW002E (BDW) indica: "The user ID used to launch this job is not valid. The operating system error is: !1.AWSBDW005E Error "!2" occurred while trying to open JCL file "!1".AWSBDW009E The following operating system error occurred retrieving the password structure for eit".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDW002E AWSBDW005E AWSBDW009E 10.2.8 mensagem BDW indica The user used launch this job not valid operating system error Error occurred while trying open JCL file following`
+> `AWSBDW002E AWSBDW005E AWSBDW009E 10.2.8 mensagem BDW indica The user used launch this job not valid operating system error 1.AWSBDW005E Error occurred while trying open JCL file following`
 
 ---
 
@@ -26388,7 +26388,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDW002E (BDW) indica: "The user
 No HCL Workload Automation 10.2.8, a mensagem AWSBDW051I (BDW) indica: "Jobman received a quit message.AWSBDW052I Jobman received a stop signal.AWSBDW056I Jobman is terminating. Workstation usage is: !1#AWSBDW057E The job "!1" was not launched for this reason: !2Starting#AWSBDW065I The following output was received ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDW051I AWSBDW052I AWSBDW056I AWSBDW057E AWSBDW065I 10.2.8 mensagem BDW indica Jobman received quit message stop signal terminating Workstation usage The job was not launched for this reason Starting`
+> `AWSBDW051I AWSBDW052I AWSBDW056I AWSBDW057E AWSBDW065I 10.2.8 mensagem BDW indica Jobman received quit message.AWSBDW052I stop signal.AWSBDW056I terminating Workstation usage 1#AWSBDW057E The job was not launched for this reason 2Starting#AWSBDW065I following output`
 
 ---
 
@@ -26418,7 +26418,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDW070E (BDW) indica: "Jobman c
 No HCL Workload Automation 10.2.8, a mensagem AWSBDY101E (BDY) indica: "Bad Mailbox record found.AWSBDY102E An internal error has occurred. The program cannot access the mailbox or ftbox common area in memory. The pointer to the mailbox common area is NULL or the area is not initialized.AWSBDY103I Received command MY:U".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDY101E AWSBDY102E AWSBDY103I 10.2.8 mensagem BDY indica Bad Mailbox record found internal error has occurred The program cannot access the mailbox ftbox common area memory pointer`
+> `AWSBDY101E AWSBDY102E AWSBDY103I 10.2.8 mensagem BDY indica Bad Mailbox record found.AWSBDY102E internal error has occurred The program cannot access the mailbox ftbox common area memory pointer NULL`
 
 ---
 
@@ -26433,7 +26433,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY101E (BDY) indica: "Bad Mail
 No HCL Workload Automation 10.2.8, a mensagem AWSBDZ001E (BDZ) indica: "Record out of range.Enter next record or Next, Prev, Back, Forward, Up (parent)#Other commands: List, Exit, Radix, Output, Modify#Hex is preceded by $. Octal is preceded by %#AWSBDZ005E The input was not valid.AWSBDZ006E No lists are possible fo".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ001E AWSBDZ005E AWSBDZ006E 10.2.8 mensagem BDZ indica Record out range Enter next record Next Prev Back Forward parent Other commands List Exit Radix Output Modify Hex preceded Octal The input`
+> `AWSBDZ001E AWSBDZ005E AWSBDZ006E 10.2.8 mensagem BDZ indica Record out range.Enter next record Next Prev Back Forward parent Other commands List Exit Radix Output Modify#Hex preceded Octal The input was not`
 
 ---
 
@@ -26448,7 +26448,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ001E (BDZ) indica: "Record o
 No HCL Workload Automation 10.2.8, a mensagem AWSBDZ057E (BDZ) indica: "No holders could be found.AWSBDZ058E No dependencies could be found.AWSBDZ059E No rerun jobs could be found.AWSBDZ060E No folders could be found.This is a dummy label. It must be the last label in every subcomponent. It ensures that a Label or Me".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ057E AWSBDZ058E AWSBDZ059E AWSBDZ060E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem BDZ indica holders could found dependencies rerun jobs folders This dummy label must the last every subcomponent`
+> `AWSBDZ057E AWSBDZ058E AWSBDZ059E AWSBDZ060E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem BDZ indica holders could found.AWSBDZ058E dependencies found.AWSBDZ059E rerun jobs found.AWSBDZ060E folders found.This dummy label must the last every subcomponent ensures that Label`
 
 ---
 
@@ -26463,7 +26463,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ057E (BDZ) indica: "No holde
 No HCL Workload Automation 10.2.8, a mensagem AWSBEA001E (BEA) indica: "Unable to open the mozart database.AWSBEA002E Unable to read from the mozart database.AWSBEA003E An error occurred while initializing the SORT routine.AWSBEA004E An error occurred in the SORTINPUT.AWSBEA005E An error occurred in the SORTOUTPUT.T".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEA001E AWSBEA002E AWSBEA003E AWSBEA004E AWSBEA005E 10.2.8 mensagem BEA indica Unable open the mozart database read from error occurred while initializing SORT routine SORTINPUT`
+> `AWSBEA001E AWSBEA002E AWSBEA003E AWSBEA004E AWSBEA005E 10.2.8 mensagem BEA indica Unable open the mozart database.AWSBEA002E read from database.AWSBEA003E error occurred while initializing SORT routine.AWSBEA004E SORTINPUT.AWSBEA005E`
 
 ---
 
@@ -26718,7 +26718,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC902I (BEC) indica: "AWSBEC90
 No HCL Workload Automation 10.2.8, a mensagem AWSBEE001E (BEE) indica: "Parameter !1 does not exist.AWSBEE002E The following parameter name is not valid: !1.AWSBEE003E You cannot use the following parameter: !1.Usage: parms [<parm-name> | -c <parm-name> <parm-content> | -d <parm-name> | -e <file-name> | -r <file-name>".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEE001E AWSBEE002E AWSBEE003E 10.2.8 mensagem BEE indica Parameter does not exist The following parameter name valid You cannot use the Usage parms parm-name parm-content file-name`
+> `AWSBEE001E AWSBEE002E AWSBEE003E 10.2.8 mensagem BEE indica Parameter does not exist.AWSBEE002E The following parameter name valid 1.AWSBEE003E You cannot use the 1.Usage parms parm-name parm-content file-name`
 
 ---
 
@@ -26733,7 +26733,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEE001E (BEE) indica: "Paramete
 No HCL Workload Automation 10.2.8, a mensagem AWSBEF001E (BEF) indica: "Missing last archive run date.AWSBEF002E Archiver could not create a directory with the following path: !1.AWSBEF003I The Symphony file !1 from schedlog was archived.AWSBEF004E An error occurred while opening the Symphony file from schedlog !1.AW".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEF001E AWSBEF002E AWSBEF003I AWSBEF004E 10.2.8 mensagem BEF indica Missing last archive run date Archiver could not create directory with the following path The Symphony file from schedlog was archived error`
+> `AWSBEF001E AWSBEF002E AWSBEF003I AWSBEF004E 10.2.8 mensagem BEF indica Missing last archive run date.AWSBEF002E Archiver could not create directory with the following path 1.AWSBEF003I The Symphony file from schedlog was archived.AWSBEF004E error occurred while`
 
 ---
 
@@ -26748,7 +26748,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF001E (BEF) indica: "Missing 
 No HCL Workload Automation 10.2.8, a mensagem AWSBEG201E (BEG) indica: "O seguinte diretÃ³rio nÃ£o pÃ´de ser criado: !2. O seguinte erro foi retornado do sistema operacional: !1AWSBEG202E NÃ£o foi possÃ­vel definir os direitos de acesso para o seguinte diretÃ³rio: !2. O seguinte erro foi retornado do sistema operacional".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEG201E AWSBEG202E 10.2.8 mensagem BEG indica seguinte criado erro foi retornado sistema operacional vel definir direitos acesso`
+> `AWSBEG201E 10.2.8 mensagem BEG indica seguinte criado erro foi retornado sistema operacional 1AWSBEG202E vel definir direitos acesso`
 
 ---
 
@@ -26763,7 +26763,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEG201E (BEG) indica: "O seguin
 No HCL Workload Automation 10.2.8, a mensagem AWSBEH001E (BEH) indica: "The connection configuration file "!1" containing the connection properties cannot be found.AWSBEH002E The target host computer is not defined in the connection configuration file or the supplied command parameters.AWSBEH003E The protocol is not de".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEH001E AWSBEH002E AWSBEH003E 10.2.8 mensagem BEH indica The connection configuration file containing the properties cannot found target host computer not defined supplied command parameters`
+> `AWSBEH001E AWSBEH002E AWSBEH003E 10.2.8 mensagem BEH indica The connection configuration file containing the properties cannot found.AWSBEH002E target host computer not defined supplied command parameters.AWSBEH003E`
 
 ---
 
@@ -26778,7 +26778,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEH001E (BEH) indica: "The conn
 No HCL Workload Automation 10.2.8, a mensagem AWSBEH122I (BEH) indica: "The upload of the generic event provider XML has completed successfully.AWSBEH123I The download of the generic event provider XML has completed successfully.Usage: planman [-u | -v]planman [connectionParameters]".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEH122I AWSBEH123I 10.2.8 mensagem BEH indica The upload the generic event provider XML has completed successfully download Usage planman connectionParameters`
+> `AWSBEH122I AWSBEH123I 10.2.8 mensagem BEH indica The upload the generic event provider XML has completed successfully.AWSBEH123I download successfully.Usage planman connectionParameters`
 
 ---
 
@@ -26793,7 +26793,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEH122I (BEH) indica: "The uplo
 No HCL Workload Automation 10.2.8, a mensagem AWSBEH144W (BEH) indica: "Unable to execute the Resync command because the Symphony file is not found.AWSBEH145W Unable to execute the Checksync command because the Symphony file is not found.This is a dummy label. It must be the last label in every subcomponent. It ensures".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEH144W AWSBEH145W 10.2.8 mensagem BEH indica Unable execute the Resync command because Symphony file not found Checksync This dummy`
+> `AWSBEH144W AWSBEH145W 10.2.8 mensagem BEH indica Unable execute the Resync command because Symphony file not found.AWSBEH145W Checksync found.This dummy label must`
 
 ---
 
@@ -26808,7 +26808,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEH144W (BEH) indica: "Unable t
 No HCL Workload Automation 10.2.8, a mensagem AWSBEI001E (BEI) indica: "User "!1" does not exist.AWSBEI002E The file "!1" is empty, or an error occurred during the conversion of the contents of the file to UNICODE. No user has been added to or updated in the local database.AWSBEI003W An internal error has occurred. Can".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEI001E AWSBEI002E AWSBEI003W 10.2.8 mensagem BEI indica User does not exist The file empty error occurred during the conversion contents UNICODE user has been added updated local`
+> `AWSBEI001E AWSBEI002E AWSBEI003W 10.2.8 mensagem BEI indica User does not exist.AWSBEI002E The file empty error occurred during the conversion contents UNICODE user has been added updated local database.AWSBEI003W`
 
 ---
 
@@ -26823,7 +26823,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEI001E (BEI) indica: "User "!1
 No HCL Workload Automation 10.2.8, a mensagem AWSBEI007E (BEI) indica: "You are not authorized to run this command.User !1 found.AWSBEI009E An error has occurred. The user "!1" has not been updated or added.AWSBEI010E Cannot open the file "!1". Operating system error: "!2".AWSBEI011E The Unicode (UTF-8) name of the w".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEI007E AWSBEI009E AWSBEI010E AWSBEI011E 10.2.8 mensagem BEI indica You are not authorized run this command User found error has occurred The user been updated added Cannot open the file`
+> `AWSBEI007E AWSBEI009E AWSBEI010E AWSBEI011E 10.2.8 mensagem BEI indica You are not authorized run this command.User found.AWSBEI009E error has occurred The user been updated added.AWSBEI010E Cannot open the file Operating system`
 
 ---
 
@@ -26838,7 +26838,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEI007E (BEI) indica: "You are 
 No HCL Workload Automation 10.2.8, a mensagem AWSBEJ002I (BEJ) indica: "No error was found in the Symphony file.AWSBEJ010E Error: Job stream record (#!1) has incorrect dependencies.AWSBEJ011E Error: Job record (#!1) has incorrect dependencies.AWSBEJ012E Error while reading record (#!1): !2AWSBEJ014E Error: The job st".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEJ002I AWSBEJ010E AWSBEJ011E AWSBEJ012E AWSBEJ014E 10.2.8 mensagem BEJ indica error was found the Symphony file Error Job stream record has incorrect dependencies while reading`
+> `AWSBEJ002I AWSBEJ010E AWSBEJ011E AWSBEJ012E 10.2.8 mensagem BEJ indica error was found the Symphony file.AWSBEJ010E Error Job stream record has incorrect dependencies.AWSBEJ011E dependencies.AWSBEJ012E while reading 2AWSBEJ014E`
 
 ---
 
@@ -26853,7 +26853,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ002I (BEJ) indica: "No error
 No HCL Workload Automation 10.2.8, a mensagem AWSBHS001E (BHS) indica: "Error: Unable to open connection to MVS gateway: !1AWSBHS002E Error: Unable to start the MVS gateway: !1AWSBHS003E Error: !1AWSBHS004E Error: Cannot get reply from the MVS gateway: !1AWSBHS005E Error: Cannot send request to MVS gateway: !1AWSBHS".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHS001E AWSBHS002E AWSBHS003E AWSBHS004E AWSBHS005E 10.2.8 mensagem BHS indica Error Unable open connection MVS gateway start the Cannot get reply from`
+> `AWSBHS001E 10.2.8 mensagem BHS indica Error Unable open connection MVS gateway 1AWSBHS002E start the 1AWSBHS003E 1AWSBHS004E Cannot get reply from 1AWSBHS005E`
 
 ---
 
@@ -26868,7 +26868,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHS001E (BHS) indica: "Error: U
 No HCL Workload Automation 10.2.8, a mensagem AWSBHT001E (BHT) indica: "The job "!1" in file "!2" has failed with the error: !3AWSBHT002W Job logs on differently than documentation indicates.AWSBHT015W Batchman cannot release a job stream from its dependencies because the job stream is not in the "holding" state that i".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHT001E AWSBHT002W AWSBHT015W 10.2.8 mensagem BHT indica The job file has failed with the error Job logs differently than documentation indicates Batchman cannot release stream from its dependencies because`
+> `AWSBHT001E AWSBHT015W 10.2.8 mensagem BHT indica The job file has failed with the error 3AWSBHT002W Job logs differently than documentation indicates.AWSBHT015W Batchman cannot release stream from its dependencies because`
 
 ---
 
@@ -26883,7 +26883,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHT001E (BHT) indica: "The job 
 No HCL Workload Automation 10.2.8, a mensagem AWSBHT003E (BHT) indica: "Batchman is unable to allocate memory for its internal record table during initialization.AWSBHT004E Batchman has read a record in the message file which has the following destination workstation (!1) that cannot be found. The message originated at ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHT003E AWSBHT004E 10.2.8 mensagem BHT indica Batchman unable allocate memory for its internal record table during initialization has read the message file which following destination workstation`
+> `AWSBHT003E AWSBHT004E 10.2.8 mensagem BHT indica Batchman unable allocate memory for its internal record table during initialization.AWSBHT004E has read the message file which following destination workstation that`
 
 ---
 
@@ -26898,7 +26898,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHT003E (BHT) indica: "Batchman
 No HCL Workload Automation 10.2.8, a mensagem AWSBHT201I (BHT) indica: "Job stream !1 UNTIL time !2 has occurred. The UNTIL user option is !3AWSBHT202I Job !1 UNTIL time !2 has occurred. The UNTIL user option is !3AWSBHT203I Job !1 Maximum Duration time !2 has exceeded. The MaxDur user option is !3AWSBHT204I Job !1 Mi".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHT201I AWSBHT202I AWSBHT203I AWSBHT204I 10.2.8 mensagem BHT indica Job stream UNTIL time has occurred The user option Maximum Duration`
+> `AWSBHT201I 10.2.8 mensagem BHT indica Job stream UNTIL time has occurred The user option 3AWSBHT202I 3AWSBHT203I Maximum Duration`
 
 ---
 
@@ -26913,7 +26913,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHT201I (BHT) indica: "Job stre
 No HCL Workload Automation 10.2.8, a mensagem AWSBHT230W (BHT) indica: "Warning: Dependency !1 not found in Symphony;ignored.AWSBHT231W A duplicated job termination (JT) record has been received for the following job: !1.AWSBHT233W An incorrect dependency has been detected for the following jobstream: !1.Priority will ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHT230W AWSBHT231W AWSBHT233W 10.2.8 mensagem BHT indica Warning Dependency not found Symphony ignored duplicated job termination record has been received for the following incorrect dependency detected`
+> `AWSBHT230W AWSBHT231W AWSBHT233W 10.2.8 mensagem BHT indica Warning Dependency not found Symphony ignored.AWSBHT231W duplicated job termination record has been received for the following 1.AWSBHT233W incorrect dependency detected`
 
 ---
 
@@ -26943,7 +26943,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU001E (BHU) indica: "Conman e
 No HCL Workload Automation 10.2.8, a mensagem AWSBHU021E (BHU) indica: "The agent on workstation: !1 cannot be started because it has not got the latest Symphony file version.AWSBHU022E The time value specified as an argument is incorrect. It must be numeric, between 0000 and 2359.AWSBHU023E You have issued an "opens" ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU021E AWSBHU022E AWSBHU023E 10.2.8 mensagem BHU indica The agent workstation cannot started because has not got the latest Symphony file version time value specified argument incorrect must numeric between and`
+> `AWSBHU021E AWSBHU022E AWSBHU023E 10.2.8 mensagem BHU indica The agent workstation cannot started because has not got the latest Symphony file version.AWSBHU022E time value specified argument incorrect must numeric between and 2359.AWSBHU023E`
 
 ---
 
@@ -26958,7 +26958,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU021E (BHU) indica: "The agen
 No HCL Workload Automation 10.2.8, a mensagem AWSBHU126E (BHU) indica: "A time zone has been specified in a time dependency, but time zone use has not been enabled for workstation: !1AWSBHU127W Submitted !1 to batchman as !2# but workstation !3 not present in the Symphony file.AWSBHU128W Dependency !1 might not be pres".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU126E AWSBHU127W AWSBHU128W 10.2.8 mensagem BHU indica time zone has been specified dependency but use not enabled for workstation Submitted batchman present the`
+> `AWSBHU126E AWSBHU128W 10.2.8 mensagem BHU indica time zone has been specified dependency but use not enabled for workstation 1AWSBHU127W Submitted batchman present the`
 
 ---
 
@@ -26988,7 +26988,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU606E (BHU) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSBHU617I (BHU) indica: "The "bulk_discovery" command was forwarded to batchman.AWSBHU618E The "bulk_discovery" was not performed because no configuration file was found.AWSBHU619E The following error occurred obtaining the monitoring configuration file for workstation "!1".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU617I AWSBHU618E AWSBHU619E 10.2.8 mensagem BHU indica The bulk_discovery command was forwarded batchman not performed because configuration file found following error occurred obtaining the monitoring`
+> `AWSBHU617I AWSBHU618E AWSBHU619E 10.2.8 mensagem BHU indica The bulk_discovery command was forwarded batchman.AWSBHU618E not performed because configuration file found.AWSBHU619E following error occurred obtaining the monitoring`
 
 ---
 
@@ -27003,7 +27003,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU617I (BHU) indica: "The "bul
 No HCL Workload Automation 10.2.8, a mensagem AWSBHV001E (BHV) indica: "An unspecified error was encountered building the following message file !1AWSBHV002E Unexpected error creating new SYMPHONYAWSBHV003E Unable to open CROSSREF help fileAWSBHV004E An internal error has occurred. Stageman has found an incorrect reco".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV001E AWSBHV002E AWSBHV003E AWSBHV004E 10.2.8 mensagem BHV indica unspecified error was encountered building the following message file Unexpected creating new SYMPHONY Unable open CROSSREF help internal has`
+> `AWSBHV001E 10.2.8 mensagem BHV indica unspecified error was encountered building the following message file 1AWSBHV002E Unexpected creating new SYMPHONYAWSBHV003E Unable open CROSSREF help fileAWSBHV004E internal has occurred Stageman`
 
 ---
 
@@ -27033,7 +27033,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV065E (BHV) indica: "In the o
 No HCL Workload Automation 10.2.8, a mensagem AWSBHW001E (BHW) indica: "A job name, file name or keyword is missing in the submitted command.AWSBHW002E The submitted command appears to contain extra or duplicated characters.AWSBHW003E There is a syntax error in the name. It must be between 1 and 16 bytes.AWSBHW004E Th".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW001E AWSBHW002E AWSBHW003E AWSBHW004E 10.2.8 mensagem BHW indica job name file keyword missing the submitted command The appears contain extra duplicated characters There syntax error must`
+> `AWSBHW001E AWSBHW002E AWSBHW003E AWSBHW004E 10.2.8 mensagem BHW indica job name file keyword missing the submitted command.AWSBHW002E The command appears contain extra duplicated characters.AWSBHW003E There syntax error must between and`
 
 ---
 
@@ -27063,7 +27063,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX011W (BHX) indica: "The job 
 No HCL Workload Automation 10.2.8, a mensagem AWSBHX027W (BHX) indica: "The value specified for the "-timeout" connection parameter is not valid. It must be the number of seconds that the command line client is to wait for a connection before timing out.AWSBHX028I Updating statistics. Percentage complete: !1%.AWSBHX029".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX027W AWSBHX028I 10.2.8 mensagem BHX indica The value specified for the timeout connection parameter not valid must number seconds that command line client wait before timing out`
+> `AWSBHX027W AWSBHX028I 10.2.8 mensagem BHX indica The value specified for the timeout connection parameter not valid must number seconds that command line client wait before timing out.AWSBHX028I`
 
 ---
 
@@ -27078,7 +27078,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX027W (BHX) indica: "The valu
 No HCL Workload Automation 10.2.8, a mensagem AWSBHZ001E (BHZ) indica: "Schedulr cannot be run on this workstation, because the settings in the global options or the localopts file indicate that this workstation is not the master domain manager.AWSBHZ002E There is not enough memory available to run schedulr.AWSBHZ003W ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHZ001E AWSBHZ002E AWSBHZ003W opcoes globais opcoes locais thiscpu 10.2.8 mensagem BHZ indica Schedulr cannot run this workstation because the settings global options localopts file indicate that not There enough memory`
+> `AWSBHZ001E AWSBHZ002E AWSBHZ003W opcoes globais opcoes locais thiscpu 10.2.8 mensagem BHZ indica Schedulr cannot run this workstation because the settings global options localopts file indicate that not manager.AWSBHZ002E There enough memory`
 
 ---
 
@@ -27138,7 +27138,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA004E (BIA) indica: "The deli
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA005E (BIA) indica: "Expected a !1 here.AWSBIA006E Error on database access.AWSBIA007E Security error.AWSBIA008E The supplied job stream !1#!2 could not be found.AWSBIA009E Error opening database.AWSBIA010E Autodoc not allowed for this job.AWSBIA011I !1: Old value ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA005E AWSBIA006E AWSBIA007E AWSBIA008E AWSBIA009E AWSBIA010E AWSBIA011I 10.2.8 mensagem BIA indica Expected here Error database access Security error The supplied job stream could not found opening Autodoc allowed`
+> `AWSBIA005E AWSBIA006E AWSBIA007E AWSBIA008E AWSBIA009E AWSBIA010E AWSBIA011I 10.2.8 mensagem BIA indica Expected here.AWSBIA006E Error database access.AWSBIA007E Security error.AWSBIA008E The supplied job stream could not found.AWSBIA009E opening database.AWSBIA010E Autodoc allowed for this job.AWSBIA011I Old value`
 
 ---
 
@@ -27153,7 +27153,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA005E (BIA) indica: "Expected
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA018E (BIA) indica: "Job "!1" is already present in the job stream.AWSBIA019E For job stream !1#!2: errors !3, warnings !4.AWSBIA020E Mastsked not updated.AWSBIA021E Job "!1" does not exist in job stream".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA018E AWSBIA019E AWSBIA020E AWSBIA021E 10.2.8 mensagem BIA indica Job already present the job stream For errors warnings Mastsked not updated does exist`
+> `AWSBIA018E AWSBIA019E AWSBIA020E AWSBIA021E 10.2.8 mensagem BIA indica Job already present the job stream.AWSBIA019E For stream errors warnings 4.AWSBIA020E Mastsked not updated.AWSBIA021E does exist`
 
 ---
 
@@ -27183,7 +27183,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA022E (BIA) indica: "A file s
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA023E (BIA) indica: "Job !1#!2 not found in job master.AWSBIA024E Job master changed while trying to update job !1#!2. Update aborted.Continue (enter "y" for yes, "n" for no)? #Command : %s #Workstation ID    Job stream         Creator                      Last Updat".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA023E AWSBIA024E 10.2.8 mensagem BIA indica Job not found job changed while trying update Update aborted Continue enter for yes Command Workstation stream Creator Last Updat`
+> `AWSBIA023E AWSBIA024E 10.2.8 mensagem BIA indica Job not found job master.AWSBIA024E changed while trying update Update aborted.Continue enter for yes Command Workstation stream Creator Last Updat`
 
 ---
 
@@ -27213,7 +27213,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA031E (BIA) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA032E (BIA) indica: "Error reading schedule.Errors occurred in the definition. Do you want to re-edit (enter "y" for yes, "n" for no)? #AWSBIA034E No job streams found in !1#!2AWSBIA035I Found !1 job streams in !2#!3AWSBIA036I Schedule !1#!2 has been deleted.AWSBIA0".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA032E AWSBIA034E AWSBIA035I AWSBIA036I 10.2.8 mensagem BIA indica Error reading schedule Errors occurred the definition you want re-edit enter for yes job streams found Found Schedule has`
+> `AWSBIA032E AWSBIA034E 10.2.8 mensagem BIA indica Error reading schedule.Errors occurred the definition you want re-edit enter for yes job streams found 2AWSBIA035I Found 3AWSBIA036I Schedule has been`
 
 ---
 
@@ -27228,7 +27228,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA032E (BIA) indica: "Error re
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA056I (BIA) indica: "Workstation !1 has been deleted.AWSBIA057E No resources were found.AWSBIA058I Found !1 resource(s).AWSBIA059I There is/are !1 Resource(s) in the database.AWSBIA060E Error modifying resources.Command : %s #Prompt    Description #--------  -----".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA056I AWSBIA057E AWSBIA058I AWSBIA059I AWSBIA060E 10.2.8 mensagem BIA indica Workstation has been deleted resources were found Found resource There are Resource the database Error modifying Command Prompt Description`
+> `AWSBIA056I AWSBIA057E AWSBIA058I AWSBIA059I AWSBIA060E 10.2.8 mensagem BIA indica Workstation has been deleted.AWSBIA057E resources were found.AWSBIA058I Found resource There are Resource the database.AWSBIA060E Error modifying resources.Command Prompt Description`
 
 ---
 
@@ -27258,7 +27258,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA098E (BIA) indica: "A file s
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA100E (BIA) indica: "CPU !1 does not exist in cpudata: !2AWSBIA101E Only SCHEDULE or CPU can be specified here.Replace (enter "y" for yes, "n" for no)?#Okay to delete CPU definition !1? [N/Y]#Okay to delete Schedule definition !1#!2? [N/Y]#AWSBIA105E A file system e".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA100E AWSBIA101E AWSBIA105E 10.2.8 mensagem BIA indica CPU does not exist cpudata Only SCHEDULE can specified here Replace enter for yes Okay delete definition Schedule`
+> `AWSBIA100E AWSBIA105E 10.2.8 mensagem BIA indica CPU does not exist cpudata 2AWSBIA101E Only SCHEDULE can specified here.Replace enter for yes Okay delete definition Schedule`
 
 ---
 
@@ -27273,7 +27273,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA100E (BIA) indica: "CPU !1 d
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA201E (BIA) indica: "You are not authorized to access job !1#!2.AWSBIA202I Found !1 jobs for !2#!3AWSBIA203E No qualifying jobs were found in !1.AWSBIA204W For !1, errors !2, warnings !3.Command : %s #Workstation ID   Job                                      Logon  ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA201E AWSBIA202I AWSBIA203E AWSBIA204W 10.2.8 mensagem BIA indica You are not authorized access job Found jobs for qualifying were found For errors warnings Command Workstation Job Logon`
+> `AWSBIA201E AWSBIA202I AWSBIA204W 10.2.8 mensagem BIA indica You are not authorized access job 2.AWSBIA202I Found jobs for 3AWSBIA203E qualifying were found 1.AWSBIA204W For errors warnings 3.Command Workstation Job Logon`
 
 ---
 
@@ -27288,7 +27288,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA201E (BIA) indica: "You are 
 No HCL Workload Automation 10.2.8, a mensagem AWSBIA389E (BIA) indica: "Composer was not able to obtain a valid default workstation from the value "!1". The error is: "!2".AWSBIA390E The specified cpu id could not be found.AWSBIA391E The required workstation name is missing.AWSBIA392E The specified workstation could n".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer was AWSBIA389E AWSBIA390E AWSBIA391E AWSBIA392E 10.2.8 mensagem BIA indica Composer was not able obtain valid default workstation from the value The error specified cpu could found required name`
+> `composer was AWSBIA389E AWSBIA390E AWSBIA391E AWSBIA392E 10.2.8 mensagem BIA indica Composer was not able obtain valid default workstation from the value The error specified cpu could found.AWSBIA391E required name missing.AWSBIA392E`
 
 ---
 
@@ -27348,7 +27348,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIB040E (BIB) indica: "There is
 No HCL Workload Automation 10.2.8, a mensagem AWSBIB041E (BIB) indica: "There is a syntax error. A date-related keyword has been supplied (for example, "deadline") but it is not followed by a date or day specification, or a calendar or iCalendar name.AWSBIB042E There is a syntax error. A "day", "weekday", or "workday" k".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIB041E AWSBIB042E calendario composer dias livres freedays 10.2.8 mensagem BIB indica There syntax error date-related keyword has been supplied for example deadline but not followed date day specification calendar iCalendar name`
+> `AWSBIB041E AWSBIB042E calendario composer dias livres freedays 10.2.8 mensagem BIB indica There syntax error date-related keyword has been supplied for example deadline but not followed date day specification calendar iCalendar name.AWSBIB042E weekday`
 
 ---
 
@@ -27363,7 +27363,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIB041E (BIB) indica: "There is
 No HCL Workload Automation 10.2.8, a mensagem AWSBIB044E (BIB) indica: "There is a syntax error. A time-related keyword (for example, "every") has been supplied, but its value is either missing or is not a valid time specification.AWSBIB045E There is a syntax error. An "opens" keyword has been supplied, but its value is".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIB044E AWSBIB045E 10.2.8 mensagem BIB indica There syntax error time-related keyword for example every has been supplied but its value either missing not valid time specification opens`
+> `AWSBIB044E AWSBIB045E 10.2.8 mensagem BIB indica There syntax error time-related keyword for example every has been supplied but its value either missing not valid time specification.AWSBIB045E opens`
 
 ---
 
@@ -27408,7 +27408,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIB202E (BIB) indica: "There is
 No HCL Workload Automation 10.2.8, a mensagem AWSBIB206E (BIB) indica: "There is a syntax error. More than one parameter was specified.%.33s(%d) %.80s#AWSBIB208E There is a syntax error. The number of job stream dependencies exceeds the maximum number allowed.AWSBIB209E There is a syntax error. The number of job depen".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIB206E AWSBIB208E AWSBIB209E 10.2.8 mensagem BIB indica There syntax error More than one parameter was specified 33s 80s The number job stream dependencies exceeds the maximum allowed`
+> `AWSBIB206E AWSBIB208E AWSBIB209E 10.2.8 mensagem BIB indica There syntax error More than one parameter was specified 33s 80s#AWSBIB208E The number job stream dependencies exceeds the maximum allowed.AWSBIB209E`
 
 ---
 
@@ -27423,7 +27423,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIB206E (BIB) indica: "There is
 No HCL Workload Automation 10.2.8, a mensagem AWSBIC001E (BIC) indica: "An error occurred opening the database: !1AWSBIC002E An error occurred opening the file "!1" for readingAWSBIC003E An error was returned from the parser.AWSBIC004E "!1" line !2, error looking for "!3#!4" job in database: !5AWSBIC005E "!1" line !2".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC001E AWSBIC002E AWSBIC003E AWSBIC004E AWSBIC005E 10.2.8 mensagem BIC indica error occurred opening the database file for reading was returned from parser line looking`
+> `AWSBIC001E AWSBIC004E 10.2.8 mensagem BIC indica error occurred opening the database 1AWSBIC002E file for readingAWSBIC003E was returned from parser.AWSBIC004E line looking job`
 
 ---
 
@@ -27438,7 +27438,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC001E (BIC) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSBID001E (BID) indica: "Compiler cannot find the "thiscpu" option in the local options file (localopts).AWSBID002E Compiler cannot find the "master" option in either the localopts file or the global options.AWSBID003E Compiler cannot be run on this workstation, because th".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBID001E AWSBID002E AWSBID003E opcoes globais opcoes locais thiscpu 10.2.8 mensagem BID indica Compiler cannot find the option local options file localopts either global`
+> `AWSBID001E AWSBID002E AWSBID003E opcoes globais opcoes locais thiscpu 10.2.8 mensagem BID indica Compiler cannot find the option local options file localopts either global options.AWSBID003E`
 
 ---
 
@@ -27453,7 +27453,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID001E (BID) indica: "Compiler
 No HCL Workload Automation 10.2.8, a mensagem AWSBIE013E (BIE) indica: "Error: input file "!1" and output file "!2" are identicalThis is a dummy label. It must be the last label in every subcomponent. It ensures that a Label or Message ending in a <br/> tag is not the last item in the subcomponent.C".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIE013E 10.2.8 mensagem BIE indica Error input file and output are identical This dummy label must the last every subcomponent ensures that Label Message ending tag not`
+> `AWSBIE013E 10.2.8 mensagem BIE indica Error input file and output are identicalThis dummy label must the last every subcomponent ensures that Label Message ending tag not`
 
 ---
 
@@ -27468,7 +27468,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIE013E (BIE) indica: "Error: i
 No HCL Workload Automation 10.2.8, a mensagem AWSBIF002E (BIF) indica: "Couldn't malloc program globals.AWSBIF003E Couldn't open output, error is: !1AWSBIF004E Error writing output, error is: !1User defined text#AWSBIF006E Error reading mastsked is: !1AWSBIF007E Error finding next job stream is: !1This is a dummy l".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIF002E AWSBIF003E AWSBIF004E AWSBIF006E AWSBIF007E 10.2.8 mensagem BIF indica Couldn malloc program globals open output error Error writing User defined text reading mastsked finding next`
+> `AWSBIF002E AWSBIF003E AWSBIF006E 10.2.8 mensagem BIF indica Couldn malloc program globals.AWSBIF003E open output error 1AWSBIF004E Error writing 1User defined text#AWSBIF006E reading mastsked 1AWSBIF007E finding next job stream`
 
 ---
 
@@ -27513,7 +27513,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIH105I (BIH) indica: "-o The a
 No HCL Workload Automation 10.2.8, a mensagem AWSBII001E (BII) indica: "Unable to write token control structure.AWSBII002E No tokens in list.AWSBII003E Non-valid token "!1" in list (!2).AWSBII004E No read access to parameter in "!1".AWSBII005E Undefined parameter "!1" in string "!2"; not replaced.AWSBII006E Paramete".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII001E AWSBII002E AWSBII003E AWSBII004E AWSBII005E AWSBII006E 10.2.8 mensagem BII indica Unable write token control structure tokens list Non-valid read access parameter Undefined string not replaced Paramete`
+> `AWSBII001E AWSBII002E AWSBII003E AWSBII004E AWSBII005E AWSBII006E 10.2.8 mensagem BII indica Unable write token control structure.AWSBII002E tokens list.AWSBII003E Non-valid list read access parameter Undefined string not replaced.AWSBII006E Paramete`
 
 ---
 
@@ -27558,7 +27558,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ149E (BIJ) indica: "An inter
 No HCL Workload Automation 10.2.8, a mensagem AWSBIK001E (BIK) indica: "Error creating socket !1:!2 error = !3. : !4.AWSBIK002E Unable to get host name !1:!2 error = !3. : !4.AWSBIK003E Unable to get host entries by name !1:!2 error = !3. : !4.AWSBIK004E Error binding socket to address !1:!2 error = !3. : !4.AWSBIK00".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIK001E AWSBIK002E AWSBIK003E AWSBIK004E 10.2.8 mensagem BIK indica Error creating socket error Unable get host name entries binding address AWSBIK00`
+> `AWSBIK001E AWSBIK002E AWSBIK003E AWSBIK004E 10.2.8 mensagem BIK indica Error creating socket error 4.AWSBIK002E Unable get host name 4.AWSBIK003E entries 4.AWSBIK004E binding address 4.AWSBIK00`
 
 ---
 
@@ -27573,7 +27573,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIK001E (BIK) indica: "Error cr
 No HCL Workload Automation 10.2.8, a mensagem AWSBIM001E (BIM) indica: "The workstation type does not match the workstation type in the database.AWSBIM002E The workstation "!1" is not a valid host.AWSBIM003E The domain name must be specified for this workstation definition.AWSBIM004E An extended agent "!1" cannot host".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIM001E AWSBIM002E AWSBIM003E AWSBIM004E 10.2.8 mensagem BIM indica The workstation type does not match the database valid host name must specified for this`
+> `AWSBIM001E AWSBIM002E AWSBIM003E AWSBIM004E 10.2.8 mensagem BIM indica The workstation type does not match the database.AWSBIM002E valid host.AWSBIM003E name must specified for this definition.AWSBIM004E extended`
 
 ---
 
@@ -27588,7 +27588,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIM001E (BIM) indica: "The work
 No HCL Workload Automation 10.2.8, a mensagem AWSBIN001E (BIN) indica: "The workstation: "!1" has not been initialized yet.AWSBIN002E The workstation "!1" is already active.AWSBIN003E The workstation "!1" identified as the target for a switch manager operation is not a fault-tolerant agent.AWSBIN004E The domain manage".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIN001E AWSBIN002E AWSBIN003E AWSBIN004E 10.2.8 mensagem BIN indica The workstation has not been initialized yet already active identified the target for switch operation fault-tolerant agent`
+> `AWSBIN001E AWSBIN002E AWSBIN003E AWSBIN004E 10.2.8 mensagem BIN indica The workstation has not been initialized yet.AWSBIN002E already active.AWSBIN003E identified the target for switch operation fault-tolerant agent.AWSBIN004E manage`
 
 ---
 
@@ -27603,7 +27603,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIN001E (BIN) indica: "The work
 No HCL Workload Automation 10.2.8, a mensagem AWSBIO001E (BIO) indica: "The supplied parameter "!1" is not valid.AWSBIO002E The supplied parameter "!1" does not have a valid length.AWSBIO003E The supplied parameter "!1" already exists.AWSBIO004E The supplied parameter "!2!1" has a non-alphabetic first character.AWSBI".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIO001E AWSBIO002E AWSBIO003E AWSBIO004E 10.2.8 mensagem BIO indica The supplied parameter not valid does have length already exists has`
+> `AWSBIO001E AWSBIO002E AWSBIO003E AWSBIO004E 10.2.8 mensagem BIO indica The supplied parameter not valid.AWSBIO002E does have valid length.AWSBIO003E already exists.AWSBIO004E has non-alphabetic first character.AWSBI`
 
 ---
 
@@ -27618,7 +27618,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIO001E (BIO) indica: "The supp
 No HCL Workload Automation 10.2.8, a mensagem AWSBIP001E (BIP) indica: "A general failure occurred in file: !1 at line: !2.AWSBIP002E The object of type !1 is represented by a non-valid ID or handle in method !2AWSBIP003E Either the object does not exist or its properties cannot be displayed with this Dynamic Workload ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIP001E AWSBIP002E AWSBIP003E 10.2.8 mensagem BIP indica general failure occurred file line The object type represented non-valid handle method Either the does not exist its properties cannot displayed with`
+> `AWSBIP001E AWSBIP002E 10.2.8 mensagem BIP indica general failure occurred file line 2.AWSBIP002E The object type represented non-valid handle method 2AWSBIP003E Either the does not exist its properties cannot displayed with`
 
 ---
 
@@ -27633,7 +27633,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIP001E (BIP) indica: "A genera
 No HCL Workload Automation 10.2.8, a mensagem AWSBIR001E (BIR) indica: "<unknown symphony record>Locale LANG set to the following: "!1"#AWSBIR100E option requires an argument -- %cAWSBIR101E illegal option -- %cAWSBIR102E Cannot open file '%s'This is a dummy label. It must be the last label in every subcomponent. It".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIR001E AWSBIR100E AWSBIR101E AWSBIR102E 10.2.8 mensagem BIR indica unknown symphony record Locale LANG set the following option requires argument illegal Cannot open file This dummy label must last`
+> `AWSBIR001E AWSBIR100E 10.2.8 mensagem BIR indica unknown symphony record Locale LANG set the following option requires argument cAWSBIR101E illegal cAWSBIR102E Cannot open file This dummy label must last`
 
 ---
 
@@ -27648,7 +27648,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIR001E (BIR) indica: "<unknown
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS003E (BIS) indica: "The following HCL Workload Automation configuration file does not exist: %s.AWSBIS004I Installed %sAWSBIS005I Saving %s as %sAWSBIS006I Attempting to remove %sAWSBIS007I The %s command installed as hard linkAWSBIS008I The %s command installed as".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS003E AWSBIS004I AWSBIS005I AWSBIS006I AWSBIS007I AWSBIS008I 10.2.8 mensagem BIS indica The following configuration file does not exist Installed Saving Attempting remove command installed hard link`
+> `AWSBIS003E AWSBIS004I 10.2.8 mensagem BIS indica The following configuration file does not exist s.AWSBIS004I Installed sAWSBIS005I Saving sAWSBIS006I Attempting remove sAWSBIS007I command installed hard linkAWSBIS008I`
 
 ---
 
@@ -27663,7 +27663,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS003E (BIS) indica: "The foll
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS022I (BIS) indica: "HCL Workload Automation has been successfully installed.AWSBIS023E Unable to install %s properly.AWSBIS024E Customize has been launched with the '"-m <module_name>" option incorrectly specified more than once.AWSBIS025E Customize has been issued w".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS022I AWSBIS023E AWSBIS024E AWSBIS025E 10.2.8 mensagem BIS indica has been successfully installed Unable install properly Customize launched with the module_name option incorrectly specified more than once`
+> `AWSBIS022I AWSBIS023E AWSBIS024E AWSBIS025E 10.2.8 mensagem BIS indica has been successfully installed.AWSBIS023E Unable install properly.AWSBIS024E Customize launched with the module_name option incorrectly specified more than once.AWSBIS025E issued`
 
 ---
 
@@ -27678,7 +27678,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS022I (BIS) indica: "HCL Work
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS065W (BIS) indica: "You are trying to install HCL Workload Automation in the following location: "%s" under the following group: "%s". However, there is already an instance installed in that location and group.AWSBIS066E HCL Workload Automation is already installed in ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS065W AWSBIS066E 10.2.8 mensagem BIS indica You are trying install the following location under group However there already instance installed that and`
+> `AWSBIS065W AWSBIS066E 10.2.8 mensagem BIS indica You are trying install the following location under group However there already instance installed that and group.AWSBIS066E`
 
 ---
 
@@ -27693,7 +27693,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS065W (BIS) indica: "You are 
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS067E (BIS) indica: "There is more than one entry for Netman in the same group.AWSBIS068W Netman is already installed in this group %s at location %s.AWSBIS069I Netman location for installation or update: %sAWSBIS070E The netman directory was not found.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS067E AWSBIS068W AWSBIS069I AWSBIS070E 10.2.8 mensagem BIS indica There more than one entry for Netman the same group already installed this location installation update The`
+> `AWSBIS067E AWSBIS068W AWSBIS069I 10.2.8 mensagem BIS indica There more than one entry for Netman the same group.AWSBIS068W already installed this group location s.AWSBIS069I installation update sAWSBIS070E The netman`
 
 ---
 
@@ -27723,7 +27723,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS071E (BIS) indica: "Netman c
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS072E (BIS) indica: "An error occurred while creating or updating the components file.AWSBIS073I Replaced the calendars successfully.You might have calendars defined in your database.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS072E AWSBIS073I calendario composer dias livres freedays 10.2.8 mensagem BIS indica error occurred while creating updating the components file Replaced calendars successfully You might have defined your database`
+> `AWSBIS072E AWSBIS073I calendario composer dias livres freedays 10.2.8 mensagem BIS indica error occurred while creating updating the components file.AWSBIS073I Replaced calendars successfully.You might have defined your database`
 
 ---
 
@@ -27738,7 +27738,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS072E (BIS) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS115I (BIS) indica: "[-m <module-name>] -- <module-name> to be used to install moduleUsage: at [[-q<queue>] | [-s<job _stream>]] <time_specification>AWSBIS502E "at": You are not authorized to use the "at" command.This is a dummy label. It must be the last label in eve".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS115I AWSBIS502E 10.2.8 mensagem BIS indica module-name used install module Usage queue job _stream time_specification You are not authorized use the command This dummy label must last`
+> `AWSBIS115I AWSBIS502E 10.2.8 mensagem BIS indica module-name used install moduleUsage queue job _stream time_specification You are not authorized use the command.This dummy label must last eve`
 
 ---
 
@@ -27753,7 +27753,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS115I (BIS) indica: "[-m <mod
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS206E (BIS) indica: "Type %s calendars require a HOLIDAYS calendar to be predefined.AWSBIS207E Type %s calendars require a -s parameter.AWSBIS208E Your HCL Workload Automation license has expired.Valid options are: #	-c <name>	Make a calendar with the given <name>. #".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS206E AWSBIS207E AWSBIS208E calendario composer dias livres freedays 10.2.8 mensagem BIS indica Type calendars require HOLIDAYS calendar predefined parameter Your license has expired Valid options are name Make with the given`
+> `AWSBIS206E AWSBIS207E AWSBIS208E calendario composer dias livres freedays 10.2.8 mensagem BIS indica Type calendars require HOLIDAYS calendar predefined.AWSBIS207E parameter.AWSBIS208E Your license has expired.Valid options are name Make with the given`
 
 ---
 
@@ -27768,7 +27768,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS206E (BIS) indica: "Type %s 
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS235E (BIS) indica: "Day %s is not in range 1-31.AWSBIS236E Argument %s must be greater than zero.AWSBIS237E Argument %s is not in range 1-3.AWSBIS238E Incorrect option %s.AWSBIS239E One or more errors occurred. Calendars database not modified. See below.AWSBIS240E ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS235E AWSBIS236E AWSBIS237E AWSBIS238E AWSBIS239E AWSBIS240E calendario composer dias livres freedays 10.2.8 mensagem BIS indica Day not range 1-31 Argument must greater than zero 1-3 Incorrect option One more errors occurred Calendars database`
+> `AWSBIS235E AWSBIS236E AWSBIS237E AWSBIS238E AWSBIS239E AWSBIS240E calendario composer dias livres freedays 10.2.8 mensagem BIS indica Day not range 1-31.AWSBIS236E Argument must greater than zero.AWSBIS237E 1-3.AWSBIS238E Incorrect option s.AWSBIS239E One more errors occurred Calendars database modified See`
 
 ---
 
@@ -27813,7 +27813,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS274E (BIS) indica: "Environm
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS275E (BIS) indica: "No argument was supplied with -freedays. Specify a valid calendar name.AWSBIS276E Cannot understand the NLS/Unknown format. Exiting.AWSBIS277E The non-working days (freedays) calendar %s is not found in the Symphony file.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS275E AWSBIS276E AWSBIS277E calendario composer dias livres freedays 10.2.8 mensagem BIS indica argument was supplied with Specify valid calendar name Cannot understand the NLS Unknown format Exiting The non-working days not found`
+> `AWSBIS275E AWSBIS276E AWSBIS277E calendario composer dias livres freedays 10.2.8 mensagem BIS indica argument was supplied with Specify valid calendar name.AWSBIS276E Cannot understand the NLS Unknown format Exiting.AWSBIS277E The non-working days not found Symphony`
 
 ---
 
@@ -27843,7 +27843,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS278E (BIS) indica: "There is
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS279E (BIS) indica: "Cannot determine the remote shell program.AWSBIS280E Cannot connect to %s.AWSBIS281E There is a syntax error in the command.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS279E AWSBIS280E AWSBIS281E 10.2.8 mensagem BIS indica Cannot determine the remote shell program connect There syntax error command`
+> `AWSBIS279E AWSBIS280E AWSBIS281E 10.2.8 mensagem BIS indica Cannot determine the remote shell program.AWSBIS280E connect s.AWSBIS281E There syntax error command`
 
 ---
 
@@ -27858,7 +27858,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS279E (BIS) indica: "Cannot d
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS283E (BIS) indica: "Cannot determine the remote shell program.Cannot connect to %s".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS283E 10.2.8 mensagem BIS indica Cannot determine the remote shell program connect`
+> `AWSBIS283E 10.2.8 mensagem BIS indica Cannot determine the remote shell program.Cannot connect`
 
 ---
 
@@ -27888,7 +27888,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS285I (BIS) indica: "AWSBIS28
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS287E (BIS) indica: "Cannot connect to %sAWSBIS288E There is a syntax error in the command.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS287E AWSBIS288E 10.2.8 mensagem BIS indica Cannot connect There syntax error the command`
+> `AWSBIS287E 10.2.8 mensagem BIS indica Cannot connect sAWSBIS288E There syntax error the command`
 
 ---
 
@@ -27903,7 +27903,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS287E (BIS) indica: "Cannot c
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS290E (BIS) indica: "No files were found in the file set.AWSBIS291E Jobstdl failed running: %s.AWSBIS292I Setting POSIX to true.AWSBIS293I Setting DATE to %s.AWSBIS294I Setting NAME to %s.AWSBIS295I Setting WHICH to %s.AWSBIS296I Setting SELECT to first.AWSBIS297I".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS290E AWSBIS291E AWSBIS292I AWSBIS293I AWSBIS294I AWSBIS295I AWSBIS296I AWSBIS297I 10.2.8 mensagem BIS indica files were found the file set Jobstdl failed running Setting POSIX true DATE NAME WHICH`
+> `AWSBIS290E AWSBIS291E AWSBIS292I AWSBIS293I AWSBIS294I AWSBIS295I AWSBIS296I AWSBIS297I 10.2.8 mensagem BIS indica files were found the file set.AWSBIS291E Jobstdl failed running s.AWSBIS292I Setting POSIX true.AWSBIS293I DATE s.AWSBIS294I NAME s.AWSBIS295I WHICH s.AWSBIS296I SELECT first.AWSBIS297I`
 
 ---
 
@@ -27933,7 +27933,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS304I (BIS) indica: "File Sta
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS335E (BIS) indica: "JnextPlan failed while running: %s.AWSBIS357I If you run the JnextPlan -for 0000 command while the enCarryForward option is not set to ALL, some job streams might not be carried forward. Type "y" for yes, "n" for no.AWSBIS358E JnextPlan was cancele".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS335E AWSBIS357I AWSBIS358E 10.2.8 mensagem BIS indica JnextPlan failed while running you run the for command enCarryForward option not set ALL some job streams might carried forward`
+> `AWSBIS335E AWSBIS357I AWSBIS358E 10.2.8 mensagem BIS indica JnextPlan failed while running s.AWSBIS357I you run the for command enCarryForward option not set ALL some job streams might carried forward`
 
 ---
 
@@ -27948,7 +27948,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS335E (BIS) indica: "JnextPla
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS338E (BIS) indica: "If you cannot resolve the problem, search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support.AWSBIS339E File %s does not exist.AWSBIS340E There is a syntax error in the command.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS338E AWSBIS339E AWSBIS340E 10.2.8 mensagem BIS indica you cannot resolve the problem search Support database for solution https www.hcltech.com products-and-platforms support File does not exist There syntax error`
+> `AWSBIS338E AWSBIS339E AWSBIS340E 10.2.8 mensagem BIS indica you cannot resolve the problem search Support database for solution https www.hcltech.com products-and-platforms support.AWSBIS339E File does not exist.AWSBIS340E There syntax error command`
 
 ---
 
@@ -27963,7 +27963,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS338E (BIS) indica: "If you c
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS345E (BIS) indica: "An internal error has occurred. ResetPlan failed while running: %s.AWSBIS346W No Symphony file was found.Usage: MakePlan [-V| -U".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS345E AWSBIS346W 10.2.8 mensagem BIS indica internal error has occurred ResetPlan failed while running Symphony file was found Usage MakePlan`
+> `AWSBIS345E AWSBIS346W 10.2.8 mensagem BIS indica internal error has occurred ResetPlan failed while running s.AWSBIS346W Symphony file was found.Usage MakePlan`
 
 ---
 
@@ -27978,7 +27978,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS345E (BIS) indica: "An inter
 No HCL Workload Automation 10.2.8, a mensagem AWSBIS348E (BIS) indica: "An internal error has occurred. MakePlan failed while running: %s.AWSBIS349E An internal error has occurred. SwitchPlan failed while running: %s.AWSBIS350W The application server is not running.AWSBIS351I The script "CheckPrerequisites" is startin".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS348E AWSBIS349E AWSBIS350W AWSBIS351I 10.2.8 mensagem BIS indica internal error has occurred MakePlan failed while running SwitchPlan The application server not`
+> `AWSBIS348E AWSBIS349E AWSBIS350W AWSBIS351I 10.2.8 mensagem BIS indica internal error has occurred MakePlan failed while running s.AWSBIS349E SwitchPlan s.AWSBIS350W The application server not running.AWSBIS351I script`
 
 ---
 
@@ -27993,7 +27993,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS348E (BIS) indica: "An inter
 No HCL Workload Automation 10.2.8, a mensagem AWSBIT006I (BIT) indica: "Operations Center Threshold Monitor Condition		window.Usage: %s [-uname <name>] -master <nodename> [-operator <user>] [-password <user's password>]AWSBIT502E You must be root to install HCL Workload Automation OpC integration.AWSBIT503I Unknown pa".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIT006I AWSBIT502E AWSBIT503I 10.2.8 mensagem BIT indica Operations Center Threshold Monitor Condition window Usage uname name nodename operator user password You must root install OpC integration Unknown`
+> `AWSBIT006I AWSBIT502E AWSBIT503I 10.2.8 mensagem BIT indica Operations Center Threshold Monitor Condition window.Usage uname name nodename operator user password You must root install OpC integration.AWSBIT503I Unknown`
 
 ---
 
@@ -28008,7 +28008,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIT006I (BIT) indica: "Operatio
 No HCL Workload Automation 10.2.8, a mensagem AWSBIT508E (BIT) indica: "Operations center not present on this system.AWSBIT509W Installing only event recognition.AWSBIT510W If not already done, this script should be run on the OpC".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIT508E AWSBIT509W AWSBIT510W 10.2.8 mensagem BIT indica Operations center not present this system Installing only event recognition already done script should run the OpC`
+> `AWSBIT508E AWSBIT509W AWSBIT510W 10.2.8 mensagem BIT indica Operations center not present this system.AWSBIT509W Installing only event recognition.AWSBIT510W already done script should run the OpC`
 
 ---
 
@@ -28038,7 +28038,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIT511I (BIT) indica: "Select t
 No HCL Workload Automation 10.2.8, a mensagem AWSBIT512I (BIT) indica: "Enter choice [1-2]: \cAWSBIT513E Incorrect choice %sAWSBIT514E OpC 1.x is not supported on HP-UX 10.xAWSBIT515E Cannot determine the operating system version.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIT512I AWSBIT513E AWSBIT514E AWSBIT515E 10.2.8 mensagem BIT indica Enter choice 1-2 Incorrect OpC 1.x not supported HP-UX 10.x Cannot determine the operating system version`
+> `AWSBIT512I 10.2.8 mensagem BIT indica Enter choice 1-2 cAWSBIT513E Incorrect sAWSBIT514E OpC 1.x not supported HP-UX 10.xAWSBIT515E Cannot determine the operating system version`
 
 ---
 
@@ -28053,7 +28053,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIT512I (BIT) indica: "Enter ch
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU001W (BIU) indica: "Magent already running.Usage: %s [-uname <name>] [-noinst] {[-ovwdir <dir>] | -manager <host>}AWSBIU502E You must be root to customize TWSAWSBIU503E Cannot reach node manager = %s. This must be a valid host name".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU001W AWSBIU502E AWSBIU503E 10.2.8 mensagem BIU indica Magent already running Usage uname name noinst ovwdir dir host You must root customize TWS Cannot reach node This valid`
+> `AWSBIU001W AWSBIU502E 10.2.8 mensagem BIU indica Magent already running.Usage uname name noinst ovwdir dir host You must root customize TWSAWSBIU503E Cannot reach node This valid`
 
 ---
 
@@ -28068,7 +28068,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU001W (BIU) indica: "Magent a
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU101I (BIU) indica: "removing executing demons if anyAWSBIU102E You must be root to decustomize TWS.AWSBIU103E Cannot determine OS version. Unable to define OpenView".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU101I AWSBIU102E AWSBIU103E 10.2.8 mensagem BIU indica removing executing demons any You must root decustomize TWS Cannot determine version Unable define OpenView`
+> `AWSBIU101I AWSBIU103E 10.2.8 mensagem BIU indica removing executing demons anyAWSBIU102E You must root decustomize TWS.AWSBIU103E Cannot determine version Unable define OpenView`
 
 ---
 
@@ -28083,7 +28083,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU101I (BIU) indica: "removing
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU105E (BIU) indica: "Error: Action is only valid for TWS eventsAWSBIU106E Error: Action not defined for TWS trap %sõ#ök÷ø*ù³úÛûøü:ý\þÿ²Ù".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU105E AWSBIU106E 10.2.8 mensagem BIU indica Error Action only valid for TWS events not defined trap`
+> `AWSBIU105E 10.2.8 mensagem BIU indica Error Action only valid for TWS eventsAWSBIU106E not defined trap`
 
 ---
 
@@ -28113,7 +28113,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU504E (BIU) indica: "openview
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU505I (BIU) indica: "modifying files for %s in %sAWSBIU506E %s already existsAWSBIU507I Copying the appropriate application registration file.AWSBIU508I Copying sample filtersAWSBIU509I Copying the field registrationAWSBIU510I Compiling the field registrationAWSBIU".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU505I AWSBIU506E AWSBIU507I AWSBIU508I AWSBIU509I AWSBIU510I 10.2.8 mensagem BIU indica modifying files for already exists Copying the appropriate application registration file sample filters field Compiling`
+> `AWSBIU505I AWSBIU508I 10.2.8 mensagem BIU indica modifying files for sAWSBIU506E already existsAWSBIU507I Copying the appropriate application registration file.AWSBIU508I sample filtersAWSBIU509I field registrationAWSBIU510I Compiling registrationAWSBIU`
 
 ---
 
@@ -28128,7 +28128,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU505I (BIU) indica: "modifyin
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU517I (BIU) indica: "Adding OVW path to TWS .profileAWSBIU518I /tmp/.profile contains the new version of %s .profileAWSBIU519I %s .profile has replaced the old file.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU517I AWSBIU518I AWSBIU519I 10.2.8 mensagem BIU indica Adding OVW path TWS profile tmp contains the new version has replaced old file`
+> `AWSBIU517I 10.2.8 mensagem BIU indica Adding OVW path TWS profileAWSBIU518I tmp profile contains the new version profileAWSBIU519I has replaced old file`
 
 ---
 
@@ -28143,7 +28143,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU517I (BIU) indica: "Adding O
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU520I (BIU) indica: "Adding traps to trapd.confAWSBIU521I /tmp/trapd.conf contains the new version of %s/trapd.conf".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU520I AWSBIU521I 10.2.8 mensagem BIU indica Adding traps trapd.conf tmp contains the new version`
+> `AWSBIU520I 10.2.8 mensagem BIU indica Adding traps trapd.confAWSBIU521I tmp trapd.conf contains the new version`
 
 ---
 
@@ -28173,7 +28173,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU522W (BIU) indica: "%s/trapd
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU523I (BIU) indica: "changing ownership and permissions on programsAWSBIU524I IMPORTANTAWSBIU525W Be sure to add an appropriate entry to each workstation's rhostThis could be '"<manager> <user>"' if a user other than tws will be #running the management station.  Or '".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU523I AWSBIU524I AWSBIU525W 10.2.8 mensagem BIU indica changing ownership and permissions programs IMPORTANT sure add appropriate entry each workstation rhost This could user other than tws will running the`
+> `AWSBIU523I 10.2.8 mensagem BIU indica changing ownership and permissions programsAWSBIU524I IMPORTANTAWSBIU525W sure add appropriate entry each workstation rhostThis could user other than tws will running the management station`
 
 ---
 
@@ -28188,7 +28188,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU523I (BIU) indica: "changing
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU534W (BIU) indica: "/etc/snmpd.peers has been replaced the old file is /etc/snmpd.peers.oldAWSBIU535E /tmp/snmpd.conf contains the new version of /etc/snmpd.conf".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU534W AWSBIU535E 10.2.8 mensagem BIU indica etc snmpd.peers has been replaced the old file snmpd.peers.old tmp snmpd.conf contains new version`
+> `AWSBIU534W 10.2.8 mensagem BIU indica etc snmpd.peers has been replaced the old file snmpd.peers.oldAWSBIU535E tmp snmpd.conf contains new version`
 
 ---
 
@@ -28203,7 +28203,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU534W (BIU) indica: "/etc/snm
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU536W (BIU) indica: "/etc/snmpd.conf has been replaced the old file is /etc/snmpd.conf.oldAWSBIU537I Recompile the defs for this machineAWSBIU538E /tmp/mib.defs contains the new version of /etc/mib.defs".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU536W AWSBIU537I AWSBIU538E 10.2.8 mensagem BIU indica etc snmpd.conf has been replaced the old file snmpd.conf.old Recompile defs for this machine tmp mib.defs contains new version`
+> `AWSBIU536W 10.2.8 mensagem BIU indica etc snmpd.conf has been replaced the old file snmpd.conf.oldAWSBIU537I Recompile defs for this machineAWSBIU538E tmp mib.defs contains new version`
 
 ---
 
@@ -28218,7 +28218,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU536W (BIU) indica: "/etc/snm
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU539W (BIU) indica: "/etc/mib.defs has been replaced the old file is /etc/mib.defs.oldAWSBIU540W After you have installed the changes to the system files you".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU539W AWSBIU540W 10.2.8 mensagem BIU indica etc mib.defs has been replaced the old file mib.defs.old After you have installed changes system files`
+> `AWSBIU539W 10.2.8 mensagem BIU indica etc mib.defs has been replaced the old file mib.defs.oldAWSBIU540W After you have installed changes system files`
 
 ---
 
@@ -28233,7 +28233,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU539W (BIU) indica: "/etc/mib
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU541I (BIU) indica: "Refreshing snmpdAWSBIU542I Setting up the agent filesAWSBIU543I Copying the configuration files.AWSBIU544W /tmp/StartUp contains the new version of %s/StartUp".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU541I AWSBIU542I AWSBIU543I AWSBIU544W 10.2.8 mensagem BIU indica Refreshing snmpd Setting the agent files Copying configuration tmp StartUp contains new version`
+> `AWSBIU541I AWSBIU544W 10.2.8 mensagem BIU indica Refreshing snmpdAWSBIU542I Setting the agent filesAWSBIU543I Copying configuration files.AWSBIU544W tmp StartUp contains new version`
 
 ---
 
@@ -28248,7 +28248,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU541I (BIU) indica: "Refreshi
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU545W (BIU) indica: "%s/StartUp has been replacedAWSBIU546W You should now restart Netview/Openview and TWSAWSBIU547I Select the OV version installed on your machine:".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU545W AWSBIU546W AWSBIU547I 10.2.8 mensagem BIU indica StartUp has been replaced You should now restart Netview Openview and TWS Select the version installed your machine`
+> `AWSBIU545W 10.2.8 mensagem BIU indica StartUp has been replacedAWSBIU546W You should now restart Netview Openview and TWSAWSBIU547I Select the version installed your machine`
 
 ---
 
@@ -28263,7 +28263,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU545W (BIU) indica: "%s/Start
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU548I (BIU) indica: "Enter choice [1-2]: \cAWSBIU549E Invalid choice %s.AWSBIU550E ERROR: OpenView 3.3 is not supported on HP-UX 10.xAWSBIU551E -client option can only be specified on AIXAWSBIU552E The trap definition file <maehome>/OV/mae.traps.hp must be loaded".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU548I AWSBIU549E AWSBIU550E AWSBIU551E AWSBIU552E 10.2.8 mensagem BIU indica Enter choice 1-2 Invalid ERROR OpenView 3.3 not supported HP-UX 10.x client option can only specified AIX The trap definition`
+> `AWSBIU548I AWSBIU550E 10.2.8 mensagem BIU indica Enter choice 1-2 cAWSBIU549E Invalid s.AWSBIU550E ERROR OpenView 3.3 not supported HP-UX 10.xAWSBIU551E client option can only specified AIXAWSBIU552E The trap definition file maehome`
 
 ---
 
@@ -28308,7 +28308,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU554E (BIU) indica: "The file
 No HCL Workload Automation 10.2.8, a mensagem AWSBIU555I (BIU) indica: "Linking to mdemon and muser OV 3.3 static executablesAWSBIU556I Linking to mdemon and muser OV 4.x dynamic executablesAWSBIU557E Cannot determine OS version. Unable to define OpenView".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIU555I AWSBIU556I AWSBIU557E 10.2.8 mensagem BIU indica Linking mdemon and muser 3.3 static executables 4.x dynamic Cannot determine version Unable define OpenView`
+> `AWSBIU555I 10.2.8 mensagem BIU indica Linking mdemon and muser 3.3 static executablesAWSBIU556I 4.x dynamic executablesAWSBIU557E Cannot determine version Unable define OpenView`
 
 ---
 
@@ -28323,7 +28323,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIU555I (BIU) indica: "Linking 
 No HCL Workload Automation 10.2.8, a mensagem AWSBIV001E (BIV) indica: "Command too long.AWSBIV002E Remote aborted connection without initiating protocol: %d.AWSBIV003E Remote aborted connection: %sAWSBIV004E Failed to shutdown input socketAWSBIV005I ** Result return = %lu **AWSBIV006E Can't get user name.Usage: me".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIV001E AWSBIV002E AWSBIV003E AWSBIV004E AWSBIV005I AWSBIV006E 10.2.8 mensagem BIV indica Command too long Remote aborted connection without initiating protocol Failed shutdown input socket Result return Can get`
+> `AWSBIV001E AWSBIV002E AWSBIV003E AWSBIV006E 10.2.8 mensagem BIV indica Command too long.AWSBIV002E Remote aborted connection without initiating protocol d.AWSBIV003E sAWSBIV004E Failed shutdown input socketAWSBIV005I Result return Can get user name.Usage`
 
 ---
 
@@ -28353,7 +28353,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIX002E (BIX) indica: "Customiz
 No HCL Workload Automation 10.2.8, a mensagem AWSBIX003E (BIX) indica: "FILE:%s does not exist.AWSBIX004I Installed %sAWSBIX005I Looking up user %s in /etc/passwdAWSBIX006W User %s not found in /etc/passwd. Trying yellow pages.AWSBIX007E Yellow Pages not installed or not accessible in PATH.AWSBIX008E User %s not fou".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIX003E AWSBIX004I AWSBIX005I AWSBIX006W AWSBIX007E AWSBIX008E 10.2.8 mensagem BIX indica FILE does not exist Installed Looking user etc passwd User found Trying yellow pages Yellow Pages installed`
+> `AWSBIX003E AWSBIX004I AWSBIX007E AWSBIX008E 10.2.8 mensagem BIX indica FILE does not exist.AWSBIX004I Installed sAWSBIX005I Looking user etc passwdAWSBIX006W User found passwd Trying yellow pages.AWSBIX007E Yellow Pages installed accessible PATH.AWSBIX008E`
 
 ---
 
@@ -28368,7 +28368,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIX003E (BIX) indica: "FILE:%s 
 No HCL Workload Automation 10.2.8, a mensagem AWSBIX018E (BIX) indica: "Netman home %s does not exist.AWSBIX019E 'netman' directory tree exists partially or does not exist.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIX018E AWSBIX019E 10.2.8 mensagem BIX indica Netman home does not exist netman directory tree exists partially`
+> `AWSBIX018E AWSBIX019E 10.2.8 mensagem BIX indica Netman home does not exist.AWSBIX019E netman directory tree exists partially exist`
 
 ---
 
@@ -28383,7 +28383,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIX018E (BIX) indica: "Netman h
 No HCL Workload Automation 10.2.8, a mensagem AWSBIX020E (BIX) indica: "ERROR: Error occured while creating/updating product components file.AWSBIX021E An error occured executing commands.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIX020E AWSBIX021E 10.2.8 mensagem BIX indica ERROR Error occured while creating updating product components file error executing commands`
+> `AWSBIX020E AWSBIX021E 10.2.8 mensagem BIX indica ERROR Error occured while creating updating product components file.AWSBIX021E error executing commands`
 
 ---
 
@@ -28398,7 +28398,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIX020E (BIX) indica: "ERROR: E
 No HCL Workload Automation 10.2.8, a mensagem AWSBIX022I (BIX) indica: "Netman installed.AWSBIX023I Netman updated.Usage: %s [-V|-v|-U|-u]This is a dummy label. It must be the last label in every subcomponent. It ensures that a Label or Message ending in a <br/> tag is not the last item in the subcomponent.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIX022I AWSBIX023I 10.2.8 mensagem BIX indica Netman installed updated Usage This dummy label must the last every subcomponent ensures that Label Message ending tag not item`
+> `AWSBIX022I AWSBIX023I 10.2.8 mensagem BIX indica Netman installed.AWSBIX023I updated.Usage This dummy label must the last every subcomponent ensures that Label Message ending tag not item`
 
 ---
 
@@ -28428,7 +28428,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIY001W (BIY) indica: "Running 
 No HCL Workload Automation 10.2.8, a mensagem AWSBIY004I (BIY) indica: "The sample job streams and jobs are not installed. Exiting.Press "Enter" key to continue.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIY004I 10.2.8 mensagem BIY indica The sample job streams and jobs are not installed Exiting Press Enter key continue`
+> `AWSBIY004I 10.2.8 mensagem BIY indica The sample job streams and jobs are not installed Exiting.Press Enter key continue`
 
 ---
 
@@ -28443,7 +28443,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIY004I (BIY) indica: "The samp
 No HCL Workload Automation 10.2.8, a mensagem AWSBIZ001E (BIZ) indica: "Error: CreateProcess failed.AWSBIZ002E Error: system failed.AWSBIZ003I system return status %d.AWSBIZ004E %s does not exist.This is a dummy label. It must be the last label in every subcomponent. It ensures that a Label or Message ending in a <br".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIZ001E AWSBIZ002E AWSBIZ003I AWSBIZ004E 10.2.8 mensagem BIZ indica Error CreateProcess failed system return status does not exist This dummy label must the last every subcomponent ensures`
+> `AWSBIZ001E AWSBIZ002E AWSBIZ003I AWSBIZ004E 10.2.8 mensagem BIZ indica Error CreateProcess failed.AWSBIZ002E system failed.AWSBIZ003I return status d.AWSBIZ004E does not exist.This dummy label must the last every subcomponent ensures that Label Message`
 
 ---
 
@@ -28458,7 +28458,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIZ001E (BIZ) indica: "Error: C
 No HCL Workload Automation 10.2.8, a mensagem AWSBJB002I (BJB) indica: "Starting clagentAWSBJB003I Read message: !1AWSBJB004I Ok processing the message: !1AWSBJB005I clagent down!AWSBJB006E Error processing the message: !1AWSBJB007I Adapter OkAWSBJB008E Adapter error: !1AWSBJB009I Initialization clagent OKAWSBJB0".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJB002I AWSBJB003I AWSBJB004I AWSBJB005I AWSBJB006E AWSBJB007I AWSBJB008E AWSBJB009I 10.2.8 mensagem BJB indica Starting clagent Read message processing the down Error Adapter error Initialization`
+> `AWSBJB002I AWSBJB006E 10.2.8 mensagem BJB indica Starting clagentAWSBJB003I Read message 1AWSBJB004I processing the 1AWSBJB005I clagent down Error 1AWSBJB007I Adapter OkAWSBJB008E error 1AWSBJB009I Initialization OKAWSBJB0`
 
 ---
 
@@ -28473,7 +28473,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJB002I (BJB) indica: "Starting
 No HCL Workload Automation 10.2.8, a mensagem AWSBJB100I (BJB) indica: "Job stream is in ready statusAWSBJB101I Job stream is in hold statusAWSBJB102I Job stream is in exec statusAWSBJB103I Job stream is in stuck statusAWSBJB104I Job stream is in abend statusAWSBJB105I Job stream is in successful statusAWSBJB106I J".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJB100I AWSBJB101I AWSBJB102I AWSBJB103I AWSBJB104I AWSBJB105I AWSBJB106I 10.2.8 mensagem BJB indica Job stream ready status hold exec stuck abend`
+> `AWSBJB100I 10.2.8 mensagem BJB indica Job stream ready statusAWSBJB101I hold statusAWSBJB102I exec statusAWSBJB103I stuck statusAWSBJB104I abend statusAWSBJB105I successful statusAWSBJB106I`
 
 ---
 
@@ -28488,7 +28488,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJB100I (BJB) indica: "Job stre
 No HCL Workload Automation 10.2.8, a mensagem AWSBJG001E (BJG) indica: "Router cannot initialize the communication or set the connection type and file descriptor for the connected socket to make an SSL connection to conman. The following error message is given: !1AWSBJG002E Router is unable to create the stdlist file.U".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJG001E AWSBJG002E 10.2.8 mensagem BJG indica Router cannot initialize the communication set connection type and file descriptor for connected socket make SSL conman The following error message given`
+> `AWSBJG001E 10.2.8 mensagem BJG indica Router cannot initialize the communication set connection type and file descriptor for connected socket make SSL conman The following error message given`
 
 ---
 
@@ -28518,7 +28518,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJH005E (BJH) indica: "The data
 No HCL Workload Automation 10.2.8, a mensagem AWSBJH006E (BJH) indica: "An incorrect value has been supplied for a parameter.AWSBJH007I Use the command "datamigrate -u" to see the usage and options.AWSBJH008I The parameter must be as follows: "!1".AWSBJH009E More than one object type parameter has been supplied.AWSBJ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJH006E AWSBJH007I AWSBJH008I AWSBJH009E 10.2.8 mensagem BJH indica incorrect value has been supplied for parameter Use the command datamigrate see usage and options The must follows More than`
+> `AWSBJH006E AWSBJH007I AWSBJH008I AWSBJH009E 10.2.8 mensagem BJH indica incorrect value has been supplied for parameter.AWSBJH007I Use the command datamigrate see usage and options.AWSBJH008I The parameter must follows More than one object`
 
 ---
 
@@ -28713,7 +28713,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJH023W (BJH) indica: "The impo
 No HCL Workload Automation 10.2.8, a mensagem AWSBJH024W (BJH) indica: "No object of type "!1" has been found.AWSBJH025I No objects of type "!1" can be found in the file".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJH024W AWSBJH025I 10.2.8 mensagem BJH indica object type has been found objects can the file`
+> `AWSBJH024W AWSBJH025I 10.2.8 mensagem BJH indica object type has been found.AWSBJH025I objects can found the file`
 
 ---
 
@@ -28773,7 +28773,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJH028I (BJH) indica: "The file
 No HCL Workload Automation 10.2.8, a mensagem AWSBJH029E (BJH) indica: "The supplied input file "!1" is not readable by the user "!2" that is performing the data migration.AWSBJH030I The user might not have the correct access rights".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJH029E AWSBJH030I 10.2.8 mensagem BJH indica The supplied input file not readable the user that performing data migration might have correct access rights`
+> `AWSBJH029E AWSBJH030I 10.2.8 mensagem BJH indica The supplied input file not readable the user that performing data migration.AWSBJH030I might have correct access rights`
 
 ---
 
@@ -28788,7 +28788,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJH029E (BJH) indica: "The supp
 No HCL Workload Automation 10.2.8, a mensagem AWSBJH031E (BJH) indica: "The application server is not running. The import cannot continue.AWSBJH032I Start the application server then rerun the "datamigrate" utility.AWSBJH033I The import of the topology has completed. Check the results for the individual object types in".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBJH031E AWSBJH032I AWSBJH033I re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem BJH indica The application server not running import cannot continue Start the then rerun datamigrate utility topology has`
+> `AWSBJH031E AWSBJH032I AWSBJH033I re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem BJH indica The application server not running import cannot continue.AWSBJH032I Start the then rerun datamigrate utility.AWSBJH033I topology has completed Check`
 
 ---
 
@@ -28878,7 +28878,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBJH107I (BJH) indica: "The expo
 No HCL Workload Automation 10.2.8, a mensagem AWSBWX002E (BWX) indica: "An error has occurred opening the file "!1" for writing.AWSBWX003E An error has occurred opening the file "!1" for reading.AWSBWX004E An error has occurred writing the file "!1".AWSBWX005E An error has occurred renaming the file "!1" in "!2".AWSB".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBWX002E AWSBWX003E AWSBWX004E AWSBWX005E 10.2.8 mensagem BWX indica error has occurred opening the file for writing reading`
+> `AWSBWX002E AWSBWX003E AWSBWX004E AWSBWX005E 10.2.8 mensagem BWX indica error has occurred opening the file for writing.AWSBWX003E reading.AWSBWX004E writing`
 
 ---
 
@@ -28893,7 +28893,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBWX002E (BWX) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSCDW001I (CDW) indica: "The cluster service is installed, configured, and running on the node "!1".AWSCDW002E The cluster service is installed and configured on the node "!1", but is not currently running.AWSCDW003E The cluster service is not installed on the node.AWSCDW".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSCDW001I AWSCDW002E AWSCDW003E 10.2.8 mensagem CDW indica The cluster service installed configured and running the node but not currently`
+> `AWSCDW001I AWSCDW002E AWSCDW003E 10.2.8 mensagem CDW indica The cluster service installed configured and running the node but not currently running.AWSCDW003E`
 
 ---
 
@@ -28908,7 +28908,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSCDW001I (CDW) indica: "The clus
 No HCL Workload Automation 10.2.8, a mensagem AWSCDW034E (CDW) indica: "The program cannot determine the path to the custom HCL Workload Automation cluster resource type dll.AWSCDW035E The program cannot update the custom HCL Workload Automation cluster resource type dll.AWSCDW036W The program cannot delete the tempora".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSCDW034E AWSCDW035E AWSCDW036W 10.2.8 mensagem CDW indica The program cannot determine the path custom cluster resource type dll update`
+> `AWSCDW034E AWSCDW035E AWSCDW036W 10.2.8 mensagem CDW indica The program cannot determine the path custom cluster resource type dll.AWSCDW035E update dll.AWSCDW036W`
 
 ---
 
@@ -28938,7 +28938,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSCDW038I (CDW) indica: "The cust
 No HCL Workload Automation 10.2.8, a mensagem AWSCDW042E (CDW) indica: "The command-line parameter "!1" is not correct.AWSCDW043E The context of the supplied command line string "!1"indicates that a pair of quotation symbols (') is required. However, the first of the pair is missing.AWSCDW044E The context of the suppli".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSCDW042E AWSCDW043E AWSCDW044E 10.2.8 mensagem CDW indica The command-line parameter not correct context the supplied command line string indicates that pair quotation symbols required However first missing`
+> `AWSCDW042E AWSCDW043E AWSCDW044E 10.2.8 mensagem CDW indica The command-line parameter not correct.AWSCDW043E context the supplied command line string indicates that pair quotation symbols required However first missing.AWSCDW044E`
 
 ---
 
@@ -29088,7 +29088,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSCDW075W (CDW) indica: "O agente
 No HCL Workload Automation 10.2.8, a mensagem AWSCDW076I (CDW) indica: "Somente o agente dinÃ¢mico serÃ¡ instalado. Qualquer outra opÃ§Ã£o serÃ¡ ignorada.AWSCDW077E Nenhum agente estÃ¡".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSCDW076I AWSCDW077E 10.2.8 mensagem CDW indica Somente agente mico instalado Qualquer outra ignorada Nenhum`
+> `AWSCDW076I AWSCDW077E 10.2.8 mensagem CDW indica Somente agente mico instalado Qualquer outra ignorada.AWSCDW077E Nenhum`
 
 ---
 
@@ -29118,7 +29118,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSCDW078E (CDW) indica: "NÃ£o �
 No HCL Workload Automation 10.2.8, a mensagem AWSDAB001I (DAB) indica: "HCL C @(#) D.02 $Header: /usr/local/SRC_CLEAR/maestro/JSS/utils/catalog/RCS/C.msg,v 7.80.1.16 1999/05/06 21:53:33 pl Exp $^Fæ`AWSDAE003E Unexpected file system error Reading $STDINAWSDAE005E Unexpected file syste".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAB001I AWSDAE003E AWSDAE005E 10.2.8 mensagem DAB indica D.02 Header usr local SRC_CLEAR maestro JSS utils catalog RCS C.msg 7.80.1.16 Exp Unexpected file system error Reading STDIN syste`
+> `AWSDAB001I AWSDAE003E 10.2.8 mensagem DAB indica D.02 Header usr local SRC_CLEAR maestro JSS utils catalog RCS C.msg 7.80.1.16 Exp Unexpected file system error Reading STDINAWSDAE005E syste`
 
 ---
 
@@ -29133,7 +29133,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAB001I (DAB) indica: "HCL C @(
 No HCL Workload Automation 10.2.8, a mensagem AWSDAB002I (DAB) indica: "@(#) Copyright IBM Corp. 1991, 2016 - Copyright HCL Technologies Ltd. 2016¶ÝAWSDAH001I Your HCL Software is valid through !1.AWSDAH002E Your HCL Software demo has expired.AWSDAH003E Software is incompatible wi".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAB002I AWSDAH001I AWSDAH002E AWSDAH003E 10.2.8 mensagem DAB indica Copyright IBM Corp Technologies Ltd Your Software valid through demo has expired incompatible`
+> `AWSDAB002I AWSDAH001I AWSDAH002E AWSDAH003E 10.2.8 mensagem DAB indica Copyright IBM Corp Technologies Ltd Your Software valid through 1.AWSDAH002E demo has expired.AWSDAH003E incompatible`
 
 ---
 
@@ -29148,7 +29148,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAB002I (DAB) indica: "@(#) Cop
 No HCL Workload Automation 10.2.8, a mensagem AWSDAL002E (DAL) indica: "Unknown audit type !1 passed.2sð	AWSDBY002E Too many parameters in RUN commandAWSDBY025E Expected "G", "P", or "S"AWSDBY026E Expected a numberAWSDBY027E Missing close quoteAWSDBY028E Missing program nameAWSDB".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAL002E AWSDBY002E AWSDBY025E AWSDBY026E AWSDBY027E AWSDBY028E 10.2.8 mensagem DAL indica Unknown audit type passed Too many parameters RUN command Expected number Missing close quote program name AWSDB`
+> `AWSDAL002E AWSDBY002E AWSDBY026E 10.2.8 mensagem DAL indica Unknown audit type passed Too many parameters RUN commandAWSDBY025E Expected numberAWSDBY027E Missing close quoteAWSDBY028E program nameAWSDB`
 
 ---
 
@@ -29163,7 +29163,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAL002E (DAL) indica: "Unknown 
 No HCL Workload Automation 10.2.8, a mensagem AWSDCJ001E (DCJ) indica: "Error opening existing stdin, Error: !1AWSDCJ002E Error purging old stdin, Error: !1AWSDCJ003E Error building stdin, Error: !1AWSDCJ004E Error closing new stdin, Error: !1AWSDCJ005E Error opening new stdin, Error: !1AWSDCJ006E Error opening old ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDCJ001E AWSDCJ002E AWSDCJ003E AWSDCJ004E AWSDCJ005E AWSDCJ006E 10.2.8 mensagem DCJ indica Error opening existing stdin purging old building closing new`
+> `AWSDCJ001E 10.2.8 mensagem DCJ indica Error opening existing stdin 1AWSDCJ002E purging old 1AWSDCJ003E building 1AWSDCJ004E closing new 1AWSDCJ005E`
 
 ---
 
@@ -29178,7 +29178,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDCJ001E (DCJ) indica: "Error op
 No HCL Workload Automation 10.2.8, a mensagem AWSDCJ200W (DCJ) indica: "Parado com saÃ­da %dAWSDCJ201I Parado normalmenteAWSDCJ202W Parado por:AWSDCJ203W Parado por sinal: %d >UdÙ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDCJ200W AWSDCJ201I AWSDCJ202W AWSDCJ203W 10.2.8 mensagem DCJ indica Parado normalmente sinal`
+> `AWSDCJ200W AWSDCJ203W 10.2.8 mensagem DCJ indica Parado dAWSDCJ201I normalmenteAWSDCJ202W sinal`
 
 ---
 
@@ -29193,7 +29193,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDCJ200W (DCJ) indica: "Parado c
 No HCL Workload Automation 10.2.8, a mensagem AWSDDW001I (DDW) indica: "Building stdlist directory !1.AWSDDW052E Product '!1' is not installed under the group '!2'.AWSDDW053W No '!1' found in components file installed under '!2'.AWSDDW071E You specified an invalid product.AWSDDW100I SWITCHED4*".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDDW001I AWSDDW052E AWSDDW053W AWSDDW071E AWSDDW100I 10.2.8 mensagem DDW indica Building stdlist directory Product not installed under the group found components file You specified invalid product SWITCHED`
+> `AWSDDW001I AWSDDW052E AWSDDW053W AWSDDW071E AWSDDW100I 10.2.8 mensagem DDW indica Building stdlist directory 1.AWSDDW052E Product not installed under the group found components file You specified invalid product.AWSDDW100I SWITCHED`
 
 ---
 
@@ -29208,7 +29208,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDDW001I (DDW) indica: "Building
 No HCL Workload Automation 10.2.8, a mensagem AWSDDW002E (DDW) indica: "Unable to build stdlist directory !2. Errno = !1.AWSDDW008E An I/O error occurred while accessing a file. A memory dump has been taken to aid HCL Software Support with problem determination.AWSDDW051E Unknown product id <!1> found.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDDW002E AWSDDW008E AWSDDW051E 10.2.8 mensagem DDW indica Unable build stdlist directory Errno error occurred while accessing file memory dump has been taken aid Software Support with problem determination Unknown product`
+> `AWSDDW002E AWSDDW008E AWSDDW051E 10.2.8 mensagem DDW indica Unable build stdlist directory Errno 1.AWSDDW008E error occurred while accessing file memory dump has been taken aid Software Support with problem determination.AWSDDW051E Unknown product found`
 
 ---
 
@@ -29223,7 +29223,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDDW002E (DDW) indica: "Unable t
 No HCL Workload Automation 10.2.8, a mensagem AWSDEB001I (DEB) indica: "Getting a new socket: !1AWSDEB002I Reading socket: !1AWSDEB003I Writing socket: !1AWSDEB004I Shutting down socket: !1AWSDEB005I Closing socket: !1AWSDEB006I Binding socket: !1AWSDEB007I Connecting socket: !1AWSDEB008I Accepting a connection: !".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEB001I AWSDEB002I AWSDEB003I AWSDEB004I AWSDEB005I AWSDEB006I AWSDEB007I AWSDEB008I 10.2.8 mensagem DEB indica Getting new socket Reading Writing Shutting down Closing Binding Connecting Accepting connection`
+> `AWSDEB001I 10.2.8 mensagem DEB indica Getting new socket 1AWSDEB002I Reading 1AWSDEB003I Writing 1AWSDEB004I Shutting down 1AWSDEB005I Closing 1AWSDEB006I Binding 1AWSDEB007I Connecting 1AWSDEB008I Accepting connection`
 
 ---
 
@@ -29238,7 +29238,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEB001I (DEB) indica: "Getting 
 No HCL Workload Automation 10.2.8, a mensagem AWSDEB051E (DEB) indica: "The program cannot authenticate the SSL peer certificate: the requested level is not matched.AWSDEB052E An error occurred in getaddrinfo: !1 (getting the host IP address using the host name).AWSDEB053E FIPS cannot be enabled. The connection is not ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEB051E AWSDEB052E AWSDEB053E 10.2.8 mensagem DEB indica The program cannot authenticate the SSL peer certificate requested level not matched error occurred getaddrinfo getting host address using name`
+> `AWSDEB051E AWSDEB052E AWSDEB053E 10.2.8 mensagem DEB indica The program cannot authenticate the SSL peer certificate requested level not matched.AWSDEB052E error occurred getaddrinfo getting host address using name`
 
 ---
 
@@ -29253,7 +29253,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEB051E (DEB) indica: "The prog
 No HCL Workload Automation 10.2.8, a mensagem AWSDEB055E (DEB) indica: "Ocorreu um erro durante uma conexÃ£o SSL usando as bibliotecas OpenSSL.AWSDEB056E Ocorreu um erro na conexÃ£o SSL usando o OpenSSL Toolkit. A conexÃ£o nÃ£o pode ser aceita.AWSDEB057E Ocorreu um erro na conexÃ£o SSL usando as bibliotecas OpenSSL. A ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEB055E AWSDEB056E AWSDEB057E 10.2.8 mensagem DEB indica Ocorreu erro durante SSL usando bibliotecas OpenSSL Toolkit aceita`
+> `AWSDEB055E AWSDEB056E AWSDEB057E 10.2.8 mensagem DEB indica Ocorreu erro durante SSL usando bibliotecas OpenSSL.AWSDEB056E OpenSSL Toolkit aceita.AWSDEB057E`
 
 ---
 
@@ -29268,7 +29268,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEB055E (DEB) indica: "Ocorreu 
 No HCL Workload Automation 10.2.8, a mensagem AWSDEC001E (DEC) indica: "File system error !1 on events file.AWSDEC002E An internal error has occurred. The following UNIX system error occurred on an events file: "!1" at line = !2.AWSDEC003I End of file on events file.AWSDEC004E IPC error !1 on events file.AWSDEC005E D".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEC001E AWSDEC002E AWSDEC003I AWSDEC004E AWSDEC005E 10.2.8 mensagem DEC indica File system error events file internal has occurred The following UNIX line End`
+> `AWSDEC001E AWSDEC002E AWSDEC003I AWSDEC004E AWSDEC005E 10.2.8 mensagem DEC indica File system error events file.AWSDEC002E internal has occurred The following UNIX file line 2.AWSDEC003I End file.AWSDEC004E IPC`
 
 ---
 
@@ -29283,7 +29283,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEC001E (DEC) indica: "File sys
 No HCL Workload Automation 10.2.8, a mensagem AWSDEC008E (DEC) indica: "An event file was created by a newer version of HCL Workload Scheduler than this version, and is not compatible.AWSDEC009E An event file cannot be opened because it has been already opened by another process.AWSDEC014E The event file or the directo".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEC008E AWSDEC009E AWSDEC014E 10.2.8 mensagem DEC indica event file was created newer version Scheduler than this and not compatible cannot opened because has been already another process`
+> `AWSDEC008E AWSDEC009E AWSDEC014E 10.2.8 mensagem DEC indica event file was created newer version Scheduler than this and not compatible.AWSDEC009E cannot opened because has been already another process.AWSDEC014E The`
 
 ---
 
@@ -29298,7 +29298,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEC008E (DEC) indica: "An event
 No HCL Workload Automation 10.2.8, a mensagem AWSDED001E (DED) indica: "internal error: time() failedAWSDED002E An internal error has occurred: mktime() failed.AWSDED003E An internal error has occurred: localtime() failed.AWSDED004E An internal error has occurred: gmtime() failed.AWSDED005E An internal error has occu".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDED001E AWSDED002E AWSDED003E AWSDED004E AWSDED005E 10.2.8 mensagem DED indica internal error time failed has occurred mktime localtime gmtime`
+> `AWSDED001E AWSDED003E AWSDED004E AWSDED005E 10.2.8 mensagem DED indica internal error time failedAWSDED002E has occurred mktime failed.AWSDED003E localtime failed.AWSDED004E gmtime failed.AWSDED005E`
 
 ---
 
@@ -29313,7 +29313,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDED001E (DED) indica: "internal
 No HCL Workload Automation 10.2.8, a mensagem AWSDEF001E (DEF) indica: "Can not acquire heap.AWSDEF002E On IPCDEST: !1AWSDEF003E On IPCONNECT: !1AWSDEF004E On IPCRECV: !1AWSDEF005E On setting timeout: !1AWSDEF006E On IPCREVCVCN: !1AWSDEF007E On IPCGIVE: !1AWSDEF008E On IPCGET: !1AWSDEF009E This is not an IPC coma".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEF001E AWSDEF002E AWSDEF003E AWSDEF004E AWSDEF005E AWSDEF006E AWSDEF007E AWSDEF008E AWSDEF009E 10.2.8 mensagem DEF indica Can not acquire heap IPCDEST IPCONNECT IPCRECV setting timeout IPCREVCVCN IPCGIVE IPCGET This IPC coma`
+> `AWSDEF001E AWSDEF002E 10.2.8 mensagem DEF indica Can not acquire heap.AWSDEF002E IPCDEST 1AWSDEF003E IPCONNECT 1AWSDEF004E IPCRECV 1AWSDEF005E setting timeout 1AWSDEF006E IPCREVCVCN 1AWSDEF007E IPCGIVE 1AWSDEF008E IPCGET 1AWSDEF009E This IPC coma`
 
 ---
 
@@ -29343,7 +29343,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEF010I (DEF) indica: "No error
 No HCL Workload Automation 10.2.8, a mensagem AWSDEG001E (DEG) indica: "Error: no comarea exists yet.AWSDEG002E Error: This is not a valid comarea for isam access.AWSDEG003W Warn: Isam access on !1, this operation not implemented.AWSDEG004E Error: !1, is not open yet.AWSDEG005E Error: !1, is not locked yet.AWSDEG006".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEG001E AWSDEG002E AWSDEG003W AWSDEG004E AWSDEG005E 10.2.8 mensagem DEG indica Error comarea exists yet This not valid for isam access Warn Isam this operation implemented open`
+> `AWSDEG001E AWSDEG002E AWSDEG003W AWSDEG004E AWSDEG005E 10.2.8 mensagem DEG indica Error comarea exists yet.AWSDEG002E This not valid for isam access.AWSDEG003W Warn Isam access this operation implemented.AWSDEG004E open yet.AWSDEG005E`
 
 ---
 
@@ -29358,7 +29358,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEG001E (DEG) indica: "Error: n
 No HCL Workload Automation 10.2.8, a mensagem AWSDEG014E (DEG) indica: "Error: On !1, Close error: !3AWSDEG015E Error: On !1, Lock error: !3AWSDEG016E Error: On !1, Already locked.AWSDEG017E Error: On !1, Unlock error: !3AWSDEG018E Error: Can not malloc comarea: !1AWSDEG019E Error: On !1, Can not open file: !3AWSDE".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEG014E AWSDEG015E AWSDEG016E AWSDEG017E AWSDEG018E AWSDEG019E 10.2.8 mensagem DEG indica Error Close error Lock Already locked Unlock Can not malloc comarea`
+> `AWSDEG014E AWSDEG017E 10.2.8 mensagem DEG indica Error Close error 3AWSDEG015E Lock 3AWSDEG016E Already locked.AWSDEG017E Unlock 3AWSDEG018E Can not malloc comarea 1AWSDEG019E open`
 
 ---
 
@@ -29373,7 +29373,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEG014E (DEG) indica: "Error: O
 No HCL Workload Automation 10.2.8, a mensagem AWSDEH001E (DEH) indica: "Error: Incorrect DelimiterAWSDEH002E Error: Call type mismatch on !1, requires !2AWSDEH003W Warning: Requires type !1, operand type is !2AWSDEH004E Error: Keyword not found.AWSDEH005E Error: Command not found, use Help.AWSDEH006E Error: Type not".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEH001E AWSDEH002E AWSDEH003W AWSDEH004E AWSDEH005E AWSDEH006E 10.2.8 mensagem DEH indica Error Incorrect Delimiter Call type mismatch requires Warning Requires operand Keyword not found Command`
+> `AWSDEH001E AWSDEH005E AWSDEH006E 10.2.8 mensagem DEH indica Error Incorrect DelimiterAWSDEH002E Call type mismatch requires 2AWSDEH003W Warning Requires operand 2AWSDEH004E Keyword not found.AWSDEH005E Command found use Help.AWSDEH006E`
 
 ---
 
@@ -29388,7 +29388,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEH001E (DEH) indica: "Error: I
 No HCL Workload Automation 10.2.8, a mensagem AWSDEI003E (DEI) indica: "System error !1 trying to open !2 for input.AWSDEI004E System error !1 trying to open !2 for output.8qGáF©:AWSDEJ002E The internal data structure area (comarea) could not be initialized.AWSDEJ003E Doing".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEI003E AWSDEI004E AWSDEJ002E AWSDEJ003E 10.2.8 mensagem DEI indica System error trying open for input output The internal data structure area comarea could not initialized Doing`
+> `AWSDEI003E AWSDEI004E AWSDEJ002E AWSDEJ003E 10.2.8 mensagem DEI indica System error trying open for input.AWSDEI004E output The internal data structure area comarea could not initialized.AWSDEJ003E Doing`
 
 ---
 
@@ -29403,7 +29403,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEI003E (DEI) indica: "System e
 No HCL Workload Automation 10.2.8, a mensagem AWSDEK051E (DEK) indica: "Options must precede arguments, use -- to close options.AWSDEK052E An option was not valid.AWSDEK053E An option was ambiguous.AWSDEK054E An option was not found.AWSDEK101E Error accessing !1: !2AWSDEK301E Error opening work file !1: !2AWSDEK302".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK051E AWSDEK052E AWSDEK053E AWSDEK054E AWSDEK101E AWSDEK301E 10.2.8 mensagem DEK indica Options must precede arguments use close options option was not valid ambiguous found Error accessing`
+> `AWSDEK051E AWSDEK052E AWSDEK053E AWSDEK054E AWSDEK101E 10.2.8 mensagem DEK indica Options must precede arguments use close options.AWSDEK052E option was not valid.AWSDEK053E ambiguous.AWSDEK054E found.AWSDEK101E Error accessing 2AWSDEK301E opening work file`
 
 ---
 
@@ -29418,7 +29418,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK051E (DEK) indica: "Options 
 No HCL Workload Automation 10.2.8, a mensagem AWSDEK102E (DEK) indica: "An error occurred while rebuilding !1: !2.!1 rebuilt successfully.#Usage: fileinfo [ -V|-U|path [...]#Usage: makesec [ -V | -U ]".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK102E 10.2.8 mensagem DEK indica error occurred while rebuilding rebuilt successfully Usage fileinfo path makesec`
+> `AWSDEK102E 10.2.8 mensagem DEK indica error occurred while rebuilding rebuilt successfully.#Usage fileinfo path Usage makesec`
 
 ---
 
@@ -29433,7 +29433,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK102E (DEK) indica: "An error
 No HCL Workload Automation 10.2.8, a mensagem AWSDEK406E (DEK) indica: "Error writing security file !1 to the screen.Usage: dummy [ -V | -U ]#usage: evtsize {-V | -U | -show <file_name> | -compact <file_name> [<new_size>] | <file_name> <new_size>}usage: mkproto [options][files ...]#Options are:#-n: Put line numbers ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK406E 10.2.8 mensagem DEK indica Error writing security file the screen Usage dummy usage evtsize show file_name compact new_size mkproto options files Options are Put line`
+> `AWSDEK406E 10.2.8 mensagem DEK indica Error writing security file the screen.Usage dummy usage evtsize show file_name compact new_size mkproto options files Options are Put line numbers`
 
 ---
 
@@ -29448,7 +29448,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK406E (DEK) indica: "Error wr
 No HCL Workload Automation 10.2.8, a mensagem AWSDEL001E (DEL) indica: "Error, attempt to open newer revision of fileAWSDEL002E Error, cpudata file has not been openedAWSDEL003W End of chain/no more matches.AWSDEL004E Could not create a temporary file: !1AWSDEL005E File system error: !1AWSDEL006E cpu not specified i".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL001E AWSDEL002E AWSDEL003W AWSDEL004E AWSDEL005E AWSDEL006E 10.2.8 mensagem DEL indica Error attempt open newer revision file cpudata has not been opened End chain more matches Could create temporary`
+> `AWSDEL001E AWSDEL004E 10.2.8 mensagem DEL indica Error attempt open newer revision fileAWSDEL002E cpudata file has not been openedAWSDEL003W End chain more matches.AWSDEL004E Could create temporary 1AWSDEL005E File system`
 
 ---
 
@@ -29493,7 +29493,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEN002E (DEN) indica: "Cannot c
 No HCL Workload Automation 10.2.8, a mensagem AWSDEN003W (DEN) indica: "Software has been converted to a seven day demo.AWSDEN004E This is not production software.AWSDEN005E Can't determine software type.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEN003W AWSDEN004E AWSDEN005E 10.2.8 mensagem DEN indica Software has been converted seven day demo This not production software Can determine type`
+> `AWSDEN003W AWSDEN004E AWSDEN005E 10.2.8 mensagem DEN indica Software has been converted seven day demo.AWSDEN004E This not production software.AWSDEN005E Can determine software type`
 
 ---
 
@@ -29508,7 +29508,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEN003W (DEN) indica: "Software
 No HCL Workload Automation 10.2.8, a mensagem AWSDEO001E (DEO) indica: "Snmp error for !1 in !2: !3AWSDEO002E SNMP allocate error for !1 in !2: !3AWSDEO003E SNMP unknown case is for !1 in !2: !3AWSDEO004E OV no pmd. Doing !1 in !2. Error: !3AWSDEO005I Normal exit for !1 in !2.AWSDEO006E OV unknown pmd command. !1, !".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEO001E AWSDEO002E AWSDEO003E AWSDEO004E AWSDEO005I AWSDEO006E 10.2.8 mensagem DEO indica Snmp error for SNMP allocate unknown case pmd Doing Error Normal exit command`
+> `AWSDEO001E AWSDEO006E 10.2.8 mensagem DEO indica Snmp error for 3AWSDEO002E SNMP allocate 3AWSDEO003E unknown case 3AWSDEO004E pmd Doing Error 3AWSDEO005I Normal exit 2.AWSDEO006E command`
 
 ---
 
@@ -29523,7 +29523,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEO001E (DEO) indica: "Snmp err
 No HCL Workload Automation 10.2.8, a mensagem AWSDEP001E (DEP) indica: "Fifo error in !1, call !2, error: !3AWSDEP002E Fifo error opening connection for !1: !2AWSDEP003E Fifo error allocating space in !1 for !2: !3AWSDEP004E Fifo receive error on !1: !2AWSDEP005E Unknown case in !2, on !1, line !3, value !4AWSDEP006".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP001E AWSDEP002E AWSDEP003E AWSDEP004E AWSDEP005E 10.2.8 mensagem DEP indica Fifo error call opening connection for allocating space receive Unknown case line value`
+> `AWSDEP001E 10.2.8 mensagem DEP indica Fifo error call 3AWSDEP002E opening connection for 2AWSDEP003E allocating space 3AWSDEP004E receive 2AWSDEP005E Unknown case line value`
 
 ---
 
@@ -29538,7 +29538,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP001E (DEP) indica: "Fifo err
 No HCL Workload Automation 10.2.8, a mensagem AWSDEQ001E (DEQ) indica: "Error setting thread token !1:!2 message = !3.AWSDEQ002E Error creating file !1:!2 message = !3.AWSDEQ003E Error setting name pipe mode !1:!2 message = !3.AWSDEQ004E Error writing to file !1:!2 message = !3.AWSDEQ005E Error connecting to pipe !1:".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ001E AWSDEQ002E AWSDEQ003E AWSDEQ004E AWSDEQ005E 10.2.8 mensagem DEQ indica Error setting thread token message creating file name pipe mode writing connecting`
+> `AWSDEQ001E AWSDEQ002E AWSDEQ003E AWSDEQ004E AWSDEQ005E 10.2.8 mensagem DEQ indica Error setting thread token message 3.AWSDEQ002E creating file 3.AWSDEQ003E name pipe mode 3.AWSDEQ004E writing 3.AWSDEQ005E connecting`
 
 ---
 
@@ -29553,7 +29553,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ001E (DEQ) indica: "Error se
 No HCL Workload Automation 10.2.8, a mensagem AWSDEQ021E (DEQ) indica: "HCL Workload Scheduler Token Service is not running, restart the service.}C0C$Bÿ%Usage: !1 CSName InputFile OuputFile~FtE¨CL\AWSDEW001E Invalid flag Try -u for usage.AWSDEW003E More t".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ021E AWSDEW001E AWSDEW003E 10.2.8 mensagem DEQ indica Scheduler Token Service not running restart the service Usage CSName InputFile OuputFile Invalid flag Try for usage More`
+> `AWSDEQ021E AWSDEW001E AWSDEW003E 10.2.8 mensagem DEQ indica Scheduler Token Service not running restart the service C0C Usage CSName InputFile OuputFile FtE Invalid flag Try for usage.AWSDEW003E More`
 
 ---
 
@@ -29568,7 +29568,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ021E (DEQ) indica: "HCL Work
 No HCL Workload Automation 10.2.8, a mensagem AWSDER001E (DER) indica: "Malloc failed !1:!2 error = !3.AWSDER002E Calloc failed !1:!2 error = !3.AWSDER003E Realloc failed !1:!2 error = !3.+VzºN¹µéAWSDES001E Expected the keyword USERNAME.AWSDES002E Expected a val".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDER001E AWSDER002E AWSDER003E AWSDES001E AWSDES002E 10.2.8 mensagem DER indica Malloc failed error Calloc Realloc Expected the keyword USERNAME val`
+> `AWSDER001E AWSDER002E AWSDER003E AWSDES001E AWSDES002E 10.2.8 mensagem DER indica Malloc failed error 3.AWSDER002E Calloc 3.AWSDER003E Realloc Expected the keyword USERNAME.AWSDES002E val`
 
 ---
 
@@ -29583,7 +29583,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDER001E (DER) indica: "Malloc f
 No HCL Workload Automation 10.2.8, a mensagem AWSDET001E (DET) indica: "Error, attempt to open newer revision of fileAWSDET002E Error, userdata file has not been openedAWSDET003E End of chain/no more matches.AWSDET004E Couldn't create a temporary file: !1AWSDET005E File system error: !1AWSDET006E user not specified ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET001E AWSDET002E AWSDET003E AWSDET004E AWSDET005E AWSDET006E 10.2.8 mensagem DET indica Error attempt open newer revision file userdata has not been opened End chain more matches Couldn create temporary`
+> `AWSDET001E AWSDET004E 10.2.8 mensagem DET indica Error attempt open newer revision fileAWSDET002E userdata file has not been openedAWSDET003E End chain more matches.AWSDET004E Couldn create temporary 1AWSDET005E File system error`
 
 ---
 
@@ -29598,7 +29598,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET001E (DET) indica: "Error, a
 No HCL Workload Automation 10.2.8, a mensagem AWSDEU001E (DEU) indica: "**ERROR** Adding domain !1 would cause a loop in the domain hierarchy.AWSDEU002I At beginning of list.AWSDEU003I At end of list.AWSDEU004E Attempt to add item to list pointed to by null pointer.AWSDEU005E Attempt to delete from a list pointed to ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU001E AWSDEU002I AWSDEU003I AWSDEU004E AWSDEU005E 10.2.8 mensagem DEU indica ERROR Adding would cause loop the hierarchy beginning list end Attempt add item pointed null pointer delete from`
+> `AWSDEU001E AWSDEU002I AWSDEU003I AWSDEU004E AWSDEU005E 10.2.8 mensagem DEU indica ERROR Adding would cause loop the hierarchy.AWSDEU002I beginning list.AWSDEU003I end list.AWSDEU004E Attempt add item list pointed null pointer.AWSDEU005E delete from`
 
 ---
 
@@ -29613,7 +29613,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU001E (DEU) indica: "**ERROR*
 No HCL Workload Automation 10.2.8, a mensagem AWSDEV001E (DEV) indica: "Unable to open input file !1 for reading.AWSDEV002E Unable to examine input file !1.AWSDEV003E Unable to allocate input buffer.AWSDEV004E Unable to allocate output buffer.AWSDEV005E Unable to read input file !1.AWSDEV006E The user ID that is usi".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV001E AWSDEV002E AWSDEV003E AWSDEV004E AWSDEV005E AWSDEV006E 10.2.8 mensagem DEV indica Unable open input file for reading examine allocate buffer output read`
+> `AWSDEV001E AWSDEV002E AWSDEV003E AWSDEV004E AWSDEV005E AWSDEV006E 10.2.8 mensagem DEV indica Unable open input file for reading.AWSDEV002E examine 1.AWSDEV003E allocate buffer.AWSDEV004E output buffer.AWSDEV005E read 1.AWSDEV006E The`
 
 ---
 
@@ -29628,7 +29628,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV001E (DEV) indica: "Unable t
 No HCL Workload Automation 10.2.8, a mensagem AWSDEZ001E (DEZ) indica: "Call count exceeded, serious bugAWSDEZ002E ISSUEMSG Internal error at line %dAWSDEZ003E **ERROR**(cpu secs %li)AWSDEZ004E **ERROR**,Z}ÕéÕÝÕµ(%*.*s%*.*s %*.*s%*.*s%*.*s%*.*sPage%5d#".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEZ001E AWSDEZ002E AWSDEZ003E AWSDEZ004E 10.2.8 mensagem DEZ indica Call count exceeded serious bug ISSUEMSG Internal error line ERROR cpu secs sPage`
+> `AWSDEZ001E AWSDEZ004E 10.2.8 mensagem DEZ indica Call count exceeded serious bugAWSDEZ002E ISSUEMSG Internal error line dAWSDEZ003E ERROR cpu secs sPage`
 
 ---
 
@@ -29643,7 +29643,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEZ001E (DEZ) indica: "Call cou
 No HCL Workload Automation 10.2.8, a mensagem AWSDFE001E (DFE) indica: "File system error %d opening uconfig.AWSDFE002E File system error %d creating uconfig.AWSDFE003E Error %d reading uconfig.AWSDFE004E File system error %d writing uconfig.AWSDFE005E File system error %d closing uconfig.Syntax: psetcode -action[pa".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE001E AWSDFE002E AWSDFE003E AWSDFE004E AWSDFE005E 10.2.8 mensagem DFE indica File system error opening uconfig creating Error reading writing`
+> `AWSDFE001E AWSDFE002E AWSDFE003E AWSDFE004E AWSDFE005E 10.2.8 mensagem DFE indica File system error opening uconfig.AWSDFE002E creating uconfig.AWSDFE003E Error reading uconfig.AWSDFE004E writing uconfig.AWSDFE005E closing uconfig.Syntax psetcode action`
 
 ---
 
@@ -29658,7 +29658,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE001E (DFE) indica: "File sys
 No HCL Workload Automation 10.2.8, a mensagem AWSDFE025W (DFE) indica: "WARNING: Extra parameters ignored starting at: "!1"usage: psetcode -{h|c|d|i|n|U|u|V|v<validation code>|n<company name>}usage: psetcode -{h|d|i|U|V|v<validation code>}AWSDFE028I Company name: %s	Validation Code: %dModels allowed:#AWSDFE030E No m".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE025W AWSDFE028I AWSDFE030E 10.2.8 mensagem DFE indica WARNING Extra parameters ignored starting usage psetcode validation code company name Company Validation Code Models allowed`
+> `AWSDFE025W AWSDFE028I AWSDFE030E 10.2.8 mensagem DFE indica WARNING Extra parameters ignored starting usage psetcode validation code company name Company Validation Code dModels allowed`
 
 ---
 
@@ -29673,7 +29673,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE025W (DFE) indica: "WARNING:
 No HCL Workload Automation 10.2.8, a mensagem AWSDFF001I (DFF) indica: "Invoking prog =%sAWSDFF002E execv failed; error %dAWSDFF003E setuid failed; error %d?ìòìnêRAWSDFG002E STARTER:Error calling logon user : %dAWSDFG003E STARTER:Error setuid failed: %sAWSDFG0".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFF001I AWSDFF002E AWSDFF003E AWSDFG002E AWSDFG003E 10.2.8 mensagem DFF indica Invoking prog execv failed error setuid STARTER Error calling logon user AWSDFG0`
+> `AWSDFF001I AWSDFG002E 10.2.8 mensagem DFF indica Invoking prog sAWSDFF002E execv failed error dAWSDFF003E setuid STARTER Error calling logon user dAWSDFG003E sAWSDFG0`
 
 ---
 
@@ -29688,7 +29688,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFF001I (DFF) indica: "Invoking
 No HCL Workload Automation 10.2.8, a mensagem AWSDFH001E (DFH) indica: "The following success condition comparison expression is missing one of a pair of parentheses: !1AWSDFH002E The success condition comparison expression either contains an unsupported operator or an operator used incorrectly: !1.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFH001E AWSDFH002E 10.2.8 mensagem DFH indica The following success condition comparison expression missing one pair parentheses either contains unsupported operator used incorrectly`
+> `AWSDFH001E 10.2.8 mensagem DFH indica The following success condition comparison expression missing one pair parentheses 1AWSDFH002E either contains unsupported operator used incorrectly`
 
 ---
 
@@ -29733,7 +29733,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFH004E (DFH) indica: "The succ
 No HCL Workload Automation 10.2.8, a mensagem AWSEDW001E (EDW) indica: "The following value: "!2" for the following netman command line option: "!1" is not in the correct format.AWSEDW003W Not running with root permissionsAWSEDW005E Netman was unable to open its configuration file: !1. The following error was given by ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSEDW001E AWSEDW003W AWSEDW005E 10.2.8 mensagem EDW indica The following value for the netman command line option not correct format Not running with root permissions Netman was unable open`
+> `AWSEDW001E AWSEDW003W 10.2.8 mensagem EDW indica The following value for the netman command line option not correct format.AWSEDW003W Not running with root permissionsAWSEDW005E Netman was unable open its configuration`
 
 ---
 
@@ -29748,7 +29748,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSEDW001E (EDW) indica: "The foll
 No HCL Workload Automation 10.2.8, a mensagem AWSEDW002E (EDW) indica: "System errorAWSEDW004E Message file already opened by another process: !1, !2AWSEDW006E Netman could not process the service information in its configuration file: "!1". If the problem is with a specific entry, the details are as follows (if the fo".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSEDW002E AWSEDW004E AWSEDW006E 10.2.8 mensagem EDW indica System error Message file already opened another process Netman could not the service information its configuration problem with specific entry`
+> `AWSEDW002E 10.2.8 mensagem EDW indica System errorAWSEDW004E Message file already opened another process 2AWSEDW006E Netman could not the service information its configuration problem with specific entry`
 
 ---
 
@@ -29763,7 +29763,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSEDW002E (EDW) indica: "System e
 No HCL Workload Automation 10.2.8, a mensagem AWSEDW020E (EDW) indica: "An internal error has occurred. Netman was unable to set up its TCP/IP port to listen for service requests. The following operating system message was received: !1.AWSEDW022E An internal error has occurred. Netman encountered an IPC error when waiti".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSEDW020E AWSEDW022E 10.2.8 mensagem EDW indica internal error has occurred Netman was unable set its TCP port listen for service requests The following operating system message received`
+> `AWSEDW020E AWSEDW022E 10.2.8 mensagem EDW indica internal error has occurred Netman was unable set its TCP port listen for service requests The following operating system message received 1.AWSEDW022E`
 
 ---
 
@@ -29778,7 +29778,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSEDW020E (EDW) indica: "An inter
 No HCL Workload Automation 10.2.8, a mensagem AWSEDW042I (EDW) indica: "Terminating, no sons activeAWSEDW052W IP address validation not performed for request: !1. Connection received from IP address: !2. !3. Service request accepted.AWSEDW053E Netman could not validate the IP address for a service.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSEDW042I AWSEDW052W AWSEDW053E 10.2.8 mensagem EDW indica Terminating sons active address validation not performed for request Connection received from Service accepted Netman could validate the`
+> `AWSEDW042I AWSEDW053E 10.2.8 mensagem EDW indica Terminating sons activeAWSEDW052W address validation not performed for request Connection received from Service accepted.AWSEDW053E Netman could validate the service`
 
 ---
 
@@ -29793,7 +29793,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSEDW042I (EDW) indica: "Terminat
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB003E (FAB) indica: "The twsinst script cannot run on this operating system: !1.AWSFAB004E Only the user "root" can run the twsinst script.AWSFAB005E No parameters have been specified for twsinst.AWSFAB006I Use the command "!1" to see a list of the available parameter".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB003E AWSFAB004E AWSFAB005E AWSFAB006I 10.2.8 mensagem FAB indica The twsinst script cannot run this operating system Only the user root can parameters have been specified for`
+> `AWSFAB003E AWSFAB004E AWSFAB005E AWSFAB006I 10.2.8 mensagem FAB indica The twsinst script cannot run this operating system 1.AWSFAB004E Only the user root can script.AWSFAB005E parameters have been specified for twsinst.AWSFAB006I Use`
 
 ---
 
@@ -29823,7 +29823,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB132E (FAB) indica: "The unin
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB133E (FAB) indica: "Either the "-password" parameter is missing, or an incorrect value has been supplied for a parameter. The parameter must be as follows: "!1".AWSFAB134E You specified an incorrect password for the user !1.AWSFAB135E The "!1" user account you supplie".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB133E AWSFAB134E AWSFAB135E 10.2.8 mensagem FAB indica Either the password parameter missing incorrect value has been supplied for The must follows You specified user`
+> `AWSFAB133E AWSFAB134E AWSFAB135E 10.2.8 mensagem FAB indica Either the password parameter missing incorrect value has been supplied for The must follows You specified user 1.AWSFAB135E`
 
 ---
 
@@ -29838,7 +29838,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB133E (FAB) indica: "Either t
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB173E (FAB) indica: "Operating system version is not supported.AWSFAB174E AIX operating system maintanance package is not supported.AWSFAB175E Found library !1 but not !2. Softlink !3 to !4.AWSFAB176E Library libXp.so.6 and libXmu.so.6 are not found.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB173E AWSFAB174E AWSFAB175E AWSFAB176E 10.2.8 mensagem FAB indica Operating system version not supported AIX operating maintanance package Found library but Softlink Library libXp.so.6 and libXmu.so.6 are`
+> `AWSFAB173E AWSFAB174E AWSFAB175E AWSFAB176E 10.2.8 mensagem FAB indica Operating system version not supported.AWSFAB174E AIX operating maintanance package supported.AWSFAB175E Found library but Softlink 4.AWSFAB176E Library libXp.so.6 and libXmu.so.6 are found`
 
 ---
 
@@ -29853,7 +29853,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB173E (FAB) indica: "Operatin
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB177E (FAB) indica: "Required libraries are not installed on the running system.AWSFAB178E 32-bit AIX operating system is not supported.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB177E AWSFAB178E 10.2.8 mensagem FAB indica Required libraries are not installed the running system 32-bit AIX operating supported`
+> `AWSFAB177E AWSFAB178E 10.2.8 mensagem FAB indica Required libraries are not installed the running system.AWSFAB178E 32-bit AIX operating system supported`
 
 ---
 
@@ -29883,7 +29883,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB179E (FAB) indica: "The AIX 
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB180E (FAB) indica: "The AIX fix !1 was not found on the running system.AWSFAB181E C++ runtime level !1 not supported.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB180E AWSFAB181E 10.2.8 mensagem FAB indica The AIX fix was not found the running system runtime level supported`
+> `AWSFAB180E AWSFAB181E 10.2.8 mensagem FAB indica The AIX fix was not found the running system.AWSFAB181E runtime level supported`
 
 ---
 
@@ -29898,7 +29898,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB180E (FAB) indica: "The AIX 
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB182I (FAB) indica: "Disk space successfully checked on file systemAWSFAB183I Disk swap space successfully checkedAWSFAB184I Memory requirements successfully checkedAWSFAB185I Prerequisites check completeAWSFAB186I The path provided !1 does not contain a Websphere Ap".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB182I AWSFAB183I AWSFAB184I AWSFAB185I AWSFAB186I 10.2.8 mensagem FAB indica Disk space successfully checked file system swap Memory requirements Prerequisites check complete The path provided`
+> `AWSFAB182I 10.2.8 mensagem FAB indica Disk space successfully checked file systemAWSFAB183I swap checkedAWSFAB184I Memory requirements checkedAWSFAB185I Prerequisites check completeAWSFAB186I The path provided does not contain Websphere`
 
 ---
 
@@ -29913,7 +29913,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB182I (FAB) indica: "Disk spa
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB204I (FAB) indica: "Release level !1 successfully checked.AWSFAB205E The operating system release level is not supported.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB204I AWSFAB205E 10.2.8 mensagem FAB indica Release level successfully checked The operating system release not supported`
+> `AWSFAB204I AWSFAB205E 10.2.8 mensagem FAB indica Release level successfully checked.AWSFAB205E The operating system release not supported`
 
 ---
 
@@ -29928,7 +29928,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB204I (FAB) indica: "Release 
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB206I (FAB) indica: "Check security patches ...AWSFAB207I Check cluster patch !1 ...AWSFAB208I Opening text file !1.AWSFAB209I WebSphere patches successfully checked.AWSFAB210I The minimum patch !1 was found on the running system.AWSFAB211W The minimum required patc".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB206I AWSFAB207I AWSFAB208I AWSFAB209I AWSFAB210I AWSFAB211W 10.2.8 mensagem FAB indica Check security patches cluster patch Opening text file WebSphere successfully checked The minimum was found the running system`
+> `AWSFAB206I AWSFAB207I AWSFAB208I AWSFAB209I AWSFAB210I AWSFAB211W 10.2.8 mensagem FAB indica Check security patches cluster patch Opening text file 1.AWSFAB209I WebSphere successfully checked.AWSFAB210I The minimum was found the running system.AWSFAB211W`
 
 ---
 
@@ -29958,7 +29958,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB219E (FAB) indica: "Hardware
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB220W (FAB) indica: "Recommended memory requirements are not satisfied.AWSFAB221E The Memory requirements are not satisfied.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB220W AWSFAB221E 10.2.8 mensagem FAB indica Recommended memory requirements are not satisfied The Memory`
+> `AWSFAB220W AWSFAB221E 10.2.8 mensagem FAB indica Recommended memory requirements are not satisfied.AWSFAB221E The Memory satisfied`
 
 ---
 
@@ -29973,7 +29973,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB220W (FAB) indica: "Recommen
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB222I (FAB) indica: "No kernel requirement checks are necessary.AWSFAB223I Kernel parameters successfully checked.AWSFAB224W Kernel parameter !1 not defined.AWSFAB225E Kernel parameter !1 not defined.AWSFAB226I Base kernel level required value: !1.AWSFAB227I Kernel ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB222I AWSFAB223I AWSFAB224W AWSFAB225E AWSFAB226I AWSFAB227I 10.2.8 mensagem FAB indica kernel requirement checks are necessary Kernel parameters successfully checked parameter not defined Base level required`
+> `AWSFAB222I AWSFAB223I AWSFAB224W AWSFAB225E AWSFAB226I AWSFAB227I 10.2.8 mensagem FAB indica kernel requirement checks are necessary.AWSFAB223I Kernel parameters successfully checked.AWSFAB224W parameter not defined.AWSFAB225E defined.AWSFAB226I Base level required value 1.AWSFAB227I`
 
 ---
 
@@ -30003,7 +30003,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB247E (FAB) indica: "The user
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB284E (FAB) indica: "The Linux !1 service pack !2 is not supported. Update the Operating system to service pack !3.AWSFAB285I Update the patch.info fileAWSFAB286E The eImage on your workstation is corrupt. You must run the TAR command on QP2TERM or AIXTERM shell to unt".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB284E AWSFAB285I AWSFAB286E 10.2.8 mensagem FAB indica The Linux service pack not supported Update the Operating system patch.info file eImage your workstation corrupt You must`
+> `AWSFAB284E AWSFAB285I 10.2.8 mensagem FAB indica The Linux service pack not supported Update the Operating system 3.AWSFAB285I patch.info fileAWSFAB286E eImage your workstation corrupt You must run`
 
 ---
 
@@ -30033,7 +30033,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB295W (FAB) indica: "You can 
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB296E (FAB) indica: "The operation -restore for the user !1 cannot be performed, because the instance you want to restore is not at version !2 or later.AWSFAB301I Usage:".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB296E AWSFAB301I 10.2.8 mensagem FAB indica The operation restore for the user cannot performed because instance you want not version later Usage`
+> `AWSFAB296E AWSFAB301I 10.2.8 mensagem FAB indica The operation restore for the user cannot performed because instance you want not version later.AWSFAB301I Usage`
 
 ---
 
@@ -30063,7 +30063,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB302I (FAB) indica: "twsClust
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB303E (FAB) indica: "The parameter !1 is invalid.AWSFAB304E You cannot specify the -passwords parameter if you do not specify the -groups parameter.AWSFAB305E You specified an invalid path. The specified path !1 is not valid either because it does not exist or because ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB303E AWSFAB304E AWSFAB305E 10.2.8 mensagem FAB indica The parameter invalid You cannot specify the passwords you not groups specified path`
+> `AWSFAB303E AWSFAB304E AWSFAB305E 10.2.8 mensagem FAB indica The parameter invalid.AWSFAB304E You cannot specify the passwords you not groups parameter.AWSFAB305E specified invalid path valid either`
 
 ---
 
@@ -30078,7 +30078,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB303E (FAB) indica: "The para
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB416E (FAB) indica: "A parameter to twsinst has been supplied that is not appropriate for the supplied installation type. Specify the -password parameter only when new installation type is specified.AWSFAB417E An incorrect value has been supplied for the parameter "-pas".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB416E AWSFAB417E 10.2.8 mensagem FAB indica parameter twsinst has been supplied that not appropriate for the installation type Specify password only when new specified incorrect`
+> `AWSFAB416E AWSFAB417E 10.2.8 mensagem FAB indica parameter twsinst has been supplied that not appropriate for the installation type Specify password only when new specified.AWSFAB417E incorrect value`
 
 ---
 
@@ -30093,7 +30093,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB416E (FAB) indica: "A parame
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB435I (FAB) indica: "Restoring the instanceAWSFAB436E The agent update failed. The files of the previous version will be restored. After restoring the previous version, the agent will continue to work normally.AWSFAB437E The restore operation of the previous version co".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB435I AWSFAB436E AWSFAB437E 10.2.8 mensagem FAB indica Restoring the instance The agent update failed files previous version will restored After restoring continue work`
+> `AWSFAB435I AWSFAB437E 10.2.8 mensagem FAB indica Restoring the instanceAWSFAB436E The agent update failed files previous version will restored After restoring continue work normally.AWSFAB437E`
 
 ---
 
@@ -30138,7 +30138,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB470E (FAB) indica: "The rein
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB471E (FAB) indica: "The parameter you have supplied: "!1" must be followed by a value.AWSFAB472E The directory "!1" you have supplied with parameter: "!1" does not contain file "!1".AWSFAB473E You have supplied parameter: "!1" but you have not supplied parameter: "!1"".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB471E AWSFAB472E AWSFAB473E 10.2.8 mensagem FAB indica The parameter you have supplied must followed value directory with does not contain file You`
+> `AWSFAB471E AWSFAB472E AWSFAB473E 10.2.8 mensagem FAB indica The parameter you have supplied must followed value.AWSFAB472E directory with does not contain file You but`
 
 ---
 
@@ -30153,7 +30153,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB471E (FAB) indica: "The para
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB479I (FAB) indica: "Importing certificates.AWSFAB480E The supplied directory "!1" does not exist.AWSFAB482E If you set the -useencryption parameter to true, the -addjruntime parameter must also be set to true. This is because Java is required to set up the encryption.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB479I AWSFAB480E AWSFAB482E 10.2.8 mensagem FAB indica Importing certificates The supplied directory does not exist you set the useencryption parameter true addjruntime must also This because`
+> `AWSFAB479I AWSFAB480E AWSFAB482E 10.2.8 mensagem FAB indica Importing certificates.AWSFAB480E The supplied directory does not exist.AWSFAB482E you set the useencryption parameter true addjruntime must also This because Java required`
 
 ---
 
@@ -30168,7 +30168,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB479I (FAB) indica: "Importin
 No HCL Workload Automation 10.2.8, a mensagem AWSFAB501E (FAB) indica: "The "!1" file in the depot folder on the master domain manager <datadir>/ssl/depot (UNIX), <installation_dir>TWSssldepot (Windows) must contain a password encoded with Base64 encoding.AWSFAB502E Specify either the sslkeysfolder and sslpassword param".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB501E AWSFAB502E 10.2.8 mensagem FAB indica The file the depot folder datadir ssl UNIX installation_dir TWSssldepot Windows must contain password encoded with Base64 encoding Specify either sslkeysfolder`
+> `AWSFAB501E AWSFAB502E 10.2.8 mensagem FAB indica The file the depot folder datadir ssl UNIX installation_dir TWSssldepot Windows must contain password encoded with Base64 encoding.AWSFAB502E Specify either sslkeysfolder and`
 
 ---
 
@@ -30183,7 +30183,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB501E (FAB) indica: "The "!1"
 No HCL Workload Automation 10.2.8, a mensagem AWSFAF003E (FAF) indica: "The twspatch script cannot run on this operating system: !1.AWSFAF004E Only the user "root" can run the twspatch script.AWSFAF005E No parameters have been specified for twspatch.AWSFAF006I Use the command "twspatch -u" to see a list of the availab".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF003E AWSFAF004E AWSFAF005E AWSFAF006I 10.2.8 mensagem FAF indica The twspatch script cannot run this operating system Only the user root can parameters have been specified for`
+> `AWSFAF003E AWSFAF004E AWSFAF005E AWSFAF006I 10.2.8 mensagem FAF indica The twspatch script cannot run this operating system 1.AWSFAF004E Only the user root can script.AWSFAF005E parameters have been specified for twspatch.AWSFAF006I Use`
 
 ---
 
@@ -30198,7 +30198,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF003E (FAF) indica: "The twsp
 No HCL Workload Automation 10.2.8, a mensagem AWSFAF046E (FAF) indica: "The "!1" user account you supplied does not exist on the local computer. The patching cannot proceed.AWSFAF047E You specified an incorrect password for the user !1.AWSFAF048I The "!1" operation completed successfully.AWSFAF132E The uninstallation ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF046E AWSFAF047E AWSFAF048I AWSFAF132E 10.2.8 mensagem FAF indica The user account you supplied does not exist the local computer patching cannot proceed You specified incorrect password for`
+> `AWSFAF046E AWSFAF047E AWSFAF048I AWSFAF132E 10.2.8 mensagem FAF indica The user account you supplied does not exist the local computer patching cannot proceed.AWSFAF047E You specified incorrect password for 1.AWSFAF048I operation`
 
 ---
 
@@ -30213,7 +30213,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF046E (FAF) indica: "The "!1"
 No HCL Workload Automation 10.2.8, a mensagem AWSGTW101E (GTW) indica: "The specified parameter "!1" is not valid.AWSGTW102E The arguments exceed the maximum input size.AWSGTW103E The parameter "!1" has been specified more than once.AWSGTW104E The parameters "!1" and "!2" are specified in the wrong order.AWSGTW105E T".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW101E AWSGTW102E AWSGTW103E AWSGTW104E AWSGTW105E 10.2.8 mensagem GTW indica The specified parameter not valid arguments exceed the maximum input size has been more than once parameters`
+> `AWSGTW101E AWSGTW102E AWSGTW103E AWSGTW104E AWSGTW105E 10.2.8 mensagem GTW indica The specified parameter not valid.AWSGTW102E arguments exceed the maximum input size.AWSGTW103E has been more than once.AWSGTW104E parameters and are`
 
 ---
 
@@ -30228,7 +30228,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW101E (GTW) indica: "The spec
 No HCL Workload Automation 10.2.8, a mensagem AWSGTW120E (GTW) indica: "The following error occurred while opening the template configuration file "!1": !2.AWSGTW121E The parameters "!1" and "!2" cannot both be specified.This is a dummy label. It must be the last label in every subcomponent. It ensures that a Label or ".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW120E AWSGTW121E 10.2.8 mensagem GTW indica The following error occurred while opening the template configuration file parameters and cannot both specified This dummy label must last every`
+> `AWSGTW120E AWSGTW121E 10.2.8 mensagem GTW indica The following error occurred while opening the template configuration file 2.AWSGTW121E parameters and cannot both specified.This dummy label must last every subcomponent`
 
 ---
 
@@ -30243,7 +30243,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW120E (GTW) indica: "The foll
 No HCL Workload Automation 10.2.8, a mensagem AWSITA001E (ITA) indica: "O comando estÃ¡ incorreto e nÃ£o pode ser processado.AWSITA002E NÃ£o Ã© possÃ­vel salvar o trabalho com o ID "%1$s" no armazenamento de trabalhos.AWSITA003E NÃ£o Ã© possÃ­vel cancelar o trabalho com o ID "%1$s" porque ele nÃ£o estÃ¡ presente no arm".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA001E AWSITA002E AWSITA003E 10.2.8 mensagem ITA indica comando incorreto processado vel salvar trabalho armazenamento trabalhos cancelar porque ele presente arm`
+> `AWSITA001E AWSITA002E AWSITA003E 10.2.8 mensagem ITA indica comando incorreto processado.AWSITA002E vel salvar trabalho armazenamento trabalhos.AWSITA003E cancelar porque ele presente arm`
 
 ---
 
@@ -30273,7 +30273,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA012E (ITA) indica: "A tarefa
 No HCL Workload Automation 10.2.8, a mensagem AWSITA077E (ITA) indica: "Encerramento anormal da tarefa (o cÃ³digo de saÃ­da Ã© o nÃºmero do sinal de encerramento).AWSITA078I A tarefa saiu com um cÃ³digo de saÃ­da nÃ£o-zero.AWSITA079E NÃ£o Ã© possÃ­vel converter um parÃ¢metro especificado para o".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA077E AWSITA078I AWSITA079E 10.2.8 mensagem ITA indica Encerramento anormal tarefa sinal encerramento saiu o-zero vel converter metro especificado`
+> `AWSITA077E AWSITA078I AWSITA079E 10.2.8 mensagem ITA indica Encerramento anormal tarefa sinal encerramento saiu o-zero.AWSITA079E vel converter metro especificado`
 
 ---
 
@@ -30318,7 +30318,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA081E (ITA) indica: "O agente
 No HCL Workload Automation 10.2.8, a mensagem AWSITA115I (ITA) indica: "As propriedades de rastreios foram alteradas: nÃ­vel="%1$d", arquivos mÃ¡ximos="%2$d", tamanho do arquivo="%3$d".AWSITA116I A tarefa foi interrompida pelo usuÃ¡rioAWSITA117E A solicitaÃ§Ã£o de chamada nÃ£o estÃ¡ correta: "%1$s" estÃ¡ ausente.AWSIT".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA115I AWSITA116I AWSITA117E 10.2.8 mensagem ITA indica propriedades rastreios foram alteradas vel arquivos ximos tamanho arquivo tarefa foi interrompida pelo rio chamada correta ausente AWSIT`
+> `AWSITA115I AWSITA116I 10.2.8 mensagem ITA indica propriedades rastreios foram alteradas vel arquivos ximos tamanho arquivo tarefa foi interrompida pelo rioAWSITA117E chamada correta ausente.AWSIT`
 
 ---
 
@@ -30333,7 +30333,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA115I (ITA) indica: "As propr
 No HCL Workload Automation 10.2.8, a mensagem AWSITA128E (ITA) indica: "Nenhum mÃ©todo localizado.AWSITA129E Nenhum arquivo de opÃ§Ãµes localizado para o mÃ©todo "%1$s".AWSITA130E O arquivo de opÃ§Ãµes "%1$s" nÃ£o existe.AWSITA131E O arquivo de opÃ§Ãµes "%1$s" Ã© muito grande.AWSITA132E NÃ£o foi possÃ­vel acessar o a".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA128E AWSITA129E AWSITA130E AWSITA131E AWSITA132E 10.2.8 mensagem ITA indica Nenhum todo localizado arquivo existe muito grande foi vel acessar`
+> `AWSITA128E AWSITA129E AWSITA130E AWSITA131E AWSITA132E 10.2.8 mensagem ITA indica Nenhum todo localizado.AWSITA129E arquivo localizado existe.AWSITA131E muito grande.AWSITA132E foi vel acessar`
 
 ---
 
@@ -30378,7 +30378,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA141E (ITA) indica: "A tarefa
 No HCL Workload Automation 10.2.8, a mensagem AWSITA142E (ITA) indica: "Nome de variÃ¡vel ausente apÃ³s a opÃ§Ã£o "%1$s".AWSITA143E Argumento(s) de comando inesperado(s) localizado(s).Insira um valor para a variÃ¡vel "%1$s"AWSITA145E O valor nÃ£o pode ser vazio.Tem certeza de que deseja remover "%1$s"? [y/n]AWSITA14".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA142E AWSITA143E AWSITA145E 10.2.8 mensagem ITA indica Nome vel ausente Argumento comando inesperado localizado Insira valor vazio Tem certeza deseja remover AWSITA14`
+> `AWSITA142E AWSITA143E AWSITA145E 10.2.8 mensagem ITA indica Nome vel ausente Argumento comando inesperado localizado Insira valor vazio.Tem certeza deseja remover AWSITA14`
 
 ---
 
@@ -30393,7 +30393,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA142E (ITA) indica: "Nome de 
 No HCL Workload Automation 10.2.8, a mensagem AWSITA167E (ITA) indica: "NÃ£o Ã© possÃ­vel configurar as variÃ¡veis, porque a solicitaÃ§Ã£o XML especificada "%1$s" nÃ£o Ã© vÃ¡lida ou estÃ¡ vazia.AWSITA168I A variÃ¡vel "%1$s" foi configurada com Ãªxito para o valor "%2$s".AWSITA169I A variÃ¡vel "%1$s" foi removida com Ãª".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA167E AWSITA168I AWSITA169I 10.2.8 mensagem ITA indica vel configurar veis porque XML especificada lida vazia foi configurada valor removida`
+> `AWSITA167E AWSITA168I AWSITA169I 10.2.8 mensagem ITA indica vel configurar veis porque XML especificada lida vazia.AWSITA168I foi configurada valor removida`
 
 ---
 
@@ -30408,7 +30408,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA167E (ITA) indica: "NÃ£o �
 No HCL Workload Automation 10.2.8, a mensagem AWSITA172E (ITA) indica: "O valor inserido nÃ£o corresponde ao valor anterior.AWSITA173E NÃ£o Ã© possÃ­vel atualizar o valor da propriedade de rastreio especificado, devido a este erro: "%1$s"AWSITA174E NÃ£o Ã© possÃ­vel obter os valores das propriedades de rastreio, devido".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA172E AWSITA173E AWSITA174E 10.2.8 mensagem ITA indica valor inserido corresponde anterior vel atualizar propriedade rastreio especificado devido erro obter valores propriedades`
+> `AWSITA172E AWSITA173E AWSITA174E 10.2.8 mensagem ITA indica valor inserido corresponde anterior.AWSITA173E vel atualizar propriedade rastreio especificado devido erro obter valores propriedades`
 
 ---
 
@@ -30423,7 +30423,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA172E (ITA) indica: "O valor 
 No HCL Workload Automation 10.2.8, a mensagem AWSITA176I (ITA) indica: "As propriedades de rastreamento sÃ£o: nÃ­vel="%1$s", mÃ¡ximo de arquivos="%2$s", tamanho do arquivo="%3$s".AWSITA177E O valor especificado para o argumento de comando "%1$s" deve ser um nÃºmero inteiro positivo vÃ¡lido.AWSITA178E O valor especifica".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA176I AWSITA177E AWSITA178E 10.2.8 mensagem ITA indica propriedades rastreamento vel ximo arquivos tamanho arquivo valor especificado argumento comando deve inteiro positivo lido especifica`
+> `AWSITA176I AWSITA177E AWSITA178E 10.2.8 mensagem ITA indica propriedades rastreamento vel ximo arquivos tamanho arquivo valor especificado argumento comando deve inteiro positivo lido.AWSITA178E especifica`
 
 ---
 
@@ -30453,7 +30453,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA211W (ITA) indica: "Falha ao
 No HCL Workload Automation 10.2.8, a mensagem AWSITA229E (ITA) indica: "O comando Wappman nÃ£o pode ser executado porque um ou mais argumentos de entrada estÃ£o ausentes.AWSITA230E Foi encontrado um erro ao processar o arquivo de propriedades "%1$s".AWSITA231E A propriedade da conexÃ£o de "%1$s" deve ser especificada.".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA229E AWSITA230E AWSITA231E 10.2.8 mensagem ITA indica comando Wappman executado porque mais argumentos entrada ausentes Foi encontrado erro processar arquivo propriedades propriedade deve especificada`
+> `AWSITA229E AWSITA230E AWSITA231E 10.2.8 mensagem ITA indica comando Wappman executado porque mais argumentos entrada ausentes.AWSITA230E Foi encontrado erro processar arquivo propriedades propriedade deve especificada`
 
 ---
 
@@ -30468,7 +30468,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA229E (ITA) indica: "O comand
 No HCL Workload Automation 10.2.8, a mensagem AWSITA264E (ITA) indica: "O parÃ¢metro, "%1$s", foi especificado mais de uma vez.AWSITA265E Os parÃ¢metros, "%1$s" e "%2$s", nÃ£o podem ser especificados.AWSITA266E O valor especificado para o parÃ¢metro %1$s nÃ£o Ã© vÃ¡lido.AWSITA267E O comando sendevent nÃ£o pode ser exe".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA264E AWSITA265E AWSITA266E AWSITA267E 10.2.8 mensagem ITA indica metro foi especificado mais vez metros podem especificados valor lido comando sendevent exe`
+> `AWSITA264E AWSITA265E AWSITA266E AWSITA267E 10.2.8 mensagem ITA indica metro foi especificado mais vez.AWSITA265E metros podem especificados.AWSITA266E valor lido.AWSITA267E comando sendevent exe`
 
 ---
 
@@ -30483,7 +30483,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA264E (ITA) indica: "O parÃ�
 No HCL Workload Automation 10.2.8, a mensagem AWSITA278E (ITA) indica: "Ocorreu um erro interno. Ocorreu um erro ao ler o valor de "%1$s" do arquivo de configuraÃ§Ã£o "%2$s. A chave nÃ£o estÃ¡ presente ou o arquivo de configuraÃ§Ã£o nÃ£o pode ser lidoAWSITA279E Ocorreu um erro interno. O evento nÃ£o foi enviado e foi ar".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA278E AWSITA279E 10.2.8 mensagem ITA indica Ocorreu erro interno ler valor arquivo chave presente lido evento foi enviado`
+> `AWSITA278E 10.2.8 mensagem ITA indica Ocorreu erro interno ler valor arquivo chave presente lidoAWSITA279E evento foi enviado`
 
 ---
 
@@ -30528,7 +30528,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA389I (ITA) indica: "NÃ£o h
 No HCL Workload Automation 10.2.8, a mensagem AWSITA403E (ITA) indica: "O comando filemonitor nÃ£o pode ser executado porque um ou mais argumentos de entrada estÃ£o ausentes.AWSITA404E Evento incorreto. Os eventos com suporte sÃ£o fileCreated e fileModified.AWSITA405E O arquivo de propriedades da tarefa nÃ£o pode ser a".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSITA403E AWSITA404E AWSITA405E 10.2.8 mensagem ITA indica comando filemonitor executado porque mais argumentos entrada ausentes Evento incorreto eventos suporte fileCreated fileModified arquivo propriedades tarefa`
+> `AWSITA403E AWSITA404E AWSITA405E 10.2.8 mensagem ITA indica comando filemonitor executado porque mais argumentos entrada ausentes.AWSITA404E Evento incorreto eventos suporte fileCreated fileModified.AWSITA405E arquivo propriedades tarefa`
 
 ---
 
@@ -30543,7 +30543,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSITA403E (ITA) indica: "O comand
 No HCL Workload Automation 10.2.8, a mensagem AWSSAM001I (SAM) indica: "Configuring IBM System Automation for Multiplatforms for HCL Workload Automation !1 instance (!2).AWSSAM002E Only the user "root" can run the createResources script.AWSSAM003E The createResources script is being run from the wrong directory.AWSSAM".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM001I AWSSAM002E AWSSAM003E 10.2.8 mensagem SAM indica Configuring IBM System for Multiplatforms instance Only the user root can run createResources script The being from`
+> `AWSSAM001I AWSSAM002E AWSSAM003E 10.2.8 mensagem SAM indica Configuring IBM System for Multiplatforms instance Only the user root can run createResources script.AWSSAM003E The script being from wrong`
 
 ---
 
@@ -30558,7 +30558,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM001I (SAM) indica: "Configur
 No HCL Workload Automation 10.2.8, a mensagem AWSSAS003E (SAS) indica: "You specified an incorrect value for a parameter. The parameter must be as follows: "!1".AWSSAS004E You specified the "!1" more than once.AWSSAS005E You did not specify the "!1".AWSSAS006I To see a list of the available parameters, use the "-u" op".
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAS003E AWSSAS004E AWSSAS005E AWSSAS006I 10.2.8 mensagem SAS indica You specified incorrect value for parameter The must follows the more than once did not specify see`
+> `AWSSAS003E AWSSAS004E AWSSAS005E AWSSAS006I 10.2.8 mensagem SAS indica You specified incorrect value for parameter The must follows the more than once.AWSSAS005E did not specify see list`
 
 ---
 
@@ -41569,7 +41569,28 @@ In the HWA laboratory, the runbook data/runbooks/hwa-10.2.8-wsl-lab.md now conta
 
 ---
 
-### 2426. `hwa-lab-10.2.8-runcyclegroup-structure-and-fd-keywords-0005`
+### 2426. `hwa-lab-10.2.8-runcyclegroup-schedule-reference-uses-calendar-name-0011`
+
+- **Categoria / Dominio:** Agendamento Avancado & Workflows
+- **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
+- **Versao / Plataforma:** HWA 10.2.8 (distributed)
+
+**Conteudo Canonico:**
+
+No HWA 10.2.8, referenciar um run cycle group a partir de um SCHEDULE no texto do composer NAO funciona como mapeamento direto de grupo. A clausula 'ON RUNCYCLE GROUP <x> <y>' e aceita sintaticamente, mas o parser interpreta 'x> <y>' como um objeto CALENDARIO e aborta com AWSJDB308E 'The calendar cal=<y> referenced by object js=... does not exist' quando nao existe um calendario com o nome do grupo. As variacoes 'ON RUNCYCLEGROUP <n>', 'ON RUN CYCLEGROUP <n>', 'RUN CYCLE GROUP <n>', 'RUN CYCLEGROUP <n>' e 'RCG <n>' sao rejeitadas com AWSJOM915E 'unexpected token'. Conclusao: no composer (linguagem de definicao textual), a associacao entre job stream e runcyclegroup com compensacao de dia livre (fdnext/fdprev) nao e expressavel; a sintaxe correta para isso existe via Graphical Designer/DWC (interface grafica), nao via arquivo de definicao. As clausulas de compensacao FDNEXT/FDPREV/FDIGNORE validas dentro do bloco 'runcyclegroup' nao sao, portanto, consumiveis ponta a ponta pela via textual sozinha.
+
+**Texto de Recuperacao Semantica (`retrieval_text`):**
+> `composer nao composer hwa AWSJDB308E AWSJOM915E calendario composer dias livres freedays run cycle group compensacao dia livre fdnext fdprev fdignore 10.2.8 referenciar run cycle group partir SCHEDULE texto composer NAO funciona mapeamento direto grupo clausula RUNCYCLE GROUP aceita sintaticamente mas parser interpreta objeto CALENDARIO aborta The calendar cal referenced`
+
+**Perguntas Relacionadas / Avaliacao:**
+- Como referenciar um run cycle group em um job stream na linguagem do composer HWA?
+- Por que ON RUNCYCLE GROUP retorna AWSJDB308E procurando um calendario?
+- A compensacao de dia livre por runcyclegroup e possivel via arquivo de definicao no HWA?
+- O que significa AWSJDB308E no composer?
+
+---
+
+### 2427. `hwa-lab-10.2.8-runcyclegroup-structure-and-fd-keywords-0005`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41590,7 +41611,7 @@ O bloco de run cycle group usa a keyword STANDALONE 'runcyclegroup <NOME>' (sem 
 
 ---
 
-### 2427. `hwa-lab-10.2.8-scheduling-needs-resource-naming-0001`
+### 2428. `hwa-lab-10.2.8-scheduling-needs-resource-naming-0001`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41610,7 +41631,7 @@ No HCL Workload Automation 10.2.8, o utilitário composer impõe um limite estri
 
 ---
 
-### 2428. `hwa-lab-10.2.8-scheduling-recovery-rerun-0002`
+### 2429. `hwa-lab-10.2.8-scheduling-recovery-rerun-0002`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -41630,7 +41651,7 @@ Ao configurar a instrução RECOVERY RERUN na definição de um job no HWA 10.2.
 
 ---
 
-### 2429. `hwa-lab-10.2.8-serverinst-0002`
+### 2430. `hwa-lab-10.2.8-serverinst-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41645,7 +41666,7 @@ In the WSL2 laboratory, HWA 10.2.8 serverinst.sh completed MDM installation in /
 
 ---
 
-### 2430. `hwa-lab-10.2.8-serverinst-full-success-0001`
+### 2431. `hwa-lab-10.2.8-serverinst-full-success-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41660,7 +41681,7 @@ Em container RHEL 9.8 (UBI-init), o serverinst.sh HWA 10.2.8 completou a instala
 
 ---
 
-### 2431. `hwa-lab-10.2.8-serverinst-inst-dir-0001`
+### 2432. `hwa-lab-10.2.8-serverinst-inst-dir-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41675,7 +41696,7 @@ Em container RHEL 9.8, serverinst.sh do HWA 10.2.8 rejeita instalacao com WAINST
 
 ---
 
-### 2432. `hwa-lab-10.2.8-serverinst-missing-cmp-0001`
+### 2433. `hwa-lab-10.2.8-serverinst-missing-cmp-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -41690,7 +41711,7 @@ Em container RHEL 9.8 UBI (imagem ubi-init minimal), o twsinst aninhado do serve
 
 ---
 
-### 2433. `hwa-lab-10.2.8-serverinst-no-skip-twsinst-0001`
+### 2434. `hwa-lab-10.2.8-serverinst-no-skip-twsinst-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41705,7 +41726,7 @@ O serverinst.sh HWA 10.2.8 nao possui caminho para pular o twsinst -new: apos um
 
 ---
 
-### 2434. `hwa-lab-10.2.8-serverinst-wrapper-rerun-0001`
+### 2435. `hwa-lab-10.2.8-serverinst-wrapper-rerun-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41720,7 +41741,7 @@ Apos falha do twsinst interno (ex.: cmp ausente), reexecutar o wrapper serverins
 
 ---
 
-### 2435. `hwa-lab-10.2.8-sfinal-awsbhv082e-recovery-0001`
+### 2436. `hwa-lab-10.2.8-sfinal-awsbhv082e-recovery-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41740,7 +41761,7 @@ No laboratório HWA 10.2.8 Distributed (container Docker tws-hwa), o job stream 
 
 ---
 
-### 2436. `hwa-lab-10.2.8-sfinal-confrontation-0001`
+### 2437. `hwa-lab-10.2.8-sfinal-confrontation-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41755,7 +41776,7 @@ No laboratório WSL2 HWA 10.2.8, /opt/hwa/TWS/Sfinal e /opt/hwa/TWS/config/Sfina
 
 ---
 
-### 2437. `hwa-lab-10.2.8-sfinal-confrontation-0002`
+### 2438. `hwa-lab-10.2.8-sfinal-confrontation-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41770,7 +41791,7 @@ No laboratório WSL2 HWA 10.2.8, os objetos FINAL e FINALPOSTREPORTS no banco co
 
 ---
 
-### 2438. `hwa-lab-10.2.8-sfinal-confrontation-0003`
+### 2439. `hwa-lab-10.2.8-sfinal-confrontation-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41785,7 +41806,7 @@ No laboratório WSL2 HWA 10.2.8, o último FINAL executado concluiu STARTAPPSERV
 
 ---
 
-### 2439. `hwa-lab-10.2.8-sfinal-definitions-removed-0001`
+### 2440. `hwa-lab-10.2.8-sfinal-definitions-removed-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -41800,7 +41821,7 @@ No lab container RHEL 9.8, as definicoes de exemplo do Sfinal (MDMXA#FINAL e MDM
 
 ---
 
-### 2440. `hwa-lab-10.2.8-sfinal-import-0006`
+### 2441. `hwa-lab-10.2.8-sfinal-import-0006`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41815,7 +41836,7 @@ In the WSL2 HWA 10.2.8 laboratory, the post-configuration process executed compo
 
 ---
 
-### 2441. `hwa-lab-10.2.8-sfinal-installed-by-installer-0001`
+### 2442. `hwa-lab-10.2.8-sfinal-installed-by-installer-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41830,7 +41851,7 @@ No lab container RHEL 9.8, o instalador do MDM HWA 10.2.8 JA importa o Sfinal: o
 
 ---
 
-### 2442. `hwa-lab-10.2.8-sfinal-plan-horizon-0007`
+### 2443. `hwa-lab-10.2.8-sfinal-plan-horizon-0007`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41845,7 +41866,7 @@ In the WSL2 HWA 10.2.8 laboratory, JnextPlan -for 0000 created a zero-duration p
 
 ---
 
-### 2443. `hwa-lab-10.2.8-sft-audit-0075`
+### 2444. `hwa-lab-10.2.8-sft-audit-0075`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -41860,7 +41881,7 @@ Auditoria independente ADU (hwa-dataset-auditor, 2026-08-18) dos materiais HWA 1
 
 ---
 
-### 2444. `hwa-lab-10.2.8-sft-m2m3-rework-0087`
+### 2445. `hwa-lab-10.2.8-sft-m2m3-rework-0087`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -41875,7 +41896,7 @@ The HWA 10.2.8 SFT candidate corpus was reworked to close the ADU audit findings
 
 ---
 
-### 2445. `hwa-lab-10.2.8-single-user-wauser-unification-0001`
+### 2446. `hwa-lab-10.2.8-single-user-wauser-unification-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41890,7 +41911,7 @@ No padrao operacional e arquitetural do HWA 10.2.8, nao se criam multiplos usuar
 
 ---
 
-### 2446. `hwa-lab-10.2.8-startcond-filemonitor-0053`
+### 2447. `hwa-lab-10.2.8-startcond-filemonitor-0053`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41905,7 +41926,7 @@ In the HWA laboratory, composer job streams using STARTCOND FILECREATED and FILE
 
 ---
 
-### 2447. `hwa-lab-10.2.8-startofday-0005-0001`
+### 2448. `hwa-lab-10.2.8-startofday-0005-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41920,7 +41941,7 @@ No laboratório WSL2 HWA 10.2.8, a opção global startOfDay foi alterada de 000
 
 ---
 
-### 2448. `hwa-lab-10.2.8-startofday-0005-brt-anchor-0001`
+### 2449. `hwa-lab-10.2.8-startofday-0005-brt-anchor-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41935,7 +41956,7 @@ No laboratorio container HWA 10.2.8 (tws-hwa.lab, America/Sao_Paulo), para o pla
 
 ---
 
-### 2449. `hwa-lab-10.2.8-startup-registration-recovery-0021`
+### 2450. `hwa-lab-10.2.8-startup-registration-recovery-0021`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41950,7 +41971,7 @@ In the HWA laboratory, MDMDA logged four AWKRRP086E_DOMAIN_NOT_CREATED resource-
 
 ---
 
-### 2450. `hwa-lab-10.2.8-streamlogon-missing-os-user-and-conman-altjob-0003`
+### 2451. `hwa-lab-10.2.8-streamlogon-missing-os-user-and-conman-altjob-0003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -41971,7 +41992,7 @@ O composer do HWA 10.2.8 NAO valida na definicao se o usuario de STREAMLOGON exi
 
 ---
 
-### 2451. `hwa-lab-10.2.8-stuck-plan-rootcause-switchplan-broker-abort-0009`
+### 2452. `hwa-lab-10.2.8-stuck-plan-rootcause-switchplan-broker-abort-0009`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -41994,7 +42015,7 @@ Causa raiz reproduzivel de plano travado (AWSJPL017E) no HWA 10.2.8 com Dynamic 
 
 ---
 
-### 2452. `hwa-lab-10.2.8-submit-absolute-rejected-0024`
+### 2453. `hwa-lab-10.2.8-submit-absolute-rejected-0024`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42009,7 +42030,7 @@ In the HWA laboratory, sbd with at=absolute was rejected by conman with AWSBHU14
 
 ---
 
-### 2453. `hwa-lab-10.2.8-switchmgr-failover-switchback-0001`
+### 2454. `hwa-lab-10.2.8-switchmgr-failover-switchback-0001`
 
 - **Categoria / Dominio:** Alta Disponibilidade & Failover
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42029,7 +42050,29 @@ No HCL Workload Automation 10.2.8, o comando conman 'switchmgr <DOMAIN>;<NOVO_MA
 
 ---
 
-### 2454. `hwa-lab-10.2.8-symphony-active-file-0159`
+### 2455. `hwa-lab-10.2.8-switchplan-broker-stop-unsupported-rootcause-0012`
+
+- **Categoria / Dominio:** Agendamento Avancado & Workflows
+- **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
+- **Versao / Plataforma:** HWA 10.2.8 (distributed)
+
+**Conteudo Canonico:**
+
+Confirmada a causa raiz definitiva do aborto do SwitchPlan no HWA 10.2.8 com Dynamic Workload Broker: a workstation do broker (MDM_DWB, tipo broker agent) NAO aceita os comandos conman stop/start — 'conman stop MDM_DWB' retorna AWSBHU159E 'The command issued for workstation MDM_DWB cannot be performed, because the workstation is broker agent, where the command is not supported'. O script SwitchPlan itera parando TODAS as workstations do dominio (independente do estado de link: desvincular com 'conman unlink MDM_DWB' NAO evita o aborto, pois o stop e emitido mesmo assim) e ao esbarrar no broker aborta com 'CONMAN:AWSBHU076E ... stop MDM_DWB for AWSBCT041I Service 2008 started on MDM_DWB'. Com o aborto ficam setados o flag 'previous action on the production plan did not complete successfully' (AWSJPL017E nas operacoes seguintes) e o batchman em estado down. 'conman unlink MDM_DWB' e 'conman link MDM_DWB' funcionam (forwarded to batchman). A restauracao do lab apos o aborto exige: 'planman unlock' (AWSJPL504I, limpa o flag), 'conman link MDM_DWB' e 'conman start&link @!/@/@;noask' (AWSBHU507I) para subir o batchman. Como o unlink nao e suficiente, a correcao definitiva depende de uma das opcoes: (a) ajustar o SwitchPlan para nao emitir stop em nodes broker agent, (b) remover/substituir a workstation do broker do dominio, ou (c) desabilitar o broker no laboratorio.
+
+**Texto de Recuperacao Semantica (`retrieval_text`):**
+> `conman stop conman unlink conman link planman unlock conman start AWSBHU159E AWSBHU076E AWSBCT041I AWSJPL017E AWSJPL504I AWSBHU507I plano travado previous action did not complete recuperar plano destravar planner unlock database reset preproduction Confirmada causa raiz definitiva aborto SwitchPlan 10.2.8 Dynamic Broker workstation broker MDM_DWB tipo agent NAO aceita comandos conman stop start retorna The command issued for`
+
+**Perguntas Relacionadas / Avaliacao:**
+- O que significa AWSBHU159E no HWA e por que o broker nao aceita stop/start via conman?
+- Por que desvincular o broker nao impede o aborto do SwitchPlan?
+- Como impedir que o SwitchPlan falhe quando existe um Dynamic Workload Broker?
+- Quais sao as opcoes para tornar o SwitchPlan confiavel com o broker habilitado?
+- O que significa AWSBCT041I Service 2008 durante a troca de plano?
+
+---
+
+### 2456. `hwa-lab-10.2.8-symphony-active-file-0159`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42044,7 +42087,7 @@ planman showinfo on the master reports Plan last update 08/27/2026 15:10 and Run
 
 ---
 
-### 2455. `hwa-lab-10.2.8-syntax-resolved-0069`
+### 2457. `hwa-lab-10.2.8-syntax-resolved-0069`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42059,7 +42102,7 @@ In the HWA laboratory, five composer syntax blockers were resolved by using the 
 
 ---
 
-### 2456. `hwa-lab-10.2.8-task-jsdl-validation-0012`
+### 2458. `hwa-lab-10.2.8-task-jsdl-validation-0012`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42074,7 +42117,7 @@ In the HWA 10.2.8 laboratory, the initial TASK JSDL executable definition used f
 
 ---
 
-### 2457. `hwa-lab-10.2.8-thiscpu-displayname-scope-0008`
+### 2459. `hwa-lab-10.2.8-thiscpu-displayname-scope-0008`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42089,7 +42132,7 @@ In the HWA 10.2.8 laboratory, the nested twsinst invocation made by serverinst w
 
 ---
 
-### 2458. `hwa-lab-10.2.8-timezone-sao-paulo-0001`
+### 2460. `hwa-lab-10.2.8-timezone-sao-paulo-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42104,7 +42147,7 @@ No laboratorio container RHEL9 UBI9 (HWA 10.2.8, tws-hwa.lab), o timezone do SO 
 
 ---
 
-### 2459. `hwa-lab-10.2.8-tooling-0067`
+### 2461. `hwa-lab-10.2.8-tooling-0067`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42119,7 +42162,7 @@ In the HWA laboratory, the composer/planman/conman tooling available included co
 
 ---
 
-### 2460. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001`
+### 2462. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42134,7 +42177,7 @@ No laboratorio container HWA 10.2.8 (tws-hwa.lab, plano #22), a topologia atual 
 
 ---
 
-### 2461. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0002`
+### 2463. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42149,7 +42192,7 @@ No container HWA 10.2.8 (tws-hwa.lab), o event processing engine esta ATIVO: o p
 
 ---
 
-### 2462. `hwa-lab-10.2.8-twsinst-aes-clean-each-rerun-0001`
+### 2464. `hwa-lab-10.2.8-twsinst-aes-clean-each-rerun-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42164,7 +42207,7 @@ Cada rerun do twsinst HWA 10.2.8 que passa por runSecurityEncryption RECRIA key.
 
 ---
 
-### 2463. `hwa-lab-10.2.8-twsinst-flags-mutual-exclusion-0001`
+### 2465. `hwa-lab-10.2.8-twsinst-flags-mutual-exclusion-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42179,7 +42222,7 @@ No HCL Workload Automation 10.2.8 (twsinst LINUX_X86_64), foram validadas empiri
 
 ---
 
-### 2464. `hwa-lab-10.2.8-twsinst-keystore-residue-0001`
+### 2466. `hwa-lab-10.2.8-twsinst-keystore-residue-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42194,7 +42237,7 @@ Reexecucao do twsinst HWA 10.2.8 apos falha parcial falha em runSecurityEncrypti
 
 ---
 
-### 2465. `hwa-lab-10.2.8-twsinst-libcrypt-0001`
+### 2467. `hwa-lab-10.2.8-twsinst-libcrypt-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42209,7 +42252,7 @@ No RHEL 9, o comando makesec do HWA 10.2.8 falha na fase AWSFAB068I (Completing 
 
 ---
 
-### 2466. `hwa-lab-10.2.8-variable-table-native-0046`
+### 2468. `hwa-lab-10.2.8-variable-table-native-0046`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42224,7 +42267,7 @@ In the HWA laboratory, variable table LABTAB was created with vartable/members/e
 
 ---
 
-### 2467. `hwa-lab-10.2.8-vartable-caret-e2e-0106`
+### 2469. `hwa-lab-10.2.8-vartable-caret-e2e-0106`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42239,7 +42282,7 @@ No laboratório WSL2 HWA 10.2.8, a resolução de variáveis de VARIABLE TABLE e
 
 ---
 
-### 2468. `hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001`
+### 2470. `hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42254,7 +42297,7 @@ No laboratorio container HWA 10.2.8 (tws-hwa.lab), a definicao de VARIABLE TABLE
 
 ---
 
-### 2469. `hwa-lab-10.2.8-vartable-resolution-and-missing-vars-0002`
+### 2471. `hwa-lab-10.2.8-vartable-resolution-and-missing-vars-0002`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42274,7 +42317,7 @@ No HWA 10.2.8, variáveis definidas em uma VARTABLE e referenciadas no JCL com c
 
 ---
 
-### 2470. `hwa-lab-10.2.8-wauser-login-profile-env-0001`
+### 2472. `hwa-lab-10.2.8-wauser-login-profile-env-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42289,7 +42332,7 @@ Em container RHEL 9.8 UBI, o login do usuario de instalacao (wauser) nao carrega
 
 ---
 
-### 2471. `hwa-lab-10.2.8-wauser-profile-0005`
+### 2473. `hwa-lab-10.2.8-wauser-profile-0005`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42304,7 +42347,7 @@ In the WSL2 HWA 10.2.8 laboratory, the installation user is wauser and its login
 
 ---
 
-### 2472. `hwa-lab-10.2.8-wauser-sudo-0051`
+### 2474. `hwa-lab-10.2.8-wauser-sudo-0051`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42319,7 +42362,7 @@ In the HWA laboratory, user wauser is NOT in sudoers; sudo -l -U wauser returns 
 
 ---
 
-### 2473. `hwa-lab-9.4.0-switchplan-db-cpu-contention-0207`
+### 2475. `hwa-lab-9.4.0-switchplan-db-cpu-contention-0207`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42334,7 +42377,7 @@ Contributing root cause reported by the DBA team: the TWS database server was un
 
 ---
 
-### 2474. `hwa-lab-9.4.0-switchplan-db-lock-confirm-0201`
+### 2476. `hwa-lab-9.4.0-switchplan-db-lock-confirm-0201`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42349,7 +42392,7 @@ Root cause chain of the hung switch: the plan switch had advanced to the planman
 
 ---
 
-### 2475. `hwa-lab-9.4.0-switchplan-exec-hung-0200`
+### 2477. `hwa-lab-9.4.0-switchplan-exec-hung-0200`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42364,7 +42407,7 @@ On the IBM Workload Scheduler 9.4.0.6 production Master Domain Manager, the SWIT
 
 ---
 
-### 2476. `hwa-lab-9.4.0-switchplan-final-resolution-0206`
+### 2478. `hwa-lab-9.4.0-switchplan-final-resolution-0206`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42379,7 +42422,7 @@ Final resolution of the stale EXEC on 9.4.0.6: the hung OS process 'planman -tim
 
 ---
 
-### 2477. `hwa-lab-9.4.0-switchplan-iv89990-diagnostic-0204`
+### 2479. `hwa-lab-9.4.0-switchplan-iv89990-diagnostic-0204`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42394,7 +42437,7 @@ Diagnostic rule confirmed in production 9.4.0.6: a SWITCHPLAN job stuck in EXEC 
 
 ---
 
-### 2478. `hwa-lab-9.4.0-switchplan-lessons-0208`
+### 2480. `hwa-lab-9.4.0-switchplan-lessons-0208`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42409,7 +42452,7 @@ Operational lessons consolidated from the 2026-09-04 incident (9.4.0.6 EOL, Orac
 
 ---
 
-### 2479. `hwa-lab-9.4.0-switchplan-recovery-start-unlock-0202`
+### 2481. `hwa-lab-9.4.0-switchplan-recovery-start-unlock-0202`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42424,7 +42467,7 @@ Recovery for the hung switch on 9.4.0.6: issuing conman start plus planman unloc
 
 ---
 
-### 2480. `hwa-lab-9.4.0-switchplan-validated-run6110-0203`
+### 2482. `hwa-lab-9.4.0-switchplan-validated-run6110-0203`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42439,7 +42482,7 @@ Validation of the recovered switch on 9.4.0.6: planman showinfo reported Run num
 
 ---
 
-### 2481. `hwa-lab-9.4.0-switchplan-wsa-disabled-0205`
+### 2483. `hwa-lab-9.4.0-switchplan-wsa-disabled-0205`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42454,7 +42497,7 @@ On the incident MDM (IBM Workload Scheduler 9.4.0.6), the global option enWorklo
 
 ---
 
-### 2482. `hwa-liberty-install-10.2.0-0001`
+### 2484. `hwa-liberty-install-10.2.0-0001`
 
 - **Categoria / Dominio:** Instalacao & Manutencao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42472,7 +42515,7 @@ Na documentação HWA Distributed 10.2.0, Open Liberty é requerido nos nós que
 
 ---
 
-### 2483. `hwa-master-domain-manager-registered-master-0002`
+### 2485. `hwa-master-domain-manager-registered-master-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42490,7 +42533,7 @@ O master domain manager é registrado no banco de dados do HCL Workload Automati
 
 ---
 
-### 2484. `hwa-official-10.2.8-fence-priority-0032`
+### 2486. `hwa-official-10.2.8-fence-priority-0032`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42505,7 +42548,7 @@ In HCL Workload Automation, `fence` prevents jobs whose priority is less than or
 
 ---
 
-### 2485. `hwa-official-10.2.8-jnextplan-noremove-0014`
+### 2487. `hwa-official-10.2.8-jnextplan-noremove-0014`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42520,7 +42563,7 @@ In HCL Workload Automation 10.2.8, JnextPlan -for 0000 removes successfully comp
 
 ---
 
-### 2486. `hwa-official-10.2.8-jnextplan-restart-0013`
+### 2488. `hwa-official-10.2.8-jnextplan-restart-0013`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -42535,7 +42578,7 @@ HCL Workload Automation 10.2.8 documents that every JnextPlan execution stops an
 
 ---
 
-### 2487. `hwa-official-10.2.8-limit-fence-carryforward-0033`
+### 2489. `hwa-official-10.2.8-limit-fence-carryforward-0033`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42550,7 +42593,7 @@ HCL Workload Automation documents that changes to workstation job limit and fenc
 
 ---
 
-### 2488. `hwa-official-10.2.8-limit-zero-priority-0031`
+### 2490. `hwa-official-10.2.8-limit-zero-priority-0031`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42565,7 +42608,7 @@ In HCL Workload Automation, `limit cpu` controls the number of concurrent jobs. 
 
 ---
 
-### 2489. `hwa-official-awsjcl070i-9.4-0001`
+### 2491. `hwa-official-awsjcl070i-9.4-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42586,7 +42629,7 @@ Em IBM Workload Scheduler 9.4.0, AWSJCL070I 'Symphony file load is not yet start
 
 ---
 
-### 2490. `hwa-official-composer-10.2.8-0001`
+### 2492. `hwa-official-composer-10.2.8-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42605,7 +42648,7 @@ Em HWA Distributed 10.2.8, Composer create e extract são nomes alternativos par
 
 ---
 
-### 2491. `hwa-official-composer-10.2.8-0002`
+### 2493. `hwa-official-composer-10.2.8-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42624,7 +42667,7 @@ Em HWA Distributed 10.2.8, composer validate verifica definições de objetos em
 
 ---
 
-### 2492. `hwa-official-composer-10.2.8-0003`
+### 2494. `hwa-official-composer-10.2.8-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42643,7 +42686,7 @@ Em HWA Distributed 10.2.8, Composer lock adquire locks explícitos em objetos do
 
 ---
 
-### 2493. `hwa-official-conman-10.2.8-0001`
+### 2495. `hwa-official-conman-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42662,7 +42705,7 @@ Em HWA Distributed 10.2.8, showjobs suporta os formatos standard, keys, info, st
 
 ---
 
-### 2494. `hwa-official-conman-10.2.8-0002`
+### 2496. `hwa-official-conman-10.2.8-0002`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42681,7 +42724,7 @@ Em HWA Distributed 10.2.8, showschedules suporta os formatos standard, keys e de
 
 ---
 
-### 2495. `hwa-official-cycle-10.2.8-0001`
+### 2497. `hwa-official-cycle-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -42700,7 +42743,7 @@ Em HWA Distributed 10.2.8, JnextPlan gerencia a transição do plano antigo para
 
 ---
 
-### 2496. `hwa-official-cycle-10.2.8-0002`
+### 2498. `hwa-official-cycle-10.2.8-0002`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42718,7 +42761,7 @@ Em HWA Distributed 10.2.8, MakePlan replana ou estende o preproduction plan e pr
 
 ---
 
-### 2497. `hwa-official-cycle-10.2.8-0003`
+### 2499. `hwa-official-cycle-10.2.8-0003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42737,7 +42780,7 @@ Em HWA Distributed 10.2.8, SwitchPlan para workstations, executa Stageman, execu
 
 ---
 
-### 2498. `hwa-official-message-10.2.8-0001`
+### 2500. `hwa-official-message-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -42759,7 +42802,7 @@ Em HWA Distributed 10.2.8, AWSJPL018E indica lock global não resetado após int
 
 ---
 
-### 2499. `hwa-official-message-10.2.8-0002`
+### 2501. `hwa-official-message-10.2.8-0002`
 
 - **Categoria / Dominio:** Troubleshooting & Mensagens de Erro
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42779,7 +42822,7 @@ Em HWA Distributed 10.2.8, AWSJPL006E indica que um objeto do banco não pôde s
 
 ---
 
-### 2500. `hwa-official-message-10.2.8-0003`
+### 2502. `hwa-official-message-10.2.8-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42799,7 +42842,7 @@ Em HWA Distributed 10.2.8, AWSJPL017E indica que a criação do production plan 
 
 ---
 
-### 2501. `hwa-official-message-10.2.8-0004`
+### 2503. `hwa-official-message-10.2.8-0004`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42819,7 +42862,7 @@ Em HWA Distributed 10.2.8, AWSJPL704E indica que o planner não conseguiu estend
 
 ---
 
-### 2502. `hwa-official-message-10.2.8-0005`
+### 2504. `hwa-official-message-10.2.8-0005`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42840,7 +42883,7 @@ Em HWA Distributed 10.2.8, AWSBHV082E ocorre quando Symphony e Symnew têm o mes
 
 ---
 
-### 2503. `hwa-official-message-10.2.8-0006`
+### 2505. `hwa-official-message-10.2.8-0006`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42863,7 +42906,7 @@ Em HWA Distributed 10.2.8, AWSJCL054E e AWSJPL016E aparecem no cenário em que a
 
 ---
 
-### 2504. `hwa-official-message-10.2.8-0007`
+### 2506. `hwa-official-message-10.2.8-0007`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42885,7 +42928,7 @@ AWSJCL070I é uma mensagem informativa do IBM/HCL Workload Scheduler cujo texto 
 
 ---
 
-### 2505. `hwa-official-mirrorbox-10.2.8-0001`
+### 2507. `hwa-official-mirrorbox-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42905,7 +42948,7 @@ Em HWA Distributed 10.2.8, se mirrorbox.msg ou mirrorbox<n>.msg ficar cheio, por
 
 ---
 
-### 2506. `hwa-official-planman-10.2.8-0001`
+### 2508. `hwa-official-planman-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42924,7 +42967,7 @@ Em HWA Distributed 10.2.8, planman showinfo reporta tempos do production plan, �
 
 ---
 
-### 2507. `hwa-official-planman-10.2.8-0002`
+### 2509. `hwa-official-planman-10.2.8-0002`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42944,7 +42987,7 @@ Em HWA Distributed 10.2.8, planman resync replica manualmente dados do Symphony 
 
 ---
 
-### 2508. `hwa-official-planman-10.2.8-0003`
+### 2510. `hwa-official-planman-10.2.8-0003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42963,7 +43006,7 @@ Em HWA Distributed 10.2.8, planman checksync escreve em stdout mensagens de prog
 
 ---
 
-### 2509. `hwa-official-planman-10.2.8-0004`
+### 2511. `hwa-official-planman-10.2.8-0004`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42982,7 +43025,7 @@ Em HWA Distributed 10.2.8, planman unlock libera locks associados à criação o
 
 ---
 
-### 2510. `hwa-official-stageman-10.2.8-0001`
+### 2512. `hwa-official-stageman-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43001,7 +43044,7 @@ Em HWA Distributed 10.2.8, Stageman leva job streams não concluídos para o nov
 
 ---
 
-### 2511. `hwa-official-stageman-10.2.8-0002`
+### 2513. `hwa-official-stageman-10.2.8-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43019,7 +43062,7 @@ Em HWA Distributed 10.2.8, Stageman aceita -carryforward no, yes ou all; -log ar
 
 ---
 
-### 2512. `hwa-official-stageman-10.2.8-003`
+### 2514. `hwa-official-stageman-10.2.8-003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43039,7 +43082,7 @@ Em HWA Distributed 10.2.8, executar Stageman duas vezes sobre o mesmo Symnew é 
 
 ---
 
-### 2513. `hwa-official-tuning-10.2.8-0001`
+### 2515. `hwa-official-tuning-10.2.8-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43057,7 +43100,7 @@ Em HWA Distributed 10.2.8, a documentação oficial de tuning de replicação re
 
 ---
 
-### 2514. `hwa-operational-agent-naming-suffix-0009`
+### 2516. `hwa-operational-agent-naming-suffix-0009`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43072,7 +43115,7 @@ As an operational naming convention, a dynamic agent installed on the same host 
 
 ---
 
-### 2515. `hwa-operational-jnextplan-caution-0015`
+### 2517. `hwa-operational-jnextplan-caution-0015`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43087,7 +43130,7 @@ In production, JnextPlan must be treated as a controlled plan-transition operati
 
 ---
 
-### 2516. `hwa-operational-limit-zero-not-unlimited-0030`
+### 2518. `hwa-operational-limit-zero-not-unlimited-0030`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43102,7 +43145,7 @@ In HCL Workload Automation, workstation LIMIT 0 is not equivalent to unlimited e
 
 ---
 
-### 2517. `hwa-planman-showinfo-resync-unlock-0047`
+### 2519. `hwa-planman-showinfo-resync-unlock-0047`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43123,7 +43166,7 @@ No HCL Workload Automation 10.2.8, os comandos planman são: 'planman [connectio
 
 ---
 
-### 2518. `hwa-rest-twsd-31116-official-0022`
+### 2520. `hwa-rest-twsd-31116-official-0022`
 
 - **Categoria / Dominio:** API REST v2 & Integracao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43142,7 +43185,7 @@ Para HCL Workload Automation 9.5 Fix Pack 7 em ambiente Distributed com MDM ou B
 
 ---
 
-### 2519. `hwa-themaster-domain-manager-0001`
+### 2521. `hwa-themaster-domain-manager-0001`
 
 - **Categoria / Dominio:** Instalacao & Manutencao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43161,7 +43204,7 @@ O nome de workstation padrão do master domain manager no HCL Workload Automatio
 
 ---
 
-### 2520. `hwa-themaster-estados-internos-de-job-0009`
+### 2522. `hwa-themaster-estados-internos-de-job-0009`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43179,7 +43222,7 @@ Os estados internos de job documentados no HCL Workload Automation incluem ABEND
 
 ---
 
-### 2521. `hwa-themaster-final-0003`
+### 2523. `hwa-themaster-final-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43197,7 +43240,7 @@ Os job streams FINAL e FINALPOSTREPORTS são job streams de exemplo incluídos n
 
 ---
 
-### 2522. `hwa-themaster-final-0004`
+### 2524. `hwa-themaster-final-0004`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43216,7 +43259,7 @@ O job stream FINAL executa a sequência de arquivos de script descrita em JnextP
 
 ---
 
-### 2523. `hwa-themaster-final-0012`
+### 2525. `hwa-themaster-final-0012`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43234,7 +43277,7 @@ A documentação oficial do HCL Workload Automation descreve os job streams FINA
 
 ---
 
-### 2524. `hwa-themaster-final-0013`
+### 2526. `hwa-themaster-final-0013`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43253,7 +43296,7 @@ O job stream FINAL é colocado em produção diariamente e executa o JnextPlan a
 
 ---
 
-### 2525. `hwa-themaster-final-0016`
+### 2527. `hwa-themaster-final-0016`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43273,7 +43316,7 @@ The FINAL and FINALPOSTREPORTS job streams are associated with the master domain
 
 ---
 
-### 2526. `hwa-themaster-finalpostreports-0005`
+### 2528. `hwa-themaster-finalpostreports-0005`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43291,7 +43334,7 @@ O job stream FINALPOSTREPORTS segue o job stream FINAL e inicia somente quando o
 
 ---
 
-### 2527. `hwa-themaster-finalpostreports-0014`
+### 2529. `hwa-themaster-finalpostreports-0014`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43309,7 +43352,7 @@ O job stream FINALPOSTREPORTS é responsável por imprimir os relatórios pós-p
 
 ---
 
-### 2528. `hwa-themaster-finalpostreports-0015`
+### 2530. `hwa-themaster-finalpostreports-0015`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43329,7 +43372,7 @@ O job stream FINALPOSTREPORTS inclui um job chamado CHECKSYNC que monitora o pro
 
 ---
 
-### 2529. `hwa-themaster-home-0010`
+### 2531. `hwa-themaster-home-0010`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43347,7 +43390,7 @@ O arquivo Sfinal, que contém as definições dos job streams FINAL e FINALPOSTR
 
 ---
 
-### 2530. `hwa-themaster-jnext-plan-0008`
+### 2532. `hwa-themaster-jnext-plan-0008`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43366,7 +43409,7 @@ O script JnextPlan gera o novo plano de produção no HCL Workload Automation, c
 
 ---
 
-### 2531. `hwa-themaster-job-stream-0011`
+### 2533. `hwa-themaster-job-stream-0011`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43384,7 +43427,7 @@ The official HCL Workload Automation 10.2.8 documentation does not document a jo
 
 ---
 
-### 2532. `hwa-themaster-switch-plan-0007`
+### 2534. `hwa-themaster-switch-plan-0007`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43404,7 +43447,7 @@ O comando SwitchPlan executa as seguintes ações no HCL Workload Automation: pa
 
 ---
 
-### 2533. `hwa-themaster-switchplan-0006`
+### 2535. `hwa-themaster-switchplan-0006`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43422,7 +43465,7 @@ SWITCHPLAN é documentado como o último job do job stream FINAL no HCL Workload
 
 ---
 
-### 2534. `hwa-upgrade-1028-rollback-0001`
+### 2536. `hwa-upgrade-1028-rollback-0001`
 
 - **Categoria / Dominio:** Instalacao & Manutencao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43440,7 +43483,7 @@ HWA informa que registros de banco criados por recursos da nova versão podem im
 
 ---
 
-### 2535. `hwa-version-matrix-agent-zos-distributed-0023`
+### 2537. `hwa-version-matrix-agent-zos-distributed-0023`
 
 - **Categoria / Dominio:** Arquitetura & Topologia Mesh
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43461,7 +43504,7 @@ O 'Agent for z/OS' e um agente do HCL Workload Automation Distributed que atua c
 
 ---
 
-### 2536. `hwa-version-matrix-certman-distributed-only-0014`
+### 2538. `hwa-version-matrix-certman-distributed-only-0014`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43479,7 +43522,7 @@ Em HCL Workload Automation 10.2.8 Distributed, Certman fica em TWS_INST_DIR/TWS/
 
 ---
 
-### 2537. `hwa-version-matrix-certman-intro-10.2.3-0012`
+### 2539. `hwa-version-matrix-certman-intro-10.2.3-0012`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43497,7 +43540,7 @@ Em HCL Workload Automation Distributed, a ferramenta Certman foi introduzida na 
 
 ---
 
-### 2538. `hwa-version-matrix-certman-not-before-1023-0013`
+### 2540. `hwa-version-matrix-certman-not-before-1023-0013`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43516,7 +43559,7 @@ Em HCL Workload Automation Distributed, antes da versao 10.2.3 os certificados e
 
 ---
 
-### 2539. `hwa-version-matrix-certman-not-zos-0015`
+### 2541. `hwa-version-matrix-certman-not-zos-0015`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43534,7 +43577,7 @@ Em HCL Workload Automation for Z (z/OS), os certificados SSL sao gerenciados via
 
 ---
 
-### 2540. `hwa-version-matrix-composer-conman-9.5-0008`
+### 2542. `hwa-version-matrix-composer-conman-9.5-0008`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43555,7 +43598,7 @@ Em HCL Workload Automation 9.5 Distributed, os programas de linha de comando com
 
 ---
 
-### 2541. `hwa-version-matrix-composer-rest-9.5fp2-0009`
+### 2543. `hwa-version-matrix-composer-rest-9.5fp2-0009`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43575,7 +43618,7 @@ Em HCL Workload Automation 9.5 Fix Pack 2 Distributed, o composer passou a usar 
 
 ---
 
-### 2542. `hwa-version-matrix-distributed-tools-not-zos-0010`
+### 2544. `hwa-version-matrix-distributed-tools-not-zos-0010`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43598,7 +43641,7 @@ Os programas composer, conman e planman sao ferramentas do HCL Workload Automati
 
 ---
 
-### 2543. `hwa-version-matrix-ocli-intro-10.1-0001`
+### 2545. `hwa-version-matrix-ocli-intro-10.1-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43616,7 +43659,7 @@ Em HCL Workload Automation Distributed, o Orchestration CLI (OCLI) foi introduzi
 
 ---
 
-### 2544. `hwa-version-matrix-ocli-model-intro-10.2.2-0004`
+### 2546. `hwa-version-matrix-ocli-model-intro-10.2.2-0004`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43634,7 +43677,7 @@ Em HCL Workload Automation 10.2.2 Distributed, o Orchestration CLI passou a supo
 
 ---
 
-### 2545. `hwa-version-matrix-ocli-model-newitems-10.2.3-0005`
+### 2547. `hwa-version-matrix-ocli-model-newitems-10.2.3-0005`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43652,7 +43695,7 @@ Em HCL Workload Automation 10.2.3 Distributed, os comandos model do Orchestratio
 
 ---
 
-### 2546. `hwa-version-matrix-ocli-plan-growth-10.2.1-0003`
+### 2548. `hwa-version-matrix-ocli-plan-growth-10.2.1-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43670,7 +43713,7 @@ Em HCL Workload Automation 10.2.1 Distributed, o Orchestration CLI ampliou o con
 
 ---
 
-### 2547. `hwa-version-matrix-ocli-plan-only-10.1-0002`
+### 2549. `hwa-version-matrix-ocli-plan-only-10.1-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43688,7 +43731,7 @@ Em HCL Workload Automation 10.1 e 10.2.0 Distributed, o Orchestration CLI suport
 
 ---
 
-### 2548. `hwa-version-matrix-ocli-replaces-conman-10.2.8-0006`
+### 2550. `hwa-version-matrix-ocli-replaces-conman-10.2.8-0006`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43709,7 +43752,7 @@ Em HCL Workload Automation 10.2.8 Distributed, o Orchestration CLI e descrito co
 
 ---
 
-### 2549. `hwa-version-matrix-ocli-zos-0007`
+### 2551. `hwa-version-matrix-ocli-zos-0007`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43729,7 +43772,7 @@ Orchestration CLI (OCLI) in HCL Workload Automation 10.2.8 connects to a "remote
 
 ---
 
-### 2550. `hwa-version-matrix-oql-distributed-zos-0018`
+### 2552. `hwa-version-matrix-oql-distributed-zos-0018`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43747,7 +43790,7 @@ Em HCL Workload Automation, o OQL aplica-se tanto ao ambiente Distributed quanto
 
 ---
 
-### 2551. `hwa-version-matrix-oql-intro-10.1-0017`
+### 2553. `hwa-version-matrix-oql-intro-10.1-0017`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43767,7 +43810,7 @@ Em HCL Workload Automation 10.1 Fix Pack 1, a REST API V2 introduziu o Orchestra
 
 ---
 
-### 2552. `hwa-version-matrix-planman-cli-scope-0011`
+### 2554. `hwa-version-matrix-planman-cli-scope-0011`
 
 - **Categoria / Dominio:** Arquitetura & Topologia Mesh
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43788,7 +43831,7 @@ Em HCL Workload Automation 10.2.8 Distributed, o Command Line Client (instalado 
 
 ---
 
-### 2553. `hwa-version-matrix-rest-9.5-v1-0019`
+### 2555. `hwa-version-matrix-rest-9.5-v1-0019`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43809,7 +43852,7 @@ Em HCL Workload Automation 9.5 Distributed, a REST API permitia criar GUI ou CLI
 
 ---
 
-### 2554. `hwa-version-matrix-restv2-intro-10.1-0016`
+### 2556. `hwa-version-matrix-restv2-intro-10.1-0016`
 
 - **Categoria / Dominio:** API REST v2 & Integracao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43828,7 +43871,7 @@ Em HCL Workload Automation 10.1 Fix Pack 1, foi introduzida a REST API V2 para o
 
 ---
 
-### 2555. `hwa-version-matrix-restv2-recommended-10.2.8-0020`
+### 2557. `hwa-version-matrix-restv2-recommended-10.2.8-0020`
 
 - **Categoria / Dominio:** API REST v2 & Integracao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43847,7 +43890,7 @@ Em HCL Workload Automation 10.2.8 Distributed, a documentacao recomenda explicit
 
 ---
 
-### 2556. `hwa-version-matrix-zos-operator-commands-0022`
+### 2558. `hwa-version-matrix-zos-operator-commands-0022`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43866,7 +43909,7 @@ Em HCL Workload Automation for Z (z/OS), o produto pode ser iniciado, parado, ca
 
 ---
 
-### 2557. `hwa-version-matrix-zos-wapl-0021`
+### 2559. `hwa-version-matrix-zos-wapl-0021`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43887,7 +43930,7 @@ Em HCL Workload Automation for Z (z/OS), a Workload Automation Programming Langu
 
 ---
 
-### 2558. `iwa-10.2.5-composer-job-selector-0020`
+### 2560. `iwa-10.2.5-composer-job-selector-0020`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -44798,7 +44841,82 @@ Setup completo registrado em `lab-validation-2026-09-09-bmdm-container-failover-
 
 ---
 
-## II.5 Runbook: `hwa-10.2.8-wsl-lab.md`
+## II.5 Runbook: `hwa-10.2.8-stuck-plan-recovery.md`
+
+# Runbook — Stuck Production Plan (AWSJPL017E) — HWA 10.2.8
+
+> Objetivo: diagnosticar e recuperar um plano de producao preso no HCL Workload Automation 10.2.8 (Distributed), inclusive quando a causa raiz e o aborto do SwitchPlan no Dynamic Workload Broker.
+> Ambiente de validacao: laboratorio containerizado (MDM + Backup MDM + FTA/DA + broker). Mensagens citadas sao saida real de conman/planman.
+
+## Sinais de alarme (sintomas)
+
+| Sintoma | Comando de verificacao | Resultado esperado num plano SAUDÁVEL |
+|---|---|---|
+| `planman ext`/`crt` falha | `planman ext -days 1` | **AWSJPL017E** 'The production plan cannot be created because a previous action on the production plan did not complete successfully' |
+| Horizonte zerado | `planman showinfo` | `Production plan end time: (same as the start time of the last extension - created/extended with -for 0000)` e `time extension: 00:00` |
+| Run number disparando | `planman showinfo` | Run number avanca varias vezes sem controle (ex.: 31 -> 33 -> 37) |
+| Batchman abaixo | `conman status` | `Batchman down` |
+| No nao autorizado a planificar | `planman ext` | **AWSJPL004E** 'this_cpu "X" does not match the workstation name of the master domain manager in the database' |
+
+## Diagnostico (raiz)
+
+1. Verifique o estado do plano: `planman showinfo`.
+2. Se o plano tem horizonte zerado e o `ext` retorna `AWSJPL017E`, mire na ultima operacao de troca de plano que nao completou.
+3. Em ambiente com Dynamic Workload Broker (workstation do tipo `broker agent`, ex.: MDM_DWB):
+   - O broker **nao aceita** `conman stop/start`: `conman stop <broker>` -> **AWSBHU159E** 'workstation is broker agent, where the command is not supported'.
+   - O script **SwitchPlan** para TODAS as workstations do dominio e aborta ao emitir `stop <broker>`: `CONMAN:AWSBHU076E ... stop MDM_DWB for AWSBCT041I Service 2008 started on MDM_DWB`.
+   - O `unlink` do broker **nao evita** o aborto (o `stop` e emitido independente do link).
+   - Com o aborto: flag 'previous action did not complete' + batchman down -> `AWSJPL017E`.
+4. Se o erro for `AWSJPL004E`, o `planman` esta sendo executado de um no cujo `thiscpu` (localopts) nao corresponde ao domain manager gravado no **MODELO** (objeto DOMAIN no banco). Execute a recuperacao a partir do no que o modelo indica (com `composer display domain=@`).
+
+## Recuperacao
+
+### Correcao imediata (primeiro sempre tentar isto)
+```bash
+planman unlock        # AWSJPL504I - libera lock orfao e limpa o flag 'did not complete'
+planman ext -days N   # AWSJCL062I - volta a funcionar IMEDIATAMENTE
+```
+> `planman unlock` sozinho resolve `AWSJPL017E` na grande maioria dos casos, pois ele **nao indica corrupcao do Symphony**, apenas fluxo interrompido com lock orfao.
+
+### Restaurar o batchman (se ficou down)
+```bash
+conman "link <broker>"        # se o broker foi desvinculado durante o diagnostico (opcional)
+conman "start&link @!/@/@;noask"   # AWSBHU507I - sobe netman/batchman
+conman status                 # Batchman LIVES
+```
+
+### Recuperacao pesada (so quando o horizonte esta realmente destruido)
+```bash
+planman unlock                # libera o lock
+planman reset                 # reset do preproduction plan, mantem o corrente (awsjcl064i/awsjcl065i)
+planman crt -days 3           # AWSJCL058I 'The production plan (Symnew) has been successfully created'
+# trocar o Symnew pelo plano ativo:
+#  - MDM:  /opt/hwa/TWS/SwitchPlan
+#  - BMDM: /opt/hwa/TWS/TWS/SwitchPlan
+planman ext -days N           # AWSJCL062I - confirma horizonte restaurado
+```
+> Execute pelo no que o **modelo** considera domain manager; em no divergente, pare em `AWSJPL004E` antes de avançar.
+
+## Correcao definitiva do broker (decisao do dono)
+
+O aborto do SwitchPlan no broker-agent so e evitado com uma destas acoes:
+- **(a)** ajustar o `SwitchPlan`/`PostSwitchPlan` para pular workstations do tipo broker agent no comando `stop`;
+- **(b)** remover/substituir a workstation do broker do domino (mais invasivo);
+- **(c)** desabilitar o broker no laboratorio (perde cobertura dos testes de pool dinamico?LABPOOL/MDMDA).
+> Recomendacao quando o broker for necessario: aplicar (a), preservando o pool dinamico; usar (c) apenas como fallback se o pool dinamico nao for mais objeto de teste do dataset.
+
+## Reversao / Rollback
+- `planman reset` mantem o plano corrente (nao destrutivo do plano ativo; so recalcula o preproduction).
+- `planman crt`/`SwitchPlan` trocam o Symphony; o arquivo anterior fica preservado como `Sym...` em `$UNISONHOME`/TWSDATA ate o proximo ciclo.
+- Antes de qualquer `crt`/`SwitchPlan`, garantir batchman com `planman unlock` + plano em estado limpo.
+
+## Referencias
+- Evidencias: `lab-validation-2026-09-10-stuck-plan-rootcause-switchplan-dwb.jsonl`, `lab-validation-2026-09-10-optman-users-calendar-planincident.jsonl`, `lab-validation-2026-09-10-switchplan-broker-rootcause-closed.jsonl`.
+- Mensagens: AWSJPL017E, AWSJPL004E, AWSBHU159E, AWSBHU076E, AWSBCT041I, AWSJPL504I, AWSJCL058I, AWSJCL062I, AWSJCL064I, AWSBHU507I.
+
+---
+
+## II.6 Runbook: `hwa-10.2.8-wsl-lab.md`
 
 # HWA 10.2.8 MDM Lab Runbook
 
@@ -46413,7 +46531,7 @@ Evidencias: lab-validation-2026-08-25-aida-docker.jsonl (0070-0078).
 
 ---
 
-## II.6 Runbook: `hwa-10.2.8-wsl-mdmhost-dns-recovery.md`
+## II.7 Runbook: `hwa-10.2.8-wsl-mdmhost-dns-recovery.md`
 
 # Runbook: MDMHOST DNS Loss → "not got the latest Symphony file version" (HWA 10.2.8 WSL2)
 
@@ -46550,7 +46668,7 @@ comunicação volta.
 
 ---
 
-## II.7 Runbook: `mdm-serverinst-twsinst-complete-reference.md`
+## II.8 Runbook: `mdm-serverinst-twsinst-complete-reference.md`
 
 # Referência Completa e Catálogo de Flags de Instalação do Master Domain Manager (`serverinst.sh` / `twsinst` / `configureDb.sh`) — HWA 10.2.8
 
@@ -46803,7 +46921,7 @@ O utilitário `configureDb.sh` é executado antes do `serverinst.sh` para prepar
 
 ---
 
-## II.8 Runbook: `recovery-jnextplan.md`
+## II.9 Runbook: `recovery-jnextplan.md`
 
 # Runbook: Recovery de JnextPlan / plano (HWA 10.2.8)
 
@@ -46866,7 +46984,7 @@ de banco durante a geracao/troca do plano.
 
 ---
 
-## II.9 Runbook: `recovery-switchplan-stale-exec.md`
+## II.10 Runbook: `recovery-switchplan-stale-exec.md`
 
 # Runbook: SwitchPlan em EXEC residual / processo planman confirm pendurado (IBM TWS 9.4 EOL)
 
@@ -46939,7 +47057,7 @@ plano **ja foi confirmado** mas o job FINAL/SWITCHPLAN permanece em EXEC por hor
 
 ---
 
-## II.10 Runbook: `sfinal-awsbhv082e-recovery.md`
+## II.11 Runbook: `sfinal-awsbhv082e-recovery.md`
 
 # Runbook: Recuperação da Esteira FINAL (Sfinal) e Erro AWSBHV082E sem MakePlan Manual
 
@@ -47051,7 +47169,7 @@ conman "sj MDMXA#FINAL.@; sj MDMXA#FINALPOSTREPORTS.@"
 
 ---
 
-## II.11 Runbook: `sfinal-validate-and-correct.md`
+## II.12 Runbook: `sfinal-validate-and-correct.md`
 
 # Runbook: Validar e corrigir FINAL/Sfinal no HWA 10.2.8
 
@@ -47190,7 +47308,7 @@ O último comando altera objetos do banco e deve ser aprovado antes da execuçã
 
 ---
 
-## II.12 Runbook: `twsinst-flags-complete-reference.md`
+## II.13 Runbook: `twsinst-flags-complete-reference.md`
 
 # Catálogo Canônico e Referência Completa de Flags do Instalador `twsinst` (HWA 10.2.8)
 
@@ -47305,7 +47423,7 @@ Identificadas no código-fonte do script `twsinst`:
 
 ---
 
-## II.13 Runbook: `upgrade-9.5-para-10.2.3.md`
+## II.14 Runbook: `upgrade-9.5-para-10.2.3.md`
 
 # Runbook: Upgrade direto 9.5 -> HWA 10.2.3
 
@@ -47369,7 +47487,7 @@ Status: procedimento de producao (versao-alvo HCL Workload Automation 10.2.3).
 
 ---
 
-## II.14 Runbook: `upgrade-agente.md`
+## II.15 Runbook: `upgrade-agente.md`
 
 # Runbook: Upgrade centralizado de agentes (HWA 10.2.x)
 
