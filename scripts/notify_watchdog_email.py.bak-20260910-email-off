@@ -3,7 +3,7 @@
 Destinatário: adrianolimagarcia@gmail.com
 Remetente: twstest@haos.fyi (SMTP SSL mail.haos.fyi:465)
 """
-import email.message, json, os, smtplib, ssl, subprocess, sys, time
+import email.message, json, smtplib, ssl, subprocess, sys, time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -14,16 +14,6 @@ SMTP_PORT = 465
 SMTP_USER = "twstest@haos.fyi"
 SMTP_PASS = "S$OoCip7X5JqrvC!"
 DESTINATARIO = "adrianolimagarcia@gmail.com"
-
-# Alerta por e-mail DESATIVADO por padrao (dono, 2026-09-10).
-# O watchdog continua rodando a cada 30min e reportando no journal; apenas o
-# envio de e-mail foi suprimido. Para REATIVAR: adicionar a linha
-#   Environment=TWS_WATCHDOG_EMAIL=1
-# no /etc/systemd/system/tws-watchdog.service (drop-in) e dar
-#   systemctl daemon-reload
-EMAIL_ENABLED = os.environ.get("TWS_WATCHDOG_EMAIL", "0").strip().lower() in {
-    "1", "true", "yes", "on",
-}
 
 def run_watchdog():
     r = subprocess.run([str(WATCHDOG_SCRIPT)], capture_output=True, text=True)
@@ -79,14 +69,6 @@ Mensagem adicional: {data.get('message', 'Todos os serviços críticos estão op
 Atenciosamente,
 Hermes Agent — Control Plane HAOS
 """
-        if not EMAIL_ENABLED:
-            # Alerta suprimido: mantém o resultado visível no journal do systemd.
-            print(
-                f"[email-desativado] alerta NAO enviado — STATUS={status} rc={rc} ts={ts}"
-            )
-            print(body)
-            return
-
         try:
             print(f"Enviando e-mail para {DESTINATARIO} via {SMTP_HOST}:{SMTP_PORT}...")
             send_email(subject, body)
