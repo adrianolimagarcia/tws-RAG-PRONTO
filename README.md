@@ -14,23 +14,27 @@ Este repositório contém a mais abrangente base de conhecimento empírica, estr
 
 ---
 
-## Métricas & Resultados do Full Benchmark (3.180 Perguntas)
+## Métricas & Resultados do Benchmark Canônico Multi-Label (1.952 Perguntas Únicas)
 
-Avaliamos o corpus em escala total (3.180 perguntas de teste cego mapeadas contra 2.548 documentos únicos) utilizando o motor BM25 otimizado:
+Avaliamos o corpus em escala total (1.952 perguntas cegas únicas sem viés de colisão, cobrindo as 2.548 claims canônicas) utilizando o pipeline de Information Retrieval de dois estágios (BM25 Calibrado + Reranker de N-Grams e Cobertura Semântica):
 
 | Métrica | Resultado Geral |
 | :--- | :--- |
-| **Total de Perguntas Avaliadas** | **3.180 perguntas** |
-| **Tempo de Execução** | **19.14 segundos** (166.1 consultas/segundo) |
-| **Hit Rate @ 1** | **57.58%** (1.831 / 3.180) |
-| **Hit Rate @ 5** | **67.36%** (2.142 / 3.180) |
-| **Hit Rate @ 10** | **70.85%** (2.253 / 3.180) |
-| **Mean Reciprocal Rank (MRR)** | **0.6181** |
+| **Total de Perguntas Únicas Avaliadas** | **1.952 perguntas** |
+| **Tempo de Execução** | **7.75 segundos** (251.8 consultas/segundo) |
+| **Hit Rate @ 1** | **93.49%** (1.825 / 1.952) |
+| **Hit Rate @ 3** | **95.65%** (1.867 / 1.952) |
+| **Hit Rate @ 5** | **96.47%** (1.883 / 1.952) |
+| **Hit Rate @ 10** | **97.44%** (1.902 / 1.952) |
+| **Mean Reciprocal Rank (MRR)** | **0.9480** |
 
 ### Destaques por Especialidade:
-- **Troubleshooting & Mensagens de Erro (AWS***)**: **97.8% Hit@1 \| 98.7% Hit@5 \| MRR 0.9820**
-- **Agendamento Avançado & Workflows (NEEDS, RECOVERY)**: **78.6% Hit@1 \| 91.0% Hit@5 \| MRR 0.8299**
-- **Instalação & Manutenção**: **67.3% Hit@1 \| 82.2% Hit@5 \| MRR 0.7332**
+- **Alta Disponibilidade & Failover**: **100.0% Hit@1 \| 100.0% Hit@5 \| MRR 1.0000** (15 q)
+- **Troubleshooting & Mensagens de Erro (AWS***)**: **99.9% Hit@1 \| 99.9% Hit@5 \| MRR 0.9985** (664 q)
+- **Agendamento Avançado & Workflows (NEEDS, RECOVERY)**: **96.0% Hit@1 \| 97.3% Hit@5 \| MRR 0.9640** (74 q)
+- **Instalação & Manutenção**: **90.7% Hit@1 \| 96.0% Hit@5 \| MRR 0.9356** (75 q)
+- **Operação CLI (conman/composer/planman)**: **88.8% Hit@1 \| 92.9% Hit@5 \| MRR 0.9056** (392 q)
+- **API REST v2 & Integração**: **83.3% Hit@1 \| 92.7% Hit@5 \| MRR 0.8641** (150 q)
 
 ---
 
@@ -62,7 +66,8 @@ Documentos limpos em Markdown de alta densidade sem chaves JSON em `data/export/
 ### 3. Dados Mestres para Treinamento e RAG Corporativo
 Em `data/export/`:
 - `tws_corpus_master_consolidated.jsonl`: 2.548 claims únicas desduplicadas e indexadas.
-- `tws_eval_ground_truth.jsonl`: 3.180 pares de pergunta-claim para avaliação contínua.
+- `tws_eval_ground_truth_multilabel.jsonl`: 1.952 perguntas canônicas com listas de relevância multi-label.
+- `multilabel_benchmark_report.json`: Relatório analítico completo do benchmark.
 - `tws_taxonomy_audit_report.json`: Distribuição analítica por tema.
 
 ---

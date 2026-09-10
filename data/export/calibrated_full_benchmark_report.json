@@ -1,0 +1,68 @@
+{
+  "total_questions_evaluated": 3180,
+  "elapsed_seconds": 6.2,
+  "queries_per_second": 512.8,
+  "hit_rate_at_1": 0.3355,
+  "hit_rate_at_3": 0.4274,
+  "hit_rate_at_5": 0.4925,
+  "hit_rate_at_10": 0.6022,
+  "mean_reciprocal_rank_mrr": 0.4044,
+  "category_breakdown": {
+    "Operacao CLI (conman/composer/planman)": {
+      "total_questions": 998,
+      "hit_rate_at_1": 0.3186,
+      "hit_rate_at_5": 0.4559,
+      "hit_rate_at_10": 0.502,
+      "mrr": 0.3767
+    },
+    "Outros": {
+      "total_questions": 788,
+      "hit_rate_at_1": 0.5216,
+      "hit_rate_at_5": 0.6497,
+      "hit_rate_at_10": 0.6802,
+      "mrr": 0.5762
+    },
+    "API REST v2 & Integracao": {
+      "total_questions": 238,
+      "hit_rate_at_1": 0.5126,
+      "hit_rate_at_5": 0.6681,
+      "hit_rate_at_10": 0.7269,
+      "mrr": 0.5774
+    },
+    "Arquitetura & Topologia Mesh": {
+      "total_questions": 250,
+      "hit_rate_at_1": 0.32,
+      "hit_rate_at_5": 0.532,
+      "hit_rate_at_10": 0.556,
+      "mrr": 0.4059
+    },
+    "Instalacao & Manutencao": {
+      "total_questions": 101,
+      "hit_rate_at_1": 0.5149,
+      "hit_rate_at_5": 0.7129,
+      "hit_rate_at_10": 0.7426,
+      "mrr": 0.5956
+    },
+    "Troubleshooting & Mensagens de Erro": {
+      "total_questions": 680,
+      "hit_rate_at_1": 0.0206,
+      "hit_rate_at_5": 0.2147,
+      "hit_rate_at_10": 0.575,
+      "mrr": 0.1148
+    },
+    "Agendamento Avancado & Workflows": {
+      "total_questions": 89,
+      "hit_rate_at_1": 0.6629,
+      "hit_rate_at_5": 0.7753,
+      "hit_rate_at_10": 0.8652,
+      "mrr": 0.7239
+    },
+    "Alta Disponibilidade & Failover": {
+      "total_questions": 36,
+      "hit_rate_at_1": 0.3056,
+      "hit_rate_at_5": 0.5556,
+      "hit_rate_at_10": 0.6389,
+      "mrr": 0.4019
+    }
+  }
+}
