@@ -1,0 +1,19 @@
+{
+  "total_unique_claims": 2548,
+  "total_synthetic_questions": 3180,
+  "total_evidence_files": 152,
+  "distribution_by_category": {
+    "Outros": 2936,
+    "Operacao CLI (conman/composer/planman)": 407,
+    "Agendamento Avancado & Workflows": 83,
+    "API REST v2 & Integracao": 127,
+    "Arquitetura & Topologia Mesh": 99,
+    "Instalacao & Manutencao": 62,
+    "Troubleshooting & Mensagens de Erro": 225,
+    "Alta Disponibilidade & Failover": 12
+  },
+  "export_artifacts": {
+    "master_corpus": "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/export/tws_corpus_master_consolidated.jsonl",
+    "eval_ground_truth": "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/export/tws_eval_ground_truth.jsonl"
+  }
+}
