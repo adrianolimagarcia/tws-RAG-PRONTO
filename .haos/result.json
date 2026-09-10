@@ -1,0 +1,25 @@
+{
+  "summary": "Analise tecnica aprofundada da viabilidade de uso em RAG do artefato tws_hwa_10.2.8_knowledge_book_complete.md do repositorio tws-RAG-PRONTO.",
+  "completed": [
+    "Auditoria e inspecao estrutural do arquivo tws_hwa_10.2.8_knowledge_book_complete.md (1.92 MB, 32.446 linhas, 2.548 claims canônicas)",
+    "Identificacao dos padroes de metadados: escopo hierarquico, evidencias canônicas e perguntas sinteticas doc2query",
+    "Analise comparativa entre abordagens de RAG (Markdown chunking por cabecalho vs LLMs de janela longa vs RAG vetorial/hibrido nativo)",
+    "Mapeamento de limitacoes (chunking cego por tokens) e alternativas superiores (v2 complete, parts_v2 e claims.jsonl estruturado)"
+  ],
+  "pending": [],
+  "artifacts": [
+    "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/export/llm_knowledge_bases/tws_hwa_10.2.8_knowledge_book_complete.md"
+  ],
+  "evidence": {
+    "lane": "hermes",
+    "file_size_bytes": 1919047,
+    "line_count": 32446,
+    "claims_covered": 2548,
+    "categories_count": 8,
+    "rag_compatibility_rating": "PRONTO_PARA_USO_COM_SPLITTER_ESTRUTURADO"
+  },
+  "residual_risk": [
+    "Uso em sistemas de chunking ingenuo (fixed-character/fixed-token) pode quebrar o contexto das claims se nao respeitar os cabecalhos '### N. claim_id'",
+    "Para sistemas vetoriais nativos (Qdrant/BM25), o uso de claims.jsonl ou tws_corpus_master_consolidated.jsonl oferece melhor granularidade e tipagem de metadados do que o markdown plano"
+  ]
+}

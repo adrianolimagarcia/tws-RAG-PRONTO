@@ -53,15 +53,17 @@ python3 mcp_server/tws_expert_mcp.py
 ```
 
 ### 2. Formato LLM / NotebookLM / Perplexity Spaces / ChatGPT
-Documentos limpos em Markdown de alta densidade sem chaves JSON em `data/export/llm_knowledge_bases/`:
-- `tws_hwa_10.2.8_knowledge_book_complete.md` (1.83 MB — Livro completo consolidado para upload em NotebookLM)
-- `01_alta_disponibilidade_failover.md`
-- `02_arquitetura_topologia_mesh.md`
-- `03_operacao_cli_conman_composer_planman.md`
-- `04_agendamento_avancado_workflows.md`
-- `05_api_rest_v2_integracao.md`
-- `06_troubleshooting_mensagens_aws.md`
-- `07_instalacao_manutencao.md`
+Documentos Markdown de alta densidade em `data/export/llm_knowledge_bases/`.
+
+**Versão v2 — completa (recomendada):**
+- `tws_hwa_10.2.8_knowledge_book_v2_complete.md` — **5,3 MB / ~809 mil palavras**: livro único com todos os campos, ressalvas de uso, níveis de evidência e os 14 runbooks operacionais integrados. Para ChatGPT/Claude Projects.
+- `parts_v2/` — **24 arquivos temáticos**, todos abaixo do limite de 500k palavras por fonte do NotebookLM (use estes para o NotebookLM).
+- `README_CONSUMO.md` — guia de qual artefato usar em cada ferramenta e a regra anti-contaminação (fato oficial x prática de comunidade).
+- `BOOK_V2_MANIFEST.json` — manifesto com contagem por categoria, runbooks e tamanhos.
+
+**Versão v1 — digest de claims (mantida para compatibilidade):**
+- `tws_hwa_10.2.8_knowledge_book_complete.md` — 1,9 MB, apenas 5 campos por registro e sem runbooks.
+- `01_alta_disponibilidade_failover.md` … `08_procedimentos_e_referencias_adicionais.md`
 
 ### 3. Dados Mestres para Treinamento e RAG Corporativo
 Em `data/export/`:

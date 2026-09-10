@@ -1,0 +1,175 @@
+{
+  "version": "v2",
+  "generated_from": "data/evidence/*.jsonl + data/runbooks/*.md",
+  "total_records": 2548,
+  "untagged_records": 351,
+  "categories": {
+    "Alta Disponibilidade & Failover": 32,
+    "Arquitetura & Topologia Mesh": 223,
+    "Operacao CLI (conman/composer/planman)": 510,
+    "Agendamento Avancado & Workflows": 74,
+    "API REST v2 & Integracao": 119,
+    "Troubleshooting & Mensagens de Erro": 1123,
+    "Instalacao & Manutencao": 71,
+    "Praticas de Comunidade & Governanca": 14,
+    "Outros": 382
+  },
+  "runbooks": {
+    "checklist-jnextplan-eol.md": {
+      "sections": 5,
+      "bytes": 2930
+    },
+    "failover-mdm-fta.md": {
+      "sections": 8,
+      "bytes": 2388
+    },
+    "hwa-10.2.8-agent-container-rhel9-lab.md": {
+      "sections": 7,
+      "bytes": 7342
+    },
+    "hwa-10.2.8-container-rhel9-lab.md": {
+      "sections": 27,
+      "bytes": 40916
+    },
+    "hwa-10.2.8-wsl-lab.md": {
+      "sections": 33,
+      "bytes": 159394
+    },
+    "hwa-10.2.8-wsl-mdmhost-dns-recovery.md": {
+      "sections": 8,
+      "bytes": 6830
+    },
+    "mdm-serverinst-twsinst-complete-reference.md": {
+      "sections": 6,
+      "bytes": 15750
+    },
+    "recovery-jnextplan.md": {
+      "sections": 6,
+      "bytes": 2360
+    },
+    "recovery-switchplan-stale-exec.md": {
+      "sections": 6,
+      "bytes": 3536
+    },
+    "sfinal-awsbhv082e-recovery.md": {
+      "sections": 5,
+      "bytes": 4692
+    },
+    "sfinal-validate-and-correct.md": {
+      "sections": 6,
+      "bytes": 4932
+    },
+    "twsinst-flags-complete-reference.md": {
+      "sections": 7,
+      "bytes": 10175
+    },
+    "upgrade-9.5-para-10.2.3.md": {
+      "sections": 6,
+      "bytes": 2605
+    },
+    "upgrade-agente.md": {
+      "sections": 6,
+      "bytes": 2064
+    }
+  },
+  "parts": [
+    {
+      "file": "parts_v2/parte1_alta_disponibilidade_failover.md",
+      "bytes": 77634
+    },
+    {
+      "file": "parts_v2/parte1_arquitetura_topologia_mesh.md",
+      "bytes": 528737
+    },
+    {
+      "file": "parts_v2/parte1_operacao_cli_conman_composer_planman.md",
+      "bytes": 1028826
+    },
+    {
+      "file": "parts_v2/parte1_agendamento_avancado_workflows.md",
+      "bytes": 154135
+    },
+    {
+      "file": "parts_v2/parte1_api_rest_v2_integracao.md",
+      "bytes": 285444
+    },
+    {
+      "file": "parts_v2/parte1_troubleshooting_mensagens_de_erro.md",
+      "bytes": 1486538
+    },
+    {
+      "file": "parts_v2/parte1_instalacao_manutencao.md",
+      "bytes": 187662
+    },
+    {
+      "file": "parts_v2/parte1_praticas_de_comunidade_governanca.md",
+      "bytes": 32580
+    },
+    {
+      "file": "parts_v2/parte1_outros.md",
+      "bytes": 821591
+    },
+    {
+      "file": "parts_v2/parte2_runbook_checklist_jnextplan_eol.md",
+      "bytes": 2744
+    },
+    {
+      "file": "parts_v2/parte2_runbook_failover_mdm_fta.md",
+      "bytes": 2321
+    },
+    {
+      "file": "parts_v2/parte2_runbook_hwa_10_2_8_agent_container_rhel9_lab.md",
+      "bytes": 7260
+    },
+    {
+      "file": "parts_v2/parte2_runbook_hwa_10_2_8_container_rhel9_lab.md",
+      "bytes": 40849
+    },
+    {
+      "file": "parts_v2/parte2_runbook_hwa_10_2_8_wsl_lab.md",
+      "bytes": 159287
+    },
+    {
+      "file": "parts_v2/parte2_runbook_hwa_10_2_8_wsl_mdmhost_dns_recovery.md",
+      "bytes": 6659
+    },
+    {
+      "file": "parts_v2/parte2_runbook_mdm_serverinst_twsinst_complete_reference.md",
+      "bytes": 15851
+    },
+    {
+      "file": "parts_v2/parte2_runbook_recovery_jnextplan.md",
+      "bytes": 2315
+    },
+    {
+      "file": "parts_v2/parte2_runbook_recovery_switchplan_stale_exec.md",
+      "bytes": 3449
+    },
+    {
+      "file": "parts_v2/parte2_runbook_sfinal_awsbhv082e_recovery.md",
+      "bytes": 4780
+    },
+    {
+      "file": "parts_v2/parte2_runbook_sfinal_validate_and_correct.md",
+      "bytes": 4872
+    },
+    {
+      "file": "parts_v2/parte2_runbook_twsinst_flags_complete_reference.md",
+      "bytes": 10269
+    },
+    {
+      "file": "parts_v2/parte2_runbook_upgrade_9_5_para_10_2_3.md",
+      "bytes": 2608
+    },
+    {
+      "file": "parts_v2/parte2_runbook_upgrade_agente.md",
+      "bytes": 2011
+    },
+    {
+      "file": "parts_v2/indice_ids.md",
+      "bytes": 238223
+    }
+  ],
+  "book_bytes": 5540173,
+  "book_path": "data/export/llm_knowledge_bases/tws_hwa_10.2.8_knowledge_book_v2_complete.md"
+}
