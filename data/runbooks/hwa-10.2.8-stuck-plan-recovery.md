@@ -15,14 +15,13 @@
 
 ## Diagnostico (raiz)
 
+> **CORRECAO (2026-09-11)**: a causa real de `AWSJPL017E` NAO e o broker. Ver evidencias `hwa-lab-10.2.8-awsjpl017e-real-root-cause-pending-symnew-0015`.
+
 1. Verifique o estado do plano: `planman showinfo`.
-2. Se o plano tem horizonte zerado e o `ext` retorna `AWSJPL017E`, mire na ultima operacao de troca de plano que nao completou.
-3. Em ambiente com Dynamic Workload Broker (workstation do tipo `broker agent`, ex.: MDM_DWB):
-   - O broker **nao aceita** `conman stop/start`: `conman stop <broker>` -> **AWSBHU159E** 'workstation is broker agent, where the command is not supported'.
-   - O script **SwitchPlan** para TODAS as workstations do dominio e aborta ao emitir `stop <broker>`: `CONMAN:AWSBHU076E ... stop MDM_DWB for AWSBCT041I Service 2008 started on MDM_DWB`.
-   - O `unlink` do broker **nao evita** o aborto (o `stop` e emitido independente do link).
-   - Com o aborto: flag 'previous action did not complete' + batchman down -> `AWSJPL017E`.
-4. Se o erro for `AWSJPL004E`, o `planman` esta sendo executado de um no cujo `thiscpu` (localopts) nao corresponde ao domain manager gravado no **MODELO** (objeto DOMAIN no banco). Execute a recuperacao a partir do no que o modelo indica (com `composer display domain=@`).
+2. **Causa real de `AWSJPL017E`**: o planner recusa uma segunda operacao de plano enquanto uma anterior esta PENDENTE. `planman ext`/`crt` cria um **Symnew pendente** (nao ativado); um segundo `ext`/`crt` SEM `SwitchPlan` entre eles retorna `AWSJPL017E`. Determinismo provado: `ext -> ext` = AWSJPL017E; `ext -> SwitchPlan -> ext` = OK.
+3. **Gatilho tipico**: um `JnextPlan` interrompido no meio (ex.: SIGKILL dos containers) deixa um Symnew pendente, bloqueando operacoes seguintes ate `planman unlock` ou um novo ciclo completo.
+4. **O broker NAO e a causa**: os erros `AWSBHU159E`/`AWSBHU076E`/`AWSBCT041I` durante o `SwitchPlan` sao NAO-FATAIS (ruido) — o SwitchPlan stock completa com rc=0 e nao seta o flag.
+5. Se o erro for `AWSJPL004E`, o `planman` esta sendo executado de um no cujo `thiscpu` (localopts) nao corresponde ao domain manager gravado no **MODELO** (objeto DOMAIN no banco). Execute a recuperacao a partir do no que o modelo indica (com `composer display domain=@`).
 
 ## Recuperacao
 
@@ -52,13 +51,11 @@ planman ext -days N           # AWSJCL062I - confirma horizonte restaurado
 ```
 > Execute pelo no que o **modelo** considera domain manager; em no divergente, pare em `AWSJPL004E` antes de avançar.
 
-## Correcao definitiva do broker (decisao do dono)
+## Correcao definitiva (o que realmente resolve)
 
-O aborto do SwitchPlan no broker-agent so e evitado com uma destas acoes:
-- **(a)** ajustar o `SwitchPlan`/`PostSwitchPlan` para pular workstations do tipo broker agent no comando `stop`;
-- **(b)** remover/substituir a workstation do broker do domino (mais invasivo);
-- **(c)** desabilitar o broker no laboratorio (perde cobertura dos testes de pool dinamico?LABPOOL/MDMDA).
-> Recomendacao quando o broker for necessario: aplicar (a), preservando o pool dinamico; usar (c) apenas como fallback se o pool dinamico nao for mais objeto de teste do dataset.
+- **`AWSJPL017E`**: nao ha 'correcao de script' necessaria — e o comportamento correto do planner. A prevencao e **nao sobrepor operacoes de plano**: entre um `ext`/`crt` e o proximo, execute `SwitchPlan` (ou um `JnextPlan` completo). Se o flag ja estiver setado, `planman unlock` limpa.
+- **Broker (MDM_DWB)**: os erros `AWSBHU159E`/`AWSBHU076E`/`AWSBCT041I` no `SwitchPlan` sao ruido NAO-FATAL (o script completa rc=0). Nao ha necessidade de patchar o SwitchPlan nem desabilitar o broker. O broker nao aceita `conman stop/start` por design (AWSBHU159E documentado); isso nao afeta a virada de plano.
+- **`AWSJPL004E`**: execute as operacoes de plano a partir do no que o MODELO do banco considera domain manager (`composer display domain=@`).
 
 ## Reversao / Rollback
 - `planman reset` mantem o plano corrente (nao destrutivo do plano ativo; so recalcula o preproduction).

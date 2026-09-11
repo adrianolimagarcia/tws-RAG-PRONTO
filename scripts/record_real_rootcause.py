@@ -1,0 +1,24 @@
+import json
+base = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
+out = f"{base}/data/evidence/lab-validation-2026-09-10-awsjpl017e-real-root-cause.jsonl"
+ev = {
+ "claim_id": "hwa-lab-10.2.8-awsjpl017e-real-root-cause-pending-symnew-0015",
+ "claim": "CORRECAO DE DIAGNOSTICO: a causa real de AWSJPL017E no HWA 10.2.8 NAO e o aborto do SwitchPlan no broker (evidencias 0012/0014 estao SUPERSEDIDAS). AWSJPL017E 'The production plan cannot be created because a previous action on the production plan did not complete successfully' e o comportamento CORRETO do planner ao recusar uma segunda operacao de plano enquanto uma anterior ainda esta PENDENTE. Mecanismo comprovado de forma deterministica e limpa: (1) 'planman ext' retorna AWSJCL062I e DEIXA um Symnew pendente (nao ativado); (2) um SEGUNDO 'planman ext' SEM 'SwitchPlan' entre eles retorna AWSJPL017E (bloqueio do Symnew pendente); (3) executar 'SwitchPlan' ativa o Symnew pendente (rc=0); (4) o terceiro 'planman ext' volta a funcionar (AWSJCL062I). O flag 'previous action did not complete' e, portanto, consequencia de operacoes de plano SOBREPOSTAS (ext/crt seguidos sem SwitchPlan, ou um JnextPlan interrompido no meio por SIGKILL dos containers deixando um Symnew pendente) — nao de corrupcao do Symphony, nem do broker, nem do script SwitchPlan. A recuperacao correta e 'planman unlock' (AWSJPL504I), que limpa o lock/pendencia. Em contraste, os erros do broker durante o SwitchPlan ('conman stop MDM_DWB' -> AWSBHU159E; SwitchPlan -> CONMAN:AWSBHU076E ... stop MDM_DWB for AWSBCT041I Service 2008') sao NAO-FATAIS e apenas ruido: o SwitchPlan stock completa com rc=0 ('AWSBIS361I Ending SwitchPlan', PostSwitchPlan) apesar deles, porque o comando conman stop retorna 0 no geral mesmo com erros por no. O patch do SwitchPlan feito nas evidencias 0012/0014 para 'pular nodes broker agent' foi baseado em diagnostico incorreto e foi REVERTIDO; o SwitchPlan stock foi restaurado e e o estado fiel.",
+ "result": "SUCCESS", "risk": "read_only",
+ "platform": "Distributed; Linux x86_64; containers tws-hwa/tws-bmdm; HWA 10.2.8",
+ "observed_at": "2026-09-11T13:48:00-03:00",
+ "test_procedure": "Experimento controlado limpo: unlock -> ext(AWSJCL062I) -> ext(SEM switch, AWSJPL017E) -> SwitchPlan(rc=0) -> ext(AWSJCL062I). Repetido variante: unlock -> ext(AWSJCL062I) -> ext(AWSJPL017E). Verificado que SwitchPlan stock com erros de broker completa rc=0 e que os erros nao setam o flag. Restaurado SwitchPlan stock e confirmado ext funcionando.",
+ "actual_output": "Determinismo provado: ext->ext sem switch = AWSJPL017E; ext->SwitchPlan->ext = OK. Broker nao e a causa. Patch revertido, SwitchPlan stock restaurado.",
+ "synthetic_questions": [
+   "Qual a causa real de AWSJPL017E no HWA?",
+   "Por que um segundo planman ext apos o primeiro retorna AWSJPL017E?",
+   "O que e um Symnew pendente e como ativa-lo?",
+   "Os erros do broker durante o SwitchPlan causam AWSJPL017E?",
+   "Qual a sequencia correta para estender o plano sem AWSJPL017E?",
+   "planman unlock resolve AWSJPL017E e por que?"
+ ],
+ "context_prefix": "[Escopo: HCL Workload Automation 10.2.8 (Distributed) > Componente: planner / plan library > Interface: CLI planman (ext, unlock) e SwitchPlan > Topico: troubleshooting > plan_operations [pending_symnew]]"
+}
+with open(out, "w", encoding="utf-8") as f:
+    f.write(json.dumps(ev, ensure_ascii=False) + "\n")
+print("OK")
