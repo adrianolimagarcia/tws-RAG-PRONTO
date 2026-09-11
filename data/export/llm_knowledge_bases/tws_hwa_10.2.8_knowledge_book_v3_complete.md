@@ -1,7 +1,7 @@
 # MANUAL CANONICO DO ESPECIALISTA HCL WORKLOAD AUTOMATION 10.2.8 (DISTRIBUTED) - V3 SOTA GOLD
 
-> **Base de Conhecimento Industrial Dual Index (2561 Registros Canonicos + 15 Runbooks SRE)**
-> Total de registros canonicos indexados: **2561**
+> **Base de Conhecimento Industrial Dual Index (2562 Registros Canonicos + 15 Runbooks SRE)**
+> Total de registros canonicos indexados: **2562**
 > Total de runbooks operacionais: **15**
 > Validacao: Laboratorio Distribuido Real (MDM, BMDM, FTA, Dynamic Agent, Broker, REST API v2).
 
@@ -42072,7 +42072,29 @@ No HCL Workload Automation 10.2.8, o comando conman 'switchmgr <DOMAIN>;<NOVO_MA
 
 ---
 
-### 2456. `hwa-lab-10.2.8-switchplan-broker-stop-unsupported-rootcause-0012`
+### 2456. `hwa-lab-10.2.8-switchplan-broker-fix-verified-0014`
+
+- **Categoria / Dominio:** Agendamento Avancado & Workflows
+- **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
+- **Versao / Plataforma:** HWA 10.2.8 (distributed)
+
+**Conteudo Canonico:**
+
+Corrigida e VERIFICADA a causa raiz do aborto do SwitchPlan no HWA 10.2.8 com Dynamic Workload Broker. A correcao (opcao a) edita o script SwitchPlan em duas partes: (1) substitui o 'conman stop ;progressive' por um laco que para apenas workstations que NAO sejam broker agent, iterando a lista de 'conman sc @' e filtrando nos em que a coluna NODE contem BROKER (awk com $2 numerico + NODE sem BROKER); (2) adiciona '|| true' ao 'conman stop $cpu' dentro do laco porque o SwitchPlan usa 'set -e' (linha 171) e o 'stop' do proprio master retorna rc=13, o que abortava o script antes da fase de switch. Resultado verificado: SwitchPlan executa o ciclo COMPLETO — rc=0, 'AWSBIS364I Running PostSwitchPlan' e 'AWSBIS361I Ending SwitchPlan', sem AWSBHU076E/AWSBCT041I; o plano gira (Run number avanca), 'planman ext' retorna AWSJCL062I SEM AWSJPL017E apos a troca, o horizonte do plano volta a ser real (ex.: end time 09/20/2026 21:04) e o broker MDM_DWB permanece intacto e linkado na malha. O patch foi aplicado em ambos os nos (MDM /opt/hwa/TWS/SwitchPlan e BMDM /opt/hwa/TWS/TWS/SwitchPlan) com backup do original em SwitchPlan.orig-20260910.
+
+**Texto de Recuperacao Semantica (`retrieval_text`):**
+> `conman stop conman sc planman ext AWSBIS364I AWSBIS361I AWSBHU076E AWSBCT041I AWSJCL062I AWSJPL017E plano travado extensao de plano previous action did not complete recuperar plano Corrigida VERIFICADA causa raiz aborto SwitchPlan 10.2.8 Dynamic Broker correcao opcao edita script duas partes substitui conman stop progressive laco workstations NAO sejam broker agent iterando lista filtrando`
+
+**Perguntas Relacionadas / Avaliacao:**
+- Como corrigir definitivamente o SwitchPlan para nao abortar quando existe um Dynamic Workload Broker?
+- Por que o SwitchPlan usa 'set -e' e como isso afeta o laco de stop das workstations?
+- Qual a evidencia de que o SwitchPlan completou a troca de plano com sucesso?
+- Apos a correcao, planman ext funciona imediatamente apos o SwitchPlan?
+- O que significa AWSBIS361I Ending SwitchPlan?
+
+---
+
+### 2457. `hwa-lab-10.2.8-switchplan-broker-stop-unsupported-rootcause-0012`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42094,7 +42116,7 @@ Confirmada a causa raiz definitiva do aborto do SwitchPlan no HWA 10.2.8 com Dyn
 
 ---
 
-### 2457. `hwa-lab-10.2.8-symphony-active-file-0159`
+### 2458. `hwa-lab-10.2.8-symphony-active-file-0159`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42109,7 +42131,7 @@ planman showinfo on the master reports Plan last update 08/27/2026 15:10 and Run
 
 ---
 
-### 2458. `hwa-lab-10.2.8-syntax-resolved-0069`
+### 2459. `hwa-lab-10.2.8-syntax-resolved-0069`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42124,7 +42146,7 @@ In the HWA laboratory, five composer syntax blockers were resolved by using the 
 
 ---
 
-### 2459. `hwa-lab-10.2.8-task-jsdl-validation-0012`
+### 2460. `hwa-lab-10.2.8-task-jsdl-validation-0012`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42139,7 +42161,7 @@ In the HWA 10.2.8 laboratory, the initial TASK JSDL executable definition used f
 
 ---
 
-### 2460. `hwa-lab-10.2.8-thiscpu-displayname-scope-0008`
+### 2461. `hwa-lab-10.2.8-thiscpu-displayname-scope-0008`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42154,7 +42176,7 @@ In the HWA 10.2.8 laboratory, the nested twsinst invocation made by serverinst w
 
 ---
 
-### 2461. `hwa-lab-10.2.8-timezone-sao-paulo-0001`
+### 2462. `hwa-lab-10.2.8-timezone-sao-paulo-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42169,7 +42191,7 @@ No laboratorio container RHEL9 UBI9 (HWA 10.2.8, tws-hwa.lab), o timezone do SO 
 
 ---
 
-### 2462. `hwa-lab-10.2.8-tooling-0067`
+### 2463. `hwa-lab-10.2.8-tooling-0067`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42184,7 +42206,7 @@ In the HWA laboratory, the composer/planman/conman tooling available included co
 
 ---
 
-### 2463. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001`
+### 2464. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42199,7 +42221,7 @@ No laboratorio container HWA 10.2.8 (tws-hwa.lab, plano #22), a topologia atual 
 
 ---
 
-### 2464. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0002`
+### 2465. `hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42214,7 +42236,7 @@ No container HWA 10.2.8 (tws-hwa.lab), o event processing engine esta ATIVO: o p
 
 ---
 
-### 2465. `hwa-lab-10.2.8-twsinst-aes-clean-each-rerun-0001`
+### 2466. `hwa-lab-10.2.8-twsinst-aes-clean-each-rerun-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42229,7 +42251,7 @@ Cada rerun do twsinst HWA 10.2.8 que passa por runSecurityEncryption RECRIA key.
 
 ---
 
-### 2466. `hwa-lab-10.2.8-twsinst-flags-mutual-exclusion-0001`
+### 2467. `hwa-lab-10.2.8-twsinst-flags-mutual-exclusion-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42244,7 +42266,7 @@ No HCL Workload Automation 10.2.8 (twsinst LINUX_X86_64), foram validadas empiri
 
 ---
 
-### 2467. `hwa-lab-10.2.8-twsinst-keystore-residue-0001`
+### 2468. `hwa-lab-10.2.8-twsinst-keystore-residue-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42259,7 +42281,7 @@ Reexecucao do twsinst HWA 10.2.8 apos falha parcial falha em runSecurityEncrypti
 
 ---
 
-### 2468. `hwa-lab-10.2.8-twsinst-libcrypt-0001`
+### 2469. `hwa-lab-10.2.8-twsinst-libcrypt-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42274,7 +42296,7 @@ No RHEL 9, o comando makesec do HWA 10.2.8 falha na fase AWSFAB068I (Completing 
 
 ---
 
-### 2469. `hwa-lab-10.2.8-variable-table-native-0046`
+### 2470. `hwa-lab-10.2.8-variable-table-native-0046`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42289,7 +42311,7 @@ In the HWA laboratory, variable table LABTAB was created with vartable/members/e
 
 ---
 
-### 2470. `hwa-lab-10.2.8-vartable-caret-e2e-0106`
+### 2471. `hwa-lab-10.2.8-vartable-caret-e2e-0106`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42304,7 +42326,7 @@ No laboratório WSL2 HWA 10.2.8, a resolução de variáveis de VARIABLE TABLE e
 
 ---
 
-### 2471. `hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001`
+### 2472. `hwa-lab-10.2.8-vartable-resolution-and-missing-behavior-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42319,7 +42341,7 @@ No laboratorio container HWA 10.2.8 (tws-hwa.lab), a definicao de VARIABLE TABLE
 
 ---
 
-### 2472. `hwa-lab-10.2.8-vartable-resolution-and-missing-vars-0002`
+### 2473. `hwa-lab-10.2.8-vartable-resolution-and-missing-vars-0002`
 
 - **Categoria / Dominio:** Agendamento Avancado & Workflows
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42339,7 +42361,7 @@ No HWA 10.2.8, variáveis definidas em uma VARTABLE e referenciadas no JCL com c
 
 ---
 
-### 2473. `hwa-lab-10.2.8-wauser-login-profile-env-0001`
+### 2474. `hwa-lab-10.2.8-wauser-login-profile-env-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42354,7 +42376,7 @@ Em container RHEL 9.8 UBI, o login do usuario de instalacao (wauser) nao carrega
 
 ---
 
-### 2474. `hwa-lab-10.2.8-wauser-profile-0005`
+### 2475. `hwa-lab-10.2.8-wauser-profile-0005`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42369,7 +42391,7 @@ In the WSL2 HWA 10.2.8 laboratory, the installation user is wauser and its login
 
 ---
 
-### 2475. `hwa-lab-10.2.8-wauser-sudo-0051`
+### 2476. `hwa-lab-10.2.8-wauser-sudo-0051`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42384,7 +42406,7 @@ In the HWA laboratory, user wauser is NOT in sudoers; sudo -l -U wauser returns 
 
 ---
 
-### 2476. `hwa-lab-9.4.0-switchplan-db-cpu-contention-0207`
+### 2477. `hwa-lab-9.4.0-switchplan-db-cpu-contention-0207`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42399,7 +42421,7 @@ Contributing root cause reported by the DBA team: the TWS database server was un
 
 ---
 
-### 2477. `hwa-lab-9.4.0-switchplan-db-lock-confirm-0201`
+### 2478. `hwa-lab-9.4.0-switchplan-db-lock-confirm-0201`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42414,7 +42436,7 @@ Root cause chain of the hung switch: the plan switch had advanced to the planman
 
 ---
 
-### 2478. `hwa-lab-9.4.0-switchplan-exec-hung-0200`
+### 2479. `hwa-lab-9.4.0-switchplan-exec-hung-0200`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42429,7 +42451,7 @@ On the IBM Workload Scheduler 9.4.0.6 production Master Domain Manager, the SWIT
 
 ---
 
-### 2479. `hwa-lab-9.4.0-switchplan-final-resolution-0206`
+### 2480. `hwa-lab-9.4.0-switchplan-final-resolution-0206`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42444,7 +42466,7 @@ Final resolution of the stale EXEC on 9.4.0.6: the hung OS process 'planman -tim
 
 ---
 
-### 2480. `hwa-lab-9.4.0-switchplan-iv89990-diagnostic-0204`
+### 2481. `hwa-lab-9.4.0-switchplan-iv89990-diagnostic-0204`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42459,7 +42481,7 @@ Diagnostic rule confirmed in production 9.4.0.6: a SWITCHPLAN job stuck in EXEC 
 
 ---
 
-### 2481. `hwa-lab-9.4.0-switchplan-lessons-0208`
+### 2482. `hwa-lab-9.4.0-switchplan-lessons-0208`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42474,7 +42496,7 @@ Operational lessons consolidated from the 2026-09-04 incident (9.4.0.6 EOL, Orac
 
 ---
 
-### 2482. `hwa-lab-9.4.0-switchplan-recovery-start-unlock-0202`
+### 2483. `hwa-lab-9.4.0-switchplan-recovery-start-unlock-0202`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42489,7 +42511,7 @@ Recovery for the hung switch on 9.4.0.6: issuing conman start plus planman unloc
 
 ---
 
-### 2483. `hwa-lab-9.4.0-switchplan-validated-run6110-0203`
+### 2484. `hwa-lab-9.4.0-switchplan-validated-run6110-0203`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** mutating
@@ -42504,7 +42526,7 @@ Validation of the recovered switch on 9.4.0.6: planman showinfo reported Run num
 
 ---
 
-### 2484. `hwa-lab-9.4.0-switchplan-wsa-disabled-0205`
+### 2485. `hwa-lab-9.4.0-switchplan-wsa-disabled-0205`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** lab_validated | **Risco Operacional:** read_only
@@ -42519,7 +42541,7 @@ On the incident MDM (IBM Workload Scheduler 9.4.0.6), the global option enWorklo
 
 ---
 
-### 2485. `hwa-liberty-install-10.2.0-0001`
+### 2486. `hwa-liberty-install-10.2.0-0001`
 
 - **Categoria / Dominio:** Instalacao & Manutencao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42537,7 +42559,7 @@ Na documentação HWA Distributed 10.2.0, Open Liberty é requerido nos nós que
 
 ---
 
-### 2486. `hwa-master-domain-manager-registered-master-0002`
+### 2487. `hwa-master-domain-manager-registered-master-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42555,7 +42577,7 @@ O master domain manager é registrado no banco de dados do HCL Workload Automati
 
 ---
 
-### 2487. `hwa-official-10.2.8-fence-priority-0032`
+### 2488. `hwa-official-10.2.8-fence-priority-0032`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42570,7 +42592,7 @@ In HCL Workload Automation, `fence` prevents jobs whose priority is less than or
 
 ---
 
-### 2488. `hwa-official-10.2.8-jnextplan-noremove-0014`
+### 2489. `hwa-official-10.2.8-jnextplan-noremove-0014`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42585,7 +42607,7 @@ In HCL Workload Automation 10.2.8, JnextPlan -for 0000 removes successfully comp
 
 ---
 
-### 2489. `hwa-official-10.2.8-jnextplan-restart-0013`
+### 2490. `hwa-official-10.2.8-jnextplan-restart-0013`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -42600,7 +42622,7 @@ HCL Workload Automation 10.2.8 documents that every JnextPlan execution stops an
 
 ---
 
-### 2490. `hwa-official-10.2.8-limit-fence-carryforward-0033`
+### 2491. `hwa-official-10.2.8-limit-fence-carryforward-0033`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42615,7 +42637,7 @@ HCL Workload Automation documents that changes to workstation job limit and fenc
 
 ---
 
-### 2491. `hwa-official-10.2.8-limit-zero-priority-0031`
+### 2492. `hwa-official-10.2.8-limit-zero-priority-0031`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42630,7 +42652,7 @@ In HCL Workload Automation, `limit cpu` controls the number of concurrent jobs. 
 
 ---
 
-### 2492. `hwa-official-awsjcl070i-9.4-0001`
+### 2493. `hwa-official-awsjcl070i-9.4-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42651,7 +42673,7 @@ Em IBM Workload Scheduler 9.4.0, AWSJCL070I 'Symphony file load is not yet start
 
 ---
 
-### 2493. `hwa-official-composer-10.2.8-0001`
+### 2494. `hwa-official-composer-10.2.8-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42670,7 +42692,7 @@ Em HWA Distributed 10.2.8, Composer create e extract são nomes alternativos par
 
 ---
 
-### 2494. `hwa-official-composer-10.2.8-0002`
+### 2495. `hwa-official-composer-10.2.8-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42689,7 +42711,7 @@ Em HWA Distributed 10.2.8, composer validate verifica definições de objetos em
 
 ---
 
-### 2495. `hwa-official-composer-10.2.8-0003`
+### 2496. `hwa-official-composer-10.2.8-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42708,7 +42730,7 @@ Em HWA Distributed 10.2.8, Composer lock adquire locks explícitos em objetos do
 
 ---
 
-### 2496. `hwa-official-conman-10.2.8-0001`
+### 2497. `hwa-official-conman-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42727,7 +42749,7 @@ Em HWA Distributed 10.2.8, showjobs suporta os formatos standard, keys, info, st
 
 ---
 
-### 2497. `hwa-official-conman-10.2.8-0002`
+### 2498. `hwa-official-conman-10.2.8-0002`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42746,7 +42768,7 @@ Em HWA Distributed 10.2.8, showschedules suporta os formatos standard, keys e de
 
 ---
 
-### 2498. `hwa-official-cycle-10.2.8-0001`
+### 2499. `hwa-official-cycle-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -42765,7 +42787,7 @@ Em HWA Distributed 10.2.8, JnextPlan gerencia a transição do plano antigo para
 
 ---
 
-### 2499. `hwa-official-cycle-10.2.8-0002`
+### 2500. `hwa-official-cycle-10.2.8-0002`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42783,7 +42805,7 @@ Em HWA Distributed 10.2.8, MakePlan replana ou estende o preproduction plan e pr
 
 ---
 
-### 2500. `hwa-official-cycle-10.2.8-0003`
+### 2501. `hwa-official-cycle-10.2.8-0003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42802,7 +42824,7 @@ Em HWA Distributed 10.2.8, SwitchPlan para workstations, executa Stageman, execu
 
 ---
 
-### 2501. `hwa-official-message-10.2.8-0001`
+### 2502. `hwa-official-message-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -42824,7 +42846,7 @@ Em HWA Distributed 10.2.8, AWSJPL018E indica lock global não resetado após int
 
 ---
 
-### 2502. `hwa-official-message-10.2.8-0002`
+### 2503. `hwa-official-message-10.2.8-0002`
 
 - **Categoria / Dominio:** Troubleshooting & Mensagens de Erro
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42844,7 +42866,7 @@ Em HWA Distributed 10.2.8, AWSJPL006E indica que um objeto do banco não pôde s
 
 ---
 
-### 2503. `hwa-official-message-10.2.8-0003`
+### 2504. `hwa-official-message-10.2.8-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42864,7 +42886,7 @@ Em HWA Distributed 10.2.8, AWSJPL017E indica que a criação do production plan 
 
 ---
 
-### 2504. `hwa-official-message-10.2.8-0004`
+### 2505. `hwa-official-message-10.2.8-0004`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42884,7 +42906,7 @@ Em HWA Distributed 10.2.8, AWSJPL704E indica que o planner não conseguiu estend
 
 ---
 
-### 2505. `hwa-official-message-10.2.8-0005`
+### 2506. `hwa-official-message-10.2.8-0005`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42905,7 +42927,7 @@ Em HWA Distributed 10.2.8, AWSBHV082E ocorre quando Symphony e Symnew têm o mes
 
 ---
 
-### 2506. `hwa-official-message-10.2.8-0006`
+### 2507. `hwa-official-message-10.2.8-0006`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42928,7 +42950,7 @@ Em HWA Distributed 10.2.8, AWSJCL054E e AWSJPL016E aparecem no cenário em que a
 
 ---
 
-### 2507. `hwa-official-message-10.2.8-0007`
+### 2508. `hwa-official-message-10.2.8-0007`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42950,7 +42972,7 @@ AWSJCL070I é uma mensagem informativa do IBM/HCL Workload Scheduler cujo texto 
 
 ---
 
-### 2508. `hwa-official-mirrorbox-10.2.8-0001`
+### 2509. `hwa-official-mirrorbox-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42970,7 +42992,7 @@ Em HWA Distributed 10.2.8, se mirrorbox.msg ou mirrorbox<n>.msg ficar cheio, por
 
 ---
 
-### 2509. `hwa-official-planman-10.2.8-0001`
+### 2510. `hwa-official-planman-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -42989,7 +43011,7 @@ Em HWA Distributed 10.2.8, planman showinfo reporta tempos do production plan, �
 
 ---
 
-### 2510. `hwa-official-planman-10.2.8-0002`
+### 2511. `hwa-official-planman-10.2.8-0002`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43009,7 +43031,7 @@ Em HWA Distributed 10.2.8, planman resync replica manualmente dados do Symphony 
 
 ---
 
-### 2511. `hwa-official-planman-10.2.8-0003`
+### 2512. `hwa-official-planman-10.2.8-0003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43028,7 +43050,7 @@ Em HWA Distributed 10.2.8, planman checksync escreve em stdout mensagens de prog
 
 ---
 
-### 2512. `hwa-official-planman-10.2.8-0004`
+### 2513. `hwa-official-planman-10.2.8-0004`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43047,7 +43069,7 @@ Em HWA Distributed 10.2.8, planman unlock libera locks associados à criação o
 
 ---
 
-### 2513. `hwa-official-stageman-10.2.8-0001`
+### 2514. `hwa-official-stageman-10.2.8-0001`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43066,7 +43088,7 @@ Em HWA Distributed 10.2.8, Stageman leva job streams não concluídos para o nov
 
 ---
 
-### 2514. `hwa-official-stageman-10.2.8-0002`
+### 2515. `hwa-official-stageman-10.2.8-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43084,7 +43106,7 @@ Em HWA Distributed 10.2.8, Stageman aceita -carryforward no, yes ou all; -log ar
 
 ---
 
-### 2515. `hwa-official-stageman-10.2.8-003`
+### 2516. `hwa-official-stageman-10.2.8-003`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43104,7 +43126,7 @@ Em HWA Distributed 10.2.8, executar Stageman duas vezes sobre o mesmo Symnew é 
 
 ---
 
-### 2516. `hwa-official-tuning-10.2.8-0001`
+### 2517. `hwa-official-tuning-10.2.8-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43122,7 +43144,7 @@ Em HWA Distributed 10.2.8, a documentação oficial de tuning de replicação re
 
 ---
 
-### 2517. `hwa-operational-agent-naming-suffix-0009`
+### 2518. `hwa-operational-agent-naming-suffix-0009`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43137,7 +43159,7 @@ As an operational naming convention, a dynamic agent installed on the same host 
 
 ---
 
-### 2518. `hwa-operational-jnextplan-caution-0015`
+### 2519. `hwa-operational-jnextplan-caution-0015`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43152,7 +43174,7 @@ In production, JnextPlan must be treated as a controlled plan-transition operati
 
 ---
 
-### 2519. `hwa-operational-limit-zero-not-unlimited-0030`
+### 2520. `hwa-operational-limit-zero-not-unlimited-0030`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43167,7 +43189,7 @@ In HCL Workload Automation, workstation LIMIT 0 is not equivalent to unlimited e
 
 ---
 
-### 2520. `hwa-planman-showinfo-resync-unlock-0047`
+### 2521. `hwa-planman-showinfo-resync-unlock-0047`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43188,7 +43210,7 @@ No HCL Workload Automation 10.2.8, os comandos planman são: 'planman [connectio
 
 ---
 
-### 2521. `hwa-rest-twsd-31116-official-0022`
+### 2522. `hwa-rest-twsd-31116-official-0022`
 
 - **Categoria / Dominio:** API REST v2 & Integracao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43207,7 +43229,7 @@ Para HCL Workload Automation 9.5 Fix Pack 7 em ambiente Distributed com MDM ou B
 
 ---
 
-### 2522. `hwa-themaster-domain-manager-0001`
+### 2523. `hwa-themaster-domain-manager-0001`
 
 - **Categoria / Dominio:** Instalacao & Manutencao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43226,7 +43248,7 @@ O nome de workstation padrão do master domain manager no HCL Workload Automatio
 
 ---
 
-### 2523. `hwa-themaster-estados-internos-de-job-0009`
+### 2524. `hwa-themaster-estados-internos-de-job-0009`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43244,7 +43266,7 @@ Os estados internos de job documentados no HCL Workload Automation incluem ABEND
 
 ---
 
-### 2524. `hwa-themaster-final-0003`
+### 2525. `hwa-themaster-final-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43262,7 +43284,7 @@ Os job streams FINAL e FINALPOSTREPORTS são job streams de exemplo incluídos n
 
 ---
 
-### 2525. `hwa-themaster-final-0004`
+### 2526. `hwa-themaster-final-0004`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43281,7 +43303,7 @@ O job stream FINAL executa a sequência de arquivos de script descrita em JnextP
 
 ---
 
-### 2526. `hwa-themaster-final-0012`
+### 2527. `hwa-themaster-final-0012`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43299,7 +43321,7 @@ A documentação oficial do HCL Workload Automation descreve os job streams FINA
 
 ---
 
-### 2527. `hwa-themaster-final-0013`
+### 2528. `hwa-themaster-final-0013`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43318,7 +43340,7 @@ O job stream FINAL é colocado em produção diariamente e executa o JnextPlan a
 
 ---
 
-### 2528. `hwa-themaster-final-0016`
+### 2529. `hwa-themaster-final-0016`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43338,7 +43360,7 @@ The FINAL and FINALPOSTREPORTS job streams are associated with the master domain
 
 ---
 
-### 2529. `hwa-themaster-finalpostreports-0005`
+### 2530. `hwa-themaster-finalpostreports-0005`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43356,7 +43378,7 @@ O job stream FINALPOSTREPORTS segue o job stream FINAL e inicia somente quando o
 
 ---
 
-### 2530. `hwa-themaster-finalpostreports-0014`
+### 2531. `hwa-themaster-finalpostreports-0014`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43374,7 +43396,7 @@ O job stream FINALPOSTREPORTS é responsável por imprimir os relatórios pós-p
 
 ---
 
-### 2531. `hwa-themaster-finalpostreports-0015`
+### 2532. `hwa-themaster-finalpostreports-0015`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43394,7 +43416,7 @@ O job stream FINALPOSTREPORTS inclui um job chamado CHECKSYNC que monitora o pro
 
 ---
 
-### 2532. `hwa-themaster-home-0010`
+### 2533. `hwa-themaster-home-0010`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43412,7 +43434,7 @@ O arquivo Sfinal, que contém as definições dos job streams FINAL e FINALPOSTR
 
 ---
 
-### 2533. `hwa-themaster-jnext-plan-0008`
+### 2534. `hwa-themaster-jnext-plan-0008`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43431,7 +43453,7 @@ O script JnextPlan gera o novo plano de produção no HCL Workload Automation, c
 
 ---
 
-### 2534. `hwa-themaster-job-stream-0011`
+### 2535. `hwa-themaster-job-stream-0011`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43449,7 +43471,7 @@ The official HCL Workload Automation 10.2.8 documentation does not document a jo
 
 ---
 
-### 2535. `hwa-themaster-switch-plan-0007`
+### 2536. `hwa-themaster-switch-plan-0007`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43469,7 +43491,7 @@ O comando SwitchPlan executa as seguintes ações no HCL Workload Automation: pa
 
 ---
 
-### 2536. `hwa-themaster-switchplan-0006`
+### 2537. `hwa-themaster-switchplan-0006`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43487,7 +43509,7 @@ SWITCHPLAN é documentado como o último job do job stream FINAL no HCL Workload
 
 ---
 
-### 2537. `hwa-upgrade-1028-rollback-0001`
+### 2538. `hwa-upgrade-1028-rollback-0001`
 
 - **Categoria / Dominio:** Instalacao & Manutencao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43505,7 +43527,7 @@ HWA informa que registros de banco criados por recursos da nova versão podem im
 
 ---
 
-### 2538. `hwa-version-matrix-agent-zos-distributed-0023`
+### 2539. `hwa-version-matrix-agent-zos-distributed-0023`
 
 - **Categoria / Dominio:** Arquitetura & Topologia Mesh
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43526,7 +43548,7 @@ O 'Agent for z/OS' e um agente do HCL Workload Automation Distributed que atua c
 
 ---
 
-### 2539. `hwa-version-matrix-certman-distributed-only-0014`
+### 2540. `hwa-version-matrix-certman-distributed-only-0014`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43544,7 +43566,7 @@ Em HCL Workload Automation 10.2.8 Distributed, Certman fica em TWS_INST_DIR/TWS/
 
 ---
 
-### 2540. `hwa-version-matrix-certman-intro-10.2.3-0012`
+### 2541. `hwa-version-matrix-certman-intro-10.2.3-0012`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43562,7 +43584,7 @@ Em HCL Workload Automation Distributed, a ferramenta Certman foi introduzida na 
 
 ---
 
-### 2541. `hwa-version-matrix-certman-not-before-1023-0013`
+### 2542. `hwa-version-matrix-certman-not-before-1023-0013`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43581,7 +43603,7 @@ Em HCL Workload Automation Distributed, antes da versao 10.2.3 os certificados e
 
 ---
 
-### 2542. `hwa-version-matrix-certman-not-zos-0015`
+### 2543. `hwa-version-matrix-certman-not-zos-0015`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43599,7 +43621,7 @@ Em HCL Workload Automation for Z (z/OS), os certificados SSL sao gerenciados via
 
 ---
 
-### 2543. `hwa-version-matrix-composer-conman-9.5-0008`
+### 2544. `hwa-version-matrix-composer-conman-9.5-0008`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43620,7 +43642,7 @@ Em HCL Workload Automation 9.5 Distributed, os programas de linha de comando com
 
 ---
 
-### 2544. `hwa-version-matrix-composer-rest-9.5fp2-0009`
+### 2545. `hwa-version-matrix-composer-rest-9.5fp2-0009`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43640,7 +43662,7 @@ Em HCL Workload Automation 9.5 Fix Pack 2 Distributed, o composer passou a usar 
 
 ---
 
-### 2545. `hwa-version-matrix-distributed-tools-not-zos-0010`
+### 2546. `hwa-version-matrix-distributed-tools-not-zos-0010`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43663,7 +43685,7 @@ Os programas composer, conman e planman sao ferramentas do HCL Workload Automati
 
 ---
 
-### 2546. `hwa-version-matrix-ocli-intro-10.1-0001`
+### 2547. `hwa-version-matrix-ocli-intro-10.1-0001`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43681,7 +43703,7 @@ Em HCL Workload Automation Distributed, o Orchestration CLI (OCLI) foi introduzi
 
 ---
 
-### 2547. `hwa-version-matrix-ocli-model-intro-10.2.2-0004`
+### 2548. `hwa-version-matrix-ocli-model-intro-10.2.2-0004`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43699,7 +43721,7 @@ Em HCL Workload Automation 10.2.2 Distributed, o Orchestration CLI passou a supo
 
 ---
 
-### 2548. `hwa-version-matrix-ocli-model-newitems-10.2.3-0005`
+### 2549. `hwa-version-matrix-ocli-model-newitems-10.2.3-0005`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43717,7 +43739,7 @@ Em HCL Workload Automation 10.2.3 Distributed, os comandos model do Orchestratio
 
 ---
 
-### 2549. `hwa-version-matrix-ocli-plan-growth-10.2.1-0003`
+### 2550. `hwa-version-matrix-ocli-plan-growth-10.2.1-0003`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43735,7 +43757,7 @@ Em HCL Workload Automation 10.2.1 Distributed, o Orchestration CLI ampliou o con
 
 ---
 
-### 2550. `hwa-version-matrix-ocli-plan-only-10.1-0002`
+### 2551. `hwa-version-matrix-ocli-plan-only-10.1-0002`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43753,7 +43775,7 @@ Em HCL Workload Automation 10.1 e 10.2.0 Distributed, o Orchestration CLI suport
 
 ---
 
-### 2551. `hwa-version-matrix-ocli-replaces-conman-10.2.8-0006`
+### 2552. `hwa-version-matrix-ocli-replaces-conman-10.2.8-0006`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43774,7 +43796,7 @@ Em HCL Workload Automation 10.2.8 Distributed, o Orchestration CLI e descrito co
 
 ---
 
-### 2552. `hwa-version-matrix-ocli-zos-0007`
+### 2553. `hwa-version-matrix-ocli-zos-0007`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43794,7 +43816,7 @@ Orchestration CLI (OCLI) in HCL Workload Automation 10.2.8 connects to a "remote
 
 ---
 
-### 2553. `hwa-version-matrix-oql-distributed-zos-0018`
+### 2554. `hwa-version-matrix-oql-distributed-zos-0018`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43812,7 +43834,7 @@ Em HCL Workload Automation, o OQL aplica-se tanto ao ambiente Distributed quanto
 
 ---
 
-### 2554. `hwa-version-matrix-oql-intro-10.1-0017`
+### 2555. `hwa-version-matrix-oql-intro-10.1-0017`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43832,7 +43854,7 @@ Em HCL Workload Automation 10.1 Fix Pack 1, a REST API V2 introduziu o Orchestra
 
 ---
 
-### 2555. `hwa-version-matrix-planman-cli-scope-0011`
+### 2556. `hwa-version-matrix-planman-cli-scope-0011`
 
 - **Categoria / Dominio:** Arquitetura & Topologia Mesh
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43853,7 +43875,7 @@ Em HCL Workload Automation 10.2.8 Distributed, o Command Line Client (instalado 
 
 ---
 
-### 2556. `hwa-version-matrix-rest-9.5-v1-0019`
+### 2557. `hwa-version-matrix-rest-9.5-v1-0019`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43874,7 +43896,7 @@ Em HCL Workload Automation 9.5 Distributed, a REST API permitia criar GUI ou CLI
 
 ---
 
-### 2557. `hwa-version-matrix-restv2-intro-10.1-0016`
+### 2558. `hwa-version-matrix-restv2-intro-10.1-0016`
 
 - **Categoria / Dominio:** API REST v2 & Integracao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43893,7 +43915,7 @@ Em HCL Workload Automation 10.1 Fix Pack 1, foi introduzida a REST API V2 para o
 
 ---
 
-### 2558. `hwa-version-matrix-restv2-recommended-10.2.8-0020`
+### 2559. `hwa-version-matrix-restv2-recommended-10.2.8-0020`
 
 - **Categoria / Dominio:** API REST v2 & Integracao
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43912,7 +43934,7 @@ Em HCL Workload Automation 10.2.8 Distributed, a documentacao recomenda explicit
 
 ---
 
-### 2559. `hwa-version-matrix-zos-operator-commands-0022`
+### 2560. `hwa-version-matrix-zos-operator-commands-0022`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
@@ -43931,7 +43953,7 @@ Em HCL Workload Automation for Z (z/OS), o produto pode ser iniciado, parado, ca
 
 ---
 
-### 2560. `hwa-version-matrix-zos-wapl-0021`
+### 2561. `hwa-version-matrix-zos-wapl-0021`
 
 - **Categoria / Dominio:** Operacao CLI (conman/composer/planman)
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
@@ -43952,7 +43974,7 @@ Em HCL Workload Automation for Z (z/OS), a Workload Automation Programming Langu
 
 ---
 
-### 2561. `iwa-10.2.5-composer-job-selector-0020`
+### 2562. `iwa-10.2.5-composer-job-selector-0020`
 
 - **Categoria / Dominio:** Outros
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
