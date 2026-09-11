@@ -1,10 +1,10 @@
 {
-  "total_unique_claims": 2567,
-  "total_synthetic_questions": 3271,
-  "total_evidence_files": 162,
+  "total_unique_claims": 2568,
+  "total_synthetic_questions": 3277,
+  "total_evidence_files": 163,
   "distribution_by_category": {
     "Outros": 2937,
-    "Operacao CLI (conman/composer/planman)": 413,
+    "Operacao CLI (conman/composer/planman)": 414,
     "Agendamento Avancado & Workflows": 90,
     "API REST v2 & Integracao": 128,
     "Arquitetura & Topologia Mesh": 99,
