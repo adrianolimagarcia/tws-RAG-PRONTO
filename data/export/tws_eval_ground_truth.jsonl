@@ -3258,6 +3258,12 @@
 {"question": "Quais gatilhos produzem J2CA0056I de forma deterministica?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-ab-inconclusive-0017", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como provar que a correcao de pool elimina o J2CA0056I?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-ab-inconclusive-0017", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Por que o iptables seria necessario para simular firewall matando conexoes?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-ab-inconclusive-0017", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "A correcao de validationTimeout e ValidateAllConnections resolve o J2CA0056I?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-proven-ab-0018", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "Como reproduzir de forma deterministica o J2CA0056I em laboratorio?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-proven-ab-0018", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "Por que pg_terminate_backend nao reproduz o J2CA0056I e um proxy com RST reproduz?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-proven-ab-0018", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que muda no comportamento do pool entre purgePolicy EntirePool e ValidateAllConnections?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-proven-ab-0018", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "Por que validationTimeout evita entregar conexoes mortas a aplicacao?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-proven-ab-0018", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "Quantas ocorrencias de J2CA0056I a config original produziu no teste A/B?", "target_claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-proven-ab-0018", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Quais sao as causas documentadas da mensagem AWSJPL017E no HWA?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "O que fazer quando o JnextPlan falha com AWSJPL017E?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Por que executar uma extensao de plano antes de a criacao completar gera AWSJPL017E?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
