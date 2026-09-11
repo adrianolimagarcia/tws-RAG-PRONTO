@@ -1,0 +1,46 @@
+import json
+base = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
+out = f"{base}/data/evidence/lab-validation-2026-09-11-j2ca0056i-dwc-datasource.jsonl"
+
+ev = [
+{
+ "claim_id": "hwa-lab-10.2.8-j2ca0056i-dwc-datasource-reproduction-0016",
+ "claim": "Reproduzida em laboratorio a mensagem J2CA0056I no HWA 10.2.8, componente DWC (Liberty dwcServer). A mensagem 'J2CA0056I: The Connection Manager received a fatal connection error from the Resource Adapter for resource jdbc/dwcdb. The exception is: state STATE_ACTIVE_INUSE org.postgresql.util.PSQLException: FATAL: terminating connection due to administrator command:org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.:java.io.EOFException' e emitida pela classe com.ibm.ejs.j2c.ConnectionEventListener quando a conexao TCP do pool JDBC e derrubada ABRUPTAMENTE enquanto esta EM USO (estado STATE_ACTIVE_INUSE; o equivalente em SQL Server e STATE_TRAN_WRAPPER_INUSE com SQLServerException: Connection reset). O log fica em <DWC_DATA_DIR>/stdlist/appserver/dwcServer/logs/messages.log. O datasource afetado e o 'jdbc/dwcdb' definido em <DWC_DATA_DIR>/usr/servers/dwcServer/configDropins/overrides/datasource.xml. Neste laboratorio o jdbc/dwcdb NAO possui validationTimeout e usa purgePolicy=EntirePool, maxPoolSize=300, minPoolSize=20, reapTime=180s, connectionTimeout=180s — enquanto os datasources de template mais novo do MESMO produto JA usam validationTimeout (engineServer jdbc/twsdb com validationTimeout=10s; dwcServer jdbc/feddb com validationTimeout=10s). A correcao recomendada e adicionar validationTimeout=\"5s\" ao dataSource e trocar purgePolicy de EntirePool para ValidateAllConnections (que fecha apenas as conexoes invalidas, em vez de descartar o pool inteiro), com restart do dwcServer.",
+ "result": "SUCCESS", "risk": "guided_action",
+ "platform": "Distributed; Linux x86_64; container tws-hwa; HWA 10.2.8; Liberty dwcServer + PostgreSQL 18",
+ "observed_at": "2026-09-11T11:58:00-03:00",
+ "test_procedure": "Induzido reset abrupto nas conexoes do DWC (pg_terminate_backend e SIGKILL nos backends do usuario postgresdwc) durante requisicoes concorrentes a https://localhost:9443/dwc. A mensagem J2CA0056I foi capturada no messages.log do dwcServer. Inspecionados os datasources de engineServer (jdbc/twsdb), dwcServer (jdbc/dwcdb e jdbc/feddb) para comparar parametros de pool. Aplicada a correcao proposta (validationTimeout=5s + purgePolicy=ValidateAllConnections) com restart do dwcServer; depois revertida para o estado original do vendor (backup preservado).",
+ "actual_output": "J2CA0056I reproduzida com estrutura identica ao cenario documentado (mesmo message id, mesmo resource jdbc/dwcdb, mesmo estado STATE_*_INUSE, mesma queda abrupta de conexao em uso). Contraste de configuracao confirmado: jdbc/dwcdb sem validationTimeout vs jdbc/twsdb e jdbc/feddb com validationTimeout=10s.",
+ "synthetic_questions": [
+   "O que significa a mensagem J2CA0056I no HWA e em qual log ela aparece?",
+   "Por que o erro J2CA0056I e emitido pelo ConnectionEventListener do Liberty?",
+   "O que significa o estado STATE_ACTIVE_INUSE na mensagem J2CA0056I?",
+   "Onde fica o datasource jdbc/dwcdb da DWC e quais parametros de pool ele usa?",
+   "Qual a diferenca entre purgePolicy EntirePool e ValidateAllConnections?",
+   "O datasource do engineServer ja possui validationTimeout configurado?"
+ ],
+ "context_prefix": "[Escopo: HCL Workload Automation 10.2.8 (Distributed) > Componente: DWC (Liberty dwcServer) / datasource jdbc/dwcdb > Interface: configDropins/overrides/datasource.xml e messages.log > Topico: troubleshooting > jdbc_pool [j2ca0056i]]"
+},
+{
+ "claim_id": "hwa-lab-10.2.8-j2ca0056i-fix-ab-inconclusive-0017",
+ "claim": "RESSALVA METODOLOGICA sobre o teste da correcao de pool para J2CA0056I: a correcao proposta (validationTimeout=\"5s\" no dataSource + purgePolicy=\"ValidateAllConnections\" no connectionManager, com restart do dwcServer) foi aplicada e o erro NAO reapareceu sob a mesma inducao — porem o teste A/B NAO foi conclusivo, porque apos reverter para a configuracao ORIGINAL o erro TAMBEM nao reapareceu. A reproducao de J2CA0056I e dependente de timing: o erro so ocorre quando a conexao TCP e derrubada exatamente ENQUANTO esta em uso (STATE_ACTIVE_INUSE), o que exige coincidencia entre a carga da aplicacao e a queda da conexao. Adicionalmente, o pool do jdbc/dwcdb nao se manteve populado durante os testes (0 conexoes ativas do usuario postgresdwc), dificultando a criacao das conexoes 'em uso' que seriam mortas. CONCLUSOES DEFENSAVEIS: (a) a correcao esta ALINHADA com a orientacao documentada e com os templates mais novos do proprio produto (jdbc/twsdb e jdbc/feddb ja usam validationTimeout=10s), sendo portanto uma mitigacao recomendada; (b) a eficacia dela NAO foi provada estatisticamente neste laboratorio. Para provar seria necessario um gatilho deterministico (ex.: iptables DROP na porta 5432, indisponivel neste container; ou restart do servico de banco) durante carga sustentada que garanta conexoes em uso.",
+ "result": "PARTIAL", "risk": "read_only",
+ "platform": "Distributed; Linux x86_64; container tws-hwa; HWA 10.2.8",
+ "observed_at": "2026-09-11T12:15:00-03:00",
+ "test_procedure": "Aplicada a correcao (validationTimeout=5s + ValidateAllConnections), restart do dwcServer, inducao identica -> 0 novas J2CA0056I. Revertida para a config original (backup), restart, inducao identica -> 0 novas J2CA0056I. Testada variante com SIGKILL dos backends durante carga concorrente (25 requisicoes simultaneas x 3 rodadas) -> 0 novas em ambos os cenarios. Verificada ausencia de conexoes ativas de postgresdwc durante os testes.",
+ "actual_output": "A/B inconclusivo: o erro nao reapareceu em nenhum dos dois cenarios apos o primeiro restart, indicando que a reproducao depende de timing/estado do pool e nao de um gatilho determinístico. Correcao mantida como recomendacao (alinhada a doc e aos templates do produto), nao como eficacia provada. Lab restaurado ao datasource original do vendor.",
+ "synthetic_questions": [
+   "A correcao de validationTimeout e ValidateAllConnections resolve o J2CA0056I?",
+   "Por que a reproducao de J2CA0056I depende de timing?",
+   "Quais gatilhos produzem J2CA0056I de forma deterministica?",
+   "Como provar que a correcao de pool elimina o J2CA0056I?",
+   "Por que o iptables seria necessario para simular firewall matando conexoes?"
+ ],
+ "context_prefix": "[Escopo: HCL Workload Automation 10.2.8 (Distributed) > Componente: DWC / pool JDBC > Interface: datasource.xml > Topico: troubleshooting > jdbc_pool [fix_validation_methodology]]"
+},
+]
+
+with open(out, "w", encoding="utf-8") as f:
+    for e in ev:
+        f.write(json.dumps(e, ensure_ascii=False) + "\n")
+print("OK")
