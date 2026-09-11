@@ -3247,3 +3247,8 @@
 {"question": "Como impedir que o SwitchPlan falhe quando existe um Dynamic Workload Broker?", "target_claim_id": "hwa-lab-10.2.8-switchplan-broker-stop-unsupported-rootcause-0012", "category": "Agendamento Avancado & Workflows"}
 {"question": "Quais sao as opcoes para tornar o SwitchPlan confiavel com o broker habilitado?", "target_claim_id": "hwa-lab-10.2.8-switchplan-broker-stop-unsupported-rootcause-0012", "category": "Agendamento Avancado & Workflows"}
 {"question": "O que significa AWSBCT041I Service 2008 durante a troca de plano?", "target_claim_id": "hwa-lab-10.2.8-switchplan-broker-stop-unsupported-rootcause-0012", "category": "Agendamento Avancado & Workflows"}
+{"question": "Quais sao as causas documentadas da mensagem AWSJPL017E no HWA?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "O que fazer quando o JnextPlan falha com AWSJPL017E?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Por que executar uma extensao de plano antes de a criacao completar gera AWSJPL017E?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual o remedio oficial para AWSJPL017E: planman unlock ou reset?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "A mensagem AWSJPL017E indica corrupcao do arquivo Symphony?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Operacao CLI (conman/composer/planman)"}
