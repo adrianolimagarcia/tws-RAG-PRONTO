@@ -3178,6 +3178,11 @@
 {"question": "Como recuperar o job stream FINAL em estado STUCK após erro AWSBHV082E no SwitchPlan sem rodar MakePlan na mão?", "target_claim_id": "hwa-lab-10.2.8-sfinal-awsbhv082e-recovery-0001", "category": "Outros"}
 {"question": "Por que o conman sj MDM#FINAL.@ volta vazio se o stream FINAL está na workstation MDMXA?", "target_claim_id": "hwa-lab-10.2.8-sfinal-awsbhv082e-recovery-0001", "category": "Outros"}
 {"question": "Qual o procedimento documentado para destravar a esteira FINALPOSTREPORTS quando o plano já foi estendido?", "target_claim_id": "hwa-lab-10.2.8-sfinal-awsbhv082e-recovery-0001", "category": "Outros"}
+{"question": "O que significa o exit code 137 em um container Docker do HWA?", "target_claim_id": "hwa-lab-10.2.8-container-sigkill-restart-recovery-0013", "category": "API REST v2 & Integracao"}
+{"question": "Os containers do laboratorio HWA voltam sozinhos apos um SIGKILL?", "target_claim_id": "hwa-lab-10.2.8-container-sigkill-restart-recovery-0013", "category": "API REST v2 & Integracao"}
+{"question": "Qual a relacao entre a queda abrupta dos containers e o plano de producao preso (AWSJPL017E)?", "target_claim_id": "hwa-lab-10.2.8-container-sigkill-restart-recovery-0013", "category": "API REST v2 & Integracao"}
+{"question": "Quais sao os limites de memoria configurados nos containers tws-hwa, tws-bmdm e tws-agent?", "target_claim_id": "hwa-lab-10.2.8-container-sigkill-restart-recovery-0013", "category": "API REST v2 & Integracao"}
+{"question": "O que fazer apos um restart nao planejado dos containers HWA antes de operar o plano?", "target_claim_id": "hwa-lab-10.2.8-container-sigkill-restart-recovery-0013", "category": "API REST v2 & Integracao"}
 {"question": "Qual a diferenca entre optman e o arquivo localopts no HWA?", "target_claim_id": "hwa-lab-10.2.8-optman-global-options-vs-localopts-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Onde fica o arquivo localopts no master domain manager e no backup master?", "target_claim_id": "hwa-lab-10.2.8-optman-global-options-vs-localopts-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "O que acontece se workstationMasterListInAutomaticFailover estiver vazio?", "target_claim_id": "hwa-lab-10.2.8-optman-global-options-vs-localopts-0001", "category": "Operacao CLI (conman/composer/planman)"}
