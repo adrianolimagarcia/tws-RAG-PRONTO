@@ -1,5 +1,8 @@
-import os, glob, json
+import os, glob, json, sys
 from collections import Counter
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from classify_taxonomy import classify as classify_claim  # noqa: E402
 
 base_dir = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
 evidence_dir = os.path.join(base_dir, "data", "evidence")
@@ -46,22 +49,8 @@ for fpath in evidence_files:
             prefix = item.get("context_prefix") or ""
             questions = item.get("synthetic_questions") or item.get("questions") or []
             
-            # Taxonomia
-            category = "Outros"
-            if "high_availability" in prefix or "failover" in prefix or "switchmgr" in prefix:
-                category = "Alta Disponibilidade & Failover"
-            elif "rest" in prefix.lower() or "integration" in prefix.lower() or "openapi" in prefix.lower():
-                category = "API REST v2 & Integracao"
-            elif "scheduling" in prefix.lower() or "needs" in prefix.lower() or "recovery" in prefix.lower() or "vartable" in prefix.lower() or "prompt" in prefix.lower():
-                category = "Agendamento Avancado & Workflows"
-            elif "architecture" in prefix.lower() or "fta" in prefix.lower() or "dynamic_agent" in prefix.lower() or "broker" in prefix.lower():
-                category = "Arquitetura & Topologia Mesh"
-            elif "operations" in prefix.lower() or "planman" in prefix.lower() or "conman" in prefix.lower():
-                category = "Operacao CLI (conman/composer/planman)"
-            elif "troubleshooting" in prefix.lower() or "error" in prefix.lower() or "aws" in prefix.lower():
-                category = "Troubleshooting & Mensagens de Erro"
-            elif "install" in prefix.lower() or "upgrade" in prefix.lower():
-                category = "Instalacao & Manutencao"
+            # Taxonomia (classificador externo, regras ordenadas — ver classify_taxonomy.py)
+            category = classify_claim(prefix, claim_text)
             
             taxonomy_counter[category] += 1
             
@@ -95,6 +84,11 @@ with open(eval_gt_file, "w", encoding="utf-8") as f:
         f.write(json.dumps(q_item, ensure_ascii=False) + "\n")
 
 # Relatorio Taxonomico
+# BUGFIX: taxonomy_counter era incrementado por LINHA LIDA, contando claim_ids duplicados
+# entre arquivos de evidencia e divergindo do master (que deduplica). Recontar a partir do
+# conjunto deduplicado garante que a distribuicao reflita exatamente o corpus publicado.
+taxonomy_counter = Counter(rec["category"] for rec in claims_by_id.values())
+
 taxonomy_report = {
     "total_unique_claims": len(claims_by_id),
     "total_synthetic_questions": len(all_questions),
