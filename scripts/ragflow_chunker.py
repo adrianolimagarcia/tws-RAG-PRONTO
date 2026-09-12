@@ -190,7 +190,7 @@ def parse_markdown_ragflow(filepath, min_chunk_len=80, max_chunk_len=1200):
 
         blocks = []
         if bilingual_synonyms:
-            unique_syns = list(set(bilingual_synonyms))[:6]
+            unique_syns = sorted(set(bilingual_synonyms))[:6]
             blocks.append("\n\n[Termos Técnicos & Sinônimos Operacionais]\n" + ", ".join(unique_syns))
 
         if q_list:
@@ -220,8 +220,8 @@ def parse_markdown_ragflow(filepath, min_chunk_len=80, max_chunk_len=1200):
             "path": ch["path"],
             "text": enriched_text,
             "metadata": {
-                "aws_codes": list(set(aws_codes)),
-                "commands": list(set(commands))
+                "aws_codes": sorted(set(aws_codes)),
+                "commands": sorted(set(commands))
             }
         })
 

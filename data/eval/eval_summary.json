@@ -1,10 +1,10 @@
 {
   "total": 70,
-  "hit_rate_at_1": 0.7857142857142857,
+  "hit_rate_at_1": 0.7714285714285715,
   "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8400793650793653,
+  "mrr": 0.8336050061050063,
   "details": [
     {
       "id": "eval-0001",
@@ -337,7 +337,7 @@
       "id": "eval-0021",
       "domain": "sincronizacao_planman",
       "question": "Qual comando do HWA ressincroniza o arquivo Symphony em memória com a base de dados relacional a quente?",
-      "rank": 24,
+      "rank": 26,
       "expected_claims": [
         "hwa-lab-10.2.8-planman-resync-hot-recovery-0001",
         "hwa-10.2.7-planman-resync-0051"
@@ -370,14 +370,14 @@
       "id": "eval-0023",
       "domain": "troubleshooting_conman",
       "question": "Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?",
-      "rank": 1,
+      "rank": 2,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0041",
         "hwa-msgcat-awsbeh029e",
+        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0041",
         "hwa-msgcat-awsbeh021e"
       ]
     },
@@ -385,15 +385,15 @@
       "id": "eval-0024",
       "domain": "topologia_pools",
       "question": "Como o HWA sinaliza no comando conman showjobs (sj) que um job agendado em um Dynamic Pool foi despachado para um agente dinâmico?",
-      "rank": 5,
+      "rank": 4,
       "expected_claims": [
         "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-10.2-distributed-conman-showjobs-0001",
-        "ragflow:upgrade-agente.md:0002",
-        "ragflow:upgrade-agente.md:0003"
+        "ragflow:upgrade-agente.md:0003",
+        "hwa-lab-10.2.8-dynamic-pool-load-balancing-0002"
       ]
     },
     {
