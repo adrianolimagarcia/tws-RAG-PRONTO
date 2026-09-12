@@ -19,10 +19,14 @@ if REPO_DIR not in sys.path:
     sys.path.insert(0, REPO_DIR)
 
 from scripts.ragflow_chunker import parse_markdown_ragflow
-BENCHMARK_FILE = os.path.join(REPO_DIR, "data", "eval", "golden_qa_benchmark.jsonl")
+BENCHMARK_FILE = os.environ.get(
+    "RAG_BENCHMARK_FILE",
+    os.path.join(REPO_DIR, "data", "eval", "golden_qa_benchmark.jsonl"))
 CLAIMS_FILE = os.path.join(REPO_DIR, "data", "evidence", "claims.jsonl")
 AWS_MSGS_FILE = os.path.join(REPO_DIR, "data", "evidence", "aws_messages_dictionary.jsonl")
 OPTMAN_FILE = os.path.join(REPO_DIR, "data", "evidence", "optman_global_options_catalog.jsonl")
+MSGCAT_FILE = os.path.join(REPO_DIR, "data", "evidence",
+                           "official-verification-2026-09-11-message-catalog-full.jsonl")
 LAB_FILES = sorted(glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl")))
 RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
 
@@ -183,7 +187,18 @@ def load_documents():
                 except Exception:
                     pass
 
-    # 5. Chunks Estruturados RAGFlow dos Runbooks Markdown (com Breadcrumbs e Tabelas Íntegras)
+    # 5. Catalogo de mensagens do produto (10.2.8) — texto canonico de TODOS os codigos
+    if os.path.exists(MSGCAT_FILE):
+        for line in open(MSGCAT_FILE):
+            if line.strip():
+                c = json.loads(line)
+                cid = c.get("claim_id", "")
+                if not cid:
+                    continue
+                text = f"{c.get('claim','')} {c.get('supporting_quote','')} {c.get('context_prefix','')}"
+                docs.append({"id": cid, "type": "message_catalog", "text": text, "tokens": tokenize(text)})
+
+    # 6. Chunks Estruturados RAGFlow dos Runbooks Markdown (com Breadcrumbs e Tabelas Íntegras)
     for rbf in glob.glob(os.path.join(RUNBOOKS_DIR, "*.md")):
         fname = os.path.basename(rbf)
         try:
