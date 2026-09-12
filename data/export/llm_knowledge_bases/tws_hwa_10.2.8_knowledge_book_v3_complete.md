@@ -45541,7 +45541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS044I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS050I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Remove the cause of the following error and then re-run Check Health Status: !1" Em portugues: "remove the causa of the seguinte erro and then re-run check health estado: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS050I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Remove the cause of the following error and then re-run Check Health Status: !1" Em portugues: "remove the causa of the seguinte erro and then re-run check health estado: !1". Temas: erro. Em outras palavras: Corrija a causa do erro indicado a seguir e depois execute novamente a verificação do estado de saúde dos nós..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS050I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Remove the cause following error and then re-run Check Health Status portugues remove causa seguinte erro`
@@ -45621,7 +45621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS053I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS054I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Check that all nodes between "!1" and "!2"are correctly linked. Run Check Health Status on the nodes that are not linked." Em portugues: "check that all nodes entre "!1" and "!2"are correctly linked. run check health estado on the nodes that are nao linked.". Temas: nao execucao entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS054I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Check that all nodes between "!1" and "!2"are correctly linked. Run Check Health Status on the nodes that are not linked." Em portugues: "check that all nodes entre "!1" and "!2"are correctly linked. run check health estado on the nodes that are nao linked.". Temas: nao execucao entre. Em outras palavras: Confirme que todos os nós entre aqueles informados estão devidamente interligados e rode a verificação de saúde nos nós que não estão conectados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS054I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Check that all nodes between and are correctly linked Run Health Status the not portugues`
@@ -45641,7 +45641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS054I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS055I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Verify that "Check Health Status" is supported on the HCL Workload Automation level of node "!1"." Em portugues: "verify that "check health estado" is supported on the hcl workload automation level of node "!1".". Temas: carga de trabalho suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS055I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Verify that "Check Health Status" is supported on the HCL Workload Automation level of node "!1"." Em portugues: "verify that "check health estado" is supported on the hcl workload automation level of node "!1".". Temas: carga de trabalho suportado. Em outras palavras: Valide se a verificação de estado de saúde é suportada pelo nível de versão do HCL Workload Automation presente no nó indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS055I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Verify that Check Health Status supported the level node portugues verify check health estado Temas`
@@ -45661,7 +45661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS055I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS060I (severidade: informational, familia AWSBCS - bcs) tem o texto: "If you cannot resolve the problem, search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "if you nao pode resolve the problema, search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: nao pode problema banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS060I (severidade: informational, familia AWSBCS - bcs) tem o texto: "If you cannot resolve the problem, search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "if you nao pode resolve the problema, search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: nao pode problema banco de dados. Em outras palavras: Se não conseguir resolver o problema, pesquise por uma solução na base de suporte da HCL no endereço da página de suporte do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS060I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto you cannot resolve the problem search Support database for solution https www.hcltech.com products-and-platforms support portugues nao`
@@ -45701,10 +45701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS061I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS062I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Check the SSL configuration of node "!1"." Em portugues: "check the ssl configuracao of node "!1".".
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS062I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Check the SSL configuration of node "!1"." Em portugues: "check the ssl configuracao of node "!1".". Em outras palavras: Confira a configuração de SSL do nó indicado para garantir que o certificado e os parâmetros de segurança estejam corretos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCS062I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Check the SSL configuration node portugues check ssl configuracao significa diagnosticar`
+> `AWSBCS062I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Check the SSL configuration node portugues check ssl configuracao outras palavras Confira indicado garantir certificado estejam corretos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCS062I no HCL Workload Automation 10.2.8?
@@ -45721,10 +45721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS062I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS063I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Check the SSL configuration of nodes "!1" and "!2"." Em portugues: "check the ssl configuracao of nodes "!1" and "!2".".
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS063I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Check the SSL configuration of nodes "!1" and "!2"." Em portugues: "check the ssl configuracao of nodes "!1" and "!2".". Em outras palavras: Confira a configuração de SSL dos dois nós indicados para assegurar que a comunicação segura entre eles está corretamente definida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCS063I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Check the SSL configuration nodes and portugues check ssl configuracao significa`
+> `AWSBCS063I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Check the SSL configuration nodes and portugues check ssl configuracao outras palavras Confira dois indicados assegurar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCS063I no HCL Workload Automation 10.2.8?
@@ -45741,7 +45741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS063I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS071I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Verify that node "!1" is linked; if it is not, run Check Health Status on that node first." Em portugues: "verify that node "!1" is linked; if it is nao, run check health estado on that node first.". Temas: nao execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS071I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Verify that node "!1" is linked; if it is not, run Check Health Status on that node first." Em portugues: "verify that node "!1" is linked; if it is nao, run check health estado on that node first.". Temas: nao execucao. Em outras palavras: Verifique se o nó informado está interligado e, se não estiver, execute primeiro a verificação de saúde nesse nó..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS071I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Verify that node linked not run Check Health Status first portugues verify nao check`
@@ -45761,10 +45761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS071I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS072I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Run a link command on node "!1" from conman or the TDWC. If the problem persists, check the logs and traces of nodes "!1" and "!2"." Em portugues: "run a link comando on node "!1" from conman or the tdwc. if the problema persists, check the logs and traces of nodes "!1" and "!2".". Temas: comando execucao problema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS072I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Run a link command on node "!1" from conman or the TDWC. If the problem persists, check the logs and traces of nodes "!1" and "!2"." Em portugues: "run a link comando on node "!1" from conman or the tdwc. if the problema persists, check the logs and traces of nodes "!1" and "!2".". Temas: comando execucao problema. Em outras palavras: Emita um comando de ligação no nó indicado pelo conman ou pela TDWC; se o problema continuar, analise os logs e traces dos dois nós citados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman or AWSBCS072I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Run link command node from conman the TDWC problem persists check logs and traces nodes portugues run`
+> `conman or conman ou AWSBCS072I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Run link command node from conman the TDWC problem persists check logs and traces nodes portugues run`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCS072I no HCL Workload Automation 10.2.8?
@@ -45821,7 +45821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS074I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS075I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Use the evtsize utility to increase the maximum size of message files." Em portugues: "use the evtsize utility to increase the maximo tamanho of mensagem arquivos.". Temas: arquivos mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS075I (severidade: informational, familia AWSBCS - bcs) tem o texto: "Use the evtsize utility to increase the maximum size of message files." Em portugues: "use the evtsize utility to increase the maximo tamanho of mensagem arquivos.". Temas: arquivos mensagem. Em outras palavras: Use o utilitário evtsize para ampliar o tamanho máximo dos arquivos de mensagens..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS075I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto Use the evtsize utility increase maximum size message files portugues use maximo tamanho`
@@ -45841,7 +45841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCS075I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCS076I (severidade: informational, familia AWSBCS - bcs) tem o texto: "If a workstation is planned to be offline for a long period, consider setting it to IGNORE to avoid that the pobox message file reaches its maximum size." Em portugues: "if a estacao de trabalho is planned to be offline for a long period, consider configuracao it to ignore to avoid that the pobox mensagem arquivo reaches its maximo tamanho.". Temas: arquivo estacao de trabalho mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCS076I (severidade: informational, familia AWSBCS - bcs) tem o texto: "If a workstation is planned to be offline for a long period, consider setting it to IGNORE to avoid that the pobox message file reaches its maximum size." Em portugues: "if a estacao de trabalho is planned to be offline for a long period, consider configuracao it to ignore to avoid that the pobox mensagem arquivo reaches its maximo tamanho.". Temas: arquivo estacao de trabalho mensagem. Em outras palavras: Se uma estação ficar offline por muito tempo, considere colocá-la em IGNORE para o arquivo de mensagens pobox não atingir o tamanho máximo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCS076I 10.2.8 mensagem severidade informational familia AWSBCS bcs tem texto workstation planned offline for long period consider setting IGNORE avoid that the pobox message file reaches its maximum size portugues`
@@ -53701,7 +53701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCW058I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX001E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. Monman cannot read a message in a message file. The following gives more details of the error: "!1"." Em portugues: "an interno erro has ocorreu. monman nao pode ler a mensagem in a mensagem arquivo. the seguinte gives mais details of the erro: "!1".". Temas: erro arquivo ocorreu nao pode interno mensagem ler leitura. Explicacao oficial: Monman was unable to read a message from its local mailbox: Monbox.msg.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX001E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. Monman cannot read a message in a message file. The following gives more details of the error: "!1"." Em portugues: "an interno erro has ocorreu. monman nao pode ler a mensagem in a mensagem arquivo. the seguinte gives mais details of the erro: "!1".". Temas: erro arquivo ocorreu nao pode interno mensagem ler leitura. Em outras palavras: Erro interno: o Monman não consegue ler uma mensagem dentro de um arquivo de mensagens e os detalhes são apresentados na mensagem.. Explicacao oficial: Monman was unable to read a message from its local mailbox: Monbox.msg.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX001E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto internal has occurred Monman cannot read message file The following gives more details the portugues interno erro`
@@ -53721,7 +53721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX002E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. Monman could not set the termination signal handling routines. The following gives more details of the error: "!1"." Em portugues: "an interno erro has ocorreu. monman conseguiu nao set the termination signal handling routines. the seguinte gives mais details of the erro: "!1".". Temas: erro nao ocorreu interno. Explicacao oficial: As message.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX002E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. Monman could not set the termination signal handling routines. The following gives more details of the error: "!1"." Em portugues: "an interno erro has ocorreu. monman conseguiu nao set the termination signal handling routines. the seguinte gives mais details of the erro: "!1".". Temas: erro nao ocorreu interno. Em outras palavras: Erro interno: o Monman falhou ao instalar as rotinas de tratamento do sinal de término, com mais detalhes exibidos na mensagem.. Explicacao oficial: As message.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX002E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto internal has occurred Monman could not set the termination signal handling routines The following gives more details`
@@ -53741,10 +53741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX003I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Starting from host !1, job number !2" Em portugues: "starting from host servidor !1, job numero !2". Temas: job numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX003I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Starting from host !1, job number !2" Em portugues: "starting from host servidor !1, job numero !2". Temas: job numero. Em outras palavras: Informa que está sendo iniciado o processamento do job correspondente a partir da estação de origem indicada na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX003I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Starting from host job number portugues starting servidor numero Temas significa`
+> `AWSBCX003I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Starting from host job number portugues starting servidor numero Temas outras palavras Informa sendo iniciado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX003I no HCL Workload Automation 10.2.8?
@@ -53761,10 +53761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX003I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX004I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Starting locally, as !1, server number is !2, job number is !3" Em portugues: "starting locally, as !1, servidor numero is !2, job numero is !3". Temas: job numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX004I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Starting locally, as !1, server number is !2, job number is !3" Em portugues: "starting locally, as !1, servidor numero is !2, job numero is !3". Temas: job numero. Em outras palavras: Iniciando localmente o job no servidor indicado com a identificação de número de servidor e de job informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX004I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Starting locally server number job portugues starting servidor numero Temas significa`
+> `AWSBCX004I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Starting locally server number job portugues starting servidor numero Temas outras palavras Iniciando localmente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX004I no HCL Workload Automation 10.2.8?
@@ -53781,7 +53781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX004I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX005E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. Monman encountered the following error when attempting to open the Symphony file: "!1"." Em portugues: "an interno erro has ocorreu. monman encountered the seguinte erro when attempting to open the symphony arquivo: "!1".". Temas: erro arquivo ocorreu interno symphony. Explicacao oficial: error_message contains the operating system error message.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX005E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. Monman encountered the following error when attempting to open the Symphony file: "!1"." Em portugues: "an interno erro has ocorreu. monman encountered the seguinte erro when attempting to open the symphony arquivo: "!1".". Temas: erro arquivo ocorreu interno symphony. Em outras palavras: Erro interno: o Monman encontrou uma falha ao tentar abrir o arquivo Symphony, conforme os detalhes da mensagem.. Explicacao oficial: error_message contains the operating system error message.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX005E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto internal has occurred Monman encountered the following when attempting open Symphony file portugues interno erro ocorreu`
@@ -53801,10 +53801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX006I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Monman (pid=!1 pgid=!2) was started by netman (pid=!3 pgid=!4)." Em portugues: "monman (pid=!1 pgid=!2) was iniciado by netman (pid=!3 pgid=!4).". Temas: iniciado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX006I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Monman (pid=!1 pgid=!2) was started by netman (pid=!3 pgid=!4)." Em portugues: "monman (pid=!1 pgid=!2) was iniciado by netman (pid=!3 pgid=!4).". Temas: iniciado. Em outras palavras: O Monman foi iniciado pelo netman, ambos com os identificadores de processo e de grupo informados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX006I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Monman pid pgid was started netman portugues monman iniciado Temas significa`
+> `AWSBCX006I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Monman pid pgid was started netman portugues monman iniciado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX006I no HCL Workload Automation 10.2.8?
@@ -53821,7 +53821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX007E (severidade: error, familia AWSBCX - bcx) tem o texto: "A message file cannot be opened; the operating system gives the following error: !1" Em portugues: "a mensagem arquivo nao pode be opened; the operating sistema gives the seguinte erro: !1". Temas: erro arquivo nao pode mensagem sistema. Explicacao oficial: Monman is unable to open one of its message file: Monbox.msg or Moncmd.msg.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX007E (severidade: error, familia AWSBCX - bcx) tem o texto: "A message file cannot be opened; the operating system gives the following error: !1" Em portugues: "a mensagem arquivo nao pode be opened; the operating sistema gives the seguinte erro: !1". Temas: erro arquivo nao pode mensagem sistema. Em outras palavras: Não foi possível abrir um arquivo de mensagens, e o sistema operacional retornou o erro citado na mensagem.. Explicacao oficial: Monman is unable to open one of its message file: Monbox.msg or Moncmd.msg.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX007E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto message file cannot opened the operating system gives following portugues arquivo nao sistema`
@@ -53841,7 +53841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX008I (severidade: informational, familia AWSBCX - bcx) tem o texto: "The total cpu time used by MONMAN was !1 seconds" Em portugues: "the total processador tempo used by monman was !1 seconds". Temas: tempo hora processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX008I (severidade: informational, familia AWSBCX - bcx) tem o texto: "The total cpu time used by MONMAN was !1 seconds" Em portugues: "the total processador tempo used by monman was !1 seconds". Temas: tempo hora processador cpu. Em outras palavras: Informa o total de tempo de CPU consumido pelo Monman em segundos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX008I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto The total cpu time used MONMAN was seconds portugues the processador tempo monman Temas hora`
@@ -53861,10 +53861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX008I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX009I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Workstation !1, message: !2" Em portugues: "estacao de trabalho !1, mensagem: !2". Temas: estacao de trabalho mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX009I (severidade: informational, familia AWSBCX - bcx) tem o texto: "Workstation !1, message: !2" Em portugues: "estacao de trabalho !1, mensagem: !2". Temas: estacao de trabalho mensagem. Em outras palavras: Registra a mensagem recebida para a estação de trabalho indicada, exibindo o conteúdo retornado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX009I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Workstation message portugues estacao trabalho Temas significa diagnosticar`
+> `AWSBCX009I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Workstation message portugues estacao trabalho Temas outras palavras Registra recebida indicada exibindo retornado pelo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX009I no HCL Workload Automation 10.2.8?
@@ -53881,10 +53881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX009I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX010I (severidade: informational, familia AWSBCX - bcx) tem o texto: "!1/Operator command: !2" Em portugues: "!1/operator comando: !2". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX010I (severidade: informational, familia AWSBCX - bcx) tem o texto: "!1/Operator command: !2" Em portugues: "!1/operator comando: !2". Temas: comando. Em outras palavras: Registra um comando de operador executado no ambiente indicado, apresentando o comando que foi enviado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX010I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Operator command portugues operator comando Temas significa diagnosticar`
+> `AWSBCX010I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto Operator command portugues operator comando Temas outras palavras Registra operador executado ambiente indicado apresentando foi enviado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX010I no HCL Workload Automation 10.2.8?
@@ -53901,7 +53901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX010I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX011E (severidade: error, familia AWSBCX - bcx) tem o texto: "The Event Integration Facility configuration file (!1) cannot be written; the operating system gives the following error: !2" Em portugues: "the event integration facility configuracao arquivo (!1) nao pode be written; the operating sistema gives the seguinte erro: !2". Temas: erro arquivo nao pode sistema. Explicacao oficial: Monman is unable to write the configuration file for the Event Integration Facility, the component used to send the events.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX011E (severidade: error, familia AWSBCX - bcx) tem o texto: "The Event Integration Facility configuration file (!1) cannot be written; the operating system gives the following error: !2" Em portugues: "the event integration facility configuracao arquivo (!1) nao pode be written; the operating sistema gives the seguinte erro: !2". Temas: erro arquivo nao pode sistema. Em outras palavras: O arquivo de configuração da integração de eventos não pôde ser gravado, com o erro de sistema apontado na mensagem.. Explicacao oficial: Monman is unable to write the configuration file for the Event Integration Facility, the component used to send the events.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX011E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto The Event Integration Facility configuration file cannot written the operating system gives following portugues event integration facility`
@@ -53921,7 +53921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX012E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. The Event Integration Facility initialization has failed." Em portugues: "an interno erro has ocorreu. the event integration facility initialization has falhou.". Temas: erro ocorreu interno falhou. Explicacao oficial: Monman is unable to initialize the Event Integration Facility, the component used to send the events.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX012E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. The Event Integration Facility initialization has failed." Em portugues: "an interno erro has ocorreu. the event integration facility initialization has falhou.". Temas: erro ocorreu interno falhou. Em outras palavras: Erro interno: falhou a inicialização do recurso de integração de eventos, então verifique a configuração do ambiente.. Explicacao oficial: Monman is unable to initialize the Event Integration Facility, the component used to send the events.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX012E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto internal has occurred The Event Integration Facility initialization failed portugues interno erro ocorreu the event integration facility`
@@ -53941,7 +53941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX013E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. A parsing error has occurred reading the following event "!1"." Em portugues: "an interno erro has ocorreu. a parsing erro has ocorreu reading the seguinte event "!1".". Temas: erro ocorreu interno. Explicacao oficial: Monman is unable to parse the event, it will be discarded and not sent to the event processor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX013E (severidade: error, familia AWSBCX - bcx) tem o texto: "An internal error has occurred. A parsing error has occurred reading the following event "!1"." Em portugues: "an interno erro has ocorreu. a parsing erro has ocorreu reading the seguinte event "!1".". Temas: erro ocorreu interno. Em outras palavras: Erro interno: ocorreu uma falha de interpretação ao ler o evento informado.. Explicacao oficial: Monman is unable to parse the event, it will be discarded and not sent to the event processor.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX013E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto internal has occurred parsing reading the following event portugues interno erro ocorreu`
@@ -53961,7 +53961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX015E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred opening the temporary file "!1" for writing." Em portugues: "an erro has ocorreu opening the temporary arquivo "!1" for writing.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX015E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred opening the temporary file "!1" for writing." Em portugues: "an erro has ocorreu opening the temporary arquivo "!1" for writing.". Temas: erro arquivo ocorreu. Em outras palavras: Não foi possível abrir o arquivo temporário informado para escrita, o que impede a gravação dos dados temporários..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX015E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred opening the temporary file for writing portugues erro ocorreu arquivo Temas`
@@ -53981,7 +53981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX016E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred opening the file "!1" for reading." Em portugues: "an erro has ocorreu opening the arquivo "!1" for reading.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX016E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred opening the file "!1" for reading." Em portugues: "an erro has ocorreu opening the arquivo "!1" for reading.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu um erro ao abrir o arquivo indicado para leitura, impedindo o acesso ao conteúdo solicitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX016E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred opening the file for reading portugues erro ocorreu arquivo Temas`
@@ -54001,7 +54001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX017E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred opening the file "!1" for writing." Em portugues: "an erro has ocorreu opening the arquivo "!1" for writing.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX017E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred opening the file "!1" for writing." Em portugues: "an erro has ocorreu opening the arquivo "!1" for writing.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu um erro ao abrir o arquivo indicado para gravação, impedindo a atualização do conteúdo do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX017E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred opening the file for writing portugues erro ocorreu arquivo Temas`
@@ -54021,10 +54021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX018E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred writing the file "!1"." Em portugues: "an erro has ocorreu writing the arquivo "!1".". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX018E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred writing the file "!1"." Em portugues: "an erro has ocorreu writing the arquivo "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu um erro ao gravar o arquivo indicado, então o conteúdo não pôde ser salvo corretamente no destino..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX018E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred writing the file portugues erro ocorreu arquivo Temas significa`
+> `AWSBCX018E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred writing the file portugues erro ocorreu arquivo Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX018E no HCL Workload Automation 10.2.8?
@@ -54041,7 +54041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX019E (severidade: error, familia AWSBCX - bcx) tem o texto: "The zip file "!1" was built incorrectly. The Unzip process is stopped with an error." Em portugues: "the zip arquivo "!1" was built incorrectly. the unzip process is parado with an erro.". Temas: erro arquivo parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX019E (severidade: error, familia AWSBCX - bcx) tem o texto: "The zip file "!1" was built incorrectly. The Unzip process is stopped with an error." Em portugues: "the zip arquivo "!1" was built incorrectly. the unzip process is parado with an erro.". Temas: erro arquivo parado. Em outras palavras: O arquivo compactado foi gerado incorretamente e o processo de descompactação foi interrompido com erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX019E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto The zip file was built incorrectly Unzip process stopped with portugues the arquivo`
@@ -54061,7 +54061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX020E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred extracting the file "!1". The Unzip process is stopped with an error." Em portugues: "an erro has ocorreu extracting the arquivo "!1". the unzip process is parado with an erro.". Temas: erro arquivo ocorreu parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX020E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred extracting the file "!1". The Unzip process is stopped with an error." Em portugues: "an erro has ocorreu extracting the arquivo "!1". the unzip process is parado with an erro.". Temas: erro arquivo ocorreu parado. Em outras palavras: Ocorreu um erro ao extrair o arquivo indicado e a descompactação foi interrompida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX020E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred extracting the file The Unzip process stopped with portugues erro ocorreu arquivo`
@@ -54081,7 +54081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX021E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred before completing the unzip process." Em portugues: "an erro has ocorreu antes completing the unzip process.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX021E (severidade: error, familia AWSBCX - bcx) tem o texto: "An error has occurred before completing the unzip process." Em portugues: "an erro has ocorreu antes completing the unzip process.". Temas: erro ocorreu. Em outras palavras: Ocorreu um erro antes de concluir o processo de descompactação, então o arquivo não foi totalmente extraído..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX021E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto has occurred before completing the unzip process portugues erro ocorreu antes Temas`
@@ -54101,7 +54101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX022E (severidade: error, familia AWSBCX - bcx) tem o texto: "Monman encountered an error when attempting to open the Mailbox.msg file. The following gives more details of the error: !1" Em portugues: "monman encountered an erro when attempting to open the mailbox.msg arquivo. the seguinte gives mais details of the erro: !1". Temas: erro arquivo. Explicacao oficial: Monman is unable to open the Mailbox.msg file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX022E (severidade: error, familia AWSBCX - bcx) tem o texto: "Monman encountered an error when attempting to open the Mailbox.msg file. The following gives more details of the error: !1" Em portugues: "monman encountered an erro when attempting to open the mailbox.msg arquivo. the seguinte gives mais details of the erro: !1". Temas: erro arquivo. Em outras palavras: O Monman encontrou uma falha ao abrir o arquivo Mailbox.msg, e os detalhes do erro são exibidos.. Explicacao oficial: Monman is unable to open the Mailbox.msg file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX022E 10.2.8 mensagem severidade error familia AWSBCX bcx tem texto Monman encountered when attempting open the Mailbox.msg file The following gives more details portugues monman erro`
@@ -54121,10 +54121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX023W (severidade: warning, familia AWSBCX - bcx) tem o texto: "The Event Driven Workload Automation feature is disabled, Monman stops." Em portugues: "the event driven workload automation feature is desabilitado, monman stops.". Temas: carga de trabalho desabilitado. Explicacao oficial: The Event Driven Workload Automation feature has been disabled by optman, which set the enEventDrivenWorkloadAutomation option to NO.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX023W (severidade: warning, familia AWSBCX - bcx) tem o texto: "The Event Driven Workload Automation feature is disabled, Monman stops." Em portugues: "the event driven workload automation feature is desabilitado, monman stops.". Temas: carga de trabalho desabilitado. Em outras palavras: O recurso de automação de carga acionada por evento está desativado, então o Monman é encerrado.. Explicacao oficial: The Event Driven Workload Automation feature has been disabled by optman, which set the enEventDrivenWorkloadAutomation option to NO.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBCX023W opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade warning familia AWSBCX bcx tem texto The Event Driven feature disabled Monman stops portugues the event driven desabilitado monman Temas carga trabalho Explicacao`
+> `AWSBCX023W opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade warning familia AWSBCX bcx tem texto The Event Driven feature disabled Monman stops portugues the event driven desabilitado monman Temas carga trabalho outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBCX023W no HCL Workload Automation 10.2.8?
@@ -54141,7 +54141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX023W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX024W (severidade: warning, familia AWSBCX - bcx) tem o texto: "The Agent is not able to send the Event Driven Workload Automation events to the Event Processor." Em portugues: "the agente is nao able to send the event driven workload automation events to the event processor.". Temas: nao carga de trabalho agente. Explicacao oficial: Monman and/or the SSM Agent are not able to connect to the Event Processor to send the events.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX024W (severidade: warning, familia AWSBCX - bcx) tem o texto: "The Agent is not able to send the Event Driven Workload Automation events to the Event Processor." Em portugues: "the agente is nao able to send the event driven workload automation events to the event processor.". Temas: nao carga de trabalho agente. Em outras palavras: O agente não consegue enviar os eventos de automação por evento para o processador de eventos.. Explicacao oficial: Monman and/or the SSM Agent are not able to connect to the Event Processor to send the events.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX024W 10.2.8 mensagem severidade warning familia AWSBCX bcx tem texto The Agent not able send the Event Driven events Processor portugues agente nao event`
@@ -54161,7 +54161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBCX024W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBCX025I (severidade: informational, familia AWSBCX - bcx) tem o texto: "The Agent is now able to to send the Event Driven Workload Automation events to the Event Processor." Em portugues: "the agente is now able to to send the event driven workload automation events to the event processor.". Temas: carga de trabalho agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBCX025I (severidade: informational, familia AWSBCX - bcx) tem o texto: "The Agent is now able to to send the Event Driven Workload Automation events to the Event Processor." Em portugues: "the agente is now able to to send the event driven workload automation events to the event processor.". Temas: carga de trabalho agente. Em outras palavras: O agente voltou a conseguir enviar os eventos de automação por evento para o processador de eventos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBCX025I 10.2.8 mensagem severidade informational familia AWSBCX bcx tem texto The Agent now able send the Event Driven events Processor portugues agente event`
@@ -57201,10 +57201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDC503E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDD001E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents error allocating space for !1: !2" Em portugues: "bmevents erro allocating espaco for !1: !2". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDD001E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents error allocating space for !1: !2" Em portugues: "bmevents erro allocating espaco for !1: !2". Temas: erro. Em outras palavras: Erro do BmEvents ao reservar espaço de memória para o elemento indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDD001E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents allocating space for portugues bmevents erro espaco Temas significa`
+> `AWSBDD001E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents allocating space for portugues bmevents erro espaco Temas outras palavras Erro reservar elemento indicado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDD001E no HCL Workload Automation 10.2.8?
@@ -57221,10 +57221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDD001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDD002E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents option !1 is not supported." Em portugues: "bmevents opcao !1 is nao supported.". Temas: nao opcao suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDD002E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents option !1 is not supported." Em portugues: "bmevents opcao !1 is nao supported.". Temas: nao opcao suportado. Em outras palavras: A opção do BmEvents informada não é suportada pela versão em uso, então ela deve ser ajustada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDD002E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents option not supported portugues bmevents opcao nao Temas suportado significa`
+> `AWSBDD002E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents option not supported portugues bmevents opcao nao Temas suportado outras palavras informada suportada pela uso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDD002E no HCL Workload Automation 10.2.8?
@@ -57241,10 +57241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDD002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDD003E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents error opening !1: !2" Em portugues: "bmevents erro opening !1: !2". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDD003E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents error opening !1: !2" Em portugues: "bmevents erro opening !1: !2". Temas: erro. Em outras palavras: Erro do BmEvents ao abrir o recurso informado, impossibilitando o acesso ao elemento necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDD003E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents opening portugues bmevents erro Temas significa diagnosticar`
+> `AWSBDD003E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents opening portugues bmevents erro Temas outras palavras Erro abrir recurso informado impossibilitando acesso elemento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDD003E no HCL Workload Automation 10.2.8?
@@ -57261,10 +57261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDD003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDD004E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents error writing !1: !2" Em portugues: "bmevents erro writing !1: !2". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDD004E (severidade: error, familia AWSBDD - bdd) tem o texto: "BmEvents error writing !1: !2" Em portugues: "bmevents erro writing !1: !2". Temas: erro. Em outras palavras: Erro do BmEvents ao gravar o recurso informado, impedindo a escrita dos dados no destino..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDD004E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents writing portugues bmevents erro Temas significa diagnosticar`
+> `AWSBDD004E 10.2.8 mensagem severidade error familia AWSBDD bdd tem texto BmEvents writing portugues bmevents erro Temas outras palavras Erro gravar recurso informado impedindo escrita dados destino`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDD004E no HCL Workload Automation 10.2.8?
@@ -57281,10 +57281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDD004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDD101I (severidade: informational, familia AWSBDD - bdd) tem o texto: "BmEvents will write to !1 type !2" Em portugues: "bmevents will escrever to !1 tipo !2". Temas: tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDD101I (severidade: informational, familia AWSBDD - bdd) tem o texto: "BmEvents will write to !1 type !2" Em portugues: "bmevents will escrever to !1 tipo !2". Temas: tipo. Em outras palavras: Indica o destino e o tipo em que o BmEvents fará a gravação das mensagens..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDD101I 10.2.8 mensagem severidade informational familia AWSBDD bdd tem texto BmEvents will write type portugues bmevents escrever tipo Temas significa diagnosticar`
+> `AWSBDD101I 10.2.8 mensagem severidade informational familia AWSBDD bdd tem texto BmEvents will write type portugues bmevents escrever tipo Temas outras palavras Indica destino mensagens significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDD101I no HCL Workload Automation 10.2.8?
@@ -57301,10 +57301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDD101I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE001E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to open a connection to client: !1" Em portugues: "incapaz to open a conexao to cliente: !1". Temas: nao conseguiu conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE001E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to open a connection to client: !1" Em portugues: "incapaz to open a conexao to cliente: !1". Temas: nao conseguiu conexao. Em outras palavras: Não foi possível estabelecer uma conexão com o cliente informado, então verifique a comunicação e o endereço..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE001E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable open connection client portugues incapaz conexao cliente Temas nao conseguiu significa`
+> `AWSBDE001E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable open connection client portugues incapaz conexao cliente Temas nao conseguiu outras palavras foi estabelecer informado verifique`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE001E no HCL Workload Automation 10.2.8?
@@ -57321,10 +57321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE002E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to create the stdlist" Em portugues: "incapaz to criar the stdlist". Temas: nao conseguiu criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE002E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to create the stdlist" Em portugues: "incapaz to criar the stdlist". Temas: nao conseguiu criar. Em outras palavras: Não foi possível criar a lista padrão de saída de mensagens, então verifique as permissões do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE002E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable create the stdlist portugues incapaz criar Temas nao conseguiu significa`
+> `AWSBDE002E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable create the stdlist portugues incapaz criar Temas nao conseguiu outras palavras foi lista mensagens verifique`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE002E no HCL Workload Automation 10.2.8?
@@ -57341,7 +57341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE004E (severidade: error, familia AWSBDE - bde) tem o texto: "A non-valid value for the timeout "!1" has been supplied." Em portugues: "a non-valido valor for the tempo esgotado "!1" has estado informado.". Temas: informado valor tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE004E (severidade: error, familia AWSBDE - bde) tem o texto: "A non-valid value for the timeout "!1" has been supplied." Em portugues: "a non-valido valor for the tempo esgotado "!1" has estado informado.". Temas: informado valor tempo esgotado. Em outras palavras: Foi informado um valor inválido para o parâmetro de tempo limite, então corrija o valor e tente novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDE004E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto non-valid value for the timeout has been supplied portugues non-valido valor tempo esgotado estado informado Temas`
@@ -57361,7 +57361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE005E (severidade: error, familia AWSBDE - bde) tem o texto: "The "chkstat" command has not been supplied with the correct number of parameters." Em portugues: "the "chkstat" comando has nao estado informado with the correct numero of parametros.". Temas: nao comando informado numero parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE005E (severidade: error, familia AWSBDE - bde) tem o texto: "The "chkstat" command has not been supplied with the correct number of parameters." Em portugues: "the "chkstat" comando has nao estado informado with the correct numero of parametros.". Temas: nao comando informado numero parametros. Em outras palavras: O comando de verificação de status foi executado sem a quantidade correta de parâmetros..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDE005E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto The chkstat command has not been supplied with the correct number parameters portugues comando nao estado informado`
@@ -57381,10 +57381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE006E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to send a response record. The error is: !1." Em portugues: "incapaz to send a resposta registro. the erro is: !1.". Temas: erro nao conseguiu registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE006E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to send a response record. The error is: !1." Em portugues: "incapaz to send a resposta registro. the erro is: !1.". Temas: erro nao conseguiu registro. Em outras palavras: Não foi possível enviar um registro de resposta, conforme o erro apresentado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE006E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable send response record The portugues incapaz resposta registro the erro Temas nao conseguiu significa`
+> `AWSBDE006E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable send response record The portugues incapaz resposta registro the erro Temas nao conseguiu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE006E no HCL Workload Automation 10.2.8?
@@ -57401,10 +57401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE007E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to receive a request record: !1" Em portugues: "incapaz to receive a requisicao registro: !1". Temas: nao conseguiu registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE007E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to receive a request record: !1" Em portugues: "incapaz to receive a requisicao registro: !1". Temas: nao conseguiu registro. Em outras palavras: Não foi possível receber um registro de solicitação, conforme o erro apresentado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE007E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable receive request record portugues incapaz requisicao registro Temas nao conseguiu significa`
+> `AWSBDE007E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable receive request record portugues incapaz requisicao registro Temas nao conseguiu outras palavras foi receber conforme erro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE007E no HCL Workload Automation 10.2.8?
@@ -57421,10 +57421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE008E (severidade: error, familia AWSBDE - bde) tem o texto: "Could not allocate storage for comarea" Em portugues: "conseguiu nao allocate storage for comarea". Temas: nao area de comunicacao compartilhada.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE008E (severidade: error, familia AWSBDE - bde) tem o texto: "Could not allocate storage for comarea" Em portugues: "conseguiu nao allocate storage for comarea". Temas: nao area de comunicacao compartilhada. Em outras palavras: Não foi possível alocar memória para a área de comunicação compartilhada, indicando falta de recursos de sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE008E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Could not allocate storage for comarea portugues conseguiu nao Temas area comunicacao compartilhada significa`
+> `AWSBDE008E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Could not allocate storage for comarea portugues conseguiu nao Temas area comunicacao compartilhada outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE008E no HCL Workload Automation 10.2.8?
@@ -57441,10 +57441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE009I (severidade: informational, familia AWSBDE - bde) tem o texto: "Started by !1/!2 from !3 <cpu-type> !4" Em portugues: "iniciado by !1/!2 from !3 <processador-tipo> !4". Temas: iniciado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE009I (severidade: informational, familia AWSBDE - bde) tem o texto: "Started by !1/!2 from !3 <cpu-type> !4" Em portugues: "iniciado by !1/!2 from !3 <processador-tipo> !4". Temas: iniciado. Em outras palavras: Informa a origem, o usuário e a arquitetura da estação onde o processo foi iniciado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE009I 10.2.8 mensagem severidade informational familia AWSBDE bde tem texto Started from cpu-type portugues iniciado processador-tipo Temas significa diagnosticar`
+> `AWSBDE009I 10.2.8 mensagem severidade informational familia AWSBDE bde tem texto Started from cpu-type portugues iniciado processador-tipo Temas outras palavras Informa origem arquitetura onde processo foi significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE009I no HCL Workload Automation 10.2.8?
@@ -57461,10 +57461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE009I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDE011E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to close the Symphony file: !1" Em portugues: "incapaz to close the symphony arquivo: !1". Temas: arquivo nao conseguiu symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDE011E (severidade: error, familia AWSBDE - bde) tem o texto: "Unable to close the Symphony file: !1" Em portugues: "incapaz to close the symphony arquivo: !1". Temas: arquivo nao conseguiu symphony. Em outras palavras: Não foi possível fechar o arquivo Symphony, conforme o erro informado, então verifique o estado do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDE011E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable close the Symphony file portugues incapaz symphony arquivo Temas nao conseguiu significa`
+> `AWSBDE011E 10.2.8 mensagem severidade error familia AWSBDE bde tem texto Unable close the Symphony file portugues incapaz symphony arquivo Temas nao conseguiu outras palavras foi fechar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDE011E no HCL Workload Automation 10.2.8?
@@ -57481,10 +57481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDE011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF001E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unable to open a connection to the chkstat service: !1" Em portugues: "incapaz to open a conexao to the chkstat service: !1". Temas: nao conseguiu conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF001E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unable to open a connection to the chkstat service: !1" Em portugues: "incapaz to open a conexao to the chkstat service: !1". Temas: nao conseguiu conexao. Em outras palavras: Não foi possível abrir uma conexão com o serviço de verificação de status..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF001E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unable open connection the chkstat service portugues incapaz conexao Temas nao conseguiu significa`
+> `AWSBDF001E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unable open connection the chkstat service portugues incapaz conexao Temas nao conseguiu outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF001E no HCL Workload Automation 10.2.8?
@@ -57501,10 +57501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF002E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unable to start the chkstat service: !1" Em portugues: "incapaz to iniciar the chkstat service: !1". Temas: nao conseguiu iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF002E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unable to start the chkstat service: !1" Em portugues: "incapaz to iniciar the chkstat service: !1". Temas: nao conseguiu iniciar. Em outras palavras: Não foi possível iniciar o serviço de verificação de status, conforme o erro apresentado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF002E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unable start the chkstat service portugues incapaz iniciar Temas nao conseguiu significa`
+> `AWSBDF002E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unable start the chkstat service portugues incapaz iniciar Temas nao conseguiu outras palavras foi status`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF002E no HCL Workload Automation 10.2.8?
@@ -57541,10 +57541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF004E (severidade: error, familia AWSBDF - bdf) tem o texto: "Cannot get a reply from the chkstat service: !1" Em portugues: "nao pode get a reply from the chkstat service: !1". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF004E (severidade: error, familia AWSBDF - bdf) tem o texto: "Cannot get a reply from the chkstat service: !1" Em portugues: "nao pode get a reply from the chkstat service: !1". Temas: nao pode. Em outras palavras: Não foi possível obter uma resposta do serviço de verificação de status..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF004E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Cannot get reply from the chkstat service portugues nao Temas significa`
+> `AWSBDF004E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Cannot get reply from the chkstat service portugues nao Temas outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF004E no HCL Workload Automation 10.2.8?
@@ -57561,10 +57561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF005E (severidade: error, familia AWSBDF - bdf) tem o texto: "Cannot send a request to the chkstat service: !1" Em portugues: "nao pode send a requisicao to the chkstat service: !1". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF005E (severidade: error, familia AWSBDF - bdf) tem o texto: "Cannot send a request to the chkstat service: !1" Em portugues: "nao pode send a requisicao to the chkstat service: !1". Temas: nao pode. Em outras palavras: Não foi possível enviar uma solicitação ao serviço de verificação de status..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF005E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Cannot send request the chkstat service portugues nao requisicao Temas significa`
+> `AWSBDF005E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Cannot send request the chkstat service portugues nao requisicao Temas outras palavras foi enviar status`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF005E no HCL Workload Automation 10.2.8?
@@ -57581,10 +57581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF006E (severidade: error, familia AWSBDF - bdf) tem o texto: "Cannot allocate storage for communication" Em portugues: "nao pode allocate storage for communication". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF006E (severidade: error, familia AWSBDF - bdf) tem o texto: "Cannot allocate storage for communication" Em portugues: "nao pode allocate storage for communication". Temas: nao pode. Em outras palavras: Não foi possível alocar memória para a comunicação entre processos, indicando insuficiência de recursos disponíveis..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF006E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Cannot allocate storage for communication portugues nao Temas significa`
+> `AWSBDF006E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Cannot allocate storage for communication portugues nao Temas outras palavras foi alocar entre processos indicando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF006E no HCL Workload Automation 10.2.8?
@@ -57601,10 +57601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF007E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing argument for option !1" Em portugues: "faltando argumento for opcao !1". Temas: opcao argumento faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF007E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing argument for option !1" Em portugues: "faltando argumento for opcao !1". Temas: opcao argumento faltando. Em outras palavras: Falta o argumento de valor para a opção informada, então forneça o valor necessário e reenvie o comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF007E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing argument for option portugues faltando argumento opcao Temas significa`
+> `AWSBDF007E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing argument for option portugues faltando argumento opcao Temas outras palavras Falta valor informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF007E no HCL Workload Automation 10.2.8?
@@ -57621,10 +57621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF008E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unknown option argument: !1" Em portugues: "desconhecido opcao argumento: !1". Temas: opcao argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF008E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unknown option argument: !1" Em portugues: "desconhecido opcao argumento: !1". Temas: opcao argumento. Em outras palavras: Foi apresentado um argumento de opção não reconhecido, então confira a sintaxe do comando utilizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF008E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unknown option argument portugues desconhecido opcao argumento Temas significa diagnosticar`
+> `AWSBDF008E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unknown option argument portugues desconhecido opcao argumento Temas outras palavras Foi apresentado reconhecido confira sintaxe comando utilizado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF008E no HCL Workload Automation 10.2.8?
@@ -57641,10 +57641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF009E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -t task option" Em portugues: "faltando -t task opcao". Temas: opcao faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF009E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -t task option" Em portugues: "faltando -t task opcao". Temas: opcao faltando. Em outras palavras: Não foi informada a opção obrigatória de tarefa, então o comando não pôde ser executado corretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF009E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing task option portugues faltando opcao Temas significa diagnosticar`
+> `AWSBDF009E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing task option portugues faltando opcao Temas outras palavras foi informada tarefa comando executado corretamente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF009E no HCL Workload Automation 10.2.8?
@@ -57661,10 +57661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF010E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -c cpu,host,master option" Em portugues: "faltando -c processador,host servidor,principal opcao". Temas: opcao processador cpu faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF010E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -c cpu,host,master option" Em portugues: "faltando -c processador,host servidor,principal opcao". Temas: opcao processador cpu faltando. Em outras palavras: Não foi informada a opção obrigatória com os parâmetros de cpu e host, então complete a sintaxe do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF010E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing cpu host option portugues faltando processador servidor principal opcao Temas significa`
+> `AWSBDF010E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing cpu host option portugues faltando processador servidor principal opcao Temas outras palavras foi informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF010E no HCL Workload Automation 10.2.8?
@@ -57681,10 +57681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF011E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -n node option" Em portugues: "faltando -n node opcao". Temas: opcao faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF011E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -n node option" Em portugues: "faltando -n node opcao". Temas: opcao faltando. Em outras palavras: Não foi informada a opção obrigatória de nó, então forneça o identificador do nó e repita o comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF011E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing node option portugues faltando opcao Temas significa diagnosticar`
+> `AWSBDF011E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing node option portugues faltando opcao Temas outras palavras foi informada identificador repita comando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF011E no HCL Workload Automation 10.2.8?
@@ -57701,10 +57701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF012E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -p port option" Em portugues: "faltando -p porta opcao". Temas: opcao faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF012E (severidade: error, familia AWSBDF - bdf) tem o texto: "Missing -p port option" Em portugues: "faltando -p porta opcao". Temas: opcao faltando. Em outras palavras: Não foi informada a opção obrigatória de porta, então indique o número da porta e execute novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF012E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing port option portugues faltando porta opcao Temas significa diagnosticar`
+> `AWSBDF012E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Missing port option portugues faltando porta opcao Temas outras palavras foi informada indique execute novamente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF012E no HCL Workload Automation 10.2.8?
@@ -57721,10 +57721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF013E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unsupported task: !1" Em portugues: "unsupported task: !1". Temas: nao suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF013E (severidade: error, familia AWSBDF - bdf) tem o texto: "Unsupported task: !1" Em portugues: "unsupported task: !1". Temas: nao suportado. Em outras palavras: A tarefa informada não é suportada pelo sistema, então utilize um tipo de tarefa válido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDF013E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unsupported task portugues unsupported Temas nao suportado significa diagnosticar`
+> `AWSBDF013E 10.2.8 mensagem severidade error familia AWSBDF bdf tem texto Unsupported task portugues unsupported Temas nao suportado outras palavras tarefa informada suportada pelo sistema utilize tipo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDF013E no HCL Workload Automation 10.2.8?
@@ -57741,7 +57741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDF013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDF015W (severidade: warning, familia AWSBDF - bdf) tem o texto: "The task !1 passed to netmth contains the Schedule Time parameter that is not supported by the version of the remote network. It is removed." Em portugues: "the task !1 passed to netmth contains the agendamento tempo parametro that is nao supported by the versao of the remoto rede. it is removed.". Temas: nao parametro tempo hora suportado versao agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDF015W (severidade: warning, familia AWSBDF - bdf) tem o texto: "The task !1 passed to netmth contains the Schedule Time parameter that is not supported by the version of the remote network. It is removed." Em portugues: "the task !1 passed to netmth contains the agendamento tempo parametro that is nao supported by the versao of the remoto rede. it is removed.". Temas: nao parametro tempo hora suportado versao agendamento. Em outras palavras: A tarefa enviada ao netmth continha um parâmetro de agendamento não suportado pela versão da rede remota e ele foi removido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDF015W 10.2.8 mensagem severidade warning familia AWSBDF bdf tem texto The task passed netmth contains the Schedule Time parameter that not supported version remote network removed portugues`
@@ -57781,10 +57781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG002E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader is unable to create the stdlist file." Em portugues: "downloader is incapaz to criar the stdlist arquivo.". Temas: arquivo nao conseguiu criar. Explicacao oficial: Downloader creates its own stdlist file when the merge stdlists option is set to no in the localopts file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG002E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader is unable to create the stdlist file." Em portugues: "downloader is incapaz to criar the stdlist arquivo.". Temas: arquivo nao conseguiu criar. Em outras palavras: O downloader não conseguiu criar o arquivo de lista padrão de saída.. Explicacao oficial: Downloader creates its own stdlist file when the merge stdlists option is set to no in the localopts file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG002E opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader unable create the stdlist file portugues downloader incapaz criar arquivo Temas nao conseguiu Explicacao oficial`
+> `AWSBDG002E opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader unable create the stdlist file portugues downloader incapaz criar arquivo Temas nao conseguiu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDG002E no HCL Workload Automation 10.2.8?
@@ -57801,10 +57801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG004W (severidade: warning, familia AWSBDG - bdg) tem o texto: "Incorrect timeout value: !1, using default" Em portugues: "incorreto tempo esgotado valor: !1, using default". Temas: valor incorreto tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG004W (severidade: warning, familia AWSBDG - bdg) tem o texto: "Incorrect timeout value: !1, using default" Em portugues: "incorreto tempo esgotado valor: !1, using default". Temas: valor incorreto tempo esgotado. Em outras palavras: O valor de tempo limite informado está incorreto, então será usado o padrão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG004W 10.2.8 mensagem severidade warning familia AWSBDG bdg tem texto Incorrect timeout value using default portugues incorreto tempo esgotado valor Temas significa`
+> `AWSBDG004W 10.2.8 mensagem severidade warning familia AWSBDG bdg tem texto Incorrect timeout value using default portugues incorreto tempo esgotado valor Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDG004W no HCL Workload Automation 10.2.8?
@@ -57821,10 +57821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG004W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG005E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader is started by netman with an incorrect number of arguments." Em portugues: "downloader is iniciado by netman with an incorreto numero of arguments.". Temas: numero incorreto iniciado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG005E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader is started by netman with an incorrect number of arguments." Em portugues: "downloader is iniciado by netman with an incorreto numero of arguments.". Temas: numero incorreto iniciado. Em outras palavras: O downloader foi iniciado pelo netman com uma quantidade incorreta de argumentos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG005E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader started netman with incorrect number arguments portugues downloader iniciado incorreto numero Temas significa`
+> `AWSBDG005E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader started netman with incorrect number arguments portugues downloader iniciado incorreto numero Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDG005E no HCL Workload Automation 10.2.8?
@@ -57841,7 +57841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG006W (severidade: warning, familia AWSBDG - bdg) tem o texto: "The download for file !1 has been stopped by the client (the domain manager on z/OS)." Em portugues: "the download for arquivo !1 has estado parado by the cliente (the dominio manager on z/os).". Temas: arquivo dominio parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG006W (severidade: warning, familia AWSBDG - bdg) tem o texto: "The download for file !1 has been stopped by the client (the domain manager on z/OS)." Em portugues: "the download for arquivo !1 has estado parado by the cliente (the dominio manager on z/os).". Temas: arquivo dominio parado. Em outras palavras: O download do arquivo foi interrompido pelo domínio central gerenciador no z/OS..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG006W 10.2.8 mensagem severidade warning familia AWSBDG bdg tem texto The download for file has been stopped the client portugues arquivo estado parado cliente`
@@ -57861,7 +57861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG006W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG007E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader was unable to send a record. The following gives more details of the error by the operating system: !1" Em portugues: "downloader was incapaz to send a registro. the seguinte gives mais details of the erro by the operating sistema: !1". Temas: erro nao conseguiu sistema registro. Explicacao oficial: error_text is a string that describes the reason for the error. The information is retrieved from the operating system.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG007E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader was unable to send a record. The following gives more details of the error by the operating system: !1" Em portugues: "downloader was incapaz to send a registro. the seguinte gives mais details of the erro by the operating sistema: !1". Temas: erro nao conseguiu sistema registro. Em outras palavras: O downloader não conseguiu enviar um registro, com o erro do sistema operacional exibido.. Explicacao oficial: error_text is a string that describes the reason for the error. The information is retrieved from the operating system.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG007E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader was unable send record The following gives more details the operating system portugues downloader incapaz`
@@ -57881,7 +57881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG008E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader could not read a record from the centralized script. The following gives more details of the error by the operating system: !1" Em portugues: "downloader conseguiu nao ler a registro from the centralized script. the seguinte gives mais details of the erro by the operating sistema: !1". Temas: erro nao sistema registro ler leitura. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to this workstation, but downloader was unable to read one of the records.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG008E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader could not read a record from the centralized script. The following gives more details of the error by the operating system: !1" Em portugues: "downloader conseguiu nao ler a registro from the centralized script. the seguinte gives mais details of the erro by the operating sistema: !1". Temas: erro nao sistema registro ler leitura. Em outras palavras: O downloader não conseguiu ler um registro do script centralizado, com o erro de sistema apresentado.. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to this workstation, but downloader was unable to read one of the records.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG008E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader could not read record from the centralized script The following gives more details operating system portugues`
@@ -57901,7 +57901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG009E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader could not allocate memory for internal data structures (comarea)." Em portugues: "downloader conseguiu nao allocate memoria for interno data structures (comarea).". Temas: nao interno memoria.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG009E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader could not allocate memory for internal data structures (comarea)." Em portugues: "downloader conseguiu nao allocate memoria for interno data structures (comarea).". Temas: nao interno memoria. Em outras palavras: O downloader não conseguiu alocar memória para suas estruturas internas de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG009E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader could not allocate memory for internal data structures comarea portugues downloader conseguiu nao memoria interno`
@@ -57921,10 +57921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG010I (severidade: informational, familia AWSBDG - bdg) tem o texto: "Started by !1/!2 from !3 <cpu-type> !4" Em portugues: "iniciado by !1/!2 from !3 <processador-tipo> !4". Temas: iniciado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG010I (severidade: informational, familia AWSBDG - bdg) tem o texto: "Started by !1/!2 from !3 <cpu-type> !4" Em portugues: "iniciado by !1/!2 from !3 <processador-tipo> !4". Temas: iniciado. Em outras palavras: Informa a origem, o usuário e a arquitetura da estação onde o downloader foi iniciado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG010I 10.2.8 mensagem severidade informational familia AWSBDG bdg tem texto Started from cpu-type portugues iniciado processador-tipo Temas significa diagnosticar`
+> `AWSBDG010I 10.2.8 mensagem severidade informational familia AWSBDG bdg tem texto Started from cpu-type portugues iniciado processador-tipo Temas outras palavras Informa origem arquitetura onde downloader foi significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDG010I no HCL Workload Automation 10.2.8?
@@ -57941,7 +57941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG010I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG011E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot save the downloaded centralized script in the following temporary file: "!1". The following operating system error was received: !2." Em portugues: "downloader nao pode save the downloaded centralized script in the seguinte temporary arquivo: "!1". the seguinte operating sistema erro was recebido: !2.". Temas: erro arquivo nao pode sistema. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to this workstation. Downloader tries to save the script in a temporary file, (file_name), but is unable to write the file. The download of the script fails.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG011E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot save the downloaded centralized script in the following temporary file: "!1". The following operating system error was received: !2." Em portugues: "downloader nao pode save the downloaded centralized script in the seguinte temporary arquivo: "!1". the seguinte operating sistema erro was recebido: !2.". Temas: erro arquivo nao pode sistema. Em outras palavras: O downloader não conseguiu salvar o script centralizado baixado no arquivo temporário indicado, com o erro de sistema apresentado.. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to this workstation. Downloader tries to save the script in a temporary file, (file_name), but is unable to write the file. The download of the script fails.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG011E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader cannot save the downloaded centralized script following temporary file The operating system was received portugues downloader`
@@ -58041,7 +58041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG016E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader is receiving a centralized script file, but a packet is too long for the buffer." Em portugues: "downloader is receiving a centralized script arquivo, but a packet is too long for the buffer.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG016E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader is receiving a centralized script file, but a packet is too long for the buffer." Em portugues: "downloader is receiving a centralized script arquivo, but a packet is too long for the buffer.". Temas: arquivo. Em outras palavras: Ao receber um script centralizado, um pacote veio grande demais para o buffer disponível..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG016E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader receiving centralized script file but packet too long for the buffer portugues downloader arquivo`
@@ -58061,7 +58061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG017E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot download a centralized script. The following operating system error was received: !1" Em portugues: "downloader nao pode download a centralized script. the seguinte operating sistema erro was recebido: !1". Temas: erro nao pode sistema. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to a target workstation. The download of the script has failed.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG017E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot download a centralized script. The following operating system error was received: !1" Em portugues: "downloader nao pode download a centralized script. the seguinte operating sistema erro was recebido: !1". Temas: erro nao pode sistema. Em outras palavras: O downloader não conseguiu baixar um script centralizado, conforme o erro de sistema informado.. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to a target workstation. The download of the script has failed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG017E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader cannot download centralized script The following operating system was received portugues downloader nao the seguinte`
@@ -58081,10 +58081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG018I (severidade: informational, familia AWSBDG - bdg) tem o texto: "File !1 successfully downloaded" Em portugues: "arquivo !1 successfully downloaded". Temas: arquivo com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG018I (severidade: informational, familia AWSBDG - bdg) tem o texto: "File !1 successfully downloaded" Em portugues: "arquivo !1 successfully downloaded". Temas: arquivo com sucesso. Em outras palavras: Confirma que o arquivo informado foi baixado com sucesso para o destino correto no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG018I 10.2.8 mensagem severidade informational familia AWSBDG bdg tem texto File successfully downloaded portugues arquivo Temas sucesso significa diagnosticar`
+> `AWSBDG018I 10.2.8 mensagem severidade informational familia AWSBDG bdg tem texto File successfully downloaded portugues arquivo Temas sucesso outras palavras Confirma informado foi baixado destino correto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDG018I no HCL Workload Automation 10.2.8?
@@ -58101,7 +58101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG018I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG019E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot obtain file status information for the following file: !1. The following gives more details of the error: !2." Em portugues: "downloader nao pode obtain arquivo estado information for the seguinte arquivo: !1. the seguinte gives mais details of the erro: !2.". Temas: erro arquivo nao pode. Explicacao oficial: Downloader in unable to retrieve status information for file file_name.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG019E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot obtain file status information for the following file: !1. The following gives more details of the error: !2." Em portugues: "downloader nao pode obtain arquivo estado information for the seguinte arquivo: !1. the seguinte gives mais details of the erro: !2.". Temas: erro arquivo nao pode. Em outras palavras: O downloader não conseguiu obter as informações de status do arquivo informado.. Explicacao oficial: Downloader in unable to retrieve status information for file file_name.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG019E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader cannot obtain file status information for the following The gives more details portugues downloader nao`
@@ -58121,10 +58121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG020I (severidade: informational, familia AWSBDG - bdg) tem o texto: "Creating directory !1" Em portugues: "creating diretorio !1". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG020I (severidade: informational, familia AWSBDG - bdg) tem o texto: "Creating directory !1" Em portugues: "creating diretorio !1". Temas: diretorio. Em outras palavras: Informa que o diretório indicado está sendo criado no destino para armazenar os arquivos necessários..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDG020I 10.2.8 mensagem severidade informational familia AWSBDG bdg tem texto Creating directory portugues creating diretorio Temas significa diagnosticar`
+> `AWSBDG020I 10.2.8 mensagem severidade informational familia AWSBDG bdg tem texto Creating directory portugues creating diretorio Temas outras palavras Informa indicado sendo criado destino armazenar arquivos significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDG020I no HCL Workload Automation 10.2.8?
@@ -58141,7 +58141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG020I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG021E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot create the following directory where the downloaded centralized script is saved: "!1". The following operating system error was received: !2." Em portugues: "downloader nao pode criar the seguinte diretorio where the downloaded centralized script is saved: "!1". the seguinte operating sistema erro was recebido: !2.". Temas: erro nao pode sistema diretorio criar. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to a target workstation. Downloader tries to save the script in a temporary file, but is unable to create the directory for the file. The download of the script fails.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG021E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot create the following directory where the downloaded centralized script is saved: "!1". The following operating system error was received: !2." Em portugues: "downloader nao pode criar the seguinte diretorio where the downloaded centralized script is saved: "!1". the seguinte operating sistema erro was recebido: !2.". Temas: erro nao pode sistema diretorio criar. Em outras palavras: O downloader não conseguiu criar o diretório de destino do script centralizado baixado, com o erro de sistema apresentado.. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to a target workstation. Downloader tries to save the script in a temporary file, but is unable to create the directory for the file. The download of the script fails.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG021E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader cannot create the following directory where downloaded centralized script saved The operating system was received portugues`
@@ -58161,7 +58161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDG022E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot write the downloaded centralized script in a temporary file on the target workstation." Em portugues: "downloader nao pode escrever the downloaded centralized script in a temporary arquivo on the target estacao de trabalho.". Temas: arquivo estacao de trabalho nao pode. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to a target workstation, but the download has failed.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDG022E (severidade: error, familia AWSBDG - bdg) tem o texto: "Downloader cannot write the downloaded centralized script in a temporary file on the target workstation." Em portugues: "downloader nao pode escrever the downloaded centralized script in a temporary arquivo on the target estacao de trabalho.". Temas: arquivo estacao de trabalho nao pode. Em outras palavras: O downloader não conseguiu gravar o script centralizado baixado em um arquivo temporário na estação de destino.. Explicacao oficial: In an end-to-end configuration the translator thread, running on OPCMASTER , is downloading a centralized script to a target workstation, but the download has failed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDG022E 10.2.8 mensagem severidade error familia AWSBDG bdg tem texto Downloader cannot write the downloaded centralized script temporary file target workstation portugues downloader nao escrever`
@@ -58181,7 +58181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDG022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDH001E (severidade: error, familia AWSBDH - bdh) tem o texto: "The action code !1 specified in the !2 native method is invalid" Em portugues: "the action code !1 especificado in the !2 native method is invalido". Temas: invalido especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDH001E (severidade: error, familia AWSBDH - bdh) tem o texto: "The action code !1 specified in the !2 native method is invalid" Em portugues: "the action code !1 especificado in the !2 native method is invalido". Temas: invalido especificado. Em outras palavras: O código de ação informado no método nativo indicado é inválido, então revise o parâmetro utilizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDH001E 10.2.8 mensagem severidade error familia AWSBDH bdh tem texto The action code specified the native method invalid portugues especificado invalido Temas`
@@ -58201,7 +58201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDH001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDH002E (severidade: error, familia AWSBDH - bdh) tem o texto: "The object type !1 specified in the !2 native method is invalid" Em portugues: "the object tipo !1 especificado in the !2 native method is invalido". Temas: invalido especificado tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDH002E (severidade: error, familia AWSBDH - bdh) tem o texto: "The object type !1 specified in the !2 native method is invalid" Em portugues: "the object tipo !1 especificado in the !2 native method is invalido". Temas: invalido especificado tipo. Em outras palavras: O tipo de objeto informado no método nativo indicado é inválido, então revise o parâmetro utilizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDH002E 10.2.8 mensagem severidade error familia AWSBDH bdh tem texto The object type specified the native method invalid portugues tipo especificado invalido Temas`
@@ -58261,10 +58261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ002I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ003E (severidade: error, familia AWSBDJ - bdj) tem o texto: "The application server has stopped unexpectedly or failed." Em portugues: "the application servidor has parado unexpectedly or falhou.". Temas: parado falhou. Explicacao oficial: The application server monitor ( appservman ) has detected that the application server is no longer running, but that it has not been stopped by the user.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ003E (severidade: error, familia AWSBDJ - bdj) tem o texto: "The application server has stopped unexpectedly or failed." Em portugues: "the application servidor has parado unexpectedly or falhou.". Temas: parado falhou. Em outras palavras: O servidor de aplicação parou inesperadamente ou falhou, então verifique o log para identificar a causa.. Explicacao oficial: The application server monitor ( appservman ) has detected that the application server is no longer running, but that it has not been stopped by the user.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDJ003E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto The application server has stopped unexpectedly failed portugues the servidor parado falhou Temas Explicacao oficial`
+> `AWSBDJ003E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto The application server has stopped unexpectedly failed portugues the servidor parado falhou Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDJ003E no HCL Workload Automation 10.2.8?
@@ -58281,10 +58281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ004I (severidade: informational, familia AWSBDJ - bdj) tem o texto: "The application server is being restarted." Em portugues: "the application servidor is being restarted.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ004I (severidade: informational, familia AWSBDJ - bdj) tem o texto: "The application server is being restarted." Em portugues: "the application servidor is being restarted.". Em outras palavras: Informa que o servidor de aplicação está sendo reiniciado após a interrupção ou falha ocorrida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDJ004I 10.2.8 mensagem severidade informational familia AWSBDJ bdj tem texto The application server being restarted portugues the servidor significa diagnosticar`
+> `AWSBDJ004I 10.2.8 mensagem severidade informational familia AWSBDJ bdj tem texto The application server being restarted portugues the servidor outras palavras Informa sendo reiniciado falha ocorrida significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDJ004I no HCL Workload Automation 10.2.8?
@@ -58301,7 +58301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ004I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ005E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot restart the application server. See the application server log for the reason." Em portugues: "nao pode reiniciar the application servidor. see the application servidor log for the motivo.". Temas: nao pode reiniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ005E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot restart the application server. See the application server log for the reason." Em portugues: "nao pode reiniciar the application servidor. see the application servidor log for the motivo.". Temas: nao pode reiniciar. Em outras palavras: Não foi possível reiniciar o servidor de aplicação; consulte o log dele para a causa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ005E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto Cannot restart the application server See log for reason portugues nao reiniciar servidor see`
@@ -58321,7 +58321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ006E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot stop the application server. See the application server log for the reason." Em portugues: "nao pode parar the application servidor. see the application servidor log for the motivo.". Temas: nao pode parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ006E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot stop the application server. See the application server log for the reason." Em portugues: "nao pode parar the application servidor. see the application servidor log for the motivo.". Temas: nao pode parar. Em outras palavras: Não foi possível parar o servidor de aplicação; consulte o log dele para a causa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ006E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto Cannot stop the application server See log for reason portugues nao parar servidor see`
@@ -58341,7 +58341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ007W (severidade: warning, familia AWSBDJ - bdj) tem o texto: "The "auto-restart" flag (see "localopts") is set to false, so the application server is not restarted by the application server monitor." Em portugues: "the "auto-reiniciar" flag (see "localopts") is set to false, so the application servidor is nao restarted by the application servidor monitor.". Temas: nao. Explicacao oficial: The application server monitor ( appservman ) has detected that the application server has failed.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ007W (severidade: warning, familia AWSBDJ - bdj) tem o texto: "The "auto-restart" flag (see "localopts") is set to false, so the application server is not restarted by the application server monitor." Em portugues: "the "auto-reiniciar" flag (see "localopts") is set to false, so the application servidor is nao restarted by the application servidor monitor.". Temas: nao. Em outras palavras: A opção de reinício automático está desativada, então o monitor do servidor de aplicação não o reinicia.. Explicacao oficial: The application server monitor ( appservman ) has detected that the application server has failed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ007W opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade warning familia AWSBDJ bdj tem texto The auto-restart flag see localopts set false the application server not restarted monitor portugues auto-reiniciar`
@@ -58401,7 +58401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ010E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot restart the dynamic workload broker application. For details, see the application server log." Em portugues: "nao pode reiniciar the dynamic workload broker application. for details, see the application servidor log.". Temas: nao pode carga de trabalho broker intermediario reiniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ010E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot restart the dynamic workload broker application. For details, see the application server log." Em portugues: "nao pode reiniciar the dynamic workload broker application. for details, see the application servidor log.". Temas: nao pode carga de trabalho broker intermediario reiniciar. Em outras palavras: Não foi possível reiniciar o aplicativo de broker de carga dinâmica; consulte o log do servidor de aplicação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ010E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto Cannot restart the dynamic broker application For details see server log portugues nao reiniciar`
@@ -58421,7 +58421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ011E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot stop the dynamic workload broker application. For details, see the application server log." Em portugues: "nao pode parar the dynamic workload broker application. for details, see the application servidor log.". Temas: nao pode carga de trabalho broker intermediario parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ011E (severidade: error, familia AWSBDJ - bdj) tem o texto: "Cannot stop the dynamic workload broker application. For details, see the application server log." Em portugues: "nao pode parar the dynamic workload broker application. for details, see the application servidor log.". Temas: nao pode carga de trabalho broker intermediario parar. Em outras palavras: Não foi possível parar o aplicativo de broker de carga dinâmica; consulte o log do servidor de aplicação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ011E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto Cannot stop the dynamic broker application For details see server log portugues nao parar`
@@ -58441,7 +58441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ012E (severidade: error, familia AWSBDJ - bdj) tem o texto: "An internal error occurred while opening the "Appserverbox" message queue." Em portugues: "an interno erro ocorreu while opening the "appserverbox" mensagem queue.". Temas: erro ocorreu interno mensagem. Explicacao oficial: The application server monitor ( appservman ) was not able to open the Appserverbox message queue.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ012E (severidade: error, familia AWSBDJ - bdj) tem o texto: "An internal error occurred while opening the "Appserverbox" message queue." Em portugues: "an interno erro ocorreu while opening the "appserverbox" mensagem queue.". Temas: erro ocorreu interno mensagem. Em outras palavras: Erro interno ao abrir a fila de mensagens do servidor de aplicação.. Explicacao oficial: The application server monitor ( appservman ) was not able to open the Appserverbox message queue.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ012E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto internal occurred while opening the Appserverbox message queue portugues interno erro ocorreu appserverbox Temas`
@@ -58461,7 +58461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ013E (severidade: error, familia AWSBDJ - bdj) tem o texto: "An internal error occurred while opening the "Mailbox" message queue." Em portugues: "an interno erro ocorreu while opening the "mailbox" mensagem queue.". Temas: erro ocorreu interno mensagem. Explicacao oficial: The application server monitor ( appservman ) was not able to open the Mailbox message queue.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ013E (severidade: error, familia AWSBDJ - bdj) tem o texto: "An internal error occurred while opening the "Mailbox" message queue." Em portugues: "an interno erro ocorreu while opening the "mailbox" mensagem queue.". Temas: erro ocorreu interno mensagem. Em outras palavras: Erro interno ao abrir a fila de mensagens principal, então verifique a disponibilidade do componente de mensagens.. Explicacao oficial: The application server monitor ( appservman ) was not able to open the Mailbox message queue.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ013E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto internal occurred while opening the Mailbox message queue portugues interno erro ocorreu mailbox Temas`
@@ -58481,7 +58481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ014I (severidade: informational, familia AWSBDJ - bdj) tem o texto: "The total cpu time used by APPSERVMAN was !1 seconds." Em portugues: "the total processador tempo used by appservman was !1 seconds.". Temas: tempo hora processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ014I (severidade: informational, familia AWSBDJ - bdj) tem o texto: "The total cpu time used by APPSERVMAN was !1 seconds." Em portugues: "the total processador tempo used by appservman was !1 seconds.". Temas: tempo hora processador cpu. Em outras palavras: Informa o total de tempo de CPU consumido pelo APPSERVMAN em segundos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ014I 10.2.8 mensagem severidade informational familia AWSBDJ bdj tem texto The total cpu time used APPSERVMAN was seconds portugues the processador tempo appservman Temas hora`
@@ -58501,10 +58501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ014I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ015I (severidade: informational, familia AWSBDJ - bdj) tem o texto: "Workstation !1, message: !2" Em portugues: "estacao de trabalho !1, mensagem: !2". Temas: estacao de trabalho mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ015I (severidade: informational, familia AWSBDJ - bdj) tem o texto: "Workstation !1, message: !2" Em portugues: "estacao de trabalho !1, mensagem: !2". Temas: estacao de trabalho mensagem. Em outras palavras: Registra a mensagem recebida para a estação de trabalho indicada, exibindo o conteúdo informado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDJ015I 10.2.8 mensagem severidade informational familia AWSBDJ bdj tem texto Workstation message portugues estacao trabalho Temas significa diagnosticar`
+> `AWSBDJ015I 10.2.8 mensagem severidade informational familia AWSBDJ bdj tem texto Workstation message portugues estacao trabalho Temas outras palavras Registra recebida indicada exibindo informado pelo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDJ015I no HCL Workload Automation 10.2.8?
@@ -58521,7 +58521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDJ015I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDJ016E (severidade: error, familia AWSBDJ - bdj) tem o texto: "An internal error occurred while reading the Appservrbox message queue." Em portugues: "an interno erro ocorreu while reading the appservrbox mensagem queue.". Temas: erro ocorreu interno mensagem. Explicacao oficial: An internal error has occurred.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDJ016E (severidade: error, familia AWSBDJ - bdj) tem o texto: "An internal error occurred while reading the Appservrbox message queue." Em portugues: "an interno erro ocorreu while reading the appservrbox mensagem queue.". Temas: erro ocorreu interno mensagem. Em outras palavras: Erro interno ao ler a fila de mensagens do servidor de aplicação.. Explicacao oficial: An internal error has occurred.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDJ016E 10.2.8 mensagem severidade error familia AWSBDJ bdj tem texto internal occurred while reading the Appservrbox message queue portugues interno erro ocorreu appservrbox Temas`
@@ -60461,10 +60461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDX010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY101E (severidade: error, familia AWSBDY - bdy) tem o texto: "Bad Mailbox record found." Em portugues: "bad mailbox registro encontrado.". Temas: encontrado registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY101E (severidade: error, familia AWSBDY - bdy) tem o texto: "Bad Mailbox record found." Em portugues: "bad mailbox registro encontrado.". Temas: encontrado registro. Em outras palavras: Foi encontrado um registro inválido no arquivo de mensagens, indicando possível corrupção dos dados armazenados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDY101E 10.2.8 mensagem severidade error familia AWSBDY bdy tem texto Bad Mailbox record found portugues bad mailbox registro encontrado Temas significa`
+> `AWSBDY101E 10.2.8 mensagem severidade error familia AWSBDY bdy tem texto Bad Mailbox record found portugues bad mailbox registro encontrado Temas outras palavras Foi arquivo mensagens indicando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDY101E no HCL Workload Automation 10.2.8?
@@ -60501,7 +60501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY102E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY103I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:UNLINK for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:unlink for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY103I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:UNLINK for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:unlink for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de desligamento de ligação para o número de execução e estação informados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY103I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command UNLINK for run number workstation from portugues recebido comando unlink numero estacao trabalho`
@@ -60521,7 +60521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY103I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY104I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:LINK for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:link for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY104I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:LINK for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:link for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de ligação para o número de execução e estação informados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY104I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command LINK for run number workstation from portugues recebido comando link numero estacao trabalho`
@@ -60541,7 +60541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY104I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY105I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:UNSET INIT for run number !2 from workstation !1." Em portugues: "recebido comando my:unset init for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY105I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:UNSET INIT for run number !2 from workstation !1." Em portugues: "recebido comando my:unset init for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de remoção de inicialização para o número de execução informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY105I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command UNSET INIT for run number from workstation portugues recebido comando unset init numero estacao trabalho`
@@ -60561,7 +60561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY105I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY106I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:INIT for run number !2 from workstation !1." Em portugues: "recebido comando my:init for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY106I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:INIT for run number !2 from workstation !1." Em portugues: "recebido comando my:init for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de inicialização para o número de execução informado, indicando o início do processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY106I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command INIT for run number from workstation portugues recebido comando init numero estacao trabalho Temas`
@@ -60581,7 +60581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY106I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY107I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:CPU-IS-DEAD for run number !2 from workstation !1." Em portugues: "recebido comando my:processador-is-dead for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY107I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:CPU-IS-DEAD for run number !2 from workstation !1." Em portugues: "recebido comando my:processador-is-dead for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que a CPU está fora do ar para o número de execução informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY107I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command CPU-IS-DEAD for run number from workstation portugues recebido comando processador-is-dead numero estacao trabalho Temas`
@@ -60601,7 +60601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY107I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY108I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:CPU-IS-ALIVE for run number !2 from workstation !1." Em portugues: "recebido comando my:processador-is-alive for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY108I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:CPU-IS-ALIVE for run number !2 from workstation !1." Em portugues: "recebido comando my:processador-is-alive for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que a CPU está ativa para o número de execução informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY108I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command CPU-IS-ALIVE for run number from workstation portugues recebido comando processador-is-alive numero estacao trabalho Temas`
@@ -60621,7 +60621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY108I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY109I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:JOBMAN-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:jobman-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY109I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:JOBMAN-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:jobman-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o gerenciador de jobs está indisponível para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY109I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command JOBMAN-DOWN for run number from workstation portugues recebido comando jobman-down numero estacao trabalho Temas`
@@ -60641,7 +60641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY109I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY110I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:JOBMAN-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:jobman-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY110I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:JOBMAN-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:jobman-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o gerenciador de jobs está ativo para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY110I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command JOBMAN-UP for run number from workstation portugues recebido comando jobman-up numero estacao trabalho Temas`
@@ -60661,7 +60661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY110I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY111I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:WRITER-DOWN for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:writer-down for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY111I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:WRITER-DOWN for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:writer-down for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de parada do escritor para a execução e estação informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY111I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command WRITER-DOWN for run number workstation from portugues recebido comando writer-down numero estacao trabalho`
@@ -60681,7 +60681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY111I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY112I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:WRITER-UP for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:writer-up for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY112I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:WRITER-UP for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:writer-up for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de subida do escritor para a execução e estação informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY112I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command WRITER-UP for run number workstation from portugues recebido comando writer-up numero estacao trabalho`
@@ -60701,7 +60701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY112I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY113I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DS-LINK-DOWN for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:ds-link-down for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY113I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DS-LINK-DOWN for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:ds-link-down for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de queda da ligação de dataset para a execução e estação informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY113I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command DS-LINK-DOWN for run number workstation from portugues recebido comando ds-link-down numero estacao trabalho`
@@ -60721,7 +60721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY113I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY114I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DS-LINK-UP for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:ds-link-up for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY114I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DS-LINK-UP for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:ds-link-up for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando de subida da ligação de dataset para a execução e estação informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY114I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command DS-LINK-UP for run number workstation from portugues recebido comando ds-link-up numero estacao trabalho`
@@ -60741,7 +60741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY114I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY115I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:SYMPHONY-DOWNLOADED for run number !2 from workstation !1." Em portugues: "recebido comando my:symphony-downloaded for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY115I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:SYMPHONY-DOWNLOADED for run number !2 from workstation !1." Em portugues: "recebido comando my:symphony-downloaded for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que a sinfonia foi baixada para o número de execução informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY115I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command SYMPHONY-DOWNLOADED for run number from workstation portugues recebido comando symphony-downloaded numero estacao trabalho Temas`
@@ -60761,7 +60761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY115I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY116I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:JOB for run number !3 for job !2 from workstation !1." Em portugues: "recebido comando my:job for run numero !3 for job !2 from estacao de trabalho !1.". Temas: estacao de trabalho job comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY116I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:JOB for run number !3 for job !2 from workstation !1." Em portugues: "recebido comando my:job for run numero !3 for job !2 from estacao de trabalho !1.". Temas: estacao de trabalho job comando numero execucao. Em outras palavras: Recebido um comando de job para a execução e o job informados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY116I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command JOB for run number job from workstation portugues recebido comando numero`
@@ -60781,7 +60781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY116I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY117I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received unknown MY record for run number !2 from workstation !1." Em portugues: "recebido desconhecido my registro for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho numero registro execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY117I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received unknown MY record for run number !2 from workstation !1." Em portugues: "recebido desconhecido my registro for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho numero registro execucao. Em outras palavras: Recebido um registro de tipo desconhecido para a execução informada, então verifique a origem da mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY117I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received unknown record for run number from workstation portugues recebido desconhecido registro numero estacao trabalho Temas`
@@ -60841,7 +60841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY119E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY120I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:LAUNCHER-DISABLED for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:launcher-desabilitado for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY120I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:LAUNCHER-DISABLED for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:launcher-desabilitado for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o disparador está desabilitado para a execução e estação informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY120I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command LAUNCHER-DISABLED for run number workstation from portugues recebido comando launcher-desabilitado numero estacao trabalho`
@@ -60861,7 +60861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY120I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY121I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:LAUNCHER-ENABLED for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:launcher-habilitado for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY121I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:LAUNCHER-ENABLED for run number !2 for workstation !3 from workstation !1." Em portugues: "recebido comando my:launcher-habilitado for run numero !2 for estacao de trabalho !3 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o disparador está habilitado para a execução e estação informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY121I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command LAUNCHER-ENABLED for run number workstation from portugues recebido comando launcher-habilitado numero estacao trabalho`
@@ -60881,10 +60881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY121I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY122W (severidade: warning, familia AWSBDY - bdy) tem o texto: "Mailbox cache temporarily disabled." Em portugues: "mailbox cache temporarily desabilitado.". Temas: desabilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY122W (severidade: warning, familia AWSBDY - bdy) tem o texto: "Mailbox cache temporarily disabled." Em portugues: "mailbox cache temporarily desabilitado.". Temas: desabilitado. Em outras palavras: O cache de mensagens foi temporariamente desativado, podendo impactar a performance de leitura das mensagens..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDY122W 10.2.8 mensagem severidade warning familia AWSBDY bdy tem texto Mailbox cache temporarily disabled portugues mailbox desabilitado Temas significa diagnosticar`
+> `AWSBDY122W 10.2.8 mensagem severidade warning familia AWSBDY bdy tem texto Mailbox cache temporarily disabled portugues mailbox desabilitado Temas outras palavras mensagens foi temporariamente desativado podendo impactar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDY122W no HCL Workload Automation 10.2.8?
@@ -60901,10 +60901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY122W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY123I (severidade: informational, familia AWSBDY - bdy) tem o texto: "The Mailbox.msg file in !1 is correctly read by Mailman." Em portugues: "the mailbox.msg arquivo in !1 is correctly ler by mailman.". Temas: arquivo ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY123I (severidade: informational, familia AWSBDY - bdy) tem o texto: "The Mailbox.msg file in !1 is correctly read by Mailman." Em portugues: "the mailbox.msg arquivo in !1 is correctly ler by mailman.". Temas: arquivo ler leitura. Em outras palavras: O arquivo de mensagens indicado foi lido corretamente pelo gerenciador de mensagens..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDY123I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto The Mailbox.msg file correctly read Mailman portugues the mailbox.msg arquivo ler mailman Temas leitura significa`
+> `AWSBDY123I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto The Mailbox.msg file correctly read Mailman portugues the mailbox.msg arquivo ler mailman Temas leitura outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDY123I no HCL Workload Automation 10.2.8?
@@ -60921,10 +60921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY123I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY124W (severidade: warning, familia AWSBDY - bdy) tem o texto: "The Mailbox.msg file in !1 is not read by Mailman." Em portugues: "the mailbox.msg arquivo in !1 is nao ler by mailman.". Temas: nao arquivo ler leitura. Explicacao oficial: The Mailbox.msg file is not read by Mailman.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY124W (severidade: warning, familia AWSBDY - bdy) tem o texto: "The Mailbox.msg file in !1 is not read by Mailman." Em portugues: "the mailbox.msg arquivo in !1 is nao ler by mailman.". Temas: nao arquivo ler leitura. Em outras palavras: O arquivo de mensagens indicado não pôde ser lido pelo gerenciador de mensagens.. Explicacao oficial: The Mailbox.msg file is not read by Mailman.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDY124W 10.2.8 mensagem severidade warning familia AWSBDY bdy tem texto The Mailbox.msg file not read Mailman portugues the mailbox.msg arquivo nao ler mailman Temas leitura Explicacao oficial`
+> `AWSBDY124W 10.2.8 mensagem severidade warning familia AWSBDY bdy tem texto The Mailbox.msg file not read Mailman portugues the mailbox.msg arquivo nao ler mailman Temas leitura outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDY124W no HCL Workload Automation 10.2.8?
@@ -60941,7 +60941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY124W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY125E (severidade: error, familia AWSBDY - bdy) tem o texto: "An error occurred reading the header of the Mailbox.msg file in !1." Em portugues: "an erro ocorreu reading the header of the mailbox.msg arquivo in !1.". Temas: erro arquivo ocorreu. Explicacao oficial: An error has occurred while reading the header of the Mailbox.msg file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY125E (severidade: error, familia AWSBDY - bdy) tem o texto: "An error occurred reading the header of the Mailbox.msg file in !1." Em portugues: "an erro ocorreu reading the header of the mailbox.msg arquivo in !1.". Temas: erro arquivo ocorreu. Em outras palavras: Erro ao ler o cabeçalho do arquivo de mensagens informado, indicando problema de integridade ou formato do arquivo.. Explicacao oficial: An error has occurred while reading the header of the Mailbox.msg file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY125E 10.2.8 mensagem severidade error familia AWSBDY bdy tem texto occurred reading the header Mailbox.msg file portugues erro ocorreu mailbox.msg arquivo Temas`
@@ -60961,10 +60961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY125E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY126E (severidade: error, familia AWSBDY - bdy) tem o texto: "An error occurred opening the Mailbox.msg file in !1." Em portugues: "an erro ocorreu opening the mailbox.msg arquivo in !1.". Temas: erro arquivo ocorreu. Explicacao oficial: An error has occurred while opening the Mailbox.msg file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY126E (severidade: error, familia AWSBDY - bdy) tem o texto: "An error occurred opening the Mailbox.msg file in !1." Em portugues: "an erro ocorreu opening the mailbox.msg arquivo in !1.". Temas: erro arquivo ocorreu. Em outras palavras: Erro ao abrir o arquivo de mensagens informado, então verifique as permissões e a existência do arquivo.. Explicacao oficial: An error has occurred while opening the Mailbox.msg file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDY126E 10.2.8 mensagem severidade error familia AWSBDY bdy tem texto occurred opening the Mailbox.msg file portugues erro ocorreu mailbox.msg arquivo Temas Explicacao oficial`
+> `AWSBDY126E 10.2.8 mensagem severidade error familia AWSBDY bdy tem texto occurred opening the Mailbox.msg file portugues erro ocorreu mailbox.msg arquivo Temas outras palavras Erro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDY126E no HCL Workload Automation 10.2.8?
@@ -60981,7 +60981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY126E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY127I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:AGENT-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:agente-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY127I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:AGENT-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:agente-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o agente está indisponível para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY127I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command AGENT-DOWN for run number from workstation portugues recebido comando agente-down numero estacao trabalho Temas`
@@ -61001,7 +61001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY127I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY128I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:AGENT-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:agente-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY128I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:AGENT-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:agente-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o agente está ativo para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY128I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command AGENT-UP for run number from workstation portugues recebido comando agente-up numero estacao trabalho Temas`
@@ -61021,7 +61021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY128I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY129I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:POOL-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:pool-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY129I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:POOL-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:pool-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o pool está indisponível para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY129I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command POOL-DOWN for run number from workstation portugues recebido comando pool-down numero estacao trabalho Temas`
@@ -61041,7 +61041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY129I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY130I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:POOL-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:pool-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY130I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:POOL-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:pool-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o pool está ativo para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY130I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command POOL-UP for run number from workstation portugues recebido comando pool-up numero estacao trabalho Temas`
@@ -61061,7 +61061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY130I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY131I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DPOOL-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:dpool-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY131I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DPOOL-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:dpool-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o pool dinâmico está indisponível para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY131I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command DPOOL-DOWN for run number from workstation portugues recebido comando dpool-down numero estacao trabalho Temas`
@@ -61081,7 +61081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY131I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY132I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DPOOL-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:dpool-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY132I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:DPOOL-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:dpool-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o pool dinâmico está ativo para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY132I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command DPOOL-UP for run number from workstation portugues recebido comando dpool-up numero estacao trabalho Temas`
@@ -61101,7 +61101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY132I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY133I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:REMOTE ENGINE-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:remoto engine-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY133I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:REMOTE ENGINE-DOWN for run number !2 from workstation !1." Em portugues: "recebido comando my:remoto engine-down for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o motor remoto está indisponível para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY133I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command REMOTE ENGINE-DOWN for run number from workstation portugues recebido comando remoto engine-down numero estacao trabalho`
@@ -61121,7 +61121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY133I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDY134I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:REMOTE ENGINE-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:remoto engine-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDY134I (severidade: informational, familia AWSBDY - bdy) tem o texto: "Received command MY:REMOTE ENGINE-UP for run number !2 from workstation !1." Em portugues: "recebido comando my:remoto engine-up for run numero !2 from estacao de trabalho !1.". Temas: estacao de trabalho comando numero execucao. Em outras palavras: Recebido um comando indicando que o motor remoto está ativo para a execução informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDY134I 10.2.8 mensagem severidade informational familia AWSBDY bdy tem texto Received command REMOTE ENGINE-UP for run number from workstation portugues recebido comando remoto engine-up numero estacao trabalho`
@@ -61141,10 +61141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDY134I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ001E (severidade: error, familia AWSBDZ - bdz) tem o texto: "Record out of range." Em portugues: "registro out of range.". Temas: registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ001E (severidade: error, familia AWSBDZ - bdz) tem o texto: "Record out of range." Em portugues: "registro out of range.". Temas: registro. Em outras palavras: O registro consultado está fora da faixa permitida, indicando um índice ou posição inválida na estrutura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ001E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Record out range portugues registro Temas significa diagnosticar`
+> `AWSBDZ001E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Record out range portugues registro Temas outras palavras consultado fora faixa permitida indicando estrutura significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ001E no HCL Workload Automation 10.2.8?
@@ -61161,10 +61161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ005E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The input was not valid." Em portugues: "the entrada was nao valido.". Temas: nao valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ005E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The input was not valid." Em portugues: "the entrada was nao valido.". Temas: nao valido. Em outras palavras: A entrada fornecida não é válida, então revise os dados informados e repita a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ005E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The input was not valid portugues the entrada nao valido Temas significa`
+> `AWSBDZ005E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The input was not valid portugues the entrada nao valido Temas outras palavras fornecida revise dados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ005E no HCL Workload Automation 10.2.8?
@@ -61181,10 +61181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ006E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No lists are possible for this file structure." Em portugues: "no lists are possible for this arquivo structure.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ006E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No lists are possible for this file structure." Em portugues: "no lists are possible for this arquivo structure.". Temas: arquivo. Em outras palavras: Não é possível listar dados com esta estrutura de arquivo, pois o formato não suporta listagens..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ006E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto lists are possible for this file structure portugues arquivo Temas significa`
+> `AWSBDZ006E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto lists are possible for this file structure portugues arquivo Temas outras palavras listar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ006E no HCL Workload Automation 10.2.8?
@@ -61201,10 +61201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ007E (severidade: error, familia AWSBDZ - bdz) tem o texto: "There are no children for this record type." Em portugues: "there are no children for this registro tipo.". Temas: tipo registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ007E (severidade: error, familia AWSBDZ - bdz) tem o texto: "There are no children for this record type." Em portugues: "there are no children for this registro tipo.". Temas: tipo registro. Em outras palavras: Não existem registros filhos para este tipo de registro, então não há dados secundários disponíveis..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ007E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto There are children for this record type portugues there registro tipo Temas significa`
+> `AWSBDZ007E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto There are children for this record type portugues there registro tipo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ007E no HCL Workload Automation 10.2.8?
@@ -61221,10 +61221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ008E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The file is not modifiable." Em portugues: "the arquivo is nao modifiable.". Temas: nao arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ008E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The file is not modifiable." Em portugues: "the arquivo is nao modifiable.". Temas: nao arquivo. Em outras palavras: O arquivo não pode ser modificado, então verifique as permissões de escrita ou o modo de acesso do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ008E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The file not modifiable portugues the arquivo nao Temas significa`
+> `AWSBDZ008E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The file not modifiable portugues the arquivo nao Temas outras palavras modificado verifique escrita modo acesso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ008E no HCL Workload Automation 10.2.8?
@@ -61241,7 +61241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ009I (severidade: informational, familia AWSBDZ - bdz) tem o texto: "The syntax of the "modify" option is M <item> <value>. You did not supply a value." Em portugues: "the sintaxe of the "modify" opcao is m <item> <valor>. you did nao supply a valor.". Temas: nao sintaxe valor opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ009I (severidade: informational, familia AWSBDZ - bdz) tem o texto: "The syntax of the "modify" option is M <item> <value>. You did not supply a value." Em portugues: "the sintaxe of the "modify" opcao is m <item> <valor>. you did nao supply a valor.". Temas: nao sintaxe valor opcao. Em outras palavras: A opção de modificação exige o valor do item, mas nenhum valor foi fornecido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDZ009I 10.2.8 mensagem severidade informational familia AWSBDZ bdz tem texto The syntax the modify option item value You did not supply portugues sintaxe opcao valor`
@@ -61261,7 +61261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ009I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ010I (severidade: informational, familia AWSBDZ - bdz) tem o texto: "The syntax of the "modify" option is M <item> <value>. You did not supply an item." Em portugues: "the sintaxe of the "modify" opcao is m <item> <valor>. you did nao supply an item.". Temas: nao sintaxe opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ010I (severidade: informational, familia AWSBDZ - bdz) tem o texto: "The syntax of the "modify" option is M <item> <value>. You did not supply an item." Em portugues: "the sintaxe of the "modify" opcao is m <item> <valor>. you did nao supply an item.". Temas: nao sintaxe opcao. Em outras palavras: A opção de modificação exige o item, mas nenhum item foi fornecido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDZ010I 10.2.8 mensagem severidade informational familia AWSBDZ bdz tem texto The syntax the modify option item value You did not supply portugues sintaxe opcao valor`
@@ -61281,10 +61281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ010I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ011E (severidade: error, familia AWSBDZ - bdz) tem o texto: "You cannot modify the selected item." Em portugues: "you nao pode modify the selected item.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ011E (severidade: error, familia AWSBDZ - bdz) tem o texto: "You cannot modify the selected item." Em portugues: "you nao pode modify the selected item.". Temas: nao pode. Em outras palavras: Não é possível modificar o item selecionado, então confirme se o item é elegível para alteração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ011E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto You cannot modify the selected item portugues you nao Temas significa`
+> `AWSBDZ011E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto You cannot modify the selected item portugues you nao Temas outras palavras modificar selecionado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ011E no HCL Workload Automation 10.2.8?
@@ -61301,10 +61301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ012E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The value specified is not valid." Em portugues: "the valor especificado is nao valido.". Temas: nao valido especificado valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ012E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The value specified is not valid." Em portugues: "the valor especificado is nao valido.". Temas: nao valido especificado valor. Em outras palavras: O valor que foi informado para este parâmetro está fora do esperado e não pôde ser aceito pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ012E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The value specified not valid portugues the valor especificado nao valido Temas significa`
+> `AWSBDZ012E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The value specified not valid portugues the valor especificado nao valido Temas outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ012E no HCL Workload Automation 10.2.8?
@@ -61321,10 +61321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ013I (severidade: informational, familia AWSBDZ - bdz) tem o texto: "Radix must be one of the following: #/Decimal, $/Hex, %/Octal." Em portugues: "radix must be one of the seguinte: #/decimal, $/hex, %/octal.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ013I (severidade: informational, familia AWSBDZ - bdz) tem o texto: "Radix must be one of the following: #/Decimal, $/Hex, %/Octal." Em portugues: "radix must be one of the seguinte: #/decimal, $/hex, %/octal.". Em outras palavras: A base do número deve ser decimal, hexadecimal ou octal, indicada respectivamente pelos prefixos cerquilha, cifrão ou porcentagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ013I 10.2.8 mensagem severidade informational familia AWSBDZ bdz tem texto Radix must one the following Decimal Hex Octal portugues radix seguinte decimal hex octal significa`
+> `AWSBDZ013I 10.2.8 mensagem severidade informational familia AWSBDZ bdz tem texto Radix must one the following Decimal Hex Octal portugues radix seguinte decimal hex octal outras palavras base`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ013I no HCL Workload Automation 10.2.8?
@@ -61341,10 +61341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ013I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ019E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The jobtable is not accessible under MPE." Em portugues: "the jobtable is nao accessible under mpe.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ019E (severidade: error, familia AWSBDZ - bdz) tem o texto: "The jobtable is not accessible under MPE." Em portugues: "the jobtable is nao accessible under mpe.". Temas: nao. Em outras palavras: O jobtable não pode ser acessado quando se opera sob o ambiente MPE, e portanto a operação foi bloqueada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ019E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The jobtable not accessible under MPE portugues the nao mpe Temas significa`
+> `AWSBDZ019E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto The jobtable not accessible under MPE portugues the nao mpe Temas outras palavras acessado quando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ019E no HCL Workload Automation 10.2.8?
@@ -61361,10 +61361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ026E (severidade: error, familia AWSBDZ - bdz) tem o texto: "Unable to read the Symphony file." Em portugues: "incapaz to ler the symphony arquivo.". Temas: arquivo nao conseguiu symphony ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ026E (severidade: error, familia AWSBDZ - bdz) tem o texto: "Unable to read the Symphony file." Em portugues: "incapaz to ler the symphony arquivo.". Temas: arquivo nao conseguiu symphony ler leitura. Em outras palavras: Não foi possível ler o arquivo Symphony, que contém os dados do plano de escalonamento em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ026E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Unable read the Symphony file portugues incapaz ler symphony arquivo Temas nao conseguiu leitura significa`
+> `AWSBDZ026E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Unable read the Symphony file portugues incapaz ler symphony arquivo Temas nao conseguiu leitura outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ026E no HCL Workload Automation 10.2.8?
@@ -61381,10 +61381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ027E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No resources could be found." Em portugues: "no resources conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ027E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No resources could be found." Em portugues: "no resources conseguiu be encontrado.". Temas: encontrado. Em outras palavras: A busca não retornou nenhum recurso disponível no sistema de escalonamento consultado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ027E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto resources could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ027E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto resources could found portugues conseguiu encontrado Temas outras palavras busca retornou nenhum recurso sistema escalonamento consultado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ027E no HCL Workload Automation 10.2.8?
@@ -61401,10 +61401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ028E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No messages could be found." Em portugues: "no messages conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ028E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No messages could be found." Em portugues: "no messages conseguiu be encontrado.". Temas: encontrado. Em outras palavras: Nenhuma mensagem foi localizada na base consultada, indicando que não há registros correspondentes à busca..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ028E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto messages could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ028E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto messages could found portugues conseguiu encontrado Temas outras palavras Nenhuma foi localizada base consultada indicando registros correspondentes`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ028E no HCL Workload Automation 10.2.8?
@@ -61421,10 +61421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ028E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ029E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No files could be found." Em portugues: "no arquivos conseguiu be encontrado.". Temas: arquivos encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ029E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No files could be found." Em portugues: "no arquivos conseguiu be encontrado.". Temas: arquivos encontrado. Em outras palavras: Nenhum arquivo foi encontrado, portanto não existe registro de arquivo que atenda aos critérios informados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ029E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto files could found portugues arquivos conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ029E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto files could found portugues arquivos conseguiu encontrado Temas outras palavras Nenhum arquivo foi portanto existe registro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ029E no HCL Workload Automation 10.2.8?
@@ -61441,10 +61441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ030E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No string records could be found." Em portugues: "no string records conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ030E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No string records could be found." Em portugues: "no string records conseguiu be encontrado.". Temas: encontrado. Em outras palavras: Nenhum registro de strings foi localizado, o que indica ausência de dados de texto na consulta realizada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ030E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto string records could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ030E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto string records could found portugues conseguiu encontrado Temas outras palavras Nenhum registro strings foi localizado indica dados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ030E no HCL Workload Automation 10.2.8?
@@ -61461,10 +61461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ030E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ031E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No calendars could be found." Em portugues: "no calendars conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ031E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No calendars could be found." Em portugues: "no calendars conseguiu be encontrado.". Temas: encontrado. Em outras palavras: A pesquisa não retornou nenhum calendário cadastrado no sistema de escalonamento de trabalhos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ031E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto calendars could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ031E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto calendars could found portugues conseguiu encontrado Temas outras palavras pesquisa retornou nenhum cadastrado sistema escalonamento trabalhos significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ031E no HCL Workload Automation 10.2.8?
@@ -61481,10 +61481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ031E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ032E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No workstations could be found." Em portugues: "no workstations conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ032E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No workstations could be found." Em portugues: "no workstations conseguiu be encontrado.". Temas: encontrado. Em outras palavras: Nenhuma estação de trabalho cadastrada foi localizada na consulta executada à base..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ032E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto workstations could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ032E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto workstations could found portugues conseguiu encontrado Temas outras palavras Nenhuma trabalho cadastrada foi localizada consulta executada base significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ032E no HCL Workload Automation 10.2.8?
@@ -61501,10 +61501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ033E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No Job records could be found in the header." Em portugues: "no job records conseguiu be encontrado in the header.". Temas: job encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ033E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No Job records could be found in the header." Em portugues: "no job records conseguiu be encontrado in the header.". Temas: job encontrado. Em outras palavras: O cabeçalho da base não contém registros de jobs, e por isso nenhum trabalho foi retornado na leitura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ033E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Job records could found the header portugues job conseguiu encontrado Temas significa`
+> `AWSBDZ033E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Job records could found the header portugues job conseguiu encontrado Temas outras palavras base registros`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ033E no HCL Workload Automation 10.2.8?
@@ -61521,10 +61521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ033E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ034E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No job streams could be found." Em portugues: "no job streams conseguiu be encontrado.". Temas: job encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ034E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No job streams could be found." Em portugues: "no job streams conseguiu be encontrado.". Temas: job encontrado. Em outras palavras: Nenhum job stream, ou fluxo de execução em cascata, foi localizado para atender à consulta feita..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ034E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto job streams could found portugues conseguiu encontrado Temas significa`
+> `AWSBDZ034E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto job streams could found portugues conseguiu encontrado Temas outras palavras Nenhum stream fluxo cascata foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ034E no HCL Workload Automation 10.2.8?
@@ -61541,7 +61541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ034E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ035E (severidade: error, familia AWSBDZ - bdz) tem o texto: "An incorrect option was supplied. Valid options are a,c,f,g,j,m,r,s,'.'." Em portugues: "an incorreto opcao was informado. valido opcoes are a,c,f,g,j,m,r,s,'.'.". Temas: informado valido opcao opcoes incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ035E (severidade: error, familia AWSBDZ - bdz) tem o texto: "An incorrect option was supplied. Valid options are a,c,f,g,j,m,r,s,'.'." Em portugues: "an incorreto opcao was informado. valido opcoes are a,c,f,g,j,m,r,s,'.'.". Temas: informado valido opcao opcoes incorreto. Em outras palavras: Houve um erro de seleção na distinção da finalidade do comando; as opções válidas correspondem a letras como a, c, f, g, j, m, r, s e o ponto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBDZ035E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto incorrect option was supplied Valid options are portugues incorreto opcao informado valido opcoes Temas`
@@ -61601,10 +61601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ037E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ038E (severidade: error, familia AWSBDZ - bdz) tem o texto: "At Purgeable Jobs Record. No list options." Em portugues: "at purgeable jobs registro. no list opcoes.". Temas: opcoes registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ038E (severidade: error, familia AWSBDZ - bdz) tem o texto: "At Purgeable Jobs Record. No list options." Em portugues: "at purgeable jobs registro. no list opcoes.". Temas: opcoes registro. Em outras palavras: Ao chegar ao registro de jobs candidatos à remoção, nenhuma opção de listagem foi encontrada para prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ038E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Purgeable Jobs Record list options portugues purgeable jobs registro opcoes Temas significa`
+> `AWSBDZ038E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Purgeable Jobs Record list options portugues purgeable jobs registro opcoes Temas outras palavras chegar candidatos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ038E no HCL Workload Automation 10.2.8?
@@ -61641,10 +61641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ039E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ040E (severidade: error, familia AWSBDZ - bdz) tem o texto: "At Dependency Record." Em portugues: "at dependency registro.". Temas: registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ040E (severidade: error, familia AWSBDZ - bdz) tem o texto: "At Dependency Record." Em portugues: "at dependency registro.". Temas: registro. Em outras palavras: O processamento interrompeu-se ao alcançar o registro que descreve a dependência envolvida no escalonamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ040E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Dependency Record portugues dependency registro Temas significa diagnosticar`
+> `AWSBDZ040E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Dependency Record portugues dependency registro Temas outras palavras processamento interrompeu-se descreve envolvida escalonamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ040E no HCL Workload Automation 10.2.8?
@@ -61761,10 +61761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ046I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ047E (severidade: error, familia AWSBDZ - bdz) tem o texto: "An error occurred when opening the file." Em portugues: "an erro ocorreu when opening the arquivo.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ047E (severidade: error, familia AWSBDZ - bdz) tem o texto: "An error occurred when opening the file." Em portugues: "an erro ocorreu when opening the arquivo.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha no momento de tentar abrir o arquivo solicitado para leitura ou gravação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ047E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto occurred when opening the file portugues erro ocorreu arquivo Temas significa`
+> `AWSBDZ047E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto occurred when opening the file portugues erro ocorreu arquivo Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ047E no HCL Workload Automation 10.2.8?
@@ -61781,10 +61781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ047E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ048E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No record could be found." Em portugues: "no registro conseguiu be encontrado.". Temas: encontrado registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ048E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No record could be found." Em portugues: "no registro conseguiu be encontrado.". Temas: encontrado registro. Em outras palavras: Não foi localizado nenhum registro na base consultada para corresponder à chave informada na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ048E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto record could found portugues registro conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ048E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto record could found portugues registro conseguiu encontrado Temas outras palavras foi localizado nenhum base consultada corresponder chave`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ048E no HCL Workload Automation 10.2.8?
@@ -61801,10 +61801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ048E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ049E (severidade: error, familia AWSBDZ - bdz) tem o texto: "An error occurred while opening the jobtable. error:!1 !2." Em portugues: "an erro ocorreu while opening the jobtable. erro:!1 !2.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ049E (severidade: error, familia AWSBDZ - bdz) tem o texto: "An error occurred while opening the jobtable. error:!1 !2." Em portugues: "an erro ocorreu while opening the jobtable. erro:!1 !2.". Temas: erro ocorreu. Em outras palavras: Falha ao abrir o jobtable do sistema; o erro registrado reporta a causa exata e o código da falha ocorrida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ049E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto occurred while opening the jobtable portugues erro ocorreu Temas significa`
+> `AWSBDZ049E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto occurred while opening the jobtable portugues erro ocorreu Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ049E no HCL Workload Automation 10.2.8?
@@ -61841,10 +61841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ050E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ051E (severidade: error, familia AWSBDZ - bdz) tem o texto: "Specify a valid option: J, D, or "."." Em portugues: "specify a valido opcao: j, d, or ".".". Temas: valido opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ051E (severidade: error, familia AWSBDZ - bdz) tem o texto: "Specify a valid option: J, D, or "."." Em portugues: "specify a valido opcao: j, d, or ".".". Temas: valido opcao. Em outras palavras: É obrigatório informar uma opção válida, que pode ser J para job, D para dependência ou o ponto final de encerramento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ051E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Specify valid option portugues specify valido opcao Temas significa diagnosticar`
+> `AWSBDZ051E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto Specify valid option portugues specify valido opcao Temas outras palavras informar job ponto final encerramento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ051E no HCL Workload Automation 10.2.8?
@@ -61861,10 +61861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ051E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ057E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No holders could be found." Em portugues: "no holders conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ057E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No holders could be found." Em portugues: "no holders conseguiu be encontrado.". Temas: encontrado. Em outras palavras: Nenhum detentor de recurso foi encontrado no sistema durante a consulta executada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ057E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto holders could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ057E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto holders could found portugues conseguiu encontrado Temas outras palavras Nenhum detentor recurso foi sistema durante consulta executada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ057E no HCL Workload Automation 10.2.8?
@@ -61881,10 +61881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ057E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ058E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No dependencies could be found." Em portugues: "no dependencies conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ058E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No dependencies could be found." Em portugues: "no dependencies conseguiu be encontrado.". Temas: encontrado. Em outras palavras: Nenhuma dependência foi localizada, o que indica que não há pré-condições registradas para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ058E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto dependencies could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ058E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto dependencies could found portugues conseguiu encontrado Temas outras palavras Nenhuma foi localizada indica registradas significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ058E no HCL Workload Automation 10.2.8?
@@ -61901,10 +61901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ058E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ059E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No rerun jobs could be found." Em portugues: "no rerun jobs conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ059E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No rerun jobs could be found." Em portugues: "no rerun jobs conseguiu be encontrado.". Temas: encontrado. Em outras palavras: Nenhum job marcado para reexecução foi encontrado entre os registros do plano consultado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ059E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto rerun jobs could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ059E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto rerun jobs could found portugues conseguiu encontrado Temas outras palavras Nenhum job marcado foi entre registros`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ059E no HCL Workload Automation 10.2.8?
@@ -61921,10 +61921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ059E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBDZ060E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No folders could be found." Em portugues: "no folders conseguiu be encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBDZ060E (severidade: error, familia AWSBDZ - bdz) tem o texto: "No folders could be found." Em portugues: "no folders conseguiu be encontrado.". Temas: encontrado. Em outras palavras: A busca não retornou pastas existentes, indicando ausência de registros de diretórios na base..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBDZ060E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto folders could found portugues conseguiu encontrado Temas significa diagnosticar`
+> `AWSBDZ060E 10.2.8 mensagem severidade error familia AWSBDZ bdz tem texto folders could found portugues conseguiu encontrado Temas outras palavras busca retornou pastas existentes indicando registros base significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBDZ060E no HCL Workload Automation 10.2.8?
@@ -61941,10 +61941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBDZ060E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEA001E (severidade: error, familia AWSBEA - bea) tem o texto: "Unable to open the mozart database." Em portugues: "incapaz to open the mozart banco de dados.". Temas: nao conseguiu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEA001E (severidade: error, familia AWSBEA - bea) tem o texto: "Unable to open the mozart database." Em portugues: "incapaz to open the mozart banco de dados.". Temas: nao conseguiu banco de dados. Em outras palavras: Não foi possível abrir a base de dados mozart, que armazena as informações persistentes de escalonamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEA001E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto Unable open the mozart database portugues incapaz dados Temas nao conseguiu significa`
+> `AWSBEA001E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto Unable open the mozart database portugues incapaz dados Temas nao conseguiu outras palavras foi abrir base`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEA001E no HCL Workload Automation 10.2.8?
@@ -61961,10 +61961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEA001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEA002E (severidade: error, familia AWSBEA - bea) tem o texto: "Unable to read from the mozart database." Em portugues: "incapaz to ler from the mozart banco de dados.". Temas: nao conseguiu ler leitura banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEA002E (severidade: error, familia AWSBEA - bea) tem o texto: "Unable to read from the mozart database." Em portugues: "incapaz to ler from the mozart banco de dados.". Temas: nao conseguiu ler leitura banco de dados. Em outras palavras: Falha durante a leitura da base de dados mozart, impedindo que os dados necessários fossem recuperados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEA002E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto Unable read from the mozart database portugues incapaz ler dados Temas nao conseguiu leitura significa`
+> `AWSBEA002E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto Unable read from the mozart database portugues incapaz ler dados Temas nao conseguiu leitura outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEA002E no HCL Workload Automation 10.2.8?
@@ -61981,10 +61981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEA002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEA003E (severidade: error, familia AWSBEA - bea) tem o texto: "An error occurred while initializing the SORT routine." Em portugues: "an erro ocorreu while initializing the sort routine.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEA003E (severidade: error, familia AWSBEA - bea) tem o texto: "An error occurred while initializing the SORT routine." Em portugues: "an erro ocorreu while initializing the sort routine.". Temas: erro ocorreu. Em outras palavras: Ocorreu um erro na inicialização da rotina de ordenação que prepara os dados para processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEA003E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto occurred while initializing the SORT routine portugues erro ocorreu sort Temas significa`
+> `AWSBEA003E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto occurred while initializing the SORT routine portugues erro ocorreu sort Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEA003E no HCL Workload Automation 10.2.8?
@@ -62001,10 +62001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEA003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEA004E (severidade: error, familia AWSBEA - bea) tem o texto: "An error occurred in the SORTINPUT." Em portugues: "an erro ocorreu in the sortinput.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEA004E (severidade: error, familia AWSBEA - bea) tem o texto: "An error occurred in the SORTINPUT." Em portugues: "an erro ocorreu in the sortinput.". Temas: erro ocorreu. Em outras palavras: Uma falha foi identificada no processamento da entrada da rotina de ordenação, chamada SORTINPUT..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEA004E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto occurred the SORTINPUT portugues erro ocorreu sortinput Temas significa`
+> `AWSBEA004E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto occurred the SORTINPUT portugues erro ocorreu sortinput Temas outras palavras falha foi identificada processamento entrada rotina`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEA004E no HCL Workload Automation 10.2.8?
@@ -62021,10 +62021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEA004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEA005E (severidade: error, familia AWSBEA - bea) tem o texto: "An error occurred in the SORTOUTPUT." Em portugues: "an erro ocorreu in the sortoutput.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEA005E (severidade: error, familia AWSBEA - bea) tem o texto: "An error occurred in the SORTOUTPUT." Em portugues: "an erro ocorreu in the sortoutput.". Temas: erro ocorreu. Em outras palavras: Houve falha na geração da saída da rotina de ordenação, chamada SORTOUTPUT, que consolida o resultado ordenado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEA005E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto occurred the SORTOUTPUT portugues erro ocorreu sortoutput Temas significa`
+> `AWSBEA005E 10.2.8 mensagem severidade error familia AWSBEA bea tem texto occurred the SORTOUTPUT portugues erro ocorreu sortoutput Temas outras palavras Houve falha rotina chamada consolida`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEA005E no HCL Workload Automation 10.2.8?
@@ -62041,10 +62041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEA005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC110E (severidade: error, familia AWSBEC - bec) tem o texto: "Cannot open file "!1"." Em portugues: "nao pode open arquivo "!1".". Temas: arquivo nao pode. Explicacao oficial: The report generator program cannot open the indicated file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC110E (severidade: error, familia AWSBEC - bec) tem o texto: "Cannot open file "!1"." Em portugues: "nao pode open arquivo "!1".". Temas: arquivo nao pode. Em outras palavras: O arquivo indicado no parâmetro não pôde ser aberto, possivelmente por permissão, bloqueio ou inexistência.. Explicacao oficial: The report generator program cannot open the indicated file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC110E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto Cannot open file portugues nao arquivo Temas Explicacao oficial The report generator program cannot the indicated`
+> `AWSBEC110E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto Cannot open file portugues nao arquivo Temas outras palavras indicado aberto possivelmente bloqueio Explicacao oficial The`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC110E no HCL Workload Automation 10.2.8?
@@ -62061,10 +62061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC110E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC111E (severidade: error, familia AWSBEC - bec) tem o texto: "An error occurred while writing file "!1"." Em portugues: "an erro ocorreu while writing arquivo "!1".". Temas: erro arquivo ocorreu. Explicacao oficial: The report generator program cannot write the indicated file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC111E (severidade: error, familia AWSBEC - bec) tem o texto: "An error occurred while writing file "!1"." Em portugues: "an erro ocorreu while writing arquivo "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu um erro enquanto o sistema tentava gravar dados no arquivo indicado no parâmetro informado.. Explicacao oficial: The report generator program cannot write the indicated file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC111E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto occurred while writing file portugues erro ocorreu arquivo Temas Explicacao oficial The report generator`
+> `AWSBEC111E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto occurred while writing file portugues erro ocorreu arquivo Temas outras palavras Ocorreu enquanto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC111E no HCL Workload Automation 10.2.8?
@@ -62081,10 +62081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC111E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC112E (severidade: error, familia AWSBEC - bec) tem o texto: "An error occurred while reading file "!1"." Em portugues: "an erro ocorreu while reading arquivo "!1".". Temas: erro arquivo ocorreu. Explicacao oficial: The report generator program cannot read the indicated file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC112E (severidade: error, familia AWSBEC - bec) tem o texto: "An error occurred while reading file "!1"." Em portugues: "an erro ocorreu while reading arquivo "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Falha durante a leitura do arquivo indicado, impossibilitando o acesso ao conteúdo esperado.. Explicacao oficial: The report generator program cannot read the indicated file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC112E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto occurred while reading file portugues erro ocorreu arquivo Temas Explicacao oficial The report generator`
+> `AWSBEC112E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto occurred while reading file portugues erro ocorreu arquivo Temas outras palavras Falha durante leitura`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC112E no HCL Workload Automation 10.2.8?
@@ -62101,10 +62101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC112E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC821E (severidade: error, familia AWSBEC - bec) tem o texto: "The following database open error occurred: !1" Em portugues: "the seguinte banco de dados open erro ocorreu: !1". Temas: erro ocorreu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC821E (severidade: error, familia AWSBEC - bec) tem o texto: "The following database open error occurred: !1" Em portugues: "the seguinte banco de dados open erro ocorreu: !1". Temas: erro ocorreu banco de dados. Em outras palavras: A abertura da base de dados falhou e a mensagem do erro registra o motivo retornado pelo banco..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC821E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto The following database open occurred portugues the seguinte dados erro ocorreu Temas significa`
+> `AWSBEC821E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto The following database open occurred portugues the seguinte dados erro ocorreu Temas outras palavras abertura`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC821E no HCL Workload Automation 10.2.8?
@@ -62121,10 +62121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC821E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC870E (severidade: error, familia AWSBEC - bec) tem o texto: "The following database open error occurred: %s" Em portugues: "the seguinte banco de dados open erro ocorreu: %s". Temas: erro ocorreu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC870E (severidade: error, familia AWSBEC - bec) tem o texto: "The following database open error occurred: %s" Em portugues: "the seguinte banco de dados open erro ocorreu: %s". Temas: erro ocorreu banco de dados. Em outras palavras: Ao abrir a base de dados, o sistema reportou o detalhe específico do erro ocorrido na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC870E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto The following database open occurred portugues the seguinte dados erro ocorreu Temas significa`
+> `AWSBEC870E 10.2.8 mensagem severidade error familia AWSBEC bec tem texto The following database open occurred portugues the seguinte dados erro ocorreu Temas outras palavras abrir`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC870E no HCL Workload Automation 10.2.8?
@@ -62141,7 +62141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC870E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC885I (severidade: informational, familia AWSBEC - bec) tem o texto: "-i Use this to supply the name of an input file to use instead of the standard input.#" Em portugues: "-i use this to supply the nome of an entrada arquivo to use instead of the standard entrada.#". Temas: arquivo nome.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC885I (severidade: informational, familia AWSBEC - bec) tem o texto: "-i Use this to supply the name of an input file to use instead of the standard input.#" Em portugues: "-i use this to supply the nome of an entrada arquivo to use instead of the standard entrada.#". Temas: arquivo nome. Em outras palavras: Utilize a opção i para indicar o nome de um arquivo de entrada no lugar da entrada padrão do teclado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEC885I 10.2.8 mensagem severidade informational familia AWSBEC bec tem texto Use this supply the name input file use instead standard portugues nome entrada arquivo`
@@ -62161,7 +62161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC885I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC886I (severidade: informational, familia AWSBEC - bec) tem o texto: "-o Use this to supply the name of an output file to use instead of the standard output." Em portugues: "-o use this to supply the nome of an saida arquivo to use instead of the standard saida.". Temas: arquivo nome.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC886I (severidade: informational, familia AWSBEC - bec) tem o texto: "-o Use this to supply the name of an output file to use instead of the standard output." Em portugues: "-o use this to supply the nome of an saida arquivo to use instead of the standard saida.". Temas: arquivo nome. Em outras palavras: Utilize a opção o para indicar o nome de um arquivo de saída no lugar da saída padrão do terminal..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEC886I 10.2.8 mensagem severidade informational familia AWSBEC bec tem texto Use this supply the name output file use instead standard portugues nome saida arquivo`
@@ -62181,10 +62181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC886I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC887I (severidade: informational, familia AWSBEC - bec) tem o texto: "Cannot open file '%s'" Em portugues: "nao pode open arquivo '%s'". Temas: arquivo nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC887I (severidade: informational, familia AWSBEC - bec) tem o texto: "Cannot open file '%s'" Em portugues: "nao pode open arquivo '%s'". Temas: arquivo nao pode. Em outras palavras: O arquivo especificado não pôde ser aberto pelo sistema, e a operação foi interrompida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC887I 10.2.8 mensagem severidade informational familia AWSBEC bec tem texto Cannot open file portugues nao arquivo Temas significa diagnosticar`
+> `AWSBEC887I 10.2.8 mensagem severidade informational familia AWSBEC bec tem texto Cannot open file portugues nao arquivo Temas outras palavras especificado aberto pelo sistema foi interrompida significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC887I no HCL Workload Automation 10.2.8?
@@ -62201,10 +62201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC887I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEC903I (severidade: informational, familia AWSBEC - bec) tem o texto: "Cannot open file '%s'" Em portugues: "nao pode open arquivo '%s'". Temas: arquivo nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEC903I (severidade: informational, familia AWSBEC - bec) tem o texto: "Cannot open file '%s'" Em portugues: "nao pode open arquivo '%s'". Temas: arquivo nao pode. Em outras palavras: O sistema reportou impossibilidade de abrir o arquivo informado, inviabilizando a continuidade do processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEC903I 10.2.8 mensagem severidade informational familia AWSBEC bec tem texto Cannot open file portugues nao arquivo Temas significa diagnosticar`
+> `AWSBEC903I 10.2.8 mensagem severidade informational familia AWSBEC bec tem texto Cannot open file portugues nao arquivo Temas outras palavras sistema reportou impossibilidade abrir informado inviabilizando continuidade`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEC903I no HCL Workload Automation 10.2.8?
@@ -62221,10 +62221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEC903I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEE001E (severidade: error, familia AWSBEE - bee) tem o texto: "Parameter !1 does not exist." Em portugues: "parametro !1 does nao existe.". Temas: nao parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEE001E (severidade: error, familia AWSBEE - bee) tem o texto: "Parameter !1 does not exist." Em portugues: "parametro !1 does nao existe.". Temas: nao parametro. Em outras palavras: O parâmetro referenciado não existe no contexto atual, portanto o comando não pôde processar a solicitação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEE001E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto Parameter does not exist portugues parametro nao existe Temas significa`
+> `AWSBEE001E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto Parameter does not exist portugues parametro nao existe Temas outras palavras referenciado contexto atual portanto comando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEE001E no HCL Workload Automation 10.2.8?
@@ -62241,10 +62241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEE001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEE002E (severidade: error, familia AWSBEE - bee) tem o texto: "The following parameter name is not valid: !1." Em portugues: "the seguinte parametro nome is nao valido: !1.". Temas: nao nome valido parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEE002E (severidade: error, familia AWSBEE - bee) tem o texto: "The following parameter name is not valid: !1." Em portugues: "the seguinte parametro nome is nao valido: !1.". Temas: nao nome valido parametro. Em outras palavras: O nome de parâmetro informado não é reconhecido como válido para o comando executado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEE002E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto The following parameter name not valid portugues the seguinte parametro nome nao valido Temas significa`
+> `AWSBEE002E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto The following parameter name not valid portugues the seguinte parametro nome nao valido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEE002E no HCL Workload Automation 10.2.8?
@@ -62261,10 +62261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEE002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEE003E (severidade: error, familia AWSBEE - bee) tem o texto: "You cannot use the following parameter: !1." Em portugues: "you nao pode use the seguinte parametro: !1.". Temas: nao pode parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEE003E (severidade: error, familia AWSBEE - bee) tem o texto: "You cannot use the following parameter: !1." Em portugues: "you nao pode use the seguinte parametro: !1.". Temas: nao pode parametro. Em outras palavras: Você não tem autorização para utilizar o parâmetro informado no comando que está tentando executar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEE003E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto You cannot use the following parameter portugues you nao seguinte parametro Temas significa`
+> `AWSBEE003E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto You cannot use the following parameter portugues you nao seguinte parametro Temas outras palavras utilizar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEE003E no HCL Workload Automation 10.2.8?
@@ -62281,7 +62281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEE003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEE007E (severidade: error, familia AWSBEE - bee) tem o texto: "You do not have "build" permission for the "parms -build" command that creates and maintains the parameters database." Em portugues: "you do nao have "build" permissao for the "parms -build" comando that creates and maintains the parametros banco de dados.". Temas: nao comando parametros banco de dados. Explicacao oficial: You have tried to build the local parameters database but your user ID does not have build permission in the Security file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEE007E (severidade: error, familia AWSBEE - bee) tem o texto: "You do not have "build" permission for the "parms -build" command that creates and maintains the parameters database." Em portugues: "you do nao have "build" permissao for the "parms -build" comando that creates and maintains the parametros banco de dados.". Temas: nao comando parametros banco de dados. Em outras palavras: Você não possui a permissão de build necessária para executar o comando que cria e mantém a base de parâmetros.. Explicacao oficial: You have tried to build the local parameters database but your user ID does not have build permission in the Security file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEE007E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto You not have build permission for the parms command that creates and maintains parameters database portugues you nao`
@@ -62301,7 +62301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEE007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEE008E (severidade: error, familia AWSBEE - bee) tem o texto: "A syntax error occurred. The parameter name exceeds the maximum length of !1 bytes." Em portugues: "a sintaxe erro ocorreu. the parametro nome exceeds the maximo tamanho of !1 bytes.". Temas: erro ocorreu nome sintaxe parametro. Explicacao oficial: You have supplied a parameter name that is too long.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEE008E (severidade: error, familia AWSBEE - bee) tem o texto: "A syntax error occurred. The parameter name exceeds the maximum length of !1 bytes." Em portugues: "a sintaxe erro ocorreu. the parametro nome exceeds the maximo tamanho of !1 bytes.". Temas: erro ocorreu nome sintaxe parametro. Em outras palavras: Falha de sintaxe porque o nome do parâmetro ultrapassou o tamanho máximo permitido pelo sistema em bytes.. Explicacao oficial: You have supplied a parameter name that is too long.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEE008E 10.2.8 mensagem severidade error familia AWSBEE bee tem texto syntax occurred The parameter name exceeds the maximum length bytes portugues sintaxe erro ocorreu parametro nome`
@@ -62321,10 +62321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEE008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF001E (severidade: error, familia AWSBEF - bef) tem o texto: "Missing last archive run date." Em portugues: "faltando last archive run date.". Temas: execucao faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF001E (severidade: error, familia AWSBEF - bef) tem o texto: "Missing last archive run date." Em portugues: "faltando last archive run date.". Temas: execucao faltando. Em outras palavras: Falta a data da última execução do arquivamento, sendo obrigatória para que a rotina de arquivamento possa rodar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEF001E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto Missing last archive run date portugues faltando Temas execucao significa`
+> `AWSBEF001E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto Missing last archive run date portugues faltando Temas execucao outras palavras Falta data arquivamento sendo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEF001E no HCL Workload Automation 10.2.8?
@@ -62341,7 +62341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF002E (severidade: error, familia AWSBEF - bef) tem o texto: "Archiver could not create a directory with the following path: !1." Em portugues: "archiver conseguiu nao criar a diretorio with the seguinte caminho: !1.". Temas: nao diretorio criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF002E (severidade: error, familia AWSBEF - bef) tem o texto: "Archiver could not create a directory with the following path: !1." Em portugues: "archiver conseguiu nao criar a diretorio with the seguinte caminho: !1.". Temas: nao diretorio criar. Em outras palavras: O arquivador não conseguiu criar o diretório apontado pelo caminho informado, possivelmente por permissão ou espaço..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF002E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto Archiver could not create directory with the following path portugues archiver conseguiu nao criar diretorio seguinte caminho Temas`
@@ -62361,10 +62361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF003I (severidade: informational, familia AWSBEF - bef) tem o texto: "The Symphony file !1 from schedlog was archived." Em portugues: "the symphony arquivo !1 from schedlog was archived.". Temas: arquivo symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF003I (severidade: informational, familia AWSBEF - bef) tem o texto: "The Symphony file !1 from schedlog was archived." Em portugues: "the symphony arquivo !1 from schedlog was archived.". Temas: arquivo symphony. Em outras palavras: O arquivo Symphony originado do schedlog foi movido com sucesso para o armazenamento de arquivamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEF003I 10.2.8 mensagem severidade informational familia AWSBEF bef tem texto The Symphony file from schedlog was archived portugues the symphony arquivo Temas significa`
+> `AWSBEF003I 10.2.8 mensagem severidade informational familia AWSBEF bef tem texto The Symphony file from schedlog was archived portugues the symphony arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEF003I no HCL Workload Automation 10.2.8?
@@ -62381,7 +62381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF003I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF004E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred while opening the Symphony file from schedlog !1." Em portugues: "an erro ocorreu while opening the symphony arquivo from schedlog !1.". Temas: erro arquivo ocorreu symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF004E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred while opening the Symphony file from schedlog !1." Em portugues: "an erro ocorreu while opening the symphony arquivo from schedlog !1.". Temas: erro arquivo ocorreu symphony. Em outras palavras: Houve falha na abertura do arquivo Symphony gerado a partir do schedlog, impedindo seu arquivamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF004E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto occurred while opening the Symphony file from schedlog portugues erro ocorreu symphony arquivo Temas`
@@ -62401,7 +62401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF005E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred reading workstation record !1 from the logged Symphony file !2." Em portugues: "an erro ocorreu reading estacao de trabalho registro !1 from the logged symphony arquivo !2.". Temas: erro arquivo estacao de trabalho ocorreu symphony registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF005E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred reading workstation record !1 from the logged Symphony file !2." Em portugues: "an erro ocorreu reading estacao de trabalho registro !1 from the logged symphony arquivo !2.". Temas: erro arquivo estacao de trabalho ocorreu symphony registro. Em outras palavras: Erro ao ler o registro de estação de trabalho originado do arquivo Symphony registrado no schedlog..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF005E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto occurred reading workstation record from the logged Symphony file portugues erro ocorreu estacao trabalho registro`
@@ -62421,7 +62421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF006E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred reading job stream record !1 from the logged Symphony file !2." Em portugues: "an erro ocorreu reading job fluxo registro !1 from the logged symphony arquivo !2.". Temas: erro arquivo job ocorreu symphony fluxo registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF006E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred reading job stream record !1 from the logged Symphony file !2." Em portugues: "an erro ocorreu reading job fluxo registro !1 from the logged symphony arquivo !2.". Temas: erro arquivo job ocorreu symphony fluxo registro. Em outras palavras: Erro ao ler o registro de job stream contido no arquivo Symphony gravado pelo schedlog durante o arquivamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF006E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto occurred reading job stream record from the logged Symphony file portugues erro ocorreu fluxo registro`
@@ -62441,7 +62441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF007E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred reading job record !1 from the logged Symphony file !2." Em portugues: "an erro ocorreu reading job registro !1 from the logged symphony arquivo !2.". Temas: erro arquivo job ocorreu symphony registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF007E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred reading job record !1 from the logged Symphony file !2." Em portugues: "an erro ocorreu reading job registro !1 from the logged symphony arquivo !2.". Temas: erro arquivo job ocorreu symphony registro. Em outras palavras: Ocorreu erro na leitura do registro de job extraído do arquivo Symphony produzido pelo schedlog..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF007E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto occurred reading job record from the logged Symphony file portugues erro ocorreu registro symphony`
@@ -62461,7 +62461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF008I (severidade: informational, familia AWSBEF - bef) tem o texto: "No Symphony file from schedlog was archived: the time selection criteria were not satisfied." Em portugues: "no symphony arquivo from schedlog was archived: the tempo selection criteria were nao satisfied.". Temas: nao arquivo symphony tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF008I (severidade: informational, familia AWSBEF - bef) tem o texto: "No Symphony file from schedlog was archived: the time selection criteria were not satisfied." Em portugues: "no symphony arquivo from schedlog was archived: the tempo selection criteria were nao satisfied.". Temas: nao arquivo symphony tempo hora. Em outras palavras: Nenhum arquivo Symphony do schedlog foi arquivado porque os critérios de seleção por período não foram atendidos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF008I 10.2.8 mensagem severidade informational familia AWSBEF bef tem texto Symphony file from schedlog was archived the time selection criteria were not satisfied portugues symphony arquivo`
@@ -62481,7 +62481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEF008I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEF009E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred while opening one or more output files." Em portugues: "an erro ocorreu while opening one or mais saida arquivos.". Temas: erro arquivos ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEF009E (severidade: error, familia AWSBEF - bef) tem o texto: "An error occurred while opening one or more output files." Em portugues: "an erro ocorreu while opening one or mais saida arquivos.". Temas: erro arquivos ocorreu. Em outras palavras: Falha ao abrir um ou mais arquivos de saída durante a operação de arquivamento dos dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEF009E 10.2.8 mensagem severidade error familia AWSBEF bef tem texto occurred while opening one more output files portugues erro ocorreu mais saida arquivos Temas`
@@ -63821,10 +63821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEI013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ002I (severidade: informational, familia AWSBEJ - bej) tem o texto: "No error was found in the Symphony file." Em portugues: "no erro was encontrado in the symphony arquivo.". Temas: erro arquivo encontrado symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ002I (severidade: informational, familia AWSBEJ - bej) tem o texto: "No error was found in the Symphony file." Em portugues: "no erro was encontrado in the symphony arquivo.". Temas: erro arquivo encontrado symphony. Em outras palavras: A validação do arquivo Symphony concluiu sem apontar nenhum erro estrutural ou de conteúdo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEJ002I 10.2.8 mensagem severidade informational familia AWSBEJ bej tem texto error was found the Symphony file portugues erro encontrado symphony arquivo Temas significa`
+> `AWSBEJ002I 10.2.8 mensagem severidade informational familia AWSBEJ bej tem texto error was found the Symphony file portugues erro encontrado symphony arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEJ002I no HCL Workload Automation 10.2.8?
@@ -63841,7 +63841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ002I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ010E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Job stream record (#!1) has incorrect dependencies." Em portugues: "erro: job fluxo registro (#!1) has incorreto dependencies.". Temas: erro job fluxo registro incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ010E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Job stream record (#!1) has incorrect dependencies." Em portugues: "erro: job fluxo registro (#!1) has incorreto dependencies.". Temas: erro job fluxo registro incorreto. Em outras palavras: O registro de job stream indicado possui dependências incorretas, tornando o fluxo de execução inválido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEJ010E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error Job stream record has incorrect dependencies portugues erro job fluxo registro incorreto Temas`
@@ -63861,10 +63861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ011E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Job record (#!1) has incorrect dependencies." Em portugues: "erro: job registro (#!1) has incorreto dependencies.". Temas: erro job registro incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ011E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Job record (#!1) has incorrect dependencies." Em portugues: "erro: job registro (#!1) has incorreto dependencies.". Temas: erro job registro incorreto. Em outras palavras: O registro de job indicado apresenta dependências inconsistentes, inviabilizando a execução correta do trabalho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEJ011E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error Job record has incorrect dependencies portugues erro job registro incorreto Temas significa`
+> `AWSBEJ011E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error Job record has incorrect dependencies portugues erro job registro incorreto Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEJ011E no HCL Workload Automation 10.2.8?
@@ -63881,10 +63881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ012E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error while reading record (#!1): !2" Em portugues: "erro while reading registro (#!1): !2". Temas: erro registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ012E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error while reading record (#!1): !2" Em portugues: "erro while reading registro (#!1): !2". Temas: erro registro. Em outras palavras: Ocorreu um erro durante a leitura do registro apontado, cujos detalhes foram reportados na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEJ012E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error while reading record portugues erro registro Temas significa`
+> `AWSBEJ012E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error while reading record portugues erro registro Temas outras palavras Ocorreu durante leitura apontado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEJ012E no HCL Workload Automation 10.2.8?
@@ -63901,10 +63901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ014E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: The job stream chain is corrupted." Em portugues: "erro: the job fluxo chain is corrupted.". Temas: erro job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ014E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: The job stream chain is corrupted." Em portugues: "erro: the job fluxo chain is corrupted.". Temas: erro job fluxo. Em outras palavras: A cadeia de jobs interligados que forma o job stream está corrompida, impedindo sua utilização..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEJ014E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error The job stream chain corrupted portugues erro the fluxo Temas significa`
+> `AWSBEJ014E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error The job stream chain corrupted portugues erro the fluxo Temas outras palavras cadeia`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEJ014E no HCL Workload Automation 10.2.8?
@@ -63921,7 +63921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ015E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Record (#!1) is not a job stream record as expected." Em portugues: "erro: registro (#!1) is nao a job fluxo registro as esperado.". Temas: erro nao job fluxo registro esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ015E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Record (#!1) is not a job stream record as expected." Em portugues: "erro: registro (#!1) is nao a job fluxo registro as esperado.". Temas: erro nao job fluxo registro esperado. Em outras palavras: O registro indicado não corresponde a um job stream como era esperado, indicando inconsistência da estrutura do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBEJ015E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error Record not job stream record expected portugues erro registro nao fluxo esperado Temas`
@@ -63941,10 +63941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBEJ015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBEJ016E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Record (#!1) is not a job record as expected." Em portugues: "erro: registro (#!1) is nao a job registro as esperado.". Temas: erro nao job registro esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBEJ016E (severidade: error, familia AWSBEJ - bej) tem o texto: "Error: Record (#!1) is not a job record as expected." Em portugues: "erro: registro (#!1) is nao a job registro as esperado.". Temas: erro nao job registro esperado. Em outras palavras: O registro apontado não corresponde a um job conforme o esperado, revelando uma divergência na estrutura dos dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBEJ016E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error Record not job record expected portugues erro registro nao esperado Temas significa`
+> `AWSBEJ016E 10.2.8 mensagem severidade error familia AWSBEJ bej tem texto Error Record not job record expected portugues erro registro nao esperado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBEJ016E no HCL Workload Automation 10.2.8?
@@ -73181,7 +73181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV027E (severidade: error, familia AWSBHV - bhv) tem o texto: "The old Symphony file cannot be saved as the following file name: "!1"" Em portugues: "the old symphony arquivo nao pode be saved as the seguinte arquivo nome: "!1"". Temas: arquivo nao pode nome symphony. Explicacao oficial: Stageman encountered an error attempting to close the old Symphony file. The file cannot be saved.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV027E (severidade: error, familia AWSBHV - bhv) tem o texto: "The old Symphony file cannot be saved as the following file name: "!1"" Em portugues: "the old symphony arquivo nao pode be saved as the seguinte arquivo nome: "!1"". Temas: arquivo nao pode nome symphony. Em outras palavras: O arquivo Symphony antigo não pôde ser preservado sob o novo nome de arquivo informado.. Explicacao oficial: Stageman encountered an error attempting to close the old Symphony file. The file cannot be saved.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV027E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The old Symphony file cannot saved the following name portugues symphony arquivo nao seguinte`
@@ -73201,7 +73201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV028E (severidade: error, familia AWSBHV - bhv) tem o texto: "The new Symphony file cannot be renamed to the following file name: "!1"." Em portugues: "the new symphony arquivo nao pode be renamed to the seguinte arquivo nome: "!1".". Temas: arquivo nao pode nome symphony. Explicacao oficial: Stageman is unable to rename the Symnew file to <TWS_home>/Symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV028E (severidade: error, familia AWSBHV - bhv) tem o texto: "The new Symphony file cannot be renamed to the following file name: "!1"." Em portugues: "the new symphony arquivo nao pode be renamed to the seguinte arquivo nome: "!1".". Temas: arquivo nao pode nome symphony. Em outras palavras: Falha ao renomear o novo arquivo Symphony para o nome de destino indicado na operação.. Explicacao oficial: Stageman is unable to rename the Symnew file to <TWS_home>/Symphony.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV028E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The new Symphony file cannot renamed the following name portugues symphony arquivo nao seguinte`
@@ -73221,10 +73221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV028E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV029E (severidade: error, familia AWSBHV - bhv) tem o texto: "The new Symphony file cannot be saved." Em portugues: "the new symphony arquivo nao pode be saved.". Temas: arquivo nao pode symphony. Explicacao oficial: Stageman is unable to save the Symphony file in <TWS_home>/Symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV029E (severidade: error, familia AWSBHV - bhv) tem o texto: "The new Symphony file cannot be saved." Em portugues: "the new symphony arquivo nao pode be saved.". Temas: arquivo nao pode symphony. Em outras palavras: O novo arquivo Symphony gerado não pôde ser salvo, mantendo-se o estado anterior do plano.. Explicacao oficial: Stageman is unable to save the Symphony file in <TWS_home>/Symphony.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV029E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The new Symphony file cannot saved portugues the symphony arquivo nao Temas Explicacao oficial Stageman`
+> `AWSBHV029E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The new Symphony file cannot saved portugues the symphony arquivo nao Temas outras palavras novo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV029E no HCL Workload Automation 10.2.8?
@@ -73241,10 +73241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV030I (severidade: informational, familia AWSBHV - bhv) tem o texto: "The new Symphony file is installed." Em portugues: "the new symphony arquivo is instalado.". Temas: arquivo symphony instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV030I (severidade: informational, familia AWSBHV - bhv) tem o texto: "The new Symphony file is installed." Em portugues: "the new symphony arquivo is instalado.". Temas: arquivo symphony instalado. Em outras palavras: O novo arquivo Symphony foi instalado com sucesso e está pronto para uso no escalonamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV030I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto The new Symphony file installed portugues the symphony arquivo instalado Temas significa`
+> `AWSBHV030I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto The new Symphony file installed portugues the symphony arquivo instalado Temas outras palavras novo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV030I no HCL Workload Automation 10.2.8?
@@ -73261,10 +73261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV030I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV031W (severidade: warning, familia AWSBHV - bhv) tem o texto: "User is not creator of !1, must logon as !1" Em portugues: "usuario is nao creator of !1, must logon as !1". Temas: nao usuario logon.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV031W (severidade: warning, familia AWSBHV - bhv) tem o texto: "User is not creator of !1, must logon as !1" Em portugues: "usuario is nao creator of !1, must logon as !1". Temas: nao usuario logon. Em outras palavras: O usuário atual não é o criador do objeto informado, sendo necessário autenticar-se com a identidade correta para prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV031W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto User not creator must logon portugues usuario nao Temas significa`
+> `AWSBHV031W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto User not creator must logon portugues usuario nao Temas outras palavras atual criador objeto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV031W no HCL Workload Automation 10.2.8?
@@ -73281,10 +73281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV031W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV032E (severidade: error, familia AWSBHV - bhv) tem o texto: "Multiple runs of Stageman, recompile new Symphony first" Em portugues: "multiple runs of stageman, recompile new symphony first". Temas: symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV032E (severidade: error, familia AWSBHV - bhv) tem o texto: "Multiple runs of Stageman, recompile new Symphony first" Em portugues: "multiple runs of stageman, recompile new symphony first". Temas: symphony. Em outras palavras: Foram iniciadas múltiplas execuções simultâneas do Stageman e é preciso recompilar o novo Symphony antes de continuar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV032E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Multiple runs Stageman recompile new Symphony first portugues multiple stageman symphony Temas significa`
+> `AWSBHV032E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Multiple runs Stageman recompile new Symphony first portugues multiple stageman symphony Temas outras palavras Foram`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV032E no HCL Workload Automation 10.2.8?
@@ -73301,10 +73301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV033I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Job stream #!2 is carried forward. The new id is !3." Em portugues: "job fluxo #!2 is carried forward. the new id is !3.". Temas: job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV033I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Job stream #!2 is carried forward. The new id is !3." Em portugues: "job fluxo #!2 is carried forward. the new id is !3.". Temas: job fluxo. Em outras palavras: O job stream apontado foi transportado para o novo plano e passou a valer sob a nova identificação informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV033I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Job stream carried forward The new portugues job fluxo the Temas significa`
+> `AWSBHV033I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Job stream carried forward The new portugues job fluxo the Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV033I no HCL Workload Automation 10.2.8?
@@ -73321,7 +73321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV033I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV034W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job has dependencies not carried forward: "!1#!2"." Em portugues: "the seguinte job has dependencies nao carried forward: "!1#!2".". Temas: nao job. Explicacao oficial: The indicated job has dependencies in the production plan (Symphony file), but the jobs on which it is dependent are not in the Symphony file. This is because those jobs were not in a carryforward job stream. Stageman adds a prompt for every job not found.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV034W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job has dependencies not carried forward: "!1#!2"." Em portugues: "the seguinte job has dependencies nao carried forward: "!1#!2".". Temas: nao job. Em outras palavras: O job indicado possui dependências que não foram transportadas para o novo plano de escalonamento.. Explicacao oficial: The indicated job has dependencies in the production plan (Symphony file), but the jobs on which it is dependent are not in the Symphony file. This is because those jobs were not in a carryforward job stream. Stageman adds a prompt for every job not found.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV034W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The following job has dependencies not carried forward portugues the seguinte nao Temas`
@@ -73341,7 +73341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV034W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV035W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job stream has dependencies not carried forward: "!1"." Em portugues: "the seguinte job fluxo has dependencies nao carried forward: "!1".". Temas: nao job fluxo. Explicacao oficial: The indicated job stream has dependencies in the production plan (Symphony file), but the jobs on which it is dependent are not in the Symphony file. This is because those jobs were not in a carryforward job stream. Stageman adds a prompt for every job not found.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV035W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job stream has dependencies not carried forward: "!1"." Em portugues: "the seguinte job fluxo has dependencies nao carried forward: "!1".". Temas: nao job fluxo. Em outras palavras: O job stream assinalado mantém dependências que não foram levadas adiante na atualização do plano.. Explicacao oficial: The indicated job stream has dependencies in the production plan (Symphony file), but the jobs on which it is dependent are not in the Symphony file. This is because those jobs were not in a carryforward job stream. Stageman adds a prompt for every job not found.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV035W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The following job stream has dependencies not carried forward portugues the seguinte fluxo nao Temas`
@@ -73361,10 +73361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV035W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV036I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Multi-workstation Symphony file copied to !1" Em portugues: "multi-estacao de trabalho symphony arquivo copied to !1". Temas: arquivo symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV036I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Multi-workstation Symphony file copied to !1" Em portugues: "multi-estacao de trabalho symphony arquivo copied to !1". Temas: arquivo symphony. Em outras palavras: O arquivo Symphony envolvendo múltiplas estações de trabalho foi copiado para o destino indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV036I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Multi-workstation Symphony file copied portugues multi-estacao trabalho symphony arquivo Temas significa`
+> `AWSBHV036I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Multi-workstation Symphony file copied portugues multi-estacao trabalho symphony arquivo Temas outras palavras envolvendo foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV036I no HCL Workload Automation 10.2.8?
@@ -73381,7 +73381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV036I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV037W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job stream or job is in the "adding" state, and has not been carried forward: "!1#!2"." Em portugues: "the seguinte job fluxo or job is in the "adding" estado, and has nao estado carried forward: "!1#!2".". Temas: nao job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV037W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job stream or job is in the "adding" state, and has not been carried forward: "!1#!2"." Em portugues: "the seguinte job fluxo or job is in the "adding" estado, and has nao estado carried forward: "!1#!2".". Temas: nao job fluxo. Em outras palavras: O job ou job stream assinalado permanece no estado de inclusão e por isso não foi transportado para o novo plano..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV037W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The following job stream the adding state and has not been carried forward portugues seguinte fluxo`
@@ -73401,7 +73401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV037W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV038E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman has been unable to get exclusive access to the Symphony file. You need to shutdown the HCL Workload Automation processes." Em portugues: "stageman has estado incapaz to get exclusive acesso to the symphony arquivo. you need to shutdown the hcl workload automation processes.". Temas: arquivo nao conseguiu carga de trabalho symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV038E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman has been unable to get exclusive access to the Symphony file. You need to shutdown the HCL Workload Automation processes." Em portugues: "stageman has estado incapaz to get exclusive acesso to the symphony arquivo. you need to shutdown the hcl workload automation processes.". Temas: arquivo nao conseguiu carga de trabalho symphony. Em outras palavras: O Stageman não conseguiu obter acesso exclusivo ao arquivo Symphony, sendo necessário encerrar os processos do HCL Workload Automation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV038E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Stageman has been unable get exclusive access the Symphony file You need shutdown processes portugues stageman estado incapaz`
@@ -73421,7 +73421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV038E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV039W (severidade: warning, familia AWSBHV - bhv) tem o texto: "No "carry job states" are specified in the global options. The default behavior of allowing all states has been used." Em portugues: "no "carry job states" are especificado in the global opcoes. the default behavior of allowing all states has estado used.". Temas: job especificado opcoes. Explicacao oficial: The carry job states setting in the global options determines the jobs, by state, that are to be included in job streams that are carried forward. If you make no specific setting, all jobs are included.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV039W (severidade: warning, familia AWSBHV - bhv) tem o texto: "No "carry job states" are specified in the global options. The default behavior of allowing all states has been used." Em portugues: "no "carry job states" are especificado in the global opcoes. the default behavior of allowing all states has estado used.". Temas: job especificado opcoes. Em outras palavras: Nenhum estado de job configurado nas opções globais para transporte foi definido, e por isso vale a regra padrão que inclui todos os estados.. Explicacao oficial: The carry job states setting in the global options determines the jobs, by state, that are to be included in job streams that are carried forward. If you make no specific setting, all jobs are included.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV039W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto carry job states are specified the global options The default behavior allowing all has been used portugues`
@@ -73441,7 +73441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV039W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV040W (severidade: warning, familia AWSBHV - bhv) tem o texto: "Only jobs in the following states are carried forward: "!1", as defined in the global options (carry job states)." Em portugues: "only jobs in the seguinte states are carried forward: "!1", as defined in the global opcoes (carry job states).". Temas: job opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV040W (severidade: warning, familia AWSBHV - bhv) tem o texto: "Only jobs in the following states are carried forward: "!1", as defined in the global options (carry job states)." Em portugues: "only jobs in the seguinte states are carried forward: "!1", as defined in the global opcoes (carry job states).". Temas: job opcoes. Em outras palavras: Apenas os jobs que estejam nos estados listados serão transportados, conforme a configuração de estados de transporte das opções globais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV040W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto Only jobs the following states are carried forward defined global options carry job portugues only seguinte`
@@ -73461,10 +73461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV040W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV041E (severidade: error, familia AWSBHV - bhv) tem o texto: "Error accessing mozart: !1" Em portugues: "erro accessing mozart: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV041E (severidade: error, familia AWSBHV - bhv) tem o texto: "Error accessing mozart: !1" Em portugues: "erro accessing mozart: !1". Temas: erro. Em outras palavras: Não foi possível acessar a base mozart e o detalhe do erro foi reportado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV041E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Error accessing mozart portugues erro Temas significa diagnosticar`
+> `AWSBHV041E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Error accessing mozart portugues erro Temas outras palavras foi acessar base detalhe reportado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV041E no HCL Workload Automation 10.2.8?
@@ -73481,10 +73481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV041E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV042E (severidade: error, familia AWSBHV - bhv) tem o texto: "Error accessing Straus: !1" Em portugues: "erro accessing straus: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV042E (severidade: error, familia AWSBHV - bhv) tem o texto: "Error accessing Straus: !1" Em portugues: "erro accessing straus: !1". Temas: erro. Em outras palavras: Falha ao acessar a base Straus e os detalhes do problema foram informados na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV042E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Error accessing Straus portugues erro straus Temas significa diagnosticar`
+> `AWSBHV042E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Error accessing Straus portugues erro straus Temas outras palavras Falha acessar base detalhes problema foram informados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV042E no HCL Workload Automation 10.2.8?
@@ -73521,7 +73521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV043E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV044E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman is unable to open the mailbox file Mailbox.msg. The following operating system error message was given: "!1"." Em portugues: "stageman is incapaz to open the mailbox arquivo mailbox.msg. the seguinte operating sistema erro mensagem was given: "!1".". Temas: erro arquivo nao conseguiu mensagem sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV044E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman is unable to open the mailbox file Mailbox.msg. The following operating system error message was given: "!1"." Em portugues: "stageman is incapaz to open the mailbox arquivo mailbox.msg. the seguinte operating sistema erro mensagem was given: "!1".". Temas: erro arquivo nao conseguiu mensagem sistema. Em outras palavras: O Stageman não conseguiu abrir o arquivo de caixa postal e o sistema operacional retornou a causa exata da falha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV044E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Stageman unable open the mailbox file Mailbox.msg The following operating system message was given portugues stageman incapaz`
@@ -73541,7 +73541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV044E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV045E (severidade: error, familia AWSBHV - bhv) tem o texto: "An error occurred while opening the following file: "!1". The following gives more details of the error: "!2"." Em portugues: "an erro ocorreu while opening the seguinte arquivo: "!1". the seguinte gives mais details of the erro: "!2".". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV045E (severidade: error, familia AWSBHV - bhv) tem o texto: "An error occurred while opening the following file: "!1". The following gives more details of the error: "!2"." Em portugues: "an erro ocorreu while opening the seguinte arquivo: "!1". the seguinte gives mais details of the erro: "!2".". Temas: erro arquivo ocorreu. Em outras palavras: Erro ao abrir o arquivo indicado, e a segunda parte da mensagem traz mais detalhes sobre a causa do problema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV045E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto occurred while opening the following file The gives more details portugues erro ocorreu`
@@ -73561,7 +73561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV045E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV046E (severidade: error, familia AWSBHV - bhv) tem o texto: "An error occurred while writing the Symphony file. The following gives more details of the error: !1." Em portugues: "an erro ocorreu while writing the symphony arquivo. the seguinte gives mais details of the erro: !1.". Temas: erro arquivo ocorreu symphony. Explicacao oficial: Stageman is unable to write to the Symphony file. One possible reason is that Sinfonia does not have read permission.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV046E (severidade: error, familia AWSBHV - bhv) tem o texto: "An error occurred while writing the Symphony file. The following gives more details of the error: !1." Em portugues: "an erro ocorreu while writing the symphony arquivo. the seguinte gives mais details of the erro: !1.". Temas: erro arquivo ocorreu symphony. Em outras palavras: Falha durante a gravação do arquivo Symphony e os detalhes da causa foram informados na mensagem.. Explicacao oficial: Stageman is unable to write to the Symphony file. One possible reason is that Sinfonia does not have read permission.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV046E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto occurred while writing the Symphony file The following gives more details portugues erro ocorreu`
@@ -73581,7 +73581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV047W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job stream: !1#!2"was carried forward, even though its workstation is not present in the Symphony file." Em portugues: "the seguinte job fluxo: !1#!2"was carried forward, even though its estacao de trabalho is nao present in the symphony arquivo.". Temas: nao arquivo estacao de trabalho job symphony fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV047W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following job stream: !1#!2"was carried forward, even though its workstation is not present in the Symphony file." Em portugues: "the seguinte job fluxo: !1#!2"was carried forward, even though its estacao de trabalho is nao present in the symphony arquivo.". Temas: nao arquivo estacao de trabalho job symphony fluxo. Em outras palavras: O job stream assinalado foi transportado mesmo não havendo registro da sua estação de trabalho no arquivo Symphony..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV047W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The following job stream was carried forward even though its workstation not present the Symphony file portugues seguinte`
@@ -73601,7 +73601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV047W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV048W (severidade: warning, familia AWSBHV - bhv) tem o texto: "An invalid dependency has been detected for the following job stream: !1#!2".The priority has been set to 0." Em portugues: "an invalido dependency has estado detectado for the seguinte job fluxo: !1#!2".the prioridade has estado set to 0.". Temas: job invalido fluxo prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV048W (severidade: warning, familia AWSBHV - bhv) tem o texto: "An invalid dependency has been detected for the following job stream: !1#!2".The priority has been set to 0." Em portugues: "an invalido dependency has estado detectado for the seguinte job fluxo: !1#!2".the prioridade has estado set to 0.". Temas: job invalido fluxo prioridade. Em outras palavras: Foi detectada uma dependência inválida no job stream indicado e a prioridade do objeto foi zerada automaticamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV048W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto invalid dependency has been detected for the following job stream The priority set portugues invalido estado`
@@ -73621,7 +73621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV048W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV049W (severidade: warning, familia AWSBHV - bhv) tem o texto: "An invalid dependency has been detected for the following job: !1#!2.!3".The priority has been set to 0." Em portugues: "an invalido dependency has estado detectado for the seguinte job: !1#!2.!3".the prioridade has estado set to 0.". Temas: job invalido prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV049W (severidade: warning, familia AWSBHV - bhv) tem o texto: "An invalid dependency has been detected for the following job: !1#!2.!3".The priority has been set to 0." Em portugues: "an invalido dependency has estado detectado for the seguinte job: !1#!2.!3".the prioridade has estado set to 0.". Temas: job invalido prioridade. Em outras palavras: Detectou-se uma dependência inválida para o job apontado e a prioridade respectiva foi ajustada automaticamente para zero..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV049W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto invalid dependency has been detected for the following job The priority set portugues invalido estado detectado`
@@ -73661,7 +73661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV065E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV066E (severidade: error, familia AWSBHV - bhv) tem o texto: "The following argument: "!1" is not valid for the "!2" option; perhaps it has been typed incorrectly." Em portugues: "the seguinte argumento: "!1" is nao valido for the "!2" opcao; perhaps it has estado typed incorrectly.". Temas: nao valido argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV066E (severidade: error, familia AWSBHV - bhv) tem o texto: "The following argument: "!1" is not valid for the "!2" option; perhaps it has been typed incorrectly." Em portugues: "the seguinte argumento: "!1" is nao valido for the "!2" opcao; perhaps it has estado typed incorrectly.". Temas: nao valido argumento. Em outras palavras: O argumento informado é inválido para a opção usada no comando, e provavelmente foi digitado incorretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV066E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The following argument not valid for the option perhaps has been typed incorrectly portugues seguinte argumento nao valido`
@@ -73681,7 +73681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV066E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV067E (severidade: error, familia AWSBHV - bhv) tem o texto: "The following option is not a valid option for this command: "!1"; maybe it has been typed incorrectly." Em portugues: "the seguinte opcao is nao a valido opcao for this comando: "!1"; maybe it has estado typed incorrectly.". Temas: nao comando valido opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV067E (severidade: error, familia AWSBHV - bhv) tem o texto: "The following option is not a valid option for this command: "!1"; maybe it has been typed incorrectly." Em portugues: "the seguinte opcao is nao a valido opcao for this comando: "!1"; maybe it has estado typed incorrectly.". Temas: nao comando valido opcao. Em outras palavras: A opção indicada não é aceita por este comando e possivelmente foi digitada de forma incorreta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV067E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The following option not valid for this command maybe has been typed incorrectly portugues the seguinte opcao nao valido`
@@ -73721,10 +73721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV068W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV069W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following logfile name begins with "-": "!1"" Em portugues: "the seguinte logfile nome begins with "-": "!1"". Temas: nome. Explicacao oficial: The log_file_name must not begin with -, but with an alphanumeric character.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV069W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The following logfile name begins with "-": "!1"" Em portugues: "the seguinte logfile nome begins with "-": "!1"". Temas: nome. Em outras palavras: O nome do arquivo de log informado começa com o hífen, o que pode ser confundido com uma opção de comando.. Explicacao oficial: The log_file_name must not begin with -, but with an alphanumeric character.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV069W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The following logfile name begins with portugues the seguinte nome Temas Explicacao oficial log_file_name must`
+> `AWSBHV069W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The following logfile name begins with portugues the seguinte nome Temas outras palavras arquivo log`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV069W no HCL Workload Automation 10.2.8?
@@ -73741,7 +73741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV069W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV070E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman has been submitted with both the "-log" and "-nolog" options, which are mutually exclusive." Em portugues: "stageman has estado submitted with both the "-log" and "-nolog" opcoes, which are mutually exclusive.". Temas: opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV070E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman has been submitted with both the "-log" and "-nolog" options, which are mutually exclusive." Em portugues: "stageman has estado submitted with both the "-log" and "-nolog" opcoes, which are mutually exclusive.". Temas: opcoes. Em outras palavras: O Stageman foi submetido com as opções de registro e de sem registro simultaneamente, que são mutuamente exclusivas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV070E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Stageman has been submitted with both the log and nolog options which are mutually exclusive portugues stageman estado`
@@ -73761,7 +73761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV070E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV071I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Parsing the globalopts file for the carry job states." Em portugues: "parsing the globalopts arquivo for the carry job states.". Temas: arquivo job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV071I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Parsing the globalopts file for the carry job states." Em portugues: "parsing the globalopts arquivo for the carry job states.". Temas: arquivo job. Em outras palavras: O sistema está interpretando o arquivo de opções globais para descobrir quais estados de job devem ser transportados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV071I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Parsing the globalopts file for carry job states portugues parsing arquivo Temas`
@@ -73781,10 +73781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV071I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV072I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Input is read from !1 instead of Symnew." Em portugues: "entrada is ler from !1 instead of symnew.". Temas: ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV072I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Input is read from !1 instead of Symnew." Em portugues: "entrada is ler from !1 instead of symnew.". Temas: ler leitura. Em outras palavras: Os dados de entrada estão sendo lidos da origem informada em vez do arquivo padrão para o novo Symphony..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV072I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Input read from instead Symnew portugues entrada ler symnew Temas leitura significa`
+> `AWSBHV072I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Input read from instead Symnew portugues entrada ler symnew Temas leitura outras palavras dados sendo lidos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV072I no HCL Workload Automation 10.2.8?
@@ -73801,10 +73801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV072I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV073W (severidade: warning, familia AWSBHV - bhv) tem o texto: "Globalopts file parsed only. No carryforward done." Em portugues: "globalopts arquivo parsed only. no carryforward done.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV073W (severidade: warning, familia AWSBHV - bhv) tem o texto: "Globalopts file parsed only. No carryforward done." Em portugues: "globalopts arquivo parsed only. no carryforward done.". Temas: arquivo. Em outras palavras: O arquivo de opções globais foi apenas interpretado, e nenhum transporte de dados para o novo plano foi executado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV073W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto Globalopts file parsed only carryforward done portugues globalopts arquivo Temas significa`
+> `AWSBHV073W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto Globalopts file parsed only carryforward done portugues globalopts arquivo Temas outras palavras globais foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV073W no HCL Workload Automation 10.2.8?
@@ -73821,7 +73821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV073W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV074E (severidade: error, familia AWSBHV - bhv) tem o texto: "The previous Symphony file is expanded but the Symnew file is in non-expanded mode. They cannot be merged to form the new Symphony file." Em portugues: "the previous symphony arquivo is expanded but the symnew arquivo is in non-expanded mode. they nao pode be merged to form the new symphony arquivo.". Temas: arquivo nao pode symphony. Explicacao oficial: Stageman tried to merge an expanded old Symphony file and a non-expanded Symnew file to create the new Symphony file. One possibility is the following:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV074E (severidade: error, familia AWSBHV - bhv) tem o texto: "The previous Symphony file is expanded but the Symnew file is in non-expanded mode. They cannot be merged to form the new Symphony file." Em portugues: "the previous symphony arquivo is expanded but the symnew arquivo is in non-expanded mode. they nao pode be merged to form the new symphony arquivo.". Temas: arquivo nao pode symphony. Em outras palavras: O Symphony anterior está expandido enquanto o novo arquivo está no formato compacto, e formatos diferentes não podem ser mesclados.. Explicacao oficial: Stageman tried to merge an expanded old Symphony file and a non-expanded Symnew file to create the new Symphony file. One possibility is the following:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV074E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The previous Symphony file expanded but the Symnew non-expanded mode They cannot merged form new portugues`
@@ -73841,10 +73841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV074E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV076E (severidade: error, familia AWSBHV - bhv) tem o texto: "Unable to open the audit log." Em portugues: "incapaz to open the audit log.". Temas: nao conseguiu. Explicacao oficial: Stageman is unable to open the audit log file because the open() system call failed for some reason.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV076E (severidade: error, familia AWSBHV - bhv) tem o texto: "Unable to open the audit log." Em portugues: "incapaz to open the audit log.". Temas: nao conseguiu. Em outras palavras: O registro de auditoria não pôde ser aberto para gravar o acompanhamento das ações executadas.. Explicacao oficial: Stageman is unable to open the audit log file because the open() system call failed for some reason.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV076E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Unable open the audit log portugues incapaz Temas nao conseguiu Explicacao oficial Stageman unable`
+> `AWSBHV076E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Unable open the audit log portugues incapaz Temas nao conseguiu outras palavras registro auditoria aberto gravar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV076E no HCL Workload Automation 10.2.8?
@@ -73861,10 +73861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV076E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV077I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Audit level changing from !1 to !2." Em portugues: "audit level changing from !1 to !2.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV077I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Audit level changing from !1 to !2." Em portugues: "audit level changing from !1 to !2.". Em outras palavras: O nível de auditoria do plano está sendo alterado do valor anterior para o novo valor configurado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV077I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Audit level changing from portugues audit significa diagnosticar`
+> `AWSBHV077I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Audit level changing from portugues audit outras palavras auditoria plano sendo alterado valor anterior novo configurado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV077I no HCL Workload Automation 10.2.8?
@@ -73881,10 +73881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV077I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV078I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Current plan audit level is !1." Em portugues: "current plano audit level is !1.". Temas: plano.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV078I (severidade: informational, familia AWSBHV - bhv) tem o texto: "Current plan audit level is !1." Em portugues: "current plano audit level is !1.". Temas: plano. Em outras palavras: O nível de auditoria atualmente aplicado ao plano de escalonamento é o valor informado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHV078I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Current plan audit level portugues current plano Temas significa diagnosticar`
+> `AWSBHV078I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto Current plan audit level portugues current plano Temas outras palavras auditoria atualmente aplicado escalonamento valor informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHV078I no HCL Workload Automation 10.2.8?
@@ -73901,7 +73901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV078I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV080E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman is trying to access a record in the old Symphony file which has a record number higher than the final record in the file." Em portugues: "stageman is trying to acesso a registro in the old symphony arquivo which has a registro numero higher que the final registro in the arquivo.". Temas: arquivo numero symphony registro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV080E (severidade: error, familia AWSBHV - bhv) tem o texto: "Stageman is trying to access a record in the old Symphony file which has a record number higher than the final record in the file." Em portugues: "stageman is trying to acesso a registro in the old symphony arquivo which has a registro numero higher que the final registro in the arquivo.". Temas: arquivo numero symphony registro. Em outras palavras: O Stageman tentou ler um registro do Symphony antigo cujo número ultrapassa o último registro existente no arquivo.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV080E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto Stageman trying access record the old Symphony file which has number higher than final portugues`
@@ -73941,7 +73941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV081W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV082E (severidade: error, familia AWSBHV - bhv) tem o texto: "The previous Symphony file and the Symnew file have the same run number. They cannot be merged to form the new Symphony file." Em portugues: "the previous symphony arquivo and the symnew arquivo have the same run numero. they nao pode be merged to form the new symphony arquivo.". Temas: arquivo nao pode numero symphony execucao. Explicacao oficial: Stageman tried to merge a Symphony file and a Symnew file with the same run number to create the new Symphony file. Probably stageman has been run twice on the same Symnew file without resetting the plan or deleting the Symphony file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV082E (severidade: error, familia AWSBHV - bhv) tem o texto: "The previous Symphony file and the Symnew file have the same run number. They cannot be merged to form the new Symphony file." Em portugues: "the previous symphony arquivo and the symnew arquivo have the same run numero. they nao pode be merged to form the new symphony arquivo.". Temas: arquivo nao pode numero symphony execucao. Em outras palavras: O Symphony anterior e o novo arquivo possuem o mesmo número de execução e, por isso, não podem ser mesclados.. Explicacao oficial: Stageman tried to merge a Symphony file and a Symnew file with the same run number to create the new Symphony file. Probably stageman has been run twice on the same Symnew file without resetting the plan or deleting the Symphony file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV082E 10.2.8 mensagem severidade error familia AWSBHV bhv tem texto The previous Symphony file and the Symnew have same run number They cannot merged form new`
@@ -73961,7 +73961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV082E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV083W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The job stream: !1#!2" has a conditional dependency on a predecessor that is not more in the plan.The priority has been set to 0." Em portugues: "the job fluxo: !1#!2" has a conditional dependency on a predecessor that is nao mais in the plano.the prioridade has estado set to 0.". Temas: nao job fluxo plano prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV083W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The job stream: !1#!2" has a conditional dependency on a predecessor that is not more in the plan.The priority has been set to 0." Em portugues: "the job fluxo: !1#!2" has a conditional dependency on a predecessor that is nao mais in the plano.the prioridade has estado set to 0.". Temas: nao job fluxo plano prioridade. Em outras palavras: O job stream indicado tem dependência condicional sobre um predecessor que não está mais no plano, e a prioridade foi zerada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV083W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The job stream has conditional dependency predecessor that not more the plan.The priority been set portugues fluxo`
@@ -73981,7 +73981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV083W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV084W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The job: !1#!2.!3" has a conditional dependency on a predecessor that is not more in the plan.The priority has been set to 0." Em portugues: "the job: !1#!2.!3" has a conditional dependency on a predecessor that is nao mais in the plano.the prioridade has estado set to 0.". Temas: nao job plano prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV084W (severidade: warning, familia AWSBHV - bhv) tem o texto: "The job: !1#!2.!3" has a conditional dependency on a predecessor that is not more in the plan.The priority has been set to 0." Em portugues: "the job: !1#!2.!3" has a conditional dependency on a predecessor that is nao mais in the plano.the prioridade has estado set to 0.". Temas: nao job plano prioridade. Em outras palavras: O job apontado depende condicionalmente de um predecessor que saiu do plano, e sua prioridade foi ajustada para zero..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV084W 10.2.8 mensagem severidade warning familia AWSBHV bhv tem texto The job has conditional dependency predecessor that not more the plan.The priority been set portugues`
@@ -74001,7 +74001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV084W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV085I (severidade: informational, familia AWSBHV - bhv) tem o texto: "The schedule !2 is carryforwarded because the following schedule "!1" (or one of its jobs) has a not resolved conditional dependency to it." Em portugues: "the agendamento !2 is carryforwarded porque the seguinte agendamento "!1" (or one of its jobs) has a nao resolved conditional dependency to it.". Temas: nao agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV085I (severidade: informational, familia AWSBHV - bhv) tem o texto: "The schedule !2 is carryforwarded because the following schedule "!1" (or one of its jobs) has a not resolved conditional dependency to it." Em portugues: "the agendamento !2 is carryforwarded porque the seguinte agendamento "!1" (or one of its jobs) has a nao resolved conditional dependency to it.". Temas: nao agendamento. Em outras palavras: O escalonamento indicado foi transportado porque possui uma dependência condicional ainda não resolvida com o escalonamento de origem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV085I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto The schedule carryforwarded because the following one its jobs has not resolved conditional dependency portugues agendamento porque`
@@ -74021,7 +74021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV085I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHV086I (severidade: informational, familia AWSBHV - bhv) tem o texto: "The previous Symphony file and the Symnew file have compatible run numbers." Em portugues: "the previous symphony arquivo and the symnew arquivo have compatible run numbers.". Temas: arquivo symphony execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHV086I (severidade: informational, familia AWSBHV - bhv) tem o texto: "The previous Symphony file and the Symnew file have compatible run numbers." Em portugues: "the previous symphony arquivo and the symnew arquivo have compatible run numbers.". Temas: arquivo symphony execucao. Em outras palavras: O Symphony anterior e o novo arquivo apresentam números de execução compatíveis, permitindo a mesclagem normal..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHV086I 10.2.8 mensagem severidade informational familia AWSBHV bhv tem texto The previous Symphony file and the Symnew have compatible run numbers portugues symphony arquivo symnew`
@@ -74041,7 +74041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHV086I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW001E (severidade: error, familia AWSBHW - bhw) tem o texto: "A job name, file name or keyword is missing in the submitted command." Em portugues: "a job nome, arquivo nome or keyword is faltando in the submitted comando.". Temas: arquivo job nome comando palavra-chave faltando. Explicacao oficial: See AWSBHU700E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW001E (severidade: error, familia AWSBHW - bhw) tem o texto: "A job name, file name or keyword is missing in the submitted command." Em portugues: "a job nome, arquivo nome or keyword is faltando in the submitted comando.". Temas: arquivo job nome comando palavra-chave faltando. Em outras palavras: O comando submetido está incompleto, pois faltou informar o nome de um job, de um arquivo ou uma palavra-chave obrigatória.. Explicacao oficial: See AWSBHU700E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW001E AWSBHU700E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto job name file keyword missing the submitted command portugues nome arquivo faltando comando Temas`
@@ -74061,10 +74061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW002E (severidade: error, familia AWSBHW - bhw) tem o texto: "The submitted command appears to contain extra or duplicated characters." Em portugues: "the submitted comando appears to contain extra or duplicated characters.". Temas: comando. Explicacao oficial: See AWSBHU701E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW002E (severidade: error, familia AWSBHW - bhw) tem o texto: "The submitted command appears to contain extra or duplicated characters." Em portugues: "the submitted comando appears to contain extra or duplicated characters.". Temas: comando. Em outras palavras: O comando submetido contém caracteres extras ou duplicados, o que impede sua interpretação correta.. Explicacao oficial: See AWSBHU701E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW002E AWSBHU701E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The submitted command appears contain extra duplicated characters portugues the comando Temas Explicacao`
+> `AWSBHW002E AWSBHU701E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The submitted command appears contain extra duplicated characters portugues the comando Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW002E no HCL Workload Automation 10.2.8?
@@ -74081,7 +74081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW003E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error in the name. It must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro in the nome. it must be entre 1 and 16 bytes.". Temas: erro nome sintaxe entre. Explicacao oficial: See AWSBHU743E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW003E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error in the name. It must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro in the nome. it must be entre 1 and 16 bytes.". Temas: erro nome sintaxe entre. Em outras palavras: O nome possui erro de sintaxe, pois deve ter entre um e dezesseis bytes de comprimento, conforme a regra do sistema.. Explicacao oficial: See AWSBHU743E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW003E AWSBHU743E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax the name must between and bytes portugues there sintaxe erro nome entre Temas`
@@ -74101,7 +74101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW004E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error in the name. It must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro in the nome. it must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Explicacao oficial: See AWSBHU703E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW004E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error in the name. It must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro in the nome. it must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Em outras palavras: O nome é inválido porque precisa começar com letra e aceitar apenas letras, números, hífens e sublinhados.. Explicacao oficial: See AWSBHU703E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW004E AWSBHU703E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax the name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues there`
@@ -74121,10 +74121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW005E (severidade: error, familia AWSBHW - bhw) tem o texto: "The delimiter of cpu name is a #." Em portugues: "the delimiter of processador nome is a #.". Temas: nome processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW005E (severidade: error, familia AWSBHW - bhw) tem o texto: "The delimiter of cpu name is a #." Em portugues: "the delimiter of processador nome is a #.". Temas: nome processador cpu. Em outras palavras: O nome da estação de trabalho usa a cerquilha como delimitador para separar a identificação do processador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW005E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The delimiter cpu name portugues the processador nome Temas significa`
+> `AWSBHW005E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The delimiter cpu name portugues the processador nome Temas outras palavras trabalho usa cerquilha delimitador`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW005E no HCL Workload Automation 10.2.8?
@@ -74141,7 +74141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW006E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error in the workstation name. The "#" symbol was found more than once." Em portugues: "there is a sintaxe erro in the estacao de trabalho nome. the "#" symbol was encontrado mais que once.". Temas: erro estacao de trabalho nome sintaxe encontrado. Explicacao oficial: See AWSBHU705E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW006E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error in the workstation name. The "#" symbol was found more than once." Em portugues: "there is a sintaxe erro in the estacao de trabalho nome. the "#" symbol was encontrado mais que once.". Temas: erro estacao de trabalho nome sintaxe encontrado. Em outras palavras: O nome da estação contém erro de sintaxe porque a cerquilha, usada como delimitador, apareceu mais de uma vez.. Explicacao oficial: See AWSBHU705E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW006E AWSBHU705E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax the workstation name The symbol was found more than once portugues there sintaxe erro estacao trabalho`
@@ -74161,7 +74161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW007E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The job stream name must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro. the job fluxo nome must be entre 1 and 16 bytes.". Temas: erro job nome sintaxe fluxo entre. Explicacao oficial: See AWSBHU744E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW007E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The job stream name must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro. the job fluxo nome must be entre 1 and 16 bytes.". Temas: erro job nome sintaxe fluxo entre. Em outras palavras: Há erro de sintaxe, pois o nome do job stream deve respeitar o limite de tamanho entre um e dezesseis bytes.. Explicacao oficial: See AWSBHU744E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW007E AWSBHU744E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The job stream name must between and bytes portugues there sintaxe erro the fluxo nome`
@@ -74181,7 +74181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW008E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The job stream name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job fluxo nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe fluxo iniciar. Explicacao oficial: See AWSBHU707E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW008E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The job stream name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job fluxo nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe fluxo iniciar. Em outras palavras: O nome do job stream é inválido porque deve começar com letra e conter apenas caracteres alfanuméricos, hífens ou sublinhados.. Explicacao oficial: See AWSBHU707E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW008E AWSBHU707E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The job stream name must start with alphabetic character and contain only alphanumeric characters dashes underscores`
@@ -74201,10 +74201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW009E (severidade: error, familia AWSBHW - bhw) tem o texto: "The delimiter of the schedule name is a period "."" Em portugues: "the delimiter of the agendamento nome is a period "."". Temas: nome agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW009E (severidade: error, familia AWSBHW - bhw) tem o texto: "The delimiter of the schedule name is a period "."" Em portugues: "the delimiter of the agendamento nome is a period "."". Temas: nome agendamento. Em outras palavras: O ponto final é o delimitador usado para separar o nome do escalonamento no nome completo do objeto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW009E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The delimiter the schedule name period portugues agendamento nome Temas significa`
+> `AWSBHW009E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The delimiter the schedule name period portugues agendamento nome Temas outras palavras ponto final`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW009E no HCL Workload Automation 10.2.8?
@@ -74221,7 +74221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW010E (severidade: error, familia AWSBHW - bhw) tem o texto: "The job name is either null, or longer than the maximum length of 40 bytes." Em portugues: "the job nome is either null, or longer que the maximo tamanho of 40 bytes.". Temas: job nome.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW010E (severidade: error, familia AWSBHW - bhw) tem o texto: "The job name is either null, or longer than the maximum length of 40 bytes." Em portugues: "the job nome is either null, or longer que the maximo tamanho of 40 bytes.". Temas: job nome. Em outras palavras: O nome do job está vazio ou ultrapassou o tamanho máximo permitido de quarenta bytes, sendo portanto inválido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW010E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto The job name either null longer than the maximum length bytes portugues nome maximo`
@@ -74241,7 +74241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW011E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The job name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe iniciar. Explicacao oficial: See AWSBHU710E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW011E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The job name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe iniciar. Em outras palavras: O nome do job é inválido na sintaxe, exigindo início com letra e apenas caracteres alfanuméricos, hífens ou sublinhados.. Explicacao oficial: See AWSBHU710E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW011E AWSBHU710E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The job name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -74261,7 +74261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW012E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The command has a job as its object but the job name has not been supplied." Em portugues: "there is a sintaxe erro. the comando has a job as its object but the job nome has nao estado informado.". Temas: erro nao job nome comando informado sintaxe. Explicacao oficial: See AWSBHU711E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW012E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The command has a job as its object but the job name has not been supplied." Em portugues: "there is a sintaxe erro. the comando has a job as its object but the job nome has nao estado informado.". Temas: erro nao job nome comando informado sintaxe. Em outras palavras: O comando tem um job como objeto, mas o nome do job não foi informado, configurando erro de sintaxe.. Explicacao oficial: See AWSBHU711E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW012E AWSBHU711E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The command has job its object but the name not been supplied portugues there sintaxe`
@@ -74281,7 +74281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW013E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The prompt name must be between 1 and 8 bytes long." Em portugues: "there is a sintaxe erro. the prompt nome must be entre 1 and 8 bytes long.". Temas: erro nome sintaxe entre. Explicacao oficial: See AWSBHU712E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW013E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The prompt name must be between 1 and 8 bytes long." Em portugues: "there is a sintaxe erro. the prompt nome must be entre 1 and 8 bytes long.". Temas: erro nome sintaxe entre. Em outras palavras: Há erro de sintaxe porque o nome do prompt de resposta deve ter entre um e oito bytes de comprimento.. Explicacao oficial: See AWSBHU712E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW013E AWSBHU712E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The prompt name must between and bytes long portugues there sintaxe erro the nome entre`
@@ -74301,7 +74301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW014E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The prompt name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the prompt nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Explicacao oficial: See AWSBHU713E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW014E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The prompt name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the prompt nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Em outras palavras: O nome do prompt é inválido pois deve começar com letra e aceitar apenas caracteres alfanuméricos, hífens ou sublinhados.. Explicacao oficial: See AWSBHU713E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW014E AWSBHU713E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The prompt name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -74321,10 +74321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW015E (severidade: error, familia AWSBHW - bhw) tem o texto: "Prompt name or message number not supplied." Em portugues: "prompt nome or mensagem numero nao informado.". Temas: nao nome informado mensagem numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW015E (severidade: error, familia AWSBHW - bhw) tem o texto: "Prompt name or message number not supplied." Em portugues: "prompt nome or mensagem numero nao informado.". Temas: nao nome informado mensagem numero. Em outras palavras: O comando não informou nem o nome do prompt nem o número da mensagem, que são dados obrigatórios para prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW015E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto Prompt name message number not supplied portugues prompt nome numero nao informado Temas significa`
+> `AWSBHW015E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto Prompt name message number not supplied portugues prompt nome numero nao informado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW015E no HCL Workload Automation 10.2.8?
@@ -74341,7 +74341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW016E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The resource name must be between 1 and 8 bytes long." Em portugues: "there is a sintaxe erro. the recurso nome must be entre 1 and 8 bytes long.". Temas: erro nome sintaxe entre recurso. Explicacao oficial: See AWSBHU715E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW016E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The resource name must be between 1 and 8 bytes long." Em portugues: "there is a sintaxe erro. the recurso nome must be entre 1 and 8 bytes long.". Temas: erro nome sintaxe entre recurso. Em outras palavras: Há erro de sintaxe porque o nome do recurso deve ter entre um e oito bytes de comprimento.. Explicacao oficial: See AWSBHU715E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW016E AWSBHU715E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The resource name must between and bytes long portugues there sintaxe erro the recurso nome entre`
@@ -74361,7 +74361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW017E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The resource name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the recurso nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe recurso iniciar. Explicacao oficial: See AWSBHU716E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW017E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The resource name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the recurso nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe recurso iniciar. Em outras palavras: O nome do recurso é inválido pois deve começar com letra e conter apenas caracteres alfanuméricos, hífens ou sublinhados.. Explicacao oficial: See AWSBHU716E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW017E AWSBHU716E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The resource name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -74381,10 +74381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW018W (severidade: warning, familia AWSBHW - bhw) tem o texto: "Priority is either "HI", "GO", or 0-99." Em portugues: "prioridade is either "hi", "go", or 0-99.". Temas: prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW018W (severidade: warning, familia AWSBHW - bhw) tem o texto: "Priority is either "HI", "GO", or 0-99." Em portugues: "prioridade is either "hi", "go", or 0-99.". Temas: prioridade. Em outras palavras: O valor de prioridade aceito é alto, médio ou um número inteiro na faixa de zero a noventa e nove..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW018W 10.2.8 mensagem severidade warning familia AWSBHW bhw tem texto Priority either 0-99 portugues prioridade Temas significa diagnosticar`
+> `AWSBHW018W 10.2.8 mensagem severidade warning familia AWSBHW bhw tem texto Priority either 0-99 portugues prioridade Temas outras palavras valor aceito alto inteiro faixa zero noventa nove`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW018W no HCL Workload Automation 10.2.8?
@@ -74401,7 +74401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW018W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW019W (severidade: warning, familia AWSBHW - bhw) tem o texto: "There is a syntax error. Priority must be a numeric value from 0 to 99, "hi" (= 100), "or go" (= 101)." Em portugues: "there is a sintaxe erro. prioridade must be a numerico valor from 0 to 99, "hi" (= 100), "or go" (= 101).". Temas: erro sintaxe valor numerico prioridade. Explicacao oficial: See AWSBHU718E
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW019W (severidade: warning, familia AWSBHW - bhw) tem o texto: "There is a syntax error. Priority must be a numeric value from 0 to 99, "hi" (= 100), "or go" (= 101)." Em portugues: "there is a sintaxe erro. prioridade must be a numerico valor from 0 to 99, "hi" (= 100), "or go" (= 101).". Temas: erro sintaxe valor numerico prioridade. Em outras palavras: A prioridade deve ser administrada como número de zero a noventa e nove, ou ainda pelas palavras que representam os valores elevados.. Explicacao oficial: See AWSBHU718E
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW019W AWSBHU718E 10.2.8 mensagem severidade warning familia AWSBHW bhw tem texto There syntax error Priority must numeric value from portugues there sintaxe erro prioridade numerico valor Temas`
@@ -74421,7 +74421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW019W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW020E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. You cannot specify a priority higher that 99 (use "hi" (= 100), "or go" (= 101) instead." Em portugues: "there is a sintaxe erro. you nao pode specify a prioridade higher that 99 (use "hi" (= 100), "or go" (= 101) instead.". Temas: erro nao pode sintaxe prioridade. Explicacao oficial: See AWSBHU719E.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW020E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. You cannot specify a priority higher that 99 (use "hi" (= 100), "or go" (= 101) instead." Em portugues: "there is a sintaxe erro. you nao pode specify a prioridade higher that 99 (use "hi" (= 100), "or go" (= 101) instead.". Temas: erro nao pode sintaxe prioridade. Em outras palavras: Não é permitido informar prioridade acima de noventa e nove; para valores maiores use as palavras reservadas destinadas ao nível superior.. Explicacao oficial: See AWSBHU719E.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW020E AWSBHU719E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax You cannot specify priority higher that use instead portugues there sintaxe erro you nao prioridade`
@@ -74441,10 +74441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW021E (severidade: error, familia AWSBHW - bhw) tem o texto: "User domain length incorrect" Em portugues: "usuario dominio tamanho incorreto". Temas: usuario dominio incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW021E (severidade: error, familia AWSBHW - bhw) tem o texto: "User domain length incorrect" Em portugues: "usuario dominio tamanho incorreto". Temas: usuario dominio incorreto. Em outras palavras: O comprimento do domínio de usuário informado está incorreto e por isso não foi aceito pelo comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW021E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto User length incorrect portugues usuario dominio tamanho incorreto Temas significa`
+> `AWSBHW021E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto User length incorrect portugues usuario dominio tamanho incorreto Temas outras palavras comprimento informado isso foi aceito`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW021E no HCL Workload Automation 10.2.8?
@@ -74481,10 +74481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW023E (severidade: error, familia AWSBHW - bhw) tem o texto: "Duplicate user name given." Em portugues: "duplicate usuario nome given.". Temas: nome usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW023E (severidade: error, familia AWSBHW - bhw) tem o texto: "Duplicate user name given." Em portugues: "duplicate usuario nome given.". Temas: nome usuario. Em outras palavras: O nome de usuário informado já foi fornecido anteriormente nesta mesma operação, configurando duplicidade..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHW023E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto Duplicate user name given portugues duplicate usuario nome Temas significa`
+> `AWSBHW023E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto Duplicate user name given portugues duplicate usuario nome Temas outras palavras informado foi fornecido anteriormente nesta`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHW023E no HCL Workload Automation 10.2.8?
@@ -74561,7 +74561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW040E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW041E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The date is not valid." Em portugues: "there is a sintaxe erro. the date is nao valido.". Temas: erro nao sintaxe valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW041E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The date is not valid." Em portugues: "there is a sintaxe erro. the date is nao valido.". Temas: erro nao sintaxe valido. Em outras palavras: A data informada no comando não é válida e não pôde ser interpretada pelo sistema de escalonamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW041E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The date not valid portugues there sintaxe erro the nao valido Temas`
@@ -74581,7 +74581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW041E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW045E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. You cannot specify both dates in a "valid in" argument using the "@" wildcard." Em portugues: "there is a sintaxe erro. you nao pode specify both dates in a "valido in" argumento using the "@" wildcard.". Temas: erro nao pode sintaxe argumento. Explicacao oficial: The command has been supplied with a valid in argument, which requires two dates to define the period in which the job can be run. One or other of these dates can use the @ wildcard to mean any, but not both.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW045E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. You cannot specify both dates in a "valid in" argument using the "@" wildcard." Em portugues: "there is a sintaxe erro. you nao pode specify both dates in a "valido in" argumento using the "@" wildcard.". Temas: erro nao pode sintaxe argumento. Em outras palavras: Não se pode combinar de uma só vez as duas datas de um argumento de validade utilizando o caractere curinga arroba.. Explicacao oficial: The command has been supplied with a valid in argument, which requires two dates to define the period in which the job can be run. One or other of these dates can use the @ wildcard to mean any, but not both.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW045E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax You cannot specify both dates valid argument using the wildcard portugues there sintaxe erro you nao`
@@ -74601,7 +74601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW045E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW046E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The required workstation name is missing. Specify a workstation name or remove the workstation delimiter." Em portugues: "there is a sintaxe erro. the obrigatorio estacao de trabalho nome is faltando. specify a estacao de trabalho nome or remove the estacao de trabalho delimiter.". Temas: erro estacao de trabalho nome sintaxe faltando. Explicacao oficial: The delimiter that precedes the definition of a workstation name was found in the command string, but the workstation name was not specified.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW046E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The required workstation name is missing. Specify a workstation name or remove the workstation delimiter." Em portugues: "there is a sintaxe erro. the obrigatorio estacao de trabalho nome is faltando. specify a estacao de trabalho nome or remove the estacao de trabalho delimiter.". Temas: erro estacao de trabalho nome sintaxe faltando. Em outras palavras: Faltou informar o nome da estação de trabalho obrigatório; especifique um nome ou remova o delimitador que o separa.. Explicacao oficial: The delimiter that precedes the definition of a workstation name was found in the command string, but the workstation name was not specified.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW046E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The required workstation name missing Specify remove the delimiter portugues there sintaxe erro`
@@ -74621,7 +74621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW047E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The event rule name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the event rule nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW047E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The event rule name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the event rule nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Em outras palavras: O nome da regra de evento é inválido pois deve começar com letra e conter apenas caracteres alfanuméricos, hífens ou sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW047E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The event rule name must start with alphabetic character and contain only alphanumeric characters dashes underscores`
@@ -74681,7 +74681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW049E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW050E (severidade: error, familia AWSBHW - bhw) tem o texto: "A syntax error occurred. The character "." is duplicated in the variable." Em portugues: "a sintaxe erro ocorreu. the character "." is duplicated in the variavel.". Temas: erro ocorreu sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW050E (severidade: error, familia AWSBHW - bhw) tem o texto: "A syntax error occurred. The character "." is duplicated in the variable." Em portugues: "a sintaxe erro ocorreu. the character "." is duplicated in the variavel.". Temas: erro ocorreu sintaxe. Em outras palavras: Um erro de sintaxe foi identificado porque o caractere de separação apareceu duplicado dentro da variável informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW050E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto syntax occurred The character duplicated the variable portugues sintaxe erro ocorreu variavel Temas`
@@ -74801,7 +74801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW055E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW057E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name must be between 1 and 800 bytes long. It can contain alphanumeric characters, dashes, underscores and slashes." Em portugues: "there is a sintaxe erro. the pasta nome must be entre 1 and 800 bytes long. it can contain alphanumeric characters, dashes, underscores and slashes.". Temas: erro nome sintaxe entre pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW057E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name must be between 1 and 800 bytes long. It can contain alphanumeric characters, dashes, underscores and slashes." Em portugues: "there is a sintaxe erro. the pasta nome must be entre 1 and 800 bytes long. it can contain alphanumeric characters, dashes, underscores and slashes.". Temas: erro nome sintaxe entre pasta. Em outras palavras: O nome da pasta deve ter entre um e oitocentos bytes e pode conter letras, números, hífens, sublinhados e barras..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW057E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The folder name must between and bytes long can contain alphanumeric characters dashes underscores slashes portugues`
@@ -74821,7 +74821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW057E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW058E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name is incorrect: spaces are not supported before or after the path separator." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: spaces are nao supported antes or apos the caminho separator.". Temas: erro nao nome sintaxe suportado incorreto pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW058E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name is incorrect: spaces are not supported before or after the path separator." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: spaces are nao supported antes or apos the caminho separator.". Temas: erro nao nome sintaxe suportado incorreto pasta. Em outras palavras: O nome da pasta está incorreto, pois espaços em branco antes ou depois do separador de caminho não são permitidos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW058E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The folder name incorrect spaces are not supported before after the path separator portugues there sintaxe erro`
@@ -74841,7 +74841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW058E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW059E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name is incorrect: wild cards are not permitted in the folder name." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: wild cards are nao permitted in the pasta nome.". Temas: erro nao nome sintaxe incorreto pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW059E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name is incorrect: wild cards are not permitted in the folder name." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: wild cards are nao permitted in the pasta nome.". Temas: erro nao nome sintaxe incorreto pasta. Em outras palavras: O nome da pasta é inválido porque caracteres curinga não são permitidos dentro do nome do diretório..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW059E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The folder name incorrect wild cards are not permitted the portugues there sintaxe erro`
@@ -74861,7 +74861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW059E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW060E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name is incorrect: unable to process the path." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: incapaz to process the caminho.". Temas: erro nome sintaxe nao conseguiu incorreto pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW060E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The folder name is incorrect: unable to process the path." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: incapaz to process the caminho.". Temas: erro nome sintaxe nao conseguiu incorreto pasta. Em outras palavras: O nome da pasta está incorreto, pois o sistema não conseguiu processar adequadamente o caminho que foi informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW060E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The folder name incorrect unable process the path portugues there sintaxe erro pasta nome incorreto incapaz`
@@ -74881,7 +74881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW060E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHW061E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The token to process must be between 1 and 16384 bytes long." Em portugues: "there is a sintaxe erro. the token to process must be entre 1 and 16384 bytes long.". Temas: erro sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHW061E (severidade: error, familia AWSBHW - bhw) tem o texto: "There is a syntax error. The token to process must be between 1 and 16384 bytes long." Em portugues: "there is a sintaxe erro. the token to process must be entre 1 and 16384 bytes long.". Temas: erro sintaxe entre. Em outras palavras: O elemento a processar deve ter entre um e dezesseis mil trezentos e oitenta e quatro bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHW061E 10.2.8 mensagem severidade error familia AWSBHW bhw tem texto There syntax The token process must between and bytes long portugues there sintaxe erro the entre`
@@ -74921,7 +74921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHW063E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX011W (severidade: warning, familia AWSBHX - bhx) tem o texto: "The job has negative elapsed time. Check the time parameters." Em portugues: "the job has negative elapsed tempo. check the tempo parametros.". Temas: job parametros tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX011W (severidade: warning, familia AWSBHX - bhx) tem o texto: "The job has negative elapsed time. Check the time parameters." Em portugues: "the job has negative elapsed tempo. check the tempo parametros.". Temas: job parametros tempo hora. Em outras palavras: O job apresenta tempo decorrido negativo, o que é um indicativo de que é preciso revisar os parâmetros de tempo configurados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHX011W 10.2.8 mensagem severidade warning familia AWSBHX bhx tem texto The job has negative elapsed time Check the parameters portugues tempo check`
@@ -74941,10 +74941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX011W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX021E (severidade: error, familia AWSBHX - bhx) tem o texto: "An error occurred opening the temporary file "!1"." Em portugues: "an erro ocorreu opening the temporary arquivo "!1".". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX021E (severidade: error, familia AWSBHX - bhx) tem o texto: "An error occurred opening the temporary file "!1"." Em portugues: "an erro ocorreu opening the temporary arquivo "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Houve uma falha ao abrir o arquivo temporário indicado no processamento da carga..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX021E 10.2.8 mensagem severidade error familia AWSBHX bhx tem texto occurred opening the temporary file portugues erro ocorreu arquivo Temas significa`
+> `AWSBHX021E 10.2.8 mensagem severidade error familia AWSBHX bhx tem texto occurred opening the temporary file portugues erro ocorreu arquivo Temas outras palavras Houve`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHX021E no HCL Workload Automation 10.2.8?
@@ -74961,7 +74961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX022E (severidade: error, familia AWSBHX - bhx) tem o texto: "An internal error occurred while initializing the HTTP communication. The library returned this error "!1"." Em portugues: "an interno erro ocorreu while initializing the http communication. the library returned this erro "!1".". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX022E (severidade: error, familia AWSBHX - bhx) tem o texto: "An internal error occurred while initializing the HTTP communication. The library returned this error "!1"." Em portugues: "an interno erro ocorreu while initializing the http communication. the library returned this erro "!1".". Temas: erro ocorreu interno. Em outras palavras: Ocorreu um erro interno quando a comunicação HTTP estava sendo inicializada, com uma mensagem retornada pela biblioteca..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHX022E 10.2.8 mensagem severidade error familia AWSBHX bhx tem texto internal occurred while initializing the HTTP communication The library returned this portugues interno erro ocorreu`
@@ -74981,7 +74981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX023E (severidade: error, familia AWSBHX - bhx) tem o texto: "An internal error occurred while sending data to the server. The error message is "!1"." Em portugues: "an interno erro ocorreu while sending data to the servidor. the erro mensagem is "!1".". Temas: erro ocorreu interno mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX023E (severidade: error, familia AWSBHX - bhx) tem o texto: "An internal error occurred while sending data to the server. The error message is "!1"." Em portugues: "an interno erro ocorreu while sending data to the servidor. the erro mensagem is "!1".". Temas: erro ocorreu interno mensagem. Em outras palavras: Houve um erro interno durante o envio dos dados para o servidor, conforme a mensagem exibida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHX023E 10.2.8 mensagem severidade error familia AWSBHX bhx tem texto internal occurred while sending data the server The message portugues interno erro ocorreu servidor`
@@ -75001,7 +75001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX024E (severidade: error, familia AWSBHX - bhx) tem o texto: "An internal error has occurred. The server has returned an error code. RC=!1" Em portugues: "an interno erro has ocorreu. the servidor has returned an erro code. rc=!1". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX024E (severidade: error, familia AWSBHX - bhx) tem o texto: "An internal error has occurred. The server has returned an error code. RC=!1" Em portugues: "an interno erro has ocorreu. the servidor has returned an erro code. rc=!1". Temas: erro ocorreu interno. Em outras palavras: Ocorreu um erro interno e o servidor retornou um código de erro na resposta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHX024E 10.2.8 mensagem severidade error familia AWSBHX bhx tem texto internal has occurred The server returned code portugues interno erro ocorreu the servidor`
@@ -75041,10 +75041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX027W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX028I (severidade: informational, familia AWSBHX - bhx) tem o texto: "Updating statistics. Percentage complete: !1%." Em portugues: "updating statistics. percentage complete: !1%.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX028I (severidade: informational, familia AWSBHX - bhx) tem o texto: "Updating statistics. Percentage complete: !1%." Em portugues: "updating statistics. percentage complete: !1%.". Em outras palavras: As estatísticas estão sendo atualizadas e a porcentagem concluída é informada junto com o andamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX028I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto Updating statistics Percentage complete portugues updating percentage significa diagnosticar`
+> `AWSBHX028I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto Updating statistics Percentage complete portugues updating percentage outras palavras sendo atualizadas porcentagem informada junto andamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHX028I no HCL Workload Automation 10.2.8?
@@ -75061,10 +75061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX028I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX029I (severidade: informational, familia AWSBHX - bhx) tem o texto: "Updating statistics. Percentage complete: !1% - estimated completion at: !2." Em portugues: "updating statistics. percentage complete: !1% - estimated completion at: !2.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX029I (severidade: informational, familia AWSBHX - bhx) tem o texto: "Updating statistics. Percentage complete: !1% - estimated completion at: !2." Em portugues: "updating statistics. percentage complete: !1% - estimated completion at: !2.". Em outras palavras: A atualização das estatísticas está em andamento, mostrando o percentual concluído e o horário previsto de término..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX029I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto Updating statistics Percentage complete estimated completion portugues updating percentage significa`
+> `AWSBHX029I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto Updating statistics Percentage complete estimated completion portugues updating percentage outras palavras andamento mostrando percentual previsto significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHX029I no HCL Workload Automation 10.2.8?
@@ -75081,10 +75081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX029I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX030I (severidade: informational, familia AWSBHX - bhx) tem o texto: "Updating statistics. Percentage complete: !1% - !2 minutes remaining." Em portugues: "updating statistics. percentage complete: !1% - !2 minutes remaining.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX030I (severidade: informational, familia AWSBHX - bhx) tem o texto: "Updating statistics. Percentage complete: !1% - !2 minutes remaining." Em portugues: "updating statistics. percentage complete: !1% - !2 minutes remaining.". Em outras palavras: As estatísticas estão sendo atualizadas e é exibido o percentual concluído junto com os minutos restantes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX030I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto Updating statistics Percentage complete minutes remaining portugues updating percentage significa`
+> `AWSBHX030I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto Updating statistics Percentage complete minutes remaining portugues updating percentage outras palavras sendo atualizadas exibido percentual junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHX030I no HCL Workload Automation 10.2.8?
@@ -75101,10 +75101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX030I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX031I (severidade: informational, familia AWSBHX - bhx) tem o texto: "The statistics update is completed." Em portugues: "the statistics atualizar is concluido.". Temas: concluido atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX031I (severidade: informational, familia AWSBHX - bhx) tem o texto: "The statistics update is completed." Em portugues: "the statistics atualizar is concluido.". Temas: concluido atualizar. Em outras palavras: O processo de atualização das estatísticas do sistema foi finalizado corretamente sem interrupções..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX031I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto The statistics update completed portugues the atualizar concluido Temas significa`
+> `AWSBHX031I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto The statistics update completed portugues the atualizar concluido Temas outras palavras processo sistema foi finalizado corretamente sem`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHX031I no HCL Workload Automation 10.2.8?
@@ -75121,7 +75121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX031I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX032W (severidade: warning, familia AWSBHX - bhx) tem o texto: "The job with Workstation: !1 Job Name: !2 has a null started date. For this reason, it doesn't appear in any collected statistics." Em portugues: "the job with estacao de trabalho: !1 job nome: !2 has a null iniciado date. for this motivo, it doesn't appear in any collected statistics.". Temas: estacao de trabalho job nome iniciado. Explicacao oficial: The job, even if completed, contains a NULL started date. It is skipped in the statistics calculation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX032W (severidade: warning, familia AWSBHX - bhx) tem o texto: "The job with Workstation: !1 Job Name: !2 has a null started date. For this reason, it doesn't appear in any collected statistics." Em portugues: "the job with estacao de trabalho: !1 job nome: !2 has a null iniciado date. for this motivo, it doesn't appear in any collected statistics.". Temas: estacao de trabalho job nome iniciado. Em outras palavras: O job da workstation informada possui data de início nula, por isso não foi considerado na coleta de estatísticas.. Explicacao oficial: The job, even if completed, contains a NULL started date. It is skipped in the statistics calculation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHX032W 10.2.8 mensagem severidade warning familia AWSBHX bhx tem texto The job with Workstation Job Name has null started date For this reason doesn appear any collected statistics portugues the`
@@ -75141,7 +75141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX032W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX033W (severidade: warning, familia AWSBHX - bhx) tem o texto: "The count of jobs cannot be performed on the current production Symphony file." Em portugues: "the count of jobs nao pode be performed on the current production symphony arquivo.". Temas: arquivo nao pode symphony. Explicacao oficial: The count of jobs can be performed only on a Symphony file different from the current one.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX033W (severidade: warning, familia AWSBHX - bhx) tem o texto: "The count of jobs cannot be performed on the current production Symphony file." Em portugues: "the count of jobs nao pode be performed on the current production symphony arquivo.". Temas: arquivo nao pode symphony. Em outras palavras: Não foi possível contabilizar a quantidade de jobs no arquivo Symphony de produção atual.. Explicacao oficial: The count of jobs can be performed only on a Symphony file different from the current one.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHX033W 10.2.8 mensagem severidade warning familia AWSBHX bhx tem texto The count jobs cannot performed the current production Symphony file portugues nao symphony`
@@ -75161,10 +75161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHX033W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHX034I (severidade: informational, familia AWSBHX - bhx) tem o texto: "!1 jobs has been consumed on this plan." Em portugues: "!1 jobs has estado consumed on this plano.". Temas: plano.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHX034I (severidade: informational, familia AWSBHX - bhx) tem o texto: "!1 jobs has been consumed on this plan." Em portugues: "!1 jobs has estado consumed on this plano.". Temas: plano. Em outras palavras: A quantidade de jobs indicada na mensagem foi efetivamente consumida dentro deste plano de produção..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHX034I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto jobs has been consumed this plan portugues estado plano Temas significa`
+> `AWSBHX034I 10.2.8 mensagem severidade informational familia AWSBHX bhx tem texto jobs has been consumed this plan portugues estado plano Temas outras palavras quantidade indicada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHX034I no HCL Workload Automation 10.2.8?
@@ -75201,10 +75201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ002E (severidade: error, familia AWSBHZ - bhz) tem o texto: "There is not enough memory available to run schedulr." Em portugues: "there is nao enough memoria disponivel to run schedulr.". Temas: nao execucao memoria.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ002E (severidade: error, familia AWSBHZ - bhz) tem o texto: "There is not enough memory available to run schedulr." Em portugues: "there is nao enough memoria disponivel to run schedulr.". Temas: nao execucao memoria. Em outras palavras: A memória disponível no sistema não é suficiente para executar o serviço de agendamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHZ002E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto There not enough memory available run schedulr portugues there nao memoria disponivel Temas execucao significa`
+> `AWSBHZ002E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto There not enough memory available run schedulr portugues there nao memoria disponivel Temas execucao outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHZ002E no HCL Workload Automation 10.2.8?
@@ -75221,7 +75221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ003W (severidade: warning, familia AWSBHZ - bhz) tem o texto: "The submitted job stream has not been found or the job stream name is too long." Em portugues: "the submitted job fluxo has nao estado encontrado or the job fluxo nome is too long.". Temas: nao job nome encontrado fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ003W (severidade: warning, familia AWSBHZ - bhz) tem o texto: "The submitted job stream has not been found or the job stream name is too long." Em portugues: "the submitted job fluxo has nao estado encontrado or the job fluxo nome is too long.". Temas: nao job nome encontrado fluxo. Em outras palavras: O fluxo de jobs enviado não foi localizado ou o seu nome excedeu o tamanho permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ003W 10.2.8 mensagem severidade warning familia AWSBHZ bhz tem texto The submitted job stream has not been found the name too long portugues fluxo`
@@ -75241,7 +75241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ003W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ008E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr was unable to open the prodsked file for the following reason: "!1"." Em portugues: "schedulr was incapaz to open the prodsked arquivo for the seguinte motivo: "!1".". Temas: arquivo nao conseguiu. Explicacao oficial: Some possible reasons are that the file has been locked, or the user running schedulr does not have the rights to open it.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ008E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr was unable to open the prodsked file for the following reason: "!1"." Em portugues: "schedulr was incapaz to open the prodsked arquivo for the seguinte motivo: "!1".". Temas: arquivo nao conseguiu. Em outras palavras: O agendador não conseguiu abrir o arquivo de produção devido ao motivo indicado na mensagem.. Explicacao oficial: Some possible reasons are that the file has been locked, or the user running schedulr does not have the rights to open it.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ008E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr was unable open the prodsked file for following reason portugues schedulr incapaz arquivo`
@@ -75261,7 +75261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ009E (severidade: error, familia AWSBHZ - bhz) tem o texto: "You have supplied a date with the "-date" option, but the supplied date is not in the correct format." Em portugues: "you have informado a date with the "-date" opcao, but the informado date is nao in the correct format.". Temas: nao informado opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ009E (severidade: error, familia AWSBHZ - bhz) tem o texto: "You have supplied a date with the "-date" option, but the supplied date is not in the correct format." Em portugues: "you have informado a date with the "-date" opcao, but the informado date is nao in the correct format.". Temas: nao informado opcao. Em outras palavras: A data informada no parâmetro de data não está no formato esperado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ009E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto You have supplied date with the option but not correct format portugues you informado`
@@ -75281,7 +75281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ010E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr has encountered the following error when trying to find a job stream in the mastsked database: "!1"" Em portugues: "schedulr has encountered the seguinte erro when trying to find a job fluxo in the mastsked banco de dados: "!1"". Temas: erro job fluxo banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ010E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr has encountered the following error when trying to find a job stream in the mastsked database: "!1"" Em portugues: "schedulr has encountered the seguinte erro when trying to find a job fluxo in the mastsked banco de dados: "!1"". Temas: erro job fluxo banco de dados. Em outras palavras: O agendador encontrou um erro ao procurar um fluxo de jobs no banco de dados mestre de agendamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ010E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr has encountered the following when trying find job stream mastsked database portugues schedulr seguinte`
@@ -75301,7 +75301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ011E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while checking to see if a date is defined for a particular calendar in the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while checking to see if a date is defined for a particular calendario in the calendars banco de dados: "!1".". Temas: erro banco de dados calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ011E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while checking to see if a date is defined for a particular calendar in the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while checking to see if a date is defined for a particular calendario in the calendars banco de dados: "!1".". Temas: erro banco de dados calendario. Em outras palavras: O agendador falhou ao verificar se existe uma data definida no calendário dentro do banco de calendários..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ011E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered the following while checking see date defined for particular calendar calendars database portugues schedulr`
@@ -75321,7 +75321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ012E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while searching for a specific calendar in the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while searching for a specific calendario in the calendars banco de dados: "!1".". Temas: erro banco de dados calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ012E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while searching for a specific calendar in the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while searching for a specific calendario in the calendars banco de dados: "!1".". Temas: erro banco de dados calendario. Em outras palavras: O agendador encontrou um erro ao buscar um calendário específico no banco de dados de calendários..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ012E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered the following while searching for specific calendar calendars database portugues schedulr seguinte erro`
@@ -75341,7 +75341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ013E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while reading a job stream from the mastsked database: "!1"." Em portugues: "schedulr encountered the seguinte erro while reading a job fluxo from the mastsked banco de dados: "!1".". Temas: erro job fluxo banco de dados. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ013E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while reading a job stream from the mastsked database: "!1"." Em portugues: "schedulr encountered the seguinte erro while reading a job fluxo from the mastsked banco de dados: "!1".". Temas: erro job fluxo banco de dados. Em outras palavras: O agendador encontrou um erro ao ler um fluxo de jobs a partir do banco mestre de agendamento.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ013E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered the following while reading job stream from mastsked database portugues schedulr seguinte erro`
@@ -75361,7 +75361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ014E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while reading dates from the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while reading dates from the calendars banco de dados: "!1".". Temas: erro banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ014E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while reading dates from the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while reading dates from the calendars banco de dados: "!1".". Temas: erro banco de dados. Em outras palavras: O agendador encontrou um erro ao ler as datas armazenadas no banco de dados de calendários..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ014E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered the following while reading dates from calendars database portugues schedulr seguinte erro`
@@ -75381,7 +75381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ015E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while trying to lock the mastsked or job.sched databases: "!1"" Em portugues: "schedulr encountered the seguinte erro while trying to lock the mastsked or job.sched databases: "!1"". Temas: erro job. Explicacao oficial: See message. These databases are locked before schedulr starts selecting the job streams that are to be included in the production period. Schedulr might not be able to lock the mastsked and job.sched databases because the databases might be locked by another process.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ015E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while trying to lock the mastsked or job.sched databases: "!1"" Em portugues: "schedulr encountered the seguinte erro while trying to lock the mastsked or job.sched databases: "!1"". Temas: erro job. Em outras palavras: O agendador falhou ao tentar bloquear os bancos de dados de agendamento para uso exclusivo.. Explicacao oficial: See message. These databases are locked before schedulr starts selecting the job streams that are to be included in the production period. Schedulr might not be able to lock the mastsked and job.sched databases because the databases might be locked by another process.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ015E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered the following while trying lock mastsked job.sched databases portugues schedulr seguinte erro`
@@ -75421,7 +75421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ017E (severidade: error, familia AWSBHZ - bhz) tem o texto: "An internal error has occurred. Schedulr was unable to add a job stream dependency to the internal table used by the resolve dependencies functions." Em portugues: "an interno erro has ocorreu. schedulr was incapaz to add a job fluxo dependency to the interno tabela used by the resolve dependencies functions.". Temas: erro job ocorreu nao conseguiu interno fluxo tabela. Explicacao oficial: The internal error is: Bad dependencies passed to resolver.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ017E (severidade: error, familia AWSBHZ - bhz) tem o texto: "An internal error has occurred. Schedulr was unable to add a job stream dependency to the internal table used by the resolve dependencies functions." Em portugues: "an interno erro has ocorreu. schedulr was incapaz to add a job fluxo dependency to the interno tabela used by the resolve dependencies functions.". Temas: erro job ocorreu nao conseguiu interno fluxo tabela. Em outras palavras: Ocorreu um erro interno ao adicionar uma dependência de fluxo de jobs na tabela de resolução de dependências.. Explicacao oficial: The internal error is: Bad dependencies passed to resolver.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ017E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto internal has occurred Schedulr was unable add job stream dependency the table used resolve dependencies functions portugues`
@@ -75441,7 +75441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ023E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered an error parsing the contents of the job streams in the mozart database." Em portugues: "schedulr encountered an erro parsing the contents of the job streams in the mozart banco de dados.". Temas: erro job banco de dados. Explicacao oficial: A previous message has given details of the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ023E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered an error parsing the contents of the job streams in the mozart database." Em portugues: "schedulr encountered an erro parsing the contents of the job streams in the mozart banco de dados.". Temas: erro job banco de dados. Em outras palavras: O agendador encontrou um erro ao interpretar o conteúdo dos fluxos de jobs no banco de dados de agendamento.. Explicacao oficial: A previous message has given details of the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ023E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered parsing the contents job streams mozart database portugues schedulr erro`
@@ -75461,7 +75461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ024E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr has encountered the following error while trying to initialize the Security file: "!1"." Em portugues: "schedulr has encountered the seguinte erro while trying to initialize the seguranca arquivo: "!1".". Temas: erro arquivo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ024E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr has encountered the following error while trying to initialize the Security file: "!1"." Em portugues: "schedulr has encountered the seguinte erro while trying to initialize the seguranca arquivo: "!1".". Temas: erro arquivo seguranca. Em outras palavras: O agendador falhou ao inicializar o arquivo de segurança, conforme o erro indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ024E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr has encountered the following while trying initialize Security file portugues schedulr seguinte erro`
@@ -75481,7 +75481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ025E (severidade: error, familia AWSBHZ - bhz) tem o texto: "The user that launched schedulr does not have the correct permissions for the schedulr actions." Em portugues: "the usuario that launched schedulr does nao have the correct permissions for the schedulr actions.". Temas: nao usuario. Explicacao oficial: To run schedulr , the user must have build access to the file object in the HCL Workload Automation Security file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ025E (severidade: error, familia AWSBHZ - bhz) tem o texto: "The user that launched schedulr does not have the correct permissions for the schedulr actions." Em portugues: "the usuario that launched schedulr does nao have the correct permissions for the schedulr actions.". Temas: nao usuario. Em outras palavras: O usuário que executou o agendador não possui as permissões necessárias para realizar as ações de agendamento.. Explicacao oficial: To run schedulr , the user must have build access to the file object in the HCL Workload Automation Security file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ025E 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto The user that launched schedulr does not have the correct permissions for actions portugues usuario`
@@ -75501,7 +75501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ026I (severidade: informational, familia AWSBHZ - bhz) tem o texto: "No job streams were selected for any workstation." Em portugues: "no job streams were selected for any estacao de trabalho.". Temas: estacao de trabalho job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ026I (severidade: informational, familia AWSBHZ - bhz) tem o texto: "No job streams were selected for any workstation." Em portugues: "no job streams were selected for any estacao de trabalho.". Temas: estacao de trabalho job. Em outras palavras: Não houve seleção de nenhum fluxo de jobs para qualquer uma das workstations configuradas no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ026I 10.2.8 mensagem severidade informational familia AWSBHZ bhz tem texto job streams were selected for any workstation portugues estacao trabalho Temas`
@@ -75521,10 +75521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ026I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ027I (severidade: informational, familia AWSBHZ - bhz) tem o texto: "!1 job stream was selected for all workstations." Em portugues: "!1 job fluxo was selected for all workstations.". Temas: job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ027I (severidade: informational, familia AWSBHZ - bhz) tem o texto: "!1 job stream was selected for all workstations." Em portugues: "!1 job fluxo was selected for all workstations.". Temas: job fluxo. Em outras palavras: Um fluxo de jobs foi selecionado e aplicado a todas as workstations..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHZ027I 10.2.8 mensagem severidade informational familia AWSBHZ bhz tem texto job stream was selected for all workstations portugues fluxo Temas significa`
+> `AWSBHZ027I 10.2.8 mensagem severidade informational familia AWSBHZ bhz tem texto job stream was selected for all workstations portugues fluxo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHZ027I no HCL Workload Automation 10.2.8?
@@ -75541,10 +75541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ027I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ028I (severidade: informational, familia AWSBHZ - bhz) tem o texto: "!1 job streams were selected for all workstations." Em portugues: "!1 job streams were selected for all workstations.". Temas: job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ028I (severidade: informational, familia AWSBHZ - bhz) tem o texto: "!1 job streams were selected for all workstations." Em portugues: "!1 job streams were selected for all workstations.". Temas: job. Em outras palavras: A quantidade informada de fluxos de jobs foi selecionada e aplicada a todas as workstations..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHZ028I 10.2.8 mensagem severidade informational familia AWSBHZ bhz tem texto job streams were selected for all workstations portugues Temas significa`
+> `AWSBHZ028I 10.2.8 mensagem severidade informational familia AWSBHZ bhz tem texto job streams were selected for all workstations portugues Temas outras palavras quantidade`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHZ028I no HCL Workload Automation 10.2.8?
@@ -75561,7 +75561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ028I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ029E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while trying to lock the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while trying to lock the calendars banco de dados: "!1".". Temas: erro banco de dados. Explicacao oficial: The calendars database is locked before schedulr starts selecting the job streams that are to be included in the production period.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ029E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr encountered the following error while trying to lock the calendars database: "!1"." Em portugues: "schedulr encountered the seguinte erro while trying to lock the calendars banco de dados: "!1".". Temas: erro banco de dados. Em outras palavras: O agendador falhou ao tentar bloquear o banco de dados de calendários para uso exclusivo.. Explicacao oficial: The calendars database is locked before schedulr starts selecting the job streams that are to be included in the production period.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ029E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr encountered the following while trying lock calendars database portugues schedulr seguinte erro`
@@ -75581,7 +75581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHZ030E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr is unable to find the "!3" calendar specified in the following job stream: "!1#!2"." Em portugues: "schedulr is incapaz to find the "!3" calendario especificado in the seguinte job fluxo: "!1#!2".". Temas: job nao conseguiu especificado fluxo calendario. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHZ030E (severidade: error, familia AWSBHZ - bhz) tem o texto: "Schedulr is unable to find the "!3" calendar specified in the following job stream: "!1#!2"." Em portugues: "schedulr is incapaz to find the "!3" calendario especificado in the seguinte job fluxo: "!1#!2".". Temas: job nao conseguiu especificado fluxo calendario. Em outras palavras: O agendador não encontrou o calendário indicado no fluxo de jobs informado, conforme a referência apresentada.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHZ030E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBHZ bhz tem texto Schedulr unable find the calendar specified following job stream portugues schedulr incapaz calendario especificado seguinte`
@@ -84261,10 +84261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIB351E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC001E (severidade: error, familia AWSBIC - bic) tem o texto: "An error occurred opening the database: !1" Em portugues: "an erro ocorreu opening the banco de dados: !1". Temas: erro ocorreu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC001E (severidade: error, familia AWSBIC - bic) tem o texto: "An error occurred opening the database: !1" Em portugues: "an erro ocorreu opening the banco de dados: !1". Temas: erro ocorreu banco de dados. Em outras palavras: Ocorreu um erro na abertura do banco de dados durante o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC001E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto occurred opening the database portugues erro ocorreu dados Temas significa`
+> `AWSBIC001E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto occurred opening the database portugues erro ocorreu dados Temas outras palavras Ocorreu abertura`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC001E no HCL Workload Automation 10.2.8?
@@ -84281,10 +84281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC002E (severidade: error, familia AWSBIC - bic) tem o texto: "An error occurred opening the file "!1" for reading" Em portugues: "an erro ocorreu opening the arquivo "!1" for reading". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC002E (severidade: error, familia AWSBIC - bic) tem o texto: "An error occurred opening the file "!1" for reading" Em portugues: "an erro ocorreu opening the arquivo "!1" for reading". Temas: erro arquivo ocorreu. Em outras palavras: Falha ao abrir o arquivo informado no modo de leitura dos dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC002E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto occurred opening the file for reading portugues erro ocorreu arquivo Temas significa`
+> `AWSBIC002E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto occurred opening the file for reading portugues erro ocorreu arquivo Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC002E no HCL Workload Automation 10.2.8?
@@ -84301,10 +84301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC003E (severidade: error, familia AWSBIC - bic) tem o texto: "An error was returned from the parser." Em portugues: "an erro was returned from the parser.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC003E (severidade: error, familia AWSBIC - bic) tem o texto: "An error was returned from the parser." Em portugues: "an erro was returned from the parser.". Temas: erro. Em outras palavras: O analisador sintático responsável por interpretar as definições do sistema retornou um erro durante o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC003E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto was returned from the parser portugues erro Temas significa`
+> `AWSBIC003E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto was returned from the parser portugues erro Temas outras palavras analisador interpretar sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC003E no HCL Workload Automation 10.2.8?
@@ -84321,10 +84321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC004E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error looking for "!3#!4" job in database: !5" Em portugues: ""!1" linha !2, erro looking for "!3#!4" job in banco de dados: !5". Temas: erro job linha banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC004E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error looking for "!3#!4" job in database: !5" Em portugues: ""!1" linha !2, erro looking for "!3#!4" job in banco de dados: !5". Temas: erro job linha banco de dados. Em outras palavras: No arquivo informado, na linha indicada, houve erro ao procurar o job referenciado dentro do banco de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC004E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line looking for job database portugues linha erro dados Temas significa`
+> `AWSBIC004E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line looking for job database portugues linha erro dados Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC004E no HCL Workload Automation 10.2.8?
@@ -84341,10 +84341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC005E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error looking for "!3" prompt in database: !4" Em portugues: ""!1" linha !2, erro looking for "!3" prompt in banco de dados: !4". Temas: erro linha banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC005E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error looking for "!3" prompt in database: !4" Em portugues: ""!1" linha !2, erro looking for "!3" prompt in banco de dados: !4". Temas: erro linha banco de dados. Em outras palavras: No arquivo informado, na linha indicada, houve erro ao buscar a definição de prompt definida no banco de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC005E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line looking for prompt database portugues linha erro dados Temas significa`
+> `AWSBIC005E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line looking for prompt database portugues linha erro dados Temas outras palavras arquivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC005E no HCL Workload Automation 10.2.8?
@@ -84361,10 +84361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC006E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error looking for "!3#!4" resource in database: !5" Em portugues: ""!1" linha !2, erro looking for "!3#!4" recurso in banco de dados: !5". Temas: erro linha recurso banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC006E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error looking for "!3#!4" resource in database: !5" Em portugues: ""!1" linha !2, erro looking for "!3#!4" recurso in banco de dados: !5". Temas: erro linha recurso banco de dados. Em outras palavras: No arquivo informado, na linha indicada, houve erro ao localizar o recurso referenciado dentro do banco de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC006E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line looking for resource database portugues linha erro recurso dados Temas significa`
+> `AWSBIC006E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line looking for resource database portugues linha erro recurso dados Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC006E no HCL Workload Automation 10.2.8?
@@ -84381,7 +84381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC007E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, bad symphony job stream record retrieved: "!3" instead of "!4"" Em portugues: ""!1" linha !2, bad symphony job fluxo registro retrieved: "!3" instead of "!4"". Temas: job symphony fluxo linha registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC007E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, bad symphony job stream record retrieved: "!3" instead of "!4"" Em portugues: ""!1" linha !2, bad symphony job fluxo registro retrieved: "!3" instead of "!4"". Temas: job symphony fluxo linha registro. Em outras palavras: No arquivo informado, na linha indicada, foi recuperado um registro de fluxo de jobs inválido em vez do esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC007E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line bad symphony job stream record retrieved instead portugues linha fluxo registro Temas`
@@ -84401,7 +84401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC008E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, bad symphony job record retrieved: "!3" instead of "!4"" Em portugues: ""!1" linha !2, bad symphony job registro retrieved: "!3" instead of "!4"". Temas: job symphony linha registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC008E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, bad symphony job record retrieved: "!3" instead of "!4"" Em portugues: ""!1" linha !2, bad symphony job registro retrieved: "!3" instead of "!4"". Temas: job symphony linha registro. Em outras palavras: No arquivo informado, na linha indicada, foi recuperado um registro de job inválido em vez do esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC008E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line bad symphony job record retrieved instead portugues linha registro Temas`
@@ -84421,10 +84421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC009E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, Security error: !3" Em portugues: ""!1" linha !2, seguranca erro: !3". Temas: erro linha seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC009E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, Security error: !3" Em portugues: ""!1" linha !2, seguranca erro: !3". Temas: erro linha seguranca. Em outras palavras: No arquivo informado, na linha indicada, foi detectada uma falha de segurança durante a validação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC009E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line Security portugues linha seguranca erro Temas significa diagnosticar`
+> `AWSBIC009E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line Security portugues linha seguranca erro Temas outras palavras arquivo informado indicada foi detectada falha`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC009E no HCL Workload Automation 10.2.8?
@@ -84441,10 +84441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC010E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, Symphony access error: !3" Em portugues: ""!1" linha !2, symphony acesso erro: !3". Temas: erro symphony linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC010E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, Symphony access error: !3" Em portugues: ""!1" linha !2, symphony acesso erro: !3". Temas: erro symphony linha. Em outras palavras: No arquivo informado, na linha indicada, houve um erro de acesso ao componente Symphony do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC010E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line Symphony access portugues linha symphony acesso erro Temas significa`
+> `AWSBIC010E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line Symphony access portugues linha symphony acesso erro Temas outras palavras arquivo informado indicada houve`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC010E no HCL Workload Automation 10.2.8?
@@ -84461,10 +84461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC011E (severidade: error, familia AWSBIC - bic) tem o texto: "Error accessing run-message number file : !1" Em portugues: "erro accessing run-mensagem numero arquivo : !1". Temas: erro arquivo numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC011E (severidade: error, familia AWSBIC - bic) tem o texto: "Error accessing run-message number file : !1" Em portugues: "erro accessing run-mensagem numero arquivo : !1". Temas: erro arquivo numero. Em outras palavras: Falha ao acessar o arquivo que armazena os números das mensagens de execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC011E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error accessing run-message number file portugues erro run-mensagem numero arquivo Temas significa`
+> `AWSBIC011E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error accessing run-message number file portugues erro run-mensagem numero arquivo Temas outras palavras Falha acessar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC011E no HCL Workload Automation 10.2.8?
@@ -84481,10 +84481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC012E (severidade: error, familia AWSBIC - bic) tem o texto: "Error finding workstation !1 in cpudata file: !2" Em portugues: "erro finding estacao de trabalho !1 in cpudata arquivo: !2". Temas: erro arquivo estacao de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC012E (severidade: error, familia AWSBIC - bic) tem o texto: "Error finding workstation !1 in cpudata file: !2" Em portugues: "erro finding estacao de trabalho !1 in cpudata arquivo: !2". Temas: erro arquivo estacao de trabalho. Em outras palavras: Não foi possível encontrar a workstation informada dentro do arquivo de dados de CPU do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC012E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error finding workstation cpudata file portugues erro estacao trabalho arquivo Temas significa`
+> `AWSBIC012E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error finding workstation cpudata file portugues erro estacao trabalho arquivo Temas outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC012E no HCL Workload Automation 10.2.8?
@@ -84501,7 +84501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC013W (severidade: warning, familia AWSBIC - bic) tem o texto: "Job !5 in job stream !4 is hosted by workstation !3, resource !1#!2 is hosted by workstation !1" Em portugues: "job !5 in job fluxo !4 is hosted by estacao de trabalho !3, recurso !1#!2 is hosted by estacao de trabalho !1". Temas: estacao de trabalho job fluxo recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC013W (severidade: warning, familia AWSBIC - bic) tem o texto: "Job !5 in job stream !4 is hosted by workstation !3, resource !1#!2 is hosted by workstation !1" Em portugues: "job !5 in job fluxo !4 is hosted by estacao de trabalho !3, recurso !1#!2 is hosted by estacao de trabalho !1". Temas: estacao de trabalho job fluxo recurso. Em outras palavras: O job e o fluxo possuem uma workstation, enquanto o recurso associado é hospedado em outra workstation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC013W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto Job job stream hosted workstation resource portugues fluxo estacao trabalho recurso Temas`
@@ -84521,7 +84521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC013W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC014W (severidade: warning, familia AWSBIC - bic) tem o texto: "Job stream !4 is hosted by workstation !3, resource !1#!2 is hosted by workstation !1" Em portugues: "job fluxo !4 is hosted by estacao de trabalho !3, recurso !1#!2 is hosted by estacao de trabalho !1". Temas: estacao de trabalho job fluxo recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC014W (severidade: warning, familia AWSBIC - bic) tem o texto: "Job stream !4 is hosted by workstation !3, resource !1#!2 is hosted by workstation !1" Em portugues: "job fluxo !4 is hosted by estacao de trabalho !3, recurso !1#!2 is hosted by estacao de trabalho !1". Temas: estacao de trabalho job fluxo recurso. Em outras palavras: O fluxo de jobs é hospedado em uma workstation, mas o recurso referenciado está hospedado em outra workstation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC014W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto Job stream hosted workstation resource portugues job fluxo estacao trabalho recurso Temas`
@@ -84541,10 +84541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC014W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC015E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: Undefined parameter encountered" Em portugues: "erro: undefined parametro encountered". Temas: erro parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC015E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: Undefined parameter encountered" Em portugues: "erro: undefined parametro encountered". Temas: erro parametro. Em outras palavras: Foi localizado um parâmetro que não possui definição válida dentro da configuração do processamento em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC015E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error Undefined parameter encountered portugues erro undefined parametro Temas significa`
+> `AWSBIC015E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error Undefined parameter encountered portugues erro undefined parametro Temas outras palavras Foi localizado possui dentro processamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC015E no HCL Workload Automation 10.2.8?
@@ -84561,10 +84561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC016E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: Parameter expansion causes buffer overflow" Em portugues: "erro: parametro expansion causes buffer overflow". Temas: erro parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC016E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: Parameter expansion causes buffer overflow" Em portugues: "erro: parametro expansion causes buffer overflow". Temas: erro parametro. Em outras palavras: A expansão do parâmetro excedeu o limite do buffer, causando falha no processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC016E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error Parameter expansion causes buffer overflow portugues erro parametro Temas significa`
+> `AWSBIC016E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error Parameter expansion causes buffer overflow portugues erro parametro Temas outras palavras excedeu limite`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC016E no HCL Workload Automation 10.2.8?
@@ -84581,10 +84581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC017E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: Parameter syntax error" Em portugues: "erro: parametro sintaxe erro". Temas: erro sintaxe parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC017E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: Parameter syntax error" Em portugues: "erro: parametro sintaxe erro". Temas: erro sintaxe parametro. Em outras palavras: Foi detectado um erro na sintaxe empregada na definição do parâmetro durante a interpretação da configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC017E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error Parameter syntax portugues erro parametro sintaxe Temas significa`
+> `AWSBIC017E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error Parameter syntax portugues erro parametro sintaxe Temas outras palavras Foi detectado empregada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC017E no HCL Workload Automation 10.2.8?
@@ -84601,7 +84601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC018W (severidade: warning, familia AWSBIC - bic) tem o texto: "Warning: Duplicate job stream !1#!2 in class !3 , job stream ignored." Em portugues: "warning: duplicate job fluxo !1#!2 in class !3 , job fluxo ignored.". Temas: job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC018W (severidade: warning, familia AWSBIC - bic) tem o texto: "Warning: Duplicate job stream !1#!2 in class !3 , job stream ignored." Em portugues: "warning: duplicate job fluxo !1#!2 in class !3 , job fluxo ignored.". Temas: job fluxo. Em outras palavras: Foi encontrado um fluxo de jobs duplicado na classe informada, e o duplicado foi ignorado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC018W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto Warning Duplicate job stream class ignored portugues duplicate fluxo Temas`
@@ -84621,7 +84621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC018W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC019E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error using cpuclass "!3" within a job stream whose workstation is "!4"" Em portugues: ""!1" linha !2, erro using cpuclass "!3" dentro de a job fluxo whose estacao de trabalho is "!4"". Temas: erro estacao de trabalho job fluxo linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC019E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error using cpuclass "!3" within a job stream whose workstation is "!4"" Em portugues: ""!1" linha !2, erro using cpuclass "!3" dentro de a job fluxo whose estacao de trabalho is "!4"". Temas: erro estacao de trabalho job fluxo linha. Em outras palavras: No arquivo informado, na linha indicada, houve erro ao usar a classe de CPU dentro de um fluxo cuja workstation é diferente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC019E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line using cpuclass within job stream whose workstation portugues linha erro dentro fluxo estacao trabalho`
@@ -84641,7 +84641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC020E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error: could not get the workstation names in the cpuclass "!3"" Em portugues: ""!1" linha !2, erro: conseguiu nao get the estacao de trabalho names in the cpuclass "!3"". Temas: erro nao estacao de trabalho linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC020E (severidade: error, familia AWSBIC - bic) tem o texto: ""!1" line !2, error: could not get the workstation names in the cpuclass "!3"" Em portugues: ""!1" linha !2, erro: conseguiu nao get the estacao de trabalho names in the cpuclass "!3"". Temas: erro nao estacao de trabalho linha. Em outras palavras: No arquivo informado, na linha indicada, não foi possível obter os nomes das workstations da classe de CPU informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC020E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto line could not get the workstation names cpuclass portugues linha erro conseguiu nao estacao trabalho`
@@ -84661,10 +84661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC021E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: writing job stream to a temporary file" Em portugues: "erro: writing job fluxo to a temporary arquivo". Temas: erro arquivo job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC021E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: writing job stream to a temporary file" Em portugues: "erro: writing job fluxo to a temporary arquivo". Temas: erro arquivo job fluxo. Em outras palavras: Houve erro de escrita do fluxo de jobs no arquivo temporário durante o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC021E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error writing job stream temporary file portugues erro fluxo arquivo Temas significa`
+> `AWSBIC021E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error writing job stream temporary file portugues erro fluxo arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC021E no HCL Workload Automation 10.2.8?
@@ -84681,10 +84681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC022E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: opening/creating a temporary file" Em portugues: "erro: opening/creating a temporary arquivo". Temas: erro arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC022E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: opening/creating a temporary file" Em portugues: "erro: opening/creating a temporary arquivo". Temas: erro arquivo. Em outras palavras: Houve erro ao abrir ou criar o arquivo temporário necessário para o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC022E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error opening creating temporary file portugues erro arquivo Temas significa`
+> `AWSBIC022E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error opening creating temporary file portugues erro arquivo Temas outras palavras Houve abrir criar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC022E no HCL Workload Automation 10.2.8?
@@ -84701,10 +84701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC023E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: getting workstation data from database" Em portugues: "erro: getting estacao de trabalho data from banco de dados". Temas: erro estacao de trabalho banco dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC023E (severidade: error, familia AWSBIC - bic) tem o texto: "Error: getting workstation data from database" Em portugues: "erro: getting estacao de trabalho data from banco de dados". Temas: erro estacao de trabalho banco dados. Em outras palavras: Falha ao recuperar os dados da workstation a partir do banco de dados do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC023E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error getting workstation data from database portugues erro estacao trabalho dados Temas significa`
+> `AWSBIC023E 10.2.8 mensagem severidade error familia AWSBIC bic tem texto Error getting workstation data from database portugues erro estacao trabalho dados Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC023E no HCL Workload Automation 10.2.8?
@@ -84721,7 +84721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC024W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, WARNING: filename base is longer than !3 bytes. The dependency is dropped and the priority is set to 0" Em portugues: ""!1" linha !2, warning: filename base is longer que !3 bytes. the dependency is dropped and the prioridade is set to 0". Temas: linha prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC024W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, WARNING: filename base is longer than !3 bytes. The dependency is dropped and the priority is set to 0" Em portugues: ""!1" linha !2, warning: filename base is longer que !3 bytes. the dependency is dropped and the prioridade is set to 0". Temas: linha prioridade. Em outras palavras: No arquivo informado, o nome base do arquivo excede o tamanho limite, então a dependência foi descartada e a prioridade zerada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC024W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line WARNING filename base longer than bytes The dependency dropped and the priority set portugues linha`
@@ -84741,10 +84741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC024W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC100W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: JOB Override "!4#!5" is used instead of "!3#!5"" Em portugues: ""!1" linha !2, warning: job override "!4#!5" is used instead of "!3#!5"". Temas: job linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC100W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: JOB Override "!4#!5" is used instead of "!3#!5"" Em portugues: ""!1" linha !2, warning: job override "!4#!5" is used instead of "!3#!5"". Temas: job linha. Em outras palavras: No arquivo informado, a definição de substituição de job foi aplicada usando referência diferente da originalmente declarada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC100W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning JOB Override used instead portugues linha job override Temas significa`
+> `AWSBIC100W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning JOB Override used instead portugues linha job override Temas outras palavras arquivo informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC100W no HCL Workload Automation 10.2.8?
@@ -84761,10 +84761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC100W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC101W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: RESOURCE Override "!4#!5" is used instead of "!3#!5"" Em portugues: ""!1" linha !2, warning: recurso override "!4#!5" is used instead of "!3#!5"". Temas: linha recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC101W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: RESOURCE Override "!4#!5" is used instead of "!3#!5"" Em portugues: ""!1" linha !2, warning: recurso override "!4#!5" is used instead of "!3#!5"". Temas: linha recurso. Em outras palavras: No arquivo informado, a definição de substituição de recurso usou uma referência diferente da originalmente declarada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIC101W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning RESOURCE Override used instead portugues linha recurso override Temas significa`
+> `AWSBIC101W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning RESOURCE Override used instead portugues linha recurso override Temas outras palavras arquivo informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIC101W no HCL Workload Automation 10.2.8?
@@ -84781,7 +84781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC101W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC102W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: Job !3#!4.!5 is not found in database. Added a dummy job in FAIL state." Em portugues: ""!1" linha !2, warning: job !3#!4.!5 is nao encontrado in banco de dados. added a dummy job in fail estado.". Temas: nao job encontrado linha banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC102W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: Job !3#!4.!5 is not found in database. Added a dummy job in FAIL state." Em portugues: ""!1" linha !2, warning: job !3#!4.!5 is nao encontrado in banco de dados. added a dummy job in fail estado.". Temas: nao job encontrado linha banco de dados. Em outras palavras: O job informado não foi encontrado no banco de dados e por isso um job fictício no estado de falha foi criado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC102W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning Job not found database Added dummy job FAIL state portugues linha nao encontrado dados added`
@@ -84801,7 +84801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC102W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC103W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: Prompt !3 not found. Added prompt !3 in symphony." Em portugues: ""!1" linha !2, warning: prompt !3 nao encontrado. added prompt !3 in symphony.". Temas: nao encontrado symphony linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC103W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: Prompt !3 not found. Added prompt !3 in symphony." Em portugues: ""!1" linha !2, warning: prompt !3 nao encontrado. added prompt !3 in symphony.". Temas: nao encontrado symphony linha. Em outras palavras: O prompt informado não foi encontrado, então ele foi adicionado ao Symphony para uso no processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC103W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning Prompt not found Added prompt symphony portugues linha nao encontrado added Temas`
@@ -84821,7 +84821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC103W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC104W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: Resource !4 for workstation !3 not found in database. Added resource !4 with 0 units." Em portugues: ""!1" linha !2, warning: recurso !4 for estacao de trabalho !3 nao encontrado in banco de dados. added recurso !4 with 0 units.". Temas: nao estacao de trabalho encontrado linha recurso banco dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC104W (severidade: warning, familia AWSBIC - bic) tem o texto: ""!1" line !2, Warning: Resource !4 for workstation !3 not found in database. Added resource !4 with 0 units." Em portugues: ""!1" linha !2, warning: recurso !4 for estacao de trabalho !3 nao encontrado in banco de dados. added recurso !4 with 0 units.". Temas: nao estacao de trabalho encontrado linha recurso banco dados. Em outras palavras: O recurso da workstation informada não existe no banco de dados e foi criado com zero unidades disponíveis..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC104W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto line Warning Resource for workstation not found database Added resource with units portugues linha recurso estacao trabalho nao`
@@ -84841,7 +84841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC104W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC105I (severidade: informational, familia AWSBIC - bic) tem o texto: "Prompt !1 was not found in database. This is dummy text. Do you want to continue (enter "y" for yes, "n" for no)." Em portugues: "prompt !1 was nao encontrado in banco de dados. this is dummy text. do you want to continue (enter "y" for yes, "n" for no).". Temas: nao encontrado banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC105I (severidade: informational, familia AWSBIC - bic) tem o texto: "Prompt !1 was not found in database. This is dummy text. Do you want to continue (enter "y" for yes, "n" for no)." Em portugues: "prompt !1 was nao encontrado in banco de dados. this is dummy text. do you want to continue (enter "y" for yes, "n" for no).". Temas: nao encontrado banco de dados. Em outras palavras: O prompt não foi localizado no banco de dados e uma confirmação textual solicita que o usuário continue ou interrompa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC105I 10.2.8 mensagem severidade informational familia AWSBIC bic tem texto Prompt was not found database This dummy text you want continue enter for yes portugues prompt nao encontrado`
@@ -84861,7 +84861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC105I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC106W (severidade: warning, familia AWSBIC - bic) tem o texto: "Warning: Workstation !1 does not exist in the cpudata database. Ignoring job stream !2." Em portugues: "warning: estacao de trabalho !1 does nao existe in the cpudata banco de dados. ignoring job fluxo !2.". Temas: nao estacao de trabalho job fluxo banco dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC106W (severidade: warning, familia AWSBIC - bic) tem o texto: "Warning: Workstation !1 does not exist in the cpudata database. Ignoring job stream !2." Em portugues: "warning: estacao de trabalho !1 does nao existe in the cpudata banco de dados. ignoring job fluxo !2.". Temas: nao estacao de trabalho job fluxo banco dados. Em outras palavras: A workstation informada não existe no banco de dados de CPU e por isso o fluxo de jobs correspondente foi ignorado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC106W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto Warning Workstation does not exist the cpudata database Ignoring job stream portugues estacao trabalho nao existe`
@@ -84881,7 +84881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC106W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIC107W (severidade: warning, familia AWSBIC - bic) tem o texto: "Time zones are not enabled in the global options and so are ignored on the job or job stream "!1"." Em portugues: "tempo zones are nao habilitado in the global opcoes and so are ignored on the job or job fluxo "!1".". Temas: nao job fluxo opcoes tempo hora habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIC107W (severidade: warning, familia AWSBIC - bic) tem o texto: "Time zones are not enabled in the global options and so are ignored on the job or job stream "!1"." Em portugues: "tempo zones are nao habilitado in the global opcoes and so are ignored on the job or job fluxo "!1".". Temas: nao job fluxo opcoes tempo hora habilitado. Em outras palavras: Os fusos horários não estão habilitados nas opções globais e foram desconsiderados no job ou fluxo informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIC107W 10.2.8 mensagem severidade warning familia AWSBIC bic tem texto Time zones are not enabled the global options and ignored job stream portugues tempo nao`
@@ -84901,7 +84901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIC107W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID001E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler cannot find the "thiscpu" option in the local options file (localopts)." Em portugues: "compiler nao pode find the "thiscpu" opcao in the local opcoes arquivo (localopts).". Temas: arquivo nao pode opcao opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID001E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler cannot find the "thiscpu" option in the local options file (localopts)." Em portugues: "compiler nao pode find the "thiscpu" opcao in the local opcoes arquivo (localopts).". Temas: arquivo nao pode opcao opcoes. Em outras palavras: O compilador não localizou a opção que identifica a CPU local dentro do arquivo de opções locais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID001E opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler cannot find the option local options file localopts portugues compiler nao opcao`
@@ -84921,7 +84921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID002E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler cannot find the "master" option in either the localopts file or the global options." Em portugues: "compiler nao pode find the "principal" opcao in either the localopts arquivo or the global opcoes.". Temas: arquivo nao pode opcao opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID002E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler cannot find the "master" option in either the localopts file or the global options." Em portugues: "compiler nao pode find the "principal" opcao in either the localopts arquivo or the global opcoes.". Temas: arquivo nao pode opcao opcoes. Em outras palavras: O compilador não encontrou a opção de domínio mestre nem no arquivo local nem nas opções globais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID002E opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler cannot find the option either localopts file global options portugues compiler nao principal opcao`
@@ -84981,7 +84981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID006E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to open the production schedule file: "!1". The following gives more details of the error: "!2"." Em portugues: "compiler was incapaz to open the production agendamento arquivo: "!1". the seguinte gives mais details of the erro: "!2".". Temas: erro arquivo nao conseguiu agendamento. Explicacao oficial: file_name is the name of the production schedule file. system_error contains the operating system error message.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID006E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to open the production schedule file: "!1". The following gives more details of the error: "!2"." Em portugues: "compiler was incapaz to open the production agendamento arquivo: "!1". the seguinte gives mais details of the erro: "!2".". Temas: erro arquivo nao conseguiu agendamento. Em outras palavras: O compilador não conseguiu abrir o arquivo da agenda de produção e detalhes adicionais do erro foram exibidos.. Explicacao oficial: file_name is the name of the production schedule file. system_error contains the operating system error message.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID006E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable open the production schedule file The following gives more details portugues compiler incapaz`
@@ -85001,7 +85001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID007E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler is unable to add the workstation records to the Symphony file. The following gives more details of the error: "!1"" Em portugues: "compiler is incapaz to add the estacao de trabalho records to the symphony arquivo. the seguinte gives mais details of the erro: "!1"". Temas: erro arquivo estacao de trabalho nao conseguiu symphony. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID007E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler is unable to add the workstation records to the Symphony file. The following gives more details of the error: "!1"" Em portugues: "compiler is incapaz to add the estacao de trabalho records to the symphony arquivo. the seguinte gives mais details of the erro: "!1"". Temas: erro arquivo estacao de trabalho nao conseguiu symphony. Em outras palavras: O compilador não conseguiu incluir os registros das workstations no arquivo Symphony, com detalhes do erro indicados.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID007E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler unable add the workstation records Symphony file The following gives more details portugues compiler incapaz`
@@ -85041,7 +85041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID009E (severidade: error, familia AWSBID - bid) tem o texto: "There is a syntax error in the compiler command. The "-date" option has been supplied, but the date that follows the option is not valid: "!1"" Em portugues: "there is a sintaxe erro in the compiler comando. the "-date" opcao has estado informado, but the date that follows the opcao is nao valido: "!1"". Temas: erro nao comando informado sintaxe valido opcao. Explicacao oficial: date is the date specified with -date option, that is not valid.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID009E (severidade: error, familia AWSBID - bid) tem o texto: "There is a syntax error in the compiler command. The "-date" option has been supplied, but the date that follows the option is not valid: "!1"" Em portugues: "there is a sintaxe erro in the compiler comando. the "-date" opcao has estado informado, but the date that follows the opcao is nao valido: "!1"". Temas: erro nao comando informado sintaxe valido opcao. Em outras palavras: Há erro de sintaxe no comando do compilador porque a data informada após a opção de data não é válida.. Explicacao oficial: date is the date specified with -date option, that is not valid.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID009E 10.2.8 mensagem severidade error familia AWSBID bid tem texto There syntax the compiler command The date option has been supplied but that follows not`
@@ -85061,7 +85061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID010E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to read calendar information from the database. The following gives more details of the error: !1" Em portugues: "compiler was incapaz to ler calendario information from the banco de dados. the seguinte gives mais details of the erro: !1". Temas: erro nao conseguiu ler leitura banco de dados calendario. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID010E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to read calendar information from the database. The following gives more details of the error: !1" Em portugues: "compiler was incapaz to ler calendario information from the banco de dados. the seguinte gives mais details of the erro: !1". Temas: erro nao conseguiu ler leitura banco de dados calendario. Em outras palavras: O compilador não conseguiu ler as informações de calendário do banco de dados, com os detalhes do erro exibidos.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID010E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable read calendar information from the database The following gives more details portugues compiler incapaz`
@@ -85081,7 +85081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID011E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to read date information from the following calendar in the "!1" database. The following gives more details of the error: "!2"." Em portugues: "compiler was incapaz to ler date information from the seguinte calendario in the "!1" banco de dados. the seguinte gives mais details of the erro: "!2".". Temas: erro nao conseguiu ler leitura banco de dados calendario. Explicacao oficial: calendar is the name of the calendar, the dates of which compiler is trying to read.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID011E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to read date information from the following calendar in the "!1" database. The following gives more details of the error: "!2"." Em portugues: "compiler was incapaz to ler date information from the seguinte calendario in the "!1" banco de dados. the seguinte gives mais details of the erro: "!2".". Temas: erro nao conseguiu ler leitura banco de dados calendario. Em outras palavras: O compilador falhou ao ler as informações de data do calendário indicado no banco de dados informado.. Explicacao oficial: calendar is the name of the calendar, the dates of which compiler is trying to read.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID011E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable read date information from the following calendar database The gives more details portugues`
@@ -85101,7 +85101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID012E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to add the following calendar to the Symphony file: "!1". The following gives more details of the error: !2" Em portugues: "compiler was incapaz to add the seguinte calendario to the symphony arquivo: "!1". the seguinte gives mais details of the erro: !2". Temas: erro arquivo nao conseguiu symphony calendario. Explicacao oficial: calendar is the name of the calendar you are trying to add.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID012E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to add the following calendar to the Symphony file: "!1". The following gives more details of the error: !2" Em portugues: "compiler was incapaz to add the seguinte calendario to the symphony arquivo: "!1". the seguinte gives mais details of the erro: !2". Temas: erro arquivo nao conseguiu symphony calendario. Em outras palavras: O compilador não conseguiu adicionar o calendário informado ao arquivo Symphony, conforme detalhes do erro.. Explicacao oficial: calendar is the name of the calendar you are trying to add.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID012E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable add the following calendar Symphony file The gives more details portugues compiler`
@@ -85121,7 +85121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID013E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler did not find the definition for the master domain manager workstation in the cpudata database." Em portugues: "compiler did nao find the definicao for the principal dominio manager estacao de trabalho in the cpudata banco de dados.". Temas: nao estacao de trabalho dominio definicao banco dados. Explicacao oficial: Compiler reads workstation records from the cpudata database and adds them to the Symphony file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID013E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler did not find the definition for the master domain manager workstation in the cpudata database." Em portugues: "compiler did nao find the definicao for the principal dominio manager estacao de trabalho in the cpudata banco de dados.". Temas: nao estacao de trabalho dominio definicao banco dados. Em outras palavras: O compilador não encontrou a definição da workstation do gerenciador de domínios mestre no banco de dados de CPU.. Explicacao oficial: Compiler reads workstation records from the cpudata database and adds them to the Symphony file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID013E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler did not find the definition for workstation cpudata database portugues compiler nao definicao`
@@ -85141,7 +85141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID014E (severidade: error, familia AWSBID - bid) tem o texto: "There is a syntax error in the compiler command. An incorrect number of options was supplied." Em portugues: "there is a sintaxe erro in the compiler comando. an incorreto numero of opcoes was informado.". Temas: erro comando informado sintaxe numero opcoes incorreto. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID014E (severidade: error, familia AWSBID - bid) tem o texto: "There is a syntax error in the compiler command. An incorrect number of options was supplied." Em portugues: "there is a sintaxe erro in the compiler comando. an incorreto numero of opcoes was informado.". Temas: erro comando informado sintaxe numero opcoes incorreto. Em outras palavras: Há erro de sintaxe no comando do compilador porque a quantidade de opções informadas está incorreta.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID014E 10.2.8 mensagem severidade error familia AWSBID bid tem texto There syntax the compiler command incorrect number options was supplied portugues there sintaxe erro comando incorreto numero`
@@ -85161,7 +85161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID015E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the jobs database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the jobs banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: It is possible that another process has locked the database.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID015E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the jobs database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the jobs banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu bloquear o banco de dados de jobs para processamento, conforme detalhes do erro.. Explicacao oficial: It is possible that another process has locked the database.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID015E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable lock the jobs database The following gives more details portugues compiler incapaz`
@@ -85181,7 +85181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID016E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the resources database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the resources banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: It is possible that another process has locked the database.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID016E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the resources database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the resources banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu bloquear o banco de dados de recursos, conforme os detalhes do erro apresentados.. Explicacao oficial: It is possible that another process has locked the database.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID016E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable lock the resources database The following gives more details portugues compiler incapaz`
@@ -85201,7 +85201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID017E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the prompts database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the prompts banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: It is possible that another process has locked the database.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID017E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the prompts database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the prompts banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu bloquear o banco de dados de prompts, conforme os detalhes do erro apresentados.. Explicacao oficial: It is possible that another process has locked the database.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID017E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable lock the prompts database The following gives more details portugues compiler incapaz`
@@ -85221,7 +85221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID018E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the cpudata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the cpudata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: It is possible that another process has locked the database.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID018E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the cpudata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the cpudata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu bloquear o banco de dados de CPU, conforme os detalhes do erro apresentados.. Explicacao oficial: It is possible that another process has locked the database.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID018E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable lock the cpudata database The following gives more details portugues compiler incapaz`
@@ -85241,7 +85241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID019E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the calendars database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the calendars banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: It is possible that another process has locked the database.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID019E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the calendars database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the calendars banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu bloquear o banco de dados de calendários, conforme os detalhes do erro.. Explicacao oficial: It is possible that another process has locked the database.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID019E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable lock the calendars database The following gives more details portugues compiler incapaz`
@@ -85261,7 +85261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID020E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the jobs database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the jobs banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID020E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the jobs database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the jobs banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu desbloquear o banco de dados de jobs, conforme os detalhes do erro apresentados.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID020E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable unlock the jobs database The following gives more details portugues compiler incapaz`
@@ -85281,7 +85281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID021E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the resources database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the resources banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID021E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the resources database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the resources banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu desbloquear o banco de dados de recursos, conforme os detalhes do erro.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID021E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable unlock the resources database The following gives more details portugues compiler incapaz`
@@ -85301,7 +85301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID022E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the prompts database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the prompts banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID022E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the prompts database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the prompts banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu desbloquear o banco de dados de prompts, conforme os detalhes do erro.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID022E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable unlock the prompts database The following gives more details portugues compiler incapaz`
@@ -85321,7 +85321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID023E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the cpudata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the cpudata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID023E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the cpudata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the cpudata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu desbloquear o banco de dados de CPU, conforme os detalhes do erro apresentados.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID023E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable unlock the cpudata database The following gives more details portugues compiler incapaz`
@@ -85341,7 +85341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID024E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the calendars database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the calendars banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID024E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the calendars database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the calendars banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu desbloquear o banco de dados de calendários, conforme os detalhes do erro.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID024E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable unlock the calendars database The following gives more details portugues compiler incapaz`
@@ -85361,7 +85361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID025E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the userdata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the userdata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: It is possible that another process has locked the database.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID025E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to lock the userdata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to lock the userdata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu bloquear o banco de dados de usuários, conforme os detalhes do erro apresentados.. Explicacao oficial: It is possible that another process has locked the database.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID025E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable lock the userdata database The following gives more details portugues compiler incapaz`
@@ -85381,7 +85381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID026E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the userdata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the userdata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID026E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to unlock the userdata database. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to unlock the userdata banco de dados. the seguinte gives mais details of the erro: "!1".". Temas: erro nao conseguiu banco de dados. Em outras palavras: O compilador não conseguiu desbloquear o banco de dados de usuários, conforme os detalhes do erro.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID026E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable unlock the userdata database The following gives more details portugues compiler incapaz`
@@ -85401,7 +85401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID027E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to read the user information from the database and add it to the Symphony file. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to ler the usuario information from the banco de dados and add it to the symphony arquivo. the seguinte gives mais details of the erro: "!1".". Temas: erro arquivo usuario nao conseguiu symphony ler leitura banco de dados. Explicacao oficial: error_message contains the reason for the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID027E (severidade: error, familia AWSBID - bid) tem o texto: "Compiler was unable to read the user information from the database and add it to the Symphony file. The following gives more details of the error: "!1"." Em portugues: "compiler was incapaz to ler the usuario information from the banco de dados and add it to the symphony arquivo. the seguinte gives mais details of the erro: "!1".". Temas: erro arquivo usuario nao conseguiu symphony ler leitura banco de dados. Em outras palavras: O compilador não conseguiu ler as informações de usuário do banco de dados para incluí-las no Symphony.. Explicacao oficial: error_message contains the reason for the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID027E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Compiler was unable read the user information from database and add Symphony file The following gives more details`
@@ -85421,10 +85421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID028I (severidade: informational, familia AWSBID - bid) tem o texto: "Setting plan audit level to !1" Em portugues: "configuracao plano audit level to !1". Temas: plano.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID028I (severidade: informational, familia AWSBID - bid) tem o texto: "Setting plan audit level to !1" Em portugues: "configuracao plano audit level to !1". Temas: plano. Em outras palavras: Foi definido o nível de auditoria do plano de produção conforme o valor indicado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBID028I 10.2.8 mensagem severidade informational familia AWSBID bid tem texto Setting plan audit level portugues configuracao plano Temas significa diagnosticar`
+> `AWSBID028I 10.2.8 mensagem severidade informational familia AWSBID bid tem texto Setting plan audit level portugues configuracao plano Temas outras palavras Foi definido auditoria conforme valor indicado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBID028I no HCL Workload Automation 10.2.8?
@@ -85441,7 +85441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID028I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID029W (severidade: warning, familia AWSBID - bid) tem o texto: "You cannot initialize the "centralized security" option because your database is in non-expanded mode." Em portugues: "you nao pode initialize the "centralized seguranca" opcao porque your banco de dados is in non-expanded mode.". Temas: nao pode opcao banco de dados. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID029W (severidade: warning, familia AWSBID - bid) tem o texto: "You cannot initialize the "centralized security" option because your database is in non-expanded mode." Em portugues: "you nao pode initialize the "centralized seguranca" opcao porque your banco de dados is in non-expanded mode.". Temas: nao pode opcao banco de dados. Em outras palavras: A opção de segurança centralizada não pode ser ativada porque o banco de dados não está no modo expandido.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID029W 10.2.8 mensagem severidade warning familia AWSBID bid tem texto You cannot initialize the centralized security option because your database non-expanded mode portugues you nao seguranca opcao`
@@ -85461,10 +85461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID029W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID200E (severidade: error, familia AWSBID - bid) tem o texto: "Line !1: The !2 name is longer than 8 bytes." Em portugues: "linha !1: the !2 nome is longer que 8 bytes.". Temas: nome linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID200E (severidade: error, familia AWSBID - bid) tem o texto: "Line !1: The !2 name is longer than 8 bytes." Em portugues: "linha !1: the !2 nome is longer que 8 bytes.". Temas: nome linha. Em outras palavras: Na linha indicada, o nome informado excede o limite de oito caracteres permitidos pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBID200E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Line The name longer than bytes portugues linha the nome Temas significa`
+> `AWSBID200E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Line The name longer than bytes portugues linha the nome Temas outras palavras indicada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBID200E no HCL Workload Automation 10.2.8?
@@ -85481,7 +85481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID200E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID201E (severidade: error, familia AWSBID - bid) tem o texto: "Line !1: The !2 name must begin with an alphabetic character." Em portugues: "linha !1: the !2 nome must begin with an alphabetic character.". Temas: nome linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID201E (severidade: error, familia AWSBID - bid) tem o texto: "Line !1: The !2 name must begin with an alphabetic character." Em portugues: "linha !1: the !2 nome must begin with an alphabetic character.". Temas: nome linha. Em outras palavras: Na linha indicada, o nome informado deve obrigatoriamente começar com uma letra alfabética..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID201E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Line The name must begin with alphabetic character portugues linha the nome Temas`
@@ -85501,7 +85501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID201E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBID202E (severidade: error, familia AWSBID - bid) tem o texto: "Line !1: The !2 name contains one or more character that is not allowed." Em portugues: "linha !1: the !2 nome contains one or mais character that is nao allowed.". Temas: nao nome linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBID202E (severidade: error, familia AWSBID - bid) tem o texto: "Line !1: The !2 name contains one or more character that is not allowed." Em portugues: "linha !1: the !2 nome contains one or mais character that is nao allowed.". Temas: nao nome linha. Em outras palavras: Na linha indicada, o nome informado contém caracteres que não são permitidos pela validação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBID202E 10.2.8 mensagem severidade error familia AWSBID bid tem texto Line The name contains one more character that not allowed portugues linha the nome mais nao`
@@ -85521,7 +85521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBID202E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIE013E (severidade: error, familia AWSBIE - bie) tem o texto: "Error: input file "!1" and output file "!2" are identical" Em portugues: "erro: entrada arquivo "!1" and saida arquivo "!2" are identical". Temas: erro arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIE013E (severidade: error, familia AWSBIE - bie) tem o texto: "Error: input file "!1" and output file "!2" are identical" Em portugues: "erro: entrada arquivo "!1" and saida arquivo "!2" are identical". Temas: erro arquivo. Em outras palavras: A falha ocorreu porque o arquivo de entrada e o de saída informados são o mesmo arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIE013E 10.2.8 mensagem severidade error familia AWSBIE bie tem texto Error input file and output are identical portugues erro entrada arquivo saida Temas`
@@ -85541,10 +85541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIE013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIF002E (severidade: error, familia AWSBIF - bif) tem o texto: "Couldn't malloc program globals." Em portugues: "couldn't malloc programa globals.". Temas: programa.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIF002E (severidade: error, familia AWSBIF - bif) tem o texto: "Couldn't malloc program globals." Em portugues: "couldn't malloc programa globals.". Temas: programa. Em outras palavras: Não foi possível alocar a memória global necessária para a execução do programa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIF002E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Couldn malloc program globals portugues couldn programa Temas significa diagnosticar`
+> `AWSBIF002E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Couldn malloc program globals portugues couldn programa Temas outras palavras foi alocar global significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIF002E no HCL Workload Automation 10.2.8?
@@ -85561,10 +85561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIF002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIF003E (severidade: error, familia AWSBIF - bif) tem o texto: "Couldn't open output, error is: !1" Em portugues: "couldn't open saida, erro is: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIF003E (severidade: error, familia AWSBIF - bif) tem o texto: "Couldn't open output, error is: !1" Em portugues: "couldn't open saida, erro is: !1". Temas: erro. Em outras palavras: Não foi possível abrir o arquivo de saída e o motivo do erro foi informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIF003E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Couldn open output portugues couldn saida erro Temas significa diagnosticar`
+> `AWSBIF003E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Couldn open output portugues couldn saida erro Temas outras palavras foi abrir arquivo motivo informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIF003E no HCL Workload Automation 10.2.8?
@@ -85581,10 +85581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIF003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIF004E (severidade: error, familia AWSBIF - bif) tem o texto: "Error writing output, error is: !1" Em portugues: "erro writing saida, erro is: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIF004E (severidade: error, familia AWSBIF - bif) tem o texto: "Error writing output, error is: !1" Em portugues: "erro writing saida, erro is: !1". Temas: erro. Em outras palavras: Ocorreu uma falha ao gravar os dados no arquivo de saída, conforme o erro informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIF004E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Error writing output portugues erro saida Temas significa diagnosticar`
+> `AWSBIF004E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Error writing output portugues erro saida Temas outras palavras Ocorreu falha gravar dados arquivo conforme`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIF004E no HCL Workload Automation 10.2.8?
@@ -85601,10 +85601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIF004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIF006E (severidade: error, familia AWSBIF - bif) tem o texto: "Error reading mastsked is: !1" Em portugues: "erro reading mastsked is: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIF006E (severidade: error, familia AWSBIF - bif) tem o texto: "Error reading mastsked is: !1" Em portugues: "erro reading mastsked is: !1". Temas: erro. Em outras palavras: Houve um erro ao ler o banco mestre de agendamento, conforme a mensagem exibida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIF006E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Error reading mastsked portugues erro Temas significa diagnosticar`
+> `AWSBIF006E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Error reading mastsked portugues erro Temas outras palavras Houve ler mestre agendamento conforme exibida significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIF006E no HCL Workload Automation 10.2.8?
@@ -85621,10 +85621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIF006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIF007E (severidade: error, familia AWSBIF - bif) tem o texto: "Error finding next job stream is: !1" Em portugues: "erro finding next job fluxo is: !1". Temas: erro job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIF007E (severidade: error, familia AWSBIF - bif) tem o texto: "Error finding next job stream is: !1" Em portugues: "erro finding next job fluxo is: !1". Temas: erro job fluxo. Em outras palavras: Ocorreu um erro ao localizar o próximo fluxo de jobs a ser processado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIF007E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Error finding next job stream portugues erro fluxo Temas significa`
+> `AWSBIF007E 10.2.8 mensagem severidade error familia AWSBIF bif tem texto Error finding next job stream portugues erro fluxo Temas outras palavras Ocorreu localizar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIF007E no HCL Workload Automation 10.2.8?
@@ -85661,7 +85661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIG001W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIH103I (severidade: informational, familia AWSBIH - bih) tem o texto: "-c The argument given is the name of the workstation for which data are to be extracted.#" Em portugues: "-c the argumento given is the nome of the estacao de trabalho for which data are to be extracted.#". Temas: estacao de trabalho nome argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIH103I (severidade: informational, familia AWSBIH - bih) tem o texto: "-c The argument given is the name of the workstation for which data are to be extracted.#" Em portugues: "-c the argumento given is the nome of the estacao de trabalho for which data are to be extracted.#". Temas: estacao de trabalho nome argumento. Em outras palavras: A opção recebe como argumento o nome da workstation da qual os dados devem ser extraídos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIH103I 10.2.8 mensagem severidade informational familia AWSBIH bih tem texto The argument given the name workstation for which data are extracted portugues argumento nome estacao`
@@ -85681,7 +85681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIH103I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIH104I (severidade: informational, familia AWSBIH - bih) tem o texto: "-m The argument given is the month in mmyy format for which data are to be extracted.#" Em portugues: "-m the argumento given is the month in mmyy format for which data are to be extracted.#". Temas: argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIH104I (severidade: informational, familia AWSBIH - bih) tem o texto: "-m The argument given is the month in mmyy format for which data are to be extracted.#" Em portugues: "-m the argumento given is the month in mmyy format for which data are to be extracted.#". Temas: argumento. Em outras palavras: A opção recebe o mês no formato mês e ano, usado como referência para a extração de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIH104I 10.2.8 mensagem severidade informational familia AWSBIH bih tem texto The argument given the month mmyy format for which data are extracted portugues argumento`
@@ -85701,7 +85701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIH104I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIH105I (severidade: informational, familia AWSBIH - bih) tem o texto: "-o The argument given is the name of an output file to use instead of the standard output." Em portugues: "-o the argumento given is the nome of an saida arquivo to use instead of the standard saida.". Temas: arquivo nome argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIH105I (severidade: informational, familia AWSBIH - bih) tem o texto: "-o The argument given is the name of an output file to use instead of the standard output." Em portugues: "-o the argumento given is the nome of an saida arquivo to use instead of the standard saida.". Temas: arquivo nome argumento. Em outras palavras: A opção define o nome de um arquivo de saída alternativo para substituir a saída padrão do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIH105I 10.2.8 mensagem severidade informational familia AWSBIH bih tem texto The argument given the name output file use instead standard portugues argumento nome saida arquivo`
@@ -85721,10 +85721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIH105I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII001E (severidade: error, familia AWSBII - bii) tem o texto: "Unable to write token control structure." Em portugues: "incapaz to escrever token control structure.". Temas: nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII001E (severidade: error, familia AWSBII - bii) tem o texto: "Unable to write token control structure." Em portugues: "incapaz to escrever token control structure.". Temas: nao conseguiu. Em outras palavras: Não foi possível gravar a estrutura de controle dos tokens durante o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII001E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Unable write token control structure portugues incapaz escrever Temas nao conseguiu significa`
+> `AWSBII001E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Unable write token control structure portugues incapaz escrever Temas nao conseguiu outras palavras foi gravar estrutura controle`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII001E no HCL Workload Automation 10.2.8?
@@ -85761,10 +85761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII003E (severidade: error, familia AWSBII - bii) tem o texto: "Non-valid token "!1" in list (!2)." Em portugues: "non-valido token "!1" in list (!2).".
+No HCL Workload Automation 10.2.8, a mensagem AWSBII003E (severidade: error, familia AWSBII - bii) tem o texto: "Non-valid token "!1" in list (!2)." Em portugues: "non-valido token "!1" in list (!2).". Em outras palavras: Foi encontrado um token que não é válido dentro da lista de parâmetros informada pelo usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII003E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Non-valid token list portugues non-valido significa diagnosticar`
+> `AWSBII003E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Non-valid token list portugues non-valido outras palavras Foi encontrado dentro lista informada pelo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII003E no HCL Workload Automation 10.2.8?
@@ -85781,10 +85781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII004E (severidade: error, familia AWSBII - bii) tem o texto: "No read access to parameter in "!1"." Em portugues: "no ler acesso to parametro in "!1".". Temas: parametro ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII004E (severidade: error, familia AWSBII - bii) tem o texto: "No read access to parameter in "!1"." Em portugues: "no ler acesso to parametro in "!1".". Temas: parametro ler leitura. Em outras palavras: Não há permissão de leitura para o parâmetro localizado no arquivo informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII004E 10.2.8 mensagem severidade error familia AWSBII bii tem texto read access parameter portugues ler acesso parametro Temas leitura significa diagnosticar`
+> `AWSBII004E 10.2.8 mensagem severidade error familia AWSBII bii tem texto read access parameter portugues ler acesso parametro Temas leitura outras palavras localizado arquivo informado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII004E no HCL Workload Automation 10.2.8?
@@ -85801,10 +85801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII005E (severidade: error, familia AWSBII - bii) tem o texto: "Undefined parameter "!1" in string "!2"; not replaced." Em portugues: "undefined parametro "!1" in string "!2"; nao replaced.". Temas: nao parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII005E (severidade: error, familia AWSBII - bii) tem o texto: "Undefined parameter "!1" in string "!2"; not replaced." Em portugues: "undefined parametro "!1" in string "!2"; nao replaced.". Temas: nao parametro. Em outras palavras: O parâmetro não definido foi encontrado na string informada e não foi substituído durante a expansão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII005E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Undefined parameter string not replaced portugues undefined parametro nao Temas significa`
+> `AWSBII005E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Undefined parameter string not replaced portugues undefined parametro nao Temas outras palavras definido foi encontrado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII005E no HCL Workload Automation 10.2.8?
@@ -85821,10 +85821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII006E (severidade: error, familia AWSBII - bii) tem o texto: "Parameter expansion overflow in "!1"." Em portugues: "parametro expansion overflow in "!1".". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII006E (severidade: error, familia AWSBII - bii) tem o texto: "Parameter expansion overflow in "!1"." Em portugues: "parametro expansion overflow in "!1".". Temas: parametro. Em outras palavras: A expansão do parâmetro informado excedeu o limite do buffer e causou um estouro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII006E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Parameter expansion overflow portugues parametro Temas significa diagnosticar`
+> `AWSBII006E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Parameter expansion overflow portugues parametro Temas outras palavras informado excedeu limite buffer causou estouro significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII006E no HCL Workload Automation 10.2.8?
@@ -85841,10 +85841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII007E (severidade: error, familia AWSBII - bii) tem o texto: "Parameter syntax error in "!1"." Em portugues: "parametro sintaxe erro in "!1".". Temas: erro sintaxe parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII007E (severidade: error, familia AWSBII - bii) tem o texto: "Parameter syntax error in "!1"." Em portugues: "parametro sintaxe erro in "!1".". Temas: erro sintaxe parametro. Em outras palavras: Foi detectado um erro de sintaxe na definição do parâmetro dentro da string informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII007E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Parameter syntax portugues parametro sintaxe erro Temas significa diagnosticar`
+> `AWSBII007E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Parameter syntax portugues parametro sintaxe erro Temas outras palavras Foi detectado dentro string informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII007E no HCL Workload Automation 10.2.8?
@@ -85881,10 +85881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII009E (severidade: error, familia AWSBII - bii) tem o texto: "An error has occurred." Em portugues: "an erro has ocorreu.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII009E (severidade: error, familia AWSBII - bii) tem o texto: "An error has occurred." Em portugues: "an erro has ocorreu.". Temas: erro ocorreu. Em outras palavras: Ocorreu uma falha genérica durante a execução do processamento em questão, sem detalhes adicionais disponíveis..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII009E 10.2.8 mensagem severidade error familia AWSBII bii tem texto has occurred portugues erro ocorreu Temas significa diagnosticar`
+> `AWSBII009E 10.2.8 mensagem severidade error familia AWSBII bii tem texto has occurred portugues erro ocorreu Temas outras palavras Ocorreu falha durante processamento sem detalhes adicionais significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII009E no HCL Workload Automation 10.2.8?
@@ -85901,7 +85901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII010W (severidade: warning, familia AWSBII - bii) tem o texto: "Cannot update the file "!1". A new file "!2" was created. You must replace the old file with the new file." Em portugues: "nao pode atualizar the arquivo "!1". a new arquivo "!2" was created. you must replace the old arquivo with the new arquivo.". Temas: arquivo nao pode atualizar. Explicacao oficial: The program was not able to update the configuration file old_file (useropts). Maybe the file was locked by another process. The program has saved the changes it needed to make, giving the file this name: new_file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII010W (severidade: warning, familia AWSBII - bii) tem o texto: "Cannot update the file "!1". A new file "!2" was created. You must replace the old file with the new file." Em portugues: "nao pode atualizar the arquivo "!1". a new arquivo "!2" was created. you must replace the old arquivo with the new arquivo.". Temas: arquivo nao pode atualizar. Em outras palavras: O arquivo informado não pôde ser atualizado, então um novo arquivo foi criado e precisa substituir o antigo.. Explicacao oficial: The program was not able to update the configuration file old_file (useropts). Maybe the file was locked by another process. The program has saved the changes it needed to make, giving the file this name: new_file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBII010W 10.2.8 mensagem severidade warning familia AWSBII bii tem texto Cannot update the file new was created You must replace old with portugues nao`
@@ -85921,7 +85921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII010W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII014E (severidade: error, familia AWSBII - bii) tem o texto: "Your command line interface settings cannot be modified to allow the input of the password." Em portugues: "your comando linha interface settings nao pode be modified to permitir the entrada of the senha.". Temas: nao pode comando linha senha. Explicacao oficial: The program needs to modify the settings of your command line interface so that you can enter the password in a secure way. It was not able to do this. You cannot use the command line interface to run this program.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII014E (severidade: error, familia AWSBII - bii) tem o texto: "Your command line interface settings cannot be modified to allow the input of the password." Em portugues: "your comando linha interface settings nao pode be modified to permitir the entrada of the senha.". Temas: nao pode comando linha senha. Em outras palavras: As configurações de interface de linha de comando não podem ser alteradas para permitir a digitação da senha.. Explicacao oficial: The program needs to modify the settings of your command line interface so that you can enter the password in a secure way. It was not able to do this. You cannot use the command line interface to run this program.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBII014E 10.2.8 mensagem severidade error familia AWSBII bii tem texto Your command line settings cannot modified allow the input password portugues your comando linha nao permitir`
@@ -85941,7 +85941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII015E (severidade: error, familia AWSBII - bii) tem o texto: "The new password and the confirmation password do not match." Em portugues: "the new senha and the confirmation senha do nao match.". Temas: nao senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII015E (severidade: error, familia AWSBII - bii) tem o texto: "The new password and the confirmation password do not match." Em portugues: "the new senha and the confirmation senha do nao match.". Temas: nao senha. Em outras palavras: A nova senha e a senha de confirmação digitada não são idênticas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBII015E 10.2.8 mensagem severidade error familia AWSBII bii tem texto The new password and the confirmation not match portugues senha nao Temas`
@@ -85961,7 +85961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII016E (severidade: error, familia AWSBII - bii) tem o texto: "An internal error has occurred. The directory "!1" cannot be created." Em portugues: "an interno erro has ocorreu. the diretorio "!1" nao pode be created.". Temas: erro ocorreu nao pode interno diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII016E (severidade: error, familia AWSBII - bii) tem o texto: "An internal error has occurred. The directory "!1" cannot be created." Em portugues: "an interno erro has ocorreu. the diretorio "!1" nao pode be created.". Temas: erro ocorreu nao pode interno diretorio. Em outras palavras: Ocorreu um erro interno e o diretório indicado não pôde ser criado durante o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBII016E 10.2.8 mensagem severidade error familia AWSBII bii tem texto internal has occurred The directory cannot created portugues interno erro ocorreu the diretorio nao Temas`
@@ -86001,10 +86001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII018W (severidade: warning, familia AWSBII - bii) tem o texto: "Online help is not available on Windows platforms." Em portugues: "online help is nao disponivel on windows platforms.". Temas: nao. Explicacao oficial: The program does not display online help for the available commands.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII018W (severidade: warning, familia AWSBII - bii) tem o texto: "Online help is not available on Windows platforms." Em portugues: "online help is nao disponivel on windows platforms.". Temas: nao. Em outras palavras: A ajuda online não está disponível quando o sistema é executado em plataformas Windows.. Explicacao oficial: The program does not display online help for the available commands.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBII018W 10.2.8 mensagem severidade warning familia AWSBII bii tem texto Online help not available Windows platforms portugues online nao disponivel windows Temas Explicacao oficial The program does`
+> `AWSBII018W 10.2.8 mensagem severidade warning familia AWSBII bii tem texto Online help not available Windows platforms portugues online nao disponivel windows Temas outras palavras ajuda quando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBII018W no HCL Workload Automation 10.2.8?
@@ -86021,7 +86021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBII018W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBII019E (severidade: error, familia AWSBII - bii) tem o texto: "The combination of parameters you specified is not supported. You can either specify the username and password parameters or the jwt parameter." Em portugues: "the combination of parametros you especificado is nao supported. you can either specify the username and senha parametros or the jwt parametro.". Temas: nao especificado parametro parametros suportado senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBII019E (severidade: error, familia AWSBII - bii) tem o texto: "The combination of parameters you specified is not supported. You can either specify the username and password parameters or the jwt parameter." Em portugues: "the combination of parametros you especificado is nao supported. you can either specify the username and senha parametros or the jwt parametro.". Temas: nao especificado parametro parametros suportado senha. Em outras palavras: A combinação de parâmetros usada não é suportada e é preciso optar entre usuário e senha ou token de autenticação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBII019E 10.2.8 mensagem severidade error familia AWSBII bii tem texto The combination parameters you specified not supported You can either specify the username and password jwt parameter portugues`
@@ -86061,10 +86061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ002E (severidade: error, familia AWSBIJ - job) tem o texto: "Unable to get hostname !1:!2 error = !3 : !4." Em portugues: "incapaz to get hostname !1:!2 erro = !3 : !4.". Temas: erro nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ002E (severidade: error, familia AWSBIJ - job) tem o texto: "Unable to get hostname !1:!2 error = !3 : !4." Em portugues: "incapaz to get hostname !1:!2 erro = !3 : !4.". Temas: erro nao conseguiu. Em outras palavras: Não foi possível obter o nome do host informado e o erro associado foi retornado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ002E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Unable get hostname portugues incapaz erro Temas nao conseguiu significa`
+> `AWSBIJ002E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Unable get hostname portugues incapaz erro Temas nao conseguiu outras palavras foi obter nome host informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ002E no HCL Workload Automation 10.2.8?
@@ -86081,10 +86081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ003E (severidade: error, familia AWSBIJ - job) tem o texto: "Unable to get host entries by name !1:!2 error = !3 : !4." Em portugues: "incapaz to get host servidor entries by nome !1:!2 erro = !3 : !4.". Temas: erro nome nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ003E (severidade: error, familia AWSBIJ - job) tem o texto: "Unable to get host entries by name !1:!2 error = !3 : !4." Em portugues: "incapaz to get host servidor entries by nome !1:!2 erro = !3 : !4.". Temas: erro nome nao conseguiu. Em outras palavras: Não foi possível obter as entradas do host pelo nome informado e o erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ003E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Unable get host entries name portugues incapaz servidor nome erro Temas nao conseguiu significa`
+> `AWSBIJ003E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Unable get host entries name portugues incapaz servidor nome erro Temas nao conseguiu outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ003E no HCL Workload Automation 10.2.8?
@@ -86261,10 +86261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ012E (severidade: error, familia AWSBIJ - job) tem o texto: "Error changing directory !1:!2 error = !3 : !4." Em portugues: "erro changing diretorio !1:!2 erro = !3 : !4.". Temas: erro diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ012E (severidade: error, familia AWSBIJ - job) tem o texto: "Error changing directory !1:!2 error = !3 : !4." Em portugues: "erro changing diretorio !1:!2 erro = !3 : !4.". Temas: erro diretorio. Em outras palavras: Falha ao alterar o diretório de trabalho informado e o erro correspondente foi retornado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ012E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error changing directory portugues erro diretorio Temas significa`
+> `AWSBIJ012E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error changing directory portugues erro diretorio Temas outras palavras Falha alterar trabalho informado correspondente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ012E no HCL Workload Automation 10.2.8?
@@ -86281,10 +86281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ013E (severidade: error, familia AWSBIJ - job) tem o texto: "Error opening file !1:!2 error = !3 : !4." Em portugues: "erro opening arquivo !1:!2 erro = !3 : !4.". Temas: erro arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ013E (severidade: error, familia AWSBIJ - job) tem o texto: "Error opening file !1:!2 error = !3 : !4." Em portugues: "erro opening arquivo !1:!2 erro = !3 : !4.". Temas: erro arquivo. Em outras palavras: Falha ao abrir o arquivo informado e o erro correspondente foi retornado pelo sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ013E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error opening file portugues erro arquivo Temas significa`
+> `AWSBIJ013E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error opening file portugues erro arquivo Temas outras palavras Falha abrir informado correspondente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ013E no HCL Workload Automation 10.2.8?
@@ -86381,10 +86381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ103E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ104E (severidade: error, familia AWSBIJ - job) tem o texto: "Error allocating storage local to thread !1:!2 error = !3 : !4." Em portugues: "erro allocating storage local to thread !1:!2 erro = !3 : !4.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ104E (severidade: error, familia AWSBIJ - job) tem o texto: "Error allocating storage local to thread !1:!2 error = !3 : !4." Em portugues: "erro allocating storage local to thread !1:!2 erro = !3 : !4.". Temas: erro. Em outras palavras: Erro ao alocar a área de armazenamento local referente à thread informada durante a execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ104E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error allocating storage local thread portugues erro Temas significa`
+> `AWSBIJ104E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error allocating storage local thread portugues erro Temas outras palavras Erro alocar armazenamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ104E no HCL Workload Automation 10.2.8?
@@ -86421,10 +86421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ105E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ106E (severidade: error, familia AWSBIJ - job) tem o texto: "Error setting local thread value !1:!2 error = !3 : !4." Em portugues: "erro configuracao local thread valor !1:!2 erro = !3 : !4.". Temas: erro valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ106E (severidade: error, familia AWSBIJ - job) tem o texto: "Error setting local thread value !1:!2 error = !3 : !4." Em portugues: "erro configuracao local thread valor !1:!2 erro = !3 : !4.". Temas: erro valor. Em outras palavras: Erro ao gravar o valor local da thread informada e o código de erro foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ106E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error setting local thread value portugues erro configuracao valor Temas significa`
+> `AWSBIJ106E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error setting local thread value portugues erro configuracao valor Temas outras palavras Erro gravar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ106E no HCL Workload Automation 10.2.8?
@@ -86441,10 +86441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ106E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ107E (severidade: error, familia AWSBIJ - job) tem o texto: "Error getting local thread value !1:!2 error = !3 : !4." Em portugues: "erro getting local thread valor !1:!2 erro = !3 : !4.". Temas: erro valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ107E (severidade: error, familia AWSBIJ - job) tem o texto: "Error getting local thread value !1:!2 error = !3 : !4." Em portugues: "erro getting local thread valor !1:!2 erro = !3 : !4.". Temas: erro valor. Em outras palavras: Erro ao obter o valor local da thread informada e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ107E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting local thread value portugues erro valor Temas significa`
+> `AWSBIJ107E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting local thread value portugues erro valor Temas outras palavras Erro obter`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ107E no HCL Workload Automation 10.2.8?
@@ -86501,10 +86501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ109E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ110E (severidade: error, familia AWSBIJ - job) tem o texto: "Error creating a mutex !1:!2 error = !3 : !4." Em portugues: "erro creating a mutex !1:!2 erro = !3 : !4.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ110E (severidade: error, familia AWSBIJ - job) tem o texto: "Error creating a mutex !1:!2 error = !3 : !4." Em portugues: "erro creating a mutex !1:!2 erro = !3 : !4.". Temas: erro. Em outras palavras: Falha ao criar o mecanismo de exclusão mútua necessário e o erro associado foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ110E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error creating mutex portugues erro Temas significa diagnosticar`
+> `AWSBIJ110E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error creating mutex portugues erro Temas outras palavras Falha criar mecanismo associado foi retornado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ110E no HCL Workload Automation 10.2.8?
@@ -86521,10 +86521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ110E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ111E (severidade: error, familia AWSBIJ - job) tem o texto: "Error acquiring a mutex !1:!2 error = !3 : !4." Em portugues: "erro acquiring a mutex !1:!2 erro = !3 : !4.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ111E (severidade: error, familia AWSBIJ - job) tem o texto: "Error acquiring a mutex !1:!2 error = !3 : !4." Em portugues: "erro acquiring a mutex !1:!2 erro = !3 : !4.". Temas: erro. Em outras palavras: Falha ao adquirir o mecanismo de exclusão mútua e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ111E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error acquiring mutex portugues erro Temas significa diagnosticar`
+> `AWSBIJ111E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error acquiring mutex portugues erro Temas outras palavras Falha adquirir mecanismo correspondente foi retornado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ111E no HCL Workload Automation 10.2.8?
@@ -86541,10 +86541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ111E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ112E (severidade: error, familia AWSBIJ - job) tem o texto: "Error releasing a mutex !1:!2 error = !3 : !4." Em portugues: "erro releasing a mutex !1:!2 erro = !3 : !4.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ112E (severidade: error, familia AWSBIJ - job) tem o texto: "Error releasing a mutex !1:!2 error = !3 : !4." Em portugues: "erro releasing a mutex !1:!2 erro = !3 : !4.". Temas: erro. Em outras palavras: Falha ao liberar o mecanismo de exclusão mútua e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ112E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error releasing mutex portugues erro Temas significa diagnosticar`
+> `AWSBIJ112E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error releasing mutex portugues erro Temas outras palavras Falha liberar mecanismo correspondente foi retornado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ112E no HCL Workload Automation 10.2.8?
@@ -86881,10 +86881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ128E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ129E (severidade: error, familia AWSBIJ - job) tem o texto: "Error getting current process !1:!2 error = !3 : !4." Em portugues: "erro getting current process !1:!2 erro = !3 : !4.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ129E (severidade: error, familia AWSBIJ - job) tem o texto: "Error getting current process !1:!2 error = !3 : !4." Em portugues: "erro getting current process !1:!2 erro = !3 : !4.". Temas: erro. Em outras palavras: Erro ao obter o processo em execução atual e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ129E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting current process portugues erro Temas significa`
+> `AWSBIJ129E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting current process portugues erro Temas outras palavras Erro obter processo atual`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ129E no HCL Workload Automation 10.2.8?
@@ -86921,10 +86921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ130E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ131E (severidade: error, familia AWSBIJ - job) tem o texto: "Error getting user object information !1:!2 error = !3 : !4." Em portugues: "erro getting usuario object information !1:!2 erro = !3 : !4.". Temas: erro usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ131E (severidade: error, familia AWSBIJ - job) tem o texto: "Error getting user object information !1:!2 error = !3 : !4." Em portugues: "erro getting usuario object information !1:!2 erro = !3 : !4.". Temas: erro usuario. Em outras palavras: Erro ao obter as informações do objeto de usuário solicitado e o código de erro foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ131E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting user object information portugues erro usuario Temas significa`
+> `AWSBIJ131E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting user object information portugues erro usuario Temas outras palavras Erro obter`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ131E no HCL Workload Automation 10.2.8?
@@ -87021,10 +87021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ135E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ136E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in validating heap !1:!2 error = !3 : !4." Em portugues: "erro in validating heap !1:!2 erro = !3 : !4.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ136E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in validating heap !1:!2 error = !3 : !4." Em portugues: "erro in validating heap !1:!2 erro = !3 : !4.". Temas: erro. Em outras palavras: Falha na validação da região de memória do heap e o código de erro associado foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ136E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error validating heap portugues erro Temas significa diagnosticar`
+> `AWSBIJ136E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error validating heap portugues erro Temas outras palavras Falha associado foi retornado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ136E no HCL Workload Automation 10.2.8?
@@ -87061,10 +87061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ137E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ138E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in freeing heap memory !1:!2 error = !3 : !4." Em portugues: "erro in freeing heap memoria !1:!2 erro = !3 : !4.". Temas: erro memoria.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ138E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in freeing heap memory !1:!2 error = !3 : !4." Em portugues: "erro in freeing heap memoria !1:!2 erro = !3 : !4.". Temas: erro memoria. Em outras palavras: Erro ao liberar a memória do heap alocada e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ138E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error freeing heap memory portugues erro memoria Temas significa`
+> `AWSBIJ138E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error freeing heap memory portugues erro memoria Temas outras palavras Erro liberar alocada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ138E no HCL Workload Automation 10.2.8?
@@ -87121,10 +87121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ140E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ141E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in getting the domain controller name !1:!2 error = !3 : !4." Em portugues: "erro in getting the dominio controller nome !1:!2 erro = !3 : !4.". Temas: erro nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ141E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in getting the domain controller name !1:!2 error = !3 : !4." Em portugues: "erro in getting the dominio controller nome !1:!2 erro = !3 : !4.". Temas: erro nome dominio. Em outras palavras: Erro ao obter o nome do controlador de domínio do ambiente e o código de erro foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ141E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting the controller name portugues erro dominio nome Temas significa`
+> `AWSBIJ141E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting the controller name portugues erro dominio nome Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ141E no HCL Workload Automation 10.2.8?
@@ -87141,7 +87141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ141E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ142E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in getting the user information from system !1:!2 error = !3 : !4." Em portugues: "erro in getting the usuario information from sistema !1:!2 erro = !3 : !4.". Temas: erro usuario sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ142E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in getting the user information from system !1:!2 error = !3 : !4." Em portugues: "erro in getting the usuario information from sistema !1:!2 erro = !3 : !4.". Temas: erro usuario sistema. Em outras palavras: Erro ao obter as informações do usuário a partir do sistema e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIJ142E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting the user information from system portugues erro usuario sistema Temas`
@@ -87181,10 +87181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ143E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ144E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in setting user object information !1:!2 error = !3 : !4." Em portugues: "erro in configuracao usuario object information !1:!2 erro = !3 : !4.". Temas: erro usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ144E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in setting user object information !1:!2 error = !3 : !4." Em portugues: "erro in configuracao usuario object information !1:!2 erro = !3 : !4.". Temas: erro usuario. Em outras palavras: Erro ao gravar as informações do objeto de usuário e o código de erro correspondente foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIJ144E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error setting user object information portugues erro configuracao usuario Temas significa`
+> `AWSBIJ144E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error setting user object information portugues erro configuracao usuario Temas outras palavras Erro gravar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIJ144E no HCL Workload Automation 10.2.8?
@@ -87201,7 +87201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIJ144E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIJ145E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in getting any of the domain controllers name !1:!2 error = !3 : !4." Em portugues: "erro in getting any of the dominio controllers nome !1:!2 erro = !3 : !4.". Temas: erro nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIJ145E (severidade: error, familia AWSBIJ - job) tem o texto: "Error in getting any of the domain controllers name !1:!2 error = !3 : !4." Em portugues: "erro in getting any of the dominio controllers nome !1:!2 erro = !3 : !4.". Temas: erro nome dominio. Em outras palavras: Erro ao obter os nomes dos controladores de domínio disponíveis e o código de erro foi retornado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIJ145E 10.2.8 mensagem severidade error familia AWSBIJ job tem texto Error getting any the controllers name portugues erro dominio nome Temas`
