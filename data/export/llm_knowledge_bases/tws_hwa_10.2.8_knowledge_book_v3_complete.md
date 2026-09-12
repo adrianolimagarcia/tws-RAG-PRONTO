@@ -75601,7 +75601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHZ030E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA002E (severidade: error, familia AWSBIA - composer) tem o texto: "The identifier "!1" is required at this point, but has not been supplied." Em portugues: "the identifier "!1" is obrigatorio at this point, but has nao estado informado.". Temas: nao informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA002E (severidade: error, familia AWSBIA - composer) tem o texto: "The identifier "!1" is required at this point, but has not been supplied." Em portugues: "the identifier "!1" is obrigatorio at this point, but has nao estado informado.". Temas: nao informado. Em outras palavras: O identificador esperado neste ponto da definicao nao foi informado, faltando um dado obrigatorio na entrada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA002E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The identifier required this point but has not been supplied portugues the obrigatorio nao estado`
@@ -75621,7 +75621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA003E (severidade: error, familia AWSBIA - composer) tem o texto: "A parameter or identifier has been supplied where it is not required." Em portugues: "a parametro or identifier has estado informado where it is nao obrigatorio.". Temas: nao informado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA003E (severidade: error, familia AWSBIA - composer) tem o texto: "A parameter or identifier has been supplied where it is not required." Em portugues: "a parametro or identifier has estado informado where it is nao obrigatorio.". Temas: nao informado parametro. Em outras palavras: Foi informado um parametro ou identificador onde ele nao deveria estar presente, gerando erro na interpretacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA003E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto parameter identifier has been supplied where not required portugues parametro estado informado nao obrigatorio Temas`
@@ -75641,7 +75641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA004E (severidade: error, familia AWSBIA - composer) tem o texto: "The delimiter "!1" is required at this point, but has not been supplied." Em portugues: "the delimiter "!1" is obrigatorio at this point, but has nao estado informado.". Temas: nao informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA004E (severidade: error, familia AWSBIA - composer) tem o texto: "The delimiter "!1" is required at this point, but has not been supplied." Em portugues: "the delimiter "!1" is obrigatorio at this point, but has nao estado informado.". Temas: nao informado. Em outras palavras: O delimitador obrigatorio esperado na posicao atual da definicao nao foi fornecido pelo operador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA004E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The delimiter required this point but has not been supplied portugues the obrigatorio nao estado`
@@ -75681,10 +75681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA006E (severidade: error, familia AWSBIA - composer) tem o texto: "Error on database access." Em portugues: "erro on banco de dados acesso.". Temas: erro banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA006E (severidade: error, familia AWSBIA - composer) tem o texto: "Error on database access." Em portugues: "erro on banco de dados acesso.". Temas: erro banco de dados. Em outras palavras: Ocorreu um erro ao acessar o banco de dados, impedindo a conclusao da operacao solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA006E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error database access portugues erro dados acesso Temas significa diagnosticar`
+> `AWSBIA006E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error database access portugues erro dados acesso Temas outras palavras Ocorreu acessar impedindo conclusao operacao solicitada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA006E no HCL Workload Automation 10.2.8?
@@ -75721,7 +75721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA008E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied job stream !1#!2 could not be found." Em portugues: "the informado job fluxo !1#!2 conseguiu nao be encontrado.". Temas: nao job informado encontrado fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA008E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied job stream !1#!2 could not be found." Em portugues: "the informado job fluxo !1#!2 conseguiu nao be encontrado.". Temas: nao job informado encontrado fluxo. Em outras palavras: A sequencia de trabalho informada nao foi localizada, possivelmente o nome ou o numero esta incorreto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA008E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied job stream could not found portugues the informado fluxo conseguiu nao encontrado Temas`
@@ -75741,10 +75741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA009E (severidade: error, familia AWSBIA - composer) tem o texto: "Error opening database." Em portugues: "erro opening banco de dados.". Temas: erro banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA009E (severidade: error, familia AWSBIA - composer) tem o texto: "Error opening database." Em portugues: "erro opening banco de dados.". Temas: erro banco de dados. Em outras palavras: Houve uma falha ao abrir o banco de dados, nao sendo possivel dar continuidade ao processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA009E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error opening database portugues erro dados Temas significa diagnosticar`
+> `AWSBIA009E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error opening database portugues erro dados Temas outras palavras Houve falha abrir nao sendo possivel dar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA009E no HCL Workload Automation 10.2.8?
@@ -75761,10 +75761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA010E (severidade: error, familia AWSBIA - composer) tem o texto: "Autodoc not allowed for this job." Em portugues: "autodoc nao allowed for this job.". Temas: nao job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA010E (severidade: error, familia AWSBIA - composer) tem o texto: "Autodoc not allowed for this job." Em portugues: "autodoc nao allowed for this job.". Temas: nao job. Em outras palavras: A geracao automatica de documentacao nao esta habilitada para este trabalho, entao a operacao foi recusada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA010E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Autodoc not allowed for this job portugues autodoc nao Temas significa`
+> `AWSBIA010E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Autodoc not allowed for this job portugues autodoc nao Temas outras palavras geracao automatica`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA010E no HCL Workload Automation 10.2.8?
@@ -75781,10 +75781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA011I (severidade: informational, familia AWSBIA - composer) tem o texto: "!1: Old value !2, New value !3." Em portugues: "!1: old valor !2, new valor !3.". Temas: valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA011I (severidade: informational, familia AWSBIA - composer) tem o texto: "!1: Old value !2, New value !3." Em portugues: "!1: old valor !2, new valor !3.". Temas: valor. Em outras palavras: Foi registrada a alteracao de um valor de definicao, mostrando o valor antigo e o novo aplicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA011I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Old value New portugues old valor new Temas significa diagnosticar`
+> `AWSBIA011I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Old value New portugues old valor new Temas outras palavras Foi registrada alteracao definicao mostrando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA011I no HCL Workload Automation 10.2.8?
@@ -75841,10 +75841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA013I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA014E (severidade: error, familia AWSBIA - composer) tem o texto: "Someone else has changed schedule !1#!2. No update done." Em portugues: "someone else has changed agendamento !1#!2. no atualizar done.". Temas: agendamento atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA014E (severidade: error, familia AWSBIA - composer) tem o texto: "Someone else has changed schedule !1#!2. No update done." Em portugues: "someone else has changed agendamento !1#!2. no atualizar done.". Temas: agendamento atualizar. Em outras palavras: Outra pessoa ja modificou a escala informada, entao a atualizacao nao foi aplicada para evitar conflito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA014E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Someone else has changed schedule update done portugues someone agendamento atualizar Temas significa`
+> `AWSBIA014E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Someone else has changed schedule update done portugues someone agendamento atualizar Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA014E no HCL Workload Automation 10.2.8?
@@ -75861,10 +75861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA015I (severidade: informational, familia AWSBIA - composer) tem o texto: "Schedule !1#!2 added." Em portugues: "agendamento !1#!2 added.". Temas: agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA015I (severidade: informational, familia AWSBIA - composer) tem o texto: "Schedule !1#!2 added." Em portugues: "agendamento !1#!2 added.". Temas: agendamento. Em outras palavras: A nova escala de trabalho foi adicionada com sucesso ao repositorio de definicoes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA015I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Schedule added portugues agendamento Temas significa diagnosticar`
+> `AWSBIA015I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Schedule added portugues agendamento Temas outras palavras nova escala trabalho foi adicionada sucesso repositorio definicoes significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA015I no HCL Workload Automation 10.2.8?
@@ -75881,10 +75881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA015I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA016I (severidade: informational, familia AWSBIA - composer) tem o texto: "Schedule !1#!2 replaced." Em portugues: "agendamento !1#!2 replaced.". Temas: agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA016I (severidade: informational, familia AWSBIA - composer) tem o texto: "Schedule !1#!2 replaced." Em portugues: "agendamento !1#!2 replaced.". Temas: agendamento. Em outras palavras: A escala existente foi substituida pela nova versao enviada, concluindo a atualizacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA016I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Schedule replaced portugues agendamento Temas significa diagnosticar`
+> `AWSBIA016I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Schedule replaced portugues agendamento Temas outras palavras escala existente foi substituida pela nova versao enviada concluindo atualizacao significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA016I no HCL Workload Automation 10.2.8?
@@ -75901,7 +75901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA016I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA017E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Out of memory trying to allocate "!1"." Em portugues: "an interno erro has ocorreu. out of memoria trying to allocate "!1".". Temas: erro ocorreu interno memoria. Explicacao oficial: The program has encountered an internal error trying to allocate memory for the indicated internal_storage_item.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA017E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Out of memory trying to allocate "!1"." Em portugues: "an interno erro has ocorreu. out of memoria trying to allocate "!1".". Temas: erro ocorreu interno memoria. Em outras palavras: Falta de memoria ao tentar alocar um elemento causou erro interno no processamento da operacao.. Explicacao oficial: The program has encountered an internal error trying to allocate memory for the indicated internal_storage_item.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA017E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Out memory trying allocate portugues interno erro ocorreu out memoria Temas`
@@ -75921,10 +75921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA018E (severidade: error, familia AWSBIA - composer) tem o texto: "Job "!1" is already present in the job stream." Em portugues: "job "!1" is already present in the job fluxo.". Temas: job fluxo. Explicacao oficial: You cannot add the job identified by the indicated job_identifier to the job stream, because it is already present, and multiple jobs cannot coexist.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA018E (severidade: error, familia AWSBIA - composer) tem o texto: "Job "!1" is already present in the job stream." Em portugues: "job "!1" is already present in the job fluxo.". Temas: job fluxo. Em outras palavras: O trabalho informado ja existe dentro da sequencia de trabalhos, nao podendo ser duplicado.. Explicacao oficial: You cannot add the job identified by the indicated job_identifier to the job stream, because it is already present, and multiple jobs cannot coexist.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA018E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job already present the job stream portugues fluxo Temas Explicacao oficial You cannot`
+> `AWSBIA018E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job already present the job stream portugues fluxo Temas outras palavras trabalho informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA018E no HCL Workload Automation 10.2.8?
@@ -75941,10 +75941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA019E (severidade: error, familia AWSBIA - composer) tem o texto: "For job stream !1#!2: errors !3, warnings !4." Em portugues: "for job fluxo !1#!2: erros !3, warnings !4.". Temas: erros job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA019E (severidade: error, familia AWSBIA - composer) tem o texto: "For job stream !1#!2: errors !3, warnings !4." Em portugues: "for job fluxo !1#!2: erros !3, warnings !4.". Temas: erros job fluxo. Em outras palavras: A validacao da sequencia de trabalhos apontou uma quantidade de erros e avisos que precisam ser revistos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA019E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto For job stream errors warnings portugues for fluxo erros Temas significa`
+> `AWSBIA019E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto For job stream errors warnings portugues for fluxo erros Temas outras palavras validacao sequencia trabalhos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA019E no HCL Workload Automation 10.2.8?
@@ -75961,10 +75961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA020E (severidade: error, familia AWSBIA - composer) tem o texto: "Mastsked not updated." Em portugues: "mastsked nao updated.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA020E (severidade: error, familia AWSBIA - composer) tem o texto: "Mastsked not updated." Em portugues: "mastsked nao updated.". Temas: nao. Em outras palavras: A mascara de dados nao foi atualizada devido a algum problema na operacao de gravacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA020E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Mastsked not updated portugues mastsked nao Temas significa diagnosticar`
+> `AWSBIA020E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Mastsked not updated portugues mastsked nao Temas outras palavras mascara dados foi atualizada devido algum problema operacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA020E no HCL Workload Automation 10.2.8?
@@ -75981,10 +75981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA021E (severidade: error, familia AWSBIA - composer) tem o texto: "Job "!1" does not exist in job stream "!2#!3"." Em portugues: "job "!1" does nao existe in job fluxo "!2#!3".". Temas: nao job fluxo. Explicacao oficial: The issued command identifies a job that is not in the job stream.job_name is the job that does not exist.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA021E (severidade: error, familia AWSBIA - composer) tem o texto: "Job "!1" does not exist in job stream "!2#!3"." Em portugues: "job "!1" does nao existe in job fluxo "!2#!3".". Temas: nao job fluxo. Em outras palavras: O trabalho informado nao existe dentro da sequencia especificada, impossibilitando a referencia.. Explicacao oficial: The issued command identifies a job that is not in the job stream.job_name is the job that does not exist.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA021E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job does not exist job stream portugues nao existe fluxo Temas Explicacao oficial The`
+> `AWSBIA021E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job does not exist job stream portugues nao existe fluxo Temas outras palavras trabalho`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA021E no HCL Workload Automation 10.2.8?
@@ -76001,7 +76001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA022E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error "!2" occurred building the temporary file "!1"." Em portugues: "a arquivo sistema erro "!2" ocorreu building the temporary arquivo "!1".". Temas: erro arquivo ocorreu sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA022E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error "!2" occurred building the temporary file "!1"." Em portugues: "a arquivo sistema erro "!2" ocorreu building the temporary arquivo "!1".". Temas: erro arquivo ocorreu sistema. Em outras palavras: Ocorreu uma falha no sistema de arquivos ao criar o arquivo temporario necessario para a operacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA022E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto file system occurred building the temporary portugues arquivo sistema erro ocorreu Temas`
@@ -76021,10 +76021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA023E (severidade: error, familia AWSBIA - composer) tem o texto: "Job !1#!2 not found in job master." Em portugues: "job !1#!2 nao encontrado in job principal.". Temas: nao job encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA023E (severidade: error, familia AWSBIA - composer) tem o texto: "Job !1#!2 not found in job master." Em portugues: "job !1#!2 nao encontrado in job principal.". Temas: nao job encontrado. Em outras palavras: O trabalho informado nao foi encontrado no mestre de trabalhos, indicando definicao inexistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA023E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job not found job portugues nao encontrado principal Temas significa`
+> `AWSBIA023E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job not found job portugues nao encontrado principal Temas outras palavras trabalho informado foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA023E no HCL Workload Automation 10.2.8?
@@ -76041,7 +76041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA024E (severidade: error, familia AWSBIA - composer) tem o texto: "Job master changed while trying to update job !1#!2. Update aborted." Em portugues: "job principal changed while trying to atualizar job !1#!2. atualizar aborted.". Temas: job abortado atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA024E (severidade: error, familia AWSBIA - composer) tem o texto: "Job master changed while trying to update job !1#!2. Update aborted." Em portugues: "job principal changed while trying to atualizar job !1#!2. atualizar aborted.". Temas: job abortado atualizar. Em outras palavras: O mestre de trabalhos mudou durante a atualizacao do trabalho, entao a gravacao foi abortada por seguranca..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA024E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job changed while trying update job Update aborted portugues principal atualizar Temas`
@@ -76061,7 +76061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA030E (severidade: error, familia AWSBIA - composer) tem o texto: "An error has occurred opening the redirected output file "!1" identified by the MAESTROLP variable." Em portugues: "an erro has ocorreu opening the redirected saida arquivo "!1" identified by the maestrolp variavel.". Temas: erro arquivo ocorreu. Explicacao oficial: The ;offline keyword has been used to redirect the output. The MAESTROLP variable is set to redirect the output to a file, but the file cannot be opened.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA030E (severidade: error, familia AWSBIA - composer) tem o texto: "An error has occurred opening the redirected output file "!1" identified by the MAESTROLP variable." Em portugues: "an erro has ocorreu opening the redirected saida arquivo "!1" identified by the maestrolp variavel.". Temas: erro arquivo ocorreu. Em outras palavras: Falha ao abrir o arquivo de saida redirecionada definido pela variavel de ambiente, impedindo o registro da saida.. Explicacao oficial: The ;offline keyword has been used to redirect the output. The MAESTROLP variable is set to redirect the output to a file, but the file cannot be opened.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA030E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto has occurred opening the redirected output file identified MAESTROLP variable portugues erro ocorreu saida`
@@ -76081,7 +76081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA030E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA031E (severidade: error, familia AWSBIA - composer) tem o texto: "An error has occurred writing the redirected output file "!1" identified by the MAESTROLP variable." Em portugues: "an erro has ocorreu writing the redirected saida arquivo "!1" identified by the maestrolp variavel.". Temas: erro arquivo ocorreu. Explicacao oficial: The ;offline keyword has been used to redirect the output. The MAESTROLP variable is set to redirect the output to a file, but an error occurred while writing to the file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA031E (severidade: error, familia AWSBIA - composer) tem o texto: "An error has occurred writing the redirected output file "!1" identified by the MAESTROLP variable." Em portugues: "an erro has ocorreu writing the redirected saida arquivo "!1" identified by the maestrolp variavel.". Temas: erro arquivo ocorreu. Em outras palavras: Falha ao gravar no arquivo de saida redirecionada definido pela variavel de ambiente, interrompendo o registro.. Explicacao oficial: The ;offline keyword has been used to redirect the output. The MAESTROLP variable is set to redirect the output to a file, but an error occurred while writing to the file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA031E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto has occurred writing the redirected output file identified MAESTROLP variable portugues erro ocorreu saida`
@@ -76101,10 +76101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA031E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA032E (severidade: error, familia AWSBIA - composer) tem o texto: "Error reading schedule." Em portugues: "erro reading agendamento.". Temas: erro agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA032E (severidade: error, familia AWSBIA - composer) tem o texto: "Error reading schedule." Em portugues: "erro reading agendamento.". Temas: erro agendamento. Em outras palavras: Houve um erro ao ler a definicao da escala de trabalho, nao sendo possivel processa-la..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA032E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error reading schedule portugues erro agendamento Temas significa diagnosticar`
+> `AWSBIA032E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error reading schedule portugues erro agendamento Temas outras palavras Houve ler definicao escala trabalho nao sendo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA032E no HCL Workload Automation 10.2.8?
@@ -76121,10 +76121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA034E (severidade: error, familia AWSBIA - composer) tem o texto: "No job streams found in !1#!2" Em portugues: "no job streams encontrado in !1#!2". Temas: job encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA034E (severidade: error, familia AWSBIA - composer) tem o texto: "No job streams found in !1#!2" Em portugues: "no job streams encontrado in !1#!2". Temas: job encontrado. Em outras palavras: Nenhuma sequencia de trabalhos foi localizada dentro da definicao informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA034E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto job streams found portugues encontrado Temas significa diagnosticar`
+> `AWSBIA034E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto job streams found portugues encontrado Temas outras palavras Nenhuma sequencia trabalhos foi localizada dentro definicao informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA034E no HCL Workload Automation 10.2.8?
@@ -76141,10 +76141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA034E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA035I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 job streams in !2#!3" Em portugues: "encontrado !1 job streams in !2#!3". Temas: job encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA035I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 job streams in !2#!3" Em portugues: "encontrado !1 job streams in !2#!3". Temas: job encontrado. Em outras palavras: Foi localizada uma quantidade especifica de sequencias de trabalhos dentro da definicao consultada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA035I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found job streams portugues encontrado Temas significa diagnosticar`
+> `AWSBIA035I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found job streams portugues encontrado Temas outras palavras Foi localizada quantidade especifica sequencias trabalhos dentro definicao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA035I no HCL Workload Automation 10.2.8?
@@ -76161,10 +76161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA035I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA036I (severidade: informational, familia AWSBIA - composer) tem o texto: "Schedule !1#!2 has been deleted." Em portugues: "agendamento !1#!2 has estado deleted.". Temas: agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA036I (severidade: informational, familia AWSBIA - composer) tem o texto: "Schedule !1#!2 has been deleted." Em portugues: "agendamento !1#!2 has estado deleted.". Temas: agendamento. Em outras palavras: A escala de trabalho informada foi excluida definitivamente do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA036I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Schedule has been deleted portugues agendamento estado Temas significa diagnosticar`
+> `AWSBIA036I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Schedule has been deleted portugues agendamento estado Temas outras palavras escala trabalho informada foi excluida definitivamente ambiente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA036I no HCL Workload Automation 10.2.8?
@@ -76181,10 +76181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA036I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA037E (severidade: error, familia AWSBIA - composer) tem o texto: "The only keyword allowed at this point is ";offline"." Em portugues: "the only keyword allowed at this point is ";offline".". Temas: palavra-chave. Explicacao oficial: The syntax of the object definition language determines that the only permissible keyword at this point is ;offline, but something else is present instead of offline.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA037E (severidade: error, familia AWSBIA - composer) tem o texto: "The only keyword allowed at this point is ";offline"." Em portugues: "the only keyword allowed at this point is ";offline".". Temas: palavra-chave. Em outras palavras: Neste ponto da definicao somente a palavra de controle de offline e aceita, outros valores sao recusados.. Explicacao oficial: The syntax of the object definition language determines that the only permissible keyword at this point is ;offline, but something else is present instead of offline.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA037E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The only keyword allowed this point offline portugues the Temas palavra-chave Explicacao oficial`
+> `AWSBIA037E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The only keyword allowed this point offline portugues the Temas palavra-chave outras palavras Neste`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA037E no HCL Workload Automation 10.2.8?
@@ -76201,10 +76201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA037E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA038E (severidade: error, familia AWSBIA - composer) tem o texto: "No qualifying CPU's were found in !1." Em portugues: "no qualifying processador's were encontrado in !1.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA038E (severidade: error, familia AWSBIA - composer) tem o texto: "No qualifying CPU's were found in !1." Em portugues: "no qualifying processador's were encontrado in !1.". Temas: encontrado. Em outras palavras: Nenhuma unidade de processamento qualificada foi localizada na definicao pesquisada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA038E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto qualifying CPU were found portugues processador encontrado Temas significa diagnosticar`
+> `AWSBIA038E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto qualifying CPU were found portugues processador encontrado Temas outras palavras Nenhuma unidade processamento qualificada foi localizada definicao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA038E no HCL Workload Automation 10.2.8?
@@ -76221,10 +76221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA038E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA039I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 CPU's in !2." Em portugues: "encontrado !1 processador's in !2.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA039I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 CPU's in !2." Em portugues: "encontrado !1 processador's in !2.". Temas: encontrado. Em outras palavras: Foi encontrada uma quantidade especifica de unidades de processamento dentro da definicao consultada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA039I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found CPU portugues encontrado processador Temas significa diagnosticar`
+> `AWSBIA039I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found CPU portugues encontrado processador Temas outras palavras Foi encontrada quantidade especifica unidades processamento dentro definicao consultada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA039I no HCL Workload Automation 10.2.8?
@@ -76281,10 +76281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA041I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA042I (severidade: informational, familia AWSBIA - composer) tem o texto: "CPU !1 Changed during attempt to update." Em portugues: "processador !1 changed durante tentativa to atualizar.". Temas: processador cpu atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA042I (severidade: informational, familia AWSBIA - composer) tem o texto: "CPU !1 Changed during attempt to update." Em portugues: "processador !1 changed durante tentativa to atualizar.". Temas: processador cpu atualizar. Em outras palavras: A definicao da unidade de processamento mudou durante a tentativa de atualizacao, registrando o estado atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA042I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto CPU Changed during attempt update portugues processador changed durante tentativa atualizar Temas cpu significa`
+> `AWSBIA042I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto CPU Changed during attempt update portugues processador changed durante tentativa atualizar Temas cpu outras palavras definicao unidade processamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA042I no HCL Workload Automation 10.2.8?
@@ -76301,10 +76301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA042I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA043E (severidade: error, familia AWSBIA - composer) tem o texto: "Validation for object "!1": errors: !2; warnings !3." Em portugues: "validation for object "!1": erros: !2; warnings !3.". Temas: erros. Explicacao oficial: The validation of the indicated object has found errors, warnings, or both.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA043E (severidade: error, familia AWSBIA - composer) tem o texto: "Validation for object "!1": errors: !2; warnings !3." Em portugues: "validation for object "!1": erros: !2; warnings !3.". Temas: erros. Em outras palavras: A validacao do objeto informado apontou uma quantidade de erros e avisos que necessitam revisao.. Explicacao oficial: The validation of the indicated object has found errors, warnings, or both.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA043E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Validation for object errors warnings portugues validation erros Temas Explicacao oficial The the indicated`
+> `AWSBIA043E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Validation for object errors warnings portugues validation erros Temas outras palavras validacao objeto informado apontou quantidade`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA043E no HCL Workload Automation 10.2.8?
@@ -76321,10 +76321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA043E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA044W (severidade: warning, familia AWSBIA - composer) tem o texto: "Cpudata not updated." Em portugues: "cpudata nao updated.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA044W (severidade: warning, familia AWSBIA - composer) tem o texto: "Cpudata not updated." Em portugues: "cpudata nao updated.". Temas: nao. Em outras palavras: Os dados da unidade de processamento nao foram atualizados, permanecendo o estado anterior..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA044W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Cpudata not updated portugues cpudata nao Temas significa diagnosticar`
+> `AWSBIA044W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Cpudata not updated portugues cpudata nao Temas outras palavras dados unidade processamento foram atualizados permanecendo estado anterior`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA044W no HCL Workload Automation 10.2.8?
@@ -76341,10 +76341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA044W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA045E (severidade: error, familia AWSBIA - composer) tem o texto: "Error accessing cpudata." Em portugues: "erro accessing cpudata.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA045E (severidade: error, familia AWSBIA - composer) tem o texto: "Error accessing cpudata." Em portugues: "erro accessing cpudata.". Temas: erro. Em outras palavras: Ocorreu um erro ao acessar os dados da unidade de processamento no repositorio..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA045E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error accessing cpudata portugues erro Temas significa diagnosticar`
+> `AWSBIA045E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error accessing cpudata portugues erro Temas outras palavras Ocorreu acessar dados unidade processamento repositorio significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA045E no HCL Workload Automation 10.2.8?
@@ -76361,10 +76361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA045E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA046E (severidade: error, familia AWSBIA - composer) tem o texto: "Error opening cpudata." Em portugues: "erro opening cpudata.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA046E (severidade: error, familia AWSBIA - composer) tem o texto: "Error opening cpudata." Em portugues: "erro opening cpudata.". Temas: erro. Em outras palavras: Falha ao abrir os dados da unidade de processamento, impedindo a consulta ou gravacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA046E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error opening cpudata portugues erro Temas significa diagnosticar`
+> `AWSBIA046E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error opening cpudata portugues erro Temas outras palavras Falha abrir dados unidade processamento impedindo consulta gravacao significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA046E no HCL Workload Automation 10.2.8?
@@ -76381,7 +76381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA047E (severidade: error, familia AWSBIA - composer) tem o texto: "An error occurred while accessing the definition file "!1"." Em portugues: "an erro ocorreu while accessing the definicao arquivo "!1".". Temas: erro arquivo ocorreu definicao. Explicacao oficial: See message.file_name identifies the file containing the object definitions that cannot be accessed.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA047E (severidade: error, familia AWSBIA - composer) tem o texto: "An error occurred while accessing the definition file "!1"." Em portugues: "an erro ocorreu while accessing the definicao arquivo "!1".". Temas: erro arquivo ocorreu definicao. Em outras palavras: Ocorreu um erro ao acessar o arquivo de definicao indicado, nao sendo possivel le-lo.. Explicacao oficial: See message.file_name identifies the file containing the object definitions that cannot be accessed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA047E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto occurred while accessing the definition file portugues erro ocorreu definicao arquivo Temas`
@@ -76401,10 +76401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA047E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA056I (severidade: informational, familia AWSBIA - composer) tem o texto: "Workstation !1 has been deleted." Em portugues: "estacao de trabalho !1 has estado deleted.". Temas: estacao de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA056I (severidade: informational, familia AWSBIA - composer) tem o texto: "Workstation !1 has been deleted." Em portugues: "estacao de trabalho !1 has estado deleted.". Temas: estacao de trabalho. Em outras palavras: A estacao de trabalho informada foi excluida do ambiente de definicoes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA056I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Workstation has been deleted portugues estacao trabalho estado Temas significa`
+> `AWSBIA056I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Workstation has been deleted portugues estacao trabalho estado Temas outras palavras informada foi excluida`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA056I no HCL Workload Automation 10.2.8?
@@ -76421,10 +76421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA056I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA057E (severidade: error, familia AWSBIA - composer) tem o texto: "No resources were found." Em portugues: "no resources were encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA057E (severidade: error, familia AWSBIA - composer) tem o texto: "No resources were found." Em portugues: "no resources were encontrado.". Temas: encontrado. Em outras palavras: Nenhum recurso foi localizado na consulta, retornando um conjunto vazio..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA057E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto resources were found portugues encontrado Temas significa diagnosticar`
+> `AWSBIA057E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto resources were found portugues encontrado Temas outras palavras Nenhum recurso foi localizado consulta retornando conjunto vazio significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA057E no HCL Workload Automation 10.2.8?
@@ -76441,10 +76441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA057E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA058I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 resource(s)." Em portugues: "encontrado !1 recurso(s).". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA058I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 resource(s)." Em portugues: "encontrado !1 recurso(s).". Temas: encontrado. Em outras palavras: Foi encontrada uma quantidade especifica de recursos correspondente ao criterio da consulta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA058I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found resource portugues encontrado recurso Temas significa diagnosticar`
+> `AWSBIA058I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found resource portugues encontrado recurso Temas outras palavras Foi encontrada quantidade especifica recursos correspondente criterio consulta significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA058I no HCL Workload Automation 10.2.8?
@@ -76461,10 +76461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA058I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA059I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Resource(s) in the database." Em portugues: "there is/are !1 recurso(s) in the banco de dados.". Temas: banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA059I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Resource(s) in the database." Em portugues: "there is/are !1 recurso(s) in the banco de dados.". Temas: banco de dados. Em outras palavras: O banco de dados possui uma quantidade especifica de recursos cadastrados disponiveis..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA059I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Resource the database portugues there recurso dados Temas significa`
+> `AWSBIA059I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Resource the database portugues there recurso dados Temas outras palavras possui quantidade especifica recursos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA059I no HCL Workload Automation 10.2.8?
@@ -76481,10 +76481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA059I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA060E (severidade: error, familia AWSBIA - composer) tem o texto: "Error modifying resources." Em portugues: "erro modifying resources.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA060E (severidade: error, familia AWSBIA - composer) tem o texto: "Error modifying resources." Em portugues: "erro modifying resources.". Temas: erro. Em outras palavras: Ocorreu um erro ao tentar alterar a definicao dos recursos no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA060E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error modifying resources portugues erro Temas significa diagnosticar`
+> `AWSBIA060E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error modifying resources portugues erro Temas outras palavras Ocorreu tentar alterar definicao recursos sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA060E no HCL Workload Automation 10.2.8?
@@ -76501,10 +76501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA060E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA065E (severidade: error, familia AWSBIA - composer) tem o texto: "No prompts were found." Em portugues: "no prompts were encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA065E (severidade: error, familia AWSBIA - composer) tem o texto: "No prompts were found." Em portugues: "no prompts were encontrado.". Temas: encontrado. Em outras palavras: Nenhum prompt de confirmacao foi localizado para a operacao solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA065E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto prompts were found portugues encontrado Temas significa diagnosticar`
+> `AWSBIA065E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto prompts were found portugues encontrado Temas outras palavras Nenhum prompt confirmacao foi localizado operacao solicitada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA065E no HCL Workload Automation 10.2.8?
@@ -76541,10 +76541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA066I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA067I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Prompt(s) in the database." Em portugues: "there is/are !1 prompt(s) in the banco de dados.". Temas: banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA067I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Prompt(s) in the database." Em portugues: "there is/are !1 prompt(s) in the banco de dados.". Temas: banco de dados. Em outras palavras: O banco de dados possui uma quantidade especifica de prompts cadastrados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA067I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Prompt the database portugues there prompt dados Temas significa`
+> `AWSBIA067I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Prompt the database portugues there prompt dados Temas outras palavras possui quantidade especifica prompts`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA067I no HCL Workload Automation 10.2.8?
@@ -76561,10 +76561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA067I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA068E (severidade: error, familia AWSBIA - composer) tem o texto: "No prompts found in the database." Em portugues: "no prompts encontrado in the banco de dados.". Temas: encontrado banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA068E (severidade: error, familia AWSBIA - composer) tem o texto: "No prompts found in the database." Em portugues: "no prompts encontrado in the banco de dados.". Temas: encontrado banco de dados. Em outras palavras: Nenhum prompt foi localizado no banco de dados para atender a solicitacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA068E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto prompts found the database portugues encontrado dados Temas significa`
+> `AWSBIA068E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto prompts found the database portugues encontrado dados Temas outras palavras Nenhum prompt foi localizado atender`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA068E no HCL Workload Automation 10.2.8?
@@ -76581,10 +76581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA068E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA073I (severidade: informational, familia AWSBIA - composer) tem o texto: "No calendars were found." Em portugues: "no calendars were encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA073I (severidade: informational, familia AWSBIA - composer) tem o texto: "No calendars were found." Em portugues: "no calendars were encontrado.". Temas: encontrado. Em outras palavras: Nenhum calendario de trabalho foi localizado para a operacao solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA073I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto calendars were found portugues encontrado Temas significa diagnosticar`
+> `AWSBIA073I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto calendars were found portugues encontrado Temas outras palavras Nenhum calendario trabalho foi localizado operacao solicitada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA073I no HCL Workload Automation 10.2.8?
@@ -76601,10 +76601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA073I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA074I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 calendar(s)." Em portugues: "encontrado !1 calendario(s).". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA074I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 calendar(s)." Em portugues: "encontrado !1 calendario(s).". Temas: encontrado. Em outras palavras: Foi encontrada uma quantidade especifica de calendarios correspondente a consulta realizada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA074I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found calendar portugues encontrado calendario Temas significa diagnosticar`
+> `AWSBIA074I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found calendar portugues encontrado calendario Temas outras palavras Foi encontrada quantidade especifica calendarios correspondente consulta realizada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA074I no HCL Workload Automation 10.2.8?
@@ -76621,10 +76621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA074I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA075I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Calendar(s) in the database." Em portugues: "there is/are !1 calendario(s) in the banco de dados.". Temas: banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA075I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Calendar(s) in the database." Em portugues: "there is/are !1 calendario(s) in the banco de dados.". Temas: banco de dados. Em outras palavras: O banco de dados possui uma quantidade especifica de calendarios cadastrados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA075I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Calendar the database portugues there calendario dados Temas significa`
+> `AWSBIA075I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Calendar the database portugues there calendario dados Temas outras palavras possui quantidade especifica calendarios`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA075I no HCL Workload Automation 10.2.8?
@@ -76641,10 +76641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA075I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA076E (severidade: error, familia AWSBIA - composer) tem o texto: "No calendars found in the database." Em portugues: "no calendars encontrado in the banco de dados.". Temas: encontrado banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA076E (severidade: error, familia AWSBIA - composer) tem o texto: "No calendars found in the database." Em portugues: "no calendars encontrado in the banco de dados.". Temas: encontrado banco de dados. Em outras palavras: Nenhum calendario foi localizado no banco de dados para atender a solicitacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA076E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIA composer tem texto calendars found the database portugues encontrado dados Temas significa`
+> `AWSBIA076E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIA composer tem texto calendars found the database portugues encontrado dados Temas outras palavras Nenhum calendario foi localizado atender`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA076E no HCL Workload Automation 10.2.8?
@@ -76661,10 +76661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA076E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA081E (severidade: error, familia AWSBIA - composer) tem o texto: "No parms were found." Em portugues: "no parms were encontrado.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA081E (severidade: error, familia AWSBIA - composer) tem o texto: "No parms were found." Em portugues: "no parms were encontrado.". Temas: encontrado. Em outras palavras: Nenhum parametro de definicao foi localizado para a operacao solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA081E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto parms were found portugues encontrado Temas significa diagnosticar`
+> `AWSBIA081E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto parms were found portugues encontrado Temas outras palavras Nenhum parametro definicao foi localizado operacao solicitada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA081E no HCL Workload Automation 10.2.8?
@@ -76701,10 +76701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA082I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA083I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Parm(s) in the database." Em portugues: "there is/are !1 parm(s) in the banco de dados.". Temas: banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA083I (severidade: informational, familia AWSBIA - composer) tem o texto: "There is/are !1 Parm(s) in the database." Em portugues: "there is/are !1 parm(s) in the banco de dados.". Temas: banco de dados. Em outras palavras: O banco de dados possui uma quantidade especifica de parametros de definicao cadastrados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA083I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Parm the database portugues there parm dados Temas significa`
+> `AWSBIA083I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto There are Parm the database portugues there parm dados Temas outras palavras possui quantidade especifica parametros`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA083I no HCL Workload Automation 10.2.8?
@@ -76721,10 +76721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA083I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA084E (severidade: error, familia AWSBIA - composer) tem o texto: "No parms found in the database." Em portugues: "no parms encontrado in the banco de dados.". Temas: encontrado banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA084E (severidade: error, familia AWSBIA - composer) tem o texto: "No parms found in the database." Em portugues: "no parms encontrado in the banco de dados.". Temas: encontrado banco de dados. Em outras palavras: Nenhum parametro foi localizado no banco de dados para atender a solicitacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA084E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto parms found the database portugues encontrado dados Temas significa`
+> `AWSBIA084E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto parms found the database portugues encontrado dados Temas outras palavras Nenhum parametro foi localizado atender`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA084E no HCL Workload Automation 10.2.8?
@@ -76741,10 +76741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA084E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA085E (severidade: error, familia AWSBIA - composer) tem o texto: "Circular dependency for !1#!2 and !3#!4." Em portugues: "circular dependency for !1#!2 and !3#!4.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA085E (severidade: error, familia AWSBIA - composer) tem o texto: "Circular dependency for !1#!2 and !3#!4." Em portugues: "circular dependency for !1#!2 and !3#!4.". Em outras palavras: Existe dependencia circular entre as definicoes informadas, criando um ciclo nao permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA085E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Circular dependency for and portugues circular significa diagnosticar`
+> `AWSBIA085E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Circular dependency for and portugues circular outras palavras Existe dependencia entre definicoes informadas criando ciclo nao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA085E no HCL Workload Automation 10.2.8?
@@ -76761,10 +76761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA085E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA086E (severidade: error, familia AWSBIA - composer) tem o texto: "!1 is not a definition file." Em portugues: "!1 is nao a definicao arquivo.". Temas: nao arquivo definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA086E (severidade: error, familia AWSBIA - composer) tem o texto: "!1 is not a definition file." Em portugues: "!1 is nao a definicao arquivo.". Temas: nao arquivo definicao. Em outras palavras: O arquivo indicado nao e um arquivo de definicao valido para este processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA086E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto not definition file portugues nao definicao arquivo Temas significa diagnosticar`
+> `AWSBIA086E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto not definition file portugues nao definicao arquivo Temas outras palavras indicado valido processamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA086E no HCL Workload Automation 10.2.8?
@@ -76781,10 +76781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA086E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA087E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the command." Em portugues: "there is a sintaxe erro in the comando.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA087E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the command." Em portugues: "there is a sintaxe erro in the comando.". Temas: erro comando sintaxe. Em outras palavras: Ha um erro de sintaxe no comando informado, impossibilitando sua interpretacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA087E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the command portugues there sintaxe erro comando Temas significa`
+> `AWSBIA087E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the command portugues there sintaxe erro comando Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA087E no HCL Workload Automation 10.2.8?
@@ -76801,7 +76801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA087E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA088E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error !1 has occurred while trying to resolve dependencies." Em portugues: "an interno erro !1 has ocorreu while trying to resolve dependencies.". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA088E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error !1 has occurred while trying to resolve dependencies." Em portugues: "an interno erro !1 has ocorreu while trying to resolve dependencies.". Temas: erro ocorreu interno. Em outras palavras: Ocorreu um erro interno ao tentar resolver as dependencias entre as definicoes informadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA088E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred while trying resolve dependencies portugues interno erro ocorreu Temas`
@@ -76821,10 +76821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA088E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA089E (severidade: error, familia AWSBIA - composer) tem o texto: "The keyword "!1" was expected at this point." Em portugues: "the keyword "!1" was esperado at this point.". Temas: palavra-chave esperado. Explicacao oficial: You have issued a validate command, but following the name of the file to be validated the only permitted (optional) keyword is keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA089E (severidade: error, familia AWSBIA - composer) tem o texto: "The keyword "!1" was expected at this point." Em portugues: "the keyword "!1" was esperado at this point.". Temas: palavra-chave esperado. Em outras palavras: Era esperada a palavra de controle informada nesta posicao da definicao, mas ela nao apareceu.. Explicacao oficial: You have issued a validate command, but following the name of the file to be validated the only permitted (optional) keyword is keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA089E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The keyword was expected this point portugues the esperado Temas palavra-chave Explicacao oficial You have`
+> `AWSBIA089E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The keyword was expected this point portugues the esperado Temas palavra-chave outras palavras Era esperada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA089E no HCL Workload Automation 10.2.8?
@@ -76841,10 +76841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA089E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA090I (severidade: informational, familia AWSBIA - composer) tem o texto: "For file "!1": errors !2, warnings !3." Em portugues: "for arquivo "!1": erros !2, warnings !3.". Temas: erros arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA090I (severidade: informational, familia AWSBIA - composer) tem o texto: "For file "!1": errors !2, warnings !3." Em portugues: "for arquivo "!1": erros !2, warnings !3.". Temas: erros arquivo. Em outras palavras: A validacao do arquivo apontou uma quantidade especifica de erros e avisos para correcao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA090I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto For file errors warnings portugues for arquivo erros Temas significa`
+> `AWSBIA090I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto For file errors warnings portugues for arquivo erros Temas outras palavras validacao apontou quantidade especifica`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA090I no HCL Workload Automation 10.2.8?
@@ -76861,10 +76861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA090I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA091I (severidade: informational, familia AWSBIA - composer) tem o texto: "Resource !1#!2 has !4 available; this requires !3." Em portugues: "recurso !1#!2 has !4 disponivel; this requires !3.". Temas: recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA091I (severidade: informational, familia AWSBIA - composer) tem o texto: "Resource !1#!2 has !4 available; this requires !3." Em portugues: "recurso !1#!2 has !4 disponivel; this requires !3.". Temas: recurso. Em outras palavras: O recurso possui uma quantidade disponivel, por porem a necessidade informada exige mais do que isso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA091I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Resource has available this requires portugues recurso disponivel Temas significa`
+> `AWSBIA091I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Resource has available this requires portugues recurso disponivel Temas outras palavras possui quantidade porem`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA091I no HCL Workload Automation 10.2.8?
@@ -76881,10 +76881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA091I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA092E (severidade: error, familia AWSBIA - composer) tem o texto: "Resource !1#!2 doesn't exist." Em portugues: "recurso !1#!2 doesn't existe.". Temas: recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA092E (severidade: error, familia AWSBIA - composer) tem o texto: "Resource !1#!2 doesn't exist." Em portugues: "recurso !1#!2 doesn't existe.". Temas: recurso. Em outras palavras: O recurso informado nao existe no ambiente, impossibilitando a referencia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA092E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Resource doesn exist portugues recurso existe Temas significa diagnosticar`
+> `AWSBIA092E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Resource doesn exist portugues recurso existe Temas outras palavras informado nao ambiente impossibilitando referencia significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA092E no HCL Workload Automation 10.2.8?
@@ -76901,10 +76901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA092E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA093E (severidade: error, familia AWSBIA - composer) tem o texto: "Prompt !1 doesn't exist." Em portugues: "prompt !1 doesn't existe.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA093E (severidade: error, familia AWSBIA - composer) tem o texto: "Prompt !1 doesn't exist." Em portugues: "prompt !1 doesn't existe.". Em outras palavras: O prompt informado nao existe no ambiente, impossibilitando a referencia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA093E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Prompt doesn exist portugues prompt existe significa diagnosticar`
+> `AWSBIA093E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Prompt doesn exist portugues prompt existe outras palavras informado nao ambiente impossibilitando referencia significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA093E no HCL Workload Automation 10.2.8?
@@ -76921,10 +76921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA093E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA094E (severidade: error, familia AWSBIA - composer) tem o texto: "One of these keywords: "!1" was expected at this point.#" Em portugues: "one of these keywords: "!1" was esperado at this point.#". Temas: esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA094E (severidade: error, familia AWSBIA - composer) tem o texto: "One of these keywords: "!1" was expected at this point.#" Em portugues: "one of these keywords: "!1" was esperado at this point.#". Temas: esperado. Em outras palavras: Neste ponto da definicao era esperada uma das palavras de controle listadas, mas nenhuma foi encontrada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA094E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto One these keywords was expected this point portugues one esperado Temas significa`
+> `AWSBIA094E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto One these keywords was expected this point portugues one esperado Temas outras palavras Neste`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA094E no HCL Workload Automation 10.2.8?
@@ -76941,10 +76941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA094E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA095E (severidade: error, familia AWSBIA - composer) tem o texto: "Schedule already exists." Em portugues: "agendamento already existe.". Temas: agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA095E (severidade: error, familia AWSBIA - composer) tem o texto: "Schedule already exists." Em portugues: "agendamento already existe.". Temas: agendamento. Em outras palavras: A escala informada ja existe no ambiente, nao sendo permitido criar outra igual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA095E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Schedule already exists portugues agendamento existe Temas significa diagnosticar`
+> `AWSBIA095E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Schedule already exists portugues agendamento existe Temas outras palavras escala informada ambiente nao sendo permitido criar outra`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA095E no HCL Workload Automation 10.2.8?
@@ -76961,10 +76961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA095E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA096E (severidade: error, familia AWSBIA - composer) tem o texto: "Cpu definition already exists." Em portugues: "processador definicao already existe.". Temas: definicao processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA096E (severidade: error, familia AWSBIA - composer) tem o texto: "Cpu definition already exists." Em portugues: "processador definicao already existe.". Temas: definicao processador cpu. Em outras palavras: A definicao da unidade de processamento informada ja existe, nao podendo ser recriada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA096E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Cpu definition already exists portugues processador definicao existe Temas cpu significa`
+> `AWSBIA096E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Cpu definition already exists portugues processador definicao existe Temas cpu outras palavras unidade processamento informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA096E no HCL Workload Automation 10.2.8?
@@ -76981,7 +76981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA096E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA097E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error "!2" occurred writing the temporary file "!1"." Em portugues: "a arquivo sistema erro "!2" ocorreu writing the temporary arquivo "!1".". Temas: erro arquivo ocorreu sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA097E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error "!2" occurred writing the temporary file "!1"." Em portugues: "a arquivo sistema erro "!2" ocorreu writing the temporary arquivo "!1".". Temas: erro arquivo ocorreu sistema. Em outras palavras: Ocorreu uma falha no sistema de arquivos ao gravar o arquivo temporario gerado pela operacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA097E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto file system occurred writing the temporary portugues arquivo sistema erro ocorreu Temas`
@@ -77001,7 +77001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA097E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA098E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error "!2" occurred closing the temporary file "!1"." Em portugues: "a arquivo sistema erro "!2" ocorreu closing the temporary arquivo "!1".". Temas: erro arquivo ocorreu sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA098E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error "!2" occurred closing the temporary file "!1"." Em portugues: "a arquivo sistema erro "!2" ocorreu closing the temporary arquivo "!1".". Temas: erro arquivo ocorreu sistema. Em outras palavras: Ocorreu uma falha no sistema de arquivos ao fechar o arquivo temporario gerado pela operacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA098E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto file system occurred closing the temporary portugues arquivo sistema erro ocorreu Temas`
@@ -77021,10 +77021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA098E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA100E (severidade: error, familia AWSBIA - composer) tem o texto: "CPU !1 does not exist in cpudata: !2" Em portugues: "processador !1 does nao existe in cpudata: !2". Temas: nao processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA100E (severidade: error, familia AWSBIA - composer) tem o texto: "CPU !1 does not exist in cpudata: !2" Em portugues: "processador !1 does nao existe in cpudata: !2". Temas: nao processador cpu. Em outras palavras: A unidade de processamento informada nao existe nos dados de processamento indicados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA100E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto CPU does not exist cpudata portugues processador nao existe Temas cpu significa`
+> `AWSBIA100E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto CPU does not exist cpudata portugues processador nao existe Temas cpu outras palavras unidade processamento informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA100E no HCL Workload Automation 10.2.8?
@@ -77041,10 +77041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA100E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA101E (severidade: error, familia AWSBIA - composer) tem o texto: "Only SCHEDULE or CPU can be specified here." Em portugues: "only agendamento or processador can be especificado here.". Temas: especificado processador cpu agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA101E (severidade: error, familia AWSBIA - composer) tem o texto: "Only SCHEDULE or CPU can be specified here." Em portugues: "only agendamento or processador can be especificado here.". Temas: especificado processador cpu agendamento. Em outras palavras: Somente definicoes de escala ou de unidade de processamento podem ser especificadas neste contexto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA101E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Only SCHEDULE CPU can specified here portugues only agendamento processador especificado Temas cpu significa`
+> `AWSBIA101E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Only SCHEDULE CPU can specified here portugues only agendamento processador especificado Temas cpu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA101E no HCL Workload Automation 10.2.8?
@@ -77061,7 +77061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA101E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA105E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error !2 has occurred opening the script or jcl file !1." Em portugues: "a arquivo sistema erro !2 has ocorreu opening the script or jcl arquivo !1.". Temas: erro arquivo ocorreu sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA105E (severidade: error, familia AWSBIA - composer) tem o texto: "A file system error !2 has occurred opening the script or jcl file !1." Em portugues: "a arquivo sistema erro !2 has ocorreu opening the script or jcl arquivo !1.". Temas: erro arquivo ocorreu sistema. Em outras palavras: Ocorreu uma falha no sistema de arquivos ao abrir o script ou arquivo de controle do trabalho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA105E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto file system has occurred opening the script jcl portugues arquivo sistema erro ocorreu`
@@ -77081,7 +77081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA105E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA106W (severidade: warning, familia AWSBIA - composer) tem o texto: "The job stream definition has one or more warnings." Em portugues: "the job fluxo definicao has one or mais warnings.". Temas: job definicao fluxo. Explicacao oficial: The job stream definition has been validated and accepted, but one or more warnings were issued.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA106W (severidade: warning, familia AWSBIA - composer) tem o texto: "The job stream definition has one or more warnings." Em portugues: "the job fluxo definicao has one or mais warnings.". Temas: job definicao fluxo. Em outras palavras: A definicao da sequencia de trabalhos possui um ou mais avisos que devem ser verificados.. Explicacao oficial: The job stream definition has been validated and accepted, but one or more warnings were issued.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA106W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The job stream definition has one more warnings portugues the fluxo definicao mais Temas`
@@ -77101,7 +77101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA106W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA107W (severidade: warning, familia AWSBIA - composer) tem o texto: "The workstation definition has one or more warnings." Em portugues: "the estacao de trabalho definicao has one or mais warnings.". Temas: estacao de trabalho definicao. Explicacao oficial: The workstation definition has been validated, but one or more warnings were issued.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA107W (severidade: warning, familia AWSBIA - composer) tem o texto: "The workstation definition has one or more warnings." Em portugues: "the estacao de trabalho definicao has one or mais warnings.". Temas: estacao de trabalho definicao. Em outras palavras: A definicao da estacao de trabalho possui um ou mais avisos que devem ser verificados.. Explicacao oficial: The workstation definition has been validated, but one or more warnings were issued.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA107W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The workstation definition has one more warnings portugues the estacao trabalho definicao mais Temas`
@@ -77121,10 +77121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA107W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA109E (severidade: error, familia AWSBIA - composer) tem o texto: "Calendar !1 is not in the calendars database." Em portugues: "calendario !1 is nao in the calendars banco de dados.". Temas: nao banco de dados calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA109E (severidade: error, familia AWSBIA - composer) tem o texto: "Calendar !1 is not in the calendars database." Em portugues: "calendario !1 is nao in the calendars banco de dados.". Temas: nao banco de dados calendario. Em outras palavras: O calendario informado nao esta cadastrado na base de calendarios do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA109E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Calendar not the calendars database portugues calendario nao dados Temas significa`
+> `AWSBIA109E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Calendar not the calendars database portugues calendario nao dados Temas outras palavras informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA109E no HCL Workload Automation 10.2.8?
@@ -77141,10 +77141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA109E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA110E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access schedule !1#!2." Em portugues: "you are nao authorized to acesso agendamento !1#!2.". Temas: nao agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA110E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access schedule !1#!2." Em portugues: "you are nao authorized to acesso agendamento !1#!2.". Temas: nao agendamento. Em outras palavras: Voce nao possui autorizacao para acessar a escala de trabalho informada no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA110E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access schedule portugues you nao acesso agendamento Temas significa`
+> `AWSBIA110E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access schedule portugues you nao acesso agendamento Temas outras palavras Voce`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA110E no HCL Workload Automation 10.2.8?
@@ -77161,10 +77161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA110E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA111E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access calendar !1." Em portugues: "you are nao authorized to acesso calendario !1.". Temas: nao calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA111E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access calendar !1." Em portugues: "you are nao authorized to acesso calendario !1.". Temas: nao calendario. Em outras palavras: Voce nao possui autorizacao para acessar o calendario informado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA111E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access calendar portugues you nao acesso calendario Temas significa`
+> `AWSBIA111E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access calendar portugues you nao acesso calendario Temas outras palavras Voce`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA111E no HCL Workload Automation 10.2.8?
@@ -77181,7 +77181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA111E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA112E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access parm !1 on this cpu." Em portugues: "you are nao authorized to acesso parm !1 on this processador.". Temas: nao processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA112E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access parm !1 on this cpu." Em portugues: "you are nao authorized to acesso parm !1 on this processador.". Temas: nao processador cpu. Em outras palavras: Voce nao possui autorizacao para acessar o parametro informado nesta unidade de processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA112E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access parm this cpu portugues you nao acesso processador Temas`
@@ -77201,10 +77201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA112E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA113E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access resource !1#!2." Em portugues: "you are nao authorized to acesso recurso !1#!2.". Temas: nao recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA113E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access resource !1#!2." Em portugues: "you are nao authorized to acesso recurso !1#!2.". Temas: nao recurso. Em outras palavras: Voce nao possui autorizacao para acessar o recurso informado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA113E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access resource portugues you nao acesso recurso Temas significa`
+> `AWSBIA113E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access resource portugues you nao acesso recurso Temas outras palavras Voce`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA113E no HCL Workload Automation 10.2.8?
@@ -77221,10 +77221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA113E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA114E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access cpu !1." Em portugues: "you are nao authorized to acesso processador !1.". Temas: nao processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA114E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access cpu !1." Em portugues: "you are nao authorized to acesso processador !1.". Temas: nao processador cpu. Em outras palavras: Voce nao possui autorizacao para acessar a unidade de processamento informada no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA114E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access cpu portugues you nao acesso processador Temas significa`
+> `AWSBIA114E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access cpu portugues you nao acesso processador Temas outras palavras Voce`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA114E no HCL Workload Automation 10.2.8?
@@ -77241,10 +77241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA114E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA115E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access prompt !1." Em portugues: "you are nao authorized to acesso prompt !1.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA115E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access prompt !1." Em portugues: "you are nao authorized to acesso prompt !1.". Temas: nao. Em outras palavras: Voce nao possui autorizacao para acessar o prompt informado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA115E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access prompt portugues you nao acesso Temas significa`
+> `AWSBIA115E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access prompt portugues you nao acesso Temas outras palavras Voce possui`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA115E no HCL Workload Automation 10.2.8?
@@ -77261,10 +77261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA115E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA116W (severidade: warning, familia AWSBIA - composer) tem o texto: "Recovery job !3#!4 not found for job !1#!2." Em portugues: "recovery job !3#!4 nao encontrado for job !1#!2.". Temas: nao job encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA116W (severidade: warning, familia AWSBIA - composer) tem o texto: "Recovery job !3#!4 not found for job !1#!2." Em portugues: "recovery job !3#!4 nao encontrado for job !1#!2.". Temas: nao job encontrado. Em outras palavras: O trabalho de recuperacao esperado nao foi localizado para o trabalho informado na definicao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA116W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Recovery job not found for portugues recovery nao encontrado Temas significa`
+> `AWSBIA116W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Recovery job not found for portugues recovery nao encontrado Temas outras palavras trabalho`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA116W no HCL Workload Automation 10.2.8?
@@ -77281,10 +77281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA116W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA117W (severidade: warning, familia AWSBIA - composer) tem o texto: "Job is hosted by cpu !4, resource !1#!2 is hosted by cpu !3." Em portugues: "job is hosted by processador !4, recurso !1#!2 is hosted by processador !3.". Temas: job processador cpu recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA117W (severidade: warning, familia AWSBIA - composer) tem o texto: "Job is hosted by cpu !4, resource !1#!2 is hosted by cpu !3." Em portugues: "job is hosted by processador !4, recurso !1#!2 is hosted by processador !3.". Temas: job processador cpu recurso. Em outras palavras: O trabalho e hospedado por uma unidade diferente daquela que hospeda o recurso utilizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA117W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Job hosted cpu resource portugues job processador recurso Temas significa`
+> `AWSBIA117W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Job hosted cpu resource portugues job processador recurso Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA117W no HCL Workload Automation 10.2.8?
@@ -77301,10 +77301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA117W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA118W (severidade: warning, familia AWSBIA - composer) tem o texto: "Schedule is hosted by cpu !4, resource !1#!2 is hosted by cpu !3." Em portugues: "agendamento is hosted by processador !4, recurso !1#!2 is hosted by processador !3.". Temas: processador cpu recurso agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA118W (severidade: warning, familia AWSBIA - composer) tem o texto: "Schedule is hosted by cpu !4, resource !1#!2 is hosted by cpu !3." Em portugues: "agendamento is hosted by processador !4, recurso !1#!2 is hosted by processador !3.". Temas: processador cpu recurso agendamento. Em outras palavras: A escala e hospedada por uma unidade diferente daquela que hospeda o recurso utilizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA118W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Schedule hosted cpu resource portugues agendamento processador recurso Temas significa`
+> `AWSBIA118W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Schedule hosted cpu resource portugues agendamento processador recurso Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA118W no HCL Workload Automation 10.2.8?
@@ -77321,10 +77321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA118W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA119E (severidade: error, familia AWSBIA - composer) tem o texto: "Error, schedule not updated." Em portugues: "erro, agendamento nao updated.". Temas: erro nao agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA119E (severidade: error, familia AWSBIA - composer) tem o texto: "Error, schedule not updated." Em portugues: "erro, agendamento nao updated.". Temas: erro nao agendamento. Em outras palavras: Ocorreu um erro e a escala nao foi atualizada, permanecendo a definicao anterior..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA119E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error schedule not updated portugues erro agendamento nao Temas significa`
+> `AWSBIA119E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error schedule not updated portugues erro agendamento nao Temas outras palavras Ocorreu escala foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA119E no HCL Workload Automation 10.2.8?
@@ -77341,7 +77341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA119E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA120W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "host" keyword has been supplied for the definition of a workstation of type "fta", but is not required. It has been ignored." Em portugues: "the "host servidor" keyword has estado informado for the definicao of a estacao de trabalho of tipo "fta", but is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave tipo definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA120W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "host" keyword has been supplied for the definition of a workstation of type "fta", but is not required. It has been ignored." Em portugues: "the "host servidor" keyword has estado informado for the definicao of a estacao de trabalho of tipo "fta", but is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave tipo definicao. Em outras palavras: A palavra de controle de hospedagem foi informada sem necessidade para este tipo de estacao e foi ignorada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA120W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The host keyword has been supplied for the definition workstation type fta but not required ignored portugues`
@@ -77361,10 +77361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA120W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA121W (severidade: warning, familia AWSBIA - composer) tem o texto: "Order of interleaved dependencies will be lost when sched is written." Em portugues: "order of interleaved dependencies will be lost when sched is written.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA121W (severidade: warning, familia AWSBIA - composer) tem o texto: "Order of interleaved dependencies will be lost when sched is written." Em portugues: "order of interleaved dependencies will be lost when sched is written.". Em outras palavras: A ordem das dependencias intercaladas sera perdida quando a escala for gravada no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA121W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Order interleaved dependencies will lost when sched written portugues order significa`
+> `AWSBIA121W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Order interleaved dependencies will lost when sched written portugues order outras palavras ordem`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA121W no HCL Workload Automation 10.2.8?
@@ -77381,10 +77381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA121W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA122W (severidade: warning, familia AWSBIA - composer) tem o texto: "Autodoc for !1 will be removed when schedule is written to mastsked." Em portugues: "autodoc for !1 will be removed when agendamento is written to mastsked.". Temas: agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA122W (severidade: warning, familia AWSBIA - composer) tem o texto: "Autodoc for !1 will be removed when schedule is written to mastsked." Em portugues: "autodoc for !1 will be removed when agendamento is written to mastsked.". Temas: agendamento. Em outras palavras: A documentacao automatica sera removida quando a escala for gravada na mascara de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA122W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Autodoc for will removed when schedule written mastsked portugues autodoc agendamento Temas significa`
+> `AWSBIA122W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Autodoc for will removed when schedule written mastsked portugues autodoc agendamento Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA122W no HCL Workload Automation 10.2.8?
@@ -77401,10 +77401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA122W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA123W (severidade: warning, familia AWSBIA - composer) tem o texto: "Autodoc for !1#!2 will be removed when schedule is written to mastsked." Em portugues: "autodoc for !1#!2 will be removed when agendamento is written to mastsked.". Temas: agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA123W (severidade: warning, familia AWSBIA - composer) tem o texto: "Autodoc for !1#!2 will be removed when schedule is written to mastsked." Em portugues: "autodoc for !1#!2 will be removed when agendamento is written to mastsked.". Temas: agendamento. Em outras palavras: A documentacao automatica da definicao sera removida quando a escala for gravada na mascara de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA123W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Autodoc for will removed when schedule written mastsked portugues autodoc agendamento Temas significa`
+> `AWSBIA123W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Autodoc for will removed when schedule written mastsked portugues autodoc agendamento Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA123W no HCL Workload Automation 10.2.8?
@@ -77421,10 +77421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA123W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA124W (severidade: warning, familia AWSBIA - composer) tem o texto: "Dependency !1 does not exist in schedule !2#!3." Em portugues: "dependency !1 does nao existe in agendamento !2#!3.". Temas: nao agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA124W (severidade: warning, familia AWSBIA - composer) tem o texto: "Dependency !1 does not exist in schedule !2#!3." Em portugues: "dependency !1 does nao existe in agendamento !2#!3.". Temas: nao agendamento. Em outras palavras: A dependencia informada nao existe dentro da escala indicada, sendo possivelmente invalida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA124W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Dependency does not exist schedule portugues dependency nao existe agendamento Temas significa`
+> `AWSBIA124W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Dependency does not exist schedule portugues dependency nao existe agendamento Temas outras palavras dependencia informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA124W no HCL Workload Automation 10.2.8?
@@ -77441,10 +77441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA124W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA125W (severidade: warning, familia AWSBIA - composer) tem o texto: "The host cpu !1 is not a domain manager or the master." Em portugues: "the host servidor processador !1 is nao a dominio manager or the principal.". Temas: nao dominio processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA125W (severidade: warning, familia AWSBIA - composer) tem o texto: "The host cpu !1 is not a domain manager or the master." Em portugues: "the host servidor processador !1 is nao a dominio manager or the principal.". Temas: nao dominio processador cpu. Em outras palavras: A unidade de hospedagem indicada nao e gerenciadora de dominio nem a unidade mestre do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA125W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The host cpu not the portugues servidor processador nao dominio principal Temas significa`
+> `AWSBIA125W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The host cpu not the portugues servidor processador nao dominio principal Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA125W no HCL Workload Automation 10.2.8?
@@ -77461,7 +77461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA125W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA126W (severidade: warning, familia AWSBIA - composer) tem o texto: "The domain name !1 is already used and managed by another workstation." Em portugues: "the dominio nome !1 is already used and managed by another estacao de trabalho.". Temas: estacao de trabalho nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA126W (severidade: warning, familia AWSBIA - composer) tem o texto: "The domain name !1 is already used and managed by another workstation." Em portugues: "the dominio nome !1 is already used and managed by another estacao de trabalho.". Temas: estacao de trabalho nome dominio. Em outras palavras: O nome de dominio informado ja esta em uso e gerenciado por outra estacao de trabalho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA126W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The name already used and managed another workstation portugues the dominio nome estacao trabalho Temas`
@@ -77481,10 +77481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA126W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA127W (severidade: warning, familia AWSBIA - composer) tem o texto: "The domain manager workstation !1 is not defined as an FTA." Em portugues: "the dominio manager estacao de trabalho !1 is nao defined as an fta.". Temas: nao estacao de trabalho dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA127W (severidade: warning, familia AWSBIA - composer) tem o texto: "The domain manager workstation !1 is not defined as an FTA." Em portugues: "the dominio manager estacao de trabalho !1 is nao defined as an fta.". Temas: nao estacao de trabalho dominio. Em outras palavras: A estacao gerenciadora de dominio informada nao esta definida como uma estacao de transferencia de arquivos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA127W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The workstation not defined FTA portugues the dominio estacao trabalho nao fta Temas significa`
+> `AWSBIA127W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The workstation not defined FTA portugues the dominio estacao trabalho nao fta Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA127W no HCL Workload Automation 10.2.8?
@@ -77501,10 +77501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA127W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA128W (severidade: warning, familia AWSBIA - composer) tem o texto: "The domain manager workstation !1 must be in the same domain." Em portugues: "the dominio manager estacao de trabalho !1 must be in the same dominio.". Temas: estacao de trabalho dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA128W (severidade: warning, familia AWSBIA - composer) tem o texto: "The domain manager workstation !1 must be in the same domain." Em portugues: "the dominio manager estacao de trabalho !1 must be in the same dominio.". Temas: estacao de trabalho dominio. Em outras palavras: A estacao gerenciadora de dominio precisa pertencer ao mesmo dominio da definicao informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA128W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The workstation must the same portugues dominio estacao trabalho Temas significa`
+> `AWSBIA128W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The workstation must the same portugues dominio estacao trabalho Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA128W no HCL Workload Automation 10.2.8?
@@ -77521,10 +77521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA128W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA129W (severidade: warning, familia AWSBIA - composer) tem o texto: "The parent domain !1 not found." Em portugues: "the parent dominio !1 nao encontrado.". Temas: nao dominio encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA129W (severidade: warning, familia AWSBIA - composer) tem o texto: "The parent domain !1 not found." Em portugues: "the parent dominio !1 nao encontrado.". Temas: nao dominio encontrado. Em outras palavras: O dominio pai informado nao foi localizado na hierarquia de dominios do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA129W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The parent not found portugues the dominio nao encontrado Temas significa`
+> `AWSBIA129W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The parent not found portugues the dominio nao encontrado Temas outras palavras pai informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA129W no HCL Workload Automation 10.2.8?
@@ -77541,10 +77541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA129W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA130W (severidade: warning, familia AWSBIA - composer) tem o texto: "The parent domain !1 is not defined as a DOMAIN definition." Em portugues: "the parent dominio !1 is nao defined as a dominio definicao.". Temas: nao dominio definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA130W (severidade: warning, familia AWSBIA - composer) tem o texto: "The parent domain !1 is not defined as a DOMAIN definition." Em portugues: "the parent dominio !1 is nao defined as a dominio definicao.". Temas: nao dominio definicao. Em outras palavras: O dominio pai informado nao esta definido como uma definicao valida de dominio..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA130W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The parent not defined definition portugues the dominio nao definicao Temas significa`
+> `AWSBIA130W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The parent not defined definition portugues the dominio nao definicao Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA130W no HCL Workload Automation 10.2.8?
@@ -77561,10 +77561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA130W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA131E (severidade: error, familia AWSBIA - composer) tem o texto: "!1 is reserved for the master domain name." Em portugues: "!1 is reserved for the principal dominio nome.". Temas: nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA131E (severidade: error, familia AWSBIA - composer) tem o texto: "!1 is reserved for the master domain name." Em portugues: "!1 is reserved for the principal dominio nome.". Temas: nome dominio. Em outras palavras: O nome informado esta reservado para designar o dominio mestre do ambiente, nao podendo ser usado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA131E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto reserved for the name portugues principal dominio nome Temas significa`
+> `AWSBIA131E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto reserved for the name portugues principal dominio nome Temas outras palavras informado reservado designar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA131E no HCL Workload Automation 10.2.8?
@@ -77601,10 +77601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA132I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA133I (severidade: informational, familia AWSBIA - composer) tem o texto: "CPUCLASS !1 Replaced." Em portugues: "cpuclass !1 replaced.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA133I (severidade: informational, familia AWSBIA - composer) tem o texto: "CPUCLASS !1 Replaced." Em portugues: "cpuclass !1 replaced.". Em outras palavras: A definicao da classe de unidades de processamento foi substituida pela nova versao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA133I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto CPUCLASS Replaced portugues cpuclass replaced significa diagnosticar`
+> `AWSBIA133I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto CPUCLASS Replaced portugues cpuclass replaced outras palavras definicao classe unidades processamento foi substituida pela nova versao significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA133I no HCL Workload Automation 10.2.8?
@@ -77621,10 +77621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA133I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA134I (severidade: informational, familia AWSBIA - composer) tem o texto: "CPUCLASS !1 Changed during attempt to update." Em portugues: "cpuclass !1 changed durante tentativa to atualizar.". Temas: atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA134I (severidade: informational, familia AWSBIA - composer) tem o texto: "CPUCLASS !1 Changed during attempt to update." Em portugues: "cpuclass !1 changed durante tentativa to atualizar.". Temas: atualizar. Em outras palavras: A classe de unidades de processamento mudou durante a tentativa de atualizacao, registrando o estado atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA134I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto CPUCLASS Changed during attempt update portugues cpuclass changed durante tentativa atualizar Temas significa`
+> `AWSBIA134I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto CPUCLASS Changed during attempt update portugues cpuclass changed durante tentativa atualizar Temas outras palavras classe unidades processamento mudou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA134I no HCL Workload Automation 10.2.8?
@@ -77681,10 +77681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA136I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA137I (severidade: informational, familia AWSBIA - composer) tem o texto: "DOMAIN !1 Changed during attempt to update." Em portugues: "dominio !1 changed durante tentativa to atualizar.". Temas: dominio atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA137I (severidade: informational, familia AWSBIA - composer) tem o texto: "DOMAIN !1 Changed during attempt to update." Em portugues: "dominio !1 changed durante tentativa to atualizar.". Temas: dominio atualizar. Em outras palavras: O dominio mudou durante a tentativa de atualizacao, registrando o estado atual da definicao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA137I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Changed during attempt update portugues dominio changed durante tentativa atualizar Temas significa`
+> `AWSBIA137I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Changed during attempt update portugues dominio changed durante tentativa atualizar Temas outras palavras mudou atualizacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA137I no HCL Workload Automation 10.2.8?
@@ -77701,7 +77701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA137I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA138E (severidade: error, familia AWSBIA - composer) tem o texto: "You cannot specify both the "domain" and the "host" keywords for a standard agent or broker workstation. Use only one or the other." Em portugues: "you nao pode specify both the "dominio" and the "host servidor" keywords for a standard agente or broker estacao de trabalho. use only one or the other.". Temas: estacao de trabalho nao pode agente broker intermediario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA138E (severidade: error, familia AWSBIA - composer) tem o texto: "You cannot specify both the "domain" and the "host" keywords for a standard agent or broker workstation. Use only one or the other." Em portugues: "you nao pode specify both the "dominio" and the "host servidor" keywords for a standard agente or broker estacao de trabalho. use only one or the other.". Temas: estacao de trabalho nao pode agente broker intermediario. Em outras palavras: Para estacao padrao ou broker nao podem ser usadas juntas as palavras de dominio e de hospedagem, informe apenas uma..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA138E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You cannot specify both the and host keywords for standard agent broker workstation Use only one other portugues`
@@ -77721,7 +77721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA138E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA139E (severidade: error, familia AWSBIA - composer) tem o texto: "For a standard agent or broker workstation you must specify a domain." Em portugues: "for a standard agente or broker estacao de trabalho you must specify a dominio.". Temas: estacao de trabalho dominio agente broker intermediario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA139E (severidade: error, familia AWSBIA - composer) tem o texto: "For a standard agent or broker workstation you must specify a domain." Em portugues: "for a standard agente or broker estacao de trabalho you must specify a dominio.". Temas: estacao de trabalho dominio agente broker intermediario. Em outras palavras: Para uma estacao padrao ou broker e obrigatorio informar a qual dominio ela pertence..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA139E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto For standard agent broker workstation you must specify portugues for agente estacao trabalho dominio Temas`
@@ -77741,7 +77741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA139E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA140E (severidade: error, familia AWSBIA - composer) tem o texto: "For an extended agent you must specify the host and the access method." Em portugues: "for an extended agente you must specify the host servidor and the acesso method.". Temas: agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA140E (severidade: error, familia AWSBIA - composer) tem o texto: "For an extended agent you must specify the host and the access method." Em portugues: "for an extended agente you must specify the host servidor and the acesso method.". Temas: agente. Em outras palavras: Para um agente estendido e obrigatorio informar a unidade de hospedagem e o metodo de acesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA140E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto For extended agent you must specify the host and access method portugues for agente`
@@ -77761,10 +77761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA140E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA141W (severidade: warning, familia AWSBIA - composer) tem o texto: "The master domain has a parent: "!1". It must have no parent domain." Em portugues: "the principal dominio has a parent: "!1". it must have no parent dominio.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA141W (severidade: warning, familia AWSBIA - composer) tem o texto: "The master domain has a parent: "!1". It must have no parent domain." Em portugues: "the principal dominio has a parent: "!1". it must have no parent dominio.". Temas: dominio. Em outras palavras: O dominio mestre nao pode ter dominio pai, mas foi informada uma referencia de parentesco..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA141W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The has parent must have portugues the principal dominio Temas significa`
+> `AWSBIA141W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The has parent must have portugues the principal dominio Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA141W no HCL Workload Automation 10.2.8?
@@ -77781,10 +77781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA141W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA142E (severidade: error, familia AWSBIA - composer) tem o texto: "Domain "!1" not found." Em portugues: "dominio "!1" nao encontrado.". Temas: nao dominio encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA142E (severidade: error, familia AWSBIA - composer) tem o texto: "Domain "!1" not found." Em portugues: "dominio "!1" nao encontrado.". Temas: nao dominio encontrado. Em outras palavras: O dominio informado nao foi localizado na hierarquia de dominios do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA142E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto not found portugues dominio nao encontrado Temas significa diagnosticar`
+> `AWSBIA142E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto not found portugues dominio nao encontrado Temas outras palavras informado foi localizado hierarquia dominios sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA142E no HCL Workload Automation 10.2.8?
@@ -77801,10 +77801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA142E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA143W (severidade: warning, familia AWSBIA - composer) tem o texto: "!1 is not defined as a domain." Em portugues: "!1 is nao defined as a dominio.". Temas: nao dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA143W (severidade: warning, familia AWSBIA - composer) tem o texto: "!1 is not defined as a domain." Em portugues: "!1 is nao defined as a dominio.". Temas: nao dominio. Em outras palavras: A definicao informada nao esta cadastrada como um dominio valido no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA143W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto not defined portugues nao dominio Temas significa diagnosticar`
+> `AWSBIA143W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto not defined portugues nao dominio Temas outras palavras definicao informada cadastrada valido ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA143W no HCL Workload Automation 10.2.8?
@@ -77821,7 +77821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA143W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA144E (severidade: error, familia AWSBIA - composer) tem o texto: "Error: Incompatible database files, use dbexpand to update databases." Em portugues: "erro: incompativel banco de dados arquivos, use dbexpand to atualizar databases.". Temas: erro arquivos incompativel banco de dados atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA144E (severidade: error, familia AWSBIA - composer) tem o texto: "Error: Incompatible database files, use dbexpand to update databases." Em portugues: "erro: incompativel banco de dados arquivos, use dbexpand to atualizar databases.". Temas: erro arquivos incompativel banco de dados atualizar. Em outras palavras: Os arquivos de banco de dados sao incompativeis, sendo necessario executar o utilitario de atualizacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA144E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error Incompatible database files use dbexpand update databases portugues erro incompativel dados arquivos atualizar Temas`
@@ -77841,10 +77841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA144E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA145W (severidade: warning, familia AWSBIA - composer) tem o texto: "Access method "!1" does not exist on your system!" Em portugues: "acesso method "!1" does nao existe on your sistema!". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA145W (severidade: warning, familia AWSBIA - composer) tem o texto: "Access method "!1" does not exist on your system!" Em portugues: "acesso method "!1" does nao existe on your sistema!". Temas: nao. Em outras palavras: O metodo de acesso informado nao existe neste sistema, indicando configuracao incorreta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA145W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Access method does not exist your system portugues acesso nao existe sistema Temas significa`
+> `AWSBIA145W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Access method does not exist your system portugues acesso nao existe sistema Temas outras palavras metodo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA145W no HCL Workload Automation 10.2.8?
@@ -77861,10 +77861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA145W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA146W (severidade: warning, familia AWSBIA - composer) tem o texto: "A loop was found in the domain definition." Em portugues: "a loop was encontrado in the dominio definicao.". Temas: dominio encontrado definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA146W (severidade: warning, familia AWSBIA - composer) tem o texto: "A loop was found in the domain definition." Em portugues: "a loop was encontrado in the dominio definicao.". Temas: dominio encontrado definicao. Em outras palavras: Foi detectado um ciclo na definicao dos dominios, causando uma referencia circular..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA146W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto loop was found the definition portugues encontrado dominio definicao Temas significa`
+> `AWSBIA146W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto loop was found the definition portugues encontrado dominio definicao Temas outras palavras Foi detectado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA146W no HCL Workload Automation 10.2.8?
@@ -77881,7 +77881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA146W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA147E (severidade: error, familia AWSBIA - composer) tem o texto: "The "!1" differs from "!2" for "!3". A time zone need be specified just once, or all instances of it must be equal." Em portugues: "the "!1" differs from "!2" for "!3". a tempo zone need be especificado just once, or all instances of it must be equal.". Temas: especificado tempo hora. Explicacao oficial: A time zone need only be specified once in a job or job stream definition. If you choose to specify it more than once, all instances of the time zone definition must be equal.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA147E (severidade: error, familia AWSBIA - composer) tem o texto: "The "!1" differs from "!2" for "!3". A time zone need be specified just once, or all instances of it must be equal." Em portugues: "the "!1" differs from "!2" for "!3". a tempo zone need be especificado just once, or all instances of it must be equal.". Temas: especificado tempo hora. Em outras palavras: Ha divergencia de fuso horario entre as definicoes, sendo obrigatorio padronizar todos os valores.. Explicacao oficial: A time zone need only be specified once in a job or job stream definition. If you choose to specify it more than once, all instances of the time zone definition must be equal.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA147E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The differs from for time zone need specified just once all instances must equal portugues the tempo`
@@ -77901,7 +77901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA147E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA148W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "until" time is earlier than the "at" time for "!1". Check the time definitions and ensure that this is what you intended." Em portugues: "the "until" tempo is earlier que the "at" tempo for "!1". check the tempo definitions and ensure that this is what you intended.". Temas: tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA148W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "until" time is earlier than the "at" time for "!1". Check the time definitions and ensure that this is what you intended." Em portugues: "the "until" tempo is earlier que the "at" tempo for "!1". check the tempo definitions and ensure that this is what you intended.". Temas: tempo hora. Em outras palavras: O horario de termino esta antes do horario de inicio, entao revise os tempos informados na definicao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA148W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The until time earlier than the for Check definitions and ensure that this what you intended portugues`
@@ -77921,7 +77921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA148W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA149E (severidade: error, familia AWSBIA - composer) tem o texto: "Time zones are not enabled on workstation "!1"." Em portugues: "tempo zones are nao habilitado on estacao de trabalho "!1".". Temas: nao estacao de trabalho tempo hora habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA149E (severidade: error, familia AWSBIA - composer) tem o texto: "Time zones are not enabled on workstation "!1"." Em portugues: "tempo zones are nao habilitado on estacao de trabalho "!1".". Temas: nao estacao de trabalho tempo hora habilitado. Em outras palavras: Os fusos horarios nao estao habilitados na estacao de trabalho informada para a definicao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA149E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Time zones are not enabled workstation portugues tempo nao habilitado estacao trabalho Temas hora`
@@ -77941,10 +77941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA149E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA150W (severidade: warning, familia AWSBIA - composer) tem o texto: "Domain manager "!1" is a manager of another domain" Em portugues: "dominio manager "!1" is a manager of another dominio". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA150W (severidade: warning, familia AWSBIA - composer) tem o texto: "Domain manager "!1" is a manager of another domain" Em portugues: "dominio manager "!1" is a manager of another dominio". Temas: dominio. Em outras palavras: A estacao gerenciadora informada tambem gerencia outro dominio, caracterizando dupla funcao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA150W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto another portugues dominio Temas significa diagnosticar`
+> `AWSBIA150W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto another portugues dominio Temas outras palavras estacao gerenciadora informada tambem gerencia outro caracterizando dupla funcao significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA150W no HCL Workload Automation 10.2.8?
@@ -77961,10 +77961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA150W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA151W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "deadline" is earlier than the "at" time for !1." Em portugues: "the "deadline" is earlier que the "at" tempo for !1.". Temas: tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA151W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "deadline" is earlier than the "at" time for !1." Em portugues: "the "deadline" is earlier que the "at" tempo for !1.". Temas: tempo hora. Em outras palavras: O horario limite definido esta antes do horario de inicio da definicao informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA151W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The deadline earlier than the time for portugues tempo Temas hora significa`
+> `AWSBIA151W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The deadline earlier than the time for portugues tempo Temas hora outras palavras horario`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA151W no HCL Workload Automation 10.2.8?
@@ -77981,10 +77981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA151W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA152W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "deadline" is earlier than the "until" time for "!1"." Em portugues: "the "deadline" is earlier que the "until" tempo for "!1".". Temas: tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA152W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "deadline" is earlier than the "until" time for "!1"." Em portugues: "the "deadline" is earlier que the "until" tempo for "!1".". Temas: tempo hora. Em outras palavras: O horario limite definido esta antes do horario de termino da definicao informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA152W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The deadline earlier than the until time for portugues tempo Temas hora significa`
+> `AWSBIA152W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The deadline earlier than the until time for portugues tempo Temas hora outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA152W no HCL Workload Automation 10.2.8?
@@ -78001,10 +78001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA152W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA153W (severidade: warning, familia AWSBIA - composer) tem o texto: "You must specify a "domain" when the "host" is "$MANAGER"." Em portugues: "you must specify a "dominio" when the "host servidor" is "$manager".".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA153W (severidade: warning, familia AWSBIA - composer) tem o texto: "You must specify a "domain" when the "host" is "$MANAGER"." Em portugues: "you must specify a "dominio" when the "host servidor" is "$manager".". Em outras palavras: Quando a unidade de hospedagem e o gerenciador, e obrigatorio informar o dominio correspondente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA153W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto You must specify when the host portugues you dominio servidor significa`
+> `AWSBIA153W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto You must specify when the host portugues you dominio servidor outras palavras Quando unidade hospedagem`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA153W no HCL Workload Automation 10.2.8?
@@ -78021,10 +78021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA153W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA194I (severidade: informational, familia AWSBIA - composer) tem o texto: "Domain "!1" has been deleted." Em portugues: "dominio "!1" has estado deleted.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA194I (severidade: informational, familia AWSBIA - composer) tem o texto: "Domain "!1" has been deleted." Em portugues: "dominio "!1" has estado deleted.". Temas: dominio. Em outras palavras: O dominio informado foi excluido do ambiente de definicoes do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA194I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto has been deleted portugues dominio estado Temas significa diagnosticar`
+> `AWSBIA194I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto has been deleted portugues dominio estado Temas outras palavras informado foi excluido ambiente definicoes sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA194I no HCL Workload Automation 10.2.8?
@@ -78041,10 +78041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA194I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA195I (severidade: informational, familia AWSBIA - composer) tem o texto: "Workstation class "!1" has been deleted." Em portugues: "estacao de trabalho class "!1" has estado deleted.". Temas: estacao de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA195I (severidade: informational, familia AWSBIA - composer) tem o texto: "Workstation class "!1" has been deleted." Em portugues: "estacao de trabalho class "!1" has estado deleted.". Temas: estacao de trabalho. Em outras palavras: A classe de estacoes de trabalho informada foi excluida do ambiente de definicoes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA195I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Workstation class has been deleted portugues estacao trabalho estado Temas significa`
+> `AWSBIA195I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Workstation class has been deleted portugues estacao trabalho estado Temas outras palavras classe estacoes`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA195I no HCL Workload Automation 10.2.8?
@@ -78061,10 +78061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA195I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA198E (severidade: error, familia AWSBIA - composer) tem o texto: "The domain definition already exists." Em portugues: "the dominio definicao already existe.". Temas: dominio definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA198E (severidade: error, familia AWSBIA - composer) tem o texto: "The domain definition already exists." Em portugues: "the dominio definicao already existe.". Temas: dominio definicao. Em outras palavras: A definicao do dominio ja existe, nao sendo permitido cadastrar uma versao duplicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA198E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The definition already exists portugues the dominio definicao existe Temas significa`
+> `AWSBIA198E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The definition already exists portugues the dominio definicao existe Temas outras palavras nao sendo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA198E no HCL Workload Automation 10.2.8?
@@ -78081,10 +78081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA198E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA199E (severidade: error, familia AWSBIA - composer) tem o texto: "The workstation class definition already exists." Em portugues: "the estacao de trabalho class definicao already existe.". Temas: estacao de trabalho definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA199E (severidade: error, familia AWSBIA - composer) tem o texto: "The workstation class definition already exists." Em portugues: "the estacao de trabalho class definicao already existe.". Temas: estacao de trabalho definicao. Em outras palavras: A definicao da classe de estacoes ja existe, nao sendo permitido cadastrar uma versao duplicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA199E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The workstation class definition already exists portugues the estacao trabalho definicao existe Temas significa`
+> `AWSBIA199E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The workstation class definition already exists portugues the estacao trabalho definicao existe Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA199E no HCL Workload Automation 10.2.8?
@@ -78101,10 +78101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA199E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA201E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access job !1#!2." Em portugues: "you are nao authorized to acesso job !1#!2.". Temas: nao job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA201E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access job !1#!2." Em portugues: "you are nao authorized to acesso job !1#!2.". Temas: nao job. Em outras palavras: Voce nao possui autorizacao para acessar o trabalho informado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA201E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access job portugues you nao acesso Temas significa`
+> `AWSBIA201E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access job portugues you nao acesso Temas outras palavras Voce`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA201E no HCL Workload Automation 10.2.8?
@@ -78121,10 +78121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA201E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA202I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 jobs for !2#!3" Em portugues: "encontrado !1 jobs for !2#!3". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA202I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 jobs for !2#!3" Em portugues: "encontrado !1 jobs for !2#!3". Temas: encontrado. Em outras palavras: Foi localizada uma quantidade especifica de trabalhos dentro da definicao consultada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA202I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found jobs for portugues encontrado Temas significa diagnosticar`
+> `AWSBIA202I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found jobs for portugues encontrado Temas outras palavras Foi localizada quantidade especifica trabalhos dentro definicao consultada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA202I no HCL Workload Automation 10.2.8?
@@ -78141,10 +78141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA202I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA203E (severidade: error, familia AWSBIA - composer) tem o texto: "No qualifying jobs were found in !1." Em portugues: "no qualifying jobs were encontrado in !1.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA203E (severidade: error, familia AWSBIA - composer) tem o texto: "No qualifying jobs were found in !1." Em portugues: "no qualifying jobs were encontrado in !1.". Temas: encontrado. Em outras palavras: Nenhum trabalho qualificado foi localizado dentro da definicao pesquisada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA203E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto qualifying jobs were found portugues encontrado Temas significa diagnosticar`
+> `AWSBIA203E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto qualifying jobs were found portugues encontrado Temas outras palavras Nenhum trabalho qualificado foi localizado dentro definicao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA203E no HCL Workload Automation 10.2.8?
@@ -78161,10 +78161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA203E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA204W (severidade: warning, familia AWSBIA - composer) tem o texto: "For !1, errors !2, warnings !3." Em portugues: "for !1, erros !2, warnings !3.". Temas: erros.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA204W (severidade: warning, familia AWSBIA - composer) tem o texto: "For !1, errors !2, warnings !3." Em portugues: "for !1, erros !2, warnings !3.". Temas: erros. Em outras palavras: A validacao da definicao informada apontou uma quantidade de erros e avisos para revisao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA204W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto For errors warnings portugues for erros Temas significa diagnosticar`
+> `AWSBIA204W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto For errors warnings portugues for erros Temas outras palavras validacao definicao informada apontou quantidade avisos revisao significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA204W no HCL Workload Automation 10.2.8?
@@ -78181,10 +78181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA204W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA210I (severidade: informational, familia AWSBIA - composer) tem o texto: "Job !1#!2 has been deleted." Em portugues: "job !1#!2 has estado deleted.". Temas: job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA210I (severidade: informational, familia AWSBIA - composer) tem o texto: "Job !1#!2 has been deleted." Em portugues: "job !1#!2 has estado deleted.". Temas: job. Em outras palavras: O trabalho informado foi excluido do ambiente de definicoes do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA210I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Job has been deleted portugues job estado Temas significa diagnosticar`
+> `AWSBIA210I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Job has been deleted portugues job estado Temas outras palavras trabalho informado foi excluido ambiente definicoes sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA210I no HCL Workload Automation 10.2.8?
@@ -78201,10 +78201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA210I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA211E (severidade: error, familia AWSBIA - composer) tem o texto: "Job !1#!2 already exists." Em portugues: "job !1#!2 already existe.". Temas: job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA211E (severidade: error, familia AWSBIA - composer) tem o texto: "Job !1#!2 already exists." Em portugues: "job !1#!2 already existe.". Temas: job. Em outras palavras: O trabalho informado ja existe no ambiente, nao sendo permitido criar outro igual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA211E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job already exists portugues job existe Temas significa diagnosticar`
+> `AWSBIA211E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job already exists portugues job existe Temas outras palavras trabalho informado ambiente nao sendo permitido criar outro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA211E no HCL Workload Automation 10.2.8?
@@ -78221,10 +78221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA211E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA213W (severidade: warning, familia AWSBIA - composer) tem o texto: "The job definition has warnings." Em portugues: "the job definicao has warnings.". Temas: job definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA213W (severidade: warning, familia AWSBIA - composer) tem o texto: "The job definition has warnings." Em portugues: "the job definicao has warnings.". Temas: job definicao. Em outras palavras: A definicao do trabalho possui avisos que precisam ser revisados antes da gravacao..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA213W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The job definition has warnings portugues the definicao Temas significa`
+> `AWSBIA213W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The job definition has warnings portugues the definicao Temas outras palavras trabalho possui avisos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA213W no HCL Workload Automation 10.2.8?
@@ -78241,10 +78241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA213W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA214E (severidade: error, familia AWSBIA - composer) tem o texto: "Error, job not updated." Em portugues: "erro, job nao updated.". Temas: erro nao job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA214E (severidade: error, familia AWSBIA - composer) tem o texto: "Error, job not updated." Em portugues: "erro, job nao updated.". Temas: erro nao job. Em outras palavras: Ocorreu um erro e o trabalho nao foi atualizado, permanecendo a definicao anterior..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA214E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error job not updated portugues erro nao Temas significa`
+> `AWSBIA214E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error job not updated portugues erro nao Temas outras palavras Ocorreu trabalho foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA214E no HCL Workload Automation 10.2.8?
@@ -78261,10 +78261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA214E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA215E (severidade: error, familia AWSBIA - composer) tem o texto: "Job Master not updated." Em portugues: "job principal nao updated.". Temas: nao job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA215E (severidade: error, familia AWSBIA - composer) tem o texto: "Job Master not updated." Em portugues: "job principal nao updated.". Temas: nao job. Em outras palavras: O mestre de trabalhos nao foi atualizado, indicando que a gravacao nao ocorreu..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA215E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job not updated portugues job principal nao Temas significa diagnosticar`
+> `AWSBIA215E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Job not updated portugues job principal nao Temas outras palavras mestre trabalhos foi atualizado indicando gravacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA215E no HCL Workload Automation 10.2.8?
@@ -78281,10 +78281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA215E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA221E (severidade: error, familia AWSBIA - composer) tem o texto: "Invalid composer command: "!1"" Em portugues: "invalido composer comando: "!1"". Temas: comando invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA221E (severidade: error, familia AWSBIA - composer) tem o texto: "Invalid composer command: "!1"" Em portugues: "invalido composer comando: "!1"". Temas: comando invalido. Em outras palavras: O comando do compositor informado e invalido e nao pode ser processado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer command composer comando AWSBIA221E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Invalid command portugues invalido comando Temas significa diagnosticar`
+> `composer command composer comando AWSBIA221E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Invalid command portugues invalido comando Temas outras palavras compositor informado nao processado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA221E no HCL Workload Automation 10.2.8?
@@ -78301,10 +78301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA221E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA222E (severidade: error, familia AWSBIA - composer) tem o texto: ""Modify" command is not valid in gui mode." Em portugues: ""modify" comando is nao valido in gui mode.". Temas: nao comando valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA222E (severidade: error, familia AWSBIA - composer) tem o texto: ""Modify" command is not valid in gui mode." Em portugues: ""modify" comando is nao valido in gui mode.". Temas: nao comando valido. Em outras palavras: O comando de alteracao nao e valido quando se opera em modo grafico da interface..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA222E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Modify command not valid gui mode portugues modify comando nao valido Temas significa`
+> `AWSBIA222E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Modify command not valid gui mode portugues modify comando nao valido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA222E no HCL Workload Automation 10.2.8?
@@ -78321,10 +78321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA222E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA223E (severidade: error, familia AWSBIA - composer) tem o texto: ""New" command is not valid in gui mode." Em portugues: ""new" comando is nao valido in gui mode.". Temas: nao comando valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA223E (severidade: error, familia AWSBIA - composer) tem o texto: ""New" command is not valid in gui mode." Em portugues: ""new" comando is nao valido in gui mode.". Temas: nao comando valido. Em outras palavras: O comando de criacao nao e valido quando se opera em modo grafico da interface..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA223E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto New command not valid gui mode portugues new comando nao valido Temas significa`
+> `AWSBIA223E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto New command not valid gui mode portugues new comando nao valido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA223E no HCL Workload Automation 10.2.8?
@@ -78341,10 +78341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA223E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA224E (severidade: error, familia AWSBIA - composer) tem o texto: ""Edit" command is not valid in gui mode." Em portugues: ""edit" comando is nao valido in gui mode.". Temas: nao comando valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA224E (severidade: error, familia AWSBIA - composer) tem o texto: ""Edit" command is not valid in gui mode." Em portugues: ""edit" comando is nao valido in gui mode.". Temas: nao comando valido. Em outras palavras: O comando de edicao nao e valido quando se opera em modo grafico da interface..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA224E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Edit command not valid gui mode portugues edit comando nao valido Temas significa`
+> `AWSBIA224E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Edit command not valid gui mode portugues edit comando nao valido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA224E no HCL Workload Automation 10.2.8?
@@ -78361,10 +78361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA224E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA225W (severidade: warning, familia AWSBIA - composer) tem o texto: "Workstation "!1" is defined as a workstation class." Em portugues: "estacao de trabalho "!1" is defined as a estacao de trabalho class.". Temas: estacao de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA225W (severidade: warning, familia AWSBIA - composer) tem o texto: "Workstation "!1" is defined as a workstation class." Em portugues: "estacao de trabalho "!1" is defined as a estacao de trabalho class.". Temas: estacao de trabalho. Em outras palavras: A estacao informada esta definida como uma classe de estacoes e nao como estacao individual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA225W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Workstation defined workstation class portugues estacao trabalho Temas significa`
+> `AWSBIA225W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Workstation defined workstation class portugues estacao trabalho Temas outras palavras informada definida classe`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA225W no HCL Workload Automation 10.2.8?
@@ -78381,7 +78381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA225W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA226W (severidade: warning, familia AWSBIA - composer) tem o texto: "Workstation "!1" is not the master domain manager. The parameters are expanded from the master domain manager." Em portugues: "estacao de trabalho "!1" is nao the principal dominio manager. the parametros are expanded from the principal dominio manager.". Temas: nao estacao de trabalho dominio parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA226W (severidade: warning, familia AWSBIA - composer) tem o texto: "Workstation "!1" is not the master domain manager. The parameters are expanded from the master domain manager." Em portugues: "estacao de trabalho "!1" is nao the principal dominio manager. the parametros are expanded from the principal dominio manager.". Temas: nao estacao de trabalho dominio parametros. Em outras palavras: A estacao informada nao e o gerenciador do dominio mestre, entao os parametros vem expandidos dessa origem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA226W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Workstation not the The parameters are expanded from portugues estacao trabalho nao principal dominio parametros`
@@ -78401,7 +78401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA226W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA227E (severidade: error, familia AWSBIA - composer) tem o texto: "The extended agent, standard agent or broker workstation "!1" cannot host itself." Em portugues: "the extended agente, standard agente or broker estacao de trabalho "!1" nao pode host servidor itself.". Temas: estacao de trabalho nao pode agente broker intermediario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA227E (severidade: error, familia AWSBIA - composer) tem o texto: "The extended agent, standard agent or broker workstation "!1" cannot host itself." Em portugues: "the extended agente, standard agente or broker estacao de trabalho "!1" nao pode host servidor itself.". Temas: estacao de trabalho nao pode agente broker intermediario. Em outras palavras: Uma estacao de trabalho nao pode hospedar a si mesma, independente do tipo de agente informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA227E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The extended agent standard broker workstation cannot host itself portugues the agente estacao trabalho nao`
@@ -78421,7 +78421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA227E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA228E (severidade: error, familia AWSBIA - composer) tem o texto: "!1 already exists and its type does not match what is being created." Em portugues: "!1 already existe and its tipo does nao match what is being created.". Temas: nao tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA228E (severidade: error, familia AWSBIA - composer) tem o texto: "!1 already exists and its type does not match what is being created." Em portugues: "!1 already existe and its tipo does nao match what is being created.". Temas: nao tipo. Em outras palavras: O objeto que se deseja criar já existe e o seu tipo não corresponde ao tipo informado na tentativa de criação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA228E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto already exists and its type does not match what being created portugues existe tipo nao`
@@ -78441,7 +78441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA228E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA229E (severidade: error, familia AWSBIA - composer) tem o texto: "The master domain manager "!1" is managing the domain "!2" as specified in the global options." Em portugues: "the principal dominio manager "!1" is managing the dominio "!2" as especificado in the global opcoes.". Temas: especificado dominio opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA229E (severidade: error, familia AWSBIA - composer) tem o texto: "The master domain manager "!1" is managing the domain "!2" as specified in the global options." Em portugues: "the principal dominio manager "!1" is managing the dominio "!2" as especificado in the global opcoes.". Temas: especificado dominio opcoes. Em outras palavras: O gerenciador de domínio mestre indicado está gerenciando o domínio informado, conforme definido nas opções globais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA229E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The managing the specified global options portugues principal dominio especificado opcoes Temas`
@@ -78461,10 +78461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA229E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA230E (severidade: error, familia AWSBIA - composer) tem o texto: "The domain "!1" cannot be included in a "cpuclass" definition." Em portugues: "the dominio "!1" nao pode be included in a "cpuclass" definicao.". Temas: nao pode dominio definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA230E (severidade: error, familia AWSBIA - composer) tem o texto: "The domain "!1" cannot be included in a "cpuclass" definition." Em portugues: "the dominio "!1" nao pode be included in a "cpuclass" definicao.". Temas: nao pode dominio definicao. Em outras palavras: O domínio indicado não pode ser incluído em uma definição de classe de processadores..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA230E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The cannot included cpuclass definition portugues the dominio nao definicao Temas significa`
+> `AWSBIA230E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The cannot included cpuclass definition portugues the dominio nao definicao Temas outras palavras indicado classe`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA230E no HCL Workload Automation 10.2.8?
@@ -78481,7 +78481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA230E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA231E (severidade: error, familia AWSBIA - composer) tem o texto: "The !1 entry type is unknown and cannot be included in a "cpuclass" definition" Em portugues: "the !1 entry tipo is desconhecido and nao pode be included in a "cpuclass" definicao". Temas: nao pode tipo definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA231E (severidade: error, familia AWSBIA - composer) tem o texto: "The !1 entry type is unknown and cannot be included in a "cpuclass" definition" Em portugues: "the !1 entry tipo is desconhecido and nao pode be included in a "cpuclass" definicao". Temas: nao pode tipo definicao. Em outras palavras: O tipo de entrada informado é desconhecido e por isso não pode ser incluído em uma definição de classe de processadores..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA231E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The entry type unknown and cannot included cpuclass definition portugues the tipo desconhecido nao definicao Temas`
@@ -78501,10 +78501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA231E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA250E (severidade: error, familia AWSBIA - composer) tem o texto: "No qualifying users were found in !1." Em portugues: "no qualifying usuarios were encontrado in !1.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA250E (severidade: error, familia AWSBIA - composer) tem o texto: "No qualifying users were found in !1." Em portugues: "no qualifying usuarios were encontrado in !1.". Temas: encontrado. Em outras palavras: Não foram encontrados usuários que atendam aos critérios de qualificação dentro do recurso informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA250E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto qualifying users were found portugues usuarios encontrado Temas significa diagnosticar`
+> `AWSBIA250E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto qualifying users were found portugues usuarios encontrado Temas outras palavras foram encontrados atendam aos dentro recurso informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA250E no HCL Workload Automation 10.2.8?
@@ -78521,10 +78521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA250E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA251I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 users in !2." Em portugues: "encontrado !1 usuarios in !2.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA251I (severidade: informational, familia AWSBIA - composer) tem o texto: "Found !1 users in !2." Em portugues: "encontrado !1 usuarios in !2.". Temas: encontrado. Em outras palavras: Foi localizada a quantidade informada de usuários dentro do recurso indicado na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA251I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found users portugues encontrado usuarios Temas significa diagnosticar`
+> `AWSBIA251I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Found users portugues encontrado usuarios Temas outras palavras Foi localizada quantidade informada dentro recurso indicado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA251I no HCL Workload Automation 10.2.8?
@@ -78581,10 +78581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA253I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA254I (severidade: informational, familia AWSBIA - composer) tem o texto: "User !1 has been changed during an update attempt." Em portugues: "usuario !1 has estado changed durante an atualizar tentativa.". Temas: usuario atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA254I (severidade: informational, familia AWSBIA - composer) tem o texto: "User !1 has been changed during an update attempt." Em portugues: "usuario !1 has estado changed durante an atualizar tentativa.". Temas: usuario atualizar. Em outras palavras: O usuário informado foi alterado durante a tentativa de atualização do cadastro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA254I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto User has been changed during update attempt portugues usuario estado durante atualizar tentativa Temas significa`
+> `AWSBIA254I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto User has been changed during update attempt portugues usuario estado durante atualizar tentativa Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA254I no HCL Workload Automation 10.2.8?
@@ -78601,10 +78601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA254I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA255I (severidade: informational, familia AWSBIA - composer) tem o texto: "For !1, errors !2, warnings !3." Em portugues: "for !1, erros !2, warnings !3.". Temas: erros.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA255I (severidade: informational, familia AWSBIA - composer) tem o texto: "For !1, errors !2, warnings !3." Em portugues: "for !1, erros !2, warnings !3.". Temas: erros. Em outras palavras: Para o objeto indicado foram encontrados a quantidade informada de erros e de avisos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA255I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto For errors warnings portugues for erros Temas significa diagnosticar`
+> `AWSBIA255I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto For errors warnings portugues for erros Temas outras palavras objeto indicado foram encontrados quantidade informada avisos significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA255I no HCL Workload Automation 10.2.8?
@@ -78621,10 +78621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA255I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA256E (severidade: error, familia AWSBIA - composer) tem o texto: "Userdata not updated." Em portugues: "userdata nao updated.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA256E (severidade: error, familia AWSBIA - composer) tem o texto: "Userdata not updated." Em portugues: "userdata nao updated.". Temas: nao. Em outras palavras: Os dados cadastrais do usuário não puderam ser atualizados conforme foi solicitado na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA256E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Userdata not updated portugues userdata nao Temas significa diagnosticar`
+> `AWSBIA256E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Userdata not updated portugues userdata nao Temas outras palavras dados cadastrais puderam atualizados conforme foi solicitado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA256E no HCL Workload Automation 10.2.8?
@@ -78641,10 +78641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA256E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA257E (severidade: error, familia AWSBIA - composer) tem o texto: "Error accessing Userdata." Em portugues: "erro accessing userdata.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA257E (severidade: error, familia AWSBIA - composer) tem o texto: "Error accessing Userdata." Em portugues: "erro accessing userdata.". Temas: erro. Em outras palavras: Ocorreu um erro ao tentar acessar os dados cadastrais do usuário no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA257E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error accessing Userdata portugues erro userdata Temas significa diagnosticar`
+> `AWSBIA257E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error accessing Userdata portugues erro userdata Temas outras palavras Ocorreu tentar acessar dados cadastrais sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA257E no HCL Workload Automation 10.2.8?
@@ -78661,10 +78661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA257E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA258E (severidade: error, familia AWSBIA - composer) tem o texto: "Error opening Userdata." Em portugues: "erro opening userdata.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA258E (severidade: error, familia AWSBIA - composer) tem o texto: "Error opening Userdata." Em portugues: "erro opening userdata.". Temas: erro. Em outras palavras: Ocorreu um erro ao tentar abrir o arquivo de dados cadastrais do usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA258E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error opening Userdata portugues erro userdata Temas significa diagnosticar`
+> `AWSBIA258E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error opening Userdata portugues erro userdata Temas outras palavras Ocorreu tentar abrir arquivo dados cadastrais significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA258E no HCL Workload Automation 10.2.8?
@@ -78701,10 +78701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA259I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA263I (severidade: informational, familia AWSBIA - composer) tem o texto: "User !1 has been deleted." Em portugues: "usuario !1 has estado deleted.". Temas: usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA263I (severidade: informational, familia AWSBIA - composer) tem o texto: "User !1 has been deleted." Em portugues: "usuario !1 has estado deleted.". Temas: usuario. Em outras palavras: O usuário informado foi removido definitivamente do cadastro de usuários do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA263I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto User has been deleted portugues usuario estado Temas significa diagnosticar`
+> `AWSBIA263I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto User has been deleted portugues usuario estado Temas outras palavras informado foi removido definitivamente cadastro ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA263I no HCL Workload Automation 10.2.8?
@@ -78721,10 +78721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA263I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA264E (severidade: error, familia AWSBIA - composer) tem o texto: "User definition already exists." Em portugues: "usuario definicao already existe.". Temas: usuario definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA264E (severidade: error, familia AWSBIA - composer) tem o texto: "User definition already exists." Em portugues: "usuario definicao already existe.". Temas: usuario definicao. Em outras palavras: Já existe uma definição de usuário com o mesmo nome no cadastro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA264E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto User definition already exists portugues usuario definicao existe Temas significa`
+> `AWSBIA264E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto User definition already exists portugues usuario definicao existe Temas outras palavras mesmo nome cadastro significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA264E no HCL Workload Automation 10.2.8?
@@ -78741,10 +78741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA264E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA265E (severidade: error, familia AWSBIA - composer) tem o texto: "User !1 does not exist in userdata: !2." Em portugues: "usuario !1 does nao existe in userdata: !2.". Temas: nao usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA265E (severidade: error, familia AWSBIA - composer) tem o texto: "User !1 does not exist in userdata: !2." Em portugues: "usuario !1 does nao existe in userdata: !2.". Temas: nao usuario. Em outras palavras: O usuário informado não existe no arquivo de dados cadastrais indicado na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA265E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto User does not exist userdata portugues usuario nao existe Temas significa`
+> `AWSBIA265E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto User does not exist userdata portugues usuario nao existe Temas outras palavras informado arquivo dados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA265E no HCL Workload Automation 10.2.8?
@@ -78761,10 +78761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA265E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA267W (severidade: warning, familia AWSBIA - composer) tem o texto: "The user definition has warnings." Em portugues: "the usuario definicao has warnings.". Temas: usuario definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA267W (severidade: warning, familia AWSBIA - composer) tem o texto: "The user definition has warnings." Em portugues: "the usuario definicao has warnings.". Temas: usuario definicao. Em outras palavras: A definição do usuário apresenta avisos que merecem atenção do operador responsável..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA267W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The user definition has warnings portugues the usuario definicao Temas significa`
+> `AWSBIA267W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The user definition has warnings portugues the usuario definicao Temas outras palavras apresenta avisos merecem operador`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA267W no HCL Workload Automation 10.2.8?
@@ -78781,10 +78781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA267W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA268E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access user !1." Em portugues: "you are nao authorized to acesso usuario !1.". Temas: nao usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA268E (severidade: error, familia AWSBIA - composer) tem o texto: "You are not authorized to access user !1." Em portugues: "you are nao authorized to acesso usuario !1.". Temas: nao usuario. Em outras palavras: Você não possui autorização de acesso para visualizar ou modificar o usuário informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA268E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access user portugues you nao acesso usuario Temas significa`
+> `AWSBIA268E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto You are not authorized access user portugues you nao acesso usuario Temas outras palavras possui`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA268E no HCL Workload Automation 10.2.8?
@@ -78821,10 +78821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA269E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA270E (severidade: error, familia AWSBIA - composer) tem o texto: "Command line arguments too long." Em portugues: "comando linha arguments too long.". Temas: comando linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA270E (severidade: error, familia AWSBIA - composer) tem o texto: "Command line arguments too long." Em portugues: "comando linha arguments too long.". Temas: comando linha. Em outras palavras: Os argumentos passados na linha de comando ultrapassaram o tamanho máximo permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA270E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Command line arguments too long portugues comando linha Temas significa`
+> `AWSBIA270E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Command line arguments too long portugues comando linha Temas outras palavras argumentos passados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA270E no HCL Workload Automation 10.2.8?
@@ -78841,10 +78841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA270E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA271E (severidade: error, familia AWSBIA - composer) tem o texto: "Unexpected keyword before or at caret position." Em portugues: "unexpected keyword antes or at caret position.". Temas: palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA271E (severidade: error, familia AWSBIA - composer) tem o texto: "Unexpected keyword before or at caret position." Em portugues: "unexpected keyword antes or at caret position.". Temas: palavra-chave. Em outras palavras: Foi encontrada uma palavra-chave inesperada antes ou exatamente na posição indicada pelo cursor..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA271E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Unexpected keyword before caret position portugues unexpected antes Temas palavra-chave significa`
+> `AWSBIA271E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Unexpected keyword before caret position portugues unexpected antes Temas palavra-chave outras palavras Foi encontrada inesperada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA271E no HCL Workload Automation 10.2.8?
@@ -78881,10 +78881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA272W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA273E (severidade: error, familia AWSBIA - composer) tem o texto: "The offset value !1 is not in the range -32767 to 32767." Em portugues: "the offset valor !1 is nao in the range -32767 to 32767.". Temas: nao valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA273E (severidade: error, familia AWSBIA - composer) tem o texto: "The offset value !1 is not in the range -32767 to 32767." Em portugues: "the offset valor !1 is nao in the range -32767 to 32767.". Temas: nao valor. Em outras palavras: O valor de deslocamento informado está fora do intervalo permitido entre menos trinta e dois mil setecentos e sessenta e sete e trinta e dois mil setecentos e sessenta e sete..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA273E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The offset value not the range portugues valor nao Temas significa`
+> `AWSBIA273E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The offset value not the range portugues valor nao Temas outras palavras deslocamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA273E no HCL Workload Automation 10.2.8?
@@ -78901,7 +78901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA273E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA274E (severidade: error, familia AWSBIA - composer) tem o texto: "Problems found while opening or acquiring the ShortID file" Em portugues: "problems encontrado while opening or acquiring the shortid arquivo". Temas: arquivo encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA274E (severidade: error, familia AWSBIA - composer) tem o texto: "Problems found while opening or acquiring the ShortID file" Em portugues: "problems encontrado while opening or acquiring the shortid arquivo". Temas: arquivo encontrado. Em outras palavras: Foram encontrados problemas ao abrir ou adquirir o arquivo de identificadores curtos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA274E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Problems found while opening acquiring the ShortID file portugues problems encontrado shortid arquivo Temas`
@@ -78921,10 +78921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA274E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA275I (severidade: informational, familia AWSBIA - composer) tem o texto: "Generation of the short ID is Active" Em portugues: "generation of the short id is active".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA275I (severidade: informational, familia AWSBIA - composer) tem o texto: "Generation of the short ID is Active" Em portugues: "generation of the short id is active". Em outras palavras: A geração do identificador curto para os nomes está ativa no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA275I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Generation the short Active portugues generation active significa diagnosticar`
+> `AWSBIA275I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Generation the short Active portugues generation active outras palavras identificador curto nomes ativa ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA275I no HCL Workload Automation 10.2.8?
@@ -78941,7 +78941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA275I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA276W (severidade: warning, familia AWSBIA - composer) tem o texto: "The short ID is not generated for job names shorter than !1 bytes." Em portugues: "the short id is nao generated for job names shorter que !1 bytes.". Temas: nao job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA276W (severidade: warning, familia AWSBIA - composer) tem o texto: "The short ID is not generated for job names shorter than !1 bytes." Em portugues: "the short id is nao generated for job names shorter que !1 bytes.". Temas: nao job. Em outras palavras: O identificador curto não é gerado para nomes de jobs menores que a quantidade de bytes informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA276W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The short not generated for job names shorter than bytes portugues the nao`
@@ -78961,10 +78961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA276W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA277E (severidade: error, familia AWSBIA - composer) tem o texto: "Problems retrieving the ShortID Value from file" Em portugues: "problems retrieving the shortid valor from arquivo". Temas: arquivo valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA277E (severidade: error, familia AWSBIA - composer) tem o texto: "Problems retrieving the ShortID Value from file" Em portugues: "problems retrieving the shortid valor from arquivo". Temas: arquivo valor. Em outras palavras: Foram encontrados problemas ao recuperar o valor do identificador curto a partir do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA277E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Problems retrieving the ShortID Value from file portugues problems shortid valor arquivo Temas significa`
+> `AWSBIA277E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Problems retrieving the ShortID Value from file portugues problems shortid valor arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA277E no HCL Workload Automation 10.2.8?
@@ -78981,7 +78981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA277E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA278E (severidade: error, familia AWSBIA - composer) tem o texto: "Error using cpuclass !1 on a job stream whose workstations are !2" Em portugues: "erro using cpuclass !1 on a job fluxo whose workstations are !2". Temas: erro job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA278E (severidade: error, familia AWSBIA - composer) tem o texto: "Error using cpuclass !1 on a job stream whose workstations are !2" Em portugues: "erro using cpuclass !1 on a job fluxo whose workstations are !2". Temas: erro job fluxo. Em outras palavras: Houve erro ao usar a classe de processadores informada em uma sequência de jobs cujas estações de trabalho são as indicadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA278E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Error using cpuclass job stream whose workstations are portugues erro fluxo Temas`
@@ -79001,7 +79001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA278E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA279W (severidade: warning, familia AWSBIA - composer) tem o texto: "The Job !1 is for workstation !2 with Ignore State" Em portugues: "the job !1 is for estacao de trabalho !2 with ignore estado". Temas: estacao de trabalho job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA279W (severidade: warning, familia AWSBIA - composer) tem o texto: "The Job !1 is for workstation !2 with Ignore State" Em portugues: "the job !1 is for estacao de trabalho !2 with ignore estado". Temas: estacao de trabalho job. Em outras palavras: O job informado está associado à estação de trabalho indicada com o estado de ignorar ativado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA279W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The Job for workstation with Ignore State portugues the job estacao trabalho ignore estado Temas`
@@ -79021,7 +79021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA279W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA280E (severidade: error, familia AWSBIA - composer) tem o texto: "There is an error in the connection parameters for composer. The port specified by the "-port" connection parameter is not numeric." Em portugues: "there is an erro in the conexao parametros for composer. the porta especificado by the "-porta" conexao parametro is nao numerico.". Temas: erro nao especificado parametro parametros numerico conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA280E (severidade: error, familia AWSBIA - composer) tem o texto: "There is an error in the connection parameters for composer. The port specified by the "-port" connection parameter is not numeric." Em portugues: "there is an erro in the conexao parametros for composer. the porta especificado by the "-porta" conexao parametro is nao numerico.". Temas: erro nao especificado parametro parametros numerico conexao. Em outras palavras: Existe um erro nos parâmetros de conexão do composer, pois a porta informada pelo parâmetro de porta não é um valor numérico..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA280E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There the connection parameters for The port specified parameter not numeric portugues there erro`
@@ -79081,10 +79081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA282E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA283E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer cannot open the temporary file "!1"." Em portugues: "an interno erro has ocorreu. composer nao pode open the temporary arquivo "!1".". Temas: erro arquivo ocorreu nao pode interno. Explicacao oficial: See message.temporary_file is the name and path of the temporary file that cannot be opened.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA283E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer cannot open the temporary file "!1"." Em portugues: "an interno erro has ocorreu. composer nao pode open the temporary arquivo "!1".". Temas: erro arquivo ocorreu nao pode interno. Em outras palavras: Ocorreu um erro interno e o composer não conseguiu abrir o arquivo temporário indicado.. Explicacao oficial: See message.temporary_file is the name and path of the temporary file that cannot be opened.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer cannot composer nao AWSBIA283E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer cannot open the temporary file portugues interno erro ocorreu nao`
+> `composer cannot composer nao composer n AWSBIA283E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer cannot open the temporary file portugues interno erro ocorreu nao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA283E no HCL Workload Automation 10.2.8?
@@ -79101,10 +79101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA283E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA284E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer cannot open the temporary file "!1" for writing." Em portugues: "an interno erro has ocorreu. composer nao pode open the temporary arquivo "!1" for writing.". Temas: erro arquivo ocorreu nao pode interno. Explicacao oficial: See message.temporary_file is the name and path of the temporary file that cannot be opened for writing.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA284E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer cannot open the temporary file "!1" for writing." Em portugues: "an interno erro has ocorreu. composer nao pode open the temporary arquivo "!1" for writing.". Temas: erro arquivo ocorreu nao pode interno. Em outras palavras: Ocorreu um erro interno e o composer não conseguiu abrir o arquivo temporário indicado para escrita.. Explicacao oficial: See message.temporary_file is the name and path of the temporary file that cannot be opened for writing.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer cannot composer nao AWSBIA284E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer cannot open the temporary file for writing portugues interno erro ocorreu nao`
+> `composer cannot composer nao composer n AWSBIA284E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer cannot open the temporary file for writing portugues interno erro ocorreu nao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA284E no HCL Workload Automation 10.2.8?
@@ -79121,10 +79121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA284E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA285E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer cannot open the temporary file "!1" for reading." Em portugues: "an interno erro has ocorreu. composer nao pode open the temporary arquivo "!1" for reading.". Temas: erro arquivo ocorreu nao pode interno. Explicacao oficial: See message.temporary_file is the name and path of the temporary file that cannot be opened for reading.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA285E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer cannot open the temporary file "!1" for reading." Em portugues: "an interno erro has ocorreu. composer nao pode open the temporary arquivo "!1" for reading.". Temas: erro arquivo ocorreu nao pode interno. Em outras palavras: Ocorreu um erro interno e o composer não conseguiu abrir o arquivo temporário indicado para leitura.. Explicacao oficial: See message.temporary_file is the name and path of the temporary file that cannot be opened for reading.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer cannot composer nao AWSBIA285E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer cannot open the temporary file for reading portugues interno erro ocorreu nao`
+> `composer cannot composer nao composer n AWSBIA285E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer cannot open the temporary file for reading portugues interno erro ocorreu nao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA285E no HCL Workload Automation 10.2.8?
@@ -79181,10 +79181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA287W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA288I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects updated: !1" Em portugues: "total objects updated: !1".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA288I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects updated: !1" Em portugues: "total objects updated: !1". Em outras palavras: Foi informada a quantidade total de objetos que foram atualizados na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA288I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects updated portugues total significa diagnosticar`
+> `AWSBIA288I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects updated portugues total outras palavras Foi informada quantidade objetos foram atualizados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA288I no HCL Workload Automation 10.2.8?
@@ -79201,10 +79201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA288I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA289I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects extracted: !1" Em portugues: "total objects extracted: !1".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA289I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects extracted: !1" Em portugues: "total objects extracted: !1". Em outras palavras: Foi informada a quantidade total de objetos que foram extraídos na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA289I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects extracted portugues total significa diagnosticar`
+> `AWSBIA289I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects extracted portugues total outras palavras Foi informada quantidade objetos foram significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA289I no HCL Workload Automation 10.2.8?
@@ -79221,10 +79221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA289I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA290I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects deleted: !1" Em portugues: "total objects deleted: !1".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA290I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects deleted: !1" Em portugues: "total objects deleted: !1". Em outras palavras: Foi informada a quantidade total de objetos que foram excluídos na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA290I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects deleted portugues total significa diagnosticar`
+> `AWSBIA290I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects deleted portugues total outras palavras Foi informada quantidade objetos foram significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA290I no HCL Workload Automation 10.2.8?
@@ -79261,10 +79261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA291I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA292I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects added: !1" Em portugues: "total objects added: !1".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA292I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects added: !1" Em portugues: "total objects added: !1". Em outras palavras: Foi informada a quantidade total de objetos que foram adicionados na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA292I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects added portugues total significa diagnosticar`
+> `AWSBIA292I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects added portugues total outras palavras Foi informada quantidade objetos foram adicionados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA292I no HCL Workload Automation 10.2.8?
@@ -79281,10 +79281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA292I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA293E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer was not able to initialize the HTTP or HTTPS connection." Em portugues: "an interno erro has ocorreu. composer was nao able to initialize the http or https conexao.". Temas: erro nao ocorreu interno conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA293E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. Composer was not able to initialize the HTTP or HTTPS connection." Em portugues: "an interno erro has ocorreu. composer was nao able to initialize the http or https conexao.". Temas: erro nao ocorreu interno conexao. Em outras palavras: Ocorreu um erro interno e o composer não conseguiu inicializar a conexão HTTP ou HTTPS..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer was AWSBIA293E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer was not able initialize the HTTP HTTPS connection portugues interno erro ocorreu`
+> `composer was composer n AWSBIA293E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred Composer was not able initialize the HTTP HTTPS connection portugues interno erro ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA293E no HCL Workload Automation 10.2.8?
@@ -79301,10 +79301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA293E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA294E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. The composer command line server could not authenticate the client." Em portugues: "an interno erro has ocorreu. the composer comando linha servidor conseguiu nao authenticate the cliente.". Temas: erro nao ocorreu comando interno linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA294E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. The composer command line server could not authenticate the client." Em portugues: "an interno erro has ocorreu. the composer comando linha servidor conseguiu nao authenticate the cliente.". Temas: erro nao ocorreu comando interno linha. Em outras palavras: Ocorreu um erro interno e o servidor de linha de comando do composer não conseguiu autenticar o cliente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer command composer comando AWSBIA294E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred The command line server could not authenticate the client portugues interno erro ocorreu`
+> `composer command composer comando composer n AWSBIA294E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred The command line server could not authenticate the client portugues interno erro ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA294E no HCL Workload Automation 10.2.8?
@@ -79321,10 +79321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA294E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA295I (severidade: informational, familia AWSBIA - composer) tem o texto: "Authentication successful." Em portugues: "authentication successful.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA295I (severidade: informational, familia AWSBIA - composer) tem o texto: "Authentication successful." Em portugues: "authentication successful.". Em outras palavras: A autenticação do usuário no ambiente foi concluída com sucesso e o acesso foi liberado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA295I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Authentication successful portugues authentication significa diagnosticar`
+> `AWSBIA295I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Authentication successful portugues authentication outras palavras ambiente foi sucesso acesso liberado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA295I no HCL Workload Automation 10.2.8?
@@ -79341,10 +79341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA295I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA296I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects successfully validated: !1" Em portugues: "total objects successfully validated: !1". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA296I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects successfully validated: !1" Em portugues: "total objects successfully validated: !1". Temas: com sucesso. Em outras palavras: Foi informada a quantidade total de objetos que foram validados com sucesso na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA296I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects successfully validated portugues total Temas sucesso significa diagnosticar`
+> `AWSBIA296I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects successfully validated portugues total Temas sucesso outras palavras Foi informada quantidade objetos foram validados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA296I no HCL Workload Automation 10.2.8?
@@ -79381,7 +79381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA297E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA298E (severidade: error, familia AWSBIA - composer) tem o texto: "If you want to rename a job, the associated workstation and job stream cannot be renamed in the same action." Em portugues: "if you want to rename a job, the associated estacao de trabalho and job fluxo nao pode be renamed in the same action.". Temas: estacao de trabalho job nao pode fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA298E (severidade: error, familia AWSBIA - composer) tem o texto: "If you want to rename a job, the associated workstation and job stream cannot be renamed in the same action." Em portugues: "if you want to rename a job, the associated estacao de trabalho and job fluxo nao pode be renamed in the same action.". Temas: estacao de trabalho job nao pode fluxo. Em outras palavras: Para renomear um job, a estação de trabalho e a sequência de jobs associadas não podem ser renomeadas na mesma ação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA298E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto you want rename job the associated workstation and stream cannot renamed same action portugues`
@@ -79401,10 +79401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA298E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA299I (severidade: informational, familia AWSBIA - composer) tem o texto: "Looking for !1 objects." Em portugues: "looking for !1 objects.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA299I (severidade: informational, familia AWSBIA - composer) tem o texto: "Looking for !1 objects." Em portugues: "looking for !1 objects.". Em outras palavras: O sistema está procurando pelos objetos do tipo informado dentro do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA299I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Looking for objects portugues looking significa diagnosticar`
+> `AWSBIA299I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Looking for objects portugues looking outras palavras sistema procurando pelos objetos tipo informado dentro ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA299I no HCL Workload Automation 10.2.8?
@@ -79421,7 +79421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA299I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA300I (severidade: informational, familia AWSBIA - composer) tem o texto: "The scheduling language syntax has been successfully validated for object "!1"." Em portugues: "the scheduling language sintaxe has estado successfully validated for object "!1".". Temas: sintaxe com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA300I (severidade: informational, familia AWSBIA - composer) tem o texto: "The scheduling language syntax has been successfully validated for object "!1"." Em portugues: "the scheduling language sintaxe has estado successfully validated for object "!1".". Temas: sintaxe com sucesso. Em outras palavras: A sintaxe da linguagem de escalonamento foi validada com sucesso para o objeto indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA300I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto The scheduling language syntax has been successfully validated for object portugues the sintaxe estado`
@@ -79441,7 +79441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA300I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA301W (severidade: warning, familia AWSBIA - composer) tem o texto: "The scheduling language syntax check for object "!1" has produced the following number of warnings !2." Em portugues: "the scheduling language sintaxe check for object "!1" has produced the seguinte numero of warnings !2.". Temas: sintaxe numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA301W (severidade: warning, familia AWSBIA - composer) tem o texto: "The scheduling language syntax check for object "!1" has produced the following number of warnings !2." Em portugues: "the scheduling language sintaxe check for object "!1" has produced the seguinte numero of warnings !2.". Temas: sintaxe numero. Em outras palavras: A verificação de sintaxe da linguagem de escalonamento do objeto indicado gerou a quantidade informada de avisos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA301W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The scheduling language syntax check for object has produced the following number warnings portugues sintaxe`
@@ -79481,10 +79481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA302I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA303W (severidade: warning, familia AWSBIA - composer) tem o texto: "Total warnings in "!1": !2." Em portugues: "total warnings in "!1": !2.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA303W (severidade: warning, familia AWSBIA - composer) tem o texto: "Total warnings in "!1": !2." Em portugues: "total warnings in "!1": !2.". Em outras palavras: O objeto indicado apresenta a quantidade informada de avisos totais na validação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA303W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Total warnings portugues total significa diagnosticar`
+> `AWSBIA303W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto Total warnings portugues total outras palavras objeto indicado apresenta quantidade informada avisos totais significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA303W no HCL Workload Automation 10.2.8?
@@ -79521,10 +79521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA304W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA307I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects locked: !1." Em portugues: "total objects locked: !1.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA307I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects locked: !1." Em portugues: "total objects locked: !1.". Em outras palavras: Foi informada a quantidade total de objetos que foram bloqueados na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA307I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects locked portugues total significa diagnosticar`
+> `AWSBIA307I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects locked portugues total outras palavras Foi informada quantidade objetos foram bloqueados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA307I no HCL Workload Automation 10.2.8?
@@ -79541,10 +79541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA307I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA308I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects unlocked: !1." Em portugues: "total objects unlocked: !1.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA308I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects unlocked: !1." Em portugues: "total objects unlocked: !1.". Em outras palavras: Foi informada a quantidade total de objetos que foram desbloqueados na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA308I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects unlocked portugues total significa diagnosticar`
+> `AWSBIA308I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects unlocked portugues total outras palavras Foi informada quantidade objetos foram desbloqueados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA308I no HCL Workload Automation 10.2.8?
@@ -79561,7 +79561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA308I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA309E (severidade: error, familia AWSBIA - composer) tem o texto: "The "validto" date must be later than the "validfrom" date in run cycle "!1" defined for "!2"." Em portugues: "the "validto" date must be later que the "validfrom" date in run cycle "!1" defined for "!2".". Temas: execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA309E (severidade: error, familia AWSBIA - composer) tem o texto: "The "validto" date must be later than the "validfrom" date in run cycle "!1" defined for "!2"." Em portugues: "the "validto" date must be later que the "validfrom" date in run cycle "!1" defined for "!2".". Temas: execucao. Em outras palavras: A data de validade final deve ser posterior à data de validade inicial no ciclo de execução definido para o objeto indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA309E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The validto date must later than the validfrom run cycle defined for portugues`
@@ -79581,7 +79581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA309E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA310E (severidade: error, familia AWSBIA - composer) tem o texto: "The "validto" date must be later than the "validfrom" date in a run cycle defined for job stream "!1"." Em portugues: "the "validto" date must be later que the "validfrom" date in a run cycle defined for job fluxo "!1".". Temas: job fluxo execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA310E (severidade: error, familia AWSBIA - composer) tem o texto: "The "validto" date must be later than the "validfrom" date in a run cycle defined for job stream "!1"." Em portugues: "the "validto" date must be later que the "validfrom" date in a run cycle defined for job fluxo "!1".". Temas: job fluxo execucao. Em outras palavras: A data de validade final deve ser posterior à data de validade inicial em um ciclo de execução definido para a sequência de jobs indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA310E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The validto date must later than the validfrom run cycle defined for job stream portugues`
@@ -79601,7 +79601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA310E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA315E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error. The syntax of either the "follows" or the "matching" keywords is not correct." Em portugues: "there is a sintaxe erro. the sintaxe of either the "follows" or the "matching" keywords is nao correct.". Temas: erro nao sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA315E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error. The syntax of either the "follows" or the "matching" keywords is not correct." Em portugues: "there is a sintaxe erro. the sintaxe of either the "follows" or the "matching" keywords is nao correct.". Temas: erro nao sintaxe. Em outras palavras: Há um erro de sintaxe, pois a forma das palavras-chave que indicam dependência de seguimento ou de correspondência está incorreta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA315E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax The either the follows matching keywords not correct portugues there sintaxe erro`
@@ -79621,7 +79621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA315E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA316E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. The file "!1" could not be read." Em portugues: "an interno erro has ocorreu. the arquivo "!1" conseguiu nao be ler.". Temas: erro nao arquivo ocorreu interno ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA316E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. The file "!1" could not be read." Em portugues: "an interno erro has ocorreu. the arquivo "!1" conseguiu nao be ler.". Temas: erro nao arquivo ocorreu interno ler leitura. Em outras palavras: Ocorreu um erro interno e o arquivo indicado não pôde ser lido pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA316E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred The file could not read portugues interno erro ocorreu the arquivo conseguiu nao ler Temas`
@@ -79641,7 +79641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA316E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA317E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. The file "!1" could not be opened due to a memory allocation error." Em portugues: "an interno erro has ocorreu. the arquivo "!1" conseguiu nao be opened due to a memoria allocation erro.". Temas: erro nao arquivo ocorreu interno memoria.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA317E (severidade: error, familia AWSBIA - composer) tem o texto: "An internal error has occurred. The file "!1" could not be opened due to a memory allocation error." Em portugues: "an interno erro has ocorreu. the arquivo "!1" conseguiu nao be opened due to a memoria allocation erro.". Temas: erro nao arquivo ocorreu interno memoria. Em outras palavras: Ocorreu um erro interno e o arquivo indicado não pôde ser aberto por falta de memória disponível para alocação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA317E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto internal has occurred The file could not opened due memory allocation portugues interno erro ocorreu the arquivo`
@@ -79661,7 +79661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA317E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA319I (severidade: informational, familia AWSBIA - composer) tem o texto: "The user options file "!1" has been successfully saved." Em portugues: "the usuario opcoes arquivo "!1" has estado successfully saved.". Temas: arquivo usuario opcoes com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA319I (severidade: informational, familia AWSBIA - composer) tem o texto: "The user options file "!1" has been successfully saved." Em portugues: "the usuario opcoes arquivo "!1" has estado successfully saved.". Temas: arquivo usuario opcoes com sucesso. Em outras palavras: O arquivo de opções do usuário indicado foi salvo com sucesso no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA319I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto The user options file has been successfully saved portugues the usuario opcoes arquivo estado Temas`
@@ -79681,7 +79681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA319I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA320E (severidade: error, familia AWSBIA - composer) tem o texto: "An error occurred while trying to save the user options file "!1"." Em portugues: "an erro ocorreu while trying to save the usuario opcoes arquivo "!1".". Temas: erro arquivo ocorreu usuario opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA320E (severidade: error, familia AWSBIA - composer) tem o texto: "An error occurred while trying to save the user options file "!1"." Em portugues: "an erro ocorreu while trying to save the usuario opcoes arquivo "!1".". Temas: erro arquivo ocorreu usuario opcoes. Em outras palavras: Ocorreu um erro ao tentar salvar o arquivo de opções do usuário indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA320E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto occurred while trying save the user options file portugues erro ocorreu usuario opcoes arquivo Temas`
@@ -79701,7 +79701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA320E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA321I (severidade: informational, familia AWSBIA - composer) tem o texto: "The credentials to connect to the remote server have not been specified." Em portugues: "the credentials to connect to the remoto servidor have nao estado especificado.". Temas: nao especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA321I (severidade: informational, familia AWSBIA - composer) tem o texto: "The credentials to connect to the remote server have not been specified." Em portugues: "the credentials to connect to the remoto servidor have nao estado especificado.". Temas: nao especificado. Em outras palavras: As credenciais para conectar ao servidor remoto não foram informadas na configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA321I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto The credentials connect the remote server have not been specified portugues remoto servidor nao estado`
@@ -79721,7 +79721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA321I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA322W (severidade: warning, familia AWSBIA - composer) tem o texto: "The local prompt text in job stream "!1" exceeds the maximum length allowed of !2 bytes. It has been truncated." Em portugues: "the local prompt text in job fluxo "!1" exceeds the maximo tamanho allowed of !2 bytes. it has estado truncated.". Temas: job fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA322W (severidade: warning, familia AWSBIA - composer) tem o texto: "The local prompt text in job stream "!1" exceeds the maximum length allowed of !2 bytes. It has been truncated." Em portugues: "the local prompt text in job fluxo "!1" exceeds the maximo tamanho allowed of !2 bytes. it has estado truncated.". Temas: job fluxo. Em outras palavras: O texto do prompt local na sequência de jobs indicada ultrapassou o tamanho máximo permitido e foi truncado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA322W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The local prompt text job stream exceeds the maximum length allowed bytes has been truncated portugues`
@@ -79741,7 +79741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA322W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA323W (severidade: warning, familia AWSBIA - composer) tem o texto: "The total units for the resource "!1" in job stream "!2" is "!3" units, which exceeds the maximum number of resource units: !4." Em portugues: "the total units for the recurso "!1" in job fluxo "!2" is "!3" units, which exceeds the maximo numero of recurso units: !4.". Temas: job numero fluxo recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA323W (severidade: warning, familia AWSBIA - composer) tem o texto: "The total units for the resource "!1" in job stream "!2" is "!3" units, which exceeds the maximum number of resource units: !4." Em portugues: "the total units for the recurso "!1" in job fluxo "!2" is "!3" units, which exceeds the maximo numero of recurso units: !4.". Temas: job numero fluxo recurso. Em outras palavras: O total de unidades do recurso indicado na sequência de jobs excede o limite máximo de unidades de recurso permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA323W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The total units for the resource job stream which exceeds maximum number portugues`
@@ -79761,7 +79761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA323W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA324E (severidade: error, familia AWSBIA - composer) tem o texto: "The total units for the resource "!1" in job "!2" is "!3" units, which exceeds the maximum number of resource units: !4." Em portugues: "the total units for the recurso "!1" in job "!2" is "!3" units, which exceeds the maximo numero of recurso units: !4.". Temas: job numero recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA324E (severidade: error, familia AWSBIA - composer) tem o texto: "The total units for the resource "!1" in job "!2" is "!3" units, which exceeds the maximum number of resource units: !4." Em portugues: "the total units for the recurso "!1" in job "!2" is "!3" units, which exceeds the maximo numero of recurso units: !4.". Temas: job numero recurso. Em outras palavras: O total de unidades do recurso indicado no job informado excede o limite máximo de unidades de recurso permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA324E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The total units for the resource job which exceeds maximum number portugues`
@@ -79781,7 +79781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA324E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA325W (severidade: warning, familia AWSBIA - composer) tem o texto: "The local prompt text in job "!1" exceeds the maximum length allowed of !2 bytes. It has been truncated." Em portugues: "the local prompt text in job "!1" exceeds the maximo tamanho allowed of !2 bytes. it has estado truncated.". Temas: job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA325W (severidade: warning, familia AWSBIA - composer) tem o texto: "The local prompt text in job "!1" exceeds the maximum length allowed of !2 bytes. It has been truncated." Em portugues: "the local prompt text in job "!1" exceeds the maximo tamanho allowed of !2 bytes. it has estado truncated.". Temas: job. Em outras palavras: O texto do prompt local no job indicado ultrapassou o tamanho máximo permitido e foi truncado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA325W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The local prompt text job exceeds the maximum length allowed bytes has been truncated portugues`
@@ -79801,7 +79801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA325W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA326W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "server" field has been supplied for extended agent "!1", for which it is not required. It has been ignored." Em portugues: "the "servidor" field has estado informado for extended agente "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao informado agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA326W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "server" field has been supplied for extended agent "!1", for which it is not required. It has been ignored." Em portugues: "the "servidor" field has estado informado for extended agente "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao informado agente. Em outras palavras: O campo de servidor foi informado para o agente estendido indicado, porém ele não é necessário e foi ignorado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA326W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The server field has been supplied for extended agent which not required ignored portugues the servidor`
@@ -79821,7 +79821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA326W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA327W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "fullstatus" field has been supplied as "on" for extended agent "!1", for which it is not required. It has been set to "off"." Em portugues: "the "fullstatus" field has estado informado as "on" for extended agente "!1", for which it is nao obrigatorio. it has estado set to "off".". Temas: nao informado agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA327W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "fullstatus" field has been supplied as "on" for extended agent "!1", for which it is not required. It has been set to "off"." Em portugues: "the "fullstatus" field has estado informado as "on" for extended agente "!1", for which it is nao obrigatorio. it has estado set to "off".". Temas: nao informado agente. Em outras palavras: O campo de status completo foi informado como ativo para o agente estendido indicado, porém foi alterado para inativo por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA327W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The fullstatus field has been supplied for extended agent which not required set off portugues the`
@@ -79841,7 +79841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA327W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA328W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "behindfirewall" field has been supplied for extended agent "!1", for which it is not required. It has been ignored." Em portugues: "the "behindfirewall" field has estado informado for extended agente "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao informado agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA328W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "behindfirewall" field has been supplied for extended agent "!1", for which it is not required. It has been ignored." Em portugues: "the "behindfirewall" field has estado informado for extended agente "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao informado agente. Em outras palavras: O campo que indica se está atrás de firewall foi informado para o agente estendido indicado, porém foi ignorado por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA328W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The behindfirewall field has been supplied for extended agent which not required ignored portugues the`
@@ -79861,7 +79861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA328W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA329W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "securitylevel" field and the "secureaddr" fields have been supplied for extended agent "!1", for which they are not required. They have been ignored." Em portugues: "the "securitylevel" field and the "secureaddr" fields have estado informado for extended agente "!1", for which they are nao obrigatorio. they have estado ignored.". Temas: nao informado agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA329W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "securitylevel" field and the "secureaddr" fields have been supplied for extended agent "!1", for which they are not required. They have been ignored." Em portugues: "the "securitylevel" field and the "secureaddr" fields have estado informado for extended agente "!1", for which they are nao obrigatorio. they have estado ignored.". Temas: nao informado agente. Em outras palavras: Os campos de nível de segurança e de endereço seguro foram informados para o agente estendido indicado, porém foram ignorados por não serem necessários..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA329W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The securitylevel field and the secureaddr fields have been supplied for extended agent which they are not required They`
@@ -79881,7 +79881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA329W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA330W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "autolink" field has been supplied as "on" for extended agent "!1", for which it is not required. It has been set to "off"." Em portugues: "the "autolink" field has estado informado as "on" for extended agente "!1", for which it is nao obrigatorio. it has estado set to "off".". Temas: nao informado agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA330W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "autolink" field has been supplied as "on" for extended agent "!1", for which it is not required. It has been set to "off"." Em portugues: "the "autolink" field has estado informado as "on" for extended agente "!1", for which it is nao obrigatorio. it has estado set to "off".". Temas: nao informado agente. Em outras palavras: O campo de vinculação automática foi informado como ativo para o agente estendido indicado, porém foi alterado para inativo por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA330W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The autolink field has been supplied for extended agent which not required set off portugues the`
@@ -79901,7 +79901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA330W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA331W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "fullstatus" field has been supplied as "on" for standard agent or broker workstation "!1", for which it is not required. It has been set to "off"." Em portugues: "the "fullstatus" field has estado informado as "on" for standard agente or broker estacao de trabalho "!1", for which it is nao obrigatorio. it has estado set to "off".". Temas: nao estacao de trabalho informado agente broker intermediario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA331W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "fullstatus" field has been supplied as "on" for standard agent or broker workstation "!1", for which it is not required. It has been set to "off"." Em portugues: "the "fullstatus" field has estado informado as "on" for standard agente or broker estacao de trabalho "!1", for which it is nao obrigatorio. it has estado set to "off".". Temas: nao estacao de trabalho informado agente broker intermediario. Em outras palavras: O campo de status completo foi informado como ativo para a estação de trabalho padrão ou broker indicada, porém foi alterado para inativo por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA331W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The fullstatus field has been supplied for standard agent broker workstation which not required set off portugues`
@@ -79921,7 +79921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA331W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA332W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "fullstatus" field has been supplied as "off" for domain manager "!1", which is not correct. It has been set to "on"." Em portugues: "the "fullstatus" field has estado informado as "off" for dominio manager "!1", which is nao correct. it has estado set to "on".". Temas: nao informado dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA332W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "fullstatus" field has been supplied as "off" for domain manager "!1", which is not correct. It has been set to "on"." Em portugues: "the "fullstatus" field has estado informado as "off" for dominio manager "!1", which is nao correct. it has estado set to "on".". Temas: nao informado dominio. Em outras palavras: O campo de status completo foi informado como inativo para o gerenciador de domínio indicado, porém foi corrigido para ativo por ser o valor correto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA332W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The fullstatus field has been supplied off for which not correct set portugues the estado`
@@ -79941,7 +79941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA332W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA333W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "server" field has been supplied for domain manager "!1", for which it is not required. It has been ignored." Em portugues: "the "servidor" field has estado informado for dominio manager "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao informado dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA333W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "server" field has been supplied for domain manager "!1", for which it is not required. It has been ignored." Em portugues: "the "servidor" field has estado informado for dominio manager "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao informado dominio. Em outras palavras: O campo de servidor foi informado para o gerenciador de domínio indicado, porém foi ignorado por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA333W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The server field has been supplied for which not required ignored portugues the servidor estado`
@@ -79961,7 +79961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA333W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA334W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "resolvedep" field has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "resolvedep" field has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA334W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "resolvedep" field has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "resolvedep" field has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado. Em outras palavras: O campo de resolução de dependências foi informado para a estação de trabalho indicada, porém foi ignorado por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA334W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The resolvedep field has been supplied for workstation which not required ignored portugues the`
@@ -79981,7 +79981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA334W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA335W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "secureaddr" field has been supplied for workstation "!1", but the "securitylevel" field has not. It has been ignored." Em portugues: "the "secureaddr" field has estado informado for estacao de trabalho "!1", but the "securitylevel" field has nao. it has estado ignored.". Temas: nao estacao de trabalho informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA335W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "secureaddr" field has been supplied for workstation "!1", but the "securitylevel" field has not. It has been ignored." Em portugues: "the "secureaddr" field has estado informado for estacao de trabalho "!1", but the "securitylevel" field has nao. it has estado ignored.". Temas: nao estacao de trabalho informado. Em outras palavras: O campo de endereço seguro foi informado para a estação de trabalho indicada, porém foi ignorado porque o nível de segurança não foi informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA335W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The secureaddr field has been supplied for workstation but the securitylevel not ignored portugues`
@@ -80001,7 +80001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA335W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA336W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "access" keyword has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "acesso" keyword has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA336W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "access" keyword has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "acesso" keyword has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave. Em outras palavras: A palavra-chave de acesso foi informada para a estação de trabalho indicada, porém foi ignorada por não ser necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA336W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The access keyword has been supplied for workstation which not required ignored portugues the acesso`
@@ -80021,7 +80021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA336W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA337W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "manager" field has been supplied for domain "!1", for which it is not required as it is now obsolete. It has been ignored." Em portugues: "the "manager" field has estado informado for dominio "!1", for which it is nao obrigatorio as it is now obsolete. it has estado ignored.". Temas: nao informado dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA337W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "manager" field has been supplied for domain "!1", for which it is not required as it is now obsolete. It has been ignored." Em portugues: "the "manager" field has estado informado for dominio "!1", for which it is nao obrigatorio as it is now obsolete. it has estado ignored.". Temas: nao informado dominio. Em outras palavras: O campo de gerenciador foi informado para o domínio indicado, porém foi ignorado por estar obsoleto e não ser mais necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA337W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The field has been supplied for which not required now obsolete ignored portugues the estado`
@@ -80041,7 +80041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA337W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA338W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "domain" field has been supplied for extended agent "!1", but the "host" field value is not "$MANAGER". It has been ignored." Em portugues: "the "dominio" field has estado informado for extended agente "!1", but the "host servidor" field valor is nao "$manager". it has estado ignored.". Temas: nao informado valor agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA338W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "domain" field has been supplied for extended agent "!1", but the "host" field value is not "$MANAGER". It has been ignored." Em portugues: "the "dominio" field has estado informado for extended agente "!1", but the "host servidor" field valor is nao "$manager". it has estado ignored.". Temas: nao informado valor agente. Em outras palavras: O campo de domínio foi informado para o agente estendido indicado, porém foi ignorado porque o valor do campo de host não corresponde ao valor esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA338W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The field has been supplied for extended agent but the host value not ignored portugues dominio`
@@ -80061,7 +80061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA338W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA339W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "securitylevel" field has been supplied for agent "!1", but the "secureaddr" field (SSL port) has not. The default value of 31113 is used for "secureaddr"." Em portugues: "the "securitylevel" field has estado informado for agente "!1", but the "secureaddr" field (ssl porta) has nao. the default valor of 31113 is used for "secureaddr".". Temas: nao informado valor agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA339W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "securitylevel" field has been supplied for agent "!1", but the "secureaddr" field (SSL port) has not. The default value of 31113 is used for "secureaddr"." Em portugues: "the "securitylevel" field has estado informado for agente "!1", but the "secureaddr" field (ssl porta) has nao. the default valor of 31113 is used for "secureaddr".". Temas: nao informado valor agente. Em outras palavras: O nível de segurança foi informado para o agente indicado sem o endereço seguro, por isso foi usado o valor padrão para a porta SSL..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA339W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The securitylevel field has been supplied for agent but the secureaddr SSL port not default value used`
@@ -80101,7 +80101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA340W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA341W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "host" field has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "host servidor" field has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA341W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "host" field has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "host servidor" field has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado. Em outras palavras: O campo de host foi informado para a estação de trabalho indicada, porém foi ignorado por não ser necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA341W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The host field has been supplied for workstation which not required ignored portugues the servidor`
@@ -80121,7 +80121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA341W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA342E (severidade: error, familia AWSBIA - composer) tem o texto: "The filter keyword "!1" cannot be used for the supplied object." Em portugues: "the filter keyword "!1" nao pode be used for the informado object.". Temas: nao pode informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA342E (severidade: error, familia AWSBIA - composer) tem o texto: "The filter keyword "!1" cannot be used for the supplied object." Em portugues: "the filter keyword "!1" nao pode be used for the informado object.". Temas: nao pode informado palavra-chave. Em outras palavras: A palavra-chave de filtro informada não pode ser usada para o tipo de objeto fornecido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA342E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The filter keyword cannot used for the supplied object portugues nao informado Temas`
@@ -80141,10 +80141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA342E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA343E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied filter criteria cannot be used twice." Em portugues: "the informado filter criteria nao pode be used twice.". Temas: nao pode informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA343E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied filter criteria cannot be used twice." Em portugues: "the informado filter criteria nao pode be used twice.". Temas: nao pode informado. Em outras palavras: O critério de filtro fornecido não pode ser usado mais de uma vez na mesma operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA343E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied filter criteria cannot used twice portugues the informado nao Temas significa`
+> `AWSBIA343E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied filter criteria cannot used twice portugues the informado nao Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA343E no HCL Workload Automation 10.2.8?
@@ -80161,7 +80161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA343E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA344E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied filter criteria is not valid for the supplied object of the command. The filter for the object of this command requires keyword "!1"." Em portugues: "the informado filter criteria is nao valido for the informado object of the comando. the filter for the object of this comando requires keyword "!1".". Temas: nao comando informado valido palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA344E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied filter criteria is not valid for the supplied object of the command. The filter for the object of this command requires keyword "!1"." Em portugues: "the informado filter criteria is nao valido for the informado object of the comando. the filter for the object of this comando requires keyword "!1".". Temas: nao comando informado valido palavra-chave. Em outras palavras: O critério de filtro informado não é válido para o objeto da operação, que exige a palavra-chave indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA344E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied filter criteria not valid for the object command this requires`
@@ -80201,7 +80201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA345E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA346E (severidade: error, familia AWSBIA - composer) tem o texto: "No filter criteria has been supplied after the "filter" keyword. Use the following criteria: "!1"." Em portugues: "no filter criteria has estado informado apos the "filter" keyword. use the seguinte criteria: "!1".". Temas: informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA346E (severidade: error, familia AWSBIA - composer) tem o texto: "No filter criteria has been supplied after the "filter" keyword. Use the following criteria: "!1"." Em portugues: "no filter criteria has estado informado apos the "filter" keyword. use the seguinte criteria: "!1".". Temas: informado palavra-chave. Em outras palavras: Nenhum critério de filtro foi informado após a palavra-chave de filtro, sendo necessário usar o critério indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA346E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto filter criteria has been supplied after the keyword Use following portugues estado informado apos`
@@ -80221,7 +80221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA346E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA347E (severidade: error, familia AWSBIA - composer) tem o texto: "No filter criteria has been supplied after the "filter" keyword. Use the following criteria: "!1"." Em portugues: "no filter criteria has estado informado apos the "filter" keyword. use the seguinte criteria: "!1".". Temas: informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA347E (severidade: error, familia AWSBIA - composer) tem o texto: "No filter criteria has been supplied after the "filter" keyword. Use the following criteria: "!1"." Em portugues: "no filter criteria has estado informado apos the "filter" keyword. use the seguinte criteria: "!1".". Temas: informado palavra-chave. Em outras palavras: Nenhum critério de filtro foi informado após a palavra-chave de filtro, sendo necessário usar o critério indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA347E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto filter criteria has been supplied after the keyword Use following portugues estado informado apos`
@@ -80241,7 +80241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA347E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA348E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied keyword is not valid for the supplied object. The command on this object requires keyword "!1"." Em portugues: "the informado keyword is nao valido for the informado object. the comando on this object requires keyword "!1".". Temas: nao comando informado valido palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA348E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied keyword is not valid for the supplied object. The command on this object requires keyword "!1"." Em portugues: "the informado keyword is nao valido for the informado object. the comando on this object requires keyword "!1".". Temas: nao comando informado valido palavra-chave. Em outras palavras: A palavra-chave informada não é válida para o objeto da operação, que exige a palavra-chave indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA348E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied keyword not valid for the object command this requires portugues informado nao`
@@ -80261,7 +80261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA348E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA349E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied keyword is not valid for the supplied object. The command on this object requires one of the following keywords "!1"." Em portugues: "the informado keyword is nao valido for the informado object. the comando on this object requires one of the seguinte keywords "!1".". Temas: nao comando informado valido palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA349E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied keyword is not valid for the supplied object. The command on this object requires one of the following keywords "!1"." Em portugues: "the informado keyword is nao valido for the informado object. the comando on this object requires one of the seguinte keywords "!1".". Temas: nao comando informado valido palavra-chave. Em outras palavras: A palavra-chave informada não é válida para o objeto da operação, que exige uma das palavras-chave indicadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA349E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied keyword not valid for the object command this requires one following keywords portugues`
@@ -80281,7 +80281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA349E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA350W (severidade: warning, familia AWSBIA - composer) tem o texto: "The keywords "schedtime" and "at" can be specified only once. The last value is used." Em portugues: "the keywords "schedtime" and "at" can be especificado only once. the last valor is used.". Temas: especificado valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA350W (severidade: warning, familia AWSBIA - composer) tem o texto: "The keywords "schedtime" and "at" can be specified only once. The last value is used." Em portugues: "the keywords "schedtime" and "at" can be especificado only once. the last valor is used.". Temas: especificado valor. Em outras palavras: As palavras-chave de horário de escalonamento e de execução podem ser informadas apenas uma vez, sendo usado o último valor..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA350W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The keywords schedtime and can specified only once last value used portugues the especificado`
@@ -80321,7 +80321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA351E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA352W (severidade: warning, familia AWSBIA - composer) tem o texto: "The IPv6 address you entered is an IPv4-mapped address and might not be supported on some platforms." Em portugues: "the ipv6 address you entered is an ipv4-mapped address and might nao be supported on some platforms.". Temas: nao suportado. Explicacao oficial: Some operating systems do not support IPv4-mapped IPv6 addresses, either because the IPv6 and IPv4 stacks are separate, or because of security concerns.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA352W (severidade: warning, familia AWSBIA - composer) tem o texto: "The IPv6 address you entered is an IPv4-mapped address and might not be supported on some platforms." Em portugues: "the ipv6 address you entered is an ipv4-mapped address and might nao be supported on some platforms.". Temas: nao suportado. Em outras palavras: O endereço IPv6 informado é um endereço mapeado a partir de IPv4 e pode não ser suportado em algumas plataformas.. Explicacao oficial: Some operating systems do not support IPv4-mapped IPv6 addresses, either because the IPv6 and IPv4 stacks are separate, or because of security concerns.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA352W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The IPv6 address you entered IPv4-mapped and might not supported some platforms portugues the ipv6 ipv4-mapped`
@@ -80341,7 +80341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA352W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA353W (severidade: warning, familia AWSBIA - composer) tem o texto: "The IPv6 address you entered is an IPv4-compatible address and might not be supported on some platforms." Em portugues: "the ipv6 address you entered is an ipv4-compatible address and might nao be supported on some platforms.". Temas: nao suportado. Explicacao oficial: Some operating systems do not support IPv4-compatible IPv6 addresses, either because the IPv6 and IPv4 stacks are separate, or because of security concerns.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA353W (severidade: warning, familia AWSBIA - composer) tem o texto: "The IPv6 address you entered is an IPv4-compatible address and might not be supported on some platforms." Em portugues: "the ipv6 address you entered is an ipv4-compatible address and might nao be supported on some platforms.". Temas: nao suportado. Em outras palavras: O endereço IPv6 informado é compatível com IPv4 e pode não ser suportado em algumas plataformas.. Explicacao oficial: Some operating systems do not support IPv4-compatible IPv6 addresses, either because the IPv6 and IPv4 stacks are separate, or because of security concerns.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA353W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The IPv6 address you entered IPv4-compatible and might not supported some platforms portugues the ipv6 ipv4-compatible`
@@ -80361,7 +80361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA353W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA354W (severidade: warning, familia AWSBIA - composer) tem o texto: "The IPv6 address you entered is a Link Local address. Its scope is limited to the same data link and the interface is not portable." Em portugues: "the ipv6 address you entered is a link local address. its scope is limited to the same data link and the interface is nao portable.". Temas: nao. Explicacao oficial: Link Local addresses work only between two nodes on the same data link and cannot be forwarded by routers. Different data links cannot establish any sort of communication. Also, the local name of the outgoing interface might not match the interface name of the remote host.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA354W (severidade: warning, familia AWSBIA - composer) tem o texto: "The IPv6 address you entered is a Link Local address. Its scope is limited to the same data link and the interface is not portable." Em portugues: "the ipv6 address you entered is a link local address. its scope is limited to the same data link and the interface is nao portable.". Temas: nao. Em outras palavras: O endereço IPv6 informado é um endereço local de enlace, com escopo limitado ao mesmo enlace de dados e interface não portável.. Explicacao oficial: Link Local addresses work only between two nodes on the same data link and cannot be forwarded by routers. Different data links cannot establish any sort of communication. Also, the local name of the outgoing interface might not match the interface name of the remote host.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA354W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The IPv6 address you entered Link Local Its scope limited the same data link and not portable portugues`
@@ -80381,7 +80381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA354W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA355E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The closing "Eventrule" tag has been found without a corresponding opening tag." Em portugues: "there is a sintaxe erro in the xml arquivo. the closing "eventrule" tag has estado encontrado sem a corresponding opening tag.". Temas: erro arquivo sintaxe encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA355E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The closing "Eventrule" tag has been found without a corresponding opening tag." Em portugues: "there is a sintaxe erro in the xml arquivo. the closing "eventrule" tag has estado encontrado sem a corresponding opening tag.". Temas: erro arquivo sintaxe encontrado. Em outras palavras: Há um erro de sintaxe no arquivo XML, pois foi encontrada a etiqueta de fechamento da regra de evento sem a etiqueta de abertura correspondente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA355E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the XML file The closing Eventrule tag has been found without corresponding opening portugues there sintaxe`
@@ -80401,7 +80401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA355E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA356E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The closing "comment" tag has been found without a corresponding opening tag." Em portugues: "there is a sintaxe erro in the xml arquivo. the closing "comment" tag has estado encontrado sem a corresponding opening tag.". Temas: erro arquivo sintaxe encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA356E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The closing "comment" tag has been found without a corresponding opening tag." Em portugues: "there is a sintaxe erro in the xml arquivo. the closing "comment" tag has estado encontrado sem a corresponding opening tag.". Temas: erro arquivo sintaxe encontrado. Em outras palavras: Há um erro de sintaxe no arquivo XML, pois foi encontrada a etiqueta de fechamento de comentário sem a etiqueta de abertura correspondente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA356E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the XML file The closing comment tag has been found without corresponding opening portugues there sintaxe`
@@ -80421,7 +80421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA356E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA357E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. An opening tag for a "comment" tag has been found before the closing tag of the previously opened comment." Em portugues: "there is a sintaxe erro in the xml arquivo. an opening tag for a "comment" tag has estado encontrado antes the closing tag of the previously opened comment.". Temas: erro arquivo sintaxe encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA357E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. An opening tag for a "comment" tag has been found before the closing tag of the previously opened comment." Em portugues: "there is a sintaxe erro in the xml arquivo. an opening tag for a "comment" tag has estado encontrado antes the closing tag of the previously opened comment.". Temas: erro arquivo sintaxe encontrado. Em outras palavras: Há um erro de sintaxe no arquivo XML, pois uma etiqueta de abertura de comentário foi encontrada antes do fechamento do comentário anterior..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA357E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the XML file opening tag for comment has been found before closing previously`
@@ -80441,7 +80441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA357E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA358E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The encoding used is not that of the locale." Em portugues: "there is a sintaxe erro in the xml arquivo. the encoding used is nao that of the locale.". Temas: erro nao arquivo sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA358E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The encoding used is not that of the locale." Em portugues: "there is a sintaxe erro in the xml arquivo. the encoding used is nao that of the locale.". Temas: erro nao arquivo sintaxe. Em outras palavras: Há um erro de sintaxe no arquivo XML, pois a codificação utilizada não corresponde à codificação do locale..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA358E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the XML file The encoding used not that locale portugues there sintaxe erro xml arquivo`
@@ -80461,7 +80461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA358E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA359E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The XML version is missing from the header, so the file cannot be parsed." Em portugues: "there is a sintaxe erro in the xml arquivo. the xml versao is faltando from the header, so the arquivo nao pode be parsed.". Temas: erro arquivo nao pode sintaxe faltando versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA359E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error in the XML file. The XML version is missing from the header, so the file cannot be parsed." Em portugues: "there is a sintaxe erro in the xml arquivo. the xml versao is faltando from the header, so the arquivo nao pode be parsed.". Temas: erro arquivo nao pode sintaxe faltando versao. Em outras palavras: Há um erro de sintaxe no arquivo XML, pois a versão do XML está ausente no cabeçalho e por isso o arquivo não pode ser interpretado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA359E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax the XML file The version missing from header cannot parsed portugues there sintaxe`
@@ -80481,7 +80481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA359E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA360E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error. You can not change the "vartable" of a variable. You can change only the variable name." Em portugues: "there is a sintaxe erro. you can nao change the "vartable" of a variavel. you can change only the variavel nome.". Temas: erro nao nome sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA360E (severidade: error, familia AWSBIA - composer) tem o texto: "There is a syntax error. You can not change the "vartable" of a variable. You can change only the variable name." Em portugues: "there is a sintaxe erro. you can nao change the "vartable" of a variavel. you can change only the variavel nome.". Temas: erro nao nome sintaxe. Em outras palavras: Há um erro de sintaxe, pois não é possível alterar a tabela de variáveis de uma variável, apenas o nome da variável..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA360E tabela de variaveis substituicao dinamica jcl vartable 10.2.8 mensagem severidade error familia AWSBIA composer tem texto There syntax You can not change the variable only name portugues there sintaxe`
@@ -80641,7 +80641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA367W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA368W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "protocol" keyword has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "protocol" keyword has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA368W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "protocol" keyword has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "protocol" keyword has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave. Em outras palavras: A palavra-chave de protocolo foi informada para a estação de trabalho indicada, porém foi ignorada por não ser necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA368W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The protocol keyword has been supplied for workstation which not required ignored portugues the`
@@ -80661,7 +80661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA368W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA369W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "protocol" value is "http" for agent workstation "!1", for which the "secureaddr" keyword has been supplied. The "protocol" keyword has been ignored." Em portugues: "the "protocol" valor is "http" for agente estacao de trabalho "!1", for which the "secureaddr" keyword has estado informado. the "protocol" keyword has estado ignored.". Temas: estacao de trabalho informado palavra-chave valor agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA369W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "protocol" value is "http" for agent workstation "!1", for which the "secureaddr" keyword has been supplied. The "protocol" keyword has been ignored." Em portugues: "the "protocol" valor is "http" for agente estacao de trabalho "!1", for which the "secureaddr" keyword has estado informado. the "protocol" keyword has estado ignored.". Temas: estacao de trabalho informado palavra-chave valor agente. Em outras palavras: O valor de protocolo é HTTP para a estação de trabalho agente indicada, que possui endereço seguro informado, por isso o protocolo foi ignorado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA369W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The protocol value http for agent workstation which the secureaddr keyword has been supplied`
@@ -80681,7 +80681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA369W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA370W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "protocol" value is "https" for agent workstation "!1", for which the "secureaddr" keyword has not been supplied. The "protocol" keyword has been ignored." Em portugues: "the "protocol" valor is "https" for agente estacao de trabalho "!1", for which the "secureaddr" keyword has nao estado informado. the "protocol" keyword has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave valor agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA370W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "protocol" value is "https" for agent workstation "!1", for which the "secureaddr" keyword has not been supplied. The "protocol" keyword has been ignored." Em portugues: "the "protocol" valor is "https" for agente estacao de trabalho "!1", for which the "secureaddr" keyword has nao estado informado. the "protocol" keyword has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave valor agente. Em outras palavras: O valor de protocolo é HTTPS para a estação de trabalho agente indicada, que não possui endereço seguro informado, por isso o protocolo foi ignorado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA370W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The protocol value https for agent workstation which the secureaddr keyword has not been supplied`
@@ -80701,7 +80701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA370W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA371E (severidade: error, familia AWSBIA - composer) tem o texto: "The required "node" keyword is missing for workstation "!1"." Em portugues: "the obrigatorio "node" keyword is faltando for estacao de trabalho "!1".". Temas: estacao de trabalho palavra-chave faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA371E (severidade: error, familia AWSBIA - composer) tem o texto: "The required "node" keyword is missing for workstation "!1"." Em portugues: "the obrigatorio "node" keyword is faltando for estacao de trabalho "!1".". Temas: estacao de trabalho palavra-chave faltando. Em outras palavras: A palavra-chave obrigatória de nó está ausente na definição da estação de trabalho indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA371E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The required node keyword missing for workstation portugues the obrigatorio faltando estacao trabalho Temas palavra-chave`
@@ -80721,7 +80721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA371E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA372E (severidade: error, familia AWSBIA - composer) tem o texto: "The required "members" keyword is missing for pool workstation "!1"." Em portugues: "the obrigatorio "members" keyword is faltando for pool estacao de trabalho "!1".". Temas: estacao de trabalho palavra-chave faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA372E (severidade: error, familia AWSBIA - composer) tem o texto: "The required "members" keyword is missing for pool workstation "!1"." Em portugues: "the obrigatorio "members" keyword is faltando for pool estacao de trabalho "!1".". Temas: estacao de trabalho palavra-chave faltando. Em outras palavras: A palavra-chave obrigatória de membros está ausente na definição da estação de trabalho de pool indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA372E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The required members keyword missing for pool workstation portugues the obrigatorio faltando estacao trabalho Temas`
@@ -80741,7 +80741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA372E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA373E (severidade: error, familia AWSBIA - composer) tem o texto: "The required "requirements" keyword is missing for dynamic pool workstation "!1"." Em portugues: "the obrigatorio "requirements" keyword is faltando for dynamic pool estacao de trabalho "!1".". Temas: estacao de trabalho palavra-chave faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA373E (severidade: error, familia AWSBIA - composer) tem o texto: "The required "requirements" keyword is missing for dynamic pool workstation "!1"." Em portugues: "the obrigatorio "requirements" keyword is faltando for dynamic pool estacao de trabalho "!1".". Temas: estacao de trabalho palavra-chave faltando. Em outras palavras: A palavra-chave obrigatória de requisitos está ausente na definição da estação de trabalho de pool dinâmico indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA373E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The required requirements keyword missing for dynamic pool workstation portugues the obrigatorio faltando estacao trabalho`
@@ -80781,7 +80781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA374E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA375W (severidade: warning, familia AWSBIA - composer) tem o texto: "One or more invalid keywords have been supplied for workstation "!1". These invalid keywords have been ignored." Em portugues: "one or mais invalido keywords have estado informado for estacao de trabalho "!1". these invalido keywords have estado ignored.". Temas: estacao de trabalho informado invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA375W (severidade: warning, familia AWSBIA - composer) tem o texto: "One or more invalid keywords have been supplied for workstation "!1". These invalid keywords have been ignored." Em portugues: "one or mais invalido keywords have estado informado for estacao de trabalho "!1". these invalido keywords have estado ignored.". Temas: estacao de trabalho informado invalido. Em outras palavras: Uma ou mais palavras-chave inválidas foram informadas para a estação de trabalho indicada e foram ignoradas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA375W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto One more invalid keywords have been supplied for workstation These ignored portugues one mais invalido`
@@ -80801,7 +80801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA375W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA376W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "requirements" keyword has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "requirements" keyword has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA376W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "requirements" keyword has been supplied for workstation "!1", for which it is not required. It has been ignored." Em portugues: "the "requirements" keyword has estado informado for estacao de trabalho "!1", for which it is nao obrigatorio. it has estado ignored.". Temas: nao estacao de trabalho informado palavra-chave. Em outras palavras: A palavra-chave de requisitos foi informada para a estação de trabalho indicada, porém foi ignorada por não ser necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA376W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The requirements keyword has been supplied for workstation which not required ignored portugues the`
@@ -80821,7 +80821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA376W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA377W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "securitylevel" value for workstation "!1" is not "NONE". It has been ignored." Em portugues: "the "securitylevel" valor for estacao de trabalho "!1" is nao "none". it has estado ignored.". Temas: nao estacao de trabalho valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA377W (severidade: warning, familia AWSBIA - composer) tem o texto: "The "securitylevel" value for workstation "!1" is not "NONE". It has been ignored." Em portugues: "the "securitylevel" valor for estacao de trabalho "!1" is nao "none". it has estado ignored.". Temas: nao estacao de trabalho valor. Em outras palavras: O valor do nível de segurança da estação de trabalho indicada não é o valor esperado e por isso foi ignorado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA377W 10.2.8 mensagem severidade warning familia AWSBIA composer tem texto The securitylevel value for workstation not NONE has been ignored portugues the valor estacao trabalho nao none`
@@ -80841,10 +80841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA377W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA378E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied set criteria cannot be used twice." Em portugues: "the informado set criteria nao pode be used twice.". Temas: nao pode informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA378E (severidade: error, familia AWSBIA - composer) tem o texto: "The supplied set criteria cannot be used twice." Em portugues: "the informado set criteria nao pode be used twice.". Temas: nao pode informado. Em outras palavras: O critério de configuração fornecido não pode ser usado mais de uma vez na mesma operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA378E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied set criteria cannot used twice portugues the informado nao Temas significa`
+> `AWSBIA378E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The supplied set criteria cannot used twice portugues the informado nao Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA378E no HCL Workload Automation 10.2.8?
@@ -80861,7 +80861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA378E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA379E (severidade: error, familia AWSBIA - composer) tem o texto: "The "!1" attribute specified for the set criteria cannot be used for the supplied object." Em portugues: "the "!1" attribute especificado for the set criteria nao pode be used for the informado object.". Temas: nao pode informado especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA379E (severidade: error, familia AWSBIA - composer) tem o texto: "The "!1" attribute specified for the set criteria cannot be used for the supplied object." Em portugues: "the "!1" attribute especificado for the set criteria nao pode be used for the informado object.". Temas: nao pode informado especificado. Em outras palavras: O atributo informado para o critério de configuração não pode ser usado para o objeto fornecido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA379E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The attribute specified for the set criteria cannot used supplied object portugues especificado`
@@ -80881,7 +80881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA379E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA380E (severidade: error, familia AWSBIA - composer) tem o texto: "No set criteria was supplied after the "set" keyword. Use the following syntax to specify the attribute for the set criteria: "!1"." Em portugues: "no set criteria was informado apos the "set" keyword. use the seguinte sintaxe to specify the attribute for the set criteria: "!1".". Temas: informado sintaxe palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA380E (severidade: error, familia AWSBIA - composer) tem o texto: "No set criteria was supplied after the "set" keyword. Use the following syntax to specify the attribute for the set criteria: "!1"." Em portugues: "no set criteria was informado apos the "set" keyword. use the seguinte sintaxe to specify the attribute for the set criteria: "!1".". Temas: informado sintaxe palavra-chave. Em outras palavras: Nenhum critério de configuração foi informado após a palavra-chave de definição, sendo necessário usar a sintaxe indicada para o atributo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA380E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto set criteria was supplied after the keyword Use following syntax specify attribute for portugues`
@@ -80901,7 +80901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA380E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA381E (severidade: error, familia AWSBIA - composer) tem o texto: "No set criteria was supplied after the "set" keyword. Use the following criteria: "!1"." Em portugues: "no set criteria was informado apos the "set" keyword. use the seguinte criteria: "!1".". Temas: informado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA381E (severidade: error, familia AWSBIA - composer) tem o texto: "No set criteria was supplied after the "set" keyword. Use the following criteria: "!1"." Em portugues: "no set criteria was informado apos the "set" keyword. use the seguinte criteria: "!1".". Temas: informado palavra-chave. Em outras palavras: Nenhum critério de configuração foi informado após a palavra-chave de definição, sendo necessário usar o critério indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA381E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto set criteria was supplied after the keyword Use following portugues informado apos`
@@ -80921,7 +80921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA381E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA382E (severidade: error, familia AWSBIA - composer) tem o texto: "The attribute specified for the set criteria is not applicable for the supplied object. The set keyword for the object requires the following attribute "!1"." Em portugues: "the attribute especificado for the set criteria is nao applicable for the informado object. the set keyword for the object requires the seguinte attribute "!1".". Temas: nao informado especificado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA382E (severidade: error, familia AWSBIA - composer) tem o texto: "The attribute specified for the set criteria is not applicable for the supplied object. The set keyword for the object requires the following attribute "!1"." Em portugues: "the attribute especificado for the set criteria is nao applicable for the informado object. the set keyword for the object requires the seguinte attribute "!1".". Temas: nao informado especificado palavra-chave. Em outras palavras: O atributo informado para o critério de configuração não se aplica ao objeto da operação, que exige o atributo indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA382E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The attribute specified for the set criteria not applicable supplied object keyword requires`
@@ -80961,10 +80961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA383E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA386E (severidade: error, familia AWSBIA - composer) tem o texto: "The submitted command cannot be performed. The error is: "!1"" Em portugues: "the submitted comando nao pode be performed. the erro is: "!1"". Temas: erro nao pode comando. Explicacao oficial: See message..
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA386E (severidade: error, familia AWSBIA - composer) tem o texto: "The submitted command cannot be performed. The error is: "!1"" Em portugues: "the submitted comando nao pode be performed. the erro is: "!1"". Temas: erro nao pode comando. Em outras palavras: O comando enviado não pode ser executado e o erro apresentado está descrito na mensagem.. Explicacao oficial: See message..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA386E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The submitted command cannot performed portugues the comando nao erro Temas Explicacao`
+> `AWSBIA386E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The submitted command cannot performed portugues the comando nao erro Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA386E no HCL Workload Automation 10.2.8?
@@ -80981,10 +80981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA386E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA387E (severidade: error, familia AWSBIA - composer) tem o texto: "The specified folder could not be found." Em portugues: "the especificado pasta conseguiu nao be encontrado.". Temas: nao especificado encontrado pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA387E (severidade: error, familia AWSBIA - composer) tem o texto: "The specified folder could not be found." Em portugues: "the especificado pasta conseguiu nao be encontrado.". Temas: nao especificado encontrado pasta. Em outras palavras: A pasta especificada na operação não pôde ser localizada no sistema de arquivos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA387E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The specified folder could not found portugues the especificado pasta conseguiu nao encontrado Temas significa`
+> `AWSBIA387E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The specified folder could not found portugues the especificado pasta conseguiu nao encontrado Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA387E no HCL Workload Automation 10.2.8?
@@ -81001,7 +81001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA387E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA388E (severidade: error, familia AWSBIA - composer) tem o texto: "Unable to check if the specified folder exists. More details are available in the local HCL Workload Automation trace files." Em portugues: "incapaz to check if the especificado pasta existe. mais details are disponivel in the local hcl workload automation trace arquivos.". Temas: arquivos nao conseguiu especificado carga de trabalho pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA388E (severidade: error, familia AWSBIA - composer) tem o texto: "Unable to check if the specified folder exists. More details are available in the local HCL Workload Automation trace files." Em portugues: "incapaz to check if the especificado pasta existe. mais details are disponivel in the local hcl workload automation trace arquivos.". Temas: arquivos nao conseguiu especificado carga de trabalho pasta. Em outras palavras: Não foi possível verificar se a pasta especificada existe e mais detalhes estão disponíveis nos arquivos de rastreamento locais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA388E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Unable check the specified folder exists More details are available local trace files portugues incapaz especificado pasta`
@@ -81021,10 +81021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA388E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA389E (severidade: error, familia AWSBIA - composer) tem o texto: "Composer was not able to obtain a valid default workstation from the value "!1". The error is: "!2"." Em portugues: "composer was nao able to obtain a valido default estacao de trabalho from the valor "!1". the erro is: "!2".". Temas: erro nao estacao de trabalho valido valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA389E (severidade: error, familia AWSBIA - composer) tem o texto: "Composer was not able to obtain a valid default workstation from the value "!1". The error is: "!2"." Em portugues: "composer was nao able to obtain a valido default estacao de trabalho from the valor "!1". the erro is: "!2".". Temas: erro nao estacao de trabalho valido valor. Em outras palavras: O composer não conseguiu obter uma estação de trabalho padrão válida a partir do valor informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `composer was AWSBIA389E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Composer was not able obtain valid default workstation from the value The portugues nao valido`
+> `composer was composer n AWSBIA389E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto Composer was not able obtain valid default workstation from the value The portugues nao valido`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA389E no HCL Workload Automation 10.2.8?
@@ -81041,10 +81041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA389E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA390E (severidade: error, familia AWSBIA - composer) tem o texto: "The specified cpu id could not be found." Em portugues: "the especificado processador id conseguiu nao be encontrado.". Temas: nao especificado encontrado processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA390E (severidade: error, familia AWSBIA - composer) tem o texto: "The specified cpu id could not be found." Em portugues: "the especificado processador id conseguiu nao be encontrado.". Temas: nao especificado encontrado processador cpu. Em outras palavras: O identificador de processador que foi especificado não pôde ser localizado dentro do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA390E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The specified cpu could not found portugues the especificado processador conseguiu nao encontrado Temas significa`
+> `AWSBIA390E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The specified cpu could not found portugues the especificado processador conseguiu nao encontrado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA390E no HCL Workload Automation 10.2.8?
@@ -81061,10 +81061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA390E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA391E (severidade: error, familia AWSBIA - composer) tem o texto: "The required workstation name is missing." Em portugues: "the obrigatorio estacao de trabalho nome is faltando.". Temas: estacao de trabalho nome faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA391E (severidade: error, familia AWSBIA - composer) tem o texto: "The required workstation name is missing." Em portugues: "the obrigatorio estacao de trabalho nome is faltando.". Temas: estacao de trabalho nome faltando. Em outras palavras: O nome da estação de trabalho, que é obrigatório, não foi informado na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA391E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The required workstation name missing portugues the obrigatorio estacao trabalho nome faltando Temas significa`
+> `AWSBIA391E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The required workstation name missing portugues the obrigatorio estacao trabalho nome faltando Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA391E no HCL Workload Automation 10.2.8?
@@ -81081,7 +81081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA391E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA392E (severidade: error, familia AWSBIA - composer) tem o texto: "The specified workstation could not be found." Em portugues: "the especificado estacao de trabalho conseguiu nao be encontrado.". Temas: nao estacao de trabalho especificado encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA392E (severidade: error, familia AWSBIA - composer) tem o texto: "The specified workstation could not be found." Em portugues: "the especificado estacao de trabalho conseguiu nao be encontrado.". Temas: nao estacao de trabalho especificado encontrado. Em outras palavras: A estação de trabalho que foi especificada não pôde ser localizada no sistema de escalonamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA392E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The specified workstation could not found portugues the especificado estacao trabalho conseguiu nao encontrado Temas`
@@ -81101,7 +81101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA392E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA393E (severidade: error, familia AWSBIA - composer) tem o texto: "The password is incorrect: it must be between !1 and !2 characters long." Em portugues: "the senha is incorreto: it must be entre !1 and !2 characters long.". Temas: incorreto entre senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA393E (severidade: error, familia AWSBIA - composer) tem o texto: "The password is incorrect: it must be between !1 and !2 characters long." Em portugues: "the senha is incorreto: it must be entre !1 and !2 characters long.". Temas: incorreto entre senha. Em outras palavras: A senha informada está incorreta, pois deve ter entre a quantidade mínima e máxima de caracteres indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIA393E 10.2.8 mensagem severidade error familia AWSBIA composer tem texto The password incorrect must between and characters long portugues the senha incorreto entre Temas`
@@ -81141,10 +81141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA501I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA502I (severidade: informational, familia AWSBIA - composer) tem o texto: "Restart Job Workstation" Em portugues: "reiniciar job estacao de trabalho". Temas: estacao de trabalho job reiniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA502I (severidade: informational, familia AWSBIA - composer) tem o texto: "Restart Job Workstation" Em portugues: "reiniciar job estacao de trabalho". Temas: estacao de trabalho job reiniciar. Em outras palavras: A estação de trabalho do job deve ser reiniciada para que as alterações tenham efeito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA502I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Restart Job Workstation portugues reiniciar job estacao trabalho Temas significa`
+> `AWSBIA502I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Restart Job Workstation portugues reiniciar job estacao trabalho Temas outras palavras deve reiniciada tenham`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA502I no HCL Workload Automation 10.2.8?
@@ -81321,10 +81321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA510I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA511I (severidade: informational, familia AWSBIA - composer) tem o texto: "First migration step: errors "!1", warnings "!2"." Em portugues: "first migration step: erros "!1", warnings "!2".". Temas: erros.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA511I (severidade: informational, familia AWSBIA - composer) tem o texto: "First migration step: errors "!1", warnings "!2"." Em portugues: "first migration step: erros "!1", warnings "!2".". Temas: erros. Em outras palavras: Na primeira etapa da migração foram encontrados os erros e avisos nas quantidades indicadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA511I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto First migration step errors warnings portugues first erros Temas significa`
+> `AWSBIA511I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto First migration step errors warnings portugues first erros Temas outras palavras primeira etapa foram encontrados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA511I no HCL Workload Automation 10.2.8?
@@ -81341,10 +81341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA511I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA512I (severidade: informational, familia AWSBIA - composer) tem o texto: "Second migration step: errors "!1", warnings "!2"." Em portugues: "second migration step: erros "!1", warnings "!2".". Temas: erros.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA512I (severidade: informational, familia AWSBIA - composer) tem o texto: "Second migration step: errors "!1", warnings "!2"." Em portugues: "second migration step: erros "!1", warnings "!2".". Temas: erros. Em outras palavras: Na segunda etapa da migração foram encontrados os erros e avisos nas quantidades indicadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA512I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Second migration step errors warnings portugues second erros Temas significa`
+> `AWSBIA512I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Second migration step errors warnings portugues second erros Temas outras palavras segunda etapa foram encontrados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA512I no HCL Workload Automation 10.2.8?
@@ -81361,10 +81361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIA512I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIA513I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects imported: !1." Em portugues: "total objects imported: !1.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIA513I (severidade: informational, familia AWSBIA - composer) tem o texto: "Total objects imported: !1." Em portugues: "total objects imported: !1.". Em outras palavras: Foi informada a quantidade total de objetos que foram importados na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIA513I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects imported portugues total significa diagnosticar`
+> `AWSBIA513I 10.2.8 mensagem severidade informational familia AWSBIA composer tem texto Total objects imported portugues total outras palavras Foi informada quantidade objetos foram importados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIA513I no HCL Workload Automation 10.2.8?
@@ -91501,10 +91501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIR102E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS001I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Use "customize -U" for options and usage." Em portugues: "use "customize -u" for opcoes and usage.". Temas: opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS001I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Use "customize -U" for options and usage." Em portugues: "use "customize -u" for opcoes and usage.". Temas: opcoes. Em outras palavras: Utilize o comando de personalização com a opção de uso para exibir as opções e a forma de utilização..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS001I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Use customize for options and usage portugues use opcoes Temas significa`
+> `AWSBIS001I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Use customize for options and usage portugues use opcoes Temas outras palavras Utilize comando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS001I no HCL Workload Automation 10.2.8?
@@ -91521,7 +91521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS001I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS002E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. Customize failed to run the following UNIX command during the installation: "%s" Correct the problem and rerun customize." Em portugues: "an interno erro has ocorreu. customize falhou to run the seguinte unix comando durante the instalacao: "%s" correct the problema and rerun customize.". Temas: erro ocorreu comando interno instalacao execucao problema falhou. Explicacao oficial: The command can be any of the following:
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS002E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. Customize failed to run the following UNIX command during the installation: "%s" Correct the problem and rerun customize." Em portugues: "an interno erro has ocorreu. customize falhou to run the seguinte unix comando durante the instalacao: "%s" correct the problema and rerun customize.". Temas: erro ocorreu comando interno instalacao execucao problema falhou. Em outras palavras: Ocorreu um erro interno e o programa de personalização falhou ao executar o comando Unix informado durante a instalação.. Explicacao oficial: The command can be any of the following:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS002E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto internal has occurred Customize failed run the following UNIX command during installation Correct problem and rerun`
@@ -91541,7 +91541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS003E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following HCL Workload Automation configuration file does not exist: %s." Em portugues: "the seguinte hcl workload automation configuracao arquivo does nao existe: %s.". Temas: nao arquivo carga de trabalho. Explicacao oficial: Customize is attempting to customize a HCL Workload Automation configuration file, but the file does not exist in the <TWS_home>/config directory.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS003E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following HCL Workload Automation configuration file does not exist: %s." Em portugues: "the seguinte hcl workload automation configuracao arquivo does nao existe: %s.". Temas: nao arquivo carga de trabalho. Em outras palavras: O arquivo de configuração do HCL Workload Automation indicado não existe no sistema.. Explicacao oficial: Customize is attempting to customize a HCL Workload Automation configuration file, but the file does not exist in the <TWS_home>/config directory.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS003E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The following configuration file does not exist portugues the seguinte configuracao arquivo nao existe Temas carga`
@@ -91601,10 +91601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS005I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS006I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Attempting to remove %s" Em portugues: "attempting to remove %s".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS006I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Attempting to remove %s" Em portugues: "attempting to remove %s". Em outras palavras: O sistema está tentando remover o elemento informado durante a execução da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS006I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Attempting remove portugues attempting significa diagnosticar`
+> `AWSBIS006I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Attempting remove portugues attempting outras palavras sistema tentando remover elemento informado durante significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS006I no HCL Workload Automation 10.2.8?
@@ -91621,10 +91621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS007I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The %s command installed as hard link" Em portugues: "the %s comando instalado as hard link". Temas: comando instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS007I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The %s command installed as hard link" Em portugues: "the %s comando instalado as hard link". Temas: comando instalado. Em outras palavras: O comando informado foi instalado como um link rígido dentro do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS007I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The command installed hard link portugues the comando instalado Temas significa`
+> `AWSBIS007I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The command installed hard link portugues the comando instalado Temas outras palavras informado foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS007I no HCL Workload Automation 10.2.8?
@@ -91641,10 +91641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS007I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS008I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The %s command installed as soft link" Em portugues: "the %s comando instalado as soft link". Temas: comando instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS008I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The %s command installed as soft link" Em portugues: "the %s comando instalado as soft link". Temas: comando instalado. Em outras palavras: O comando informado foi instalado como um link simbólico dentro do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS008I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The command installed soft link portugues the comando instalado Temas significa`
+> `AWSBIS008I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The command installed soft link portugues the comando instalado Temas outras palavras informado foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS008I no HCL Workload Automation 10.2.8?
@@ -91661,7 +91661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS008I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS009E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize could not create a symbolic link to the following program: %s." Em portugues: "customize conseguiu nao criar a symbolic link to the seguinte programa: %s.". Temas: nao programa criar. Explicacao oficial: Customize could not create a symbolic link for one or more of the following HCL Workload Automation programs from the directory: <TWS_home>/bin to the directory: <TWS_home>/../bin:
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS009E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize could not create a symbolic link to the following program: %s." Em portugues: "customize conseguiu nao criar a symbolic link to the seguinte programa: %s.". Temas: nao programa criar. Em outras palavras: O programa de personalização não conseguiu criar um link simbólico para o programa indicado.. Explicacao oficial: Customize could not create a symbolic link for one or more of the following HCL Workload Automation programs from the directory: <TWS_home>/bin to the directory: <TWS_home>/../bin:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS009E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize could not create symbolic link the following program portugues customize conseguiu nao criar seguinte programa`
@@ -91681,7 +91681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS010E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize could not create a symbolic link to the following program, because a link already exists: %s." Em portugues: "customize conseguiu nao criar a symbolic link to the seguinte programa, porque a link already existe: %s.". Temas: nao programa criar. Explicacao oficial: Customize could not create a symbolic link for one or more of the following HCL Workload Automation programs from the directory: <TWS_home>/bin to the directory: <TWS_home>/../bin:
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS010E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize could not create a symbolic link to the following program, because a link already exists: %s." Em portugues: "customize conseguiu nao criar a symbolic link to the seguinte programa, porque a link already existe: %s.". Temas: nao programa criar. Em outras palavras: O programa de personalização não conseguiu criar um link simbólico para o programa indicado porque já existe um link.. Explicacao oficial: Customize could not create a symbolic link for one or more of the following HCL Workload Automation programs from the directory: <TWS_home>/bin to the directory: <TWS_home>/../bin:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS010E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize could not create symbolic link the following program because already exists portugues customize conseguiu nao criar`
@@ -91701,10 +91701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS011I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Looking up user %s in /etc/passwd" Em portugues: "looking up usuario %s in /etc/passwd". Temas: usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS011I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Looking up user %s in /etc/passwd" Em portugues: "looking up usuario %s in /etc/passwd". Temas: usuario. Em outras palavras: O sistema está procurando pelo usuário informado no arquivo de contas de usuários do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS011I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Looking user etc passwd portugues looking usuario Temas significa`
+> `AWSBIS011I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Looking user etc passwd portugues looking usuario Temas outras palavras sistema procurando pelo informado arquivo contas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS011I no HCL Workload Automation 10.2.8?
@@ -91721,7 +91721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS011I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS012W (severidade: warning, familia AWSBIS - plan library) tem o texto: "User %s not found in /etc/passwd. Trying Yellow Pages." Em portugues: "usuario %s nao encontrado in /etc/passwd. trying yellow pages.". Temas: nao usuario encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS012W (severidade: warning, familia AWSBIS - plan library) tem o texto: "User %s not found in /etc/passwd. Trying Yellow Pages." Em portugues: "usuario %s nao encontrado in /etc/passwd. trying yellow pages.". Temas: nao usuario encontrado. Em outras palavras: O usuário informado não foi encontrado no arquivo de contas e o sistema tentará localizá-lo nos serviços de diretório..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS012W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto User not found etc passwd Trying Yellow Pages portugues usuario nao encontrado trying yellow pages Temas`
@@ -91741,7 +91741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS012W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS013E (severidade: error, familia AWSBIS - plan library) tem o texto: "The user ID cannot be found in /etc/passwd and Yellow Pages (NIS). Either it is not installed or it is not accessible from the PATH system variable." Em portugues: "the usuario id nao pode be encontrado in /etc/passwd and yellow pages (nis). either it is nao instalado or it is nao accessible from the caminho sistema variavel.". Temas: nao pode usuario encontrado sistema instalado. Explicacao oficial: The Yellow Pages is a centralized database of files including the passwd, group, and other system files. In a networked environment, these files are centralized on a NIS server which makes them available to all the machines on the network, for ease of maintenance. Users can also have the same password across the network.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS013E (severidade: error, familia AWSBIS - plan library) tem o texto: "The user ID cannot be found in /etc/passwd and Yellow Pages (NIS). Either it is not installed or it is not accessible from the PATH system variable." Em portugues: "the usuario id nao pode be encontrado in /etc/passwd and yellow pages (nis). either it is nao instalado or it is nao accessible from the caminho sistema variavel.". Temas: nao pode usuario encontrado sistema instalado. Em outras palavras: O identificador de usuário não foi encontrado nem nos arquivos locais nem nos serviços de diretório, que podem estar inacessíveis.. Explicacao oficial: The Yellow Pages is a centralized database of files including the passwd, group, and other system files. In a networked environment, these files are centralized on a NIS server which makes them available to all the machines on the network, for ease of maintenance. Users can also have the same password across the network.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS013E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The user cannot found etc passwd and Yellow Pages NIS Either not installed accessible from the PATH system`
@@ -91761,7 +91761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS014E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following user ID cannot be found in either /etc/passwd or the Yellow Pages: %s." Em portugues: "the seguinte usuario id nao pode be encontrado in either /etc/passwd or the yellow pages: %s.". Temas: nao pode usuario encontrado. Explicacao oficial: The Yellow Pages is a centralized database of files including the passwd, group, and other system files. In a networked environment, these files are centralized on a NIS server which makes them available to all the machines on the network, for ease of maintenance. Users can have the same password across the network.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS014E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following user ID cannot be found in either /etc/passwd or the Yellow Pages: %s." Em portugues: "the seguinte usuario id nao pode be encontrado in either /etc/passwd or the yellow pages: %s.". Temas: nao pode usuario encontrado. Em outras palavras: O identificador de usuário informado não foi encontrado nos arquivos locais nem nos serviços de diretório.. Explicacao oficial: The Yellow Pages is a centralized database of files including the passwd, group, and other system files. In a networked environment, these files are centralized on a NIS server which makes them available to all the machines on the network, for ease of maintenance. Users can have the same password across the network.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS014E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The following user cannot found either etc passwd the Yellow Pages portugues seguinte usuario nao encontrado`
@@ -91781,10 +91781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS015E (severidade: error, familia AWSBIS - plan library) tem o texto: "The user running customize is not logged in as "root"." Em portugues: "the usuario em execucao customize is nao logged in as "root".". Temas: nao usuario. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS015E (severidade: error, familia AWSBIS - plan library) tem o texto: "The user running customize is not logged in as "root"." Em portugues: "the usuario em execucao customize is nao logged in as "root".". Temas: nao usuario. Em outras palavras: O usuário que está executando o programa de personalização não está conectado como usuário administrador.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS015E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The user running customize not logged root portugues the usuario execucao nao Temas Explicacao`
+> `AWSBIS015E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The user running customize not logged root portugues the usuario execucao nao Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS015E no HCL Workload Automation 10.2.8?
@@ -91801,10 +91801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS016E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize cannot use the chown command." Em portugues: "customize nao pode use the chown comando.". Temas: nao pode comando. Explicacao oficial: The chown command was either not found following the PATH environment variable or /etc/chown did not have execute permission.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS016E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize cannot use the chown command." Em portugues: "customize nao pode use the chown comando.". Temas: nao pode comando. Em outras palavras: O programa de personalização não consegue utilizar o comando de alteração de proprietário de arquivos.. Explicacao oficial: The chown command was either not found following the PATH environment variable or /etc/chown did not have execute permission.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS016E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize cannot use the chown command portugues customize nao comando Temas Explicacao oficial The`
+> `AWSBIS016E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize cannot use the chown command portugues customize nao comando Temas outras palavras programa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS016E no HCL Workload Automation 10.2.8?
@@ -91821,7 +91821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS017E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following user ID, for which you want to install HCL Workload Automation, does not exist or does not belong to any group: %s." Em portugues: "the seguinte usuario id, for which you want to install hcl workload automation, does nao existe or does nao belong to any grupo: %s.". Temas: nao usuario carga de trabalho instalar. Explicacao oficial: user_name is the missing user ID.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS017E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following user ID, for which you want to install HCL Workload Automation, does not exist or does not belong to any group: %s." Em portugues: "the seguinte usuario id, for which you want to install hcl workload automation, does nao existe or does nao belong to any grupo: %s.". Temas: nao usuario carga de trabalho instalar. Em outras palavras: O identificador de usuário informado, para o qual se deseja instalar o produto, não existe ou não pertence a nenhum grupo.. Explicacao oficial: user_name is the missing user ID.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS017E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The following user for which you want install does not exist belong any group portugues the seguinte`
@@ -91841,10 +91841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS018I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation home directory = %s" Em portugues: "hcl workload automation home diretorio = %s". Temas: carga de trabalho diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS018I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation home directory = %s" Em portugues: "hcl workload automation home diretorio = %s". Temas: carga de trabalho diretorio. Em outras palavras: O diretório inicial do HCL Workload Automation está definido no caminho informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS018I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto home directory portugues diretorio Temas carga trabalho significa diagnosticar`
+> `AWSBIS018I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto home directory portugues diretorio Temas carga trabalho outras palavras inicial definido caminho informado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS018I no HCL Workload Automation 10.2.8?
@@ -91861,10 +91861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS018I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS019I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation group = %s" Em portugues: "hcl workload automation grupo = %s". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS019I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation group = %s" Em portugues: "hcl workload automation grupo = %s". Temas: carga de trabalho. Em outras palavras: O instalador informa o nome do grupo de componentes do HCL Workload Automation que está sendo configurado durante o processo de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS019I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto group portugues grupo Temas carga trabalho significa diagnosticar`
+> `AWSBIS019I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto group portugues grupo Temas carga trabalho outras palavras instalador informa nome componentes sendo configurado durante processo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS019I no HCL Workload Automation 10.2.8?
@@ -91881,7 +91881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS019I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS020E (severidade: error, familia AWSBIS - plan library) tem o texto: "The supplied HCL Workload Automation home directory does not exist." Em portugues: "the informado hcl workload automation home diretorio does nao existe.". Temas: nao informado carga de trabalho diretorio. Explicacao oficial: Either you have supplied the wrong directory to Customize, or you have not created the directory.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS020E (severidade: error, familia AWSBIS - plan library) tem o texto: "The supplied HCL Workload Automation home directory does not exist." Em portugues: "the informado hcl workload automation home diretorio does nao existe.". Temas: nao informado carga de trabalho diretorio. Em outras palavras: O diretório raiz informado como diretório home do HCL Workload Automation não existe, então a instalação não consegue prosseguir até corrigir esse caminho.. Explicacao oficial: Either you have supplied the wrong directory to Customize, or you have not created the directory.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS020E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The supplied home directory does not exist portugues the informado diretorio nao existe Temas carga`
@@ -91921,10 +91921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS022I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation has been successfully installed." Em portugues: "hcl workload automation has estado successfully instalado.". Temas: carga de trabalho instalado com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS022I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation has been successfully installed." Em portugues: "hcl workload automation has estado successfully instalado.". Temas: carga de trabalho instalado com sucesso. Em outras palavras: O procedimento de instalação do HCL Workload Automation foi concluído com sucesso e todos os arquivos foram colocados corretamente no destino..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS022I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto has been successfully installed portugues estado instalado Temas carga trabalho sucesso significa`
+> `AWSBIS022I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto has been successfully installed portugues estado instalado Temas carga trabalho sucesso outras palavras procedimento foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS022I no HCL Workload Automation 10.2.8?
@@ -91941,10 +91941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS022I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS023E (severidade: error, familia AWSBIS - plan library) tem o texto: "Unable to install %s properly." Em portugues: "incapaz to install %s properly.". Temas: nao conseguiu instalar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS023E (severidade: error, familia AWSBIS - plan library) tem o texto: "Unable to install %s properly." Em portugues: "incapaz to install %s properly.". Temas: nao conseguiu instalar. Em outras palavras: Houve falha durante o processo de instalação do componente especificado, portanto a instalação não foi concluída adequadamente e precisa ser refeita..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS023E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Unable install properly portugues incapaz Temas nao conseguiu instalar significa`
+> `AWSBIS023E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Unable install properly portugues incapaz Temas nao conseguiu instalar outras palavras Houve falha durante processo especificado portanto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS023E no HCL Workload Automation 10.2.8?
@@ -91961,7 +91961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS024E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize has been launched with the '"-m <module_name>" option incorrectly specified more than once." Em portugues: "customize has estado launched with the '"-m <module_name>" opcao incorrectly especificado mais que once.". Temas: especificado opcao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS024E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize has been launched with the '"-m <module_name>" option incorrectly specified more than once." Em portugues: "customize has estado launched with the '"-m <module_name>" opcao incorrectly especificado mais que once.". Temas: especificado opcao. Em outras palavras: O programa de personalização foi iniciado passando o parâmetro que seleciona o módulo mais de uma vez, o que não é permitido e invalida o comando.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS024E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize has been launched with the module_name option incorrectly specified more than once portugues customize estado`
@@ -91981,7 +91981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS025E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize has been issued with the following incorrect option: "%s"." Em portugues: "customize has estado issued with the seguinte incorreto opcao: "%s".". Temas: opcao incorreto. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS025E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize has been issued with the following incorrect option: "%s"." Em portugues: "customize has estado issued with the seguinte incorreto opcao: "%s".". Temas: opcao incorreto. Em outras palavras: O programa de personalização foi executado com uma opção inválida, indicando que algum parâmetro foi digitado errado e precisa ser corrigido.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS025E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize has been issued with the following incorrect option portugues customize estado seguinte incorreto opcao`
@@ -92001,10 +92001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS026E (severidade: error, familia AWSBIS - plan library) tem o texto: "The HCL Workload Automation home directory does not exist." Em portugues: "the hcl workload automation home diretorio does nao existe.". Temas: nao carga de trabalho diretorio. Explicacao oficial: Either you have supplied the wrong directory to Customize, or you have not created the directory.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS026E (severidade: error, familia AWSBIS - plan library) tem o texto: "The HCL Workload Automation home directory does not exist." Em portugues: "the hcl workload automation home diretorio does nao existe.". Temas: nao carga de trabalho diretorio. Em outras palavras: O caminho configurado para o diretório home do HCL Workload Automation não existe no sistema, impedindo que o procedimento de configuração seja executado.. Explicacao oficial: Either you have supplied the wrong directory to Customize, or you have not created the directory.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS026E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The home directory does not exist portugues the diretorio nao existe Temas carga trabalho Explicacao`
+> `AWSBIS026E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The home directory does not exist portugues the diretorio nao existe Temas carga trabalho outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS026E no HCL Workload Automation 10.2.8?
@@ -92021,10 +92021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS027I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The HP-UX operating system level is 9.x or lower." Em portugues: "the hp-ux operating sistema level is 9.x or lower.". Temas: sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS027I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The HP-UX operating system level is 9.x or lower." Em portugues: "the hp-ux operating sistema level is 9.x or lower.". Temas: sistema. Em outras palavras: O instalador detectou que a versão do sistema operacional HP-UX presente na máquina é da linha nove ou mais antiga..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS027I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The HP-UX operating system level 9.x lower portugues the hp-ux sistema Temas significa`
+> `AWSBIS027I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The HP-UX operating system level 9.x lower portugues the hp-ux sistema Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS027I no HCL Workload Automation 10.2.8?
@@ -92041,10 +92041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS027I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS028I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The HP-UX operating system level is 10.x or higher." Em portugues: "the hp-ux operating sistema level is 10.x or higher.". Temas: sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS028I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The HP-UX operating system level is 10.x or higher." Em portugues: "the hp-ux operating sistema level is 10.x or higher.". Temas: sistema. Em outras palavras: O instalador detectou que a versão do sistema operacional HP-UX presente na máquina é da linha dez ou mais nova..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS028I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The HP-UX operating system level 10.x higher portugues the hp-ux sistema Temas significa`
+> `AWSBIS028I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The HP-UX operating system level 10.x higher portugues the hp-ux sistema Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS028I no HCL Workload Automation 10.2.8?
@@ -92061,10 +92061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS028I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS029I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Removing %s to conserve disk space." Em portugues: "removing %s to conserve disk espaco.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS029I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Removing %s to conserve disk space." Em portugues: "removing %s to conserve disk espaco.". Em outras palavras: O instalador está apagando o arquivo indicado para liberar espaço em disco durante o procedimento de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS029I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Removing conserve disk space portugues removing espaco significa diagnosticar`
+> `AWSBIS029I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Removing conserve disk space portugues removing espaco outras palavras instalador apagando arquivo indicado liberar disco durante procedimento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS029I no HCL Workload Automation 10.2.8?
@@ -92081,10 +92081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS029I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS030I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Uncompressing %s and extracting HCL Workload Automation files..." Em portugues: "uncompressing %s and extracting hcl workload automation arquivos...". Temas: arquivos carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS030I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Uncompressing %s and extracting HCL Workload Automation files..." Em portugues: "uncompressing %s and extracting hcl workload automation arquivos...". Temas: arquivos carga de trabalho. Em outras palavras: O instalador está descompactando o arquivo indicado e extraindo os arquivos necessários do HCL Workload Automation para prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS030I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Uncompressing and extracting files portugues uncompressing arquivos Temas carga trabalho significa`
+> `AWSBIS030I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Uncompressing and extracting files portugues uncompressing arquivos Temas carga trabalho outras palavras instalador descompactando arquivo indicado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS030I no HCL Workload Automation 10.2.8?
@@ -92101,10 +92101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS030I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS031I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Extracting HCL Workload Automation files from %s ...." Em portugues: "extracting hcl workload automation arquivos from %s ....". Temas: arquivos carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS031I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Extracting HCL Workload Automation files from %s ...." Em portugues: "extracting hcl workload automation arquivos from %s ....". Temas: arquivos carga de trabalho. Em outras palavras: O instalador está extraindo os arquivos do HCL Workload Automation a partir do arquivo compactado indicado, aguarde a conclusão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS031I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Extracting files from portugues extracting arquivos Temas carga trabalho significa`
+> `AWSBIS031I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Extracting files from portugues extracting arquivos Temas carga trabalho outras palavras instalador extraindo partir arquivo compactado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS031I no HCL Workload Automation 10.2.8?
@@ -92121,10 +92121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS031I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS032I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Extracting %s module files from %s ..." Em portugues: "extracting %s module arquivos from %s ...". Temas: arquivos.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS032I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Extracting %s module files from %s ..." Em portugues: "extracting %s module arquivos from %s ...". Temas: arquivos. Em outras palavras: O processo de instalação está extraindo os arquivos do módulo indicado a partir do arquivo compactado especificado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS032I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Extracting module files from portugues extracting arquivos Temas significa`
+> `AWSBIS032I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Extracting module files from portugues extracting arquivos Temas outras palavras processo extraindo indicado partir arquivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS032I no HCL Workload Automation 10.2.8?
@@ -92141,7 +92141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS032I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS033E (severidade: error, familia AWSBIS - plan library) tem o texto: "An error occurred while trying to extract HCL Workload Automation from the following tar file: %s." Em portugues: "an erro ocorreu while trying to extract hcl workload automation from the seguinte tar arquivo: %s.". Temas: erro arquivo ocorreu carga de trabalho. Explicacao oficial: The problem might be caused by the file not being present or because of lack of disk space to unpack it.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS033E (severidade: error, familia AWSBIS - plan library) tem o texto: "An error occurred while trying to extract HCL Workload Automation from the following tar file: %s." Em portugues: "an erro ocorreu while trying to extract hcl workload automation from the seguinte tar arquivo: %s.". Temas: erro arquivo ocorreu carga de trabalho. Em outras palavras: Ocorreu um erro ao tentar extrair os arquivos do HCL Workload Automation do arquivo compactado indicado, então o processo foi interrompido.. Explicacao oficial: The problem might be caused by the file not being present or because of lack of disk space to unpack it.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS033E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto occurred while trying extract from the following tar file portugues erro ocorreu seguinte`
@@ -92181,7 +92181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS034E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS035E (severidade: error, familia AWSBIS - plan library) tem o texto: "Tar file %s.Z not found. Continuing with installation..." Em portugues: "tar arquivo %s.z nao encontrado. continuing with instalacao...". Temas: nao arquivo encontrado instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS035E (severidade: error, familia AWSBIS - plan library) tem o texto: "Tar file %s.Z not found. Continuing with installation..." Em portugues: "tar arquivo %s.z nao encontrado. continuing with instalacao...". Temas: nao arquivo encontrado instalacao. Em outras palavras: O arquivo compactado indicado não foi encontrado no local esperado, então a instalação segue ignorando essa parte..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS035E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Tar file s.Z not found Continuing with installation portugues tar arquivo s.z nao encontrado continuing instalacao Temas`
@@ -92201,10 +92201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS035E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS036I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Continuing with customizing HCL Workload Automation..." Em portugues: "continuing with customizing hcl workload automation...". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS036I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Continuing with customizing HCL Workload Automation..." Em portugues: "continuing with customizing hcl workload automation...". Temas: carga de trabalho. Em outras palavras: O processo está dando continuidade à fase de personalização da instalação do HCL Workload Automation depois da etapa anterior..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS036I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Continuing with customizing portugues continuing Temas carga trabalho significa diagnosticar`
+> `AWSBIS036I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Continuing with customizing portugues continuing Temas carga trabalho outras palavras processo dando continuidade fase depois etapa anterior`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS036I no HCL Workload Automation 10.2.8?
@@ -92221,10 +92221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS036I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS037I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Invoking customization script for module %s ...." Em portugues: "invoking customization script for module %s ....".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS037I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Invoking customization script for module %s ...." Em portugues: "invoking customization script for module %s ....". Em outras palavras: O instalador está chamando o script de personalização responsável por configurar o módulo indicado no processo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS037I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Invoking customization script for module portugues invoking significa`
+> `AWSBIS037I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Invoking customization script for module portugues invoking outras palavras instalador chamando configurar indicado processo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS037I no HCL Workload Automation 10.2.8?
@@ -92241,7 +92241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS037I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS038E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize script for module %s could not be found. exiting ..." Em portugues: "customize script for module %s conseguiu nao be encontrado. exiting ...". Temas: nao encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS038E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize script for module %s could not be found. exiting ..." Em portugues: "customize script for module %s conseguiu nao be encontrado. exiting ...". Temas: nao encontrado. Em outras palavras: O script de personalização previsto para o módulo indicado não foi localizado, então o processo de personalização é encerrado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS038E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize script for module could not found exiting portugues customize conseguiu nao encontrado Temas`
@@ -92261,10 +92261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS038E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS041I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation component group = %s" Em portugues: "hcl workload automation component grupo = %s". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS041I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation component group = %s" Em portugues: "hcl workload automation component grupo = %s". Temas: carga de trabalho. Em outras palavras: O instalador informa o grupo de componentes do HCL Workload Automation que está sendo processado durante a configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS041I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto component group portugues grupo Temas carga trabalho significa diagnosticar`
+> `AWSBIS041I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto component group portugues grupo Temas carga trabalho outras palavras instalador informa componentes sendo processado durante significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS041I no HCL Workload Automation 10.2.8?
@@ -92281,10 +92281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS041I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS042E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize failed to decompress the following tar file: %s." Em portugues: "customize falhou to decompress the seguinte tar arquivo: %s.". Temas: arquivo falhou. Explicacao oficial: The problem might be caused by the file not being present or because of lack of disk space to decompress it.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS042E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize failed to decompress the following tar file: %s." Em portugues: "customize falhou to decompress the seguinte tar arquivo: %s.". Temas: arquivo falhou. Em outras palavras: A etapa de personalização não conseguiu descompactar o arquivo compactado indicado, causando falha nesse procedimento.. Explicacao oficial: The problem might be caused by the file not being present or because of lack of disk space to decompress it.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS042E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize failed decompress the following tar file portugues customize falhou seguinte arquivo Temas Explicacao`
+> `AWSBIS042E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize failed decompress the following tar file portugues customize falhou seguinte arquivo Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS042E no HCL Workload Automation 10.2.8?
@@ -92301,10 +92301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS042E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS043I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation updated successfully." Em portugues: "hcl workload automation updated successfully.". Temas: carga de trabalho com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS043I (severidade: informational, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation updated successfully." Em portugues: "hcl workload automation updated successfully.". Temas: carga de trabalho com sucesso. Em outras palavras: A atualização instalada do HCL Workload Automation foi aplicada com sucesso e o produto ficou pronto para uso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS043I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto updated successfully portugues Temas carga trabalho sucesso significa diagnosticar`
+> `AWSBIS043I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto updated successfully portugues Temas carga trabalho sucesso outras palavras instalada foi aplicada produto ficou pronto uso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS043I no HCL Workload Automation 10.2.8?
@@ -92321,7 +92321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS043I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS044E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: -noexp should be specified only with a -new install" Em portugues: "there is a sintaxe erro in the customize opcoes: -noexp should be especificado only with a -new install". Temas: erro sintaxe especificado instalar opcoes. Explicacao oficial: You specified the -noexp option when updating an installation. The -noexp option can only be specified with the -new option when running a new installation of HCL Workload Automation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS044E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: -noexp should be specified only with a -new install" Em portugues: "there is a sintaxe erro in the customize opcoes: -noexp should be especificado only with a -new install". Temas: erro sintaxe especificado instalar opcoes. Em outras palavras: Há um erro de sintaxe nas opções de personalização porque a configuração que evita a expansão só pode ser usada numa instalação nova.. Explicacao oficial: You specified the -noexp option when updating an installation. The -noexp option can only be specified with the -new option when running a new installation of HCL Workload Automation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS044E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the customize options noexp should specified only with new install portugues there sintaxe erro`
@@ -92341,7 +92341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS044E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS045E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -uname option is not followed by a user ID, or the supplied user ID commences with a hyphen." Em portugues: "there is a sintaxe erro in the customize opcoes: the -uname opcao is nao followed by a usuario id, or the informado usuario id commences with a hyphen.". Temas: erro nao informado sintaxe usuario opcao opcoes. Explicacao oficial: A user ID must be supplied with the -uname option. If the user ID that you tried to use commences with a hyphen -, chose a different user ID that does not commence with a hyphen, or should change the user ID so that it does not commence with a hyphen.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS045E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -uname option is not followed by a user ID, or the supplied user ID commences with a hyphen." Em portugues: "there is a sintaxe erro in the customize opcoes: the -uname opcao is nao followed by a usuario id, or the informado usuario id commences with a hyphen.". Temas: erro nao informado sintaxe usuario opcao opcoes. Em outras palavras: Há erro de sintaxe nas opções porque a opção de usuário precisa vir seguida de um identificador válido e não pode começar com hífen.. Explicacao oficial: A user ID must be supplied with the -uname option. If the user ID that you tried to use commences with a hyphen -, chose a different user ID that does not commence with a hyphen, or should change the user ID so that it does not commence with a hyphen.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS045E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the customize options uname option not followed user supplied commences with hyphen portugues`
@@ -92381,7 +92381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS047E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -thiscpu option cannot be used with the -update option." Em portugues: "there is a sintaxe erro in the customize opcoes: the -thiscpu opcao nao pode be used with the -atualizar opcao.". Temas: erro nao pode sintaxe opcao opcoes. Explicacao oficial: You specified the -thiscpu option with the -update option. The -thiscpu option can only be used during a new installation (with the -new option) to specify the name of the HCL Workload Automation workstation for that installation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS047E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -thiscpu option cannot be used with the -update option." Em portugues: "there is a sintaxe erro in the customize opcoes: the -thiscpu opcao nao pode be used with the -atualizar opcao.". Temas: erro nao pode sintaxe opcao opcoes. Em outras palavras: Há erro de sintaxe nas opções porque a configuração para este processador não pode ser combinada com a opção de atualização.. Explicacao oficial: You specified the -thiscpu option with the -update option. The -thiscpu option can only be used during a new installation (with the -new option) to specify the name of the HCL Workload Automation workstation for that installation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS047E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the customize options thiscpu option cannot used with update portugues there sintaxe erro`
@@ -92421,7 +92421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS048E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS049E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -master <workstation_name> option can only be specified with -new option." Em portugues: "there is a sintaxe erro in the customize opcoes: the -principal <workstation_name> opcao can only be especificado with -new opcao.". Temas: erro sintaxe especificado opcao opcoes. Explicacao oficial: You specified the -master <workstation_name> option (which identifies to which master domain manager you want the workstation where you are conducting the installation to belong) while running an update installation (with the -update option).
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS049E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -master <workstation_name> option can only be specified with -new option." Em portugues: "there is a sintaxe erro in the customize opcoes: the -principal <workstation_name> opcao can only be especificado with -new opcao.". Temas: erro sintaxe especificado opcao opcoes. Em outras palavras: Há erro de sintaxe porque a opção que indica a estação mestre só pode ser usada juntamente com a opção de instalação nova.. Explicacao oficial: You specified the -master <workstation_name> option (which identifies to which master domain manager you want the workstation where you are conducting the installation to belong) while running an update installation (with the -update option).
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS049E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the customize options workstation_name option can only specified with new portugues there sintaxe erro`
@@ -92501,7 +92501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS052E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS053E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following supplied netman home directory cannot be found or is not a directory: %s." Em portugues: "the seguinte informado netman home diretorio nao pode be encontrado or is nao a diretorio: %s.". Temas: nao pode informado encontrado diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS053E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following supplied netman home directory cannot be found or is not a directory: %s." Em portugues: "the seguinte informado netman home diretorio nao pode be encontrado or is nao a diretorio: %s.". Temas: nao pode informado encontrado diretorio. Em outras palavras: O diretório home do componente de rede indicado não foi localizado ou o caminho fornecido não corresponde a um diretório válido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS053E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The following supplied netman home directory cannot found not portugues the seguinte informado diretorio nao encontrado`
@@ -92521,7 +92521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS053E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS054E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -company option is not followed by a company name, or the supplied company name commences with a hyphen." Em portugues: "there is a sintaxe erro in the customize opcoes: the -company opcao is nao followed by a company nome, or the informado company nome commences with a hyphen.". Temas: erro nao nome informado sintaxe opcao opcoes. Explicacao oficial: A company name must be supplied with the -company option. If the company name that you tried to use commences with a hyphen -, chose a different company name that does not commence with a hyphen, or should change the company name so that it does not commence with a hyphen.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS054E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -company option is not followed by a company name, or the supplied company name commences with a hyphen." Em portugues: "there is a sintaxe erro in the customize opcoes: the -company opcao is nao followed by a company nome, or the informado company nome commences with a hyphen.". Temas: erro nao nome informado sintaxe opcao opcoes. Em outras palavras: Há erro de sintaxe porque a opção de empresa precisa vir seguida de um nome válido e o valor informado não pode começar com hífen.. Explicacao oficial: A company name must be supplied with the -company option. If the company name that you tried to use commences with a hyphen -, chose a different company name that does not commence with a hyphen, or should change the company name so that it does not commence with a hyphen.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS054E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the customize options company option not followed name supplied commences with`
@@ -92541,7 +92541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS054E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS055E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -execpath option is not followed by a path name, or the supplied path name commences with a hyphen." Em portugues: "there is a sintaxe erro in the customize opcoes: the -execpath opcao is nao followed by a caminho nome, or the informado caminho nome commences with a hyphen.". Temas: erro nao nome informado sintaxe opcao opcoes. Explicacao oficial: A path name must be supplied with the -execpath option. If the path name that you tried to use commences with a hyphen -, chose a different path name that does not commence with a hyphen, or should change the path name so that it does not commence with a hyphen.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS055E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the customize options: the -execpath option is not followed by a path name, or the supplied path name commences with a hyphen." Em portugues: "there is a sintaxe erro in the customize opcoes: the -execpath opcao is nao followed by a caminho nome, or the informado caminho nome commences with a hyphen.". Temas: erro nao nome informado sintaxe opcao opcoes. Em outras palavras: Há erro de sintaxe porque a opção de caminho de execução precisa vir seguida de um caminho válido que não comece com hífen.. Explicacao oficial: A path name must be supplied with the -execpath option. If the path name that you tried to use commences with a hyphen -, chose a different path name that does not commence with a hyphen, or should change the path name so that it does not commence with a hyphen.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS055E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the customize options execpath option not followed path name supplied commences with`
@@ -92561,10 +92561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS055E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS056E (severidade: error, familia AWSBIS - plan library) tem o texto: "Error: Invalid option, specify -m <module-name>" Em portugues: "erro: invalido opcao, specify -m <module-nome>". Temas: erro invalido opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS056E (severidade: error, familia AWSBIS - plan library) tem o texto: "Error: Invalid option, specify -m <module-name>" Em portugues: "erro: invalido opcao, specify -m <module-nome>". Temas: erro invalido opcao. Em outras palavras: A opção informada é inválida, o correto é especificar o parâmetro que seleciona o nome do módulo a ser instalado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS056E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Error Invalid option specify module-name portugues erro invalido opcao module-nome Temas significa`
+> `AWSBIS056E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Error Invalid option specify module-name portugues erro invalido opcao module-nome Temas outras palavras informada correto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS056E no HCL Workload Automation 10.2.8?
@@ -92581,10 +92581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS056E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS057E (severidade: error, familia AWSBIS - plan library) tem o texto: "Error: Invalid option, specify -group <install-group>" Em portugues: "erro: invalido opcao, specify -grupo <install-grupo>". Temas: erro invalido opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS057E (severidade: error, familia AWSBIS - plan library) tem o texto: "Error: Invalid option, specify -group <install-group>" Em portugues: "erro: invalido opcao, specify -grupo <install-grupo>". Temas: erro invalido opcao. Em outras palavras: A opção informada é inválida, o correto é especificar o parâmetro que indica o grupo de instalação desejado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS057E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Error Invalid option specify group install-group portugues erro invalido opcao grupo install-grupo Temas significa`
+> `AWSBIS057E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Error Invalid option specify group install-group portugues erro invalido opcao grupo install-grupo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS057E no HCL Workload Automation 10.2.8?
@@ -92621,10 +92621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS058E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS059E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize failed to decompress the following tar file: %s." Em portugues: "customize falhou to decompress the seguinte tar arquivo: %s.". Temas: arquivo falhou. Explicacao oficial: The problem might be caused by the file not being present or because of lack of disk space to decompress it.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS059E (severidade: error, familia AWSBIS - plan library) tem o texto: "Customize failed to decompress the following tar file: %s." Em portugues: "customize falhou to decompress the seguinte tar arquivo: %s.". Temas: arquivo falhou. Em outras palavras: A etapa de personalização falhou porque não foi possível descompactar o arquivo compactado indicado no processo.. Explicacao oficial: The problem might be caused by the file not being present or because of lack of disk space to decompress it.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS059E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize failed decompress the following tar file portugues customize falhou seguinte arquivo Temas Explicacao`
+> `AWSBIS059E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Customize failed decompress the following tar file portugues customize falhou seguinte arquivo Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS059E no HCL Workload Automation 10.2.8?
@@ -92641,7 +92641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS059E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS060E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following components directory identified in the UNISON_COMPONENT_FILE variable is not a directory, or does not exist: %s." Em portugues: "the seguinte components diretorio identified in the unison_component_file variavel is nao a diretorio, or does nao existe: %s.". Temas: nao diretorio. Explicacao oficial: Customize found that the UNISON_COMPONENT_FILE variable is set, but that the path name it contains is incorrect, because the directory component of the pathname is not a directory or does not exist.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS060E (severidade: error, familia AWSBIS - plan library) tem o texto: "The following components directory identified in the UNISON_COMPONENT_FILE variable is not a directory, or does not exist: %s." Em portugues: "the seguinte components diretorio identified in the unison_component_file variavel is nao a diretorio, or does nao existe: %s.". Temas: nao diretorio. Em outras palavras: O diretório de componentes informado na variável que aponta para o arquivo de componentes não existe ou não é um diretório válido.. Explicacao oficial: Customize found that the UNISON_COMPONENT_FILE variable is set, but that the path name it contains is incorrect, because the directory component of the pathname is not a directory or does not exist.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS060E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The following components directory identified the UNISON_COMPONENT_FILE variable not does exist portugues seguinte diretorio`
@@ -92661,7 +92661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS060E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS061W (severidade: warning, familia AWSBIS - plan library) tem o texto: "No component group name was provided. Using the following default group name: "%s"." Em portugues: "no component grupo nome was provided. using the seguinte default grupo nome: "%s".". Temas: nome.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS061W (severidade: warning, familia AWSBIS - plan library) tem o texto: "No component group name was provided. Using the following default group name: "%s"." Em portugues: "no component grupo nome was provided. using the seguinte default grupo nome: "%s".". Temas: nome. Em outras palavras: Nenhum nome de grupo de componentes foi fornecido, então o instalador adotou o nome padrão indicado para agrupar a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS061W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto component group name was provided Using the following default portugues grupo nome using`
@@ -92681,7 +92681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS061W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS062E (severidade: error, familia AWSBIS - plan library) tem o texto: "An entry was found in the components file for the specified group, but it contained incorrect data." Em portugues: "an entry was encontrado in the components arquivo for the especificado grupo, but it contained incorreto data.". Temas: arquivo especificado encontrado incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS062E (severidade: error, familia AWSBIS - plan library) tem o texto: "An entry was found in the components file for the specified group, but it contained incorrect data." Em portugues: "an entry was encontrado in the components arquivo for the especificado grupo, but it contained incorreto data.". Temas: arquivo especificado encontrado incorreto. Em outras palavras: Foi encontrado um registro para o grupo informado no arquivo de componentes, mas o conteúdo desse registro está incorreto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS062E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto entry was found the components file for specified group but contained incorrect data portugues encontrado`
@@ -92701,7 +92701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS062E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS063E (severidade: error, familia AWSBIS - plan library) tem o texto: "More than one entry was found in the components file either for the following specified location: "%s" or the following group: "%s"." Em portugues: "mais que one entry was encontrado in the components arquivo either for the seguinte especificado location: "%s" or the seguinte grupo: "%s".". Temas: arquivo especificado encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS063E (severidade: error, familia AWSBIS - plan library) tem o texto: "More than one entry was found in the components file either for the following specified location: "%s" or the following group: "%s"." Em portugues: "mais que one entry was encontrado in the components arquivo either for the seguinte especificado location: "%s" or the seguinte grupo: "%s".". Temas: arquivo especificado encontrado. Em outras palavras: O arquivo de componentes contém mais de uma entrada para o local ou para o grupo especificado, gerando ambiguidade na instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS063E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto More than one entry was found the components file either for following specified location group portugues`
@@ -92721,7 +92721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS063E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS064W (severidade: warning, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation is installed under a different component group %s. Changing the component group name to be %s." Em portugues: "hcl workload automation is instalado under a different component grupo %s. changing the component grupo nome to be %s.". Temas: nome carga de trabalho instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS064W (severidade: warning, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation is installed under a different component group %s. Changing the component group name to be %s." Em portugues: "hcl workload automation is instalado under a different component grupo %s. changing the component grupo nome to be %s.". Temas: nome carga de trabalho instalado. Em outras palavras: O produto já está instalado num grupo de componentes diferente, então o instalador está trocando o nome do grupo para o indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS064W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto installed under different component group Changing the name portugues instalado grupo changing`
@@ -92761,7 +92761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS065W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS066E (severidade: error, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation is already installed in %s. You can only update this installation." Em portugues: "hcl workload automation is already instalado in %s. you can only atualizar this instalacao.". Temas: carga de trabalho instalacao instalado atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS066E (severidade: error, familia AWSBIS - plan library) tem o texto: "HCL Workload Automation is already installed in %s. You can only update this installation." Em portugues: "hcl workload automation is already instalado in %s. you can only atualizar this instalacao.". Temas: carga de trabalho instalacao instalado atualizar. Em outras palavras: O HCL Workload Automation já está instalado no local indicado, portanto só é permitido atualizar essa instalação existente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS066E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto already installed You can only update this installation portugues instalado you atualizar instalacao Temas carga`
@@ -92781,7 +92781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS066E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS067E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is more than one entry for Netman in the same group." Em portugues: "there is mais que one entry for netman in the same grupo.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS067E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is more than one entry for Netman in the same group." Em portugues: "there is mais que one entry for netman in the same grupo.". Em outras palavras: Existe mais de uma entrada para o componente de rede dentro do mesmo grupo, o que não é aceito pelo processo de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS067E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There more than one entry for Netman the same group portugues there mais netman`
@@ -92801,10 +92801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS067E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS068W (severidade: warning, familia AWSBIS - plan library) tem o texto: "Netman is already installed in this group %s at location %s." Em portugues: "netman is already instalado in this grupo %s at location %s.". Temas: instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS068W (severidade: warning, familia AWSBIS - plan library) tem o texto: "Netman is already installed in this group %s at location %s." Em portugues: "netman is already instalado in this grupo %s at location %s.". Temas: instalado. Em outras palavras: O componente de rede já se encontra instalado neste grupo no local indicado, então não há necessidade de repetir a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS068W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto Netman already installed this group location portugues netman instalado grupo Temas significa`
+> `AWSBIS068W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto Netman already installed this group location portugues netman instalado grupo Temas outras palavras rede encontra`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS068W no HCL Workload Automation 10.2.8?
@@ -92821,10 +92821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS068W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS069I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Netman location for installation or update: %s" Em portugues: "netman location for instalacao or atualizar: %s". Temas: instalacao atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS069I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Netman location for installation or update: %s" Em portugues: "netman location for instalacao or atualizar: %s". Temas: instalacao atualizar. Em outras palavras: O instalador informa o local onde o componente de rede será instalado ou atualizado dentro da estrutura do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS069I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Netman location for installation update portugues netman instalacao atualizar Temas significa`
+> `AWSBIS069I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Netman location for installation update portugues netman instalacao atualizar Temas outras palavras instalador informa local`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS069I no HCL Workload Automation 10.2.8?
@@ -92841,7 +92841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS069I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS070E (severidade: error, familia AWSBIS - plan library) tem o texto: "The netman directory was not found. Copy the netman directory and run customize again" Em portugues: "the netman diretorio was nao encontrado. copy the netman diretorio and run customize again". Temas: nao encontrado diretorio execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS070E (severidade: error, familia AWSBIS - plan library) tem o texto: "The netman directory was not found. Copy the netman directory and run customize again" Em portugues: "the netman diretorio was nao encontrado. copy the netman diretorio and run customize again". Temas: nao encontrado diretorio execucao. Em outras palavras: O diretório do componente de rede não foi localizado, então é preciso copiar esse diretório para o lugar e rodar a personalização novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS070E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The netman directory was not found Copy the and run customize again portugues diretorio`
@@ -92861,7 +92861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS070E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS071E (severidade: error, familia AWSBIS - plan library) tem o texto: "Netman customize failed during execution. Correct the problem and run again." Em portugues: "netman customize falhou durante execution. correct the problema and run again.". Temas: execucao problema falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS071E (severidade: error, familia AWSBIS - plan library) tem o texto: "Netman customize failed during execution. Correct the problem and run again." Em portugues: "netman customize falhou durante execution. correct the problema and run again.". Temas: execucao problema falhou. Em outras palavras: A personalização do componente de rede falhou durante a execução, então é preciso corrigir o problema e repetir o comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS071E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Netman customize failed during execution Correct the problem and run again portugues netman falhou durante correct`
@@ -92881,7 +92881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS071E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS072E (severidade: error, familia AWSBIS - plan library) tem o texto: "An error occurred while creating or updating the components file." Em portugues: "an erro ocorreu while creating or updating the components arquivo.". Temas: erro arquivo ocorreu. Explicacao oficial: After HCL Workload Automation is installed successfully, customize runs the ucomp program to update the components file with the location and group of the HCL Workload Automation installation. If the components file does not exist, customize creates it. This message indicates that customize encountered an error during this process while creating or updating the components file. It could be a problem with file space or access permissions.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS072E (severidade: error, familia AWSBIS - plan library) tem o texto: "An error occurred while creating or updating the components file." Em portugues: "an erro ocorreu while creating or updating the components arquivo.". Temas: erro arquivo ocorreu. Em outras palavras: Surgiu um erro ao criar ou atualizar o arquivo que registra os componentes instalados do HCL Workload Automation.. Explicacao oficial: After HCL Workload Automation is installed successfully, customize runs the ucomp program to update the components file with the location and group of the HCL Workload Automation installation. If the components file does not exist, customize creates it. This message indicates that customize encountered an error during this process while creating or updating the components file. It could be a problem with file space or access permissions.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS072E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto occurred while creating updating the components file portugues erro ocorreu arquivo Temas`
@@ -92901,10 +92901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS072E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS073I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Replaced the calendars successfully." Em portugues: "replaced the calendars successfully.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS073I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Replaced the calendars successfully." Em portugues: "replaced the calendars successfully.". Temas: com sucesso. Em outras palavras: Os calendários de produção foram substituídos com sucesso pelo processo de atualização da instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS073I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Replaced the calendars successfully portugues replaced Temas sucesso significa`
+> `AWSBIS073I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Replaced the calendars successfully portugues replaced Temas sucesso outras palavras foram pelo processo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS073I no HCL Workload Automation 10.2.8?
@@ -92921,10 +92921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS073I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS115I (severidade: informational, familia AWSBIS - plan library) tem o texto: "[-m <module-name>] -- <module-name> to be used to install module" Em portugues: "[-m <module-nome>] -- <module-nome> to be used to install module". Temas: instalar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS115I (severidade: informational, familia AWSBIS - plan library) tem o texto: "[-m <module-name>] -- <module-name> to be used to install module" Em portugues: "[-m <module-nome>] -- <module-nome> to be used to install module". Temas: instalar. Em outras palavras: A opção que recebe o nome do módulo indica qual módulo deve ser usado no momento da instalação, conforme explicado no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS115I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto module-name used install module portugues module-nome Temas instalar significa`
+> `AWSBIS115I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto module-name used install module portugues module-nome Temas instalar outras palavras recebe nome indica deve`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS115I no HCL Workload Automation 10.2.8?
@@ -92941,10 +92941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS115I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS201E (severidade: error, familia AWSBIS - plan library) tem o texto: "Calendar %s already exists" Em portugues: "calendario %s already existe". Temas: calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS201E (severidade: error, familia AWSBIS - plan library) tem o texto: "Calendar %s already exists" Em portugues: "calendario %s already existe". Temas: calendario. Em outras palavras: O calendário informado com esse nome já existe no banco de dados, então não é possível criar outro igual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS201E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Calendar already exists portugues calendario existe Temas significa diagnosticar`
+> `AWSBIS201E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Calendar already exists portugues calendario existe Temas outras palavras informado esse nome dados criar outro igual`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS201E no HCL Workload Automation 10.2.8?
@@ -92961,10 +92961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS201E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS202E (severidade: error, familia AWSBIS - plan library) tem o texto: "Calendar type is required." Em portugues: "calendario tipo is obrigatorio.". Temas: tipo calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS202E (severidade: error, familia AWSBIS - plan library) tem o texto: "Calendar type is required." Em portugues: "calendario tipo is obrigatorio.". Temas: tipo calendario. Em outras palavras: É obrigatório informar o tipo do calendário, pois sem esse dado o comando não consegue prosseguir com a criação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS202E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Calendar type required portugues calendario tipo obrigatorio Temas significa diagnosticar`
+> `AWSBIS202E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Calendar type required portugues calendario tipo obrigatorio Temas outras palavras informar pois sem esse dado comando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS202E no HCL Workload Automation 10.2.8?
@@ -92981,7 +92981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS202E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS203E (severidade: error, familia AWSBIS - plan library) tem o texto: "Unable to find home directory for TWS user" Em portugues: "incapaz to find home diretorio for tws usuario". Temas: usuario nao conseguiu diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS203E (severidade: error, familia AWSBIS - plan library) tem o texto: "Unable to find home directory for TWS user" Em portugues: "incapaz to find home diretorio for tws usuario". Temas: usuario nao conseguiu diretorio. Em outras palavras: Não foi possível localizar o diretório home do usuário do servidor de workload, necessário para acessar as configurações..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS203E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Unable find home directory for TWS user portugues incapaz diretorio tws usuario Temas nao conseguiu`
@@ -93001,10 +93001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS203E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS204E (severidade: error, familia AWSBIS - plan library) tem o texto: "Unable to read calendars from database" Em portugues: "incapaz to ler calendars from banco de dados". Temas: nao conseguiu ler leitura banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS204E (severidade: error, familia AWSBIS - plan library) tem o texto: "Unable to read calendars from database" Em portugues: "incapaz to ler calendars from banco de dados". Temas: nao conseguiu ler leitura banco de dados. Em outras palavras: Houve falha ao ler os calendários armazenados no banco de dados do sistema de agendamento de workloads..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS204E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Unable read calendars from database portugues incapaz ler dados Temas nao conseguiu leitura significa`
+> `AWSBIS204E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Unable read calendars from database portugues incapaz ler dados Temas nao conseguiu leitura outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS204E no HCL Workload Automation 10.2.8?
@@ -93021,7 +93021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS204E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS205E (severidade: error, familia AWSBIS - plan library) tem o texto: "Type %s calendars require the use of the TWS datecalc utility." Em portugues: "tipo %s calendars require the use of the tws datecalc utility.". Temas: tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS205E (severidade: error, familia AWSBIS - plan library) tem o texto: "Type %s calendars require the use of the TWS datecalc utility." Em portugues: "tipo %s calendars require the use of the tws datecalc utility.". Temas: tipo. Em outras palavras: Os calendários desse tipo dependem da ferramenta de cálculo de datas do servidor de workload para funcionarem corretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS205E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Type calendars require the use TWS datecalc utility portugues tipo tws`
@@ -93041,10 +93041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS205E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS206E (severidade: error, familia AWSBIS - plan library) tem o texto: "Type %s calendars require a HOLIDAYS calendar to be predefined." Em portugues: "tipo %s calendars require a holidays calendario to be predefined.". Temas: tipo calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS206E (severidade: error, familia AWSBIS - plan library) tem o texto: "Type %s calendars require a HOLIDAYS calendar to be predefined." Em portugues: "tipo %s calendars require a holidays calendario to be predefined.". Temas: tipo calendario. Em outras palavras: Os calendários desse tipo exigem que um calendário de feriados seja definido previamente para que possam ser criados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS206E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Type calendars require HOLIDAYS calendar predefined portugues tipo holidays calendario Temas significa`
+> `AWSBIS206E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Type calendars require HOLIDAYS calendar predefined portugues tipo holidays calendario Temas outras palavras desse`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS206E no HCL Workload Automation 10.2.8?
@@ -93061,10 +93061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS206E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS207E (severidade: error, familia AWSBIS - plan library) tem o texto: "Type %s calendars require a -s parameter." Em portugues: "tipo %s calendars require a -s parametro.". Temas: tipo parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS207E (severidade: error, familia AWSBIS - plan library) tem o texto: "Type %s calendars require a -s parameter." Em portugues: "tipo %s calendars require a -s parametro.". Temas: tipo parametro. Em outras palavras: Os calendários desse tipo exigem que o parâmetro de data de início seja informado junto ao comando de criação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS207E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Type calendars require parameter portugues tipo parametro Temas significa`
+> `AWSBIS207E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Type calendars require parameter portugues tipo parametro Temas outras palavras desse exigem data seja`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS207E no HCL Workload Automation 10.2.8?
@@ -93081,10 +93081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS207E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS208E (severidade: error, familia AWSBIS - plan library) tem o texto: "Your HCL Workload Automation license has expired." Em portugues: "your hcl workload automation licenca has expirou.". Temas: carga de trabalho expirou venceu expirado licenca.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS208E (severidade: error, familia AWSBIS - plan library) tem o texto: "Your HCL Workload Automation license has expired." Em portugues: "your hcl workload automation licenca has expirou.". Temas: carga de trabalho expirou venceu expirado licenca. Em outras palavras: A licença do HCL Workload Automation expirou e por isso o uso do produto fica bloqueado até renovação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS208E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Your license has expired portugues your licenca expirou Temas carga trabalho venceu expirado significa`
+> `AWSBIS208E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Your license has expired portugues your licenca expirou Temas carga trabalho venceu expirado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS208E no HCL Workload Automation 10.2.8?
@@ -93101,10 +93101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS208E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS235E (severidade: error, familia AWSBIS - plan library) tem o texto: "Day %s is not in range 1-31." Em portugues: "day %s is nao in range 1-31.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS235E (severidade: error, familia AWSBIS - plan library) tem o texto: "Day %s is not in range 1-31." Em portugues: "day %s is nao in range 1-31.". Temas: nao. Em outras palavras: O dia informado está fora da faixa válida de um a trinta e um, então o valor precisa ser corrigido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS235E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Day not range 1-31 portugues day nao Temas significa`
+> `AWSBIS235E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Day not range 1-31 portugues day nao Temas outras palavras dia informado fora faixa trinta valor`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS235E no HCL Workload Automation 10.2.8?
@@ -93121,10 +93121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS235E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS236E (severidade: error, familia AWSBIS - plan library) tem o texto: "Argument %s must be greater than zero." Em portugues: "argumento %s must be greater que zero.". Temas: argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS236E (severidade: error, familia AWSBIS - plan library) tem o texto: "Argument %s must be greater than zero." Em portugues: "argumento %s must be greater que zero.". Temas: argumento. Em outras palavras: O argumento informado precisa ser um valor maior que zero, portanto os dados atuais não são aceitos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS236E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Argument must greater than zero portugues argumento Temas significa`
+> `AWSBIS236E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Argument must greater than zero portugues argumento Temas outras palavras informado precisa valor maior`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS236E no HCL Workload Automation 10.2.8?
@@ -93141,10 +93141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS236E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS237E (severidade: error, familia AWSBIS - plan library) tem o texto: "Argument %s is not in range 1-3." Em portugues: "argumento %s is nao in range 1-3.". Temas: nao argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS237E (severidade: error, familia AWSBIS - plan library) tem o texto: "Argument %s is not in range 1-3." Em portugues: "argumento %s is nao in range 1-3.". Temas: nao argumento. Em outras palavras: O argumento informado está fora da faixa permitida de um a três, então o valor precisa ser ajustado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS237E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Argument not range 1-3 portugues argumento nao Temas significa`
+> `AWSBIS237E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Argument not range 1-3 portugues argumento nao Temas outras palavras informado fora faixa permitida`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS237E no HCL Workload Automation 10.2.8?
@@ -93161,10 +93161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS237E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS238E (severidade: error, familia AWSBIS - plan library) tem o texto: "Incorrect option %s." Em portugues: "incorreto opcao %s.". Temas: opcao incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS238E (severidade: error, familia AWSBIS - plan library) tem o texto: "Incorrect option %s." Em portugues: "incorreto opcao %s.". Temas: opcao incorreto. Em outras palavras: A opção informada no comando está incorreta, por isso o processamento foi interrompido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS238E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Incorrect option portugues incorreto opcao Temas significa diagnosticar`
+> `AWSBIS238E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Incorrect option portugues incorreto opcao Temas outras palavras informada comando incorreta isso processamento foi interrompido significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS238E no HCL Workload Automation 10.2.8?
@@ -93181,7 +93181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS238E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS239E (severidade: error, familia AWSBIS - plan library) tem o texto: "One or more errors occurred. Calendars database not modified. See below." Em portugues: "one or mais erros ocorreu. calendars banco de dados nao modified. see below.". Temas: erros nao ocorreu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS239E (severidade: error, familia AWSBIS - plan library) tem o texto: "One or more errors occurred. Calendars database not modified. See below." Em portugues: "one or mais erros ocorreu. calendars banco de dados nao modified. see below.". Temas: erros nao ocorreu banco de dados. Em outras palavras: Ocorreram erros durante a operação e o banco de dados de calendários não foi alterado, veja os detalhes abaixo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS239E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto One more errors occurred Calendars database not modified See below portugues one mais erros ocorreu calendars dados nao`
@@ -93201,10 +93201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS239E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS240E (severidade: error, familia AWSBIS - plan library) tem o texto: "Failed to add new calendar to the database." Em portugues: "falhou to add new calendario to the banco de dados.". Temas: falhou banco de dados calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS240E (severidade: error, familia AWSBIS - plan library) tem o texto: "Failed to add new calendar to the database." Em portugues: "falhou to add new calendario to the banco de dados.". Temas: falhou banco de dados calendario. Em outras palavras: Falhou a inclusão de novo calendário no banco de dados, então o registro não foi gravado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS240E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Failed add new calendar the database portugues falhou calendario dados Temas significa`
+> `AWSBIS240E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Failed add new calendar the database portugues falhou calendario dados Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS240E no HCL Workload Automation 10.2.8?
@@ -93221,10 +93221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS240E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS241I (severidade: informational, familia AWSBIS - plan library) tem o texto: "New calendar will be available next production period." Em portugues: "new calendario will be disponivel next production period.". Temas: calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS241I (severidade: informational, familia AWSBIS - plan library) tem o texto: "New calendar will be available next production period." Em portugues: "new calendario will be disponivel next production period.". Temas: calendario. Em outras palavras: O novo calendário criado passará a valer apenas a partir do próximo período de produção do sistema de agendamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS241I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto New calendar will available next production period portugues new calendario disponivel Temas significa`
+> `AWSBIS241I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto New calendar will available next production period portugues new calendario disponivel Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS241I no HCL Workload Automation 10.2.8?
@@ -93241,10 +93241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS241I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS242W (severidade: warning, familia AWSBIS - plan library) tem o texto: "New production period takes effect now. Waiting 20 seconds." Em portugues: "new production period takes effect now. aguardando 20 seconds.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS242W (severidade: warning, familia AWSBIS - plan library) tem o texto: "New production period takes effect now. Waiting 20 seconds." Em portugues: "new production period takes effect now. aguardando 20 seconds.". Em outras palavras: O novo período de produção entra em vigor imediatamente, então o processo aguarda vinte segundos antes de continuar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS242W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto New production period takes effect now Waiting seconds portugues new aguardando significa`
+> `AWSBIS242W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto New production period takes effect now Waiting seconds portugues new aguardando outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS242W no HCL Workload Automation 10.2.8?
@@ -93261,10 +93261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS242W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS243I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting DEBUG to true." Em portugues: "configuracao debug to true.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS243I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting DEBUG to true." Em portugues: "configuracao debug to true.". Em outras palavras: O modo de depuração está sendo ativado para registrar informações detalhadas durante a execução do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS243I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting DEBUG true portugues configuracao debug significa diagnosticar`
+> `AWSBIS243I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting DEBUG true portugues configuracao debug outras palavras modo sendo ativado registrar detalhadas durante comando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS243I no HCL Workload Automation 10.2.8?
@@ -93281,10 +93281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS243I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS244I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALENDAR to %s." Em portugues: "configuracao calendario to %s.". Temas: calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS244I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALENDAR to %s." Em portugues: "configuracao calendario to %s.". Temas: calendario. Em outras palavras: O parâmetro que identifica o calendário sendo processado está sendo configurado com o valor indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS244I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALENDAR portugues configuracao calendario Temas significa diagnosticar`
+> `AWSBIS244I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALENDAR portugues configuracao calendario Temas outras palavras identifica sendo processado configurado valor indicado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS244I no HCL Workload Automation 10.2.8?
@@ -93301,10 +93301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS244I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS245I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to D." Em portugues: "configuracao caltype to d.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS245I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to D." Em portugues: "configuracao caltype to d.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários do tipo diário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS245I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS245I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS245I no HCL Workload Automation 10.2.8?
@@ -93321,10 +93321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS245I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS246I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to E." Em portugues: "configuracao caltype to e.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS246I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to E." Em portugues: "configuracao caltype to e.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários do tipo específico..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS246I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS246I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS246I no HCL Workload Automation 10.2.8?
@@ -93341,10 +93341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS246I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS247I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting ITERATIONS to %s." Em portugues: "configuracao iterations to %s.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS247I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting ITERATIONS to %s." Em portugues: "configuracao iterations to %s.". Em outras palavras: O número de repetições da execução está sendo configurado com o valor de iterações informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS247I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting ITERATIONS portugues configuracao iterations significa diagnosticar`
+> `AWSBIS247I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting ITERATIONS portugues configuracao iterations outras palavras sendo configurado valor informado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS247I no HCL Workload Automation 10.2.8?
@@ -93361,10 +93361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS247I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS248I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to F." Em portugues: "configuracao caltype to f.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS248I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to F." Em portugues: "configuracao caltype to f.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários do tipo fenológico..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS248I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS248I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS248I no HCL Workload Automation 10.2.8?
@@ -93381,10 +93381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS248I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS249I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to L." Em portugues: "configuracao caltype to l.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS249I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to L." Em portugues: "configuracao caltype to l.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários de turno noturno..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS249I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS249I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa turno noturno significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS249I no HCL Workload Automation 10.2.8?
@@ -93401,10 +93401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS249I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS250I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to M." Em portugues: "configuracao caltype to m.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS250I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to M." Em portugues: "configuracao caltype to m.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários mensais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS250I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS250I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa mensais significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS250I no HCL Workload Automation 10.2.8?
@@ -93421,10 +93421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS250I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS251I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to P." Em portugues: "configuracao caltype to p.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS251I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to P." Em portugues: "configuracao caltype to p.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários de período de produção..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS251I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS251I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS251I no HCL Workload Automation 10.2.8?
@@ -93441,10 +93441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS251I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS252I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting STARTDATE to %s." Em portugues: "configuracao startdate to %s.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS252I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting STARTDATE to %s." Em portugues: "configuracao startdate to %s.". Em outras palavras: A data inicial do calendário está sendo configurada com o valor informado pelo operador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS252I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting STARTDATE portugues configuracao startdate significa diagnosticar`
+> `AWSBIS252I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting STARTDATE portugues configuracao startdate outras palavras data inicial sendo configurada valor informado pelo operador significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS252I no HCL Workload Automation 10.2.8?
@@ -93461,10 +93461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS252I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS253I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to R." Em portugues: "configuracao caltype to r.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS253I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to R." Em portugues: "configuracao caltype to r.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários repetidos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS253I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS253I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa repetidos significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS253I no HCL Workload Automation 10.2.8?
@@ -93481,10 +93481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS253I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS254I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to W." Em portugues: "configuracao caltype to w.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS254I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting CALTYPE to W." Em portugues: "configuracao caltype to w.". Em outras palavras: O tipo de calendário está sendo definido como o valor que representa calendários semanais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS254I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype significa diagnosticar`
+> `AWSBIS254I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting CALTYPE portugues configuracao caltype outras palavras tipo sendo definido valor representa semanais significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS254I no HCL Workload Automation 10.2.8?
@@ -93501,10 +93501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS254I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS255I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting OUTPUT to stdout." Em portugues: "configuracao saida to stdout.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS255I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting OUTPUT to stdout." Em portugues: "configuracao saida to stdout.". Em outras palavras: A saída dos resultados do comando está sendo direcionada para a tela padrão do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS255I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting OUTPUT stdout portugues configuracao saida significa diagnosticar`
+> `AWSBIS255I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting OUTPUT stdout portugues configuracao saida outras palavras resultados comando sendo direcionada tela sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS255I no HCL Workload Automation 10.2.8?
@@ -93521,10 +93521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS255I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS256I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting COMPILE to yes." Em portugues: "configuracao compile to yes.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS256I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting COMPILE to yes." Em portugues: "configuracao compile to yes.". Em outras palavras: A opção de compilar o calendário está sendo ativada para validar as regras definidas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS256I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting COMPILE yes portugues configuracao compile significa diagnosticar`
+> `AWSBIS256I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting COMPILE yes portugues configuracao compile outras palavras compilar sendo ativada validar regras definidas significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS256I no HCL Workload Automation 10.2.8?
@@ -93541,10 +93541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS256I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS257E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -d." Em portugues: "no argumento was informado with -d.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS257E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -d." Em portugues: "no argumento was informado with -d.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS257E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS257E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS257E no HCL Workload Automation 10.2.8?
@@ -93561,10 +93561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS257E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS258E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -i." Em portugues: "no argumento was informado with -i.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS258E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -i." Em portugues: "no argumento was informado with -i.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS258E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS258E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS258E no HCL Workload Automation 10.2.8?
@@ -93581,10 +93581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS258E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS259E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -f." Em portugues: "no argumento was informado with -f.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS259E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -f." Em portugues: "no argumento was informado with -f.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS259E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS259E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS259E no HCL Workload Automation 10.2.8?
@@ -93601,10 +93601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS259E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS260E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -p." Em portugues: "no argumento was informado with -p.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS260E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -p." Em portugues: "no argumento was informado with -p.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS260E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS260E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS260E no HCL Workload Automation 10.2.8?
@@ -93621,10 +93621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS260E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS261E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -s." Em portugues: "no argumento was informado with -s.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS261E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -s." Em portugues: "no argumento was informado with -s.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS261E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS261E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS261E no HCL Workload Automation 10.2.8?
@@ -93641,10 +93641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS261E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS262E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -r." Em portugues: "no argumento was informado with -r.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS262E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -r." Em portugues: "no argumento was informado with -r.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS262E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS262E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS262E no HCL Workload Automation 10.2.8?
@@ -93661,10 +93661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS262E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS263E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -w." Em portugues: "no argumento was informado with -w.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS263E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -w." Em portugues: "no argumento was informado with -w.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS263E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas significa`
+> `AWSBIS263E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with portugues argumento informado Temas outras palavras Nenhum foi fornecido junto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS263E no HCL Workload Automation 10.2.8?
@@ -93681,7 +93681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS263E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS264E (severidade: error, familia AWSBIS - plan library) tem o texto: "Calendars of type %s require the %s non-working days (freedays) calendar to be predefined." Em portugues: "calendars of tipo %s require the %s non-funcionando days (freedays) calendario to be predefined.". Temas: tipo calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS264E (severidade: error, familia AWSBIS - plan library) tem o texto: "Calendars of type %s require the %s non-working days (freedays) calendar to be predefined." Em portugues: "calendars of tipo %s require the %s non-funcionando days (freedays) calendario to be predefined.". Temas: tipo calendario. Em outras palavras: Os calendários desse tipo exigem que o calendário de dias não úteis seja definido previamente para funcionar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS264E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Calendars type require the non-working days calendar predefined portugues calendars tipo non-funcionando calendario`
@@ -93701,10 +93701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS264E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS265I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting HOLCALENDAR to %s." Em portugues: "configuracao holcalendar to %s.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS265I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting HOLCALENDAR to %s." Em portugues: "configuracao holcalendar to %s.". Em outras palavras: O parâmetro que aponta para o calendário de feriados está sendo configurado com o valor indicado pelo operador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS265I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting HOLCALENDAR portugues configuracao holcalendar significa diagnosticar`
+> `AWSBIS265I calendario composer dias livres freedays 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting HOLCALENDAR portugues configuracao holcalendar outras palavras aponta feriados sendo configurado valor indicado pelo operador significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS265I no HCL Workload Automation 10.2.8?
@@ -93761,7 +93761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS267I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS273E (severidade: error, familia AWSBIS - plan library) tem o texto: "More than one calendar option has been specified. Rerun the command, selecting only one option from (-d|-e|-f|-l|-m|-p|-r|-w)." Em portugues: "mais que one calendario opcao has estado especificado. rerun the comando, selecting only one opcao from (-d|-e|-f|-l|-m|-p|-r|-w).". Temas: comando especificado opcao calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS273E (severidade: error, familia AWSBIS - plan library) tem o texto: "More than one calendar option has been specified. Rerun the command, selecting only one option from (-d|-e|-f|-l|-m|-p|-r|-w)." Em portugues: "mais que one calendario opcao has estado especificado. rerun the comando, selecting only one opcao from (-d|-e|-f|-l|-m|-p|-r|-w).". Temas: comando especificado opcao calendario. Em outras palavras: Foi informada mais de uma opção de calendário no comando, mas só é permitido escolher uma única opção de cada vez..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS273E re-executar job recuperar job falhado auto rerun remediar abend calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto More than one calendar option has been specified Rerun the command selecting only from portugues mais`
@@ -93781,7 +93781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS273E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS274E (severidade: error, familia AWSBIS - plan library) tem o texto: "Environment variable TEMP is not set. Set a valid value for TEMP and rerun the command." Em portugues: "ambiente variavel temp is nao set. set a valido valor for temp and rerun the comando.". Temas: nao comando valido valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS274E (severidade: error, familia AWSBIS - plan library) tem o texto: "Environment variable TEMP is not set. Set a valid value for TEMP and rerun the command." Em portugues: "ambiente variavel temp is nao set. set a valido valor for temp and rerun the comando.". Temas: nao comando valido valor. Em outras palavras: A variável de ambiente que define a pasta temporária não está configurada, então defina um valor válido e rode de novo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS274E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Environment variable TEMP not set Set valid value for and rerun the command portugues ambiente variavel temp nao`
@@ -93801,7 +93801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS274E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS275E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -freedays. Specify a valid calendar name." Em portugues: "no argumento was informado with -freedays. specify a valido calendario nome.". Temas: nome informado valido argumento calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS275E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -freedays. Specify a valid calendar name." Em portugues: "no argumento was informado with -freedays. specify a valido calendario nome.". Temas: nome informado valido argumento calendario. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que indicaria o calendário de dias não úteis, especifique um nome válido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS275E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with Specify valid calendar name portugues argumento informado specify valido calendario nome`
@@ -93821,10 +93821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS275E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS276E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot understand the NLS/Unknown format. Exiting." Em portugues: "nao pode understand the nls/desconhecido format. exiting.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS276E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot understand the NLS/Unknown format. Exiting." Em portugues: "nao pode understand the nls/desconhecido format. exiting.". Temas: nao pode. Em outras palavras: O comando não conseguiu interpretar o formato de codificação de caracteres usado, então a execução foi encerrada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS276E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot understand the NLS Unknown format Exiting portugues nao nls desconhecido exiting Temas significa`
+> `AWSBIS276E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot understand the NLS Unknown format Exiting portugues nao nls desconhecido exiting Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS276E no HCL Workload Automation 10.2.8?
@@ -93841,7 +93841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS276E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS277E (severidade: error, familia AWSBIS - plan library) tem o texto: "The non-working days (freedays) calendar %s is not found in the Symphony file. Run JnextPlan to make it available." Em portugues: "the non-funcionando days (freedays) calendario %s is nao encontrado in the symphony arquivo. run jnextplan to make it disponivel.". Temas: nao arquivo encontrado symphony execucao calendario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS277E (severidade: error, familia AWSBIS - plan library) tem o texto: "The non-working days (freedays) calendar %s is not found in the Symphony file. Run JnextPlan to make it available." Em portugues: "the non-funcionando days (freedays) calendario %s is nao encontrado in the symphony arquivo. run jnextplan to make it disponivel.". Temas: nao arquivo encontrado symphony execucao calendario. Em outras palavras: O calendário de dias não úteis indicado não consta no arquivo de plano, então é preciso executar o planejador para incluí-lo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS277E calendario composer dias livres freedays 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The non-working days calendar not found the Symphony file Run JnextPlan make available portugues non-funcionando`
@@ -93861,7 +93861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS277E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS278E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS278E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS278E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the command See User Guide and Reference for correct portugues there sintaxe erro`
@@ -93881,10 +93881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS278E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS279E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot determine the remote shell program." Em portugues: "nao pode determine the remoto shell programa.". Temas: nao pode programa.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS279E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot determine the remote shell program." Em portugues: "nao pode determine the remoto shell programa.". Temas: nao pode programa. Em outras palavras: O sistema não conseguiu determinar qual é o programa usado para executar comandos em máquinas remotas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS279E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot determine the remote shell program portugues nao remoto programa Temas significa`
+> `AWSBIS279E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot determine the remote shell program portugues nao remoto programa Temas outras palavras sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS279E no HCL Workload Automation 10.2.8?
@@ -93901,10 +93901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS279E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS280E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot connect to %s." Em portugues: "nao pode connect to %s.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS280E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot connect to %s." Em portugues: "nao pode connect to %s.". Temas: nao pode. Em outras palavras: Não foi possível estabelecer conexão com o sistema remoto indicado, impedindo a comunicação entre as máquinas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS280E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot connect portugues nao Temas significa diagnosticar`
+> `AWSBIS280E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot connect portugues nao Temas outras palavras foi estabelecer sistema remoto indicado impedindo entre significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS280E no HCL Workload Automation 10.2.8?
@@ -93921,7 +93921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS280E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS281E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS281E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS281E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the command See User Guide and Reference for correct portugues there sintaxe erro`
@@ -93941,10 +93941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS281E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS283E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot determine the remote shell program." Em portugues: "nao pode determine the remoto shell programa.". Temas: nao pode programa.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS283E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot determine the remote shell program." Em portugues: "nao pode determine the remoto shell programa.". Temas: nao pode programa. Em outras palavras: O sistema não conseguiu determinar qual é o programa usado para executar comandos em máquinas remotas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS283E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot determine the remote shell program portugues nao remoto programa Temas significa`
+> `AWSBIS283E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot determine the remote shell program portugues nao remoto programa Temas outras palavras sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS283E no HCL Workload Automation 10.2.8?
@@ -93961,7 +93961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS283E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS286E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS286E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS286E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the command See User Guide and Reference for correct portugues there sintaxe erro`
@@ -93981,10 +93981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS286E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS287E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot connect to %s" Em portugues: "nao pode connect to %s". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS287E (severidade: error, familia AWSBIS - plan library) tem o texto: "Cannot connect to %s" Em portugues: "nao pode connect to %s". Temas: nao pode. Em outras palavras: Não foi possível estabelecer conexão com o sistema remoto indicado, impedindo a comunicação entre as máquinas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS287E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot connect portugues nao Temas significa diagnosticar`
+> `AWSBIS287E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Cannot connect portugues nao Temas outras palavras foi estabelecer sistema remoto indicado impedindo entre significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS287E no HCL Workload Automation 10.2.8?
@@ -94001,7 +94001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS287E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS288E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS288E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS288E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the command See User Guide and Reference for correct portugues there sintaxe erro`
@@ -94021,10 +94021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS288E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS290E (severidade: error, familia AWSBIS - plan library) tem o texto: "No files were found in the file set." Em portugues: "no arquivos were encontrado in the arquivo set.". Temas: arquivo arquivos encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS290E (severidade: error, familia AWSBIS - plan library) tem o texto: "No files were found in the file set." Em portugues: "no arquivos were encontrado in the arquivo set.". Temas: arquivo arquivos encontrado. Em outras palavras: Nenhum arquivo foi encontrado dentro do conjunto de arquivos informado, então o processamento não teve o que fazer..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS290E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto files were found the file set portugues arquivos encontrado arquivo Temas significa`
+> `AWSBIS290E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto files were found the file set portugues arquivos encontrado arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS290E no HCL Workload Automation 10.2.8?
@@ -94041,10 +94041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS290E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS291E (severidade: error, familia AWSBIS - plan library) tem o texto: "Jobstdl failed running: %s." Em portugues: "jobstdl falhou em execucao: %s.". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS291E (severidade: error, familia AWSBIS - plan library) tem o texto: "Jobstdl failed running: %s." Em portugues: "jobstdl falhou em execucao: %s.". Temas: falhou. Em outras palavras: O utilitário de padronização de saídas falhou durante a execução e não concluiu o processamento do arquivo indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS291E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Jobstdl failed running portugues jobstdl falhou execucao Temas significa diagnosticar`
+> `AWSBIS291E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto Jobstdl failed running portugues jobstdl falhou execucao Temas outras palavras durante concluiu processamento arquivo indicado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS291E no HCL Workload Automation 10.2.8?
@@ -94061,10 +94061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS291E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS292I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting POSIX to true." Em portugues: "configuracao posix to true.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS292I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting POSIX to true." Em portugues: "configuracao posix to true.". Em outras palavras: O modo de conformidade com padrões de comunicação POSIX está sendo ativado na execução do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS292I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting POSIX true portugues configuracao posix significa diagnosticar`
+> `AWSBIS292I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting POSIX true portugues configuracao posix outras palavras modo conformidade sendo ativado comando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS292I no HCL Workload Automation 10.2.8?
@@ -94121,10 +94121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS294I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS295I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting WHICH to %s." Em portugues: "configuracao which to %s.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS295I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting WHICH to %s." Em portugues: "configuracao which to %s.". Em outras palavras: O utilitário de localização de programas está sendo configurado para usar a ferramenta de busca informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS295I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting WHICH portugues configuracao which significa diagnosticar`
+> `AWSBIS295I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting WHICH portugues configuracao which outras palavras programas sendo configurado usar ferramenta busca informada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS295I no HCL Workload Automation 10.2.8?
@@ -94141,10 +94141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS295I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS296I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting SELECT to first." Em portugues: "configuracao select to first.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS296I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting SELECT to first." Em portugues: "configuracao select to first.". Em outras palavras: A regra de seleção está sendo configurada para escolher o primeiro arquivo encontrado na listagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS296I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting SELECT first portugues configuracao select significa diagnosticar`
+> `AWSBIS296I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting SELECT first portugues configuracao select outras palavras regra sendo configurada escolher primeiro arquivo encontrado listagem significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS296I no HCL Workload Automation 10.2.8?
@@ -94161,10 +94161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS296I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS297I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting SELECT to last." Em portugues: "configuracao select to last.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS297I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting SELECT to last." Em portugues: "configuracao select to last.". Em outras palavras: A regra de seleção está sendo configurada para escolher o último arquivo encontrado na listagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS297I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting SELECT last portugues configuracao select significa diagnosticar`
+> `AWSBIS297I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting SELECT last portugues configuracao select outras palavras regra sendo configurada escolher arquivo encontrado listagem significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS297I no HCL Workload Automation 10.2.8?
@@ -94181,10 +94181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS297I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS298I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting SELECT to all." Em portugues: "configuracao select to all.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS298I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting SELECT to all." Em portugues: "configuracao select to all.". Em outras palavras: A regra de seleção está sendo configurada para considerar todos os arquivos encontrados na listagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS298I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting SELECT all portugues configuracao select significa diagnosticar`
+> `AWSBIS298I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting SELECT all portugues configuracao select outras palavras regra sendo configurada considerar todos arquivos encontrados listagem significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS298I no HCL Workload Automation 10.2.8?
@@ -94201,10 +94201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS298I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS299E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -day." Em portugues: "no argumento was informado with -day.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS299E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -day." Em portugues: "no argumento was informado with -day.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que pede o dia, portanto o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS299E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with day portugues argumento informado Temas significa`
+> `AWSBIS299E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with day portugues argumento informado Temas outras palavras Nenhum foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS299E no HCL Workload Automation 10.2.8?
@@ -94221,10 +94221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS299E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS300E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -name." Em portugues: "no argumento was informado with -nome.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS300E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -name." Em portugues: "no argumento was informado with -nome.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que pede o nome, portanto o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS300E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with name portugues argumento informado nome Temas significa`
+> `AWSBIS300E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with name portugues argumento informado nome Temas outras palavras Nenhum foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS300E no HCL Workload Automation 10.2.8?
@@ -94241,10 +94241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS300E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS301E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -num." Em portugues: "no argumento was informado with -num.". Temas: informado argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS301E (severidade: error, familia AWSBIS - plan library) tem o texto: "No argument was supplied with -num." Em portugues: "no argumento was informado with -num.". Temas: informado argumento. Em outras palavras: Nenhum argumento foi fornecido junto com a opção que pede o número, portanto o comando foi reprovado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS301E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with num portugues argumento informado Temas significa`
+> `AWSBIS301E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto argument was supplied with num portugues argumento informado Temas outras palavras Nenhum foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS301E no HCL Workload Automation 10.2.8?
@@ -94261,10 +94261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS301E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS302I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting the twslog path." Em portugues: "configuracao the twslog caminho.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS302I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Setting the twslog path." Em portugues: "configuracao the twslog caminho.". Em outras palavras: O caminho do diretório de logs do servidor está sendo configurado na execução atual do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS302I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting the twslog path portugues configuracao caminho significa diagnosticar`
+> `AWSBIS302I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Setting the twslog path portugues configuracao caminho outras palavras logs servidor sendo configurado atual comando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS302I no HCL Workload Automation 10.2.8?
@@ -94281,7 +94281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS302I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS303E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS303E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS303E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the command See User Guide and Reference for correct portugues there sintaxe erro`
@@ -94301,10 +94301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS303E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS304I (severidade: informational, familia AWSBIS - plan library) tem o texto: "==== File Status :%s: ====" Em portugues: "==== arquivo estado :%s: ====". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS304I (severidade: informational, familia AWSBIS - plan library) tem o texto: "==== File Status :%s: ====" Em portugues: "==== arquivo estado :%s: ====". Temas: arquivo. Em outras palavras: O comando exibe o cabeçalho com o status do arquivo processado, indicando o resultado da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS304I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto File Status portugues arquivo estado Temas significa diagnosticar`
+> `AWSBIS304I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto File Status portugues arquivo estado Temas outras palavras comando exibe status processado indicando resultado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS304I no HCL Workload Automation 10.2.8?
@@ -94321,10 +94321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS304I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS305I (severidade: informational, familia AWSBIS - plan library) tem o texto: "==== Exit Status :%s: ====" Em portugues: "==== exit estado :%s: ====".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS305I (severidade: informational, familia AWSBIS - plan library) tem o texto: "==== Exit Status :%s: ====" Em portugues: "==== exit estado :%s: ====". Em outras palavras: O comando exibe o cabeçalho com o status de saída do processo, indicando se a execução terminou com êxito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS305I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Exit Status portugues exit estado significa diagnosticar`
+> `AWSBIS305I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Exit Status portugues exit estado outras palavras comando exibe status processo indicando terminou significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS305I no HCL Workload Automation 10.2.8?
@@ -94381,10 +94381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS308I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS310E (severidade: error, familia AWSBIS - plan library) tem o texto: ""at": You are not authorized to use the "at" command." Em portugues: ""at": you are nao authorized to use the "at" comando.". Temas: nao comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS310E (severidade: error, familia AWSBIS - plan library) tem o texto: ""at": You are not authorized to use the "at" command." Em portugues: ""at": you are nao authorized to use the "at" comando.". Temas: nao comando. Em outras palavras: O usuário não possui autorização para utilizar o comando de agendamento único, então a chamada foi bloqueada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS310E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto You are not authorized use the command portugues you nao comando Temas significa`
+> `AWSBIS310E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto You are not authorized use the command portugues you nao comando Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS310E no HCL Workload Automation 10.2.8?
@@ -94401,7 +94401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS310E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS311E (severidade: error, familia AWSBIS - plan library) tem o texto: "batch: You are not authorized to use the "batch" command." Em portugues: "batch: you are nao authorized to use the "batch" comando.". Temas: nao comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS311E (severidade: error, familia AWSBIS - plan library) tem o texto: "batch: You are not authorized to use the "batch" command." Em portugues: "batch: you are nao authorized to use the "batch" comando.". Temas: nao comando. Em outras palavras: O usuário não possui autorização para utilizar o comando de envio em lote, então a chamada foi bloqueada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS311E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto batch You are not authorized use the command portugues you nao comando`
@@ -94441,10 +94441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS319E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS320E (severidade: error, familia AWSBIS - plan library) tem o texto: "The command failed while running %s." Em portugues: "the comando falhou while em execucao %s.". Temas: comando falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS320E (severidade: error, familia AWSBIS - plan library) tem o texto: "The command failed while running %s." Em portugues: "the comando falhou while em execucao %s.". Temas: comando falhou. Em outras palavras: O comando apresentou falha durante a execução do processo indicado, interrompendo a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS320E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The command failed while running portugues the comando falhou execucao Temas significa`
+> `AWSBIS320E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto The command failed while running portugues the comando falhou execucao Temas outras palavras apresentou falha`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS320E no HCL Workload Automation 10.2.8?
@@ -94461,10 +94461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS320E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS326E (severidade: error, familia AWSBIS - plan library) tem o texto: "No stdlist directory was found." Em portugues: "no stdlist diretorio was encontrado.". Temas: encontrado diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS326E (severidade: error, familia AWSBIS - plan library) tem o texto: "No stdlist directory was found." Em portugues: "no stdlist diretorio was encontrado.". Temas: encontrado diretorio. Em outras palavras: Não foi localizado o diretório padrão onde os arquivos de saída das execuções deveriam estar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS326E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto stdlist directory was found portugues diretorio encontrado Temas significa`
+> `AWSBIS326E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto stdlist directory was found portugues diretorio encontrado Temas outras palavras foi localizado onde arquivos deveriam`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS326E no HCL Workload Automation 10.2.8?
@@ -94501,10 +94501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS327I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS328I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Netman stdlist location: %s." Em portugues: "netman stdlist location: %s.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS328I (severidade: informational, familia AWSBIS - plan library) tem o texto: "Netman stdlist location: %s." Em portugues: "netman stdlist location: %s.". Em outras palavras: O instalador informa o caminho do diretório padrão de saídas do componente de rede no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS328I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Netman stdlist location portugues netman significa diagnosticar`
+> `AWSBIS328I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto Netman stdlist location portugues netman outras palavras instalador informa caminho rede sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS328I no HCL Workload Automation 10.2.8?
@@ -94521,10 +94521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS328I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS329E (severidade: error, familia AWSBIS - plan library) tem o texto: "No netman stdlist was found in %s." Em portugues: "no netman stdlist was encontrado in %s.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS329E (severidade: error, familia AWSBIS - plan library) tem o texto: "No netman stdlist was found in %s." Em portugues: "no netman stdlist was encontrado in %s.". Temas: encontrado. Em outras palavras: Nenhum arquivo de saída do componente de rede foi localizado dentro do diretório indicado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS329E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto netman stdlist was found portugues encontrado Temas significa`
+> `AWSBIS329E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto netman stdlist was found portugues encontrado Temas outras palavras Nenhum arquivo rede foi localizado dentro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS329E no HCL Workload Automation 10.2.8?
@@ -94541,7 +94541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS329E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS330I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The action can't be completed because the file [%s] is open in another program." Em portugues: "the action can't be concluido porque the arquivo [%s] is open in another programa.". Temas: arquivo programa concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS330I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The action can't be completed because the file [%s] is open in another program." Em portugues: "the action can't be concluido porque the arquivo [%s] is open in another programa.". Temas: arquivo programa concluido. Em outras palavras: A ação não pode ser concluída porque o arquivo indicado está aberto em outro programa em execução no momento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS330I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The action can completed because the file open another program portugues concluido porque arquivo`
@@ -94561,10 +94561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS330I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS332E (severidade: error, familia AWSBIS - plan library) tem o texto: "No manual entry was found for %s." Em portugues: "no manual entry was encontrado for %s.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS332E (severidade: error, familia AWSBIS - plan library) tem o texto: "No manual entry was found for %s." Em portugues: "no manual entry was encontrado for %s.". Temas: encontrado. Em outras palavras: Nenhuma entrada de manual foi encontrada para o tópico ou comando indicado na documentação do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS332E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto manual entry was found for portugues encontrado Temas significa`
+> `AWSBIS332E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto manual entry was found for portugues encontrado Temas outras palavras Nenhuma entrada foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS332E no HCL Workload Automation 10.2.8?
@@ -94581,10 +94581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS332E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS335E (severidade: error, familia AWSBIS - plan library) tem o texto: "JnextPlan failed while running: %s." Em portugues: "jnextplan falhou while em execucao: %s.". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS335E (severidade: error, familia AWSBIS - plan library) tem o texto: "JnextPlan failed while running: %s." Em portugues: "jnextplan falhou while em execucao: %s.". Temas: falhou. Em outras palavras: O planejador de produção falhou durante a execução do comando indicado e não concluiu a geração do plano..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS335E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto JnextPlan failed while running portugues jnextplan falhou execucao Temas significa`
+> `AWSBIS335E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto JnextPlan failed while running portugues jnextplan falhou execucao Temas outras palavras planejador durante comando indicado concluiu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS335E no HCL Workload Automation 10.2.8?
@@ -94601,7 +94601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS335E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS338E (severidade: error, familia AWSBIS - plan library) tem o texto: "If you cannot resolve the problem, search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "if you nao pode resolve the problema, search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: nao pode problema banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS338E (severidade: error, familia AWSBIS - plan library) tem o texto: "If you cannot resolve the problem, search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "if you nao pode resolve the problema, search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: nao pode problema banco de dados. Em outras palavras: Se o problema persistir, consulte a base de conhecimentos de suporte no portal da compatibilidade do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS338E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto you cannot resolve the problem search Support database for solution https www.hcltech.com products-and-platforms support portugues nao`
@@ -94621,10 +94621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS338E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS339E (severidade: error, familia AWSBIS - plan library) tem o texto: "File %s does not exist." Em portugues: "arquivo %s does nao existe.". Temas: nao arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS339E (severidade: error, familia AWSBIS - plan library) tem o texto: "File %s does not exist." Em portugues: "arquivo %s does nao existe.". Temas: nao arquivo. Em outras palavras: O arquivo indicado não existe no local esperado, então a operação não pode ser concluída..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS339E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto File does not exist portugues arquivo nao existe Temas significa`
+> `AWSBIS339E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto File does not exist portugues arquivo nao existe Temas outras palavras indicado local esperado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS339E no HCL Workload Automation 10.2.8?
@@ -94641,7 +94641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS339E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS340E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS340E (severidade: error, familia AWSBIS - plan library) tem o texto: "There is a syntax error in the command. See the User's Guide and Reference for the correct syntax." Em portugues: "there is a sintaxe erro in the comando. see the usuario's guide and reference for the correct sintaxe.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS340E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto There syntax the command See User Guide and Reference for correct portugues there sintaxe erro`
@@ -94661,7 +94661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS340E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS345E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. ResetPlan failed while running: %s." Em portugues: "an interno erro has ocorreu. resetplan falhou while em execucao: %s.". Temas: erro ocorreu interno falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS345E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. ResetPlan failed while running: %s." Em portugues: "an interno erro has ocorreu. resetplan falhou while em execucao: %s.". Temas: erro ocorreu interno falhou. Em outras palavras: Ocorreu um erro interno durante a execução do utilitário que redefine o plano, falhando no comando indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS345E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto internal has occurred ResetPlan failed while running portugues interno erro ocorreu resetplan falhou execucao Temas`
@@ -94681,10 +94681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS345E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS346W (severidade: warning, familia AWSBIS - plan library) tem o texto: "No Symphony file was found." Em portugues: "no symphony arquivo was encontrado.". Temas: arquivo encontrado symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS346W (severidade: warning, familia AWSBIS - plan library) tem o texto: "No Symphony file was found." Em portugues: "no symphony arquivo was encontrado.". Temas: arquivo encontrado symphony. Em outras palavras: Nenhum arquivo de plano de produção foi encontrado, então o processamento não tem dados para trabalhar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS346W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto Symphony file was found portugues symphony arquivo encontrado Temas significa`
+> `AWSBIS346W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto Symphony file was found portugues symphony arquivo encontrado Temas outras palavras Nenhum plano foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS346W no HCL Workload Automation 10.2.8?
@@ -94701,7 +94701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS346W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS348E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. MakePlan failed while running: %s." Em portugues: "an interno erro has ocorreu. makeplan falhou while em execucao: %s.". Temas: erro ocorreu interno falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS348E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. MakePlan failed while running: %s." Em portugues: "an interno erro has ocorreu. makeplan falhou while em execucao: %s.". Temas: erro ocorreu interno falhou. Em outras palavras: Ocorreu um erro interno durante a execução do utilitário que monta o plano, falhando no comando indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS348E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto internal has occurred MakePlan failed while running portugues interno erro ocorreu makeplan falhou execucao Temas`
@@ -94721,7 +94721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS348E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS349E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. SwitchPlan failed while running: %s." Em portugues: "an interno erro has ocorreu. switchplan falhou while em execucao: %s.". Temas: erro ocorreu interno falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS349E (severidade: error, familia AWSBIS - plan library) tem o texto: "An internal error has occurred. SwitchPlan failed while running: %s." Em portugues: "an interno erro has ocorreu. switchplan falhou while em execucao: %s.". Temas: erro ocorreu interno falhou. Em outras palavras: Ocorreu um erro interno durante a execução do utilitário que alterna o plano, falhando no comando indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBIS349E 10.2.8 mensagem severidade error familia AWSBIS plan library tem texto internal has occurred SwitchPlan failed while running portugues interno erro ocorreu switchplan falhou execucao Temas`
@@ -94741,10 +94741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS349E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS350W (severidade: warning, familia AWSBIS - plan library) tem o texto: "The application server is not running." Em portugues: "the application servidor is nao em execucao.". Temas: nao. Explicacao oficial: The application server must be running for you to run JnextPlan.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS350W (severidade: warning, familia AWSBIS - plan library) tem o texto: "The application server is not running." Em portugues: "the application servidor is nao em execucao.". Temas: nao. Em outras palavras: O servidor de aplicação do produto não está em execução neste momento, então o serviço está indisponível.. Explicacao oficial: The application server must be running for you to run JnextPlan.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS350W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto The application server not running portugues the servidor nao execucao Temas Explicacao oficial must`
+> `AWSBIS350W 10.2.8 mensagem severidade warning familia AWSBIS plan library tem texto The application server not running portugues the servidor nao execucao Temas outras palavras produto neste momento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS350W no HCL Workload Automation 10.2.8?
@@ -94761,10 +94761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS350W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS351I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The script "CheckPrerequisites" is starting the application server." Em portugues: "the script "checkprerequisites" is starting the application servidor.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS351I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The script "CheckPrerequisites" is starting the application server." Em portugues: "the script "checkprerequisites" is starting the application servidor.". Em outras palavras: O script que verifica os pré-requisitos está iniciando o servidor de aplicações do produto neste momento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS351I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The script CheckPrerequisites starting the application server portugues checkprerequisites servidor significa`
+> `AWSBIS351I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The script CheckPrerequisites starting the application server portugues checkprerequisites servidor outras palavras verifica`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS351I no HCL Workload Automation 10.2.8?
@@ -94781,10 +94781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBIS351I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBIS352I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The application server has started successfully." Em portugues: "the application servidor has iniciado successfully.". Temas: iniciado com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBIS352I (severidade: informational, familia AWSBIS - plan library) tem o texto: "The application server has started successfully." Em portugues: "the application servidor has iniciado successfully.". Temas: iniciado com sucesso. Em outras palavras: O servidor de aplicações do produto foi iniciado com sucesso e encontra-se disponível para receber requisições..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBIS352I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The application server has started successfully portugues the servidor iniciado Temas sucesso significa`
+> `AWSBIS352I 10.2.8 mensagem severidade informational familia AWSBIS plan library tem texto The application server has started successfully portugues the servidor iniciado Temas sucesso outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBIS352I no HCL Workload Automation 10.2.8?

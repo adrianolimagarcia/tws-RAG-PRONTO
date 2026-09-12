@@ -282,6 +282,396 @@
 {"code": "AWSBHU761E", "pt": "O nome da pasta é inválido, pois caracteres curinga não são permitidos na definição do caminho informado."}
 {"code": "AWSBHU762E", "pt": "O nome da pasta está incorreto, pois o sistema não conseguiu processar o caminho informado na sintaxe."}
 {"code": "AWSBHU763E", "pt": "O token a ser processado deve ter entre 1 e 16384 bytes, mas o valor fornecido está fora desse limite de tamanho."}
+{"code": "AWSBIA002E", "pt": "O identificador esperado neste ponto da definicao nao foi informado, faltando um dado obrigatorio na entrada."}
+{"code": "AWSBIA003E", "pt": "Foi informado um parametro ou identificador onde ele nao deveria estar presente, gerando erro na interpretacao."}
+{"code": "AWSBIA004E", "pt": "O delimitador obrigatorio esperado na posicao atual da definicao nao foi fornecido pelo operador."}
+{"code": "AWSBIA006E", "pt": "Ocorreu um erro ao acessar o banco de dados, impedindo a conclusao da operacao solicitada."}
+{"code": "AWSBIA008E", "pt": "A sequencia de trabalho informada nao foi localizada, possivelmente o nome ou o numero esta incorreto."}
+{"code": "AWSBIA009E", "pt": "Houve uma falha ao abrir o banco de dados, nao sendo possivel dar continuidade ao processamento."}
+{"code": "AWSBIA010E", "pt": "A geracao automatica de documentacao nao esta habilitada para este trabalho, entao a operacao foi recusada."}
+{"code": "AWSBIA011I", "pt": "Foi registrada a alteracao de um valor de definicao, mostrando o valor antigo e o novo aplicado."}
+{"code": "AWSBIA014E", "pt": "Outra pessoa ja modificou a escala informada, entao a atualizacao nao foi aplicada para evitar conflito."}
+{"code": "AWSBIA015I", "pt": "A nova escala de trabalho foi adicionada com sucesso ao repositorio de definicoes."}
+{"code": "AWSBIA016I", "pt": "A escala existente foi substituida pela nova versao enviada, concluindo a atualizacao."}
+{"code": "AWSBIA017E", "pt": "Falta de memoria ao tentar alocar um elemento causou erro interno no processamento da operacao."}
+{"code": "AWSBIA018E", "pt": "O trabalho informado ja existe dentro da sequencia de trabalhos, nao podendo ser duplicado."}
+{"code": "AWSBIA019E", "pt": "A validacao da sequencia de trabalhos apontou uma quantidade de erros e avisos que precisam ser revistos."}
+{"code": "AWSBIA020E", "pt": "A mascara de dados nao foi atualizada devido a algum problema na operacao de gravacao."}
+{"code": "AWSBIA021E", "pt": "O trabalho informado nao existe dentro da sequencia especificada, impossibilitando a referencia."}
+{"code": "AWSBIA022E", "pt": "Ocorreu uma falha no sistema de arquivos ao criar o arquivo temporario necessario para a operacao."}
+{"code": "AWSBIA023E", "pt": "O trabalho informado nao foi encontrado no mestre de trabalhos, indicando definicao inexistente."}
+{"code": "AWSBIA024E", "pt": "O mestre de trabalhos mudou durante a atualizacao do trabalho, entao a gravacao foi abortada por seguranca."}
+{"code": "AWSBIA030E", "pt": "Falha ao abrir o arquivo de saida redirecionada definido pela variavel de ambiente, impedindo o registro da saida."}
+{"code": "AWSBIA031E", "pt": "Falha ao gravar no arquivo de saida redirecionada definido pela variavel de ambiente, interrompendo o registro."}
+{"code": "AWSBIA032E", "pt": "Houve um erro ao ler a definicao da escala de trabalho, nao sendo possivel processa-la."}
+{"code": "AWSBIA034E", "pt": "Nenhuma sequencia de trabalhos foi localizada dentro da definicao informada."}
+{"code": "AWSBIA035I", "pt": "Foi localizada uma quantidade especifica de sequencias de trabalhos dentro da definicao consultada."}
+{"code": "AWSBIA036I", "pt": "A escala de trabalho informada foi excluida definitivamente do ambiente."}
+{"code": "AWSBIA037E", "pt": "Neste ponto da definicao somente a palavra de controle de offline e aceita, outros valores sao recusados."}
+{"code": "AWSBIA038E", "pt": "Nenhuma unidade de processamento qualificada foi localizada na definicao pesquisada."}
+{"code": "AWSBIA039I", "pt": "Foi encontrada uma quantidade especifica de unidades de processamento dentro da definicao consultada."}
+{"code": "AWSBIA042I", "pt": "A definicao da unidade de processamento mudou durante a tentativa de atualizacao, registrando o estado atual."}
+{"code": "AWSBIA043E", "pt": "A validacao do objeto informado apontou uma quantidade de erros e avisos que necessitam revisao."}
+{"code": "AWSBIA044W", "pt": "Os dados da unidade de processamento nao foram atualizados, permanecendo o estado anterior."}
+{"code": "AWSBIA045E", "pt": "Ocorreu um erro ao acessar os dados da unidade de processamento no repositorio."}
+{"code": "AWSBIA046E", "pt": "Falha ao abrir os dados da unidade de processamento, impedindo a consulta ou gravacao."}
+{"code": "AWSBIA047E", "pt": "Ocorreu um erro ao acessar o arquivo de definicao indicado, nao sendo possivel le-lo."}
+{"code": "AWSBIA056I", "pt": "A estacao de trabalho informada foi excluida do ambiente de definicoes."}
+{"code": "AWSBIA057E", "pt": "Nenhum recurso foi localizado na consulta, retornando um conjunto vazio."}
+{"code": "AWSBIA058I", "pt": "Foi encontrada uma quantidade especifica de recursos correspondente ao criterio da consulta."}
+{"code": "AWSBIA059I", "pt": "O banco de dados possui uma quantidade especifica de recursos cadastrados disponiveis."}
+{"code": "AWSBIA060E", "pt": "Ocorreu um erro ao tentar alterar a definicao dos recursos no sistema."}
+{"code": "AWSBIA065E", "pt": "Nenhum prompt de confirmacao foi localizado para a operacao solicitada."}
+{"code": "AWSBIA067I", "pt": "O banco de dados possui uma quantidade especifica de prompts cadastrados."}
+{"code": "AWSBIA068E", "pt": "Nenhum prompt foi localizado no banco de dados para atender a solicitacao."}
+{"code": "AWSBIA073I", "pt": "Nenhum calendario de trabalho foi localizado para a operacao solicitada."}
+{"code": "AWSBIA074I", "pt": "Foi encontrada uma quantidade especifica de calendarios correspondente a consulta realizada."}
+{"code": "AWSBIA075I", "pt": "O banco de dados possui uma quantidade especifica de calendarios cadastrados."}
+{"code": "AWSBIA076E", "pt": "Nenhum calendario foi localizado no banco de dados para atender a solicitacao."}
+{"code": "AWSBIA081E", "pt": "Nenhum parametro de definicao foi localizado para a operacao solicitada."}
+{"code": "AWSBIA083I", "pt": "O banco de dados possui uma quantidade especifica de parametros de definicao cadastrados."}
+{"code": "AWSBIA084E", "pt": "Nenhum parametro foi localizado no banco de dados para atender a solicitacao."}
+{"code": "AWSBIA085E", "pt": "Existe dependencia circular entre as definicoes informadas, criando um ciclo nao permitido."}
+{"code": "AWSBIA086E", "pt": "O arquivo indicado nao e um arquivo de definicao valido para este processamento."}
+{"code": "AWSBIA087E", "pt": "Ha um erro de sintaxe no comando informado, impossibilitando sua interpretacao."}
+{"code": "AWSBIA088E", "pt": "Ocorreu um erro interno ao tentar resolver as dependencias entre as definicoes informadas."}
+{"code": "AWSBIA089E", "pt": "Era esperada a palavra de controle informada nesta posicao da definicao, mas ela nao apareceu."}
+{"code": "AWSBIA090I", "pt": "A validacao do arquivo apontou uma quantidade especifica de erros e avisos para correcao."}
+{"code": "AWSBIA091I", "pt": "O recurso possui uma quantidade disponivel, por porem a necessidade informada exige mais do que isso."}
+{"code": "AWSBIA092E", "pt": "O recurso informado nao existe no ambiente, impossibilitando a referencia."}
+{"code": "AWSBIA093E", "pt": "O prompt informado nao existe no ambiente, impossibilitando a referencia."}
+{"code": "AWSBIA094E", "pt": "Neste ponto da definicao era esperada uma das palavras de controle listadas, mas nenhuma foi encontrada."}
+{"code": "AWSBIA095E", "pt": "A escala informada ja existe no ambiente, nao sendo permitido criar outra igual."}
+{"code": "AWSBIA096E", "pt": "A definicao da unidade de processamento informada ja existe, nao podendo ser recriada."}
+{"code": "AWSBIA097E", "pt": "Ocorreu uma falha no sistema de arquivos ao gravar o arquivo temporario gerado pela operacao."}
+{"code": "AWSBIA098E", "pt": "Ocorreu uma falha no sistema de arquivos ao fechar o arquivo temporario gerado pela operacao."}
+{"code": "AWSBIA100E", "pt": "A unidade de processamento informada nao existe nos dados de processamento indicados."}
+{"code": "AWSBIA101E", "pt": "Somente definicoes de escala ou de unidade de processamento podem ser especificadas neste contexto."}
+{"code": "AWSBIA105E", "pt": "Ocorreu uma falha no sistema de arquivos ao abrir o script ou arquivo de controle do trabalho."}
+{"code": "AWSBIA106W", "pt": "A definicao da sequencia de trabalhos possui um ou mais avisos que devem ser verificados."}
+{"code": "AWSBIA107W", "pt": "A definicao da estacao de trabalho possui um ou mais avisos que devem ser verificados."}
+{"code": "AWSBIA109E", "pt": "O calendario informado nao esta cadastrado na base de calendarios do sistema."}
+{"code": "AWSBIA110E", "pt": "Voce nao possui autorizacao para acessar a escala de trabalho informada no sistema."}
+{"code": "AWSBIA111E", "pt": "Voce nao possui autorizacao para acessar o calendario informado no sistema."}
+{"code": "AWSBIA112E", "pt": "Voce nao possui autorizacao para acessar o parametro informado nesta unidade de processamento."}
+{"code": "AWSBIA113E", "pt": "Voce nao possui autorizacao para acessar o recurso informado no sistema."}
+{"code": "AWSBIA114E", "pt": "Voce nao possui autorizacao para acessar a unidade de processamento informada no sistema."}
+{"code": "AWSBIA115E", "pt": "Voce nao possui autorizacao para acessar o prompt informado no sistema."}
+{"code": "AWSBIA116W", "pt": "O trabalho de recuperacao esperado nao foi localizado para o trabalho informado na definicao."}
+{"code": "AWSBIA117W", "pt": "O trabalho e hospedado por uma unidade diferente daquela que hospeda o recurso utilizado."}
+{"code": "AWSBIA118W", "pt": "A escala e hospedada por uma unidade diferente daquela que hospeda o recurso utilizado."}
+{"code": "AWSBIA119E", "pt": "Ocorreu um erro e a escala nao foi atualizada, permanecendo a definicao anterior."}
+{"code": "AWSBIA120W", "pt": "A palavra de controle de hospedagem foi informada sem necessidade para este tipo de estacao e foi ignorada."}
+{"code": "AWSBIA121W", "pt": "A ordem das dependencias intercaladas sera perdida quando a escala for gravada no sistema."}
+{"code": "AWSBIA122W", "pt": "A documentacao automatica sera removida quando a escala for gravada na mascara de dados."}
+{"code": "AWSBIA123W", "pt": "A documentacao automatica da definicao sera removida quando a escala for gravada na mascara de dados."}
+{"code": "AWSBIA124W", "pt": "A dependencia informada nao existe dentro da escala indicada, sendo possivelmente invalida."}
+{"code": "AWSBIA125W", "pt": "A unidade de hospedagem indicada nao e gerenciadora de dominio nem a unidade mestre do sistema."}
+{"code": "AWSBIA126W", "pt": "O nome de dominio informado ja esta em uso e gerenciado por outra estacao de trabalho."}
+{"code": "AWSBIA127W", "pt": "A estacao gerenciadora de dominio informada nao esta definida como uma estacao de transferencia de arquivos."}
+{"code": "AWSBIA128W", "pt": "A estacao gerenciadora de dominio precisa pertencer ao mesmo dominio da definicao informada."}
+{"code": "AWSBIA129W", "pt": "O dominio pai informado nao foi localizado na hierarquia de dominios do sistema."}
+{"code": "AWSBIA130W", "pt": "O dominio pai informado nao esta definido como uma definicao valida de dominio."}
+{"code": "AWSBIA131E", "pt": "O nome informado esta reservado para designar o dominio mestre do ambiente, nao podendo ser usado."}
+{"code": "AWSBIA133I", "pt": "A definicao da classe de unidades de processamento foi substituida pela nova versao."}
+{"code": "AWSBIA134I", "pt": "A classe de unidades de processamento mudou durante a tentativa de atualizacao, registrando o estado atual."}
+{"code": "AWSBIA137I", "pt": "O dominio mudou durante a tentativa de atualizacao, registrando o estado atual da definicao."}
+{"code": "AWSBIA138E", "pt": "Para estacao padrao ou broker nao podem ser usadas juntas as palavras de dominio e de hospedagem, informe apenas uma."}
+{"code": "AWSBIA139E", "pt": "Para uma estacao padrao ou broker e obrigatorio informar a qual dominio ela pertence."}
+{"code": "AWSBIA140E", "pt": "Para um agente estendido e obrigatorio informar a unidade de hospedagem e o metodo de acesso."}
+{"code": "AWSBIA141W", "pt": "O dominio mestre nao pode ter dominio pai, mas foi informada uma referencia de parentesco."}
+{"code": "AWSBIA142E", "pt": "O dominio informado nao foi localizado na hierarquia de dominios do sistema."}
+{"code": "AWSBIA143W", "pt": "A definicao informada nao esta cadastrada como um dominio valido no ambiente."}
+{"code": "AWSBIA144E", "pt": "Os arquivos de banco de dados sao incompativeis, sendo necessario executar o utilitario de atualizacao."}
+{"code": "AWSBIA145W", "pt": "O metodo de acesso informado nao existe neste sistema, indicando configuracao incorreta."}
+{"code": "AWSBIA146W", "pt": "Foi detectado um ciclo na definicao dos dominios, causando uma referencia circular."}
+{"code": "AWSBIA147E", "pt": "Ha divergencia de fuso horario entre as definicoes, sendo obrigatorio padronizar todos os valores."}
+{"code": "AWSBIA148W", "pt": "O horario de termino esta antes do horario de inicio, entao revise os tempos informados na definicao."}
+{"code": "AWSBIA149E", "pt": "Os fusos horarios nao estao habilitados na estacao de trabalho informada para a definicao."}
+{"code": "AWSBIA150W", "pt": "A estacao gerenciadora informada tambem gerencia outro dominio, caracterizando dupla funcao."}
+{"code": "AWSBIA151W", "pt": "O horario limite definido esta antes do horario de inicio da definicao informada."}
+{"code": "AWSBIA152W", "pt": "O horario limite definido esta antes do horario de termino da definicao informada."}
+{"code": "AWSBIA153W", "pt": "Quando a unidade de hospedagem e o gerenciador, e obrigatorio informar o dominio correspondente."}
+{"code": "AWSBIA194I", "pt": "O dominio informado foi excluido do ambiente de definicoes do sistema."}
+{"code": "AWSBIA195I", "pt": "A classe de estacoes de trabalho informada foi excluida do ambiente de definicoes."}
+{"code": "AWSBIA198E", "pt": "A definicao do dominio ja existe, nao sendo permitido cadastrar uma versao duplicada."}
+{"code": "AWSBIA199E", "pt": "A definicao da classe de estacoes ja existe, nao sendo permitido cadastrar uma versao duplicada."}
+{"code": "AWSBIA201E", "pt": "Voce nao possui autorizacao para acessar o trabalho informado no sistema."}
+{"code": "AWSBIA202I", "pt": "Foi localizada uma quantidade especifica de trabalhos dentro da definicao consultada."}
+{"code": "AWSBIA203E", "pt": "Nenhum trabalho qualificado foi localizado dentro da definicao pesquisada."}
+{"code": "AWSBIA204W", "pt": "A validacao da definicao informada apontou uma quantidade de erros e avisos para revisao."}
+{"code": "AWSBIA210I", "pt": "O trabalho informado foi excluido do ambiente de definicoes do sistema."}
+{"code": "AWSBIA211E", "pt": "O trabalho informado ja existe no ambiente, nao sendo permitido criar outro igual."}
+{"code": "AWSBIA213W", "pt": "A definicao do trabalho possui avisos que precisam ser revisados antes da gravacao."}
+{"code": "AWSBIA214E", "pt": "Ocorreu um erro e o trabalho nao foi atualizado, permanecendo a definicao anterior."}
+{"code": "AWSBIA215E", "pt": "O mestre de trabalhos nao foi atualizado, indicando que a gravacao nao ocorreu."}
+{"code": "AWSBIA221E", "pt": "O comando do compositor informado e invalido e nao pode ser processado."}
+{"code": "AWSBIA222E", "pt": "O comando de alteracao nao e valido quando se opera em modo grafico da interface."}
+{"code": "AWSBIA223E", "pt": "O comando de criacao nao e valido quando se opera em modo grafico da interface."}
+{"code": "AWSBIA224E", "pt": "O comando de edicao nao e valido quando se opera em modo grafico da interface."}
+{"code": "AWSBIA225W", "pt": "A estacao informada esta definida como uma classe de estacoes e nao como estacao individual."}
+{"code": "AWSBIA226W", "pt": "A estacao informada nao e o gerenciador do dominio mestre, entao os parametros vem expandidos dessa origem."}
+{"code": "AWSBIA227E", "pt": "Uma estacao de trabalho nao pode hospedar a si mesma, independente do tipo de agente informado."}
+{"code": "AWSBIA228E", "pt": "O objeto que se deseja criar já existe e o seu tipo não corresponde ao tipo informado na tentativa de criação."}
+{"code": "AWSBIA229E", "pt": "O gerenciador de domínio mestre indicado está gerenciando o domínio informado, conforme definido nas opções globais."}
+{"code": "AWSBIA230E", "pt": "O domínio indicado não pode ser incluído em uma definição de classe de processadores."}
+{"code": "AWSBIA231E", "pt": "O tipo de entrada informado é desconhecido e por isso não pode ser incluído em uma definição de classe de processadores."}
+{"code": "AWSBIA250E", "pt": "Não foram encontrados usuários que atendam aos critérios de qualificação dentro do recurso informado."}
+{"code": "AWSBIA251I", "pt": "Foi localizada a quantidade informada de usuários dentro do recurso indicado na operação."}
+{"code": "AWSBIA254I", "pt": "O usuário informado foi alterado durante a tentativa de atualização do cadastro."}
+{"code": "AWSBIA255I", "pt": "Para o objeto indicado foram encontrados a quantidade informada de erros e de avisos."}
+{"code": "AWSBIA256E", "pt": "Os dados cadastrais do usuário não puderam ser atualizados conforme foi solicitado na operação."}
+{"code": "AWSBIA257E", "pt": "Ocorreu um erro ao tentar acessar os dados cadastrais do usuário no sistema."}
+{"code": "AWSBIA258E", "pt": "Ocorreu um erro ao tentar abrir o arquivo de dados cadastrais do usuário."}
+{"code": "AWSBIA263I", "pt": "O usuário informado foi removido definitivamente do cadastro de usuários do ambiente."}
+{"code": "AWSBIA264E", "pt": "Já existe uma definição de usuário com o mesmo nome no cadastro."}
+{"code": "AWSBIA265E", "pt": "O usuário informado não existe no arquivo de dados cadastrais indicado na operação."}
+{"code": "AWSBIA267W", "pt": "A definição do usuário apresenta avisos que merecem atenção do operador responsável."}
+{"code": "AWSBIA268E", "pt": "Você não possui autorização de acesso para visualizar ou modificar o usuário informado."}
+{"code": "AWSBIA270E", "pt": "Os argumentos passados na linha de comando ultrapassaram o tamanho máximo permitido."}
+{"code": "AWSBIA271E", "pt": "Foi encontrada uma palavra-chave inesperada antes ou exatamente na posição indicada pelo cursor."}
+{"code": "AWSBIA273E", "pt": "O valor de deslocamento informado está fora do intervalo permitido entre menos trinta e dois mil setecentos e sessenta e sete e trinta e dois mil setecentos e sessenta e sete."}
+{"code": "AWSBIA274E", "pt": "Foram encontrados problemas ao abrir ou adquirir o arquivo de identificadores curtos."}
+{"code": "AWSBIA275I", "pt": "A geração do identificador curto para os nomes está ativa no ambiente."}
+{"code": "AWSBIA276W", "pt": "O identificador curto não é gerado para nomes de jobs menores que a quantidade de bytes informada."}
+{"code": "AWSBIA277E", "pt": "Foram encontrados problemas ao recuperar o valor do identificador curto a partir do arquivo."}
+{"code": "AWSBIA278E", "pt": "Houve erro ao usar a classe de processadores informada em uma sequência de jobs cujas estações de trabalho são as indicadas."}
+{"code": "AWSBIA279W", "pt": "O job informado está associado à estação de trabalho indicada com o estado de ignorar ativado."}
+{"code": "AWSBIA280E", "pt": "Existe um erro nos parâmetros de conexão do composer, pois a porta informada pelo parâmetro de porta não é um valor numérico."}
+{"code": "AWSBIA283E", "pt": "Ocorreu um erro interno e o composer não conseguiu abrir o arquivo temporário indicado."}
+{"code": "AWSBIA284E", "pt": "Ocorreu um erro interno e o composer não conseguiu abrir o arquivo temporário indicado para escrita."}
+{"code": "AWSBIA285E", "pt": "Ocorreu um erro interno e o composer não conseguiu abrir o arquivo temporário indicado para leitura."}
+{"code": "AWSBIA288I", "pt": "Foi informada a quantidade total de objetos que foram atualizados na operação."}
+{"code": "AWSBIA289I", "pt": "Foi informada a quantidade total de objetos que foram extraídos na operação."}
+{"code": "AWSBIA290I", "pt": "Foi informada a quantidade total de objetos que foram excluídos na operação."}
+{"code": "AWSBIA292I", "pt": "Foi informada a quantidade total de objetos que foram adicionados na operação."}
+{"code": "AWSBIA293E", "pt": "Ocorreu um erro interno e o composer não conseguiu inicializar a conexão HTTP ou HTTPS."}
+{"code": "AWSBIA294E", "pt": "Ocorreu um erro interno e o servidor de linha de comando do composer não conseguiu autenticar o cliente."}
+{"code": "AWSBIA295I", "pt": "A autenticação do usuário no ambiente foi concluída com sucesso e o acesso foi liberado."}
+{"code": "AWSBIA296I", "pt": "Foi informada a quantidade total de objetos que foram validados com sucesso na operação."}
+{"code": "AWSBIA298E", "pt": "Para renomear um job, a estação de trabalho e a sequência de jobs associadas não podem ser renomeadas na mesma ação."}
+{"code": "AWSBIA299I", "pt": "O sistema está procurando pelos objetos do tipo informado dentro do ambiente."}
+{"code": "AWSBIA300I", "pt": "A sintaxe da linguagem de escalonamento foi validada com sucesso para o objeto indicado."}
+{"code": "AWSBIA301W", "pt": "A verificação de sintaxe da linguagem de escalonamento do objeto indicado gerou a quantidade informada de avisos."}
+{"code": "AWSBIA303W", "pt": "O objeto indicado apresenta a quantidade informada de avisos totais na validação."}
+{"code": "AWSBIA307I", "pt": "Foi informada a quantidade total de objetos que foram bloqueados na operação."}
+{"code": "AWSBIA308I", "pt": "Foi informada a quantidade total de objetos que foram desbloqueados na operação."}
+{"code": "AWSBIA309E", "pt": "A data de validade final deve ser posterior à data de validade inicial no ciclo de execução definido para o objeto indicado."}
+{"code": "AWSBIA310E", "pt": "A data de validade final deve ser posterior à data de validade inicial em um ciclo de execução definido para a sequência de jobs indicada."}
+{"code": "AWSBIA315E", "pt": "Há um erro de sintaxe, pois a forma das palavras-chave que indicam dependência de seguimento ou de correspondência está incorreta."}
+{"code": "AWSBIA316E", "pt": "Ocorreu um erro interno e o arquivo indicado não pôde ser lido pelo sistema."}
+{"code": "AWSBIA317E", "pt": "Ocorreu um erro interno e o arquivo indicado não pôde ser aberto por falta de memória disponível para alocação."}
+{"code": "AWSBIA319I", "pt": "O arquivo de opções do usuário indicado foi salvo com sucesso no ambiente."}
+{"code": "AWSBIA320E", "pt": "Ocorreu um erro ao tentar salvar o arquivo de opções do usuário indicado."}
+{"code": "AWSBIA321I", "pt": "As credenciais para conectar ao servidor remoto não foram informadas na configuração."}
+{"code": "AWSBIA322W", "pt": "O texto do prompt local na sequência de jobs indicada ultrapassou o tamanho máximo permitido e foi truncado."}
+{"code": "AWSBIA323W", "pt": "O total de unidades do recurso indicado na sequência de jobs excede o limite máximo de unidades de recurso permitido."}
+{"code": "AWSBIA324E", "pt": "O total de unidades do recurso indicado no job informado excede o limite máximo de unidades de recurso permitido."}
+{"code": "AWSBIA325W", "pt": "O texto do prompt local no job indicado ultrapassou o tamanho máximo permitido e foi truncado."}
+{"code": "AWSBIA326W", "pt": "O campo de servidor foi informado para o agente estendido indicado, porém ele não é necessário e foi ignorado."}
+{"code": "AWSBIA327W", "pt": "O campo de status completo foi informado como ativo para o agente estendido indicado, porém foi alterado para inativo por não ser necessário."}
+{"code": "AWSBIA328W", "pt": "O campo que indica se está atrás de firewall foi informado para o agente estendido indicado, porém foi ignorado por não ser necessário."}
+{"code": "AWSBIA329W", "pt": "Os campos de nível de segurança e de endereço seguro foram informados para o agente estendido indicado, porém foram ignorados por não serem necessários."}
+{"code": "AWSBIA330W", "pt": "O campo de vinculação automática foi informado como ativo para o agente estendido indicado, porém foi alterado para inativo por não ser necessário."}
+{"code": "AWSBIA331W", "pt": "O campo de status completo foi informado como ativo para a estação de trabalho padrão ou broker indicada, porém foi alterado para inativo por não ser necessário."}
+{"code": "AWSBIA332W", "pt": "O campo de status completo foi informado como inativo para o gerenciador de domínio indicado, porém foi corrigido para ativo por ser o valor correto."}
+{"code": "AWSBIA333W", "pt": "O campo de servidor foi informado para o gerenciador de domínio indicado, porém foi ignorado por não ser necessário."}
+{"code": "AWSBIA334W", "pt": "O campo de resolução de dependências foi informado para a estação de trabalho indicada, porém foi ignorado por não ser necessário."}
+{"code": "AWSBIA335W", "pt": "O campo de endereço seguro foi informado para a estação de trabalho indicada, porém foi ignorado porque o nível de segurança não foi informado."}
+{"code": "AWSBIA336W", "pt": "A palavra-chave de acesso foi informada para a estação de trabalho indicada, porém foi ignorada por não ser necessária."}
+{"code": "AWSBIA337W", "pt": "O campo de gerenciador foi informado para o domínio indicado, porém foi ignorado por estar obsoleto e não ser mais necessário."}
+{"code": "AWSBIA338W", "pt": "O campo de domínio foi informado para o agente estendido indicado, porém foi ignorado porque o valor do campo de host não corresponde ao valor esperado."}
+{"code": "AWSBIA339W", "pt": "O nível de segurança foi informado para o agente indicado sem o endereço seguro, por isso foi usado o valor padrão para a porta SSL."}
+{"code": "AWSBIA341W", "pt": "O campo de host foi informado para a estação de trabalho indicada, porém foi ignorado por não ser necessário."}
+{"code": "AWSBIA342E", "pt": "A palavra-chave de filtro informada não pode ser usada para o tipo de objeto fornecido."}
+{"code": "AWSBIA343E", "pt": "O critério de filtro fornecido não pode ser usado mais de uma vez na mesma operação."}
+{"code": "AWSBIA344E", "pt": "O critério de filtro informado não é válido para o objeto da operação, que exige a palavra-chave indicada."}
+{"code": "AWSBIA346E", "pt": "Nenhum critério de filtro foi informado após a palavra-chave de filtro, sendo necessário usar o critério indicado."}
+{"code": "AWSBIA347E", "pt": "Nenhum critério de filtro foi informado após a palavra-chave de filtro, sendo necessário usar o critério indicado."}
+{"code": "AWSBIA348E", "pt": "A palavra-chave informada não é válida para o objeto da operação, que exige a palavra-chave indicada."}
+{"code": "AWSBIA349E", "pt": "A palavra-chave informada não é válida para o objeto da operação, que exige uma das palavras-chave indicadas."}
+{"code": "AWSBIA350W", "pt": "As palavras-chave de horário de escalonamento e de execução podem ser informadas apenas uma vez, sendo usado o último valor."}
+{"code": "AWSBIA352W", "pt": "O endereço IPv6 informado é um endereço mapeado a partir de IPv4 e pode não ser suportado em algumas plataformas."}
+{"code": "AWSBIA353W", "pt": "O endereço IPv6 informado é compatível com IPv4 e pode não ser suportado em algumas plataformas."}
+{"code": "AWSBIA354W", "pt": "O endereço IPv6 informado é um endereço local de enlace, com escopo limitado ao mesmo enlace de dados e interface não portável."}
+{"code": "AWSBIA355E", "pt": "Há um erro de sintaxe no arquivo XML, pois foi encontrada a etiqueta de fechamento da regra de evento sem a etiqueta de abertura correspondente."}
+{"code": "AWSBIA356E", "pt": "Há um erro de sintaxe no arquivo XML, pois foi encontrada a etiqueta de fechamento de comentário sem a etiqueta de abertura correspondente."}
+{"code": "AWSBIA357E", "pt": "Há um erro de sintaxe no arquivo XML, pois uma etiqueta de abertura de comentário foi encontrada antes do fechamento do comentário anterior."}
+{"code": "AWSBIA358E", "pt": "Há um erro de sintaxe no arquivo XML, pois a codificação utilizada não corresponde à codificação do locale."}
+{"code": "AWSBIA359E", "pt": "Há um erro de sintaxe no arquivo XML, pois a versão do XML está ausente no cabeçalho e por isso o arquivo não pode ser interpretado."}
+{"code": "AWSBIA360E", "pt": "Há um erro de sintaxe, pois não é possível alterar a tabela de variáveis de uma variável, apenas o nome da variável."}
+{"code": "AWSBIA368W", "pt": "A palavra-chave de protocolo foi informada para a estação de trabalho indicada, porém foi ignorada por não ser necessária."}
+{"code": "AWSBIA369W", "pt": "O valor de protocolo é HTTP para a estação de trabalho agente indicada, que possui endereço seguro informado, por isso o protocolo foi ignorado."}
+{"code": "AWSBIA370W", "pt": "O valor de protocolo é HTTPS para a estação de trabalho agente indicada, que não possui endereço seguro informado, por isso o protocolo foi ignorado."}
+{"code": "AWSBIA371E", "pt": "A palavra-chave obrigatória de nó está ausente na definição da estação de trabalho indicada."}
+{"code": "AWSBIA372E", "pt": "A palavra-chave obrigatória de membros está ausente na definição da estação de trabalho de pool indicada."}
+{"code": "AWSBIA373E", "pt": "A palavra-chave obrigatória de requisitos está ausente na definição da estação de trabalho de pool dinâmico indicada."}
+{"code": "AWSBIA375W", "pt": "Uma ou mais palavras-chave inválidas foram informadas para a estação de trabalho indicada e foram ignoradas."}
+{"code": "AWSBIA376W", "pt": "A palavra-chave de requisitos foi informada para a estação de trabalho indicada, porém foi ignorada por não ser necessária."}
+{"code": "AWSBIA377W", "pt": "O valor do nível de segurança da estação de trabalho indicada não é o valor esperado e por isso foi ignorado."}
+{"code": "AWSBIA378E", "pt": "O critério de configuração fornecido não pode ser usado mais de uma vez na mesma operação."}
+{"code": "AWSBIA379E", "pt": "O atributo informado para o critério de configuração não pode ser usado para o objeto fornecido."}
+{"code": "AWSBIA380E", "pt": "Nenhum critério de configuração foi informado após a palavra-chave de definição, sendo necessário usar a sintaxe indicada para o atributo."}
+{"code": "AWSBIA381E", "pt": "Nenhum critério de configuração foi informado após a palavra-chave de definição, sendo necessário usar o critério indicado."}
+{"code": "AWSBIA382E", "pt": "O atributo informado para o critério de configuração não se aplica ao objeto da operação, que exige o atributo indicado."}
+{"code": "AWSBIA386E", "pt": "O comando enviado não pode ser executado e o erro apresentado está descrito na mensagem."}
+{"code": "AWSBIA387E", "pt": "A pasta especificada na operação não pôde ser localizada no sistema de arquivos."}
+{"code": "AWSBIA388E", "pt": "Não foi possível verificar se a pasta especificada existe e mais detalhes estão disponíveis nos arquivos de rastreamento locais."}
+{"code": "AWSBIA389E", "pt": "O composer não conseguiu obter uma estação de trabalho padrão válida a partir do valor informado."}
+{"code": "AWSBIA390E", "pt": "O identificador de processador que foi especificado não pôde ser localizado dentro do sistema."}
+{"code": "AWSBIA391E", "pt": "O nome da estação de trabalho, que é obrigatório, não foi informado na operação."}
+{"code": "AWSBIA392E", "pt": "A estação de trabalho que foi especificada não pôde ser localizada no sistema de escalonamento."}
+{"code": "AWSBIA393E", "pt": "A senha informada está incorreta, pois deve ter entre a quantidade mínima e máxima de caracteres indicada."}
+{"code": "AWSBIA502I", "pt": "A estação de trabalho do job deve ser reiniciada para que as alterações tenham efeito."}
+{"code": "AWSBIA511I", "pt": "Na primeira etapa da migração foram encontrados os erros e avisos nas quantidades indicadas."}
+{"code": "AWSBIA512I", "pt": "Na segunda etapa da migração foram encontrados os erros e avisos nas quantidades indicadas."}
+{"code": "AWSBIA513I", "pt": "Foi informada a quantidade total de objetos que foram importados na operação."}
+{"code": "AWSBIS001I", "pt": "Utilize o comando de personalização com a opção de uso para exibir as opções e a forma de utilização."}
+{"code": "AWSBIS002E", "pt": "Ocorreu um erro interno e o programa de personalização falhou ao executar o comando Unix informado durante a instalação."}
+{"code": "AWSBIS003E", "pt": "O arquivo de configuração do HCL Workload Automation indicado não existe no sistema."}
+{"code": "AWSBIS006I", "pt": "O sistema está tentando remover o elemento informado durante a execução da operação."}
+{"code": "AWSBIS007I", "pt": "O comando informado foi instalado como um link rígido dentro do sistema."}
+{"code": "AWSBIS008I", "pt": "O comando informado foi instalado como um link simbólico dentro do sistema."}
+{"code": "AWSBIS009E", "pt": "O programa de personalização não conseguiu criar um link simbólico para o programa indicado."}
+{"code": "AWSBIS010E", "pt": "O programa de personalização não conseguiu criar um link simbólico para o programa indicado porque já existe um link."}
+{"code": "AWSBIS011I", "pt": "O sistema está procurando pelo usuário informado no arquivo de contas de usuários do sistema."}
+{"code": "AWSBIS012W", "pt": "O usuário informado não foi encontrado no arquivo de contas e o sistema tentará localizá-lo nos serviços de diretório."}
+{"code": "AWSBIS013E", "pt": "O identificador de usuário não foi encontrado nem nos arquivos locais nem nos serviços de diretório, que podem estar inacessíveis."}
+{"code": "AWSBIS014E", "pt": "O identificador de usuário informado não foi encontrado nos arquivos locais nem nos serviços de diretório."}
+{"code": "AWSBIS015E", "pt": "O usuário que está executando o programa de personalização não está conectado como usuário administrador."}
+{"code": "AWSBIS016E", "pt": "O programa de personalização não consegue utilizar o comando de alteração de proprietário de arquivos."}
+{"code": "AWSBIS017E", "pt": "O identificador de usuário informado, para o qual se deseja instalar o produto, não existe ou não pertence a nenhum grupo."}
+{"code": "AWSBIS018I", "pt": "O diretório inicial do HCL Workload Automation está definido no caminho informado."}
+{"code": "AWSBIS019I", "pt": "O instalador informa o nome do grupo de componentes do HCL Workload Automation que está sendo configurado durante o processo de instalação."}
+{"code": "AWSBIS020E", "pt": "O diretório raiz informado como diretório home do HCL Workload Automation não existe, então a instalação não consegue prosseguir até corrigir esse caminho."}
+{"code": "AWSBIS022I", "pt": "O procedimento de instalação do HCL Workload Automation foi concluído com sucesso e todos os arquivos foram colocados corretamente no destino."}
+{"code": "AWSBIS023E", "pt": "Houve falha durante o processo de instalação do componente especificado, portanto a instalação não foi concluída adequadamente e precisa ser refeita."}
+{"code": "AWSBIS024E", "pt": "O programa de personalização foi iniciado passando o parâmetro que seleciona o módulo mais de uma vez, o que não é permitido e invalida o comando."}
+{"code": "AWSBIS025E", "pt": "O programa de personalização foi executado com uma opção inválida, indicando que algum parâmetro foi digitado errado e precisa ser corrigido."}
+{"code": "AWSBIS026E", "pt": "O caminho configurado para o diretório home do HCL Workload Automation não existe no sistema, impedindo que o procedimento de configuração seja executado."}
+{"code": "AWSBIS027I", "pt": "O instalador detectou que a versão do sistema operacional HP-UX presente na máquina é da linha nove ou mais antiga."}
+{"code": "AWSBIS028I", "pt": "O instalador detectou que a versão do sistema operacional HP-UX presente na máquina é da linha dez ou mais nova."}
+{"code": "AWSBIS029I", "pt": "O instalador está apagando o arquivo indicado para liberar espaço em disco durante o procedimento de instalação."}
+{"code": "AWSBIS030I", "pt": "O instalador está descompactando o arquivo indicado e extraindo os arquivos necessários do HCL Workload Automation para prosseguir."}
+{"code": "AWSBIS031I", "pt": "O instalador está extraindo os arquivos do HCL Workload Automation a partir do arquivo compactado indicado, aguarde a conclusão."}
+{"code": "AWSBIS032I", "pt": "O processo de instalação está extraindo os arquivos do módulo indicado a partir do arquivo compactado especificado."}
+{"code": "AWSBIS033E", "pt": "Ocorreu um erro ao tentar extrair os arquivos do HCL Workload Automation do arquivo compactado indicado, então o processo foi interrompido."}
+{"code": "AWSBIS035E", "pt": "O arquivo compactado indicado não foi encontrado no local esperado, então a instalação segue ignorando essa parte."}
+{"code": "AWSBIS036I", "pt": "O processo está dando continuidade à fase de personalização da instalação do HCL Workload Automation depois da etapa anterior."}
+{"code": "AWSBIS037I", "pt": "O instalador está chamando o script de personalização responsável por configurar o módulo indicado no processo."}
+{"code": "AWSBIS038E", "pt": "O script de personalização previsto para o módulo indicado não foi localizado, então o processo de personalização é encerrado."}
+{"code": "AWSBIS041I", "pt": "O instalador informa o grupo de componentes do HCL Workload Automation que está sendo processado durante a configuração."}
+{"code": "AWSBIS042E", "pt": "A etapa de personalização não conseguiu descompactar o arquivo compactado indicado, causando falha nesse procedimento."}
+{"code": "AWSBIS043I", "pt": "A atualização instalada do HCL Workload Automation foi aplicada com sucesso e o produto ficou pronto para uso."}
+{"code": "AWSBIS044E", "pt": "Há um erro de sintaxe nas opções de personalização porque a configuração que evita a expansão só pode ser usada numa instalação nova."}
+{"code": "AWSBIS045E", "pt": "Há erro de sintaxe nas opções porque a opção de usuário precisa vir seguida de um identificador válido e não pode começar com hífen."}
+{"code": "AWSBIS047E", "pt": "Há erro de sintaxe nas opções porque a configuração para este processador não pode ser combinada com a opção de atualização."}
+{"code": "AWSBIS049E", "pt": "Há erro de sintaxe porque a opção que indica a estação mestre só pode ser usada juntamente com a opção de instalação nova."}
+{"code": "AWSBIS053E", "pt": "O diretório home do componente de rede indicado não foi localizado ou o caminho fornecido não corresponde a um diretório válido."}
+{"code": "AWSBIS054E", "pt": "Há erro de sintaxe porque a opção de empresa precisa vir seguida de um nome válido e o valor informado não pode começar com hífen."}
+{"code": "AWSBIS055E", "pt": "Há erro de sintaxe porque a opção de caminho de execução precisa vir seguida de um caminho válido que não comece com hífen."}
+{"code": "AWSBIS056E", "pt": "A opção informada é inválida, o correto é especificar o parâmetro que seleciona o nome do módulo a ser instalado."}
+{"code": "AWSBIS057E", "pt": "A opção informada é inválida, o correto é especificar o parâmetro que indica o grupo de instalação desejado."}
+{"code": "AWSBIS059E", "pt": "A etapa de personalização falhou porque não foi possível descompactar o arquivo compactado indicado no processo."}
+{"code": "AWSBIS060E", "pt": "O diretório de componentes informado na variável que aponta para o arquivo de componentes não existe ou não é um diretório válido."}
+{"code": "AWSBIS061W", "pt": "Nenhum nome de grupo de componentes foi fornecido, então o instalador adotou o nome padrão indicado para agrupar a instalação."}
+{"code": "AWSBIS062E", "pt": "Foi encontrado um registro para o grupo informado no arquivo de componentes, mas o conteúdo desse registro está incorreto."}
+{"code": "AWSBIS063E", "pt": "O arquivo de componentes contém mais de uma entrada para o local ou para o grupo especificado, gerando ambiguidade na instalação."}
+{"code": "AWSBIS064W", "pt": "O produto já está instalado num grupo de componentes diferente, então o instalador está trocando o nome do grupo para o indicado."}
+{"code": "AWSBIS066E", "pt": "O HCL Workload Automation já está instalado no local indicado, portanto só é permitido atualizar essa instalação existente."}
+{"code": "AWSBIS067E", "pt": "Existe mais de uma entrada para o componente de rede dentro do mesmo grupo, o que não é aceito pelo processo de instalação."}
+{"code": "AWSBIS068W", "pt": "O componente de rede já se encontra instalado neste grupo no local indicado, então não há necessidade de repetir a instalação."}
+{"code": "AWSBIS069I", "pt": "O instalador informa o local onde o componente de rede será instalado ou atualizado dentro da estrutura do produto."}
+{"code": "AWSBIS070E", "pt": "O diretório do componente de rede não foi localizado, então é preciso copiar esse diretório para o lugar e rodar a personalização novamente."}
+{"code": "AWSBIS071E", "pt": "A personalização do componente de rede falhou durante a execução, então é preciso corrigir o problema e repetir o comando."}
+{"code": "AWSBIS072E", "pt": "Surgiu um erro ao criar ou atualizar o arquivo que registra os componentes instalados do HCL Workload Automation."}
+{"code": "AWSBIS073I", "pt": "Os calendários de produção foram substituídos com sucesso pelo processo de atualização da instalação."}
+{"code": "AWSBIS115I", "pt": "A opção que recebe o nome do módulo indica qual módulo deve ser usado no momento da instalação, conforme explicado no comando."}
+{"code": "AWSBIS201E", "pt": "O calendário informado com esse nome já existe no banco de dados, então não é possível criar outro igual."}
+{"code": "AWSBIS202E", "pt": "É obrigatório informar o tipo do calendário, pois sem esse dado o comando não consegue prosseguir com a criação."}
+{"code": "AWSBIS203E", "pt": "Não foi possível localizar o diretório home do usuário do servidor de workload, necessário para acessar as configurações."}
+{"code": "AWSBIS204E", "pt": "Houve falha ao ler os calendários armazenados no banco de dados do sistema de agendamento de workloads."}
+{"code": "AWSBIS205E", "pt": "Os calendários desse tipo dependem da ferramenta de cálculo de datas do servidor de workload para funcionarem corretamente."}
+{"code": "AWSBIS206E", "pt": "Os calendários desse tipo exigem que um calendário de feriados seja definido previamente para que possam ser criados."}
+{"code": "AWSBIS207E", "pt": "Os calendários desse tipo exigem que o parâmetro de data de início seja informado junto ao comando de criação."}
+{"code": "AWSBIS208E", "pt": "A licença do HCL Workload Automation expirou e por isso o uso do produto fica bloqueado até renovação."}
+{"code": "AWSBIS235E", "pt": "O dia informado está fora da faixa válida de um a trinta e um, então o valor precisa ser corrigido."}
+{"code": "AWSBIS236E", "pt": "O argumento informado precisa ser um valor maior que zero, portanto os dados atuais não são aceitos."}
+{"code": "AWSBIS237E", "pt": "O argumento informado está fora da faixa permitida de um a três, então o valor precisa ser ajustado."}
+{"code": "AWSBIS238E", "pt": "A opção informada no comando está incorreta, por isso o processamento foi interrompido."}
+{"code": "AWSBIS239E", "pt": "Ocorreram erros durante a operação e o banco de dados de calendários não foi alterado, veja os detalhes abaixo."}
+{"code": "AWSBIS240E", "pt": "Falhou a inclusão de novo calendário no banco de dados, então o registro não foi gravado."}
+{"code": "AWSBIS241I", "pt": "O novo calendário criado passará a valer apenas a partir do próximo período de produção do sistema de agendamento."}
+{"code": "AWSBIS242W", "pt": "O novo período de produção entra em vigor imediatamente, então o processo aguarda vinte segundos antes de continuar."}
+{"code": "AWSBIS243I", "pt": "O modo de depuração está sendo ativado para registrar informações detalhadas durante a execução do comando."}
+{"code": "AWSBIS244I", "pt": "O parâmetro que identifica o calendário sendo processado está sendo configurado com o valor indicado."}
+{"code": "AWSBIS245I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários do tipo diário."}
+{"code": "AWSBIS246I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários do tipo específico."}
+{"code": "AWSBIS247I", "pt": "O número de repetições da execução está sendo configurado com o valor de iterações informado."}
+{"code": "AWSBIS248I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários do tipo fenológico."}
+{"code": "AWSBIS249I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários de turno noturno."}
+{"code": "AWSBIS250I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários mensais."}
+{"code": "AWSBIS251I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários de período de produção."}
+{"code": "AWSBIS252I", "pt": "A data inicial do calendário está sendo configurada com o valor informado pelo operador."}
+{"code": "AWSBIS253I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários repetidos."}
+{"code": "AWSBIS254I", "pt": "O tipo de calendário está sendo definido como o valor que representa calendários semanais."}
+{"code": "AWSBIS255I", "pt": "A saída dos resultados do comando está sendo direcionada para a tela padrão do sistema."}
+{"code": "AWSBIS256I", "pt": "A opção de compilar o calendário está sendo ativada para validar as regras definidas."}
+{"code": "AWSBIS257E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS258E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS259E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS260E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS261E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS262E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS263E", "pt": "Nenhum argumento foi fornecido junto com a opção que exige um valor, então o comando foi reprovado."}
+{"code": "AWSBIS264E", "pt": "Os calendários desse tipo exigem que o calendário de dias não úteis seja definido previamente para funcionar."}
+{"code": "AWSBIS265I", "pt": "O parâmetro que aponta para o calendário de feriados está sendo configurado com o valor indicado pelo operador."}
+{"code": "AWSBIS273E", "pt": "Foi informada mais de uma opção de calendário no comando, mas só é permitido escolher uma única opção de cada vez."}
+{"code": "AWSBIS274E", "pt": "A variável de ambiente que define a pasta temporária não está configurada, então defina um valor válido e rode de novo."}
+{"code": "AWSBIS275E", "pt": "Nenhum argumento foi fornecido junto com a opção que indicaria o calendário de dias não úteis, especifique um nome válido."}
+{"code": "AWSBIS276E", "pt": "O comando não conseguiu interpretar o formato de codificação de caracteres usado, então a execução foi encerrada."}
+{"code": "AWSBIS277E", "pt": "O calendário de dias não úteis indicado não consta no arquivo de plano, então é preciso executar o planejador para incluí-lo."}
+{"code": "AWSBIS278E", "pt": "Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta."}
+{"code": "AWSBIS279E", "pt": "O sistema não conseguiu determinar qual é o programa usado para executar comandos em máquinas remotas."}
+{"code": "AWSBIS280E", "pt": "Não foi possível estabelecer conexão com o sistema remoto indicado, impedindo a comunicação entre as máquinas."}
+{"code": "AWSBIS281E", "pt": "Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta."}
+{"code": "AWSBIS283E", "pt": "O sistema não conseguiu determinar qual é o programa usado para executar comandos em máquinas remotas."}
+{"code": "AWSBIS286E", "pt": "Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta."}
+{"code": "AWSBIS287E", "pt": "Não foi possível estabelecer conexão com o sistema remoto indicado, impedindo a comunicação entre as máquinas."}
+{"code": "AWSBIS288E", "pt": "Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta."}
+{"code": "AWSBIS290E", "pt": "Nenhum arquivo foi encontrado dentro do conjunto de arquivos informado, então o processamento não teve o que fazer."}
+{"code": "AWSBIS291E", "pt": "O utilitário de padronização de saídas falhou durante a execução e não concluiu o processamento do arquivo indicado."}
+{"code": "AWSBIS292I", "pt": "O modo de conformidade com padrões de comunicação POSIX está sendo ativado na execução do comando."}
+{"code": "AWSBIS295I", "pt": "O utilitário de localização de programas está sendo configurado para usar a ferramenta de busca informada."}
+{"code": "AWSBIS296I", "pt": "A regra de seleção está sendo configurada para escolher o primeiro arquivo encontrado na listagem."}
+{"code": "AWSBIS297I", "pt": "A regra de seleção está sendo configurada para escolher o último arquivo encontrado na listagem."}
+{"code": "AWSBIS298I", "pt": "A regra de seleção está sendo configurada para considerar todos os arquivos encontrados na listagem."}
+{"code": "AWSBIS299E", "pt": "Nenhum argumento foi fornecido junto com a opção que pede o dia, portanto o comando foi reprovado."}
+{"code": "AWSBIS300E", "pt": "Nenhum argumento foi fornecido junto com a opção que pede o nome, portanto o comando foi reprovado."}
+{"code": "AWSBIS301E", "pt": "Nenhum argumento foi fornecido junto com a opção que pede o número, portanto o comando foi reprovado."}
+{"code": "AWSBIS302I", "pt": "O caminho do diretório de logs do servidor está sendo configurado na execução atual do comando."}
+{"code": "AWSBIS303E", "pt": "Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta."}
+{"code": "AWSBIS304I", "pt": "O comando exibe o cabeçalho com o status do arquivo processado, indicando o resultado da operação."}
+{"code": "AWSBIS305I", "pt": "O comando exibe o cabeçalho com o status de saída do processo, indicando se a execução terminou com êxito."}
+{"code": "AWSBIS310E", "pt": "O usuário não possui autorização para utilizar o comando de agendamento único, então a chamada foi bloqueada."}
+{"code": "AWSBIS311E", "pt": "O usuário não possui autorização para utilizar o comando de envio em lote, então a chamada foi bloqueada."}
+{"code": "AWSBIS320E", "pt": "O comando apresentou falha durante a execução do processo indicado, interrompendo a operação."}
+{"code": "AWSBIS326E", "pt": "Não foi localizado o diretório padrão onde os arquivos de saída das execuções deveriam estar."}
+{"code": "AWSBIS328I", "pt": "O instalador informa o caminho do diretório padrão de saídas do componente de rede no sistema."}
+{"code": "AWSBIS329E", "pt": "Nenhum arquivo de saída do componente de rede foi localizado dentro do diretório indicado no sistema."}
+{"code": "AWSBIS330I", "pt": "A ação não pode ser concluída porque o arquivo indicado está aberto em outro programa em execução no momento."}
+{"code": "AWSBIS332E", "pt": "Nenhuma entrada de manual foi encontrada para o tópico ou comando indicado na documentação do sistema."}
+{"code": "AWSBIS335E", "pt": "O planejador de produção falhou durante a execução do comando indicado e não concluiu a geração do plano."}
+{"code": "AWSBIS338E", "pt": "Se o problema persistir, consulte a base de conhecimentos de suporte no portal da compatibilidade do produto."}
+{"code": "AWSBIS339E", "pt": "O arquivo indicado não existe no local esperado, então a operação não pode ser concluída."}
+{"code": "AWSBIS340E", "pt": "Há um erro de sintaxe no comando digitado, portanto consulte a documentação do produto para usar a forma correta."}
+{"code": "AWSBIS345E", "pt": "Ocorreu um erro interno durante a execução do utilitário que redefine o plano, falhando no comando indicado."}
+{"code": "AWSBIS346W", "pt": "Nenhum arquivo de plano de produção foi encontrado, então o processamento não tem dados para trabalhar."}
+{"code": "AWSBIS348E", "pt": "Ocorreu um erro interno durante a execução do utilitário que monta o plano, falhando no comando indicado."}
+{"code": "AWSBIS349E", "pt": "Ocorreu um erro interno durante a execução do utilitário que alterna o plano, falhando no comando indicado."}
+{"code": "AWSBIS350W", "pt": "O servidor de aplicação do produto não está em execução neste momento, então o serviço está indisponível."}
+{"code": "AWSBIS351I", "pt": "O script que verifica os pré-requisitos está iniciando o servidor de aplicações do produto neste momento."}
+{"code": "AWSBIS352I", "pt": "O servidor de aplicações do produto foi iniciado com sucesso e encontra-se disponível para receber requisições."}
 {"code": "AWSDAH002E", "pt": "A versão de demonstração do software HCL expirou e o programa não pode mais ser utilizado normalmente."}
 {"code": "AWSDAH003E", "pt": "O software não é compatível com esta unidade central de processamento e por isso não pode ser executado."}
 {"code": "AWSDAH007E", "pt": "O período de aluguel do software HCL expirou, bloqueando a utilização do produto até nova ativação."}
