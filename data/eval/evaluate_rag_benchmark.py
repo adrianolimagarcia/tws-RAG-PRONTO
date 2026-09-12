@@ -124,7 +124,7 @@ def tokenize(text):
 def _expand_tokens(tokens):
     """Expande tokens apenas para a consulta (jargão HWA + mapa bilíngue)."""
     out = set(tokens)
-    for t in list(tokens):
+    for t in sorted(tokens):  # ordem deterministica (set -> hash-seed)
         tl = t.lower()
         for root, syns in SYNONYMS.items():
             if root in tl:
@@ -199,7 +199,7 @@ def load_documents():
                 docs.append({"id": cid, "type": "message_catalog", "text": text, "tokens": tokenize(text)})
 
     # 6. Chunks Estruturados RAGFlow dos Runbooks Markdown (com Breadcrumbs e Tabelas Íntegras)
-    for rbf in glob.glob(os.path.join(RUNBOOKS_DIR, "*.md")):
+    for rbf in sorted(glob.glob(os.path.join(RUNBOOKS_DIR, "*.md"))):
         fname = os.path.basename(rbf)
         try:
             rf_chunks = parse_markdown_ragflow(rbf)
@@ -232,7 +232,10 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
     doc_lower = doc_text.lower()
 
     # 1. Base BM25 com boost em termos HWA
-    for t in overlap:
+    # Iterar em ordem DETERMINISTICA: `overlap` e um set, cuja ordem depende do PYTHONHASHSEED
+    # (randomizado por processo). Como a soma de floats nao e associativa, a ordem de iteracao
+    # mudava os scores em ~1e-16 e flipava empates -> metrica nao-reprodutivel (95,7% x 97,1%).
+    for t in sorted(overlap):
         boost = 1.0
         if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl", "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt", "aida", "carryforward"]):
             boost = 4.0
@@ -265,7 +268,7 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
             score *= 1.10
 
         # Boost se a pergunta menciona um código/termo e o doc o tem no id/nome
-        for token in list(query_tokens):
+        for token in sorted(query_tokens):  # ordem deterministica (set -> hash-seed)
             if token.isalnum() and len(token) > 3 and token in (doc.get("id") or "").lower():
                 score += 4.0
         # Heading/runbook relevante reforça score
@@ -337,7 +340,7 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
         # 4. Exact Technical Entity Match (Boost para entidade única no ID e comandos)
         doc_id_lower = doc.get("id", "").lower()
         ignore_meta_terms = {"opcao", "global", "regra", "documentada", "ambiente", "distribuida", "distributed", "workload", "automation", "sobre", "conforme", "oficial", "documentacao", "neste", "para", "como"}
-        for term in unique_q_terms:
+        for term in sorted(unique_q_terms):  # ordem deterministica (set -> hash-seed)
             clean_term = term.replace("-", "").replace("_", "")
             if len(clean_term) >= 5 and clean_term not in ignore_meta_terms:
                 if clean_term in doc_id_lower.replace("-", "").replace("_", ""):
