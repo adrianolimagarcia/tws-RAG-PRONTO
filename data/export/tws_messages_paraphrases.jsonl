@@ -1845,6 +1845,33 @@
 {"code": "AWSBIJ142E", "pt": "Erro ao obter as informações do usuário a partir do sistema e o código de erro correspondente foi retornado."}
 {"code": "AWSBIJ144E", "pt": "Erro ao gravar as informações do objeto de usuário e o código de erro correspondente foi retornado."}
 {"code": "AWSBIJ145E", "pt": "Erro ao obter os nomes dos controladores de domínio disponíveis e o código de erro foi retornado."}
+{"code": "AWSBIJ151E", "pt": "Falha ao conceder os direitos de acesso necessários ao usuário durante a tentativa de efetuar logon do job."}
+{"code": "AWSBIJ153E", "pt": "O monitor de jobs não conseguiu obter as informações de horário do processo especificado, indicando uma falha interna no sistema."}
+{"code": "AWSBIJ154E", "pt": "Não foi possível obter o identificador de segurança do usuário para configurar o logon do fluxo com aquela conta."}
+{"code": "AWSBIJ201E", "pt": "Uso incorreto do comando; a sintaxe válida exige informar o manipulador de pipe do monitor de jobs."}
+{"code": "AWSBIJ202I", "pt": "O gerenciador de jobs foi encerrado de forma normal."}
+{"code": "AWSBIJ208E", "pt": "Falha interna ao recuperar informações do usuário, ocorrida em um arquivo de código fonte específico e em uma linha determinada."}
+{"code": "AWSBIJ209E", "pt": "Não foi possível carregar ou inicializar as bibliotecas de criptografia OpenSSL necessárias para a operação."}
+{"code": "AWSBIJ211E", "pt": "O monitor de jobs não encontrou nenhuma sessão válida do Windows para a conta de logon automático que exige área de trabalho interativa."}
+{"code": "AWSBIK001E", "pt": "Erro ao tentar criar o socket de comunicação, indicando uma falha de rede durante a operação."}
+{"code": "AWSBIK002E", "pt": "Não foi possível obter o nome do host local, indicando falha na resolução de identidade da máquina."}
+{"code": "AWSBIK003E", "pt": "Falha ao consultar os registros do host a partir do nome informado, impedindo a resolução da máquina."}
+{"code": "AWSBIK004E", "pt": "Erro ao vincular o socket ao endereço especificado, indicando falha na associação de porta e destino."}
+{"code": "AWSBIK005E", "pt": "Falha ao estabelecer a conexão do socket com o servidor remoto informado."}
+{"code": "AWSBIK006E", "pt": "Erro ao enviar os dados pela conexão, indicando interrupção ou falha na transmissão."}
+{"code": "AWSBIK007E", "pt": "Falha ao receber os dados provenientes da conexão, indicando problema na recepção da comunicação."}
+{"code": "AWSBIK008E", "pt": "Erro ao alocar memória suficiente para executar a operação solicitada."}
+{"code": "AWSBIK009E", "pt": "Não foi possível abrir o identificador de arquivo do sistema operacional necessário para a operação."}
+{"code": "AWSBIK010E", "pt": "Falha ao ler os dados do arquivo ou origem especificada durante a execução."}
+{"code": "AWSBIK100E", "pt": "Erro ao executar uma ação do sistema operacional Windows solicitada durante a operação."}
+{"code": "AWSBIK101E", "pt": "Falha ao criar o processo necessário para executar a tarefa em questão."}
+{"code": "AWSBIK102E", "pt": "Erro ao criar o pipe anônimo usado para comunicação entre processos."}
+{"code": "AWSBIK103E", "pt": "Falha ao configurar informações sobre o identificador de recurso em uso pela operação."}
+{"code": "AWSBIK104E", "pt": "Erro ao obter as informações de tempo de processamento do processo em execução."}
+{"code": "AWSBIK105E", "pt": "Falha ao converter as informações de tempo obtidas do processo para o formato necessário."}
+{"code": "AWSBIK201E", "pt": "Não foi possível estabelecer conexão com o serviço de monitoramento de jobs."}
+{"code": "AWSBIK202E", "pt": "Erro ao criar a instância do monitor de jobs, impedindo o início do monitoramento."}
+{"code": "AWSBIK203E", "pt": "O monitor de jobs retornou uma resposta de falha ao processar a solicitação enviada."}
 {"code": "AWSBIM001E", "pt": "O tipo da estação de trabalho que foi informado não bate com o tipo que está gravado no banco de dados do ambiente."}
 {"code": "AWSBIM002E", "pt": "O host que foi informado não corresponde a nenhuma estação de trabalho válida registrada no ambiente."}
 {"code": "AWSBIM003E", "pt": "O nome do domínio é obrigatório e precisa ser especificado na definição dessa estação de trabalho."}
@@ -1992,6 +2019,26 @@
 {"code": "AWSBIO040E", "pt": "O alias da job stream informado já foi usado por outra submissão nesta instância de plano e não pode ser reutilizado."}
 {"code": "AWSBIO041E", "pt": "O job ou o alias dele já existe no sistema, impossibilitando a nova submissão."}
 {"code": "AWSBIO044E", "pt": "A expressão de dependência condicional definida para o predecessor informado não é válida."}
+{"code": "AWSBIP001E", "pt": "Ocorreu uma falha geral no sistema, localizada em um arquivo específico e em uma linha determinada do código."}
+{"code": "AWSBIP002E", "pt": "O objeto do tipo informado está representado por um identificador ou manipulador inválido no método executado."}
+{"code": "AWSBIP003E", "pt": "O objeto não existe ou suas propriedades não podem ser exibidas na versão atual do Dynamic Workload Console."}
+{"code": "AWSBIP004E", "pt": "Foi aplicado um filtro incorreto para o tipo de objeto informado durante a execução do método."}
+{"code": "AWSBIP005E", "pt": "Foi encontrada uma expressão de linguagem de temporização incorreta para o tipo de objeto no método executado."}
+{"code": "AWSBIP006E", "pt": "Não foi possível gerar a expressão de linguagem de temporização necessária para o tipo de objeto no método."}
+{"code": "AWSBIP007E", "pt": "O formato da expressão de linguagem de temporização recebida é diferente do esperado para o tipo de objeto no método."}
+{"code": "AWSBIP008E", "pt": "Foi encontrado um tipo de recurso incorreto durante a execução do método especificado."}
+{"code": "AWSBIP009E", "pt": "Um objeto inexistente foi referenciado pelo identificador ou manipulador do tipo de objeto no método executado."}
+{"code": "AWSBIP010E", "pt": "Não foi possível enviar os dados para o tipo de objeto especificado durante a execução do método."}
+{"code": "AWSBIP011E", "pt": "A estação de trabalho informada não foi encontrada, portanto o tipo de tarefa assumido foi indefinido."}
+{"code": "AWSBIP012E", "pt": "A estação de trabalho do job não foi encontrada e não foi possível determinar o tipo de tarefa, retornando indefinido."}
+{"code": "AWSBIP013E", "pt": "O job especificado não foi encontrado e, por isso, o tipo de tarefa foi retornado como vazio."}
+{"code": "AWSBIP014E", "pt": "Ocorreu um erro ao tentar gerar o registro de auditoria da operação."}
+{"code": "AWSBIP015E", "pt": "Não foi possível alternar o arquivo Symphony em uso pelo sistema."}
+{"code": "AWSBIP016E", "pt": "A operação não é permitida enquanto o arquivo Symphony estiver em estado alternado."}
+{"code": "AWSBIR001E", "pt": "Foi encontrado um registro Symphony que não pôde ser identificado pelo sistema."}
+{"code": "AWSBIR100E", "pt": "A opção informada requer um argumento, mas nenhum valor foi fornecido para ela."}
+{"code": "AWSBIR101E", "pt": "A opção fornecida na linha de comando não é reconhecida ou válida."}
+{"code": "AWSBIR102E", "pt": "Não foi possível abrir o arquivo especificado durante a execução."}
 {"code": "AWSBIS001I", "pt": "Utilize o comando de personalização com a opção de uso para exibir as opções e a forma de utilização."}
 {"code": "AWSBIS002E", "pt": "Ocorreu um erro interno e o programa de personalização falhou ao executar o comando Unix informado durante a instalação."}
 {"code": "AWSBIS003E", "pt": "O arquivo de configuração do HCL Workload Automation indicado não existe no sistema."}
@@ -2138,6 +2185,39 @@
 {"code": "AWSBIS350W", "pt": "O servidor de aplicação do produto não está em execução neste momento, então o serviço está indisponível."}
 {"code": "AWSBIS351I", "pt": "O script que verifica os pré-requisitos está iniciando o servidor de aplicações do produto neste momento."}
 {"code": "AWSBIS352I", "pt": "O servidor de aplicações do produto foi iniciado com sucesso e encontra-se disponível para receber requisições."}
+{"code": "AWSBIS353I", "pt": "Para iniciar o servidor de aplicação, é necessário executar o comando de verificação de pré-requisitos com a opção de início."}
+{"code": "AWSBIS355I", "pt": "O servidor de aplicação está em execução e disponível para uso."}
+{"code": "AWSBIS356I", "pt": "Confirmação solicitada: deseja mesmo redefinir o plano de execução, respondendo sim ou não."}
+{"code": "AWSBIS358E", "pt": "A operação de processamento do plano foi cancelada pelo usuário."}
+{"code": "AWSBIS359I", "pt": "Confirmação solicitada para redefinir o plano de pré-produção, o que manteria o plano atual ativo; responda sim ou não."}
+{"code": "AWSBIS362E", "pt": "A operação falhou e retornou um código de erro específico que identifica a causa do problema."}
+{"code": "AWSBIS363I", "pt": "Verificando se o arquivo especificado existe no sistema."}
+{"code": "AWSBIS365I", "pt": "Definindo o caminho das bibliotecas OpenSSL para a execução."}
+{"code": "AWSBIS366I", "pt": "Configurando as variáveis e o ambiente necessários para a operação."}
+{"code": "AWSBIS368E", "pt": "A operação de vinculação de componentes falhou e retornou um código de erro específico."}
+{"code": "AWSBIS372I", "pt": "Gerando os relatórios da fase de pré-produção do plano."}
+{"code": "AWSBIS373I", "pt": "Iniciando o programa especificado com os argumentos fornecidos para a execução."}
+{"code": "AWSBIS374I", "pt": "O programa especificado foi encerrado com sucesso após a conclusão da operação."}
+{"code": "AWSBIS375I", "pt": "Definindo as variáveis de ambiente necessárias para a execução do processo."}
+{"code": "AWSBIS376I", "pt": "Parando as estações de trabalho envolvidas no processamento."}
+{"code": "AWSBIS377I", "pt": "Calculando os parâmetros de tempo necessários para a execução do plano."}
+{"code": "AWSBIS379I", "pt": "Escrevendo os parâmetros do componente especificado para a configuração."}
+{"code": "AWSBIS380I", "pt": "Executando o programa especificado com o registro de log habilitado."}
+{"code": "AWSBIS381I", "pt": "Executando o programa especificado sem o registro de log habilitado."}
+{"code": "AWSBIS382I", "pt": "Verificando a disponibilidade do componente especificado no sistema."}
+{"code": "AWSBIS383I", "pt": "O componente foi encontrado e o processo aguarda cinco segundos antes de prosseguir."}
+{"code": "AWSBIS502E", "pt": "O usuário atual não possui autorização para utilizar o comando de agendamento informado."}
+{"code": "AWSBIT006I", "pt": "Esta é a janela de condição do monitor de limite do centro de operações."}
+{"code": "AWSBIT502E", "pt": "É necessário estar com privilégios de administrador para instalar a integração do OpC do HCL Workload Automation."}
+{"code": "AWSBIT505I", "pt": "Personalizando a integração do OpC no diretório especificado para o ambiente informado."}
+{"code": "AWSBIT506I", "pt": "Exibindo os parâmetros de configuração mestre e operador definidos para a integração."}
+{"code": "AWSBIT508E", "pt": "O centro de operações não está instalado ou disponível neste sistema."}
+{"code": "AWSBIT509W", "pt": "Será instalada apenas a capacidade de reconhecimento de eventos da integração."}
+{"code": "AWSBIT510W", "pt": "Se ainda não foi feito, este script deve ser executado na plataforma de gerenciamento do OpC."}
+{"code": "AWSBIT511I", "pt": "Selecione a versão do OpC instalada na sua máquina escolhendo entre as opções numéricas apresentadas."}
+{"code": "AWSBIT512I", "pt": "Solicitando a escolha do usuário dentro do intervalo de opções válidas informado."}
+{"code": "AWSBIT514E", "pt": "A versão 1.x do OpC não é suportada no sistema operacional HP-UX versão 10."}
+{"code": "AWSBIT515E", "pt": "Não foi possível identificar a versão do sistema operacional, impedindo a definição das variáveis do OpenView; o processo foi encerrado."}
 {"code": "AWSBIU001W", "pt": "O agente de monitoramento já está em execução e por isso não foi iniciado novamente."}
 {"code": "AWSBIU101I", "pt": "O processo está encerrando quaisquer daemons de execução que estejam ativos no momento."}
 {"code": "AWSBIU102E", "pt": "Somente o usuário raiz pode executar o procedimento de desconfiguração do sistema de agendamento."}
@@ -2193,6 +2273,54 @@
 {"code": "AWSBIU555I", "pt": "Estão sendo criados os vínculos para os executáveis estáticos do daemon e do usuário na versão antiga do monitor."}
 {"code": "AWSBIU556I", "pt": "Estão sendo criados os vínculos para os executáveis dinâmicos do daemon e do usuário na versão nova do monitor."}
 {"code": "AWSBIU557E", "pt": "Não foi possível determinar a versão do sistema operacional, impedindo a definição das variáveis do OpenView, então o programa será encerrado."}
+{"code": "AWSBIV002E", "pt": "O host remoto encerrou a conexão sem iniciar o protocolo de comunicação previsto."}
+{"code": "AWSBIV003E", "pt": "O host remoto interrompeu a conexão durante a comunicação."}
+{"code": "AWSBIV004E", "pt": "Falha ao encerrar o socket de entrada de dados da comunicação."}
+{"code": "AWSBIV005I", "pt": "Exibindo o valor de retorno da operação executada."}
+{"code": "AWSBIV006E", "pt": "Não foi possível obter o nome do usuário atual no sistema."}
+{"code": "AWSBIV008E", "pt": "Falha ao criar o processo responsável por encaminhar os dados de entrada."}
+{"code": "AWSBIV009E", "pt": "Erro ao gravar os dados de entrada no socket da comunicação."}
+{"code": "AWSBIV010E", "pt": "Erro ao ler os dados provenientes da entrada padrão do processo."}
+{"code": "AWSBIV011E", "pt": "Erro ao encerrar o socket de entrada de dados da comunicação."}
+{"code": "AWSBIV012E", "pt": "Falha ao criar o processo responsável por encaminhar os dados de saída."}
+{"code": "AWSBIV013E", "pt": "Erro ao gravar os dados na saída padrão do processo."}
+{"code": "AWSBIV014E", "pt": "Erro ao encaminhar os dados de saída recebidos pelo socket."}
+{"code": "AWSBIV015E", "pt": "Erro ao encerrar o socket de saída de dados da comunicação."}
+{"code": "AWSBIV016E", "pt": "Erro ao gravar os dados na saída de erro padrão do processo."}
+{"code": "AWSBIV017E", "pt": "Erro ao encaminhar os dados de erro recebidos pelo socket."}
+{"code": "AWSBIV018E", "pt": "Falha ao encerrar o socket de dados de erro padrão da comunicação."}
+{"code": "AWSBIV019E", "pt": "Não foi possível registrar a função de limpeza da comunicação TCP/IP."}
+{"code": "AWSBIV020E", "pt": "Falha na resolução do nome do servidor ao qual se deseja conectar."}
+{"code": "AWSBIV021E", "pt": "Falha ao criar o socket de comunicação de entrada e saída, retornando um código de erro."}
+{"code": "AWSBIV022E", "pt": "Falha ao estabelecer a conexão com o host destino."}
+{"code": "AWSBIV023E", "pt": "Erro ao criar o socket necessário para a comunicação."}
+{"code": "AWSBIV024E", "pt": "Erro ao vincular o socket a um endereço e porta para a comunicação."}
+{"code": "AWSBIV025E", "pt": "Erro ao colocar o socket em modo de escuta para aceitar conexões."}
+{"code": "AWSBIV026E", "pt": "Erro ao aceitar uma conexão recebida pelo socket."}
+{"code": "AWSBIX002E", "pt": "A personalização falhou durante a execução; corrija o problema e execute novamente o processo de customização."}
+{"code": "AWSBIX003E", "pt": "O arquivo especificado não existe no sistema."}
+{"code": "AWSBIX005I", "pt": "Buscando o usuário informado no arquivo de cadastro de usuários do sistema."}
+{"code": "AWSBIX006W", "pt": "O usuário não foi encontrado no arquivo de cadastro local e será buscado no serviço de diretório de rede."}
+{"code": "AWSBIX007E", "pt": "O serviço de diretório de rede não está instalado ou não está acessível no caminho de busca."}
+{"code": "AWSBIX008E", "pt": "O usuário especificado não foi encontrado no serviço de diretório de rede."}
+{"code": "AWSBIX009E", "pt": "É necessário estar com privilégios de administrador para personalizar o componente Netman."}
+{"code": "AWSBIX010I", "pt": "Informe a opção de caminho com o diretório desejado para a instalação."}
+{"code": "AWSBIX011I", "pt": "Informe a opção de grupo com o nome do grupo desejado para a instalação."}
+{"code": "AWSBIX012E", "pt": "Erro ao ler o arquivo de componentes da instalação."}
+{"code": "AWSBIX013W", "pt": "Existe mais de uma entrada do Netman no arquivo de componentes para o mesmo local ou grupo especificado."}
+{"code": "AWSBIX014W", "pt": "Já existe uma instalação do Netman no diretório informado sob o grupo especificado."}
+{"code": "AWSBIX015W", "pt": "Já existe um Netman instalado no diretório informado e essa instalação será atualizada."}
+{"code": "AWSBIX016E", "pt": "Não foi possível determinar a localização do comando de alteração de proprietário de arquivos."}
+{"code": "AWSBIX017E", "pt": "O usuário informado deve existir para que a instalação tenha sucesso; consulte o manual do produto para os requisitos."}
+{"code": "AWSBIX018E", "pt": "O diretório base do Netman especificado não existe no sistema."}
+{"code": "AWSBIX019E", "pt": "A árvore de diretórios do Netman está incompleta ou ausente, indicando que os arquivos não foram extraídos corretamente da fita."}
+{"code": "AWSBIX020E", "pt": "Erro ao criar ou atualizar o arquivo de componentes do produto durante a personalização."}
+{"code": "AWSBIX021E", "pt": "Ocorreu um erro ao executar os comandos; verifique a condição, corrija os problemas e execute novamente a personalização."}
+{"code": "AWSBIY001W", "pt": "Executar a configuração do banco de dados de exemplo apaga todos os jobs e fluxos de jobs com o prefixo de exemplo existentes."}
+{"code": "AWSBIY004I", "pt": "Os fluxos e jobs de exemplo não estão instalados e o processo será encerrado."}
+{"code": "AWSBIZ001E", "pt": "Erro ao criar o processo no sistema durante a execução do comando."}
+{"code": "AWSBIZ002E", "pt": "Erro ao executar o comando solicitado no sistema operacional."}
+{"code": "AWSBIZ003I", "pt": "Exibindo o código de status retornado pelo comando do sistema executado."}
 {"code": "AWSBJB004I", "pt": "A mensagem informada foi recebida e processada com sucesso pelo componente de interface, sem erros."}
 {"code": "AWSBJB006E", "pt": "Ocorreu um erro ao processar a mensagem informada pelo componente de interface."}
 {"code": "AWSBJB009I", "pt": "O componente de interface com o cliente foi inicializado corretamente e está pronto para uso."}
@@ -2266,6 +2394,52 @@
 {"code": "AWSBJB226I", "pt": "O job está aguardando confirmação do sucesso, permanecendo em status de sucesso pendente até que a conclusão seja confirmada."}
 {"code": "AWSBJB227I", "pt": "O job está aguardando a conclusão do encerramento, permanecendo em status de fim pendente até que todas as ações sejam finalizadas."}
 {"code": "AWSBJB228I", "pt": "O job está em status desconhecido, indicando que o sistema não conseguiu determinar o estado real da execução."}
+{"code": "AWSBJG002E", "pt": "O roteador não conseguiu criar o arquivo de lista de saída padrão necessário."}
+{"code": "AWSBJG004W", "pt": "Foi informado um valor de tempo limite inválido, então o valor padrão será utilizado."}
+{"code": "AWSBJG005E", "pt": "O roteador do sistema foi invocado com uma quantidade incorreta de argumentos, sinalizando que a chamada não seguiu a sintaxe esperada pelo comando."}
+{"code": "AWSBJG007E", "pt": "O roteador não conseguiu enviar os pacotes de roteamento pela rede, e a mensagem de erro adicional foi retornada ao operador para diagnóstico."}
+{"code": "AWSBJG008E", "pt": "O roteador não conseguiu receber os pacotes de roteamento da rede, e a causa detalhada foi exibida na mensagem de erro para investigação."}
+{"code": "AWSBJG009E", "pt": "O roteador ficou sem memória disponível ao tentar alocar espaço para suas estruturas internas, interrompendo o processamento de roteamento."}
+{"code": "AWSBJG010I", "pt": "O processo foi iniciado por um usuário específico a partir de uma estação de trabalho, indicando quem disparou a execução e o contexto de hardware."}
+{"code": "AWSBJG011E", "pt": "O componente Scribner, acionado pelo roteador, não conseguiu ler o arquivo padrão de lista para o job informado, impedindo a continuação da atividade."}
+{"code": "AWSBJG012E", "pt": "O roteador não conseguiu abrir ou ler o arquivo Symphony, que armazena os dados essenciais para o funcionamento do planejamento."}
+{"code": "AWSBJG015E", "pt": "Ocorreu um erro ao abrir o arquivo de configuração especificado, e o motivo detalhado foi incluído na mensagem para correção."}
+{"code": "AWSBJG016E", "pt": "Houve uma falha durante a leitura do arquivo de configuração indicado, com o detalhe do erro sendo reportado ao usuário."}
+{"code": "AWSBJG017E", "pt": "Falha ao fechar o arquivo de configuração indicado, e a causa do erro foi registrada na mensagem exibida ao operador."}
+{"code": "AWSBJH005E", "pt": "O parâmetro informado para a ferramenta de migração de dados foi fornecido mais de uma vez na linha de comando, o que não é permitido."}
+{"code": "AWSBJH006E", "pt": "Foi fornecido um valor inválido para um parâmetro do comando, fazendo com que a validação dos argumentos fosse reprovada."}
+{"code": "AWSBJH007I", "pt": "O usuário deve executar o comando de migração com a opção de uso para consultar todas as opções disponíveis e a forma correta de empregá-las."}
+{"code": "AWSBJH008I", "pt": "A mensagem informa qual deve ser exatamente o valor esperado para o parâmetro em questão, orientando a correção do argumento fornecido."}
+{"code": "AWSBJH009E", "pt": "Mais de um parâmetro que define o tipo de objeto foi informado simultaneamente, e o comando aceita apenas um único tipo por execução."}
+{"code": "AWSBJH010I", "pt": "O comando tentou importar mais de um tipo de objeto do banco de dados em uma única operação, comportamento que não é permitido pela ferramenta."}
+{"code": "AWSBJH011E", "pt": "O parâmetro indicado não é reconhecido pela ferramenta de migração de dados, portanto deve ser substituído por uma opção válida."}
+{"code": "AWSBJH012E", "pt": "Faltou o fornecimento de um ou mais parâmetros obrigatórios exigidos pelo comando de migração de dados para que a execução seja possível."}
+{"code": "AWSBJH013E", "pt": "Foram fornecidos dois ou mais parâmetros incompatíveis no comando de migração, tornando a operação impossível de ser executada corretamente."}
+{"code": "AWSBJH014E", "pt": "O arquivo de entrada informado para a migração não existe no local indicado, então é necessário verificar o caminho informado."}
+{"code": "AWSBJH016E", "pt": "O caminho informado não corresponde a uma instalação anterior do produto da qual os dados possam ser importados corretamente."}
+{"code": "AWSBJH018E", "pt": "O diretório temporário informado para a operação de migração não existe no sistema, impossibilitando a continuação do processo."}
+{"code": "AWSBJH020I", "pt": "A importação do tipo de objeto especificado foi concluída com sucesso, sem erros durante o processamento dos dados."}
+{"code": "AWSBJH021I", "pt": "O operador deve verificar os detalhes e resultados da importação consultando o arquivo de log indicado na mensagem."}
+{"code": "AWSBJH022E", "pt": "A importação do tipo de objeto informado falhou durante a execução, exigindo que o problema seja analisado antes de tentar novamente."}
+{"code": "AWSBJH023W", "pt": "A importação do tipo de objeto foi concluída, porém com um ou mais avisos que devem ser analisados para garantir a integridade dos dados."}
+{"code": "AWSBJH024W", "pt": "Nenhum objeto do tipo especificado foi localizado na fonte de dados, indicando que não havia registros correspondentes para importar."}
+{"code": "AWSBJH026E", "pt": "A importação do tipo de objeto informado terminou apresentando um ou mais erros que precisam ser corrigidos para validar o processo."}
+{"code": "AWSBJH029E", "pt": "O arquivo de entrada fornecido não pode ser lido pelo usuário que executa a migração, provavelmente por restrição de permissão de acesso."}
+{"code": "AWSBJH031E", "pt": "O servidor de aplicações não está em execução no momento, então a importação não pode ser continuada até que ele seja iniciado."}
+{"code": "AWSBJH032I", "pt": "Inicie o servidor de aplicações e execute novamente a ferramenta de migração de dados para que a importação possa prosseguir normalmente."}
+{"code": "AWSBJH033I", "pt": "A importação da topologia foi concluída, e os resultados de cada tipo de objeto devem ser conferidos nas mensagens anteriores do log."}
+{"code": "AWSBJH034I", "pt": "A importação do tipo de dado indicado está em andamento, e esse processamento pode demorar alguns minutos para ser concluído."}
+{"code": "AWSBJH036I", "pt": "Verifique se existe espaço suficiente no sistema de arquivos onde o diretório está localizado e se o usuário tem permissão de escrita nele."}
+{"code": "AWSBJH104E", "pt": "O tipo de objeto fornecido não é reconhecido pela ferramenta, devendo ser substituído por um dos valores permitidos pela migração."}
+{"code": "AWSBJH105I", "pt": "Os valores aceitos para o parâmetro são os tipos de objeto listados na mensagem, como topologia, calendários e agendamentos, entre outros."}
+{"code": "AWSBJH106I", "pt": "A exportação do tipo de objeto especificado está sendo realizada a partir da instância do produto instalada no diretório informado."}
+{"code": "AWSBJH107I", "pt": "A operação de exportação foi concluída com sucesso, sem nenhuma falha reportada durante o processamento dos dados."}
+{"code": "AWSBWX002E", "pt": "Ocorreu um erro ao abrir o arquivo indicado no modo de escrita, impedindo que os dados fossem gravados corretamente."}
+{"code": "AWSBWX003E", "pt": "Falha ao abrir o arquivo informado para leitura, o que impede o acesso ao conteúdo que deveria ser processado."}
+{"code": "AWSBWX004E", "pt": "Ocorreu um erro durante a gravação do arquivo indicado, podendo ter deixado dados incompletos ou inconsistentes no destino."}
+{"code": "AWSBWX005E", "pt": "Houve uma falha ao renomear o arquivo de origem dentro do diretório de destino, interrompendo a operação de movimentação do arquivo."}
+{"code": "AWSBWX006W", "pt": "Não foi possível criar o diretório informado, então o arquivo de registro foi gravado no diretório padrão do sistema."}
+{"code": "AWSBWX007W", "pt": "Falha ao abrir o arquivo especificado para escrita, portanto o registro foi criado no diretório padrão como alternativa."}
 {"code": "AWSCDW001I", "pt": "O serviço de cluster foi instalado, configurado e está em execução normal no nó !1."}
 {"code": "AWSCDW002E", "pt": "O serviço de cluster está instalado e configurado no nó !1, porém não está em execução no momento."}
 {"code": "AWSCDW003E", "pt": "O serviço de cluster não está instalado no nó de destino, portanto não é possível utilizá-lo."}
@@ -2327,13 +2501,189 @@
 {"code": "AWSCDW076I", "pt": "Somente o agente dinâmico será instalado; qualquer outra opção informada será ignorada."}
 {"code": "AWSCDW077E", "pt": "Nenhum agente está disponível para ser instalado no momento, portanto a operação falha."}
 {"code": "AWSCDW078E", "pt": "Não foi possível instalar o agente dinâmico porque o agente não foi encontrado."}
+{"code": "AWSDAB001I", "pt": "Mensagem de identificação interna do módulo de catálogo do produto, exibindo informações de versão e revisão do componente."}
+{"code": "AWSDAE003E", "pt": "Ocorreu um erro inesperado do sistema de arquivos ao ler o fluxo de entrada padrão, interrompendo o processamento da entrada de dados."}
+{"code": "AWSDAE005E", "pt": "Um erro inesperado do sistema de arquivos ocorreu durante a execução, sem detalhes adicionais sobre a causa da falha."}
+{"code": "AWSDAG001E", "pt": "Foi detectado um erro inesperado de interface ao executar o comando informado, com a causa retornada pelo sistema."}
+{"code": "AWSDAH001I", "pt": "A licença do software HCL continua válida até a data indicada na mensagem, garantindo o uso normal do produto."}
 {"code": "AWSDAH002E", "pt": "A versão de demonstração do software HCL expirou e o programa não pode mais ser utilizado normalmente."}
 {"code": "AWSDAH003E", "pt": "O software não é compatível com esta unidade central de processamento e por isso não pode ser executado."}
+{"code": "AWSDAH005E", "pt": "O código de licença informado é inválido, e o detalhe do erro foi retornado para identificar a causa da rejeição."}
+{"code": "AWSDAH006I", "pt": "A licença de aluguel do software HCL permanece válida até a data especificada, informando o prazo de utilização do produto."}
 {"code": "AWSDAH007E", "pt": "O período de aluguel do software HCL expirou, bloqueando a utilização do produto até nova ativação."}
+{"code": "AWSDAH008E", "pt": "Ocorreu um erro interno inesperado no sistema de arquivos, e o código detalhado da falha foi exibido para diagnóstico."}
+{"code": "AWSDAH009E", "pt": "O módulo de validação de licença não está instalado corretamente, e o usuário deve seguir as instruções para resolver a situação."}
+{"code": "AWSDAH010I", "pt": "Esta é uma mensagem de teste do sistema que exibe os valores dos parâmetros fornecidos em suas posições correspondentes."}
 {"code": "AWSDAH011E", "pt": "O programa solicitado não faz parte do produto instalado nesta máquina e não pode ser executado."}
 {"code": "AWSDAH012E", "pt": "O software não possui licença válida para esta unidade central de processamento específica."}
+{"code": "AWSDAH013W", "pt": "O software de gerenciamento não pode ser executado em processadores de arquitetura Precision, pois não há suporte para esse hardware."}
+{"code": "AWSDAH101E", "pt": "A opção informada exige que um argumento seja fornecido junto, mas nenhum valor acompanhou a opção na linha de comando."}
+{"code": "AWSDAH102E", "pt": "A opção fornecida não é reconhecida como válida pelo programa, sendo necessário usar uma opção suportada."}
+{"code": "AWSDAH103E", "pt": "A opção informada é ambígua e corresponde a mais de uma alternativa válida, exigindo que mais caracteres sejam digitados para diferenciá-la."}
+{"code": "AWSDAH107E", "pt": "A opção especificada não aceita um valor associado, mas um valor foi fornecido indevidamente na linha de comando."}
+{"code": "AWSDAH108E", "pt": "O parâmetro informado é longo demais para ser considerado uma opção válida do programa."}
+{"code": "AWSDAH109W", "pt": "A opção indicada já havia sido especificada anteriormente na linha de comando, causando uma duplicação de definição."}
+{"code": "AWSDAH110I", "pt": "A quantidade máxima de opções suportadas foi atingida, indicando a necessidade de aumentar o limite ou ajustar a tabela de parâmetros."}
+{"code": "AWSDAL001W", "pt": "As informações de auditoria ainda não foram inicializadas no sistema, então os eventos podem não estar sendo registrados corretamente."}
+{"code": "AWSDAL002E", "pt": "Foi passado um tipo de auditoria desconhecido para o processo, que não corresponde a nenhuma categoria reconhecida pelo sistema."}
+{"code": "AWSDAL003E", "pt": "O arquivo de auditoria ainda não foi aberto, impedindo que os eventos sejam gravados no registro de auditoria."}
+{"code": "AWSDAL004E", "pt": "A abertura do arquivo de auditoria falhou, impossibilitando o registro dos eventos de auditoria no arquivo correspondente."}
+{"code": "AWSDAL005E", "pt": "Não foi possível obter o bloqueio sobre o arquivo de auditoria, o que impede o acesso exclusivo necessário para gravação segura."}
+{"code": "AWSDAL006E", "pt": "Houve falha ao liberar o bloqueio do arquivo de auditoria, indicando um problema ao concluir a operação de desbloqueio."}
 {"code": "AWSDBY002E", "pt": "O comando RUN foi emitido com uma quantidade de parâmetros superior à permitida pelo sistema."}
+{"code": "AWSDBY005E", "pt": "A execução do programa exige a capacidade de hardware privilegiada indicada, que não está disponível no ambiente atual."}
+{"code": "AWSDBY008E", "pt": "Não há recursos suficientes no sistema para executar o programa, esgotando a capacidade disponível para o processo."}
+{"code": "AWSDBY010E", "pt": "O programa referenciado não existe no sistema, portanto o processo não pode ser iniciado com o arquivo informado."}
+{"code": "AWSDBY011E", "pt": "O arquivo do programa informado é inválido e não pode ser usado para iniciar o processo corretamente."}
+{"code": "AWSDBY012E", "pt": "O nome de entrada informado não existe ou é inválido, impedindo a resolução correta do elemento referenciado."}
+{"code": "AWSDBY013E", "pt": "A chamada para criação de processo falhou com um erro interno não categorizado de forma específica pelo sistema operacional."}
+{"code": "AWSDBY014E", "pt": "A criação do processo retornou uma falha genérica de execução, sem uma razão detalhada associada ao erro."}
+{"code": "AWSDBY015E", "pt": "Ocorreu um erro não identificado ao tentar criar o processo, sem informações adicionais sobre a causa raiz da falha."}
+{"code": "AWSDBY016E", "pt": "A operação de criação de processo terminou com erro interno, impedindo que o programa fosse iniciado normalmente."}
+{"code": "AWSDBY017E", "pt": "Falha ao criar o processo por um motivo não especificado, encerrando a tentativa de execução do programa."}
+{"code": "AWSDBY018E", "pt": "A criação do processo foi rejeitada pelo sistema com um erro de natureza não detalhada na mensagem."}
+{"code": "AWSDBY019E", "pt": "O limite de dados configurados no sistema foi excedido, impedindo a criação do processo conforme o esperado."}
+{"code": "AWSDBY020E", "pt": "Ocorreu um erro grave de carregamento do programa, tipicamente associado a uma falha de entrada e saída durante o processo."}
+{"code": "AWSDBY021E", "pt": "Foi solicitada uma prioridade inválida para o processo, que não corresponde aos níveis permitidos pelo sistema."}
+{"code": "AWSDBY022E", "pt": "O fluxo de entrada padrão do processo não pôde ser aberto, interrompendo a execução do programa."}
+{"code": "AWSDBY023E", "pt": "O arquivo padrão de saída do processo não pôde ser aberto, impedindo a coleta das mensagens geradas pela execução."}
+{"code": "AWSDBY025E", "pt": "O valor informado deve ser obrigatoriamente um dos caracteres específicos esperados, que são as alternativas válidas para o parâmetro."}
+{"code": "AWSDBY028E", "pt": "O nome do programa não foi informado na chamada, faltando o argumento obrigatório para iniciar o processo."}
+{"code": "AWSDBY034E", "pt": "Ocorreu um erro ao ler o registro de controle do sistema, impossibilitando o acesso às informações armazenadas."}
+{"code": "AWSDCI005E", "pt": "Os dados informados apresentam erro, e o usuário deve selecionar um banco de dados válido ou encerrar a operação."}
+{"code": "AWSDCI006E", "pt": "A senha fornecida está incorreta, sendo necessário escolher um banco de dados válido ou sair do processo."}
+{"code": "AWSDCI007E", "pt": "A nova senha é inválida, pois deve conter no máximo oito bytes alfanuméricos para ser aceita pelo sistema."}
+{"code": "AWSDCI008W", "pt": "A nova senha e a confirmação de senha não coincidem, exigindo que ambos os valores sejam informados novamente de forma idêntica."}
+{"code": "AWSDCI009I", "pt": "A nova senha foi criptografada com sucesso pelo sistema, concluindo a atualização da credencial."}
+{"code": "AWSDCJ001E", "pt": "Houve erro ao abrir o fluxo de entrada padrão existente, impedindo a continuidade do processamento de entrada de dados."}
+{"code": "AWSDCJ002E", "pt": "Falha ao remover o fluxo de entrada padrão antigo, impossibilitando a limpeza dos dados anteriores."}
+{"code": "AWSDCJ003E", "pt": "Ocorreu erro ao montar o fluxo de entrada padrão, interrompendo a preparação dos dados de entrada."}
+{"code": "AWSDCJ004E", "pt": "Houve erro ao fechar o novo fluxo de entrada padrão, indicando problema na finalização da operação de entrada."}
+{"code": "AWSDCJ005E", "pt": "Falha ao abrir o novo fluxo de entrada padrão, impedindo que os novos dados fossem processados."}
+{"code": "AWSDCJ006E", "pt": "Ocorreu erro ao abrir o arquivo padrão de saída existente, impedindo o acesso às saídas anteriores do processo."}
+{"code": "AWSDCJ007E", "pt": "Falha ao remover o arquivo padrão de saída antigo, impossibilitando a limpeza dos registros anteriores."}
+{"code": "AWSDCJ008E", "pt": "Ocorreu erro ao montar o arquivo padrão de saída, interrompendo a preparação do destino das mensagens."}
+{"code": "AWSDCJ009E", "pt": "Houve erro ao fechar o novo arquivo padrão de saída, indicando falha na conclusão da gravação de saída."}
+{"code": "AWSDCJ010E", "pt": "Falha ao abrir o novo arquivo padrão de saída, impedindo a gravação das mensagens geradas pelo processo."}
+{"code": "AWSDCJ011E", "pt": "Ocorreu erro ao tentar criar um novo processo, impedindo que o programa fosse iniciado corretamente."}
+{"code": "AWSDCJ012E", "pt": "O valor de fixação informado é inválido, impossibilitando a conclusão da operação com a referência fornecida."}
+{"code": "AWSDCJ013E", "pt": "O processo não pôde ser ativado corretamente, indicando uma falha durante a inicialização da execução."}
 {"code": "AWSDCJ014E", "pt": "A facilidade de fluxo de erros não está habilitada, impedindo que os erros sejam direcionados corretamente."}
+{"code": "AWSDCJ015E", "pt": "Foi recebida uma opção inválida na operação de sinalização, ou o argumento associado está incorreto."}
+{"code": "AWSDCJ016E", "pt": "Nenhum processo filho ou recurso de processamento está disponível, impedindo a continuidade da operação."}
+{"code": "AWSDCJ101E", "pt": "A criação do processo falhou porque o chamador não possui a capacidade de hardware privilegiada necessária."}
+{"code": "AWSDCJ102E", "pt": "A criação do processo falhou por falta de um parâmetro obrigatório na chamada de sistema."}
+{"code": "AWSDCJ103E", "pt": "A criação do processo falhou porque o endereço de um parâmetro está fora dos limites permitidos pela memória."}
+{"code": "AWSDCJ104E", "pt": "A criação do processo falhou porque os recursos do sistema, como os blocos de controle de processo, estão esgotados."}
+{"code": "AWSDCJ105E", "pt": "A criação do processo falhou porque foram informados números de item inválidos na operação."}
+{"code": "AWSDCJ106E", "pt": "A criação do processo falhou porque o programa referenciado não existe no sistema."}
+{"code": "AWSDCJ107E", "pt": "A criação do processo falhou porque o arquivo do programa informado não é válido."}
+{"code": "AWSDCJ108E", "pt": "A criação do processo falhou porque o nome de entrada não existe ou não é válido no sistema."}
+{"code": "AWSDCJ115E", "pt": "A criação do processo falhou porque o limite máximo de dados configurado no sistema foi excedido."}
+{"code": "AWSDCJ116E", "pt": "A criação do processo falhou por causa de um erro grave de carregamento, como uma falha de entrada e saída."}
+{"code": "AWSDCJ117E", "pt": "A criação do processo falhou porque foi especificada uma prioridade inválida para o processo."}
+{"code": "AWSDCJ118E", "pt": "A criação do processo falhou porque o fluxo de entrada padrão não pôde ser aberto."}
+{"code": "AWSDCJ119E", "pt": "A criação do processo falhou porque o arquivo padrão de saída não pôde ser aberto."}
+{"code": "AWSDCJ120E", "pt": "A criação do processo falhou por causa de um erro interno do componente de software responsável pela execução."}
+{"code": "AWSDCJ200W", "pt": "O processo foi interrompido e encerrado com o código de saída indicado na mensagem."}
+{"code": "AWSDCJ203W", "pt": "O processo foi encerrado em decorrência do recebimento de um sinal específico do sistema, cujo número foi informado."}
+{"code": "AWSDCJ204E", "pt": "Foi feita uma tentativa de criar um mecanismo de comunicação em fila em uma plataforma que não suporta essa operação."}
+{"code": "AWSDDW001I", "pt": "O sistema está criando o diretório padrão de saída de mensagens indicado na mensagem."}
+{"code": "AWSDDW002E", "pt": "Não foi possível criar o diretório padrão de saída informado, e o código do erro retornado foi exibido."}
+{"code": "AWSDDW008E", "pt": "Ocorreu um erro de entrada e saída ao acessar um arquivo, e um despejo de memória foi gerado para auxiliar o suporte técnico na análise."}
+{"code": "AWSDDW051E", "pt": "Foi encontrado um identificador de produto desconhecido, que não corresponde a nenhum produto reconhecido pelo sistema."}
+{"code": "AWSDDW052E", "pt": "O produto informado não está instalado dentro do grupo especificado no sistema."}
+{"code": "AWSDDW053W", "pt": "Nenhuma referência ao componente informado foi encontrada no arquivo de componentes instalado sob o grupo indicado."}
+{"code": "AWSDDW071E", "pt": "O produto informado na operação não é válido e não pôde ser reconhecido pelo sistema."}
+{"code": "AWSDEA001E", "pt": "O nome do arquivo de origem veio nulo ou vazio, sem um caminho válido para leitura."}
+{"code": "AWSDEA002E", "pt": "O nome do arquivo de destino veio nulo ou vazio, impedindo a gravação da saída."}
+{"code": "AWSDEA003E", "pt": "Não foi possível abrir o arquivo de origem para leitura, então a operação de cópia não pôde prosseguir."}
+{"code": "AWSDEA004E", "pt": "Não foi possível abrir o arquivo de destino para gravação, então a operação foi interrompida."}
+{"code": "AWSDEA005E", "pt": "Ocorreu um erro ao ler o conteúdo do arquivo de origem informado."}
+{"code": "AWSDEA006E", "pt": "Ocorreu um erro ao gravar os dados no arquivo de destino informado."}
+{"code": "AWSDEA007E", "pt": "Não foi possível definir o diretório padrão de trabalho da operação."}
+{"code": "AWSDEB001I", "pt": "O sistema está criando um novo socket de comunicação para iniciar a conexão."}
+{"code": "AWSDEB004I", "pt": "O socket de comunicação está sendo encerrado para liberar a conexão existente."}
+{"code": "AWSDEB007I", "pt": "O sistema está estabelecendo a conexão do socket com o destino configurado."}
+{"code": "AWSDEB008I", "pt": "O sistema está aceitando uma nova conexão recebida através do socket."}
+{"code": "AWSDEB009E", "pt": "A transmissão de dados foi interrompida porque a conexão se rompeu durante a comunicação."}
+{"code": "AWSDEB010E", "pt": "Houve falha ao resolver o nome do host e obter o endereço IP correspondente."}
+{"code": "AWSDEB011E", "pt": "O descritor do socket usado na operação está incorreto ou inválido para a comunicação."}
+{"code": "AWSDEB012I", "pt": "O sistema está enviando o buffer de dados da requisição pelo socket."}
+{"code": "AWSDEB013I", "pt": "O sistema está recebendo o buffer de resposta enviado pela outra ponta."}
+{"code": "AWSDEB014I", "pt": "A conexão atingiu o tempo máximo de espera e terminou sem resposta do destino."}
+{"code": "AWSDEB015I", "pt": "O descritor do socket está sendo duplicado para compartilhar a mesma conexão."}
+{"code": "AWSDEB016E", "pt": "Falha interna ao inicializar a área de dados do programa, pois ela veio nula."}
+{"code": "AWSDEB017E", "pt": "A área de dados interna do programa não pôde ser inicializada por falta de memória."}
+{"code": "AWSDEB025E", "pt": "Erro interno ao tentar configurar a opção linger do socket para controle da conexão."}
+{"code": "AWSDEB026E", "pt": "Erro interno ao tentar ativar a opção de reutilização de endereço do socket."}
+{"code": "AWSDEB027E", "pt": "Falha ao configurar o sinalizador de fechamento automático e herança do descritor."}
+{"code": "AWSDEB028E", "pt": "Não foi possível abrir o descritor do sistema operacional usado pela operação."}
+{"code": "AWSDEB040I", "pt": "O sistema está aceitando uma conexão segura com criptografia SSL."}
+{"code": "AWSDEB045E", "pt": "Falha ao criar o contexto SSL local, impedindo o início da comunicação criptografada."}
+{"code": "AWSDEB046E", "pt": "Ocorreu um erro durante o aperto de mão SSL, interrompendo o estabelecimento seguro."}
+{"code": "AWSDEB047E", "pt": "O programa não conseguiu acessar o arquivo de opções locais configurado."}
+{"code": "AWSDEB049E", "pt": "A máquina remota não apresentou o certificado SSL de autenticação, ou a conexão não foi estabelecida."}
+{"code": "AWSDEB051E", "pt": "Não foi possível autenticar o certificado SSL do par, pois o nível exigido não foi atendido."}
+{"code": "AWSDEB052E", "pt": "Falha ao consultar o endereço do host, não sendo possível obter o IP a partir do nome."}
+{"code": "AWSDEB053E", "pt": "O modo FIPS não pôde ser ativado, tornando impossível estabelecer a conexão."}
+{"code": "AWSDEB054E", "pt": "Ocorreu uma falha durante uma conexão SSL realizada com o kit de ferramentas OpenSSL."}
+{"code": "AWSDEB055E", "pt": "Ocorreu uma falha durante uma conexão SSL realizada com as bibliotecas OpenSSL."}
+{"code": "AWSDEB056E", "pt": "Falha ao usar o OpenSSL Toolkit em uma conexão SSL, que não pôde ser aceita."}
+{"code": "AWSDEB057E", "pt": "Falha ao usar as bibliotecas OpenSSL em uma conexão SSL, que não pôde ser aceita."}
+{"code": "AWSDEB058E", "pt": "Erro ao inicializar o módulo OpenSSL em modo FIPS, impossibilitando a criptografia."}
+{"code": "AWSDEB059E", "pt": "Erro ao inicializar o OpenSSL em modo FIPS por configuração incorreta, que deve ser revisada no arquivo localopts."}
+{"code": "AWSDEB060E", "pt": "Erro ao inicializar o OpenSSL Toolkit por configuração incorreta, que deve ser revisada no arquivo localopts."}
+{"code": "AWSDEC001E", "pt": "Ocorreu um erro de sistema de arquivos ao processar o arquivo de eventos."}
+{"code": "AWSDEC002E", "pt": "Erro interno do sistema UNIX ao manipular o arquivo de eventos, reportado em uma linha específica."}
+{"code": "AWSDEC003I", "pt": "O final do arquivo de eventos foi alcançado durante a leitura."}
+{"code": "AWSDEC004E", "pt": "Ocorreu um erro de comunicação entre processos ao acessar o arquivo de eventos."}
+{"code": "AWSDEC005E", "pt": "Ocorreu um erro de banco de dados ao processar o arquivo de eventos."}
+{"code": "AWSDEC006E", "pt": "O programa não conseguiu alocar a área de dados interna necessária ao processamento."}
+{"code": "AWSDEC007I", "pt": "Foi feita uma tentativa de abrir um arquivo que não é do tipo eventos."}
+{"code": "AWSDEC008E", "pt": "O arquivo de eventos foi criado por uma versão mais nova do produto e é incompatível com a atual."}
+{"code": "AWSDEC009E", "pt": "O arquivo de eventos não pode ser aberto porque outro processo já o mantém aberto."}
+{"code": "AWSDEC010E", "pt": "Erro interno porque o modo de acesso para abertura do arquivo não é válido."}
+{"code": "AWSDEC011W", "pt": "Expirou o tempo máximo de espera pelas mensagens chegando ao arquivo de eventos."}
+{"code": "AWSDEC012E", "pt": "Erro interno ao inicializar a área de dados responsável pelo processamento do arquivo de eventos."}
+{"code": "AWSDEC014E", "pt": "O arquivo de eventos ou o diretório que o contém não existe ou não pôde ser localizado."}
+{"code": "AWSDEC015E", "pt": "Erro interno porque o tamanho de um registro lido ou gravado no arquivo de eventos está incorreto."}
+{"code": "AWSDEC016I", "pt": "Está sendo enviado o sinal SIGUSR1 ao processo zero, informando arquivo e linha de origem."}
+{"code": "AWSDEC017I", "pt": "Foi detectada uma divergência no número da execução em andamento."}
+{"code": "AWSDEC018E", "pt": "Erro interno ao compactar o arquivo, que agora está inutilizável e precisa ser recriado."}
+{"code": "AWSDEC019W", "pt": "O tamanho máximo informado para o arquivo é pequeno demais, então um valor maior será alocado."}
+{"code": "AWSDEC020W", "pt": "O tamanho máximo do arquivo foi ajustado para um novo valor em bytes."}
+{"code": "AWSDEC100E", "pt": "Erro interno durante o processamento do arquivo de eventos, com um código e um tipo de falha reportados."}
+{"code": "AWSDED001E", "pt": "Erro interno porque a chamada ao relógio do sistema para obter a hora falhou."}
+{"code": "AWSDED002E", "pt": "Erro interno porque a conversão do horário em data legível falhou."}
+{"code": "AWSDED003E", "pt": "Erro interno porque a conversão para o horário local falhou."}
+{"code": "AWSDED004E", "pt": "Erro interno porque a conversão para o horário UTC falhou."}
+{"code": "AWSDED005E", "pt": "Erro interno porque a formatação do texto da data e hora falhou."}
+{"code": "AWSDED006E", "pt": "O valor informado em SCHEDDATE contém uma data que não é válida."}
+{"code": "AWSDED008E", "pt": "A especificação de data fornecida está incorreta e não pôde ser interpretada."}
+{"code": "AWSDED009E", "pt": "A especificação de hora fornecida está incorreta e não pôde ser interpretada."}
+{"code": "AWSDED010E", "pt": "A especificação de data é ambígua e não permite determinar uma única interpretação."}
+{"code": "AWSDED011E", "pt": "A entrada fornecida é longa demais para ser processada."}
+{"code": "AWSDED012E", "pt": "O número fornecido possui mais dígitos do que o permitido."}
+{"code": "AWSDED013E", "pt": "O nome do identificador é longo demais para o limite aceito."}
+{"code": "AWSDED014E", "pt": "A string de formato de saída é longa demais para ser aceita."}
+{"code": "AWSDED015E", "pt": "Nenhuma data ou hora foi especificada para a operação."}
+{"code": "AWSDED016E", "pt": "Erro interno porque a alocação de memória falhou durante a operação."}
+{"code": "AWSDED017W", "pt": "A configuração de idioma falhou e o programa continuará usando o idioma padrão inglês."}
+{"code": "AWSDED018E", "pt": "A especificação de deslocamento fornecida não é válida."}
+{"code": "AWSDED019E", "pt": "A especificação do formato de saída fornecida não é válida."}
+{"code": "AWSDED020E", "pt": "A especificação de entrada fornecida não é válida."}
+{"code": "AWSDED022E", "pt": "O nome do calendário informado é longo demais para ser aceito."}
+{"code": "AWSDED023E", "pt": "Ocorreu um erro ao abrir o arquivo Symphony usado pelo produto."}
+{"code": "AWSDED024E", "pt": "Ocorreu um problema interno inesperado durante o processamento."}
+{"code": "AWSDED025E", "pt": "Houve falha ao ler as datas do calendário informado durante o processamento."}
+{"code": "AWSDED026E", "pt": "A expressão de deslocamento ultrapassa a primeira data válida do calendário informado."}
+{"code": "AWSDED027E", "pt": "A expressão de deslocamento ultrapassa a última data válida do calendário informado."}
+{"code": "AWSDED028E", "pt": "O mês informado não é válido, e a data deve seguir o formato de entrada configurado."}
+{"code": "AWSDED029E", "pt": "O dia informado não é válido, e a data deve seguir o formato de entrada configurado."}
+{"code": "AWSDEF001E", "pt": "Não foi possível obter memória do heap para a operação."}
+{"code": "AWSDEF005E", "pt": "Ocorreu um erro ao definir o tempo máximo de espera da operação."}
+{"code": "AWSDEF009E", "pt": "A área de dados fornecida não corresponde a uma área de comunicação entre processos."}
 {"code": "AWSDEG001E", "pt": "Ocorreu um erro de comunicação pois ainda não existe uma área de dados comum disponível para a operação."}
 {"code": "AWSDEG002E", "pt": "A área de dados comum informada não é válida para acesso tipo ISAM, impedindo a execução da operação."}
 {"code": "AWSDEG003W", "pt": "Foi emitido um aviso de que a operação ISAM não está implementada para o arquivo de acesso indicado."}
@@ -2406,6 +2756,46 @@
 {"code": "AWSDEG462E", "pt": "Durante a reconstrução do arquivo informado falhou o carregamento da estrutura de árvore B, interrompendo o processo."}
 {"code": "AWSDEG463E", "pt": "Durante a reconstrução do arquivo informado falhou a inicialização da rotina de ordenação, interrompendo o processo."}
 {"code": "AWSDEG464E", "pt": "Durante a reconstrução do arquivo informado falhou a entrada de dados na rotina de ordenação, interrompendo o processo."}
+{"code": "AWSDEG465E", "pt": "Falha ao reconstruir o arquivo durante a geração da saída da classificação."}
+{"code": "AWSDEG466E", "pt": "O arquivo de chaves está dessincronizado com o arquivo de dados e a reconstrução deve ser executada."}
+{"code": "AWSDEG467E", "pt": "Falha ao reconstruir o arquivo durante a abertura do descritor de fluxo."}
+{"code": "AWSDEG468E", "pt": "Falha ao reconstruir o arquivo durante o reposicionamento do ponteiro de leitura."}
+{"code": "AWSDEG469E", "pt": "Falha ao reconstruir o arquivo porque não foi possível criar o arquivo temporário."}
+{"code": "AWSDEG470E", "pt": "Falha ao reconstruir o arquivo porque a alocação de memória falhou."}
+{"code": "AWSDEG471E", "pt": "Falha ao reconstruir o arquivo durante a criação da nova versão dele."}
+{"code": "AWSDEG472E", "pt": "Falha ao reconstruir o arquivo durante a leitura do arquivo de trabalho."}
+{"code": "AWSDEG473E", "pt": "Falha ao reconstruir o arquivo durante a gravação do arquivo de trabalho."}
+{"code": "AWSDEG474E", "pt": "Falha ao reconstruir o arquivo durante o bloqueio do acesso a ele."}
+{"code": "AWSDEG475E", "pt": "Falha ao reconstruir o arquivo durante a renomeação da versão antiga."}
+{"code": "AWSDEG476E", "pt": "Falha ao reconstruir o arquivo durante a renomeação da nova versão."}
+{"code": "AWSDEG477E", "pt": "Falha ao reconstruir o arquivo durante a consulta da posição de leitura."}
+{"code": "AWSDEG478E", "pt": "Falha ao reconstruir o arquivo durante a gravação da nova versão."}
+{"code": "AWSDEG479E", "pt": "Falha ao reconstruir o arquivo durante a leitura do arquivo de chaves."}
+{"code": "AWSDEG480E", "pt": "Falha ao reconstruir o arquivo durante a liberação do bloqueio sobre ele."}
+{"code": "AWSDEG481E", "pt": "Falha ao reconstruir o arquivo porque não foi possível obter acesso exclusivo."}
+{"code": "AWSDEG482E", "pt": "Falha ao reconstruir o arquivo porque não foi possível redefinir o bloqueio."}
+{"code": "AWSDEG600E", "pt": "O processamento foi interrompido ao localizar um registro fora da posição esperada no arquivo."}
+{"code": "AWSDEH001E", "pt": "O delimitador utilizado na entrada está incorreto."}
+{"code": "AWSDEH002E", "pt": "Há um conflito de tipos na chamada, pois ela exige um tipo diferente do fornecido."}
+{"code": "AWSDEH003W", "pt": "O tipo exigido não corresponde ao tipo do operando fornecido na operação."}
+{"code": "AWSDEH004E", "pt": "A palavra-chave procurada não foi encontrada na entrada fornecida."}
+{"code": "AWSDEH005E", "pt": "O comando informado não foi encontrado, e o usuário deve consultar a ajuda disponível."}
+{"code": "AWSDEH006E", "pt": "O tipo solicitado na operação não foi encontrado."}
+{"code": "AWSDEH007E", "pt": "Não foi possível formatar o tipo informado na operação."}
+{"code": "AWSDEH008E", "pt": "A variável referenciada não foi encontrada no contexto atual."}
+{"code": "AWSDEH009E", "pt": "Foi detectada uma variável duplicada, definida mais de uma vez."}
+{"code": "AWSDEH010E", "pt": "Não foi possível criar a variável solicitada na operação."}
+{"code": "AWSDEH011E", "pt": "Não foi possível atribuir um valor à variável informada."}
+{"code": "AWSDEH012E", "pt": "O procedimento referenciado não foi encontrado no sistema."}
+{"code": "AWSDEH013E", "pt": "A palavra-chave informada é desconhecida pelo sistema."}
+{"code": "AWSDEI003E", "pt": "Erro do sistema ao tentar abrir o arquivo para leitura da entrada."}
+{"code": "AWSDEI004E", "pt": "Erro do sistema ao tentar abrir o arquivo para gravação da saída."}
+{"code": "AWSDEI005E", "pt": "A linha de comando possui caracteres demais e excede o limite aceito."}
+{"code": "AWSDEI006I", "pt": "A resposta esperada deve ser informada usando sim, não ou suas abreviações."}
+{"code": "AWSDEI007E", "pt": "A linha de entrada possui caracteres demais e excede o limite aceito."}
+{"code": "AWSDEJ001E", "pt": "O arquivo de segurança utilizado pela operação não é válido."}
+{"code": "AWSDEJ002E", "pt": "A área de dados interna do programa não pôde ser inicializada corretamente."}
+{"code": "AWSDEJ003E", "pt": "A ação solicitada sobre o item informado não está definida e não pode ser executada."}
 {"code": "AWSDEM003E", "pt": "O parâmetro de ID de CPU do comando de link é inválido, apresentando um erro de sintaxe que impede a definição da estação de trabalho."}
 {"code": "AWSDEM004E", "pt": "A definição da estação de trabalho está incorreta porque o identificador do servidor não é sintaticamente válido, devendo ser uma única letra ou número entre A-Z e 0-9."}
 {"code": "AWSDEM007E", "pt": "A definição da estação de trabalho está incorreta porque a palavra-chave obrigatória de sistema operacional não foi informada na configuração."}
