@@ -1,9 +1,9 @@
 {
-  "total_unique_claims": 5432,
-  "total_synthetic_questions": 11869,
+  "total_unique_claims": 6883,
+  "total_synthetic_questions": 16222,
   "total_evidence_files": 164,
   "distribution_by_category": {
-    "Troubleshooting & Mensagens de Erro": 3253,
+    "Troubleshooting & Mensagens de Erro": 4704,
     "Operacao CLI (conman/composer/planman)": 655,
     "API REST v2 & Integracao": 158,
     "Instalacao & Manutencao": 194,
