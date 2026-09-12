@@ -2796,6 +2796,94 @@
 {"code": "AWSDEJ001E", "pt": "O arquivo de segurança utilizado pela operação não é válido."}
 {"code": "AWSDEJ002E", "pt": "A área de dados interna do programa não pôde ser inicializada corretamente."}
 {"code": "AWSDEJ003E", "pt": "A ação solicitada sobre o item informado não está definida e não pode ser executada."}
+{"code": "AWSDEJ004E", "pt": "Ocorreu um erro interno durante a execução da operação solicitada sobre o tipo de objeto indicado, indicando uma falha inesperada no processamento interno do sistema."}
+{"code": "AWSDEJ005E", "pt": "O usuário atual não possui as permissões de segurança necessárias para executar a ação solicitada sobre o tipo de objeto indicado, então a operação foi negada."}
+{"code": "AWSDEJ006I", "pt": "O sistema processa a operação solicitada sobre o objeto indicado enquanto lê o cabeçalho do respectivo registro, dando continuidade normal ao fluxo de execução."}
+{"code": "AWSDEJ007E", "pt": "Ocorreu uma falha sistêmica ao executar a operação sobre o objeto especificado e o arquivo de segurança pode estar corrompido, exigindo apuração e verificação da integridade."}
+{"code": "AWSDEJ008E", "pt": "Foi detectada uma falha de sistema durante a execução da ação sobre o objeto informado, com a possibilidade de o arquivo de segurança estar corrompido, demandando inspeção."}
+{"code": "AWSDEJ009E", "pt": "Ocorreu um erro interno ao executar a operação sobre o objeto indicado e o arquivo de segurança pode estar corrompido, sendo recomendável verificar a consistência dos dados."}
+{"code": "AWSDEJ010E", "pt": "Uma falha de sistema foi detectada ao tentar realizar a operação sobre o objeto especificado, e o arquivo de segurança pode estar corrompido, requisitando verificação."}
+{"code": "AWSDEJ011E", "pt": "Ocorreu uma falha de descriptografia durante a execução da operação sobre o objeto informado, e o arquivo de segurança pode estar corrompido, exigindo investigação."}
+{"code": "AWSDEJ012E", "pt": "Um erro interno ocorreu ao tentar executar a operação solicitada sobre o tipo de objeto indicado, apontando para uma falha inesperada no processamento interno."}
+{"code": "AWSDEJ016E", "pt": "Ocorreu um erro interno durante a execução da ação sobre o objeto especificado, indicando uma falha inesperada no processamento interno do sistema operacional."}
+{"code": "AWSDEJ017E", "pt": "Durante o processamento da operação sobre o objeto informado, o teste de segurança encontrou um objeto inválido dentro do arquivo de segurança."}
+{"code": "AWSDEJ019E", "pt": "Ocorreu um erro ao ler o cabeçalho do arquivo de segurança para o usuário indicado, o que pode significar que o arquivo está corrompido e precisa de reparo."}
+{"code": "AWSDEJ020E", "pt": "Houve um erro ao posicionar o cursor no início do arquivo de segurança para o usuário indicado, sugerindo que o arquivo pode estar vazio ou corrompido."}
+{"code": "AWSDEJ021E", "pt": "O arquivo de segurança é considerado inválido porque o número mágico de identificação está incorreto, indicando que não é um arquivo reconhecido."}
+{"code": "AWSDEJ022E", "pt": "O arquivo de segurança foi reprovado por apresentar uma versão incompatível, impossibilitando a leitura correta das informações de segurança nele contidas."}
+{"code": "AWSDEJ023E", "pt": "O arquivo de segurança é rejeitado por conter um tamanho incorreto no registro de cabeçalho, indicando estrutura incompatível ou arquivo danificado."}
+{"code": "AWSDEJ024E", "pt": "O programa não conseguiu reservar memória suficiente durante a execução, indicando que o heap disponível está esgotado para o tamanho dos dados em processamento."}
+{"code": "AWSDEJ025E", "pt": "O arquivo de segurança não foi localizado e, como o usuário não possui privilégios de administrador, o programa não tem permissão para criá-lo automaticamente."}
+{"code": "AWSDEJ028E", "pt": "Ocorreu um erro ao recuperar a estrutura de senha a partir do arquivo de segurança, o que pode indicar que o arquivo está corrompido e requer verificação."}
+{"code": "AWSDEJ029E", "pt": "A ação solicitada sobre o tipo de objeto indicado não pode ser executada em uma rede fim a fim do HCL Workload Scheduler por restrição do ambiente distribuído."}
+{"code": "AWSDEJ101E", "pt": "Falha ao gravar ou persistir os dados do usuário indicado no repositório de segurança durante o processamento da operação de escrita."}
+{"code": "AWSDEJ104E", "pt": "Durante a execução da ferramenta de segurança, foi encontrado um erro no arquivo informado na linha indicada, pois o valor do atributo excede o tamanho máximo permitido."}
+{"code": "AWSDEJ105E", "pt": "No arquivo indicado, na linha especificada, houve erro ao gravar o final da definição do elemento citado, interrompendo o processamento do arquivo."}
+{"code": "AWSDEJ109E", "pt": "No arquivo informado, na linha indicada, foi detectada uma variável desconhecida que não é reconhecida pela ferramenta de segurança, causando falha de leitura."}
+{"code": "AWSDEJ115E", "pt": "O mesmo usuário indicado está definido mais de uma vez no arquivo informado, na linha especificada, caracterizando definição duplicada e conflito de segurança."}
+{"code": "AWSDEJ116E", "pt": "O nome de usuário informado não é considerado válido no arquivo indicado, na linha especificada, violando as regras de nomenclatura adotadas."}
+{"code": "AWSDEJ117E", "pt": "Ocorreu um erro interno ao gravar o cabeçalho do arquivo de segurança para o usuário indicado durante a execução da ação especificada."}
+{"code": "AWSDEJ119E", "pt": "Durante a execução da ferramenta de segurança, foi encontrado erro de sintaxe no arquivo informado na linha indicada, pois a palavra-chave não começa com o caractere exigido."}
+{"code": "AWSDEJ201E", "pt": "O arquivo de segurança é inválido porque ocorreu um erro ao ler o usuário na posição de byte indicada, indicando corrupção na estrutura de dados."}
+{"code": "AWSDEJ202E", "pt": "O arquivo de segurança é inválido pois ocorreu uma falha ao ler o bloco de dados na posição de byte indicada, sugerindo estrutura corrompida."}
+{"code": "AWSDEJ203E", "pt": "O arquivo de segurança é inválido pois a palavra-chave de objeto encontrada na posição de byte indicada não é reconhecida pelo sistema de segurança."}
+{"code": "AWSDEJ204E", "pt": "O arquivo de segurança é inválido pois o atributo de usuário encontrado na posição de byte indicada não é reconhecido como válido pelo sistema."}
+{"code": "AWSDEJ205E", "pt": "O arquivo de segurança é inválido pois a variável presente na posição de byte indicada não é reconhecida como válida pelo sistema de segurança."}
+{"code": "AWSDEJ206E", "pt": "O arquivo de segurança é inválido pois a palavra-chave de ação localizada na posição de byte indicada não é reconhecida como válida pelo sistema."}
+{"code": "AWSDEK051E", "pt": "As opções do comando devem ser informadas antes dos argumentos, podendo ser usado o marcador de fim de opções para separar corretamente os parâmetros."}
+{"code": "AWSDEK052E", "pt": "Uma das opções informadas no comando não é aceita pela ferramenta, portanto a linha de comando deve ser corrigida e executada novamente."}
+{"code": "AWSDEK053E", "pt": "A opção fornecida é ambígua, pois poderia corresponder a mais de uma opção válida, sendo necessário especificar o argumento de forma mais completa."}
+{"code": "AWSDEK054E", "pt": "A opção solicitada não foi encontrada entre as opções suportadas pela ferramenta, indicando erro de digitação ou opção inexistente."}
+{"code": "AWSDEK101E", "pt": "Falha ao acessar o recurso indicado, retornando o erro reportado pelo sistema operacional e interrompendo a operação em andamento."}
+{"code": "AWSDEK102E", "pt": "Ocorreu um erro durante a reconstrução do recurso indicado, apresentando a mensagem de erro detalhada do sistema operacional."}
+{"code": "AWSDEK301E", "pt": "Falha ao abrir o arquivo de trabalho indicado, apresentando o erro retornado pelo sistema e impedindo o prosseguimento da operação."}
+{"code": "AWSDEK302W", "pt": "Aviso de que a opção de verificação assumirá prioridade, invalidando e sobrepondo o efeito das demais opções configuradas no comando."}
+{"code": "AWSDEK303W", "pt": "Aviso de que a opção de saída assumirá prioridade sobre as demais opções informadas, determinando o comportamento esperado do comando."}
+{"code": "AWSDEK304W", "pt": "Aviso de que a opção local passa a valer, ignorando a opção de rede informada, pois a operação ocorrerá no contexto local."}
+{"code": "AWSDEK305E", "pt": "Falha ao abrir o arquivo de segurança indicado, apresentando o erro retornado pelo sistema e impedindo o acesso às informações de segurança."}
+{"code": "AWSDEK306E", "pt": "Ocorreu um erro ao gravar o cabeçalho do arquivo em processamento, reportando o detalhe da falha informado pelo sistema."}
+{"code": "AWSDEK308E", "pt": "Falha ao renomear o arquivo de origem para o nome de destino indicado, reportando a mensagem de erro do sistema operacional."}
+{"code": "AWSDEK310E", "pt": "A conversão do conteúdo informado do formato nativo para a codificação UTF-8 não foi concluída, indicando falha na transformação de caracteres."}
+{"code": "AWSDEK312E", "pt": "Não foi possível inicializar o contexto de segurança definido na configuração, reportando a causa da falha durante a preparação do ambiente."}
+{"code": "AWSDEK401E", "pt": "Ocorreu um erro ao ler o cabeçalho do arquivo em processamento, interrompendo a operação e reportando a mensagem de erro do sistema."}
+{"code": "AWSDEK402E", "pt": "Não foi possível acessar o arquivo de segurança atualmente em uso pela aplicação, reportando o motivo da falha de acesso ao recurso."}
+{"code": "AWSDEK403E", "pt": "Falha ao inicializar o contexto de segurança necessário para a operação, apresentando a mensagem de erro detalhada do sistema."}
+{"code": "AWSDEK404E", "pt": "Não foi possível abrir o arquivo temporário em codificação UTF-8 indicado, impedindo a conclusão da conversão ou do processamento pretendido."}
+{"code": "AWSDEK405E", "pt": "Não foi possível ler o arquivo de segurança de saída em codificação UTF-8 indicado durante o processamento da conversão de caracteres."}
+{"code": "AWSDEK406E", "pt": "Ocorreu um erro ao exibir na tela o conteúdo do arquivo de segurança indicado, reportando a falha encontrada pelo sistema."}
+{"code": "AWSDEK701E", "pt": "Não foi possível abrir o arquivo especificado devido a um erro de entrada e saída, reportado pelo sistema operacional durante a tentativa."}
+{"code": "AWSDEK702I", "pt": "O tamanho máximo do arquivo indicado foi alterado para o valor em bytes informado, ajustando o limite de crescimento desse recurso."}
+{"code": "AWSDEK703I", "pt": "A fila de mensagens está operando com o tamanho atual e o limite máximo informados, mostrando também as contagens de leitura e gravação."}
+{"code": "AWSDEK705E", "pt": "Ocorreu um erro durante o processamento do arquivo especificado, reportado pelo sistema, interrompendo a operação em andamento."}
+{"code": "AWSDEK706E", "pt": "Ocorreu um erro processando o arquivo especificado e o arquivo de eventos original foi recuperado para preservar os dados não processados."}
+{"code": "AWSDEK707I", "pt": "O arquivo de eventos que armazena as mensagens de fila foi compactado com sucesso, reduzindo o espaço ocupado sem perder o conteúdo."}
+{"code": "AWSDEK708E", "pt": "A fila de mensagens indicada não pôde ser redimensionada sem corromper o conteúdo já gravado, impedindo a alteração do seu tamanho."}
+{"code": "AWSDEK709E", "pt": "O valor informado para o parâmetro de tamanho é maior do que o limite máximo permitido pelo sistema operacional, sendo rejeitado."}
+{"code": "AWSDEK710W", "pt": "O comando para definir o tamanho dos eventos foi executado com parâmetros em excesso, sendo os parâmetros adicionais ignorados pelo sistema."}
+{"code": "AWSDEK711E", "pt": "A fila de mensagens deve possuir um tamanho mínimo definido pelo sistema, e o valor informado está abaixo desse limite mínimo obrigatório."}
+{"code": "AWSDEK810I", "pt": "A opção de modo de depuração está ativa, fazendo o processo operar com diagnóstico estendido e mensagens de rastreamento detalhadas."}
+{"code": "AWSDEK904E", "pt": "Não foi possível abrir o arquivo de segurança informado para inicializar a segurança centralizada, pois o arquivo não existe ou não foi encontrado."}
+{"code": "AWSDEK905E", "pt": "Não foi possível ler o arquivo de segurança informado necessário para a segurança centralizada, reportando o motivo da falha de leitura."}
+{"code": "AWSDEK906E", "pt": "Não foi possível gravar no arquivo de segurança informado durante a atualização da segurança centralizada, reportando a causa da falha."}
+{"code": "AWSDEL001E", "pt": "Foi feita a tentativa de abrir uma revisão mais recente do arquivo do que a suportada, indicando incompatibilidade de versão do arquivo."}
+{"code": "AWSDEL002E", "pt": "O arquivo de dados de processador não foi aberto antes de sua utilização, indicando que a operação foi tentada sem o arquivo estar carregado."}
+{"code": "AWSDEL003W", "pt": "Chegou ao fim da cadeia de registros sem que houvesse mais correspondências a processar, encerrando a busca pelos dados solicitados."}
+{"code": "AWSDEL004E", "pt": "Não foi possível criar um arquivo temporário durante a operação, reportando o motivo da falha de criação pelo sistema."}
+{"code": "AWSDEL005E", "pt": "Ocorreu um erro de sistema de arquivos durante a operação, reportando o problema detectado pelo sistema operacional ao acessar os dados."}
+{"code": "AWSDEL006E", "pt": "O processador não foi especificado no arquivo de dados de processador, impedindo a identificação do recurso necessário para a operação."}
+{"code": "AWSDEL007E", "pt": "As funções de acesso por índice retornaram um erro durante o processamento, indicando falha ao recuperar ou localizar os dados indexados."}
+{"code": "AWSDEL008E", "pt": "A operação de inclusão falhou porque a definição do processador informado já existe no banco de dados de processadores."}
+{"code": "AWSDEL009I", "pt": "A definição do processador informado foi substituída no banco de dados porque sua configuração sofreu alterações desde a última versão."}
+{"code": "AWSDEL010E", "pt": "O acesso à definição do processador especificado foi negado por falta de permissão, impedindo a operação solicitada sobre esse recurso."}
+{"code": "AWSDEL011E", "pt": "Não foi possível reservar memória durante a operação, indicando que a memória disponível no sistema é insuficiente para o processamento."}
+{"code": "AWSDEL012E", "pt": "Uma definição de processador inválida foi lida a partir do arquivo, indicando dados corrompidos ou incompatíveis no registro."}
+{"code": "AWSDEL013E", "pt": "O nome especificado não corresponde a uma classe de processador conhecida, portanto a operação não pode ser realizada com esse identificador."}
+{"code": "AWSDEL014E", "pt": "Foi negada a permissão de modificação para o processador indicado, bloqueando a operação solicitada sobre essa definição."}
+{"code": "AWSDEL015E", "pt": "O processador indicado não existe no arquivo de dados de processadores, portanto a operação sobre ele não pode ser executada."}
+{"code": "AWSDEL016E", "pt": "Aviso de que o método de acesso indicado não existe no sistema atual, podendo comprometer a operação que depende dessa capacidade."}
+{"code": "AWSDEL017W", "pt": "Foi detectado um tipo inválido de entrada de processador ao exibir os dados, indicando um registro desconhecido pela rotina de impressão."}
+{"code": "AWSDEL018E", "pt": "A rotina de inclusão de tipo de agente recebeu um tipo de agente desconhecido, recusando o cadastro dessa configuração."}
+{"code": "AWSDEL019E", "pt": "A rotina de inclusão de tipo de agente recebeu um tipo de agente desconhecido, impedindo o cadastro dessa configuração no sistema."}
 {"code": "AWSDEM003E", "pt": "O parâmetro de ID de CPU do comando de link é inválido, apresentando um erro de sintaxe que impede a definição da estação de trabalho."}
 {"code": "AWSDEM004E", "pt": "A definição da estação de trabalho está incorreta porque o identificador do servidor não é sintaticamente válido, devendo ser uma única letra ou número entre A-Z e 0-9."}
 {"code": "AWSDEM007E", "pt": "A definição da estação de trabalho está incorreta porque a palavra-chave obrigatória de sistema operacional não foi informada na configuração."}
@@ -2869,6 +2957,10 @@
 {"code": "AWSDEM214E", "pt": "Há um erro de sintaxe porque a porta TCP ou SSL informada deve estar no intervalo entre um e sessenta e cinco mil quinhentos e trinta e cinco."}
 {"code": "AWSDEM215E", "pt": "A definição da estação de trabalho está incorreta porque o valor do tipo de licença não é válido, devendo ser por job ou por servidor."}
 {"code": "AWSDEM216E", "pt": "A definição da estação de trabalho está incorreta porque a palavra-chave de tipo de licença foi declarada mais de uma vez."}
+{"code": "AWSDEN002E", "pt": "Não é possível converter o software para o modo demonstração; recomendação é consultar a base de suporte da HCL para uma solução."}
+{"code": "AWSDEN003W", "pt": "O software foi convertido para uma versão de demonstração com duração de sete dias, passando a operar em caráter temporário e limitado."}
+{"code": "AWSDEN004E", "pt": "Esta não é uma versão de software de produção, devendo ser utilizada apenas para fins de avaliação e não em ambiente operacional real."}
+{"code": "AWSDEN005E", "pt": "Não foi possível determinar o tipo do software instalado; recomendação é consultar a base de suporte da HCL para obter uma solução."}
 {"code": "AWSDEO001E", "pt": "Foi identificado um erro de protocolo SNMP no processamento, indicando o componente e o detalhe técnico da falha ocorrida."}
 {"code": "AWSDEO002E", "pt": "Falhou a alocação de recursos SNMP durante o processamento, indicando o componente e o detalhe técnico do erro."}
 {"code": "AWSDEO003E", "pt": "Foi encontrado um caso não reconhecido no processamento SNMP, indicando o componente e o detalhe técnico do erro."}
@@ -2937,6 +3029,216 @@
 {"code": "AWSDEO306E", "pt": "O registro SMUX foi rejeitado para o recurso !1 em !2, com código de erro !3 e informação !4."}
 {"code": "AWSDEO307E", "pt": "Falha SMUX ao enviar um trap para o recurso !1 em !2, com o código de erro !3 e a informação !4."}
 {"code": "AWSDEO308E", "pt": "Erro SMUX ao processar a resposta do recurso !1 em !2, retornando código de erro !3 e informação !4."}
+{"code": "AWSDEP001E", "pt": "Ocorreu um erro de fila nomeada na função indicada, reportando o motivo da falha ao operar sobre o recurso de comunicação."}
+{"code": "AWSDEP002E", "pt": "Falha ao abrir a conexão de fila nomeada para o recurso indicado, reportando o erro retornado pelo sistema de comunicação."}
+{"code": "AWSDEP003E", "pt": "Falha ao reservar espaço na fila nomeada do recurso indicado para o dado informado, apresentando o erro retornado pelo sistema."}
+{"code": "AWSDEP004E", "pt": "Ocorreu um erro de recepção na fila nomeada do recurso indicado, reportando o motivo da falha ao ler os dados recebidos."}
+{"code": "AWSDEP005E", "pt": "Foi encontrado um caso de valor inesperado no processamento sobre o recurso indicado na linha informada, exigindo investigação da lógica."}
+{"code": "AWSDEP006E", "pt": "Ocorreu um erro de envio na fila nomeada do recurso indicado, reportando o motivo da falha ao transmitir os dados."}
+{"code": "AWSDEP007E", "pt": "O modo ou opção utilizado sobre o recurso indicado não é suportado pelo sistema, impossibilitando a operação solicitada."}
+{"code": "AWSDEP008E", "pt": "Foi detectado um comprimento de leitura inválido sobre o recurso indicado, reportando o problema identificado pelo sistema."}
+{"code": "AWSDEP009E", "pt": "Ocorreu um erro ao ler o buffer recebido do recurso indicado, reportando o motivo da falha de leitura dos dados."}
+{"code": "AWSDEP010E", "pt": "Ocorreu um erro de controle de fluxo sobre o recurso indicado, reportando o problema detectado pela função de chamada de sistema."}
+{"code": "AWSDEP011E", "pt": "Ocorreu um erro ao ler bytes excedentes do recurso indicado, reportando o motivo da falha ao processar o excesso de dados."}
+{"code": "AWSDEP012E", "pt": "Não há leitores ativos sobre o recurso indicado, indicando que a fila não possui processos consumindo os dados gerados."}
+{"code": "AWSDEP014E", "pt": "Nenhuma operação de erro ocorreu no recurso indicado, informando que a última ação executada foi realizada sem falhas."}
+{"code": "AWSDEP015E", "pt": "Foi detectado um acesso inválido sobre o recurso indicado, reportando o erro de permissão ou de senha mesmo de acesso."}
+{"code": "AWSDEP017E", "pt": "Ocorreu um erro na chamada de espera por eventos sobre o recurso indicado, indicando falha no monitoramento dos descritores."}
+{"code": "AWSDEP018E", "pt": "Ocorreu um tempo limite ao aguardar por atividade no recurso indicado, indicando que a operação não foi concluída no prazo estipulado."}
+{"code": "AWSDEP019E", "pt": "Ocorreu um erro ao construir o recurso indicado, reportando o motivo da falha durante a montagem da estrutura necessária."}
+{"code": "AWSDEP020E", "pt": "O erro ocorre porque o recurso indicado já está aberto por outro processo para leitura, impedindo acesso concorrente."}
+{"code": "AWSDEQ001E", "pt": "Ocorreu um erro ao definir o token da thread no processo, reportando a mensagem de erro retornada pelo sistema durante a configuração."}
+{"code": "AWSDEQ002E", "pt": "Ocorreu um erro ao criar o arquivo indicado no sistema, reportando a mensagem de erro retornada pelo sistema operacional."}
+{"code": "AWSDEQ003E", "pt": "Ocorreu um erro ao definir o modo da fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema durante a configuração."}
+{"code": "AWSDEQ004E", "pt": "Ocorreu um erro ao gravar dados no arquivo indicado, reportando a mensagem de erro retornada pelo sistema durante a escrita."}
+{"code": "AWSDEQ005E", "pt": "Ocorreu um erro ao estabelecer conexão com a fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema."}
+{"code": "AWSDEQ006E", "pt": "Ocorreu um erro ao ler dados do arquivo indicado, reportando a mensagem de erro retornada pelo sistema durante a leitura."}
+{"code": "AWSDEQ007E", "pt": "Ocorreu um erro ao assumir a identidade do cliente da fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema."}
+{"code": "AWSDEQ008E", "pt": "Ocorreu um erro ao abrir o token da thread indicado, reportando a mensagem de erro retornada pelo sistema durante a abertura."}
+{"code": "AWSDEQ009E", "pt": "Ocorreu um erro ao inicializar o descritor de segurança indicado, reportando a mensagem de erro retornada pelo sistema."}
+{"code": "AWSDEQ010E", "pt": "Ocorreu um erro ao definir a lista de controle de acesso do descritor de segurança indicado, reportando a mensagem de erro do sistema."}
+{"code": "AWSDEQ011E", "pt": "Ocorreu um erro ao criar a fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema durante a criação."}
+{"code": "AWSDEQ012E", "pt": "Ocorreu um erro ao pesquisar o caminho indicado no sistema, reportando a mensagem de erro retornada pelo sistema operacional."}
+{"code": "AWSDEQ013E", "pt": "Ocorreu um erro ao obter as informações de segurança do arquivo indicado, reportando a mensagem de erro retornada pelo sistema."}
+{"code": "AWSDEQ014E", "pt": "Ocorreu um erro ao obter o proprietário do arquivo indicado, reportando a mensagem de erro retornada pelo sistema operacional."}
+{"code": "AWSDEQ015E", "pt": "Não há proprietário definido para o arquivo indicado, impossibilitando a identificação do responsável pelos dados do recurso."}
+{"code": "AWSDEQ016E", "pt": "A rotina de leitura retornou sucesso de forma inesperada quando se esperava uma falha, reportando o resultado anômalo da operação."}
+{"code": "AWSDEQ017E", "pt": "Ocorreu um erro ao converter o identificador de segurança para o nome indicado, reportando a mensagem de erro retornada pelo sistema."}
+{"code": "AWSDEQ018E", "pt": "Ocorreu um erro ao abrir o gerenciador de controle de serviços, reportando a mensagem de erro retornada pelo sistema operacional."}
+{"code": "AWSDEQ019E", "pt": "Ocorreu um erro ao abrir o serviço indicado, reportando a mensagem de erro retornada pelo sistema durante a operação."}
+{"code": "AWSDEQ020E", "pt": "Ocorreu um erro ao consultar o status do serviço indicado, reportando a mensagem de erro retornada pelo sistema operacional."}
+{"code": "AWSDEQ021E", "pt": "O serviço de token do HCL Workload Scheduler não está ativo, então é preciso reiniciá-lo para restaurar a autenticação."}
+{"code": "AWSDEQ022E", "pt": "Falhou a abertura do token do processo e a operação não pôde ser concluída conforme esperado."}
+{"code": "AWSDEQ023E", "pt": "Não foi possível obter as informações do token do processo durante a tentativa de leitura."}
+{"code": "AWSDEQ024E", "pt": "O proprietário do recurso não corresponde a um usuário válido e a operação foi rejeitada."}
+{"code": "AWSDEQ025E", "pt": "Falha ao tentar voltar o contexto de segurança para o usuário original da chamada."}
+{"code": "AWSDEQ026E", "pt": "Não foi possível recuperar os dados de volume necessários para prosseguir com a operação."}
+{"code": "AWSDEQ027E", "pt": "Erro ao tentar assumir temporariamente a identidade do próprio processo para executar a ação."}
+{"code": "AWSDEQ028E", "pt": "Falha ao tentar gravar ou atualizar as informações associadas ao token do processo."}
+{"code": "AWSDEQ029E", "pt": "Ocorreu um erro genérico do sistema operacional Windows durante a execução da operação."}
+{"code": "AWSDER001E", "pt": "A alocação de memória falhou por falta de recursos disponíveis, impedindo a operação de continuar."}
+{"code": "AWSDER002E", "pt": "A inicialização do bloco de memória falhou e a operação não pôde ser concluída."}
+{"code": "AWSDER003E", "pt": "Não foi possível redimensionar o bloco de memória alocado, interrompendo a operação atual."}
+{"code": "AWSDES001E", "pt": "O arquivo de definição de usuário não contém a palavra-chave obrigatória de identificação do usuário."}
+{"code": "AWSDES002E", "pt": "Foi informado um identificador de usuário inválido, devendo ser usado o formato domínio e usuário."}
+{"code": "AWSDES003E", "pt": "O arquivo de definição de usuário deveria conter o marcador de fim, que não foi encontrado."}
+{"code": "AWSDES004E", "pt": "Nenhum atributo de usuário foi informado quando era obrigatório preencher essa seção."}
+{"code": "AWSDES005E", "pt": "A senha é um atributo obrigatório e não pode ficar em branco na definição do usuário."}
+{"code": "AWSDES006E", "pt": "A palavra-chave de senha foi informada mais de uma vez, o que não é permitido."}
+{"code": "AWSDES007E", "pt": "O nome do domínio informado tem uma sintaxe inválida e precisa ser corrigido."}
+{"code": "AWSDES008E", "pt": "O nome do usuário informado apresenta sintaxe inválida e deve ser revisado."}
+{"code": "AWSDES009E", "pt": "O nome do usuário excede o tamanho máximo permitido e, se tiver caracteres especiais, precisa estar entre aspas."}
+{"code": "AWSDES010E", "pt": "O nome do domínio informado ultrapassa o limite máximo de caracteres permitido na definição."}
+{"code": "AWSDES012E", "pt": "O nome da estação de trabalho informado não é válido para esta operação."}
+{"code": "AWSDES013E", "pt": "A senha informada não segue a sintaxe exigida pelo sistema e foi rejeitada."}
+{"code": "AWSDES014E", "pt": "Não foi possível abrir o arquivo de entrada que contém as definições de usuário."}
+{"code": "AWSDES015E", "pt": "A senha informada excede o tamanho máximo permitido e precisa ser encurtada."}
+{"code": "AWSDES103I", "pt": "O processador informa a linha e o conteúdo do arquivo onde detectou uma inconsistência."}
+{"code": "AWSDET001E", "pt": "Foi feita uma tentativa de abrir uma versão mais recente do arquivo do que a suportada."}
+{"code": "AWSDET002E", "pt": "O arquivo de dados de usuário ainda não foi aberto antes da operação solicitada."}
+{"code": "AWSDET003E", "pt": "A lista chegou ao fim sem que houvesse mais correspondências para a busca em curso."}
+{"code": "AWSDET004E", "pt": "Não foi possível criar um arquivo temporário necessário para concluir a operação."}
+{"code": "AWSDET005E", "pt": "Ocorreu um erro do sistema de arquivos que impediu a conclusão da operação."}
+{"code": "AWSDET006E", "pt": "O arquivo de dados do usuário não indica qual usuário deve ser usado na operação."}
+{"code": "AWSDET007E", "pt": "As funções de acesso ao índice retornaram um erro durante a operação."}
+{"code": "AWSDET008E", "pt": "A definição do usuário já existe na base de dados e a inclusão não pôde ser feita."}
+{"code": "AWSDET009I", "pt": "A definição do usuário na base de dados foi alterada e por isso foi realizada a substituição."}
+{"code": "AWSDET010E", "pt": "O acesso à definição do usuário especificado foi negado pelo controle de permissões."}
+{"code": "AWSDET011E", "pt": "Não havia memória disponível suficiente para alocar o espaço necessário na operação."}
+{"code": "AWSDET012E", "pt": "A definição de usuário lida do arquivo está inválida ou corrompida."}
+{"code": "AWSDEU001E", "pt": "Incluir o domínio informado criaria um ciclo na hierarquia de domínios, então a operação foi bloqueada."}
+{"code": "AWSDEU002I", "pt": "O processamento atingiu o primeiro elemento da lista e está posicionado em seu início."}
+{"code": "AWSDEU004E", "pt": "Tentativa de acrescentar um item a uma lista que aponta para um endereço nulo e inexistente."}
+{"code": "AWSDEU005E", "pt": "Tentativa de remover um elemento de uma lista apontada por um ponteiro nulo e inexistente."}
+{"code": "AWSDEU006E", "pt": "Foi feita uma tentativa de remover um elemento de uma lista que está vazia."}
+{"code": "AWSDEU007E", "pt": "Tentativa de localizar o último elemento de uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU008E", "pt": "Tentativa de calcular o tamanho de uma lista apontada por um ponteiro nulo e inexistente."}
+{"code": "AWSDEU009E", "pt": "Foi pedida a posição de um elemento anterior ou igual ao primeiro item da lista."}
+{"code": "AWSDEU010E", "pt": "Tentativa de localizar uma posição dentro de uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU011E", "pt": "Tentativa de liberar a memória de uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU012E", "pt": "Foi feita uma tentativa de inserir um ponteiro nulo dentro de uma lista."}
+{"code": "AWSDEU013E", "pt": "Tentativa de inserir um elemento logo após uma posição apontada por ponteiro nulo."}
+{"code": "AWSDEU014E", "pt": "Tentativa de inserir um elemento antes de uma posição apontada por ponteiro nulo."}
+{"code": "AWSDEU015E", "pt": "Tentativa de inserir um elemento antes do cabeçalho que inicia a lista."}
+{"code": "AWSDEU016E", "pt": "Tentativa de inserir um elemento em uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU017E", "pt": "Tentativa de inserir o próprio cabeçalho da lista como elemento dentro dela."}
+{"code": "AWSDEU018E", "pt": "Foi pedido para mover um elemento para baixo em uma lista que está vazia."}
+{"code": "AWSDEU019E", "pt": "Tentativa de mover um elemento dentro de uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU020E", "pt": "Foi pedido para mover um elemento para cima em uma lista que está vazia."}
+{"code": "AWSDEU021E", "pt": "Tentativa de mover o nó cabeçalho da lista como se fosse um elemento comum."}
+{"code": "AWSDEU022E", "pt": "Tentativa de exibir ou imprimir uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU023E", "pt": "Tentativa de percorrer os elementos de uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU024E", "pt": "Tentativa de marcar como visitados os itens de uma lista apontada por um ponteiro nulo."}
+{"code": "AWSDEU026E", "pt": "Não há elementos visitados na lista para que a busca por nós visitados seja realizada."}
+{"code": "AWSDEU027E", "pt": "O nome do domínio mestre foi passado como um ponteiro nulo e sem conteúdo."}
+{"code": "AWSDEU028E", "pt": "O nome do domínio mestre foi passado como uma string vazia e sem conteúdo."}
+{"code": "AWSDEU029E", "pt": "Não foi possível mover o elemento para baixo na lista conforme solicitado."}
+{"code": "AWSDEU030E", "pt": "Não foi possível mover o elemento para cima na lista conforme solicitado."}
+{"code": "AWSDEU031E", "pt": "Foi fornecido um ponteiro nulo para realizar a operação de exclusão."}
+{"code": "AWSDEU032E", "pt": "Foi fornecido um ponteiro nulo para realizar a operação de movimento de elemento."}
+{"code": "AWSDEU033E", "pt": "A lista não possui elementos suficientes para realizar a operação solicitada."}
+{"code": "AWSDEU034E", "pt": "Foi fornecido um ponteiro nulo onde se esperava o domínio da operação."}
+{"code": "AWSDEU035E", "pt": "Foi fornecido um ponteiro nulo como nó de entrada da lista para a operação."}
+{"code": "AWSDEU036E", "pt": "Foi fornecido um ponteiro nulo onde se esperava o nó da lista."}
+{"code": "AWSDEU037E", "pt": "Foi fornecido um ponteiro nulo onde se esperava o elemento pai da hierarquia."}
+{"code": "AWSDEU038E", "pt": "Foi fornecido um ponteiro nulo onde se esperava uma string de texto."}
+{"code": "AWSDEU039E", "pt": "O ponteiro informado não corresponde a nenhum nó presente na lista atual."}
+{"code": "AWSDEU040W", "pt": "Verificação em andamento para saber se a lista apontada por ponteiro nulo está vazia."}
+{"code": "AWSDEU041E", "pt": "A alocação de memória falhou e por isso não foi possível criar um nó de lista."}
+{"code": "AWSDEU042E", "pt": "A alocação de memória falhou e por isso não foi possível criar um nó de lista gerenciado."}
+{"code": "AWSDEU043E", "pt": "A alocação de memória falhou e por isso não foi possível criar o nó da lista."}
+{"code": "AWSDEU044E", "pt": "Não foi possível inicializar a lista, então a operação não pode prosseguir."}
+{"code": "AWSDEU045W", "pt": "Atenção: o domínio informado não possui um domínio pai definido na hierarquia."}
+{"code": "AWSDEU046E", "pt": "Foi fornecido um ponteiro nulo onde se esperava o nome do domínio como texto."}
+{"code": "AWSDEU047E", "pt": "O domínio solicitado não foi encontrado dentro da lista de domínios existentes."}
+{"code": "AWSDEU048E", "pt": "A lista de entrada fornecida está vazia e não há itens para processar."}
+{"code": "AWSDEU049E", "pt": "A lista utilizada na operação está sendo referenciada por um ponteiro nulo."}
+{"code": "AWSDEU050E", "pt": "Foi fornecido um ponteiro nulo onde se esperava o nome do elemento pai como texto."}
+{"code": "AWSDEU051E", "pt": "A string usada na busca está apontada por um ponteiro nulo sem conteúdo."}
+{"code": "AWSDEU052E", "pt": "Foi fornecido um ponteiro nulo onde se esperava uma string de texto para a operação."}
+{"code": "AWSDEU053E", "pt": "Tentativa de localizar o índice de um domínio dentro de uma lista apontada por ponteiro nulo."}
+{"code": "AWSDEU054E", "pt": "A sequência do ciclo de domínios que causaria o problema é apresentada para análise."}
+{"code": "AWSDEU056E", "pt": "O nome de um gerenciador de domínio no arquivo Symphony é inválido e o arquivo pode estar corrompido."}
+{"code": "AWSDEV001E", "pt": "Não foi possível abrir o arquivo de entrada informado para leitura da operação."}
+{"code": "AWSDEV002E", "pt": "Não foi possível inspecionar ou examinar o arquivo de entrada informado."}
+{"code": "AWSDEV003E", "pt": "Não foi possível alocar memória para o buffer de entrada da conversão."}
+{"code": "AWSDEV004E", "pt": "Não foi possível alocar memória para o buffer de saída da conversão."}
+{"code": "AWSDEV005E", "pt": "Não foi possível ler o conteúdo do arquivo de entrada informado."}
+{"code": "AWSDEV006E", "pt": "O usuário que executa o agendador não tem permissão para criar ou gravar o arquivo de saída informado."}
+{"code": "AWSDEV007E", "pt": "Não foi possível gravar dados no arquivo de saída informado durante a operação."}
+{"code": "AWSDEV009E", "pt": "A conversão solicitada não é suportada pelo recurso atual do sistema."}
+{"code": "AWSDEW001E", "pt": "A opção informada é inválida e é recomendado usar o parâmetro de ajuda para saber como proceder."}
+{"code": "AWSDEW002E", "pt": "O utilitário de compressão recebeu um parâmetro inválido e não pôde processar."}
+{"code": "AWSDEW003E", "pt": "Foi informado mais de um comando, sendo permitido apenas um por execução, e a ajuda indica o uso correto."}
+{"code": "AWSDEW004E", "pt": "É obrigatório informar o nome do produto para que o comando possa ser executado."}
+{"code": "AWSDEW005E", "pt": "No comando de configuração é necessário indicar a versão e o caminho, conforme mostra a ajuda."}
+{"code": "AWSDEW006E", "pt": "Foram fornecidos argumentos inesperados que não são reconhecidos pelo comando."}
+{"code": "AWSDEW037I", "pt": "É exibida a versão do build de liberação do produto em execução."}
+{"code": "AWSDEZ001E", "pt": "O limite de chamadas foi ultrapassado, o que indica um defeito interno grave do programa."}
+{"code": "AWSDEZ002E", "pt": "Ocorreu um erro interno na rotina de emissão de mensagens e a linha do problema é indicada."}
+{"code": "AWSDEZ003E", "pt": "É reportado um erro interno acompanhado do tempo de CPU consumido pela operação."}
+{"code": "AWSDFD001I", "pt": "O gerador de catálogo indica a linha onde encontrou um problema durante o processamento."}
+{"code": "AWSDFD002E", "pt": "O catálogo de mensagens está corrompido e não pode ser usado corretamente."}
+{"code": "AWSDFD004E", "pt": "O arquivo terminou de forma prematura, antes de todo o conteúdo esperado ser lido."}
+{"code": "AWSDFD005E", "pt": "Não foi possível reservar o espaço de memória necessário para a operação."}
+{"code": "AWSDFD006E", "pt": "A versão do catálogo não é reconhecida e não pode ser processada."}
+{"code": "AWSDFD008E", "pt": "O identificador do conjunto de mensagens precisa ser um valor maior que zero."}
+{"code": "AWSDFD009E", "pt": "Uma mensagem não pode ser definida enquanto o conjunto ao qual pertence ainda não existe."}
+{"code": "AWSDFD010E", "pt": "O identificador da mensagem precisa ser um valor maior que zero para ser aceito."}
+{"code": "AWSDFD011E", "pt": "A mensagem não pode ser removida antes de o conjunto que a contém ser definido."}
+{"code": "AWSDFD012E", "pt": "O processador esperava encontrar um espaço em branco nesse ponto da linha."}
+{"code": "AWSDFD013E", "pt": "Foi encontrado um espaço em branco onde ele não era esperado na linha."}
+{"code": "AWSDFD014E", "pt": "Foi localizada uma aspa inesperada, que será ignorada para evitar erro na interpretação."}
+{"code": "AWSDFD015E", "pt": "Foi informado um número octal com dígito maior que sete, o que é inválido."}
+{"code": "AWSDFD016E", "pt": "A sequência de escape utilizada não é reconhecida pelo interpretador."}
+{"code": "AWSDFD017E", "pt": "A linha de comando fornecida não pôde ser reconhecida pelo processador."}
+{"code": "AWSDFD018I", "pt": "O conjunto de mensagens especificado não existe no catálogo consultado."}
+{"code": "AWSDFD019I", "pt": "A mensagem especificada não existe dentro do catálogo consultado."}
+{"code": "AWSDFD020E", "pt": "A autenticação do usuário falhou e o acesso foi negado pela verificação de credenciais."}
+{"code": "AWSDFD053E", "pt": "Ocorreu um erro de processamento causado pelo desalinhamento do tipo de dado."}
+{"code": "AWSDFD056E", "pt": "Ocorreu um erro de processamento porque um limite de dimensão da matriz foi ultrapassado."}
+{"code": "AWSDFD057E", "pt": "Uma operação aritmética de ponto flutuante foi abortada porque um dos operandos utilizados não estava normalizado (denormal)."}
+{"code": "AWSDFD058E", "pt": "O processamento foi interrompido porque ocorreu uma divisão por zero em uma operação de ponto flutuante."}
+{"code": "AWSDFD059E", "pt": "Uma operação de ponto flutuante terminou com um resultado arredondado e impreciso, o que gerou uma exceção de erro."}
+{"code": "AWSDFD060E", "pt": "O programa falhou porque tentou executar uma operação inválida sobre os valores de ponto flutuante em uso."}
+{"code": "AWSDFD061E", "pt": "Um cálculo de ponto flutuante gerou estouro numérico por exceder o valor máximo representável pelo sistema."}
+{"code": "AWSDFD062E", "pt": "Houve uma falha durante a verificação da pilha de ponto flutuante, indicando inconsistência no seu uso."}
+{"code": "AWSDFD063E", "pt": "A pilha de ponto flutuante ficou sem dados suficientes durante o processamento, causando um erro de underflow."}
+{"code": "AWSDFD064E", "pt": "O processo terminou em erro porque uma divisão de números inteiros foi tentada tendo zero como divisor."}
+{"code": "AWSDFD066E", "pt": "A execução falhou porque o programa tentou usar uma instrução privilegiada sem possuir a permissão necessária."}
+{"code": "AWSDFD068E", "pt": "O sistema encontrou uma instrução inválida ou desconhecida durante a execução e abortou o programa."}
+{"code": "AWSDFD069E", "pt": "Ocorreu uma exceção que não permite a continuação do processamento, encerrando a execução do programa."}
+{"code": "AWSDFD071E", "pt": "A falha aconteceu porque foi configurada uma disposição de tratamento de exceção inválida para a operação."}
+{"code": "AWSDFD200E", "pt": "Não foi possível alocar memória para o identificador de sessão (SID) que foi solicitado pelo processamento."}
+{"code": "AWSDFD201E", "pt": "Falha ao alocar os recursos de memória necessários para o domínio de referência (RefDom) solicitado."}
+{"code": "AWSDFD202E", "pt": "Um erro interno ocorreu porque uma rotina temporária de consulta de grupos de usuários foi invocada indevidamente."}
+{"code": "AWSDFD300E", "pt": "O componente indicado possui uma versão incompatível, pois é necessária uma versão mais nova para continuar a operação."}
+{"code": "AWSDFE001E", "pt": "Houve um erro do sistema de arquivos ao tentar abrir o arquivo de configuração do usuário (uconfig)."}
+{"code": "AWSDFE002E", "pt": "Falha ao criar o arquivo de configuração do usuário devido a um erro reportado pelo sistema de arquivos."}
+{"code": "AWSDFE003E", "pt": "Ocorreu um erro ao ler o arquivo de configuração do usuário durante a execução do processamento."}
+{"code": "AWSDFE004E", "pt": "Não foi possível gravar o arquivo de configuração do usuário porque o sistema de arquivos retornou um erro."}
+{"code": "AWSDFE005E", "pt": "Ocorreu um erro do sistema de arquivos ao tentar fechar o arquivo de configuração do usuário."}
+{"code": "AWSDFE025W", "pt": "Os parâmetros extras fornecidos foram ignorados a partir do primeiro parâmetro inesperado encontrado na entrada."}
+{"code": "AWSDFE028I", "pt": "O processo informou o nome da empresa e o respectivo código de validação associados à licença em uso."}
+{"code": "AWSDFE033E", "pt": "O código de software fornecido é inválido, conforme indicado pelo status de validação retornado pelo sistema."}
+{"code": "AWSDFE034E", "pt": "A licença de demonstração associada ao código de software informado já expirou e não pode mais ser utilizada."}
+{"code": "AWSDFE035I", "pt": "Consulte a base de conhecimento do suporte HCL no endereço informado para encontrar uma solução para o problema."}
+{"code": "AWSDFF002E", "pt": "A tentativa de executar um novo programa por meio da chamada de sistema execv falhou com um código de erro."}
+{"code": "AWSDFF003E", "pt": "Falha ao alterar o usuário efetivo do processo usando a chamada setuid, que retornou um código de erro."}
+{"code": "AWSDFG002E", "pt": "O módulo inicializador falhou ao tentar efetuar o logon do usuário, retornando um código de erro específico."}
+{"code": "AWSDFG003E", "pt": "O inicializador não conseguiu alterar o usuário efetivo do processo e reportou a mensagem de erro informada."}
+{"code": "AWSDFG004E", "pt": "O inicializador falhou ao executar o programa desejado e retornou a mensagem de erro indicada no relato."}
+{"code": "AWSDFG005E", "pt": "Não foi possível localizar o programa informado, que é necessário para dar continuidade à operação."}
+{"code": "AWSDFG006E", "pt": "O inicializador não conseguiu duplicar o identificador do processo e retornou um código de erro."}
+{"code": "AWSDFG007E", "pt": "O inicializador falhou ao criar um processo em nome do usuário para executar o comando indicado."}
+{"code": "AWSDFG008E", "pt": "O inicializador não conseguiu abrir o arquivo informado e reportou a mensagem de erro correspondente."}
+{"code": "AWSDFG009E", "pt": "O inicializador não encontrou a definição do valor IFUser dentro do arquivo indicado no relato."}
+{"code": "AWSDFG010E", "pt": "O módulo inicializador encontrou um erro durante a própria inicialização do programa de partida."}
+{"code": "AWSDFG011E", "pt": "O inicializador falhou ao validar o usuário informado, conforme aponta a mensagem de erro exibida."}
+{"code": "AWSDFG012E", "pt": "O inicializador rejeitou a tentativa porque o usuário ou a senha fornecidos são inválidos."}
+{"code": "AWSDFH001E", "pt": "A expressão de condição de sucesso está mal formada por estar faltando um dos parênteses do par indicado."}
+{"code": "AWSDFH003E", "pt": "A expressão de comparação da condição de saída informada está incorreta e precisa ser corrigida."}
+{"code": "AWSDFH004E", "pt": "A condição de sucesso contém um operando inválido; o valor deve ser um inteiro dentro da faixa permitida."}
 {"code": "AWSEDW001E", "pt": "O valor informado para uma opção de linha de comando do netman está em um formato incorreto e inválido."}
 {"code": "AWSEDW003W", "pt": "O processo netman está sendo executado sem permissões de usuário root, o que pode limitar algumas operações."}
 {"code": "AWSEDW004E", "pt": "O arquivo de mensagens solicitado já está aberto por outro processo, impedindo o acesso concorrente ao mesmo."}
@@ -3076,6 +3378,94 @@
 {"code": "AWSFAB153I", "pt": "O script está verificando os processos do HCL Workload Automation para confirmar o estado do sistema."}
 {"code": "AWSFAB154E", "pt": "Os processos indicados ainda estão em execução; feche-os antes de executar a operação novamente."}
 {"code": "AWSFAB155E", "pt": "Os processos indicados ainda estão ativos; feche-os ou aguarde a conclusão deles antes de repetir a operação."}
+{"code": "AWSFAB156I", "pt": "Foi iniciada a obtenção da cerca de workstation do HCL Workload Automation conforme solicitado."}
+{"code": "AWSFAB157I", "pt": "A instalação está iniciando para o usuário indicado; confirme para continuar ou cancele para sair."}
+{"code": "AWSFAB158I", "pt": "A atualização está iniciando para o usuário indicado; confirme para continuar ou cancele para sair."}
+{"code": "AWSFAB159I", "pt": "A remoção da instalação está iniciando para o usuário indicado; confirme para continuar ou cancele para sair."}
+{"code": "AWSFAB160I", "pt": "O sistema está verificando a existência e o estado dos jobs do HCL Workload Automation."}
+{"code": "AWSFAB161E", "pt": "A operação não pode continuar porque ainda há jobs em execução; use o comando sugerido para verificá-los."}
+{"code": "AWSFAB162E", "pt": "Existem processos ainda em execução; feche-os antes de tentar executar a operação novamente."}
+{"code": "AWSFAB163E", "pt": "Há processos ainda em execução; feche-os ou aguarde a conclusão deles antes de repetir a operação."}
+{"code": "AWSFAB164E", "pt": "Os valores informados para os dois parâmetros indicados devem ser diferentes entre si para prosseguir."}
+{"code": "AWSFAB165E", "pt": "Você está tentando instalar o agente padrão ou tolerante a falhas usando um eImage incorreto para isso."}
+{"code": "AWSFAB166E", "pt": "O eImage baixado não contém os arquivos necessários para adicionar o runtime dos plugins de jobs Java."}
+{"code": "AWSFAB167E", "pt": "O eImage baixado não contém os arquivos de instalação necessários para atualizar o agente indicado."}
+{"code": "AWSFAB168E", "pt": "O eImage baixado não contém os arquivos necessários para atualizar o runtime dos plugins de jobs Java."}
+{"code": "AWSFAB169E", "pt": "O sistema operacional em uso no equipamento não é suportado por esta instalação do produto."}
+{"code": "AWSFAB170E", "pt": "A distribuição Linux utilizada no sistema não é suportada por esta instalação do produto."}
+{"code": "AWSFAB171E", "pt": "A versão do Linux informada não é suportada, portanto a instalação não pode prosseguir."}
+{"code": "AWSFAB172E", "pt": "O service pack do Linux em uso não é suportado; é necessário atualizar o sistema para o service pack indicado."}
+{"code": "AWSFAB173E", "pt": "A versão do sistema operacional instalada no equipamento não é suportada pelo produto."}
+{"code": "AWSFAB174E", "pt": "O pacote de manutenção do AIX em uso não é suportado por esta instalação do produto."}
+{"code": "AWSFAB175E", "pt": "A biblioteca indicada foi encontrada, mas uma biblioteca dependente não; é necessário criar o link informado."}
+{"code": "AWSFAB176E", "pt": "As bibliotecas gráficas exigidas não foram encontradas, o que impede que a instalação gráfica funcione."}
+{"code": "AWSFAB177E", "pt": "As bibliotecas obrigatórias não estão instaladas no sistema em execução da instalação."}
+{"code": "AWSFAB178E", "pt": "O AIX de 32 bits não é suportado; o produto aceita apenas sistemas AIX de 64 bits."}
+{"code": "AWSFAB179E", "pt": "O pacote de manutenção do AIX em uso não é suportado; atualize o sistema para o pacote indicado."}
+{"code": "AWSFAB180E", "pt": "A correção (fix) do AIX indicada não foi localizada no sistema em execução."}
+{"code": "AWSFAB181E", "pt": "O nível do runtime C++ em uso não é suportado; é necessário atualizá-lo para o nível indicado."}
+{"code": "AWSFAB182I", "pt": "O espaço em disco disponível no sistema de arquivos foi verificado com sucesso."}
+{"code": "AWSFAB183I", "pt": "O espaço de swap em disco disponível no sistema foi verificado com sucesso."}
+{"code": "AWSFAB184I", "pt": "Os requisitos de memória do sistema em execução foram verificados com sucesso durante a análise."}
+{"code": "AWSFAB185I", "pt": "A verificação dos pré-requisitos necessários da instalação em curso foi concluída com sucesso."}
+{"code": "AWSFAB186I", "pt": "O caminho informado não contém uma instalação válida do WebSphere Application Server."}
+{"code": "AWSFAB187I", "pt": "O WebSphere Application Server foi localizado no caminho informado e alguns componentes já estão instalados."}
+{"code": "AWSFAB188I", "pt": "A versão da distribuição Linux em uso foi verificada com sucesso durante a análise."}
+{"code": "AWSFAB190I", "pt": "As bibliotecas recomendadas para o Linux estão instaladas no sistema em execução."}
+{"code": "AWSFAB191I", "pt": "As correções (fixes) do AIX foram verificadas com sucesso no sistema em execução."}
+{"code": "AWSFAB192I", "pt": "O nível do runtime C++ foi verificado com sucesso no sistema em execução."}
+{"code": "AWSFAB193E", "pt": "A biblioteca indicada precisa estar instalada no sistema para que a operação seja concluída."}
+{"code": "AWSFAB194E", "pt": "A biblioteca de 64 bits indicada deve estar instalada no sistema em execução da instalação."}
+{"code": "AWSFAB195I", "pt": "Para o Suse indicado não é exigida nenhuma versão específica de release do sistema."}
+{"code": "AWSFAB196E", "pt": "O patch indicado precisa estar instalado no sistema para que a operação continue."}
+{"code": "AWSFAB197E", "pt": "É necessário atualizar o patch indicado para a versão informada na mensagem de erro."}
+{"code": "AWSFAB198E", "pt": "Estão faltando patches obrigatórios do sistema operacional para que a instalação prossiga."}
+{"code": "AWSFAB199E", "pt": "O patch de cluster obrigatório indicado não está presente no sistema em execução."}
+{"code": "AWSFAB200E", "pt": "Um patch de segurança obrigatório não está instalado no sistema em execução da instalação."}
+{"code": "AWSFAB201W", "pt": "Os patches recomendados do WebSphere não estão instalados no sistema em execução."}
+{"code": "AWSFAB202I", "pt": "O nível de patches instalados no sistema foi verificado com sucesso durante a análise."}
+{"code": "AWSFAB203E", "pt": "O quality pack em uso não é suportado; é necessário atualizá-lo para a versão indicada."}
+{"code": "AWSFAB204I", "pt": "O nível de release do sistema indicado foi verificado com sucesso durante a análise."}
+{"code": "AWSFAB205E", "pt": "O nível de release do sistema não é suportado; atualize do nível informado para o nível indicado."}
+{"code": "AWSFAB206I", "pt": "Durante a análise de pré-requisitos, o sistema está verificando se os patches de segurança estão presentes."}
+{"code": "AWSFAB207I", "pt": "O sistema está verificando se o patch de cluster indicado está presente no equipamento."}
+{"code": "AWSFAB208I", "pt": "O sistema está abrindo o arquivo de texto indicado para leitura do seu conteúdo."}
+{"code": "AWSFAB209I", "pt": "Os patches do WebSphere foram verificados com sucesso no sistema em execução."}
+{"code": "AWSFAB210I", "pt": "O patch mínimo obrigatório indicado foi localizado no sistema em execução da instalação."}
+{"code": "AWSFAB211W", "pt": "O patch mínimo obrigatório indicado não foi encontrado no sistema em execução da instalação."}
+{"code": "AWSFAB212E", "pt": "O nível de release do sistema operacional indicado não é suportado pelo produto."}
+{"code": "AWSFAB213E", "pt": "Não há espaço livre suficiente no sistema de arquivos indicado; os espaços exigidos são informados."}
+{"code": "AWSFAB214E", "pt": "Não há espaço livre suficiente no sistema de arquivos de swap disponível no equipamento."}
+{"code": "AWSFAB215E", "pt": "O diretório indicado não foi encontrado no sistema em que a instalação ocorre."}
+{"code": "AWSFAB216E", "pt": "Você especificou um caminho de instalação que não existe no sistema de destino."}
+{"code": "AWSFAB217I", "pt": "O hardware e o modelo de máquina indicados foram verificados com sucesso."}
+{"code": "AWSFAB218E", "pt": "O hardware indicado não é suportado; o equipamento obrigatório para a instalação é o informado."}
+{"code": "AWSFAB219E", "pt": "O modelo de hardware indicado não é suportado; o modelo obrigatório é o informado."}
+{"code": "AWSFAB220W", "pt": "Os requisitos recomendados de memória não estão sendo atendidos pelo sistema em execução."}
+{"code": "AWSFAB221E", "pt": "Os requisitos de memória não são atendidos; o mínimo exigido e o recomendado estão indicados em KB."}
+{"code": "AWSFAB222I", "pt": "Nenhuma verificação de parâmetros de kernel é necessária para esta instalação em curso."}
+{"code": "AWSFAB223I", "pt": "Os parâmetros de kernel do sistema em execução foram verificados com sucesso."}
+{"code": "AWSFAB224W", "pt": "O parâmetro de kernel indicado não está definido no sistema em execução."}
+{"code": "AWSFAB225E", "pt": "O parâmetro de kernel indicado não está definido, impedindo que a instalação prossiga."}
+{"code": "AWSFAB226I", "pt": "O valor exigido para o nível básico de kernel do sistema é o informado."}
+{"code": "AWSFAB227I", "pt": "O valor exigido para a biblioteca de kernel do sistema é o informado."}
+{"code": "AWSFAB228E", "pt": "Os parâmetros de kernel obrigatórios não estão definidos no sistema em execução."}
+{"code": "AWSFAB229W", "pt": "Os parâmetros de kernel recomendados não estão definidos no sistema em execução."}
+{"code": "AWSFAB230W", "pt": "Alguns pré-requisitos não foram atendidos durante a verificação; consulte o log para obter detalhes."}
+{"code": "AWSFAB233W", "pt": "O espaço livre no sistema de arquivos de swap não atende aos requisitos recomendados."}
+{"code": "AWSFAB234I", "pt": "Os pré-requisitos da instalação serão avaliados para o componente indicado na mensagem."}
+{"code": "AWSFAB235I", "pt": "A verificação de hardware será ignorada porque o componente já está instalado."}
+{"code": "AWSFAB236E", "pt": "Você está tentando instalar ou atualizar a instância usando um eImage errado para o sistema operacional de destino."}
+{"code": "AWSFAB239W", "pt": "Você instalou um agente dinâmico, mas parâmetros desnecessários foram fornecidos e serão ignorados."}
+{"code": "AWSFAB243E", "pt": "Ocorreu um erro ao recriar a instalação no caminho informado; consulte o log de instalação para detalhes."}
+{"code": "AWSFAB244I", "pt": "O sistema está reconstruindo os registros de instalação do HCL Workload Automation."}
+{"code": "AWSFAB245I", "pt": "O sistema está instalando o pacote Dynamic Monitor do HCL Workload Automation."}
+{"code": "AWSFAB248E", "pt": "Já existe a biblioteca do IBM i indicada no sistema; renomeie-a, remova-a ou use outra conta de usuário."}
+{"code": "AWSFAB249E", "pt": "O sistema operacional de 32 bits indicado não é suportado; apenas a versão de 64 bits é aceita."}
+{"code": "AWSFAB284E", "pt": "O service pack do Linux informado não é suportado; atualize o sistema para o service pack indicado."}
+{"code": "AWSFAB285I", "pt": "O sistema está atualizando o arquivo de informações de patches chamado patch.info."}
+{"code": "AWSFAB286E", "pt": "O eImage está corrompido; execute o comando TAR no shell adequado para descompactá-lo antes do script."}
+{"code": "AWSFAB287E", "pt": "O shell em uso não é suportado para o script indicado; use o shell QSH para executá-lo."}
 {"code": "AWSSAS003E", "pt": "O valor informado para o parâmetro está incorreto; use o formato esperado indicado na mensagem."}
 {"code": "AWSSAS004E", "pt": "O parâmetro indicado foi informado mais de uma vez, o que não é permitido nesta execução."}
 {"code": "AWSSAS005E", "pt": "O parâmetro obrigatório indicado não foi informado na linha de comando da operação."}

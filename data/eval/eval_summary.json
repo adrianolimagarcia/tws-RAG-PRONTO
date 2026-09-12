@@ -4,7 +4,7 @@
   "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8315811965811968,
+  "mrr": 0.8313827838827841,
   "details": [
     {
       "id": "eval-0001",
@@ -1006,7 +1006,7 @@
       "id": "eval-0062",
       "domain": "instalacao",
       "question": "Após instalar o BMDM, qual comando pode ser executado opcionalmente e com que efeito?",
-      "rank": 8,
+      "rank": 9,
       "expected_claims": [
         "hwa-lab-10.2.8-bmdm-container-install-0001",
         "hwa-lab-10.2.8-plan-timezone-consolidated-0047",

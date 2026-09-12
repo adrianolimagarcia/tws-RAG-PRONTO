@@ -108781,7 +108781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ004E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred performing the following action: "!1" on the following object type: "!2"." Em portugues: "an interno erro ocorreu performing the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: erro ocorreu interno tipo. Explicacao oficial: action is the action required. It corresponds to one of keywords in the actions list in the Security file.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ004E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred performing the following action: "!1" on the following object type: "!2"." Em portugues: "an interno erro ocorreu performing the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: erro ocorreu interno tipo. Em outras palavras: Ocorreu um erro interno durante a execução da operação solicitada sobre o tipo de objeto indicado, indicando uma falha inesperada no processamento interno do sistema.. Explicacao oficial: action is the action required. It corresponds to one of keywords in the actions list in the Security file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ004E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto internal occurred performing the following action object type portugues interno erro ocorreu seguinte`
@@ -108801,7 +108801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ005E (severidade: error, familia AWSDEJ - dej) tem o texto: "You do not have permission to perform the following action: "!1" on the following object type: "!2"." Em portugues: "you do nao have permissao to perform the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: nao tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ005E (severidade: error, familia AWSDEJ - dej) tem o texto: "You do not have permission to perform the following action: "!1" on the following object type: "!2"." Em portugues: "you do nao have permissao to perform the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: nao tipo. Em outras palavras: O usuário atual não possui as permissões de segurança necessárias para executar a ação solicitada sobre o tipo de objeto indicado, então a operação foi negada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ005E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto You not have permission perform the following action object type portugues you nao permissao seguinte`
@@ -108821,10 +108821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ006I (severidade: informational, familia AWSDEJ - dej) tem o texto: "Doing !1 on !2, reading record header: !3." Em portugues: "doing !1 on !2, reading registro header: !3.". Temas: registro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ006I (severidade: informational, familia AWSDEJ - dej) tem o texto: "Doing !1 on !2, reading record header: !3." Em portugues: "doing !1 on !2, reading registro header: !3.". Temas: registro. Em outras palavras: O sistema processa a operação solicitada sobre o objeto indicado enquanto lê o cabeçalho do respectivo registro, dando continuidade normal ao fluxo de execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEJ006I 10.2.8 mensagem severidade informational familia AWSDEJ dej tem texto Doing reading record header portugues doing registro Temas significa diagnosticar`
+> `AWSDEJ006I 10.2.8 mensagem severidade informational familia AWSDEJ dej tem texto Doing reading record header portugues doing registro Temas outras palavras sistema processa solicitada objeto indicado enquanto respectivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEJ006I no HCL Workload Automation 10.2.8?
@@ -108841,7 +108841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ007E (severidade: error, familia AWSDEJ - dej) tem o texto: "A system error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a sistema erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu sistema tipo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ007E (severidade: error, familia AWSDEJ - dej) tem o texto: "A system error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a sistema erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu sistema tipo seguranca. Em outras palavras: Ocorreu uma falha sistêmica ao executar a operação sobre o objeto especificado e o arquivo de segurança pode estar corrompido, exigindo apuração e verificação da integridade..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ007E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto system occurred while performing the following action object type The Security file might corrupt portugues sistema erro`
@@ -108861,7 +108861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ008E (severidade: error, familia AWSDEJ - dej) tem o texto: "A system error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a sistema erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu sistema tipo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ008E (severidade: error, familia AWSDEJ - dej) tem o texto: "A system error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a sistema erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu sistema tipo seguranca. Em outras palavras: Foi detectada uma falha de sistema durante a execução da ação sobre o objeto informado, com a possibilidade de o arquivo de segurança estar corrompido, demandando inspeção..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ008E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto system occurred while performing the following action object type The Security file might corrupt portugues sistema erro`
@@ -108881,7 +108881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ009E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "an interno erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu interno tipo seguranca. Explicacao oficial: The Security file might be corrupt, or there is an internal error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ009E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "an interno erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu interno tipo seguranca. Em outras palavras: Ocorreu um erro interno ao executar a operação sobre o objeto indicado e o arquivo de segurança pode estar corrompido, sendo recomendável verificar a consistência dos dados.. Explicacao oficial: The Security file might be corrupt, or there is an internal error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ009E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto internal occurred while performing the following action object type The Security file might corrupt portugues interno erro`
@@ -108901,7 +108901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ010E (severidade: error, familia AWSDEJ - dej) tem o texto: "A system error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a sistema erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu sistema tipo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ010E (severidade: error, familia AWSDEJ - dej) tem o texto: "A system error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a sistema erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu sistema tipo seguranca. Em outras palavras: Uma falha de sistema foi detectada ao tentar realizar a operação sobre o objeto especificado, e o arquivo de segurança pode estar corrompido, requisitando verificação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ010E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto system occurred while performing the following action object type The Security file might corrupt portugues sistema erro`
@@ -108921,7 +108921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ011E (severidade: error, familia AWSDEJ - dej) tem o texto: "A decryption error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a decryption erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu tipo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ011E (severidade: error, familia AWSDEJ - dej) tem o texto: "A decryption error occurred while performing the following action: "!1" on the following object type: "!2". The Security file might be corrupt." Em portugues: "a decryption erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2". the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu tipo seguranca. Em outras palavras: Ocorreu uma falha de descriptografia durante a execução da operação sobre o objeto informado, e o arquivo de segurança pode estar corrompido, exigindo investigação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ011E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto decryption occurred while performing the following action object type The Security file might corrupt portugues erro`
@@ -108941,7 +108941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ012E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while performing the following action: "!1" on the following object type: "!2"." Em portugues: "an interno erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: erro ocorreu interno tipo. Explicacao oficial: There is an internal error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ012E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while performing the following action: "!1" on the following object type: "!2"." Em portugues: "an interno erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: erro ocorreu interno tipo. Em outras palavras: Um erro interno ocorreu ao tentar executar a operação solicitada sobre o tipo de objeto indicado, apontando para uma falha inesperada no processamento interno.. Explicacao oficial: There is an internal error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ012E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto internal occurred while performing the following action object type portugues interno erro ocorreu seguinte`
@@ -109021,7 +109021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ016E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while performing the following action: "!1" on the following object type: "!2"." Em portugues: "an interno erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: erro ocorreu interno tipo. Explicacao oficial: This is an internal error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ016E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while performing the following action: "!1" on the following object type: "!2"." Em portugues: "an interno erro ocorreu while performing the seguinte action: "!1" on the seguinte object tipo: "!2".". Temas: erro ocorreu interno tipo. Em outras palavras: Ocorreu um erro interno durante a execução da ação sobre o objeto especificado, indicando uma falha inesperada no processamento interno do sistema operacional.. Explicacao oficial: This is an internal error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ016E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto internal occurred while performing the following action object type portugues interno erro ocorreu seguinte`
@@ -109041,7 +109041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ017E (severidade: error, familia AWSDEJ - dej) tem o texto: "Doing !1 on !2, testing user found invalid object in security file." Em portugues: "doing !1 on !2, testing usuario encontrado invalido object in seguranca arquivo.". Temas: arquivo invalido usuario encontrado seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ017E (severidade: error, familia AWSDEJ - dej) tem o texto: "Doing !1 on !2, testing user found invalid object in security file." Em portugues: "doing !1 on !2, testing usuario encontrado invalido object in seguranca arquivo.". Temas: arquivo invalido usuario encontrado seguranca. Em outras palavras: Durante o processamento da operação sobre o objeto informado, o teste de segurança encontrou um objeto inválido dentro do arquivo de segurança..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ017E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto Doing testing user found invalid object security file portugues doing usuario encontrado invalido seguranca arquivo Temas`
@@ -109081,7 +109081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ019E (severidade: error, familia AWSDEJ - dej) tem o texto: "An error occurred while reading the header in the Security file for the following user: !3. The Security file might be corrupt." Em portugues: "an erro ocorreu while reading the header in the seguranca arquivo for the seguinte usuario: !3. the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu usuario seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ019E (severidade: error, familia AWSDEJ - dej) tem o texto: "An error occurred while reading the header in the Security file for the following user: !3. The Security file might be corrupt." Em portugues: "an erro ocorreu while reading the header in the seguranca arquivo for the seguinte usuario: !3. the seguranca arquivo might be corrupt.". Temas: erro arquivo ocorreu usuario seguranca. Em outras palavras: Ocorreu um erro ao ler o cabeçalho do arquivo de segurança para o usuário indicado, o que pode significar que o arquivo está corrompido e precisa de reparo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ019E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto occurred while reading the header Security file for following user The might corrupt portugues erro`
@@ -109101,7 +109101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ020E (severidade: error, familia AWSDEJ - dej) tem o texto: "An error occurred while setting the initial position in the Security file for the following user: !3. The Security file might be empty or corrupt." Em portugues: "an erro ocorreu while configuracao the initial position in the seguranca arquivo for the seguinte usuario: !3. the seguranca arquivo might be empty or corrupt.". Temas: erro arquivo ocorreu usuario seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ020E (severidade: error, familia AWSDEJ - dej) tem o texto: "An error occurred while setting the initial position in the Security file for the following user: !3. The Security file might be empty or corrupt." Em portugues: "an erro ocorreu while configuracao the initial position in the seguranca arquivo for the seguinte usuario: !3. the seguranca arquivo might be empty or corrupt.". Temas: erro arquivo ocorreu usuario seguranca. Em outras palavras: Houve um erro ao posicionar o cursor no início do arquivo de segurança para o usuário indicado, sugerindo que o arquivo pode estar vazio ou corrompido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ020E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto occurred while setting the initial position Security file for following user The might empty corrupt`
@@ -109121,7 +109121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ021E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid (incorrect magic number)." Em portugues: "the seguranca arquivo is nao valido (incorreto magic numero).". Temas: nao arquivo valido seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ021E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid (incorrect magic number)." Em portugues: "the seguranca arquivo is nao valido (incorreto magic numero).". Temas: nao arquivo valido seguranca. Em outras palavras: O arquivo de segurança é considerado inválido porque o número mágico de identificação está incorreto, indicando que não é um arquivo reconhecido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ021E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid incorrect magic number portugues the seguranca arquivo nao valido incorreto numero Temas`
@@ -109141,7 +109141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ022E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid (incorrect version)." Em portugues: "the seguranca arquivo is nao valido (incorreto versao).". Temas: nao arquivo valido seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ022E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid (incorrect version)." Em portugues: "the seguranca arquivo is nao valido (incorreto versao).". Temas: nao arquivo valido seguranca. Em outras palavras: O arquivo de segurança foi reprovado por apresentar uma versão incompatível, impossibilitando a leitura correta das informações de segurança nele contidas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ022E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid incorrect version portugues the seguranca arquivo nao valido incorreto versao Temas`
@@ -109161,7 +109161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ023E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid (header record size is incorrect)." Em portugues: "the seguranca arquivo is nao valido (header registro tamanho is incorreto).". Temas: nao arquivo valido registro seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ023E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid (header record size is incorrect)." Em portugues: "the seguranca arquivo is nao valido (header registro tamanho is incorreto).". Temas: nao arquivo valido registro seguranca. Em outras palavras: O arquivo de segurança é rejeitado por conter um tamanho incorreto no registro de cabeçalho, indicando estrutura incompatível ou arquivo danificado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ023E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid header record size incorrect portugues the seguranca arquivo nao valido registro tamanho incorreto Temas`
@@ -109181,7 +109181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ024E (severidade: error, familia AWSDEJ - dej) tem o texto: "The program could not allocate sufficient memory (heap size)." Em portugues: "the programa conseguiu nao allocate sufficient memoria (heap tamanho).". Temas: nao programa memoria. Explicacao oficial: The reasons for the problem are normally one of the following:
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ024E (severidade: error, familia AWSDEJ - dej) tem o texto: "The program could not allocate sufficient memory (heap size)." Em portugues: "the programa conseguiu nao allocate sufficient memoria (heap tamanho).". Temas: nao programa memoria. Em outras palavras: O programa não conseguiu reservar memória suficiente durante a execução, indicando que o heap disponível está esgotado para o tamanho dos dados em processamento.. Explicacao oficial: The reasons for the problem are normally one of the following:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ024E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The program could not allocate sufficient memory heap size portugues the programa conseguiu nao memoria tamanho Temas`
@@ -109201,7 +109201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ025E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is missing. As the user is not root, the file cannot be created by the program." Em portugues: "the seguranca arquivo is faltando. as the usuario is nao root, the arquivo nao pode be created by the programa.". Temas: nao arquivo pode usuario programa faltando seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ025E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is missing. As the user is not root, the file cannot be created by the program." Em portugues: "the seguranca arquivo is faltando. as the usuario is nao root, the arquivo nao pode be created by the programa.". Temas: nao arquivo pode usuario programa faltando seguranca. Em outras palavras: O arquivo de segurança não foi localizado e, como o usuário não possui privilégios de administrador, o programa não tem permissão para criá-lo automaticamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ025E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file missing the user not root cannot created program portugues seguranca arquivo faltando`
@@ -109261,7 +109261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ028E (severidade: error, familia AWSDEJ - dej) tem o texto: "An error has occurred while retrieving the password structure from the Security file. The file might be corrupt." Em portugues: "an erro has ocorreu while retrieving the senha structure from the seguranca arquivo. the arquivo might be corrupt.". Temas: erro arquivo ocorreu senha seguranca. Explicacao oficial: This message shows a system error happened reading the Security file. An error number was set to indicate the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ028E (severidade: error, familia AWSDEJ - dej) tem o texto: "An error has occurred while retrieving the password structure from the Security file. The file might be corrupt." Em portugues: "an erro has ocorreu while retrieving the senha structure from the seguranca arquivo. the arquivo might be corrupt.". Temas: erro arquivo ocorreu senha seguranca. Em outras palavras: Ocorreu um erro ao recuperar a estrutura de senha a partir do arquivo de segurança, o que pode indicar que o arquivo está corrompido e requer verificação.. Explicacao oficial: This message shows a system error happened reading the Security file. An error number was set to indicate the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ028E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto has occurred while retrieving the password structure from Security file The might corrupt portugues erro ocorreu`
@@ -109281,7 +109281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ028E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ029E (severidade: error, familia AWSDEJ - dej) tem o texto: "The following action cannot be performed in an end-to-end HCL Workload Scheduler network: "!1" on the following object type: "!2"." Em portugues: "the seguinte action nao pode be performed in an end-to-end hcl workload scheduler rede: "!1" on the seguinte object tipo: "!2".". Temas: nao pode carga de trabalho tipo. Explicacao oficial: You tried to perform an action that is not permitted in an end-to-end HCL Workload Automation network (a network where a master domain manger on z/OS manages the workload on a network of distributed workstations. There are some actions (for example the conman submit command) that are not permitted in this environment.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ029E (severidade: error, familia AWSDEJ - dej) tem o texto: "The following action cannot be performed in an end-to-end HCL Workload Scheduler network: "!1" on the following object type: "!2"." Em portugues: "the seguinte action nao pode be performed in an end-to-end hcl workload scheduler rede: "!1" on the seguinte object tipo: "!2".". Temas: nao pode carga de trabalho tipo. Em outras palavras: A ação solicitada sobre o tipo de objeto indicado não pode ser executada em uma rede fim a fim do HCL Workload Scheduler por restrição do ambiente distribuído.. Explicacao oficial: You tried to perform an action that is not permitted in an end-to-end HCL Workload Automation network (a network where a master domain manger on z/OS manages the workload on a network of distributed workstations. There are some actions (for example the conman submit command) that are not permitted in this environment.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman submit AWSDEJ029E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The following action cannot performed end-to-end Scheduler network the object type portugues seguinte nao scheduler`
@@ -109301,10 +109301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ101E (severidade: error, familia AWSDEJ - dej) tem o texto: "Error writing user: !4" Em portugues: "erro writing usuario: !4". Temas: erro usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ101E (severidade: error, familia AWSDEJ - dej) tem o texto: "Error writing user: !4" Em portugues: "erro writing usuario: !4". Temas: erro usuario. Em outras palavras: Falha ao gravar ou persistir os dados do usuário indicado no repositório de segurança durante o processamento da operação de escrita..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEJ101E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto Error writing user portugues erro usuario Temas significa diagnosticar`
+> `AWSDEJ101E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto Error writing user portugues erro usuario Temas outras palavras Falha gravar persistir dados indicado durante processamento escrita`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEJ101E no HCL Workload Automation 10.2.8?
@@ -109361,7 +109361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ103W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ104E (severidade: error, familia AWSDEJ - dej) tem o texto: "While running "makesec", an error was found in the following file: "!1", at line: "!2". The attribute value "!3" exceeds the maximum allowed length." Em portugues: "while em execucao "makesec", an erro was encontrado in the seguinte arquivo: "!1", at linha: "!2". the attribute valor "!3" exceeds the maximo allowed tamanho.". Temas: erro arquivo encontrado valor linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ104E (severidade: error, familia AWSDEJ - dej) tem o texto: "While running "makesec", an error was found in the following file: "!1", at line: "!2". The attribute value "!3" exceeds the maximum allowed length." Em portugues: "while em execucao "makesec", an erro was encontrado in the seguinte arquivo: "!1", at linha: "!2". the attribute valor "!3" exceeds the maximo allowed tamanho.". Temas: erro arquivo encontrado valor linha. Em outras palavras: Durante a execução da ferramenta de segurança, foi encontrado um erro no arquivo informado na linha indicada, pois o valor do atributo excede o tamanho máximo permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ104E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto While running makesec was found the following file line The attribute value exceeds maximum allowed length portugues while`
@@ -109381,10 +109381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ104E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ105E (severidade: error, familia AWSDEJ - dej) tem o texto: ""!1", line !2: Error writing end for !3: !4" Em portugues: ""!1", linha !2: erro writing end for !3: !4". Temas: erro linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ105E (severidade: error, familia AWSDEJ - dej) tem o texto: ""!1", line !2: Error writing end for !3: !4" Em portugues: ""!1", linha !2: erro writing end for !3: !4". Temas: erro linha. Em outras palavras: No arquivo indicado, na linha especificada, houve erro ao gravar o final da definição do elemento citado, interrompendo o processamento do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEJ105E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto line Error writing end for portugues linha erro Temas significa`
+> `AWSDEJ105E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto line Error writing end for portugues linha erro Temas outras palavras arquivo indicado especificada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEJ105E no HCL Workload Automation 10.2.8?
@@ -109461,10 +109461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ108E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ109E (severidade: error, familia AWSDEJ - dej) tem o texto: ""!1", line !2: Unknown variable: "!3"." Em portugues: ""!1", linha !2: desconhecido variavel: "!3".". Temas: linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ109E (severidade: error, familia AWSDEJ - dej) tem o texto: ""!1", line !2: Unknown variable: "!3"." Em portugues: ""!1", linha !2: desconhecido variavel: "!3".". Temas: linha. Em outras palavras: No arquivo informado, na linha indicada, foi detectada uma variável desconhecida que não é reconhecida pela ferramenta de segurança, causando falha de leitura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEJ109E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto line Unknown variable portugues linha desconhecido variavel Temas significa diagnosticar`
+> `AWSDEJ109E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto line Unknown variable portugues linha desconhecido variavel Temas outras palavras arquivo informado indicada foi detectada desconhecida reconhecida pela`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEJ109E no HCL Workload Automation 10.2.8?
@@ -109581,7 +109581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ114E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ115E (severidade: error, familia AWSDEJ - dej) tem o texto: "The same user ("!3") is defined more than once in the following file: "!1", at line: "!2"." Em portugues: "the same usuario ("!3") is defined mais que once in the seguinte arquivo: "!1", at linha: "!2".". Temas: arquivo usuario linha. Explicacao oficial: The syntax of the Security file allows for each user to be defined only once.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ115E (severidade: error, familia AWSDEJ - dej) tem o texto: "The same user ("!3") is defined more than once in the following file: "!1", at line: "!2"." Em portugues: "the same usuario ("!3") is defined mais que once in the seguinte arquivo: "!1", at linha: "!2".". Temas: arquivo usuario linha. Em outras palavras: O mesmo usuário indicado está definido mais de uma vez no arquivo informado, na linha especificada, caracterizando definição duplicada e conflito de segurança.. Explicacao oficial: The syntax of the Security file allows for each user to be defined only once.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ115E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The same user defined more than once the following file line portugues usuario mais seguinte`
@@ -109601,7 +109601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ115E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ116E (severidade: error, familia AWSDEJ - dej) tem o texto: "The following user name "!3" is not valid in the following file: "!1", at line: "!2"." Em portugues: "the seguinte usuario nome "!3" is nao valido in the seguinte arquivo: "!1", at linha: "!2".". Temas: nao arquivo nome valido usuario linha. Explicacao oficial: The user names specified in the Security file must conform to a specified standard, details of which are given in the Reference Manual.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ116E (severidade: error, familia AWSDEJ - dej) tem o texto: "The following user name "!3" is not valid in the following file: "!1", at line: "!2"." Em portugues: "the seguinte usuario nome "!3" is nao valido in the seguinte arquivo: "!1", at linha: "!2".". Temas: nao arquivo nome valido usuario linha. Em outras palavras: O nome de usuário informado não é considerado válido no arquivo indicado, na linha especificada, violando as regras de nomenclatura adotadas.. Explicacao oficial: The user names specified in the Security file must conform to a specified standard, details of which are given in the Reference Manual.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ116E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The following user name not valid the file line portugues seguinte usuario nome nao valido arquivo`
@@ -109621,7 +109621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ116E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ117E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while writing the Security file header record for the following user: "!3" and the following action: "!1"." Em portugues: "an interno erro ocorreu while writing the seguranca arquivo header registro for the seguinte usuario: "!3" and the seguinte action: "!1".". Temas: erro arquivo ocorreu usuario interno registro seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ117E (severidade: error, familia AWSDEJ - dej) tem o texto: "An internal error occurred while writing the Security file header record for the following user: "!3" and the following action: "!1"." Em portugues: "an interno erro ocorreu while writing the seguranca arquivo header registro for the seguinte usuario: "!3" and the seguinte action: "!1".". Temas: erro arquivo ocorreu usuario interno registro seguranca. Em outras palavras: Ocorreu um erro interno ao gravar o cabeçalho do arquivo de segurança para o usuário indicado durante a execução da ação especificada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ117E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto internal occurred while writing the Security file header record for following user and action portugues interno`
@@ -109641,7 +109641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ117E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ119E (severidade: error, familia AWSDEJ - dej) tem o texto: "While running makesec, a syntax error was found in the following file: "!1", at line: "!2". The keyword is not starting with the required character: "!3"." Em portugues: "while em execucao makesec, a sintaxe erro was encontrado in the seguinte arquivo: "!1", at linha: "!2". the keyword is nao starting with the obrigatorio character: "!3".". Temas: erro nao arquivo sintaxe palavra-chave encontrado linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ119E (severidade: error, familia AWSDEJ - dej) tem o texto: "While running makesec, a syntax error was found in the following file: "!1", at line: "!2". The keyword is not starting with the required character: "!3"." Em portugues: "while em execucao makesec, a sintaxe erro was encontrado in the seguinte arquivo: "!1", at linha: "!2". the keyword is nao starting with the obrigatorio character: "!3".". Temas: erro nao arquivo sintaxe palavra-chave encontrado linha. Em outras palavras: Durante a execução da ferramenta de segurança, foi encontrado erro de sintaxe no arquivo informado na linha indicada, pois a palavra-chave não começa com o caractere exigido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ119E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto While running makesec syntax was found the following file line The keyword not starting with required character portugues`
@@ -109661,7 +109661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ119E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ201E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. An error occurred reading the user at the following byte: !1." Em portugues: "the seguranca arquivo is nao valido. an erro ocorreu reading the usuario at the seguinte byte: !1.". Temas: erro nao arquivo ocorreu valido usuario seguranca. Explicacao oficial: Other messages give more information about the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ201E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. An error occurred reading the user at the following byte: !1." Em portugues: "the seguranca arquivo is nao valido. an erro ocorreu reading the usuario at the seguinte byte: !1.". Temas: erro nao arquivo ocorreu valido usuario seguranca. Em outras palavras: O arquivo de segurança é inválido porque ocorreu um erro ao ler o usuário na posição de byte indicada, indicando corrupção na estrutura de dados.. Explicacao oficial: Other messages give more information about the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ201E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid occurred reading the user following byte portugues seguranca arquivo nao valido erro`
@@ -109681,7 +109681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ201E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ202E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. An error occurred reading the block at the following byte: !1" Em portugues: "the seguranca arquivo is nao valido. an erro ocorreu reading the block at the seguinte byte: !1". Temas: erro nao arquivo ocorreu valido seguranca. Explicacao oficial: Other messages give more information about the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ202E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. An error occurred reading the block at the following byte: !1" Em portugues: "the seguranca arquivo is nao valido. an erro ocorreu reading the block at the seguinte byte: !1". Temas: erro nao arquivo ocorreu valido seguranca. Em outras palavras: O arquivo de segurança é inválido pois ocorreu uma falha ao ler o bloco de dados na posição de byte indicada, sugerindo estrutura corrompida.. Explicacao oficial: Other messages give more information about the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ202E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid occurred reading the block following byte portugues seguranca arquivo nao valido erro`
@@ -109701,7 +109701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ202E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ203E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The object keyword at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the object keyword at the seguinte byte is nao valido: !1". Temas: nao arquivo valido palavra-chave seguranca. Explicacao oficial: Other messages give more information about the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ203E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The object keyword at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the object keyword at the seguinte byte is nao valido: !1". Temas: nao arquivo valido palavra-chave seguranca. Em outras palavras: O arquivo de segurança é inválido pois a palavra-chave de objeto encontrada na posição de byte indicada não é reconhecida pelo sistema de segurança.. Explicacao oficial: Other messages give more information about the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ203E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid object keyword the following byte portugues seguranca arquivo nao valido`
@@ -109721,7 +109721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ203E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ204E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The user attribute at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the usuario attribute at the seguinte byte is nao valido: !1". Temas: nao arquivo valido usuario seguranca. Explicacao oficial: Other messages give more information about the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ204E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The user attribute at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the usuario attribute at the seguinte byte is nao valido: !1". Temas: nao arquivo valido usuario seguranca. Em outras palavras: O arquivo de segurança é inválido pois o atributo de usuário encontrado na posição de byte indicada não é reconhecido como válido pelo sistema.. Explicacao oficial: Other messages give more information about the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ204E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid user attribute the following byte portugues seguranca arquivo nao valido`
@@ -109741,7 +109741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ204E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ205E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The variable at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the variavel at the seguinte byte is nao valido: !1". Temas: nao arquivo valido seguranca. Explicacao oficial: Other messages give more information about the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ205E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The variable at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the variavel at the seguinte byte is nao valido: !1". Temas: nao arquivo valido seguranca. Em outras palavras: O arquivo de segurança é inválido pois a variável presente na posição de byte indicada não é reconhecida como válida pelo sistema de segurança.. Explicacao oficial: Other messages give more information about the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ205E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid variable the following byte portugues seguranca arquivo nao valido variavel`
@@ -109761,7 +109761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ205E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEJ206E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The action keyword at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the action keyword at the seguinte byte is nao valido: !1". Temas: nao arquivo valido palavra-chave seguranca. Explicacao oficial: Other messages give more information about the error.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEJ206E (severidade: error, familia AWSDEJ - dej) tem o texto: "The Security file is not valid. The action keyword at the following byte is not valid: !1" Em portugues: "the seguranca arquivo is nao valido. the action keyword at the seguinte byte is nao valido: !1". Temas: nao arquivo valido palavra-chave seguranca. Em outras palavras: O arquivo de segurança é inválido pois a palavra-chave de ação localizada na posição de byte indicada não é reconhecida como válida pelo sistema.. Explicacao oficial: Other messages give more information about the error.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEJ206E 10.2.8 mensagem severidade error familia AWSDEJ dej tem texto The Security file not valid action keyword the following byte portugues seguranca arquivo nao valido`
@@ -109801,10 +109801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEJ207E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK051E (severidade: error, familia AWSDEK - dek) tem o texto: "Options must precede arguments, use -- to close options." Em portugues: "opcoes must precede arguments, use -- to close opcoes.". Temas: opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK051E (severidade: error, familia AWSDEK - dek) tem o texto: "Options must precede arguments, use -- to close options." Em portugues: "opcoes must precede arguments, use -- to close opcoes.". Temas: opcoes. Em outras palavras: As opções do comando devem ser informadas antes dos argumentos, podendo ser usado o marcador de fim de opções para separar corretamente os parâmetros..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK051E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Options must precede arguments use close options portugues opcoes Temas significa`
+> `AWSDEK051E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Options must precede arguments use close options portugues opcoes Temas outras palavras comando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK051E no HCL Workload Automation 10.2.8?
@@ -109821,10 +109821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK051E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK052E (severidade: error, familia AWSDEK - dek) tem o texto: "An option was not valid." Em portugues: "an opcao was nao valido.". Temas: nao valido opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK052E (severidade: error, familia AWSDEK - dek) tem o texto: "An option was not valid." Em portugues: "an opcao was nao valido.". Temas: nao valido opcao. Em outras palavras: Uma das opções informadas no comando não é aceita pela ferramenta, portanto a linha de comando deve ser corrigida e executada novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK052E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto option was not valid portugues opcao nao valido Temas significa`
+> `AWSDEK052E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto option was not valid portugues opcao nao valido Temas outras palavras informadas comando aceita pela ferramenta`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK052E no HCL Workload Automation 10.2.8?
@@ -109841,10 +109841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK052E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK053E (severidade: error, familia AWSDEK - dek) tem o texto: "An option was ambiguous." Em portugues: "an opcao was ambiguous.". Temas: opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK053E (severidade: error, familia AWSDEK - dek) tem o texto: "An option was ambiguous." Em portugues: "an opcao was ambiguous.". Temas: opcao. Em outras palavras: A opção fornecida é ambígua, pois poderia corresponder a mais de uma opção válida, sendo necessário especificar o argumento de forma mais completa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK053E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto option was ambiguous portugues opcao Temas significa diagnosticar`
+> `AWSDEK053E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto option was ambiguous portugues opcao Temas outras palavras fornecida pois poderia corresponder mais sendo especificar argumento forma`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK053E no HCL Workload Automation 10.2.8?
@@ -109861,10 +109861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK053E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK054E (severidade: error, familia AWSDEK - dek) tem o texto: "An option was not found." Em portugues: "an opcao was nao encontrado.". Temas: nao encontrado opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK054E (severidade: error, familia AWSDEK - dek) tem o texto: "An option was not found." Em portugues: "an opcao was nao encontrado.". Temas: nao encontrado opcao. Em outras palavras: A opção solicitada não foi encontrada entre as opções suportadas pela ferramenta, indicando erro de digitação ou opção inexistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK054E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto option was not found portugues opcao nao encontrado Temas significa`
+> `AWSDEK054E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto option was not found portugues opcao nao encontrado Temas outras palavras solicitada foi encontrada entre suportadas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK054E no HCL Workload Automation 10.2.8?
@@ -109881,10 +109881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK054E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK101E (severidade: error, familia AWSDEK - dek) tem o texto: "Error accessing !1: !2" Em portugues: "erro accessing !1: !2". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK101E (severidade: error, familia AWSDEK - dek) tem o texto: "Error accessing !1: !2" Em portugues: "erro accessing !1: !2". Temas: erro. Em outras palavras: Falha ao acessar o recurso indicado, retornando o erro reportado pelo sistema operacional e interrompendo a operação em andamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK101E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error accessing portugues erro Temas significa diagnosticar`
+> `AWSDEK101E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error accessing portugues erro Temas outras palavras Falha acessar recurso indicado retornando reportado pelo sistema operacional interrompendo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK101E no HCL Workload Automation 10.2.8?
@@ -109901,10 +109901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK101E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK102E (severidade: error, familia AWSDEK - dek) tem o texto: "An error occurred while rebuilding !1: !2." Em portugues: "an erro ocorreu while rebuilding !1: !2.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK102E (severidade: error, familia AWSDEK - dek) tem o texto: "An error occurred while rebuilding !1: !2." Em portugues: "an erro ocorreu while rebuilding !1: !2.". Temas: erro ocorreu. Em outras palavras: Ocorreu um erro durante a reconstrução do recurso indicado, apresentando a mensagem de erro detalhada do sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK102E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto occurred while rebuilding portugues erro ocorreu Temas significa`
+> `AWSDEK102E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto occurred while rebuilding portugues erro ocorreu Temas outras palavras Ocorreu durante recurso indicado apresentando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK102E no HCL Workload Automation 10.2.8?
@@ -109921,10 +109921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK102E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK301E (severidade: error, familia AWSDEK - dek) tem o texto: "Error opening work file !1: !2" Em portugues: "erro opening work arquivo !1: !2". Temas: erro arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK301E (severidade: error, familia AWSDEK - dek) tem o texto: "Error opening work file !1: !2" Em portugues: "erro opening work arquivo !1: !2". Temas: erro arquivo. Em outras palavras: Falha ao abrir o arquivo de trabalho indicado, apresentando o erro retornado pelo sistema e impedindo o prosseguimento da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK301E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error opening work file portugues erro arquivo Temas significa`
+> `AWSDEK301E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error opening work file portugues erro arquivo Temas outras palavras Falha abrir trabalho indicado apresentando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK301E no HCL Workload Automation 10.2.8?
@@ -109941,10 +109941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK301E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK302W (severidade: warning, familia AWSDEK - dek) tem o texto: "Warning verify over rides other options." Em portugues: "warning verify over rides other opcoes.". Temas: opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK302W (severidade: warning, familia AWSDEK - dek) tem o texto: "Warning verify over rides other options." Em portugues: "warning verify over rides other opcoes.". Temas: opcoes. Em outras palavras: Aviso de que a opção de verificação assumirá prioridade, invalidando e sobrepondo o efeito das demais opções configuradas no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK302W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto Warning verify over rides other options portugues opcoes Temas significa`
+> `AWSDEK302W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto Warning verify over rides other options portugues opcoes Temas outras palavras Aviso prioridade invalidando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK302W no HCL Workload Automation 10.2.8?
@@ -109961,10 +109961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK302W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK303W (severidade: warning, familia AWSDEK - dek) tem o texto: "Warning output over rides other options." Em portugues: "warning saida over rides other opcoes.". Temas: opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK303W (severidade: warning, familia AWSDEK - dek) tem o texto: "Warning output over rides other options." Em portugues: "warning saida over rides other opcoes.". Temas: opcoes. Em outras palavras: Aviso de que a opção de saída assumirá prioridade sobre as demais opções informadas, determinando o comportamento esperado do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK303W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto Warning output over rides other options portugues saida opcoes Temas significa`
+> `AWSDEK303W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto Warning output over rides other options portugues saida opcoes Temas outras palavras Aviso prioridade demais`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK303W no HCL Workload Automation 10.2.8?
@@ -109981,10 +109981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK303W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK304W (severidade: warning, familia AWSDEK - dek) tem o texto: "Warning local over rides network option." Em portugues: "warning local over rides rede opcao.". Temas: opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK304W (severidade: warning, familia AWSDEK - dek) tem o texto: "Warning local over rides network option." Em portugues: "warning local over rides rede opcao.". Temas: opcao. Em outras palavras: Aviso de que a opção local passa a valer, ignorando a opção de rede informada, pois a operação ocorrerá no contexto local..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK304W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto Warning local over rides network option portugues rede opcao Temas significa`
+> `AWSDEK304W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto Warning local over rides network option portugues rede opcao Temas outras palavras Aviso passa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK304W no HCL Workload Automation 10.2.8?
@@ -110001,10 +110001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK304W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK305E (severidade: error, familia AWSDEK - dek) tem o texto: "Error opening security file !1: !2" Em portugues: "erro opening seguranca arquivo !1: !2". Temas: erro arquivo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK305E (severidade: error, familia AWSDEK - dek) tem o texto: "Error opening security file !1: !2" Em portugues: "erro opening seguranca arquivo !1: !2". Temas: erro arquivo seguranca. Em outras palavras: Falha ao abrir o arquivo de segurança indicado, apresentando o erro retornado pelo sistema e impedindo o acesso às informações de segurança..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK305E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error opening security file portugues erro seguranca arquivo Temas significa`
+> `AWSDEK305E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error opening security file portugues erro seguranca arquivo Temas outras palavras Falha abrir indicado apresentando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK305E no HCL Workload Automation 10.2.8?
@@ -110021,10 +110021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK305E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK306E (severidade: error, familia AWSDEK - dek) tem o texto: "Error writing header: !1" Em portugues: "erro writing header: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK306E (severidade: error, familia AWSDEK - dek) tem o texto: "Error writing header: !1" Em portugues: "erro writing header: !1". Temas: erro. Em outras palavras: Ocorreu um erro ao gravar o cabeçalho do arquivo em processamento, reportando o detalhe da falha informado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK306E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error writing header portugues erro Temas significa diagnosticar`
+> `AWSDEK306E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error writing header portugues erro Temas outras palavras Ocorreu gravar arquivo processamento reportando detalhe falha informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK306E no HCL Workload Automation 10.2.8?
@@ -110041,10 +110041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK306E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK308E (severidade: error, familia AWSDEK - dek) tem o texto: "Error renaming !1 to !2: !3" Em portugues: "erro renaming !1 to !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK308E (severidade: error, familia AWSDEK - dek) tem o texto: "Error renaming !1 to !2: !3" Em portugues: "erro renaming !1 to !2: !3". Temas: erro. Em outras palavras: Falha ao renomear o arquivo de origem para o nome de destino indicado, reportando a mensagem de erro do sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK308E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error renaming portugues erro Temas significa diagnosticar`
+> `AWSDEK308E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error renaming portugues erro Temas outras palavras Falha renomear arquivo origem nome destino indicado reportando sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK308E no HCL Workload Automation 10.2.8?
@@ -110061,10 +110061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK308E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK310E (severidade: error, familia AWSDEK - dek) tem o texto: "Conversion of !1 from native format to utf8 failed." Em portugues: "conversion of !1 from native format to utf8 falhou.". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK310E (severidade: error, familia AWSDEK - dek) tem o texto: "Conversion of !1 from native format to utf8 failed." Em portugues: "conversion of !1 from native format to utf8 falhou.". Temas: falhou. Em outras palavras: A conversão do conteúdo informado do formato nativo para a codificação UTF-8 não foi concluída, indicando falha na transformação de caracteres..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK310E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Conversion from native format utf8 failed portugues conversion falhou Temas significa`
+> `AWSDEK310E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Conversion from native format utf8 failed portugues conversion falhou Temas outras palavras informado formato nativo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK310E no HCL Workload Automation 10.2.8?
@@ -110101,10 +110101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK311E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK312E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to initialize the security context: !1" Em portugues: "incapaz to initialize the seguranca context: !1". Temas: nao conseguiu seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK312E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to initialize the security context: !1" Em portugues: "incapaz to initialize the seguranca context: !1". Temas: nao conseguiu seguranca. Em outras palavras: Não foi possível inicializar o contexto de segurança definido na configuração, reportando a causa da falha durante a preparação do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK312E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable initialize the security context portugues incapaz seguranca Temas nao conseguiu significa`
+> `AWSDEK312E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable initialize the security context portugues incapaz seguranca Temas nao conseguiu outras palavras foi inicializar contexto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK312E no HCL Workload Automation 10.2.8?
@@ -110141,10 +110141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK313W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK401E (severidade: error, familia AWSDEK - dek) tem o texto: "Error reading header: !1" Em portugues: "erro reading header: !1". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK401E (severidade: error, familia AWSDEK - dek) tem o texto: "Error reading header: !1" Em portugues: "erro reading header: !1". Temas: erro. Em outras palavras: Ocorreu um erro ao ler o cabeçalho do arquivo em processamento, interrompendo a operação e reportando a mensagem de erro do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK401E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error reading header portugues erro Temas significa diagnosticar`
+> `AWSDEK401E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error reading header portugues erro Temas outras palavras Ocorreu ler arquivo processamento interrompendo reportando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK401E no HCL Workload Automation 10.2.8?
@@ -110161,10 +110161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK401E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK402E (severidade: error, familia AWSDEK - dek) tem o texto: "Can not access current security file: !1" Em portugues: "can nao acesso current seguranca arquivo: !1". Temas: nao arquivo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK402E (severidade: error, familia AWSDEK - dek) tem o texto: "Can not access current security file: !1" Em portugues: "can nao acesso current seguranca arquivo: !1". Temas: nao arquivo seguranca. Em outras palavras: Não foi possível acessar o arquivo de segurança atualmente em uso pela aplicação, reportando o motivo da falha de acesso ao recurso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK402E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Can not access current security file portugues can nao acesso seguranca arquivo Temas significa`
+> `AWSDEK402E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Can not access current security file portugues can nao acesso seguranca arquivo Temas outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK402E no HCL Workload Automation 10.2.8?
@@ -110181,10 +110181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK402E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK403E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to initialize the security context: !1" Em portugues: "incapaz to initialize the seguranca context: !1". Temas: nao conseguiu seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK403E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to initialize the security context: !1" Em portugues: "incapaz to initialize the seguranca context: !1". Temas: nao conseguiu seguranca. Em outras palavras: Falha ao inicializar o contexto de segurança necessário para a operação, apresentando a mensagem de erro detalhada do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK403E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable initialize the security context portugues incapaz seguranca Temas nao conseguiu significa`
+> `AWSDEK403E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable initialize the security context portugues incapaz seguranca Temas nao conseguiu outras palavras Falha inicializar contexto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK403E no HCL Workload Automation 10.2.8?
@@ -110201,10 +110201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK403E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK404E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to open utf8 temporary file !1." Em portugues: "incapaz to open utf8 temporary arquivo !1.". Temas: arquivo nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK404E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to open utf8 temporary file !1." Em portugues: "incapaz to open utf8 temporary arquivo !1.". Temas: arquivo nao conseguiu. Em outras palavras: Não foi possível abrir o arquivo temporário em codificação UTF-8 indicado, impedindo a conclusão da conversão ou do processamento pretendido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK404E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable open utf8 temporary file portugues incapaz arquivo Temas nao conseguiu significa`
+> `AWSDEK404E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable open utf8 temporary file portugues incapaz arquivo Temas nao conseguiu outras palavras foi abrir`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK404E no HCL Workload Automation 10.2.8?
@@ -110221,7 +110221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK404E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK405E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to read utf8 security output file !1." Em portugues: "incapaz to ler utf8 seguranca saida arquivo !1.". Temas: arquivo nao conseguiu ler leitura seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK405E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to read utf8 security output file !1." Em portugues: "incapaz to ler utf8 seguranca saida arquivo !1.". Temas: arquivo nao conseguiu ler leitura seguranca. Em outras palavras: Não foi possível ler o arquivo de segurança de saída em codificação UTF-8 indicado durante o processamento da conversão de caracteres..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK405E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable read utf8 security output file portugues incapaz ler seguranca saida arquivo Temas nao conseguiu leitura`
@@ -110241,10 +110241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK405E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK406E (severidade: error, familia AWSDEK - dek) tem o texto: "Error writing security file !1 to the screen." Em portugues: "erro writing seguranca arquivo !1 to the screen.". Temas: erro arquivo seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK406E (severidade: error, familia AWSDEK - dek) tem o texto: "Error writing security file !1 to the screen." Em portugues: "erro writing seguranca arquivo !1 to the screen.". Temas: erro arquivo seguranca. Em outras palavras: Ocorreu um erro ao exibir na tela o conteúdo do arquivo de segurança indicado, reportando a falha encontrada pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK406E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error writing security file the screen portugues erro seguranca arquivo Temas significa`
+> `AWSDEK406E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Error writing security file the screen portugues erro seguranca arquivo Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK406E no HCL Workload Automation 10.2.8?
@@ -110261,10 +110261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK406E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK701E (severidade: error, familia AWSDEK - dek) tem o texto: "Cannot open file %s, error: %s." Em portugues: "nao pode open arquivo %s, erro: %s.". Temas: erro arquivo nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK701E (severidade: error, familia AWSDEK - dek) tem o texto: "Cannot open file %s, error: %s." Em portugues: "nao pode open arquivo %s, erro: %s.". Temas: erro arquivo nao pode. Em outras palavras: Não foi possível abrir o arquivo especificado devido a um erro de entrada e saída, reportado pelo sistema operacional durante a tentativa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK701E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Cannot open file portugues nao arquivo erro Temas significa`
+> `AWSDEK701E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Cannot open file portugues nao arquivo erro Temas outras palavras foi abrir especificado devido`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK701E no HCL Workload Automation 10.2.8?
@@ -110281,10 +110281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK701E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK702I (severidade: informational, familia AWSDEK - dek) tem o texto: "File %s maximum size changed to %ld bytes" Em portugues: "arquivo %s maximo tamanho changed to %ld bytes". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK702I (severidade: informational, familia AWSDEK - dek) tem o texto: "File %s maximum size changed to %ld bytes" Em portugues: "arquivo %s maximo tamanho changed to %ld bytes". Temas: arquivo. Em outras palavras: O tamanho máximo do arquivo indicado foi alterado para o valor em bytes informado, ajustando o limite de crescimento desse recurso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK702I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto File maximum size changed bytes portugues arquivo maximo tamanho Temas significa`
+> `AWSDEK702I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto File maximum size changed bytes portugues arquivo maximo tamanho Temas outras palavras indicado foi alterado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK702I no HCL Workload Automation 10.2.8?
@@ -110301,10 +110301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK702I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK703I (severidade: informational, familia AWSDEK - dek) tem o texto: "Queue size current %ld, maximum %ld bytes (read %ld, write %ld)" Em portugues: "queue tamanho current %ld, maximo %ld bytes (ler %ld, escrever %ld)".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK703I (severidade: informational, familia AWSDEK - dek) tem o texto: "Queue size current %ld, maximum %ld bytes (read %ld, write %ld)" Em portugues: "queue tamanho current %ld, maximo %ld bytes (ler %ld, escrever %ld)". Em outras palavras: A fila de mensagens está operando com o tamanho atual e o limite máximo informados, mostrando também as contagens de leitura e gravação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK703I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto Queue size current maximum bytes read write portugues queue tamanho maximo ler escrever significa`
+> `AWSDEK703I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto Queue size current maximum bytes read write portugues queue tamanho maximo ler escrever outras palavras fila mensagens operando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK703I no HCL Workload Automation 10.2.8?
@@ -110341,7 +110341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK704E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK705E (severidade: error, familia AWSDEK - dek) tem o texto: "An error occurred while processing the file "%s". The error is: %s." Em portugues: "an erro ocorreu while processando the arquivo "%s". the erro is: %s.". Temas: erro arquivo ocorreu. Explicacao oficial: An error occurred processing the event file. event_file.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK705E (severidade: error, familia AWSDEK - dek) tem o texto: "An error occurred while processing the file "%s". The error is: %s." Em portugues: "an erro ocorreu while processando the arquivo "%s". the erro is: %s.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu um erro durante o processamento do arquivo especificado, reportado pelo sistema, interrompendo a operação em andamento.. Explicacao oficial: An error occurred processing the event file. event_file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK705E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto occurred while processing the file The portugues erro ocorreu processando arquivo Temas`
@@ -110361,7 +110361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK705E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK706E (severidade: error, familia AWSDEK - dek) tem o texto: "An error occurred while attempting to processing the file "%s". The error is: %s. The original event file has been recovered." Em portugues: "an erro ocorreu while attempting to processando the arquivo "%s". the erro is: %s. the original event arquivo has estado recovered.". Temas: erro arquivo ocorreu. Explicacao oficial: The evtsize utility was unable to compact events within the event queue. The file being processed is event_file.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK706E (severidade: error, familia AWSDEK - dek) tem o texto: "An error occurred while attempting to processing the file "%s". The error is: %s. The original event file has been recovered." Em portugues: "an erro ocorreu while attempting to processando the arquivo "%s". the erro is: %s. the original event arquivo has estado recovered.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu um erro processando o arquivo especificado e o arquivo de eventos original foi recuperado para preservar os dados não processados.. Explicacao oficial: The evtsize utility was unable to compact events within the event queue. The file being processed is event_file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK706E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto occurred while attempting processing the file The original event has been recovered portugues erro ocorreu`
@@ -110381,10 +110381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK706E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK707I (severidade: informational, familia AWSDEK - dek) tem o texto: "The event file has been compacted." Em portugues: "the event arquivo has estado compacted.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK707I (severidade: informational, familia AWSDEK - dek) tem o texto: "The event file has been compacted." Em portugues: "the event arquivo has estado compacted.". Temas: arquivo. Em outras palavras: O arquivo de eventos que armazena as mensagens de fila foi compactado com sucesso, reduzindo o espaço ocupado sem perder o conteúdo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK707I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto The event file has been compacted portugues the arquivo estado Temas significa`
+> `AWSDEK707I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto The event file has been compacted portugues the arquivo estado Temas outras palavras eventos armazena`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK707I no HCL Workload Automation 10.2.8?
@@ -110401,7 +110401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK707I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK708E (severidade: error, familia AWSDEK - dek) tem o texto: "The message queue "%s" cannot be re-sized without corrupting the contents." Em portugues: "the mensagem queue "%s" nao pode be re-sized sem corrupting the contents.". Temas: nao pode mensagem. Explicacao oficial: The evtsize utility was unable to re-size the event queue because the new size is lower the previous one and re-sizing the queue will corrupt the queue contents.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK708E (severidade: error, familia AWSDEK - dek) tem o texto: "The message queue "%s" cannot be re-sized without corrupting the contents." Em portugues: "the mensagem queue "%s" nao pode be re-sized sem corrupting the contents.". Temas: nao pode mensagem. Em outras palavras: A fila de mensagens indicada não pôde ser redimensionada sem corromper o conteúdo já gravado, impedindo a alteração do seu tamanho.. Explicacao oficial: The evtsize utility was unable to re-size the event queue because the new size is lower the previous one and re-sizing the queue will corrupt the queue contents.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK708E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto The message queue cannot re-sized without corrupting the contents portugues nao sem Temas`
@@ -110421,7 +110421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK708E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK709E (severidade: error, familia AWSDEK - dek) tem o texto: "The supplied value for the "size" parameter is greater than the maximum allowed by the operating system: "%d"" Em portugues: "the informado valor for the "tamanho" parametro is greater que the maximo allowed by the operating sistema: "%d"". Temas: informado sistema parametro valor. Explicacao oficial: The maximum value for the size parameter is determined by the LONG_MAX system variable.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK709E (severidade: error, familia AWSDEK - dek) tem o texto: "The supplied value for the "size" parameter is greater than the maximum allowed by the operating system: "%d"" Em portugues: "the informado valor for the "tamanho" parametro is greater que the maximo allowed by the operating sistema: "%d"". Temas: informado sistema parametro valor. Em outras palavras: O valor informado para o parâmetro de tamanho é maior do que o limite máximo permitido pelo sistema operacional, sendo rejeitado.. Explicacao oficial: The maximum value for the size parameter is determined by the LONG_MAX system variable.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK709E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto The supplied value for the size parameter greater than maximum allowed operating system portugues informado valor`
@@ -110441,7 +110441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK709E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK710W (severidade: warning, familia AWSDEK - dek) tem o texto: "The "evtsize" command has been issued with too many parameters. Additional parameters are ignored." Em portugues: "the "evtsize" comando has estado issued with too many parametros. additional parametros are ignored.". Temas: comando parametros excesso de.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK710W (severidade: warning, familia AWSDEK - dek) tem o texto: "The "evtsize" command has been issued with too many parameters. Additional parameters are ignored." Em portugues: "the "evtsize" comando has estado issued with too many parametros. additional parametros are ignored.". Temas: comando parametros excesso de. Em outras palavras: O comando para definir o tamanho dos eventos foi executado com parâmetros em excesso, sendo os parâmetros adicionais ignorados pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK710W 10.2.8 mensagem severidade warning familia AWSDEK dek tem texto The evtsize command has been issued with too many parameters Additional are ignored portugues the comando estado`
@@ -110461,10 +110461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK710W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK711E (severidade: error, familia AWSDEK - dek) tem o texto: "The minimun size of a message queue must be "%d"" Em portugues: "the minimun tamanho of a mensagem queue must be "%d"". Temas: mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK711E (severidade: error, familia AWSDEK - dek) tem o texto: "The minimun size of a message queue must be "%d"" Em portugues: "the minimun tamanho of a mensagem queue must be "%d"". Temas: mensagem. Em outras palavras: A fila de mensagens deve possuir um tamanho mínimo definido pelo sistema, e o valor informado está abaixo desse limite mínimo obrigatório..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK711E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto The minimun size message queue must portugues the tamanho Temas significa`
+> `AWSDEK711E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto The minimun size message queue must portugues the tamanho Temas outras palavras fila mensagens deve`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK711E no HCL Workload Automation 10.2.8?
@@ -110481,10 +110481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK711E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK810I (severidade: informational, familia AWSDEK - dek) tem o texto: "-D: Operate in debug mode." Em portugues: "-d: operate in debug mode.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK810I (severidade: informational, familia AWSDEK - dek) tem o texto: "-D: Operate in debug mode." Em portugues: "-d: operate in debug mode.". Em outras palavras: A opção de modo de depuração está ativa, fazendo o processo operar com diagnóstico estendido e mensagens de rastreamento detalhadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEK810I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto Operate debug mode portugues operate significa diagnosticar`
+> `AWSDEK810I 10.2.8 mensagem severidade informational familia AWSDEK dek tem texto Operate debug mode portugues operate outras palavras modo ativa fazendo processo operar estendido mensagens rastreamento detalhadas significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEK810I no HCL Workload Automation 10.2.8?
@@ -110501,7 +110501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK810I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK904E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to open the following Security file to initialize centralized security: !1. The file does not exist or cannot be found." Em portugues: "incapaz to open the seguinte seguranca arquivo to initialize centralized seguranca: !1. the arquivo does nao existe or nao pode be encontrado.". Temas: nao arquivo pode conseguiu encontrado seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK904E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to open the following Security file to initialize centralized security: !1. The file does not exist or cannot be found." Em portugues: "incapaz to open the seguinte seguranca arquivo to initialize centralized seguranca: !1. the arquivo does nao existe or nao pode be encontrado.". Temas: nao arquivo pode conseguiu encontrado seguranca. Em outras palavras: Não foi possível abrir o arquivo de segurança informado para inicializar a segurança centralizada, pois o arquivo não existe ou não foi encontrado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK904E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable open the following Security file initialize centralized security The does not exist cannot found portugues incapaz`
@@ -110521,7 +110521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK904E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK905E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to read the following Security file for centralized security: !1." Em portugues: "incapaz to ler the seguinte seguranca arquivo for centralized seguranca: !1.". Temas: arquivo nao conseguiu ler leitura seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK905E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to read the following Security file for centralized security: !1." Em portugues: "incapaz to ler the seguinte seguranca arquivo for centralized seguranca: !1.". Temas: arquivo nao conseguiu ler leitura seguranca. Em outras palavras: Não foi possível ler o arquivo de segurança informado necessário para a segurança centralizada, reportando o motivo da falha de leitura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK905E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable read the following Security file for centralized security portugues incapaz ler seguinte seguranca arquivo Temas`
@@ -110541,7 +110541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK905E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEK906E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to write the following Security file for centralized security: !1." Em portugues: "incapaz to escrever the seguinte seguranca arquivo for centralized seguranca: !1.". Temas: arquivo nao conseguiu seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEK906E (severidade: error, familia AWSDEK - dek) tem o texto: "Unable to write the following Security file for centralized security: !1." Em portugues: "incapaz to escrever the seguinte seguranca arquivo for centralized seguranca: !1.". Temas: arquivo nao conseguiu seguranca. Em outras palavras: Não foi possível gravar no arquivo de segurança informado durante a atualização da segurança centralizada, reportando a causa da falha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEK906E 10.2.8 mensagem severidade error familia AWSDEK dek tem texto Unable write the following Security file for centralized security portugues incapaz escrever seguinte seguranca arquivo Temas`
@@ -110561,10 +110561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEK906E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL001E (severidade: error, familia AWSDEL - del) tem o texto: "Error, attempt to open newer revision of file" Em portugues: "erro, tentativa to open newer revision of arquivo". Temas: erro arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL001E (severidade: error, familia AWSDEL - del) tem o texto: "Error, attempt to open newer revision of file" Em portugues: "erro, tentativa to open newer revision of arquivo". Temas: erro arquivo. Em outras palavras: Foi feita a tentativa de abrir uma revisão mais recente do arquivo do que a suportada, indicando incompatibilidade de versão do arquivo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL001E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Error attempt open newer revision file portugues erro tentativa arquivo Temas significa`
+> `AWSDEL001E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Error attempt open newer revision file portugues erro tentativa arquivo Temas outras palavras Foi feita`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL001E no HCL Workload Automation 10.2.8?
@@ -110581,10 +110581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL002E (severidade: error, familia AWSDEL - del) tem o texto: "Error, cpudata file has not been opened" Em portugues: "erro, cpudata arquivo has nao estado opened". Temas: erro nao arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL002E (severidade: error, familia AWSDEL - del) tem o texto: "Error, cpudata file has not been opened" Em portugues: "erro, cpudata arquivo has nao estado opened". Temas: erro nao arquivo. Em outras palavras: O arquivo de dados de processador não foi aberto antes de sua utilização, indicando que a operação foi tentada sem o arquivo estar carregado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL002E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Error cpudata file has not been opened portugues erro arquivo nao estado Temas significa`
+> `AWSDEL002E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Error cpudata file has not been opened portugues erro arquivo nao estado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL002E no HCL Workload Automation 10.2.8?
@@ -110601,10 +110601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL003W (severidade: warning, familia AWSDEL - del) tem o texto: "End of chain/no more matches." Em portugues: "end of chain/no mais matches.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL003W (severidade: warning, familia AWSDEL - del) tem o texto: "End of chain/no more matches." Em portugues: "end of chain/no mais matches.". Em outras palavras: Chegou ao fim da cadeia de registros sem que houvesse mais correspondências a processar, encerrando a busca pelos dados solicitados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL003W 10.2.8 mensagem severidade warning familia AWSDEL del tem texto End chain more matches portugues end mais significa diagnosticar`
+> `AWSDEL003W 10.2.8 mensagem severidade warning familia AWSDEL del tem texto End chain more matches portugues end mais outras palavras Chegou fim cadeia registros sem houvesse processar encerrando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL003W no HCL Workload Automation 10.2.8?
@@ -110621,10 +110621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL003W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL004E (severidade: error, familia AWSDEL - del) tem o texto: "Could not create a temporary file: !1" Em portugues: "conseguiu nao criar a temporary arquivo: !1". Temas: nao arquivo criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL004E (severidade: error, familia AWSDEL - del) tem o texto: "Could not create a temporary file: !1" Em portugues: "conseguiu nao criar a temporary arquivo: !1". Temas: nao arquivo criar. Em outras palavras: Não foi possível criar um arquivo temporário durante a operação, reportando o motivo da falha de criação pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL004E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Could not create temporary file portugues conseguiu nao criar arquivo Temas significa`
+> `AWSDEL004E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Could not create temporary file portugues conseguiu nao criar arquivo Temas outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL004E no HCL Workload Automation 10.2.8?
@@ -110641,10 +110641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL005E (severidade: error, familia AWSDEL - del) tem o texto: "File system error: !1" Em portugues: "arquivo sistema erro: !1". Temas: erro arquivo sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL005E (severidade: error, familia AWSDEL - del) tem o texto: "File system error: !1" Em portugues: "arquivo sistema erro: !1". Temas: erro arquivo sistema. Em outras palavras: Ocorreu um erro de sistema de arquivos durante a operação, reportando o problema detectado pelo sistema operacional ao acessar os dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL005E 10.2.8 mensagem severidade error familia AWSDEL del tem texto File system portugues arquivo sistema erro Temas significa diagnosticar`
+> `AWSDEL005E 10.2.8 mensagem severidade error familia AWSDEL del tem texto File system portugues arquivo sistema erro Temas outras palavras Ocorreu arquivos durante reportando problema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL005E no HCL Workload Automation 10.2.8?
@@ -110661,10 +110661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL006E (severidade: error, familia AWSDEL - del) tem o texto: "cpu not specified in cpudata file" Em portugues: "processador nao especificado in cpudata arquivo". Temas: nao arquivo especificado processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL006E (severidade: error, familia AWSDEL - del) tem o texto: "cpu not specified in cpudata file" Em portugues: "processador nao especificado in cpudata arquivo". Temas: nao arquivo especificado processador cpu. Em outras palavras: O processador não foi especificado no arquivo de dados de processador, impedindo a identificação do recurso necessário para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL006E 10.2.8 mensagem severidade error familia AWSDEL del tem texto cpu not specified cpudata file portugues processador nao especificado arquivo Temas significa`
+> `AWSDEL006E 10.2.8 mensagem severidade error familia AWSDEL del tem texto cpu not specified cpudata file portugues processador nao especificado arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL006E no HCL Workload Automation 10.2.8?
@@ -110681,10 +110681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL007E (severidade: error, familia AWSDEL - del) tem o texto: "error returned from index access functions" Em portugues: "erro returned from indice acesso functions". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL007E (severidade: error, familia AWSDEL - del) tem o texto: "error returned from index access functions" Em portugues: "erro returned from indice acesso functions". Temas: erro. Em outras palavras: As funções de acesso por índice retornaram um erro durante o processamento, indicando falha ao recuperar ou localizar os dados indexados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL007E 10.2.8 mensagem severidade error familia AWSDEL del tem texto returned from index access functions portugues erro indice acesso Temas significa`
+> `AWSDEL007E 10.2.8 mensagem severidade error familia AWSDEL del tem texto returned from index access functions portugues erro indice acesso Temas outras palavras retornaram`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL007E no HCL Workload Automation 10.2.8?
@@ -110701,10 +110701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL008E (severidade: error, familia AWSDEL - del) tem o texto: "ADD: cpu definition already in database" Em portugues: "add: processador definicao already in banco de dados". Temas: definicao processador cpu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL008E (severidade: error, familia AWSDEL - del) tem o texto: "ADD: cpu definition already in database" Em portugues: "add: processador definicao already in banco de dados". Temas: definicao processador cpu banco de dados. Em outras palavras: A operação de inclusão falhou porque a definição do processador informado já existe no banco de dados de processadores..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL008E 10.2.8 mensagem severidade error familia AWSDEL del tem texto ADD cpu definition already database portugues add processador definicao dados Temas significa`
+> `AWSDEL008E 10.2.8 mensagem severidade error familia AWSDEL del tem texto ADD cpu definition already database portugues add processador definicao dados Temas outras palavras falhou porque`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL008E no HCL Workload Automation 10.2.8?
@@ -110721,10 +110721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL009I (severidade: informational, familia AWSDEL - del) tem o texto: "REPLACE: cpu definition in database has changed" Em portugues: "replace: processador definicao in banco de dados has changed". Temas: definicao processador cpu banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL009I (severidade: informational, familia AWSDEL - del) tem o texto: "REPLACE: cpu definition in database has changed" Em portugues: "replace: processador definicao in banco de dados has changed". Temas: definicao processador cpu banco de dados. Em outras palavras: A definição do processador informado foi substituída no banco de dados porque sua configuração sofreu alterações desde a última versão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL009I 10.2.8 mensagem severidade informational familia AWSDEL del tem texto REPLACE cpu definition database has changed portugues replace processador definicao dados Temas significa`
+> `AWSDEL009I 10.2.8 mensagem severidade informational familia AWSDEL del tem texto REPLACE cpu definition database has changed portugues replace processador definicao dados Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL009I no HCL Workload Automation 10.2.8?
@@ -110741,10 +110741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL009I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL010E (severidade: error, familia AWSDEL - del) tem o texto: "Access denied to specified cpu definition" Em portugues: "acesso denied to especificado processador definicao". Temas: especificado definicao processador cpu negado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL010E (severidade: error, familia AWSDEL - del) tem o texto: "Access denied to specified cpu definition" Em portugues: "acesso denied to especificado processador definicao". Temas: especificado definicao processador cpu negado. Em outras palavras: O acesso à definição do processador especificado foi negado por falta de permissão, impedindo a operação solicitada sobre esse recurso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL010E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Access denied specified cpu definition portugues acesso especificado processador definicao Temas negado significa`
+> `AWSDEL010E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Access denied specified cpu definition portugues acesso especificado processador definicao Temas negado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL010E no HCL Workload Automation 10.2.8?
@@ -110761,10 +110761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL011E (severidade: error, familia AWSDEL - del) tem o texto: "Unable to allocate memory" Em portugues: "incapaz to allocate memoria". Temas: nao conseguiu memoria.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL011E (severidade: error, familia AWSDEL - del) tem o texto: "Unable to allocate memory" Em portugues: "incapaz to allocate memoria". Temas: nao conseguiu memoria. Em outras palavras: Não foi possível reservar memória durante a operação, indicando que a memória disponível no sistema é insuficiente para o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL011E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Unable allocate memory portugues incapaz memoria Temas nao conseguiu significa diagnosticar`
+> `AWSDEL011E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Unable allocate memory portugues incapaz memoria Temas nao conseguiu outras palavras foi reservar durante indicando sistema insuficiente processamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL011E no HCL Workload Automation 10.2.8?
@@ -110781,7 +110781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL012E (severidade: error, familia AWSDEL - del) tem o texto: "Invalid cpu definition read from file" Em portugues: "invalido processador definicao ler from arquivo". Temas: arquivo invalido definicao processador cpu ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL012E (severidade: error, familia AWSDEL - del) tem o texto: "Invalid cpu definition read from file" Em portugues: "invalido processador definicao ler from arquivo". Temas: arquivo invalido definicao processador cpu ler leitura. Em outras palavras: Uma definição de processador inválida foi lida a partir do arquivo, indicando dados corrompidos ou incompatíveis no registro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEL012E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Invalid cpu definition read from file portugues invalido processador definicao ler arquivo Temas`
@@ -110801,10 +110801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL013E (severidade: error, familia AWSDEL - del) tem o texto: "Specified name is not a cpu class" Em portugues: "especificado nome is nao a processador class". Temas: nao nome especificado processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL013E (severidade: error, familia AWSDEL - del) tem o texto: "Specified name is not a cpu class" Em portugues: "especificado nome is nao a processador class". Temas: nao nome especificado processador cpu. Em outras palavras: O nome especificado não corresponde a uma classe de processador conhecida, portanto a operação não pode ser realizada com esse identificador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL013E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Specified name not cpu class portugues especificado nome nao processador Temas significa`
+> `AWSDEL013E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Specified name not cpu class portugues especificado nome nao processador Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL013E no HCL Workload Automation 10.2.8?
@@ -110821,7 +110821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL014E (severidade: error, familia AWSDEL - del) tem o texto: "Invalid cpu class definition read from file" Em portugues: "invalido processador class definicao ler from arquivo". Temas: arquivo invalido definicao processador cpu ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL014E (severidade: error, familia AWSDEL - del) tem o texto: "Invalid cpu class definition read from file" Em portugues: "invalido processador class definicao ler from arquivo". Temas: arquivo invalido definicao processador cpu ler leitura. Em outras palavras: Foi negada a permissão de modificação para o processador indicado, bloqueando a operação solicitada sobre essa definição..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEL014E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Invalid cpu class definition read from file portugues invalido processador definicao ler arquivo Temas`
@@ -110841,10 +110841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL015E (severidade: error, familia AWSDEL - del) tem o texto: "**ERROR** !1: Modify access denied for cpu !2" Em portugues: "**erro** !1: modify acesso denied for processador !2". Temas: processador cpu negado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL015E (severidade: error, familia AWSDEL - del) tem o texto: "**ERROR** !1: Modify access denied for cpu !2" Em portugues: "**erro** !1: modify acesso denied for processador !2". Temas: processador cpu negado. Em outras palavras: O processador indicado não existe no arquivo de dados de processadores, portanto a operação sobre ele não pode ser executada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL015E 10.2.8 mensagem severidade error familia AWSDEL del tem texto ERROR Modify access denied for cpu portugues erro modify acesso processador Temas negado significa`
+> `AWSDEL015E 10.2.8 mensagem severidade error familia AWSDEL del tem texto ERROR Modify access denied for cpu portugues erro modify acesso processador Temas negado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL015E no HCL Workload Automation 10.2.8?
@@ -110861,10 +110861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL016E (severidade: error, familia AWSDEL - del) tem o texto: "Cpu !1 does not exist in cpudata file" Em portugues: "processador !1 does nao existe in cpudata arquivo". Temas: nao arquivo processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL016E (severidade: error, familia AWSDEL - del) tem o texto: "Cpu !1 does not exist in cpudata file" Em portugues: "processador !1 does nao existe in cpudata arquivo". Temas: nao arquivo processador cpu. Em outras palavras: Aviso de que o método de acesso indicado não existe no sistema atual, podendo comprometer a operação que depende dessa capacidade..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL016E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Cpu does not exist cpudata file portugues processador nao existe arquivo Temas cpu significa`
+> `AWSDEL016E 10.2.8 mensagem severidade error familia AWSDEL del tem texto Cpu does not exist cpudata file portugues processador nao existe arquivo Temas cpu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL016E no HCL Workload Automation 10.2.8?
@@ -110881,10 +110881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL017W (severidade: warning, familia AWSDEL - del) tem o texto: "**WARNING** Access method !1 does not exist on your system!" Em portugues: "**warning** acesso method !1 does nao existe on your sistema!". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL017W (severidade: warning, familia AWSDEL - del) tem o texto: "**WARNING** Access method !1 does not exist on your system!" Em portugues: "**warning** acesso method !1 does nao existe on your sistema!". Temas: nao. Em outras palavras: Foi detectado um tipo inválido de entrada de processador ao exibir os dados, indicando um registro desconhecido pela rotina de impressão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL017W 10.2.8 mensagem severidade warning familia AWSDEL del tem texto WARNING Access method does not exist your system portugues acesso nao existe sistema Temas significa`
+> `AWSDEL017W 10.2.8 mensagem severidade warning familia AWSDEL del tem texto WARNING Access method does not exist your system portugues acesso nao existe sistema Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL017W no HCL Workload Automation 10.2.8?
@@ -110901,10 +110901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL017W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL018E (severidade: error, familia AWSDEL - del) tem o texto: "u_print_cpu_data() got invalid cpu entry type %d." Em portugues: "u_print_cpu_data() got invalido processador entry tipo %d.". Temas: invalido tipo processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL018E (severidade: error, familia AWSDEL - del) tem o texto: "u_print_cpu_data() got invalid cpu entry type %d." Em portugues: "u_print_cpu_data() got invalido processador entry tipo %d.". Temas: invalido tipo processador cpu. Em outras palavras: A rotina de inclusão de tipo de agente recebeu um tipo de agente desconhecido, recusando o cadastro dessa configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL018E 10.2.8 mensagem severidade error familia AWSDEL del tem texto u_print_cpu_data got invalid cpu entry type portugues invalido processador tipo Temas significa`
+> `AWSDEL018E 10.2.8 mensagem severidade error familia AWSDEL del tem texto u_print_cpu_data got invalid cpu entry type portugues invalido processador tipo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL018E no HCL Workload Automation 10.2.8?
@@ -110921,10 +110921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEL018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEL019E (severidade: error, familia AWSDEL - del) tem o texto: "add_cpu_agent_type(): unknown agent type." Em portugues: "add_cpu_agent_type(): desconhecido agente tipo.". Temas: tipo agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEL019E (severidade: error, familia AWSDEL - del) tem o texto: "add_cpu_agent_type(): unknown agent type." Em portugues: "add_cpu_agent_type(): desconhecido agente tipo.". Temas: tipo agente. Em outras palavras: A rotina de inclusão de tipo de agente recebeu um tipo de agente desconhecido, impedindo o cadastro dessa configuração no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEL019E 10.2.8 mensagem severidade error familia AWSDEL del tem texto add_cpu_agent_type unknown agent type portugues desconhecido agente tipo Temas significa`
+> `AWSDEL019E 10.2.8 mensagem severidade error familia AWSDEL del tem texto add_cpu_agent_type unknown agent type portugues desconhecido agente tipo Temas outras palavras rotina recebeu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEL019E no HCL Workload Automation 10.2.8?
@@ -112901,7 +112901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEM216E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEN002E (severidade: error, familia AWSDEN - den) tem o texto: "Cannot change software to demo Search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "nao pode change software to demonstracao search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: nao pode demonstracao banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEN002E (severidade: error, familia AWSDEN - den) tem o texto: "Cannot change software to demo Search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "nao pode change software to demonstracao search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: nao pode demonstracao banco de dados. Em outras palavras: Não é possível converter o software para o modo demonstração; recomendação é consultar a base de suporte da HCL para uma solução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEN002E 10.2.8 mensagem severidade error familia AWSDEN den tem texto Cannot change software demo Search the Support database for solution https www.hcltech.com products-and-platforms support portugues nao demonstracao search`
@@ -112921,10 +112921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEN002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEN003W (severidade: warning, familia AWSDEN - den) tem o texto: "Software has been converted to a seven day demo." Em portugues: "software has estado converted to a seven day demonstracao.". Temas: demonstracao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEN003W (severidade: warning, familia AWSDEN - den) tem o texto: "Software has been converted to a seven day demo." Em portugues: "software has estado converted to a seven day demonstracao.". Temas: demonstracao. Em outras palavras: O software foi convertido para uma versão de demonstração com duração de sete dias, passando a operar em caráter temporário e limitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEN003W 10.2.8 mensagem severidade warning familia AWSDEN den tem texto Software has been converted seven day demo portugues software estado demonstracao Temas significa`
+> `AWSDEN003W 10.2.8 mensagem severidade warning familia AWSDEN den tem texto Software has been converted seven day demo portugues software estado demonstracao Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEN003W no HCL Workload Automation 10.2.8?
@@ -112941,10 +112941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEN003W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEN004E (severidade: error, familia AWSDEN - den) tem o texto: "This is not production software." Em portugues: "this is nao production software.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEN004E (severidade: error, familia AWSDEN - den) tem o texto: "This is not production software." Em portugues: "this is nao production software.". Temas: nao. Em outras palavras: Esta não é uma versão de software de produção, devendo ser utilizada apenas para fins de avaliação e não em ambiente operacional real..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEN004E 10.2.8 mensagem severidade error familia AWSDEN den tem texto This not production software portugues this nao Temas significa diagnosticar`
+> `AWSDEN004E 10.2.8 mensagem severidade error familia AWSDEN den tem texto This not production software portugues this nao Temas outras palavras devendo utilizada fins ambiente operacional real`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEN004E no HCL Workload Automation 10.2.8?
@@ -112961,7 +112961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEN004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEN005E (severidade: error, familia AWSDEN - den) tem o texto: "Can't determine software type. Search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "can't determine software tipo. search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: tipo banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEN005E (severidade: error, familia AWSDEN - den) tem o texto: "Can't determine software type. Search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "can't determine software tipo. search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: tipo banco de dados. Em outras palavras: Não foi possível determinar o tipo do software instalado; recomendação é consultar a base de suporte da HCL para obter uma solução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEN005E 10.2.8 mensagem severidade error familia AWSDEN den tem texto Can determine software type Search the Support database for solution https www.hcltech.com products-and-platforms support portugues can tipo search`
@@ -114481,10 +114481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEO308E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP001E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo error in !1, call !2, error: !3" Em portugues: "fifo erro in !1, call !2, erro: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP001E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo error in !1, call !2, error: !3" Em portugues: "fifo erro in !1, call !2, erro: !3". Temas: erro. Em outras palavras: Ocorreu um erro de fila nomeada na função indicada, reportando o motivo da falha ao operar sobre o recurso de comunicação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP001E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo call portugues fifo erro Temas significa diagnosticar`
+> `AWSDEP001E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo call portugues fifo erro Temas outras palavras Ocorreu fila nomeada indicada reportando motivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP001E no HCL Workload Automation 10.2.8?
@@ -114501,10 +114501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP002E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo error opening connection for !1: !2" Em portugues: "fifo erro opening conexao for !1: !2". Temas: erro conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP002E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo error opening connection for !1: !2" Em portugues: "fifo erro opening conexao for !1: !2". Temas: erro conexao. Em outras palavras: Falha ao abrir a conexão de fila nomeada para o recurso indicado, reportando o erro retornado pelo sistema de comunicação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP002E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo opening connection for portugues fifo erro conexao Temas significa`
+> `AWSDEP002E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo opening connection for portugues fifo erro conexao Temas outras palavras Falha abrir fila nomeada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP002E no HCL Workload Automation 10.2.8?
@@ -114521,10 +114521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP003E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo error allocating space in !1 for !2: !3" Em portugues: "fifo erro allocating espaco in !1 for !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP003E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo error allocating space in !1 for !2: !3" Em portugues: "fifo erro allocating espaco in !1 for !2: !3". Temas: erro. Em outras palavras: Falha ao reservar espaço na fila nomeada do recurso indicado para o dado informado, apresentando o erro retornado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP003E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo allocating space for portugues fifo erro espaco Temas significa`
+> `AWSDEP003E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo allocating space for portugues fifo erro espaco Temas outras palavras Falha reservar fila nomeada recurso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP003E no HCL Workload Automation 10.2.8?
@@ -114541,10 +114541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP004E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo receive error on !1: !2" Em portugues: "fifo receive erro on !1: !2". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP004E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo receive error on !1: !2" Em portugues: "fifo receive erro on !1: !2". Temas: erro. Em outras palavras: Ocorreu um erro de recepção na fila nomeada do recurso indicado, reportando o motivo da falha ao ler os dados recebidos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP004E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo receive portugues fifo erro Temas significa diagnosticar`
+> `AWSDEP004E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo receive portugues fifo erro Temas outras palavras Ocorreu fila nomeada recurso indicado reportando motivo falha`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP004E no HCL Workload Automation 10.2.8?
@@ -114561,10 +114561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP005E (severidade: error, familia AWSDEP - dep) tem o texto: "Unknown case in !2, on !1, line !3, value !4" Em portugues: "desconhecido case in !2, on !1, linha !3, valor !4". Temas: valor linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP005E (severidade: error, familia AWSDEP - dep) tem o texto: "Unknown case in !2, on !1, line !3, value !4" Em portugues: "desconhecido case in !2, on !1, linha !3, valor !4". Temas: valor linha. Em outras palavras: Foi encontrado um caso de valor inesperado no processamento sobre o recurso indicado na linha informada, exigindo investigação da lógica..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP005E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Unknown case line value portugues desconhecido linha valor Temas significa`
+> `AWSDEP005E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Unknown case line value portugues desconhecido linha valor Temas outras palavras Foi encontrado caso inesperado processamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP005E no HCL Workload Automation 10.2.8?
@@ -114581,10 +114581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP006E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo send error on !1 in !2: !3" Em portugues: "fifo send erro on !1 in !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP006E (severidade: error, familia AWSDEP - dep) tem o texto: "Fifo send error on !1 in !2: !3" Em portugues: "fifo send erro on !1 in !2: !3". Temas: erro. Em outras palavras: Ocorreu um erro de envio na fila nomeada do recurso indicado, reportando o motivo da falha ao transmitir os dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP006E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo send portugues fifo erro Temas significa diagnosticar`
+> `AWSDEP006E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fifo send portugues fifo erro Temas outras palavras Ocorreu envio fila nomeada recurso indicado reportando motivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP006E no HCL Workload Automation 10.2.8?
@@ -114601,10 +114601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP007E (severidade: error, familia AWSDEP - dep) tem o texto: "Non supported mode or option on !1 in !2" Em portugues: "non supported mode or opcao on !1 in !2". Temas: opcao suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP007E (severidade: error, familia AWSDEP - dep) tem o texto: "Non supported mode or option on !1 in !2" Em portugues: "non supported mode or opcao on !1 in !2". Temas: opcao suportado. Em outras palavras: O modo ou opção utilizado sobre o recurso indicado não é suportado pelo sistema, impossibilitando a operação solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP007E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Non supported mode option portugues non opcao Temas suportado significa`
+> `AWSDEP007E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Non supported mode option portugues non opcao Temas suportado outras palavras modo utilizado recurso indicado pelo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP007E no HCL Workload Automation 10.2.8?
@@ -114621,10 +114621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP008E (severidade: error, familia AWSDEP - dep) tem o texto: "Invalid read len on !1 in !2: !3" Em portugues: "invalido ler len on !1 in !2: !3". Temas: invalido ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP008E (severidade: error, familia AWSDEP - dep) tem o texto: "Invalid read len on !1 in !2: !3" Em portugues: "invalido ler len on !1 in !2: !3". Temas: invalido ler leitura. Em outras palavras: Foi detectado um comprimento de leitura inválido sobre o recurso indicado, reportando o problema identificado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP008E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Invalid read len portugues invalido ler Temas leitura significa diagnosticar`
+> `AWSDEP008E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Invalid read len portugues invalido ler Temas leitura outras palavras Foi detectado comprimento recurso indicado reportando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP008E no HCL Workload Automation 10.2.8?
@@ -114641,10 +114641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP009E (severidade: error, familia AWSDEP - dep) tem o texto: "Error reading buffer from !1 in !2: !3" Em portugues: "erro reading buffer from !1 in !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP009E (severidade: error, familia AWSDEP - dep) tem o texto: "Error reading buffer from !1 in !2: !3" Em portugues: "erro reading buffer from !1 in !2: !3". Temas: erro. Em outras palavras: Ocorreu um erro ao ler o buffer recebido do recurso indicado, reportando o motivo da falha de leitura dos dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP009E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error reading buffer from portugues erro Temas significa diagnosticar`
+> `AWSDEP009E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error reading buffer from portugues erro Temas outras palavras Ocorreu ler recebido recurso indicado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP009E no HCL Workload Automation 10.2.8?
@@ -114661,10 +114661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP010E (severidade: error, familia AWSDEP - dep) tem o texto: "Fcntl error on !1 in !2: !3" Em portugues: "fcntl erro on !1 in !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP010E (severidade: error, familia AWSDEP - dep) tem o texto: "Fcntl error on !1 in !2: !3" Em portugues: "fcntl erro on !1 in !2: !3". Temas: erro. Em outras palavras: Ocorreu um erro de controle de fluxo sobre o recurso indicado, reportando o problema detectado pela função de chamada de sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP010E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fcntl portugues fcntl erro Temas significa diagnosticar`
+> `AWSDEP010E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Fcntl portugues fcntl erro Temas outras palavras Ocorreu controle fluxo recurso indicado reportando problema detectado pela chamada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP010E no HCL Workload Automation 10.2.8?
@@ -114681,10 +114681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP011E (severidade: error, familia AWSDEP - dep) tem o texto: "Error reading excess bytes from !1 in !2: !3" Em portugues: "erro reading excess bytes from !1 in !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP011E (severidade: error, familia AWSDEP - dep) tem o texto: "Error reading excess bytes from !1 in !2: !3" Em portugues: "erro reading excess bytes from !1 in !2: !3". Temas: erro. Em outras palavras: Ocorreu um erro ao ler bytes excedentes do recurso indicado, reportando o motivo da falha ao processar o excesso de dados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP011E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error reading excess bytes from portugues erro Temas significa`
+> `AWSDEP011E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error reading excess bytes from portugues erro Temas outras palavras Ocorreu ler excedentes`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP011E no HCL Workload Automation 10.2.8?
@@ -114701,10 +114701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP012E (severidade: error, familia AWSDEP - dep) tem o texto: "No readers on !1 in !2: !3" Em portugues: "no readers on !1 in !2: !3".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP012E (severidade: error, familia AWSDEP - dep) tem o texto: "No readers on !1 in !2: !3" Em portugues: "no readers on !1 in !2: !3". Em outras palavras: Não há leitores ativos sobre o recurso indicado, indicando que a fila não possui processos consumindo os dados gerados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP012E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto readers portugues significa diagnosticar`
+> `AWSDEP012E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto readers portugues outras palavras leitores ativos recurso indicado indicando fila possui processos consumindo dados gerados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP012E no HCL Workload Automation 10.2.8?
@@ -114741,10 +114741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP014E (severidade: error, familia AWSDEP - dep) tem o texto: "No error on !1, last action !2" Em portugues: "no erro on !1, last action !2". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP014E (severidade: error, familia AWSDEP - dep) tem o texto: "No error on !1, last action !2" Em portugues: "no erro on !1, last action !2". Temas: erro. Em outras palavras: Nenhuma operação de erro ocorreu no recurso indicado, informando que a última ação executada foi realizada sem falhas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP014E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto last action portugues erro Temas significa diagnosticar`
+> `AWSDEP014E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto last action portugues erro Temas outras palavras Nenhuma ocorreu recurso indicado informando executada foi realizada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP014E no HCL Workload Automation 10.2.8?
@@ -114761,10 +114761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP015E (severidade: error, familia AWSDEP - dep) tem o texto: "Invalid access on !1 in !2: !3" Em portugues: "invalido acesso on !1 in !2: !3". Temas: invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP015E (severidade: error, familia AWSDEP - dep) tem o texto: "Invalid access on !1 in !2: !3" Em portugues: "invalido acesso on !1 in !2: !3". Temas: invalido. Em outras palavras: Foi detectado um acesso inválido sobre o recurso indicado, reportando o erro de permissão ou de senha mesmo de acesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP015E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Invalid access portugues invalido acesso Temas significa diagnosticar`
+> `AWSDEP015E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Invalid access portugues invalido acesso Temas outras palavras Foi detectado recurso indicado reportando erro senha mesmo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP015E no HCL Workload Automation 10.2.8?
@@ -114801,10 +114801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP017E (severidade: error, familia AWSDEP - dep) tem o texto: "Select error on !1 in !2." Em portugues: "select erro on !1 in !2.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP017E (severidade: error, familia AWSDEP - dep) tem o texto: "Select error on !1 in !2." Em portugues: "select erro on !1 in !2.". Temas: erro. Em outras palavras: Ocorreu um erro na chamada de espera por eventos sobre o recurso indicado, indicando falha no monitoramento dos descritores..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP017E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Select portugues select erro Temas significa diagnosticar`
+> `AWSDEP017E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Select portugues select erro Temas outras palavras Ocorreu chamada espera eventos recurso indicado indicando falha monitoramento descritores`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP017E no HCL Workload Automation 10.2.8?
@@ -114821,10 +114821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP018E (severidade: error, familia AWSDEP - dep) tem o texto: "Timeout on !1 in !2." Em portugues: "tempo esgotado on !1 in !2.". Temas: tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP018E (severidade: error, familia AWSDEP - dep) tem o texto: "Timeout on !1 in !2." Em portugues: "tempo esgotado on !1 in !2.". Temas: tempo esgotado. Em outras palavras: Ocorreu um tempo limite ao aguardar por atividade no recurso indicado, indicando que a operação não foi concluída no prazo estipulado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP018E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Timeout portugues tempo esgotado Temas significa diagnosticar`
+> `AWSDEP018E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Timeout portugues tempo esgotado Temas outras palavras Ocorreu limite aguardar atividade recurso indicado indicando foi prazo estipulado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP018E no HCL Workload Automation 10.2.8?
@@ -114841,10 +114841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP019E (severidade: error, familia AWSDEP - dep) tem o texto: "Error building !1 in !2: !3" Em portugues: "erro building !1 in !2: !3". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP019E (severidade: error, familia AWSDEP - dep) tem o texto: "Error building !1 in !2: !3" Em portugues: "erro building !1 in !2: !3". Temas: erro. Em outras palavras: Ocorreu um erro ao construir o recurso indicado, reportando o motivo da falha durante a montagem da estrutura necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP019E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error building portugues erro Temas significa diagnosticar`
+> `AWSDEP019E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error building portugues erro Temas outras palavras Ocorreu construir recurso indicado reportando motivo falha durante montagem estrutura`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP019E no HCL Workload Automation 10.2.8?
@@ -114861,10 +114861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEP020E (severidade: error, familia AWSDEP - dep) tem o texto: "Error !1 already open by another process for reading." Em portugues: "erro !1 already open by another process for reading.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEP020E (severidade: error, familia AWSDEP - dep) tem o texto: "Error !1 already open by another process for reading." Em portugues: "erro !1 already open by another process for reading.". Temas: erro. Em outras palavras: O erro ocorre porque o recurso indicado já está aberto por outro processo para leitura, impedindo acesso concorrente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEP020E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error already open another process for reading portugues erro Temas significa`
+> `AWSDEP020E 10.2.8 mensagem severidade error familia AWSDEP dep tem texto Error already open another process for reading portugues erro Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEP020E no HCL Workload Automation 10.2.8?
@@ -114881,10 +114881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEP020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ001E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting thread token !1:!2 message = !3." Em portugues: "erro configuracao thread token !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ001E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting thread token !1:!2 message = !3." Em portugues: "erro configuracao thread token !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao definir o token da thread no processo, reportando a mensagem de erro retornada pelo sistema durante a configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ001E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting thread token message portugues erro configuracao Temas significa`
+> `AWSDEQ001E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting thread token message portugues erro configuracao Temas outras palavras Ocorreu definir`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ001E no HCL Workload Automation 10.2.8?
@@ -114901,10 +114901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ002E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error creating file !1:!2 message = !3." Em portugues: "erro creating arquivo !1:!2 mensagem = !3.". Temas: erro arquivo mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ002E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error creating file !1:!2 message = !3." Em portugues: "erro creating arquivo !1:!2 mensagem = !3.". Temas: erro arquivo mensagem. Em outras palavras: Ocorreu um erro ao criar o arquivo indicado no sistema, reportando a mensagem de erro retornada pelo sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ002E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error creating file message portugues erro arquivo Temas significa`
+> `AWSDEQ002E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error creating file message portugues erro arquivo Temas outras palavras Ocorreu criar indicado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ002E no HCL Workload Automation 10.2.8?
@@ -114921,10 +114921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ003E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting name pipe mode !1:!2 message = !3." Em portugues: "erro configuracao nome pipe mode !1:!2 mensagem = !3.". Temas: erro nome mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ003E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting name pipe mode !1:!2 message = !3." Em portugues: "erro configuracao nome pipe mode !1:!2 mensagem = !3.". Temas: erro nome mensagem. Em outras palavras: Ocorreu um erro ao definir o modo da fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema durante a configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ003E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting name pipe mode message portugues erro configuracao nome Temas significa`
+> `AWSDEQ003E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting name pipe mode message portugues erro configuracao nome Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ003E no HCL Workload Automation 10.2.8?
@@ -114941,10 +114941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ004E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error writing to file !1:!2 message = !3." Em portugues: "erro writing to arquivo !1:!2 mensagem = !3.". Temas: erro arquivo mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ004E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error writing to file !1:!2 message = !3." Em portugues: "erro writing to arquivo !1:!2 mensagem = !3.". Temas: erro arquivo mensagem. Em outras palavras: Ocorreu um erro ao gravar dados no arquivo indicado, reportando a mensagem de erro retornada pelo sistema durante a escrita..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ004E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error writing file message portugues erro arquivo Temas significa`
+> `AWSDEQ004E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error writing file message portugues erro arquivo Temas outras palavras Ocorreu gravar dados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ004E no HCL Workload Automation 10.2.8?
@@ -114961,10 +114961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ005E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error connecting to pipe !1:!2 message = !3." Em portugues: "erro connecting to pipe !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ005E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error connecting to pipe !1:!2 message = !3." Em portugues: "erro connecting to pipe !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao estabelecer conexão com a fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ005E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error connecting pipe message portugues erro Temas significa`
+> `AWSDEQ005E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error connecting pipe message portugues erro Temas outras palavras Ocorreu estabelecer fila nomeada indicada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ005E no HCL Workload Automation 10.2.8?
@@ -114981,10 +114981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ006E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error reading from file !1:!2 message = !3." Em portugues: "erro reading from arquivo !1:!2 mensagem = !3.". Temas: erro arquivo mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ006E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error reading from file !1:!2 message = !3." Em portugues: "erro reading from arquivo !1:!2 mensagem = !3.". Temas: erro arquivo mensagem. Em outras palavras: Ocorreu um erro ao ler dados do arquivo indicado, reportando a mensagem de erro retornada pelo sistema durante a leitura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ006E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error reading from file message portugues erro arquivo Temas significa`
+> `AWSDEQ006E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error reading from file message portugues erro arquivo Temas outras palavras Ocorreu ler`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ006E no HCL Workload Automation 10.2.8?
@@ -115001,10 +115001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ007E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error impersonating pipe client !1:!2 message = !3." Em portugues: "erro impersonating pipe cliente !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ007E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error impersonating pipe client !1:!2 message = !3." Em portugues: "erro impersonating pipe cliente !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao assumir a identidade do cliente da fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ007E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error impersonating pipe client message portugues erro cliente Temas significa`
+> `AWSDEQ007E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error impersonating pipe client message portugues erro cliente Temas outras palavras Ocorreu assumir identidade`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ007E no HCL Workload Automation 10.2.8?
@@ -115021,10 +115021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ008E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening thread token !1:!2 message = !3." Em portugues: "erro opening thread token !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ008E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening thread token !1:!2 message = !3." Em portugues: "erro opening thread token !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao abrir o token da thread indicado, reportando a mensagem de erro retornada pelo sistema durante a abertura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ008E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening thread token message portugues erro Temas significa`
+> `AWSDEQ008E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening thread token message portugues erro Temas outras palavras Ocorreu abrir`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ008E no HCL Workload Automation 10.2.8?
@@ -115041,10 +115041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ009E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error initializing SD !1:!2 message = !3." Em portugues: "erro initializing sd !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ009E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error initializing SD !1:!2 message = !3." Em portugues: "erro initializing sd !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao inicializar o descritor de segurança indicado, reportando a mensagem de erro retornada pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ009E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error initializing message portugues erro Temas significa diagnosticar`
+> `AWSDEQ009E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error initializing message portugues erro Temas outras palavras Ocorreu inicializar descritor indicado reportando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ009E no HCL Workload Automation 10.2.8?
@@ -115061,10 +115061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ010E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting SD DACL !1:!2 message = !3." Em portugues: "erro configuracao sd dacl !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ010E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting SD DACL !1:!2 message = !3." Em portugues: "erro configuracao sd dacl !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao definir a lista de controle de acesso do descritor de segurança indicado, reportando a mensagem de erro do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ010E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting DACL message portugues erro configuracao dacl Temas significa`
+> `AWSDEQ010E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting DACL message portugues erro configuracao dacl Temas outras palavras Ocorreu definir lista controle acesso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ010E no HCL Workload Automation 10.2.8?
@@ -115081,10 +115081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ011E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error creating name pipe !1:!2 message = !3." Em portugues: "erro creating nome pipe !1:!2 mensagem = !3.". Temas: erro nome mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ011E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error creating name pipe !1:!2 message = !3." Em portugues: "erro creating nome pipe !1:!2 mensagem = !3.". Temas: erro nome mensagem. Em outras palavras: Ocorreu um erro ao criar a fila nomeada indicada, reportando a mensagem de erro retornada pelo sistema durante a criação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ011E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error creating name pipe message portugues erro nome Temas significa`
+> `AWSDEQ011E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error creating name pipe message portugues erro nome Temas outras palavras Ocorreu criar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ011E no HCL Workload Automation 10.2.8?
@@ -115101,10 +115101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ012E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error searching path !1:!2 message = !3." Em portugues: "erro searching caminho !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ012E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error searching path !1:!2 message = !3." Em portugues: "erro searching caminho !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao pesquisar o caminho indicado no sistema, reportando a mensagem de erro retornada pelo sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ012E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error searching path message portugues erro caminho Temas significa`
+> `AWSDEQ012E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error searching path message portugues erro caminho Temas outras palavras Ocorreu pesquisar indicado sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ012E no HCL Workload Automation 10.2.8?
@@ -115121,10 +115121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ013E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting file security !1:!2 message = !3." Em portugues: "erro getting arquivo seguranca !1:!2 mensagem = !3.". Temas: erro arquivo mensagem seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ013E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting file security !1:!2 message = !3." Em portugues: "erro getting arquivo seguranca !1:!2 mensagem = !3.". Temas: erro arquivo mensagem seguranca. Em outras palavras: Ocorreu um erro ao obter as informações de segurança do arquivo indicado, reportando a mensagem de erro retornada pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ013E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting file security message portugues erro arquivo seguranca Temas significa`
+> `AWSDEQ013E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting file security message portugues erro arquivo seguranca Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ013E no HCL Workload Automation 10.2.8?
@@ -115141,10 +115141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ014E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting file owner !1:!2 message = !3." Em portugues: "erro getting arquivo dono !1:!2 mensagem = !3.". Temas: erro arquivo mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ014E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting file owner !1:!2 message = !3." Em portugues: "erro getting arquivo dono !1:!2 mensagem = !3.". Temas: erro arquivo mensagem. Em outras palavras: Ocorreu um erro ao obter o proprietário do arquivo indicado, reportando a mensagem de erro retornada pelo sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ014E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting file owner message portugues erro arquivo dono Temas significa`
+> `AWSDEQ014E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting file owner message portugues erro arquivo dono Temas outras palavras Ocorreu obter`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ014E no HCL Workload Automation 10.2.8?
@@ -115161,10 +115161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ015E (severidade: error, familia AWSDEQ - deq) tem o texto: "No owner defined for file !1:!2." Em portugues: "no dono defined for arquivo !1:!2.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ015E (severidade: error, familia AWSDEQ - deq) tem o texto: "No owner defined for file !1:!2." Em portugues: "no dono defined for arquivo !1:!2.". Temas: arquivo. Em outras palavras: Não há proprietário definido para o arquivo indicado, impossibilitando a identificação do responsável pelos dados do recurso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ015E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto owner defined for file portugues dono arquivo Temas significa diagnosticar`
+> `AWSDEQ015E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto owner defined for file portugues dono arquivo Temas outras palavras definido indicado impossibilitando pelos dados recurso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ015E no HCL Workload Automation 10.2.8?
@@ -115181,10 +115181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ016E (severidade: error, familia AWSDEQ - deq) tem o texto: "Unexpected success of ReadFile routine. Expected failure !1:!2." Em portugues: "unexpected sucesso of readfile routine. esperado falha !1:!2.". Temas: esperado falha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ016E (severidade: error, familia AWSDEQ - deq) tem o texto: "Unexpected success of ReadFile routine. Expected failure !1:!2." Em portugues: "unexpected sucesso of readfile routine. esperado falha !1:!2.". Temas: esperado falha. Em outras palavras: A rotina de leitura retornou sucesso de forma inesperada quando se esperava uma falha, reportando o resultado anômalo da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ016E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Unexpected success ReadFile routine Expected failure portugues unexpected sucesso readfile esperado falha Temas significa`
+> `AWSDEQ016E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Unexpected success ReadFile routine Expected failure portugues unexpected sucesso readfile esperado falha Temas outras palavras rotina leitura`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ016E no HCL Workload Automation 10.2.8?
@@ -115201,10 +115201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ017E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error converting SID to name !1:!2 message = !3." Em portugues: "erro converting sid to nome !1:!2 mensagem = !3.". Temas: erro nome mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ017E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error converting SID to name !1:!2 message = !3." Em portugues: "erro converting sid to nome !1:!2 mensagem = !3.". Temas: erro nome mensagem. Em outras palavras: Ocorreu um erro ao converter o identificador de segurança para o nome indicado, reportando a mensagem de erro retornada pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ017E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error converting SID name message portugues erro sid nome Temas significa`
+> `AWSDEQ017E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error converting SID name message portugues erro sid nome Temas outras palavras Ocorreu converter`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ017E no HCL Workload Automation 10.2.8?
@@ -115221,10 +115221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ018E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening Service control manager !1:!2 message = !3." Em portugues: "erro opening service control manager !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ018E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening Service control manager !1:!2 message = !3." Em portugues: "erro opening service control manager !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao abrir o gerenciador de controle de serviços, reportando a mensagem de erro retornada pelo sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ018E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening Service control message portugues erro service Temas significa`
+> `AWSDEQ018E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening Service control message portugues erro service Temas outras palavras Ocorreu abrir gerenciador`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ018E no HCL Workload Automation 10.2.8?
@@ -115241,10 +115241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ019E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening service !1:!2 message = !3." Em portugues: "erro opening service !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ019E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening service !1:!2 message = !3." Em portugues: "erro opening service !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao abrir o serviço indicado, reportando a mensagem de erro retornada pelo sistema durante a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ019E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening service message portugues erro Temas significa`
+> `AWSDEQ019E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening service message portugues erro Temas outras palavras Ocorreu abrir indicado reportando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ019E no HCL Workload Automation 10.2.8?
@@ -115261,10 +115261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ020E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error querying service status !1:!2 message = !3." Em portugues: "erro querying service estado !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ020E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error querying service status !1:!2 message = !3." Em portugues: "erro querying service estado !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Ocorreu um erro ao consultar o status do serviço indicado, reportando a mensagem de erro retornada pelo sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ020E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error querying service status message portugues erro estado Temas significa`
+> `AWSDEQ020E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error querying service status message portugues erro estado Temas outras palavras Ocorreu consultar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ020E no HCL Workload Automation 10.2.8?
@@ -115281,7 +115281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ021E (severidade: error, familia AWSDEQ - deq) tem o texto: "HCL Workload Scheduler Token Service is not running, restart the service." Em portugues: "hcl workload scheduler token service is nao em execucao, reiniciar the service.". Temas: nao carga de trabalho reiniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ021E (severidade: error, familia AWSDEQ - deq) tem o texto: "HCL Workload Scheduler Token Service is not running, restart the service." Em portugues: "hcl workload scheduler token service is nao em execucao, reiniciar the service.". Temas: nao carga de trabalho reiniciar. Em outras palavras: O serviço de token do HCL Workload Scheduler não está ativo, então é preciso reiniciá-lo para restaurar a autenticação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEQ021E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Scheduler Token Service not running restart the service portugues scheduler token nao execucao reiniciar Temas carga`
@@ -115301,10 +115301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ022E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening process token !1:!2 message = !3." Em portugues: "erro opening process token !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ022E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error opening process token !1:!2 message = !3." Em portugues: "erro opening process token !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Falhou a abertura do token do processo e a operação não pôde ser concluída conforme esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ022E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening process token message portugues erro Temas significa`
+> `AWSDEQ022E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error opening process token message portugues erro Temas outras palavras Falhou abertura processo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ022E no HCL Workload Automation 10.2.8?
@@ -115321,10 +115321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ023E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting token information !1:!2 message = !3." Em portugues: "erro getting token information !1:!2 mensagem = !3.". Temas: erro mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ023E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting token information !1:!2 message = !3." Em portugues: "erro getting token information !1:!2 mensagem = !3.". Temas: erro mensagem. Em outras palavras: Não foi possível obter as informações do token do processo durante a tentativa de leitura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ023E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting token information message portugues erro Temas significa`
+> `AWSDEQ023E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting token information message portugues erro Temas outras palavras foi obter processo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ023E no HCL Workload Automation 10.2.8?
@@ -115341,10 +115341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ024E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error owner is not of type user in !1:!2." Em portugues: "erro dono is nao of tipo usuario in !1:!2.". Temas: erro nao usuario tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ024E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error owner is not of type user in !1:!2." Em portugues: "erro dono is nao of tipo usuario in !1:!2.". Temas: erro nao usuario tipo. Em outras palavras: O proprietário do recurso não corresponde a um usuário válido e a operação foi rejeitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ024E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error owner not type user portugues erro dono nao tipo usuario Temas significa`
+> `AWSDEQ024E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error owner not type user portugues erro dono nao tipo usuario Temas outras palavras recurso corresponde`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ024E no HCL Workload Automation 10.2.8?
@@ -115361,10 +115361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ025E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error reverting context to self in !1:!2." Em portugues: "erro reverting context to self in !1:!2.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ025E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error reverting context to self in !1:!2." Em portugues: "erro reverting context to self in !1:!2.". Temas: erro. Em outras palavras: Falha ao tentar voltar o contexto de segurança para o usuário original da chamada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ025E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error reverting context self portugues erro Temas significa diagnosticar`
+> `AWSDEQ025E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error reverting context self portugues erro Temas outras palavras Falha tentar voltar contexto original chamada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ025E no HCL Workload Automation 10.2.8?
@@ -115381,10 +115381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ026E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting volume information in !1:!2." Em portugues: "erro getting volume information in !1:!2.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ026E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error getting volume information in !1:!2." Em portugues: "erro getting volume information in !1:!2.". Temas: erro. Em outras palavras: Não foi possível recuperar os dados de volume necessários para prosseguir com a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ026E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting volume information portugues erro Temas significa diagnosticar`
+> `AWSDEQ026E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error getting volume information portugues erro Temas outras palavras foi recuperar dados prosseguir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ026E no HCL Workload Automation 10.2.8?
@@ -115401,10 +115401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ027E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error impersonating self in !1:!2." Em portugues: "erro impersonating self in !1:!2.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ027E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error impersonating self in !1:!2." Em portugues: "erro impersonating self in !1:!2.". Temas: erro. Em outras palavras: Erro ao tentar assumir temporariamente a identidade do próprio processo para executar a ação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ027E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error impersonating self portugues erro Temas significa diagnosticar`
+> `AWSDEQ027E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error impersonating self portugues erro Temas outras palavras Erro tentar assumir temporariamente identidade processo executar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ027E no HCL Workload Automation 10.2.8?
@@ -115421,10 +115421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ028E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting token information in !1:!2." Em portugues: "erro configuracao token information in !1:!2.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ028E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error setting token information in !1:!2." Em portugues: "erro configuracao token information in !1:!2.". Temas: erro. Em outras palavras: Falha ao tentar gravar ou atualizar as informações associadas ao token do processo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ028E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting token information portugues erro configuracao Temas significa diagnosticar`
+> `AWSDEQ028E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error setting token information portugues erro configuracao Temas outras palavras Falha tentar gravar atualizar associadas processo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ028E no HCL Workload Automation 10.2.8?
@@ -115441,10 +115441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ028E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEQ029E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error generic NT error !1:!2." Em portugues: "erro generic nt erro !1:!2.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEQ029E (severidade: error, familia AWSDEQ - deq) tem o texto: "Error generic NT error !1:!2." Em portugues: "erro generic nt erro !1:!2.". Temas: erro. Em outras palavras: Ocorreu um erro genérico do sistema operacional Windows durante a execução da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEQ029E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error generic portugues erro Temas significa diagnosticar`
+> `AWSDEQ029E 10.2.8 mensagem severidade error familia AWSDEQ deq tem texto Error generic portugues erro Temas outras palavras Ocorreu sistema operacional Windows durante significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEQ029E no HCL Workload Automation 10.2.8?
@@ -115461,10 +115461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEQ029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDER001E (severidade: error, familia AWSDER - der) tem o texto: "Malloc failed !1:!2 error = !3." Em portugues: "malloc falhou !1:!2 erro = !3.". Temas: erro falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDER001E (severidade: error, familia AWSDER - der) tem o texto: "Malloc failed !1:!2 error = !3." Em portugues: "malloc falhou !1:!2 erro = !3.". Temas: erro falhou. Em outras palavras: A alocação de memória falhou por falta de recursos disponíveis, impedindo a operação de continuar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDER001E 10.2.8 mensagem severidade error familia AWSDER der tem texto Malloc failed portugues malloc falhou erro Temas significa diagnosticar`
+> `AWSDER001E 10.2.8 mensagem severidade error familia AWSDER der tem texto Malloc failed portugues malloc falhou erro Temas outras palavras falta recursos impedindo continuar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDER001E no HCL Workload Automation 10.2.8?
@@ -115481,10 +115481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDER001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDER002E (severidade: error, familia AWSDER - der) tem o texto: "Calloc failed !1:!2 error = !3." Em portugues: "calloc falhou !1:!2 erro = !3.". Temas: erro falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDER002E (severidade: error, familia AWSDER - der) tem o texto: "Calloc failed !1:!2 error = !3." Em portugues: "calloc falhou !1:!2 erro = !3.". Temas: erro falhou. Em outras palavras: A inicialização do bloco de memória falhou e a operação não pôde ser concluída..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDER002E 10.2.8 mensagem severidade error familia AWSDER der tem texto Calloc failed portugues calloc falhou erro Temas significa diagnosticar`
+> `AWSDER002E 10.2.8 mensagem severidade error familia AWSDER der tem texto Calloc failed portugues calloc falhou erro Temas outras palavras bloco significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDER002E no HCL Workload Automation 10.2.8?
@@ -115501,10 +115501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDER002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDER003E (severidade: error, familia AWSDER - der) tem o texto: "Realloc failed !1:!2 error = !3." Em portugues: "realloc falhou !1:!2 erro = !3.". Temas: erro falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDER003E (severidade: error, familia AWSDER - der) tem o texto: "Realloc failed !1:!2 error = !3." Em portugues: "realloc falhou !1:!2 erro = !3.". Temas: erro falhou. Em outras palavras: Não foi possível redimensionar o bloco de memória alocado, interrompendo a operação atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDER003E 10.2.8 mensagem severidade error familia AWSDER der tem texto Realloc failed portugues realloc falhou erro Temas significa diagnosticar`
+> `AWSDER003E 10.2.8 mensagem severidade error familia AWSDER der tem texto Realloc failed portugues realloc falhou erro Temas outras palavras foi redimensionar bloco alocado interrompendo atual significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDER003E no HCL Workload Automation 10.2.8?
@@ -115521,10 +115521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDER003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES001E (severidade: error, familia AWSDES - des) tem o texto: "Expected the keyword USERNAME." Em portugues: "esperado the keyword username.". Temas: palavra-chave esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES001E (severidade: error, familia AWSDES - des) tem o texto: "Expected the keyword USERNAME." Em portugues: "esperado the keyword username.". Temas: palavra-chave esperado. Em outras palavras: O arquivo de definição de usuário não contém a palavra-chave obrigatória de identificação do usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES001E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected the keyword USERNAME portugues esperado username Temas palavra-chave significa`
+> `AWSDES001E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected the keyword USERNAME portugues esperado username Temas palavra-chave outras palavras arquivo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES001E no HCL Workload Automation 10.2.8?
@@ -115541,10 +115541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES002E (severidade: error, familia AWSDES - des) tem o texto: "Expected a valid user-id (domain\user or user ) here." Em portugues: "esperado a valido usuario-id (dominio\usuario or usuario ) here.". Temas: valido usuario esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES002E (severidade: error, familia AWSDES - des) tem o texto: "Expected a valid user-id (domain\user or user ) here." Em portugues: "esperado a valido usuario-id (dominio\usuario or usuario ) here.". Temas: valido usuario esperado. Em outras palavras: Foi informado um identificador de usuário inválido, devendo ser usado o formato domínio e usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES002E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected valid user-id user here portugues esperado valido usuario-id dominio usuario Temas significa`
+> `AWSDES002E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected valid user-id user here portugues esperado valido usuario-id dominio usuario Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES002E no HCL Workload Automation 10.2.8?
@@ -115561,10 +115561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES003E (severidade: error, familia AWSDES - des) tem o texto: "Expected the keyword END." Em portugues: "esperado the keyword end.". Temas: palavra-chave esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES003E (severidade: error, familia AWSDES - des) tem o texto: "Expected the keyword END." Em portugues: "esperado the keyword end.". Temas: palavra-chave esperado. Em outras palavras: O arquivo de definição de usuário deveria conter o marcador de fim, que não foi encontrado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES003E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected the keyword END portugues esperado end Temas palavra-chave significa`
+> `AWSDES003E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected the keyword END portugues esperado end Temas palavra-chave outras palavras arquivo deveria conter marcador fim foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES003E no HCL Workload Automation 10.2.8?
@@ -115581,10 +115581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES004E (severidade: error, familia AWSDES - des) tem o texto: "Expected the user attributes to be entered." Em portugues: "esperado the usuario attributes to be entered.". Temas: usuario esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES004E (severidade: error, familia AWSDES - des) tem o texto: "Expected the user attributes to be entered." Em portugues: "esperado the usuario attributes to be entered.". Temas: usuario esperado. Em outras palavras: Nenhum atributo de usuário foi informado quando era obrigatório preencher essa seção..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES004E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected the user attributes entered portugues esperado usuario Temas significa`
+> `AWSDES004E 10.2.8 mensagem severidade error familia AWSDES des tem texto Expected the user attributes entered portugues esperado usuario Temas outras palavras Nenhum atributo foi informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES004E no HCL Workload Automation 10.2.8?
@@ -115601,10 +115601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES005E (severidade: error, familia AWSDES - des) tem o texto: "Password attributed is required." Em portugues: "senha attributed is obrigatorio.". Temas: senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES005E (severidade: error, familia AWSDES - des) tem o texto: "Password attributed is required." Em portugues: "senha attributed is obrigatorio.". Temas: senha. Em outras palavras: A senha é um atributo obrigatório e não pode ficar em branco na definição do usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES005E 10.2.8 mensagem severidade error familia AWSDES des tem texto Password attributed required portugues senha obrigatorio Temas significa diagnosticar`
+> `AWSDES005E 10.2.8 mensagem severidade error familia AWSDES des tem texto Password attributed required portugues senha obrigatorio Temas outras palavras atributo ficar branco significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES005E no HCL Workload Automation 10.2.8?
@@ -115621,10 +115621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES006E (severidade: error, familia AWSDES - des) tem o texto: "Duplicate PASSWORD keyword" Em portugues: "duplicate senha keyword". Temas: palavra-chave senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES006E (severidade: error, familia AWSDES - des) tem o texto: "Duplicate PASSWORD keyword" Em portugues: "duplicate senha keyword". Temas: palavra-chave senha. Em outras palavras: A palavra-chave de senha foi informada mais de uma vez, o que não é permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES006E 10.2.8 mensagem severidade error familia AWSDES des tem texto Duplicate PASSWORD keyword portugues duplicate senha Temas palavra-chave significa diagnosticar`
+> `AWSDES006E 10.2.8 mensagem severidade error familia AWSDES des tem texto Duplicate PASSWORD keyword portugues duplicate senha Temas palavra-chave outras palavras foi informada mais vez permitido significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES006E no HCL Workload Automation 10.2.8?
@@ -115641,10 +115641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES007E (severidade: error, familia AWSDES - des) tem o texto: "The domain name is syntactically invalid" Em portugues: "the dominio nome is syntactically invalido". Temas: nome invalido dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES007E (severidade: error, familia AWSDES - des) tem o texto: "The domain name is syntactically invalid" Em portugues: "the dominio nome is syntactically invalido". Temas: nome invalido dominio. Em outras palavras: O nome do domínio informado tem uma sintaxe inválida e precisa ser corrigido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES007E 10.2.8 mensagem severidade error familia AWSDES des tem texto The name syntactically invalid portugues the dominio nome invalido Temas significa`
+> `AWSDES007E 10.2.8 mensagem severidade error familia AWSDES des tem texto The name syntactically invalid portugues the dominio nome invalido Temas outras palavras informado sintaxe`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES007E no HCL Workload Automation 10.2.8?
@@ -115661,10 +115661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES008E (severidade: error, familia AWSDES - des) tem o texto: "The user name is syntactically invalid" Em portugues: "the usuario nome is syntactically invalido". Temas: nome invalido usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES008E (severidade: error, familia AWSDES - des) tem o texto: "The user name is syntactically invalid" Em portugues: "the usuario nome is syntactically invalido". Temas: nome invalido usuario. Em outras palavras: O nome do usuário informado apresenta sintaxe inválida e deve ser revisado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES008E 10.2.8 mensagem severidade error familia AWSDES des tem texto The user name syntactically invalid portugues the usuario nome invalido Temas significa`
+> `AWSDES008E 10.2.8 mensagem severidade error familia AWSDES des tem texto The user name syntactically invalid portugues the usuario nome invalido Temas outras palavras informado apresenta`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES008E no HCL Workload Automation 10.2.8?
@@ -115681,7 +115681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES009E (severidade: error, familia AWSDES - des) tem o texto: "The user name is longer than the maximum allowed length, which is 47 bytes. If the name contains special characters it must be enclosed in quotes (")." Em portugues: "the usuario nome is longer que the maximo allowed tamanho, which is 47 bytes. if the nome contains special characters it must be enclosed in quotes (").". Temas: nome usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES009E (severidade: error, familia AWSDES - des) tem o texto: "The user name is longer than the maximum allowed length, which is 47 bytes. If the name contains special characters it must be enclosed in quotes (")." Em portugues: "the usuario nome is longer que the maximo allowed tamanho, which is 47 bytes. if the nome contains special characters it must be enclosed in quotes (").". Temas: nome usuario. Em outras palavras: O nome do usuário excede o tamanho máximo permitido e, se tiver caracteres especiais, precisa estar entre aspas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDES009E 10.2.8 mensagem severidade error familia AWSDES des tem texto The user name longer than the maximum allowed length which bytes contains special characters must enclosed quotes portugues`
@@ -115701,7 +115701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES010E (severidade: error, familia AWSDES - des) tem o texto: "The domain name is longer than the maximum allowed length, which is 47 bytes." Em portugues: "the dominio nome is longer que the maximo allowed tamanho, which is 47 bytes.". Temas: nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES010E (severidade: error, familia AWSDES - des) tem o texto: "The domain name is longer than the maximum allowed length, which is 47 bytes." Em portugues: "the dominio nome is longer que the maximo allowed tamanho, which is 47 bytes.". Temas: nome dominio. Em outras palavras: O nome do domínio informado ultrapassa o limite máximo de caracteres permitido na definição..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDES010E 10.2.8 mensagem severidade error familia AWSDES des tem texto The name longer than the maximum allowed length which bytes portugues dominio nome maximo tamanho`
@@ -115721,10 +115721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES012E (severidade: error, familia AWSDES - des) tem o texto: "The supplied workstation name is invalid." Em portugues: "the informado estacao de trabalho nome is invalido.". Temas: estacao de trabalho nome informado invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES012E (severidade: error, familia AWSDES - des) tem o texto: "The supplied workstation name is invalid." Em portugues: "the informado estacao de trabalho nome is invalido.". Temas: estacao de trabalho nome informado invalido. Em outras palavras: O nome da estação de trabalho informado não é válido para esta operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES012E 10.2.8 mensagem severidade error familia AWSDES des tem texto The supplied workstation name invalid portugues the informado estacao trabalho nome invalido Temas significa`
+> `AWSDES012E 10.2.8 mensagem severidade error familia AWSDES des tem texto The supplied workstation name invalid portugues the informado estacao trabalho nome invalido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES012E no HCL Workload Automation 10.2.8?
@@ -115741,10 +115741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES013E (severidade: error, familia AWSDES - des) tem o texto: "Invalid password syntax." Em portugues: "invalido senha sintaxe.". Temas: sintaxe invalido senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES013E (severidade: error, familia AWSDES - des) tem o texto: "Invalid password syntax." Em portugues: "invalido senha sintaxe.". Temas: sintaxe invalido senha. Em outras palavras: A senha informada não segue a sintaxe exigida pelo sistema e foi rejeitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES013E 10.2.8 mensagem severidade error familia AWSDES des tem texto Invalid password syntax portugues invalido senha sintaxe Temas significa diagnosticar`
+> `AWSDES013E 10.2.8 mensagem severidade error familia AWSDES des tem texto Invalid password syntax portugues invalido senha sintaxe Temas outras palavras informada segue exigida pelo sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES013E no HCL Workload Automation 10.2.8?
@@ -115761,10 +115761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES014E (severidade: error, familia AWSDES - des) tem o texto: "Error opening input user definition file." Em portugues: "erro opening entrada usuario definicao arquivo.". Temas: erro arquivo usuario definicao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES014E (severidade: error, familia AWSDES - des) tem o texto: "Error opening input user definition file." Em portugues: "erro opening entrada usuario definicao arquivo.". Temas: erro arquivo usuario definicao. Em outras palavras: Não foi possível abrir o arquivo de entrada que contém as definições de usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES014E 10.2.8 mensagem severidade error familia AWSDES des tem texto Error opening input user definition file portugues erro entrada usuario definicao arquivo Temas significa`
+> `AWSDES014E 10.2.8 mensagem severidade error familia AWSDES des tem texto Error opening input user definition file portugues erro entrada usuario definicao arquivo Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES014E no HCL Workload Automation 10.2.8?
@@ -115781,7 +115781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES015E (severidade: error, familia AWSDES - des) tem o texto: "The password is longer than the maximum allowed length, which is 31 bytes." Em portugues: "the senha is longer que the maximo allowed tamanho, which is 31 bytes.". Temas: senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES015E (severidade: error, familia AWSDES - des) tem o texto: "The password is longer than the maximum allowed length, which is 31 bytes." Em portugues: "the senha is longer que the maximo allowed tamanho, which is 31 bytes.". Temas: senha. Em outras palavras: A senha informada excede o tamanho máximo permitido e precisa ser encurtada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDES015E 10.2.8 mensagem severidade error familia AWSDES des tem texto The password longer than the maximum allowed length which bytes portugues senha maximo tamanho`
@@ -115801,10 +115801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDES103I (severidade: informational, familia AWSDES - des) tem o texto: ""%s" line %d: %s %d: %s" Em portugues: ""%s" linha %d: %s %d: %s". Temas: linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDES103I (severidade: informational, familia AWSDES - des) tem o texto: ""%s" line %d: %s %d: %s" Em portugues: ""%s" linha %d: %s %d: %s". Temas: linha. Em outras palavras: O processador informa a linha e o conteúdo do arquivo onde detectou uma inconsistência..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDES103I 10.2.8 mensagem severidade informational familia AWSDES des tem texto line portugues linha Temas significa diagnosticar`
+> `AWSDES103I 10.2.8 mensagem severidade informational familia AWSDES des tem texto line portugues linha Temas outras palavras processador informa arquivo onde detectou significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDES103I no HCL Workload Automation 10.2.8?
@@ -115821,10 +115821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDES103I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET001E (severidade: error, familia AWSDET - det) tem o texto: "Error, attempt to open newer revision of file" Em portugues: "erro, tentativa to open newer revision of arquivo". Temas: erro arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET001E (severidade: error, familia AWSDET - det) tem o texto: "Error, attempt to open newer revision of file" Em portugues: "erro, tentativa to open newer revision of arquivo". Temas: erro arquivo. Em outras palavras: Foi feita uma tentativa de abrir uma versão mais recente do arquivo do que a suportada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET001E 10.2.8 mensagem severidade error familia AWSDET det tem texto Error attempt open newer revision file portugues erro tentativa arquivo Temas significa`
+> `AWSDET001E 10.2.8 mensagem severidade error familia AWSDET det tem texto Error attempt open newer revision file portugues erro tentativa arquivo Temas outras palavras Foi feita`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET001E no HCL Workload Automation 10.2.8?
@@ -115841,10 +115841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET002E (severidade: error, familia AWSDET - det) tem o texto: "Error, userdata file has not been opened" Em portugues: "erro, userdata arquivo has nao estado opened". Temas: erro nao arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET002E (severidade: error, familia AWSDET - det) tem o texto: "Error, userdata file has not been opened" Em portugues: "erro, userdata arquivo has nao estado opened". Temas: erro nao arquivo. Em outras palavras: O arquivo de dados de usuário ainda não foi aberto antes da operação solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET002E 10.2.8 mensagem severidade error familia AWSDET det tem texto Error userdata file has not been opened portugues erro arquivo nao estado Temas significa`
+> `AWSDET002E 10.2.8 mensagem severidade error familia AWSDET det tem texto Error userdata file has not been opened portugues erro arquivo nao estado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET002E no HCL Workload Automation 10.2.8?
@@ -115861,10 +115861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET003E (severidade: error, familia AWSDET - det) tem o texto: "End of chain/no more matches." Em portugues: "end of chain/no mais matches.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDET003E (severidade: error, familia AWSDET - det) tem o texto: "End of chain/no more matches." Em portugues: "end of chain/no mais matches.". Em outras palavras: A lista chegou ao fim sem que houvesse mais correspondências para a busca em curso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET003E 10.2.8 mensagem severidade error familia AWSDET det tem texto End chain more matches portugues end mais significa diagnosticar`
+> `AWSDET003E 10.2.8 mensagem severidade error familia AWSDET det tem texto End chain more matches portugues end mais outras palavras lista chegou fim sem houvesse busca curso significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET003E no HCL Workload Automation 10.2.8?
@@ -115881,10 +115881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET004E (severidade: error, familia AWSDET - det) tem o texto: "Couldn't create a temporary file: !1" Em portugues: "couldn't criar a temporary arquivo: !1". Temas: arquivo criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET004E (severidade: error, familia AWSDET - det) tem o texto: "Couldn't create a temporary file: !1" Em portugues: "couldn't criar a temporary arquivo: !1". Temas: arquivo criar. Em outras palavras: Não foi possível criar um arquivo temporário necessário para concluir a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET004E 10.2.8 mensagem severidade error familia AWSDET det tem texto Couldn create temporary file portugues couldn criar arquivo Temas significa`
+> `AWSDET004E 10.2.8 mensagem severidade error familia AWSDET det tem texto Couldn create temporary file portugues couldn criar arquivo Temas outras palavras foi concluir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET004E no HCL Workload Automation 10.2.8?
@@ -115901,10 +115901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET005E (severidade: error, familia AWSDET - det) tem o texto: "File system error: !1" Em portugues: "arquivo sistema erro: !1". Temas: erro arquivo sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET005E (severidade: error, familia AWSDET - det) tem o texto: "File system error: !1" Em portugues: "arquivo sistema erro: !1". Temas: erro arquivo sistema. Em outras palavras: Ocorreu um erro do sistema de arquivos que impediu a conclusão da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET005E 10.2.8 mensagem severidade error familia AWSDET det tem texto File system portugues arquivo sistema erro Temas significa diagnosticar`
+> `AWSDET005E 10.2.8 mensagem severidade error familia AWSDET det tem texto File system portugues arquivo sistema erro Temas outras palavras Ocorreu arquivos impediu significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET005E no HCL Workload Automation 10.2.8?
@@ -115921,10 +115921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET006E (severidade: error, familia AWSDET - det) tem o texto: "user not specified in userdata file" Em portugues: "usuario nao especificado in userdata arquivo". Temas: nao arquivo usuario especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET006E (severidade: error, familia AWSDET - det) tem o texto: "user not specified in userdata file" Em portugues: "usuario nao especificado in userdata arquivo". Temas: nao arquivo usuario especificado. Em outras palavras: O arquivo de dados do usuário não indica qual usuário deve ser usado na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET006E 10.2.8 mensagem severidade error familia AWSDET det tem texto user not specified userdata file portugues usuario nao especificado arquivo Temas significa`
+> `AWSDET006E 10.2.8 mensagem severidade error familia AWSDET det tem texto user not specified userdata file portugues usuario nao especificado arquivo Temas outras palavras dados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET006E no HCL Workload Automation 10.2.8?
@@ -115941,10 +115941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET007E (severidade: error, familia AWSDET - det) tem o texto: "error returned from index access functions" Em portugues: "erro returned from indice acesso functions". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET007E (severidade: error, familia AWSDET - det) tem o texto: "error returned from index access functions" Em portugues: "erro returned from indice acesso functions". Temas: erro. Em outras palavras: As funções de acesso ao índice retornaram um erro durante a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET007E 10.2.8 mensagem severidade error familia AWSDET det tem texto returned from index access functions portugues erro indice acesso Temas significa`
+> `AWSDET007E 10.2.8 mensagem severidade error familia AWSDET det tem texto returned from index access functions portugues erro indice acesso Temas outras palavras retornaram`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET007E no HCL Workload Automation 10.2.8?
@@ -115961,10 +115961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET008E (severidade: error, familia AWSDET - det) tem o texto: "ADD: user definition already in database" Em portugues: "add: usuario definicao already in banco de dados". Temas: usuario definicao banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET008E (severidade: error, familia AWSDET - det) tem o texto: "ADD: user definition already in database" Em portugues: "add: usuario definicao already in banco de dados". Temas: usuario definicao banco de dados. Em outras palavras: A definição do usuário já existe na base de dados e a inclusão não pôde ser feita..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET008E 10.2.8 mensagem severidade error familia AWSDET det tem texto ADD user definition already database portugues add usuario definicao dados Temas significa`
+> `AWSDET008E 10.2.8 mensagem severidade error familia AWSDET det tem texto ADD user definition already database portugues add usuario definicao dados Temas outras palavras existe base`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET008E no HCL Workload Automation 10.2.8?
@@ -115981,10 +115981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET009I (severidade: informational, familia AWSDET - det) tem o texto: "REPLACE: user definition in database has changed" Em portugues: "replace: usuario definicao in banco de dados has changed". Temas: usuario definicao banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET009I (severidade: informational, familia AWSDET - det) tem o texto: "REPLACE: user definition in database has changed" Em portugues: "replace: usuario definicao in banco de dados has changed". Temas: usuario definicao banco de dados. Em outras palavras: A definição do usuário na base de dados foi alterada e por isso foi realizada a substituição..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET009I 10.2.8 mensagem severidade informational familia AWSDET det tem texto REPLACE user definition database has changed portugues replace usuario definicao dados Temas significa`
+> `AWSDET009I 10.2.8 mensagem severidade informational familia AWSDET det tem texto REPLACE user definition database has changed portugues replace usuario definicao dados Temas outras palavras base`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET009I no HCL Workload Automation 10.2.8?
@@ -116001,10 +116001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET009I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET010E (severidade: error, familia AWSDET - det) tem o texto: "Access denied to specified user definition" Em portugues: "acesso denied to especificado usuario definicao". Temas: usuario especificado definicao negado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET010E (severidade: error, familia AWSDET - det) tem o texto: "Access denied to specified user definition" Em portugues: "acesso denied to especificado usuario definicao". Temas: usuario especificado definicao negado. Em outras palavras: O acesso à definição do usuário especificado foi negado pelo controle de permissões..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET010E 10.2.8 mensagem severidade error familia AWSDET det tem texto Access denied specified user definition portugues acesso especificado usuario definicao Temas negado significa`
+> `AWSDET010E 10.2.8 mensagem severidade error familia AWSDET det tem texto Access denied specified user definition portugues acesso especificado usuario definicao Temas negado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET010E no HCL Workload Automation 10.2.8?
@@ -116021,10 +116021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET011E (severidade: error, familia AWSDET - det) tem o texto: "Unable to allocate memory" Em portugues: "incapaz to allocate memoria". Temas: nao conseguiu memoria.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET011E (severidade: error, familia AWSDET - det) tem o texto: "Unable to allocate memory" Em portugues: "incapaz to allocate memoria". Temas: nao conseguiu memoria. Em outras palavras: Não havia memória disponível suficiente para alocar o espaço necessário na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDET011E 10.2.8 mensagem severidade error familia AWSDET det tem texto Unable allocate memory portugues incapaz memoria Temas nao conseguiu significa diagnosticar`
+> `AWSDET011E 10.2.8 mensagem severidade error familia AWSDET det tem texto Unable allocate memory portugues incapaz memoria Temas nao conseguiu outras palavras havia suficiente alocar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDET011E no HCL Workload Automation 10.2.8?
@@ -116041,7 +116041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDET012E (severidade: error, familia AWSDET - det) tem o texto: "Invalid user definition read from file" Em portugues: "invalido usuario definicao ler from arquivo". Temas: arquivo invalido usuario definicao ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSDET012E (severidade: error, familia AWSDET - det) tem o texto: "Invalid user definition read from file" Em portugues: "invalido usuario definicao ler from arquivo". Temas: arquivo invalido usuario definicao ler leitura. Em outras palavras: A definição de usuário lida do arquivo está inválida ou corrompida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDET012E 10.2.8 mensagem severidade error familia AWSDET det tem texto Invalid user definition read from file portugues invalido usuario definicao ler arquivo Temas leitura`
@@ -116061,10 +116061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDET012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU001E (severidade: error, familia AWSDEU - deu) tem o texto: "**ERROR** Adding domain !1 would cause a loop in the domain hierarchy." Em portugues: "**erro** adding dominio !1 would causa a loop in the dominio hierarchy.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU001E (severidade: error, familia AWSDEU - deu) tem o texto: "**ERROR** Adding domain !1 would cause a loop in the domain hierarchy." Em portugues: "**erro** adding dominio !1 would causa a loop in the dominio hierarchy.". Temas: dominio. Em outras palavras: Incluir o domínio informado criaria um ciclo na hierarquia de domínios, então a operação foi bloqueada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU001E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto ERROR Adding would cause loop the hierarchy portugues erro adding dominio causa Temas significa`
+> `AWSDEU001E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto ERROR Adding would cause loop the hierarchy portugues erro adding dominio causa Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU001E no HCL Workload Automation 10.2.8?
@@ -116081,10 +116081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU002I (severidade: informational, familia AWSDEU - deu) tem o texto: "At beginning of list." Em portugues: "at beginning of list.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU002I (severidade: informational, familia AWSDEU - deu) tem o texto: "At beginning of list." Em portugues: "at beginning of list.". Em outras palavras: O processamento atingiu o primeiro elemento da lista e está posicionado em seu início..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU002I 10.2.8 mensagem severidade informational familia AWSDEU deu tem texto beginning list portugues significa diagnosticar`
+> `AWSDEU002I 10.2.8 mensagem severidade informational familia AWSDEU deu tem texto beginning list portugues outras palavras processamento atingiu primeiro elemento lista posicionado seu significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU002I no HCL Workload Automation 10.2.8?
@@ -116121,10 +116121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU003I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU004E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to add item to list pointed to by null pointer." Em portugues: "tentativa to add item to list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU004E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to add item to list pointed to by null pointer." Em portugues: "tentativa to add item to list pointed to by null pointer.". Em outras palavras: Tentativa de acrescentar um item a uma lista que aponta para um endereço nulo e inexistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU004E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt add item list pointed null pointer portugues tentativa significa`
+> `AWSDEU004E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt add item list pointed null pointer portugues tentativa outras palavras Tentativa acrescentar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU004E no HCL Workload Automation 10.2.8?
@@ -116141,10 +116141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU005E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to delete from a list pointed to by null pointer." Em portugues: "tentativa to excluir from a list pointed to by null pointer.". Temas: excluir.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU005E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to delete from a list pointed to by null pointer." Em portugues: "tentativa to excluir from a list pointed to by null pointer.". Temas: excluir. Em outras palavras: Tentativa de remover um elemento de uma lista apontada por um ponteiro nulo e inexistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU005E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt delete from list pointed null pointer portugues tentativa excluir Temas significa`
+> `AWSDEU005E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt delete from list pointed null pointer portugues tentativa excluir Temas outras palavras Tentativa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU005E no HCL Workload Automation 10.2.8?
@@ -116161,10 +116161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU006E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to delete from empty list." Em portugues: "tentativa to excluir from empty list.". Temas: excluir.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU006E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to delete from empty list." Em portugues: "tentativa to excluir from empty list.". Temas: excluir. Em outras palavras: Foi feita uma tentativa de remover um elemento de uma lista que está vazia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU006E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt delete from empty list portugues tentativa excluir Temas significa`
+> `AWSDEU006E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt delete from empty list portugues tentativa excluir Temas outras palavras Foi feita remover elemento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU006E no HCL Workload Automation 10.2.8?
@@ -116181,10 +116181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU007E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find last position in list pointed to by null pointer." Em portugues: "tentativa to find last position in list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU007E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find last position in list pointed to by null pointer." Em portugues: "tentativa to find last position in list pointed to by null pointer.". Em outras palavras: Tentativa de localizar o último elemento de uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU007E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find last position list pointed null pointer portugues tentativa significa`
+> `AWSDEU007E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find last position list pointed null pointer portugues tentativa outras palavras Tentativa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU007E no HCL Workload Automation 10.2.8?
@@ -116201,10 +116201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU008E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find length of list pointed to by null pointer." Em portugues: "tentativa to find tamanho of list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU008E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find length of list pointed to by null pointer." Em portugues: "tentativa to find tamanho of list pointed to by null pointer.". Em outras palavras: Tentativa de calcular o tamanho de uma lista apontada por um ponteiro nulo e inexistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU008E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find length list pointed null pointer portugues tentativa tamanho significa`
+> `AWSDEU008E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find length list pointed null pointer portugues tentativa tamanho outras palavras Tentativa calcular`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU008E no HCL Workload Automation 10.2.8?
@@ -116221,10 +116221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU009E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find position at or before zeroth list element." Em portugues: "tentativa to find position at or antes zeroth list element.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU009E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find position at or before zeroth list element." Em portugues: "tentativa to find position at or antes zeroth list element.". Em outras palavras: Foi pedida a posição de um elemento anterior ou igual ao primeiro item da lista..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU009E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find position before zeroth list element portugues tentativa antes significa`
+> `AWSDEU009E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find position before zeroth list element portugues tentativa antes outras palavras Foi pedida elemento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU009E no HCL Workload Automation 10.2.8?
@@ -116241,10 +116241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU010E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find position in list pointed to by null pointer." Em portugues: "tentativa to find position in list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU010E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find position in list pointed to by null pointer." Em portugues: "tentativa to find position in list pointed to by null pointer.". Em outras palavras: Tentativa de localizar uma posição dentro de uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU010E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find position list pointed null pointer portugues tentativa significa`
+> `AWSDEU010E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find position list pointed null pointer portugues tentativa outras palavras Tentativa localizar dentro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU010E no HCL Workload Automation 10.2.8?
@@ -116261,10 +116261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU011E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to free list pointed to by null pointer." Em portugues: "tentativa to free list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU011E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to free list pointed to by null pointer." Em portugues: "tentativa to free list pointed to by null pointer.". Em outras palavras: Tentativa de liberar a memória de uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU011E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt free list pointed null pointer portugues tentativa significa`
+> `AWSDEU011E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt free list pointed null pointer portugues tentativa outras palavras Tentativa liberar lista apontada ponteiro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU011E no HCL Workload Automation 10.2.8?
@@ -116281,10 +116281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU012E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert a null pointer into list." Em portugues: "tentativa to insert a null pointer into list.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU012E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert a null pointer into list." Em portugues: "tentativa to insert a null pointer into list.". Em outras palavras: Foi feita uma tentativa de inserir um ponteiro nulo dentro de uma lista..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU012E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert null pointer into list portugues tentativa significa`
+> `AWSDEU012E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert null pointer into list portugues tentativa outras palavras Foi feita inserir ponteiro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU012E no HCL Workload Automation 10.2.8?
@@ -116301,10 +116301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU013E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert after a null pointer." Em portugues: "tentativa to insert apos a null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU013E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert after a null pointer." Em portugues: "tentativa to insert apos a null pointer.". Em outras palavras: Tentativa de inserir um elemento logo após uma posição apontada por ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU013E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert after null pointer portugues tentativa apos significa diagnosticar`
+> `AWSDEU013E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert after null pointer portugues tentativa apos outras palavras Tentativa inserir elemento logo apontada ponteiro nulo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU013E no HCL Workload Automation 10.2.8?
@@ -116321,10 +116321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU014E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert before a null pointer." Em portugues: "tentativa to insert antes a null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU014E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert before a null pointer." Em portugues: "tentativa to insert antes a null pointer.". Em outras palavras: Tentativa de inserir um elemento antes de uma posição apontada por ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU014E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert before null pointer portugues tentativa antes significa diagnosticar`
+> `AWSDEU014E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert before null pointer portugues tentativa antes outras palavras Tentativa inserir elemento apontada ponteiro nulo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU014E no HCL Workload Automation 10.2.8?
@@ -116341,10 +116341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU015E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert before list header." Em portugues: "tentativa to insert antes list header.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU015E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert before list header." Em portugues: "tentativa to insert antes list header.". Em outras palavras: Tentativa de inserir um elemento antes do cabeçalho que inicia a lista..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU015E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert before list header portugues tentativa antes significa diagnosticar`
+> `AWSDEU015E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert before list header portugues tentativa antes outras palavras Tentativa inserir elemento inicia lista significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU015E no HCL Workload Automation 10.2.8?
@@ -116361,10 +116361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU016E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert into list pointed to by null pointer." Em portugues: "tentativa to insert into list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU016E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert into list pointed to by null pointer." Em portugues: "tentativa to insert into list pointed to by null pointer.". Em outras palavras: Tentativa de inserir um elemento em uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU016E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert into list pointed null pointer portugues tentativa significa`
+> `AWSDEU016E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert into list pointed null pointer portugues tentativa outras palavras Tentativa inserir elemento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU016E no HCL Workload Automation 10.2.8?
@@ -116381,10 +116381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU017E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert list header into list." Em portugues: "tentativa to insert list header into list.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU017E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to insert list header into list." Em portugues: "tentativa to insert list header into list.". Em outras palavras: Tentativa de inserir o próprio cabeçalho da lista como elemento dentro dela..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU017E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert list header into portugues tentativa significa`
+> `AWSDEU017E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt insert list header into portugues tentativa outras palavras Tentativa inserir lista elemento dentro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU017E no HCL Workload Automation 10.2.8?
@@ -116401,10 +116401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU018E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move element down empty list." Em portugues: "tentativa to move element down empty list.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU018E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move element down empty list." Em portugues: "tentativa to move element down empty list.". Em outras palavras: Foi pedido para mover um elemento para baixo em uma lista que está vazia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU018E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move element down empty list portugues tentativa significa`
+> `AWSDEU018E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move element down empty list portugues tentativa outras palavras Foi pedido mover elemento baixo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU018E no HCL Workload Automation 10.2.8?
@@ -116421,10 +116421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU019E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move element in list pointed to by null pointer." Em portugues: "tentativa to move element in list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU019E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move element in list pointed to by null pointer." Em portugues: "tentativa to move element in list pointed to by null pointer.". Em outras palavras: Tentativa de mover um elemento dentro de uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU019E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move element list pointed null pointer portugues tentativa significa`
+> `AWSDEU019E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move element list pointed null pointer portugues tentativa outras palavras Tentativa mover elemento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU019E no HCL Workload Automation 10.2.8?
@@ -116441,10 +116441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU020E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move element up empty list." Em portugues: "tentativa to move element up empty list.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU020E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move element up empty list." Em portugues: "tentativa to move element up empty list.". Em outras palavras: Foi pedido para mover um elemento para cima em uma lista que está vazia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU020E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move element empty list portugues tentativa significa diagnosticar`
+> `AWSDEU020E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move element empty list portugues tentativa outras palavras Foi pedido mover elemento cima lista vazia`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU020E no HCL Workload Automation 10.2.8?
@@ -116461,10 +116461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU020E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU021E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move header node of list." Em portugues: "tentativa to move header node of list.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU021E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to move header node of list." Em portugues: "tentativa to move header node of list.". Em outras palavras: Tentativa de mover o nó cabeçalho da lista como se fosse um elemento comum..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU021E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move header node list portugues tentativa significa diagnosticar`
+> `AWSDEU021E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt move header node list portugues tentativa outras palavras Tentativa mover lista fosse elemento comum significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU021E no HCL Workload Automation 10.2.8?
@@ -116481,10 +116481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU022E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to print list pointed to by null pointer." Em portugues: "tentativa to print list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU022E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to print list pointed to by null pointer." Em portugues: "tentativa to print list pointed to by null pointer.". Em outras palavras: Tentativa de exibir ou imprimir uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU022E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt print list pointed null pointer portugues tentativa significa`
+> `AWSDEU022E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt print list pointed null pointer portugues tentativa outras palavras Tentativa exibir imprimir lista apontada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU022E no HCL Workload Automation 10.2.8?
@@ -116501,10 +116501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU023E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to traverse list pointed to by null pointer." Em portugues: "tentativa to traverse list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU023E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to traverse list pointed to by null pointer." Em portugues: "tentativa to traverse list pointed to by null pointer.". Em outras palavras: Tentativa de percorrer os elementos de uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU023E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt traverse list pointed null pointer portugues tentativa significa`
+> `AWSDEU023E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt traverse list pointed null pointer portugues tentativa outras palavras Tentativa percorrer elementos lista apontada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU023E no HCL Workload Automation 10.2.8?
@@ -116521,10 +116521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU024E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to unvisit list pointed to by null pointer." Em portugues: "tentativa to unvisit list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU024E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to unvisit list pointed to by null pointer." Em portugues: "tentativa to unvisit list pointed to by null pointer.". Em outras palavras: Tentativa de marcar como visitados os itens de uma lista apontada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU024E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt unvisit list pointed null pointer portugues tentativa significa`
+> `AWSDEU024E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt unvisit list pointed null pointer portugues tentativa outras palavras Tentativa marcar visitados itens lista`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU024E no HCL Workload Automation 10.2.8?
@@ -116561,10 +116561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU026E (severidade: error, familia AWSDEU - deu) tem o texto: "List to search for visited nodes is empty." Em portugues: "list to search for visited nodes is empty.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU026E (severidade: error, familia AWSDEU - deu) tem o texto: "List to search for visited nodes is empty." Em portugues: "list to search for visited nodes is empty.". Em outras palavras: Não há elementos visitados na lista para que a busca por nós visitados seja realizada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU026E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto List search for visited nodes empty portugues list significa`
+> `AWSDEU026E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto List search for visited nodes empty portugues list outras palavras elementos visitados lista busca`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU026E no HCL Workload Automation 10.2.8?
@@ -116581,10 +116581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU027E (severidade: error, familia AWSDEU - deu) tem o texto: "Master domain name is a null pointer." Em portugues: "principal dominio nome is a null pointer.". Temas: nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU027E (severidade: error, familia AWSDEU - deu) tem o texto: "Master domain name is a null pointer." Em portugues: "principal dominio nome is a null pointer.". Temas: nome dominio. Em outras palavras: O nome do domínio mestre foi passado como um ponteiro nulo e sem conteúdo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU027E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto name null pointer portugues principal dominio nome Temas significa`
+> `AWSDEU027E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto name null pointer portugues principal dominio nome Temas outras palavras mestre foi passado ponteiro nulo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU027E no HCL Workload Automation 10.2.8?
@@ -116601,10 +116601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU028E (severidade: error, familia AWSDEU - deu) tem o texto: "Master domain name is a null string." Em portugues: "principal dominio nome is a null string.". Temas: nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU028E (severidade: error, familia AWSDEU - deu) tem o texto: "Master domain name is a null string." Em portugues: "principal dominio nome is a null string.". Temas: nome dominio. Em outras palavras: O nome do domínio mestre foi passado como uma string vazia e sem conteúdo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU028E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto name null string portugues principal dominio nome Temas significa`
+> `AWSDEU028E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto name null string portugues principal dominio nome Temas outras palavras mestre foi passado vazia`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU028E no HCL Workload Automation 10.2.8?
@@ -116621,10 +116621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU028E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU029E (severidade: error, familia AWSDEU - deu) tem o texto: "Move element down: failed." Em portugues: "move element down: falhou.". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU029E (severidade: error, familia AWSDEU - deu) tem o texto: "Move element down: failed." Em portugues: "move element down: falhou.". Temas: falhou. Em outras palavras: Não foi possível mover o elemento para baixo na lista conforme solicitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU029E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Move element down failed portugues move falhou Temas significa diagnosticar`
+> `AWSDEU029E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Move element down failed portugues move falhou Temas outras palavras foi mover elemento baixo lista conforme solicitado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU029E no HCL Workload Automation 10.2.8?
@@ -116641,10 +116641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU030E (severidade: error, familia AWSDEU - deu) tem o texto: "Move element up: failed." Em portugues: "move element up: falhou.". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU030E (severidade: error, familia AWSDEU - deu) tem o texto: "Move element up: failed." Em portugues: "move element up: falhou.". Temas: falhou. Em outras palavras: Não foi possível mover o elemento para cima na lista conforme solicitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU030E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Move element failed portugues move falhou Temas significa diagnosticar`
+> `AWSDEU030E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Move element failed portugues move falhou Temas outras palavras foi mover elemento cima lista conforme solicitado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU030E no HCL Workload Automation 10.2.8?
@@ -116661,10 +116661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU030E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU031E (severidade: error, familia AWSDEU - deu) tem o texto: "Null pointer supplied for delete." Em portugues: "null pointer informado for excluir.". Temas: informado excluir.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU031E (severidade: error, familia AWSDEU - deu) tem o texto: "Null pointer supplied for delete." Em portugues: "null pointer informado for excluir.". Temas: informado excluir. Em outras palavras: Foi fornecido um ponteiro nulo para realizar a operação de exclusão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU031E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied for delete portugues null informado excluir Temas significa`
+> `AWSDEU031E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied for delete portugues null informado excluir Temas outras palavras Foi fornecido ponteiro nulo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU031E no HCL Workload Automation 10.2.8?
@@ -116681,10 +116681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU031E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU032E (severidade: error, familia AWSDEU - deu) tem o texto: "Null pointer supplied for move." Em portugues: "null pointer informado for move.". Temas: informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU032E (severidade: error, familia AWSDEU - deu) tem o texto: "Null pointer supplied for move." Em portugues: "null pointer informado for move.". Temas: informado. Em outras palavras: Foi fornecido um ponteiro nulo para realizar a operação de movimento de elemento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU032E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied for move portugues null informado Temas significa`
+> `AWSDEU032E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied for move portugues null informado Temas outras palavras Foi fornecido ponteiro nulo realizar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU032E no HCL Workload Automation 10.2.8?
@@ -116701,10 +116701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU033E (severidade: error, familia AWSDEU - deu) tem o texto: "Not enough elements in list." Em portugues: "nao enough elements in list.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU033E (severidade: error, familia AWSDEU - deu) tem o texto: "Not enough elements in list." Em portugues: "nao enough elements in list.". Temas: nao. Em outras palavras: A lista não possui elementos suficientes para realizar a operação solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU033E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Not enough elements list portugues nao Temas significa diagnosticar`
+> `AWSDEU033E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Not enough elements list portugues nao Temas outras palavras lista possui elementos suficientes realizar solicitada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU033E no HCL Workload Automation 10.2.8?
@@ -116721,10 +116721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU033E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU034E (severidade: error, familia AWSDEU - deu) tem o texto: "Null domain pointer supplied." Em portugues: "null dominio pointer informado.". Temas: informado dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU034E (severidade: error, familia AWSDEU - deu) tem o texto: "Null domain pointer supplied." Em portugues: "null dominio pointer informado.". Temas: informado dominio. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava o domínio da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU034E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied portugues null dominio informado Temas significa diagnosticar`
+> `AWSDEU034E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied portugues null dominio informado Temas outras palavras Foi fornecido ponteiro nulo onde esperava significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU034E no HCL Workload Automation 10.2.8?
@@ -116741,10 +116741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU034E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU035E (severidade: error, familia AWSDEU - deu) tem o texto: "Null input list node pointer supplied." Em portugues: "null entrada list node pointer informado.". Temas: informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU035E (severidade: error, familia AWSDEU - deu) tem o texto: "Null input list node pointer supplied." Em portugues: "null entrada list node pointer informado.". Temas: informado. Em outras palavras: Foi fornecido um ponteiro nulo como nó de entrada da lista para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU035E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null input list node pointer supplied portugues null entrada informado Temas significa`
+> `AWSDEU035E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null input list node pointer supplied portugues null entrada informado Temas outras palavras Foi fornecido ponteiro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU035E no HCL Workload Automation 10.2.8?
@@ -116761,10 +116761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU035E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU036E (severidade: error, familia AWSDEU - deu) tem o texto: "Null list node pointer supplied." Em portugues: "null list node pointer informado.". Temas: informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU036E (severidade: error, familia AWSDEU - deu) tem o texto: "Null list node pointer supplied." Em portugues: "null list node pointer informado.". Temas: informado. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava o nó da lista..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU036E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null list node pointer supplied portugues null informado Temas significa`
+> `AWSDEU036E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null list node pointer supplied portugues null informado Temas outras palavras Foi fornecido ponteiro nulo onde`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU036E no HCL Workload Automation 10.2.8?
@@ -116781,10 +116781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU036E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU037E (severidade: error, familia AWSDEU - deu) tem o texto: "Null parent pointer supplied." Em portugues: "null parent pointer informado.". Temas: informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU037E (severidade: error, familia AWSDEU - deu) tem o texto: "Null parent pointer supplied." Em portugues: "null parent pointer informado.". Temas: informado. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava o elemento pai da hierarquia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU037E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null parent pointer supplied portugues null informado Temas significa diagnosticar`
+> `AWSDEU037E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null parent pointer supplied portugues null informado Temas outras palavras Foi fornecido ponteiro nulo onde esperava elemento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU037E no HCL Workload Automation 10.2.8?
@@ -116801,10 +116801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU037E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU038E (severidade: error, familia AWSDEU - deu) tem o texto: "Null string pointer supplied." Em portugues: "null string pointer informado.". Temas: informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU038E (severidade: error, familia AWSDEU - deu) tem o texto: "Null string pointer supplied." Em portugues: "null string pointer informado.". Temas: informado. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava uma string de texto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU038E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null string pointer supplied portugues null informado Temas significa diagnosticar`
+> `AWSDEU038E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null string pointer supplied portugues null informado Temas outras palavras Foi fornecido ponteiro nulo onde esperava`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU038E no HCL Workload Automation 10.2.8?
@@ -116821,10 +116821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU038E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU039E (severidade: error, familia AWSDEU - deu) tem o texto: "Pointer to node is not in list." Em portugues: "pointer to node is nao in list.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU039E (severidade: error, familia AWSDEU - deu) tem o texto: "Pointer to node is not in list." Em portugues: "pointer to node is nao in list.". Temas: nao. Em outras palavras: O ponteiro informado não corresponde a nenhum nó presente na lista atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU039E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Pointer node not list portugues pointer nao Temas significa diagnosticar`
+> `AWSDEU039E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Pointer node not list portugues pointer nao Temas outras palavras ponteiro informado corresponde nenhum presente lista atual`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU039E no HCL Workload Automation 10.2.8?
@@ -116841,10 +116841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU039E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU040W (severidade: warning, familia AWSDEU - deu) tem o texto: "Testing for empty list pointed to by null pointer." Em portugues: "testing for empty list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU040W (severidade: warning, familia AWSDEU - deu) tem o texto: "Testing for empty list pointed to by null pointer." Em portugues: "testing for empty list pointed to by null pointer.". Em outras palavras: Verificação em andamento para saber se a lista apontada por ponteiro nulo está vazia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU040W 10.2.8 mensagem severidade warning familia AWSDEU deu tem texto Testing for empty list pointed null pointer portugues testing significa`
+> `AWSDEU040W 10.2.8 mensagem severidade warning familia AWSDEU deu tem texto Testing for empty list pointed null pointer portugues testing outras palavras andamento saber lista`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU040W no HCL Workload Automation 10.2.8?
@@ -116861,10 +116861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU040W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU041E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to allocate list node. malloc() failed." Em portugues: "incapaz to allocate list node. malloc() falhou.". Temas: nao conseguiu falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU041E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to allocate list node. malloc() failed." Em portugues: "incapaz to allocate list node. malloc() falhou.". Temas: nao conseguiu falhou. Em outras palavras: A alocação de memória falhou e por isso não foi possível criar um nó de lista..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU041E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable allocate list node malloc failed portugues incapaz falhou Temas nao conseguiu significa`
+> `AWSDEU041E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable allocate list node malloc failed portugues incapaz falhou Temas nao conseguiu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU041E no HCL Workload Automation 10.2.8?
@@ -116881,10 +116881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU041E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU042E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to create HM list node. malloc() failed." Em portugues: "incapaz to criar hm list node. malloc() falhou.". Temas: nao conseguiu falhou criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU042E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to create HM list node. malloc() failed." Em portugues: "incapaz to criar hm list node. malloc() falhou.". Temas: nao conseguiu falhou criar. Em outras palavras: A alocação de memória falhou e por isso não foi possível criar um nó de lista gerenciado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU042E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable create list node malloc failed portugues incapaz criar falhou Temas nao conseguiu significa`
+> `AWSDEU042E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable create list node malloc failed portugues incapaz criar falhou Temas nao conseguiu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU042E no HCL Workload Automation 10.2.8?
@@ -116901,10 +116901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU042E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU043E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to create list node. malloc() failed." Em portugues: "incapaz to criar list node. malloc() falhou.". Temas: nao conseguiu falhou criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU043E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to create list node. malloc() failed." Em portugues: "incapaz to criar list node. malloc() falhou.". Temas: nao conseguiu falhou criar. Em outras palavras: A alocação de memória falhou e por isso não foi possível criar o nó da lista..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU043E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable create list node malloc failed portugues incapaz criar falhou Temas nao conseguiu significa`
+> `AWSDEU043E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable create list node malloc failed portugues incapaz criar falhou Temas nao conseguiu outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU043E no HCL Workload Automation 10.2.8?
@@ -116921,10 +116921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU043E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU044E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to initialize list." Em portugues: "incapaz to initialize list.". Temas: nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU044E (severidade: error, familia AWSDEU - deu) tem o texto: "Unable to initialize list." Em portugues: "incapaz to initialize list.". Temas: nao conseguiu. Em outras palavras: Não foi possível inicializar a lista, então a operação não pode prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU044E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable initialize list portugues incapaz Temas nao conseguiu significa diagnosticar`
+> `AWSDEU044E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Unable initialize list portugues incapaz Temas nao conseguiu outras palavras foi inicializar lista prosseguir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU044E no HCL Workload Automation 10.2.8?
@@ -116941,10 +116941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU044E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU045W (severidade: warning, familia AWSDEU - deu) tem o texto: "WARNING: domain !1 has no parent." Em portugues: "warning: dominio !1 has no parent.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU045W (severidade: warning, familia AWSDEU - deu) tem o texto: "WARNING: domain !1 has no parent." Em portugues: "warning: dominio !1 has no parent.". Temas: dominio. Em outras palavras: Atenção: o domínio informado não possui um domínio pai definido na hierarquia..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU045W 10.2.8 mensagem severidade warning familia AWSDEU deu tem texto WARNING has parent portugues dominio Temas significa diagnosticar`
+> `AWSDEU045W 10.2.8 mensagem severidade warning familia AWSDEU deu tem texto WARNING has parent portugues dominio Temas outras palavras informado possui pai definido hierarquia significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU045W no HCL Workload Automation 10.2.8?
@@ -116961,10 +116961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU045W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU046E (severidade: error, familia AWSDEU - deu) tem o texto: "Domain is a null pointer, not a string." Em portugues: "dominio is a null pointer, nao a string.". Temas: nao dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU046E (severidade: error, familia AWSDEU - deu) tem o texto: "Domain is a null pointer, not a string." Em portugues: "dominio is a null pointer, nao a string.". Temas: nao dominio. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava o nome do domínio como texto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU046E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto null pointer not string portugues dominio nao Temas significa`
+> `AWSDEU046E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto null pointer not string portugues dominio nao Temas outras palavras Foi fornecido ponteiro nulo onde`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU046E no HCL Workload Automation 10.2.8?
@@ -116981,10 +116981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU047E (severidade: error, familia AWSDEU - deu) tem o texto: "Domain not found in list." Em portugues: "dominio nao encontrado in list.". Temas: nao dominio encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU047E (severidade: error, familia AWSDEU - deu) tem o texto: "Domain not found in list." Em portugues: "dominio nao encontrado in list.". Temas: nao dominio encontrado. Em outras palavras: O domínio solicitado não foi encontrado dentro da lista de domínios existentes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU047E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto not found list portugues dominio nao encontrado Temas significa`
+> `AWSDEU047E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto not found list portugues dominio nao encontrado Temas outras palavras solicitado foi dentro lista existentes`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU047E no HCL Workload Automation 10.2.8?
@@ -117001,10 +117001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU047E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU048E (severidade: error, familia AWSDEU - deu) tem o texto: "Input list is empty." Em portugues: "entrada list is empty.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU048E (severidade: error, familia AWSDEU - deu) tem o texto: "Input list is empty." Em portugues: "entrada list is empty.". Em outras palavras: A lista de entrada fornecida está vazia e não há itens para processar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU048E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Input list empty portugues entrada significa diagnosticar`
+> `AWSDEU048E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Input list empty portugues entrada outras palavras lista fornecida vazia itens processar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU048E no HCL Workload Automation 10.2.8?
@@ -117021,10 +117021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU048E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU049E (severidade: error, familia AWSDEU - deu) tem o texto: "List pointed to by null pointer." Em portugues: "list pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU049E (severidade: error, familia AWSDEU - deu) tem o texto: "List pointed to by null pointer." Em portugues: "list pointed to by null pointer.". Em outras palavras: A lista utilizada na operação está sendo referenciada por um ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU049E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto List pointed null pointer portugues list significa diagnosticar`
+> `AWSDEU049E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto List pointed null pointer portugues list outras palavras lista utilizada sendo referenciada ponteiro nulo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU049E no HCL Workload Automation 10.2.8?
@@ -117041,10 +117041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU049E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU050E (severidade: error, familia AWSDEU - deu) tem o texto: "Parent is a null pointer, not a string." Em portugues: "parent is a null pointer, nao a string.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU050E (severidade: error, familia AWSDEU - deu) tem o texto: "Parent is a null pointer, not a string." Em portugues: "parent is a null pointer, nao a string.". Temas: nao. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava o nome do elemento pai como texto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU050E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Parent null pointer not string portugues parent nao Temas significa`
+> `AWSDEU050E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Parent null pointer not string portugues parent nao Temas outras palavras Foi fornecido ponteiro nulo onde`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU050E no HCL Workload Automation 10.2.8?
@@ -117061,10 +117061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU050E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU051E (severidade: error, familia AWSDEU - deu) tem o texto: "String to search pointed to by null pointer." Em portugues: "string to search pointed to by null pointer.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU051E (severidade: error, familia AWSDEU - deu) tem o texto: "String to search pointed to by null pointer." Em portugues: "string to search pointed to by null pointer.". Em outras palavras: A string usada na busca está apontada por um ponteiro nulo sem conteúdo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU051E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto String search pointed null pointer portugues string significa diagnosticar`
+> `AWSDEU051E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto String search pointed null pointer portugues string outras palavras usada busca apontada ponteiro nulo sem`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU051E no HCL Workload Automation 10.2.8?
@@ -117081,10 +117081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU051E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU052E (severidade: error, familia AWSDEU - deu) tem o texto: "Null pointer supplied instead of string." Em portugues: "null pointer informado instead of string.". Temas: informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU052E (severidade: error, familia AWSDEU - deu) tem o texto: "Null pointer supplied instead of string." Em portugues: "null pointer informado instead of string.". Temas: informado. Em outras palavras: Foi fornecido um ponteiro nulo onde se esperava uma string de texto para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU052E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied instead string portugues null informado Temas significa`
+> `AWSDEU052E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Null pointer supplied instead string portugues null informado Temas outras palavras Foi fornecido ponteiro nulo onde`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU052E no HCL Workload Automation 10.2.8?
@@ -117101,10 +117101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU052E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU053E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find domain index in list pointed to by null pointer." Em portugues: "tentativa to find dominio indice in list pointed to by null pointer.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU053E (severidade: error, familia AWSDEU - deu) tem o texto: "Attempt to find domain index in list pointed to by null pointer." Em portugues: "tentativa to find dominio indice in list pointed to by null pointer.". Temas: dominio. Em outras palavras: Tentativa de localizar o índice de um domínio dentro de uma lista apontada por ponteiro nulo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU053E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find index list pointed null pointer portugues tentativa dominio indice Temas significa`
+> `AWSDEU053E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto Attempt find index list pointed null pointer portugues tentativa dominio indice Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU053E no HCL Workload Automation 10.2.8?
@@ -117121,10 +117121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU053E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU054E (severidade: error, familia AWSDEU - deu) tem o texto: "The domain loop would be: !1." Em portugues: "the dominio loop would be: !1.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU054E (severidade: error, familia AWSDEU - deu) tem o texto: "The domain loop would be: !1." Em portugues: "the dominio loop would be: !1.". Temas: dominio. Em outras palavras: A sequência do ciclo de domínios que causaria o problema é apresentada para análise..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEU054E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto The loop would portugues the dominio Temas significa diagnosticar`
+> `AWSDEU054E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto The loop would portugues the dominio Temas outras palavras ciclo causaria problema apresentada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEU054E no HCL Workload Automation 10.2.8?
@@ -117161,7 +117161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU055I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEU056E (severidade: error, familia AWSDEU - deu) tem o texto: "The name of a domain manager in the Symphony file is not valid. The file might be corrupt." Em portugues: "the nome of a dominio manager in the symphony arquivo is nao valido. the arquivo might be corrupt.". Temas: nao arquivo nome valido dominio symphony. Explicacao oficial: For firewall support, HCL Workload Automation creates a list of domain managers that need to bypass the firewall. It obtains this information from the Symphony file.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEU056E (severidade: error, familia AWSDEU - deu) tem o texto: "The name of a domain manager in the Symphony file is not valid. The file might be corrupt." Em portugues: "the nome of a dominio manager in the symphony arquivo is nao valido. the arquivo might be corrupt.". Temas: nao arquivo nome valido dominio symphony. Em outras palavras: O nome de um gerenciador de domínio no arquivo Symphony é inválido e o arquivo pode estar corrompido.. Explicacao oficial: For firewall support, HCL Workload Automation creates a list of domain managers that need to bypass the firewall. It obtains this information from the Symphony file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEU056E 10.2.8 mensagem severidade error familia AWSDEU deu tem texto The name the Symphony file not valid might corrupt portugues nome dominio symphony arquivo nao valido`
@@ -117181,10 +117181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEU056E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV001E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to open input file !1 for reading." Em portugues: "incapaz to open entrada arquivo !1 for reading.". Temas: arquivo nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV001E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to open input file !1 for reading." Em portugues: "incapaz to open entrada arquivo !1 for reading.". Temas: arquivo nao conseguiu. Em outras palavras: Não foi possível abrir o arquivo de entrada informado para leitura da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV001E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable open input file for reading portugues incapaz entrada arquivo Temas nao conseguiu significa`
+> `AWSDEV001E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable open input file for reading portugues incapaz entrada arquivo Temas nao conseguiu outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV001E no HCL Workload Automation 10.2.8?
@@ -117201,10 +117201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV002E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to examine input file !1." Em portugues: "incapaz to examine entrada arquivo !1.". Temas: arquivo nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV002E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to examine input file !1." Em portugues: "incapaz to examine entrada arquivo !1.". Temas: arquivo nao conseguiu. Em outras palavras: Não foi possível inspecionar ou examinar o arquivo de entrada informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV002E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable examine input file portugues incapaz entrada arquivo Temas nao conseguiu significa`
+> `AWSDEV002E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable examine input file portugues incapaz entrada arquivo Temas nao conseguiu outras palavras foi inspecionar examinar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV002E no HCL Workload Automation 10.2.8?
@@ -117221,10 +117221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV003E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to allocate input buffer." Em portugues: "incapaz to allocate entrada buffer.". Temas: nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV003E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to allocate input buffer." Em portugues: "incapaz to allocate entrada buffer.". Temas: nao conseguiu. Em outras palavras: Não foi possível alocar memória para o buffer de entrada da conversão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV003E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable allocate input buffer portugues incapaz entrada Temas nao conseguiu significa`
+> `AWSDEV003E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable allocate input buffer portugues incapaz entrada Temas nao conseguiu outras palavras foi alocar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV003E no HCL Workload Automation 10.2.8?
@@ -117241,10 +117241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV004E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to allocate output buffer." Em portugues: "incapaz to allocate saida buffer.". Temas: nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV004E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to allocate output buffer." Em portugues: "incapaz to allocate saida buffer.". Temas: nao conseguiu. Em outras palavras: Não foi possível alocar memória para o buffer de saída da conversão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV004E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable allocate output buffer portugues incapaz saida Temas nao conseguiu significa`
+> `AWSDEV004E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable allocate output buffer portugues incapaz saida Temas nao conseguiu outras palavras foi alocar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV004E no HCL Workload Automation 10.2.8?
@@ -117261,10 +117261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV005E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to read input file !1." Em portugues: "incapaz to ler entrada arquivo !1.". Temas: arquivo nao conseguiu ler leitura.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV005E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to read input file !1." Em portugues: "incapaz to ler entrada arquivo !1.". Temas: arquivo nao conseguiu ler leitura. Em outras palavras: Não foi possível ler o conteúdo do arquivo de entrada informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV005E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable read input file portugues incapaz ler entrada arquivo Temas nao conseguiu leitura significa`
+> `AWSDEV005E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable read input file portugues incapaz ler entrada arquivo Temas nao conseguiu leitura outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV005E no HCL Workload Automation 10.2.8?
@@ -117281,7 +117281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV006E (severidade: error, familia AWSDEV - dev) tem o texto: "The user ID that is using HCL Workload Scheduler does not have the right ownership or access permissions to create the following output file: "!1" for writing." Em portugues: "the usuario id that is using hcl workload scheduler does nao have the right ownership or acesso permissions to criar the seguinte saida arquivo: "!1" for writing.". Temas: nao arquivo usuario carga de trabalho criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV006E (severidade: error, familia AWSDEV - dev) tem o texto: "The user ID that is using HCL Workload Scheduler does not have the right ownership or access permissions to create the following output file: "!1" for writing." Em portugues: "the usuario id that is using hcl workload scheduler does nao have the right ownership or acesso permissions to criar the seguinte saida arquivo: "!1" for writing.". Temas: nao arquivo usuario carga de trabalho criar. Em outras palavras: O usuário que executa o agendador não tem permissão para criar ou gravar o arquivo de saída informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEV006E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto The user that using Scheduler does not have the right ownership access permissions create following output file for writing`
@@ -117301,10 +117301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV007E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to write to output file !1." Em portugues: "incapaz to escrever to saida arquivo !1.". Temas: arquivo nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV007E (severidade: error, familia AWSDEV - dev) tem o texto: "Unable to write to output file !1." Em portugues: "incapaz to escrever to saida arquivo !1.". Temas: arquivo nao conseguiu. Em outras palavras: Não foi possível gravar dados no arquivo de saída informado durante a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV007E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable write output file portugues incapaz escrever saida arquivo Temas nao conseguiu significa`
+> `AWSDEV007E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Unable write output file portugues incapaz escrever saida arquivo Temas nao conseguiu outras palavras foi gravar dados informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV007E no HCL Workload Automation 10.2.8?
@@ -117321,10 +117321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEV009E (severidade: error, familia AWSDEV - dev) tem o texto: "Conversion not supported." Em portugues: "conversion nao supported.". Temas: nao suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEV009E (severidade: error, familia AWSDEV - dev) tem o texto: "Conversion not supported." Em portugues: "conversion nao supported.". Temas: nao suportado. Em outras palavras: A conversão solicitada não é suportada pelo recurso atual do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEV009E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Conversion not supported portugues conversion nao Temas suportado significa diagnosticar`
+> `AWSDEV009E 10.2.8 mensagem severidade error familia AWSDEV dev tem texto Conversion not supported portugues conversion nao Temas suportado outras palavras solicitada suportada pelo recurso atual sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEV009E no HCL Workload Automation 10.2.8?
@@ -117341,10 +117341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEV009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW001E (severidade: error, familia AWSDEW - dew) tem o texto: "Invalid flag Try -u for usage." Em portugues: "invalido flag try -u for usage.". Temas: invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW001E (severidade: error, familia AWSDEW - dew) tem o texto: "Invalid flag Try -u for usage." Em portugues: "invalido flag try -u for usage.". Temas: invalido. Em outras palavras: A opção informada é inválida e é recomendado usar o parâmetro de ajuda para saber como proceder..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEW001E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto Invalid flag Try for usage portugues invalido try Temas significa`
+> `AWSDEW001E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto Invalid flag Try for usage portugues invalido try Temas outras palavras informada recomendado usar ajuda saber`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEW001E no HCL Workload Automation 10.2.8?
@@ -117361,10 +117361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW002E (severidade: error, familia AWSDEW - dew) tem o texto: "ucomp: Invalid parameter." Em portugues: "ucomp: invalido parametro.". Temas: invalido parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW002E (severidade: error, familia AWSDEW - dew) tem o texto: "ucomp: Invalid parameter." Em portugues: "ucomp: invalido parametro.". Temas: invalido parametro. Em outras palavras: O utilitário de compressão recebeu um parâmetro inválido e não pôde processar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEW002E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto ucomp Invalid parameter portugues invalido parametro Temas significa diagnosticar`
+> `AWSDEW002E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto ucomp Invalid parameter portugues invalido parametro Temas outras palavras recebeu processar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEW002E no HCL Workload Automation 10.2.8?
@@ -117381,10 +117381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW003E (severidade: error, familia AWSDEW - dew) tem o texto: "More than one command given. Try -u for usage." Em portugues: "mais que one comando given. try -u for usage.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW003E (severidade: error, familia AWSDEW - dew) tem o texto: "More than one command given. Try -u for usage." Em portugues: "mais que one comando given. try -u for usage.". Temas: comando. Em outras palavras: Foi informado mais de um comando, sendo permitido apenas um por execução, e a ajuda indica o uso correto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEW003E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto More than one command given Try for usage portugues mais comando try Temas significa`
+> `AWSDEW003E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto More than one command given Try for usage portugues mais comando try Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEW003E no HCL Workload Automation 10.2.8?
@@ -117401,10 +117401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW004E (severidade: error, familia AWSDEW - dew) tem o texto: "product name must be specified." Em portugues: "produto nome must be especificado.". Temas: nome especificado produto.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW004E (severidade: error, familia AWSDEW - dew) tem o texto: "product name must be specified." Em portugues: "produto nome must be especificado.". Temas: nome especificado produto. Em outras palavras: É obrigatório informar o nome do produto para que o comando possa ser executado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEW004E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto product name must specified portugues produto nome especificado Temas significa`
+> `AWSDEW004E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto product name must specified portugues produto nome especificado Temas outras palavras informar comando possa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEW004E no HCL Workload Automation 10.2.8?
@@ -117421,7 +117421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW005E (severidade: error, familia AWSDEW - dew) tem o texto: "You must specify version, and path with set command. Try -u for usage." Em portugues: "you must specify versao, and caminho with set comando. try -u for usage.". Temas: comando versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW005E (severidade: error, familia AWSDEW - dew) tem o texto: "You must specify version, and path with set command. Try -u for usage." Em portugues: "you must specify versao, and caminho with set comando. try -u for usage.". Temas: comando versao. Em outras palavras: No comando de configuração é necessário indicar a versão e o caminho, conforme mostra a ajuda..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEW005E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto You must specify version and path with set command Try for usage portugues you versao caminho`
@@ -117441,10 +117441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW006E (severidade: error, familia AWSDEW - dew) tem o texto: "Unexpected arguments." Em portugues: "unexpected arguments.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW006E (severidade: error, familia AWSDEW - dew) tem o texto: "Unexpected arguments." Em portugues: "unexpected arguments.". Em outras palavras: Foram fornecidos argumentos inesperados que não são reconhecidos pelo comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEW006E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto Unexpected arguments portugues unexpected significa diagnosticar`
+> `AWSDEW006E 10.2.8 mensagem severidade error familia AWSDEW dew tem texto Unexpected arguments portugues unexpected outras palavras Foram fornecidos argumentos inesperados reconhecidos pelo comando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEW006E no HCL Workload Automation 10.2.8?
@@ -117461,10 +117461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEW037I (severidade: informational, familia AWSDEW - dew) tem o texto: "Release Build Version %s" Em portugues: "release build versao %s". Temas: versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEW037I (severidade: informational, familia AWSDEW - dew) tem o texto: "Release Build Version %s" Em portugues: "release build versao %s". Temas: versao. Em outras palavras: É exibida a versão do build de liberação do produto em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEW037I 10.2.8 mensagem severidade informational familia AWSDEW dew tem texto Release Build Version portugues release build versao Temas significa diagnosticar`
+> `AWSDEW037I 10.2.8 mensagem severidade informational familia AWSDEW dew tem texto Release Build Version portugues release build versao Temas outras palavras exibida produto significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEW037I no HCL Workload Automation 10.2.8?
@@ -117481,10 +117481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEW037I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEZ001E (severidade: error, familia AWSDEZ - dez) tem o texto: "Call count exceeded, serious bug" Em portugues: "call count exceeded, serious bug".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEZ001E (severidade: error, familia AWSDEZ - dez) tem o texto: "Call count exceeded, serious bug" Em portugues: "call count exceeded, serious bug". Em outras palavras: O limite de chamadas foi ultrapassado, o que indica um defeito interno grave do programa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEZ001E 10.2.8 mensagem severidade error familia AWSDEZ dez tem texto Call count exceeded serious bug portugues call significa diagnosticar`
+> `AWSDEZ001E 10.2.8 mensagem severidade error familia AWSDEZ dez tem texto Call count exceeded serious bug portugues call outras palavras limite chamadas foi ultrapassado indica defeito interno`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEZ001E no HCL Workload Automation 10.2.8?
@@ -117501,10 +117501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEZ001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEZ002E (severidade: error, familia AWSDEZ - dez) tem o texto: "ISSUEMSG Internal error at line %d" Em portugues: "issuemsg interno erro at linha %d". Temas: erro interno linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEZ002E (severidade: error, familia AWSDEZ - dez) tem o texto: "ISSUEMSG Internal error at line %d" Em portugues: "issuemsg interno erro at linha %d". Temas: erro interno linha. Em outras palavras: Ocorreu um erro interno na rotina de emissão de mensagens e a linha do problema é indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEZ002E 10.2.8 mensagem severidade error familia AWSDEZ dez tem texto ISSUEMSG Internal line portugues issuemsg interno erro linha Temas significa`
+> `AWSDEZ002E 10.2.8 mensagem severidade error familia AWSDEZ dez tem texto ISSUEMSG Internal line portugues issuemsg interno erro linha Temas outras palavras Ocorreu rotina mensagens`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEZ002E no HCL Workload Automation 10.2.8?
@@ -117521,10 +117521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEZ002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEZ003E (severidade: error, familia AWSDEZ - dez) tem o texto: "**ERROR**(cpu secs %li)" Em portugues: "**erro**(processador secs %li)".
+No HCL Workload Automation 10.2.8, a mensagem AWSDEZ003E (severidade: error, familia AWSDEZ - dez) tem o texto: "**ERROR**(cpu secs %li)" Em portugues: "**erro**(processador secs %li)". Em outras palavras: É reportado um erro interno acompanhado do tempo de CPU consumido pela operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEZ003E 10.2.8 mensagem severidade error familia AWSDEZ dez tem texto ERROR cpu secs portugues erro processador significa diagnosticar`
+> `AWSDEZ003E 10.2.8 mensagem severidade error familia AWSDEZ dez tem texto ERROR cpu secs portugues erro processador outras palavras reportado interno acompanhado tempo CPU consumido pela significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEZ003E no HCL Workload Automation 10.2.8?
@@ -117621,10 +117621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFC001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD001I (severidade: informational, familia AWSDFD - dfd) tem o texto: "gencat: %s on line %d" Em portugues: "gencat: %s on linha %d". Temas: linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD001I (severidade: informational, familia AWSDFD - dfd) tem o texto: "gencat: %s on line %d" Em portugues: "gencat: %s on linha %d". Temas: linha. Em outras palavras: O gerador de catálogo indica a linha onde encontrou um problema durante o processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD001I 10.2.8 mensagem severidade informational familia AWSDFD dfd tem texto gencat line portugues linha Temas significa diagnosticar`
+> `AWSDFD001I 10.2.8 mensagem severidade informational familia AWSDFD dfd tem texto gencat line portugues linha Temas outras palavras gerador indica onde encontrou problema durante processamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD001I no HCL Workload Automation 10.2.8?
@@ -117641,10 +117641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD001I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD002E (severidade: error, familia AWSDFD - dfd) tem o texto: "The message catalog is corrupt." Em portugues: "the mensagem catalog is corrupt.". Temas: mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD002E (severidade: error, familia AWSDFD - dfd) tem o texto: "The message catalog is corrupt." Em portugues: "the mensagem catalog is corrupt.". Temas: mensagem. Em outras palavras: O catálogo de mensagens está corrompido e não pode ser usado corretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD002E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The message catalog corrupt portugues the Temas significa diagnosticar`
+> `AWSDFD002E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The message catalog corrupt portugues the Temas outras palavras mensagens corrompido usado corretamente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD002E no HCL Workload Automation 10.2.8?
@@ -117681,10 +117681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD004E (severidade: error, familia AWSDFD - dfd) tem o texto: "A premature end of file has been encountered." Em portugues: "a premature end of arquivo has estado encountered.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD004E (severidade: error, familia AWSDFD - dfd) tem o texto: "A premature end of file has been encountered." Em portugues: "a premature end of arquivo has estado encountered.". Temas: arquivo. Em outras palavras: O arquivo terminou de forma prematura, antes de todo o conteúdo esperado ser lido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD004E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto premature end file has been encountered portugues arquivo estado Temas significa`
+> `AWSDFD004E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto premature end file has been encountered portugues arquivo estado Temas outras palavras terminou forma`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD004E no HCL Workload Automation 10.2.8?
@@ -117701,10 +117701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD005E (severidade: error, familia AWSDFD - dfd) tem o texto: "Unable to allocate storage." Em portugues: "incapaz to allocate storage.". Temas: nao conseguiu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD005E (severidade: error, familia AWSDFD - dfd) tem o texto: "Unable to allocate storage." Em portugues: "incapaz to allocate storage.". Temas: nao conseguiu. Em outras palavras: Não foi possível reservar o espaço de memória necessário para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD005E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto Unable allocate storage portugues incapaz Temas nao conseguiu significa diagnosticar`
+> `AWSDFD005E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto Unable allocate storage portugues incapaz Temas nao conseguiu outras palavras foi reservar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD005E no HCL Workload Automation 10.2.8?
@@ -117721,10 +117721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD006E (severidade: error, familia AWSDFD - dfd) tem o texto: "Unrecognized catalog version." Em portugues: "unrecognized catalog versao.". Temas: versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD006E (severidade: error, familia AWSDFD - dfd) tem o texto: "Unrecognized catalog version." Em portugues: "unrecognized catalog versao.". Temas: versao. Em outras palavras: A versão do catálogo não é reconhecida e não pode ser processada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD006E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto Unrecognized catalog version portugues unrecognized versao Temas significa diagnosticar`
+> `AWSDFD006E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto Unrecognized catalog version portugues unrecognized versao Temas outras palavras reconhecida processada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD006E no HCL Workload Automation 10.2.8?
@@ -117761,10 +117761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD008E (severidade: error, familia AWSDFD - dfd) tem o texto: "The setId must be greater than zero" Em portugues: "the setid must be greater que zero".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD008E (severidade: error, familia AWSDFD - dfd) tem o texto: "The setId must be greater than zero" Em portugues: "the setid must be greater que zero". Em outras palavras: O identificador do conjunto de mensagens precisa ser um valor maior que zero..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD008E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The setId must greater than zero portugues the setid significa`
+> `AWSDFD008E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The setId must greater than zero portugues the setid outras palavras identificador conjunto mensagens precisa valor maior`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD008E no HCL Workload Automation 10.2.8?
@@ -117781,7 +117781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD009E (severidade: error, familia AWSDFD - dfd) tem o texto: "A message cannot be specified when the set does not exist." Em portugues: "a mensagem nao pode be especificado when the set does nao existe.". Temas: nao pode especificado mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD009E (severidade: error, familia AWSDFD - dfd) tem o texto: "A message cannot be specified when the set does not exist." Em portugues: "a mensagem nao pode be especificado when the set does nao existe.". Temas: nao pode especificado mensagem. Em outras palavras: Uma mensagem não pode ser definida enquanto o conjunto ao qual pertence ainda não existe..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDFD009E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto message cannot specified when the set does not exist portugues nao especificado existe Temas`
@@ -117801,10 +117801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD010E (severidade: error, familia AWSDFD - dfd) tem o texto: "The msgId must be greater than zero." Em portugues: "the msgid must be greater que zero.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD010E (severidade: error, familia AWSDFD - dfd) tem o texto: "The msgId must be greater than zero." Em portugues: "the msgid must be greater que zero.". Em outras palavras: O identificador da mensagem precisa ser um valor maior que zero para ser aceito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD010E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The msgId must greater than zero portugues the msgid significa`
+> `AWSDFD010E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The msgId must greater than zero portugues the msgid outras palavras identificador precisa valor maior`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD010E no HCL Workload Automation 10.2.8?
@@ -117821,7 +117821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD011E (severidade: error, familia AWSDFD - dfd) tem o texto: "You cannot delete a message before defining the set." Em portugues: "you nao pode excluir a mensagem antes defining the set.". Temas: nao pode mensagem excluir.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD011E (severidade: error, familia AWSDFD - dfd) tem o texto: "You cannot delete a message before defining the set." Em portugues: "you nao pode excluir a mensagem antes defining the set.". Temas: nao pode mensagem excluir. Em outras palavras: A mensagem não pode ser removida antes de o conjunto que a contém ser definido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDFD011E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto You cannot delete message before defining the set portugues you nao excluir antes Temas`
@@ -117841,10 +117841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD012E (severidade: error, familia AWSDFD - dfd) tem o texto: "A space was expected here." Em portugues: "a espaco was esperado here.". Temas: esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD012E (severidade: error, familia AWSDFD - dfd) tem o texto: "A space was expected here." Em portugues: "a espaco was esperado here.". Temas: esperado. Em outras palavras: O processador esperava encontrar um espaço em branco nesse ponto da linha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD012E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto space was expected here portugues espaco esperado Temas significa diagnosticar`
+> `AWSDFD012E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto space was expected here portugues espaco esperado Temas outras palavras processador esperava encontrar branco nesse ponto linha`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD012E no HCL Workload Automation 10.2.8?
@@ -117861,10 +117861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD013E (severidade: error, familia AWSDFD - dfd) tem o texto: "A space was not expected here." Em portugues: "a espaco was nao esperado here.". Temas: nao esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD013E (severidade: error, familia AWSDFD - dfd) tem o texto: "A space was not expected here." Em portugues: "a espaco was nao esperado here.". Temas: nao esperado. Em outras palavras: Foi encontrado um espaço em branco onde ele não era esperado na linha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD013E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto space was not expected here portugues espaco nao esperado Temas significa`
+> `AWSDFD013E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto space was not expected here portugues espaco nao esperado Temas outras palavras Foi encontrado branco onde`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD013E no HCL Workload Automation 10.2.8?
@@ -117881,7 +117881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD014E (severidade: error, familia AWSDFD - dfd) tem o texto: "An unexpected quote character has been found, and is being ignored." Em portugues: "an unexpected quote character has estado encontrado, and is being ignored.". Temas: encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD014E (severidade: error, familia AWSDFD - dfd) tem o texto: "An unexpected quote character has been found, and is being ignored." Em portugues: "an unexpected quote character has estado encontrado, and is being ignored.". Temas: encontrado. Em outras palavras: Foi localizada uma aspa inesperada, que será ignorada para evitar erro na interpretação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDFD014E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto unexpected quote character has been found and being ignored portugues estado encontrado Temas`
@@ -117901,10 +117901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD015E (severidade: error, familia AWSDFD - dfd) tem o texto: "An octal number has been supplied greater than 7?!" Em portugues: "an octal numero has estado informado greater que 7?!". Temas: informado numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD015E (severidade: error, familia AWSDFD - dfd) tem o texto: "An octal number has been supplied greater than 7?!" Em portugues: "an octal numero has estado informado greater que 7?!". Temas: informado numero. Em outras palavras: Foi informado um número octal com dígito maior que sete, o que é inválido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD015E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto octal number has been supplied greater than portugues numero estado informado Temas significa`
+> `AWSDFD015E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto octal number has been supplied greater than portugues numero estado informado Temas outras palavras Foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD015E no HCL Workload Automation 10.2.8?
@@ -117921,10 +117921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD016E (severidade: error, familia AWSDFD - dfd) tem o texto: "The escape sequence is unrecognized." Em portugues: "the escape sequence is unrecognized.".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD016E (severidade: error, familia AWSDFD - dfd) tem o texto: "The escape sequence is unrecognized." Em portugues: "the escape sequence is unrecognized.". Em outras palavras: A sequência de escape utilizada não é reconhecida pelo interpretador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD016E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The escape sequence unrecognized portugues the significa diagnosticar`
+> `AWSDFD016E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The escape sequence unrecognized portugues the outras palavras utilizada reconhecida pelo interpretador significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD016E no HCL Workload Automation 10.2.8?
@@ -117941,10 +117941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD017E (severidade: error, familia AWSDFD - dfd) tem o texto: "The line is unrecognized." Em portugues: "the linha is unrecognized.". Temas: linha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD017E (severidade: error, familia AWSDFD - dfd) tem o texto: "The line is unrecognized." Em portugues: "the linha is unrecognized.". Temas: linha. Em outras palavras: A linha de comando fornecida não pôde ser reconhecida pelo processador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD017E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The line unrecognized portugues the linha Temas significa diagnosticar`
+> `AWSDFD017E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto The line unrecognized portugues the linha Temas outras palavras comando fornecida reconhecida pelo processador significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD017E no HCL Workload Automation 10.2.8?
@@ -117961,10 +117961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD018I (severidade: informational, familia AWSDFD - dfd) tem o texto: "The specified set does not exist." Em portugues: "the especificado set does nao existe.". Temas: nao especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD018I (severidade: informational, familia AWSDFD - dfd) tem o texto: "The specified set does not exist." Em portugues: "the especificado set does nao existe.". Temas: nao especificado. Em outras palavras: O conjunto de mensagens especificado não existe no catálogo consultado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD018I 10.2.8 mensagem severidade informational familia AWSDFD dfd tem texto The specified set does not exist portugues the especificado nao existe Temas significa`
+> `AWSDFD018I 10.2.8 mensagem severidade informational familia AWSDFD dfd tem texto The specified set does not exist portugues the especificado nao existe Temas outras palavras conjunto mensagens`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD018I no HCL Workload Automation 10.2.8?
@@ -117981,10 +117981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD018I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD019I (severidade: informational, familia AWSDFD - dfd) tem o texto: "The specified message does not exist." Em portugues: "the especificado mensagem does nao existe.". Temas: nao especificado mensagem.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD019I (severidade: informational, familia AWSDFD - dfd) tem o texto: "The specified message does not exist." Em portugues: "the especificado mensagem does nao existe.". Temas: nao especificado mensagem. Em outras palavras: A mensagem especificada não existe dentro do catálogo consultado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD019I 10.2.8 mensagem severidade informational familia AWSDFD dfd tem texto The specified message does not exist portugues the especificado nao existe Temas significa`
+> `AWSDFD019I 10.2.8 mensagem severidade informational familia AWSDFD dfd tem texto The specified message does not exist portugues the especificado nao existe Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD019I no HCL Workload Automation 10.2.8?
@@ -118001,10 +118001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD019I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD020E (severidade: error, familia AWSDFD - dfd) tem o texto: "User authentication has failed: !1" Em portugues: "usuario authentication has falhou: !1". Temas: usuario falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD020E (severidade: error, familia AWSDFD - dfd) tem o texto: "User authentication has failed: !1" Em portugues: "usuario authentication has falhou: !1". Temas: usuario falhou. Em outras palavras: A autenticação do usuário falhou e o acesso foi negado pela verificação de credenciais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD020E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto User authentication has failed portugues usuario falhou Temas significa`
+> `AWSDFD020E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto User authentication has failed portugues usuario falhou Temas outras palavras acesso foi negado pela credenciais`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD020E no HCL Workload Automation 10.2.8?
@@ -118061,10 +118061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD052E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD053E (severidade: error, familia AWSDFD - dfd) tem o texto: "by datatype misalignment" Em portugues: "by datatype misalignment".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD053E (severidade: error, familia AWSDFD - dfd) tem o texto: "by datatype misalignment" Em portugues: "by datatype misalignment". Em outras palavras: Ocorreu um erro de processamento causado pelo desalinhamento do tipo de dado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD053E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto datatype misalignment portugues significa diagnosticar`
+> `AWSDFD053E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto datatype misalignment portugues outras palavras Ocorreu erro processamento causado pelo desalinhamento tipo dado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD053E no HCL Workload Automation 10.2.8?
@@ -118121,10 +118121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD055W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD056E (severidade: error, familia AWSDFD - dfd) tem o texto: "by array bounds exceeded" Em portugues: "by array bounds exceeded".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD056E (severidade: error, familia AWSDFD - dfd) tem o texto: "by array bounds exceeded" Em portugues: "by array bounds exceeded". Em outras palavras: Ocorreu um erro de processamento porque um limite de dimensão da matriz foi ultrapassado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD056E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto array bounds exceeded portugues significa diagnosticar`
+> `AWSDFD056E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto array bounds exceeded portugues outras palavras Ocorreu erro processamento porque limite matriz foi ultrapassado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD056E no HCL Workload Automation 10.2.8?
@@ -118141,10 +118141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD056E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD057E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point denormal operand" Em portugues: "by floating point denormal operand".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD057E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point denormal operand" Em portugues: "by floating point denormal operand". Em outras palavras: Uma operação aritmética de ponto flutuante foi abortada porque um dos operandos utilizados não estava normalizado (denormal)..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD057E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point denormal operand portugues significa diagnosticar`
+> `AWSDFD057E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point denormal operand portugues outras palavras ponto flutuante foi abortada porque operandos utilizados estava normalizado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD057E no HCL Workload Automation 10.2.8?
@@ -118161,10 +118161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD057E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD058E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point divide by zero" Em portugues: "by floating point divide by zero".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD058E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point divide by zero" Em portugues: "by floating point divide by zero". Em outras palavras: O processamento foi interrompido porque ocorreu uma divisão por zero em uma operação de ponto flutuante..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD058E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point divide zero portugues significa diagnosticar`
+> `AWSDFD058E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point divide zero portugues outras palavras processamento foi interrompido porque ocorreu ponto flutuante significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD058E no HCL Workload Automation 10.2.8?
@@ -118181,10 +118181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD058E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD059E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point inexact result" Em portugues: "by floating point inexact resultado".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD059E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point inexact result" Em portugues: "by floating point inexact resultado". Em outras palavras: Uma operação de ponto flutuante terminou com um resultado arredondado e impreciso, o que gerou uma exceção de erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD059E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point inexact result portugues resultado significa diagnosticar`
+> `AWSDFD059E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point inexact result portugues resultado outras palavras ponto flutuante terminou arredondado impreciso gerou erro significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD059E no HCL Workload Automation 10.2.8?
@@ -118201,10 +118201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD059E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD060E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point invalid operation" Em portugues: "by floating point invalido operacao". Temas: invalido operacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD060E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point invalid operation" Em portugues: "by floating point invalido operacao". Temas: invalido operacao. Em outras palavras: O programa falhou porque tentou executar uma operação inválida sobre os valores de ponto flutuante em uso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD060E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point invalid operation portugues invalido operacao Temas significa`
+> `AWSDFD060E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point invalid operation portugues invalido operacao Temas outras palavras programa falhou porque tentou executar valores`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD060E no HCL Workload Automation 10.2.8?
@@ -118221,10 +118221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD060E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD061E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point overflow" Em portugues: "by floating point overflow".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD061E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point overflow" Em portugues: "by floating point overflow". Em outras palavras: Um cálculo de ponto flutuante gerou estouro numérico por exceder o valor máximo representável pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD061E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point overflow portugues significa diagnosticar`
+> `AWSDFD061E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point overflow portugues outras palavras ponto flutuante gerou estouro exceder valor pelo sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD061E no HCL Workload Automation 10.2.8?
@@ -118241,10 +118241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD061E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD062E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point stack check" Em portugues: "by floating point stack check".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD062E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point stack check" Em portugues: "by floating point stack check". Em outras palavras: Houve uma falha durante a verificação da pilha de ponto flutuante, indicando inconsistência no seu uso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD062E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point stack check portugues significa diagnosticar`
+> `AWSDFD062E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point stack check portugues outras palavras Houve falha durante pilha ponto flutuante indicando seu uso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD062E no HCL Workload Automation 10.2.8?
@@ -118261,10 +118261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD062E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD063E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point stack underflow" Em portugues: "by floating point stack underflow".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD063E (severidade: error, familia AWSDFD - dfd) tem o texto: "by floating point stack underflow" Em portugues: "by floating point stack underflow". Em outras palavras: A pilha de ponto flutuante ficou sem dados suficientes durante o processamento, causando um erro de underflow..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD063E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point stack underflow portugues significa diagnosticar`
+> `AWSDFD063E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto floating point stack underflow portugues outras palavras pilha ponto flutuante ficou sem dados suficientes durante processamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD063E no HCL Workload Automation 10.2.8?
@@ -118281,10 +118281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD063E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD064E (severidade: error, familia AWSDFD - dfd) tem o texto: "by integer divide by zero" Em portugues: "by integer divide by zero".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD064E (severidade: error, familia AWSDFD - dfd) tem o texto: "by integer divide by zero" Em portugues: "by integer divide by zero". Em outras palavras: O processo terminou em erro porque uma divisão de números inteiros foi tentada tendo zero como divisor..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD064E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto integer divide zero portugues significa diagnosticar`
+> `AWSDFD064E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto integer divide zero portugues outras palavras processo terminou erro porque inteiros foi tentada tendo divisor significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD064E no HCL Workload Automation 10.2.8?
@@ -118321,10 +118321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD065E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD066E (severidade: error, familia AWSDFD - dfd) tem o texto: "by privileged instruction" Em portugues: "by privileged instruction".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD066E (severidade: error, familia AWSDFD - dfd) tem o texto: "by privileged instruction" Em portugues: "by privileged instruction". Em outras palavras: A execução falhou porque o programa tentou usar uma instrução privilegiada sem possuir a permissão necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD066E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto privileged instruction portugues significa diagnosticar`
+> `AWSDFD066E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto privileged instruction portugues outras palavras falhou porque programa tentou usar privilegiada sem possuir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD066E no HCL Workload Automation 10.2.8?
@@ -118361,10 +118361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD067E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD068E (severidade: error, familia AWSDFD - dfd) tem o texto: "by illegal instruction" Em portugues: "by illegal instruction".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD068E (severidade: error, familia AWSDFD - dfd) tem o texto: "by illegal instruction" Em portugues: "by illegal instruction". Em outras palavras: O sistema encontrou uma instrução inválida ou desconhecida durante a execução e abortou o programa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD068E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto illegal instruction portugues significa diagnosticar`
+> `AWSDFD068E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto illegal instruction portugues outras palavras sistema encontrou desconhecida durante abortou programa significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD068E no HCL Workload Automation 10.2.8?
@@ -118381,10 +118381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD068E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD069E (severidade: error, familia AWSDFD - dfd) tem o texto: "by non continuable exception" Em portugues: "by non continuable exception".
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD069E (severidade: error, familia AWSDFD - dfd) tem o texto: "by non continuable exception" Em portugues: "by non continuable exception". Em outras palavras: Ocorreu uma exceção que não permite a continuação do processamento, encerrando a execução do programa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD069E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto non continuable exception portugues significa diagnosticar`
+> `AWSDFD069E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto non continuable exception portugues outras palavras Ocorreu permite processamento encerrando programa significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD069E no HCL Workload Automation 10.2.8?
@@ -118421,10 +118421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD070E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD071E (severidade: error, familia AWSDFD - dfd) tem o texto: "by invalid disposition" Em portugues: "by invalido disposition". Temas: invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD071E (severidade: error, familia AWSDFD - dfd) tem o texto: "by invalid disposition" Em portugues: "by invalido disposition". Temas: invalido. Em outras palavras: A falha aconteceu porque foi configurada uma disposição de tratamento de exceção inválida para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD071E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto invalid disposition portugues invalido Temas significa diagnosticar`
+> `AWSDFD071E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto invalid disposition portugues invalido Temas outras palavras falha aconteceu porque foi configurada tratamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD071E no HCL Workload Automation 10.2.8?
@@ -118521,10 +118521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD075I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD200E (severidade: error, familia AWSDFD - dfd) tem o texto: "cannot allocate for sid." Em portugues: "nao pode allocate for sid.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD200E (severidade: error, familia AWSDFD - dfd) tem o texto: "cannot allocate for sid." Em portugues: "nao pode allocate for sid.". Temas: nao pode. Em outras palavras: Não foi possível alocar memória para o identificador de sessão (SID) que foi solicitado pelo processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD200E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto cannot allocate for sid portugues nao Temas significa diagnosticar`
+> `AWSDFD200E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto cannot allocate for sid portugues nao Temas outras palavras foi alocar identificador SID solicitado pelo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD200E no HCL Workload Automation 10.2.8?
@@ -118541,10 +118541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD200E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD201E (severidade: error, familia AWSDFD - dfd) tem o texto: "cannot allocate for RefDom." Em portugues: "nao pode allocate for refdom.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD201E (severidade: error, familia AWSDFD - dfd) tem o texto: "cannot allocate for RefDom." Em portugues: "nao pode allocate for refdom.". Temas: nao pode. Em outras palavras: Falha ao alocar os recursos de memória necessários para o domínio de referência (RefDom) solicitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD201E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto cannot allocate for RefDom portugues nao refdom Temas significa diagnosticar`
+> `AWSDFD201E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto cannot allocate for RefDom portugues nao refdom Temas outras palavras Falha alocar recursos solicitado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD201E no HCL Workload Automation 10.2.8?
@@ -118561,10 +118561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD201E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD202E (severidade: error, familia AWSDFD - dfd) tem o texto: "Error: getgrgid stub called." Em portugues: "erro: getgrgid stub called.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD202E (severidade: error, familia AWSDFD - dfd) tem o texto: "Error: getgrgid stub called." Em portugues: "erro: getgrgid stub called.". Temas: erro. Em outras palavras: Um erro interno ocorreu porque uma rotina temporária de consulta de grupos de usuários foi invocada indevidamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD202E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto Error getgrgid stub called portugues erro Temas significa diagnosticar`
+> `AWSDFD202E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto Error getgrgid stub called portugues erro Temas outras palavras interno ocorreu porque rotina consulta grupos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD202E no HCL Workload Automation 10.2.8?
@@ -118581,10 +118581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD202E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFD300E (severidade: error, familia AWSDFD - dfd) tem o texto: "%s: %s is version %d, we need %d." Em portugues: "%s: %s is versao %d, we need %d.". Temas: versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFD300E (severidade: error, familia AWSDFD - dfd) tem o texto: "%s: %s is version %d, we need %d." Em portugues: "%s: %s is versao %d, we need %d.". Temas: versao. Em outras palavras: O componente indicado possui uma versão incompatível, pois é necessária uma versão mais nova para continuar a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFD300E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto version need portugues versao Temas significa diagnosticar`
+> `AWSDFD300E 10.2.8 mensagem severidade error familia AWSDFD dfd tem texto version need portugues versao Temas outras palavras indicado possui pois mais nova continuar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFD300E no HCL Workload Automation 10.2.8?
@@ -118661,10 +118661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFD303E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE001E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d opening uconfig." Em portugues: "arquivo sistema erro %d opening uconfig.". Temas: erro arquivo sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE001E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d opening uconfig." Em portugues: "arquivo sistema erro %d opening uconfig.". Temas: erro arquivo sistema. Em outras palavras: Houve um erro do sistema de arquivos ao tentar abrir o arquivo de configuração do usuário (uconfig)..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE001E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system opening uconfig portugues arquivo sistema erro Temas significa`
+> `AWSDFE001E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system opening uconfig portugues arquivo sistema erro Temas outras palavras Houve`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE001E no HCL Workload Automation 10.2.8?
@@ -118681,10 +118681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE002E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d creating uconfig." Em portugues: "arquivo sistema erro %d creating uconfig.". Temas: erro arquivo sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE002E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d creating uconfig." Em portugues: "arquivo sistema erro %d creating uconfig.". Temas: erro arquivo sistema. Em outras palavras: Falha ao criar o arquivo de configuração do usuário devido a um erro reportado pelo sistema de arquivos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE002E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system creating uconfig portugues arquivo sistema erro Temas significa`
+> `AWSDFE002E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system creating uconfig portugues arquivo sistema erro Temas outras palavras Falha criar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE002E no HCL Workload Automation 10.2.8?
@@ -118701,10 +118701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE003E (severidade: error, familia AWSDFE - dfe) tem o texto: "Error %d reading uconfig." Em portugues: "erro %d reading uconfig.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE003E (severidade: error, familia AWSDFE - dfe) tem o texto: "Error %d reading uconfig." Em portugues: "erro %d reading uconfig.". Temas: erro. Em outras palavras: Ocorreu um erro ao ler o arquivo de configuração do usuário durante a execução do processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE003E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto Error reading uconfig portugues erro Temas significa diagnosticar`
+> `AWSDFE003E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto Error reading uconfig portugues erro Temas outras palavras Ocorreu ler arquivo durante processamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE003E no HCL Workload Automation 10.2.8?
@@ -118721,10 +118721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE004E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d writing uconfig." Em portugues: "arquivo sistema erro %d writing uconfig.". Temas: erro arquivo sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE004E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d writing uconfig." Em portugues: "arquivo sistema erro %d writing uconfig.". Temas: erro arquivo sistema. Em outras palavras: Não foi possível gravar o arquivo de configuração do usuário porque o sistema de arquivos retornou um erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE004E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system writing uconfig portugues arquivo sistema erro Temas significa`
+> `AWSDFE004E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system writing uconfig portugues arquivo sistema erro Temas outras palavras foi gravar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE004E no HCL Workload Automation 10.2.8?
@@ -118741,10 +118741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE005E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d closing uconfig." Em portugues: "arquivo sistema erro %d closing uconfig.". Temas: erro arquivo sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE005E (severidade: error, familia AWSDFE - dfe) tem o texto: "File system error %d closing uconfig." Em portugues: "arquivo sistema erro %d closing uconfig.". Temas: erro arquivo sistema. Em outras palavras: Ocorreu um erro do sistema de arquivos ao tentar fechar o arquivo de configuração do usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE005E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system closing uconfig portugues arquivo sistema erro Temas significa`
+> `AWSDFE005E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto File system closing uconfig portugues arquivo sistema erro Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE005E no HCL Workload Automation 10.2.8?
@@ -118761,10 +118761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE025W (severidade: warning, familia AWSDFE - dfe) tem o texto: "WARNING: Extra parameters ignored starting at: "!1"" Em portugues: "warning: extra parametros ignored starting at: "!1"". Temas: parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE025W (severidade: warning, familia AWSDFE - dfe) tem o texto: "WARNING: Extra parameters ignored starting at: "!1"" Em portugues: "warning: extra parametros ignored starting at: "!1"". Temas: parametros. Em outras palavras: Os parâmetros extras fornecidos foram ignorados a partir do primeiro parâmetro inesperado encontrado na entrada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE025W 10.2.8 mensagem severidade warning familia AWSDFE dfe tem texto WARNING Extra parameters ignored starting portugues extra parametros Temas significa`
+> `AWSDFE025W 10.2.8 mensagem severidade warning familia AWSDFE dfe tem texto WARNING Extra parameters ignored starting portugues extra parametros Temas outras palavras extras fornecidos foram ignorados partir`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE025W no HCL Workload Automation 10.2.8?
@@ -118781,10 +118781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE025W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE028I (severidade: informational, familia AWSDFE - dfe) tem o texto: "Company name: %s Validation Code: %d" Em portugues: "company nome: %s validation code: %d". Temas: nome.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE028I (severidade: informational, familia AWSDFE - dfe) tem o texto: "Company name: %s Validation Code: %d" Em portugues: "company nome: %s validation code: %d". Temas: nome. Em outras palavras: O processo informou o nome da empresa e o respectivo código de validação associados à licença em uso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE028I 10.2.8 mensagem severidade informational familia AWSDFE dfe tem texto Company name Validation Code portugues company nome validation code Temas significa diagnosticar`
+> `AWSDFE028I 10.2.8 mensagem severidade informational familia AWSDFE dfe tem texto Company name Validation Code portugues company nome validation code Temas outras palavras processo informou empresa respectivo associados uso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE028I no HCL Workload Automation 10.2.8?
@@ -118841,10 +118841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE033E (severidade: error, familia AWSDFE - dfe) tem o texto: "Invalid Software code, Status = %d." Em portugues: "invalido software code, estado = %d.". Temas: invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE033E (severidade: error, familia AWSDFE - dfe) tem o texto: "Invalid Software code, Status = %d." Em portugues: "invalido software code, estado = %d.". Temas: invalido. Em outras palavras: O código de software fornecido é inválido, conforme indicado pelo status de validação retornado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE033E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto Invalid Software code Status portugues invalido software estado Temas significa diagnosticar`
+> `AWSDFE033E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto Invalid Software code Status portugues invalido software estado Temas outras palavras fornecido conforme indicado pelo status retornado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE033E no HCL Workload Automation 10.2.8?
@@ -118861,10 +118861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE033E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE034E (severidade: error, familia AWSDFE - dfe) tem o texto: "Software code specifies expired demo." Em portugues: "software code specifies expirou demonstracao.". Temas: expirou venceu expirado demonstracao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE034E (severidade: error, familia AWSDFE - dfe) tem o texto: "Software code specifies expired demo." Em portugues: "software code specifies expirou demonstracao.". Temas: expirou venceu expirado demonstracao. Em outras palavras: A licença de demonstração associada ao código de software informado já expirou e não pode mais ser utilizada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFE034E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto Software code specifies expired demo portugues software expirou demonstracao Temas venceu expirado significa`
+> `AWSDFE034E 10.2.8 mensagem severidade error familia AWSDFE dfe tem texto Software code specifies expired demo portugues software expirou demonstracao Temas venceu expirado outras palavras associada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFE034E no HCL Workload Automation 10.2.8?
@@ -118881,7 +118881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFE034E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFE035I (severidade: informational, familia AWSDFE - dfe) tem o texto: "Search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFE035I (severidade: informational, familia AWSDFE - dfe) tem o texto: "Search the HCL Support database for a solution at https://www.hcltech.com/products-and-platforms/support." Em portugues: "search the hcl support banco de dados for a solution at https://www.hcltech.com/products-and-platforms/support.". Temas: banco de dados. Em outras palavras: Consulte a base de conhecimento do suporte HCL no endereço informado para encontrar uma solução para o problema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDFE035I 10.2.8 mensagem severidade informational familia AWSDFE dfe tem texto Search the Support database for solution https www.hcltech.com products-and-platforms support portugues search dados`
@@ -118921,10 +118921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFF001I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFF002E (severidade: error, familia AWSDFF - dff) tem o texto: "execv failed; error %d" Em portugues: "execv falhou; erro %d". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFF002E (severidade: error, familia AWSDFF - dff) tem o texto: "execv failed; error %d" Em portugues: "execv falhou; erro %d". Temas: erro. Em outras palavras: A tentativa de executar um novo programa por meio da chamada de sistema execv falhou com um código de erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFF002E 10.2.8 mensagem severidade error familia AWSDFF dff tem texto execv failed portugues falhou erro Temas significa diagnosticar`
+> `AWSDFF002E 10.2.8 mensagem severidade error familia AWSDFF dff tem texto execv failed portugues falhou erro Temas outras palavras tentativa executar novo programa meio chamada sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFF002E no HCL Workload Automation 10.2.8?
@@ -118941,10 +118941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFF002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFF003E (severidade: error, familia AWSDFF - dff) tem o texto: "setuid failed; error %d" Em portugues: "setuid falhou; erro %d". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFF003E (severidade: error, familia AWSDFF - dff) tem o texto: "setuid failed; error %d" Em portugues: "setuid falhou; erro %d". Temas: erro. Em outras palavras: Falha ao alterar o usuário efetivo do processo usando a chamada setuid, que retornou um código de erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFF003E 10.2.8 mensagem severidade error familia AWSDFF dff tem texto setuid failed portugues falhou erro Temas significa diagnosticar`
+> `AWSDFF003E 10.2.8 mensagem severidade error familia AWSDFF dff tem texto setuid failed portugues falhou erro Temas outras palavras Falha alterar efetivo processo usando chamada retornou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFF003E no HCL Workload Automation 10.2.8?
@@ -118961,10 +118961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFF003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG002E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error calling logon user : %d" Em portugues: "starter:erro calling logon usuario : %d". Temas: usuario logon.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG002E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error calling logon user : %d" Em portugues: "starter:erro calling logon usuario : %d". Temas: usuario logon. Em outras palavras: O módulo inicializador falhou ao tentar efetuar o logon do usuário, retornando um código de erro específico..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG002E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error calling logon user portugues starter erro usuario Temas significa`
+> `AWSDFG002E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error calling logon user portugues starter erro usuario Temas outras palavras inicializador falhou tentar efetuar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG002E no HCL Workload Automation 10.2.8?
@@ -118981,10 +118981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG003E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error setuid failed: %s" Em portugues: "starter:erro setuid falhou: %s". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG003E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error setuid failed: %s" Em portugues: "starter:erro setuid falhou: %s". Temas: falhou. Em outras palavras: O inicializador não conseguiu alterar o usuário efetivo do processo e reportou a mensagem de erro informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG003E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error setuid failed portugues starter erro falhou Temas significa diagnosticar`
+> `AWSDFG003E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error setuid failed portugues starter erro falhou Temas outras palavras inicializador conseguiu alterar efetivo processo reportou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG003E no HCL Workload Automation 10.2.8?
@@ -119001,10 +119001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG004E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error execv failed : %s" Em portugues: "starter:erro execv falhou : %s". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG004E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error execv failed : %s" Em portugues: "starter:erro execv falhou : %s". Temas: falhou. Em outras palavras: O inicializador falhou ao executar o programa desejado e retornou a mensagem de erro indicada no relato..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG004E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error execv failed portugues starter erro falhou Temas significa diagnosticar`
+> `AWSDFG004E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error execv failed portugues starter erro falhou Temas outras palavras inicializador executar programa desejado retornou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG004E no HCL Workload Automation 10.2.8?
@@ -119021,10 +119021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG005E (severidade: error, familia AWSDFG - dfg) tem o texto: "Error: could not find program: !1" Em portugues: "erro: conseguiu nao find programa: !1". Temas: erro nao programa.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG005E (severidade: error, familia AWSDFG - dfg) tem o texto: "Error: could not find program: !1" Em portugues: "erro: conseguiu nao find programa: !1". Temas: erro nao programa. Em outras palavras: Não foi possível localizar o programa informado, que é necessário para dar continuidade à operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG005E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto Error could not find program portugues erro conseguiu nao programa Temas significa`
+> `AWSDFG005E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto Error could not find program portugues erro conseguiu nao programa Temas outras palavras foi localizar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG005E no HCL Workload Automation 10.2.8?
@@ -119041,10 +119041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG006E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:DuplicateHandle 0 failed: %d" Em portugues: "starter:duplicatehandle 0 falhou: %d". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG006E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:DuplicateHandle 0 failed: %d" Em portugues: "starter:duplicatehandle 0 falhou: %d". Temas: falhou. Em outras palavras: O inicializador não conseguiu duplicar o identificador do processo e retornou um código de erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG006E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER DuplicateHandle failed portugues starter duplicatehandle falhou Temas significa diagnosticar`
+> `AWSDFG006E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER DuplicateHandle failed portugues starter duplicatehandle falhou Temas outras palavras inicializador conseguiu duplicar identificador processo retornou erro significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG006E no HCL Workload Automation 10.2.8?
@@ -119061,10 +119061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG007E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:CreateProcessAsUser failed cmd = %s%s: %d" Em portugues: "starter:createprocessasuser falhou cmd = %s%s: %d". Temas: falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG007E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:CreateProcessAsUser failed cmd = %s%s: %d" Em portugues: "starter:createprocessasuser falhou cmd = %s%s: %d". Temas: falhou. Em outras palavras: O inicializador falhou ao criar um processo em nome do usuário para executar o comando indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG007E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER CreateProcessAsUser failed cmd portugues starter createprocessasuser falhou Temas significa diagnosticar`
+> `AWSDFG007E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER CreateProcessAsUser failed cmd portugues starter createprocessasuser falhou Temas outras palavras inicializador criar processo nome executar comando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG007E no HCL Workload Automation 10.2.8?
@@ -119081,10 +119081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG008E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Could not open "%s" : %s" Em portugues: "starter:conseguiu nao open "%s" : %s". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG008E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Could not open "%s" : %s" Em portugues: "starter:conseguiu nao open "%s" : %s". Temas: nao. Em outras palavras: O inicializador não conseguiu abrir o arquivo informado e reportou a mensagem de erro correspondente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG008E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Could not open portugues starter conseguiu nao Temas significa diagnosticar`
+> `AWSDFG008E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Could not open portugues starter conseguiu nao Temas outras palavras inicializador abrir arquivo informado reportou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG008E no HCL Workload Automation 10.2.8?
@@ -119101,10 +119101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG008E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG009E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Could not find IFUser value in "%s"." Em portugues: "starter:conseguiu nao find ifuser valor in "%s".". Temas: nao valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG009E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Could not find IFUser value in "%s"." Em portugues: "starter:conseguiu nao find ifuser valor in "%s".". Temas: nao valor. Em outras palavras: O inicializador não encontrou a definição do valor IFUser dentro do arquivo indicado no relato..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG009E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Could not find IFUser value portugues starter conseguiu nao ifuser valor Temas significa`
+> `AWSDFG009E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Could not find IFUser value portugues starter conseguiu nao ifuser valor Temas outras palavras inicializador encontrou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG009E no HCL Workload Automation 10.2.8?
@@ -119121,10 +119121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG010E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error initializing starter program." Em portugues: "starter:erro initializing starter programa.". Temas: programa.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG010E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error initializing starter program." Em portugues: "starter:erro initializing starter programa.". Temas: programa. Em outras palavras: O módulo inicializador encontrou um erro durante a própria inicialização do programa de partida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG010E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error initializing starter program portugues erro programa Temas significa`
+> `AWSDFG010E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error initializing starter program portugues erro programa Temas outras palavras inicializador encontrou durante`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG010E no HCL Workload Automation 10.2.8?
@@ -119141,10 +119141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG011E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error validating user: !1" Em portugues: "starter:erro validating usuario: !1". Temas: usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG011E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error validating user: !1" Em portugues: "starter:erro validating usuario: !1". Temas: usuario. Em outras palavras: O inicializador falhou ao validar o usuário informado, conforme aponta a mensagem de erro exibida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG011E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error validating user portugues starter erro usuario Temas significa diagnosticar`
+> `AWSDFG011E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error validating user portugues starter erro usuario Temas outras palavras inicializador falhou validar informado conforme aponta`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG011E no HCL Workload Automation 10.2.8?
@@ -119161,10 +119161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFG012E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error invalid password or user." Em portugues: "starter:erro invalido senha or usuario.". Temas: invalido usuario senha.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFG012E (severidade: error, familia AWSDFG - dfg) tem o texto: "STARTER:Error invalid password or user." Em portugues: "starter:erro invalido senha or usuario.". Temas: invalido usuario senha. Em outras palavras: O inicializador rejeitou a tentativa porque o usuário ou a senha fornecidos são inválidos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFG012E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error invalid password user portugues starter erro invalido senha usuario Temas significa`
+> `AWSDFG012E 10.2.8 mensagem severidade error familia AWSDFG dfg tem texto STARTER Error invalid password user portugues starter erro invalido senha usuario Temas outras palavras inicializador rejeitou tentativa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFG012E no HCL Workload Automation 10.2.8?
@@ -119181,7 +119181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFG012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFH001E (severidade: error, familia AWSDFH - dfh) tem o texto: "The following success condition comparison expression is missing one of a pair of parentheses: !1" Em portugues: "the seguinte sucesso condicao comparison expression is faltando one of a pair of parentheses: !1". Temas: faltando. Explicacao oficial: You have issued a job definition with an incorrect comparison expression for defining the return code or codes that indicate a successful completion of a job.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFH001E (severidade: error, familia AWSDFH - dfh) tem o texto: "The following success condition comparison expression is missing one of a pair of parentheses: !1" Em portugues: "the seguinte sucesso condicao comparison expression is faltando one of a pair of parentheses: !1". Temas: faltando. Em outras palavras: A expressão de condição de sucesso está mal formada por estar faltando um dos parênteses do par indicado.. Explicacao oficial: You have issued a job definition with an incorrect comparison expression for defining the return code or codes that indicate a successful completion of a job.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDFH001E 10.2.8 mensagem severidade error familia AWSDFH dfh tem texto The following success condition comparison expression missing one pair parentheses portugues the seguinte sucesso condicao faltando`
@@ -119221,10 +119221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFH002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFH003E (severidade: error, familia AWSDFH - dfh) tem o texto: "The following output condition comparison expression is incorrect: "!1"." Em portugues: "the seguinte saida condicao comparison expression is incorreto: "!1".". Temas: incorreto. Explicacao oficial: You have issued a job definition with an incorrect comparison expression for defining the return code or codes that indicate a successful completion of a job.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFH003E (severidade: error, familia AWSDFH - dfh) tem o texto: "The following output condition comparison expression is incorrect: "!1"." Em portugues: "the seguinte saida condicao comparison expression is incorreto: "!1".". Temas: incorreto. Em outras palavras: A expressão de comparação da condição de saída informada está incorreta e precisa ser corrigida.. Explicacao oficial: You have issued a job definition with an incorrect comparison expression for defining the return code or codes that indicate a successful completion of a job.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDFH003E 10.2.8 mensagem severidade error familia AWSDFH dfh tem texto The following output condition comparison expression incorrect portugues the seguinte saida condicao incorreto Temas Explicacao oficial You`
+> `AWSDFH003E 10.2.8 mensagem severidade error familia AWSDFH dfh tem texto The following output condition comparison expression incorrect portugues the seguinte saida condicao incorreto Temas outras palavras informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDFH003E no HCL Workload Automation 10.2.8?
@@ -119241,7 +119241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDFH003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDFH004E (severidade: error, familia AWSDFH - dfh) tem o texto: "The success condition comparison expression contains the following non-valid operand: !1. The operand must be an integer between -2147483647 and 2147483647." Em portugues: "the sucesso condicao comparison expression contains the seguinte non-valido operand: !1. the operand must be an integer entre -2147483647 and 2147483647.". Temas: entre. Explicacao oficial: You have issued a job definition with an incorrect comparison expression for defining the return code or codes that indicate a successful completion of a job.
+No HCL Workload Automation 10.2.8, a mensagem AWSDFH004E (severidade: error, familia AWSDFH - dfh) tem o texto: "The success condition comparison expression contains the following non-valid operand: !1. The operand must be an integer between -2147483647 and 2147483647." Em portugues: "the sucesso condicao comparison expression contains the seguinte non-valido operand: !1. the operand must be an integer entre -2147483647 and 2147483647.". Temas: entre. Em outras palavras: A condição de sucesso contém um operando inválido; o valor deve ser um inteiro dentro da faixa permitida.. Explicacao oficial: You have issued a job definition with an incorrect comparison expression for defining the return code or codes that indicate a successful completion of a job.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDFH004E 10.2.8 mensagem severidade error familia AWSDFH dfh tem texto The success condition comparison expression contains the following non-valid operand must integer between and portugues sucesso condicao`
@@ -122981,10 +122981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB155E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB156I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Get the HCL Workload Automation workstation fence" Em portugues: "get the hcl workload automation estacao de trabalho fence". Temas: estacao de trabalho carga.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB156I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Get the HCL Workload Automation workstation fence" Em portugues: "get the hcl workload automation estacao de trabalho fence". Temas: estacao de trabalho carga. Em outras palavras: Foi iniciada a obtenção da cerca de workstation do HCL Workload Automation conforme solicitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB156I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Get the workstation fence portugues get estacao trabalho Temas carga significa`
+> `AWSFAB156I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Get the workstation fence portugues get estacao trabalho Temas carga outras palavras Foi iniciada cerca`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB156I no HCL Workload Automation 10.2.8?
@@ -123001,7 +123001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB156I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB157I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The installation for the user "!1" is starting. Click "OK" to continue, "Cancel" to exit." Em portugues: "the instalacao for the usuario "!1" is starting. click "ok" to continue, "cancel" to exit.". Temas: usuario instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB157I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The installation for the user "!1" is starting. Click "OK" to continue, "Cancel" to exit." Em portugues: "the instalacao for the usuario "!1" is starting. click "ok" to continue, "cancel" to exit.". Temas: usuario instalacao. Em outras palavras: A instalação está iniciando para o usuário indicado; confirme para continuar ou cancele para sair..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB157I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The for the user starting Click continue Cancel exit portugues instalacao usuario click`
@@ -123021,7 +123021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB157I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB158I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The upgrade for the user "!1" is starting. Click "OK" to continue, "Cancel" to exit." Em portugues: "the upgrade for the usuario "!1" is starting. click "ok" to continue, "cancel" to exit.". Temas: usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB158I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The upgrade for the user "!1" is starting. Click "OK" to continue, "Cancel" to exit." Em portugues: "the upgrade for the usuario "!1" is starting. click "ok" to continue, "cancel" to exit.". Temas: usuario. Em outras palavras: A atualização está iniciando para o usuário indicado; confirme para continuar ou cancele para sair..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB158I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The upgrade for the user starting Click continue Cancel exit portugues usuario click`
@@ -123041,7 +123041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB158I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB159I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The uninstall for the user "!1" is starting. Click "OK" to continue, "Cancel" to exit." Em portugues: "the uninstall for the usuario "!1" is starting. click "ok" to continue, "cancel" to exit.". Temas: usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB159I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The uninstall for the user "!1" is starting. Click "OK" to continue, "Cancel" to exit." Em portugues: "the uninstall for the usuario "!1" is starting. click "ok" to continue, "cancel" to exit.". Temas: usuario. Em outras palavras: A remoção da instalação está iniciando para o usuário indicado; confirme para continuar ou cancele para sair..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB159I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The uninstall for the user starting Click continue Cancel exit portugues usuario click`
@@ -123061,10 +123061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB159I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB160I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking HCL Workload Automation jobs" Em portugues: "checking hcl workload automation jobs". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB160I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking HCL Workload Automation jobs" Em portugues: "checking hcl workload automation jobs". Temas: carga de trabalho. Em outras palavras: O sistema está verificando a existência e o estado dos jobs do HCL Workload Automation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB160I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking jobs portugues checking Temas carga trabalho significa diagnosticar`
+> `AWSFAB160I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking jobs portugues checking Temas carga trabalho outras palavras sistema verificando estado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB160I no HCL Workload Automation 10.2.8?
@@ -123081,7 +123081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB160I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB161E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "There are still jobs running. The twsinst operation cannot continue. Use the coman sj @#@.@ command to verify which jobs are still running." Em portugues: "there are still jobs em execucao. the twsinst operacao nao pode continue. use the coman sj @#@.@ comando to verify which jobs are still em execucao.". Temas: nao pode comando operacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB161E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "There are still jobs running. The twsinst operation cannot continue. Use the coman sj @#@.@ command to verify which jobs are still running." Em portugues: "there are still jobs em execucao. the twsinst operacao nao pode continue. use the coman sj @#@.@ comando to verify which jobs are still em execucao.". Temas: nao pode comando operacao. Em outras palavras: A operação não pode continuar porque ainda há jobs em execução; use o comando sugerido para verificá-los.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB161E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto There are still jobs running The operation cannot continue Use the coman command verify which`
@@ -123101,7 +123101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB161E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB162E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running. Close them before running the operation again." Em portugues: "the seguinte processes are still em execucao. close them antes em execucao the operacao again.". Temas: operacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB162E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running. Close them before running the operation again." Em portugues: "the seguinte processes are still em execucao. close them antes em execucao the operacao again.". Temas: operacao. Em outras palavras: Existem processos ainda em execução; feche-os antes de tentar executar a operação novamente.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB162E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following processes are still running Close them before the operation again portugues seguinte`
@@ -123121,7 +123121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB162E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB163E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running. Either close them or wait for their completion before running the operation again." Em portugues: "the seguinte processes are still em execucao. either close them or wait for their completion antes em execucao the operacao again.". Temas: operacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB163E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running. Either close them or wait for their completion before running the operation again." Em portugues: "the seguinte processes are still em execucao. either close them or wait for their completion antes em execucao the operacao again.". Temas: operacao. Em outras palavras: Há processos ainda em execução; feche-os ou aguarde a conclusão deles antes de repetir a operação.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB163E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following processes are still running Either close them wait for their completion before the operation again portugues`
@@ -123141,7 +123141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB163E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB164E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The values specified for "!1" and "!2" cannot be the same." Em portugues: "the values especificado for "!1" and "!2" nao pode be the same.". Temas: nao pode especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB164E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The values specified for "!1" and "!2" cannot be the same." Em portugues: "the values especificado for "!1" and "!2" nao pode be the same.". Temas: nao pode especificado. Em outras palavras: Os valores informados para os dois parâmetros indicados devem ser diferentes entre si para prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB164E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The values specified for and cannot the same portugues especificado nao Temas`
@@ -123161,7 +123161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB164E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB165E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to install the standard agent or the fault-tolerant agent, from the wrong eImage." Em portugues: "you are trying to install the standard agente or the fault-tolerant agente, from the wrong eimage.". Temas: instalar agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB165E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to install the standard agent or the fault-tolerant agent, from the wrong eImage." Em portugues: "you are trying to install the standard agente or the fault-tolerant agente, from the wrong eimage.". Temas: instalar agente. Em outras palavras: Você está tentando instalar o agente padrão ou tolerante a falhas usando um eImage incorreto para isso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB165E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are trying install the standard agent fault-tolerant from wrong eImage portugues you`
@@ -123181,7 +123181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB165E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB166E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to add the runtime for Java job plugins, but the eImage you downloaded does not contain the appropriate installation files." Em portugues: "you are trying to add the runtime for java job plugins, but the eimage you downloaded does nao contain the appropriate instalacao arquivos.". Temas: nao arquivos job instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB166E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to add the runtime for Java job plugins, but the eImage you downloaded does not contain the appropriate installation files." Em portugues: "you are trying to add the runtime for java job plugins, but the eimage you downloaded does nao contain the appropriate instalacao arquivos.". Temas: nao arquivos job instalacao. Em outras palavras: O eImage baixado não contém os arquivos necessários para adicionar o runtime dos plugins de jobs Java..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB166E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are trying add the runtime for Java job plugins but eImage you downloaded does not contain`
@@ -123201,7 +123201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB166E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB167E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to upgrade or modify a standard agent or a fault-tolerant agent, but the eImage you downloaded does not contain the related installation files." Em portugues: "you are trying to upgrade or modify a standard agente or a fault-tolerant agente, but the eimage you downloaded does nao contain the related instalacao arquivos.". Temas: nao arquivos instalacao agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB167E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to upgrade or modify a standard agent or a fault-tolerant agent, but the eImage you downloaded does not contain the related installation files." Em portugues: "you are trying to upgrade or modify a standard agente or a fault-tolerant agente, but the eimage you downloaded does nao contain the related instalacao arquivos.". Temas: nao arquivos instalacao agente. Em outras palavras: O eImage baixado não contém os arquivos de instalação necessários para atualizar o agente indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB167E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are trying upgrade modify standard agent fault-tolerant but the eImage you downloaded does not contain related`
@@ -123221,7 +123221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB167E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB168E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to upgrade or modify the runtime for Java job plugins, but the eImage you downloaded does not contain the related installation files." Em portugues: "you are trying to upgrade or modify the runtime for java job plugins, but the eimage you downloaded does nao contain the related instalacao arquivos.". Temas: nao arquivos job instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB168E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to upgrade or modify the runtime for Java job plugins, but the eImage you downloaded does not contain the related installation files." Em portugues: "you are trying to upgrade or modify the runtime for java job plugins, but the eimage you downloaded does nao contain the related instalacao arquivos.". Temas: nao arquivos job instalacao. Em outras palavras: O eImage baixado não contém os arquivos necessários para atualizar o runtime dos plugins de jobs Java..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB168E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are trying upgrade modify the runtime for Java job plugins but eImage you downloaded does not contain`
@@ -123241,10 +123241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB168E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB169E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system not supported." Em portugues: "operating sistema nao supported.". Temas: nao sistema suportado. Explicacao oficial: It is not possible to run the installation process on the operating system running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB169E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system not supported." Em portugues: "operating sistema nao supported.". Temas: nao sistema suportado. Em outras palavras: O sistema operacional em uso no equipamento não é suportado por esta instalação do produto.. Explicacao oficial: It is not possible to run the installation process on the operating system running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB169E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system not supported portugues operating sistema nao Temas suportado Explicacao oficial possible run the`
+> `AWSFAB169E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system not supported portugues operating sistema nao Temas suportado outras palavras operacional uso equipamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB169E no HCL Workload Automation 10.2.8?
@@ -123261,10 +123261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB169E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB170E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Linux distribution is not supported." Em portugues: "linux distribution is nao supported.". Temas: nao suportado. Explicacao oficial: It is not possible to run the installation process on the Linux distribution running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB170E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Linux distribution is not supported." Em portugues: "linux distribution is nao supported.". Temas: nao suportado. Em outras palavras: A distribuição Linux utilizada no sistema não é suportada por esta instalação do produto.. Explicacao oficial: It is not possible to run the installation process on the Linux distribution running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB170E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Linux distribution not supported portugues linux nao Temas suportado Explicacao oficial possible run the`
+> `AWSFAB170E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Linux distribution not supported portugues linux nao Temas suportado outras palavras utilizada sistema suportada produto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB170E no HCL Workload Automation 10.2.8?
@@ -123281,10 +123281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB170E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB171E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Linux version: !1 !2 !3; is not supported." Em portugues: "the linux versao: !1 !2 !3; is nao supported.". Temas: nao suportado versao. Explicacao oficial: It is not possible to run the installation process on the Linux version running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB171E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Linux version: !1 !2 !3; is not supported." Em portugues: "the linux versao: !1 !2 !3; is nao supported.". Temas: nao suportado versao. Em outras palavras: A versão do Linux informada não é suportada, portanto a instalação não pode prosseguir.. Explicacao oficial: It is not possible to run the installation process on the Linux version running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB171E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Linux version not supported portugues the linux versao nao Temas suportado Explicacao oficial possible`
+> `AWSFAB171E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Linux version not supported portugues the linux versao nao Temas suportado outras palavras informada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB171E no HCL Workload Automation 10.2.8?
@@ -123301,7 +123301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB171E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB172E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Linux service pack: !1 !2 !3; is not supported. Update the Operating system to service pack: !1 !2 !4." Em portugues: "the linux service pack: !1 !2 !3; is nao supported. atualizar the operating sistema to service pack: !1 !2 !4.". Temas: nao sistema suportado atualizar. Explicacao oficial: It is not possible to run the installation process on the Linux service pack running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB172E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Linux service pack: !1 !2 !3; is not supported. Update the Operating system to service pack: !1 !2 !4." Em portugues: "the linux service pack: !1 !2 !3; is nao supported. atualizar the operating sistema to service pack: !1 !2 !4.". Temas: nao sistema suportado atualizar. Em outras palavras: O service pack do Linux em uso não é suportado; é necessário atualizar o sistema para o service pack indicado.. Explicacao oficial: It is not possible to run the installation process on the Linux service pack running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB172E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Linux service pack not supported Update the Operating system portugues linux nao`
@@ -123321,10 +123321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB172E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB173E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system version is not supported." Em portugues: "operating sistema versao is nao supported.". Temas: nao sistema suportado versao. Explicacao oficial: It is not possible to run the installation process on the operating system version running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB173E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system version is not supported." Em portugues: "operating sistema versao is nao supported.". Temas: nao sistema suportado versao. Em outras palavras: A versão do sistema operacional instalada no equipamento não é suportada pelo produto.. Explicacao oficial: It is not possible to run the installation process on the operating system version running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB173E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system version not supported portugues operating sistema versao nao Temas suportado Explicacao oficial`
+> `AWSFAB173E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system version not supported portugues operating sistema versao nao Temas suportado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB173E no HCL Workload Automation 10.2.8?
@@ -123341,7 +123341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB173E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB174E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "AIX operating system maintanance package is not supported." Em portugues: "aix operating sistema maintanance package is nao supported.". Temas: nao sistema suportado. Explicacao oficial: It is not possible to run the installation process on the operating system maintanance package running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB174E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "AIX operating system maintanance package is not supported." Em portugues: "aix operating sistema maintanance package is nao supported.". Temas: nao sistema suportado. Em outras palavras: O pacote de manutenção do AIX em uso não é suportado por esta instalação do produto.. Explicacao oficial: It is not possible to run the installation process on the operating system maintanance package running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB174E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto AIX operating system maintanance package not supported portugues aix sistema nao Temas suportado`
@@ -123361,10 +123361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB174E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB175E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Found library !1 but not !2. Softlink !3 to !4." Em portugues: "encontrado library !1 but nao !2. softlink !3 to !4.". Temas: nao encontrado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB175E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Found library !1 but not !2. Softlink !3 to !4." Em portugues: "encontrado library !1 but nao !2. softlink !3 to !4.". Temas: nao encontrado. Em outras palavras: A biblioteca indicada foi encontrada, mas uma biblioteca dependente não; é necessário criar o link informado.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB175E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Found library but not Softlink portugues encontrado nao softlink Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB175E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Found library but not Softlink portugues encontrado nao softlink Temas outras palavras biblioteca indicada foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB175E no HCL Workload Automation 10.2.8?
@@ -123381,7 +123381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB175E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB176E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Library libXp.so.6 and libXmu.so.6 are not found. The graphical installation process cannot work." Em portugues: "library libxp.so.6 and libxmu.so.6 are nao encontrado. the graphical instalacao process nao pode work.". Temas: nao pode encontrado instalacao. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB176E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Library libXp.so.6 and libXmu.so.6 are not found. The graphical installation process cannot work." Em portugues: "library libxp.so.6 and libxmu.so.6 are nao encontrado. the graphical instalacao process nao pode work.". Temas: nao pode encontrado instalacao. Em outras palavras: As bibliotecas gráficas exigidas não foram encontradas, o que impede que a instalação gráfica funcione.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB176E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Library libXp.so.6 and libXmu.so.6 are not found The graphical process cannot work portugues library libxp.so.6 libxmu.so.6`
@@ -123401,7 +123401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB176E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB177E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required libraries are not installed on the running system." Em portugues: "obrigatorio libraries are nao instalado on the em execucao sistema.". Temas: nao sistema instalado. Explicacao oficial: SEE TEXT
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB177E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required libraries are not installed on the running system." Em portugues: "obrigatorio libraries are nao instalado on the em execucao sistema.". Temas: nao sistema instalado. Em outras palavras: As bibliotecas obrigatórias não estão instaladas no sistema em execução da instalação.. Explicacao oficial: SEE TEXT
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB177E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required libraries are not installed the running system portugues obrigatorio nao instalado execucao sistema Temas`
@@ -123421,7 +123421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB177E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB178E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "32-bit AIX operating system is not supported. Only AIX 64-bit system are supported by HCL Workload Automation." Em portugues: "32-bit aix operating sistema is nao supported. only aix 64-bit sistema are supported by hcl workload automation.". Temas: nao carga de trabalho sistema suportado. Explicacao oficial: It is not possible to run the installation process on the 32-bit AIX operating system running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB178E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "32-bit AIX operating system is not supported. Only AIX 64-bit system are supported by HCL Workload Automation." Em portugues: "32-bit aix operating sistema is nao supported. only aix 64-bit sistema are supported by hcl workload automation.". Temas: nao carga de trabalho sistema suportado. Em outras palavras: O AIX de 32 bits não é suportado; o produto aceita apenas sistemas AIX de 64 bits.. Explicacao oficial: It is not possible to run the installation process on the 32-bit AIX operating system running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB178E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto 32-bit AIX operating system not supported Only 64-bit are portugues aix sistema nao`
@@ -123441,7 +123441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB178E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB179E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The AIX maintanance package !1 is not supported. Update the running operating system to the manteinance package !2." Em portugues: "the aix maintanance package !1 is nao supported. atualizar the em execucao operating sistema to the manteinance package !2.". Temas: nao sistema suportado atualizar. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB179E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The AIX maintanance package !1 is not supported. Update the running operating system to the manteinance package !2." Em portugues: "the aix maintanance package !1 is nao supported. atualizar the em execucao operating sistema to the manteinance package !2.". Temas: nao sistema suportado atualizar. Em outras palavras: O pacote de manutenção do AIX em uso não é suportado; atualize o sistema para o pacote indicado.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB179E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The AIX maintanance package not supported Update the running operating system manteinance portugues aix`
@@ -123461,7 +123461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB179E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB180E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The AIX fix !1 was not found on the running system." Em portugues: "the aix fix !1 was nao encontrado on the em execucao sistema.". Temas: nao encontrado sistema. Explicacao oficial: It is not possible to run the installation process on the running AIX machine because the required fix is not installed.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB180E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The AIX fix !1 was not found on the running system." Em portugues: "the aix fix !1 was nao encontrado on the em execucao sistema.". Temas: nao encontrado sistema. Em outras palavras: A correção (fix) do AIX indicada não foi localizada no sistema em execução.. Explicacao oficial: It is not possible to run the installation process on the running AIX machine because the required fix is not installed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB180E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The AIX fix was not found the running system portugues aix nao encontrado execucao sistema`
@@ -123481,7 +123481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB180E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB181E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "C++ runtime level !1 not supported. Update the C++ runtime level to !2." Em portugues: "c++ runtime level !1 nao supported. atualizar the c++ runtime level to !2.". Temas: nao suportado atualizar. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB181E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "C++ runtime level !1 not supported. Update the C++ runtime level to !2." Em portugues: "c++ runtime level !1 nao supported. atualizar the c++ runtime level to !2.". Temas: nao suportado atualizar. Em outras palavras: O nível do runtime C++ em uso não é suportado; é necessário atualizá-lo para o nível indicado.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB181E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto runtime level not supported Update the portugues nao atualizar Temas`
@@ -123501,10 +123501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB181E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB182I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Disk space successfully checked on file system" Em portugues: "disk espaco successfully checked on arquivo sistema". Temas: arquivo sistema com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB182I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Disk space successfully checked on file system" Em portugues: "disk espaco successfully checked on arquivo sistema". Temas: arquivo sistema com sucesso. Em outras palavras: O espaço em disco disponível no sistema de arquivos foi verificado com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB182I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Disk space successfully checked file system portugues disk espaco arquivo sistema Temas sucesso significa`
+> `AWSFAB182I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Disk space successfully checked file system portugues disk espaco arquivo sistema Temas sucesso outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB182I no HCL Workload Automation 10.2.8?
@@ -123521,10 +123521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB182I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB183I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Disk swap space successfully checked" Em portugues: "disk swap espaco successfully checked". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB183I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Disk swap space successfully checked" Em portugues: "disk swap espaco successfully checked". Temas: com sucesso. Em outras palavras: O espaço de swap em disco disponível no sistema foi verificado com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB183I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Disk swap space successfully checked portugues disk espaco Temas sucesso significa`
+> `AWSFAB183I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Disk swap space successfully checked portugues disk espaco Temas sucesso outras palavras disco sistema foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB183I no HCL Workload Automation 10.2.8?
@@ -123541,10 +123541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB183I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB184I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Memory requirements successfully checked" Em portugues: "memoria requirements successfully checked". Temas: memoria com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB184I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Memory requirements successfully checked" Em portugues: "memoria requirements successfully checked". Temas: memoria com sucesso. Em outras palavras: Os requisitos de memória do sistema em execução foram verificados com sucesso durante a análise..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB184I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Memory requirements successfully checked portugues memoria Temas sucesso significa`
+> `AWSFAB184I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Memory requirements successfully checked portugues memoria Temas sucesso outras palavras requisitos sistema foram verificados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB184I no HCL Workload Automation 10.2.8?
@@ -123561,10 +123561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB184I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB185I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Prerequisites check complete" Em portugues: "prerequisites check complete".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB185I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Prerequisites check complete" Em portugues: "prerequisites check complete". Em outras palavras: A verificação dos pré-requisitos necessários da instalação em curso foi concluída com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB185I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Prerequisites check complete portugues prerequisites significa diagnosticar`
+> `AWSFAB185I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Prerequisites check complete portugues prerequisites outras palavras -requisitos curso foi sucesso significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB185I no HCL Workload Automation 10.2.8?
@@ -123581,7 +123581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB185I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB186I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The path provided !1 does not contain a Websphere Application Server" Em portugues: "the caminho provided !1 does nao contain a websphere application servidor". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB186I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The path provided !1 does not contain a Websphere Application Server" Em portugues: "the caminho provided !1 does nao contain a websphere application servidor". Temas: nao. Em outras palavras: O caminho informado não contém uma instalação válida do WebSphere Application Server..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB186I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The path provided does not contain Websphere Application Server portugues the caminho nao websphere application servidor`
@@ -123601,7 +123601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB186I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB187I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Websphere Application Server was found on the path provided: !1. On this instance, the following components are already installed." Em portugues: "websphere application servidor was encontrado on the caminho provided: !1. on this instancia, the seguinte components are already instalado.". Temas: encontrado instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB187I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Websphere Application Server was found on the path provided: !1. On this instance, the following components are already installed." Em portugues: "websphere application servidor was encontrado on the caminho provided: !1. on this instancia, the seguinte components are already instalado.". Temas: encontrado instalado. Em outras palavras: O WebSphere Application Server foi localizado no caminho informado e alguns componentes já estão instalados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB187I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Websphere Application Server was found the path provided this instance following components are already installed portugues websphere application`
@@ -123621,10 +123621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB187I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB188I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Linux distribution release successfully checked." Em portugues: "linux distribution release successfully checked.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB188I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Linux distribution release successfully checked." Em portugues: "linux distribution release successfully checked.". Temas: com sucesso. Em outras palavras: A versão da distribuição Linux em uso foi verificada com sucesso durante a análise..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB188I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Linux distribution release successfully checked portugues linux Temas sucesso significa`
+> `AWSFAB188I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Linux distribution release successfully checked portugues linux Temas sucesso outras palavras uso foi verificada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB188I no HCL Workload Automation 10.2.8?
@@ -123641,7 +123641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB188I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB190I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Recommended libraries for Linux operating system are installed on the running system." Em portugues: "recommended libraries for linux operating sistema are instalado on the em execucao sistema.". Temas: sistema instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB190I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Recommended libraries for Linux operating system are installed on the running system." Em portugues: "recommended libraries for linux operating sistema are instalado on the em execucao sistema.". Temas: sistema instalado. Em outras palavras: As bibliotecas recomendadas para o Linux estão instaladas no sistema em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB190I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Recommended libraries for Linux operating system are installed the running portugues recommended linux sistema`
@@ -123661,10 +123661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB190I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB191I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "AIX fixes successfully checked on the running system." Em portugues: "aix fixes successfully checked on the em execucao sistema.". Temas: sistema com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB191I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "AIX fixes successfully checked on the running system." Em portugues: "aix fixes successfully checked on the em execucao sistema.". Temas: sistema com sucesso. Em outras palavras: As correções (fixes) do AIX foram verificadas com sucesso no sistema em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB191I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto AIX fixes successfully checked the running system portugues aix execucao sistema Temas sucesso significa`
+> `AWSFAB191I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto AIX fixes successfully checked the running system portugues aix execucao sistema Temas sucesso outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB191I no HCL Workload Automation 10.2.8?
@@ -123681,10 +123681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB191I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB192I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "C++ runtime level successfully checked on the running system." Em portugues: "c++ runtime level successfully checked on the em execucao sistema.". Temas: sistema com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB192I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "C++ runtime level successfully checked on the running system." Em portugues: "c++ runtime level successfully checked on the em execucao sistema.". Temas: sistema com sucesso. Em outras palavras: O nível do runtime C++ foi verificado com sucesso no sistema em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB192I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto runtime level successfully checked the running system portugues execucao sistema Temas sucesso significa`
+> `AWSFAB192I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto runtime level successfully checked the running system portugues execucao sistema Temas sucesso outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB192I no HCL Workload Automation 10.2.8?
@@ -123701,10 +123701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB192I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB193E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The library !1 must be installed on the running system." Em portugues: "the library !1 must be instalado on the em execucao sistema.". Temas: sistema instalado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB193E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The library !1 must be installed on the running system." Em portugues: "the library !1 must be instalado on the em execucao sistema.". Temas: sistema instalado. Em outras palavras: A biblioteca indicada precisa estar instalada no sistema para que a operação seja concluída.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB193E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The library must installed the running system portugues instalado execucao sistema Temas Explicacao`
+> `AWSFAB193E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The library must installed the running system portugues instalado execucao sistema Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB193E no HCL Workload Automation 10.2.8?
@@ -123721,7 +123721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB193E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB194E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The 64 bit library !1 must be installed on the running system." Em portugues: "the 64 bit library !1 must be instalado on the em execucao sistema.". Temas: sistema instalado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB194E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The 64 bit library !1 must be installed on the running system." Em portugues: "the 64 bit library !1 must be instalado on the em execucao sistema.". Temas: sistema instalado. Em outras palavras: A biblioteca de 64 bits indicada deve estar instalada no sistema em execução da instalação.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB194E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The bit library must installed the running system portugues instalado execucao sistema Temas`
@@ -123741,10 +123741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB194E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB195I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Suse !1 required release: none." Em portugues: "suse !1 obrigatorio release: none.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB195I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Suse !1 required release: none." Em portugues: "suse !1 obrigatorio release: none.". Em outras palavras: Para o Suse indicado não é exigida nenhuma versão específica de release do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB195I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Suse required release none portugues suse obrigatorio significa diagnosticar`
+> `AWSFAB195I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Suse required release none portugues suse obrigatorio outras palavras indicado exigida nenhuma sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB195I no HCL Workload Automation 10.2.8?
@@ -123761,10 +123761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB195I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB196E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The patch !1 must be installed on the running system." Em portugues: "the patch !1 must be instalado on the em execucao sistema.". Temas: sistema instalado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB196E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The patch !1 must be installed on the running system." Em portugues: "the patch !1 must be instalado on the em execucao sistema.". Temas: sistema instalado. Em outras palavras: O patch indicado precisa estar instalado no sistema para que a operação continue.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB196E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The patch must installed the running system portugues instalado execucao sistema Temas Explicacao`
+> `AWSFAB196E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The patch must installed the running system portugues instalado execucao sistema Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB196E no HCL Workload Automation 10.2.8?
@@ -123781,10 +123781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB196E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB197E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Upgrade patch !1 !2 to version !3." Em portugues: "upgrade patch !1 !2 to versao !3.". Temas: versao. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB197E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Upgrade patch !1 !2 to version !3." Em portugues: "upgrade patch !1 !2 to versao !3.". Temas: versao. Em outras palavras: É necessário atualizar o patch indicado para a versão informada na mensagem de erro.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB197E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Upgrade patch version portugues upgrade versao Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB197E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Upgrade patch version portugues upgrade versao Temas outras palavras atualizar indicado informada erro Explicacao oficial`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB197E no HCL Workload Automation 10.2.8?
@@ -123801,10 +123801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB197E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB198E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system required patches are missing." Em portugues: "operating sistema obrigatorio patches are faltando.". Temas: sistema faltando. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB198E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system required patches are missing." Em portugues: "operating sistema obrigatorio patches are faltando.". Temas: sistema faltando. Em outras palavras: Estão faltando patches obrigatórios do sistema operacional para que a instalação prossiga.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB198E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system required patches are missing portugues operating sistema obrigatorio faltando Temas Explicacao oficial SEE`
+> `AWSFAB198E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system required patches are missing portugues operating sistema obrigatorio faltando Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB198E no HCL Workload Automation 10.2.8?
@@ -123821,10 +123821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB198E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB199E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required cluster patch !1 is missing." Em portugues: "obrigatorio cluster patch !1 is faltando.". Temas: faltando. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB199E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required cluster patch !1 is missing." Em portugues: "obrigatorio cluster patch !1 is faltando.". Temas: faltando. Em outras palavras: O patch de cluster obrigatório indicado não está presente no sistema em execução.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB199E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required cluster patch missing portugues obrigatorio faltando Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB199E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required cluster patch missing portugues obrigatorio faltando Temas outras palavras indicado presente sistema Explicacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB199E no HCL Workload Automation 10.2.8?
@@ -123841,10 +123841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB199E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB200E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required security patch is missing." Em portugues: "obrigatorio seguranca patch is faltando.". Temas: faltando seguranca. Explicacao oficial: A required security patch is missing.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB200E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required security patch is missing." Em portugues: "obrigatorio seguranca patch is faltando.". Temas: faltando seguranca. Em outras palavras: Um patch de segurança obrigatório não está instalado no sistema em execução da instalação.. Explicacao oficial: A required security patch is missing.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB200E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required security patch missing portugues obrigatorio seguranca faltando Temas Explicacao oficial required significa`
+> `AWSFAB200E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required security patch missing portugues obrigatorio seguranca faltando Temas outras palavras instalado sistema Explicacao oficial`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB200E no HCL Workload Automation 10.2.8?
@@ -123861,10 +123861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB200E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB201W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "WebSphere recommended patches are missing." Em portugues: "websphere recommended patches are faltando.". Temas: faltando. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB201W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "WebSphere recommended patches are missing." Em portugues: "websphere recommended patches are faltando.". Temas: faltando. Em outras palavras: Os patches recomendados do WebSphere não estão instalados no sistema em execução.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB201W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto WebSphere recommended patches are missing portugues websphere faltando Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB201W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto WebSphere recommended patches are missing portugues websphere faltando Temas outras palavras recomendados instalados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB201W no HCL Workload Automation 10.2.8?
@@ -123881,10 +123881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB201W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB202I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Patch level successfully checked." Em portugues: "patch level successfully checked.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB202I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Patch level successfully checked." Em portugues: "patch level successfully checked.". Temas: com sucesso. Em outras palavras: O nível de patches instalados no sistema foi verificado com sucesso durante a análise..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB202I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Patch level successfully checked portugues patch Temas sucesso significa`
+> `AWSFAB202I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Patch level successfully checked portugues patch Temas sucesso outras palavras patches instalados sistema foi verificado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB202I no HCL Workload Automation 10.2.8?
@@ -123901,7 +123901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB202I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB203E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Unsupported quality pack. Update the quality pack to !1 !2 or December 2004." Em portugues: "unsupported quality pack. atualizar the quality pack to !1 !2 or december 2004.". Temas: atualizar nao suportado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB203E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Unsupported quality pack. Update the quality pack to !1 !2 or December 2004." Em portugues: "unsupported quality pack. atualizar the quality pack to !1 !2 or december 2004.". Temas: atualizar nao suportado. Em outras palavras: O quality pack em uso não é suportado; é necessário atualizá-lo para a versão indicada.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB203E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Unsupported quality pack Update the December portugues unsupported atualizar december Temas`
@@ -123921,10 +123921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB203E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB204I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Release level !1 successfully checked." Em portugues: "release level !1 successfully checked.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB204I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Release level !1 successfully checked." Em portugues: "release level !1 successfully checked.". Temas: com sucesso. Em outras palavras: O nível de release do sistema indicado foi verificado com sucesso durante a análise..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB204I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Release level successfully checked portugues release Temas sucesso significa`
+> `AWSFAB204I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Release level successfully checked portugues release Temas sucesso outras palavras sistema indicado foi verificado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB204I no HCL Workload Automation 10.2.8?
@@ -123941,7 +123941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB204I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB205E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The operating system release level is not supported. Update the release level !1 to !2." Em portugues: "the operating sistema release level is nao supported. atualizar the release level !1 to !2.". Temas: nao sistema suportado atualizar. Explicacao oficial: SEE TEXT
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB205E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The operating system release level is not supported. Update the release level !1 to !2." Em portugues: "the operating sistema release level is nao supported. atualizar the release level !1 to !2.". Temas: nao sistema suportado atualizar. Em outras palavras: O nível de release do sistema não é suportado; atualize do nível informado para o nível indicado.. Explicacao oficial: SEE TEXT
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB205E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The operating system release level not supported Update the portugues sistema nao`
@@ -123961,10 +123961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB205E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB206I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Check security patches ..." Em portugues: "check seguranca patches ...". Temas: seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB206I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Check security patches ..." Em portugues: "check seguranca patches ...". Temas: seguranca. Em outras palavras: Durante a análise de pré-requisitos, o sistema está verificando se os patches de segurança estão presentes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB206I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Check security patches portugues check seguranca Temas significa diagnosticar`
+> `AWSFAB206I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Check security patches portugues check seguranca Temas outras palavras Durante -requisitos sistema verificando presentes significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB206I no HCL Workload Automation 10.2.8?
@@ -123981,10 +123981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB206I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB207I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Check cluster patch !1 ..." Em portugues: "check cluster patch !1 ...".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB207I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Check cluster patch !1 ..." Em portugues: "check cluster patch !1 ...". Em outras palavras: O sistema está verificando se o patch de cluster indicado está presente no equipamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB207I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Check cluster patch portugues check significa diagnosticar`
+> `AWSFAB207I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Check cluster patch portugues check outras palavras sistema verificando indicado presente equipamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB207I no HCL Workload Automation 10.2.8?
@@ -124001,10 +124001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB207I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB208I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Opening text file !1." Em portugues: "opening text arquivo !1.". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB208I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Opening text file !1." Em portugues: "opening text arquivo !1.". Temas: arquivo. Em outras palavras: O sistema está abrindo o arquivo de texto indicado para leitura do seu conteúdo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB208I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Opening text file portugues opening arquivo Temas significa diagnosticar`
+> `AWSFAB208I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Opening text file portugues opening arquivo Temas outras palavras sistema abrindo indicado leitura seu significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB208I no HCL Workload Automation 10.2.8?
@@ -124021,10 +124021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB208I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB209I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "WebSphere patches successfully checked." Em portugues: "websphere patches successfully checked.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB209I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "WebSphere patches successfully checked." Em portugues: "websphere patches successfully checked.". Temas: com sucesso. Em outras palavras: Os patches do WebSphere foram verificados com sucesso no sistema em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB209I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto WebSphere patches successfully checked portugues websphere Temas sucesso significa`
+> `AWSFAB209I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto WebSphere patches successfully checked portugues websphere Temas sucesso outras palavras foram verificados sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB209I no HCL Workload Automation 10.2.8?
@@ -124041,7 +124041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB209I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB210I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The minimum patch !1 was found on the running system." Em portugues: "the minimo patch !1 was encontrado on the em execucao sistema.". Temas: encontrado sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB210I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The minimum patch !1 was found on the running system." Em portugues: "the minimo patch !1 was encontrado on the em execucao sistema.". Temas: encontrado sistema. Em outras palavras: O patch mínimo obrigatório indicado foi localizado no sistema em execução da instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB210I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The minimum patch was found the running system portugues minimo encontrado execucao sistema Temas`
@@ -124061,7 +124061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB210I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB211W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The minimum required patch !1 was not found on the running system." Em portugues: "the minimo obrigatorio patch !1 was nao encontrado on the em execucao sistema.". Temas: nao encontrado sistema. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB211W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The minimum required patch !1 was not found on the running system." Em portugues: "the minimo obrigatorio patch !1 was nao encontrado on the em execucao sistema.". Temas: nao encontrado sistema. Em outras palavras: O patch mínimo obrigatório indicado não foi encontrado no sistema em execução da instalação.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB211W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The minimum required patch was not found the running system portugues minimo obrigatorio nao encontrado`
@@ -124081,10 +124081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB211W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB212E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system release !1 not supported." Em portugues: "operating sistema release !1 nao supported.". Temas: nao sistema suportado. Explicacao oficial: The operating system release is not supported
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB212E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Operating system release !1 not supported." Em portugues: "operating sistema release !1 nao supported.". Temas: nao sistema suportado. Em outras palavras: O nível de release do sistema operacional indicado não é suportado pelo produto.. Explicacao oficial: The operating system release is not supported
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB212E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system release not supported portugues operating sistema nao Temas suportado Explicacao oficial The`
+> `AWSFAB212E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Operating system release not supported portugues operating sistema nao Temas suportado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB212E no HCL Workload Automation 10.2.8?
@@ -124101,7 +124101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB212E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB213E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Not enogh free disk space on file system !1. !2 !3 are required." Em portugues: "nao enogh free disk espaco on arquivo sistema !1. !2 !3 are obrigatorio.". Temas: nao arquivo sistema. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB213E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Not enogh free disk space on file system !1. !2 !3 are required." Em portugues: "nao enogh free disk espaco on arquivo sistema !1. !2 !3 are obrigatorio.". Temas: nao arquivo sistema. Em outras palavras: Não há espaço livre suficiente no sistema de arquivos indicado; os espaços exigidos são informados.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB213E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Not enogh free disk space file system are required portugues nao espaco arquivo sistema obrigatorio`
@@ -124121,7 +124121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB213E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB214E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Not enough free disk space on swap file system." Em portugues: "nao enough free disk espaco on swap arquivo sistema.". Temas: nao arquivo sistema. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB214E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Not enough free disk space on swap file system." Em portugues: "nao enough free disk espaco on swap arquivo sistema.". Temas: nao arquivo sistema. Em outras palavras: Não há espaço livre suficiente no sistema de arquivos de swap disponível no equipamento.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB214E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Not enough free disk space swap file system portugues nao espaco arquivo sistema Temas`
@@ -124141,10 +124141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB214E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB215E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory !1 is not found." Em portugues: "the diretorio !1 is nao encontrado.". Temas: nao encontrado diretorio. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB215E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory !1 is not found." Em portugues: "the diretorio !1 is nao encontrado.". Temas: nao encontrado diretorio. Em outras palavras: O diretório indicado não foi encontrado no sistema em que a instalação ocorre.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB215E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory not found portugues the diretorio nao encontrado Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB215E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory not found portugues the diretorio nao encontrado Temas outras palavras indicado foi sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB215E no HCL Workload Automation 10.2.8?
@@ -124161,10 +124161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB215E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB216E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You specified a non existing installation path." Em portugues: "you especificado a non existing instalacao caminho.". Temas: especificado instalacao. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB216E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You specified a non existing installation path." Em portugues: "you especificado a non existing instalacao caminho.". Temas: especificado instalacao. Em outras palavras: Você especificou um caminho de instalação que não existe no sistema de destino.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB216E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You specified non existing path portugues you especificado instalacao caminho Temas Explicacao oficial SEE`
+> `AWSFAB216E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You specified non existing path portugues you especificado instalacao caminho Temas outras palavras especificou`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB216E no HCL Workload Automation 10.2.8?
@@ -124181,10 +124181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB216E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB217I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The machine hardware !1 and model !2 successfully checked." Em portugues: "the machine hardware !1 and model !2 successfully checked.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB217I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The machine hardware !1 and model !2 successfully checked." Em portugues: "the machine hardware !1 and model !2 successfully checked.". Temas: com sucesso. Em outras palavras: O hardware e o modelo de máquina indicados foram verificados com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB217I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The machine hardware and model successfully checked portugues the Temas sucesso significa`
+> `AWSFAB217I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The machine hardware and model successfully checked portugues the Temas sucesso outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB217I no HCL Workload Automation 10.2.8?
@@ -124201,10 +124201,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB217I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB218E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Hardware !1 not supported. The required hardware is !2." Em portugues: "hardware !1 nao supported. the obrigatorio hardware is !2.". Temas: nao suportado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB218E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Hardware !1 not supported. The required hardware is !2." Em portugues: "hardware !1 nao supported. the obrigatorio hardware is !2.". Temas: nao suportado. Em outras palavras: O hardware indicado não é suportado; o equipamento obrigatório para a instalação é o informado.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB218E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Hardware not supported The required hardware portugues nao the obrigatorio Temas suportado Explicacao oficial SEE`
+> `AWSFAB218E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Hardware not supported The required hardware portugues nao the obrigatorio Temas suportado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB218E no HCL Workload Automation 10.2.8?
@@ -124221,7 +124221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB218E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB219E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Hardware model !1 not supported. The required hardware model is !2." Em portugues: "hardware model !1 nao supported. the obrigatorio hardware model is !2.". Temas: nao suportado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB219E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Hardware model !1 not supported. The required hardware model is !2." Em portugues: "hardware model !1 nao supported. the obrigatorio hardware model is !2.". Temas: nao suportado. Em outras palavras: O modelo de hardware indicado não é suportado; o modelo obrigatório é o informado.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB219E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Hardware model not supported The required hardware portugues nao the obrigatorio Temas`
@@ -124241,10 +124241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB219E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB220W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Recommended memory requirements are not satisfied." Em portugues: "recommended memoria requirements are nao satisfied.". Temas: nao memoria. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB220W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Recommended memory requirements are not satisfied." Em portugues: "recommended memoria requirements are nao satisfied.". Temas: nao memoria. Em outras palavras: Os requisitos recomendados de memória não estão sendo atendidos pelo sistema em execução.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB220W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Recommended memory requirements are not satisfied portugues recommended memoria nao Temas Explicacao oficial SEE`
+> `AWSFAB220W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Recommended memory requirements are not satisfied portugues recommended memoria nao Temas outras palavras requisitos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB220W no HCL Workload Automation 10.2.8?
@@ -124261,7 +124261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB220W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB221E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Memory requirements are not satisfied. The minimum requirement is !1 Kbytes and recommended is !2 Kbytes." Em portugues: "the memoria requirements are nao satisfied. the minimo requirement is !1 kbytes and recommended is !2 kbytes.". Temas: nao memoria. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB221E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Memory requirements are not satisfied. The minimum requirement is !1 Kbytes and recommended is !2 Kbytes." Em portugues: "the memoria requirements are nao satisfied. the minimo requirement is !1 kbytes and recommended is !2 kbytes.". Temas: nao memoria. Em outras palavras: Os requisitos de memória não são atendidos; o mínimo exigido e o recomendado estão indicados em KB.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB221E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Memory requirements are not satisfied minimum requirement Kbytes and recommended portugues the memoria nao`
@@ -124281,10 +124281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB221E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB222I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "No kernel requirement checks are necessary." Em portugues: "no kernel requirement checks are necessary.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB222I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "No kernel requirement checks are necessary." Em portugues: "no kernel requirement checks are necessary.". Em outras palavras: Nenhuma verificação de parâmetros de kernel é necessária para esta instalação em curso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB222I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto kernel requirement checks are necessary portugues significa`
+> `AWSFAB222I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto kernel requirement checks are necessary portugues outras palavras Nenhuma curso significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB222I no HCL Workload Automation 10.2.8?
@@ -124301,10 +124301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB222I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB223I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel parameters successfully checked." Em portugues: "kernel parametros successfully checked.". Temas: parametros com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB223I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel parameters successfully checked." Em portugues: "kernel parametros successfully checked.". Temas: parametros com sucesso. Em outras palavras: Os parâmetros de kernel do sistema em execução foram verificados com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB223I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Kernel parameters successfully checked portugues kernel parametros Temas sucesso significa`
+> `AWSFAB223I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Kernel parameters successfully checked portugues kernel parametros Temas sucesso outras palavras sistema foram verificados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB223I no HCL Workload Automation 10.2.8?
@@ -124321,10 +124321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB223I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB224W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel parameter !1 not defined." Em portugues: "kernel parametro !1 nao defined.". Temas: nao parametro. Explicacao oficial: The kernel parameter is not defined.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB224W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel parameter !1 not defined." Em portugues: "kernel parametro !1 nao defined.". Temas: nao parametro. Em outras palavras: O parâmetro de kernel indicado não está definido no sistema em execução.. Explicacao oficial: The kernel parameter is not defined.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB224W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Kernel parameter not defined portugues kernel parametro nao Temas Explicacao oficial The`
+> `AWSFAB224W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Kernel parameter not defined portugues kernel parametro nao Temas outras palavras indicado definido sistema Explicacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB224W no HCL Workload Automation 10.2.8?
@@ -124341,10 +124341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB224W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB225E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel parameter !1 not defined." Em portugues: "kernel parametro !1 nao defined.". Temas: nao parametro. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB225E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel parameter !1 not defined." Em portugues: "kernel parametro !1 nao defined.". Temas: nao parametro. Em outras palavras: O parâmetro de kernel indicado não está definido, impedindo que a instalação prossiga.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB225E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Kernel parameter not defined portugues kernel parametro nao Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB225E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Kernel parameter not defined portugues kernel parametro nao Temas outras palavras indicado definido impedindo prossiga`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB225E no HCL Workload Automation 10.2.8?
@@ -124361,10 +124361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB225E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB226I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Base kernel level required value: !1." Em portugues: "base kernel level obrigatorio valor: !1.". Temas: valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB226I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Base kernel level required value: !1." Em portugues: "base kernel level obrigatorio valor: !1.". Temas: valor. Em outras palavras: O valor exigido para o nível básico de kernel do sistema é o informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB226I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Base kernel level required value portugues base obrigatorio valor Temas significa`
+> `AWSFAB226I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Base kernel level required value portugues base obrigatorio valor Temas outras palavras exigido sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB226I no HCL Workload Automation 10.2.8?
@@ -124381,10 +124381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB226I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB227I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel library required value: !1." Em portugues: "kernel library obrigatorio valor: !1.". Temas: valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB227I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Kernel library required value: !1." Em portugues: "kernel library obrigatorio valor: !1.". Temas: valor. Em outras palavras: O valor exigido para a biblioteca de kernel do sistema é o informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB227I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Kernel library required value portugues kernel obrigatorio valor Temas significa`
+> `AWSFAB227I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Kernel library required value portugues kernel obrigatorio valor Temas outras palavras exigido biblioteca sistema informado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB227I no HCL Workload Automation 10.2.8?
@@ -124401,10 +124401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB227I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB228E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required kernel parameter(s) not defined." Em portugues: "obrigatorio kernel parametro(s) nao defined.". Temas: nao. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB228E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Required kernel parameter(s) not defined." Em portugues: "obrigatorio kernel parametro(s) nao defined.". Temas: nao. Em outras palavras: Os parâmetros de kernel obrigatórios não estão definidos no sistema em execução.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB228E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required kernel parameter not defined portugues obrigatorio parametro nao Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB228E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Required kernel parameter not defined portugues obrigatorio parametro nao Temas outras palavras definidos sistema Explicacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB228E no HCL Workload Automation 10.2.8?
@@ -124421,10 +124421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB228E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB229W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Recommended kernel parameters are not defined." Em portugues: "recommended kernel parametros are nao defined.". Temas: nao parametros. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB229W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Recommended kernel parameters are not defined." Em portugues: "recommended kernel parametros are nao defined.". Temas: nao parametros. Em outras palavras: Os parâmetros de kernel recomendados não estão definidos no sistema em execução.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB229W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Recommended kernel parameters are not defined portugues recommended parametros nao Temas Explicacao oficial SEE`
+> `AWSFAB229W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Recommended kernel parameters are not defined portugues recommended parametros nao Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB229W no HCL Workload Automation 10.2.8?
@@ -124441,7 +124441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB229W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB230W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Some prerequisites were not satisfyed during the check, look at the log for more details." Em portugues: "some prerequisites were nao satisfyed durante the check, look at the log for mais details.". Temas: nao. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB230W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Some prerequisites were not satisfyed during the check, look at the log for more details." Em portugues: "some prerequisites were nao satisfyed durante the check, look at the log for mais details.". Temas: nao. Em outras palavras: Alguns pré-requisitos não foram atendidos durante a verificação; consulte o log para obter detalhes.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB230W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Some prerequisites were not satisfyed during the check look log for more details portugues some nao`
@@ -124481,7 +124481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB231E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB233W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The free disk space available on the swap file system does not meet the recommended requirements." Em portugues: "the free disk espaco disponivel on the swap arquivo sistema does nao meet the recommended requirements.". Temas: nao arquivo sistema. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB233W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The free disk space available on the swap file system does not meet the recommended requirements." Em portugues: "the free disk espaco disponivel on the swap arquivo sistema does nao meet the recommended requirements.". Temas: nao arquivo sistema. Em outras palavras: O espaço livre no sistema de arquivos de swap não atende aos requisitos recomendados.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB233W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The free disk space available the swap file system does not meet recommended requirements portugues`
@@ -124501,10 +124501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB233W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB234I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The prerequisites will be evaluated for component !1." Em portugues: "the prerequisites will be evaluated for component !1.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB234I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The prerequisites will be evaluated for component !1." Em portugues: "the prerequisites will be evaluated for component !1.". Em outras palavras: Os pré-requisitos da instalação serão avaliados para o componente indicado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB234I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The prerequisites will evaluated for component portugues the significa`
+> `AWSFAB234I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The prerequisites will evaluated for component portugues the outras palavras -requisitos avaliados indicado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB234I no HCL Workload Automation 10.2.8?
@@ -124521,7 +124521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB234I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB235I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The hardware check will be skipped because the component has already been installed." Em portugues: "the hardware check will be skipped porque the component has already estado instalado.". Temas: instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB235I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The hardware check will be skipped because the component has already been installed." Em portugues: "the hardware check will be skipped porque the component has already estado instalado.". Temas: instalado. Em outras palavras: A verificação de hardware será ignorada porque o componente já está instalado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB235I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The hardware check will skipped because the component has already been installed portugues porque`
@@ -124541,7 +124541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB235I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB236E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to install or upgrade a HCL Workload Automation instance from the wrong eImage for the target operating system." Em portugues: "you are trying to install or upgrade a hcl workload automation instancia from the wrong eimage for the target operating sistema.". Temas: carga de trabalho sistema instalar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB236E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are trying to install or upgrade a HCL Workload Automation instance from the wrong eImage for the target operating system." Em portugues: "you are trying to install or upgrade a hcl workload automation instancia from the wrong eimage for the target operating sistema.". Temas: carga de trabalho sistema instalar. Em outras palavras: Você está tentando instalar ou atualizar a instância usando um eImage errado para o sistema operacional de destino..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB236E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are trying install upgrade instance from the wrong eImage for target operating system portugues you`
@@ -124601,7 +124601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB238E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB239W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You are installing a dynamic agent but you provided some parameters that are not necessary for the dynamic agent installation. These parameters are ignored." Em portugues: "you are installing a dynamic agente but you provided some parametros that are nao necessary for the dynamic agente instalacao. these parametros are ignored.". Temas: nao parametros instalacao agente. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB239W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You are installing a dynamic agent but you provided some parameters that are not necessary for the dynamic agent installation. These parameters are ignored." Em portugues: "you are installing a dynamic agente but you provided some parametros that are nao necessary for the dynamic agente instalacao. these parametros are ignored.". Temas: nao parametros instalacao agente. Em outras palavras: Você instalou um agente dinâmico, mas parâmetros desnecessários foram fornecidos e serão ignorados.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB239W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto You are installing dynamic agent but you provided some parameters that not necessary for the`
@@ -124681,7 +124681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB242I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB243E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred running the option that recreates the HCL Workload Automation installation on the specified path "!1". Check the installation log for details." Em portugues: "an erro ocorreu em execucao the opcao that recreates the hcl workload automation instalacao on the especificado caminho "!1". check the instalacao log for details.". Temas: erro ocorreu especificado carga de trabalho instalacao opcao. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB243E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred running the option that recreates the HCL Workload Automation installation on the specified path "!1". Check the installation log for details." Em portugues: "an erro ocorreu em execucao the opcao that recreates the hcl workload automation instalacao on the especificado caminho "!1". check the instalacao log for details.". Temas: erro ocorreu especificado carga de trabalho instalacao opcao. Em outras palavras: Ocorreu um erro ao recriar a instalação no caminho informado; consulte o log de instalação para detalhes.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB243E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred running the option that recreates specified path Check log for details portugues`
@@ -124701,10 +124701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB243E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB244I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Rebuild HCL Workload Automation installation registries." Em portugues: "rebuild hcl workload automation instalacao registries.". Temas: carga de trabalho instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB244I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Rebuild HCL Workload Automation installation registries." Em portugues: "rebuild hcl workload automation instalacao registries.". Temas: carga de trabalho instalacao. Em outras palavras: O sistema está reconstruindo os registros de instalação do HCL Workload Automation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB244I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Rebuild registries portugues rebuild instalacao Temas carga trabalho significa`
+> `AWSFAB244I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Rebuild registries portugues rebuild instalacao Temas carga trabalho outras palavras sistema reconstruindo registros significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB244I no HCL Workload Automation 10.2.8?
@@ -124721,10 +124721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB244I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB245I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install HCL Workload Automation Dynamic Monitor package" Em portugues: "install hcl workload automation dynamic monitor package". Temas: carga de trabalho instalar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB245I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install HCL Workload Automation Dynamic Monitor package" Em portugues: "install hcl workload automation dynamic monitor package". Temas: carga de trabalho instalar. Em outras palavras: O sistema está instalando o pacote Dynamic Monitor do HCL Workload Automation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB245I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install Dynamic Monitor package portugues install dynamic monitor Temas carga trabalho instalar significa`
+> `AWSFAB245I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install Dynamic Monitor package portugues install dynamic monitor Temas carga trabalho instalar outras palavras sistema instalando pacote`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB245I no HCL Workload Automation 10.2.8?
@@ -124781,7 +124781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB247E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB248E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "There is already the IBM i "!1" library in the system. You must rename or remove the library, or you must specify a different user account." Em portugues: "there is already the ibm i "!1" library in the sistema. you must rename or remove the library, or you must specify a different usuario account.". Temas: usuario sistema. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB248E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "There is already the IBM i "!1" library in the system. You must rename or remove the library, or you must specify a different user account." Em portugues: "there is already the ibm i "!1" library in the sistema. you must rename or remove the library, or you must specify a different usuario account.". Temas: usuario sistema. Em outras palavras: Já existe a biblioteca do IBM i indicada no sistema; renomeie-a, remova-a ou use outra conta de usuário.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB248E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto There already the IBM library system You must rename remove you specify different user account`
@@ -124801,7 +124801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB248E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB249E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "32-bit !1 operating system is not supported. Only !1 64-bit system are supported by HCL Workload Automation." Em portugues: "32-bit !1 operating sistema is nao supported. only !1 64-bit sistema are supported by hcl workload automation.". Temas: nao carga de trabalho sistema suportado. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB249E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "32-bit !1 operating system is not supported. Only !1 64-bit system are supported by HCL Workload Automation." Em portugues: "32-bit !1 operating sistema is nao supported. only !1 64-bit sistema are supported by hcl workload automation.". Temas: nao carga de trabalho sistema suportado. Em outras palavras: O sistema operacional de 32 bits indicado não é suportado; apenas a versão de 64 bits é aceita.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB249E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto 32-bit operating system not supported Only 64-bit are portugues sistema nao only`
@@ -124821,7 +124821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB249E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB284E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Linux !1 service pack !2 is not supported. Update the Operating system to service pack !3." Em portugues: "the linux !1 service pack !2 is nao supported. atualizar the operating sistema to service pack !3.". Temas: nao sistema suportado atualizar. Explicacao oficial: It is not possible to run the installation process on the Linux service pack running on this machine.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB284E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Linux !1 service pack !2 is not supported. Update the Operating system to service pack !3." Em portugues: "the linux !1 service pack !2 is nao supported. atualizar the operating sistema to service pack !3.". Temas: nao sistema suportado atualizar. Em outras palavras: O service pack do Linux informado não é suportado; atualize o sistema para o service pack indicado.. Explicacao oficial: It is not possible to run the installation process on the Linux service pack running on this machine.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB284E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Linux service pack not supported Update the Operating system portugues linux nao`
@@ -124841,10 +124841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB284E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB285I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update the patch.info file" Em portugues: "atualizar the patch.info arquivo". Temas: arquivo atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB285I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update the patch.info file" Em portugues: "atualizar the patch.info arquivo". Temas: arquivo atualizar. Em outras palavras: O sistema está atualizando o arquivo de informações de patches chamado patch.info..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB285I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update the patch.info file portugues atualizar arquivo Temas significa`
+> `AWSFAB285I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update the patch.info file portugues atualizar arquivo Temas outras palavras sistema atualizando patches chamado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB285I no HCL Workload Automation 10.2.8?
@@ -124861,7 +124861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB285I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB286E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The eImage on your workstation is corrupt. You must run the TAR command on QP2TERM or AIXTERM shell to untar the eImage otherwise your !1 script fails." Em portugues: "the eimage on your estacao de trabalho is corrupt. you must run the tar comando on qp2term or aixterm shell to untar the eimage otherwise your !1 script fails.". Temas: estacao de trabalho comando execucao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB286E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The eImage on your workstation is corrupt. You must run the TAR command on QP2TERM or AIXTERM shell to untar the eImage otherwise your !1 script fails." Em portugues: "the eimage on your estacao de trabalho is corrupt. you must run the tar comando on qp2term or aixterm shell to untar the eimage otherwise your !1 script fails.". Temas: estacao de trabalho comando execucao. Em outras palavras: O eImage está corrompido; execute o comando TAR no shell adequado para descompactá-lo antes do script.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB286E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The eImage your workstation corrupt You must run the TAR command QP2TERM AIXTERM shell untar otherwise`
@@ -124881,7 +124881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB286E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB287E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The current shell is not supported for !1 script. Use QSH shell to run the !1 script." Em portugues: "the current shell is nao supported for !1 script. use qsh shell to run the !1 script.". Temas: nao execucao suportado. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB287E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The current shell is not supported for !1 script. Use QSH shell to run the !1 script." Em portugues: "the current shell is nao supported for !1 script. use qsh shell to run the !1 script.". Temas: nao execucao suportado. Em outras palavras: O shell em uso não é suportado para o script indicado; use o shell QSH para executá-lo.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB287E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The current shell not supported for script Use QSH run the portugues nao`
