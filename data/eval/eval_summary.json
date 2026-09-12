@@ -3,8 +3,8 @@
   "hit_rate_at_1": 0.7714285714285715,
   "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
-  "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.831224053724054,
+  "hit_rate_at_10": 0.9571428571428572,
+  "mrr": 0.8310941835941837,
   "details": [
     {
       "id": "eval-0001",
@@ -1006,7 +1006,7 @@
       "id": "eval-0062",
       "domain": "instalacao",
       "question": "Após instalar o BMDM, qual comando pode ser executado opcionalmente e com que efeito?",
-      "rank": 10,
+      "rank": 11,
       "expected_claims": [
         "hwa-lab-10.2.8-bmdm-container-install-0001",
         "hwa-lab-10.2.8-plan-timezone-consolidated-0047",
@@ -1016,8 +1016,8 @@
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001",
-        "hwa-10.2.8-msg-awsita229e",
-        "hwa-10.2.8-msg-awsita403e"
+        "hwa-msgcat-awsbhu086e",
+        "hwa-10.2.8-msg-awsita229e"
       ]
     },
     {

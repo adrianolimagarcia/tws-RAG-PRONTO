@@ -12,6 +12,7 @@ import json, re, os
 BASE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
 PROD = f"{BASE}/data/export/tws_messages_catalog_product.jsonl"
 DOCS = f"{BASE}/data/export/tws_messages_catalog_v95.jsonl"
+PARAFR_FILE = f"{BASE}/data/export/tws_messages_paraphrases.jsonl"
 OUT = f"{BASE}/data/evidence/official-verification-2026-09-11-message-catalog-full.jsonl"
 
 SEV = {"I": "informational", "W": "warning", "E": "error"}
@@ -177,6 +178,14 @@ def main():
             d = json.loads(l)
             prod[d["code"]] = d
 
+    # Parafrases semanticas PT-BR (geradas por LLM) -> {code: pt}
+    parafr = {}
+    for l in open(PARAFR_FILE, encoding="utf-8"):
+        if l.strip():
+            d = json.loads(l)
+            if d.get("pt"):
+                parafr[d["code"]] = d["pt"]
+
     docs = {}
     for l in open(DOCS, encoding="utf-8"):
         if l.strip():
@@ -201,6 +210,8 @@ def main():
                 claim += f" Em portugues: \"{pt_rend}\"."
             if ptkw:
                 claim += f" Temas: {ptkw}."
+            if code in parafr and parafr[code]:
+                claim += f" Em outras palavras: {parafr[code]}."
             if doc:
                 enriched += 1
                 expl = clean(doc.get("explanation"))

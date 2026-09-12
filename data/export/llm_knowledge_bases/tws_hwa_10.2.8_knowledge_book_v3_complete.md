@@ -66481,10 +66481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU002E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered an error when attempting to open either the Mailbox.msg file or the Intercom.msg file. The following gives more details of the error: !1." Em portugues: "conman encountered an erro when attempting to open either the mailbox.msg arquivo or the intercom.msg arquivo. the seguinte gives mais details of the erro: !1.". Temas: erro arquivo. Explicacao oficial: The file might not exist, or conman might not have permission to access it.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU002E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered an error when attempting to open either the Mailbox.msg file or the Intercom.msg file. The following gives more details of the error: !1." Em portugues: "conman encountered an erro when attempting to open either the mailbox.msg arquivo or the intercom.msg arquivo. the seguinte gives mais details of the erro: !1.". Temas: erro arquivo. Em outras palavras: O Conman falhou ao abrir os arquivos Mailbox ou Intercom destinados às mensagens internas do sistema.. Explicacao oficial: The file might not exist, or conman might not have permission to access it.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman encountered conman might AWSBHU002E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered when attempting open either the Mailbox.msg file Intercom.msg The following gives more details`
+> `conman encountered conman falhou conman might AWSBHU002E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered when attempting open either the Mailbox.msg file Intercom.msg The following gives more details`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU002E no HCL Workload Automation 10.2.8?
@@ -66501,10 +66501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU003E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered an error while initializing because the Security file does not exist or could not be found. The following gives more details of the error: !1" Em portugues: "conman encountered an erro while initializing porque the seguranca arquivo does nao existe or conseguiu nao be encontrado. the seguinte gives mais details of the erro: !1". Temas: erro nao arquivo encontrado seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU003E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered an error while initializing because the Security file does not exist or could not be found. The following gives more details of the error: !1" Em portugues: "conman encountered an erro while initializing porque the seguranca arquivo does nao existe or conseguiu nao be encontrado. the seguinte gives mais details of the erro: !1". Temas: erro nao arquivo encontrado seguranca. Em outras palavras: O Conman não conseguiu inicializar porque o arquivo de segurança não existe ou não foi localizado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman encountered AWSBHU003E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered while initializing because the Security file does not exist could found The following gives more details`
+> `conman encountered conman n AWSBHU003E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered while initializing because the Security file does not exist could found The following gives more details`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU003E no HCL Workload Automation 10.2.8?
@@ -66521,7 +66521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU004E (severidade: error, familia AWSBHU - conman) tem o texto: "The job logon name you specified is not valid." Em portugues: "the job logon nome you especificado is nao valido.". Temas: nao job nome valido especificado logon. Explicacao oficial: You have issued a command that includes the job parameter logon or streamlogon. The value for this parameter includes the string \\, which is not valid in a user id.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU004E (severidade: error, familia AWSBHU - conman) tem o texto: "The job logon name you specified is not valid." Em portugues: "the job logon nome you especificado is nao valido.". Temas: nao job nome valido especificado logon. Em outras palavras: O nome de usuário de logon informado para o job não é válido estruturalmente e foi rejeitado pelo sistema de autenticação.. Explicacao oficial: You have issued a command that includes the job parameter logon or streamlogon. The value for this parameter includes the string \\, which is not valid in a user id.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU004E usuario do job logon do job trocar logon no plano 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job logon name you specified not valid portugues the nome especificado nao valido Temas`
@@ -66541,10 +66541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU009E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered a problem trying to read the Symphony file. The following gives more details of the error: !1" Em portugues: "conman encountered a problema trying to ler the symphony arquivo. the seguinte gives mais details of the erro: !1". Temas: erro arquivo symphony ler leitura problema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU009E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered a problem trying to read the Symphony file. The following gives more details of the error: !1" Em portugues: "conman encountered a problema trying to ler the symphony arquivo. the seguinte gives mais details of the erro: !1". Temas: erro arquivo symphony ler leitura problema. Em outras palavras: O Conman falhou ao tentar ler o arquivo Symphony, retornando uma mensagem de erro com mais detalhes sobre a falha de leitura..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman encountered AWSBHU009E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered problem trying read the Symphony file The following gives more details portugues problema`
+> `conman encountered conman falhou AWSBHU009E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered problem trying read the Symphony file The following gives more details portugues problema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU009E no HCL Workload Automation 10.2.8?
@@ -66561,10 +66561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU010E (severidade: error, familia AWSBHU - conman) tem o texto: "For record # !1, conman found an incorrect Symphony file record type: "!3". It was expecting the following type: "!2"." Em portugues: "for registro # !1, conman encontrado an incorreto symphony arquivo registro tipo: "!3". it was expecting the seguinte tipo: "!2".". Temas: arquivo encontrado tipo symphony registro incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU010E (severidade: error, familia AWSBHU - conman) tem o texto: "For record # !1, conman found an incorrect Symphony file record type: "!3". It was expecting the following type: "!2"." Em portugues: "for registro # !1, conman encontrado an incorreto symphony arquivo registro tipo: "!3". it was expecting the seguinte tipo: "!2".". Temas: arquivo encontrado tipo symphony registro incorreto. Em outras palavras: O Conman encontrou um registro com tipo incorreto no arquivo Symphony, recebendo um tipo inesperado no lugar do esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman found conman encontrado AWSBHU010E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto For record found incorrect Symphony file type was expecting the following portugues for registro encontrado incorreto`
+> `conman found conman encontrado conman encontrou AWSBHU010E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto For record found incorrect Symphony file type was expecting the following portugues for registro encontrado incorreto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU010E no HCL Workload Automation 10.2.8?
@@ -66621,7 +66621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU014I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU016E (severidade: error, familia AWSBHU - conman) tem o texto: "One of the values specified for a numeric argument is not numeric." Em portugues: "one of the values especificado for a numerico argumento is nao numerico.". Temas: nao especificado numerico argumento. Explicacao oficial: You have specified a non-numeric value to an argument of a command that is expected to be numeric.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU016E (severidade: error, familia AWSBHU - conman) tem o texto: "One of the values specified for a numeric argument is not numeric." Em portugues: "one of the values especificado for a numerico argumento is nao numerico.". Temas: nao especificado numerico argumento. Em outras palavras: Um dos valores informados para um argumento numérico não é, na verdade, um número, tornando o comando inválido.. Explicacao oficial: You have specified a non-numeric value to an argument of a command that is expected to be numeric.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU016E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto One the values specified for numeric argument not portugues one especificado numerico argumento nao Temas`
@@ -66641,7 +66641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU017E (severidade: error, familia AWSBHU - conman) tem o texto: "A value specified for a range-limited numeric argument is below the minimum permitted value. The permitted range is from: "!1" to "!2"." Em portugues: "a valor especificado for a range-limited numerico argumento is below the minimo permitted valor. the permitted range is from: "!1" to "!2".". Temas: especificado valor numerico argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU017E (severidade: error, familia AWSBHU - conman) tem o texto: "A value specified for a range-limited numeric argument is below the minimum permitted value. The permitted range is from: "!1" to "!2"." Em portugues: "a valor especificado for a range-limited numerico argumento is below the minimo permitted valor. the permitted range is from: "!1" to "!2".". Temas: especificado valor numerico argumento. Em outras palavras: O valor numérico informado está abaixo do mínimo permitido para o intervalo definido pelo argumento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU017E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto value specified for range-limited numeric argument below the minimum permitted The range from portugues valor especificado`
@@ -66661,7 +66661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU017E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU018E (severidade: error, familia AWSBHU - conman) tem o texto: "A value specified for a range-limited numeric argument is above the maximum permitted value. The permitted range is from: "!1" to "!2"." Em portugues: "a valor especificado for a range-limited numerico argumento is above the maximo permitted valor. the permitted range is from: "!1" to "!2".". Temas: especificado valor numerico argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU018E (severidade: error, familia AWSBHU - conman) tem o texto: "A value specified for a range-limited numeric argument is above the maximum permitted value. The permitted range is from: "!1" to "!2"." Em portugues: "a valor especificado for a range-limited numerico argumento is above the maximo permitted valor. the permitted range is from: "!1" to "!2".". Temas: especificado valor numerico argumento. Em outras palavras: O valor numérico informado excede o limite máximo permitido para o intervalo definido pelo argumento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU018E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto value specified for range-limited numeric argument above the maximum permitted The range from portugues valor especificado`
@@ -66681,10 +66681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU019I (severidade: informational, familia AWSBHU - conman) tem o texto: "Stop command executed on !1." Em portugues: "parar comando executed on !1.". Temas: comando parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU019I (severidade: informational, familia AWSBHU - conman) tem o texto: "Stop command executed on !1." Em portugues: "parar comando executed on !1.". Temas: comando parar. Em outras palavras: O comando de parada do job foi executado com sucesso na estação de trabalho indicada na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU019I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Stop command executed portugues parar comando Temas significa diagnosticar`
+> `AWSBHU019I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Stop command executed portugues parar comando Temas outras palavras parada job foi executado sucesso trabalho indicada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU019I no HCL Workload Automation 10.2.8?
@@ -66701,7 +66701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU019I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU021E (severidade: error, familia AWSBHU - conman) tem o texto: "The agent on workstation: !1 cannot be started because it has not got the latest Symphony file version." Em portugues: "the agente on estacao de trabalho: !1 nao pode be iniciado porque it has nao got the latest symphony arquivo versao.". Temas: nao arquivo estacao de trabalho pode symphony agente iniciado mais recente versao. Explicacao oficial: This error occurs when you use the start command to start an agent on a remote workstation that has not been linked for some reason.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU021E (severidade: error, familia AWSBHU - conman) tem o texto: "The agent on workstation: !1 cannot be started because it has not got the latest Symphony file version." Em portugues: "the agente on estacao de trabalho: !1 nao pode be iniciado porque it has nao got the latest symphony arquivo versao.". Temas: nao arquivo estacao de trabalho pode symphony agente iniciado mais recente versao. Em outras palavras: O agente da estação de trabalho indicada não pode iniciar porque não possui a versão mais recente do arquivo Symphony.. Explicacao oficial: This error occurs when you use the start command to start an agent on a remote workstation that has not been linked for some reason.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU021E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The agent workstation cannot started because has not got the latest Symphony file version portugues agente estacao trabalho nao`
@@ -66721,7 +66721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU022E (severidade: error, familia AWSBHU - conman) tem o texto: "The time value specified as an argument is incorrect. It must be numeric, between 0000 and 2359." Em portugues: "the tempo valor especificado as an argumento is incorreto. it must be numerico, entre 0000 and 2359.". Temas: especificado valor tempo hora numerico argumento incorreto entre. Explicacao oficial: See message. HCL Workload Automation uses a form of the 24-hour clock without a separator between minutes and hours, so that, for example, 9:30 a.m. is written as 0930 and 3 p.m. as 1500.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU022E (severidade: error, familia AWSBHU - conman) tem o texto: "The time value specified as an argument is incorrect. It must be numeric, between 0000 and 2359." Em portugues: "the tempo valor especificado as an argumento is incorreto. it must be numerico, entre 0000 and 2359.". Temas: especificado valor tempo hora numerico argumento incorreto entre. Em outras palavras: O valor de tempo informado está incorreto, pois precisa ser um número entre 0000 e 2359 para ser aceito.. Explicacao oficial: See message. HCL Workload Automation uses a form of the 24-hour clock without a separator between minutes and hours, so that, for example, 9:30 a.m. is written as 0930 and 3 p.m. as 1500.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU022E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The time value specified argument incorrect must numeric between and portugues the tempo valor especificado argumento incorreto numerico entre`
@@ -66741,7 +66741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU023E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued an "opens" job qualifier with incorrect syntax." Em portugues: "you have issued an "opens" job qualificador with incorreto sintaxe.". Temas: job sintaxe incorreto qualificador.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU023E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued an "opens" job qualifier with incorrect syntax." Em portugues: "you have issued an "opens" job qualificador with incorreto sintaxe.". Temas: job sintaxe incorreto qualificador. Em outras palavras: Foi usado um qualificador de job do tipo opens com sintaxe incorreta, invalidando o comando emitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU023E dependencia de arquivo opens opens flag 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued opens job qualifier with incorrect syntax portugues you qualificador incorreto sintaxe Temas`
@@ -66761,7 +66761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU024E (severidade: error, familia AWSBHU - conman) tem o texto: "The mozart directory cannot be accessed or is missing some files." Em portugues: "the mozart diretorio nao pode be accessed or is faltando some arquivos.". Temas: arquivos nao pode diretorio faltando. Explicacao oficial: Usually this error happens when the mozart database on the master domain manager is not accessible to the workstation where you issued the command, and in one of the following situations:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU024E (severidade: error, familia AWSBHU - conman) tem o texto: "The mozart directory cannot be accessed or is missing some files." Em portugues: "the mozart diretorio nao pode be accessed or is faltando some arquivos.". Temas: arquivos nao pode diretorio faltando. Em outras palavras: O diretório mozart não está acessível ou está faltando arquivos necessários para o funcionamento do sistema.. Explicacao oficial: Usually this error happens when the mozart database on the master domain manager is not accessible to the workstation where you issued the command, and in one of the following situations:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU024E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The mozart directory cannot accessed missing some files portugues the diretorio nao faltando arquivos Temas`
@@ -66781,10 +66781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU024E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU025E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman either cannot find the job stream in the Symphony file, or the specified workstation name is not correct." Em portugues: "conman either nao pode find the job fluxo in the symphony arquivo, or the especificado estacao de trabalho nome is nao correct.". Temas: nao arquivo estacao de trabalho job pode nome especificado symphony fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU025E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman either cannot find the job stream in the Symphony file, or the specified workstation name is not correct." Em portugues: "conman either nao pode find the job fluxo in the symphony arquivo, or the especificado estacao de trabalho nome is nao correct.". Temas: nao arquivo estacao de trabalho job pode nome especificado symphony fluxo. Em outras palavras: O Conman não conseguiu localizar o job stream no arquivo Symphony ou o nome da estação informado está incorreto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman either AWSBHU025E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman either cannot find the job stream Symphony file specified workstation name not correct portugues nao`
+> `conman either conman n AWSBHU025E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman either cannot find the job stream Symphony file specified workstation name not correct portugues nao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU025E no HCL Workload Automation 10.2.8?
@@ -66801,10 +66801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU026I (severidade: informational, familia AWSBHU - conman) tem o texto: "Expected quantity of resources (1-32)." Em portugues: "esperado quantidade of resources (1-32).". Temas: quantidade esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU026I (severidade: informational, familia AWSBHU - conman) tem o texto: "Expected quantity of resources (1-32)." Em portugues: "esperado quantidade of resources (1-32).". Temas: quantidade esperado. Em outras palavras: O sistema espera que seja informada a quantidade prevista de recursos, que deve estar entre 1 e 32..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU026I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Expected quantity resources 1-32 portugues esperado quantidade Temas significa`
+> `AWSBHU026I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Expected quantity resources 1-32 portugues esperado quantidade Temas outras palavras sistema espera seja informada prevista`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU026I no HCL Workload Automation 10.2.8?
@@ -66821,10 +66821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU026I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU027I (severidade: informational, familia AWSBHU - conman) tem o texto: "Expected resource name." Em portugues: "esperado recurso nome.". Temas: nome recurso esperado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU027I (severidade: informational, familia AWSBHU - conman) tem o texto: "Expected resource name." Em portugues: "esperado recurso nome.". Temas: nome recurso esperado. Em outras palavras: O sistema está aguardando que seja informado o nome do recurso a ser utilizado na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU027I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Expected resource name portugues esperado recurso nome Temas significa diagnosticar`
+> `AWSBHU027I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Expected resource name portugues esperado recurso nome Temas outras palavras sistema aguardando seja informado utilizado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU027I no HCL Workload Automation 10.2.8?
@@ -66841,7 +66841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU027I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU028E (severidade: error, familia AWSBHU - conman) tem o texto: "The "recovery" action is not correct. It must be one of the following: STOP, CONTINUE, RERUN." Em portugues: "the "recovery" action is nao correct. it must be one of the seguinte: parar, continue, rerun.". Temas: nao parar. Explicacao oficial: You have supplied a recovery action that is incorrectly typed, or not supported. Only the following are permitted:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU028E (severidade: error, familia AWSBHU - conman) tem o texto: "The "recovery" action is not correct. It must be one of the following: STOP, CONTINUE, RERUN." Em portugues: "the "recovery" action is nao correct. it must be one of the seguinte: parar, continue, rerun.". Temas: nao parar. Em outras palavras: A ação de recuperação informada é inválida, pois deve ser uma das opções: parar, continuar ou reexecutar.. Explicacao oficial: You have supplied a recovery action that is incorrectly typed, or not supported. Only the following are permitted:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU028E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The recovery action not correct must one the following STOP CONTINUE RERUN portugues nao`
@@ -66861,10 +66861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU028E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU029E (severidade: error, familia AWSBHU - conman) tem o texto: "Fatal: Should not be here: !1 [#!2]." Em portugues: "fatal: should nao be here: !1 [#!2].". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU029E (severidade: error, familia AWSBHU - conman) tem o texto: "Fatal: Should not be here: !1 [#!2]." Em portugues: "fatal: should nao be here: !1 [#!2].". Temas: nao. Em outras palavras: Ocorreu um erro fatal não esperado no sistema, com informações internas adicionais sobre a falha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU029E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Fatal Should not here portugues fatal should nao Temas significa diagnosticar`
+> `AWSBHU029E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Fatal Should not here portugues fatal should nao Temas outras palavras Ocorreu erro esperado sistema internas adicionais`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU029E no HCL Workload Automation 10.2.8?
@@ -66881,10 +66881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU029E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU030E (severidade: error, familia AWSBHU - conman) tem o texto: "DCM Pak required to use this feature." Em portugues: "dcm pak obrigatorio to use this feature.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU030E (severidade: error, familia AWSBHU - conman) tem o texto: "DCM Pak required to use this feature." Em portugues: "dcm pak obrigatorio to use this feature.". Em outras palavras: Para usar este recurso específico é necessário ter o componente DCM Pak instalado e licenciado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU030E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto DCM Pak required use this feature portugues dcm pak obrigatorio significa`
+> `AWSBHU030E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto DCM Pak required use this feature portugues dcm pak obrigatorio outras palavras usar recurso ter`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU030E no HCL Workload Automation 10.2.8?
@@ -66901,7 +66901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU030E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU031E (severidade: error, familia AWSBHU - conman) tem o texto: "The number of minutes must be an integer value between 0 and 59." Em portugues: "the numero of minutes must be an integer valor entre 0 and 59.". Temas: numero valor entre. Explicacao oficial: The number of minutes must be an integer value between 0 and 59.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU031E (severidade: error, familia AWSBHU - conman) tem o texto: "The number of minutes must be an integer value between 0 and 59." Em portugues: "the numero of minutes must be an integer valor entre 0 and 59.". Temas: numero valor entre. Em outras palavras: O número de minutos informado deve ser um valor inteiro dentro do intervalo de 0 a 59.. Explicacao oficial: The number of minutes must be an integer value between 0 and 59.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU031E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The number minutes must integer value between and portugues the numero valor entre Temas`
@@ -66921,7 +66921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU031E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU032E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "rerun" command that does not uniquely identify a workstation." Em portugues: "you have issued a "rerun" comando that does nao uniquely identify a estacao de trabalho.". Temas: nao estacao de trabalho comando. Explicacao oficial: Conman shows this error when the rerun command you issued does not identify a unique workstation name in the from argument. This command cannot be applied to more than one workstation at one time.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU032E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "rerun" command that does not uniquely identify a workstation." Em portugues: "you have issued a "rerun" comando that does nao uniquely identify a estacao de trabalho.". Temas: nao estacao de trabalho comando. Em outras palavras: O comando de reexecução emitido não identifica de forma única qual estação de trabalho deve ser utilizada.. Explicacao oficial: Conman shows this error when the rerun command you issued does not identify a unique workstation name in the from argument. This command cannot be applied to more than one workstation at one time.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman shows AWSBHU032E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued rerun command that does not uniquely identify workstation portugues you comando nao`
@@ -66941,7 +66941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU033E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied more instances of a dependency option than are permitted by the issued command." Em portugues: "you have informado mais instances of a dependency opcao que are permitted by the issued comando.". Temas: comando informado opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU033E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied more instances of a dependency option than are permitted by the issued command." Em portugues: "you have informado mais instances of a dependency opcao que are permitted by the issued comando.". Temas: comando informado opcao. Em outras palavras: Foram informadas mais ocorrências de uma opção de dependência do que o comando emitido permite..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU033E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied more instances dependency option than are permitted the issued command portugues you informado mais`
@@ -66961,7 +66961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU033E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU034E (severidade: error, familia AWSBHU - conman) tem o texto: "You have not supplied a mandatory selection argument (job, or job stream, for example)." Em portugues: "you have nao informado a mandatory selection argumento (job, or job fluxo, for example).". Temas: nao job informado fluxo argumento. Explicacao oficial: You have issued a command that has a mandatory selection argument (to select a job, or job stream, for example) and you did not specify one. The selection specifies the object or set of objects the command acts on.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU034E (severidade: error, familia AWSBHU - conman) tem o texto: "You have not supplied a mandatory selection argument (job, or job stream, for example)." Em portugues: "you have nao informado a mandatory selection argumento (job, or job fluxo, for example).". Temas: nao job informado fluxo argumento. Em outras palavras: Falta informar um argumento de seleção obrigatório, como o nome de um job ou de um job stream.. Explicacao oficial: You have issued a command that has a mandatory selection argument (to select a job, or job stream, for example) and you did not specify one. The selection specifies the object or set of objects the command acts on.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU034E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have not supplied mandatory selection argument job stream for example portugues you nao informado argumento`
@@ -66981,7 +66981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU034E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU035E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a dependency keyword (follows, needs, opens, prompt), but the value associated with the keyword is not valid." Em portugues: "you have issued a comando with a dependency keyword (follows, needs, opens, prompt), but the valor associated with the keyword is nao valido.". Temas: nao comando valido palavra-chave valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU035E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a dependency keyword (follows, needs, opens, prompt), but the value associated with the keyword is not valid." Em portugues: "you have issued a comando with a dependency keyword (follows, needs, opens, prompt), but the valor associated with the keyword is nao valido.". Temas: nao comando valido palavra-chave valor. Em outras palavras: Foi usado um comando com palavra-chave de dependência, mas o valor associado a ela não é aceitável..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU035E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with dependency keyword follows needs opens prompt but the value associated not valid`
@@ -67001,10 +67001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU035E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU037E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman has stopped with the following internal error: "Non-valid trap action"." Em portugues: "conman has parado with the seguinte interno erro: "non-valido trap action".". Temas: erro interno parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU037E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman has stopped with the following internal error: "Non-valid trap action"." Em portugues: "conman has parado with the seguinte interno erro: "non-valido trap action".". Temas: erro interno parado. Em outras palavras: O Conman foi encerrado devido a um erro interno de ação não válida de tratamento de exceções..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman has AWSBHU037E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman has stopped with the following internal Non-valid trap action portugues parado seguinte interno erro`
+> `conman has conman foi AWSBHU037E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman has stopped with the following internal Non-valid trap action portugues parado seguinte interno erro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU037E no HCL Workload Automation 10.2.8?
@@ -67021,10 +67021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU037E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU038E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman cannot run the command because the command string has too many characters." Em portugues: "conman nao pode run the comando porque the comando string has too many characters.". Temas: nao pode comando execucao excesso de. Explicacao oficial: See message. The number of characters accepted by the command line is operating system-dependent.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU038E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman cannot run the command because the command string has too many characters." Em portugues: "conman nao pode run the comando porque the comando string has too many characters.". Temas: nao pode comando execucao excesso de. Em outras palavras: O Conman não consegue processar o comando porque a linha de comando ultrapassou o tamanho máximo de caracteres.. Explicacao oficial: See message. The number of characters accepted by the command line is operating system-dependent.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman cannot conman nao AWSBHU038E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman cannot run the command because string has too many characters portugues nao comando porque`
+> `conman cannot conman nao conman n AWSBHU038E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman cannot run the command because string has too many characters portugues nao comando porque`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU038E no HCL Workload Automation 10.2.8?
@@ -67041,7 +67041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU038E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU039E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command containing an incorrect argument keyword. The acceptable keywords for this command are as follows: !1" Em portugues: "you have issued a comando containing an incorreto argumento keyword. the acceptable keywords for this comando are as follows: !1". Temas: comando palavra-chave argumento incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU039E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command containing an incorrect argument keyword. The acceptable keywords for this command are as follows: !1" Em portugues: "you have issued a comando containing an incorreto argumento keyword. the acceptable keywords for this comando are as follows: !1". Temas: comando palavra-chave argumento incorreto. Em outras palavras: O comando contém uma palavra-chave de argumento incorreta, divergindo das palavras-chave aceitas para este comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU039E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command containing incorrect argument keyword The acceptable keywords for this are follows portugues you`
@@ -67061,7 +67061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU039E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU040E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command containing an incorrect delimiter. The accepted delimiters are the following: !1" Em portugues: "you have issued a comando containing an incorreto delimiter. the accepted delimiters are the seguinte: !1". Temas: comando incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU040E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command containing an incorrect delimiter. The accepted delimiters are the following: !1" Em portugues: "you have issued a comando containing an incorreto delimiter. the accepted delimiters are the seguinte: !1". Temas: comando incorreto. Em outras palavras: O comando contém um delimitador incorreto, distinto dos delimitadores aceitos pela sintaxe do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU040E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command containing incorrect delimiter The accepted delimiters are the following portugues you comando incorreto`
@@ -67141,7 +67141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU043E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU044E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a file dependency, but the path name of the file you have supplied is not fully qualified (absolute)." Em portugues: "you have issued a comando with a arquivo dependency, but the caminho nome of the arquivo you have informado is nao fully qualified (absolute).". Temas: nao arquivo nome comando informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU044E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a file dependency, but the path name of the file you have supplied is not fully qualified (absolute)." Em portugues: "you have issued a comando with a arquivo dependency, but the caminho nome of the arquivo you have informado is nao fully qualified (absolute).". Temas: nao arquivo nome comando informado. Em outras palavras: A dependência de arquivo informada precisa de um caminho absoluto completo, mas foi fornecida de forma relativa..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU044E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with file dependency but the path name you supplied not fully qualified absolute`
@@ -67161,7 +67161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU044E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU045E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued the following command: "!1" with one or more arguments, but this command does not have any arguments." Em portugues: "you have issued the seguinte comando: "!1" with one or mais arguments, but this comando does nao have any arguments.". Temas: nao comando. Explicacao oficial: See message. For example, use the command redo to edit and re-issue the previous command, but it does not have any arguments. If you type redo showjobs , this message is displayed.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU045E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued the following command: "!1" with one or more arguments, but this command does not have any arguments." Em portugues: "you have issued the seguinte comando: "!1" with one or mais arguments, but this comando does nao have any arguments.". Temas: nao comando. Em outras palavras: O comando emitido recebeu argumentos, porém este comando específico não aceita nenhum argumento.. Explicacao oficial: See message. For example, use the command redo to edit and re-issue the previous command, but it does not have any arguments. If you type redo showjobs , this message is displayed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU045E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued the following command with one more arguments but this does not any portugues you`
@@ -67201,7 +67201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU047E (severidade: error, familia AWSBHU - conman) tem o texto: "A command has been supplied without its required selector." Em portugues: "a comando has estado informado sem its obrigatorio selector.". Temas: comando informado. Explicacao oficial: Conman commands have the following structure:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU047E (severidade: error, familia AWSBHU - conman) tem o texto: "A command has been supplied without its required selector." Em portugues: "a comando has estado informado sem its obrigatorio selector.". Temas: comando informado. Em outras palavras: O comando foi emitido sem o seletor obrigatório que identifica o objeto sobre o qual ele atua.. Explicacao oficial: Conman commands have the following structure:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman commands AWSBHU047E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto command has been supplied without its required selector portugues comando estado informado sem obrigatorio Temas`
@@ -67221,10 +67221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU047E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU048E (severidade: error, familia AWSBHU - conman) tem o texto: "A command has been supplied with an ambiguous selector." Em portugues: "a comando has estado informado with an ambiguous selector.". Temas: comando informado. Explicacao oficial: Conman commands have the following structure:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU048E (severidade: error, familia AWSBHU - conman) tem o texto: "A command has been supplied with an ambiguous selector." Em portugues: "a comando has estado informado with an ambiguous selector.". Temas: comando informado. Em outras palavras: O comando foi emitido com um seletor ambíguo, que não identifica unicamente o objeto desejado.. Explicacao oficial: Conman commands have the following structure:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman commands AWSBHU048E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto command has been supplied with ambiguous selector portugues comando estado informado Temas Explicacao oficial`
+> `conman commands AWSBHU048E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto command has been supplied with ambiguous selector portugues comando estado informado Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU048E no HCL Workload Automation 10.2.8?
@@ -67241,7 +67241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU048E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU049E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a selector keyword, but the supplied selector keyword is not valid." Em portugues: "you have issued a comando with a selector keyword, but the informado selector keyword is nao valido.". Temas: nao comando informado valido palavra-chave. Explicacao oficial: Conman commands have the following structure:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU049E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a selector keyword, but the supplied selector keyword is not valid." Em portugues: "you have issued a comando with a selector keyword, but the informado selector keyword is nao valido.". Temas: nao comando informado valido palavra-chave. Em outras palavras: Foi usado um seletor que não é reconhecido como uma palavra-chave de seleção válida para o comando.. Explicacao oficial: Conman commands have the following structure:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman commands AWSBHU049E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with selector keyword but the supplied not valid portugues you comando`
@@ -67261,7 +67261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU049E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU050E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a selector keyword, but the supplied selector keyword is not valid for this command." Em portugues: "you have issued a comando with a selector keyword, but the informado selector keyword is nao valido for this comando.". Temas: nao comando informado valido palavra-chave. Explicacao oficial: Conman commands have the following structure:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU050E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a selector keyword, but the supplied selector keyword is not valid for this command." Em portugues: "you have issued a comando with a selector keyword, but the informado selector keyword is nao valido for this comando.". Temas: nao comando informado valido palavra-chave. Em outras palavras: A palavra-chave de seletor informada não é aceita por este comando específico emitido.. Explicacao oficial: Conman commands have the following structure:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman commands AWSBHU050E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with selector keyword but the supplied not valid for this portugues you`
@@ -67281,7 +67281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU050E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU051E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a valid selector keyword, but have omitted to identify the object." Em portugues: "you have issued a comando with a valido selector keyword, but have omitted to identify the object.". Temas: comando valido palavra-chave. Explicacao oficial: Conman commands have the following structure:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU051E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a valid selector keyword, but have omitted to identify the object." Em portugues: "you have issued a comando with a valido selector keyword, but have omitted to identify the object.". Temas: comando valido palavra-chave. Em outras palavras: O seletor foi informado corretamente, porém não foi identificado o objeto ao qual o comando se refere.. Explicacao oficial: Conman commands have the following structure:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman commands AWSBHU051E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with valid selector keyword but omitted identify the object portugues you comando`
@@ -67301,7 +67301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU051E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU052E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with the job qualifier "state", but the identified state is not appropriate for the object identified in the command." Em portugues: "you have issued a comando with the job qualificador "estado", but the identified estado is nao appropriate for the object identified in the comando.". Temas: nao job comando qualificador. Explicacao oficial: See message. For example, stuck is not a valid state for a job and pend is not a valid state for a job stream.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU052E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with the job qualifier "state", but the identified state is not appropriate for the object identified in the command." Em portugues: "you have issued a comando with the job qualificador "estado", but the identified estado is nao appropriate for the object identified in the comando.". Temas: nao job comando qualificador. Em outras palavras: O estado informado no qualificador do job não é apropriado para o objeto identificado no comando.. Explicacao oficial: See message. For example, stuck is not a valid state for a job and pend is not a valid state for a job stream.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU052E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with the job qualifier state but identified not appropriate for object`
@@ -67321,7 +67321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU052E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU053E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command that identifies a file, but the path name of the file you have supplied is not fully qualified (absolute)." Em portugues: "you have issued a comando that identifies a arquivo, but the caminho nome of the arquivo you have informado is nao fully qualified (absolute).". Temas: nao arquivo nome comando informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU053E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command that identifies a file, but the path name of the file you have supplied is not fully qualified (absolute)." Em portugues: "you have issued a comando that identifies a arquivo, but the caminho nome of the arquivo you have informado is nao fully qualified (absolute).". Temas: nao arquivo nome comando informado. Em outras palavras: O caminho informado para o arquivo precisa ser absoluto e completo, mas foi fornecido de forma não qualificada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU053E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command that identifies file but the path name you supplied not fully qualified absolute`
@@ -67341,7 +67341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU053E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU054E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "show..." command other than "showjobs", and have used the argument "!1" without its associated ";deps" argument." Em portugues: "you have issued a "show..." comando other que "showjobs", and have used the argumento "!1" sem its associated ";deps" argumento.". Temas: comando argumento. Explicacao oficial: The ;info argument is only used on its own in the showjobs command. In all other commands where it appears, it is one possible value of the ;deps argument.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU054E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "show..." command other than "showjobs", and have used the argument "!1" without its associated ";deps" argument." Em portugues: "you have issued a "show..." comando other que "showjobs", and have used the argumento "!1" sem its associated ";deps" argumento.". Temas: comando argumento. Em outras palavras: Foi usado um argumento em um comando de exibição sem o argumento de dependências associado, invalidando a operação.. Explicacao oficial: The ;info argument is only used on its own in the showjobs command. In all other commands where it appears, it is one possible value of the ;deps argument.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU054E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued show command other than showjobs and used the argument without its associated deps portugues you`
@@ -67361,7 +67361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU054E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU055E (severidade: error, familia AWSBHU - conman) tem o texto: "You have used one of the limit commands, but did not supply a value for the limit, or you supplied it with an incorrect syntax." Em portugues: "you have used one of the limite comandos, but did nao supply a valor for the limite, or you informado it with an incorreto sintaxe.". Temas: nao comandos informado sintaxe valor incorreto limite.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU055E (severidade: error, familia AWSBHU - conman) tem o texto: "You have used one of the limit commands, but did not supply a value for the limit, or you supplied it with an incorrect syntax." Em portugues: "you have used one of the limite comandos, but did nao supply a valor for the limite, or you informado it with an incorreto sintaxe.". Temas: nao comandos informado sintaxe valor incorreto limite. Em outras palavras: O comando de limite foi usado sem informar o valor do limite ou foi fornecido com sintaxe incorreta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU055E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have used one the limit commands but did not supply value for you supplied with incorrect syntax`
@@ -67381,7 +67381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU055E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU056E (severidade: error, familia AWSBHU - conman) tem o texto: "You have used the fence command, but did not supply a value for the new priority level, or you supplied it with an incorrect syntax." Em portugues: "you have used the fence comando, but did nao supply a valor for the new prioridade level, or you informado it with an incorreto sintaxe.". Temas: nao comando informado sintaxe valor incorreto prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU056E (severidade: error, familia AWSBHU - conman) tem o texto: "You have used the fence command, but did not supply a value for the new priority level, or you supplied it with an incorrect syntax." Em portugues: "you have used the fence comando, but did nao supply a valor for the new prioridade level, or you informado it with an incorreto sintaxe.". Temas: nao comando informado sintaxe valor incorreto prioridade. Em outras palavras: O comando fence foi usado sem informar o novo nível de prioridade ou com sintaxe incorreta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU056E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have used the fence command but did not supply value for new priority level you supplied with incorrect`
@@ -67401,10 +67401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU056E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU057I (severidade: informational, familia AWSBHU - conman) tem o texto: "Current Symphony file is old. Switching to new Symphony." Em portugues: "current symphony arquivo is old. switching to new symphony.". Temas: arquivo symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU057I (severidade: informational, familia AWSBHU - conman) tem o texto: "Current Symphony file is old. Switching to new Symphony." Em portugues: "current symphony arquivo is old. switching to new symphony.". Temas: arquivo symphony. Em outras palavras: O arquivo Symphony atual está desatualizado, então o sistema está automatizando a troca para a nova versão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU057I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Current Symphony file old Switching new portugues current symphony arquivo switching Temas significa`
+> `AWSBHU057I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Current Symphony file old Switching new portugues current symphony arquivo switching Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU057I no HCL Workload Automation 10.2.8?
@@ -67421,7 +67421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU057I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU058E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because the workstation is an extended agent, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque the estacao de trabalho is an extended agente, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando agente suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU058E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because the workstation is an extended agent, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque the estacao de trabalho is an extended agente, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando agente suportado. Em outras palavras: O comando não pode ser executado nessa estação pois ela atua como agente estendido, que não suporta essa operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU058E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command issued for workstation cannot performed because the extended agent where not supported portugues comando`
@@ -67441,7 +67441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU058E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU059E (severidade: error, familia AWSBHU - conman) tem o texto: "You have identified a file name that has a base name greater than !1 bytes. This file name is not permitted." Em portugues: "you have identified a arquivo nome that has a base nome greater que !1 bytes. this arquivo nome is nao permitted.". Temas: nao arquivo nome. Explicacao oficial: The file base name is the name of the file, including the extension and the dot separator, but excluding the directory names in the full path. For example, myfilename.txt is 14 bytes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU059E (severidade: error, familia AWSBHU - conman) tem o texto: "You have identified a file name that has a base name greater than !1 bytes. This file name is not permitted." Em portugues: "you have identified a arquivo nome that has a base nome greater que !1 bytes. this arquivo nome is nao permitted.". Temas: nao arquivo nome. Em outras palavras: O nome do arquivo informado possui um nome base maior que o tamanho máximo aceito pelo sistema.. Explicacao oficial: The file base name is the name of the file, including the extension and the dot separator, but excluding the directory names in the full path. For example, myfilename.txt is 14 bytes.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU059E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have identified file name that has base greater than bytes This not permitted portugues you`
@@ -67461,7 +67461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU059E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU060E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command that has attempted to modify or delete the EXTERNAL job stream. This is not permitted." Em portugues: "you have issued a comando that has attempted to modify or excluir the external job fluxo. this is nao permitted.". Temas: nao job comando fluxo excluir. Explicacao oficial: The EXTERNAL job stream is used to monitor the status of internetwork dependencies, and cannot be modified or deleted.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU060E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command that has attempted to modify or delete the EXTERNAL job stream. This is not permitted." Em portugues: "you have issued a comando that has attempted to modify or excluir the external job fluxo. this is nao permitted.". Temas: nao job comando fluxo excluir. Em outras palavras: O comando tentou modificar ou excluir o job stream externo, operação que não é permitida pelo sistema.. Explicacao oficial: The EXTERNAL job stream is used to monitor the status of internetwork dependencies, and cannot be modified or deleted.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU060E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command that has attempted modify delete the EXTERNAL job stream This not permitted portugues you`
@@ -67481,7 +67481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU060E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU061E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain manager of this workstation cannot be found in the Symphony file." Em portugues: "the dominio manager of this estacao de trabalho nao pode be encontrado in the symphony arquivo.". Temas: arquivo estacao de trabalho nao pode dominio encontrado symphony. Explicacao oficial: The circumstances are one of the following:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU061E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain manager of this workstation cannot be found in the Symphony file." Em portugues: "the dominio manager of this estacao de trabalho nao pode be encontrado in the symphony arquivo.". Temas: arquivo estacao de trabalho nao pode dominio encontrado symphony. Em outras palavras: O gerenciador de domínio desta estação de trabalho não foi localizado dentro do arquivo Symphony.. Explicacao oficial: The circumstances are one of the following:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU061E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The this workstation cannot found the Symphony file portugues dominio estacao trabalho nao encontrado symphony arquivo Temas`
@@ -67501,7 +67501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU061E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU062W (severidade: warning, familia AWSBHU - conman) tem o texto: "The MGR option is valid only on the local workstation. Ignoring it." Em portugues: "the mgr opcao is valido only on the local estacao de trabalho. ignoring it.". Temas: estacao de trabalho valido opcao. Explicacao oficial: A command has been issued remotely using the MGR option, which is valid only on the local workstation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU062W (severidade: warning, familia AWSBHU - conman) tem o texto: "The MGR option is valid only on the local workstation. Ignoring it." Em portugues: "the mgr opcao is valido only on the local estacao de trabalho. ignoring it.". Temas: estacao de trabalho valido opcao. Em outras palavras: A opção de gerenciador só é válida na estação local, portanto ela foi ignorada nesta situação.. Explicacao oficial: A command has been issued remotely using the MGR option, which is valid only on the local workstation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU062W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The MGR option valid only the local workstation Ignoring portugues mgr opcao valido estacao trabalho ignoring`
@@ -67521,7 +67521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU062W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU063E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain manager "!1" is not in the same domain as the workstation that you want to become the new domain manager: "!2"." Em portugues: "the dominio manager "!1" is nao in the same dominio as the estacao de trabalho that you want to become the new dominio manager: "!2".". Temas: nao estacao de trabalho dominio. Explicacao oficial: There are two possibilities:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU063E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain manager "!1" is not in the same domain as the workstation that you want to become the new domain manager: "!2"." Em portugues: "the dominio manager "!1" is nao in the same dominio as the estacao de trabalho that you want to become the new dominio manager: "!2".". Temas: nao estacao de trabalho dominio. Em outras palavras: O gerenciador de domínio não pertence ao mesmo domínio da estação que deve se tornar o novo gerenciador.. Explicacao oficial: There are two possibilities:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU063E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The not the same workstation that you want become new portugues dominio nao`
@@ -67541,10 +67541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU063E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU064E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain manager "!1" is not a fault-tolerant agent." Em portugues: "the dominio manager "!1" is nao a fault-tolerant agente.". Temas: nao dominio agente. Explicacao oficial: There are two possibilities:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU064E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain manager "!1" is not a fault-tolerant agent." Em portugues: "the dominio manager "!1" is nao a fault-tolerant agente.". Temas: nao dominio agente. Em outras palavras: O gerenciador de domínio indicado não é um agente tolerante a falhas, requisito necessário para a função.. Explicacao oficial: There are two possibilities:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU064E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The not fault-tolerant agent portugues the dominio nao agente Temas Explicacao oficial There are two possibilities`
+> `AWSBHU064E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The not fault-tolerant agent portugues the dominio nao agente Temas outras palavras gerenciador indicado tolerante`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU064E no HCL Workload Automation 10.2.8?
@@ -67561,10 +67561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU064E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU065E (severidade: error, familia AWSBHU - conman) tem o texto: "The specified new domain manager is not full status." Em portugues: "the especificado new dominio manager is nao full estado.". Temas: nao especificado dominio. Explicacao oficial: There are two possibilities:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU065E (severidade: error, familia AWSBHU - conman) tem o texto: "The specified new domain manager is not full status." Em portugues: "the especificado new dominio manager is nao full estado.". Temas: nao especificado dominio. Em outras palavras: A estação indicada como novo gerenciador de domínio não está com status completo exigido.. Explicacao oficial: There are two possibilities:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU065E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The specified new not full status portugues the especificado dominio nao estado Temas Explicacao oficial`
+> `AWSBHU065E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The specified new not full status portugues the especificado dominio nao estado Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU065E no HCL Workload Automation 10.2.8?
@@ -67581,7 +67581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU065E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU066E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain you supplied to the switchmgr command is not in the Symphony file." Em portugues: "the dominio you informado to the switchmgr comando is nao in the symphony arquivo.". Temas: nao arquivo comando informado dominio symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU066E (severidade: error, familia AWSBHU - conman) tem o texto: "The domain you supplied to the switchmgr command is not in the Symphony file." Em portugues: "the dominio you informado to the switchmgr comando is nao in the symphony arquivo.". Temas: nao arquivo comando informado dominio symphony. Em outras palavras: O domínio informado no comando de troca de gerenciador não existe dentro do arquivo Symphony..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU066E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The you supplied the switchmgr command not Symphony file portugues dominio informado comando nao`
@@ -67601,7 +67601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU066E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU067E (severidade: error, familia AWSBHU - conman) tem o texto: "A manager workstation has not been specified for the switchmgr command." Em portugues: "a manager estacao de trabalho has nao estado especificado for the switchmgr comando.". Temas: nao estacao de trabalho comando especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU067E (severidade: error, familia AWSBHU - conman) tem o texto: "A manager workstation has not been specified for the switchmgr command." Em portugues: "a manager estacao de trabalho has nao estado especificado for the switchmgr comando.". Temas: nao estacao de trabalho comando especificado. Em outras palavras: O comando de troca de gerenciador foi emitido sem especificar a estação que deve assumir o papel..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU067E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto workstation has not been specified for the switchmgr command portugues estacao trabalho nao estado especificado comando`
@@ -67621,7 +67621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU067E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU068E (severidade: error, familia AWSBHU - conman) tem o texto: "The following workstation supplied to the switchmgr command is not in the Symphony file: !1." Em portugues: "the seguinte estacao de trabalho informado to the switchmgr comando is nao in the symphony arquivo: !1.". Temas: nao arquivo estacao de trabalho comando informado symphony. Explicacao oficial: See message. The workstation that you want to become the domain manager must be a fault-tolerant agent operating in full status mode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU068E (severidade: error, familia AWSBHU - conman) tem o texto: "The following workstation supplied to the switchmgr command is not in the Symphony file: !1." Em portugues: "the seguinte estacao de trabalho informado to the switchmgr comando is nao in the symphony arquivo: !1.". Temas: nao arquivo estacao de trabalho comando informado symphony. Em outras palavras: A estação informada no comando de troca de gerenciador não foi encontrada dentro do arquivo Symphony.. Explicacao oficial: See message. The workstation that you want to become the domain manager must be a fault-tolerant agent operating in full status mode.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU068E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following workstation supplied the switchmgr command not Symphony file portugues seguinte estacao trabalho informado comando`
@@ -67641,7 +67641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU068E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU069E (severidade: error, familia AWSBHU - conman) tem o texto: "Too many parameters have been supplied to this switchmgr command." Em portugues: "too many parametros have estado informado to this switchmgr comando.". Temas: comando informado parametros excesso de.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU069E (severidade: error, familia AWSBHU - conman) tem o texto: "Too many parameters have been supplied to this switchmgr command." Em portugues: "too many parametros have estado informado to this switchmgr comando.". Temas: comando informado parametros excesso de. Em outras palavras: O comando de troca de gerenciador foi emitido com mais parâmetros do que ele aceita..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU069E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Too many parameters have been supplied this switchmgr command portugues too parametros estado informado comando Temas`
@@ -67661,7 +67661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU069E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU070E (severidade: error, familia AWSBHU - conman) tem o texto: "The following domain name could not be found in the Symphony file: !1." Em portugues: "the seguinte dominio nome conseguiu nao be encontrado in the symphony arquivo: !1.". Temas: nao arquivo nome dominio encontrado symphony. Explicacao oficial: You have issued a command referring to a domain name that is not in the Symphony file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU070E (severidade: error, familia AWSBHU - conman) tem o texto: "The following domain name could not be found in the Symphony file: !1." Em portugues: "the seguinte dominio nome conseguiu nao be encontrado in the symphony arquivo: !1.". Temas: nao arquivo nome dominio encontrado symphony. Em outras palavras: O nome do domínio informado não pôde ser localizado dentro do arquivo Symphony.. Explicacao oficial: You have issued a command referring to a domain name that is not in the Symphony file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU070E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following name could not found the Symphony file portugues seguinte dominio nome conseguiu nao encontrado symphony arquivo`
@@ -67681,7 +67681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU070E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU071E (severidade: error, familia AWSBHU - conman) tem o texto: "An error was encountered accessing the following file: !1. The following gives more details of the error: !2" Em portugues: "an erro was encountered accessing the seguinte arquivo: !1. the seguinte gives mais details of the erro: !2". Temas: erro arquivo. Explicacao oficial: Conman encountered an error during the retrieving of the selected file or file list. If you used the setsym command, conman cannot access the list of archived Symphony files or the Symphony file you selected.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU071E (severidade: error, familia AWSBHU - conman) tem o texto: "An error was encountered accessing the following file: !1. The following gives more details of the error: !2" Em portugues: "an erro was encountered accessing the seguinte arquivo: !1. the seguinte gives mais details of the erro: !2". Temas: erro arquivo. Em outras palavras: Ocorreu um erro ao tentar acessar o arquivo indicado, e o sistema retornou detalhes sobre a falha.. Explicacao oficial: Conman encountered an error during the retrieving of the selected file or file list. If you used the setsym command, conman cannot access the list of archived Symphony files or the Symphony file you selected.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman encountered conman cannot AWSBHU071E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto was encountered accessing the following file The gives more details portugues erro`
@@ -67701,7 +67701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU071E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU072E (severidade: error, familia AWSBHU - conman) tem o texto: "There are no objects that match the selection you have entered." Em portugues: "there are no objects that match the selection you have entered.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU072E (severidade: error, familia AWSBHU - conman) tem o texto: "There are no objects that match the selection you have entered." Em portugues: "there are no objects that match the selection you have entered.". Em outras palavras: A seleção informada não corresponde a nenhum objeto existente dentro do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU072E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There are objects that match the selection you have entered portugues there`
@@ -67721,7 +67721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU072E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU073E (severidade: error, familia AWSBHU - conman) tem o texto: "The mozart database does not exist, or cannot be opened or accessed. The following gives more details of the error: !1." Em portugues: "the mozart banco de dados does nao existe, or nao pode be opened or accessed. the seguinte gives mais details of the erro: !1.". Temas: erro nao pode banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU073E (severidade: error, familia AWSBHU - conman) tem o texto: "The mozart database does not exist, or cannot be opened or accessed. The following gives more details of the error: !1." Em portugues: "the mozart banco de dados does nao existe, or nao pode be opened or accessed. the seguinte gives mais details of the erro: !1.". Temas: erro nao pode banco de dados. Em outras palavras: O banco de dados mozart não existe ou não pode ser aberto, com detalhes adicionais sobre o erro retornados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU073E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The mozart database does not exist cannot opened accessed following gives more details the portugues dados`
@@ -67741,10 +67741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU073E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU075E (severidade: error, familia AWSBHU - conman) tem o texto: "The following incorrect conman command has been used: !1." Em portugues: "the seguinte incorreto conman comando has estado used: !1.". Temas: comando incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU075E (severidade: error, familia AWSBHU - conman) tem o texto: "The following incorrect conman command has been used: !1." Em portugues: "the seguinte incorreto conman comando has estado used: !1.". Temas: comando incorreto. Em outras palavras: Foi usado um comando do Conman incorreto, que não é reconhecido ou aceito pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman command conman comando AWSBHU075E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following incorrect command has been used portugues the seguinte incorreto comando estado Temas`
+> `conman command conman comando conman incorreto AWSBHU075E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following incorrect command has been used portugues the seguinte incorreto comando estado Temas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU075E no HCL Workload Automation 10.2.8?
@@ -67761,10 +67761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU075E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU076E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman cannot process the issued command. The following error occurred: !1#" Em portugues: "conman nao pode process the issued comando. the seguinte erro ocorreu: !1#". Temas: erro ocorreu nao pode comando. Explicacao oficial: error_text indicates the reason for the problem.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU076E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman cannot process the issued command. The following error occurred: !1#" Em portugues: "conman nao pode process the issued comando. the seguinte erro ocorreu: !1#". Temas: erro ocorreu nao pode comando. Em outras palavras: O Conman não consegue processar o comando emitido devido a um erro ocorrido durante a execução.. Explicacao oficial: error_text indicates the reason for the problem.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman cannot conman nao AWSBHU076E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman cannot process the issued command The following occurred portugues nao comando seguinte erro`
+> `conman cannot conman nao conman n AWSBHU076E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman cannot process the issued command The following occurred portugues nao comando seguinte erro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU076E no HCL Workload Automation 10.2.8?
@@ -67781,7 +67781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU076E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU077E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "show" command does not indicate the object or objects which you want the command to show." Em portugues: "the issued "show" comando does nao indicate the object or objects which you want the comando to show.". Temas: nao comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU077E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "show" command does not indicate the object or objects which you want the command to show." Em portugues: "the issued "show" comando does nao indicate the object or objects which you want the comando to show.". Temas: nao comando. Em outras palavras: O comando de exibição emitido não informa quais objetos devem ser mostrados pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU077E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued show command does not indicate the object objects which you want portugues`
@@ -67821,7 +67821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU078E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU079E (severidade: error, familia AWSBHU - conman) tem o texto: "An internal error has occurred. CmdLink needs more workspace; it needs: "!1", but only: "!2" is available." Em portugues: "an interno erro has ocorreu. cmdlink needs mais workspace; it needs: "!1", but only: "!2" is disponivel.". Temas: erro ocorreu interno. Explicacao oficial: Conman cannot allocate enough space for a work buffer.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU079E (severidade: error, familia AWSBHU - conman) tem o texto: "An internal error has occurred. CmdLink needs more workspace; it needs: "!1", but only: "!2" is available." Em portugues: "an interno erro has ocorreu. cmdlink needs mais workspace; it needs: "!1", but only: "!2" is disponivel.". Temas: erro ocorreu interno. Em outras palavras: Ocorreu um erro interno pois o componente precisa de mais espaço de trabalho do que está disponível.. Explicacao oficial: Conman cannot allocate enough space for a work buffer.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman cannot AWSBHU079E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto internal has occurred CmdLink needs more workspace but only available portugues interno erro ocorreu cmdlink mais`
@@ -67841,7 +67841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU079E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU080E (severidade: error, familia AWSBHU - conman) tem o texto: "An internal error has occurred. The following keyword is not correct: "!1". The problem was encountered in the following source file "!2", at line "!3"." Em portugues: "an interno erro has ocorreu. the seguinte keyword is nao correct: "!1". the problema was encountered in the seguinte source arquivo "!2", at linha "!3".". Temas: erro nao arquivo ocorreu interno palavra-chave linha problema. Explicacao oficial: Conman does not recognize a keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU080E (severidade: error, familia AWSBHU - conman) tem o texto: "An internal error has occurred. The following keyword is not correct: "!1". The problem was encountered in the following source file "!2", at line "!3"." Em portugues: "an interno erro has ocorreu. the seguinte keyword is nao correct: "!1". the problema was encountered in the seguinte source arquivo "!2", at linha "!3".". Temas: erro nao arquivo ocorreu interno palavra-chave linha problema. Em outras palavras: Ocorreu um erro interno com uma palavra-chave incorreta no arquivo de código-fonte indicado na memória.. Explicacao oficial: Conman does not recognize a keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman does AWSBHU080E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto internal has occurred The following keyword not correct problem was encountered the source file line portugues interno`
@@ -67881,10 +67881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU081E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU082E (severidade: error, familia AWSBHU - conman) tem o texto: "Modification is not authorized." Em portugues: "modification is nao authorized.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU082E (severidade: error, familia AWSBHU - conman) tem o texto: "Modification is not authorized." Em portugues: "modification is nao authorized.". Temas: nao. Em outras palavras: A modificação solicitada não é autorizada para este usuário, portanto não foi executada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU082E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Modification not authorized portugues modification nao Temas significa diagnosticar`
+> `AWSBHU082E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Modification not authorized portugues modification nao Temas outras palavras solicitada autorizada portanto foi executada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU082E no HCL Workload Automation 10.2.8?
@@ -67901,7 +67901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU082E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU083E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command cannot be applied to the USERJOBS job stream." Em portugues: "the issued comando nao pode be applied to the userjobs job fluxo.". Temas: job nao pode comando fluxo. Explicacao oficial: The USERJOBS job stream is a special job stream that includes all the jobs that are not in the job stream CARRYFORWARD started in the previous Production Plan. In the USERJOBS job stream you cannot run commands like cancel , altpri , limit , or rerun .
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU083E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command cannot be applied to the USERJOBS job stream." Em portugues: "the issued comando nao pode be applied to the userjobs job fluxo.". Temas: job nao pode comando fluxo. Em outras palavras: O comando emitido não pode ser aplicado ao job stream de jobs de usuário do sistema.. Explicacao oficial: The USERJOBS job stream is a special job stream that includes all the jobs that are not in the job stream CARRYFORWARD started in the previous Production Plan. In the USERJOBS job stream you cannot run commands like cancel , altpri , limit , or rerun .
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU083E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued command cannot applied the USERJOBS job stream portugues comando nao userjobs fluxo Temas`
@@ -67921,7 +67921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU083E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU084E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command cannot be applied to the JOBS job stream." Em portugues: "the issued comando nao pode be applied to the jobs job fluxo.". Temas: job nao pode comando fluxo. Explicacao oficial: The JOBS job stream is a special job stream that includes all the Ad-Hoc jobs you submit without specifying a target job stream (argument INTO). On this job stream you cannot run commands like cancel .
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU084E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command cannot be applied to the JOBS job stream." Em portugues: "the issued comando nao pode be applied to the jobs job fluxo.". Temas: job nao pode comando fluxo. Em outras palavras: O comando emitido não pode ser aplicado ao job stream que contém os jobs em execução.. Explicacao oficial: The JOBS job stream is a special job stream that includes all the Ad-Hoc jobs you submit without specifying a target job stream (argument INTO). On this job stream you cannot run commands like cancel .
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU084E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued command cannot applied the JOBS job stream portugues comando nao jobs fluxo Temas`
@@ -67941,7 +67941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU084E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU085E (severidade: error, familia AWSBHU - conman) tem o texto: "This job or job stream is not in the correct state to apply the issued command." Em portugues: "this job or job fluxo is nao in the correct estado to apply the issued comando.". Temas: nao job comando fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU085E (severidade: error, familia AWSBHU - conman) tem o texto: "This job or job stream is not in the correct state to apply the issued command." Em portugues: "this job or job fluxo is nao in the correct estado to apply the issued comando.". Temas: nao job comando fluxo. Em outras palavras: O job ou job stream não está no estado correto para permitir a aplicação do comando emitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU085E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto This job stream not the correct state apply issued command portugues this fluxo nao`
@@ -67961,10 +67961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU085E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU086E (severidade: error, familia AWSBHU - conman) tem o texto: "You must be on the master to execute this command." Em portugues: "you must be on the principal to execute this comando.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU086E (severidade: error, familia AWSBHU - conman) tem o texto: "You must be on the master to execute this command." Em portugues: "you must be on the principal to execute this comando.". Temas: comando. Em outras palavras: Este comando somente pode ser executado a partir da estação mestre, e não na estação atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU086E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You must the execute this command portugues you principal comando Temas significa`
+> `AWSBHU086E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You must the execute this command portugues you principal comando Temas outras palavras somente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU086E no HCL Workload Automation 10.2.8?
@@ -67981,7 +67981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU086E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU087E (severidade: error, familia AWSBHU - conman) tem o texto: "The selected job stream has already been cancelled." Em portugues: "the selected job fluxo has already estado cancelled.". Temas: job fluxo. Explicacao oficial: You cannot add a dependency to, submit a job to, or kill a job in a cancelled job stream.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU087E (severidade: error, familia AWSBHU - conman) tem o texto: "The selected job stream has already been cancelled." Em portugues: "the selected job fluxo has already estado cancelled.". Temas: job fluxo. Em outras palavras: O job stream selecionado já foi cancelado anteriormente e não aceita nova operação de cancelamento.. Explicacao oficial: You cannot add a dependency to, submit a job to, or kill a job in a cancelled job stream.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU087E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The selected job stream has already been cancelled portugues the fluxo estado Temas`
@@ -68001,10 +68001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU087E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU088E (severidade: error, familia AWSBHU - conman) tem o texto: "You cannot rerun user jobs." Em portugues: "you nao pode rerun usuario jobs.". Temas: nao pode usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU088E (severidade: error, familia AWSBHU - conman) tem o texto: "You cannot rerun user jobs." Em portugues: "you nao pode rerun usuario jobs.". Temas: nao pode usuario. Em outras palavras: Não é permitido reexecutar jobs de usuário por meio deste tipo de operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU088E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You cannot rerun user jobs portugues you nao usuario Temas significa`
+> `AWSBHU088E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You cannot rerun user jobs portugues you nao usuario Temas outras palavras permitido reexecutar meio`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU088E no HCL Workload Automation 10.2.8?
@@ -68021,7 +68021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU088E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU089E (severidade: error, familia AWSBHU - conman) tem o texto: "This parameter is only valid when using the "from" parameter with the rerun command." Em portugues: "this parametro is only valido when using the "from" parametro with the rerun comando.". Temas: comando valido parametro. Explicacao oficial: You tried to rerun the job using an at or a pri dependency without specifying the from keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU089E (severidade: error, familia AWSBHU - conman) tem o texto: "This parameter is only valid when using the "from" parameter with the rerun command." Em portugues: "this parametro is only valido when using the "from" parametro with the rerun comando.". Temas: comando valido parametro. Em outras palavras: Este parâmetro só é válido quando usado em conjunto com o parâmetro de origem do comando de reexecução.. Explicacao oficial: You tried to rerun the job using an at or a pri dependency without specifying the from keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU089E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto This parameter only valid when using the from with rerun command portugues this parametro valido`
@@ -68041,7 +68041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU089E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU090E (severidade: error, familia AWSBHU - conman) tem o texto: "The job indicated by the "from" parameter does not exist in the database." Em portugues: "the job indicated by the "from" parametro does nao existe in the banco de dados.". Temas: nao job parametro banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU090E (severidade: error, familia AWSBHU - conman) tem o texto: "The job indicated by the "from" parameter does not exist in the database." Em portugues: "the job indicated by the "from" parametro does nao existe in the banco de dados.". Temas: nao job parametro banco de dados. Em outras palavras: O job indicado pelo parâmetro de origem não existe dentro do banco de dados do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU090E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job indicated the from parameter does not exist database portugues parametro nao`
@@ -68061,7 +68061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU090E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU091E (severidade: error, familia AWSBHU - conman) tem o texto: "The alias or step name supplied for the job or job stream is not valid." Em portugues: "the alias or step nome informado for the job or job fluxo is nao valido.". Temas: nao job nome informado valido fluxo. Explicacao oficial: You have either specified an alias name in a submit command or a step name in a rerun command. The name supplied is not valid. It must start with an alphabetic character, and must contain only alphanumeric characters, dashes, and underscores.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU091E (severidade: error, familia AWSBHU - conman) tem o texto: "The alias or step name supplied for the job or job stream is not valid." Em portugues: "the alias or step nome informado for the job or job fluxo is nao valido.". Temas: nao job nome informado valido fluxo. Em outras palavras: O apelido ou o nome do passo informado para o job ou job stream não é reconhecido como válido.. Explicacao oficial: You have either specified an alias name in a submit command or a step name in a rerun command. The name supplied is not valid. It must start with an alphabetic character, and must contain only alphanumeric characters, dashes, and underscores.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU091E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The alias step name supplied for the job stream not valid portugues nome informado`
@@ -68081,7 +68081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU091E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU092E (severidade: error, familia AWSBHU - conman) tem o texto: "This job or job stream has too many dependencies." Em portugues: "this job or job fluxo has too many dependencies.". Temas: job fluxo excesso de. Explicacao oficial: The maximum number of dependencies that you can add to a job or a job stream is 40.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU092E (severidade: error, familia AWSBHU - conman) tem o texto: "This job or job stream has too many dependencies." Em portugues: "this job or job fluxo has too many dependencies.". Temas: job fluxo excesso de. Em outras palavras: Este job ou job stream possui dependências em quantidade superior ao limite permitido pelo sistema.. Explicacao oficial: The maximum number of dependencies that you can add to a job or a job stream is 40.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU092E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto This job stream has too many dependencies portugues this fluxo Temas`
@@ -68101,7 +68101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU092E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU093E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued rerun command did not specify the step name to use after the ";step" parameter." Em portugues: "the issued rerun comando did nao specify the step nome to use apos the ";step" parametro.". Temas: nao nome comando parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU093E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued rerun command did not specify the step name to use after the ";step" parameter." Em portugues: "the issued rerun comando did nao specify the step nome to use apos the ";step" parametro.". Temas: nao nome comando parametro. Em outras palavras: O comando de reexecução não informou o nome do passo a ser usado após o parâmetro de passo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU093E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued rerun command did not specify the step name use after parameter portugues comando`
@@ -68121,7 +68121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU093E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU094E (severidade: error, familia AWSBHU - conman) tem o texto: "The following dependency keyword is an unknown dependency: "!1". The problem was encountered in the following source file "!2", at line "!3"." Em portugues: "the seguinte dependency keyword is an desconhecido dependency: "!1". the problema was encountered in the seguinte source arquivo "!2", at linha "!3".". Temas: arquivo palavra-chave linha problema. Explicacao oficial: Conman does not recognize the dependency keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU094E (severidade: error, familia AWSBHU - conman) tem o texto: "The following dependency keyword is an unknown dependency: "!1". The problem was encountered in the following source file "!2", at line "!3"." Em portugues: "the seguinte dependency keyword is an desconhecido dependency: "!1". the problema was encountered in the seguinte source arquivo "!2", at linha "!3".". Temas: arquivo palavra-chave linha problema. Em outras palavras: Foi encontrada uma palavra-chave de dependência desconhecida pelo sistema, localizada no arquivo-fonte indicado na mensagem.. Explicacao oficial: Conman does not recognize the dependency keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman does AWSBHU094E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following dependency keyword unknown problem was encountered the source file line portugues seguinte`
@@ -68141,7 +68141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU094E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU095E (severidade: error, familia AWSBHU - conman) tem o texto: "The job stream or job dependency !1 was not found in the Symphony file." Em portugues: "the job fluxo or job dependency !1 was nao encontrado in the symphony arquivo.". Temas: nao arquivo job encontrado symphony fluxo. Explicacao oficial: dependent_job_stream_or_job is the dependent job stream or job name identified by the follows dependency keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU095E (severidade: error, familia AWSBHU - conman) tem o texto: "The job stream or job dependency !1 was not found in the Symphony file." Em portugues: "the job fluxo or job dependency !1 was nao encontrado in the symphony arquivo.". Temas: nao arquivo job encontrado symphony fluxo. Em outras palavras: A dependência de job ou job stream indicada não foi encontrada dentro do arquivo Symphony.. Explicacao oficial: dependent_job_stream_or_job is the dependent job stream or job name identified by the follows dependency keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU095E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job stream dependency was not found the Symphony file portugues fluxo nao encontrado`
@@ -68161,7 +68161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU095E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU096E (severidade: error, familia AWSBHU - conman) tem o texto: "You have specified a range of values for a command qualifier that does not accept ranges." Em portugues: "you have especificado a range of values for a comando qualificador that does nao aceitar ranges.". Temas: nao comando especificado qualificador. Explicacao oficial: Conman gives this error when the command string includes a range (a value followed by a comma) and the command itself or the qualifier used in this command does not accept ranges of values.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU096E (severidade: error, familia AWSBHU - conman) tem o texto: "You have specified a range of values for a command qualifier that does not accept ranges." Em portugues: "you have especificado a range of values for a comando qualificador that does nao aceitar ranges.". Temas: nao comando especificado qualificador. Em outras palavras: Foi informado um intervalo de valores para um qualificador que não aceita faixas de valores.. Explicacao oficial: Conman gives this error when the command string includes a range (a value followed by a comma) and the command itself or the qualifier used in this command does not accept ranges of values.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman gives AWSBHU096E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have specified range values for command qualifier that does not accept ranges portugues you especificado`
@@ -68181,7 +68181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU096E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU097E (severidade: error, familia AWSBHU - conman) tem o texto: "You have not specified a value for a command qualifier that requires one." Em portugues: "you have nao especificado a valor for a comando qualificador that requires one.". Temas: nao comando especificado valor qualificador.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU097E (severidade: error, familia AWSBHU - conman) tem o texto: "You have not specified a value for a command qualifier that requires one." Em portugues: "you have nao especificado a valor for a comando qualificador that requires one.". Temas: nao comando especificado valor qualificador. Em outras palavras: Falta informar o valor obrigatório para um qualificador do comando que exige tal valor..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU097E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have not specified value for command qualifier that requires one portugues you nao especificado valor comando qualificador`
@@ -68221,7 +68221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU098E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU099E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied path name exceeds the maximum size, which is: !1." Em portugues: "the informado caminho nome exceeds the maximo tamanho, which is: !1.". Temas: nome informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU099E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied path name exceeds the maximum size, which is: !1." Em portugues: "the informado caminho nome exceeds the maximo tamanho, which is: !1.". Temas: nome informado. Em outras palavras: O caminho informado ultrapassou o tamanho máximo permitido pelo sistema para nomes de caminho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU099E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied path name exceeds the maximum size which portugues informado caminho nome maximo tamanho Temas`
@@ -68261,7 +68261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU108I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU112E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied job specification is not in the correct format. You can use only <workstation>#<job> or <job>." Em portugues: "the informado job specification is nao in the correct format. you can use only <estacao de trabalho>#<job> or <job>.". Temas: nao job informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU112E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied job specification is not in the correct format. You can use only <workstation>#<job> or <job>." Em portugues: "the informado job specification is nao in the correct format. you can use only <estacao de trabalho>#<job> or <job>.". Temas: nao job informado. Em outras palavras: A especificação do job informada está em formato incorreto, aceitando apenas estação e job ou apenas o job..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU112E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied job specification not the correct format You can use only workstation portugues informado`
@@ -68281,10 +68281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU112E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU113I (severidade: informational, familia AWSBHU - conman) tem o texto: "Waiting for new Symphony file ..." Em portugues: "aguardando for new symphony arquivo ...". Temas: arquivo symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU113I (severidade: informational, familia AWSBHU - conman) tem o texto: "Waiting for new Symphony file ..." Em portugues: "aguardando for new symphony arquivo ...". Temas: arquivo symphony. Em outras palavras: O sistema está aguardando a chegada de um novo arquivo Symphony para prosseguir com as operações..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU113I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Waiting for new Symphony file portugues aguardando symphony arquivo Temas significa`
+> `AWSBHU113I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Waiting for new Symphony file portugues aguardando symphony arquivo Temas outras palavras sistema chegada novo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU113I no HCL Workload Automation 10.2.8?
@@ -68301,7 +68301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU113I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU114E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied "switchmgr" command did not identify the domain, the new manager, or both." Em portugues: "the informado "switchmgr" comando did nao identify the dominio, the new manager, or both.". Temas: nao comando informado dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU114E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied "switchmgr" command did not identify the domain, the new manager, or both." Em portugues: "the informado "switchmgr" comando did nao identify the dominio, the new manager, or both.". Temas: nao comando informado dominio. Em outras palavras: O comando de troca de gerenciador não identificou o domínio, o novo gerenciador ou ambos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU114E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied switchmgr command did not identify the new both portugues informado comando nao`
@@ -68341,7 +68341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU115E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU116E (severidade: error, familia AWSBHU - conman) tem o texto: "The user that has issued a "start ;mgr" or a "switchmgr" command does not have "start" rights to the new domain manager: "!2"." Em portugues: "the usuario that has issued a "iniciar ;mgr" or a "switchmgr" comando does nao have "iniciar" rights to the new dominio manager: "!2".". Temas: nao comando usuario dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU116E (severidade: error, familia AWSBHU - conman) tem o texto: "The user that has issued a "start ;mgr" or a "switchmgr" command does not have "start" rights to the new domain manager: "!2"." Em portugues: "the usuario that has issued a "iniciar ;mgr" or a "switchmgr" comando does nao have "iniciar" rights to the new dominio manager: "!2".". Temas: nao comando usuario dominio. Em outras palavras: O usuário que emitiu o comando não possui direitos de início sobre o novo gerenciador de domínio indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU116E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The user that has issued start mgr switchmgr command does not have rights the new portugues usuario`
@@ -68361,7 +68361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU116E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU117E (severidade: error, familia AWSBHU - conman) tem o texto: "The "switchmgr" command cannot be completed. The workstation proposed as the new domain manager: "!1" is not in the supplied domain: "!2"." Em portugues: "the "switchmgr" comando nao pode be concluido. the estacao de trabalho proposed as the new dominio manager: "!1" is nao in the informado dominio: "!2".". Temas: nao estacao de trabalho pode comando informado dominio concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU117E (severidade: error, familia AWSBHU - conman) tem o texto: "The "switchmgr" command cannot be completed. The workstation proposed as the new domain manager: "!1" is not in the supplied domain: "!2"." Em portugues: "the "switchmgr" comando nao pode be concluido. the estacao de trabalho proposed as the new dominio manager: "!1" is nao in the informado dominio: "!2".". Temas: nao estacao de trabalho pode comando informado dominio concluido. Em outras palavras: A troca de gerenciador não pode ser concluída pois a estação proposta não pertence ao domínio informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU117E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The switchmgr command cannot completed workstation proposed the new not supplied portugues comando nao concluido`
@@ -68381,10 +68381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU117E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU118W (severidade: warning, familia AWSBHU - conman) tem o texto: "Workstation !1 is already the manager of domain !2." Em portugues: "estacao de trabalho !1 is already the manager of dominio !2.". Temas: estacao de trabalho dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU118W (severidade: warning, familia AWSBHU - conman) tem o texto: "Workstation !1 is already the manager of domain !2." Em portugues: "estacao de trabalho !1 is already the manager of dominio !2.". Temas: estacao de trabalho dominio. Em outras palavras: A estação indicada já exerce atualmente o papel de gerenciador do domínio informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU118W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Workstation already the portugues estacao trabalho dominio Temas significa`
+> `AWSBHU118W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Workstation already the portugues estacao trabalho dominio Temas outras palavras indicada exerce atualmente papel gerenciador`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU118W no HCL Workload Automation 10.2.8?
@@ -68401,7 +68401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU118W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU119E (severidade: error, familia AWSBHU - conman) tem o texto: "Wild cards are not permitted in the domain name parameter of the "switchmgr" command." Em portugues: "wild cards are nao permitted in the dominio nome parametro of the "switchmgr" comando.". Temas: nao nome comando dominio parametro. Explicacao oficial: You have used one or more wildcards (such as: '@' or '?') in the specification of the domain name.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU119E (severidade: error, familia AWSBHU - conman) tem o texto: "Wild cards are not permitted in the domain name parameter of the "switchmgr" command." Em portugues: "wild cards are nao permitted in the dominio nome parametro of the "switchmgr" comando.". Temas: nao nome comando dominio parametro. Em outras palavras: O uso de caracteres curinga não é permitido no parâmetro de nome de domínio do comando de troca.. Explicacao oficial: You have used one or more wildcards (such as: '@' or '?') in the specification of the domain name.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU119E trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Wild cards are not permitted the name parameter switchmgr command portugues wild nao dominio nome`
@@ -68421,7 +68421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU119E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU120I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "switchmgr" command has changed the domain manager from workstation !1 to workstation !2." Em portugues: "the "switchmgr" comando has changed the dominio manager from estacao de trabalho !1 to estacao de trabalho !2.". Temas: estacao de trabalho comando dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU120I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "switchmgr" command has changed the domain manager from workstation !1 to workstation !2." Em portugues: "the "switchmgr" comando has changed the dominio manager from estacao de trabalho !1 to estacao de trabalho !2.". Temas: estacao de trabalho comando dominio. Em outras palavras: A troca de gerenciador transferiu com sucesso o papel de gerenciador de domínio de uma estação para outra..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU120I trocar master comutar master domain manager failover bmdm switchmgr masterdm 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto The switchmgr command has changed the from workstation portugues comando dominio estacao trabalho`
@@ -68441,10 +68441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU120I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU121E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman could not identify the parent domain of the following workstation: !1." Em portugues: "conman conseguiu nao identify the parent dominio of the seguinte estacao de trabalho: !1.". Temas: nao estacao de trabalho dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU121E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman could not identify the parent domain of the following workstation: !1." Em portugues: "conman conseguiu nao identify the parent dominio of the seguinte estacao de trabalho: !1.". Temas: nao estacao de trabalho dominio. Em outras palavras: O Conman não conseguiu identificar o domínio pai da estação de trabalho indicada na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman could conman conseguiu AWSBHU121E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman could not identify the parent following workstation portugues conseguiu nao dominio seguinte estacao`
+> `conman could conman conseguiu conman n AWSBHU121E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman could not identify the parent following workstation portugues conseguiu nao dominio seguinte estacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU121E no HCL Workload Automation 10.2.8?
@@ -68461,7 +68461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU121E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU122E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied command includes both the options "short" and "single", which are mutually exclusive." Em portugues: "the informado comando includes both the opcoes "short" and "single", which are mutually exclusive.". Temas: comando informado opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU122E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied command includes both the options "short" and "single", which are mutually exclusive." Em portugues: "the informado comando includes both the opcoes "short" and "single", which are mutually exclusive.". Temas: comando informado opcoes. Em outras palavras: O comando inclui opções mutuamente exclusivas, que não podem ser usadas juntas em uma mesma emissão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU122E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied command includes both the options short and single which are mutually exclusive portugues informado comando`
@@ -68481,7 +68481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU122E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU123E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied command includes the option "single", which can only be used when a Job Number is supplied." Em portugues: "the informado comando includes the opcao "single", which can only be used when a job numero is informado.". Temas: job comando informado numero opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU123E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied command includes the option "single", which can only be used when a Job Number is supplied." Em portugues: "the informado comando includes the opcao "single", which can only be used when a job numero is informado.". Temas: job comando informado numero opcao. Em outras palavras: A opção indicada somente pode ser utilizada quando um número de job é informado no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU123E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied command includes the option single which can only used when Job Number portugues informado comando`
@@ -68501,7 +68501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU123E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU126E (severidade: error, familia AWSBHU - conman) tem o texto: "A time zone has been specified in a time dependency, but time zone use has not been enabled for workstation: !1" Em portugues: "a tempo zone has estado especificado in a tempo dependency, but tempo zone use has nao estado habilitado for estacao de trabalho: !1". Temas: nao estacao de trabalho especificado tempo hora habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU126E (severidade: error, familia AWSBHU - conman) tem o texto: "A time zone has been specified in a time dependency, but time zone use has not been enabled for workstation: !1" Em portugues: "a tempo zone has estado especificado in a tempo dependency, but tempo zone use has nao estado habilitado for estacao de trabalho: !1". Temas: nao estacao de trabalho especificado tempo hora habilitado. Em outras palavras: Foi especificado um fuso horário na dependência de tempo, mas o uso de fuso não está habilitado na estação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU126E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto time zone has been specified dependency but use not enabled for workstation portugues tempo`
@@ -68521,7 +68521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU126E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU127W (severidade: warning, familia AWSBHU - conman) tem o texto: "Submitted !1 to batchman as !2# but workstation !3 not present in the Symphony file." Em portugues: "submitted !1 to batchman as !2# but estacao de trabalho !3 nao present in the symphony arquivo.". Temas: nao arquivo estacao de trabalho symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU127W (severidade: warning, familia AWSBHU - conman) tem o texto: "Submitted !1 to batchman as !2# but workstation !3 not present in the Symphony file." Em portugues: "submitted !1 to batchman as !2# but estacao de trabalho !3 nao present in the symphony arquivo.". Temas: nao arquivo estacao de trabalho symphony. Em outras palavras: Um job foi enviado ao batchman, porém a estação referenciada não está presente no arquivo Symphony..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU127W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Submitted batchman but workstation not present the Symphony file portugues submitted estacao trabalho nao symphony arquivo`
@@ -68541,10 +68541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU127W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU128W (severidade: warning, familia AWSBHU - conman) tem o texto: "Dependency !1 might not be present in the Symphony file." Em portugues: "dependency !1 might nao be present in the symphony arquivo.". Temas: nao arquivo symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU128W (severidade: warning, familia AWSBHU - conman) tem o texto: "Dependency !1 might not be present in the Symphony file." Em portugues: "dependency !1 might nao be present in the symphony arquivo.". Temas: nao arquivo symphony. Em outras palavras: A dependência indicada pode não estar presente dentro do arquivo Symphony, o que requer verificação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU128W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Dependency might not present the Symphony file portugues dependency nao symphony arquivo Temas significa`
+> `AWSBHU128W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Dependency might not present the Symphony file portugues dependency nao symphony arquivo Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU128W no HCL Workload Automation 10.2.8?
@@ -68561,7 +68561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU128W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU129E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes more than one "nocheck" keyword after a "follows" keyword, which is not permitted." Em portugues: "the issued "submit" comando includes mais que one "nocheck" keyword apos a "follows" keyword, which is nao permitted.". Temas: nao comando palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU129E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes more than one "nocheck" keyword after a "follows" keyword, which is not permitted." Em portugues: "the issued "submit" comando includes mais que one "nocheck" keyword apos a "follows" keyword, which is nao permitted.". Temas: nao comando palavra-chave. Em outras palavras: O comando de submissão repete a palavra-chave de não verificação após a de dependência, o que não é permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU129E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued submit command includes more than one nocheck keyword after follows which not permitted portugues the`
@@ -68581,7 +68581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU129E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU130E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command cannot be used. It is not allowed by the "centralized security" option, which is enabled for this domain." Em portugues: "the issued comando nao pode be used. it is nao allowed by the "centralized seguranca" opcao, which is habilitado for this dominio.". Temas: nao pode comando dominio opcao habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU130E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command cannot be used. It is not allowed by the "centralized security" option, which is enabled for this domain." Em portugues: "the issued comando nao pode be used. it is nao allowed by the "centralized seguranca" opcao, which is habilitado for this dominio.". Temas: nao pode comando dominio opcao habilitado. Em outras palavras: O comando não pode ser usado pois a opção de segurança centralizada, habilitada neste domínio, o proíbe..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU130E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued command cannot used not allowed the centralized security option which enabled for this portugues comando nao`
@@ -68621,7 +68621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU131E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU132E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "show jobs" command, but the information you are requesting can only be supplied if the keyword "keys" is specified in the command." Em portugues: "you have issued a "show jobs" comando, but the information you are requesting can only be informado if the keyword "keys" is especificado in the comando.". Temas: comando informado especificado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU132E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "show jobs" command, but the information you are requesting can only be supplied if the keyword "keys" is specified in the command." Em portugues: "you have issued a "show jobs" comando, but the information you are requesting can only be informado if the keyword "keys" is especificado in the comando.". Temas: comando informado especificado palavra-chave. Em outras palavras: O comando de exibição de jobs exige a palavra-chave de chaves para retornar as informações solicitadas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU132E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued show jobs command but the information you are requesting can only supplied keyword keys specified`
@@ -68641,7 +68641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU132E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU133E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a return code condition expression that is longer than the maximum number of bytes permitted, which is: !1." Em portugues: "you have informado a return code condicao expression that is longer que the maximo numero of bytes permitted, which is: !1.". Temas: informado numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU133E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a return code condition expression that is longer than the maximum number of bytes permitted, which is: !1." Em portugues: "you have informado a return code condicao expression that is longer que the maximo numero of bytes permitted, which is: !1.". Temas: informado numero. Em outras palavras: A expressão de condição de código de retorno informada ultrapassou o tamanho máximo em bytes permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU133E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied return code condition expression that longer than the maximum number bytes permitted which portugues you informado`
@@ -68661,7 +68661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU133E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU134E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a script path name and a return code condition expression, which are together longer than the maximum number of bytes permitted, which is: !1." Em portugues: "you have informado a script caminho nome and a return code condicao expression, which are together longer que the maximo numero of bytes permitted, which is: !1.". Temas: nome informado numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU134E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a script path name and a return code condition expression, which are together longer than the maximum number of bytes permitted, which is: !1." Em portugues: "you have informado a script caminho nome and a return code condicao expression, which are together longer que the maximo numero of bytes permitted, which is: !1.". Temas: nome informado numero. Em outras palavras: O caminho do script e a expressão de condição juntos ultrapassaram o limite máximo de bytes permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU134E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied script path name and return code condition expression which are together longer than the maximum number bytes`
@@ -68681,7 +68681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU134E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU135E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a return code condition expression that is enclosed in mismatched or missing quotes." Em portugues: "you have informado a return code condicao expression that is enclosed in mismatched or faltando quotes.". Temas: informado faltando. Explicacao oficial: The return code condition expression must be enclosed (preceded and followed) by the double quotes character ().
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU135E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a return code condition expression that is enclosed in mismatched or missing quotes." Em portugues: "you have informado a return code condicao expression that is enclosed in mismatched or faltando quotes.". Temas: informado faltando. Em outras palavras: A expressão de condição de código de retorno foi fornecida com aspas ausentes ou desbalanceadas.. Explicacao oficial: The return code condition expression must be enclosed (preceded and followed) by the double quotes character ().
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU135E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied return code condition expression that enclosed mismatched missing quotes portugues you informado condicao`
@@ -68701,10 +68701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU135E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU136E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a return code condition expression that could not be validated by Conman. The following gives more details of the error: !1." Em portugues: "you have informado a return code condicao expression that conseguiu nao be validated by conman. the seguinte gives mais details of the erro: !1.". Temas: erro nao informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU136E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a return code condition expression that could not be validated by Conman. The following gives more details of the error: !1." Em portugues: "you have informado a return code condicao expression that conseguiu nao be validated by conman. the seguinte gives mais details of the erro: !1.". Temas: erro nao informado. Em outras palavras: O Conman não conseguiu validar a expressão de condição de código de retorno informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU136E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied return code condition expression that could not validated Conman The following gives more details the portugues`
+> `conman n AWSBHU136E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied return code condition expression that could not validated Conman The following gives more details the portugues`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU136E no HCL Workload Automation 10.2.8?
@@ -68721,7 +68721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU136E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU137W (severidade: warning, familia AWSBHU - conman) tem o texto: "The user is not authorized to display the selected objects." Em portugues: "the usuario is nao authorized to exibir the selected objects.". Temas: nao usuario exibir.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU137W (severidade: warning, familia AWSBHU - conman) tem o texto: "The user is not authorized to display the selected objects." Em portugues: "the usuario is nao authorized to exibir the selected objects.". Temas: nao usuario exibir. Em outras palavras: O usuário atual não possui autorização para exibir os objetos que foram selecionados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU137W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The user not authorized display the selected objects portugues usuario nao exibir Temas`
@@ -68741,7 +68741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU137W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU138E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes more than one "wait" keyword after a "follows" keyword, which is not permitted." Em portugues: "the issued "submit" comando includes mais que one "wait" keyword apos a "follows" keyword, which is nao permitted.". Temas: nao comando palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU138E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes more than one "wait" keyword after a "follows" keyword, which is not permitted." Em portugues: "the issued "submit" comando includes mais que one "wait" keyword apos a "follows" keyword, which is nao permitted.". Temas: nao comando palavra-chave. Em outras palavras: O comando de submissão repete a palavra-chave de espera após a de dependência, o que não é permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU138E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued submit command includes more than one wait keyword after follows which not permitted portugues the`
@@ -68761,7 +68761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU138E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU139E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a "wait" keyword, but you have not supplied the associated numeric wait value." Em portugues: "the issued "submit" comando includes a "wait" keyword, but you have nao informado the associated numerico wait valor.". Temas: nao comando informado palavra-chave valor numerico.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU139E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a "wait" keyword, but you have not supplied the associated numeric wait value." Em portugues: "the issued "submit" comando includes a "wait" keyword, but you have nao informado the associated numerico wait valor.". Temas: nao comando informado palavra-chave valor numerico. Em outras palavras: O comando de submissão inclui a palavra-chave de espera, porém não foi informado o valor numérico associado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU139E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued submit command includes wait keyword but you have not supplied the associated numeric value portugues`
@@ -68781,7 +68781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU139E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU140E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a "wait" keyword, but the associated numeric wait value (seconds) is not between 0 and 1200." Em portugues: "the issued "submit" comando includes a "wait" keyword, but the associated numerico wait valor (seconds) is nao entre 0 and 1200.". Temas: nao comando palavra-chave valor numerico entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU140E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a "wait" keyword, but the associated numeric wait value (seconds) is not between 0 and 1200." Em portugues: "the issued "submit" comando includes a "wait" keyword, but the associated numerico wait valor (seconds) is nao entre 0 and 1200.". Temas: nao comando palavra-chave valor numerico entre. Em outras palavras: O valor de espera em segundos informado está fora do intervalo permitido entre zero e mil e duzentos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU140E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued submit command includes wait keyword but the associated numeric value seconds not between and portugues`
@@ -68801,7 +68801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU140E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU141E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a non-numeric or incorrect value for a time parameter. The valid values are from: "!1" to "!2"." Em portugues: "the issued "submit" comando includes a non-numerico or incorreto valor for a tempo parametro. the valido values are from: "!1" to "!2".". Temas: comando valido parametro valor tempo hora incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU141E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a non-numeric or incorrect value for a time parameter. The valid values are from: "!1" to "!2"." Em portugues: "the issued "submit" comando includes a non-numerico or incorreto valor for a tempo parametro. the valido values are from: "!1" to "!2".". Temas: comando valido parametro valor tempo hora incorreto. Em outras palavras: Foi informado um valor de tempo não numérico ou incorreto no comando de submissão, fora da faixa válida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU141E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued submit command includes non-numeric incorrect value for time parameter valid values are from portugues the`
@@ -68821,7 +68821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU141E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU142E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a date which is not valid or is not in the correct format. The accepted format is: "!1"." Em portugues: "the issued "submit" comando includes a date which is nao valido or is nao in the correct format. the accepted format is: "!1".". Temas: nao comando valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU142E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued "submit" command includes a date which is not valid or is not in the correct format. The accepted format is: "!1"." Em portugues: "the issued "submit" comando includes a date which is nao valido or is nao in the correct format. the accepted format is: "!1".". Temas: nao comando valido. Em outras palavras: A data informada no comando de submissão é inválida ou não está no formato aceito pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU142E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued submit command includes date which not valid the correct format accepted portugues`
@@ -68836,12 +68836,12 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU142E (severidade: error, fam
 ### 3800. `hwa-msgcat-awsbhu143e`
 
 - **Categoria / Dominio:** Troubleshooting & Mensagens de Erro
-- **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
+- **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** mutating
 - **Versao / Plataforma:** HWA 10.2.8 (distributed)
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU143E (severidade: error, familia AWSBHU - conman) tem o texto: "The action associated with the "onuntil" attribute is not correct. It must be one of the following: "suppr", "cont", "canc"." Em portugues: "the action associated with the "onuntil" attribute is nao correct. it must be one of the seguinte: "suppr", "cont", "canc".". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU143E (severidade: error, familia AWSBHU - conman) tem o texto: "The action associated with the "onuntil" attribute is not correct. It must be one of the following: "suppr", "cont", "canc"." Em portugues: "the action associated with the "onuntil" attribute is nao correct. it must be one of the seguinte: "suppr", "cont", "canc".". Temas: nao. Em outras palavras: A ação associada ao atributo de vigência está incorreta, devendo ser supressão, continuação ou cancelamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU143E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The action associated with the onuntil attribute not correct must one following suppr cont canc portugues`
@@ -68861,7 +68861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU143E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU144E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The schedule time is not valid or is not in the correct format. The correct format is "hhmm" or "hhmm !1"." Em portugues: "there is a sintaxe erro. the agendamento tempo is nao valido or is nao in the correct format. the correct format is "hhmm" or "hhmm !1".". Temas: erro nao sintaxe valido tempo hora agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU144E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The schedule time is not valid or is not in the correct format. The correct format is "hhmm" or "hhmm !1"." Em portugues: "there is a sintaxe erro. the agendamento tempo is nao valido or is nao in the correct format. the correct format is "hhmm" or "hhmm !1".". Temas: erro nao sintaxe valido tempo hora agendamento. Em outras palavras: Houve erro de sintaxe pois o horário de agendamento é inválido ou está fora do formato esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU144E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The schedule time not valid the correct format hhmm portugues there sintaxe`
@@ -68881,7 +68881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU144E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU145E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream ID can contain only alphanumeric characters." Em portugues: "there is a sintaxe erro. the job fluxo id can contain only alphanumeric characters.". Temas: erro job sintaxe fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU145E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream ID can contain only alphanumeric characters." Em portugues: "there is a sintaxe erro. the job fluxo id can contain only alphanumeric characters.". Temas: erro job sintaxe fluxo. Em outras palavras: Houve erro de sintaxe pois o identificador do job stream só pode conter caracteres alfanuméricos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU145E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job stream can contain only alphanumeric characters portugues there sintaxe erro the fluxo`
@@ -68901,7 +68901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU145E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU146E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream ID must be between 1 and 16 bytes long." Em portugues: "there is a sintaxe erro. the job fluxo id must be entre 1 and 16 bytes long.". Temas: erro job sintaxe fluxo entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU146E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream ID must be between 1 and 16 bytes long." Em portugues: "there is a sintaxe erro. the job fluxo id must be entre 1 and 16 bytes long.". Temas: erro job sintaxe fluxo entre. Em outras palavras: Houve erro de sintaxe pois o identificador do job stream deve ter entre um e dezesseis bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU146E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job stream must between and bytes long portugues there sintaxe erro the fluxo entre`
@@ -68921,7 +68921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU146E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU147E (severidade: error, familia AWSBHU - conman) tem o texto: "The keywords "!1" and "!2" are mutually exclusive. You cannot supply both of them." Em portugues: "the keywords "!1" and "!2" are mutually exclusive. you nao pode supply both of them.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU147E (severidade: error, familia AWSBHU - conman) tem o texto: "The keywords "!1" and "!2" are mutually exclusive. You cannot supply both of them." Em portugues: "the keywords "!1" and "!2" are mutually exclusive. you nao pode supply both of them.". Temas: nao pode. Em outras palavras: As palavras-chave informadas são mutuamente exclusivas e não podem ser fornecidas juntas no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU147E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The keywords and are mutually exclusive You cannot supply both them portugues the you nao`
@@ -68941,7 +68941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU147E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU148E (severidade: error, familia AWSBHU - conman) tem o texto: "The keyword "!1" cannot be used because the Symphony file was created by a previous version of HCL Workload Automation." Em portugues: "the keyword "!1" nao pode be used porque the symphony arquivo was created by a previous versao of hcl workload automation.". Temas: arquivo nao pode palavra-chave carga de trabalho symphony versao. Explicacao oficial: keyword is the keyword that cannot be used with a Symphony file created by a previous version of HCL Workload Automation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU148E (severidade: error, familia AWSBHU - conman) tem o texto: "The keyword "!1" cannot be used because the Symphony file was created by a previous version of HCL Workload Automation." Em portugues: "the keyword "!1" nao pode be used porque the symphony arquivo was created by a previous versao of hcl workload automation.". Temas: arquivo nao pode palavra-chave carga de trabalho symphony versao. Em outras palavras: A palavra-chave não pode ser usada pois o Symphony veio de uma versão anterior do produto.. Explicacao oficial: keyword is the keyword that cannot be used with a Symphony file created by a previous version of HCL Workload Automation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU148E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The keyword cannot used because the Symphony file was created previous version portugues nao porque symphony`
@@ -68961,7 +68961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU148E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU149E (severidade: error, familia AWSBHU - conman) tem o texto: "The job stream or job dependency !1 with the specified schedule time was not found in the Symphony file." Em portugues: "the job fluxo or job dependency !1 with the especificado agendamento tempo was nao encontrado in the symphony arquivo.". Temas: nao arquivo job especificado encontrado symphony fluxo tempo hora agendamento. Explicacao oficial: dependent_job_stream_or_job is the dependent job stream or job name identified by the follows dependency keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU149E (severidade: error, familia AWSBHU - conman) tem o texto: "The job stream or job dependency !1 with the specified schedule time was not found in the Symphony file." Em portugues: "the job fluxo or job dependency !1 with the especificado agendamento tempo was nao encontrado in the symphony arquivo.". Temas: nao arquivo job especificado encontrado symphony fluxo tempo hora agendamento. Em outras palavras: A dependência de job ou job stream com o horário de agendamento especificado não foi localizada no Symphony.. Explicacao oficial: dependent_job_stream_or_job is the dependent job stream or job name identified by the follows dependency keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU149E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job stream dependency with the specified schedule time was not found Symphony file portugues fluxo`
@@ -69001,7 +69001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU150W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU151E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied date is not valid or is not in the correct format. The correct format is "!1"." Em portugues: "the informado date is nao valido or is nao in the correct format. the correct format is "!1".". Temas: nao informado valido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU151E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied date is not valid or is not in the correct format. The correct format is "!1"." Em portugues: "the informado date is nao valido or is nao in the correct format. the correct format is "!1".". Temas: nao informado valido. Em outras palavras: A data informada é inválida ou não está no formato correto aceito pelo comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU151E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied date not valid the correct format portugues informado nao valido`
@@ -69041,7 +69041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU152E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU153E (severidade: error, familia AWSBHU - conman) tem o texto: "The keyword "!1" can only be supplied if the keyword "!2" is specified." Em portugues: "the keyword "!1" can only be informado if the keyword "!2" is especificado.". Temas: informado especificado palavra-chave.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU153E (severidade: error, familia AWSBHU - conman) tem o texto: "The keyword "!1" can only be supplied if the keyword "!2" is specified." Em portugues: "the keyword "!1" can only be informado if the keyword "!2" is especificado.". Temas: informado especificado palavra-chave. Em outras palavras: A palavra-chave indicada somente pode ser fornecida quando a outra palavra-chave também é especificada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU153E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The keyword can only supplied the specified portugues informado especificado Temas`
@@ -69061,7 +69061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU153E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU154E (severidade: error, familia AWSBHU - conman) tem o texto: "Either the "nocheck" argument or the "schedid" argument have been supplied without the required job stream ID." Em portugues: "either the "nocheck" argumento or the "schedid" argumento have estado informado sem the obrigatorio job fluxo id.". Temas: job informado fluxo argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU154E (severidade: error, familia AWSBHU - conman) tem o texto: "Either the "nocheck" argument or the "schedid" argument have been supplied without the required job stream ID." Em portugues: "either the "nocheck" argumento or the "schedid" argumento have estado informado sem the obrigatorio job fluxo id.". Temas: job informado fluxo argumento. Em outras palavras: O argumento de não verificação ou de identificação foi fornecido sem o identificador obrigatório do job stream..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU154E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Either the nocheck argument schedid have been supplied without required job stream portugues either argumento`
@@ -69081,7 +69081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU154E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU155E (severidade: error, familia AWSBHU - conman) tem o texto: "You have submitted a command to be scheduled as a job (submit docommand) but have not included the command." Em portugues: "you have submitted a comando to be scheduled as a job (submit docommand) but have nao included the comando.". Temas: nao job comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU155E (severidade: error, familia AWSBHU - conman) tem o texto: "You have submitted a command to be scheduled as a job (submit docommand) but have not included the command." Em portugues: "you have submitted a comando to be scheduled as a job (submit docommand) but have nao included the comando.". Temas: nao job comando. Em outras palavras: Foi enviado um comando para ser agendado como job, porém a própria instrução a ser executada não foi incluída..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU155E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have submitted command scheduled job submit docommand but not included the portugues you comando`
@@ -69101,7 +69101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU155E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU156E (severidade: error, familia AWSBHU - conman) tem o texto: "The workstation you specified is already the event processor." Em portugues: "the estacao de trabalho you especificado is already the event processor.". Temas: estacao de trabalho especificado. Explicacao oficial: You have tried to set a workstation as the new event processor, but it is already the event processor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU156E (severidade: error, familia AWSBHU - conman) tem o texto: "The workstation you specified is already the event processor." Em portugues: "the estacao de trabalho you especificado is already the event processor.". Temas: estacao de trabalho especificado. Em outras palavras: A estação de trabalho especificada já desempenha atualmente o papel de processador de eventos.. Explicacao oficial: You have tried to set a workstation as the new event processor, but it is already the event processor.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU156E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The workstation you specified already the event processor portugues estacao trabalho especificado Temas`
@@ -69121,7 +69121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU156E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU157E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command containing at least one incorrect argument keyword." Em portugues: "you have issued a comando containing at least one incorreto argumento keyword.". Temas: comando palavra-chave argumento incorreto. Explicacao oficial: The command contains at least one unsupported keyword.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU157E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command containing at least one incorrect argument keyword." Em portugues: "you have issued a comando containing at least one incorreto argumento keyword.". Temas: comando palavra-chave argumento incorreto. Em outras palavras: O comando que você enviou contém pelo menos uma palavra-chave de argumento incorreta, então a operação não pôde ser interpretada e foi recusada.. Explicacao oficial: The command contains at least one unsupported keyword.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU157E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command containing least one incorrect argument keyword portugues you comando incorreto argumento`
@@ -69161,7 +69161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU158E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU159E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because the workstation is broker agent, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque the estacao de trabalho is broker agente, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando agente broker intermediario suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU159E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because the workstation is broker agent, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque the estacao de trabalho is broker agente, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando agente broker intermediario suportado. Em outras palavras: O comando não pode ser executado nessa estação pois ela atua como broker agent, que não suporta essa operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU159E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command issued for workstation cannot performed because the broker agent where not supported portugues comando`
@@ -69181,7 +69181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU159E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU160E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because of the following error: "!2"." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque of the seguinte erro: "!2".". Temas: erro estacao de trabalho nao pode comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU160E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because of the following error: "!2"." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque of the seguinte erro: "!2".". Temas: erro estacao de trabalho nao pode comando. Em outras palavras: A operação solicitada para esta estação de trabalho não pôde ser executada e falhou por causa do erro detalhado informado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU160E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command issued for workstation cannot performed because the following portugues comando estacao trabalho nao`
@@ -69221,7 +69221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU161E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU162E (severidade: error, familia AWSBHU - conman) tem o texto: "!1 file cannot be moved on workstation !2 because it is being used by another process." Em portugues: "!1 arquivo nao pode be moved on estacao de trabalho !2 porque it is being used by another process.". Temas: arquivo estacao de trabalho nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU162E (severidade: error, familia AWSBHU - conman) tem o texto: "!1 file cannot be moved on workstation !2 because it is being used by another process." Em portugues: "!1 arquivo nao pode be moved on estacao de trabalho !2 porque it is being used by another process.". Temas: arquivo estacao de trabalho nao pode. Em outras palavras: O arquivo não pode ser movido nesta estação de trabalho porque está sendo usado por outro processo, então a transferência foi bloqueada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU162E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto file cannot moved workstation because being used another process portugues arquivo nao estacao trabalho porque`
@@ -69241,7 +69241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU162E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU163E (severidade: error, familia AWSBHU - conman) tem o texto: "An error has occurred while launching the script "moveFTATargetFiles" on workstation !1." Em portugues: "an erro has ocorreu while launching the script "moveftatargetfiles" on estacao de trabalho !1.". Temas: erro estacao de trabalho ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU163E (severidade: error, familia AWSBHU - conman) tem o texto: "An error has occurred while launching the script "moveFTATargetFiles" on workstation !1." Em portugues: "an erro has ocorreu while launching the script "moveftatargetfiles" on estacao de trabalho !1.". Temas: erro estacao de trabalho ocorreu. Em outras palavras: Houve uma falha ao tentar iniciar o script de movimentação dos arquivos de destino na estação, então a operação não pôde ser concluída..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU163E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto has occurred while launching the script moveFTATargetFiles workstation portugues erro ocorreu moveftatargetfiles estacao trabalho`
@@ -69261,10 +69261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU163E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU164E (severidade: error, familia AWSBHU - conman) tem o texto: "The script "moveFTATargetFiles" is missing on workstation !1." Em portugues: "the script "moveftatargetfiles" is faltando on estacao de trabalho !1.". Temas: estacao de trabalho faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU164E (severidade: error, familia AWSBHU - conman) tem o texto: "The script "moveFTATargetFiles" is missing on workstation !1." Em portugues: "the script "moveftatargetfiles" is faltando on estacao de trabalho !1.". Temas: estacao de trabalho faltando. Em outras palavras: O script responsável por mover os arquivos de destino não está presente na estação de trabalho, portanto a operação não pôde ser executada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU164E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The script moveFTATargetFiles missing workstation portugues the moveftatargetfiles faltando estacao trabalho Temas significa`
+> `AWSBHU164E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The script moveFTATargetFiles missing workstation portugues the moveftatargetfiles faltando estacao trabalho Temas outras palavras mover`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU164E no HCL Workload Automation 10.2.8?
@@ -69281,7 +69281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU164E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU165I (severidade: informational, familia AWSBHU - conman) tem o texto: "All target files on workstation !1 have been successfully moved." Em portugues: "all target arquivos on estacao de trabalho !1 have estado successfully moved.". Temas: arquivos estacao de trabalho com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU165I (severidade: informational, familia AWSBHU - conman) tem o texto: "All target files on workstation !1 have been successfully moved." Em portugues: "all target arquivos on estacao de trabalho !1 have estado successfully moved.". Temas: arquivos estacao de trabalho com sucesso. Em outras palavras: Todos os arquivos de destino desta estação de trabalho foram movidos com sucesso, indicando que a transferência foi concluída sem problemas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU165I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto All target files workstation have been successfully moved portugues all arquivos estacao trabalho estado Temas`
@@ -69301,7 +69301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU165I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU166E (severidade: error, familia AWSBHU - conman) tem o texto: "A file cannot be removed from "TWShome/pobox" directory on workstation !1 because it is being used by another process." Em portugues: "a arquivo nao pode be removed from "twshome/pobox" diretorio on estacao de trabalho !1 porque it is being used by another process.". Temas: arquivo estacao de trabalho nao pode diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU166E (severidade: error, familia AWSBHU - conman) tem o texto: "A file cannot be removed from "TWShome/pobox" directory on workstation !1 because it is being used by another process." Em portugues: "a arquivo nao pode be removed from "twshome/pobox" diretorio on estacao de trabalho !1 porque it is being used by another process.". Temas: arquivo estacao de trabalho nao pode diretorio. Em outras palavras: Um arquivo do diretório de caixa de arquivos não pôde ser removido porque está sendo utilizado por outro processo na estação de trabalho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU166E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto file cannot removed from TWShome pobox directory workstation because being used another process portugues arquivo nao twshome`
@@ -69321,7 +69321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU166E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU168E (severidade: error, familia AWSBHU - conman) tem o texto: "The agent on workstation !1 cannot be reset because it is still active." Em portugues: "the agente on estacao de trabalho !1 nao pode be reset porque it is still active.". Temas: estacao de trabalho nao pode agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU168E (severidade: error, familia AWSBHU - conman) tem o texto: "The agent on workstation !1 cannot be reset because it is still active." Em portugues: "the agente on estacao de trabalho !1 nao pode be reset porque it is still active.". Temas: estacao de trabalho nao pode agente. Em outras palavras: O agente nesta estação não pôde ser resetado porque ainda está ativo e em uso, então a reinicialização foi bloqueada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU168E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The agent workstation cannot reset because still active portugues the agente estacao trabalho nao porque Temas`
@@ -69341,7 +69341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU168E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU169E (severidade: error, familia AWSBHU - conman) tem o texto: "The number of hours must be an integer value between 0 and 500." Em portugues: "the numero of hours must be an integer valor entre 0 and 500.". Temas: numero valor entre. Explicacao oficial: The number of hours must be an integer value between 0 and 500.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU169E (severidade: error, familia AWSBHU - conman) tem o texto: "The number of hours must be an integer value between 0 and 500." Em portugues: "the numero of hours must be an integer valor entre 0 and 500.". Temas: numero valor entre. Em outras palavras: O valor informado para o número de horas está fora do intervalo permitido, que vai de zero a quinhentas horas inteiras.. Explicacao oficial: The number of hours must be an integer value between 0 and 500.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU169E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The number hours must integer value between and portugues the numero valor entre Temas`
@@ -69361,7 +69361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU169E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU170E (severidade: error, familia AWSBHU - conman) tem o texto: "The action to be performed when the value of the "onmaxdur" attribute is exceeded, is not a valid action. Specify one of the following: "kill", "cont"." Em portugues: "the action to be performed when the valor of the "onmaxdur" attribute is exceeded, is nao a valido action. specify one of the seguinte: "kill", "cont".". Temas: nao valido valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU170E (severidade: error, familia AWSBHU - conman) tem o texto: "The action to be performed when the value of the "onmaxdur" attribute is exceeded, is not a valid action. Specify one of the following: "kill", "cont"." Em portugues: "the action to be performed when the valor of the "onmaxdur" attribute is exceeded, is nao a valido action. specify one of the seguinte: "kill", "cont".". Temas: nao valido valor. Em outras palavras: A ação definida para quando o tempo máximo de duração for excedido não é válida, sendo aceitos apenas os valores de encerramento ou continuação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU170E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The action performed when the value onmaxdur attribute exceeded not valid Specify one following kill cont portugues`
@@ -69421,7 +69421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU172E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU173E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman command is unable to start a new process. Your HCL Workload Automation license expired !1." Em portugues: "conman comando is incapaz to iniciar a new process. your hcl workload automation licenca expirou !1.". Temas: comando nao conseguiu carga de trabalho expirou venceu expirado licenca iniciar. Explicacao oficial: Conman cannot start a new process because the HCL Workload Automation license has expired
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU173E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman command is unable to start a new process. Your HCL Workload Automation license expired !1." Em portugues: "conman comando is incapaz to iniciar a new process. your hcl workload automation licenca expirou !1.". Temas: comando nao conseguiu carga de trabalho expirou venceu expirado licenca iniciar. Em outras palavras: O comando não conseguiu iniciar um novo processo provavelmente porque a licença do sistema de automação de workload expirou e bloqueou a operação.. Explicacao oficial: Conman cannot start a new process because the HCL Workload Automation license has expired
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman command conman comando conman cannot AWSBHU173E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman command unable start new process Your license expired portugues comando incapaz iniciar your licenca expirou Temas`
@@ -69441,7 +69441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU173E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU174E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because the workstation is remote engine, or broker workstation, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque the estacao de trabalho is remoto engine, or broker estacao de trabalho, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando broker intermediario suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU174E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation !1 cannot be performed, because the workstation is remote engine, or broker workstation, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho !1 nao pode be performed, porque the estacao de trabalho is remoto engine, or broker estacao de trabalho, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando broker intermediario suportado. Em outras palavras: A operação não pôde ser executada nesta estação porque ela atua como mecanismo remoto ou broker, onde esse tipo de comando não é aceito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU174E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command issued for workstation cannot performed because the remote engine broker where not supported portugues`
@@ -69461,7 +69461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU174E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU175E (severidade: error, familia AWSBHU - conman) tem o texto: "The selected job stream has already been suppressed." Em portugues: "the selected job fluxo has already estado suppressed.". Temas: job fluxo. Explicacao oficial: You cannot rerun a job in a suppressed job stream.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU175E (severidade: error, familia AWSBHU - conman) tem o texto: "The selected job stream has already been suppressed." Em portugues: "the selected job fluxo has already estado suppressed.". Temas: job fluxo. Em outras palavras: O fluxo de trabalhos selecionado já estava suprimido, então o comando de supressão não teve efeito por ser redundante.. Explicacao oficial: You cannot rerun a job in a suppressed job stream.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU175E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The selected job stream has already been suppressed portugues the fluxo estado Temas`
@@ -69501,7 +69501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU176E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU181E (severidade: error, familia AWSBHU - conman) tem o texto: "The conditional dependency expression specified cannot be validated by conman." Em portugues: "the conditional dependency expression especificado nao pode be validated by conman.". Temas: nao pode especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU181E (severidade: error, familia AWSBHU - conman) tem o texto: "The conditional dependency expression specified cannot be validated by conman." Em portugues: "the conditional dependency expression especificado nao pode be validated by conman.". Temas: nao pode especificado. Em outras palavras: A expressão de dependência condicional informada não pôde ser validada pelo conman, portanto o comando foi rejeitado por ser inválida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU181E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The conditional dependency expression specified cannot validated portugues the especificado nao Temas`
@@ -69521,7 +69521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU181E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU182E (severidade: error, familia AWSBHU - conman) tem o texto: "The output condition expression specified cannot be validated by conman." Em portugues: "the saida condicao expression especificado nao pode be validated by conman.". Temas: nao pode especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU182E (severidade: error, familia AWSBHU - conman) tem o texto: "The output condition expression specified cannot be validated by conman." Em portugues: "the saida condicao expression especificado nao pode be validated by conman.". Temas: nao pode especificado. Em outras palavras: A expressão da condição de saída informada não pôde ser validada pelo conman, então ela foi considerada inválida e rejeitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU182E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The output condition expression specified cannot validated portugues the saida condicao especificado nao Temas`
@@ -69541,7 +69541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU182E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU183E (severidade: error, familia AWSBHU - conman) tem o texto: "The conditional dependency specified "!1" does not exist in the Symphony file." Em portugues: "the conditional dependency especificado "!1" does nao existe in the symphony arquivo.". Temas: nao arquivo especificado symphony. Explicacao oficial: conditional_dependency is the conditional dependency identified by the follows dependency keyword. You have either specified the conditional dependency incorrectly or it does not exist in the Symphony file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU183E (severidade: error, familia AWSBHU - conman) tem o texto: "The conditional dependency specified "!1" does not exist in the Symphony file." Em portugues: "the conditional dependency especificado "!1" does nao existe in the symphony arquivo.". Temas: nao arquivo especificado symphony. Em outras palavras: A dependência condicional referenciada não foi encontrada no arquivo Symphony, indicando que ela não existe no plano de carga.. Explicacao oficial: conditional_dependency is the conditional dependency identified by the follows dependency keyword. You have either specified the conditional dependency incorrectly or it does not exist in the Symphony file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU183E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The conditional dependency specified does not exist the Symphony file portugues especificado nao existe symphony`
@@ -69561,7 +69561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU183E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU184W (severidade: warning, familia AWSBHU - conman) tem o texto: "The "!1" variable value is longer than the maximum number of bytes and will be truncated." Em portugues: "the "!1" variavel valor is longer que the maximo numero of bytes and will be truncated.". Temas: numero valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU184W (severidade: warning, familia AWSBHU - conman) tem o texto: "The "!1" variable value is longer than the maximum number of bytes and will be truncated." Em portugues: "the "!1" variavel valor is longer que the maximo numero of bytes and will be truncated.". Temas: numero valor. Em outras palavras: O valor da variável ultrapassou o limite máximo de bytes permitido, então foi truncado para se ajustar ao tamanho aceito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU184W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The variable value longer than the maximum number bytes and will truncated portugues variavel valor maximo numero`
@@ -69581,10 +69581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU184W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU185E (severidade: error, familia AWSBHU - conman) tem o texto: "The logon or streamlogon value is empty or invalid." Em portugues: "the logon or streamlogon valor is empty or invalido.". Temas: invalido valor logon.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU185E (severidade: error, familia AWSBHU - conman) tem o texto: "The logon or streamlogon value is empty or invalid." Em portugues: "the logon or streamlogon valor is empty or invalido.". Temas: invalido valor logon. Em outras palavras: O valor informado de login ou de logon de fluxo está vazio ou inválido, portanto não pôde ser usado para a autenticação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU185E usuario do job logon do job trocar logon no plano 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The logon streamlogon value empty invalid portugues the valor invalido Temas significa`
+> `AWSBHU185E usuario do job logon do job trocar logon no plano 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The logon streamlogon value empty invalid portugues the valor invalido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU185E no HCL Workload Automation 10.2.8?
@@ -69601,7 +69601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU185E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU186E (severidade: error, familia AWSBHU - conman) tem o texto: "The docommand or script keyword is not compatible with the type of the job. Use this keyword only for native jobs." Em portugues: "the docommand or script keyword is nao compatible with the tipo of the job. use this keyword only for native jobs.". Temas: nao job palavra-chave tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU186E (severidade: error, familia AWSBHU - conman) tem o texto: "The docommand or script keyword is not compatible with the type of the job. Use this keyword only for native jobs." Em portugues: "the docommand or script keyword is nao compatible with the tipo of the job. use this keyword only for native jobs.". Temas: nao job palavra-chave tipo. Em outras palavras: A palavra-chave de comando ou script em uso é incompatível com o tipo de trabalho, pois só pode ser utilizada em trabalhos nativos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU186E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The docommand script keyword not compatible with the type job Use this only for native jobs portugues`
@@ -69621,7 +69621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU186E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU187E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied logon name exceeds the maximum size, which is: !1." Em portugues: "the informado logon nome exceeds the maximo tamanho, which is: !1.". Temas: nome informado logon.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU187E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied logon name exceeds the maximum size, which is: !1." Em portugues: "the informado logon nome exceeds the maximo tamanho, which is: !1.". Temas: nome informado logon. Em outras palavras: O nome de logon informado excede o tamanho máximo permitido, portanto o valor precisa ser reduzido para ser aceito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU187E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied logon name exceeds the maximum size which portugues informado nome maximo tamanho Temas`
@@ -69641,10 +69641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU187E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU188E (severidade: error, familia AWSBHU - conman) tem o texto: "The command or script name is empty or invalid." Em portugues: "the comando or script nome is empty or invalido.". Temas: nome comando invalido.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU188E (severidade: error, familia AWSBHU - conman) tem o texto: "The command or script name is empty or invalid." Em portugues: "the comando or script nome is empty or invalido.". Temas: nome comando invalido. Em outras palavras: O nome do comando ou do script está vazio ou é inválido, então não foi possível identificá-lo e executar a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU188E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command script name empty invalid portugues the comando nome invalido Temas significa`
+> `AWSBHU188E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command script name empty invalid portugues the comando nome invalido Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU188E no HCL Workload Automation 10.2.8?
@@ -69661,7 +69661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU188E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU189E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command that has attempted to edit a job into an EXTERNAL job stream. This is not permitted." Em portugues: "you have issued a comando that has attempted to edit a job into an external job fluxo. this is nao permitted.". Temas: nao job comando fluxo. Explicacao oficial: The EXTERNAL job stream is used to monitor the status of internetwork dependencies, and a job into this job stream cannot be edited.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU189E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command that has attempted to edit a job into an EXTERNAL job stream. This is not permitted." Em portugues: "you have issued a comando that has attempted to edit a job into an external job fluxo. this is nao permitted.". Temas: nao job comando fluxo. Em outras palavras: Você tentou editar um trabalho dentro de um fluxo de trabalhos externo, o que não é permitido por esse comando e foi recusado.. Explicacao oficial: The EXTERNAL job stream is used to monitor the status of internetwork dependencies, and a job into this job stream cannot be edited.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU189E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command that has attempted edit job into EXTERNAL stream This not permitted portugues you`
@@ -69681,7 +69681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU189E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU190W (severidade: warning, familia AWSBHU - conman) tem o texto: "The start command command cannot be executed because a SwitchPlan is running. Wait that SwitchPlan is completed before running the command again." Em portugues: "the iniciar comando comando nao pode be executed porque a switchplan is em execucao. wait that switchplan is concluido antes em execucao the comando again.". Temas: nao pode comando concluido iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU190W (severidade: warning, familia AWSBHU - conman) tem o texto: "The start command command cannot be executed because a SwitchPlan is running. Wait that SwitchPlan is completed before running the command again." Em portugues: "the iniciar comando comando nao pode be executed porque a switchplan is em execucao. wait that switchplan is concluido antes em execucao the comando again.". Temas: nao pode comando concluido iniciar. Em outras palavras: O comando de inicialização não pôde ser executado porque há uma troca de plano em andamento, então aguarde a conclusão para tentar novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU190W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The start command cannot executed because SwitchPlan running Wait that completed before the again portugues`
@@ -69701,7 +69701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU190W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU410E (severidade: error, familia AWSBHU - conman) tem o texto: "The workstation name parameter has not been specified for the "!1" command." Em portugues: "the estacao de trabalho nome parametro has nao estado especificado for the "!1" comando.". Temas: nao estacao de trabalho nome comando especificado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU410E (severidade: error, familia AWSBHU - conman) tem o texto: "The workstation name parameter has not been specified for the "!1" command." Em portugues: "the estacao de trabalho nome parametro has nao estado especificado for the "!1" comando.". Temas: nao estacao de trabalho nome comando especificado parametro. Em outras palavras: Faltou especificar o parâmetro de nome da estação de trabalho para este comando, então a operação não pôde ser executada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU410E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The workstation name parameter has not been specified for the command portugues estacao trabalho nome parametro nao estado`
@@ -69721,7 +69721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU410E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU411E (severidade: error, familia AWSBHU - conman) tem o texto: "Wild cards are not permitted in the workstation name parameter of the "!1" command." Em portugues: "wild cards are nao permitted in the estacao de trabalho nome parametro of the "!1" comando.". Temas: nao estacao de trabalho nome comando parametro. Explicacao oficial: You have used one or more wildcards (such as: '@' or '?') while specifying the workstation name.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU411E (severidade: error, familia AWSBHU - conman) tem o texto: "Wild cards are not permitted in the workstation name parameter of the "!1" command." Em portugues: "wild cards are nao permitted in the estacao de trabalho nome parametro of the "!1" comando.". Temas: nao estacao de trabalho nome comando parametro. Em outras palavras: Não são permitidos caracteres curinga no parâmetro de nome da estação de trabalho deste comando, então ele foi rejeitado.. Explicacao oficial: You have used one or more wildcards (such as: '@' or '?') while specifying the workstation name.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU411E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Wild cards are not permitted the workstation name parameter command portugues wild nao estacao trabalho`
@@ -69741,7 +69741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU411E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU412E (severidade: error, familia AWSBHU - conman) tem o texto: "Too many parameters have been supplied to the "!1" command." Em portugues: "too many parametros have estado informado to the "!1" comando.". Temas: comando informado parametros excesso de.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU412E (severidade: error, familia AWSBHU - conman) tem o texto: "Too many parameters have been supplied to the "!1" command." Em portugues: "too many parametros have estado informado to the "!1" comando.". Temas: comando informado parametros excesso de. Em outras palavras: Foram informados parâmetros em excesso para este comando, excedendo a quantidade aceita e invalidando a execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU412E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Too many parameters have been supplied the command portugues too parametros estado informado comando Temas`
@@ -69761,10 +69761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU412E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU450I (severidade: informational, familia AWSBHU - conman) tem o texto: "Monitoring is already active for !1." Em portugues: "monitoring is already active for !1.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU450I (severidade: informational, familia AWSBHU - conman) tem o texto: "Monitoring is already active for !1." Em portugues: "monitoring is already active for !1.". Em outras palavras: O monitoramento já estava ativo para este elemento, indicando que a solicitação de ativação era desnecessária pois já estava em andamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU450I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Monitoring already active for portugues monitoring significa diagnosticar`
+> `AWSBHU450I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Monitoring already active for portugues monitoring outras palavras monitoramento estava ativo elemento indicando era pois andamento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU450I no HCL Workload Automation 10.2.8?
@@ -69781,10 +69781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU450I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU451I (severidade: informational, familia AWSBHU - conman) tem o texto: "Monitoring is already stopped for !1." Em portugues: "monitoring is already parado for !1.". Temas: parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU451I (severidade: informational, familia AWSBHU - conman) tem o texto: "Monitoring is already stopped for !1." Em portugues: "monitoring is already parado for !1.". Temas: parado. Em outras palavras: O monitoramento já estava interrompido para este elemento, então a solicitação de parada era redundante pois ainda não estava ativo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU451I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Monitoring already stopped for portugues monitoring parado Temas significa diagnosticar`
+> `AWSBHU451I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto Monitoring already stopped for portugues monitoring parado Temas outras palavras monitoramento estava interrompido elemento parada era redundante`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU451I no HCL Workload Automation 10.2.8?
@@ -69801,10 +69801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU451I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU470I (severidade: informational, familia AWSBHU - conman) tem o texto: "A !1 command was issued for !2." Em portugues: "a !1 comando was issued for !2.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU470I (severidade: informational, familia AWSBHU - conman) tem o texto: "A !1 command was issued for !2." Em portugues: "a !1 comando was issued for !2.". Temas: comando. Em outras palavras: Um comando específico foi enviado para a estação de trabalho indicada, registrando a operação que está sendo executada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU470I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto command was issued for portugues comando Temas significa diagnosticar`
+> `AWSBHU470I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto command was issued for portugues comando Temas outras palavras foi enviado trabalho indicada registrando sendo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU470I no HCL Workload Automation 10.2.8?
@@ -69821,7 +69821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU470I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU472I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "switcheventprocessor" command has changed the event processor from workstation !1 to workstation !2." Em portugues: "the "switcheventprocessor" comando has changed the event processor from estacao de trabalho !1 to estacao de trabalho !2.". Temas: estacao de trabalho comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU472I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "switcheventprocessor" command has changed the event processor from workstation !1 to workstation !2." Em portugues: "the "switcheventprocessor" comando has changed the event processor from estacao de trabalho !1 to estacao de trabalho !2.". Temas: estacao de trabalho comando. Em outras palavras: O comando de alternar processador de eventos mudou o processador da estação indicada para a outra estação informada na operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU472I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto The switcheventprocessor command has changed the event processor from workstation portugues comando`
@@ -69841,7 +69841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU472I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU473I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "switcheventprocessor" command has changed the event processor to workstation !1." Em portugues: "the "switcheventprocessor" comando has changed the event processor to estacao de trabalho !1.". Temas: estacao de trabalho comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU473I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "switcheventprocessor" command has changed the event processor to workstation !1." Em portugues: "the "switcheventprocessor" comando has changed the event processor to estacao de trabalho !1.". Temas: estacao de trabalho comando. Em outras palavras: O comando de alternar processador de eventos passou a usar a estação indicada como novo processador de eventos do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU473I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto The switcheventprocessor command has changed the event processor workstation portugues comando estacao trabalho`
@@ -69861,7 +69861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU473I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU503E (severidade: error, familia AWSBHU - conman) tem o texto: "You have included one or more keywords that are not required for this command. The point beyond which the keywords are not required is indicated." Em portugues: "you have included one or mais keywords that are nao obrigatorio for this comando. the point beyond which the keywords are nao obrigatorio is indicated.". Temas: nao comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU503E (severidade: error, familia AWSBHU - conman) tem o texto: "You have included one or more keywords that are not required for this command. The point beyond which the keywords are not required is indicated." Em portugues: "you have included one or mais keywords that are nao obrigatorio for this comando. the point beyond which the keywords are nao obrigatorio is indicated.". Temas: nao comando. Em outras palavras: O comando contém palavras-chave supérfluas além do ponto em que deixam de ser exigidas, então ele foi marcado como inválido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU503E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have included one more keywords that are not required for this command The point beyond which the`
@@ -69881,7 +69881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU503E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU504E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a time-related dependency, but have omitted the keyword "day[s]"." Em portugues: "you have issued a comando with a tempo-related dependency, but have omitted the keyword "day[s]".". Temas: comando palavra-chave. Explicacao oficial: You have issued a command with an at, until, or deadline dependency. You have also entered a + delimiter and a numeric value, which can only be used if accompanied by the keyword day[s].
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU504E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a command with a time-related dependency, but have omitted the keyword "day[s]"." Em portugues: "you have issued a comando with a tempo-related dependency, but have omitted the keyword "day[s]".". Temas: comando palavra-chave. Em outras palavras: Você informou uma dependência relacionada a tempo, mas omitiu a palavra-chave que define o dia, tornando a expressão incompleta.. Explicacao oficial: You have issued a command with an at, until, or deadline dependency. You have also entered a + delimiter and a numeric value, which can only be used if accompanied by the keyword day[s].
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU504E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued command with time-related dependency but omitted the keyword day portugues you comando tempo-related`
@@ -69901,10 +69901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU504E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU507I (severidade: informational, familia AWSBHU - conman) tem o texto: "A start command was issued for !1." Em portugues: "a iniciar comando was issued for !1.". Temas: comando iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU507I (severidade: informational, familia AWSBHU - conman) tem o texto: "A start command was issued for !1." Em portugues: "a iniciar comando was issued for !1.". Temas: comando iniciar. Em outras palavras: Um comando de inicialização foi emitido para o elemento indicado, confirmando a requisição de partida da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU507I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto start command was issued for portugues iniciar comando Temas significa`
+> `AWSBHU507I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto start command was issued for portugues iniciar comando Temas outras palavras foi emitido elemento`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU507I no HCL Workload Automation 10.2.8?
@@ -69921,7 +69921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU507I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU508E (severidade: error, familia AWSBHU - conman) tem o texto: "You do not have access to this file or database object." Em portugues: "you do nao have acesso to this arquivo or banco de dados object.". Temas: nao arquivo banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU508E (severidade: error, familia AWSBHU - conman) tem o texto: "You do not have access to this file or database object." Em portugues: "you do nao have acesso to this arquivo or banco de dados object.". Temas: nao arquivo banco de dados. Em outras palavras: Você não tem permissão de acesso a este arquivo ou objeto de banco de dados, então a operação foi bloqueada por falta de privilégio..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU508E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You not have access this file database object portugues you nao acesso arquivo dados Temas`
@@ -69941,10 +69941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU508E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU509E (severidade: error, familia AWSBHU - conman) tem o texto: "The requested file cannot be found." Em portugues: "the requested arquivo nao pode be encontrado.". Temas: arquivo nao pode encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU509E (severidade: error, familia AWSBHU - conman) tem o texto: "The requested file cannot be found." Em portugues: "the requested arquivo nao pode be encontrado.". Temas: arquivo nao pode encontrado. Em outras palavras: O arquivo solicitado não foi encontrado no sistema, indicando que ele não existe ou está em outro local do esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU509E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The requested file cannot found portugues the arquivo nao encontrado Temas significa`
+> `AWSBHU509E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The requested file cannot found portugues the arquivo nao encontrado Temas outras palavras solicitado foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU509E no HCL Workload Automation 10.2.8?
@@ -69961,7 +69961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU509E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU510E (severidade: error, familia AWSBHU - conman) tem o texto: "The following job already exists: "!1#!2.!3". Use the "rerun" command or supply an "alias" with the "submit" command." Em portugues: "the seguinte job already existe: "!1#!2.!3". use the "rerun" comando or supply an "alias" with the "submit" comando.". Temas: job comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU510E (severidade: error, familia AWSBHU - conman) tem o texto: "The following job already exists: "!1#!2.!3". Use the "rerun" command or supply an "alias" with the "submit" command." Em portugues: "the seguinte job already existe: "!1#!2.!3". use the "rerun" comando or supply an "alias" with the "submit" comando.". Temas: job comando. Em outras palavras: Já existe um trabalho com o mesmo identificador; utilize o comando de reexecução ou informe um apelido distinto ao submeter..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU510E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following job already exists Use the rerun command supply alias with submit portugues seguinte`
@@ -69981,10 +69981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU510E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU511E (severidade: error, familia AWSBHU - conman) tem o texto: "You have no access to the recovery job (!1#!2)." Em portugues: "you have no acesso to the recovery job (!1#!2).". Temas: job.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU511E (severidade: error, familia AWSBHU - conman) tem o texto: "You have no access to the recovery job (!1#!2)." Em portugues: "you have no acesso to the recovery job (!1#!2).". Temas: job. Em outras palavras: Você não possui acesso ao trabalho de recuperação referenciado, então não é possível utilizá-lo nessa operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU511E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have access the recovery job portugues you acesso Temas significa`
+> `AWSBHU511E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have access the recovery job portugues you acesso Temas outras palavras possui trabalho`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU511E no HCL Workload Automation 10.2.8?
@@ -70021,7 +70021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU512E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU513E (severidade: error, familia AWSBHU - conman) tem o texto: "The following job stream already exists: "!1". Supply an "alias" with the "submit" command." Em portugues: "the seguinte job fluxo already existe: "!1". supply an "alias" with the "submit" comando.". Temas: job comando fluxo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU513E (severidade: error, familia AWSBHU - conman) tem o texto: "The following job stream already exists: "!1". Supply an "alias" with the "submit" command." Em portugues: "the seguinte job fluxo already existe: "!1". supply an "alias" with the "submit" comando.". Temas: job comando fluxo. Em outras palavras: Já existe um fluxo de trabalhos com o mesmo nome; informe um apelido diferente no comando de submissão para evitar o conflito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU513E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following job stream already exists Supply alias with the submit command portugues seguinte fluxo existe supply`
@@ -70041,7 +70041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU513E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU516E (severidade: error, familia AWSBHU - conman) tem o texto: "You have not supplied a valid alias of the job you are trying to resubmit." Em portugues: "you have nao informado a valido alias of the job you are trying to resubmit.". Temas: nao job informado valido. Explicacao oficial: You are trying to resubmit a job. A resubmitted job cannot have the same name as the original job; it must instead be supplied with an alias that has a different value from the original job name.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU516E (severidade: error, familia AWSBHU - conman) tem o texto: "You have not supplied a valid alias of the job you are trying to resubmit." Em portugues: "you have nao informado a valido alias of the job you are trying to resubmit.". Temas: nao job informado valido. Em outras palavras: Você não informou um apelido válido para o trabalho que tentou ressubmeter, então a operação não pôde ser concluída.. Explicacao oficial: You are trying to resubmit a job. A resubmitted job cannot have the same name as the original job; it must instead be supplied with an alias that has a different value from the original job name.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU516E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have not supplied valid alias the job you are trying resubmit portugues nao informado valido`
@@ -70061,10 +70061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU516E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU517E (severidade: error, familia AWSBHU - conman) tem o texto: "The required information cannot be displayed." Em portugues: "the obrigatorio information nao pode be displayed.". Temas: nao pode. Explicacao oficial: Conman gives this error because it cannot display a file. There are two possibilities:
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU517E (severidade: error, familia AWSBHU - conman) tem o texto: "The required information cannot be displayed." Em portugues: "the obrigatorio information nao pode be displayed.". Temas: nao pode. Em outras palavras: As informações solicitadas não puderam ser exibidas, indicando uma falha durante a geração ou apresentação dos dados.. Explicacao oficial: Conman gives this error because it cannot display a file. There are two possibilities:
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman gives AWSBHU517E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The required information cannot displayed portugues the obrigatorio nao Temas Explicacao oficial Conman gives this because`
+> `conman gives AWSBHU517E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The required information cannot displayed portugues the obrigatorio nao Temas outras palavras solicitadas puderam exibidas indicando falha`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU517E no HCL Workload Automation 10.2.8?
@@ -70081,7 +70081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU517E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU518E (severidade: error, familia AWSBHU - conman) tem o texto: "You cannot add dependencies to a job or job stream in the "adding" status, or to a job in an "in order" job stream." Em portugues: "you nao pode add dependencies to a job or job fluxo in the "adding" estado, or to a job in an "in order" job fluxo.". Temas: job nao pode fluxo. Explicacao oficial: You tried to add dependencies to a job or job stream but either the job or job stream status is adding or this job belongs to an in order job stream.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU518E (severidade: error, familia AWSBHU - conman) tem o texto: "You cannot add dependencies to a job or job stream in the "adding" status, or to a job in an "in order" job stream." Em portugues: "you nao pode add dependencies to a job or job fluxo in the "adding" estado, or to a job in an "in order" job fluxo.". Temas: job nao pode fluxo. Em outras palavras: Não é possível adicionar dependências a trabalhos no estado de adição nem a trabalhos dentro de um fluxo já em ordem.. Explicacao oficial: You tried to add dependencies to a job or job stream but either the job or job stream status is adding or this job belongs to an in order job stream.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU518E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You cannot add dependencies job stream the adding status order portugues you nao`
@@ -70101,7 +70101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU518E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU520W (severidade: warning, familia AWSBHU - conman) tem o texto: "Dependency !1 was not found in the database; it has been ignored." Em portugues: "dependency !1 was nao encontrado in the banco de dados; it has estado ignored.". Temas: nao encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU520W (severidade: warning, familia AWSBHU - conman) tem o texto: "Dependency !1 was not found in the database; it has been ignored." Em portugues: "dependency !1 was nao encontrado in the banco de dados; it has estado ignored.". Temas: nao encontrado. Em outras palavras: Uma dependência não foi localizada no banco de dados e foi simplesmente ignorada, pois não corresponde a nenhum registro conhecido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU520W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Dependency was not found the database has been ignored portugues dependency nao encontrado dados estado Temas`
@@ -70121,7 +70121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU520W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU521W (severidade: warning, familia AWSBHU - conman) tem o texto: "Dependency !1 was not found in the Symphony file ; it has been ignored." Em portugues: "dependency !1 was nao encontrado in the symphony arquivo ; it has estado ignored.". Temas: nao arquivo encontrado symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU521W (severidade: warning, familia AWSBHU - conman) tem o texto: "Dependency !1 was not found in the Symphony file ; it has been ignored." Em portugues: "dependency !1 was nao encontrado in the symphony arquivo ; it has estado ignored.". Temas: nao arquivo encontrado symphony. Em outras palavras: Uma dependência não foi encontrada no arquivo Symphony e foi ignorada, já que não existe nenhuma entrada correspondente no plano..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU521W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Dependency was not found the Symphony file has been ignored portugues dependency nao encontrado symphony arquivo estado`
@@ -70141,7 +70141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU521W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU522E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied job name is not in the database." Em portugues: "the informado job nome is nao in the banco de dados.". Temas: nao job nome informado banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU522E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied job name is not in the database." Em portugues: "the informado job nome is nao in the banco de dados.". Temas: nao job nome informado banco de dados. Em outras palavras: O nome do trabalho informado não existe no banco de dados, então não foi possível localizar o registro solicitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU522E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied job name not the database portugues informado nome nao dados Temas`
@@ -70161,7 +70161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU522E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU523E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "link" or an "unlink" command on a standalone workstation (on which mailman is not running)." Em portugues: "you have issued a "link" or an "unlink" comando on a standalone estacao de trabalho (on which mailman is nao em execucao).". Temas: nao estacao de trabalho comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU523E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued a "link" or an "unlink" command on a standalone workstation (on which mailman is not running)." Em portugues: "you have issued a "link" or an "unlink" comando on a standalone estacao de trabalho (on which mailman is nao em execucao).". Temas: nao estacao de trabalho comando. Em outras palavras: Você executou o comando de vincular ou desvincular em uma estação autônoma onde o agente de correio não está em execução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU523E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued link unlink command standalone workstation which mailman not running portugues you comando`
@@ -70181,10 +70181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU523E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU524E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command incorrectly ends with a delimiter." Em portugues: "the issued comando incorrectly ends with a delimiter.". Temas: comando. Explicacao oficial: The last character in the command string ends with a delimiter (for example: ; or =). This implies that a keyword or value is missing, because all delimiters must be followed by a keyword or value.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU524E (severidade: error, familia AWSBHU - conman) tem o texto: "The issued command incorrectly ends with a delimiter." Em portugues: "the issued comando incorrectly ends with a delimiter.". Temas: comando. Em outras palavras: O comando enviado termina incorretamente com um delimitador, o que impede a interpretação correta da sintaxe.. Explicacao oficial: The last character in the command string ends with a delimiter (for example: ; or =). This implies that a keyword or value is missing, because all delimiters must be followed by a keyword or value.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU524E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued command incorrectly ends with delimiter portugues the comando Temas Explicacao oficial`
+> `AWSBHU524E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The issued command incorrectly ends with delimiter portugues the comando Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU524E no HCL Workload Automation 10.2.8?
@@ -70221,7 +70221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU525I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU526E (severidade: error, familia AWSBHU - conman) tem o texto: "The following internal error occurred when conman attempted to display a JCL file: "!1"." Em portugues: "the seguinte interno erro ocorreu when conman attempted to exibir a jcl arquivo: "!1".". Temas: erro arquivo ocorreu interno exibir.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU526E (severidade: error, familia AWSBHU - conman) tem o texto: "The following internal error occurred when conman attempted to display a JCL file: "!1"." Em portugues: "the seguinte interno erro ocorreu when conman attempted to exibir a jcl arquivo: "!1".". Temas: erro arquivo ocorreu interno exibir. Em outras palavras: Ocorreu um erro interno ao tentar exibir um arquivo JCL, impedindo que o conteúdo fosse apresentado ao usuário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman attempted AWSBHU526E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following internal occurred when attempted display JCL file portugues the seguinte interno erro ocorreu`
@@ -70241,7 +70241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU526E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU527E (severidade: error, familia AWSBHU - conman) tem o texto: "A file-descriptor or disk-space error occurred when conman attempted to open a JCL file for display." Em portugues: "a arquivo-descriptor or disk-espaco erro ocorreu when conman attempted to open a jcl arquivo for exibir.". Temas: erro arquivo ocorreu exibir. Explicacao oficial: Conman could not open a JCL file. Either the process has opened too many file descriptors or there is insufficient storage space available.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU527E (severidade: error, familia AWSBHU - conman) tem o texto: "A file-descriptor or disk-space error occurred when conman attempted to open a JCL file for display." Em portugues: "a arquivo-descriptor or disk-espaco erro ocorreu when conman attempted to open a jcl arquivo for exibir.". Temas: erro arquivo ocorreu exibir. Em outras palavras: Ocorreu um erro de descritor de arquivo ou falta de espaço em disco ao tentar abrir um arquivo JCL para exibição.. Explicacao oficial: Conman could not open a JCL file. Either the process has opened too many file descriptors or there is insufficient storage space available.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman attempted conman could AWSBHU527E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto file-descriptor disk-space occurred when attempted open JCL file for display portugues arquivo-descriptor disk-espaco erro ocorreu`
@@ -70261,7 +70261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU527E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU528E (severidade: error, familia AWSBHU - conman) tem o texto: "A file-descriptor or disk-space error occurred when conman attempted to display a JCL file." Em portugues: "a arquivo-descriptor or disk-espaco erro ocorreu when conman attempted to exibir a jcl arquivo.". Temas: erro arquivo ocorreu exibir. Explicacao oficial: Conman could not open a work file to display a JCL file. Either the process has opened too many file descriptors or there is insufficient storage space available.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU528E (severidade: error, familia AWSBHU - conman) tem o texto: "A file-descriptor or disk-space error occurred when conman attempted to display a JCL file." Em portugues: "a arquivo-descriptor or disk-espaco erro ocorreu when conman attempted to exibir a jcl arquivo.". Temas: erro arquivo ocorreu exibir. Em outras palavras: Ocorreu um erro de descritor de arquivo ou problema de espaço em disco enquanto um arquivo JCL era exibido.. Explicacao oficial: Conman could not open a work file to display a JCL file. Either the process has opened too many file descriptors or there is insufficient storage space available.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman attempted conman could AWSBHU528E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto file-descriptor disk-space occurred when attempted display JCL file portugues arquivo-descriptor disk-espaco erro ocorreu exibir jcl`
@@ -70281,7 +70281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU528E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU529E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred while conman was displaying a JCL file: "!1"." Em portugues: "the seguinte erro ocorreu while conman was displaying a jcl arquivo: "!1".". Temas: erro arquivo ocorreu. Explicacao oficial: Conman gave this error because a system error occurred while it was reading the JCL file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU529E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred while conman was displaying a JCL file: "!1"." Em portugues: "the seguinte erro ocorreu while conman was displaying a jcl arquivo: "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha durante a exibição de um arquivo JCL, conforme detalhado na mensagem de erro encaminhada.. Explicacao oficial: Conman gave this error because a system error occurred while it was reading the JCL file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman was conman gave AWSBHU529E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following occurred while was displaying JCL file portugues the seguinte erro ocorreu jcl`
@@ -70301,7 +70301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU529E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU530E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred while conman was writing a work file when displaying a JCL file: "!1"." Em portugues: "the seguinte erro ocorreu while conman was writing a work arquivo when displaying a jcl arquivo: "!1".". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU530E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred while conman was writing a work file when displaying a JCL file: "!1"." Em portugues: "the seguinte erro ocorreu while conman was writing a work arquivo when displaying a jcl arquivo: "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha ao gravar um arquivo de trabalho durante a exibição de um arquivo JCL, conforme o erro informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman was AWSBHU530E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following occurred while was writing work file when displaying JCL portugues the seguinte erro ocorreu`
@@ -70321,10 +70321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU530E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU531E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman was unable to access the mozart database or was unable to find a parameter within the database." Em portugues: "conman was incapaz to acesso the mozart banco de dados or was incapaz to find a parametro dentro de the banco de dados.". Temas: nao conseguiu parametro banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU531E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman was unable to access the mozart database or was unable to find a parameter within the database." Em portugues: "conman was incapaz to acesso the mozart banco de dados or was incapaz to find a parametro dentro de the banco de dados.". Temas: nao conseguiu parametro banco de dados. Em outras palavras: O conman não conseguiu acessar o banco de dados interno ou localizar um parâmetro necessário dentro dele, interrompendo a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman was AWSBHU531E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman was unable access the mozart database find parameter within portugues incapaz acesso`
+> `conman was conman n AWSBHU531E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman was unable access the mozart database find parameter within portugues incapaz acesso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU531E no HCL Workload Automation 10.2.8?
@@ -70341,7 +70341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU531E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU532E (severidade: error, familia AWSBHU - conman) tem o texto: "You have either entered too many parameters, or the expansion of the parameters you have entered has exceeded the internal parameter buffer." Em portugues: "you have either entered too many parametros, or the expansion of the parametros you have entered has exceeded the interno parametro buffer.". Temas: interno parametro parametros excesso de. Explicacao oficial: You can supply a maximum of 20 parameters to this command, and when the parameters are fully expanded they must not occupy more than 4095 bytes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU532E (severidade: error, familia AWSBHU - conman) tem o texto: "You have either entered too many parameters, or the expansion of the parameters you have entered has exceeded the internal parameter buffer." Em portugues: "you have either entered too many parametros, or the expansion of the parametros you have entered has exceeded the interno parametro buffer.". Temas: interno parametro parametros excesso de. Em outras palavras: Você informou parâmetros demais ou a expansão deles estourou o buffer interno, então o comando foi rejeitado.. Explicacao oficial: You can supply a maximum of 20 parameters to this command, and when the parameters are fully expanded they must not occupy more than 4095 bytes.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU532E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have either entered too many parameters the expansion you has exceeded internal parameter buffer`
@@ -70361,10 +70361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU532E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU533E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman has found a problem with the syntax of the issued command, but is unable to determine more precisely the nature of the problem." Em portugues: "conman has encontrado a problema with the sintaxe of the issued comando, but is incapaz to determine mais precisely the nature of the problema.". Temas: comando sintaxe nao conseguiu encontrado problema.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU533E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman has found a problem with the syntax of the issued command, but is unable to determine more precisely the nature of the problem." Em portugues: "conman has encontrado a problema with the sintaxe of the issued comando, but is incapaz to determine mais precisely the nature of the problema.". Temas: comando sintaxe nao conseguiu encontrado problema. Em outras palavras: O conman detectou um problema genérico de sintaxe no comando enviado, mas não conseguiu identificar a causa exata da falha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman has AWSBHU533E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman has found problem with the syntax issued command but unable determine more precisely nature portugues`
+> `conman has conman detectou AWSBHU533E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman has found problem with the syntax issued command but unable determine more precisely nature portugues`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU533E no HCL Workload Automation 10.2.8?
@@ -70381,7 +70381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU533E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU534E (severidade: error, familia AWSBHU - conman) tem o texto: "The workstation selected for this job is not a workstation but a workstation class." Em portugues: "the estacao de trabalho selected for this job is nao a estacao de trabalho but a estacao de trabalho class.". Temas: nao estacao de trabalho job. Explicacao oficial: The syntax <workstation_class>#<job> is not correct. You cannot submit a job to run on a workstation class.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU534E (severidade: error, familia AWSBHU - conman) tem o texto: "The workstation selected for this job is not a workstation but a workstation class." Em portugues: "the estacao de trabalho selected for this job is nao a estacao de trabalho but a estacao de trabalho class.". Temas: nao estacao de trabalho job. Em outras palavras: A estação selecionada para este trabalho é na verdade uma classe de estação, não uma estação real, então a atribuição é inválida.. Explicacao oficial: The syntax <workstation_class>#<job> is not correct. You cannot submit a job to run on a workstation class.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU534E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The workstation selected for this job not but class portugues the estacao trabalho nao`
@@ -70401,7 +70401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU534E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU535E (severidade: error, familia AWSBHU - conman) tem o texto: "The following workstation is not in the Symphony file: !1." Em portugues: "the seguinte estacao de trabalho is nao in the symphony arquivo: !1.". Temas: nao arquivo estacao de trabalho symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU535E (severidade: error, familia AWSBHU - conman) tem o texto: "The following workstation is not in the Symphony file: !1." Em portugues: "the seguinte estacao de trabalho is nao in the symphony arquivo: !1.". Temas: nao arquivo estacao de trabalho symphony. Em outras palavras: A estação de trabalho informada não consta no arquivo Symphony, indicando que ela não pertence ao plano de carga atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU535E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following workstation not the Symphony file portugues seguinte estacao trabalho nao symphony arquivo Temas`
@@ -70421,10 +70421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU535E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU536E (severidade: error, familia AWSBHU - conman) tem o texto: "The following domain is empty: !1." Em portugues: "the seguinte dominio is empty: !1.". Temas: dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU536E (severidade: error, familia AWSBHU - conman) tem o texto: "The following domain is empty: !1." Em portugues: "the seguinte dominio is empty: !1.". Temas: dominio. Em outras palavras: O domínio informado está vazio, ou seja, não possui nenhuma estação de trabalho associada e por isso é inválido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU536E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following empty portugues the seguinte dominio Temas significa diagnosticar`
+> `AWSBHU536E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following empty portugues the seguinte dominio Temas outras palavras informado vazio seja possui nenhuma trabalho associada isso`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU536E no HCL Workload Automation 10.2.8?
@@ -70441,7 +70441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU536E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU537E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued the "link" or "unlink" command to the following workstation within the same domain and neither is the domain manager: !1. This is not allowed." Em portugues: "you have issued the "link" or "unlink" comando to the seguinte estacao de trabalho dentro de the same dominio and neither is the dominio manager: !1. this is nao allowed.". Temas: nao estacao de trabalho comando dominio. Explicacao oficial: The link or unlink commands can only be issued to a workstation in the same domain which is a parent or a child of the workstation where the command is issued, not to a peer workstation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU537E (severidade: error, familia AWSBHU - conman) tem o texto: "You have issued the "link" or "unlink" command to the following workstation within the same domain and neither is the domain manager: !1. This is not allowed." Em portugues: "you have issued the "link" or "unlink" comando to the seguinte estacao de trabalho dentro de the same dominio and neither is the dominio manager: !1. this is nao allowed.". Temas: nao estacao de trabalho comando dominio. Em outras palavras: Você tentou vincular ou desvincular duas estações do mesmo domínio sem que nenhuma delas seja o gerenciador do domínio, o que não é permitido.. Explicacao oficial: The link or unlink commands can only be issued to a workstation in the same domain which is a parent or a child of the workstation where the command is issued, not to a peer workstation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU537E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have issued the link unlink command following workstation within same and neither This not allowed portugues`
@@ -70461,7 +70461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU537E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU538W (severidade: warning, familia AWSBHU - conman) tem o texto: "!1: The domain of the workstation being linked or unlinked is not subordinate to the domain of the local workstation." Em portugues: "!1: the dominio of the estacao de trabalho being linked or unlinked is nao subordinate to the dominio of the local estacao de trabalho.". Temas: nao estacao de trabalho dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU538W (severidade: warning, familia AWSBHU - conman) tem o texto: "!1: The domain of the workstation being linked or unlinked is not subordinate to the domain of the local workstation." Em portugues: "!1: the dominio of the estacao de trabalho being linked or unlinked is nao subordinate to the dominio of the local estacao de trabalho.". Temas: nao estacao de trabalho dominio. Em outras palavras: O domínio da estação que está sendo vinculada ou desvinculada não é subordinado ao domínio da estação local, então a operação foi sinalizada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU538W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The the workstation being linked unlinked not subordinate local portugues dominio estacao trabalho`
@@ -70481,7 +70481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU538W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU539E (severidade: error, familia AWSBHU - conman) tem o texto: "An internal error has occurred while linking to or unlinking from the following workstation: "!1":" Em portugues: "an interno erro has ocorreu while linking to or unlinking from the seguinte estacao de trabalho: "!1":". Temas: erro estacao de trabalho ocorreu interno. Explicacao oficial: The internal message is the following: Unknown link case encountered.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU539E (severidade: error, familia AWSBHU - conman) tem o texto: "An internal error has occurred while linking to or unlinking from the following workstation: "!1":" Em portugues: "an interno erro has ocorreu while linking to or unlinking from the seguinte estacao de trabalho: "!1":". Temas: erro estacao de trabalho ocorreu interno. Em outras palavras: Ocorreu um erro interno ao vincular ou desvincular a estação indicada, o que impediu a conclusão da operação.. Explicacao oficial: The internal message is the following: Unknown link case encountered.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU539E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto internal has occurred while linking unlinking from the following workstation portugues interno erro ocorreu`
@@ -70501,10 +70501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU539E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU540E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman cannot find any domains in the Symphony file." Em portugues: "conman nao pode find any domains in the symphony arquivo.". Temas: arquivo nao pode symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU540E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman cannot find any domains in the Symphony file." Em portugues: "conman nao pode find any domains in the symphony arquivo.". Temas: arquivo nao pode symphony. Em outras palavras: O conman não encontrou nenhum domínio definido no arquivo Symphony, indicando que a estrutura de domínios está ausente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman cannot conman nao AWSBHU540E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman cannot find any domains the Symphony file portugues nao symphony arquivo Temas`
+> `conman cannot conman nao conman n AWSBHU540E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman cannot find any domains the Symphony file portugues nao symphony arquivo Temas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU540E no HCL Workload Automation 10.2.8?
@@ -70521,7 +70521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU540E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU541E (severidade: error, familia AWSBHU - conman) tem o texto: "You have tried to issue a "start" command to the following workstation: "!1", which is not a child of the local workstation: "!2"." Em portugues: "you have tried to issue a "iniciar" comando to the seguinte estacao de trabalho: "!1", which is nao a child of the local estacao de trabalho: "!2".". Temas: nao estacao de trabalho comando. Explicacao oficial: You cannot start or stop a workstation which is not at a lower point in the HCL Workload Automation hierarchy than the local workstation.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU541E (severidade: error, familia AWSBHU - conman) tem o texto: "You have tried to issue a "start" command to the following workstation: "!1", which is not a child of the local workstation: "!2"." Em portugues: "you have tried to issue a "iniciar" comando to the seguinte estacao de trabalho: "!1", which is nao a child of the local estacao de trabalho: "!2".". Temas: nao estacao de trabalho comando. Em outras palavras: Você tentou iniciar uma estação que não é subordinada à estação local, então a operação foi recusada por relação hierárquica inválida.. Explicacao oficial: You cannot start or stop a workstation which is not at a lower point in the HCL Workload Automation hierarchy than the local workstation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU541E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have tried issue start command the following workstation which not child local portugues you`
@@ -70541,10 +70541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU541E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU542E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman has verified that the versions of the Symphony and Database files (Mastsked version) are different." Em portugues: "conman has verificado that the versions of the symphony and banco de dados arquivos (mastsked versao) are different.". Temas: arquivos symphony banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU542E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman has verified that the versions of the Symphony and Database files (Mastsked version) are different." Em portugues: "conman has verificado that the versions of the symphony and banco de dados arquivos (mastsked versao) are different.". Temas: arquivos symphony banco de dados. Em outras palavras: O conman verificou que as versões do arquivo Symphony e do banco de dados não coincidem, sinalizando um descasamento do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman has AWSBHU542E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman has verified that the versions Symphony and Database files Mastsked version are different portugues verificado`
+> `conman has conman verificou AWSBHU542E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman has verified that the versions Symphony and Database files Mastsked version are different portugues verificado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU542E no HCL Workload Automation 10.2.8?
@@ -70561,7 +70561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU542E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU543E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied the "interactive" qualifier keyword to the "submit jobs" command, which is not valid." Em portugues: "you have informado the "interactive" qualificador keyword to the "submit jobs" comando, which is nao valido.". Temas: nao comando informado valido palavra-chave qualificador.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU543E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied the "interactive" qualifier keyword to the "submit jobs" command, which is not valid." Em portugues: "you have informado the "interactive" qualificador keyword to the "submit jobs" comando, which is nao valido.". Temas: nao comando informado valido palavra-chave qualificador. Em outras palavras: Você informou a palavra-chave de qualificador interativo no comando de submissão de trabalhos, que não é aceita nesse contexto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU543E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied the interactive qualifier keyword submit jobs command which not valid portugues you informado`
@@ -70581,7 +70581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU543E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU544E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied path name is longer than the maximum allowed: !1." Em portugues: "the informado caminho nome is longer que the maximo allowed: !1.". Temas: nome informado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU544E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied path name is longer than the maximum allowed: !1." Em portugues: "the informado caminho nome is longer que the maximo allowed: !1.". Temas: nome informado. Em outras palavras: O caminho informado excede o tamanho máximo permitido para esta operação, então ele precisa ser encurtado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU544E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied path name longer than the maximum allowed portugues informado caminho nome maximo Temas`
@@ -70601,7 +70601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU544E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU545E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a path name that does not match the workstation type: "!1"." Em portugues: "you have informado a caminho nome that does nao match the estacao de trabalho tipo: "!1".". Temas: nao estacao de trabalho nome informado tipo.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU545E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a path name that does not match the workstation type: "!1"." Em portugues: "you have informado a caminho nome that does nao match the estacao de trabalho tipo: "!1".". Temas: nao estacao de trabalho nome informado tipo. Em outras palavras: O caminho informado não corresponde ao tipo de estação utilizada, indicando que ele não é compatível com a configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU545E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied path name that does not match the workstation type portugues you informado caminho nome`
@@ -70621,7 +70621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU545E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU546E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied either a "tz" or a "timezone" keyword but did not supply the time zone name." Em portugues: "you have informado either a "tz" or a "timezone" keyword but did nao supply the tempo zone nome.". Temas: nao nome informado palavra-chave tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU546E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied either a "tz" or a "timezone" keyword but did not supply the time zone name." Em portugues: "you have informado either a "tz" or a "timezone" keyword but did nao supply the tempo zone nome.". Temas: nao nome informado palavra-chave tempo hora. Em outras palavras: Você usou a palavra-chave de fuso horário, mas não informou o nome do fuso, deixando o parâmetro incompleto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU546E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied either timezone keyword but did not supply the time zone name portugues you informado`
@@ -70641,7 +70641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU546E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU547E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a time zone name that is longer than 40 bytes." Em portugues: "you have informado a tempo zone nome that is longer que 40 bytes.". Temas: nome informado tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU547E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a time zone name that is longer than 40 bytes." Em portugues: "you have informado a tempo zone nome that is longer que 40 bytes.". Temas: nome informado tempo hora. Em outras palavras: O nome do fuso horário informado ultrapassa o limite de quarenta bytes aceito pela configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU547E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied time zone name that longer than bytes portugues you informado tempo nome`
@@ -70661,7 +70661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU547E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU548E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a time zone name that is not valid." Em portugues: "you have informado a tempo zone nome that is nao valido.". Temas: nao nome informado valido tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU548E (severidade: error, familia AWSBHU - conman) tem o texto: "You have supplied a time zone name that is not valid." Em portugues: "you have informado a tempo zone nome that is nao valido.". Temas: nao nome informado valido tempo hora. Em outras palavras: O nome do fuso horário informado não corresponde a um valor válido conhecido, então ele foi rejeitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU548E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You have supplied time zone name that not valid portugues you informado tempo nome nao valido Temas`
@@ -70681,7 +70681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU548E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU549W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a logic error in the time-related dependencies. The "until" time occurs before the "at" time." Em portugues: "there is a logic erro in the tempo-related dependencies. the "until" tempo occurs antes the "at" tempo.". Temas: erro tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU549W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a logic error in the time-related dependencies. The "until" time occurs before the "at" time." Em portugues: "there is a logic erro in the tempo-related dependencies. the "until" tempo occurs antes the "at" tempo.". Temas: erro tempo hora. Em outras palavras: Há um erro lógico nas dependências de tempo: o instante limite ocorre antes do horário inicial, tornando a regra inconsistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU549W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto There logic error the time-related dependencies The until time occurs before portugues there erro tempo-related`
@@ -70701,7 +70701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU549W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU550W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a logic error in the time-related dependencies. The dependency is circular." Em portugues: "there is a logic erro in the tempo-related dependencies. the dependency is circular.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU550W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a logic error in the time-related dependencies. The dependency is circular." Em portugues: "there is a logic erro in the tempo-related dependencies. the dependency is circular.". Temas: erro. Em outras palavras: As dependências relacionadas a tempo formam um ciclo, ou seja, uma condição circular que não pode ser resolvida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU550W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto There logic error the time-related dependencies The dependency circular portugues there erro tempo-related Temas`
@@ -70721,10 +70721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU550W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU551E (severidade: error, familia AWSBHU - conman) tem o texto: "You are trying to add the same dependency twice." Em portugues: "you are trying to add the same dependency twice.".
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU551E (severidade: error, familia AWSBHU - conman) tem o texto: "You are trying to add the same dependency twice." Em portugues: "you are trying to add the same dependency twice.". Em outras palavras: Você está tentando adicionar a mesma dependência duas vezes, o que é inválido e duplicaria a regra existente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU551E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You are trying add the same dependency twice portugues you significa`
+> `AWSBHU551E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto You are trying add the same dependency twice portugues you outras palavras tentando`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU551E no HCL Workload Automation 10.2.8?
@@ -70741,10 +70741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU551E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU552I (severidade: informational, familia AWSBHU - conman) tem o texto: "A "start" command was issued for clagent." Em portugues: "a "iniciar" comando was issued for clagent.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU552I (severidade: informational, familia AWSBHU - conman) tem o texto: "A "start" command was issued for clagent." Em portugues: "a "iniciar" comando was issued for clagent.". Temas: comando. Em outras palavras: Foi emitido um comando de inicialização para o componente interno do agente, confirmando a solicitação de partida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU552I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto start command was issued for clagent portugues iniciar comando Temas significa`
+> `AWSBHU552I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto start command was issued for clagent portugues iniciar comando Temas outras palavras Foi emitido`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU552I no HCL Workload Automation 10.2.8?
@@ -70761,7 +70761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU552I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU553E (severidade: error, familia AWSBHU - conman) tem o texto: "An error has occurred while starting an internal component (clagent)." Em portugues: "an erro has ocorreu while starting an interno component (clagent).". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU553E (severidade: error, familia AWSBHU - conman) tem o texto: "An error has occurred while starting an internal component (clagent)." Em portugues: "an erro has ocorreu while starting an interno component (clagent).". Temas: erro ocorreu interno. Em outras palavras: Ocorreu uma falha ao iniciar um componente interno do sistema, impedindo que ele entrasse em funcionamento corretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU553E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto has occurred while starting internal component clagent portugues erro ocorreu interno Temas`
@@ -70781,10 +70781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU553E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU554I (severidade: informational, familia AWSBHU - conman) tem o texto: "A "stop" command was issued for clagent." Em portugues: "a "parar" comando was issued for clagent.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU554I (severidade: informational, familia AWSBHU - conman) tem o texto: "A "stop" command was issued for clagent." Em portugues: "a "parar" comando was issued for clagent.". Temas: comando. Em outras palavras: Foi emitido um comando de parada para o componente interno do agente, solicitando o encerramento da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU554I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto stop command was issued for clagent portugues parar comando Temas significa`
+> `AWSBHU554I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto stop command was issued for clagent portugues parar comando Temas outras palavras Foi emitido`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU554I no HCL Workload Automation 10.2.8?
@@ -70801,10 +70801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU554I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU555I (severidade: informational, familia AWSBHU - conman) tem o texto: "A "cl_bulkdiscovery" command was issued for clagent." Em portugues: "a "cl_bulkdiscovery" comando was issued for clagent.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU555I (severidade: informational, familia AWSBHU - conman) tem o texto: "A "cl_bulkdiscovery" command was issued for clagent." Em portugues: "a "cl_bulkdiscovery" comando was issued for clagent.". Temas: comando. Em outras palavras: Foi emitido um comando de descoberta em massa para o componente interno do agente, registrando a operação solicitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU555I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto cl_bulkdiscovery command was issued for clagent portugues comando Temas significa`
+> `AWSBHU555I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto cl_bulkdiscovery command was issued for clagent portugues comando Temas outras palavras Foi emitido`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU555I no HCL Workload Automation 10.2.8?
@@ -70821,7 +70821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU555I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU556E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred while opening the "clbox.msg" file: "!1"." Em portugues: "the seguinte erro ocorreu while opening the "clbox.msg" arquivo: "!1".". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU556E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred while opening the "clbox.msg" file: "!1"." Em portugues: "the seguinte erro ocorreu while opening the "clbox.msg" arquivo: "!1".". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha ao abrir o arquivo de mensagens da caixa de arquivos, conforme detalhado no erro encaminhado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU556E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following occurred while opening the clbox.msg file portugues seguinte erro ocorreu arquivo Temas`
@@ -70841,7 +70841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU556E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU557W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a logic error in the time-related dependencies. The "deadline" time occurs before the "at" or "until" time." Em portugues: "there is a logic erro in the tempo-related dependencies. the "deadline" tempo occurs antes the "at" or "until" tempo.". Temas: erro tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU557W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a logic error in the time-related dependencies. The "deadline" time occurs before the "at" or "until" time." Em portugues: "there is a logic erro in the tempo-related dependencies. the "deadline" tempo occurs antes the "at" or "until" tempo.". Temas: erro tempo hora. Em outras palavras: Há erro lógico nas dependências de tempo: o prazo límite ocorre antes dos horários inicial ou final, tornando a regra inconsistente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU557W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto There logic error the time-related dependencies The deadline time occurs before until portugues there erro tempo-related`
@@ -70861,7 +70861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU557W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU558W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a syntax error in the time-related dependencies. The "onuntil" keyword was specified but the "until" time was not supplied." Em portugues: "there is a sintaxe erro in the tempo-related dependencies. the "onuntil" keyword was especificado but the "until" tempo was nao informado.". Temas: erro nao informado sintaxe especificado palavra-chave tempo hora.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU558W (severidade: warning, familia AWSBHU - conman) tem o texto: "There is a syntax error in the time-related dependencies. The "onuntil" keyword was specified but the "until" time was not supplied." Em portugues: "there is a sintaxe erro in the tempo-related dependencies. the "onuntil" keyword was especificado but the "until" tempo was nao informado.". Temas: erro nao informado sintaxe especificado palavra-chave tempo hora. Em outras palavras: A palavra-chave de término foi informada na sintaxe, mas o horário correspondente não foi preenchido, deixando a dependência incompleta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU558W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto There syntax error the time-related dependencies The onuntil keyword was specified but until time not supplied portugues there`
@@ -70901,7 +70901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU559E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU560E (severidade: error, familia AWSBHU - conman) tem o texto: "The command "startmon" cannot be performed, because the Event Driven Workload Automation feature is disabled." Em portugues: "the comando "startmon" nao pode be performed, porque the event driven workload automation feature is desabilitado.". Temas: nao pode comando carga de trabalho desabilitado. Explicacao oficial: The Event Driven Workload Automation feature has been disabled by optman, which set the enEventDrivenWorkloadAutomation option to NO.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU560E (severidade: error, familia AWSBHU - conman) tem o texto: "The command "startmon" cannot be performed, because the Event Driven Workload Automation feature is disabled." Em portugues: "the comando "startmon" nao pode be performed, porque the event driven workload automation feature is desabilitado.". Temas: nao pode comando carga de trabalho desabilitado. Em outras palavras: O comando de iniciar monitoramento não pôde ser executado porque o recurso de automação de workload orientada a eventos está desativado.. Explicacao oficial: The Event Driven Workload Automation feature has been disabled by optman, which set the enEventDrivenWorkloadAutomation option to NO.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU560E opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command startmon cannot performed because the Event Driven feature disabled portugues comando nao porque event`
@@ -70961,7 +70961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU562W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU600E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a logic error in the follows dependencies. The dependency !1 is circular." Em portugues: "there is a logic erro in the follows dependencies. the dependency !1 is circular.". Temas: erro.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU600E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a logic error in the follows dependencies. The dependency !1 is circular." Em portugues: "there is a logic erro in the follows dependencies. the dependency !1 is circular.". Temas: erro. Em outras palavras: Há um erro lógico nas dependências do tipo segue: elas formam um ciclo que torna a sequência de execução inválida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU600E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There logic the follows dependencies The dependency circular portugues there erro Temas`
@@ -70981,10 +70981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU600E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU601E (severidade: error, familia AWSBHU - conman) tem o texto: "Cannot create semaphore, Error number: !1" Em portugues: "nao pode criar semaphore, erro numero: !1". Temas: erro nao pode numero criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU601E (severidade: error, familia AWSBHU - conman) tem o texto: "Cannot create semaphore, Error number: !1" Em portugues: "nao pode criar semaphore, erro numero: !1". Temas: erro nao pode numero criar. Em outras palavras: Não foi possível criar um semáforo do sistema, indicando uma falha de recursos conforme o número do erro informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU601E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Cannot create semaphore Error number portugues nao criar erro numero Temas significa`
+> `AWSBHU601E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Cannot create semaphore Error number portugues nao criar erro numero Temas outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU601E no HCL Workload Automation 10.2.8?
@@ -71001,10 +71001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU601E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU602E (severidade: error, familia AWSBHU - conman) tem o texto: "Cannot create thread, Error number: !1" Em portugues: "nao pode criar thread, erro numero: !1". Temas: erro nao pode numero criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU602E (severidade: error, familia AWSBHU - conman) tem o texto: "Cannot create thread, Error number: !1" Em portugues: "nao pode criar thread, erro numero: !1". Temas: erro nao pode numero criar. Em outras palavras: O sistema não conseguiu criar uma nova thread de execução, indicando falha de recursos conforme o número do erro indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU602E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Cannot create thread Error number portugues nao criar erro numero Temas significa`
+> `AWSBHU602E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Cannot create thread Error number portugues nao criar erro numero Temas outras palavras sistema conseguiu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU602E no HCL Workload Automation 10.2.8?
@@ -71021,10 +71021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU602E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU603E (severidade: error, familia AWSBHU - conman) tem o texto: "Cannot release thread, Error number: !1" Em portugues: "nao pode release thread, erro numero: !1". Temas: erro nao pode numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU603E (severidade: error, familia AWSBHU - conman) tem o texto: "Cannot release thread, Error number: !1" Em portugues: "nao pode release thread, erro numero: !1". Temas: erro nao pode numero. Em outras palavras: O sistema não conseguiu liberar uma thread de execução, indicando um problema de gerenciamento conforme o número do erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU603E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Cannot release thread Error number portugues nao erro numero Temas significa`
+> `AWSBHU603E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Cannot release thread Error number portugues nao erro numero Temas outras palavras sistema conseguiu liberar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU603E no HCL Workload Automation 10.2.8?
@@ -71041,10 +71041,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU603E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU604E (severidade: error, familia AWSBHU - conman) tem o texto: "Wait for semaphore failed, Error number: !1" Em portugues: "wait for semaphore falhou, erro numero: !1". Temas: erro numero falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU604E (severidade: error, familia AWSBHU - conman) tem o texto: "Wait for semaphore failed, Error number: !1" Em portugues: "wait for semaphore falhou, erro numero: !1". Temas: erro numero falhou. Em outras palavras: A espera pelo semáforo falhou, indicando um problema de sincronização conforme o número do erro informado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU604E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Wait for semaphore failed Error number portugues wait falhou erro numero Temas significa`
+> `AWSBHU604E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Wait for semaphore failed Error number portugues wait falhou erro numero Temas outras palavras espera`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU604E no HCL Workload Automation 10.2.8?
@@ -71061,10 +71061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU604E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU605E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman timed out - Closing Symphony." Em portugues: "conman timed out - closing symphony.". Temas: symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU605E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman timed out - Closing Symphony." Em portugues: "conman timed out - closing symphony.". Temas: symphony. Em outras palavras: Houve um estouro de tempo no conman e o arquivo Symphony foi encerrado, indicando que a operação não respondeu a tempo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman timed AWSBHU605E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman timed out Closing Symphony portugues closing symphony Temas significa`
+> `conman timed conman e AWSBHU605E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman timed out Closing Symphony portugues closing symphony Temas outras palavras Houve estouro tempo arquivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU605E no HCL Workload Automation 10.2.8?
@@ -71081,7 +71081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU605E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU606E (severidade: error, familia AWSBHU - conman) tem o texto: "An error occurred while saving the user options file:"!1"" Em portugues: "an erro ocorreu while saving the usuario opcoes arquivo:"!1"". Temas: erro arquivo ocorreu usuario opcoes.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU606E (severidade: error, familia AWSBHU - conman) tem o texto: "An error occurred while saving the user options file:"!1"" Em portugues: "an erro ocorreu while saving the usuario opcoes arquivo:"!1"". Temas: erro arquivo ocorreu usuario opcoes. Em outras palavras: Ocorreu uma falha ao salvar o arquivo de opções do usuário, impedindo que a configuração fosse armazenada corretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU606E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto occurred while saving the user options file portugues erro ocorreu usuario opcoes arquivo Temas`
@@ -71101,7 +71101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU606E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU607E (severidade: error, familia AWSBHU - conman) tem o texto: "The value specified for the "-protocol" connection parameter is not valid. It must be "http" or "https"." Em portugues: "the valor especificado for the "-protocol" conexao parametro is nao valido. it must be "http" or "https".". Temas: nao valido especificado parametro valor conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU607E (severidade: error, familia AWSBHU - conman) tem o texto: "The value specified for the "-protocol" connection parameter is not valid. It must be "http" or "https"." Em portugues: "the valor especificado for the "-protocol" conexao parametro is nao valido. it must be "http" or "https".". Temas: nao valido especificado parametro valor conexao. Em outras palavras: O valor informado para o parâmetro de protocolo da conexão é inválido, pois deve ser apenas o protocolo seguro ou não seguro de HTTP..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU607E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The value specified for the protocol connection parameter not valid must http https portugues valor especificado`
@@ -71141,7 +71141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU609E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU610E (severidade: error, familia AWSBHU - conman) tem o texto: "The credentials to connect to the remote server have not been specified." Em portugues: "the credentials to connect to the remoto servidor have nao estado especificado.". Temas: nao especificado. Explicacao oficial: When you use the command line client, it needs to connect to the remote server at the master domain manager. For this it requires connection parameters that are supplied as part of the command, in a file of connection parameters, or by default from the useropts or localopts file.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU610E (severidade: error, familia AWSBHU - conman) tem o texto: "The credentials to connect to the remote server have not been specified." Em portugues: "the credentials to connect to the remoto servidor have nao estado especificado.". Temas: nao especificado. Em outras palavras: As credenciais de acesso para conectar ao servidor remoto não foram informadas, então a conexão não pôde ser estabelecida.. Explicacao oficial: When you use the command line client, it needs to connect to the remote server at the master domain manager. For this it requires connection parameters that are supplied as part of the command, in a file of connection parameters, or by default from the useropts or localopts file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU610E opcoes globais opcoes locais thiscpu 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The credentials connect the remote server have not been specified portugues remoto servidor nao estado`
@@ -71161,10 +71161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU610E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU611W (severidade: warning, familia AWSBHU - conman) tem o texto: "Conman could not initialize the HTTP or HTTPS connection." Em portugues: "conman conseguiu nao initialize the http or https conexao.". Temas: nao conexao. Explicacao oficial: Conman is running on a fault-tolerant agent using the command line client. If the connection fails to the command line server on the master domain manager, conman can continue with limited functionality, but the connection must be remade before too much time elapses.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU611W (severidade: warning, familia AWSBHU - conman) tem o texto: "Conman could not initialize the HTTP or HTTPS connection." Em portugues: "conman conseguiu nao initialize the http or https conexao.". Temas: nao conexao. Em outras palavras: O conman não conseguiu inicializar a conexão de rede segura ou não segura, o que impediu a comunicação com o destino.. Explicacao oficial: Conman is running on a fault-tolerant agent using the command line client. If the connection fails to the command line server on the master domain manager, conman can continue with limited functionality, but the connection must be remade before too much time elapses.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman could conman conseguiu conman is conman can AWSBHU611W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Conman could not initialize the HTTP HTTPS connection portugues conseguiu nao http https conexao Temas`
+> `conman could conman conseguiu conman n conman is conman can AWSBHU611W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Conman could not initialize the HTTP HTTPS connection portugues conseguiu nao http https conexao Temas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU611W no HCL Workload Automation 10.2.8?
@@ -71181,7 +71181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU611W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU612E (severidade: error, familia AWSBHU - conman) tem o texto: "The port specified by the "-port" connection parameter is not numeric." Em portugues: "the porta especificado by the "-porta" conexao parametro is nao numerico.". Temas: nao especificado parametro numerico conexao.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU612E (severidade: error, familia AWSBHU - conman) tem o texto: "The port specified by the "-port" connection parameter is not numeric." Em portugues: "the porta especificado by the "-porta" conexao parametro is nao numerico.". Temas: nao especificado parametro numerico conexao. Em outras palavras: O valor informado para o parâmetro de porta da conexão não é numérico, tornando inválido o parâmetro de comunicação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU612E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The port specified the connection parameter not numeric portugues porta especificado conexao parametro nao numerico Temas`
@@ -71201,7 +71201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU612E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU613E (severidade: error, familia AWSBHU - conman) tem o texto: "There are insufficient units of resource "!2" available. The job requires "!1" units but only "!3" are available." Em portugues: "there are insufficient units of recurso "!2" disponivel. the job requires "!1" units but only "!3" are disponivel.". Temas: job recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU613E (severidade: error, familia AWSBHU - conman) tem o texto: "There are insufficient units of resource "!2" available. The job requires "!1" units but only "!3" are available." Em portugues: "there are insufficient units of recurso "!2" disponivel. the job requires "!1" units but only "!3" are disponivel.". Temas: job recurso. Em outras palavras: Não há unidades suficientes do recurso solicitado para atender ao trabalho; a disponibilidade atual é menor do que a necessidade informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU613E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There are insufficient units resource available The job requires but only portugues there recurso`
@@ -71241,7 +71241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU614E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU615E (severidade: error, familia AWSBHU - conman) tem o texto: "The submitted job refers to a recovery job which could not be found in the database." Em portugues: "the submitted job refers to a recovery job which conseguiu nao be encontrado in the banco de dados.". Temas: nao job encontrado banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU615E (severidade: error, familia AWSBHU - conman) tem o texto: "The submitted job refers to a recovery job which could not be found in the database." Em portugues: "the submitted job refers to a recovery job which conseguiu nao be encontrado in the banco de dados.". Temas: nao job encontrado banco de dados. Em outras palavras: O trabalho submetido referencia um trabalho de recuperação que não foi encontrado no banco de dados, então a recuperação é inválida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU615E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The submitted job refers recovery which could not found the database portugues`
@@ -71261,7 +71261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU615E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU616E (severidade: error, familia AWSBHU - conman) tem o texto: "More than one job stream matches your selection. Uniquely identify the job stream by specifying its ID or schedule time." Em portugues: "mais que one job fluxo matches your selection. uniquely identify the job fluxo by specifying its id or agendamento tempo.". Temas: job fluxo tempo hora agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU616E (severidade: error, familia AWSBHU - conman) tem o texto: "More than one job stream matches your selection. Uniquely identify the job stream by specifying its ID or schedule time." Em portugues: "mais que one job fluxo matches your selection. uniquely identify the job fluxo by specifying its id or agendamento tempo.". Temas: job fluxo tempo hora agendamento. Em outras palavras: Mais de um fluxo de trabalhos corresponde à sua seleção; identifique o fluxo exato usando seu identificador ou horário de agenda..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU616E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto More than one job stream matches your selection Uniquely identify the specifying its schedule time portugues mais`
@@ -71281,10 +71281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU616E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU617I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "bulk_discovery" command was forwarded to batchman." Em portugues: "the "bulk_discovery" comando was forwarded to batchman.". Temas: comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU617I (severidade: informational, familia AWSBHU - conman) tem o texto: "The "bulk_discovery" command was forwarded to batchman." Em portugues: "the "bulk_discovery" comando was forwarded to batchman.". Temas: comando. Em outras palavras: O comando de descoberta em massa foi encaminhado para o componente de agendamento, confirmando a operação em andamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU617I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto The bulk_discovery command was forwarded batchman portugues the comando Temas significa`
+> `AWSBHU617I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto The bulk_discovery command was forwarded batchman portugues the comando Temas outras palavras descoberta massa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU617I no HCL Workload Automation 10.2.8?
@@ -71301,7 +71301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU617I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU618E (severidade: error, familia AWSBHU - conman) tem o texto: "The "bulk_discovery" was not performed because no configuration file was found." Em portugues: "the "bulk_discovery" was nao performed porque no configuracao arquivo was encontrado.". Temas: nao arquivo encontrado. Explicacao oficial: The bulk discovery command was not forwarded to batchman because the integration configuration file was not found.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU618E (severidade: error, familia AWSBHU - conman) tem o texto: "The "bulk_discovery" was not performed because no configuration file was found." Em portugues: "the "bulk_discovery" was nao performed porque no configuracao arquivo was encontrado.". Temas: nao arquivo encontrado. Em outras palavras: A descoberta em massa não foi realizada porque nenhum arquivo de configuração foi encontrado para orientar a operação.. Explicacao oficial: The bulk discovery command was not forwarded to batchman because the integration configuration file was not found.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU618E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The bulk_discovery was not performed because configuration file found portugues the nao porque configuracao arquivo`
@@ -71321,7 +71321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU618E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU619E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred obtaining the monitoring configuration file for workstation "!1": !2." Em portugues: "the seguinte erro ocorreu obtaining the monitoring configuracao arquivo for estacao de trabalho "!1": !2.". Temas: erro arquivo estacao de trabalho ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU619E (severidade: error, familia AWSBHU - conman) tem o texto: "The following error occurred obtaining the monitoring configuration file for workstation "!1": !2." Em portugues: "the seguinte erro ocorreu obtaining the monitoring configuracao arquivo for estacao de trabalho "!1": !2.". Temas: erro arquivo estacao de trabalho ocorreu. Em outras palavras: Ocorreu uma falha ao obter o arquivo de configuração de monitoramento da estação indicada, conforme o erro relatado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU619E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The following occurred obtaining the monitoring configuration file for workstation portugues seguinte erro ocorreu configuracao`
@@ -71341,7 +71341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU619E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU620I (severidade: informational, familia AWSBHU - conman) tem o texto: "A start command was issued for the application server on workstation "!1"." Em portugues: "a iniciar comando was issued for the application servidor on estacao de trabalho "!1".". Temas: estacao de trabalho comando iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU620I (severidade: informational, familia AWSBHU - conman) tem o texto: "A start command was issued for the application server on workstation "!1"." Em portugues: "a iniciar comando was issued for the application servidor on estacao de trabalho "!1".". Temas: estacao de trabalho comando iniciar. Em outras palavras: Foi emitido um comando de inicialização para o servidor de aplicações da estação indicada, confirmando a solicitação de partida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU620I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto start command was issued for the application server workstation portugues iniciar comando servidor estacao trabalho`
@@ -71361,7 +71361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU620I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU622I (severidade: informational, familia AWSBHU - conman) tem o texto: "A stop command was issued for the application server on workstation "!1"." Em portugues: "a parar comando was issued for the application servidor on estacao de trabalho "!1".". Temas: estacao de trabalho comando parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU622I (severidade: informational, familia AWSBHU - conman) tem o texto: "A stop command was issued for the application server on workstation "!1"." Em portugues: "a parar comando was issued for the application servidor on estacao de trabalho "!1".". Temas: estacao de trabalho comando parar. Em outras palavras: Foi emitido um comando de parada para o servidor de aplicações da estação indicada, solicitando seu encerramento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU622I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto stop command was issued for the application server workstation portugues parar comando servidor estacao trabalho`
@@ -71381,7 +71381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU622I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU624W (severidade: warning, familia AWSBHU - conman) tem o texto: "Either the application server or appservman, or both, on workstation "!1" is already stopped." Em portugues: "either the application servidor or appservman, or both, on estacao de trabalho "!1" is already parado.". Temas: estacao de trabalho parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU624W (severidade: warning, familia AWSBHU - conman) tem o texto: "Either the application server or appservman, or both, on workstation "!1" is already stopped." Em portugues: "either the application servidor or appservman, or both, on estacao de trabalho "!1" is already parado.". Temas: estacao de trabalho parado. Em outras palavras: O servidor de aplicações, o gerenciador relacionado ou ambos já estão parados nesta estação, tornando o comando redundante..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU624W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto Either the application server appservman both workstation already stopped portugues either servidor estacao trabalho parado`
@@ -71401,7 +71401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU624W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU625W (severidade: warning, familia AWSBHU - conman) tem o texto: "The option WAIT is not supported for remote workstations. It is ignored." Em portugues: "the opcao wait is nao supported for remoto workstations. it is ignored.". Temas: nao opcao suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU625W (severidade: warning, familia AWSBHU - conman) tem o texto: "The option WAIT is not supported for remote workstations. It is ignored." Em portugues: "the opcao wait is nao supported for remoto workstations. it is ignored.". Temas: nao opcao suportado. Em outras palavras: A opção de aguardar não é suportada para estações remotas, então ela foi ignorada na execução do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU625W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The option WAIT not supported for remote workstations ignored portugues the opcao wait nao remoto Temas`
@@ -71421,7 +71421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU625W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU626W (severidade: warning, familia AWSBHU - conman) tem o texto: "The application server is not installed on the local workstation." Em portugues: "the application servidor is nao instalado on the local estacao de trabalho.". Temas: nao estacao de trabalho instalado. Explicacao oficial: A command to start or stop the application server has been run, but the application server is not installed, probably because it is not part of the current configuration.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU626W (severidade: warning, familia AWSBHU - conman) tem o texto: "The application server is not installed on the local workstation." Em portugues: "the application servidor is nao instalado on the local estacao de trabalho.". Temas: nao estacao de trabalho instalado. Em outras palavras: O servidor de aplicações não está instalado na estação local, então a operação não pôde ser realizada.. Explicacao oficial: A command to start or stop the application server has been run, but the application server is not installed, probably because it is not part of the current configuration.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU626W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The application server not installed the local workstation portugues servidor nao instalado estacao trabalho Temas`
@@ -71441,7 +71441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU626W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU627I (severidade: informational, familia AWSBHU - conman) tem o texto: "A start command was issued for the dynamic workload broker application on workstation "!1"." Em portugues: "a iniciar comando was issued for the dynamic workload broker application on estacao de trabalho "!1".". Temas: estacao de trabalho comando carga broker intermediario iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU627I (severidade: informational, familia AWSBHU - conman) tem o texto: "A start command was issued for the dynamic workload broker application on workstation "!1"." Em portugues: "a iniciar comando was issued for the dynamic workload broker application on estacao de trabalho "!1".". Temas: estacao de trabalho comando carga broker intermediario iniciar. Em outras palavras: Foi emitido um comando de inicialização para a aplicação do broker de workload dinâmico da estação indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU627I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto start command was issued for the dynamic broker application workstation portugues iniciar comando`
@@ -71461,7 +71461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU627I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU629I (severidade: informational, familia AWSBHU - conman) tem o texto: "A stop command was issued for the dynamic workload broker application on workstation "!1"." Em portugues: "a parar comando was issued for the dynamic workload broker application on estacao de trabalho "!1".". Temas: estacao de trabalho comando carga broker intermediario parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU629I (severidade: informational, familia AWSBHU - conman) tem o texto: "A stop command was issued for the dynamic workload broker application on workstation "!1"." Em portugues: "a parar comando was issued for the dynamic workload broker application on estacao de trabalho "!1".". Temas: estacao de trabalho comando carga broker intermediario parar. Em outras palavras: Foi emitido um comando de parada para a aplicação do broker de workload dinâmico da estação indicada, encerrando a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU629I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto stop command was issued for the dynamic broker application workstation portugues parar comando`
@@ -71481,7 +71481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU629I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU630E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation "!1" cannot be performed, because the workstation is a fault tolerant agent, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho "!1" nao pode be performed, porque the estacao de trabalho is a fault tolerant agente, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando agente suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU630E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation "!1" cannot be performed, because the workstation is a fault tolerant agent, where the command is not supported." Em portugues: "the comando issued for estacao de trabalho "!1" nao pode be performed, porque the estacao de trabalho is a fault tolerant agente, where the comando is nao supported.". Temas: nao estacao de trabalho pode comando agente suportado. Em outras palavras: A operação não pôde ser executada nesta estação porque ela é um agente tolerante a falhas, onde esse comando não é suportado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU630E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command issued for workstation cannot performed because the fault tolerant agent where not supported portugues`
@@ -71521,7 +71521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU631E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU632E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation "!1" cannot be performed, because the command is not supported." Em portugues: "the comando issued for estacao de trabalho "!1" nao pode be performed, porque the comando is nao supported.". Temas: nao estacao de trabalho pode comando suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU632E (severidade: error, familia AWSBHU - conman) tem o texto: "The command issued for workstation "!1" cannot be performed, because the command is not supported." Em portugues: "the comando issued for estacao de trabalho "!1" nao pode be performed, porque the comando is nao supported.". Temas: nao estacao de trabalho pode comando suportado. Em outras palavras: A operação solicitada para esta estação de trabalho não pôde ser executada porque esse comando não é suportado no local..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU632E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command issued for workstation cannot performed because the not supported portugues comando estacao trabalho nao`
@@ -71541,7 +71541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU632E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU633W (severidade: warning, familia AWSBHU - conman) tem o texto: "The event processor workstation is set to "ignore" in the production plan." Em portugues: "the event processor estacao de trabalho is set to "ignore" in the production plano.". Temas: estacao de trabalho plano.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU633W (severidade: warning, familia AWSBHU - conman) tem o texto: "The event processor workstation is set to "ignore" in the production plan." Em portugues: "the event processor estacao de trabalho is set to "ignore" in the production plano.". Temas: estacao de trabalho plano. Em outras palavras: A estação processadora de eventos está configurada como ignorada no plano de produção, então o processamento será afetado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU633W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The event processor workstation set ignore the production plan portugues estacao trabalho plano`
@@ -71561,7 +71561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU633W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU634E (severidade: error, familia AWSBHU - conman) tem o texto: "The command "!1" cannot be performed, because the event processor workstation is set to "ignore" in the production plan." Em portugues: "the comando "!1" nao pode be performed, porque the event processor estacao de trabalho is set to "ignore" in the production plano.". Temas: estacao de trabalho nao pode comando plano.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU634E (severidade: error, familia AWSBHU - conman) tem o texto: "The command "!1" cannot be performed, because the event processor workstation is set to "ignore" in the production plan." Em portugues: "the comando "!1" nao pode be performed, porque the event processor estacao de trabalho is set to "ignore" in the production plano.". Temas: estacao de trabalho nao pode comando plano. Em outras palavras: O comando não pôde ser executado porque a estação processadora de eventos está marcada como ignorada no plano de produção..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU634E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command cannot performed because the event processor workstation set ignore production plan portugues comando nao porque`
@@ -71601,10 +71601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU635E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU636E (severidade: error, familia AWSBHU - conman) tem o texto: "The Workload Service Assurance feature is not enabled." Em portugues: "the workload service assurance feature is nao habilitado.". Temas: nao carga de trabalho habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU636E (severidade: error, familia AWSBHU - conman) tem o texto: "The Workload Service Assurance feature is not enabled." Em portugues: "the workload service assurance feature is nao habilitado.". Temas: nao carga de trabalho habilitado. Em outras palavras: O recurso de garantia de serviço de workload não está habilitado no ambiente, então a operação não pode ser usada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU636E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The Service Assurance feature not enabled portugues the service assurance nao habilitado Temas carga trabalho significa`
+> `AWSBHU636E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The Service Assurance feature not enabled portugues the service assurance nao habilitado Temas carga trabalho outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU636E no HCL Workload Automation 10.2.8?
@@ -71621,7 +71621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU636E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU638W (severidade: warning, familia AWSBHU - conman) tem o texto: "The dynamic workload broker application on workstation "!1" is already stopped." Em portugues: "the dynamic workload broker application on estacao de trabalho "!1" is already parado.". Temas: estacao de trabalho carga broker intermediario parado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU638W (severidade: warning, familia AWSBHU - conman) tem o texto: "The dynamic workload broker application on workstation "!1" is already stopped." Em portugues: "the dynamic workload broker application on estacao de trabalho "!1" is already parado.". Temas: estacao de trabalho carga broker intermediario parado. Em outras palavras: A aplicação do broker de workload dinâmico já está parada nesta estação, tornando o comando de parada desnecessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU638W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The dynamic broker application workstation already stopped portugues the estacao trabalho parado Temas carga`
@@ -71641,7 +71641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU638W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU639W (severidade: warning, familia AWSBHU - conman) tem o texto: "The dynamic workload broker application is not installed on the local workstation." Em portugues: "the dynamic workload broker application is nao instalado on the local estacao de trabalho.". Temas: nao estacao de trabalho carga instalado broker intermediario. Explicacao oficial: You issued a command to start or stop the dynamic workload broker application, but the dynamic workload broker application is not installed, probably because it is not part of the current configuration.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU639W (severidade: warning, familia AWSBHU - conman) tem o texto: "The dynamic workload broker application is not installed on the local workstation." Em portugues: "the dynamic workload broker application is nao instalado on the local estacao de trabalho.". Temas: nao estacao de trabalho carga instalado broker intermediario. Em outras palavras: A aplicação do broker de workload dinâmico não está instalada na estação local, então a operação não pôde ser realizada.. Explicacao oficial: You issued a command to start or stop the dynamic workload broker application, but the dynamic workload broker application is not installed, probably because it is not part of the current configuration.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU639W 10.2.8 mensagem severidade warning familia AWSBHU conman tem texto The dynamic broker application not installed the local workstation portugues nao instalado estacao trabalho`
@@ -71661,10 +71661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU639W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU640E (severidade: error, familia AWSBHU - conman) tem o texto: "The submitted command cannot be performed. The error is: "!1"" Em portugues: "the submitted comando nao pode be performed. the erro is: "!1"". Temas: erro nao pode comando. Explicacao oficial: See message..
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU640E (severidade: error, familia AWSBHU - conman) tem o texto: "The submitted command cannot be performed. The error is: "!1"" Em portugues: "the submitted comando nao pode be performed. the erro is: "!1"". Temas: erro nao pode comando. Em outras palavras: O comando submetido não pôde ser executado por causa de um erro específico detalhado na mensagem de falha apresentada.. Explicacao oficial: See message..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU640E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The submitted command cannot performed portugues the comando nao erro Temas Explicacao`
+> `AWSBHU640E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The submitted command cannot performed portugues the comando nao erro Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU640E no HCL Workload Automation 10.2.8?
@@ -71681,7 +71681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU640E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU700E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. A job name, file name or keyword is missing in the submitted command." Em portugues: "there is a sintaxe erro. a job nome, arquivo nome or keyword is faltando in the submitted comando.". Temas: erro arquivo job nome comando sintaxe palavra-chave faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU700E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. A job name, file name or keyword is missing in the submitted command." Em portugues: "there is a sintaxe erro. a job nome, arquivo nome or keyword is faltando in the submitted comando.". Temas: erro arquivo job nome comando sintaxe palavra-chave faltando. Em outras palavras: Há um erro de sintaxe no comando: falta um nome de trabalho, de arquivo ou uma palavra-chave obrigatória na instrução enviada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU700E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax job name file keyword missing the submitted command portugues there sintaxe erro nome arquivo`
@@ -71701,7 +71701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU700E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU701E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The submitted command appears to contain extra or duplicated characters, or unmatched brackets." Em portugues: "there is a sintaxe erro. the submitted comando appears to contain extra or duplicated characters, or unmatched brackets.". Temas: erro comando sintaxe. Explicacao oficial: Conman has verified that additional characters appear to be attached to a valid keyword or other parameter. For example, you might have duplicated a character in a keyword, or the dot in a file name.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU701E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The submitted command appears to contain extra or duplicated characters, or unmatched brackets." Em portugues: "there is a sintaxe erro. the submitted comando appears to contain extra or duplicated characters, or unmatched brackets.". Temas: erro comando sintaxe. Em outras palavras: Há um erro de sintaxe no comando, que parece conter caracteres extras, duplicados ou parênteses sem fechamento correspondente.. Explicacao oficial: Conman has verified that additional characters appear to be attached to a valid keyword or other parameter. For example, you might have duplicated a character in a keyword, or the dot in a file name.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `conman has AWSBHU701E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The submitted command appears contain extra duplicated characters unmatched brackets portugues there sintaxe erro the comando`
@@ -71721,7 +71721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU701E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU702E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The workstation name must be between 1 - 16 bytes." Em portugues: "there is a sintaxe erro. the estacao de trabalho nome must be entre 1 - 16 bytes.". Temas: erro estacao de trabalho nome sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU702E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The workstation name must be between 1 - 16 bytes." Em portugues: "there is a sintaxe erro. the estacao de trabalho nome must be entre 1 - 16 bytes.". Temas: erro estacao de trabalho nome sintaxe entre. Em outras palavras: Há um erro de sintaxe: o nome da estação de trabalho deve ter entre um e dezesseis bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU702E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The workstation name must between bytes portugues there sintaxe erro the estacao trabalho nome entre`
@@ -71741,7 +71741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU702E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU703E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The workstation name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the estacao de trabalho nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro estacao de trabalho nome sintaxe iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU703E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The workstation name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the estacao de trabalho nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro estacao de trabalho nome sintaxe iniciar. Em outras palavras: Há um erro de sintaxe: o nome da estação deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU703E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The workstation name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -71761,7 +71761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU703E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU704E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The delimiter of a workstation name is a #." Em portugues: "there is a sintaxe erro. the delimiter of a estacao de trabalho nome is a #.". Temas: erro estacao de trabalho nome sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU704E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The delimiter of a workstation name is a #." Em portugues: "there is a sintaxe erro. the delimiter of a estacao de trabalho nome is a #.". Temas: erro estacao de trabalho nome sintaxe. Em outras palavras: Há um erro de sintaxe: o caractere delimitador usado para o nome da estação de trabalho deve ser o símbolo de cerquilha..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU704E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The delimiter workstation name portugues there sintaxe erro the estacao trabalho nome Temas`
@@ -71781,7 +71781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU704E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU705E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the workstation name. The "#" symbol was found more than once." Em portugues: "there is a sintaxe erro in the estacao de trabalho nome. the "#" symbol was encontrado mais que once.". Temas: erro estacao de trabalho nome sintaxe encontrado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU705E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the workstation name. The "#" symbol was found more than once." Em portugues: "there is a sintaxe erro in the estacao de trabalho nome. the "#" symbol was encontrado mais que once.". Temas: erro estacao de trabalho nome sintaxe encontrado. Em outras palavras: Há um erro de sintaxe no nome da estação: o símbolo de cerquilha foi encontrado mais de uma vez na palavra informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU705E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax the workstation name The symbol was found more than once portugues there sintaxe erro estacao trabalho`
@@ -71801,7 +71801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU705E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU706E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream name must be between 1 - 40 bytes." Em portugues: "there is a sintaxe erro. the job fluxo nome must be entre 1 - 40 bytes.". Temas: erro job nome sintaxe fluxo entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU706E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream name must be between 1 - 40 bytes." Em portugues: "there is a sintaxe erro. the job fluxo nome must be entre 1 - 40 bytes.". Temas: erro job nome sintaxe fluxo entre. Em outras palavras: Há um erro de sintaxe: o nome do fluxo de trabalhos deve ter entre um e quarenta bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU706E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job stream name must between bytes portugues there sintaxe erro the fluxo nome entre`
@@ -71821,7 +71821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU706E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU707E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job fluxo nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe fluxo iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU707E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job fluxo nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe fluxo iniciar. Em outras palavras: Há um erro de sintaxe: o nome do fluxo deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU707E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job stream name must start with alphabetic character and contain only alphanumeric characters dashes underscores`
@@ -71841,7 +71841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU707E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU708E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The delimiter of the schedule name is "."" Em portugues: "there is a sintaxe erro. the delimiter of the agendamento nome is "."". Temas: erro nome sintaxe agendamento.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU708E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The delimiter of the schedule name is "."" Em portugues: "there is a sintaxe erro. the delimiter of the agendamento nome is "."". Temas: erro nome sintaxe agendamento. Em outras palavras: Há um erro de sintaxe: o caractere delimitador usado para o nome do agendamento deve ser o ponto final..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU708E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The delimiter the schedule name portugues there sintaxe erro agendamento nome Temas`
@@ -71861,7 +71861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU708E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU709E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job name must be between 1 - 40 bytes." Em portugues: "there is a sintaxe erro. the job nome must be entre 1 - 40 bytes.". Temas: erro job nome sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU709E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job name must be between 1 - 40 bytes." Em portugues: "there is a sintaxe erro. the job nome must be entre 1 - 40 bytes.". Temas: erro job nome sintaxe entre. Em outras palavras: Há um erro de sintaxe: o nome do trabalho deve ter entre um e quarenta bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU709E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job name must between bytes portugues there sintaxe erro the nome entre Temas`
@@ -71881,7 +71881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU709E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU710E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU710E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the job nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro job nome sintaxe iniciar. Em outras palavras: Há um erro de sintaxe: o nome do trabalho deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU710E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -71901,7 +71901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU710E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU711E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The submitted command has a job as its object but the job name has not been supplied." Em portugues: "there is a sintaxe erro. the submitted comando has a job as its object but the job nome has nao estado informado.". Temas: erro nao job nome comando informado sintaxe.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU711E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The submitted command has a job as its object but the job name has not been supplied." Em portugues: "there is a sintaxe erro. the submitted comando has a job as its object but the job nome has nao estado informado.". Temas: erro nao job nome comando informado sintaxe. Em outras palavras: Há um erro de sintaxe: o comando tem um trabalho como alvo, mas nenhum nome de trabalho foi informado na instrução..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU711E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The submitted command has job its object but the name not been supplied portugues there`
@@ -71921,7 +71921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU711E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU712E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The prompt name must be between 1 and 8 bytes long." Em portugues: "there is a sintaxe erro. the prompt nome must be entre 1 and 8 bytes long.". Temas: erro nome sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU712E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The prompt name must be between 1 and 8 bytes long." Em portugues: "there is a sintaxe erro. the prompt nome must be entre 1 and 8 bytes long.". Temas: erro nome sintaxe entre. Em outras palavras: Há um erro de sintaxe: o nome do prompt deve ter entre um e oito bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU712E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The prompt name must between and bytes long portugues there sintaxe erro the nome entre`
@@ -71941,7 +71941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU712E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU713E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The prompt name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the prompt nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU713E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The prompt name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the prompt nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Em outras palavras: Há um erro de sintaxe: o nome do prompt deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU713E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The prompt name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -71961,10 +71961,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU713E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU714E (severidade: error, familia AWSBHU - conman) tem o texto: "Prompt name or message number not supplied." Em portugues: "prompt nome or mensagem numero nao informado.". Temas: nao nome informado mensagem numero.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU714E (severidade: error, familia AWSBHU - conman) tem o texto: "Prompt name or message number not supplied." Em portugues: "prompt nome or mensagem numero nao informado.". Temas: nao nome informado mensagem numero. Em outras palavras: Não foram informados o nome do prompt nem o número da mensagem, então o comando ficou incompleto e foi rejeitado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU714E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Prompt name message number not supplied portugues prompt nome numero nao informado Temas significa`
+> `AWSBHU714E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Prompt name message number not supplied portugues prompt nome numero nao informado Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU714E no HCL Workload Automation 10.2.8?
@@ -71981,7 +71981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU714E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU715E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The resource name must be between 1 and 8 bytes long and workstation name must be between 1 and 16 bytes" Em portugues: "there is a sintaxe erro. the recurso nome must be entre 1 and 8 bytes long and estacao de trabalho nome must be entre 1 and 16 bytes". Temas: erro estacao de trabalho nome sintaxe entre recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU715E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The resource name must be between 1 and 8 bytes long and workstation name must be between 1 and 16 bytes" Em portugues: "there is a sintaxe erro. the recurso nome must be entre 1 and 8 bytes long and estacao de trabalho nome must be entre 1 and 16 bytes". Temas: erro estacao de trabalho nome sintaxe entre recurso. Em outras palavras: Há um erro de sintaxe: o nome do recurso deve ter entre um e oito bytes e o da estação entre um e dezesseis bytes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU715E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The resource name must between and bytes long workstation portugues there`
@@ -72001,7 +72001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU715E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU716E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The resource name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the recurso nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe recurso iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU716E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The resource name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the recurso nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe recurso iniciar. Em outras palavras: Há um erro de sintaxe: o nome do recurso deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU716E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The resource name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -72021,10 +72021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU716E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU717I (severidade: informational, familia AWSBHU - conman) tem o texto: "There is a syntax error. Priority might be "HI", "GO", or 0-99." Em portugues: "there is a sintaxe erro. prioridade might be "hi", "go", or 0-99.". Temas: erro sintaxe prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU717I (severidade: informational, familia AWSBHU - conman) tem o texto: "There is a syntax error. Priority might be "HI", "GO", or 0-99." Em portugues: "there is a sintaxe erro. prioridade might be "hi", "go", or 0-99.". Temas: erro sintaxe prioridade. Em outras palavras: Há um erro de sintaxe no comando, porque o valor informado para a prioridade não é válido; aceita apenas HI, GO ou um número entre 0 e 99..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU717I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto There syntax error Priority might 0-99 portugues there sintaxe erro prioridade Temas significa`
+> `AWSBHU717I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto There syntax error Priority might 0-99 portugues there sintaxe erro prioridade Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU717I no HCL Workload Automation 10.2.8?
@@ -72041,7 +72041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU717I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU718I (severidade: informational, familia AWSBHU - conman) tem o texto: "There is a syntax error. Priority must be a numeric value from 0 to 99, "hi" (= 100), "or go" (= 101)." Em portugues: "there is a sintaxe erro. prioridade must be a numerico valor from 0 to 99, "hi" (= 100), "or go" (= 101).". Temas: erro sintaxe valor numerico prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU718I (severidade: informational, familia AWSBHU - conman) tem o texto: "There is a syntax error. Priority must be a numeric value from 0 to 99, "hi" (= 100), "or go" (= 101)." Em portugues: "there is a sintaxe erro. prioridade must be a numerico valor from 0 to 99, "hi" (= 100), "or go" (= 101).". Temas: erro sintaxe valor numerico prioridade. Em outras palavras: A prioridade fornecida está errada, pois deve ser um valor numérico de 0 a 99, ou ainda as palavras hi ou go que equivalem a cem e cento e um..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU718I 10.2.8 mensagem severidade informational familia AWSBHU conman tem texto There syntax error Priority must numeric value from portugues there sintaxe erro prioridade numerico valor Temas`
@@ -72061,7 +72061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU718I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU719E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. You cannot specify a priority higher that 99 (use "hi" (= 100), "or go" (= 101) instead." Em portugues: "there is a sintaxe erro. you nao pode specify a prioridade higher that 99 (use "hi" (= 100), "or go" (= 101) instead.". Temas: erro nao pode sintaxe prioridade.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU719E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. You cannot specify a priority higher that 99 (use "hi" (= 100), "or go" (= 101) instead." Em portugues: "there is a sintaxe erro. you nao pode specify a prioridade higher that 99 (use "hi" (= 100), "or go" (= 101) instead.". Temas: erro nao pode sintaxe prioridade. Em outras palavras: Você tentou usar uma prioridade acima de 99, o que é inválido; em vez disso deve usar hi, que vale cem, ou go, que vale cento e um..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU719E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax You cannot specify priority higher that use instead portugues there sintaxe erro you nao prioridade`
@@ -72081,10 +72081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU719E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU720E (severidade: error, familia AWSBHU - conman) tem o texto: "User domain length incorrect" Em portugues: "usuario dominio tamanho incorreto". Temas: usuario dominio incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU720E (severidade: error, familia AWSBHU - conman) tem o texto: "User domain length incorrect" Em portugues: "usuario dominio tamanho incorreto". Temas: usuario dominio incorreto. Em outras palavras: O comprimento do domínio informado para o usuário está incorreto, provavelmente fora do tamanho esperado pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU720E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto User length incorrect portugues usuario dominio tamanho incorreto Temas significa`
+> `AWSBHU720E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto User length incorrect portugues usuario dominio tamanho incorreto Temas outras palavras comprimento informado provavelmente fora`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU720E no HCL Workload Automation 10.2.8?
@@ -72101,7 +72101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU720E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU721E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied user name is too long. The name can contain up to 47 bytes. If the name contains special characters it must be enclosed in quotes (")." Em portugues: "the informado usuario nome is too long. the nome can contain up to 47 bytes. if the nome contains special characters it must be enclosed in quotes (").". Temas: nome informado usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU721E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied user name is too long. The name can contain up to 47 bytes. If the name contains special characters it must be enclosed in quotes (")." Em portugues: "the informado usuario nome is too long. the nome can contain up to 47 bytes. if the nome contains special characters it must be enclosed in quotes (").". Temas: nome informado usuario. Em outras palavras: O nome de usuário fornecido excede o limite de 47 bytes permitido; se tiver caracteres especiais, ele deve vir entre aspas duplas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU721E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied user name too long can contain bytes the contains special characters must enclosed quotes portugues`
@@ -72121,10 +72121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU721E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU722E (severidade: error, familia AWSBHU - conman) tem o texto: "Duplicate user name given." Em portugues: "duplicate usuario nome given.". Temas: nome usuario.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU722E (severidade: error, familia AWSBHU - conman) tem o texto: "Duplicate user name given." Em portugues: "duplicate usuario nome given.". Temas: nome usuario. Em outras palavras: O mesmo nome de usuário foi informado mais de uma vez, o que não é permitido nessa operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU722E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Duplicate user name given portugues duplicate usuario nome Temas significa`
+> `AWSBHU722E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Duplicate user name given portugues duplicate usuario nome Temas outras palavras mesmo foi informado mais vez`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU722E no HCL Workload Automation 10.2.8?
@@ -72161,10 +72161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU723E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU724E (severidade: error, familia AWSBHU - conman) tem o texto: "The Network ID must be between 1 - 16 bytes." Em portugues: "the rede id must be entre 1 - 16 bytes.". Temas: entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU724E (severidade: error, familia AWSBHU - conman) tem o texto: "The Network ID must be between 1 - 16 bytes." Em portugues: "the rede id must be entre 1 - 16 bytes.". Temas: entre. Em outras palavras: O identificador de rede deve ter um tamanho entre 1 e 16 bytes, mas o valor informado não está dentro desse intervalo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU724E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The Network must between bytes portugues the rede entre Temas significa`
+> `AWSBHU724E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The Network must between bytes portugues the rede entre Temas outras palavras identificador deve ter tamanho`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU724E no HCL Workload Automation 10.2.8?
@@ -72201,7 +72201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU725E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU726E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the specification of a network dependency. The Network ID has not been specified." Em portugues: "there is a sintaxe erro in the specification of a rede dependency. the rede id has nao estado especificado.". Temas: erro nao sintaxe especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU726E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the specification of a network dependency. The Network ID has not been specified." Em portugues: "there is a sintaxe erro in the specification of a rede dependency. the rede id has nao estado especificado.". Temas: erro nao sintaxe especificado. Em outras palavras: Houve erro de sintaxe ao declarar uma dependência de rede, porque o identificador da rede não foi especificado na definição..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU726E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax the specification network dependency The Network has not been specified portugues there sintaxe erro rede`
@@ -72261,7 +72261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU728E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU729E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The domain name must be between 1 and 16 bytes long." Em portugues: "there is a sintaxe erro. the dominio nome must be entre 1 and 16 bytes long.". Temas: erro nome sintaxe dominio entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU729E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The domain name must be between 1 and 16 bytes long." Em portugues: "there is a sintaxe erro. the dominio nome must be entre 1 and 16 bytes long.". Temas: erro nome sintaxe dominio entre. Em outras palavras: O nome de domínio informado tem tamanho inválido, pois deve ter entre 1 e 16 bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU729E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The name must between and bytes long portugues there sintaxe erro the dominio nome entre`
@@ -72281,7 +72281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU729E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU730E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The domain name must immediately be followed by a workstation name." Em portugues: "there is a sintaxe erro. the dominio nome must immediately be followed by a estacao de trabalho nome.". Temas: erro estacao de trabalho nome sintaxe dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU730E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The domain name must immediately be followed by a workstation name." Em portugues: "there is a sintaxe erro. the dominio nome must immediately be followed by a estacao de trabalho nome.". Temas: erro estacao de trabalho nome sintaxe dominio. Em outras palavras: A sintaxe do comando está errada, pois logo após o nome do domínio deve vir obrigatoriamente o nome da estação de trabalho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU730E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The name must immediately followed workstation portugues there sintaxe erro the dominio nome`
@@ -72301,7 +72301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU730E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU731E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The domain name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the dominio nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe dominio iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU731E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The domain name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the dominio nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe dominio iniciar. Em outras palavras: O nome de domínio é inválido, porque deve começar com letra e conter apenas caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU731E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues there`
@@ -72321,10 +72321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU731E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU732E (severidade: error, familia AWSBHU - conman) tem o texto: "The delimiter of domain name is an exclamation point." Em portugues: "the delimiter of dominio nome is an exclamation point.". Temas: nome dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU732E (severidade: error, familia AWSBHU - conman) tem o texto: "The delimiter of domain name is an exclamation point." Em portugues: "the delimiter of dominio nome is an exclamation point.". Temas: nome dominio. Em outras palavras: O separador usado no nome de domínio é o ponto de exclamação, conforme esperado pela sintaxe do comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU732E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The delimiter name exclamation point portugues the dominio nome Temas significa`
+> `AWSBHU732E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The delimiter name exclamation point portugues the dominio nome Temas outras palavras separador usado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU732E no HCL Workload Automation 10.2.8?
@@ -72341,7 +72341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU732E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU733E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the domain name. The delimiter "!" has been typed more than once." Em portugues: "there is a sintaxe erro in the dominio nome. the delimiter "!" has estado typed mais que once.". Temas: erro nome sintaxe dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU733E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the domain name. The delimiter "!" has been typed more than once." Em portugues: "there is a sintaxe erro in the dominio nome. the delimiter "!" has estado typed mais que once.". Temas: erro nome sintaxe dominio. Em outras palavras: Há um erro de sintaxe no nome de domínio porque o caractere delimitador de exclamação foi digitado mais de uma vez..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU733E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax the name The delimiter has been typed more than once portugues there sintaxe erro dominio nome`
@@ -72361,10 +72361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU733E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU734E (severidade: error, familia AWSBHU - conman) tem o texto: "The job alias name must be between 1 - 40 bytes." Em portugues: "the job alias nome must be entre 1 - 40 bytes.". Temas: job nome entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU734E (severidade: error, familia AWSBHU - conman) tem o texto: "The job alias name must be between 1 - 40 bytes." Em portugues: "the job alias nome must be entre 1 - 40 bytes.". Temas: job nome entre. Em outras palavras: O apelido do job informado é inválido, pois deve ter um comprimento entre 1 e 40 bytes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSBHU734E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job alias name must between bytes portugues the nome entre Temas significa`
+> `AWSBHU734E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job alias name must between bytes portugues the nome entre Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU734E no HCL Workload Automation 10.2.8?
@@ -72381,7 +72381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU734E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU735E (severidade: error, familia AWSBHU - conman) tem o texto: "The job stream alias name must be between 1 - 16 bytes." Em portugues: "the job fluxo alias nome must be entre 1 - 16 bytes.". Temas: job nome fluxo entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU735E (severidade: error, familia AWSBHU - conman) tem o texto: "The job stream alias name must be between 1 - 16 bytes." Em portugues: "the job fluxo alias nome must be entre 1 - 16 bytes.". Temas: job nome fluxo entre. Em outras palavras: O apelido do fluxo de jobs fornecido está incorreto, pois precisa ter entre 1 e 16 bytes de tamanho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU735E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The job stream alias name must between bytes portugues the fluxo nome entre Temas`
@@ -72401,7 +72401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU735E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU736E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The alias name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the alias nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU736E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The alias name must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the alias nome must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro nome sintaxe iniciar. Em outras palavras: O apelido informado tem sintaxe inválida, pois deve iniciar com letra e conter somente caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU736E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The alias name must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues`
@@ -72421,10 +72421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU736E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU737E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered a system error when attempting to retrieve either the current input mode or the current output mode of the console." Em portugues: "conman encountered a sistema erro when attempting to retrieve either the current entrada mode or the current saida mode of the console.". Temas: erro sistema. Explicacao oficial: The following internal error has occurred: Operating system error given on termios.h Library function tcgetattr or console function GetConsoleMode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU737E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered a system error when attempting to retrieve either the current input mode or the current output mode of the console." Em portugues: "conman encountered a sistema erro when attempting to retrieve either the current entrada mode or the current saida mode of the console.". Temas: erro sistema. Em outras palavras: O Conman falhou com um erro do sistema ao tentar obter o modo de entrada ou de saída atual do console.. Explicacao oficial: The following internal error has occurred: Operating system error given on termios.h Library function tcgetattr or console function GetConsoleMode.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman encountered AWSBHU737E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered system when attempting retrieve either the current input mode output console portugues`
+> `conman encountered conman falhou AWSBHU737E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered system when attempting retrieve either the current input mode output console portugues`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU737E no HCL Workload Automation 10.2.8?
@@ -72441,10 +72441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU737E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU738E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered a system error when attempting to set either the console input mode or the console output mode." Em portugues: "conman encountered a sistema erro when attempting to set either the console entrada mode or the console saida mode.". Temas: erro sistema. Explicacao oficial: The following internal error has occurred: Operating system error given on termios.h Library function tcsetattr or console function SetConsoleMode.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU738E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman encountered a system error when attempting to set either the console input mode or the console output mode." Em portugues: "conman encountered a sistema erro when attempting to set either the console entrada mode or the console saida mode.". Temas: erro sistema. Em outras palavras: O Conman encontrou um erro do sistema ao tentar definir o modo de entrada ou o modo de saída do console.. Explicacao oficial: The following internal error has occurred: Operating system error given on termios.h Library function tcsetattr or console function SetConsoleMode.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman encountered AWSBHU738E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered system when attempting set either the console input mode output portugues sistema`
+> `conman encountered conman encontrou AWSBHU738E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman encountered system when attempting set either the console input mode output portugues sistema`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU738E no HCL Workload Automation 10.2.8?
@@ -72461,7 +72461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU738E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU739E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied user is not in the Symphony file." Em portugues: "the informado usuario is nao in the symphony arquivo.". Temas: nao arquivo informado usuario symphony.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU739E (severidade: error, familia AWSBHU - conman) tem o texto: "The supplied user is not in the Symphony file." Em portugues: "the informado usuario is nao in the symphony arquivo.". Temas: nao arquivo informado usuario symphony. Em outras palavras: O usuário informado não consta no arquivo Symphony, por isso a operação não pode ser concluída..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU739E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The supplied user not the Symphony file portugues informado usuario nao symphony arquivo Temas`
@@ -72481,7 +72481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU739E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU740E (severidade: error, familia AWSBHU - conman) tem o texto: "The new password and the confirmation password do not match." Em portugues: "the new senha and the confirmation senha do nao match.". Temas: nao senha. Explicacao oficial: You are trying to change your password, but the two versions of the new password that you supplied are not the same.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU740E (severidade: error, familia AWSBHU - conman) tem o texto: "The new password and the confirmation password do not match." Em portugues: "the new senha and the confirmation senha do nao match.". Temas: nao senha. Em outras palavras: A nova senha digitada não confere com a senha de confirmação, por isso o procedimento foi recusado.. Explicacao oficial: You are trying to change your password, but the two versions of the new password that you supplied are not the same.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU740E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The new password and the confirmation not match portugues senha nao Temas`
@@ -72501,10 +72501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU740E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU741E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman is unable to open the audit log file." Em portugues: "conman is incapaz to open the audit log arquivo.". Temas: arquivo nao conseguiu. Explicacao oficial: Conman is unable to open the audit log file because the open() system call failed for some unspecified reason.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU741E (severidade: error, familia AWSBHU - conman) tem o texto: "Conman is unable to open the audit log file." Em portugues: "conman is incapaz to open the audit log arquivo.". Temas: arquivo nao conseguiu. Em outras palavras: O Conman não conseguiu abrir o arquivo de log de auditoria, o que impede o registro das operações.. Explicacao oficial: Conman is unable to open the audit log file because the open() system call failed for some unspecified reason.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `conman is AWSBHU741E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman unable open the audit log file portugues incapaz arquivo Temas nao conseguiu Explicacao`
+> `conman is conman n AWSBHU741E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Conman unable open the audit log file portugues incapaz arquivo Temas nao conseguiu outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSBHU741E no HCL Workload Automation 10.2.8?
@@ -72521,7 +72521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU741E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU743E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the name. It must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro in the nome. it must be entre 1 and 16 bytes.". Temas: erro nome sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU743E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the name. It must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro in the nome. it must be entre 1 and 16 bytes.". Temas: erro nome sintaxe entre. Em outras palavras: O nome fornecido tem erro de sintaxe, pois deve ter entre 1 e 16 bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU743E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax the name must between and bytes portugues there sintaxe erro nome entre Temas`
@@ -72541,7 +72541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU743E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU744E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream name must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro. the job fluxo nome must be entre 1 and 16 bytes.". Temas: erro job nome sintaxe fluxo entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU744E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream name must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro. the job fluxo nome must be entre 1 and 16 bytes.". Temas: erro job nome sintaxe fluxo entre. Em outras palavras: O nome do fluxo de jobs informado é inválido, pois deve ter entre 1 e 16 bytes de tamanho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU744E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job stream name must between and bytes portugues there sintaxe erro the fluxo nome`
@@ -72561,7 +72561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU744E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU745E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job name must be between 1 and 40 bytes." Em portugues: "there is a sintaxe erro. the job nome must be entre 1 and 40 bytes.". Temas: erro job nome sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU745E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job name must be between 1 and 40 bytes." Em portugues: "there is a sintaxe erro. the job nome must be entre 1 and 40 bytes.". Temas: erro job nome sintaxe entre. Em outras palavras: O nome do job fornecido está incorreto, pois deve ter entre 1 e 40 bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU745E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job name must between and bytes portugues there sintaxe erro the nome entre`
@@ -72581,7 +72581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU745E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU746E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the specification of a network dependency. Either the Network ID is missing or it is longer than 16 bytes." Em portugues: "there is a sintaxe erro in the specification of a rede dependency. either the rede id is faltando or it is longer que 16 bytes.". Temas: erro sintaxe faltando. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU746E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error in the specification of a network dependency. Either the Network ID is missing or it is longer than 16 bytes." Em portugues: "there is a sintaxe erro in the specification of a rede dependency. either the rede id is faltando or it is longer que 16 bytes.". Temas: erro sintaxe faltando. Em outras palavras: Houve erro na especificação da dependência de rede, porque o identificador da rede está ausente ou ultrapassa 16 bytes.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU746E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax the specification network dependency Either Network missing longer than bytes portugues there sintaxe erro`
@@ -72601,7 +72601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU746E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU747E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job alias name must be between 1 and 40 bytes." Em portugues: "there is a sintaxe erro. the job alias nome must be entre 1 and 40 bytes.". Temas: erro job nome sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU747E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job alias name must be between 1 and 40 bytes." Em portugues: "there is a sintaxe erro. the job alias nome must be entre 1 and 40 bytes.". Temas: erro job nome sintaxe entre. Em outras palavras: O apelido do job é inválido, pois deve ter entre 1 e 40 bytes; o valor fornecido está fora desse intervalo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU747E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job alias name must between and bytes portugues there sintaxe erro the nome`
@@ -72621,7 +72621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU747E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU748E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream alias name must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro. the job fluxo alias nome must be entre 1 and 16 bytes.". Temas: erro job nome sintaxe fluxo entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU748E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The job stream alias name must be between 1 and 16 bytes." Em portugues: "there is a sintaxe erro. the job fluxo alias nome must be entre 1 and 16 bytes.". Temas: erro job nome sintaxe fluxo entre. Em outras palavras: O apelido do fluxo de jobs está errado, pois precisa ter entre 1 e 16 bytes de comprimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU748E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The job stream alias name must between and bytes portugues there sintaxe erro the fluxo`
@@ -72641,7 +72641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU748E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU749E (severidade: error, familia AWSBHU - conman) tem o texto: "Alias name must start with an alpha and contain only alphanumeric characters." Em portugues: "alias nome must iniciar with an alpha and contain only alphanumeric characters.". Temas: nome iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU749E (severidade: error, familia AWSBHU - conman) tem o texto: "Alias name must start with an alpha and contain only alphanumeric characters." Em portugues: "alias nome must iniciar with an alpha and contain only alphanumeric characters.". Temas: nome iniciar. Em outras palavras: O apelido deve começar com uma letra e conter apenas caracteres alfanuméricos, mas o valor informado não segue essa regra..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU749E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto Alias name must start with alpha and contain only alphanumeric characters portugues alias nome iniciar`
@@ -72661,7 +72661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU749E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU750E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The Network ID must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the rede id must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro sintaxe iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU750E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The Network ID must start with an alphabetic character and contain only alphanumeric characters, dashes, and underscores." Em portugues: "there is a sintaxe erro. the rede id must iniciar with an alphabetic character and contain only alphanumeric characters, dashes, and underscores.". Temas: erro sintaxe iniciar. Em outras palavras: O identificador de rede é inválido, pois deve começar com letra e conter somente caracteres alfanuméricos, traços e sublinhados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU750E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The Network must start with alphabetic character and contain only alphanumeric characters dashes underscores portugues there`
@@ -72701,7 +72701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU753E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU758E (severidade: error, familia AWSBHU - conman) tem o texto: "The command cannot be performed because one or more successor jobs cannot be rerun. Check the Messages column for details." Em portugues: "the comando nao pode be performed porque one or mais successor jobs nao pode be rerun. check the messages coluna for details.". Temas: nao pode comando. Explicacao oficial: See the Messages column for details.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU758E (severidade: error, familia AWSBHU - conman) tem o texto: "The command cannot be performed because one or more successor jobs cannot be rerun. Check the Messages column for details." Em portugues: "the comando nao pode be performed porque one or mais successor jobs nao pode be rerun. check the messages coluna for details.". Temas: nao pode comando. Em outras palavras: Não é possível executar o comando porque um ou mais jobs sucessores não podem ser executados novamente; verifique a coluna de mensagens.. Explicacao oficial: See the Messages column for details.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU758E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSBHU conman tem texto The command cannot performed because one more successor jobs rerun Check the Messages column for details portugues comando`
@@ -72721,7 +72721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU758E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU759E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name must be between 1 and 800 bytes long. It can contain alphanumeric characters, dashes, underscores and slashes." Em portugues: "there is a sintaxe erro. the pasta nome must be entre 1 and 800 bytes long. it can contain alphanumeric characters, dashes, underscores and slashes.". Temas: erro nome sintaxe entre pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU759E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name must be between 1 and 800 bytes long. It can contain alphanumeric characters, dashes, underscores and slashes." Em portugues: "there is a sintaxe erro. the pasta nome must be entre 1 and 800 bytes long. it can contain alphanumeric characters, dashes, underscores and slashes.". Temas: erro nome sintaxe entre pasta. Em outras palavras: O nome da pasta é inválido, pois deve ter entre 1 e 800 bytes e pode conter apenas letras, números, traços, sublinhados e barras..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU759E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The folder name must between and bytes long can contain alphanumeric characters dashes underscores slashes portugues`
@@ -72741,7 +72741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU759E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU760E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name is incorrect: spaces are not supported before or after the path separator." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: spaces are nao supported antes or apos the caminho separator.". Temas: erro nao nome sintaxe suportado incorreto pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU760E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name is incorrect: spaces are not supported before or after the path separator." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: spaces are nao supported antes or apos the caminho separator.". Temas: erro nao nome sintaxe suportado incorreto pasta. Em outras palavras: O nome da pasta está incorreto, porque espaços não são permitidos antes ou depois do separador de caminho na sintaxe..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU760E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The folder name incorrect spaces are not supported before after the path separator portugues there sintaxe erro`
@@ -72761,7 +72761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU760E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU761E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name is incorrect: wild cards are not permitted in the folder name." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: wild cards are nao permitted in the pasta nome.". Temas: erro nao nome sintaxe incorreto pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU761E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name is incorrect: wild cards are not permitted in the folder name." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: wild cards are nao permitted in the pasta nome.". Temas: erro nao nome sintaxe incorreto pasta. Em outras palavras: O nome da pasta é inválido, pois caracteres curinga não são permitidos na definição do caminho informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU761E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The folder name incorrect wild cards are not permitted the portugues there sintaxe erro`
@@ -72781,7 +72781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU761E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU762E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name is incorrect: unable to process the path." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: incapaz to process the caminho.". Temas: erro nome sintaxe nao conseguiu incorreto pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU762E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The folder name is incorrect: unable to process the path." Em portugues: "there is a sintaxe erro. the pasta nome is incorreto: incapaz to process the caminho.". Temas: erro nome sintaxe nao conseguiu incorreto pasta. Em outras palavras: O nome da pasta está incorreto, pois o sistema não conseguiu processar o caminho informado na sintaxe..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU762E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The folder name incorrect unable process the path portugues there sintaxe erro pasta nome incorreto incapaz`
@@ -72801,7 +72801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSBHU762E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSBHU763E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The token to process must be between 1 and 16384 bytes long." Em portugues: "there is a sintaxe erro. the token to process must be entre 1 and 16384 bytes long.". Temas: erro sintaxe entre.
+No HCL Workload Automation 10.2.8, a mensagem AWSBHU763E (severidade: error, familia AWSBHU - conman) tem o texto: "There is a syntax error. The token to process must be between 1 and 16384 bytes long." Em portugues: "there is a sintaxe erro. the token to process must be entre 1 and 16384 bytes long.". Temas: erro sintaxe entre. Em outras palavras: O token a ser processado deve ter entre 1 e 16384 bytes, mas o valor fornecido está fora desse limite de tamanho..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSBHU763E 10.2.8 mensagem severidade error familia AWSBHU conman tem texto There syntax The token process must between and bytes long portugues there sintaxe erro the entre`
@@ -102261,10 +102261,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAH001I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDAH002E (severidade: error, familia AWSDAH - dah) tem o texto: "Your HCL Software demo has expired." Em portugues: "your hcl software demonstracao has expirou.". Temas: expirou venceu expirado demonstracao.
+No HCL Workload Automation 10.2.8, a mensagem AWSDAH002E (severidade: error, familia AWSDAH - dah) tem o texto: "Your HCL Software demo has expired." Em portugues: "your hcl software demonstracao has expirou.". Temas: expirou venceu expirado demonstracao. Em outras palavras: A versão de demonstração do software HCL expirou e o programa não pode mais ser utilizado normalmente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAH002E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Your Software demo has expired portugues your software demonstracao expirou Temas venceu expirado significa`
+> `AWSDAH002E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Your Software demo has expired portugues your software demonstracao expirou Temas venceu expirado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDAH002E no HCL Workload Automation 10.2.8?
@@ -102281,10 +102281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAH002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDAH003E (severidade: error, familia AWSDAH - dah) tem o texto: "Software is incompatible with this cpu." Em portugues: "software is incompativel with this processador.". Temas: incompativel processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDAH003E (severidade: error, familia AWSDAH - dah) tem o texto: "Software is incompatible with this cpu." Em portugues: "software is incompativel with this processador.". Temas: incompativel processador cpu. Em outras palavras: O software não é compatível com esta unidade central de processamento e por isso não pode ser executado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAH003E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Software incompatible with this cpu portugues software incompativel processador Temas significa`
+> `AWSDAH003E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Software incompatible with this cpu portugues software incompativel processador Temas outras palavras unidade central`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDAH003E no HCL Workload Automation 10.2.8?
@@ -102341,10 +102341,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAH006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDAH007E (severidade: error, familia AWSDAH - dah) tem o texto: "Your HCL Software rental has expired." Em portugues: "your hcl software aluguel has expirou.". Temas: expirou venceu expirado aluguel.
+No HCL Workload Automation 10.2.8, a mensagem AWSDAH007E (severidade: error, familia AWSDAH - dah) tem o texto: "Your HCL Software rental has expired." Em portugues: "your hcl software aluguel has expirou.". Temas: expirou venceu expirado aluguel. Em outras palavras: O período de aluguel do software HCL expirou, bloqueando a utilização do produto até nova ativação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAH007E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Your Software rental has expired portugues your software aluguel expirou Temas venceu expirado significa`
+> `AWSDAH007E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Your Software rental has expired portugues your software aluguel expirou Temas venceu expirado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDAH007E no HCL Workload Automation 10.2.8?
@@ -102421,10 +102421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAH010I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDAH011E (severidade: error, familia AWSDAH - dah) tem o texto: "Program is not part of installed product." Em portugues: "programa is nao part of instalado produto.". Temas: nao programa instalado produto.
+No HCL Workload Automation 10.2.8, a mensagem AWSDAH011E (severidade: error, familia AWSDAH - dah) tem o texto: "Program is not part of installed product." Em portugues: "programa is nao part of instalado produto.". Temas: nao programa instalado produto. Em outras palavras: O programa solicitado não faz parte do produto instalado nesta máquina e não pode ser executado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAH011E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Program not part installed product portugues programa nao instalado produto Temas significa`
+> `AWSDAH011E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Program not part installed product portugues programa nao instalado produto Temas outras palavras solicitado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDAH011E no HCL Workload Automation 10.2.8?
@@ -102441,10 +102441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAH011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDAH012E (severidade: error, familia AWSDAH - dah) tem o texto: "Software is not licensed for this cpu." Em portugues: "software is nao licensed for this processador.". Temas: nao licenciado processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSDAH012E (severidade: error, familia AWSDAH - dah) tem o texto: "Software is not licensed for this cpu." Em portugues: "software is nao licensed for this processador.". Temas: nao licenciado processador cpu. Em outras palavras: O software não possui licença válida para esta unidade central de processamento específica..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDAH012E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Software not licensed for this cpu portugues software nao processador Temas licenciado significa`
+> `AWSDAH012E 10.2.8 mensagem severidade error familia AWSDAH dah tem texto Software not licensed for this cpu portugues software nao processador Temas licenciado outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDAH012E no HCL Workload Automation 10.2.8?
@@ -102741,10 +102741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDAL006E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDBY002E (severidade: error, familia AWSDBY - dby) tem o texto: "Too many parameters in RUN command" Em portugues: "too many parametros in run comando". Temas: comando parametros execucao excesso de.
+No HCL Workload Automation 10.2.8, a mensagem AWSDBY002E (severidade: error, familia AWSDBY - dby) tem o texto: "Too many parameters in RUN command" Em portugues: "too many parametros in run comando". Temas: comando parametros execucao excesso de. Em outras palavras: O comando RUN foi emitido com uma quantidade de parâmetros superior à permitida pelo sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDBY002E 10.2.8 mensagem severidade error familia AWSDBY dby tem texto Too many parameters RUN command portugues too parametros run comando Temas execucao excesso significa`
+> `AWSDBY002E 10.2.8 mensagem severidade error familia AWSDBY dby tem texto Too many parameters RUN command portugues too parametros run comando Temas execucao excesso outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDBY002E no HCL Workload Automation 10.2.8?
@@ -103641,10 +103641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDCJ013E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDCJ014E (severidade: error, familia AWSDCJ - dcj) tem o texto: "Error stream facility not enabled." Em portugues: "erro fluxo facility nao habilitado.". Temas: erro nao fluxo habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDCJ014E (severidade: error, familia AWSDCJ - dcj) tem o texto: "Error stream facility not enabled." Em portugues: "erro fluxo facility nao habilitado.". Temas: erro nao fluxo habilitado. Em outras palavras: A facilidade de fluxo de erros não está habilitada, impedindo que os erros sejam direcionados corretamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDCJ014E 10.2.8 mensagem severidade error familia AWSDCJ dcj tem texto Error stream facility not enabled portugues erro fluxo nao habilitado Temas significa`
+> `AWSDCJ014E 10.2.8 mensagem severidade error familia AWSDCJ dcj tem texto Error stream facility not enabled portugues erro fluxo nao habilitado Temas outras palavras facilidade`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDCJ014E no HCL Workload Automation 10.2.8?
@@ -106521,10 +106521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEF015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEG001E (severidade: error, familia AWSDEG - deployment engine) tem o texto: "Error: no comarea exists yet." Em portugues: "erro: no comarea existe yet.". Temas: erro area de comunicacao compartilhada.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEG001E (severidade: error, familia AWSDEG - deployment engine) tem o texto: "Error: no comarea exists yet." Em portugues: "erro: no comarea existe yet.". Temas: erro area de comunicacao compartilhada. Em outras palavras: Ocorreu um erro de comunicação pois ainda não existe uma área de dados comum disponível para a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSDEG001E 10.2.8 mensagem severidade error familia AWSDEG deployment engine tem texto Error comarea exists yet portugues erro existe Temas area comunicacao compartilhada significa`
+> `AWSDEG001E 10.2.8 mensagem severidade error familia AWSDEG deployment engine tem texto Error comarea exists yet portugues erro existe Temas area comunicacao compartilhada outras palavras Ocorreu pois`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSDEG001E no HCL Workload Automation 10.2.8?
@@ -106541,7 +106541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEG001E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEG002E (severidade: error, familia AWSDEG - deployment engine) tem o texto: "Error: This is not a valid comarea for isam access." Em portugues: "erro: this is nao a valido comarea for isam acesso.". Temas: erro nao valido area de comunicacao compartilhada arquivo indexado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEG002E (severidade: error, familia AWSDEG - deployment engine) tem o texto: "Error: This is not a valid comarea for isam access." Em portugues: "erro: this is nao a valido comarea for isam acesso.". Temas: erro nao valido area de comunicacao compartilhada arquivo indexado. Em outras palavras: A área de dados comum informada não é válida para acesso tipo ISAM, impedindo a execução da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEG002E 10.2.8 mensagem severidade error familia AWSDEG deployment engine tem texto Error This not valid comarea for isam access portugues erro this nao valido acesso Temas`
@@ -106561,7 +106561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSDEG002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSDEG003W (severidade: warning, familia AWSDEG - deployment engine) tem o texto: "Warn: Isam access on !1, this operation not implemented." Em portugues: "warn: isam acesso on !1, this operacao nao implemented.". Temas: nao arquivo indexado operacao implementado.
+No HCL Workload Automation 10.2.8, a mensagem AWSDEG003W (severidade: warning, familia AWSDEG - deployment engine) tem o texto: "Warn: Isam access on !1, this operation not implemented." Em portugues: "warn: isam acesso on !1, this operacao nao implemented.". Temas: nao arquivo indexado operacao implementado. Em outras palavras: Foi emitido um aviso de que a operação ISAM não está implementada para o arquivo de acesso indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSDEG003W 10.2.8 mensagem severidade warning familia AWSDEG deployment engine tem texto Warn Isam access this operation not implemented portugues warn isam acesso operacao nao Temas arquivo indexado`
@@ -120621,7 +120621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSEDW091E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB003E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The twsinst script cannot run on this operating system: !1." Em portugues: "the twsinst script nao pode run on this operating sistema: !1.". Temas: nao pode sistema execucao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB003E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The twsinst script cannot run on this operating system: !1." Em portugues: "the twsinst script nao pode run on this operating sistema: !1.". Temas: nao pode sistema execucao. Em outras palavras: O script twsinst não pode ser executado no sistema operacional atual, pois essa plataforma não é suportada.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB003E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script cannot run this operating system portugues the nao sistema Temas`
@@ -120641,7 +120641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB004E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Only the user "root" can run the twsinst script." Em portugues: "only the usuario "root" can run the twsinst script.". Temas: usuario execucao. Explicacao oficial: See message text
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB004E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Only the user "root" can run the twsinst script." Em portugues: "only the usuario "root" can run the twsinst script.". Temas: usuario execucao. Em outras palavras: Somente o usuário root pode executar o script twsinst; a operação foi recusada para o usuário atual.. Explicacao oficial: See message text
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB004E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Only the user root can run script portugues only usuario`
@@ -120661,10 +120661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB005E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "No parameters have been specified for twsinst." Em portugues: "no parametros have estado especificado for twsinst.". Temas: especificado parametros. Explicacao oficial: The twsinst script needs to be supplied with at least one parameter.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB005E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "No parameters have been specified for twsinst." Em portugues: "no parametros have estado especificado for twsinst.". Temas: especificado parametros. Em outras palavras: Nenhum parâmetro foi informado ao script twsinst, que exige pelo menos um argumento para funcionar.. Explicacao oficial: The twsinst script needs to be supplied with at least one parameter.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB005E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto parameters have been specified for portugues parametros estado especificado Temas Explicacao oficial The`
+> `AWSFAB005E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto parameters have been specified for portugues parametros estado especificado Temas outras palavras Nenhum`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB005E no HCL Workload Automation 10.2.8?
@@ -120681,7 +120681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB006I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Use the command "!1" to see a list of the available parameters." Em portugues: "use the comando "!1" to see a list of the disponivel parametros.". Temas: comando parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB006I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Use the command "!1" to see a list of the available parameters." Em portugues: "use the comando "!1" to see a list of the disponivel parametros.". Temas: comando parametros. Em outras palavras: Execute o comando informado para visualizar a lista de parâmetros disponíveis para o script de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB006I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Use the command see list available parameters portugues use comando disponivel parametros Temas`
@@ -120701,7 +120701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB007E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied installation type parameter is not correct. It must be one of the following: "-new", "-update", "-uninst", "-modify", "-restore"." Em portugues: "the informado instalacao tipo parametro is nao correct. it must be one of the seguinte: "-new", "-atualizar", "-uninst", "-modify", "-restore".". Temas: nao informado tipo parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB007E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied installation type parameter is not correct. It must be one of the following: "-new", "-update", "-uninst", "-modify", "-restore"." Em portugues: "the informado instalacao tipo parametro is nao correct. it must be one of the seguinte: "-new", "-atualizar", "-uninst", "-modify", "-restore".". Temas: nao informado tipo parametro instalacao. Em outras palavras: O parâmetro de tipo de instalação está incorreto; deve ser um destes: novo, atualização, desinstalação, modificação ou restauração.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB007E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied type parameter not correct must one the following new update uninst modify restore portugues informado`
@@ -120721,7 +120721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB008E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You supplied more than one installation type parameter. Supply only one of the following: "-new", "-update", "-uninst", "-modify", "-restore"." Em portugues: "you informado mais que one instalacao tipo parametro. supply only one of the seguinte: "-new", "-atualizar", "-uninst", "-modify", "-restore".". Temas: informado tipo parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB008E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You supplied more than one installation type parameter. Supply only one of the following: "-new", "-update", "-uninst", "-modify", "-restore"." Em portugues: "you informado mais que one instalacao tipo parametro. supply only one of the seguinte: "-new", "-atualizar", "-uninst", "-modify", "-restore".". Temas: informado tipo parametro instalacao. Em outras palavras: Você informou mais de um parâmetro de tipo de instalação, mas deve especificar apenas um: novo, atualização, desinstalação, modificação ou restauração.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB008E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You supplied more than one type parameter Supply only the following new update uninst modify restore portugues`
@@ -120761,7 +120761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB010E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for a parameter. The parameter must be as follows: "!1"." Em portugues: "an incorreto valor has estado informado for a parametro. the parametro must be as follows: "!1".". Temas: informado parametro valor incorreto. Explicacao oficial: The parameter you have supplied is correct, and is valid for this installation type. However, the value supplied for the parameter is not correct.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB010E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for a parameter. The parameter must be as follows: "!1"." Em portugues: "an incorreto valor has estado informado for a parametro. the parametro must be as follows: "!1".". Temas: informado parametro valor incorreto. Em outras palavras: Foi fornecido um valor incorreto para o parâmetro, que deve seguir exatamente o formato indicado na mensagem.. Explicacao oficial: The parameter you have supplied is correct, and is valid for this installation type. However, the value supplied for the parameter is not correct.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB010E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto incorrect value has been supplied for parameter The must follows portugues incorreto valor estado informado parametro`
@@ -120781,7 +120781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB011E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following parameter has been supplied more than once:"!1"." Em portugues: "the seguinte parametro has estado informado mais que once:"!1".". Temas: informado parametro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB011E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following parameter has been supplied more than once:"!1"." Em portugues: "the seguinte parametro has estado informado mais que once:"!1".". Temas: informado parametro. Em outras palavras: O parâmetro informado foi especificado mais de uma vez na linha de comando, o que não é permitido.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB011E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following parameter has been supplied more than once portugues the seguinte parametro estado informado mais Temas`
@@ -120801,7 +120801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB012E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation parameter specified, "!1", is not supported for the installation type "!2"." Em portugues: "the instalacao parametro especificado, "!1", is nao supported for the instalacao tipo "!2".". Temas: nao especificado tipo parametro instalacao suportado. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB012E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation parameter specified, "!1", is not supported for the installation type "!2"." Em portugues: "the instalacao parametro especificado, "!1", is nao supported for the instalacao tipo "!2".". Temas: nao especificado tipo parametro instalacao suportado. Em outras palavras: O parâmetro de instalação informado não é suportado para o tipo de instalação selecionado nesta operação.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB012E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter specified not supported for the type portugues instalacao parametro especificado nao`
@@ -120821,10 +120821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB014E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following is not a recognizable installation parameter "!1"." Em portugues: "the seguinte is nao a recognizable instalacao parametro "!1".". Temas: nao parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB014E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following is not a recognizable installation parameter "!1"." Em portugues: "the seguinte is nao a recognizable instalacao parametro "!1".". Temas: nao parametro instalacao. Em outras palavras: O parâmetro informado não é reconhecido como um parâmetro de instalação válido pelo script.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB014E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following not recognizable parameter portugues the seguinte nao instalacao parametro Temas Explicacao oficial`
+> `AWSFAB014E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following not recognizable parameter portugues the seguinte nao instalacao parametro Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB014E no HCL Workload Automation 10.2.8?
@@ -120841,10 +120841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB015E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The "!1" option is missing." Em portugues: "the "!1" opcao is faltando.". Temas: opcao faltando. Explicacao oficial: The indicated parameter is required for this installation type.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB015E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The "!1" option is missing." Em portugues: "the "!1" opcao is faltando.". Temas: opcao faltando. Em outras palavras: A opção necessária não foi informada na linha de comando, então o script não pode prosseguir.. Explicacao oficial: The indicated parameter is required for this installation type.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB015E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The option missing portugues the opcao faltando Temas Explicacao oficial indicated parameter required for this`
+> `AWSFAB015E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The option missing portugues the opcao faltando Temas outras palavras foi informada linha comando script prosseguir Explicacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB015E no HCL Workload Automation 10.2.8?
@@ -120861,7 +120861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB015E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB017E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to locate the home directory of the specified user: "!1"." Em portugues: "the script was incapaz to locate the home diretorio of the especificado usuario: "!1".". Temas: usuario nao conseguiu especificado diretorio. Explicacao oficial: HCL Workload Automation is installed in the home directory of the TWSUser. The installation script cannot locate the home directory of user you have nominated as the TWSUser.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB017E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to locate the home directory of the specified user: "!1"." Em portugues: "the script was incapaz to locate the home diretorio of the especificado usuario: "!1".". Temas: usuario nao conseguiu especificado diretorio. Em outras palavras: O script não conseguiu localizar o diretório home do usuário especificado, impedindo a continuação do processo.. Explicacao oficial: HCL Workload Automation is installed in the home directory of the TWSUser. The installation script cannot locate the home directory of user you have nominated as the TWSUser.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB017E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable locate the home directory specified user portugues incapaz`
@@ -120901,7 +120901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB018E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB019E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied target installation directory "!1 does not exist." Em portugues: "the informado target instalacao diretorio "!1 does nao existe.". Temas: nao informado instalacao diretorio. Explicacao oficial: The home directory of the TWSUser must exist before running the installation.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB019E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied target installation directory "!1 does not exist." Em portugues: "the informado target instalacao diretorio "!1 does nao existe.". Temas: nao informado instalacao diretorio. Em outras palavras: O diretório de instalação de destino informado não existe, por isso o processo não pode continuar.. Explicacao oficial: The home directory of the TWSUser must exist before running the installation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB019E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied target directory does not exist portugues the informado instalacao diretorio nao existe Temas`
@@ -120921,7 +120921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB020E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are upgrading HCL Workload Automation, but the twsinst script cannot locate the configuration file "!1"of the version you are upgrading." Em portugues: "you are upgrading hcl workload automation, but the twsinst script nao pode locate the configuracao arquivo "!1"of the versao you are upgrading.". Temas: arquivo nao pode carga de trabalho versao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB020E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are upgrading HCL Workload Automation, but the twsinst script cannot locate the configuration file "!1"of the version you are upgrading." Em portugues: "you are upgrading hcl workload automation, but the twsinst script nao pode locate the configuracao arquivo "!1"of the versao you are upgrading.". Temas: arquivo nao pode carga de trabalho versao. Em outras palavras: Ao atualizar o HCL Workload Automation, o script não encontrou o arquivo de configuração da versão que está sendo atualizada.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB020E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are upgrading but the script cannot locate configuration file version you portugues`
@@ -121041,7 +121041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB026E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following parameter: "!1" cannot be used with the following parameter: "!2"." Em portugues: "the seguinte parametro: "!1" nao pode be used with the seguinte parametro: "!2".". Temas: nao pode parametro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB026E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following parameter: "!1" cannot be used with the following parameter: "!2"." Em portugues: "the seguinte parametro: "!1" nao pode be used with the seguinte parametro: "!2".". Temas: nao pode parametro. Em outras palavras: Os dois parâmetros informados são incompatíveis entre si e não podem ser usados juntos na mesma operação.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB026E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following parameter cannot used with the portugues seguinte parametro nao`
@@ -121061,7 +121061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB026E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB027E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation was unable to retrieve the following parameter: "!1" from the following HCL Workload Automation configuration file: !2." Em portugues: "the instalacao was incapaz to retrieve the seguinte parametro: "!1" from the seguinte hcl workload automation configuracao arquivo: !2.". Temas: arquivo nao conseguiu carga de trabalho parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB027E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation was unable to retrieve the following parameter: "!1" from the following HCL Workload Automation configuration file: !2." Em portugues: "the instalacao was incapaz to retrieve the seguinte parametro: "!1" from the seguinte hcl workload automation configuracao arquivo: !2.". Temas: arquivo nao conseguiu carga de trabalho parametro instalacao. Em outras palavras: A instalação não conseguiu obter o parâmetro informado a partir do arquivo de configuração do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB027E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The was unable retrieve the following parameter from configuration file portugues instalacao incapaz`
@@ -121081,7 +121081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB029W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The value "!1" specified for the port number by parameter "!2" is normally used by other services, such as ftp, or telnet, but will be used." Em portugues: "the valor "!1" especificado for the porta numero by parametro "!2" is normally used by other services, tal as ftp, or telnet, but will be used.". Temas: especificado numero parametro valor. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB029W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The value "!1" specified for the port number by parameter "!2" is normally used by other services, such as ftp, or telnet, but will be used." Em portugues: "the valor "!1" especificado for the porta numero by parametro "!2" is normally used by other services, tal as ftp, or telnet, but will be used.". Temas: especificado numero parametro valor. Em outras palavras: A porta especificada costuma ser usada por outros serviços como ftp ou telnet, mas mesmo assim será utilizada na instalação.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB029W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The value specified for the port number parameter normally used other services such ftp telnet but will portugues`
@@ -121101,7 +121101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB029W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB030E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied company name too long. The limit is 40 bytes." Em portugues: "the informado company nome too long. the limite is 40 bytes.". Temas: nome informado limite. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB030E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied company name too long. The limit is 40 bytes." Em portugues: "the informado company nome too long. the limite is 40 bytes.". Temas: nome informado limite. Em outras palavras: O nome da empresa informado é longo demais, pois o limite máximo permitido é de 40 bytes.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB030E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied company name too long limit bytes portugues the informado nome limite`
@@ -121121,10 +121121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB030E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB031E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You can not promote an agent from "!1" to "!2"." Em portugues: "you can nao promover an agente from "!1" to "!2".". Temas: nao agente. Explicacao oficial: You can only promote a lower type of agent to a higher type. For example, you can promote a standard agent to a fault-tolerant agent, but not a fault-tolerant agent to a standard agent. If you need to do the latter, uninstall the previous agent and make a fresh installation of the new agent.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB031E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You can not promote an agent from "!1" to "!2"." Em portugues: "you can nao promover an agente from "!1" to "!2".". Temas: nao agente. Em outras palavras: Não é possível promover um agente do tipo especificado para o outro, pois essa conversão não é permitida.. Explicacao oficial: You can only promote a lower type of agent to a higher type. For example, you can promote a standard agent to a fault-tolerant agent, but not a fault-tolerant agent to a standard agent. If you need to do the latter, uninstall the previous agent and make a fresh installation of the new agent.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB031E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You can not promote agent from portugues you nao promover agente Temas Explicacao oficial`
+> `AWSFAB031E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You can not promote agent from portugues you nao promover agente Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB031E no HCL Workload Automation 10.2.8?
@@ -121161,10 +121161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB033I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The installation has completed successfully." Em portugues: "the instalacao has concluido successfully.". Temas: instalacao com sucesso concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB033I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The installation has completed successfully." Em portugues: "the instalacao has concluido successfully.". Temas: instalacao com sucesso concluido. Em outras palavras: A instalação do software foi concluída com sucesso e o produto está pronto para ser utilizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB033I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The has completed successfully portugues the instalacao concluido Temas sucesso significa`
+> `AWSFAB033I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The has completed successfully portugues the instalacao concluido Temas sucesso outras palavras software foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB033I no HCL Workload Automation 10.2.8?
@@ -121181,10 +121181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB033I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB034I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The uninstallation has completed successfully." Em portugues: "the uninstallation has concluido successfully.". Temas: com sucesso concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB034I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The uninstallation has completed successfully." Em portugues: "the uninstallation has concluido successfully.". Temas: com sucesso concluido. Em outras palavras: O processo de desinstalação foi concluído com sucesso, sem a necessidade de nenhuma ação adicional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB034I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The uninstallation has completed successfully portugues the concluido Temas sucesso significa`
+> `AWSFAB034I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The uninstallation has completed successfully portugues the concluido Temas sucesso outras palavras processo foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB034I no HCL Workload Automation 10.2.8?
@@ -121201,7 +121201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB034I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB035E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation failed. For more details see the log file: !1" Em portugues: "the instalacao falhou. for mais details see the log arquivo: !1". Temas: arquivo instalacao falhou. Explicacao oficial: An internal error has occurred that has caused the installation to fail.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB035E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation failed. For more details see the log file: !1" Em portugues: "the instalacao falhou. for mais details see the log arquivo: !1". Temas: arquivo instalacao falhou. Em outras palavras: A instalação falhou; consulte o arquivo de log indicado para obter mais detalhes sobre a causa do erro.. Explicacao oficial: An internal error has occurred that has caused the installation to fail.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB035E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The failed For more details see the log file portugues instalacao falhou for mais`
@@ -121221,7 +121221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB035E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB036W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Some files could not be deleted. Please remove them manually. For more details see the log file: !1." Em portugues: "some arquivos conseguiu nao be deleted. please remove them manually. for mais details see the log arquivo: !1.". Temas: nao arquivo arquivos.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB036W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Some files could not be deleted. Please remove them manually. For more details see the log file: !1." Em portugues: "some arquivos conseguiu nao be deleted. please remove them manually. for mais details see the log arquivo: !1.". Temas: nao arquivo arquivos. Em outras palavras: Alguns arquivos não puderam ser removidos e devem ser apagados manualmente; veja o log indicado para mais detalhes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB036W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Some files could not deleted Please remove them manually For more details see the log file portugues some arquivos`
@@ -121241,7 +121241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB036W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB037E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The twsinst script is being run from the wrong directory." Em portugues: "the twsinst script is being run from the wrong diretorio.". Temas: diretorio execucao. Explicacao oficial: You are attempting to install HCL Workload Automation on a UNIX platform using the twsinst utility copied from the installation CD to the home directory of the user that you have nominated as the TWSuser during the installation. This is not allowed.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB037E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The twsinst script is being run from the wrong directory." Em portugues: "the twsinst script is being run from the wrong diretorio.". Temas: diretorio execucao. Em outras palavras: O script twsinst está sendo executado a partir do diretório errado, o que invalida a operação.. Explicacao oficial: You are attempting to install HCL Workload Automation on a UNIX platform using the twsinst utility copied from the installation CD to the home directory of the user that you have nominated as the TWSuser during the installation. This is not allowed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB037E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script being run from the wrong directory portugues diretorio`
@@ -121281,7 +121281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB038I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB039E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation script was not able to locate the following file needed set up the installation environment: !1" Em portugues: "the instalacao script was nao able to locate the seguinte arquivo needed set up the instalacao ambiente: !1". Temas: nao arquivo instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB039E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation script was not able to locate the following file needed set up the installation environment: !1" Em portugues: "the instalacao script was nao able to locate the seguinte arquivo needed set up the instalacao ambiente: !1". Temas: nao arquivo instalacao. Em outras palavras: O script de instalação não conseguiu localizar o arquivo necessário para configurar o ambiente de instalação.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB039E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was not able locate the following file needed set environment portugues instalacao`
@@ -121301,7 +121301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB039E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB040E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation script has been run from the wrong directory. Rerun the script from the following directory:!1." Em portugues: "the instalacao script has estado run from the wrong diretorio. rerun the script from the seguinte diretorio:!1.". Temas: instalacao diretorio execucao. Explicacao oficial: You have run the twsinst script from the home directory of a different user than that identified in the -uname parameter. If you wanted that the user identified in the -uname parameter is the TWSUser, run the installation from that user's home directory.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB040E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation script has been run from the wrong directory. Rerun the script from the following directory:!1." Em portugues: "the instalacao script has estado run from the wrong diretorio. rerun the script from the seguinte diretorio:!1.". Temas: instalacao diretorio execucao. Em outras palavras: O script foi executado do diretório errado; execute novamente a partir do diretório indicado na mensagem.. Explicacao oficial: You have run the twsinst script from the home directory of a different user than that identified in the -uname parameter. If you wanted that the user identified in the -uname parameter is the TWSUser, run the installation from that user's home directory.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB040E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script has been run from the wrong directory Rerun following portugues`
@@ -121361,7 +121361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB042E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB043W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "At least one warning message has been issued during the installation." Em portugues: "at least one warning mensagem has estado issued durante the instalacao.". Temas: mensagem instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB043W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "At least one warning message has been issued during the installation." Em portugues: "at least one warning mensagem has estado issued durante the instalacao.". Temas: mensagem instalacao. Em outras palavras: Durante a instalação foi emitida pelo menos uma mensagem de aviso que deve ser verificada pelo operador.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB043W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto least one message has been issued during the portugues estado durante`
@@ -121381,7 +121381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB043W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB044W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "At least one warning message has been issued during the uninstallation." Em portugues: "at least one warning mensagem has estado issued durante the uninstallation.". Temas: mensagem. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB044W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "At least one warning message has been issued during the uninstallation." Em portugues: "at least one warning mensagem has estado issued durante the uninstallation.". Temas: mensagem. Em outras palavras: Durante a desinstalação foi emitida pelo menos uma mensagem de aviso que merece atenção do operador.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB044W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto least one message has been issued during the uninstallation portugues estado durante`
@@ -121401,7 +121401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB044W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB045I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "For more details see the installation log file:!1." Em portugues: "for mais details see the instalacao log arquivo:!1.". Temas: arquivo instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB045I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "For more details see the installation log file:!1." Em portugues: "for mais details see the instalacao log arquivo:!1.". Temas: arquivo instalacao. Em outras palavras: Para obter mais detalhes sobre o processo, consulte o arquivo de log de instalação indicado na mensagem..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB045I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto For more details see the log file portugues for mais instalacao arquivo Temas`
@@ -121421,7 +121421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB045I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB046E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An inconsistent parameter has been used. You cannot specify the "!1" parameter when the "!1" parameter has been specified." Em portugues: "an inconsistent parametro has estado used. you nao pode specify the "!1" parametro when the "!1" parametro has estado especificado.". Temas: nao pode especificado parametro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB046E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An inconsistent parameter has been used. You cannot specify the "!1" parameter when the "!1" parameter has been specified." Em portugues: "an inconsistent parametro has estado used. you nao pode specify the "!1" parametro when the "!1" parametro has estado especificado.". Temas: nao pode especificado parametro. Em outras palavras: Houve inconsistência de parâmetros, pois você não pode especificar o mesmo parâmetro duas vezes na linha de comando.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB046E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto inconsistent parameter has been used You cannot specify the when specified portugues parametro`
@@ -121461,7 +121461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB047E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB048E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The company name cannot contain blank characters (spaces)." Em portugues: "the company nome nao pode contain blank characters (spaces).". Temas: nao pode nome. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB048E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The company name cannot contain blank characters (spaces)." Em portugues: "the company nome nao pode contain blank characters (spaces).". Temas: nao pode nome. Em outras palavras: O nome da empresa não pode conter espaços ou caracteres em branco no valor informado.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB048E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The company name cannot contain blank characters spaces portugues the nome nao Temas`
@@ -121481,7 +121481,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB048E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB049E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation directory cannot contain blank characters (spaces)." Em portugues: "the instalacao diretorio nao pode contain blank characters (spaces).". Temas: nao pode instalacao diretorio. Explicacao oficial: If you did not specify the installation directory explicitly, it means that the home directory of the TWSuser contains blank characters (spaces).
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB049E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The installation directory cannot contain blank characters (spaces)." Em portugues: "the instalacao diretorio nao pode contain blank characters (spaces).". Temas: nao pode instalacao diretorio. Em outras palavras: O diretório de instalação não pode conter espaços ou caracteres em branco no caminho informado.. Explicacao oficial: If you did not specify the installation directory explicitly, it means that the home directory of the TWSuser contains blank characters (spaces).
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB049E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory cannot contain blank characters spaces portugues the instalacao diretorio nao Temas`
@@ -121501,7 +121501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB049E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB050E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following parameter: "!1" cannot contain more than "!2" bytes." Em portugues: "the seguinte parametro: "!1" nao pode contain mais que "!2" bytes.". Temas: nao pode parametro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB050E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following parameter: "!1" cannot contain more than "!2" bytes." Em portugues: "the seguinte parametro: "!1" nao pode contain mais que "!2" bytes.". Temas: nao pode parametro. Em outras palavras: O valor do parâmetro informado excede o limite de bytes permitido para aquele parâmetro específico.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB050E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following parameter cannot contain more than bytes portugues the seguinte parametro nao mais Temas`
@@ -121521,10 +121521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB050E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB051I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking the Operating system" Em portugues: "checking the operating sistema". Temas: sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB051I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking the Operating system" Em portugues: "checking the operating sistema". Temas: sistema. Em outras palavras: O script está verificando o sistema operacional da máquina para garantir compatibilidade com a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB051I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking the Operating system portugues checking operating sistema Temas significa`
+> `AWSFAB051I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking the Operating system portugues checking operating sistema Temas outras palavras script verificando operacional garantir compatibilidade`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB051I no HCL Workload Automation 10.2.8?
@@ -121561,10 +121561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB052I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB053I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking input parameters" Em portugues: "checking entrada parametros". Temas: parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB053I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking input parameters" Em portugues: "checking entrada parametros". Temas: parametros. Em outras palavras: O script está validando os parâmetros de entrada informados antes de prosseguir com a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB053I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking input parameters portugues checking entrada parametros Temas significa diagnosticar`
+> `AWSFAB053I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking input parameters portugues checking entrada parametros Temas outras palavras script validando informados antes prosseguir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB053I no HCL Workload Automation 10.2.8?
@@ -121601,7 +121601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB054I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB055E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied installation type parameter is not correct. It must be one of the following: "-new", "-uninst", "-update"." Em portugues: "the informado instalacao tipo parametro is nao correct. it must be one of the seguinte: "-new", "-uninst", "-atualizar".". Temas: nao informado tipo parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB055E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied installation type parameter is not correct. It must be one of the following: "-new", "-uninst", "-update"." Em portugues: "the informado instalacao tipo parametro is nao correct. it must be one of the seguinte: "-new", "-uninst", "-atualizar".". Temas: nao informado tipo parametro instalacao. Em outras palavras: O parâmetro de tipo de instalação está incorreto; deve ser um destes: novo, desinstalação ou atualização.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB055E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied type parameter not correct must one the following new uninst update portugues informado instalacao tipo`
@@ -121621,10 +121621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB055E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB055I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "TWSUser home directory retrieval" Em portugues: "twsuser home diretorio retrieval". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB055I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "TWSUser home directory retrieval" Em portugues: "twsuser home diretorio retrieval". Temas: diretorio. Em outras palavras: O script está buscando o diretório home do usuário TWSUser para preparar o ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB055I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto TWSUser home directory retrieval portugues twsuser diretorio Temas significa`
+> `AWSFAB055I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto TWSUser home directory retrieval portugues twsuser diretorio Temas outras palavras script buscando preparar ambiente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB055I no HCL Workload Automation 10.2.8?
@@ -121641,10 +121641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB055I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB056I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking install directory" Em portugues: "checking install diretorio". Temas: instalar diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB056I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking install directory" Em portugues: "checking install diretorio". Temas: instalar diretorio. Em outras palavras: O script está verificando o diretório de instalação informado para confirmar se é válido e utilizável..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB056I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking install directory portugues checking diretorio Temas instalar significa diagnosticar`
+> `AWSFAB056I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking install directory portugues checking diretorio Temas instalar outras palavras script verificando informado confirmar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB056I no HCL Workload Automation 10.2.8?
@@ -121661,7 +121661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB056I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB057I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The script can be run again. It retries the failed step and, if successful, proceeds with the succeeding steps." Em portugues: "the script can be run again. it retries the falhou step and, if successful, proceeds with the succeeding steps.". Temas: execucao falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB057I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The script can be run again. It retries the failed step and, if successful, proceeds with the succeeding steps." Em portugues: "the script can be run again. it retries the falhou step and, if successful, proceeds with the succeeding steps.". Temas: execucao falhou. Em outras palavras: O script pode ser executado novamente, pois ele tenta reprocessar a etapa falha e, se tiver sucesso, continua com as demais..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB057I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The script can run again retries the failed step and successful proceeds with succeeding steps portugues`
@@ -121681,10 +121681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB057I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB058I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking missing configuration files" Em portugues: "checking faltando configuracao arquivos". Temas: arquivos faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB058I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking missing configuration files" Em portugues: "checking faltando configuracao arquivos". Temas: arquivos faltando. Em outras palavras: O script está verificando se há arquivos de configuração ausentes que possam comprometer a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB058I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking missing configuration files portugues checking faltando configuracao arquivos Temas significa`
+> `AWSFAB058I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking missing configuration files portugues checking faltando configuracao arquivos Temas outras palavras script verificando ausentes possam`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB058I no HCL Workload Automation 10.2.8?
@@ -121701,10 +121701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB058I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB059I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking HCL Workload Automation registry" Em portugues: "checking hcl workload automation registry". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB059I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking HCL Workload Automation registry" Em portugues: "checking hcl workload automation registry". Temas: carga de trabalho. Em outras palavras: O script está verificando o registro do HCL Workload Automation para localizar instalações existentes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB059I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking registry portugues checking Temas carga trabalho significa diagnosticar`
+> `AWSFAB059I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking registry portugues checking Temas carga trabalho outras palavras script verificando registro localizar existentes significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB059I no HCL Workload Automation 10.2.8?
@@ -121721,10 +121721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB059I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB060I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Retrieving information" Em portugues: "retrieving information".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB060I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Retrieving information" Em portugues: "retrieving information". Em outras palavras: O script está recuperando informações do sistema necessárias para prosseguir com a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB060I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Retrieving information portugues retrieving significa diagnosticar`
+> `AWSFAB060I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Retrieving information portugues retrieving outras palavras script recuperando sistema prosseguir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB060I no HCL Workload Automation 10.2.8?
@@ -121741,10 +121741,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB060I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB061I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Stopping HCL Workload Automation" Em portugues: "stopping hcl workload automation". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB061I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Stopping HCL Workload Automation" Em portugues: "stopping hcl workload automation". Temas: carga de trabalho. Em outras palavras: O script está parando todos os serviços do HCL Workload Automation antes de prosseguir com a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB061I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Stopping portugues stopping Temas carga trabalho significa diagnosticar`
+> `AWSFAB061I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Stopping portugues stopping Temas carga trabalho outras palavras script parando todos antes prosseguir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB061I no HCL Workload Automation 10.2.8?
@@ -121761,10 +121761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB061I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB062I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Backing up the instance to: "!1"" Em portugues: "backing up the instancia to: "!1"".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB062I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Backing up the instance to: "!1"" Em portugues: "backing up the instancia to: "!1"". Em outras palavras: O script está criando uma cópia de segurança da instância, que está sendo salva no diretório indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB062I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Backing the instance portugues backing instancia significa diagnosticar`
+> `AWSFAB062I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Backing the instance portugues backing instancia outras palavras script criando sendo salva indicado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB062I no HCL Workload Automation 10.2.8?
@@ -121781,10 +121781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB062I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB063I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install engine package" Em portugues: "install engine package". Temas: instalar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB063I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install engine package" Em portugues: "install engine package". Temas: instalar. Em outras palavras: O script está instalando o pacote do mecanismo, que é o componente principal do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB063I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install engine package portugues install Temas instalar significa diagnosticar`
+> `AWSFAB063I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install engine package portugues install Temas instalar outras palavras script instalando pacote mecanismo principal produto significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB063I no HCL Workload Automation 10.2.8?
@@ -121801,10 +121801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB063I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB064I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install catalog package" Em portugues: "install catalog package". Temas: instalar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB064I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install catalog package" Em portugues: "install catalog package". Temas: instalar. Em outras palavras: O script está instalando o pacote de catálogo necessário para a operação do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB064I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install catalog package portugues install Temas instalar significa diagnosticar`
+> `AWSFAB064I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install catalog package portugues install Temas instalar outras palavras script instalando pacote sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB064I no HCL Workload Automation 10.2.8?
@@ -121821,10 +121821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB064I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB065I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Copying uninstall files" Em portugues: "copying uninstall arquivos". Temas: arquivos.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB065I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Copying uninstall files" Em portugues: "copying uninstall arquivos". Temas: arquivos. Em outras palavras: O script está copiando os arquivos de desinstalação para o destino correto no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB065I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Copying uninstall files portugues copying arquivos Temas significa diagnosticar`
+> `AWSFAB065I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Copying uninstall files portugues copying arquivos Temas outras palavras script copiando destino correto sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB065I no HCL Workload Automation 10.2.8?
@@ -121841,10 +121841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB065I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB066I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Configuring HCL Workload Automation" Em portugues: "configuring hcl workload automation". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB066I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Configuring HCL Workload Automation" Em portugues: "configuring hcl workload automation". Temas: carga de trabalho. Em outras palavras: O script está configurando o HCL Workload Automation para aplicar os parâmetros definidos na instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB066I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Configuring portugues configuring Temas carga trabalho significa diagnosticar`
+> `AWSFAB066I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Configuring portugues configuring Temas carga trabalho outras palavras script configurando aplicar definidos significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB066I no HCL Workload Automation 10.2.8?
@@ -121861,10 +121861,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB066I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB067I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Start up HCL Workload Automation" Em portugues: "iniciar up hcl workload automation". Temas: carga de trabalho iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB067I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Start up HCL Workload Automation" Em portugues: "iniciar up hcl workload automation". Temas: carga de trabalho iniciar. Em outras palavras: O script está iniciando o HCL Workload Automation para ativar os serviços após a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB067I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Start portugues iniciar Temas carga trabalho significa diagnosticar`
+> `AWSFAB067I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Start portugues iniciar Temas carga trabalho outras palavras script iniciando ativar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB067I no HCL Workload Automation 10.2.8?
@@ -121881,10 +121881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB067I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB068I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Completing the installation" Em portugues: "completing the instalacao". Temas: instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB068I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Completing the installation" Em portugues: "completing the instalacao". Temas: instalacao. Em outras palavras: O script está finalizando o processo de instalação, concluindo as etapas de fechamento do procedimento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB068I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Completing the portugues completing instalacao Temas significa diagnosticar`
+> `AWSFAB068I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Completing the portugues completing instalacao Temas outras palavras script finalizando processo concluindo etapas fechamento procedimento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB068I no HCL Workload Automation 10.2.8?
@@ -121901,10 +121901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB068I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB069I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Back up the language package" Em portugues: "back up the language package".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB069I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Back up the language package" Em portugues: "back up the language package". Em outras palavras: O script está criando uma cópia de segurança do pacote de idiomas instalado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB069I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Back the language package portugues back significa diagnosticar`
+> `AWSFAB069I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Back the language package portugues back outras palavras script criando pacote idiomas instalado sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB069I no HCL Workload Automation 10.2.8?
@@ -121921,10 +121921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB069I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB070I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Back up the engine package" Em portugues: "back up the engine package".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB070I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Back up the engine package" Em portugues: "back up the engine package". Em outras palavras: O script está criando uma cópia de segurança do pacote do mecanismo instalado no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB070I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Back the engine package portugues back significa diagnosticar`
+> `AWSFAB070I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Back the engine package portugues back outras palavras script criando pacote mecanismo instalado sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB070I no HCL Workload Automation 10.2.8?
@@ -121981,7 +121981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB072I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB092I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "You must stop all HCL Workload Automation processes before installing another instance or upgrading an existing instance." Em portugues: "you must parar all hcl workload automation processes antes installing another instancia or upgrading an existing instancia.". Temas: carga de trabalho parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB092I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "You must stop all HCL Workload Automation processes before installing another instance or upgrading an existing instance." Em portugues: "you must parar all hcl workload automation processes antes installing another instancia or upgrading an existing instancia.". Temas: carga de trabalho parar. Em outras palavras: Antes de instalar outra instância ou atualizar uma existente, é preciso interromper todos os processos do HCL Workload Automation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB092I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto You must stop all processes before installing another instance upgrading existing portugues you parar antes`
@@ -122001,10 +122001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB092I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB093I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "TWSUser home directory retrieval" Em portugues: "twsuser home diretorio retrieval". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB093I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "TWSUser home directory retrieval" Em portugues: "twsuser home diretorio retrieval". Temas: diretorio. Em outras palavras: O script está buscando o diretório home do usuário TWSUser para configurar corretamente a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB093I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto TWSUser home directory retrieval portugues twsuser diretorio Temas significa`
+> `AWSFAB093I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto TWSUser home directory retrieval portugues twsuser diretorio Temas outras palavras script buscando configurar corretamente`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB093I no HCL Workload Automation 10.2.8?
@@ -122041,7 +122041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB094E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB095E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "A parameter is missing. Rerun the installation script, adding the following parameter: "!1"." Em portugues: "a parametro is faltando. rerun the instalacao script, adding the seguinte parametro: "!1".". Temas: parametro instalacao faltando. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB095E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "A parameter is missing. Rerun the installation script, adding the following parameter: "!1"." Em portugues: "a parametro is faltando. rerun the instalacao script, adding the seguinte parametro: "!1".". Temas: parametro instalacao faltando. Em outras palavras: Falta um parâmetro obrigatório; execute novamente o script de instalação adicionando o parâmetro indicado na mensagem.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB095E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto parameter missing Rerun the script adding following portugues parametro faltando rerun instalacao`
@@ -122061,10 +122061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB095E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB096I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Untar the maestro.tar.Z" Em portugues: "untar the maestro.tar.z".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB096I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Untar the maestro.tar.Z" Em portugues: "untar the maestro.tar.z". Em outras palavras: O script está extraindo o conteúdo do arquivo compactado maestro.tar.Z para o diretório apropriado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB096I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Untar the maestro.tar.Z portugues untar maestro.tar.z significa diagnosticar`
+> `AWSFAB096I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Untar the maestro.tar.Z portugues untar maestro.tar.z outras palavras script extraindo arquivo compactado apropriado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB096I no HCL Workload Automation 10.2.8?
@@ -122081,7 +122081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB096I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB097I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Creating the history files for the TIER2 installation" Em portugues: "creating the history arquivos for the tier2 instalacao". Temas: arquivos instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB097I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Creating the history files for the TIER2 installation" Em portugues: "creating the history arquivos for the tier2 instalacao". Temas: arquivos instalacao. Em outras palavras: O script está criando os arquivos de histórico necessários para a instalação do tipo TIER2..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB097I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Creating the history files for TIER2 portugues creating arquivos tier2 instalacao Temas`
@@ -122101,7 +122101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB097I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB098E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The values specified for "-master" and "-thiscpu" cannot be the same." Em portugues: "the values especificado for "-principal" and "-thiscpu" nao pode be the same.". Temas: nao pode especificado. Explicacao oficial: If you are trying to install a master domain manager you do not supply the -master parameter. If you are trying to install a different type of agent, the -thiscpu parameter must identify the computer where you are installing the agent, and the -master parameter must identify the workstation that is its master domain manager.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB098E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The values specified for "-master" and "-thiscpu" cannot be the same." Em portugues: "the values especificado for "-principal" and "-thiscpu" nao pode be the same.". Temas: nao pode especificado. Em outras palavras: Os valores informados para os parâmetros master e thiscpu não podem ser iguais entre si.. Explicacao oficial: If you are trying to install a master domain manager you do not supply the -master parameter. If you are trying to install a different type of agent, the -thiscpu parameter must identify the computer where you are installing the agent, and the -master parameter must identify the workstation that is its master domain manager.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB098E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The values specified for and thiscpu cannot the same portugues especificado principal nao`
@@ -122141,7 +122141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB099E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB100E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to copy the file "maestro.tar.gz" to the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to copy the arquivo "maestro.tar.gz" to the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB100E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to copy the file "maestro.tar.gz" to the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to copy the arquivo "maestro.tar.gz" to the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Em outras palavras: O script não conseguiu copiar o arquivo maestro.tar.gz para o diretório home do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB100E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable copy the file maestro.tar.gz home directory TWSHome portugues incapaz`
@@ -122161,7 +122161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB100E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB101E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to copy the file "maestro.tar.z" to the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to copy the arquivo "maestro.tar.z" to the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB101E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to copy the file "maestro.tar.z" to the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to copy the arquivo "maestro.tar.z" to the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Em outras palavras: O script não conseguiu copiar o arquivo maestro.tar.z para o diretório home do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB101E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable copy the file maestro.tar.z home directory TWSHome portugues incapaz`
@@ -122181,7 +122181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB101E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB102E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to expand the file "maestro.tar.gz" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to expand the arquivo "maestro.tar.gz" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB102E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to expand the file "maestro.tar.gz" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to expand the arquivo "maestro.tar.gz" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Em outras palavras: O script não conseguiu expandir o arquivo maestro.tar.gz dentro do diretório home do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB102E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable expand the file maestro.tar.gz home directory TWSHome portugues incapaz`
@@ -122201,7 +122201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB102E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB103E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to expand the file "maestro.tar.z" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to expand the arquivo "maestro.tar.z" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB103E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to expand the file "maestro.tar.z" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to expand the arquivo "maestro.tar.z" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Em outras palavras: O script não conseguiu expandir o arquivo maestro.tar.z dentro do diretório home do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB103E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable expand the file maestro.tar.z home directory TWSHome portugues incapaz`
@@ -122221,7 +122221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB103E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB104E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to untar the file "maestro.tar.gz" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to untar the arquivo "maestro.tar.gz" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB104E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to untar the file "maestro.tar.gz" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to untar the arquivo "maestro.tar.gz" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Em outras palavras: O script falhou ao tentar descompactar o arquivo maestro.tar.gz no diretório home do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB104E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable untar the file maestro.tar.gz home directory TWSHome portugues incapaz`
@@ -122241,7 +122241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB104E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB105E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to untar the file "maestro.tar.z" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to untar the arquivo "maestro.tar.z" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB105E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The script was unable to untar the file "maestro.tar.z" in the HCL Workload Automation home directory (TWSHome)." Em portugues: "the script was incapaz to untar the arquivo "maestro.tar.z" in the hcl workload automation home diretorio (twshome).". Temas: arquivo nao conseguiu carga de trabalho diretorio. Em outras palavras: O script falhou ao tentar descompactar o arquivo maestro.tar.z no diretório home do HCL Workload Automation.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB105E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The script was unable untar the file maestro.tar.z home directory TWSHome portugues incapaz`
@@ -122261,7 +122261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB105E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB106E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for the parameter "-thiscpu"." Em portugues: "an incorreto valor has estado informado for the parametro "-thiscpu".". Temas: informado parametro valor incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB106E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for the parameter "-thiscpu"." Em portugues: "an incorreto valor has estado informado for the parametro "-thiscpu".". Temas: informado parametro valor incorreto. Em outras palavras: Foi informado um valor incorreto para o parâmetro thiscpu, que não atende à sintaxe esperada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB106E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto incorrect value has been supplied for the parameter thiscpu portugues incorreto valor estado informado parametro`
@@ -122281,7 +122281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB106E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB107E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for the parameter "-master"." Em portugues: "an incorreto valor has estado informado for the parametro "-principal".". Temas: informado parametro valor incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB107E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for the parameter "-master"." Em portugues: "an incorreto valor has estado informado for the parametro "-principal".". Temas: informado parametro valor incorreto. Em outras palavras: Foi informado um valor incorreto para o parâmetro master, que não segue o formato esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB107E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto incorrect value has been supplied for the parameter portugues incorreto valor estado informado parametro principal Temas`
@@ -122301,7 +122301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB107E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB108E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The option "-restore" is not allowed on operating system "!1"." Em portugues: "the opcao "-restore" is nao allowed on operating sistema "!1".". Temas: nao sistema opcao. Explicacao oficial: The -restore operation is not allowed as a parameter to an installation performed on the indicated operating system (for example, IRIX64, OSF1 DYNIX-ptx).
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB108E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The option "-restore" is not allowed on operating system "!1"." Em portugues: "the opcao "-restore" is nao allowed on operating sistema "!1".". Temas: nao sistema opcao. Em outras palavras: A opção de restauração não é permitida no sistema operacional atual, conforme indicado na mensagem.. Explicacao oficial: The -restore operation is not allowed as a parameter to an installation performed on the indicated operating system (for example, IRIX64, OSF1 DYNIX-ptx).
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB108E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The option restore not allowed operating system portugues the opcao nao sistema Temas`
@@ -122341,7 +122341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB109E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB112E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Port numbers provided with option "!1" and option "!2" must be different. Specify different values and retry the operation." Em portugues: "porta numbers provided with opcao "!1" and opcao "!2" must be different. specify different values and tentar novamente the operacao.". Temas: opcao operacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB112E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Port numbers provided with option "!1" and option "!2" must be different. Specify different values and retry the operation." Em portugues: "porta numbers provided with opcao "!1" and opcao "!2" must be different. specify different values and tentar novamente the operacao.". Temas: opcao operacao. Em outras palavras: Os números de porta informados nas duas opções devem ser diferentes; especifique valores distintos e tente novamente.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB112E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Port numbers provided with option and must different Specify values retry the operation portugues porta`
@@ -122361,10 +122361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB112E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB117I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing HCL Workload Automation agent" Em portugues: "installing hcl workload automation agente". Temas: carga de trabalho agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB117I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing HCL Workload Automation agent" Em portugues: "installing hcl workload automation agente". Temas: carga de trabalho agente. Em outras palavras: O script está instalando o agente do HCL Workload Automation na máquina em questão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB117I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing agent portugues installing agente Temas carga trabalho significa diagnosticar`
+> `AWSFAB117I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing agent portugues installing agente Temas carga trabalho outras palavras script instalando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB117I no HCL Workload Automation 10.2.8?
@@ -122381,10 +122381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB117I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB118I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing CIT agent" Em portugues: "installing cit agente". Temas: agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB118I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing CIT agent" Em portugues: "installing cit agente". Temas: agente. Em outras palavras: O script está instalando o agente CIT, que é um dos componentes opcionais do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB118I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing CIT agent portugues installing cit agente Temas significa diagnosticar`
+> `AWSFAB118I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing CIT agent portugues installing cit agente Temas outras palavras script instalando componentes opcionais produto significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB118I no HCL Workload Automation 10.2.8?
@@ -122401,10 +122401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB118I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB119I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing Java extension" Em portugues: "installing java extension".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB119I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing Java extension" Em portugues: "installing java extension". Em outras palavras: O script está instalando a extensão Java necessária para o funcionamento do HCL Workload Automation..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB119I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing Java extension portugues installing java significa diagnosticar`
+> `AWSFAB119I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing Java extension portugues installing java outras palavras script instalando funcionamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB119I no HCL Workload Automation 10.2.8?
@@ -122421,7 +122421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB119I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB122E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied DWB port number is the same as the netman port number. Specify a different value." Em portugues: "the informado dwb porta numero is the same as the netman porta numero. specify a different valor.". Temas: informado numero valor. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB122E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied DWB port number is the same as the netman port number. Specify a different value." Em portugues: "the informado dwb porta numero is the same as the netman porta numero. specify a different valor.". Temas: informado numero valor. Em outras palavras: O número da porta DWB informado é igual ao da porta do netman; é necessário especificar um valor diferente.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB122E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied DWB port number the same netman Specify different value portugues informado dwb porta`
@@ -122441,7 +122441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB122E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB123E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied TDWB port number is the same as the jmport number. Specify a different value." Em portugues: "the informado tdwb porta numero is the same as the jmport numero. specify a different valor.". Temas: informado numero valor. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB123E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied TDWB port number is the same as the jmport number. Specify a different value." Em portugues: "the informado tdwb porta numero is the same as the jmport numero. specify a different valor.". Temas: informado numero valor. Em outras palavras: O número da porta TDWB informado é igual ao da porta do jmport; é necessário especificar um valor diferente.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB123E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied TDWB port number the same jmport Specify different value portugues informado tdwb porta numero`
@@ -122461,7 +122461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB123E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB124E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The value you specified for the !1 is incorrect. Valid values are "true" and "false"." Em portugues: "the valor you especificado for the !1 is incorreto. valido values are "true" and "false".". Temas: valido especificado valor incorreto. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB124E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The value you specified for the !1 is incorrect. Valid values are "true" and "false"." Em portugues: "the valor you especificado for the !1 is incorreto. valido values are "true" and "false".". Temas: valido especificado valor incorreto. Em outras palavras: O valor informado para o parâmetro é inválido, pois os únicos valores aceitos são verdadeiro ou falso.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB124E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The value you specified for the incorrect Valid values are true and false portugues valor especificado`
@@ -122481,10 +122481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB124E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB125I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling the HCL Workload Automation agent" Em portugues: "uninstalling the hcl workload automation agente". Temas: carga de trabalho agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB125I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling the HCL Workload Automation agent" Em portugues: "uninstalling the hcl workload automation agente". Temas: carga de trabalho agente. Em outras palavras: O script está desinstalando o agente do HCL Workload Automation da máquina em questão..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB125I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling the agent portugues uninstalling agente Temas carga trabalho significa`
+> `AWSFAB125I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling the agent portugues uninstalling agente Temas carga trabalho outras palavras script desinstalando significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB125I no HCL Workload Automation 10.2.8?
@@ -122501,10 +122501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB125I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB126I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling the Java extension" Em portugues: "uninstalling the java extension".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB126I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling the Java extension" Em portugues: "uninstalling the java extension". Em outras palavras: O script está desinstalando a extensão Java do HCL Workload Automation do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB126I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling the Java extension portugues uninstalling java significa diagnosticar`
+> `AWSFAB126I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling the Java extension portugues uninstalling java outras palavras script desinstalando sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB126I no HCL Workload Automation 10.2.8?
@@ -122521,7 +122521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB126I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB127I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The CIT package is already installed, skipping this step." Em portugues: "the cit package is already instalado, skipping this step.". Temas: instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB127I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The CIT package is already installed, skipping this step." Em portugues: "the cit package is already instalado, skipping this step.". Temas: instalado. Em outras palavras: O pacote CIT já está instalado, então esta etapa está sendo ignorada por não ser necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB127I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The CIT package already installed skipping this step portugues the cit instalado Temas`
@@ -122581,7 +122581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB132E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB133E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Either the "-password" parameter is missing, or an incorrect value has been supplied for a parameter. The parameter must be as follows: "!1"." Em portugues: "either the "-senha" parametro is faltando, or an incorreto valor has estado informado for a parametro. the parametro must be as follows: "!1".". Temas: informado parametro valor incorreto faltando. Explicacao oficial: The indicated parameter is required for this type of installation.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB133E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Either the "-password" parameter is missing, or an incorrect value has been supplied for a parameter. The parameter must be as follows: "!1"." Em portugues: "either the "-senha" parametro is faltando, or an incorreto valor has estado informado for a parametro. the parametro must be as follows: "!1".". Temas: informado parametro valor incorreto faltando. Em outras palavras: O parâmetro de senha está ausente ou foi informado um valor incorreto; o parâmetro deve seguir o formato indicado.. Explicacao oficial: The indicated parameter is required for this type of installation.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB133E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Either the password parameter missing incorrect value has been supplied for The must follows portugues either`
@@ -122601,7 +122601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB133E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB134E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You specified an incorrect password for the user !1." Em portugues: "you especificado an incorreto senha for the usuario !1.". Temas: usuario especificado incorreto senha. Explicacao oficial: The indicated parameter is incorrect.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB134E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You specified an incorrect password for the user !1." Em portugues: "you especificado an incorreto senha for the usuario !1.". Temas: usuario especificado incorreto senha. Em outras palavras: Você especificou uma senha incorreta para o usuário informado, que não corresponde à senha válida da conta.. Explicacao oficial: The indicated parameter is incorrect.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB134E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You specified incorrect password for the user portugues you especificado incorreto senha usuario Temas`
@@ -122621,7 +122621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB134E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB135E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The "!1" user account you supplied does not exist on the local computer. The operation cannot proceed." Em portugues: "the "!1" usuario account you informado does nao existe on the local computer. the operacao nao pode proceed.". Temas: nao pode informado usuario operacao. Explicacao oficial: The indicated parameter is incorrect.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB135E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The "!1" user account you supplied does not exist on the local computer. The operation cannot proceed." Em portugues: "the "!1" usuario account you informado does nao existe on the local computer. the operacao nao pode proceed.". Temas: nao pode informado usuario operacao. Em outras palavras: A conta de usuário informada não existe no computador local, por isso a operação não pode prosseguir.. Explicacao oficial: The indicated parameter is incorrect.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB135E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The user account you supplied does not exist the local computer operation cannot proceed portugues usuario`
@@ -122641,7 +122641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB135E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB136E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred when creating the "!1" user on the local computer. The twsinst installation cannot proceed." Em portugues: "an erro ocorreu when creating the "!1" usuario on the local computer. the twsinst instalacao nao pode proceed.". Temas: erro ocorreu nao pode usuario instalacao. Explicacao oficial: The indicated parameter is incorrect.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB136E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred when creating the "!1" user on the local computer. The twsinst installation cannot proceed." Em portugues: "an erro ocorreu when creating the "!1" usuario on the local computer. the twsinst instalacao nao pode proceed.". Temas: erro ocorreu nao pode usuario instalacao. Em outras palavras: Ocorreu um erro ao criar o usuário no computador local, o que impede que a instalação do twsinst continue.. Explicacao oficial: The indicated parameter is incorrect.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB136E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred when creating the user local computer The cannot proceed portugues erro ocorreu`
@@ -122661,10 +122661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB136E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB139I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing HCL Workload Automation registries" Em portugues: "installing hcl workload automation registries". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB139I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing HCL Workload Automation registries" Em portugues: "installing hcl workload automation registries". Temas: carga de trabalho. Em outras palavras: O script está instalando os registros do HCL Workload Automation necessários para o sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB139I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing registries portugues installing Temas carga trabalho significa diagnosticar`
+> `AWSFAB139I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing registries portugues installing Temas carga trabalho outras palavras script instalando registros sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB139I no HCL Workload Automation 10.2.8?
@@ -122681,10 +122681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB139I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB140I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling HCL Workload Automation registry" Em portugues: "uninstalling hcl workload automation registry". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB140I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling HCL Workload Automation registry" Em portugues: "uninstalling hcl workload automation registry". Temas: carga de trabalho. Em outras palavras: O script está desinstalando o registro do HCL Workload Automation do sistema operacional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB140I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling registry portugues uninstalling Temas carga trabalho significa diagnosticar`
+> `AWSFAB140I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling registry portugues uninstalling Temas carga trabalho outras palavras script desinstalando registro sistema operacional significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB140I no HCL Workload Automation 10.2.8?
@@ -122701,7 +122701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB140I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB141E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An instance of HCL Workload Automation is already installed for another user in the "!1" directory you specified as installation directory." Em portugues: "an instancia of hcl workload automation is already instalado for another usuario in the "!1" diretorio you especificado as instalacao diretorio.". Temas: usuario especificado carga de trabalho instalacao diretorio instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB141E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An instance of HCL Workload Automation is already installed for another user in the "!1" directory you specified as installation directory." Em portugues: "an instancia of hcl workload automation is already instalado for another usuario in the "!1" diretorio you especificado as instalacao diretorio.". Temas: usuario especificado carga de trabalho instalacao diretorio instalado. Em outras palavras: Já existe uma instância do HCL Workload Automation instalada para outro usuário no diretório de instalação informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB141E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto instance already installed for another user the directory you specified portugues instancia instalado usuario`
@@ -122721,7 +122721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB141E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB142E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory "!1" you specified is incorrect or is not a fully qualified path." Em portugues: "the diretorio "!1" you especificado is incorreto or is nao a fully qualified caminho.". Temas: nao especificado diretorio incorreto. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB142E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory "!1" you specified is incorrect or is not a fully qualified path." Em portugues: "the diretorio "!1" you especificado is incorreto or is nao a fully qualified caminho.". Temas: nao especificado diretorio incorreto. Em outras palavras: O diretório informado está incorreto ou não é um caminho totalmente qualificado, por isso foi recusado.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB142E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory you specified incorrect not fully qualified path portugues the diretorio especificado incorreto nao caminho`
@@ -122741,7 +122741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB142E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB143W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The user "!1" is a domain user. Verify if he has all the required permissions to perform the installation." Em portugues: "the usuario "!1" is a dominio usuario. verify if he has all the obrigatorio permissions to perform the instalacao.". Temas: usuario dominio instalacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB143W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The user "!1" is a domain user. Verify if he has all the required permissions to perform the installation." Em portugues: "the usuario "!1" is a dominio usuario. verify if he has all the obrigatorio permissions to perform the instalacao.". Temas: usuario dominio instalacao. Em outras palavras: O usuário informado é um usuário de domínio; verifique se ele possui todas as permissões necessárias para instalar.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB143W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The user Verify has all the required permissions perform portugues usuario dominio verify`
@@ -122781,10 +122781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB144I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB145I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Extract local parameters" Em portugues: "extract local parametros". Temas: parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB145I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Extract local parameters" Em portugues: "extract local parametros". Temas: parametros. Em outras palavras: O script está extraindo os parâmetros locais necessários para a operação em andamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB145I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Extract local parameters portugues extract parametros Temas significa diagnosticar`
+> `AWSFAB145I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Extract local parameters portugues extract parametros Temas outras palavras script extraindo locais andamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB145I no HCL Workload Automation 10.2.8?
@@ -122801,10 +122801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB145I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB146I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Restore local parameters" Em portugues: "restore local parametros". Temas: parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB146I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Restore local parameters" Em portugues: "restore local parametros". Temas: parametros. Em outras palavras: O script está restaurando os parâmetros locais que foram previamente salvos durante a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB146I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Restore local parameters portugues restore parametros Temas significa diagnosticar`
+> `AWSFAB146I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Restore local parameters portugues restore parametros Temas outras palavras script restaurando locais foram previamente salvos durante significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB146I no HCL Workload Automation 10.2.8?
@@ -122821,10 +122821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB146I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB147I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Move the HCL Workload Automation files" Em portugues: "move the hcl workload automation arquivos". Temas: arquivos carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB147I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Move the HCL Workload Automation files" Em portugues: "move the hcl workload automation arquivos". Temas: arquivos carga de trabalho. Em outras palavras: O script está movendo os arquivos do HCL Workload Automation para a localização adequada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB147I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Move the files portugues move arquivos Temas carga trabalho significa`
+> `AWSFAB147I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Move the files portugues move arquivos Temas carga trabalho outras palavras script movendo adequada significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB147I no HCL Workload Automation 10.2.8?
@@ -122841,10 +122841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB147I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB149I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Setting HCL Workload Automation cpu fence to GO" Em portugues: "configuracao hcl workload automation processador fence to go". Temas: carga de trabalho processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB149I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Setting HCL Workload Automation cpu fence to GO" Em portugues: "configuracao hcl workload automation processador fence to go". Temas: carga de trabalho processador cpu. Em outras palavras: O script está definindo a proteção de CPU do HCL Workload Automation para o valor GO..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB149I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Setting cpu fence portugues configuracao processador Temas carga trabalho significa`
+> `AWSFAB149I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Setting cpu fence portugues configuracao processador Temas carga trabalho outras palavras script definindo CPU valor significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB149I no HCL Workload Automation 10.2.8?
@@ -122861,7 +122861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB149I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB150I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Setting HCL Workload Automation cpu fence to the original value" Em portugues: "configuracao hcl workload automation processador fence to the original valor". Temas: carga de trabalho valor processador cpu.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB150I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Setting HCL Workload Automation cpu fence to the original value" Em portugues: "configuracao hcl workload automation processador fence to the original valor". Temas: carga de trabalho valor processador cpu. Em outras palavras: O script está restaurando a proteção de CPU do HCL Workload Automation para o valor original que tinha antes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB150I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Setting cpu fence the original value portugues configuracao processador valor Temas carga trabalho`
@@ -122881,7 +122881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB150I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB151E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The specified parameter "!1" must have an integer value or "-1"." Em portugues: "the especificado parametro "!1" must have an integer valor or "-1".". Temas: especificado parametro valor. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB151E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The specified parameter "!1" must have an integer value or "-1"." Em portugues: "the especificado parametro "!1" must have an integer valor or "-1".". Temas: especificado parametro valor. Em outras palavras: O parâmetro informado deve ter um valor inteiro ou menos um, mas foi fornecido algo diferente.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB151E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The specified parameter must have integer value portugues the especificado parametro valor Temas`
@@ -122901,10 +122901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB151E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB152I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Check HCL Workload Automation command lines" Em portugues: "check hcl workload automation comando lines". Temas: comando carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB152I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Check HCL Workload Automation command lines" Em portugues: "check hcl workload automation comando lines". Temas: comando carga de trabalho. Em outras palavras: O script está verificando as linhas de comando do HCL Workload Automation para validar sua configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB152I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Check command lines portugues check comando Temas carga trabalho significa`
+> `AWSFAB152I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Check command lines portugues check comando Temas carga trabalho outras palavras script verificando linhas validar sua`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB152I no HCL Workload Automation 10.2.8?
@@ -122921,10 +122921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB152I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB153I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking HCL Workload Automation processes" Em portugues: "checking hcl workload automation processes". Temas: carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB153I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking HCL Workload Automation processes" Em portugues: "checking hcl workload automation processes". Temas: carga de trabalho. Em outras palavras: O script está verificando os processos do HCL Workload Automation para confirmar o estado do sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB153I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking processes portugues checking Temas carga trabalho significa diagnosticar`
+> `AWSFAB153I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking processes portugues checking Temas carga trabalho outras palavras script verificando processos confirmar estado sistema significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB153I no HCL Workload Automation 10.2.8?
@@ -122941,7 +122941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB153I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB154E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running "!1". Close them before running the operation again." Em portugues: "the seguinte processes are still em execucao "!1". close them antes em execucao the operacao again.". Temas: operacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB154E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running "!1". Close them before running the operation again." Em portugues: "the seguinte processes are still em execucao "!1". close them antes em execucao the operacao again.". Temas: operacao. Em outras palavras: Os processos indicados ainda estão em execução; feche-os antes de executar a operação novamente.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB154E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following processes are still running Close them before the operation again portugues seguinte`
@@ -122961,7 +122961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB154E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB155E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running "!1". Either close them or wait for their completion before running the operation again." Em portugues: "the seguinte processes are still em execucao "!1". either close them or wait for their completion antes em execucao the operacao again.". Temas: operacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB155E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The following processes are still running "!1". Either close them or wait for their completion before running the operation again." Em portugues: "the seguinte processes are still em execucao "!1". either close them or wait for their completion antes em execucao the operacao again.". Temas: operacao. Em outras palavras: Os processos indicados ainda estão ativos; feche-os ou aguarde a conclusão deles antes de repetir a operação.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB155E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The following processes are still running Either close them wait for their completion before the operation again portugues`

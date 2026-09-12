@@ -1,0 +1,390 @@
+{"code": "AWSBHU002E", "pt": "O Conman falhou ao abrir os arquivos Mailbox ou Intercom destinados às mensagens internas do sistema."}
+{"code": "AWSBHU003E", "pt": "O Conman não conseguiu inicializar porque o arquivo de segurança não existe ou não foi localizado pelo sistema."}
+{"code": "AWSBHU004E", "pt": "O nome de usuário de logon informado para o job não é válido estruturalmente e foi rejeitado pelo sistema de autenticação."}
+{"code": "AWSBHU009E", "pt": "O Conman falhou ao tentar ler o arquivo Symphony, retornando uma mensagem de erro com mais detalhes sobre a falha de leitura."}
+{"code": "AWSBHU010E", "pt": "O Conman encontrou um registro com tipo incorreto no arquivo Symphony, recebendo um tipo inesperado no lugar do esperado."}
+{"code": "AWSBHU016E", "pt": "Um dos valores informados para um argumento numérico não é, na verdade, um número, tornando o comando inválido."}
+{"code": "AWSBHU017E", "pt": "O valor numérico informado está abaixo do mínimo permitido para o intervalo definido pelo argumento."}
+{"code": "AWSBHU018E", "pt": "O valor numérico informado excede o limite máximo permitido para o intervalo definido pelo argumento."}
+{"code": "AWSBHU019I", "pt": "O comando de parada do job foi executado com sucesso na estação de trabalho indicada na mensagem."}
+{"code": "AWSBHU021E", "pt": "O agente da estação de trabalho indicada não pode iniciar porque não possui a versão mais recente do arquivo Symphony."}
+{"code": "AWSBHU022E", "pt": "O valor de tempo informado está incorreto, pois precisa ser um número entre 0000 e 2359 para ser aceito."}
+{"code": "AWSBHU023E", "pt": "Foi usado um qualificador de job do tipo opens com sintaxe incorreta, invalidando o comando emitido."}
+{"code": "AWSBHU024E", "pt": "O diretório mozart não está acessível ou está faltando arquivos necessários para o funcionamento do sistema."}
+{"code": "AWSBHU025E", "pt": "O Conman não conseguiu localizar o job stream no arquivo Symphony ou o nome da estação informado está incorreto."}
+{"code": "AWSBHU026I", "pt": "O sistema espera que seja informada a quantidade prevista de recursos, que deve estar entre 1 e 32."}
+{"code": "AWSBHU027I", "pt": "O sistema está aguardando que seja informado o nome do recurso a ser utilizado na operação."}
+{"code": "AWSBHU028E", "pt": "A ação de recuperação informada é inválida, pois deve ser uma das opções: parar, continuar ou reexecutar."}
+{"code": "AWSBHU029E", "pt": "Ocorreu um erro fatal não esperado no sistema, com informações internas adicionais sobre a falha."}
+{"code": "AWSBHU030E", "pt": "Para usar este recurso específico é necessário ter o componente DCM Pak instalado e licenciado."}
+{"code": "AWSBHU031E", "pt": "O número de minutos informado deve ser um valor inteiro dentro do intervalo de 0 a 59."}
+{"code": "AWSBHU032E", "pt": "O comando de reexecução emitido não identifica de forma única qual estação de trabalho deve ser utilizada."}
+{"code": "AWSBHU033E", "pt": "Foram informadas mais ocorrências de uma opção de dependência do que o comando emitido permite."}
+{"code": "AWSBHU034E", "pt": "Falta informar um argumento de seleção obrigatório, como o nome de um job ou de um job stream."}
+{"code": "AWSBHU035E", "pt": "Foi usado um comando com palavra-chave de dependência, mas o valor associado a ela não é aceitável."}
+{"code": "AWSBHU037E", "pt": "O Conman foi encerrado devido a um erro interno de ação não válida de tratamento de exceções."}
+{"code": "AWSBHU038E", "pt": "O Conman não consegue processar o comando porque a linha de comando ultrapassou o tamanho máximo de caracteres."}
+{"code": "AWSBHU039E", "pt": "O comando contém uma palavra-chave de argumento incorreta, divergindo das palavras-chave aceitas para este comando."}
+{"code": "AWSBHU040E", "pt": "O comando contém um delimitador incorreto, distinto dos delimitadores aceitos pela sintaxe do sistema."}
+{"code": "AWSBHU044E", "pt": "A dependência de arquivo informada precisa de um caminho absoluto completo, mas foi fornecida de forma relativa."}
+{"code": "AWSBHU045E", "pt": "O comando emitido recebeu argumentos, porém este comando específico não aceita nenhum argumento."}
+{"code": "AWSBHU047E", "pt": "O comando foi emitido sem o seletor obrigatório que identifica o objeto sobre o qual ele atua."}
+{"code": "AWSBHU048E", "pt": "O comando foi emitido com um seletor ambíguo, que não identifica unicamente o objeto desejado."}
+{"code": "AWSBHU049E", "pt": "Foi usado um seletor que não é reconhecido como uma palavra-chave de seleção válida para o comando."}
+{"code": "AWSBHU050E", "pt": "A palavra-chave de seletor informada não é aceita por este comando específico emitido."}
+{"code": "AWSBHU051E", "pt": "O seletor foi informado corretamente, porém não foi identificado o objeto ao qual o comando se refere."}
+{"code": "AWSBHU052E", "pt": "O estado informado no qualificador do job não é apropriado para o objeto identificado no comando."}
+{"code": "AWSBHU053E", "pt": "O caminho informado para o arquivo precisa ser absoluto e completo, mas foi fornecido de forma não qualificada."}
+{"code": "AWSBHU054E", "pt": "Foi usado um argumento em um comando de exibição sem o argumento de dependências associado, invalidando a operação."}
+{"code": "AWSBHU055E", "pt": "O comando de limite foi usado sem informar o valor do limite ou foi fornecido com sintaxe incorreta."}
+{"code": "AWSBHU056E", "pt": "O comando fence foi usado sem informar o novo nível de prioridade ou com sintaxe incorreta."}
+{"code": "AWSBHU057I", "pt": "O arquivo Symphony atual está desatualizado, então o sistema está automatizando a troca para a nova versão."}
+{"code": "AWSBHU058E", "pt": "O comando não pode ser executado nessa estação pois ela atua como agente estendido, que não suporta essa operação."}
+{"code": "AWSBHU059E", "pt": "O nome do arquivo informado possui um nome base maior que o tamanho máximo aceito pelo sistema."}
+{"code": "AWSBHU060E", "pt": "O comando tentou modificar ou excluir o job stream externo, operação que não é permitida pelo sistema."}
+{"code": "AWSBHU061E", "pt": "O gerenciador de domínio desta estação de trabalho não foi localizado dentro do arquivo Symphony."}
+{"code": "AWSBHU062W", "pt": "A opção de gerenciador só é válida na estação local, portanto ela foi ignorada nesta situação."}
+{"code": "AWSBHU063E", "pt": "O gerenciador de domínio não pertence ao mesmo domínio da estação que deve se tornar o novo gerenciador."}
+{"code": "AWSBHU064E", "pt": "O gerenciador de domínio indicado não é um agente tolerante a falhas, requisito necessário para a função."}
+{"code": "AWSBHU065E", "pt": "A estação indicada como novo gerenciador de domínio não está com status completo exigido."}
+{"code": "AWSBHU066E", "pt": "O domínio informado no comando de troca de gerenciador não existe dentro do arquivo Symphony."}
+{"code": "AWSBHU067E", "pt": "O comando de troca de gerenciador foi emitido sem especificar a estação que deve assumir o papel."}
+{"code": "AWSBHU068E", "pt": "A estação informada no comando de troca de gerenciador não foi encontrada dentro do arquivo Symphony."}
+{"code": "AWSBHU069E", "pt": "O comando de troca de gerenciador foi emitido com mais parâmetros do que ele aceita."}
+{"code": "AWSBHU070E", "pt": "O nome do domínio informado não pôde ser localizado dentro do arquivo Symphony."}
+{"code": "AWSBHU071E", "pt": "Ocorreu um erro ao tentar acessar o arquivo indicado, e o sistema retornou detalhes sobre a falha."}
+{"code": "AWSBHU072E", "pt": "A seleção informada não corresponde a nenhum objeto existente dentro do sistema."}
+{"code": "AWSBHU073E", "pt": "O banco de dados mozart não existe ou não pode ser aberto, com detalhes adicionais sobre o erro retornados."}
+{"code": "AWSBHU075E", "pt": "Foi usado um comando do Conman incorreto, que não é reconhecido ou aceito pelo sistema."}
+{"code": "AWSBHU076E", "pt": "O Conman não consegue processar o comando emitido devido a um erro ocorrido durante a execução."}
+{"code": "AWSBHU077E", "pt": "O comando de exibição emitido não informa quais objetos devem ser mostrados pelo sistema."}
+{"code": "AWSBHU079E", "pt": "Ocorreu um erro interno pois o componente precisa de mais espaço de trabalho do que está disponível."}
+{"code": "AWSBHU080E", "pt": "Ocorreu um erro interno com uma palavra-chave incorreta no arquivo de código-fonte indicado na memória."}
+{"code": "AWSBHU082E", "pt": "A modificação solicitada não é autorizada para este usuário, portanto não foi executada."}
+{"code": "AWSBHU083E", "pt": "O comando emitido não pode ser aplicado ao job stream de jobs de usuário do sistema."}
+{"code": "AWSBHU084E", "pt": "O comando emitido não pode ser aplicado ao job stream que contém os jobs em execução."}
+{"code": "AWSBHU085E", "pt": "O job ou job stream não está no estado correto para permitir a aplicação do comando emitido."}
+{"code": "AWSBHU086E", "pt": "Este comando somente pode ser executado a partir da estação mestre, e não na estação atual."}
+{"code": "AWSBHU087E", "pt": "O job stream selecionado já foi cancelado anteriormente e não aceita nova operação de cancelamento."}
+{"code": "AWSBHU088E", "pt": "Não é permitido reexecutar jobs de usuário por meio deste tipo de operação."}
+{"code": "AWSBHU089E", "pt": "Este parâmetro só é válido quando usado em conjunto com o parâmetro de origem do comando de reexecução."}
+{"code": "AWSBHU090E", "pt": "O job indicado pelo parâmetro de origem não existe dentro do banco de dados do sistema."}
+{"code": "AWSBHU091E", "pt": "O apelido ou o nome do passo informado para o job ou job stream não é reconhecido como válido."}
+{"code": "AWSBHU092E", "pt": "Este job ou job stream possui dependências em quantidade superior ao limite permitido pelo sistema."}
+{"code": "AWSBHU093E", "pt": "O comando de reexecução não informou o nome do passo a ser usado após o parâmetro de passo."}
+{"code": "AWSBHU094E", "pt": "Foi encontrada uma palavra-chave de dependência desconhecida pelo sistema, localizada no arquivo-fonte indicado na mensagem."}
+{"code": "AWSBHU095E", "pt": "A dependência de job ou job stream indicada não foi encontrada dentro do arquivo Symphony."}
+{"code": "AWSBHU096E", "pt": "Foi informado um intervalo de valores para um qualificador que não aceita faixas de valores."}
+{"code": "AWSBHU097E", "pt": "Falta informar o valor obrigatório para um qualificador do comando que exige tal valor."}
+{"code": "AWSBHU099E", "pt": "O caminho informado ultrapassou o tamanho máximo permitido pelo sistema para nomes de caminho."}
+{"code": "AWSBHU112E", "pt": "A especificação do job informada está em formato incorreto, aceitando apenas estação e job ou apenas o job."}
+{"code": "AWSBHU113I", "pt": "O sistema está aguardando a chegada de um novo arquivo Symphony para prosseguir com as operações."}
+{"code": "AWSBHU114E", "pt": "O comando de troca de gerenciador não identificou o domínio, o novo gerenciador ou ambos."}
+{"code": "AWSBHU116E", "pt": "O usuário que emitiu o comando não possui direitos de início sobre o novo gerenciador de domínio indicado."}
+{"code": "AWSBHU117E", "pt": "A troca de gerenciador não pode ser concluída pois a estação proposta não pertence ao domínio informado."}
+{"code": "AWSBHU118W", "pt": "A estação indicada já exerce atualmente o papel de gerenciador do domínio informado."}
+{"code": "AWSBHU119E", "pt": "O uso de caracteres curinga não é permitido no parâmetro de nome de domínio do comando de troca."}
+{"code": "AWSBHU120I", "pt": "A troca de gerenciador transferiu com sucesso o papel de gerenciador de domínio de uma estação para outra."}
+{"code": "AWSBHU121E", "pt": "O Conman não conseguiu identificar o domínio pai da estação de trabalho indicada na operação."}
+{"code": "AWSBHU122E", "pt": "O comando inclui opções mutuamente exclusivas, que não podem ser usadas juntas em uma mesma emissão."}
+{"code": "AWSBHU123E", "pt": "A opção indicada somente pode ser utilizada quando um número de job é informado no comando."}
+{"code": "AWSBHU126E", "pt": "Foi especificado um fuso horário na dependência de tempo, mas o uso de fuso não está habilitado na estação."}
+{"code": "AWSBHU127W", "pt": "Um job foi enviado ao batchman, porém a estação referenciada não está presente no arquivo Symphony."}
+{"code": "AWSBHU128W", "pt": "A dependência indicada pode não estar presente dentro do arquivo Symphony, o que requer verificação."}
+{"code": "AWSBHU129E", "pt": "O comando de submissão repete a palavra-chave de não verificação após a de dependência, o que não é permitido."}
+{"code": "AWSBHU130E", "pt": "O comando não pode ser usado pois a opção de segurança centralizada, habilitada neste domínio, o proíbe."}
+{"code": "AWSBHU132E", "pt": "O comando de exibição de jobs exige a palavra-chave de chaves para retornar as informações solicitadas."}
+{"code": "AWSBHU133E", "pt": "A expressão de condição de código de retorno informada ultrapassou o tamanho máximo em bytes permitido."}
+{"code": "AWSBHU134E", "pt": "O caminho do script e a expressão de condição juntos ultrapassaram o limite máximo de bytes permitido."}
+{"code": "AWSBHU135E", "pt": "A expressão de condição de código de retorno foi fornecida com aspas ausentes ou desbalanceadas."}
+{"code": "AWSBHU136E", "pt": "O Conman não conseguiu validar a expressão de condição de código de retorno informada."}
+{"code": "AWSBHU137W", "pt": "O usuário atual não possui autorização para exibir os objetos que foram selecionados."}
+{"code": "AWSBHU138E", "pt": "O comando de submissão repete a palavra-chave de espera após a de dependência, o que não é permitido."}
+{"code": "AWSBHU139E", "pt": "O comando de submissão inclui a palavra-chave de espera, porém não foi informado o valor numérico associado."}
+{"code": "AWSBHU140E", "pt": "O valor de espera em segundos informado está fora do intervalo permitido entre zero e mil e duzentos."}
+{"code": "AWSBHU141E", "pt": "Foi informado um valor de tempo não numérico ou incorreto no comando de submissão, fora da faixa válida."}
+{"code": "AWSBHU142E", "pt": "A data informada no comando de submissão é inválida ou não está no formato aceito pelo sistema."}
+{"code": "AWSBHU143E", "pt": "A ação associada ao atributo de vigência está incorreta, devendo ser supressão, continuação ou cancelamento."}
+{"code": "AWSBHU144E", "pt": "Houve erro de sintaxe pois o horário de agendamento é inválido ou está fora do formato esperado."}
+{"code": "AWSBHU145E", "pt": "Houve erro de sintaxe pois o identificador do job stream só pode conter caracteres alfanuméricos."}
+{"code": "AWSBHU146E", "pt": "Houve erro de sintaxe pois o identificador do job stream deve ter entre um e dezesseis bytes de comprimento."}
+{"code": "AWSBHU147E", "pt": "As palavras-chave informadas são mutuamente exclusivas e não podem ser fornecidas juntas no comando."}
+{"code": "AWSBHU148E", "pt": "A palavra-chave não pode ser usada pois o Symphony veio de uma versão anterior do produto."}
+{"code": "AWSBHU149E", "pt": "A dependência de job ou job stream com o horário de agendamento especificado não foi localizada no Symphony."}
+{"code": "AWSBHU151E", "pt": "A data informada é inválida ou não está no formato correto aceito pelo comando."}
+{"code": "AWSBHU153E", "pt": "A palavra-chave indicada somente pode ser fornecida quando a outra palavra-chave também é especificada."}
+{"code": "AWSBHU154E", "pt": "O argumento de não verificação ou de identificação foi fornecido sem o identificador obrigatório do job stream."}
+{"code": "AWSBHU155E", "pt": "Foi enviado um comando para ser agendado como job, porém a própria instrução a ser executada não foi incluída."}
+{"code": "AWSBHU156E", "pt": "A estação de trabalho especificada já desempenha atualmente o papel de processador de eventos."}
+{"code": "AWSBHU157E", "pt": "O comando que você enviou contém pelo menos uma palavra-chave de argumento incorreta, então a operação não pôde ser interpretada e foi recusada."}
+{"code": "AWSBHU159E", "pt": "O comando não pode ser executado nessa estação pois ela atua como broker agent, que não suporta essa operação."}
+{"code": "AWSBHU160E", "pt": "A operação solicitada para esta estação de trabalho não pôde ser executada e falhou por causa do erro detalhado informado na mensagem."}
+{"code": "AWSBHU162E", "pt": "O arquivo não pode ser movido nesta estação de trabalho porque está sendo usado por outro processo, então a transferência foi bloqueada."}
+{"code": "AWSBHU163E", "pt": "Houve uma falha ao tentar iniciar o script de movimentação dos arquivos de destino na estação, então a operação não pôde ser concluída."}
+{"code": "AWSBHU164E", "pt": "O script responsável por mover os arquivos de destino não está presente na estação de trabalho, portanto a operação não pôde ser executada."}
+{"code": "AWSBHU165I", "pt": "Todos os arquivos de destino desta estação de trabalho foram movidos com sucesso, indicando que a transferência foi concluída sem problemas."}
+{"code": "AWSBHU166E", "pt": "Um arquivo do diretório de caixa de arquivos não pôde ser removido porque está sendo utilizado por outro processo na estação de trabalho."}
+{"code": "AWSBHU168E", "pt": "O agente nesta estação não pôde ser resetado porque ainda está ativo e em uso, então a reinicialização foi bloqueada."}
+{"code": "AWSBHU169E", "pt": "O valor informado para o número de horas está fora do intervalo permitido, que vai de zero a quinhentas horas inteiras."}
+{"code": "AWSBHU170E", "pt": "A ação definida para quando o tempo máximo de duração for excedido não é válida, sendo aceitos apenas os valores de encerramento ou continuação."}
+{"code": "AWSBHU173E", "pt": "O comando não conseguiu iniciar um novo processo provavelmente porque a licença do sistema de automação de workload expirou e bloqueou a operação."}
+{"code": "AWSBHU174E", "pt": "A operação não pôde ser executada nesta estação porque ela atua como mecanismo remoto ou broker, onde esse tipo de comando não é aceito."}
+{"code": "AWSBHU175E", "pt": "O fluxo de trabalhos selecionado já estava suprimido, então o comando de supressão não teve efeito por ser redundante."}
+{"code": "AWSBHU181E", "pt": "A expressão de dependência condicional informada não pôde ser validada pelo conman, portanto o comando foi rejeitado por ser inválida."}
+{"code": "AWSBHU182E", "pt": "A expressão da condição de saída informada não pôde ser validada pelo conman, então ela foi considerada inválida e rejeitada."}
+{"code": "AWSBHU183E", "pt": "A dependência condicional referenciada não foi encontrada no arquivo Symphony, indicando que ela não existe no plano de carga."}
+{"code": "AWSBHU184W", "pt": "O valor da variável ultrapassou o limite máximo de bytes permitido, então foi truncado para se ajustar ao tamanho aceito."}
+{"code": "AWSBHU185E", "pt": "O valor informado de login ou de logon de fluxo está vazio ou inválido, portanto não pôde ser usado para a autenticação."}
+{"code": "AWSBHU186E", "pt": "A palavra-chave de comando ou script em uso é incompatível com o tipo de trabalho, pois só pode ser utilizada em trabalhos nativos."}
+{"code": "AWSBHU187E", "pt": "O nome de logon informado excede o tamanho máximo permitido, portanto o valor precisa ser reduzido para ser aceito."}
+{"code": "AWSBHU188E", "pt": "O nome do comando ou do script está vazio ou é inválido, então não foi possível identificá-lo e executar a operação."}
+{"code": "AWSBHU189E", "pt": "Você tentou editar um trabalho dentro de um fluxo de trabalhos externo, o que não é permitido por esse comando e foi recusado."}
+{"code": "AWSBHU190W", "pt": "O comando de inicialização não pôde ser executado porque há uma troca de plano em andamento, então aguarde a conclusão para tentar novamente."}
+{"code": "AWSBHU410E", "pt": "Faltou especificar o parâmetro de nome da estação de trabalho para este comando, então a operação não pôde ser executada."}
+{"code": "AWSBHU411E", "pt": "Não são permitidos caracteres curinga no parâmetro de nome da estação de trabalho deste comando, então ele foi rejeitado."}
+{"code": "AWSBHU412E", "pt": "Foram informados parâmetros em excesso para este comando, excedendo a quantidade aceita e invalidando a execução."}
+{"code": "AWSBHU450I", "pt": "O monitoramento já estava ativo para este elemento, indicando que a solicitação de ativação era desnecessária pois já estava em andamento."}
+{"code": "AWSBHU451I", "pt": "O monitoramento já estava interrompido para este elemento, então a solicitação de parada era redundante pois ainda não estava ativo."}
+{"code": "AWSBHU470I", "pt": "Um comando específico foi enviado para a estação de trabalho indicada, registrando a operação que está sendo executada."}
+{"code": "AWSBHU472I", "pt": "O comando de alternar processador de eventos mudou o processador da estação indicada para a outra estação informada na operação."}
+{"code": "AWSBHU473I", "pt": "O comando de alternar processador de eventos passou a usar a estação indicada como novo processador de eventos do ambiente."}
+{"code": "AWSBHU503E", "pt": "O comando contém palavras-chave supérfluas além do ponto em que deixam de ser exigidas, então ele foi marcado como inválido."}
+{"code": "AWSBHU504E", "pt": "Você informou uma dependência relacionada a tempo, mas omitiu a palavra-chave que define o dia, tornando a expressão incompleta."}
+{"code": "AWSBHU507I", "pt": "Um comando de inicialização foi emitido para o elemento indicado, confirmando a requisição de partida da operação."}
+{"code": "AWSBHU508E", "pt": "Você não tem permissão de acesso a este arquivo ou objeto de banco de dados, então a operação foi bloqueada por falta de privilégio."}
+{"code": "AWSBHU509E", "pt": "O arquivo solicitado não foi encontrado no sistema, indicando que ele não existe ou está em outro local do esperado."}
+{"code": "AWSBHU510E", "pt": "Já existe um trabalho com o mesmo identificador; utilize o comando de reexecução ou informe um apelido distinto ao submeter."}
+{"code": "AWSBHU511E", "pt": "Você não possui acesso ao trabalho de recuperação referenciado, então não é possível utilizá-lo nessa operação."}
+{"code": "AWSBHU513E", "pt": "Já existe um fluxo de trabalhos com o mesmo nome; informe um apelido diferente no comando de submissão para evitar o conflito."}
+{"code": "AWSBHU516E", "pt": "Você não informou um apelido válido para o trabalho que tentou ressubmeter, então a operação não pôde ser concluída."}
+{"code": "AWSBHU517E", "pt": "As informações solicitadas não puderam ser exibidas, indicando uma falha durante a geração ou apresentação dos dados."}
+{"code": "AWSBHU518E", "pt": "Não é possível adicionar dependências a trabalhos no estado de adição nem a trabalhos dentro de um fluxo já em ordem."}
+{"code": "AWSBHU520W", "pt": "Uma dependência não foi localizada no banco de dados e foi simplesmente ignorada, pois não corresponde a nenhum registro conhecido."}
+{"code": "AWSBHU521W", "pt": "Uma dependência não foi encontrada no arquivo Symphony e foi ignorada, já que não existe nenhuma entrada correspondente no plano."}
+{"code": "AWSBHU522E", "pt": "O nome do trabalho informado não existe no banco de dados, então não foi possível localizar o registro solicitado."}
+{"code": "AWSBHU523E", "pt": "Você executou o comando de vincular ou desvincular em uma estação autônoma onde o agente de correio não está em execução."}
+{"code": "AWSBHU524E", "pt": "O comando enviado termina incorretamente com um delimitador, o que impede a interpretação correta da sintaxe."}
+{"code": "AWSBHU526E", "pt": "Ocorreu um erro interno ao tentar exibir um arquivo JCL, impedindo que o conteúdo fosse apresentado ao usuário."}
+{"code": "AWSBHU527E", "pt": "Ocorreu um erro de descritor de arquivo ou falta de espaço em disco ao tentar abrir um arquivo JCL para exibição."}
+{"code": "AWSBHU528E", "pt": "Ocorreu um erro de descritor de arquivo ou problema de espaço em disco enquanto um arquivo JCL era exibido."}
+{"code": "AWSBHU529E", "pt": "Ocorreu uma falha durante a exibição de um arquivo JCL, conforme detalhado na mensagem de erro encaminhada."}
+{"code": "AWSBHU530E", "pt": "Ocorreu uma falha ao gravar um arquivo de trabalho durante a exibição de um arquivo JCL, conforme o erro informado."}
+{"code": "AWSBHU531E", "pt": "O conman não conseguiu acessar o banco de dados interno ou localizar um parâmetro necessário dentro dele, interrompendo a operação."}
+{"code": "AWSBHU532E", "pt": "Você informou parâmetros demais ou a expansão deles estourou o buffer interno, então o comando foi rejeitado."}
+{"code": "AWSBHU533E", "pt": "O conman detectou um problema genérico de sintaxe no comando enviado, mas não conseguiu identificar a causa exata da falha."}
+{"code": "AWSBHU534E", "pt": "A estação selecionada para este trabalho é na verdade uma classe de estação, não uma estação real, então a atribuição é inválida."}
+{"code": "AWSBHU535E", "pt": "A estação de trabalho informada não consta no arquivo Symphony, indicando que ela não pertence ao plano de carga atual."}
+{"code": "AWSBHU536E", "pt": "O domínio informado está vazio, ou seja, não possui nenhuma estação de trabalho associada e por isso é inválido."}
+{"code": "AWSBHU537E", "pt": "Você tentou vincular ou desvincular duas estações do mesmo domínio sem que nenhuma delas seja o gerenciador do domínio, o que não é permitido."}
+{"code": "AWSBHU538W", "pt": "O domínio da estação que está sendo vinculada ou desvinculada não é subordinado ao domínio da estação local, então a operação foi sinalizada."}
+{"code": "AWSBHU539E", "pt": "Ocorreu um erro interno ao vincular ou desvincular a estação indicada, o que impediu a conclusão da operação."}
+{"code": "AWSBHU540E", "pt": "O conman não encontrou nenhum domínio definido no arquivo Symphony, indicando que a estrutura de domínios está ausente."}
+{"code": "AWSBHU541E", "pt": "Você tentou iniciar uma estação que não é subordinada à estação local, então a operação foi recusada por relação hierárquica inválida."}
+{"code": "AWSBHU542E", "pt": "O conman verificou que as versões do arquivo Symphony e do banco de dados não coincidem, sinalizando um descasamento do ambiente."}
+{"code": "AWSBHU543E", "pt": "Você informou a palavra-chave de qualificador interativo no comando de submissão de trabalhos, que não é aceita nesse contexto."}
+{"code": "AWSBHU544E", "pt": "O caminho informado excede o tamanho máximo permitido para esta operação, então ele precisa ser encurtado."}
+{"code": "AWSBHU545E", "pt": "O caminho informado não corresponde ao tipo de estação utilizada, indicando que ele não é compatível com a configuração."}
+{"code": "AWSBHU546E", "pt": "Você usou a palavra-chave de fuso horário, mas não informou o nome do fuso, deixando o parâmetro incompleto."}
+{"code": "AWSBHU547E", "pt": "O nome do fuso horário informado ultrapassa o limite de quarenta bytes aceito pela configuração."}
+{"code": "AWSBHU548E", "pt": "O nome do fuso horário informado não corresponde a um valor válido conhecido, então ele foi rejeitado."}
+{"code": "AWSBHU549W", "pt": "Há um erro lógico nas dependências de tempo: o instante limite ocorre antes do horário inicial, tornando a regra inconsistente."}
+{"code": "AWSBHU550W", "pt": "As dependências relacionadas a tempo formam um ciclo, ou seja, uma condição circular que não pode ser resolvida."}
+{"code": "AWSBHU551E", "pt": "Você está tentando adicionar a mesma dependência duas vezes, o que é inválido e duplicaria a regra existente."}
+{"code": "AWSBHU552I", "pt": "Foi emitido um comando de inicialização para o componente interno do agente, confirmando a solicitação de partida."}
+{"code": "AWSBHU553E", "pt": "Ocorreu uma falha ao iniciar um componente interno do sistema, impedindo que ele entrasse em funcionamento corretamente."}
+{"code": "AWSBHU554I", "pt": "Foi emitido um comando de parada para o componente interno do agente, solicitando o encerramento da operação."}
+{"code": "AWSBHU555I", "pt": "Foi emitido um comando de descoberta em massa para o componente interno do agente, registrando a operação solicitada."}
+{"code": "AWSBHU556E", "pt": "Ocorreu uma falha ao abrir o arquivo de mensagens da caixa de arquivos, conforme detalhado no erro encaminhado."}
+{"code": "AWSBHU557W", "pt": "Há erro lógico nas dependências de tempo: o prazo límite ocorre antes dos horários inicial ou final, tornando a regra inconsistente."}
+{"code": "AWSBHU558W", "pt": "A palavra-chave de término foi informada na sintaxe, mas o horário correspondente não foi preenchido, deixando a dependência incompleta."}
+{"code": "AWSBHU560E", "pt": "O comando de iniciar monitoramento não pôde ser executado porque o recurso de automação de workload orientada a eventos está desativado."}
+{"code": "AWSBHU600E", "pt": "Há um erro lógico nas dependências do tipo segue: elas formam um ciclo que torna a sequência de execução inválida."}
+{"code": "AWSBHU601E", "pt": "Não foi possível criar um semáforo do sistema, indicando uma falha de recursos conforme o número do erro informado."}
+{"code": "AWSBHU602E", "pt": "O sistema não conseguiu criar uma nova thread de execução, indicando falha de recursos conforme o número do erro indicado."}
+{"code": "AWSBHU603E", "pt": "O sistema não conseguiu liberar uma thread de execução, indicando um problema de gerenciamento conforme o número do erro."}
+{"code": "AWSBHU604E", "pt": "A espera pelo semáforo falhou, indicando um problema de sincronização conforme o número do erro informado na mensagem."}
+{"code": "AWSBHU605E", "pt": "Houve um estouro de tempo no conman e o arquivo Symphony foi encerrado, indicando que a operação não respondeu a tempo."}
+{"code": "AWSBHU606E", "pt": "Ocorreu uma falha ao salvar o arquivo de opções do usuário, impedindo que a configuração fosse armazenada corretamente."}
+{"code": "AWSBHU607E", "pt": "O valor informado para o parâmetro de protocolo da conexão é inválido, pois deve ser apenas o protocolo seguro ou não seguro de HTTP."}
+{"code": "AWSBHU610E", "pt": "As credenciais de acesso para conectar ao servidor remoto não foram informadas, então a conexão não pôde ser estabelecida."}
+{"code": "AWSBHU611W", "pt": "O conman não conseguiu inicializar a conexão de rede segura ou não segura, o que impediu a comunicação com o destino."}
+{"code": "AWSBHU612E", "pt": "O valor informado para o parâmetro de porta da conexão não é numérico, tornando inválido o parâmetro de comunicação."}
+{"code": "AWSBHU613E", "pt": "Não há unidades suficientes do recurso solicitado para atender ao trabalho; a disponibilidade atual é menor do que a necessidade informada."}
+{"code": "AWSBHU615E", "pt": "O trabalho submetido referencia um trabalho de recuperação que não foi encontrado no banco de dados, então a recuperação é inválida."}
+{"code": "AWSBHU616E", "pt": "Mais de um fluxo de trabalhos corresponde à sua seleção; identifique o fluxo exato usando seu identificador ou horário de agenda."}
+{"code": "AWSBHU617I", "pt": "O comando de descoberta em massa foi encaminhado para o componente de agendamento, confirmando a operação em andamento."}
+{"code": "AWSBHU618E", "pt": "A descoberta em massa não foi realizada porque nenhum arquivo de configuração foi encontrado para orientar a operação."}
+{"code": "AWSBHU619E", "pt": "Ocorreu uma falha ao obter o arquivo de configuração de monitoramento da estação indicada, conforme o erro relatado."}
+{"code": "AWSBHU620I", "pt": "Foi emitido um comando de inicialização para o servidor de aplicações da estação indicada, confirmando a solicitação de partida."}
+{"code": "AWSBHU622I", "pt": "Foi emitido um comando de parada para o servidor de aplicações da estação indicada, solicitando seu encerramento."}
+{"code": "AWSBHU624W", "pt": "O servidor de aplicações, o gerenciador relacionado ou ambos já estão parados nesta estação, tornando o comando redundante."}
+{"code": "AWSBHU625W", "pt": "A opção de aguardar não é suportada para estações remotas, então ela foi ignorada na execução do comando."}
+{"code": "AWSBHU626W", "pt": "O servidor de aplicações não está instalado na estação local, então a operação não pôde ser realizada."}
+{"code": "AWSBHU627I", "pt": "Foi emitido um comando de inicialização para a aplicação do broker de workload dinâmico da estação indicada."}
+{"code": "AWSBHU629I", "pt": "Foi emitido um comando de parada para a aplicação do broker de workload dinâmico da estação indicada, encerrando a operação."}
+{"code": "AWSBHU630E", "pt": "A operação não pôde ser executada nesta estação porque ela é um agente tolerante a falhas, onde esse comando não é suportado."}
+{"code": "AWSBHU632E", "pt": "A operação solicitada para esta estação de trabalho não pôde ser executada porque esse comando não é suportado no local."}
+{"code": "AWSBHU633W", "pt": "A estação processadora de eventos está configurada como ignorada no plano de produção, então o processamento será afetado."}
+{"code": "AWSBHU634E", "pt": "O comando não pôde ser executado porque a estação processadora de eventos está marcada como ignorada no plano de produção."}
+{"code": "AWSBHU636E", "pt": "O recurso de garantia de serviço de workload não está habilitado no ambiente, então a operação não pode ser usada."}
+{"code": "AWSBHU638W", "pt": "A aplicação do broker de workload dinâmico já está parada nesta estação, tornando o comando de parada desnecessário."}
+{"code": "AWSBHU639W", "pt": "A aplicação do broker de workload dinâmico não está instalada na estação local, então a operação não pôde ser realizada."}
+{"code": "AWSBHU640E", "pt": "O comando submetido não pôde ser executado por causa de um erro específico detalhado na mensagem de falha apresentada."}
+{"code": "AWSBHU700E", "pt": "Há um erro de sintaxe no comando: falta um nome de trabalho, de arquivo ou uma palavra-chave obrigatória na instrução enviada."}
+{"code": "AWSBHU701E", "pt": "Há um erro de sintaxe no comando, que parece conter caracteres extras, duplicados ou parênteses sem fechamento correspondente."}
+{"code": "AWSBHU702E", "pt": "Há um erro de sintaxe: o nome da estação de trabalho deve ter entre um e dezesseis bytes de comprimento."}
+{"code": "AWSBHU703E", "pt": "Há um erro de sintaxe: o nome da estação deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU704E", "pt": "Há um erro de sintaxe: o caractere delimitador usado para o nome da estação de trabalho deve ser o símbolo de cerquilha."}
+{"code": "AWSBHU705E", "pt": "Há um erro de sintaxe no nome da estação: o símbolo de cerquilha foi encontrado mais de uma vez na palavra informada."}
+{"code": "AWSBHU706E", "pt": "Há um erro de sintaxe: o nome do fluxo de trabalhos deve ter entre um e quarenta bytes de comprimento."}
+{"code": "AWSBHU707E", "pt": "Há um erro de sintaxe: o nome do fluxo deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU708E", "pt": "Há um erro de sintaxe: o caractere delimitador usado para o nome do agendamento deve ser o ponto final."}
+{"code": "AWSBHU709E", "pt": "Há um erro de sintaxe: o nome do trabalho deve ter entre um e quarenta bytes de comprimento."}
+{"code": "AWSBHU710E", "pt": "Há um erro de sintaxe: o nome do trabalho deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU711E", "pt": "Há um erro de sintaxe: o comando tem um trabalho como alvo, mas nenhum nome de trabalho foi informado na instrução."}
+{"code": "AWSBHU712E", "pt": "Há um erro de sintaxe: o nome do prompt deve ter entre um e oito bytes de comprimento."}
+{"code": "AWSBHU713E", "pt": "Há um erro de sintaxe: o nome do prompt deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU714E", "pt": "Não foram informados o nome do prompt nem o número da mensagem, então o comando ficou incompleto e foi rejeitado."}
+{"code": "AWSBHU715E", "pt": "Há um erro de sintaxe: o nome do recurso deve ter entre um e oito bytes e o da estação entre um e dezesseis bytes."}
+{"code": "AWSBHU716E", "pt": "Há um erro de sintaxe: o nome do recurso deve começar por letra e conter apenas caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU717I", "pt": "Há um erro de sintaxe no comando, porque o valor informado para a prioridade não é válido; aceita apenas HI, GO ou um número entre 0 e 99."}
+{"code": "AWSBHU718I", "pt": "A prioridade fornecida está errada, pois deve ser um valor numérico de 0 a 99, ou ainda as palavras hi ou go que equivalem a cem e cento e um."}
+{"code": "AWSBHU719E", "pt": "Você tentou usar uma prioridade acima de 99, o que é inválido; em vez disso deve usar hi, que vale cem, ou go, que vale cento e um."}
+{"code": "AWSBHU720E", "pt": "O comprimento do domínio informado para o usuário está incorreto, provavelmente fora do tamanho esperado pelo sistema."}
+{"code": "AWSBHU721E", "pt": "O nome de usuário fornecido excede o limite de 47 bytes permitido; se tiver caracteres especiais, ele deve vir entre aspas duplas."}
+{"code": "AWSBHU722E", "pt": "O mesmo nome de usuário foi informado mais de uma vez, o que não é permitido nessa operação."}
+{"code": "AWSBHU724E", "pt": "O identificador de rede deve ter um tamanho entre 1 e 16 bytes, mas o valor informado não está dentro desse intervalo."}
+{"code": "AWSBHU726E", "pt": "Houve erro de sintaxe ao declarar uma dependência de rede, porque o identificador da rede não foi especificado na definição."}
+{"code": "AWSBHU729E", "pt": "O nome de domínio informado tem tamanho inválido, pois deve ter entre 1 e 16 bytes de comprimento."}
+{"code": "AWSBHU730E", "pt": "A sintaxe do comando está errada, pois logo após o nome do domínio deve vir obrigatoriamente o nome da estação de trabalho."}
+{"code": "AWSBHU731E", "pt": "O nome de domínio é inválido, porque deve começar com letra e conter apenas caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU732E", "pt": "O separador usado no nome de domínio é o ponto de exclamação, conforme esperado pela sintaxe do comando."}
+{"code": "AWSBHU733E", "pt": "Há um erro de sintaxe no nome de domínio porque o caractere delimitador de exclamação foi digitado mais de uma vez."}
+{"code": "AWSBHU734E", "pt": "O apelido do job informado é inválido, pois deve ter um comprimento entre 1 e 40 bytes."}
+{"code": "AWSBHU735E", "pt": "O apelido do fluxo de jobs fornecido está incorreto, pois precisa ter entre 1 e 16 bytes de tamanho."}
+{"code": "AWSBHU736E", "pt": "O apelido informado tem sintaxe inválida, pois deve iniciar com letra e conter somente caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU737E", "pt": "O Conman falhou com um erro do sistema ao tentar obter o modo de entrada ou de saída atual do console."}
+{"code": "AWSBHU738E", "pt": "O Conman encontrou um erro do sistema ao tentar definir o modo de entrada ou o modo de saída do console."}
+{"code": "AWSBHU739E", "pt": "O usuário informado não consta no arquivo Symphony, por isso a operação não pode ser concluída."}
+{"code": "AWSBHU740E", "pt": "A nova senha digitada não confere com a senha de confirmação, por isso o procedimento foi recusado."}
+{"code": "AWSBHU741E", "pt": "O Conman não conseguiu abrir o arquivo de log de auditoria, o que impede o registro das operações."}
+{"code": "AWSBHU743E", "pt": "O nome fornecido tem erro de sintaxe, pois deve ter entre 1 e 16 bytes de comprimento."}
+{"code": "AWSBHU744E", "pt": "O nome do fluxo de jobs informado é inválido, pois deve ter entre 1 e 16 bytes de tamanho."}
+{"code": "AWSBHU745E", "pt": "O nome do job fornecido está incorreto, pois deve ter entre 1 e 40 bytes de comprimento."}
+{"code": "AWSBHU746E", "pt": "Houve erro na especificação da dependência de rede, porque o identificador da rede está ausente ou ultrapassa 16 bytes."}
+{"code": "AWSBHU747E", "pt": "O apelido do job é inválido, pois deve ter entre 1 e 40 bytes; o valor fornecido está fora desse intervalo."}
+{"code": "AWSBHU748E", "pt": "O apelido do fluxo de jobs está errado, pois precisa ter entre 1 e 16 bytes de comprimento."}
+{"code": "AWSBHU749E", "pt": "O apelido deve começar com uma letra e conter apenas caracteres alfanuméricos, mas o valor informado não segue essa regra."}
+{"code": "AWSBHU750E", "pt": "O identificador de rede é inválido, pois deve começar com letra e conter somente caracteres alfanuméricos, traços e sublinhados."}
+{"code": "AWSBHU758E", "pt": "Não é possível executar o comando porque um ou mais jobs sucessores não podem ser executados novamente; verifique a coluna de mensagens."}
+{"code": "AWSBHU759E", "pt": "O nome da pasta é inválido, pois deve ter entre 1 e 800 bytes e pode conter apenas letras, números, traços, sublinhados e barras."}
+{"code": "AWSBHU760E", "pt": "O nome da pasta está incorreto, porque espaços não são permitidos antes ou depois do separador de caminho na sintaxe."}
+{"code": "AWSBHU761E", "pt": "O nome da pasta é inválido, pois caracteres curinga não são permitidos na definição do caminho informado."}
+{"code": "AWSBHU762E", "pt": "O nome da pasta está incorreto, pois o sistema não conseguiu processar o caminho informado na sintaxe."}
+{"code": "AWSBHU763E", "pt": "O token a ser processado deve ter entre 1 e 16384 bytes, mas o valor fornecido está fora desse limite de tamanho."}
+{"code": "AWSDAH002E", "pt": "A versão de demonstração do software HCL expirou e o programa não pode mais ser utilizado normalmente."}
+{"code": "AWSDAH003E", "pt": "O software não é compatível com esta unidade central de processamento e por isso não pode ser executado."}
+{"code": "AWSDAH007E", "pt": "O período de aluguel do software HCL expirou, bloqueando a utilização do produto até nova ativação."}
+{"code": "AWSDAH011E", "pt": "O programa solicitado não faz parte do produto instalado nesta máquina e não pode ser executado."}
+{"code": "AWSDAH012E", "pt": "O software não possui licença válida para esta unidade central de processamento específica."}
+{"code": "AWSDBY002E", "pt": "O comando RUN foi emitido com uma quantidade de parâmetros superior à permitida pelo sistema."}
+{"code": "AWSDCJ014E", "pt": "A facilidade de fluxo de erros não está habilitada, impedindo que os erros sejam direcionados corretamente."}
+{"code": "AWSDEG001E", "pt": "Ocorreu um erro de comunicação pois ainda não existe uma área de dados comum disponível para a operação."}
+{"code": "AWSDEG002E", "pt": "A área de dados comum informada não é válida para acesso tipo ISAM, impedindo a execução da operação."}
+{"code": "AWSDEG003W", "pt": "Foi emitido um aviso de que a operação ISAM não está implementada para o arquivo de acesso indicado."}
+{"code": "AWSFAB003E", "pt": "O script twsinst não pode ser executado no sistema operacional atual, pois essa plataforma não é suportada."}
+{"code": "AWSFAB004E", "pt": "Somente o usuário root pode executar o script twsinst; a operação foi recusada para o usuário atual."}
+{"code": "AWSFAB005E", "pt": "Nenhum parâmetro foi informado ao script twsinst, que exige pelo menos um argumento para funcionar."}
+{"code": "AWSFAB006I", "pt": "Execute o comando informado para visualizar a lista de parâmetros disponíveis para o script de instalação."}
+{"code": "AWSFAB007E", "pt": "O parâmetro de tipo de instalação está incorreto; deve ser um destes: novo, atualização, desinstalação, modificação ou restauração."}
+{"code": "AWSFAB008E", "pt": "Você informou mais de um parâmetro de tipo de instalação, mas deve especificar apenas um: novo, atualização, desinstalação, modificação ou restauração."}
+{"code": "AWSFAB010E", "pt": "Foi fornecido um valor incorreto para o parâmetro, que deve seguir exatamente o formato indicado na mensagem."}
+{"code": "AWSFAB011E", "pt": "O parâmetro informado foi especificado mais de uma vez na linha de comando, o que não é permitido."}
+{"code": "AWSFAB012E", "pt": "O parâmetro de instalação informado não é suportado para o tipo de instalação selecionado nesta operação."}
+{"code": "AWSFAB014E", "pt": "O parâmetro informado não é reconhecido como um parâmetro de instalação válido pelo script."}
+{"code": "AWSFAB015E", "pt": "A opção necessária não foi informada na linha de comando, então o script não pode prosseguir."}
+{"code": "AWSFAB017E", "pt": "O script não conseguiu localizar o diretório home do usuário especificado, impedindo a continuação do processo."}
+{"code": "AWSFAB019E", "pt": "O diretório de instalação de destino informado não existe, por isso o processo não pode continuar."}
+{"code": "AWSFAB020E", "pt": "Ao atualizar o HCL Workload Automation, o script não encontrou o arquivo de configuração da versão que está sendo atualizada."}
+{"code": "AWSFAB026E", "pt": "Os dois parâmetros informados são incompatíveis entre si e não podem ser usados juntos na mesma operação."}
+{"code": "AWSFAB027E", "pt": "A instalação não conseguiu obter o parâmetro informado a partir do arquivo de configuração do HCL Workload Automation."}
+{"code": "AWSFAB029W", "pt": "A porta especificada costuma ser usada por outros serviços como ftp ou telnet, mas mesmo assim será utilizada na instalação."}
+{"code": "AWSFAB030E", "pt": "O nome da empresa informado é longo demais, pois o limite máximo permitido é de 40 bytes."}
+{"code": "AWSFAB031E", "pt": "Não é possível promover um agente do tipo especificado para o outro, pois essa conversão não é permitida."}
+{"code": "AWSFAB033I", "pt": "A instalação do software foi concluída com sucesso e o produto está pronto para ser utilizado."}
+{"code": "AWSFAB034I", "pt": "O processo de desinstalação foi concluído com sucesso, sem a necessidade de nenhuma ação adicional."}
+{"code": "AWSFAB035E", "pt": "A instalação falhou; consulte o arquivo de log indicado para obter mais detalhes sobre a causa do erro."}
+{"code": "AWSFAB036W", "pt": "Alguns arquivos não puderam ser removidos e devem ser apagados manualmente; veja o log indicado para mais detalhes."}
+{"code": "AWSFAB037E", "pt": "O script twsinst está sendo executado a partir do diretório errado, o que invalida a operação."}
+{"code": "AWSFAB039E", "pt": "O script de instalação não conseguiu localizar o arquivo necessário para configurar o ambiente de instalação."}
+{"code": "AWSFAB040E", "pt": "O script foi executado do diretório errado; execute novamente a partir do diretório indicado na mensagem."}
+{"code": "AWSFAB043W", "pt": "Durante a instalação foi emitida pelo menos uma mensagem de aviso que deve ser verificada pelo operador."}
+{"code": "AWSFAB044W", "pt": "Durante a desinstalação foi emitida pelo menos uma mensagem de aviso que merece atenção do operador."}
+{"code": "AWSFAB045I", "pt": "Para obter mais detalhes sobre o processo, consulte o arquivo de log de instalação indicado na mensagem."}
+{"code": "AWSFAB046E", "pt": "Houve inconsistência de parâmetros, pois você não pode especificar o mesmo parâmetro duas vezes na linha de comando."}
+{"code": "AWSFAB048E", "pt": "O nome da empresa não pode conter espaços ou caracteres em branco no valor informado."}
+{"code": "AWSFAB049E", "pt": "O diretório de instalação não pode conter espaços ou caracteres em branco no caminho informado."}
+{"code": "AWSFAB050E", "pt": "O valor do parâmetro informado excede o limite de bytes permitido para aquele parâmetro específico."}
+{"code": "AWSFAB051I", "pt": "O script está verificando o sistema operacional da máquina para garantir compatibilidade com a instalação."}
+{"code": "AWSFAB053I", "pt": "O script está validando os parâmetros de entrada informados antes de prosseguir com a instalação."}
+{"code": "AWSFAB055E", "pt": "O parâmetro de tipo de instalação está incorreto; deve ser um destes: novo, desinstalação ou atualização."}
+{"code": "AWSFAB055I", "pt": "O script está buscando o diretório home do usuário TWSUser para preparar o ambiente."}
+{"code": "AWSFAB056I", "pt": "O script está verificando o diretório de instalação informado para confirmar se é válido e utilizável."}
+{"code": "AWSFAB057I", "pt": "O script pode ser executado novamente, pois ele tenta reprocessar a etapa falha e, se tiver sucesso, continua com as demais."}
+{"code": "AWSFAB058I", "pt": "O script está verificando se há arquivos de configuração ausentes que possam comprometer a instalação."}
+{"code": "AWSFAB059I", "pt": "O script está verificando o registro do HCL Workload Automation para localizar instalações existentes."}
+{"code": "AWSFAB060I", "pt": "O script está recuperando informações do sistema necessárias para prosseguir com a operação."}
+{"code": "AWSFAB061I", "pt": "O script está parando todos os serviços do HCL Workload Automation antes de prosseguir com a instalação."}
+{"code": "AWSFAB062I", "pt": "O script está criando uma cópia de segurança da instância, que está sendo salva no diretório indicado."}
+{"code": "AWSFAB063I", "pt": "O script está instalando o pacote do mecanismo, que é o componente principal do produto."}
+{"code": "AWSFAB064I", "pt": "O script está instalando o pacote de catálogo necessário para a operação do sistema."}
+{"code": "AWSFAB065I", "pt": "O script está copiando os arquivos de desinstalação para o destino correto no sistema."}
+{"code": "AWSFAB066I", "pt": "O script está configurando o HCL Workload Automation para aplicar os parâmetros definidos na instalação."}
+{"code": "AWSFAB067I", "pt": "O script está iniciando o HCL Workload Automation para ativar os serviços após a instalação."}
+{"code": "AWSFAB068I", "pt": "O script está finalizando o processo de instalação, concluindo as etapas de fechamento do procedimento."}
+{"code": "AWSFAB069I", "pt": "O script está criando uma cópia de segurança do pacote de idiomas instalado no sistema."}
+{"code": "AWSFAB070I", "pt": "O script está criando uma cópia de segurança do pacote do mecanismo instalado no sistema."}
+{"code": "AWSFAB092I", "pt": "Antes de instalar outra instância ou atualizar uma existente, é preciso interromper todos os processos do HCL Workload Automation."}
+{"code": "AWSFAB093I", "pt": "O script está buscando o diretório home do usuário TWSUser para configurar corretamente a instalação."}
+{"code": "AWSFAB095E", "pt": "Falta um parâmetro obrigatório; execute novamente o script de instalação adicionando o parâmetro indicado na mensagem."}
+{"code": "AWSFAB096I", "pt": "O script está extraindo o conteúdo do arquivo compactado maestro.tar.Z para o diretório apropriado."}
+{"code": "AWSFAB097I", "pt": "O script está criando os arquivos de histórico necessários para a instalação do tipo TIER2."}
+{"code": "AWSFAB098E", "pt": "Os valores informados para os parâmetros master e thiscpu não podem ser iguais entre si."}
+{"code": "AWSFAB100E", "pt": "O script não conseguiu copiar o arquivo maestro.tar.gz para o diretório home do HCL Workload Automation."}
+{"code": "AWSFAB101E", "pt": "O script não conseguiu copiar o arquivo maestro.tar.z para o diretório home do HCL Workload Automation."}
+{"code": "AWSFAB102E", "pt": "O script não conseguiu expandir o arquivo maestro.tar.gz dentro do diretório home do HCL Workload Automation."}
+{"code": "AWSFAB103E", "pt": "O script não conseguiu expandir o arquivo maestro.tar.z dentro do diretório home do HCL Workload Automation."}
+{"code": "AWSFAB104E", "pt": "O script falhou ao tentar descompactar o arquivo maestro.tar.gz no diretório home do HCL Workload Automation."}
+{"code": "AWSFAB105E", "pt": "O script falhou ao tentar descompactar o arquivo maestro.tar.z no diretório home do HCL Workload Automation."}
+{"code": "AWSFAB106E", "pt": "Foi informado um valor incorreto para o parâmetro thiscpu, que não atende à sintaxe esperada."}
+{"code": "AWSFAB107E", "pt": "Foi informado um valor incorreto para o parâmetro master, que não segue o formato esperado."}
+{"code": "AWSFAB108E", "pt": "A opção de restauração não é permitida no sistema operacional atual, conforme indicado na mensagem."}
+{"code": "AWSFAB112E", "pt": "Os números de porta informados nas duas opções devem ser diferentes; especifique valores distintos e tente novamente."}
+{"code": "AWSFAB117I", "pt": "O script está instalando o agente do HCL Workload Automation na máquina em questão."}
+{"code": "AWSFAB118I", "pt": "O script está instalando o agente CIT, que é um dos componentes opcionais do produto."}
+{"code": "AWSFAB119I", "pt": "O script está instalando a extensão Java necessária para o funcionamento do HCL Workload Automation."}
+{"code": "AWSFAB122E", "pt": "O número da porta DWB informado é igual ao da porta do netman; é necessário especificar um valor diferente."}
+{"code": "AWSFAB123E", "pt": "O número da porta TDWB informado é igual ao da porta do jmport; é necessário especificar um valor diferente."}
+{"code": "AWSFAB124E", "pt": "O valor informado para o parâmetro é inválido, pois os únicos valores aceitos são verdadeiro ou falso."}
+{"code": "AWSFAB125I", "pt": "O script está desinstalando o agente do HCL Workload Automation da máquina em questão."}
+{"code": "AWSFAB126I", "pt": "O script está desinstalando a extensão Java do HCL Workload Automation do sistema."}
+{"code": "AWSFAB127I", "pt": "O pacote CIT já está instalado, então esta etapa está sendo ignorada por não ser necessária."}
+{"code": "AWSFAB133E", "pt": "O parâmetro de senha está ausente ou foi informado um valor incorreto; o parâmetro deve seguir o formato indicado."}
+{"code": "AWSFAB134E", "pt": "Você especificou uma senha incorreta para o usuário informado, que não corresponde à senha válida da conta."}
+{"code": "AWSFAB135E", "pt": "A conta de usuário informada não existe no computador local, por isso a operação não pode prosseguir."}
+{"code": "AWSFAB136E", "pt": "Ocorreu um erro ao criar o usuário no computador local, o que impede que a instalação do twsinst continue."}
+{"code": "AWSFAB139I", "pt": "O script está instalando os registros do HCL Workload Automation necessários para o sistema."}
+{"code": "AWSFAB140I", "pt": "O script está desinstalando o registro do HCL Workload Automation do sistema operacional."}
+{"code": "AWSFAB141E", "pt": "Já existe uma instância do HCL Workload Automation instalada para outro usuário no diretório de instalação informado."}
+{"code": "AWSFAB142E", "pt": "O diretório informado está incorreto ou não é um caminho totalmente qualificado, por isso foi recusado."}
+{"code": "AWSFAB143W", "pt": "O usuário informado é um usuário de domínio; verifique se ele possui todas as permissões necessárias para instalar."}
+{"code": "AWSFAB145I", "pt": "O script está extraindo os parâmetros locais necessários para a operação em andamento."}
+{"code": "AWSFAB146I", "pt": "O script está restaurando os parâmetros locais que foram previamente salvos durante a operação."}
+{"code": "AWSFAB147I", "pt": "O script está movendo os arquivos do HCL Workload Automation para a localização adequada."}
+{"code": "AWSFAB149I", "pt": "O script está definindo a proteção de CPU do HCL Workload Automation para o valor GO."}
+{"code": "AWSFAB150I", "pt": "O script está restaurando a proteção de CPU do HCL Workload Automation para o valor original que tinha antes."}
+{"code": "AWSFAB151E", "pt": "O parâmetro informado deve ter um valor inteiro ou menos um, mas foi fornecido algo diferente."}
+{"code": "AWSFAB152I", "pt": "O script está verificando as linhas de comando do HCL Workload Automation para validar sua configuração."}
+{"code": "AWSFAB153I", "pt": "O script está verificando os processos do HCL Workload Automation para confirmar o estado do sistema."}
+{"code": "AWSFAB154E", "pt": "Os processos indicados ainda estão em execução; feche-os antes de executar a operação novamente."}
+{"code": "AWSFAB155E", "pt": "Os processos indicados ainda estão ativos; feche-os ou aguarde a conclusão deles antes de repetir a operação."}
