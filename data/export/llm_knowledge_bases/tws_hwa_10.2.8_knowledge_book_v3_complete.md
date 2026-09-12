@@ -124901,10 +124901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB287E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB288I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "TWSUser home directory retrieval" Em portugues: "twsuser home diretorio retrieval". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB288I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "TWSUser home directory retrieval" Em portugues: "twsuser home diretorio retrieval". Temas: diretorio. Em outras palavras: O sistema está consultando o diretório inicial do usuário do componente TWSUser para localizar sua configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB288I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto TWSUser home directory retrieval portugues twsuser diretorio Temas significa`
+> `AWSFAB288I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto TWSUser home directory retrieval portugues twsuser diretorio Temas outras palavras sistema consultando inicial localizar sua`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB288I no HCL Workload Automation 10.2.8?
@@ -124921,7 +124921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB288I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB289W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The Java extension is already installed for the user "!1" that you specified." Em portugues: "the java extension is already instalado for the usuario "!1" that you especificado.". Temas: usuario especificado instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB289W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The Java extension is already installed for the user "!1" that you specified." Em portugues: "the java extension is already instalado for the usuario "!1" that you especificado.". Temas: usuario especificado instalado. Em outras palavras: A extensão Java já está instalada para o usuário informado, portanto não é necessário instalá-la novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB289W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The Java extension already installed for the user that you specified portugues java instalado`
@@ -124941,7 +124941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB289W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB290E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are modifying a product version different from !1. The modify action can be applied only to a HCL Workload Automation, version !1 instance." Em portugues: "you are modifying a produto versao different from !1. the modify action can be applied only to a hcl workload automation, versao !1 instancia.". Temas: carga de trabalho produto versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB290E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You are modifying a product version different from !1. The modify action can be applied only to a HCL Workload Automation, version !1 instance." Em portugues: "you are modifying a produto versao different from !1. the modify action can be applied only to a hcl workload automation, versao !1 instancia.". Temas: carga de trabalho produto versao. Em outras palavras: Você está alterando uma versão do produto diferente da que o comando espera; a modificação só pode ser aplicada a uma instância da versão especificada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB290E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You are modifying product version different from The modify action can applied only instance portugues you`
@@ -125001,7 +125001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB295W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB296E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The operation -restore for the user !1 cannot be performed, because the instance you want to restore is not at version !2 or later." Em portugues: "the operacao -restore for the usuario !1 nao pode be performed, porque the instancia you want to restore is nao at versao !2 or later.". Temas: nao pode usuario operacao versao. Explicacao oficial: The -restore operation can be performed only if the instance is at version 9.1 or later.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB296E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The operation -restore for the user !1 cannot be performed, because the instance you want to restore is not at version !2 or later." Em portugues: "the operacao -restore for the usuario !1 nao pode be performed, porque the instancia you want to restore is nao at versao !2 or later.". Temas: nao pode usuario operacao versao. Em outras palavras: A operação de restauração não pode ser executada porque a instância a ser recuperada não está na versão mínima exigida.. Explicacao oficial: The -restore operation can be performed only if the instance is at version 9.1 or later.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB296E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The operation restore for the user cannot performed because instance you want not version later portugues`
@@ -125061,10 +125061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB302I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB303E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter !1 is invalid." Em portugues: "the parametro !1 is invalido.". Temas: invalido parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB303E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter !1 is invalid." Em portugues: "the parametro !1 is invalido.". Temas: invalido parametro. Em outras palavras: O valor informado para o parâmetro não é aceito pelo sistema e precisa ser corrigido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB303E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter invalid portugues the parametro invalido Temas significa diagnosticar`
+> `AWSFAB303E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter invalid portugues the parametro invalido Temas outras palavras valor informado aceito pelo sistema precisa corrigido`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB303E no HCL Workload Automation 10.2.8?
@@ -125081,7 +125081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB303E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB304E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot specify the -passwords parameter if you do not specify the -groups parameter." Em portugues: "you nao pode specify the -passwords parametro if you do nao specify the -groups parametro.". Temas: nao pode parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB304E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot specify the -passwords parameter if you do not specify the -groups parameter." Em portugues: "you nao pode specify the -passwords parametro if you do nao specify the -groups parametro.". Temas: nao pode parametro. Em outras palavras: O parâmetro de senhas só pode ser usado quando o parâmetro de grupos também é informado na mesma operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB304E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You cannot specify the passwords parameter you not groups portugues nao parametro`
@@ -125101,7 +125101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB304E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB305E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You specified an invalid path. The specified path !1 is not valid either because it does not exist or because it does not contain the file twsinst.vbs." Em portugues: "you especificado an invalido caminho. the especificado caminho !1 is nao valido either porque it does nao existe or porque it does nao contain the arquivo twsinst.vbs.". Temas: nao arquivo valido invalido especificado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB305E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You specified an invalid path. The specified path !1 is not valid either because it does not exist or because it does not contain the file twsinst.vbs." Em portugues: "you especificado an invalido caminho. the especificado caminho !1 is nao valido either porque it does nao existe or porque it does nao contain the arquivo twsinst.vbs.". Temas: nao arquivo valido invalido especificado. Em outras palavras: O caminho indicado é inválido, pois o diretório não existe ou não contém o arquivo de instalação twsinst.vbs esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB305E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You specified invalid path The not valid either because does exist contain the`
@@ -125121,7 +125121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB305E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB306E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you specify the !1 parameter, you must also specify the !2." Em portugues: "if you specify the !1 parametro, you must also specify the !2.". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB306E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you specify the !1 parameter, you must also specify the !2." Em portugues: "if you specify the !1 parametro, you must also specify the !2.". Temas: parametro. Em outras palavras: Quando um parâmetro é especificado, o segundo parâmetro também se torna obrigatório para a operação prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB306E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto you specify the parameter must also portugues parametro`
@@ -125141,7 +125141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB306E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB307E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot specify the !1 parameter, because this image is the General Availability version image." Em portugues: "you nao pode specify the !1 parametro, porque this image is the general availability versao image.". Temas: nao pode parametro versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB307E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot specify the !1 parameter, because this image is the General Availability version image." Em portugues: "you nao pode specify the !1 parametro, porque this image is the general availability versao image.". Temas: nao pode parametro versao. Em outras palavras: O parâmetro não pode ser utilizado porque esta imagem corresponde à versão de disponibilidade geral do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB307E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You cannot specify the parameter because this image General Availability version portugues you nao parametro`
@@ -125161,7 +125161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB307E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB308E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "This is the General Availability image, you must specify the !1 parameter." Em portugues: "this is the general availability image, you must specify the !1 parametro.". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB308E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "This is the General Availability image, you must specify the !1 parameter." Em portugues: "this is the general availability image, you must specify the !1 parametro.". Temas: parametro. Em outras palavras: Esta é a imagem de disponibilidade geral, portanto é obrigatório informar o parâmetro indicado antes de continuar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB308E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto This the General Availability image you must specify parameter portugues this general availability`
@@ -125181,10 +125181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB308E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB309E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You supplied the parameter !1 more than once." Em portugues: "you informado the parametro !1 mais que once.". Temas: informado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB309E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You supplied the parameter !1 more than once." Em portugues: "you informado the parametro !1 mais que once.". Temas: informado parametro. Em outras palavras: O mesmo parâmetro foi fornecido mais de uma vez na linha de comando e isso não é permitido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB309E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You supplied the parameter more than once portugues you informado parametro mais Temas significa`
+> `AWSFAB309E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You supplied the parameter more than once portugues you informado parametro mais Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB309E no HCL Workload Automation 10.2.8?
@@ -125201,7 +125201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB309E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB310E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You did not specify any values for the parameter !1. Specify a value for the parameter !1." Em portugues: "you did nao specify any values for the parametro !1. specify a valor for the parametro !1.". Temas: nao parametro valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB310E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You did not specify any values for the parameter !1. Specify a value for the parameter !1." Em portugues: "you did nao specify any values for the parametro !1. specify a valor for the parametro !1.". Temas: nao parametro valor. Em outras palavras: Nenhum valor foi informado para o parâmetro exigido; é necessário fornecer um valor para que a operação continue..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB310E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You did not specify any values for the parameter Specify value portugues you nao`
@@ -125221,7 +125221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB310E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB311E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The syntax you specified for the parameter !1 value is incorrect." Em portugues: "the sintaxe you especificado for the parametro !1 valor is incorreto.". Temas: sintaxe especificado parametro valor incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB311E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The syntax you specified for the parameter !1 value is incorrect." Em portugues: "the sintaxe you especificado for the parametro !1 valor is incorreto.". Temas: sintaxe especificado parametro valor incorreto. Em outras palavras: A sintaxe do valor atribuído ao parâmetro está incorreta e precisa ser ajustada para o formato esperado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB311E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The syntax you specified for the parameter value incorrect portugues sintaxe especificado parametro valor incorreto`
@@ -125241,7 +125241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB311E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB312E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while using the Windows Management Instrumentation (WMI) service. Error code: !1." Em portugues: "an erro ocorreu while using the windows management instrumentation (wmi) service. erro code: !1.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB312E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while using the Windows Management Instrumentation (WMI) service. Error code: !1." Em portugues: "an erro ocorreu while using the windows management instrumentation (wmi) service. erro code: !1.". Temas: erro ocorreu. Em outras palavras: Ocorreu uma falha ao acessar o serviço de instrumentação do Windows, retornando um código de erro específico..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB312E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while using the Windows Management Instrumentation WMI service Error code portugues erro ocorreu windows`
@@ -125261,7 +125261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB312E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB313I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it does not contain a HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it does nao contain a hcl workload automation recurso.". Temas: nao carga de trabalho recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB313I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it does not contain a HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it does nao contain a hcl workload automation recurso.". Temas: nao carga de trabalho recurso. Em outras palavras: O grupo citado não contém recursos do produto, portanto não foi necessário aplicar a atualização nele..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB313I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The group named not upgraded because does contain resource portugues the grupo nao porque`
@@ -125281,7 +125281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB313I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB314W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it contains more than one HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it contains mais que one hcl workload automation recurso.". Temas: nao carga de trabalho recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB314W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it contains more than one HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it contains mais que one hcl workload automation recurso.". Temas: nao carga de trabalho recurso. Em outras palavras: A atualização do grupo foi ignorada porque ele contém mais de um recurso do produto, situação não suportada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB314W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The group named not upgraded because contains more than one resource portugues the grupo nao porque`
@@ -125301,7 +125301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB314W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB315E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it does not contain a HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it does nao contain a hcl workload automation recurso.". Temas: nao carga de trabalho recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB315E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it does not contain a HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it does nao contain a hcl workload automation recurso.". Temas: nao carga de trabalho recurso. Em outras palavras: A atualização falhou para o grupo informado, pois ele não possui nenhum recurso do produto associado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB315E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The group named not upgraded because does contain resource portugues the grupo nao porque`
@@ -125321,7 +125321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB315E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB316E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it contains more than one HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it contains mais que one hcl workload automation recurso.". Temas: nao carga de trabalho recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB316E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The group named "!1" is not upgraded because it contains more than one HCL Workload Automation resource." Em portugues: "the grupo named "!1" is nao upgraded porque it contains mais que one hcl workload automation recurso.". Temas: nao carga de trabalho recurso. Em outras palavras: A atualização falhou para o grupo informado, pois ele contém mais de um recurso do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB316E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The group named not upgraded because contains more than one resource portugues the grupo nao porque`
@@ -125341,7 +125341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB316E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB317E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while running the cluster.exe command." Em portugues: "an erro ocorreu while em execucao the cluster.exe comando.". Temas: erro ocorreu comando.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB317E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while running the cluster.exe command." Em portugues: "an erro ocorreu while em execucao the cluster.exe comando.". Temas: erro ocorreu comando. Em outras palavras: Ocorreu um erro inesperado ao executar o comando cluster.exe para gerenciar o cluster..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB317E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while running the cluster.exe command portugues erro ocorreu execucao comando Temas`
@@ -125361,7 +125361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB317E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB318E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing the node names." Em portugues: "an interno erro ocorreu while parsing the node names.". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB318E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing the node names." Em portugues: "an interno erro ocorreu while parsing the node names.". Temas: erro ocorreu interno. Em outras palavras: Houve uma falha interna ao interpretar os nomes dos nós fornecidos na operação de cluster..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB318E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto internal occurred while parsing the node names portugues interno erro ocorreu Temas`
@@ -125381,10 +125381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB318E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB319I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The node !1 is already paused." Em portugues: "the node !1 is already paused.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB319I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The node !1 is already paused." Em portugues: "the node !1 is already paused.". Em outras palavras: O nó informado já se encontra no estado pausado e nenhuma ação adicional é necessária..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB319I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The node already paused portugues the significa diagnosticar`
+> `AWSFAB319I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The node already paused portugues the outras palavras informado encontra estado pausado nenhuma adicional significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB319I no HCL Workload Automation 10.2.8?
@@ -125401,7 +125401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB319I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB320E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot pause the node !1 because it is in the incorrect status !2." Em portugues: "the produto nao pode pause the node !1 porque it is in the incorreto estado !2.". Temas: nao pode produto incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB320E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot pause the node !1 because it is in the incorrect status !2." Em portugues: "the produto nao pode pause the node !1 porque it is in the incorreto estado !2.". Temas: nao pode produto incorreto. Em outras palavras: O produto não consegue pausar o nó porque ele está em um estado que não permite essa operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB320E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The product cannot pause the node because incorrect status portugues produto nao porque`
@@ -125421,7 +125421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB320E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB321W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The resume of the node !1 is not performed because it is in the status !2." Em portugues: "the resume of the node !1 is nao performed porque it is in the estado !2.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB321W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The resume of the node !1 is not performed because it is in the status !2." Em portugues: "the resume of the node !1 is nao performed porque it is in the estado !2.". Temas: nao. Em outras palavras: A retomada do nó não foi executada porque ele está em um estado incompatível com essa ação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB321W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The resume the node not performed because status portugues nao porque estado`
@@ -125441,7 +125441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB321W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB322W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The resume of the nodes is not performed, because some groups were not upgraded successfully." Em portugues: "the resume of the nodes is nao performed, porque some groups were nao upgraded successfully.". Temas: nao com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB322W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "The resume of the nodes is not performed, because some groups were not upgraded successfully." Em portugues: "the resume of the nodes is nao performed, porque some groups were nao upgraded successfully.". Temas: nao com sucesso. Em outras palavras: A retomada dos nós não foi executada porque houve falha na atualização de alguns grupos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB322W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto The resume the nodes not performed because some groups were upgraded successfully portugues nao`
@@ -125481,10 +125481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB323I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB324E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while pausing the node !1" Em portugues: "an erro ocorreu while pausing the node !1". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB324E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while pausing the node !1" Em portugues: "an erro ocorreu while pausing the node !1". Temas: erro ocorreu. Em outras palavras: Ocorreu um erro durante a tentativa de pausar o nó informado no cluster..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB324E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while pausing the node portugues erro ocorreu Temas significa`
+> `AWSFAB324E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while pausing the node portugues erro ocorreu Temas outras palavras Ocorreu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB324E no HCL Workload Automation 10.2.8?
@@ -125501,7 +125501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB324E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB326E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot retrieve the status of the node !1." Em portugues: "the produto nao pode retrieve the estado of the node !1.". Temas: nao pode produto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB326E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot retrieve the status of the node !1." Em portugues: "the produto nao pode retrieve the estado of the node !1.". Temas: nao pode produto. Em outras palavras: O produto não conseguiu obter o estado atual do nó para avaliar a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB326E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The product cannot retrieve the status node portugues produto nao estado Temas`
@@ -125521,7 +125521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB326E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB327E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The node !1 was not paused within the timeout period." Em portugues: "the node !1 was nao paused dentro de the tempo esgotado period.". Temas: nao tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB327E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The node !1 was not paused within the timeout period." Em portugues: "the node !1 was nao paused dentro de the tempo esgotado period.". Temas: nao tempo esgotado. Em outras palavras: O nó não foi pausado dentro do tempo limite estabelecido e a operação foi considerada malsucedida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB327E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The node was not paused within the timeout period portugues nao dentro tempo esgotado`
@@ -125561,10 +125561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB328I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB329E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while resuming node !1" Em portugues: "an erro ocorreu while resuming node !1". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB329E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while resuming node !1" Em portugues: "an erro ocorreu while resuming node !1". Temas: erro ocorreu. Em outras palavras: Ocorreu um erro durante a tentativa de retomar a operação do nó informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB329E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while resuming node portugues erro ocorreu Temas significa`
+> `AWSFAB329E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while resuming node portugues erro ocorreu Temas outras palavras Ocorreu durante`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB329E no HCL Workload Automation 10.2.8?
@@ -125581,7 +125581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB329E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB330E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The node !1 was not resumed within the timeout period." Em portugues: "the node !1 was nao resumed dentro de the tempo esgotado period.". Temas: nao tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB330E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The node !1 was not resumed within the timeout period." Em portugues: "the node !1 was nao resumed dentro de the tempo esgotado period.". Temas: nao tempo esgotado. Em outras palavras: O nó não foi retomado dentro do tempo limite estabelecido e a operação foi considerada malsucedida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB330E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The node was not resumed within the timeout period portugues nao dentro tempo esgotado`
@@ -125601,7 +125601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB330E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB331E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing the nodes and the group lists." Em portugues: "an interno erro ocorreu while parsing the nodes and the grupo lists.". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB331E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing the nodes and the group lists." Em portugues: "an interno erro ocorreu while parsing the nodes and the grupo lists.". Temas: erro ocorreu interno. Em outras palavras: Houve uma falha interna ao interpretar as listas de nós e de grupos da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB331E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto internal occurred while parsing the nodes and group lists portugues interno erro ocorreu`
@@ -125621,7 +125621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB331E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB332E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing the nodes and the resource lists." Em portugues: "an interno erro ocorreu while parsing the nodes and the recurso lists.". Temas: erro ocorreu interno recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB332E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing the nodes and the resource lists." Em portugues: "an interno erro ocorreu while parsing the nodes and the recurso lists.". Temas: erro ocorreu interno recurso. Em outras palavras: Houve uma falha interna ao interpretar as listas de nós e de recursos da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB332E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto internal occurred while parsing the nodes and resource lists portugues interno erro ocorreu`
@@ -125641,7 +125641,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB332E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB333E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot find the HCL Workload Automation resource DLL path." Em portugues: "the produto nao pode find the hcl workload automation recurso dll caminho.". Temas: nao pode carga de trabalho produto recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB333E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot find the HCL Workload Automation resource DLL path." Em portugues: "the produto nao pode find the hcl workload automation recurso dll caminho.". Temas: nao pode carga de trabalho produto recurso. Em outras palavras: O produto não conseguiu localizar o caminho da biblioteca de recursos necessária para o funcionamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB333E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The product cannot find the resource DLL path portugues produto nao recurso dll caminho Temas`
@@ -125661,7 +125661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB333E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB335I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 is in the status !2 and it will not be set to offline." Em portugues: "the recurso !1 is in the estado !2 and it will nao be set to offline.". Temas: nao recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB335I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 is in the status !2 and it will not be set to offline." Em portugues: "the recurso !1 is in the estado !2 and it will nao be set to offline.". Temas: nao recurso. Em outras palavras: O recurso permanece no seu estado atual e não será colocado offline porque essa condição não se aplica..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB335I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The resource the status and will not set offline portugues recurso estado nao`
@@ -125681,10 +125681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB335I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB336I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 was set to offline." Em portugues: "the recurso !1 was set to offline.". Temas: recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB336I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 was set to offline." Em portugues: "the recurso !1 was set to offline.". Temas: recurso. Em outras palavras: O recurso informado foi colocado no estado offline com sucesso e já está disponível para essa condição..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB336I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The resource was set offline portugues the recurso Temas significa`
+> `AWSFAB336I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The resource was set offline portugues the recurso Temas outras palavras informado foi colocado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB336I no HCL Workload Automation 10.2.8?
@@ -125701,7 +125701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB336I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB337E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while setting the resource !1 to offline." Em portugues: "an erro ocorreu while configuracao the recurso !1 to offline.". Temas: erro ocorreu recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB337E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while setting the resource !1 to offline." Em portugues: "an erro ocorreu while configuracao the recurso !1 to offline.". Temas: erro ocorreu recurso. Em outras palavras: Ocorreu um erro ao tentar colocar o recurso informado no estado offline..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB337E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while setting the resource offline portugues erro ocorreu configuracao recurso Temas`
@@ -125721,7 +125721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB337E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB338E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot retrieve the status of the resource !1." Em portugues: "the produto nao pode retrieve the estado of the recurso !1.". Temas: nao pode produto recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB338E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot retrieve the status of the resource !1." Em portugues: "the produto nao pode retrieve the estado of the recurso !1.". Temas: nao pode produto recurso. Em outras palavras: O produto não conseguiu obter o estado atual do recurso para avaliar a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB338E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The product cannot retrieve the status resource portugues produto nao estado recurso Temas`
@@ -125741,7 +125741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB338E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB339E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 was not set to offline within the timeout period." Em portugues: "the recurso !1 was nao set to offline dentro de the tempo esgotado period.". Temas: nao recurso tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB339E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 was not set to offline within the timeout period." Em portugues: "the recurso !1 was nao set to offline dentro de the tempo esgotado period.". Temas: nao recurso tempo esgotado. Em outras palavras: O recurso não foi colocado offline dentro do tempo limite estabelecido e a operação foi interrompida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB339E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The resource was not set offline within the timeout period portugues recurso nao dentro`
@@ -125761,10 +125761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB339E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB340I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is setting to online the resource !1." Em portugues: "the produto is configuracao to online the recurso !1.". Temas: produto recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB340I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is setting to online the resource !1." Em portugues: "the produto is configuracao to online the recurso !1.". Temas: produto recurso. Em outras palavras: O produto está iniciando o processo de colocar o recurso informado no estado online..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB340I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The product setting online the resource portugues produto configuracao recurso Temas significa`
+> `AWSFAB340I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The product setting online the resource portugues produto configuracao recurso Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB340I no HCL Workload Automation 10.2.8?
@@ -125781,7 +125781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB340I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB341E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while setting the resource !1 to online." Em portugues: "an erro ocorreu while configuracao the recurso !1 to online.". Temas: erro ocorreu recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB341E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred while setting the resource !1 to online." Em portugues: "an erro ocorreu while configuracao the recurso !1 to online.". Temas: erro ocorreu recurso. Em outras palavras: Ocorreu um erro ao tentar colocar o recurso informado no estado online..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB341E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred while setting the resource online portugues erro ocorreu configuracao recurso Temas`
@@ -125801,7 +125801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB341E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB342E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 was not set to online within the timeout period." Em portugues: "the recurso !1 was nao set to online dentro de the tempo esgotado period.". Temas: nao recurso tempo esgotado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB342E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The resource !1 was not set to online within the timeout period." Em portugues: "the recurso !1 was nao set to online dentro de the tempo esgotado period.". Temas: nao recurso tempo esgotado. Em outras palavras: O recurso não foi colocado online dentro do tempo limite estabelecido e a operação foi interrompida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB342E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The resource was not set online within the timeout period portugues recurso nao dentro`
@@ -125821,7 +125821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB342E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB343E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing resources and group lists." Em portugues: "an interno erro ocorreu while parsing resources and grupo lists.". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB343E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An internal error occurred while parsing resources and group lists." Em portugues: "an interno erro ocorreu while parsing resources and grupo lists.". Temas: erro ocorreu interno. Em outras palavras: Houve uma falha interna ao interpretar as listas de recursos e de grupos da operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB343E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto internal occurred while parsing resources and group lists portugues interno erro ocorreu grupo`
@@ -125841,7 +125841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB343E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB344I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is setting all the HCL Workload Automation cluster resources on the node !1 to offline." Em portugues: "the produto is configuracao all the hcl workload automation cluster resources on the node !1 to offline.". Temas: carga de trabalho produto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB344I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is setting all the HCL Workload Automation cluster resources on the node !1 to offline." Em portugues: "the produto is configuracao all the hcl workload automation cluster resources on the node !1 to offline.". Temas: carga de trabalho produto. Em outras palavras: O produto está colocando todos os recursos de cluster do produto no nó informado para o estado offline..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB344I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The product setting all the cluster resources node offline portugues produto configuracao`
@@ -125861,7 +125861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB344I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB345I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is upgrading the cluster group !1 with the resource !2. This operation might take some time." Em portugues: "the produto is upgrading the cluster grupo !1 with the recurso !2. this operacao might take some tempo.". Temas: tempo hora produto operacao recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB345I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is upgrading the cluster group !1 with the resource !2. This operation might take some time." Em portugues: "the produto is upgrading the cluster grupo !1 with the recurso !2. this operacao might take some tempo.". Temas: tempo hora produto operacao recurso. Em outras palavras: O produto está atualizando o grupo de cluster com o recurso indicado e essa operação pode demorar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB345I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The product upgrading the cluster group with resource This operation might take some time portugues produto`
@@ -125881,10 +125881,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB345I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB346E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The cluster group !1 was not upgraded successfully." Em portugues: "the cluster grupo !1 was nao upgraded successfully.". Temas: nao com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB346E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The cluster group !1 was not upgraded successfully." Em portugues: "the cluster grupo !1 was nao upgraded successfully.". Temas: nao com sucesso. Em outras palavras: A atualização do grupo de cluster não foi concluída com sucesso e precisa ser verificada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB346E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The cluster group was not upgraded successfully portugues the grupo nao Temas sucesso significa`
+> `AWSFAB346E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The cluster group was not upgraded successfully portugues the grupo nao Temas sucesso outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB346E no HCL Workload Automation 10.2.8?
@@ -125901,10 +125901,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB346E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB347I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The cluster group !1 was upgraded successfully." Em portugues: "the cluster grupo !1 was upgraded successfully.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB347I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The cluster group !1 was upgraded successfully." Em portugues: "the cluster grupo !1 was upgraded successfully.". Temas: com sucesso. Em outras palavras: A atualização do grupo de cluster foi concluída com sucesso e não requer nenhuma ação adicional..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB347I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The cluster group was upgraded successfully portugues the grupo Temas sucesso significa`
+> `AWSFAB347I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The cluster group was upgraded successfully portugues the grupo Temas sucesso outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB347I no HCL Workload Automation 10.2.8?
@@ -125921,7 +125921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB347I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB348I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is setting to online the resources that were upgraded successfully." Em portugues: "the produto is configuracao to online the resources that were upgraded successfully.". Temas: produto com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB348I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The product is setting to online the resources that were upgraded successfully." Em portugues: "the produto is configuracao to online the resources that were upgraded successfully.". Temas: produto com sucesso. Em outras palavras: O produto está colocando no estado online os recursos cuja atualização foi concluída com êxito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB348I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The product setting online the resources that were upgraded successfully portugues produto configuracao`
@@ -125941,7 +125941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB348I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB349E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The file !1 does not exist, the tool cannot upgrade the resource !2." Em portugues: "the arquivo !1 does nao existe, the tool nao pode upgrade the recurso !2.". Temas: nao arquivo pode recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB349E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The file !1 does not exist, the tool cannot upgrade the resource !2." Em portugues: "the arquivo !1 does nao existe, the tool nao pode upgrade the recurso !2.". Temas: nao arquivo pode recurso. Em outras palavras: O arquivo necessário não existe, por isso a ferramenta não consegue atualizar o recurso indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB349E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The file does not exist the tool cannot upgrade resource portugues arquivo nao existe`
@@ -125961,7 +125961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB349E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB350E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot find the version of the HCL Workload Automation resource DLL !1." Em portugues: "the produto nao pode find the versao of the hcl workload automation recurso dll !1.". Temas: nao pode carga de trabalho produto recurso versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB350E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The product cannot find the version of the HCL Workload Automation resource DLL !1." Em portugues: "the produto nao pode find the versao of the hcl workload automation recurso dll !1.". Temas: nao pode carga de trabalho produto recurso versao. Em outras palavras: O produto não conseguiu identificar a versão da biblioteca de recursos informada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB350E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The product cannot find the version resource DLL portugues produto nao versao recurso dll`
@@ -125981,10 +125981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB350E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB351I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The upgrade to version !1 is unnecessary. Skipping the step." Em portugues: "the upgrade to versao !1 is unnecessary. skipping the step.". Temas: versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB351I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The upgrade to version !1 is unnecessary. Skipping the step." Em portugues: "the upgrade to versao !1 is unnecessary. skipping the step.". Temas: versao. Em outras palavras: A atualização para a versão indicada não é necessária, portanto esta etapa será ignorada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB351I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The upgrade version unnecessary Skipping the step portugues versao skipping Temas significa`
+> `AWSFAB351I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The upgrade version unnecessary Skipping the step portugues versao skipping Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB351I no HCL Workload Automation 10.2.8?
@@ -126001,7 +126001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB351I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB352E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The upgrade to version !1 is impossible because the version of the product present in the instance is incorrect." Em portugues: "the upgrade to versao !1 is impossible porque the versao of the produto present in the instancia is incorreto.". Temas: produto incorreto versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB352E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The upgrade to version !1 is impossible because the version of the product present in the instance is incorrect." Em portugues: "the upgrade to versao !1 is impossible porque the versao of the produto present in the instancia is incorreto.". Temas: produto incorreto versao. Em outras palavras: A atualização para a versão indicada é impossível porque a versão do produto na instância está incorreta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB352E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The upgrade version impossible because the product present instance incorrect portugues versao porque`
@@ -126021,7 +126021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB352E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB356E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The number of passwords (!1) that you specified, is not equal to the number of groups (!2) that must be upgraded. Check the -groups and -passwords parameters." Em portugues: "the numero of passwords (!1) that you especificado, is nao equal to the numero of groups (!2) that must be upgraded. check the -groups and -passwords parametros.". Temas: nao especificado numero parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB356E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The number of passwords (!1) that you specified, is not equal to the number of groups (!2) that must be upgraded. Check the -groups and -passwords parameters." Em portugues: "the numero of passwords (!1) that you especificado, is nao equal to the numero of groups (!2) that must be upgraded. check the -groups and -passwords parametros.". Temas: nao especificado numero parametros. Em outras palavras: A quantidade de senhas informada não corresponde à quantidade de grupos a atualizar; revise os parâmetros correspondentes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB356E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The number passwords that you specified not equal the groups must upgraded Check and`
@@ -126041,7 +126041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB356E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB357E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "None of the groups you specified contain HCL Workload Automation resources." Em portugues: "none of the groups you especificado contain hcl workload automation resources.". Temas: especificado carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB357E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "None of the groups you specified contain HCL Workload Automation resources." Em portugues: "none of the groups you especificado contain hcl workload automation resources.". Temas: especificado carga de trabalho. Em outras palavras: Nenhum dos grupos informados contém recursos do produto que possam ser atualizados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB357E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto None the groups you specified contain resources portugues none especificado Temas carga trabalho`
@@ -126061,10 +126061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB357E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB372I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking Prerequisites" Em portugues: "checking prerequisites".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB372I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking Prerequisites" Em portugues: "checking prerequisites". Em outras palavras: O sistema está verificando os pré-requisitos necessários antes de prosseguir com a instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB372I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking Prerequisites portugues checking prerequisites significa diagnosticar`
+> `AWSFAB372I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking Prerequisites portugues checking prerequisites outras palavras sistema verificando -requisitos antes prosseguir significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB372I no HCL Workload Automation 10.2.8?
@@ -126081,10 +126081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB372I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB373I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Configuring HCL Workload Automation agent" Em portugues: "configuring hcl workload automation agente". Temas: carga de trabalho agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB373I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Configuring HCL Workload Automation agent" Em portugues: "configuring hcl workload automation agente". Temas: carga de trabalho agente. Em outras palavras: O sistema está configurando o agente do produto durante o processo de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB373I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Configuring agent portugues configuring agente Temas carga trabalho significa diagnosticar`
+> `AWSFAB373I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Configuring agent portugues configuring agente Temas carga trabalho outras palavras sistema configurando produto durante processo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB373I no HCL Workload Automation 10.2.8?
@@ -126101,7 +126101,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB373I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB374E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "JM port is already used in some other instance. Please specify some other port value." Em portugues: "jm porta is already used in some other instancia. please specify some other porta valor.". Temas: valor. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB374E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "JM port is already used in some other instance. Please specify some other port value." Em portugues: "jm porta is already used in some other instancia. please specify some other porta valor.". Temas: valor. Em outras palavras: A porta JM já está em uso por outra instância, portanto é preciso informar um valor de porta diferente.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB374E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto port already used some other instance Please specify value portugues porta instancia`
@@ -126121,7 +126121,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB374E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB375E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred when creating the "!1" folder on the local computer. The operating system error is: "!2". The twsinst installation cannot proceed." Em portugues: "an erro ocorreu when creating the "!1" pasta on the local computer. the operating sistema erro is: "!2". the twsinst instalacao nao pode proceed.". Temas: erro ocorreu nao pode sistema instalacao pasta. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB375E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An error occurred when creating the "!1" folder on the local computer. The operating system error is: "!2". The twsinst installation cannot proceed." Em portugues: "an erro ocorreu when creating the "!1" pasta on the local computer. the operating sistema erro is: "!2". the twsinst instalacao nao pode proceed.". Temas: erro ocorreu nao pode sistema instalacao pasta. Em outras palavras: Não foi possível criar a pasta indicada no computador e a instalação não pode continuar devido a esse erro do sistema.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB375E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto occurred when creating the folder local computer The operating system cannot proceed portugues`
@@ -126141,7 +126141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB375E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB379E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The "!1" user account you supplied does not have the right security policies, or they cannot be checked. The operation cannot proceed." Em portugues: "the "!1" usuario account you informado does nao have the right seguranca policies, or they nao pode be checked. the operacao nao pode proceed.". Temas: nao pode informado usuario operacao seguranca. Explicacao oficial: The indicated parameter is incorrect.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB379E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The "!1" user account you supplied does not have the right security policies, or they cannot be checked. The operation cannot proceed." Em portugues: "the "!1" usuario account you informado does nao have the right seguranca policies, or they nao pode be checked. the operacao nao pode proceed.". Temas: nao pode informado usuario operacao seguranca. Em outras palavras: A conta de usuário informada não possui as políticas de segurança adequadas, ou elas não puderam ser verificadas, impedindo a operação.. Explicacao oficial: The indicated parameter is incorrect.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB379E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The user account you supplied does not have the right security policies they cannot checked operation proceed`
@@ -126161,7 +126161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB379E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB380E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "A parameter to twsinst has not been supplied. The "!1" parameter must be specified when "!2" parameter is supplied." Em portugues: "a parametro to twsinst has nao estado informado. the "!1" parametro must be especificado when "!2" parametro is informado.". Temas: nao informado especificado parametro. Explicacao oficial: The installation_parameter is a parameter that you did not supplied, that is required when installation_parameter2 parameter is supplied.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB380E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "A parameter to twsinst has not been supplied. The "!1" parameter must be specified when "!2" parameter is supplied." Em portugues: "a parametro to twsinst has nao estado informado. the "!1" parametro must be especificado when "!2" parametro is informado.". Temas: nao informado especificado parametro. Em outras palavras: Faltou informar um parâmetro obrigatório, pois o parâmetro indicado exige que o outro também seja fornecido.. Explicacao oficial: The installation_parameter is a parameter that you did not supplied, that is required when installation_parameter2 parameter is supplied.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB380E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto parameter has not been supplied The must specified when portugues parametro nao estado`
@@ -126181,7 +126181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB380E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB381E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An instance of HCL Workload Automation is already installed for same user in the "!1" directory you specified as installation directory." Em portugues: "an instancia of hcl workload automation is already instalado for same usuario in the "!1" diretorio you especificado as instalacao diretorio.". Temas: usuario especificado carga de trabalho instalacao diretorio instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB381E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An instance of HCL Workload Automation is already installed for same user in the "!1" directory you specified as installation directory." Em portugues: "an instancia of hcl workload automation is already instalado for same usuario in the "!1" diretorio you especificado as instalacao diretorio.". Temas: usuario especificado carga de trabalho instalacao diretorio instalado. Em outras palavras: Já existe uma instância instalada para o mesmo usuário no diretório indicado como diretório de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB381E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto instance already installed for same user the directory you specified portugues instancia instalado usuario`
@@ -126201,7 +126201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB381E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB382E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Accept the license and terms conditions before proceeding with the installation." Em portugues: "aceitar the licenca and terms conditions antes proceeding with the instalacao.". Temas: instalacao licenca.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB382E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Accept the license and terms conditions before proceeding with the installation." Em portugues: "aceitar the licenca and terms conditions antes proceeding with the instalacao.". Temas: instalacao licenca. Em outras palavras: É necessário aceitar a licença e os termos de uso antes de dar continuidade à instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB382E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Accept the license and terms conditions before proceeding with portugues aceitar licenca antes`
@@ -126241,7 +126241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB383E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB384E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "It is not possible to retrieve the domain name for the user "!1". Check user rights and permissions." Em portugues: "it is nao possible to retrieve the dominio nome for the usuario "!1". check usuario rights and permissions.". Temas: nao nome usuario dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB384E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "It is not possible to retrieve the domain name for the user "!1". Check user rights and permissions." Em portugues: "it is nao possible to retrieve the dominio nome for the usuario "!1". check usuario rights and permissions.". Temas: nao nome usuario dominio. Em outras palavras: Não foi possível obter o nome do domínio do usuário informado; verifique os direitos e as permissões da conta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB384E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto not possible retrieve the name for user Check rights and permissions portugues nao dominio`
@@ -126261,7 +126261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB384E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB385E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you specify the -domain parameter you cannot specify the username in the format domain\username." Em portugues: "if you specify the -dominio parametro you nao pode specify the username in the format dominio\username.". Temas: nao pode parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB385E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you specify the -domain parameter you cannot specify the username in the format domain\username." Em portugues: "if you specify the -dominio parametro you nao pode specify the username in the format dominio\username.". Temas: nao pode parametro. Em outras palavras: Ao informar o parâmetro de domínio, o nome do usuário não pode estar no formato usuário do domínio..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB385E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto you specify the parameter cannot username format portugues dominio parametro`
@@ -126281,7 +126281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB385E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB386E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "It is not possible to retrieve the domain name for the user "!1". Check user rights and permissions." Em portugues: "it is nao possible to retrieve the dominio nome for the usuario "!1". check usuario rights and permissions.". Temas: nao nome usuario dominio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB386E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "It is not possible to retrieve the domain name for the user "!1". Check user rights and permissions." Em portugues: "it is nao possible to retrieve the dominio nome for the usuario "!1". check usuario rights and permissions.". Temas: nao nome usuario dominio. Em outras palavras: Não foi possível obter o nome do domínio do usuário informado; verifique os direitos e as permissões da conta..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB386E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto not possible retrieve the name for user Check rights and permissions portugues nao dominio`
@@ -126301,10 +126301,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB386E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB387I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing R3BATCH method" Em portugues: "installing r3batch method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB387I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing R3BATCH method" Em portugues: "installing r3batch method". Em outras palavras: O sistema está instalando o método de extensão R3BATCH no ambiente para ampliar suas capacidades..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB387I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing R3BATCH method portugues installing r3batch significa diagnosticar`
+> `AWSFAB387I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing R3BATCH method portugues installing r3batch outras palavras sistema instalando ambiente ampliar suas capacidades significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB387I no HCL Workload Automation 10.2.8?
@@ -126321,10 +126321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB387I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB388I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling R3BATCH method package" Em portugues: "uninstalling r3batch method package".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB388I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling R3BATCH method package" Em portugues: "uninstalling r3batch method package". Em outras palavras: O sistema está removendo o pacote do método de extensão R3BATCH do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB388I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling R3BATCH method package portugues uninstalling r3batch significa diagnosticar`
+> `AWSFAB388I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling R3BATCH method package portugues uninstalling r3batch outras palavras sistema removendo pacote ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB388I no HCL Workload Automation 10.2.8?
@@ -126341,7 +126341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB388I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB389E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You can specify the "!1" parameter only when the "!1" parameter has been specified." Em portugues: "you can specify the "!1" parametro only when the "!1" parametro has estado especificado.". Temas: especificado parametro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB389E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You can specify the "!1" parameter only when the "!1" parameter has been specified." Em portugues: "you can specify the "!1" parametro only when the "!1" parametro has estado especificado.". Temas: especificado parametro. Em outras palavras: O parâmetro informado só pode ser usado quando o outro parâmetro também tiver sido especificado.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB389E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You can specify the parameter only when has been specified portugues you parametro`
@@ -126361,10 +126361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB389E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB390I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update the lightweight agent package" Em portugues: "atualizar the lightweight agente package". Temas: agente atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB390I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update the lightweight agent package" Em portugues: "atualizar the lightweight agente package". Temas: agente atualizar. Em outras palavras: O sistema está atualizando o pacote do agente leve no ambiente para aplicar a versão mais recente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB390I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update the lightweight agent package portugues atualizar agente Temas significa`
+> `AWSFAB390I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update the lightweight agent package portugues atualizar agente Temas outras palavras sistema atualizando pacote`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB390I no HCL Workload Automation 10.2.8?
@@ -126381,10 +126381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB390I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB391I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Cleaning up HCL Workload Automation agent" Em portugues: "cleaning up hcl workload automation agente". Temas: carga de trabalho agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB391I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Cleaning up HCL Workload Automation agent" Em portugues: "cleaning up hcl workload automation agente". Temas: carga de trabalho agente. Em outras palavras: O sistema está limpando os componentes do agente do produto antes de finalizar a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB391I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Cleaning agent portugues cleaning agente Temas carga trabalho significa diagnosticar`
+> `AWSFAB391I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Cleaning agent portugues cleaning agente Temas carga trabalho outras palavras sistema limpando componentes produto antes finalizar significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB391I no HCL Workload Automation 10.2.8?
@@ -126401,10 +126401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB391I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB392I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install the fault-tolerant agent package" Em portugues: "install the fault-tolerant agente package". Temas: instalar agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB392I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Install the fault-tolerant agent package" Em portugues: "install the fault-tolerant agente package". Temas: instalar agente. Em outras palavras: O sistema está instalando o pacote do agente tolerante a falhas no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB392I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install the fault-tolerant agent package portugues install agente Temas instalar significa`
+> `AWSFAB392I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Install the fault-tolerant agent package portugues install agente Temas instalar outras palavras sistema instalando pacote`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB392I no HCL Workload Automation 10.2.8?
@@ -126421,10 +126421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB392I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB393I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update the fault-tolerant agent package" Em portugues: "atualizar the fault-tolerant agente package". Temas: agente atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB393I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update the fault-tolerant agent package" Em portugues: "atualizar the fault-tolerant agente package". Temas: agente atualizar. Em outras palavras: O sistema está atualizando o pacote do agente tolerante a falhas no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB393I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update the fault-tolerant agent package portugues atualizar agente Temas significa`
+> `AWSFAB393I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update the fault-tolerant agent package portugues atualizar agente Temas outras palavras sistema atualizando pacote`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB393I no HCL Workload Automation 10.2.8?
@@ -126441,10 +126441,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB393I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB394I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Remove the fault-tolerant agent package" Em portugues: "remove the fault-tolerant agente package". Temas: agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB394I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Remove the fault-tolerant agent package" Em portugues: "remove the fault-tolerant agente package". Temas: agente. Em outras palavras: O sistema está removendo o pacote do agente tolerante a falhas do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB394I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Remove the fault-tolerant agent package portugues remove agente Temas significa`
+> `AWSFAB394I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Remove the fault-tolerant agent package portugues remove agente Temas outras palavras sistema removendo pacote`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB394I no HCL Workload Automation 10.2.8?
@@ -126461,10 +126461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB394I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB395I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update Java extension package" Em portugues: "atualizar java extension package". Temas: atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB395I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Update Java extension package" Em portugues: "atualizar java extension package". Temas: atualizar. Em outras palavras: O sistema está atualizando o pacote de extensão Java no ambiente para aplicar a versão mais recente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB395I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update Java extension package portugues atualizar java Temas significa`
+> `AWSFAB395I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Update Java extension package portugues atualizar java Temas outras palavras sistema atualizando pacote ambiente aplicar`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB395I no HCL Workload Automation 10.2.8?
@@ -126481,10 +126481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB395I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB396I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing PeopleSoft method" Em portugues: "installing peoplesoft method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB396I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing PeopleSoft method" Em portugues: "installing peoplesoft method". Em outras palavras: O sistema está instalando o método de extensão PeopleSoft no ambiente para ampliar suas capacidades..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB396I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing PeopleSoft method portugues installing peoplesoft significa diagnosticar`
+> `AWSFAB396I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing PeopleSoft method portugues installing peoplesoft outras palavras sistema instalando ambiente ampliar suas capacidades significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB396I no HCL Workload Automation 10.2.8?
@@ -126501,10 +126501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB396I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB397I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling PeopleSoft method" Em portugues: "uninstalling peoplesoft method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB397I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling PeopleSoft method" Em portugues: "uninstalling peoplesoft method". Em outras palavras: O sistema está removendo o método de extensão PeopleSoft do ambiente para desinstalá-lo por completo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB397I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling PeopleSoft method portugues uninstalling peoplesoft significa diagnosticar`
+> `AWSFAB397I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling PeopleSoft method portugues uninstalling peoplesoft outras palavras sistema removendo ambiente -lo completo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB397I no HCL Workload Automation 10.2.8?
@@ -126521,10 +126521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB397I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB398I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Updating PeopleSoft method" Em portugues: "updating peoplesoft method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB398I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Updating PeopleSoft method" Em portugues: "updating peoplesoft method". Em outras palavras: O sistema está atualizando o método de extensão PeopleSoft no ambiente para aplicar a versão mais recente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB398I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Updating PeopleSoft method portugues updating peoplesoft significa diagnosticar`
+> `AWSFAB398I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Updating PeopleSoft method portugues updating peoplesoft outras palavras sistema atualizando ambiente aplicar mais recente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB398I no HCL Workload Automation 10.2.8?
@@ -126541,10 +126541,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB398I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB399I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Updating R3BATCH method" Em portugues: "updating r3batch method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB399I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Updating R3BATCH method" Em portugues: "updating r3batch method". Em outras palavras: O sistema está atualizando o método de processamento de lote R3BATCH..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB399I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Updating R3BATCH method portugues updating r3batch significa diagnosticar`
+> `AWSFAB399I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Updating R3BATCH method portugues updating r3batch outras palavras sistema atualizando processamento lote significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB399I no HCL Workload Automation 10.2.8?
@@ -126561,10 +126561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB399I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB400I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing Option Editor" Em portugues: "installing opcao editor". Temas: opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB400I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing Option Editor" Em portugues: "installing opcao editor". Temas: opcao. Em outras palavras: O instalador está copiando e configurando o componente chamado Option Editor..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB400I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing Option Editor portugues installing opcao editor Temas significa diagnosticar`
+> `AWSFAB400I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing Option Editor portugues installing opcao editor Temas outras palavras instalador copiando configurando chamado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB400I no HCL Workload Automation 10.2.8?
@@ -126581,10 +126581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB400I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB401I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Updating Option Editor" Em portugues: "updating opcao editor". Temas: opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB401I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Updating Option Editor" Em portugues: "updating opcao editor". Temas: opcao. Em outras palavras: O instalador está aplicando atualizações sobre o componente Option Editor existente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB401I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Updating Option Editor portugues updating opcao editor Temas significa diagnosticar`
+> `AWSFAB401I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Updating Option Editor portugues updating opcao editor Temas outras palavras instalador aplicando existente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB401I no HCL Workload Automation 10.2.8?
@@ -126601,10 +126601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB401I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB402I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling Option Editor" Em portugues: "uninstalling opcao editor". Temas: opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB402I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling Option Editor" Em portugues: "uninstalling opcao editor". Temas: opcao. Em outras palavras: O instalador está removendo o componente Option Editor do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB402I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling Option Editor portugues uninstalling opcao editor Temas significa diagnosticar`
+> `AWSFAB402I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling Option Editor portugues uninstalling opcao editor Temas outras palavras instalador removendo ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB402I no HCL Workload Automation 10.2.8?
@@ -126621,7 +126621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB402I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB403W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You upgraded PeopleSoft method. In order to continue schedule PeopleSoft jobs you have to copy psjoa.jar file under "!1" folder." Em portugues: "you upgraded peoplesoft method. in order to continue agendamento peoplesoft jobs you have to copy psjoa.jar arquivo under "!1" pasta.". Temas: arquivo pasta agendamento. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB403W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You upgraded PeopleSoft method. In order to continue schedule PeopleSoft jobs you have to copy psjoa.jar file under "!1" folder." Em portugues: "you upgraded peoplesoft method. in order to continue agendamento peoplesoft jobs you have to copy psjoa.jar arquivo under "!1" pasta.". Temas: arquivo pasta agendamento. Em outras palavras: Como você atualizou o método PeopleSoft, é preciso copiar o arquivo psjoa.jar para a pasta indicada para continuar agendando jobs.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB403W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto You upgraded PeopleSoft method order continue schedule jobs you have copy psjoa.jar file under folder portugues`
@@ -126661,7 +126661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB404E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB405E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "No root installation is supported only for "dynamic" agent installation." Em portugues: "no root instalacao is supported only for "dynamic" agente instalacao.". Temas: instalacao agente suportado. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB405E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "No root installation is supported only for "dynamic" agent installation." Em portugues: "no root instalacao is supported only for "dynamic" agente instalacao.". Temas: instalacao agente suportado. Em outras palavras: Uma instalação sem acessar a raiz só é permitida quando se faz a instalação do agente dinâmico.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB405E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto root supported only for dynamic agent portugues instalacao agente Temas`
@@ -126681,7 +126681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB405E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB406E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "HCL Workload Automation dynamic agent instance can be updated only by the same user who previously installed it." Em portugues: "hcl workload automation dynamic agente instancia can be updated only by the same usuario who previously instalado it.". Temas: usuario carga de trabalho agente instalado. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB406E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "HCL Workload Automation dynamic agent instance can be updated only by the same user who previously installed it." Em portugues: "hcl workload automation dynamic agente instancia can be updated only by the same usuario who previously instalado it.". Temas: usuario carga de trabalho agente instalado. Em outras palavras: A instância do agente dinâmico só pode ser atualizada pelo mesmo usuário que a instalou originalmente.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB406E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto dynamic agent instance can updated only the same user who previously installed portugues agente instancia`
@@ -126701,7 +126701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB406E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB407W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You are proceeding with the installation process in spite of missing prerequisites being detected by the prerequisites scan." Em portugues: "you are proceeding with the instalacao process in spite of faltando prerequisites being detectado by the prerequisites scan.". Temas: instalacao faltando. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB407W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You are proceeding with the installation process in spite of missing prerequisites being detected by the prerequisites scan." Em portugues: "you are proceeding with the instalacao process in spite of faltando prerequisites being detectado by the prerequisites scan.". Temas: instalacao faltando. Em outras palavras: A instalação está prosseguindo mesmo que a verificação de pré-requisitos tenha apontado itens faltantes.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB407W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto You are proceeding with the process spite missing prerequisites being detected scan portugues you`
@@ -126741,7 +126741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB408W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB409E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Home directory for the user "!1" does not exist. Please create it and then run the installation procedure again." Em portugues: "home diretorio for the usuario "!1" does nao existe. please criar it and then run the instalacao procedure again.". Temas: nao usuario instalacao diretorio execucao criar. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB409E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Home directory for the user "!1" does not exist. Please create it and then run the installation procedure again." Em portugues: "home diretorio for the usuario "!1" does nao existe. please criar it and then run the instalacao procedure again.". Temas: nao usuario instalacao diretorio execucao criar. Em outras palavras: O diretório pessoal do usuário indicado não existe, então crie-o antes de executar novamente o procedimento de instalação.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB409E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Home directory for the user does not exist Please create and then run procedure again portugues home`
@@ -126761,10 +126761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB409E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB410I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling CIT agent" Em portugues: "uninstalling cit agente". Temas: agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB410I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling CIT agent" Em portugues: "uninstalling cit agente". Temas: agente. Em outras palavras: O instalador está desinstalando o agente do tipo CIT..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB410I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling CIT agent portugues uninstalling cit agente Temas significa diagnosticar`
+> `AWSFAB410I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling CIT agent portugues uninstalling cit agente Temas outras palavras instalador desinstalando tipo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB410I no HCL Workload Automation 10.2.8?
@@ -126781,7 +126781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB410I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB411E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "gateway_eif_port port is already used by another process. Please specify some other port value." Em portugues: "gateway_eif_port porta is already used by another process. please specify some other porta valor.". Temas: valor. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB411E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "gateway_eif_port port is already used by another process. Please specify some other port value." Em portugues: "gateway_eif_port porta is already used by another process. please specify some other porta valor.". Temas: valor. Em outras palavras: A porta de comunicação do gateway já está em uso por outro processo, então informe outro valor de porta.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB411E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto gateway_eif_port port already used another process Please specify some other value portugues porta`
@@ -126801,10 +126801,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB411E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB412I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing MVS method" Em portugues: "installing mvs method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB412I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installing MVS method" Em portugues: "installing mvs method". Em outras palavras: O instalador está instalando o método de processamento MVS..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB412I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing MVS method portugues installing mvs significa diagnosticar`
+> `AWSFAB412I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installing MVS method portugues installing mvs outras palavras instalador instalando processamento significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB412I no HCL Workload Automation 10.2.8?
@@ -126841,10 +126841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB413I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB414I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling MVS method" Em portugues: "uninstalling mvs method".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB414I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Uninstalling MVS method" Em portugues: "uninstalling mvs method". Em outras palavras: O instalador está removendo o método de processamento MVS do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB414I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling MVS method portugues uninstalling mvs significa diagnosticar`
+> `AWSFAB414I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Uninstalling MVS method portugues uninstalling mvs outras palavras instalador removendo processamento ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB414I no HCL Workload Automation 10.2.8?
@@ -126881,7 +126881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB416E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB417E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for the parameter "-password"." Em portugues: "an incorreto valor has estado informado for the parametro "-senha".". Temas: informado parametro valor incorreto.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB417E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "An incorrect value has been supplied for the parameter "-password"." Em portugues: "an incorreto valor has estado informado for the parametro "-senha".". Temas: informado parametro valor incorreto. Em outras palavras: Foi informado um valor incorreto para o parâmetro de senha no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB417E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto incorrect value has been supplied for the parameter password portugues incorreto valor estado informado parametro senha`
@@ -126901,7 +126901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB417E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB418E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The value "!1" specified for the port number by parameter "!2" is not valid. The value must be numeric and in the range 1 - 65535." Em portugues: "the valor "!1" especificado for the porta numero by parametro "!2" is nao valido. the valor must be numerico and in the range 1 - 65535.". Temas: nao valido especificado numero parametro valor numerico. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB418E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The value "!1" specified for the port number by parameter "!2" is not valid. The value must be numeric and in the range 1 - 65535." Em portugues: "the valor "!1" especificado for the porta numero by parametro "!2" is nao valido. the valor must be numerico and in the range 1 - 65535.". Temas: nao valido especificado numero parametro valor numerico. Em outras palavras: O valor informado como número de porta não é válido, pois deve ser numérico e estar entre 1 e 65535.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB418E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The value specified for the port number parameter not valid must numeric and range portugues`
@@ -126921,7 +126921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB418E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB419E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "This script must be run from a command prompt that is running as Administrator. Open the command prompt window as administrator, and run the script again." Em portugues: "this script must be run from a comando prompt that is em execucao as administrator. open the comando prompt window as administrator, and run the script again.". Temas: comando execucao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB419E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "This script must be run from a command prompt that is running as Administrator. Open the command prompt window as administrator, and run the script again." Em portugues: "this script must be run from a comando prompt that is em execucao as administrator. open the comando prompt window as administrator, and run the script again.". Temas: comando execucao. Em outras palavras: Este script precisa ser executado em um prompt de comando aberto como administrador, então abra o prompt elevado e rode novamente.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB419E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto This script must run from command prompt that running Administrator Open the window administrator and`
@@ -126941,10 +126941,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB419E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB435I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Restoring the instance" Em portugues: "restoring the instancia".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB435I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Restoring the instance" Em portugues: "restoring the instancia". Em outras palavras: O sistema está restaurando a versão anterior da instância..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB435I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Restoring the instance portugues restoring instancia significa diagnosticar`
+> `AWSFAB435I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Restoring the instance portugues restoring instancia outras palavras sistema restaurando anterior significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB435I no HCL Workload Automation 10.2.8?
@@ -126961,7 +126961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB435I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB436E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The agent update failed. The files of the previous version will be restored. After restoring the previous version, the agent will continue to work normally." Em portugues: "the agente atualizar falhou. the arquivos of the previous versao will be restored. apos restoring the previous versao, the agente will continue to work normally.". Temas: arquivos agente versao falhou atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB436E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The agent update failed. The files of the previous version will be restored. After restoring the previous version, the agent will continue to work normally." Em portugues: "the agente atualizar falhou. the arquivos of the previous versao will be restored. apos restoring the previous versao, the agente will continue to work normally.". Temas: arquivos agente versao falhou atualizar. Em outras palavras: A atualização do agente falhou e os arquivos da versão anterior serão restaurados, mantendo o agente em funcionamento normal..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB436E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The agent update failed files the previous version will restored After restoring`
@@ -126981,7 +126981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB436E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB437E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The restore operation of the previous version completed with errors:rc." Em portugues: "the restore operacao of the previous versao concluido with erros:rc.". Temas: erros operacao concluido versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB437E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The restore operation of the previous version completed with errors:rc." Em portugues: "the restore operacao of the previous versao concluido with erros:rc.". Temas: erros operacao concluido versao. Em outras palavras: A restauração da versão anterior terminou com erros no código de retorno indicado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB437E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The restore operation the previous version completed with errors portugues operacao versao concluido erros`
@@ -127001,7 +127001,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB437E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB438I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The restore operation of the previous version must be performed manually." Em portugues: "the restore operacao of the previous versao must be performed manually.". Temas: operacao versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB438I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The restore operation of the previous version must be performed manually." Em portugues: "the restore operacao of the previous versao must be performed manually.". Temas: operacao versao. Em outras palavras: A restauração da versão anterior precisa ser executada manualmente pelo administrador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB438I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The restore operation the previous version must performed manually portugues operacao versao`
@@ -127021,7 +127021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB438I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB439I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The agent backup failed. The update process has been stopped. The agent continues to work normally." Em portugues: "the agente reserva falhou. the atualizar process has estado parado. the agente continues to work normally.". Temas: agente parado falhou atualizar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB439I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The agent backup failed. The update process has been stopped. The agent continues to work normally." Em portugues: "the agente reserva falhou. the atualizar process has estado parado. the agente continues to work normally.". Temas: agente parado falhou atualizar. Em outras palavras: O backup do agente falhou e o processo de atualização foi interrompido, mas o agente continua operando normalmente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB439I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The agent backup failed update process has been stopped continues work normally portugues the agente reserva`
@@ -127041,7 +127041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB439I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB440I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The agent has been successfully restored to the previous version and has been restarted." Em portugues: "the agente has estado successfully restored to the previous versao and has estado restarted.". Temas: agente com sucesso versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB440I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "The agent has been successfully restored to the previous version and has been restarted." Em portugues: "the agente has estado successfully restored to the previous versao and has estado restarted.". Temas: agente com sucesso versao. Em outras palavras: O agente foi restaurado com sucesso para a versão anterior e foi reiniciado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB440I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto The agent has been successfully restored the previous version and restarted portugues agente estado`
@@ -127061,7 +127061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB440I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB441E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The specified value is incorrect. The value for the "!1" parameter cannot start with a number." Em portugues: "the especificado valor is incorreto. the valor for the "!1" parametro nao pode iniciar with a numero.". Temas: nao pode especificado numero parametro valor incorreto iniciar. Explicacao oficial: The value must start with an alphabetic character.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB441E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The specified value is incorrect. The value for the "!1" parameter cannot start with a number." Em portugues: "the especificado valor is incorreto. the valor for the "!1" parametro nao pode iniciar with a numero.". Temas: nao pode especificado numero parametro valor incorreto iniciar. Em outras palavras: O valor informado está incorreto, pois o conteúdo do parâmetro indicado não pode começar com um número.. Explicacao oficial: The value must start with an alphabetic character.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB441E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The specified value incorrect for the parameter cannot start with number portugues especificado valor incorreto`
@@ -127081,7 +127081,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB441E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB442E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The agent version is "!1". This patch can be installed only on agents at the following level: "!2" ." Em portugues: "the agente versao is "!1". this patch can be instalado only on agents at the seguinte level: "!2" .". Temas: agente instalado versao. Explicacao oficial: The patch can be installed only on agents at the level listed in the message.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB442E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The agent version is "!1". This patch can be installed only on agents at the following level: "!2" ." Em portugues: "the agente versao is "!1". this patch can be instalado only on agents at the seguinte level: "!2" .". Temas: agente instalado versao. Em outras palavras: A versão atual do agente não é compatível, pois este patch só pode ser aplicado em agentes de uma versão específica.. Explicacao oficial: The patch can be installed only on agents at the level listed in the message.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB442E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The agent version This patch can installed only agents the following level portugues agente versao this`
@@ -127101,10 +127101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB442E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB443E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The file !1 is not found." Em portugues: "the arquivo !1 is nao encontrado.". Temas: nao arquivo encontrado. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB443E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The file !1 is not found." Em portugues: "the arquivo !1 is nao encontrado.". Temas: nao arquivo encontrado. Em outras palavras: O arquivo indicado não foi encontrado no caminho esperado pelo instalador.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB443E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The file not found portugues the arquivo nao encontrado Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB443E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The file not found portugues the arquivo nao encontrado Temas outras palavras indicado foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB443E no HCL Workload Automation 10.2.8?
@@ -127121,10 +127121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB443E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB444E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Missing property !1 in file !2." Em portugues: "faltando property !1 in arquivo !2.". Temas: arquivo faltando. Explicacao oficial: SEE TEXT.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB444E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Missing property !1 in file !2." Em portugues: "faltando property !1 in arquivo !2.". Temas: arquivo faltando. Em outras palavras: Falta a propriedade informada dentro do arquivo de configuração indicado.. Explicacao oficial: SEE TEXT.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB444E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Missing property file portugues faltando arquivo Temas Explicacao oficial SEE TEXT significa`
+> `AWSFAB444E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Missing property file portugues faltando arquivo Temas outras palavras Falta propriedade informada dentro indicado Explicacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB444E no HCL Workload Automation 10.2.8?
@@ -127141,10 +127141,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB444E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB445I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installed Master Domain Manager" Em portugues: "instalado principal dominio manager". Temas: dominio instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB445I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installed Master Domain Manager" Em portugues: "instalado principal dominio manager". Temas: dominio instalado. Em outras palavras: O componente Master Domain Manager foi instalado com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB445I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installed portugues instalado principal dominio Temas significa diagnosticar`
+> `AWSFAB445I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installed portugues instalado principal dominio Temas outras palavras foi sucesso significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB445I no HCL Workload Automation 10.2.8?
@@ -127161,10 +127161,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB445I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB448I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installed Dynamic Workload Broker" Em portugues: "instalado dynamic workload broker". Temas: carga de trabalho instalado broker intermediario.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB448I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Installed Dynamic Workload Broker" Em portugues: "instalado dynamic workload broker". Temas: carga de trabalho instalado broker intermediario. Em outras palavras: O componente Dynamic Workload Broker foi instalado com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB448I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installed Dynamic Broker portugues instalado dynamic broker Temas carga trabalho intermediario significa`
+> `AWSFAB448I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Installed Dynamic Broker portugues instalado dynamic broker Temas carga trabalho intermediario outras palavras foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB448I no HCL Workload Automation 10.2.8?
@@ -127181,7 +127181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB448I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB449E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied Websphere Liberty Profile installation directory "!1" does not exist." Em portugues: "the informado websphere liberty profile instalacao diretorio "!1" does nao existe.". Temas: nao informado instalacao diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB449E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied Websphere Liberty Profile installation directory "!1" does not exist." Em portugues: "the informado websphere liberty profile instalacao diretorio "!1" does nao existe.". Temas: nao informado instalacao diretorio. Em outras palavras: O diretório informado para a instalação do Websphere Liberty Profile não existe no sistema..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB449E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied Websphere Liberty Profile directory does not exist portugues the informado websphere liberty profile instalacao diretorio`
@@ -127201,7 +127201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB449E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB450E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The value "!1" you specified in the field "!2" contains invalid characters." Em portugues: "the valor "!1" you especificado in the field "!2" contains invalido characters.". Temas: invalido especificado valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB450E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The value "!1" you specified in the field "!2" contains invalid characters." Em portugues: "the valor "!1" you especificado in the field "!2" contains invalido characters.". Temas: invalido especificado valor. Em outras palavras: O valor preenchido no campo indicado contém caracteres inválidos e precisa ser corrigido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB450E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The value you specified the field contains invalid characters portugues valor especificado invalido`
@@ -127221,7 +127221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB450E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB451E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The port "!1" is already used by another process. Run the command with option "!2" followed by a not used port." Em portugues: "the porta "!1" is already used by another process. run the comando with opcao "!2" followed by a nao used porta.". Temas: nao comando opcao execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB451E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The port "!1" is already used by another process. Run the command with option "!2" followed by a not used port." Em portugues: "the porta "!1" is already used by another process. run the comando with opcao "!2" followed by a nao used porta.". Temas: nao comando opcao execucao. Em outras palavras: A porta indicada já está em uso por outro processo, então execute o comando com a opção informada usando uma porta livre..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB451E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The port already used another process Run the command with option followed not portugues porta`
@@ -127241,7 +127241,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB451E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB452E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The database user "!1" does not exist. Run the command with option "!2" followed by an existing user." Em portugues: "the banco de dados usuario "!1" does nao existe. run the comando with opcao "!2" followed by an existing usuario.". Temas: nao comando usuario opcao execucao banco de dados.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB452E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The database user "!1" does not exist. Run the command with option "!2" followed by an existing user." Em portugues: "the banco de dados usuario "!1" does nao existe. run the comando with opcao "!2" followed by an existing usuario.". Temas: nao comando usuario opcao execucao banco de dados. Em outras palavras: O usuário do banco de dados indicado não existe, então execute o comando com a opção apontando para um usuário válido..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB452E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The database user does not exist Run the command with option followed existing portugues dados usuario`
@@ -127301,7 +127301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB454I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB455E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "WLP is still running. The twsinst operation cannot continue. Stop WLP and retry the operation" Em portugues: "wlp is still em execucao. the twsinst operacao nao pode continue. parar wlp and tentar novamente the operacao". Temas: nao pode operacao parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB455E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "WLP is still running. The twsinst operation cannot continue. Stop WLP and retry the operation" Em portugues: "wlp is still em execucao. the twsinst operacao nao pode continue. parar wlp and tentar novamente the operacao". Temas: nao pode operacao parar. Em outras palavras: O Websphere Liberty Profile ainda está em execução e impede o prosseguimento do comando, então pare-o e tente novamente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB455E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto WLP still running The operation cannot continue Stop and retry the portugues wlp execucao`
@@ -127321,10 +127321,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB455E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB456I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking WLP process" Em portugues: "checking wlp process".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB456I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Checking WLP process" Em portugues: "checking wlp process". Em outras palavras: O sistema está verificando se o processo do Websphere Liberty Profile está ativo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB456I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking WLP process portugues checking wlp significa diagnosticar`
+> `AWSFAB456I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Checking WLP process portugues checking wlp outras palavras sistema verificando processo Websphere Liberty Profile ativo significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB456I no HCL Workload Automation 10.2.8?
@@ -127341,7 +127341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB456I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB457E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter you have supplied: "!1" must be followed by path." Em portugues: "the parametro you have informado: "!1" must be followed by caminho.". Temas: informado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB457E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter you have supplied: "!1" must be followed by path." Em portugues: "the parametro you have informado: "!1" must be followed by caminho.". Temas: informado parametro. Em outras palavras: O parâmetro informado precisa ser seguido de um caminho válido no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB457E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter you have supplied must followed path portugues the parametro informado caminho Temas`
@@ -127361,7 +127361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB457E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB458E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "User "!1" does not have the correct permissions on directory "!2" specified with option "!3"." Em portugues: "usuario "!1" does nao have the correct permissions on diretorio "!2" especificado with opcao "!3".". Temas: nao usuario especificado diretorio opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB458E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "User "!1" does not have the correct permissions on directory "!2" specified with option "!3"." Em portugues: "usuario "!1" does nao have the correct permissions on diretorio "!2" especificado with opcao "!3".". Temas: nao usuario especificado diretorio opcao. Em outras palavras: O usuário informado não possui permissões adequadas sobre o diretório apontado pela opção indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB458E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto User does not have the correct permissions directory specified with option portugues usuario nao`
@@ -127381,7 +127381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB458E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB468E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The gateway_eif_port "!1" is already used by another instance installed in directory "!2". Please specify some other port value." Em portugues: "the gateway_eif_port "!1" is already used by another instancia instalado in diretorio "!2". please specify some other porta valor.". Temas: valor diretorio instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB468E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The gateway_eif_port "!1" is already used by another instance installed in directory "!2". Please specify some other port value." Em portugues: "the gateway_eif_port "!1" is already used by another instancia instalado in diretorio "!2". please specify some other porta valor.". Temas: valor diretorio instalado. Em outras palavras: A porta de comunicação do gateway já está em uso por outra instância instalada no diretório indicado, então informe outro valor..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB468E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The gateway_eif_port already used another instance installed directory Please specify some other port value portugues the`
@@ -127421,7 +127421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB470E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB471E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter you have supplied: "!1" must be followed by a value." Em portugues: "the parametro you have informado: "!1" must be followed by a valor.". Temas: informado parametro valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB471E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter you have supplied: "!1" must be followed by a value." Em portugues: "the parametro you have informado: "!1" must be followed by a valor.". Temas: informado parametro valor. Em outras palavras: O parâmetro informado precisa ser seguido de um valor válido no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB471E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter you have supplied must followed value portugues the parametro informado valor Temas`
@@ -127441,7 +127441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB471E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB472E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory "!1" you have supplied with parameter: "!1" does not contain file "!1"." Em portugues: "the diretorio "!1" you have informado with parametro: "!1" does nao contain arquivo "!1".". Temas: nao arquivo informado parametro diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB472E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory "!1" you have supplied with parameter: "!1" does not contain file "!1"." Em portugues: "the diretorio "!1" you have informado with parametro: "!1" does nao contain arquivo "!1".". Temas: nao arquivo informado parametro diretorio. Em outras palavras: O diretório informado para o parâmetro não contém o arquivo esperado pelo instalador..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB472E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory you have supplied with parameter does not contain file portugues the diretorio informado parametro`
@@ -127461,7 +127461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB472E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB473E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You have supplied parameter: "!1" but you have not supplied parameter: "!1"." Em portugues: "you have informado parametro: "!1" but you have nao informado parametro: "!1".". Temas: nao informado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB473E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You have supplied parameter: "!1" but you have not supplied parameter: "!1"." Em portugues: "you have informado parametro: "!1" but you have nao informado parametro: "!1".". Temas: nao informado parametro. Em outras palavras: Foi informado um parâmetro, mas o parâmetro complementar exigido não foi fornecido no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB473E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You have supplied parameter but you not portugues informado parametro nao`
@@ -127481,10 +127481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB473E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB474I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Run security scripts." Em portugues: "run seguranca scripts.". Temas: execucao seguranca.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB474I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Run security scripts." Em portugues: "run seguranca scripts.". Temas: execucao seguranca. Em outras palavras: O instalador está executando os scripts responsáveis pela configuração de segurança..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB474I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Run security scripts portugues run seguranca Temas execucao significa diagnosticar`
+> `AWSFAB474I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Run security scripts portugues run seguranca Temas execucao outras palavras instalador executando pela significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB474I no HCL Workload Automation 10.2.8?
@@ -127501,10 +127501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB474I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB479I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Importing certificates." Em portugues: "importing certificates.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB479I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Importing certificates." Em portugues: "importing certificates.". Em outras palavras: O instalador está importando os certificados para o ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB479I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Importing certificates portugues importing significa diagnosticar`
+> `AWSFAB479I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Importing certificates portugues importing outras palavras instalador importando certificados ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB479I no HCL Workload Automation 10.2.8?
@@ -127521,10 +127521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB479I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB480E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied directory "!1" does not exist." Em portugues: "the informado diretorio "!1" does nao existe.". Temas: nao informado diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB480E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied directory "!1" does not exist." Em portugues: "the informado diretorio "!1" does nao existe.". Temas: nao informado diretorio. Em outras palavras: O diretório indicado não existe no sistema e precisa ser validado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB480E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied directory does not exist portugues the informado diretorio nao existe Temas significa`
+> `AWSFAB480E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied directory does not exist portugues the informado diretorio nao existe Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB480E no HCL Workload Automation 10.2.8?
@@ -127541,7 +127541,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB480E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB482E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you set the -useencryption parameter to true, the -addjruntime parameter must also be set to true. This is because Java is required to set up the encryption." Em portugues: "if you set the -useencryption parametro to true, the -addjruntime parametro must also be set to true. this is porque java is obrigatorio to set up the encryption.". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB482E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you set the -useencryption parameter to true, the -addjruntime parameter must also be set to true. This is because Java is required to set up the encryption." Em portugues: "if you set the -useencryption parametro to true, the -addjruntime parametro must also be set to true. this is porque java is obrigatorio to set up the encryption.". Temas: parametro. Em outras palavras: Ao ativar o parâmetro de criptografia, o parâmetro de adição do ambiente Java também deve ser ativado, pois o Java é necessário para configurá-la..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB482E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto you set the useencryption parameter true addjruntime must also This because Java required`
@@ -127561,10 +127561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB482E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB483E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory "!1" should be empty." Em portugues: "the diretorio "!1" should be empty.". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB483E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The directory "!1" should be empty." Em portugues: "the diretorio "!1" should be empty.". Temas: diretorio. Em outras palavras: O diretório indicado deve estar vazio antes que a instalação continue..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB483E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory should empty portugues the diretorio Temas significa`
+> `AWSFAB483E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The directory should empty portugues the diretorio Temas outras palavras indicado deve estar vazio antes continue`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB483E no HCL Workload Automation 10.2.8?
@@ -127581,10 +127581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB483E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB484E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Wrong option "!1" or missing value after option "!1"." Em portugues: "wrong opcao "!1" or faltando valor apos opcao "!1".". Temas: valor opcao faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB484E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Wrong option "!1" or missing value after option "!1"." Em portugues: "wrong opcao "!1" or faltando valor apos opcao "!1".". Temas: valor opcao faltando. Em outras palavras: A opção informada é inválida ou está faltando um valor após a opção no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB484E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Wrong option missing value after portugues wrong opcao faltando valor apos Temas significa`
+> `AWSFAB484E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Wrong option missing value after portugues wrong opcao faltando valor apos Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB484E no HCL Workload Automation 10.2.8?
@@ -127601,7 +127601,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB484E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB485E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot set both option "!1" and option "!1" to disabled. At least one of the ports must be enabled." Em portugues: "you nao pode set both opcao "!1" and opcao "!1" to desabilitado. at least one of the ports must be habilitado.". Temas: nao pode opcao habilitado desabilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB485E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot set both option "!1" and option "!1" to disabled. At least one of the ports must be enabled." Em portugues: "you nao pode set both opcao "!1" and opcao "!1" to desabilitado. at least one of the ports must be habilitado.". Temas: nao pode opcao habilitado desabilitado. Em outras palavras: Não é permitido desativar simultaneamente as duas opções indicadas, pois pelo menos uma das portas precisa permanecer habilitada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB485E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You cannot set both option and disabled least one the ports must enabled portugues you nao`
@@ -127621,10 +127621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB485E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB486E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter: "!1" is mutually exclusive with the parameter: "!2"." Em portugues: "the parametro: "!1" is mutually exclusive with the parametro: "!2".". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB486E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The parameter: "!1" is mutually exclusive with the parameter: "!2"." Em portugues: "the parametro: "!1" is mutually exclusive with the parametro: "!2".". Temas: parametro. Em outras palavras: Os dois parâmetros informados são mutuamente exclusivos e não podem ser usados juntos no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB486E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter mutually exclusive with the portugues parametro Temas significa`
+> `AWSFAB486E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The parameter mutually exclusive with the portugues parametro Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB486E no HCL Workload Automation 10.2.8?
@@ -127641,10 +127641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB486E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB490I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Download agent certificates." Em portugues: "download agente certificates.". Temas: agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB490I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Download agent certificates." Em portugues: "download agente certificates.". Temas: agente. Em outras palavras: O instalador está baixando os certificados do agente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB490I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Download agent certificates portugues download agente Temas significa diagnosticar`
+> `AWSFAB490I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Download agent certificates portugues download agente Temas outras palavras instalador baixando certificados significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB490I no HCL Workload Automation 10.2.8?
@@ -127661,7 +127661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB490I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB491E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If the operating system is "!1" JAVA_HOME is required, while JAVA_HOME is blank. Set the JAVA_HOME environment variable before starting the twsinst command." Em portugues: "if the operating sistema is "!1" java_home is obrigatorio, while java_home is blank. set the java_home ambiente variavel antes starting the twsinst comando.". Temas: comando sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB491E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If the operating system is "!1" JAVA_HOME is required, while JAVA_HOME is blank. Set the JAVA_HOME environment variable before starting the twsinst command." Em portugues: "if the operating sistema is "!1" java_home is obrigatorio, while java_home is blank. set the java_home ambiente variavel antes starting the twsinst comando.". Temas: comando sistema. Em outras palavras: Neste sistema operacional a variável JAVA_HOME é obrigatória, mas está vazia, então defina-a antes de executar o comando de instalação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB491E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto the operating system JAVA_HOME required while blank Set environment variable before starting command portugues`
@@ -127681,10 +127681,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB491E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB493E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Java found in directory "!1" is not valid." Em portugues: "the java encontrado in diretorio "!1" is nao valido.". Temas: nao valido encontrado diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB493E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Java found in directory "!1" is not valid." Em portugues: "the java encontrado in diretorio "!1" is nao valido.". Temas: nao valido encontrado diretorio. Em outras palavras: O Java localizado no diretório indicado não é válido para o ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB493E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Java found directory not valid portugues the java encontrado diretorio nao valido Temas significa`
+> `AWSFAB493E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Java found directory not valid portugues the java encontrado diretorio nao valido Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB493E no HCL Workload Automation 10.2.8?
@@ -127701,7 +127701,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB493E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB494E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot set parameter -addjruntime to true because Java 11 is not available on Solaris i386." Em portugues: "you nao pode set parametro -addjruntime to true porque java 11 is nao disponivel on solaris i386.". Temas: nao pode parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB494E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "You cannot set parameter -addjruntime to true because Java 11 is not available on Solaris i386." Em portugues: "you nao pode set parametro -addjruntime to true porque java 11 is nao disponivel on solaris i386.". Temas: nao pode parametro. Em outras palavras: Não é possível ativar o parâmetro de adição do Java porque ele não está disponível no Solaris i386..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB494E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto You cannot set parameter addjruntime true because Java not available Solaris i386 portugues you nao parametro`
@@ -127721,7 +127721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB494E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB495E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Java directory "!1" was no found. Install java with correct version then rerun the twsinst script." Em portugues: "the java diretorio "!1" was no encontrado. install java with correct versao then rerun the twsinst script.". Temas: encontrado instalar diretorio versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB495E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The Java directory "!1" was no found. Install java with correct version then rerun the twsinst script." Em portugues: "the java diretorio "!1" was no encontrado. install java with correct versao then rerun the twsinst script.". Temas: encontrado instalar diretorio versao. Em outras palavras: O diretório do Java indicado não foi encontrado, então instale uma versão adequada e execute novamente o script..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB495E re-executar job recuperar job falhado auto rerun remediar abend 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The Java directory was found Install java with correct version then rerun the script portugues diretorio`
@@ -127741,7 +127741,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB495E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB497E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you set the -jwt parameter to true, you must provide also a value for -tdwbhostname, -tdwbport, and either -wauser and -wapassword or -apikey parameters." Em portugues: "if you set the -jwt parametro to true, you must provide also a valor for -tdwbhostname, -tdwbport, and either -wauser and -wapassword or -apikey parametros.". Temas: parametro parametros valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB497E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you set the -jwt parameter to true, you must provide also a value for -tdwbhostname, -tdwbport, and either -wauser and -wapassword or -apikey parameters." Em portugues: "if you set the -jwt parametro to true, you must provide also a valor for -tdwbhostname, -tdwbport, and either -wauser and -wapassword or -apikey parametros.". Temas: parametro parametros valor. Em outras palavras: Ao ativar o parâmetro de token, é preciso informar o host e a porta do broker, além de usuário e senha ou chave de API..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB497E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto you set the jwt parameter true must provide also value for tdwbhostname tdwbport and either wauser wapassword`
@@ -127761,7 +127761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB497E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB498E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you set the -jwt parameter to true, the -sslpassword, -sslkeysfolder and -agentid parameters are not supported." Em portugues: "if you set the -jwt parametro to true, the -sslpassword, -sslkeysfolder and -agentid parametros are nao supported.". Temas: nao parametro parametros suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB498E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "If you set the -jwt parameter to true, the -sslpassword, -sslkeysfolder and -agentid parameters are not supported." Em portugues: "if you set the -jwt parametro to true, the -sslpassword, -sslkeysfolder and -agentid parametros are nao supported.". Temas: nao parametro parametros suportado. Em outras palavras: Quando o parâmetro de token está ativo, os parâmetros de senha SSL, pasta de chaves SSL e identificador do agente não são suportados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB498E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto you set the jwt parameter true sslpassword sslkeysfolder and agentid parameters are not supported portugues`
@@ -127801,7 +127801,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB501E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB502E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Specify either the sslkeysfolder and sslpassword parameters, or the wauser and wapassword parameters, or apikey parameter." Em portugues: "specify either the sslkeysfolder and sslpassword parametros, or the wauser and wapassword parametros, or apikey parametro.". Temas: parametro parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB502E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Specify either the sslkeysfolder and sslpassword parameters, or the wauser and wapassword parameters, or apikey parameter." Em portugues: "specify either the sslkeysfolder and sslpassword parametros, or the wauser and wapassword parametros, or apikey parametro.". Temas: parametro parametros. Em outras palavras: Informe um dos conjuntos de credenciais: pasta e senha SSL, usuário e senha web, ou chave de API..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB502E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Specify either the sslkeysfolder and sslpassword parameters wauser wapassword apikey parameter portugues specify`
@@ -127821,7 +127821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB502E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB503E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Cannot download certificates from the master domain manager installed on "!1". Operation failed with return code "!2"." Em portugues: "nao pode download certificates from the principal dominio manager instalado on "!1". operacao falhou with return code "!2".". Temas: nao pode dominio instalado operacao falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB503E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Cannot download certificates from the master domain manager installed on "!1". Operation failed with return code "!2"." Em portugues: "nao pode download certificates from the principal dominio manager instalado on "!1". operacao falhou with return code "!2".". Temas: nao pode dominio instalado operacao falhou. Em outras palavras: Não foi possível baixar os certificados do master domain manager instalado no endereço indicado, pois a operação falhou com o código de retorno informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB503E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Cannot download certificates from the installed Operation failed with return code portugues nao principal dominio`
@@ -127841,10 +127841,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB503E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB504E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Both parameters "!1" and "!2"are required." Em portugues: "both parametros "!1" and "!2"are obrigatorio.". Temas: parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB504E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Both parameters "!1" and "!2"are required." Em portugues: "both parametros "!1" and "!2"are obrigatorio.". Temas: parametros. Em outras palavras: Os dois parâmetros indicados são obrigatórios e precisam ser informados juntos no comando..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB504E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Both parameters and are required portugues both parametros obrigatorio Temas significa`
+> `AWSFAB504E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Both parameters and are required portugues both parametros obrigatorio Temas outras palavras dois indicados precisam informados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB504E no HCL Workload Automation 10.2.8?
@@ -127861,7 +127861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB504E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB505E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS is not supported. The operation cannot proceed. Specify -enablefips false to proceed." Em portugues: "fips is nao supported. the operacao nao pode proceed. specify -enablefips false to proceed.". Temas: nao pode operacao suportado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB505E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS is not supported. The operation cannot proceed. Specify -enablefips false to proceed." Em portugues: "fips is nao supported. the operacao nao pode proceed. specify -enablefips false to proceed.". Temas: nao pode operacao suportado. Em outras palavras: O modo FIPS não é suportado e a operação não pode continuar, então informe que o FIPS deve ser desativado para prosseguir..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB505E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto FIPS not supported The operation cannot proceed Specify enablefips false portugues fips nao the operacao`
@@ -127901,7 +127901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB506W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB507E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Cannot delete folder "!1" because it or one of its subfolder is in use." Em portugues: "nao pode excluir pasta "!1" porque it or one of its subfolder is in use.". Temas: nao pode pasta excluir.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB507E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Cannot delete folder "!1" because it or one of its subfolder is in use." Em portugues: "nao pode excluir pasta "!1" porque it or one of its subfolder is in use.". Temas: nao pode pasta excluir. Em outras palavras: A pasta indicada não pôde ser removida porque ela ou uma de suas subpastas está em uso por um processo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB507E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Cannot delete folder because one its subfolder use portugues nao excluir pasta porque Temas`
@@ -127921,7 +127921,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB507E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB508E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Cannot copy folder "!1" because it or one of its subfolder is in use." Em portugues: "nao pode copy pasta "!1" porque it or one of its subfolder is in use.". Temas: nao pode pasta.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB508E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "Cannot copy folder "!1" because it or one of its subfolder is in use." Em portugues: "nao pode copy pasta "!1" porque it or one of its subfolder is in use.". Temas: nao pode pasta. Em outras palavras: A pasta indicada não pôde ser copiada porque ela ou uma de suas subpastas está em uso por um processo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB508E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto Cannot copy folder because one its subfolder use portugues nao pasta porque Temas`
@@ -127941,7 +127941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB508E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB509W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You have provided -apikey parameter, -wauser and -wapassword will be ignored." Em portugues: "you have provided -apikey parametro, -wauser and -wapassword will be ignored.". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB509W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You have provided -apikey parameter, -wauser and -wapassword will be ignored." Em portugues: "you have provided -apikey parametro, -wauser and -wapassword will be ignored.". Temas: parametro. Em outras palavras: Como foi fornecida uma chave de API, os parâmetros de usuário e senha web serão ignorados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB509W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto You have provided apikey parameter wauser and wapassword will ignored portugues you parametro`
@@ -127961,7 +127961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB509W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB510W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You have provided -apikey parameter, -sslkeyfolder and -sslpassword will be ignored." Em portugues: "you have provided -apikey parametro, -sslkeyfolder and -sslpassword will be ignored.". Temas: parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB510W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "You have provided -apikey parameter, -sslkeyfolder and -sslpassword will be ignored." Em portugues: "you have provided -apikey parametro, -sslkeyfolder and -sslpassword will be ignored.". Temas: parametro. Em outras palavras: Como foi fornecida uma chave de API, os parâmetros de pasta e senha SSL serão ignorados..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB510W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto You have provided apikey parameter sslkeyfolder and sslpassword will ignored portugues you parametro`
@@ -127981,7 +127981,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB510W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB511I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode is properly configured and enabled in your environment." Em portugues: "fips mode is properly configured and habilitado in your ambiente.". Temas: habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB511I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode is properly configured and enabled in your environment." Em portugues: "fips mode is properly configured and habilitado in your ambiente.". Temas: habilitado. Em outras palavras: O modo FIPS foi configurado corretamente e está ativo no seu ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB511I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS mode properly configured and enabled your environment portugues fips habilitado ambiente Temas`
@@ -128001,10 +128001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB511I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB512I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode is not enabled in your environment." Em portugues: "fips mode is nao habilitado in your ambiente.". Temas: nao habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB512I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode is not enabled in your environment." Em portugues: "fips mode is nao habilitado in your ambiente.". Temas: nao habilitado. Em outras palavras: O modo FIPS não está ativado no seu ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB512I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS mode not enabled your environment portugues fips nao habilitado ambiente Temas significa`
+> `AWSFAB512I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS mode not enabled your environment portugues fips nao habilitado ambiente Temas outras palavras modo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB512I no HCL Workload Automation 10.2.8?
@@ -128021,7 +128021,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB512I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB513E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode cannot be properly configured and enabled in your environment." Em portugues: "fips mode nao pode be properly configured and habilitado in your ambiente.". Temas: nao pode habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB513E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode cannot be properly configured and enabled in your environment." Em portugues: "fips mode nao pode be properly configured and habilitado in your ambiente.". Temas: nao pode habilitado. Em outras palavras: Não foi possível configurar e ativar corretamente o modo FIPS no seu ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB513E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto FIPS mode cannot properly configured and enabled your environment portugues fips nao habilitado ambiente`
@@ -128041,7 +128041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB513E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB514W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode cannot be properly configured in your environment. The installation will continue with FIPS mode not enabled." Em portugues: "fips mode nao pode be properly configured in your ambiente. the instalacao will continue with fips mode nao habilitado.". Temas: nao pode instalacao habilitado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB514W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS mode cannot be properly configured in your environment. The installation will continue with FIPS mode not enabled." Em portugues: "fips mode nao pode be properly configured in your ambiente. the instalacao will continue with fips mode nao habilitado.". Temas: nao pode instalacao habilitado. Em outras palavras: O modo FIPS não pôde ser configurado corretamente, então a instalação continuará com o FIPS desativado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB514W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto FIPS mode cannot properly configured your environment The will continue with not enabled portugues fips`
@@ -128061,10 +128061,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB514W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB515I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS is configured in weak mode in your environment." Em portugues: "fips is configured in weak mode in your ambiente.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB515I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS is configured in weak mode in your environment." Em portugues: "fips is configured in weak mode in your ambiente.". Em outras palavras: O modo FIPS foi configurado no seu ambiente, porém em modo fraco..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB515I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS configured weak mode your environment portugues fips ambiente significa`
+> `AWSFAB515I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS configured weak mode your environment portugues fips ambiente outras palavras modo foi configurado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB515I no HCL Workload Automation 10.2.8?
@@ -128081,10 +128081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB515I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB516E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS cannot be configured in weak mode in your environment." Em portugues: "fips nao pode be configured in weak mode in your ambiente.". Temas: nao pode.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB516E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS cannot be configured in weak mode in your environment." Em portugues: "fips nao pode be configured in weak mode in your ambiente.". Temas: nao pode. Em outras palavras: Não é possível configurar o modo FIPS em modo fraco no seu ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB516E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto FIPS cannot configured weak mode your environment portugues fips nao ambiente Temas significa`
+> `AWSFAB516E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto FIPS cannot configured weak mode your environment portugues fips nao ambiente Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB516E no HCL Workload Automation 10.2.8?
@@ -128101,10 +128101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB516E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB517I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS pre-configuration steps have completed successfully." Em portugues: "fips pre-configuracao steps have concluido successfully.". Temas: com sucesso concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB517I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "FIPS pre-configuration steps have completed successfully." Em portugues: "fips pre-configuracao steps have concluido successfully.". Temas: com sucesso concluido. Em outras palavras: As etapas de pré-configuração do modo FIPS foram concluídas com sucesso..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB517I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS pre-configuration steps have completed successfully portugues fips pre-configuracao concluido Temas sucesso significa`
+> `AWSFAB517I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto FIPS pre-configuration steps have completed successfully portugues fips pre-configuracao concluido Temas sucesso outras palavras etapas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB517I no HCL Workload Automation 10.2.8?
@@ -128141,7 +128141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB518E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB519E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied certificates are either not valid or incompatible with the current installation." Em portugues: "the informado certificates are either nao valido or incompativel with the current instalacao.". Temas: nao informado valido instalacao incompativel.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB519E (severidade: error, familia AWSFAB - installation (twsinst)) tem o texto: "The supplied certificates are either not valid or incompatible with the current installation." Em portugues: "the informado certificates are either nao valido or incompativel with the current instalacao.". Temas: nao informado valido instalacao incompativel. Em outras palavras: Os certificados fornecidos não são válidos ou não são compatíveis com a instalação atual..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB519E 10.2.8 mensagem severidade error familia AWSFAB installation twsinst tem texto The supplied certificates are either not valid incompatible with the current portugues informado nao`
@@ -128161,7 +128161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB519E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB600W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Installation completed with one or more warnings. See the log file "{0}" for more information." Em portugues: "instalacao concluido with one or mais warnings. see the log arquivo "{0}" for mais information.". Temas: arquivo instalacao concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB600W (severidade: warning, familia AWSFAB - installation (twsinst)) tem o texto: "Installation completed with one or more warnings. See the log file "{0}" for more information." Em portugues: "instalacao concluido with one or mais warnings. see the log arquivo "{0}" for mais information.". Temas: arquivo instalacao concluido. Em outras palavras: A instalação terminou com um ou mais avisos, então consulte o arquivo de log indicado para mais detalhes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAB600W 10.2.8 mensagem severidade warning familia AWSFAB installation twsinst tem texto Installation completed with one more warnings See the log file for information portugues instalacao concluido mais`
@@ -128181,10 +128181,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB600W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAB601I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Import certificates." Em portugues: "import certificates.".
+No HCL Workload Automation 10.2.8, a mensagem AWSFAB601I (severidade: informational, familia AWSFAB - installation (twsinst)) tem o texto: "Import certificates." Em portugues: "import certificates.". Em outras palavras: O instalador está importando os certificados necessários para o ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAB601I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Import certificates portugues import significa diagnosticar`
+> `AWSFAB601I 10.2.8 mensagem severidade informational familia AWSFAB installation twsinst tem texto Import certificates portugues import outras palavras instalador importando certificados ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAB601I no HCL Workload Automation 10.2.8?
@@ -128201,7 +128201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAB601I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF003E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch script cannot run on this operating system: !1." Em portugues: "the twspatch script nao pode run on this operating sistema: !1.". Temas: nao pode sistema execucao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF003E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch script cannot run on this operating system: !1." Em portugues: "the twspatch script nao pode run on this operating sistema: !1.". Temas: nao pode sistema execucao. Em outras palavras: O script de aplicação de patch não pode ser executado no sistema operacional atual indicado.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF003E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The twspatch script cannot run this operating system portugues the nao sistema Temas`
@@ -128221,7 +128221,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF004E (severidade: error, familia AWSFAF - faf) tem o texto: "Only the user "root" can run the twspatch script." Em portugues: "only the usuario "root" can run the twspatch script.". Temas: usuario execucao. Explicacao oficial: See message text
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF004E (severidade: error, familia AWSFAF - faf) tem o texto: "Only the user "root" can run the twspatch script." Em portugues: "only the usuario "root" can run the twspatch script.". Temas: usuario execucao. Em outras palavras: Somente o usuário raiz pode executar o script de aplicação de patch no sistema.. Explicacao oficial: See message text
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF004E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto Only the user root can run twspatch script portugues only usuario Temas`
@@ -128241,10 +128241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF004E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF005E (severidade: error, familia AWSFAF - faf) tem o texto: "No parameters have been specified for twspatch." Em portugues: "no parametros have estado especificado for twspatch.". Temas: especificado parametros. Explicacao oficial: The twspatch script needs to be supplied with at least one parameter.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF005E (severidade: error, familia AWSFAF - faf) tem o texto: "No parameters have been specified for twspatch." Em portugues: "no parametros have estado especificado for twspatch.". Temas: especificado parametros. Em outras palavras: Nenhum parâmetro foi informado ao executar o utilitário de aplicação de pacotes de correção, então a operação não possui o mínimo necessário para prosseguir.. Explicacao oficial: The twspatch script needs to be supplied with at least one parameter.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF005E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto parameters have been specified for twspatch portugues parametros estado especificado Temas Explicacao oficial The`
+> `AWSFAF005E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto parameters have been specified for twspatch portugues parametros estado especificado Temas outras palavras Nenhum foi`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF005E no HCL Workload Automation 10.2.8?
@@ -128261,7 +128261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF005E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF006I (severidade: informational, familia AWSFAF - faf) tem o texto: "Use the command "twspatch -u" to see a list of the available parameters." Em portugues: "use the comando "twspatch -u" to see a list of the disponivel parametros.". Temas: comando parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF006I (severidade: informational, familia AWSFAF - faf) tem o texto: "Use the command "twspatch -u" to see a list of the available parameters." Em portugues: "use the comando "twspatch -u" to see a list of the disponivel parametros.". Temas: comando parametros. Em outras palavras: Execute o comando de ajuda do utilitário de aplicação de pacotes de correção para ver a lista completa de opções e parâmetros disponíveis..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF006I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto Use the command twspatch see list available parameters portugues use comando disponivel parametros Temas`
@@ -128281,7 +128281,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF007E (severidade: error, familia AWSFAF - faf) tem o texto: "The supplied installation type parameter is not correct. It must be one of the following: "-install", "-undo", "-commit", "-remove", "-repair"." Em portugues: "the informado instalacao tipo parametro is nao correct. it must be one of the seguinte: "-install", "-undo", "-commit", "-remove", "-repair".". Temas: nao informado tipo parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF007E (severidade: error, familia AWSFAF - faf) tem o texto: "The supplied installation type parameter is not correct. It must be one of the following: "-install", "-undo", "-commit", "-remove", "-repair"." Em portugues: "the informado instalacao tipo parametro is nao correct. it must be one of the seguinte: "-install", "-undo", "-commit", "-remove", "-repair".". Temas: nao informado tipo parametro instalacao. Em outras palavras: O tipo de instalação informado é inválido e deve corresponder exatamente a uma das modalidades aceitas, como instalar, desfazer, confirmar, remover ou reparar um pacote.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF007E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The supplied installation type parameter not correct must one the following install undo commit remove repair portugues informado instalacao`
@@ -128301,7 +128301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF007E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF008E (severidade: error, familia AWSFAF - faf) tem o texto: "More than one installation type parameter has been supplied. Supply only one of the following: "-install", "-undo", "-commit", "-remove", "-repair." Em portugues: "mais que one instalacao tipo parametro has estado informado. supply only one of the seguinte: "-install", "-undo", "-commit", "-remove", "-repair.". Temas: informado tipo parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF008E (severidade: error, familia AWSFAF - faf) tem o texto: "More than one installation type parameter has been supplied. Supply only one of the following: "-install", "-undo", "-commit", "-remove", "-repair." Em portugues: "mais que one instalacao tipo parametro has estado informado. supply only one of the seguinte: "-install", "-undo", "-commit", "-remove", "-repair.". Temas: informado tipo parametro instalacao. Em outras palavras: Foi informado mais de um tipo de instalação para o pacote de correção, porém apenas uma modalidade de instalação pode ser especificada por execução.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF008E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto More than one installation type parameter has been supplied Supply only the following install undo commit remove repair portugues`
@@ -128341,7 +128341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF009E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF010E (severidade: error, familia AWSFAF - faf) tem o texto: "An incorrect value has been supplied for a parameter. The parameter must be as follows: "!1"." Em portugues: "an incorreto valor has estado informado for a parametro. the parametro must be as follows: "!1".". Temas: informado parametro valor incorreto. Explicacao oficial: The parameter you have supplied is correct, and is valid for this installation type. However, the value supplied for the parameter is not correct.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF010E (severidade: error, familia AWSFAF - faf) tem o texto: "An incorrect value has been supplied for a parameter. The parameter must be as follows: "!1"." Em portugues: "an incorreto valor has estado informado for a parametro. the parametro must be as follows: "!1".". Temas: informado parametro valor incorreto. Em outras palavras: O valor informado para um parâmetro de execução é incorreto e precisa seguir exatamente o formato esperado pelo utilitário de aplicação de correções.. Explicacao oficial: The parameter you have supplied is correct, and is valid for this installation type. However, the value supplied for the parameter is not correct.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF010E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto incorrect value has been supplied for parameter The must follows portugues incorreto valor estado informado parametro the`
@@ -128361,7 +128361,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF010E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF011E (severidade: error, familia AWSFAF - faf) tem o texto: "The following parameter has been supplied more than once: "!1"." Em portugues: "the seguinte parametro has estado informado mais que once: "!1".". Temas: informado parametro. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF011E (severidade: error, familia AWSFAF - faf) tem o texto: "The following parameter has been supplied more than once: "!1"." Em portugues: "the seguinte parametro has estado informado mais que once: "!1".". Temas: informado parametro. Em outras palavras: Um mesmo parâmetro de comando foi repetido na linha de execução, o que não é permitido e invalida o processamento atual.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF011E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The following parameter has been supplied more than once portugues the seguinte parametro estado informado mais Temas`
@@ -128381,7 +128381,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF011E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF012E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch fix pack installation cannot be used because the HCL Workload Automation registry file is missing." Em portugues: "the twspatch fix pack instalacao nao pode be used porque the hcl workload automation registry arquivo is faltando.". Temas: arquivo nao pode carga de trabalho instalacao faltando. Explicacao oficial: The HCL Workload Automation registry file contains the relevant information that he fix pack installation uses to identify and update the existing instance. Without it, the installation cannot go ahead.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF012E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch fix pack installation cannot be used because the HCL Workload Automation registry file is missing." Em portugues: "the twspatch fix pack instalacao nao pode be used porque the hcl workload automation registry arquivo is faltando.". Temas: arquivo nao pode carga de trabalho instalacao faltando. Em outras palavras: O utilitário de aplicação de pacotes não pode continuar porque não encontrou o arquivo de registro que identifica a instalação ativa do produto de automação de cargas.. Explicacao oficial: The HCL Workload Automation registry file contains the relevant information that he fix pack installation uses to identify and update the existing instance. Without it, the installation cannot go ahead.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF012E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The twspatch fix pack installation cannot used because the registry file missing portugues instalacao nao`
@@ -128401,10 +128401,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF012E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF014E (severidade: error, familia AWSFAF - faf) tem o texto: "The following is not a recognizable installation parameter "!1"." Em portugues: "the seguinte is nao a recognizable instalacao parametro "!1".". Temas: nao parametro instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF014E (severidade: error, familia AWSFAF - faf) tem o texto: "The following is not a recognizable installation parameter "!1"." Em portugues: "the seguinte is nao a recognizable instalacao parametro "!1".". Temas: nao parametro instalacao. Em outras palavras: O valor informado na linha de comando não corresponde a nenhum parâmetro de instalação reconhecido pelo utilitário de aplicação de correções.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF014E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The following not recognizable installation parameter portugues the seguinte nao instalacao parametro Temas Explicacao oficial See`
+> `AWSFAF014E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The following not recognizable installation parameter portugues the seguinte nao instalacao parametro Temas outras palavras valor`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF014E no HCL Workload Automation 10.2.8?
@@ -128421,10 +128421,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF014E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF015E (severidade: error, familia AWSFAF - faf) tem o texto: "The "-uname" option is missing." Em portugues: "the "-uname" opcao is faltando.". Temas: opcao faltando. Explicacao oficial: The indicated parameter is required for this installation type.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF015E (severidade: error, familia AWSFAF - faf) tem o texto: "The "-uname" option is missing." Em portugues: "the "-uname" opcao is faltando.". Temas: opcao faltando. Em outras palavras: A opção responsável por especificar o nome do usuário que terá a instalação atualizada não foi fornecida e é obrigatória.. Explicacao oficial: The indicated parameter is required for this installation type.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF015E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The uname option missing portugues the opcao faltando Temas Explicacao oficial indicated parameter required for this`
+> `AWSFAF015E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The uname option missing portugues the opcao faltando Temas outras palavras especificar nome atualizada foi fornecida Explicacao`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF015E no HCL Workload Automation 10.2.8?
@@ -128461,7 +128461,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF016E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF017E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to locate the home directory of the specified user: "!1"." Em portugues: "the script was incapaz to locate the home diretorio of the especificado usuario: "!1".". Temas: usuario nao conseguiu especificado diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF017E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to locate the home directory of the specified user: "!1"." Em portugues: "the script was incapaz to locate the home diretorio of the especificado usuario: "!1".". Temas: usuario nao conseguiu especificado diretorio. Em outras palavras: O script não conseguiu localizar o diretório casa do usuário indicado, portanto não é possível associar a instalação a uma conta válida.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF017E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The script was unable locate the home directory specified user portugues incapaz diretorio`
@@ -128501,7 +128501,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF018I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF019E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to determine the installation type from the HCL Workload Automation registry file "!1"." Em portugues: "the script was incapaz to determine the instalacao tipo from the hcl workload automation registry arquivo "!1".". Temas: arquivo nao conseguiu carga de trabalho tipo instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF019E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to determine the installation type from the HCL Workload Automation registry file "!1"." Em portugues: "the script was incapaz to determine the instalacao tipo from the hcl workload automation registry arquivo "!1".". Temas: arquivo nao conseguiu carga de trabalho tipo instalacao. Em outras palavras: O script falhou ao tentar identificar o tipo de instalação a partir do arquivo de registro do produto, que não continha as informações esperadas.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF019E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The script was unable determine the installation type from registry file portugues incapaz instalacao`
@@ -128521,7 +128521,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF019E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF020E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to find the configuration file !1 of the HCL Workload Automation instance to which you want to apply the fix pack." Em portugues: "the script was incapaz to find the configuracao arquivo !1 of the hcl workload automation instancia to which you want to apply the fix pack.". Temas: arquivo nao conseguiu carga de trabalho. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF020E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to find the configuration file !1 of the HCL Workload Automation instance to which you want to apply the fix pack." Em portugues: "the script was incapaz to find the configuracao arquivo !1 of the hcl workload automation instancia to which you want to apply the fix pack.". Temas: arquivo nao conseguiu carga de trabalho. Em outras palavras: O script não encontrou o arquivo de configuração da instância do produto à qual o pacote de correção deveria ser aplicado.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF020E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The script was unable find the configuration file instance which you want apply fix pack portugues`
@@ -128561,7 +128561,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF021E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF022E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to determine the installation directory from the HCL Workload Automation registry file "!1"." Em portugues: "the script was incapaz to determine the instalacao diretorio from the hcl workload automation registry arquivo "!1".". Temas: arquivo nao conseguiu carga de trabalho instalacao diretorio. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF022E (severidade: error, familia AWSFAF - faf) tem o texto: "The script was unable to determine the installation directory from the HCL Workload Automation registry file "!1"." Em portugues: "the script was incapaz to determine the instalacao diretorio from the hcl workload automation registry arquivo "!1".". Temas: arquivo nao conseguiu carga de trabalho instalacao diretorio. Em outras palavras: Não foi possível determinar o diretório de instalação do produto a partir das informações do arquivo de registro, interrompendo a aplicação da correção.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF022E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The script was unable determine the installation directory from registry file portugues incapaz instalacao`
@@ -128581,7 +128581,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF022E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF023E (severidade: error, familia AWSFAF - faf) tem o texto: "The installed component (workstation type) "!1" in the HCL Workload Automation registry file "!2" is not valid." Em portugues: "the instalado component (estacao de trabalho tipo) "!1" in the hcl workload automation registry arquivo "!2" is nao valido.". Temas: nao arquivo valido carga de trabalho instalado. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF023E (severidade: error, familia AWSFAF - faf) tem o texto: "The installed component (workstation type) "!1" in the HCL Workload Automation registry file "!2" is not valid." Em portugues: "the instalado component (estacao de trabalho tipo) "!1" in the hcl workload automation registry arquivo "!2" is nao valido.". Temas: nao arquivo valido carga de trabalho instalado. Em outras palavras: O componente instalado registrado no arquivo do produto, referente ao tipo de estação de trabalho, foi considerado inválido para o processamento.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF023E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The installed component workstation type the registry file not valid portugues instalado estacao trabalho tipo arquivo`
@@ -128601,10 +128601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF023E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF024I (severidade: informational, familia AWSFAF - faf) tem o texto: "Check the installed component (workstation_type) in the directory "!1"." Em portugues: "check the instalado component (workstation_type) in the diretorio "!1".". Temas: diretorio instalado.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF024I (severidade: informational, familia AWSFAF - faf) tem o texto: "Check the installed component (workstation_type) in the directory "!1"." Em portugues: "check the instalado component (workstation_type) in the diretorio "!1".". Temas: diretorio instalado. Em outras palavras: Verifique o componente instalado e o seu tipo de estação correspondente dentro do diretório indicado para confirmar a configuração do produto..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF024I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto Check the installed component workstation_type directory portugues check instalado diretorio Temas significa`
+> `AWSFAF024I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto Check the installed component workstation_type directory portugues check instalado diretorio Temas outras palavras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF024I no HCL Workload Automation 10.2.8?
@@ -128621,7 +128621,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF024I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF025E (severidade: error, familia AWSFAF - faf) tem o texto: "No previous instances of HCL Workload Automation belonging to the supplied user "!1" have been detected in the HCL Workload Automation registry file "!2"." Em portugues: "no previous instances of hcl workload automation belonging to the informado usuario "!1" have estado detectado in the hcl workload automation registry arquivo "!2".". Temas: arquivo informado usuario carga de trabalho. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF025E (severidade: error, familia AWSFAF - faf) tem o texto: "No previous instances of HCL Workload Automation belonging to the supplied user "!1" have been detected in the HCL Workload Automation registry file "!2"." Em portugues: "no previous instances of hcl workload automation belonging to the informado usuario "!1" have estado detectado in the hcl workload automation registry arquivo "!2".". Temas: arquivo informado usuario carga de trabalho. Em outras palavras: Nenhuma instalação anterior do produto pertencente ao usuário informado foi localizada no arquivo de registro, então não há base para aplicar a correção.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF025E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto previous instances belonging the supplied user have been detected registry file portugues informado usuario`
@@ -128641,10 +128641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF025E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF026I (severidade: informational, familia AWSFAF - faf) tem o texto: "The !1 fix pack installation has completed successfully." Em portugues: "the !1 fix pack instalacao has concluido successfully.". Temas: instalacao com sucesso concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF026I (severidade: informational, familia AWSFAF - faf) tem o texto: "The !1 fix pack installation has completed successfully." Em portugues: "the !1 fix pack instalacao has concluido successfully.". Temas: instalacao com sucesso concluido. Em outras palavras: A instalação do pacote de correção concluiu com êxito e todas as etapas previstas foram finalizadas sem erros..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF026I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto The fix pack installation has completed successfully portugues the instalacao concluido Temas sucesso significa`
+> `AWSFAF026I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto The fix pack installation has completed successfully portugues the instalacao concluido Temas sucesso outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF026I no HCL Workload Automation 10.2.8?
@@ -128661,7 +128661,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF026I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF027E (severidade: error, familia AWSFAF - faf) tem o texto: "The !1 fix pack installation failed. For more details see the log file "!2"." Em portugues: "the !1 fix pack instalacao falhou. for mais details see the log arquivo "!2".". Temas: arquivo instalacao falhou. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF027E (severidade: error, familia AWSFAF - faf) tem o texto: "The !1 fix pack installation failed. For more details see the log file "!2"." Em portugues: "the !1 fix pack instalacao falhou. for mais details see the log arquivo "!2".". Temas: arquivo instalacao falhou. Em outras palavras: A instalação do pacote de correção falhou durante o processamento e mais detalhes sobre a causa podem ser encontrados no arquivo de log indicado.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF027E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The fix pack installation failed For more details see the log file portugues instalacao falhou for mais`
@@ -128681,7 +128681,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF028W (severidade: warning, familia AWSFAF - faf) tem o texto: "At least one warning message was issued during the !1 fix pack installation." Em portugues: "at least one warning mensagem was issued durante the !1 fix pack instalacao.". Temas: mensagem instalacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF028W (severidade: warning, familia AWSFAF - faf) tem o texto: "At least one warning message was issued during the !1 fix pack installation." Em portugues: "at least one warning mensagem was issued durante the !1 fix pack instalacao.". Temas: mensagem instalacao. Em outras palavras: Durante a instalação do pacote de correção foi emitida pelo menos uma mensagem de aviso que merece ser revisada antes da conclusão.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF028W 10.2.8 mensagem severidade warning familia AWSFAF faf tem texto least one message was issued during the fix pack installation portugues durante`
@@ -128701,10 +128701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF028W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF029I (severidade: informational, familia AWSFAF - faf) tem o texto: "For more details see the log file "!1"." Em portugues: "for mais details see the log arquivo "!1".". Temas: arquivo.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF029I (severidade: informational, familia AWSFAF - faf) tem o texto: "For more details see the log file "!1"." Em portugues: "for mais details see the log arquivo "!1".". Temas: arquivo. Em outras palavras: Consulte o arquivo de log informado se precisar de informações mais detalhadas sobre o processamento realizado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF029I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto For more details see the log file portugues for mais arquivo Temas significa`
+> `AWSFAF029I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto For more details see the log file portugues for mais arquivo Temas outras palavras Consulte`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF029I no HCL Workload Automation 10.2.8?
@@ -128721,7 +128721,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF029I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF030E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch script is being run from the wrong directory." Em portugues: "the twspatch script is being run from the wrong diretorio.". Temas: diretorio execucao. Explicacao oficial: This depends on the type of installation you are performing: -install or -repair You might be attempting to install a fix pack for HCL Workload Automation on a UNIX platform using the twspatch utility copied from the installation CD to the home directory of the TWSuser. This is not allowed.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF030E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch script is being run from the wrong directory." Em portugues: "the twspatch script is being run from the wrong diretorio.". Temas: diretorio execucao. Em outras palavras: O script de aplicação de correções está sendo executado a partir de um diretório incorreto, portanto deve ser invocado do local adequado.. Explicacao oficial: This depends on the type of installation you are performing: -install or -repair You might be attempting to install a fix pack for HCL Workload Automation on a UNIX platform using the twspatch utility copied from the installation CD to the home directory of the TWSuser. This is not allowed.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF030E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The twspatch script being run from the wrong directory portugues diretorio Temas`
@@ -128761,7 +128761,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF031I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF032E (severidade: error, familia AWSFAF - faf) tem o texto: "The installation script was not able to locate the file "!1" needed set up the operation environment "!2"." Em portugues: "the instalacao script was nao able to locate the arquivo "!1" needed set up the operacao ambiente "!2".". Temas: nao arquivo instalacao operacao. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF032E (severidade: error, familia AWSFAF - faf) tem o texto: "The installation script was not able to locate the file "!1" needed set up the operation environment "!2"." Em portugues: "the instalacao script was nao able to locate the arquivo "!1" needed set up the operacao ambiente "!2".". Temas: nao arquivo instalacao operacao. Em outras palavras: O script de instalação não localizou o arquivo necessário para configurar o ambiente operacional indicado, bloqueando a continuação do processo.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF032E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The installation script was not able locate the file needed set operation environment portugues instalacao nao`
@@ -128781,7 +128781,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF032E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF033E (severidade: error, familia AWSFAF - faf) tem o texto: "The installation script has been run from the wrong directory. You must run the script from the following directory:!1." Em portugues: "the instalacao script has estado run from the wrong diretorio. you must run the script from the seguinte diretorio:!1.". Temas: instalacao diretorio execucao. Explicacao oficial: The -undo, -commit, or -repair installation types must be run from the copy of the twspatch utility that has been installed for you in the home directory of the TWSuser.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF033E (severidade: error, familia AWSFAF - faf) tem o texto: "The installation script has been run from the wrong directory. You must run the script from the following directory:!1." Em portugues: "the instalacao script has estado run from the wrong diretorio. you must run the script from the seguinte diretorio:!1.". Temas: instalacao diretorio execucao. Em outras palavras: O script de instalação foi executado do diretório errado e deve ser reprocessado a partir do local específico indicado na mensagem.. Explicacao oficial: The -undo, -commit, or -repair installation types must be run from the copy of the twspatch utility that has been installed for you in the home directory of the TWSuser.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF033E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The installation script has been run from the wrong directory You must following portugues`
@@ -128821,7 +128821,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF034W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF035I (severidade: informational, familia AWSFAF - faf) tem o texto: "Remove the original HCL Workload Automation instance belonging to the user "!1 using the twsinst utility with the "-uninst" option." Em portugues: "remove the original hcl workload automation instancia belonging to the usuario "!1 using the twsinst utility with the "-uninst" opcao.". Temas: usuario carga de trabalho opcao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF035I (severidade: informational, familia AWSFAF - faf) tem o texto: "Remove the original HCL Workload Automation instance belonging to the user "!1 using the twsinst utility with the "-uninst" option." Em portugues: "remove the original hcl workload automation instancia belonging to the usuario "!1 using the twsinst utility with the "-uninst" opcao.". Temas: usuario carga de trabalho opcao. Em outras palavras: Use o utilitário de instalação com a opção de desinstalação para remover a instância original do produto que pertence ao usuário informado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF035I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto Remove the original instance belonging user using twsinst utility with uninst option portugues remove instancia`
@@ -128841,7 +128841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF035I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF037E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch script is being run from the wrong directory." Em portugues: "the twspatch script is being run from the wrong diretorio.". Temas: diretorio execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF037E (severidade: error, familia AWSFAF - faf) tem o texto: "The twspatch script is being run from the wrong directory." Em portugues: "the twspatch script is being run from the wrong diretorio.". Temas: diretorio execucao. Em outras palavras: O script de aplicação de correções está sendo executado de um diretório incorreto e precisa ser rodado do caminho apropriado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF037E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The twspatch script being run from the wrong directory portugues diretorio Temas`
@@ -128881,7 +128881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF038I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF046E (severidade: error, familia AWSFAF - faf) tem o texto: "The "!1" user account you supplied does not exist on the local computer. The patching cannot proceed." Em portugues: "the "!1" usuario account you informado does nao existe on the local computer. the patching nao pode proceed.". Temas: nao pode informado usuario. Explicacao oficial: The indicated parameter is incorrect.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF046E (severidade: error, familia AWSFAF - faf) tem o texto: "The "!1" user account you supplied does not exist on the local computer. The patching cannot proceed." Em portugues: "the "!1" usuario account you informado does nao existe on the local computer. the patching nao pode proceed.". Temas: nao pode informado usuario. Em outras palavras: A conta de usuário informada não existe na máquina local, então o processo de aplicação de correções não pode ser iniciado.. Explicacao oficial: The indicated parameter is incorrect.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF046E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The user account you supplied does not exist the local computer patching cannot proceed portugues usuario`
@@ -128901,7 +128901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF046E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF047E (severidade: error, familia AWSFAF - faf) tem o texto: "You specified an incorrect password for the user !1." Em portugues: "you especificado an incorreto senha for the usuario !1.". Temas: usuario especificado incorreto senha. Explicacao oficial: The indicated parameter is incorrect.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF047E (severidade: error, familia AWSFAF - faf) tem o texto: "You specified an incorrect password for the user !1." Em portugues: "you especificado an incorreto senha for the usuario !1.". Temas: usuario especificado incorreto senha. Em outras palavras: A senha fornecida para o usuário indicado não está correta, o que impede a autenticação e a continuação do procedimento.. Explicacao oficial: The indicated parameter is incorrect.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF047E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto You specified incorrect password for the user portugues you especificado incorreto senha usuario Temas`
@@ -128921,10 +128921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF047E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF048I (severidade: informational, familia AWSFAF - faf) tem o texto: "The "!1" operation completed successfully." Em portugues: "the "!1" operacao concluido successfully.". Temas: operacao com sucesso concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF048I (severidade: informational, familia AWSFAF - faf) tem o texto: "The "!1" operation completed successfully." Em portugues: "the "!1" operacao concluido successfully.". Temas: operacao com sucesso concluido. Em outras palavras: A operação solicitada foi finalizada com sucesso e todas as suas etapas foram concluídas de forma satisfatória..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSFAF048I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto The operation completed successfully portugues the operacao concluido Temas sucesso significa`
+> `AWSFAF048I 10.2.8 mensagem severidade informational familia AWSFAF faf tem texto The operation completed successfully portugues the operacao concluido Temas sucesso outras palavras solicitada foi finalizada todas`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSFAF048I no HCL Workload Automation 10.2.8?
@@ -128941,7 +128941,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF048I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF132E (severidade: error, familia AWSFAF - faf) tem o texto: "The uninstallation failed. Either you specified an incorrect username or you are running the "twspatch" script from the wrong directory." Em portugues: "the uninstallation falhou. either you especificado an incorreto username or you are em execucao the "twspatch" script from the wrong diretorio.". Temas: especificado diretorio incorreto falhou. Explicacao oficial: See message text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF132E (severidade: error, familia AWSFAF - faf) tem o texto: "The uninstallation failed. Either you specified an incorrect username or you are running the "twspatch" script from the wrong directory." Em portugues: "the uninstallation falhou. either you especificado an incorreto username or you are em execucao the "twspatch" script from the wrong diretorio.". Temas: especificado diretorio incorreto falhou. Em outras palavras: A desinstalação falhou porque o usuário informado está incorreto ou porque o script de correções foi executado a partir do diretório errado.. Explicacao oficial: See message text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF132E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto The uninstallation failed Either you specified incorrect username are running the twspatch script from wrong directory portugues`
@@ -128961,7 +128961,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF132E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSFAF161E (severidade: error, familia AWSFAF - faf) tem o texto: "There are still jobs running. The twspatch operation cannot continue. Use the coman sj @#@.@ command to verify which jobs are still running." Em portugues: "there are still jobs em execucao. the twspatch operacao nao pode continue. use the coman sj @#@.@ comando to verify which jobs are still em execucao.". Temas: nao pode comando operacao. Explicacao oficial: See text.
+No HCL Workload Automation 10.2.8, a mensagem AWSFAF161E (severidade: error, familia AWSFAF - faf) tem o texto: "There are still jobs running. The twspatch operation cannot continue. Use the coman sj @#@.@ command to verify which jobs are still running." Em portugues: "there are still jobs em execucao. the twspatch operacao nao pode continue. use the coman sj @#@.@ comando to verify which jobs are still em execucao.". Temas: nao pode comando operacao. Em outras palavras: Ainda existem tarefas em execução e a operação de aplicação de correções precisa ser interrompida até que esses trabalhos terminem.. Explicacao oficial: See text.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSFAF161E 10.2.8 mensagem severidade error familia AWSFAF faf tem texto There are still jobs running The twspatch operation cannot continue Use the coman command verify which`
@@ -128981,10 +128981,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSFAF161E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW101E (severidade: error, familia AWSGTW - gtw) tem o texto: "The specified parameter "!1" is not valid." Em portugues: "the especificado parametro "!1" is nao valido.". Temas: nao valido especificado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW101E (severidade: error, familia AWSGTW - gtw) tem o texto: "The specified parameter "!1" is not valid." Em portugues: "the especificado parametro "!1" is nao valido.". Temas: nao valido especificado parametro. Em outras palavras: O parâmetro especificado na chamada não é reconhecido como válido e deve ser corrigido antes de continuar a operação..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW101E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The specified parameter not valid portugues the especificado parametro nao valido Temas significa`
+> `AWSGTW101E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The specified parameter not valid portugues the especificado parametro nao valido Temas outras palavras chamada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW101E no HCL Workload Automation 10.2.8?
@@ -129001,10 +129001,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW101E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW102E (severidade: error, familia AWSGTW - gtw) tem o texto: "The arguments exceed the maximum input size." Em portugues: "the arguments exceed the maximo entrada tamanho.".
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW102E (severidade: error, familia AWSGTW - gtw) tem o texto: "The arguments exceed the maximum input size." Em portugues: "the arguments exceed the maximo entrada tamanho.". Em outras palavras: O conjunto de argumentos fornecidos excedeu o tamanho máximo aceito pelo processamento, tornando a chamada inválida..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW102E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The arguments exceed the maximum input size portugues maximo entrada tamanho significa`
+> `AWSGTW102E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The arguments exceed the maximum input size portugues maximo entrada tamanho outras palavras conjunto argumentos fornecidos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW102E no HCL Workload Automation 10.2.8?
@@ -129021,10 +129021,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW102E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW103E (severidade: error, familia AWSGTW - gtw) tem o texto: "The parameter "!1" has been specified more than once." Em portugues: "the parametro "!1" has estado especificado mais que once.". Temas: especificado parametro.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW103E (severidade: error, familia AWSGTW - gtw) tem o texto: "The parameter "!1" has been specified more than once." Em portugues: "the parametro "!1" has estado especificado mais que once.". Temas: especificado parametro. Em outras palavras: O mesmo parâmetro foi informado mais de uma vez na chamada, situação que não é permitida pelo processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW103E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The parameter has been specified more than once portugues the parametro estado especificado mais Temas significa`
+> `AWSGTW103E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The parameter has been specified more than once portugues the parametro estado especificado mais Temas outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW103E no HCL Workload Automation 10.2.8?
@@ -129041,7 +129041,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW103E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW104E (severidade: error, familia AWSGTW - gtw) tem o texto: "The parameters "!1" and "!2" are specified in the wrong order." Em portugues: "the parametros "!1" and "!2" are especificado in the wrong order.". Temas: especificado parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW104E (severidade: error, familia AWSGTW - gtw) tem o texto: "The parameters "!1" and "!2" are specified in the wrong order." Em portugues: "the parametros "!1" and "!2" are especificado in the wrong order.". Temas: especificado parametros. Em outras palavras: Os dois parâmetros foram fornecidos em uma ordem incorreta e precisam ser reapresentados na sequência esperada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW104E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The parameters and are specified the wrong order portugues parametros especificado Temas`
@@ -129061,7 +129061,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW104E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW105E (severidade: error, familia AWSGTW - gtw) tem o texto: "The value specified for the parameter "!1" is not valid." Em portugues: "the valor especificado for the parametro "!1" is nao valido.". Temas: nao valido especificado parametro valor.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW105E (severidade: error, familia AWSGTW - gtw) tem o texto: "The value specified for the parameter "!1" is not valid." Em portugues: "the valor especificado for the parametro "!1" is nao valido.". Temas: nao valido especificado parametro valor. Em outras palavras: O valor atribuído ao parâmetro indicado não é válido segundo as regras de validação do processo..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW105E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The value specified for the parameter not valid portugues valor especificado parametro nao valido Temas`
@@ -129081,10 +129081,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW105E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW106E (severidade: error, familia AWSGTW - gtw) tem o texto: "The mandatory parameters "!1" and "!2" are missing." Em portugues: "the mandatory parametros "!1" and "!2" are faltando.". Temas: parametros faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW106E (severidade: error, familia AWSGTW - gtw) tem o texto: "The mandatory parameters "!1" and "!2" are missing." Em portugues: "the mandatory parametros "!1" and "!2" are faltando.". Temas: parametros faltando. Em outras palavras: Os parâmetros obrigatórios não foram informados na chamada, impossibilitando a execução da operação até que sejam fornecidos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW106E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The mandatory parameters and are missing portugues the parametros faltando Temas significa`
+> `AWSGTW106E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The mandatory parameters and are missing portugues the parametros faltando Temas outras palavras foram informados`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW106E no HCL Workload Automation 10.2.8?
@@ -129101,10 +129101,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW106E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW107E (severidade: error, familia AWSGTW - gtw) tem o texto: "The format of the argument "!1" is not valid." Em portugues: "the format of the argumento "!1" is nao valido.". Temas: nao valido argumento.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW107E (severidade: error, familia AWSGTW - gtw) tem o texto: "The format of the argument "!1" is not valid." Em portugues: "the format of the argumento "!1" is nao valido.". Temas: nao valido argumento. Em outras palavras: O formato apresentado no argumento indicado está incorreto e deve ser ajustado para o padrão aceito..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW107E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The format the argument not valid portugues argumento nao valido Temas significa`
+> `AWSGTW107E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The format the argument not valid portugues argumento nao valido Temas outras palavras formato`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW107E no HCL Workload Automation 10.2.8?
@@ -129121,10 +129121,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW107E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW108E (severidade: error, familia AWSGTW - gtw) tem o texto: "Parameter "!1" has a missing value." Em portugues: "parametro "!1" has a faltando valor.". Temas: parametro valor faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW108E (severidade: error, familia AWSGTW - gtw) tem o texto: "Parameter "!1" has a missing value." Em portugues: "parametro "!1" has a faltando valor.". Temas: parametro valor faltando. Em outras palavras: O parâmetro foi indicado sem o seu respectivo valor, mas ele exige um conteúdo obrigatório para funcionar..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW108E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto Parameter has missing value portugues parametro faltando valor Temas significa`
+> `AWSGTW108E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto Parameter has missing value portugues parametro faltando valor Temas outras palavras foi indicado sem seu respectivo`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW108E no HCL Workload Automation 10.2.8?
@@ -129141,7 +129141,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW108E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW109E (severidade: error, familia AWSGTW - gtw) tem o texto: "The following error occurred while opening the configuration file "!1": !2." Em portugues: "the seguinte erro ocorreu while opening the configuracao arquivo "!1": !2.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW109E (severidade: error, familia AWSGTW - gtw) tem o texto: "The following error occurred while opening the configuration file "!1": !2." Em portugues: "the seguinte erro ocorreu while opening the configuracao arquivo "!1": !2.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha ao tentar abrir o arquivo de configuração informado, e o detalhe do erro deve ser verificado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW109E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The following occurred while opening the configuration file portugues seguinte erro ocorreu configuracao arquivo Temas`
@@ -129161,7 +129161,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW109E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW110E (severidade: error, familia AWSGTW - gtw) tem o texto: "The following error occurred while writing the configuration file "!1": !2." Em portugues: "the seguinte erro ocorreu while writing the configuracao arquivo "!1": !2.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW110E (severidade: error, familia AWSGTW - gtw) tem o texto: "The following error occurred while writing the configuration file "!1": !2." Em portugues: "the seguinte erro ocorreu while writing the configuracao arquivo "!1": !2.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha ao gravar conteúdo no arquivo de configuração informado, e a causa deve ser examinada no detalhe do erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW110E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The following occurred while writing the configuration file portugues seguinte erro ocorreu configuracao arquivo Temas`
@@ -129181,7 +129181,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW110E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW111E (severidade: error, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. An error occurred while initializing the IBM Enterprise Console agent." Em portugues: "an interno erro has ocorreu. an erro ocorreu while initializing the ibm enterprise console agente.". Temas: erro ocorreu interno agente.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW111E (severidade: error, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. An error occurred while initializing the IBM Enterprise Console agent." Em portugues: "an interno erro has ocorreu. an erro ocorreu while initializing the ibm enterprise console agente.". Temas: erro ocorreu interno agente. Em outras palavras: Ocorreu uma falha interna durante a inicialização do agente responsável por integrar eventos ao console empresarial..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW111E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto internal has occurred while initializing the IBM Enterprise Console agent portugues interno erro ocorreu`
@@ -129201,7 +129201,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW111E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW112E (severidade: error, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. An error occurred while creating the Event Integration Facility handle." Em portugues: "an interno erro has ocorreu. an erro ocorreu while creating the event integration facility handle.". Temas: erro ocorreu interno.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW112E (severidade: error, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. An error occurred while creating the Event Integration Facility handle." Em portugues: "an interno erro has ocorreu. an erro ocorreu while creating the event integration facility handle.". Temas: erro ocorreu interno. Em outras palavras: Ocorreu uma falha interna ao criar o mecanismo responsável por integrar eventos ao sistema de facilidades de processamento..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW112E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto internal has occurred while creating the Event Integration Facility handle portugues interno erro ocorreu`
@@ -129221,10 +129221,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW112E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW113I (severidade: informational, familia AWSGTW - gtw) tem o texto: "The event has been successfully sent." Em portugues: "the event has estado successfully enviado.". Temas: com sucesso.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW113I (severidade: informational, familia AWSGTW - gtw) tem o texto: "The event has been successfully sent." Em portugues: "the event has estado successfully enviado.". Temas: com sucesso. Em outras palavras: O evento foi processado e enviado corretamente ao destino configurado para a integração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW113I 10.2.8 mensagem severidade informational familia AWSGTW gtw tem texto The event has been successfully sent portugues the estado enviado Temas sucesso significa`
+> `AWSGTW113I 10.2.8 mensagem severidade informational familia AWSGTW gtw tem texto The event has been successfully sent portugues the estado enviado Temas sucesso outras palavras evento foi processado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW113I no HCL Workload Automation 10.2.8?
@@ -129241,10 +129241,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW113I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW114E (severidade: error, familia AWSGTW - gtw) tem o texto: "An error occurred while sending the event." Em portugues: "an erro ocorreu while sending the event.". Temas: erro ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW114E (severidade: error, familia AWSGTW - gtw) tem o texto: "An error occurred while sending the event." Em portugues: "an erro ocorreu while sending the event.". Temas: erro ocorreu. Em outras palavras: Houve uma falha ao tentar enviar o evento para o destino final e a integração não foi concluída..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW114E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto occurred while sending the event portugues erro ocorreu Temas significa`
+> `AWSGTW114E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto occurred while sending the event portugues erro ocorreu Temas outras palavras Houve falha`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW114E no HCL Workload Automation 10.2.8?
@@ -129261,7 +129261,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW114E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW115I (severidade: informational, familia AWSGTW - gtw) tem o texto: "The event has been filtered out and not sent." Em portugues: "the event has estado filtered out and nao enviado.". Temas: nao.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW115I (severidade: informational, familia AWSGTW - gtw) tem o texto: "The event has been filtered out and not sent." Em portugues: "the event has estado filtered out and nao enviado.". Temas: nao. Em outras palavras: O evento foi descartado pelo filtro configurado e não chegou a ser enviado ao destino final..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW115I 10.2.8 mensagem severidade informational familia AWSGTW gtw tem texto The event has been filtered out and not sent portugues the estado nao enviado Temas`
@@ -129281,10 +129281,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW115I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW116E (severidade: error, familia AWSGTW - gtw) tem o texto: "The mandatory parameter "!1" is missing." Em portugues: "the mandatory parametro "!1" is faltando.". Temas: parametro faltando.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW116E (severidade: error, familia AWSGTW - gtw) tem o texto: "The mandatory parameter "!1" is missing." Em portugues: "the mandatory parametro "!1" is faltando.". Temas: parametro faltando. Em outras palavras: O parâmetro obrigatório informado está ausente na chamada e precisa ser fornecido para que a operação prossiga..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW116E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The mandatory parameter missing portugues the parametro faltando Temas significa`
+> `AWSGTW116E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The mandatory parameter missing portugues the parametro faltando Temas outras palavras informado ausente chamada precisa fornecido prossiga`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW116E no HCL Workload Automation 10.2.8?
@@ -129301,7 +129301,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW116E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW117E (severidade: error, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. Sendevent encountered the following error when attempting to open the Symphony file: "!1"." Em portugues: "an interno erro has ocorreu. sendevent encountered the seguinte erro when attempting to open the symphony arquivo: "!1".". Temas: erro arquivo ocorreu interno symphony. Explicacao oficial: error_message contains the operating system error message.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW117E (severidade: error, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. Sendevent encountered the following error when attempting to open the Symphony file: "!1"." Em portugues: "an interno erro has ocorreu. sendevent encountered the seguinte erro when attempting to open the symphony arquivo: "!1".". Temas: erro arquivo ocorreu interno symphony. Em outras palavras: Ocorreu um erro interno ao abrir o arquivo de agenda do sistema durante o envio do evento, inviabilizando a transmissão.. Explicacao oficial: error_message contains the operating system error message.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW117E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto internal has occurred Sendevent encountered the following when attempting open Symphony file portugues interno erro ocorreu`
@@ -129321,7 +129321,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW117E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW118W (severidade: warning, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. The event has not been sent. Instead it has been cached in the file "!1"." Em portugues: "an interno erro has ocorreu. the event has nao estado enviado. instead it has estado cached in the arquivo "!1".". Temas: erro nao arquivo ocorreu interno. Explicacao oficial: cache_file is the cache file.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW118W (severidade: warning, familia AWSGTW - gtw) tem o texto: "An internal error has occurred. The event has not been sent. Instead it has been cached in the file "!1"." Em portugues: "an interno erro has ocorreu. the event has nao estado enviado. instead it has estado cached in the arquivo "!1".". Temas: erro nao arquivo ocorreu interno. Em outras palavras: O evento não pôde ser enviado e foi temporariamente guardado em cache no arquivo indicado para uma tentativa posterior.. Explicacao oficial: cache_file is the cache file.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW118W 10.2.8 mensagem severidade warning familia AWSGTW gtw tem texto internal error has occurred The event not been sent Instead cached the file portugues interno erro`
@@ -129341,7 +129341,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW118W (severidade: warning, f
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW120E (severidade: error, familia AWSGTW - gtw) tem o texto: "The following error occurred while opening the template configuration file "!1": !2." Em portugues: "the seguinte erro ocorreu while opening the template configuracao arquivo "!1": !2.". Temas: erro arquivo ocorreu.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW120E (severidade: error, familia AWSGTW - gtw) tem o texto: "The following error occurred while opening the template configuration file "!1": !2." Em portugues: "the seguinte erro ocorreu while opening the template configuracao arquivo "!1": !2.". Temas: erro arquivo ocorreu. Em outras palavras: Ocorreu uma falha ao abrir o arquivo de configuração modelo indicado, e o motivo deve ser verificado no detalhe do erro..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSGTW120E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The following occurred while opening the template configuration file portugues seguinte erro ocorreu configuracao`
@@ -129361,10 +129361,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW120E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSGTW121E (severidade: error, familia AWSGTW - gtw) tem o texto: "The parameters "!1" and "!2" cannot both be specified." Em portugues: "the parametros "!1" and "!2" nao pode both be especificado.". Temas: nao pode especificado parametros.
+No HCL Workload Automation 10.2.8, a mensagem AWSGTW121E (severidade: error, familia AWSGTW - gtw) tem o texto: "The parameters "!1" and "!2" cannot both be specified." Em portugues: "the parametros "!1" and "!2" nao pode both be especificado.". Temas: nao pode especificado parametros. Em outras palavras: Esses dois parâmetros são mutuamente exclusivos e não podem ser usados simultaneamente numa mesma chamada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSGTW121E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The parameters and cannot both specified portugues the parametros nao especificado Temas significa`
+> `AWSGTW121E 10.2.8 mensagem severidade error familia AWSGTW gtw tem texto The parameters and cannot both specified portugues the parametros nao especificado Temas outras palavras Esses`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSGTW121E no HCL Workload Automation 10.2.8?
@@ -129381,10 +129381,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSGTW121E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM001I (severidade: informational, familia AWSSAM - sam) tem o texto: "Configuring IBM System Automation for Multiplatforms for HCL Workload Automation !1 instance (!2)." Em portugues: "configuring ibm sistema automation for multiplatforms for hcl workload automation !1 instancia (!2).". Temas: carga de trabalho sistema.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM001I (severidade: informational, familia AWSSAM - sam) tem o texto: "Configuring IBM System Automation for Multiplatforms for HCL Workload Automation !1 instance (!2)." Em portugues: "configuring ibm sistema automation for multiplatforms for hcl workload automation !1 instancia (!2).". Temas: carga de trabalho sistema. Em outras palavras: O processo está configurando o módulo de automação de sistemas para o produto especificado na instância indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM001I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Configuring IBM System for Multiplatforms instance portugues configuring ibm sistema multiplatforms instancia Temas carga trabalho significa`
+> `AWSSAM001I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Configuring IBM System for Multiplatforms instance portugues configuring ibm sistema multiplatforms instancia Temas carga trabalho outras`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM001I no HCL Workload Automation 10.2.8?
@@ -129401,7 +129401,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM001I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM002E (severidade: error, familia AWSSAM - sam) tem o texto: "Only the user "root" can run the createResources script." Em portugues: "only the usuario "root" can run the createresources script.". Temas: usuario execucao. Explicacao oficial: See message text
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM002E (severidade: error, familia AWSSAM - sam) tem o texto: "Only the user "root" can run the createResources script." Em portugues: "only the usuario "root" can run the createresources script.". Temas: usuario execucao. Em outras palavras: Somente o usuário raiz do sistema tem permissão para executar o script responsável pela criação dos recursos de configuração.. Explicacao oficial: See message text
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM002E 10.2.8 mensagem severidade error familia AWSSAM sam tem texto Only the user root can run createResources script portugues only usuario createresources Temas`
@@ -129421,7 +129421,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM002E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM003E (severidade: error, familia AWSSAM - sam) tem o texto: "The createResources script is being run from the wrong directory." Em portugues: "the createresources script is being run from the wrong diretorio.". Temas: diretorio execucao. Explicacao oficial: See message text
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM003E (severidade: error, familia AWSSAM - sam) tem o texto: "The createResources script is being run from the wrong directory." Em portugues: "the createresources script is being run from the wrong diretorio.". Temas: diretorio execucao. Em outras palavras: O script de criação de recursos está sendo executado a partir de um diretório incorreto e precisa ser iniciado do local adequado.. Explicacao oficial: See message text
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM003E 10.2.8 mensagem severidade error familia AWSSAM sam tem texto The createResources script being run from the wrong directory portugues createresources diretorio Temas`
@@ -129441,7 +129441,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM003E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM004I (severidade: informational, familia AWSSAM - sam) tem o texto: "The script can be run again. It retries the failed step and, if successful, proceeds with the succeeding steps." Em portugues: "the script can be run again. it retries the falhou step and, if successful, proceeds with the succeeding steps.". Temas: execucao falhou.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM004I (severidade: informational, familia AWSSAM - sam) tem o texto: "The script can be run again. It retries the failed step and, if successful, proceeds with the succeeding steps." Em portugues: "the script can be run again. it retries the falhou step and, if successful, proceeds with the succeeding steps.". Temas: execucao falhou. Em outras palavras: O script pode ser executado novamente para reprocessar a etapa que falhou e, uma vez resolvida, seguir com as etapas subsequentes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM004I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto The script can run again retries the failed step and successful proceeds with succeeding steps portugues`
@@ -129461,10 +129461,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM004I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM005I (severidade: informational, familia AWSSAM - sam) tem o texto: "IBM System Automation for Multiplatforms installation check" Em portugues: "ibm sistema automation for multiplatforms instalacao check". Temas: sistema instalacao.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM005I (severidade: informational, familia AWSSAM - sam) tem o texto: "IBM System Automation for Multiplatforms installation check" Em portugues: "ibm sistema automation for multiplatforms instalacao check". Temas: sistema instalacao. Em outras palavras: Está sendo verificada a instalação do módulo de automação de sistemas para confirmar que está corretamente configurado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM005I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto IBM System for Multiplatforms installation check portugues ibm sistema multiplatforms instalacao Temas significa`
+> `AWSSAM005I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto IBM System for Multiplatforms installation check portugues ibm sistema multiplatforms instalacao Temas outras palavras sendo verificada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM005I no HCL Workload Automation 10.2.8?
@@ -129481,10 +129481,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM005I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM006I (severidade: informational, familia AWSSAM - sam) tem o texto: "Peer domain HCL Workload Automation presence check" Em portugues: "peer dominio hcl workload automation presence check". Temas: dominio carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM006I (severidade: informational, familia AWSSAM - sam) tem o texto: "Peer domain HCL Workload Automation presence check" Em portugues: "peer dominio hcl workload automation presence check". Temas: dominio carga de trabalho. Em outras palavras: Está sendo feita a verificação de presença do produto de automação de cargas dentro do domínio de pares configurado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM006I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Peer presence check portugues peer dominio Temas carga trabalho significa`
+> `AWSSAM006I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Peer presence check portugues peer dominio Temas carga trabalho outras palavras sendo feita produto cargas dentro pares`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM006I no HCL Workload Automation 10.2.8?
@@ -129501,10 +129501,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM006I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM007I (severidade: informational, familia AWSSAM - sam) tem o texto: "Peer domain HCL Workload Automation online status check" Em portugues: "peer dominio hcl workload automation online estado check". Temas: dominio carga de trabalho.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM007I (severidade: informational, familia AWSSAM - sam) tem o texto: "Peer domain HCL Workload Automation online status check" Em portugues: "peer dominio hcl workload automation online estado check". Temas: dominio carga de trabalho. Em outras palavras: Está sendo confirmado o status online do produto de automação de cargas dentro do domínio de pares..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM007I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Peer online status check portugues peer dominio estado Temas carga trabalho significa`
+> `AWSSAM007I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Peer online status check portugues peer dominio estado Temas carga trabalho outras palavras sendo confirmado`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM007I no HCL Workload Automation 10.2.8?
@@ -129521,10 +129521,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM007I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM008I (severidade: informational, familia AWSSAM - sam) tem o texto: "Retrieve node name in the cluster: !1" Em portugues: "retrieve node nome in the cluster: !1". Temas: nome.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM008I (severidade: informational, familia AWSSAM - sam) tem o texto: "Retrieve node name in the cluster: !1" Em portugues: "retrieve node nome in the cluster: !1". Temas: nome. Em outras palavras: Está sendo recuperado o identificador do nó dentro do cluster para prosseguir com a configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM008I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Retrieve node name the cluster portugues retrieve nome Temas significa`
+> `AWSSAM008I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Retrieve node name the cluster portugues retrieve nome Temas outras palavras sendo recuperado identificador dentro`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM008I no HCL Workload Automation 10.2.8?
@@ -129561,10 +129561,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM009I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM010I (severidade: informational, familia AWSSAM - sam) tem o texto: "Changing ownership on directory !1" Em portugues: "changing ownership on diretorio !1". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM010I (severidade: informational, familia AWSSAM - sam) tem o texto: "Changing ownership on directory !1" Em portugues: "changing ownership on diretorio !1". Temas: diretorio. Em outras palavras: A alteração do proprietário do diretório indicado está sendo executada para adequar as permissões ao ambiente configurado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM010I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Changing ownership directory portugues changing diretorio Temas significa diagnosticar`
+> `AWSSAM010I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Changing ownership directory portugues changing diretorio Temas outras palavras indicado sendo executada adequar ambiente configurado significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM010I no HCL Workload Automation 10.2.8?
@@ -129581,10 +129581,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM010I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM011I (severidade: informational, familia AWSSAM - sam) tem o texto: "Changing permission on directory !1" Em portugues: "changing permissao on diretorio !1". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM011I (severidade: informational, familia AWSSAM - sam) tem o texto: "Changing permission on directory !1" Em portugues: "changing permissao on diretorio !1". Temas: diretorio. Em outras palavras: A alteração de permissão de acesso ao diretório informado está sendo executada para adequá-la à configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM011I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Changing permission directory portugues changing permissao diretorio Temas significa diagnosticar`
+> `AWSSAM011I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Changing permission directory portugues changing permissao diretorio Temas outras palavras acesso informado sendo executada -la significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM011I no HCL Workload Automation 10.2.8?
@@ -129601,10 +129601,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM011I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM012I (severidade: informational, familia AWSSAM - sam) tem o texto: "Copy scripts to directory !1" Em portugues: "copy scripts to diretorio !1". Temas: diretorio.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM012I (severidade: informational, familia AWSSAM - sam) tem o texto: "Copy scripts to directory !1" Em portugues: "copy scripts to diretorio !1". Temas: diretorio. Em outras palavras: Os scripts estão sendo copiados para o diretório indicado a fim de completar a configuração do ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM012I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Copy scripts directory portugues copy diretorio Temas significa diagnosticar`
+> `AWSSAM012I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Copy scripts directory portugues copy diretorio Temas outras palavras sendo copiados indicado fim completar ambiente significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM012I no HCL Workload Automation 10.2.8?
@@ -129621,10 +129621,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM012I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM013I (severidade: informational, familia AWSSAM - sam) tem o texto: "WebSphere Application Server stop status check" Em portugues: "websphere application servidor parar estado check". Temas: parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM013I (severidade: informational, familia AWSSAM - sam) tem o texto: "WebSphere Application Server stop status check" Em portugues: "websphere application servidor parar estado check". Temas: parar. Em outras palavras: Está sendo verificada a condição de parada do servidor de aplicações web do ambiente configurado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM013I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto WebSphere Application Server stop status check portugues websphere application servidor parar estado Temas significa`
+> `AWSSAM013I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto WebSphere Application Server stop status check portugues websphere application servidor parar estado Temas outras palavras sendo verificada parada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM013I no HCL Workload Automation 10.2.8?
@@ -129641,10 +129641,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM013I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM014I (severidade: informational, familia AWSSAM - sam) tem o texto: "WebSphere Application Server running with PID: !1" Em portugues: "websphere application servidor em execucao with pid: !1".
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM014I (severidade: informational, familia AWSSAM - sam) tem o texto: "WebSphere Application Server running with PID: !1" Em portugues: "websphere application servidor em execucao with pid: !1". Em outras palavras: O servidor de aplicações web está ativo no sistema e seu identificador de processo foi detectado..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM014I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto WebSphere Application Server running with PID portugues websphere application servidor execucao pid significa`
+> `AWSSAM014I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto WebSphere Application Server running with PID portugues websphere application servidor execucao pid outras palavras web ativo sistema seu`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM014I no HCL Workload Automation 10.2.8?
@@ -129661,10 +129661,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM014I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM015I (severidade: informational, familia AWSSAM - sam) tem o texto: "HCL Workload Automation processes stop status check" Em portugues: "hcl workload automation processes parar estado check". Temas: carga de trabalho parar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM015I (severidade: informational, familia AWSSAM - sam) tem o texto: "HCL Workload Automation processes stop status check" Em portugues: "hcl workload automation processes parar estado check". Temas: carga de trabalho parar. Em outras palavras: Está sendo checado o estado de parada dos processos relacionados ao produto de automação de cargas..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM015I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto processes stop status check portugues parar estado Temas carga trabalho significa`
+> `AWSSAM015I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto processes stop status check portugues parar estado Temas carga trabalho outras palavras sendo checado parada processos`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM015I no HCL Workload Automation 10.2.8?
@@ -129701,10 +129701,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM016I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM017I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create resource group !1" Em portugues: "criar recurso grupo !1". Temas: recurso criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM017I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create resource group !1" Em portugues: "criar recurso grupo !1". Temas: recurso criar. Em outras palavras: O grupo de recursos informado está sendo criado para permitir o gerenciamento conjunto dos componentes..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM017I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create resource group portugues criar recurso grupo Temas significa diagnosticar`
+> `AWSSAM017I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create resource group portugues criar recurso grupo Temas outras palavras recursos informado sendo criado permitir gerenciamento conjunto`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM017I no HCL Workload Automation 10.2.8?
@@ -129721,10 +129721,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM017I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM018I (severidade: informational, familia AWSSAM - sam) tem o texto: "Populate resource group !1" Em portugues: "populate recurso grupo !1". Temas: recurso.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM018I (severidade: informational, familia AWSSAM - sam) tem o texto: "Populate resource group !1" Em portugues: "populate recurso grupo !1". Temas: recurso. Em outras palavras: O grupo de recursos indicado está sendo preenchido com os componentes e valores necessários para a configuração..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM018I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Populate resource group portugues populate recurso grupo Temas significa diagnosticar`
+> `AWSSAM018I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Populate resource group portugues populate recurso grupo Temas outras palavras recursos indicado sendo preenchido componentes valores significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM018I no HCL Workload Automation 10.2.8?
@@ -129761,10 +129761,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM019I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM020I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create relationships between !1" Em portugues: "criar relationships entre !1". Temas: entre criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM020I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create relationships between !1" Em portugues: "criar relationships entre !1". Temas: entre criar. Em outras palavras: As relações entre as entidades indicadas estão sendo estabelecidas para completar a estrutura de dependência..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM020I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create relationships between portugues criar entre Temas significa diagnosticar`
+> `AWSSAM020I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create relationships between portugues criar entre Temas outras palavras entidades indicadas sendo estabelecidas completar estrutura significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM020I no HCL Workload Automation 10.2.8?
@@ -129781,10 +129781,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM020I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM021I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create least-privilege resource !1" Em portugues: "criar least-privilege recurso !1". Temas: recurso criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM021I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create least-privilege resource !1" Em portugues: "criar least-privilege recurso !1". Temas: recurso criar. Em outras palavras: Está sendo criado o recurso com privilégios mínimos indicado para restringir o acesso ao necessário..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM021I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create least-privilege resource portugues criar recurso Temas significa diagnosticar`
+> `AWSSAM021I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create least-privilege resource portugues criar recurso Temas outras palavras sendo criado indicado restringir acesso significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM021I no HCL Workload Automation 10.2.8?
@@ -129795,16 +129795,16 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM021I (severidade: informatio
 
 ### 6848. `hwa-msgcat-awssam022i`
 
-- **Categoria / Dominio:** Troubleshooting & Mensagens de Erro
+- **Categoria / Dominio:** Alta Disponibilidade & Failover
 - **Nivel de Evidencia:** official_corroborated | **Risco Operacional:** read_only
 - **Versao / Plataforma:** HWA 10.2.8 (distributed)
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM022I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create !1 shadow equivalency" Em portugues: "criar !1 shadow equivalency". Temas: criar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM022I (severidade: informational, familia AWSSAM - sam) tem o texto: "Create !1 shadow equivalency" Em portugues: "criar !1 shadow equivalency". Temas: criar. Em outras palavras: Está sendo criada a equivalência de sombreamento indicada para suportar a alta disponibilidade dos recursos..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM022I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create shadow equivalency portugues criar Temas significa diagnosticar`
+> `AWSSAM022I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Create shadow equivalency portugues criar Temas outras palavras sendo criada sombreamento indicada suportar alta disponibilidade recursos significa`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM022I no HCL Workload Automation 10.2.8?
@@ -129821,10 +129821,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM022I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM023I (severidade: informational, familia AWSSAM - sam) tem o texto: "Start resource group !1" Em portugues: "iniciar recurso grupo !1". Temas: recurso iniciar.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM023I (severidade: informational, familia AWSSAM - sam) tem o texto: "Start resource group !1" Em portugues: "iniciar recurso grupo !1". Temas: recurso iniciar. Em outras palavras: O grupo de recursos informado está sendo iniciado para ativar os componentes que fazem parte dele..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM023I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Start resource group portugues iniciar recurso grupo Temas significa diagnosticar`
+> `AWSSAM023I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Start resource group portugues iniciar recurso grupo Temas outras palavras recursos informado sendo iniciado ativar componentes fazem`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM023I no HCL Workload Automation 10.2.8?
@@ -129841,7 +129841,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM023I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM024I (severidade: informational, familia AWSSAM - sam) tem o texto: "Successfully completed the IBM System Automation for Multiplatforms configuration for HCL Workload Automation !1 instance (!2)." Em portugues: "successfully concluido the ibm sistema automation for multiplatforms configuracao for hcl workload automation !1 instancia (!2).". Temas: carga de trabalho sistema com sucesso concluido.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM024I (severidade: informational, familia AWSSAM - sam) tem o texto: "Successfully completed the IBM System Automation for Multiplatforms configuration for HCL Workload Automation !1 instance (!2)." Em portugues: "successfully concluido the ibm sistema automation for multiplatforms configuracao for hcl workload automation !1 instancia (!2).". Temas: carga de trabalho sistema com sucesso concluido. Em outras palavras: A configuração do módulo de automação de sistemas para o produto foi concluída com sucesso na instância indicada..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM024I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Successfully completed the IBM System for Multiplatforms configuration instance portugues successfully concluido ibm sistema multiplatforms configuracao`
@@ -129861,7 +129861,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM024I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM025I (severidade: informational, familia AWSSAM - sam) tem o texto: "Run this command on other Backup Master Domain Manager instances and finally on the Master Domain Manager instance." Em portugues: "run this comando on other reserva principal dominio manager instances and finally on the principal dominio manager instancia.". Temas: comando dominio execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM025I (severidade: informational, familia AWSSAM - sam) tem o texto: "Run this command on other Backup Master Domain Manager instances and finally on the Master Domain Manager instance." Em portugues: "run this comando on other reserva principal dominio manager instances and finally on the principal dominio manager instancia.". Temas: comando dominio execucao. Em outras palavras: Execute este comando primeiro nos outros gerentes de domínio de apoio e só por último no gerente principal do domínio..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM025I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Run this command other Backup instances and finally the instance portugues run comando reserva principal dominio`
@@ -129881,7 +129881,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM025I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM026I (severidade: informational, familia AWSSAM - sam) tem o texto: "Run this command on other Backup Dynamic Domain Manager instances and finally on the Dynamic Domain Manager instance." Em portugues: "run this comando on other reserva dynamic dominio manager instances and finally on the dynamic dominio manager instancia.". Temas: comando dominio execucao.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM026I (severidade: informational, familia AWSSAM - sam) tem o texto: "Run this command on other Backup Dynamic Domain Manager instances and finally on the Dynamic Domain Manager instance." Em portugues: "run this comando on other reserva dynamic dominio manager instances and finally on the dynamic dominio manager instancia.". Temas: comando dominio execucao. Em outras palavras: Execute este comando primeiro nos gerentes de domínio dinâmico de apoio e por fim no gerente principal do domínio dinâmico..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM026I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Run this command other Backup Dynamic instances and finally the instance portugues run comando reserva dynamic dominio`
@@ -129901,7 +129901,7 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM026I (severidade: informatio
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM027E (severidade: error, familia AWSSAM - sam) tem o texto: "The IBM System Automation for Multiplatforms configuration for HCL Workload Automation failed." Em portugues: "the ibm sistema automation for multiplatforms configuracao for hcl workload automation falhou.". Temas: carga de trabalho sistema falhou. Explicacao oficial: An internal error has occurred that has caused the script to fail.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM027E (severidade: error, familia AWSSAM - sam) tem o texto: "The IBM System Automation for Multiplatforms configuration for HCL Workload Automation failed." Em portugues: "the ibm sistema automation for multiplatforms configuracao for hcl workload automation falhou.". Temas: carga de trabalho sistema falhou. Em outras palavras: A configuração do módulo de automação de sistemas para o produto de automação de cargas falhou e precisa ser investigada.. Explicacao oficial: An internal error has occurred that has caused the script to fail.
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
 > `AWSSAM027E 10.2.8 mensagem severidade error familia AWSSAM sam tem texto The IBM System for Multiplatforms configuration failed portugues the ibm sistema multiplatforms configuracao falhou Temas carga trabalho`
@@ -129921,10 +129921,10 @@ No HCL Workload Automation 10.2.8, a mensagem AWSSAM027E (severidade: error, fam
 
 **Conteudo Canonico:**
 
-No HCL Workload Automation 10.2.8, a mensagem AWSSAM028I (severidade: informational, familia AWSSAM - sam) tem o texto: "Retrieve IBM System Automation for Multiplatforms version: !1" Em portugues: "retrieve ibm sistema automation for multiplatforms versao: !1". Temas: sistema versao.
+No HCL Workload Automation 10.2.8, a mensagem AWSSAM028I (severidade: informational, familia AWSSAM - sam) tem o texto: "Retrieve IBM System Automation for Multiplatforms version: !1" Em portugues: "retrieve ibm sistema automation for multiplatforms versao: !1". Temas: sistema versao. Em outras palavras: Está sendo verificada a versão do módulo de automação de sistemas instalada no ambiente..
 
 **Texto de Recuperacao Semantica (`retrieval_text`):**
-> `AWSSAM028I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Retrieve IBM System for Multiplatforms version portugues retrieve ibm sistema multiplatforms versao Temas significa`
+> `AWSSAM028I 10.2.8 mensagem severidade informational familia AWSSAM sam tem texto Retrieve IBM System for Multiplatforms version portugues retrieve ibm sistema multiplatforms versao Temas outras palavras sendo verificada`
 
 **Perguntas Relacionadas / Avaliacao:**
 - O que significa a mensagem AWSSAM028I no HCL Workload Automation 10.2.8?

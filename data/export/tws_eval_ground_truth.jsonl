@@ -16052,9 +16052,9 @@
 {"question": "O que significa a mensagem AWSSAM021I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam021i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSSAM021I?", "target_claim_id": "hwa-msgcat-awssam021i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSSAM021I?", "target_claim_id": "hwa-msgcat-awssam021i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSSAM022I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam022i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSSAM022I?", "target_claim_id": "hwa-msgcat-awssam022i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSSAM022I?", "target_claim_id": "hwa-msgcat-awssam022i", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSSAM022I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam022i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSSAM022I?", "target_claim_id": "hwa-msgcat-awssam022i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSSAM022I?", "target_claim_id": "hwa-msgcat-awssam022i", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSSAM023I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam023i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSSAM023I?", "target_claim_id": "hwa-msgcat-awssam023i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSSAM023I?", "target_claim_id": "hwa-msgcat-awssam023i", "category": "Troubleshooting & Mensagens de Erro"}

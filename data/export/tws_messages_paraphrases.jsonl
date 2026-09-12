@@ -3466,6 +3466,231 @@
 {"code": "AWSFAB285I", "pt": "O sistema está atualizando o arquivo de informações de patches chamado patch.info."}
 {"code": "AWSFAB286E", "pt": "O eImage está corrompido; execute o comando TAR no shell adequado para descompactá-lo antes do script."}
 {"code": "AWSFAB287E", "pt": "O shell em uso não é suportado para o script indicado; use o shell QSH para executá-lo."}
+{"code": "AWSFAB288I", "pt": "O sistema está consultando o diretório inicial do usuário do componente TWSUser para localizar sua configuração."}
+{"code": "AWSFAB289W", "pt": "A extensão Java já está instalada para o usuário informado, portanto não é necessário instalá-la novamente."}
+{"code": "AWSFAB290E", "pt": "Você está alterando uma versão do produto diferente da que o comando espera; a modificação só pode ser aplicada a uma instância da versão especificada."}
+{"code": "AWSFAB296E", "pt": "A operação de restauração não pode ser executada porque a instância a ser recuperada não está na versão mínima exigida."}
+{"code": "AWSFAB303E", "pt": "O valor informado para o parâmetro não é aceito pelo sistema e precisa ser corrigido."}
+{"code": "AWSFAB304E", "pt": "O parâmetro de senhas só pode ser usado quando o parâmetro de grupos também é informado na mesma operação."}
+{"code": "AWSFAB305E", "pt": "O caminho indicado é inválido, pois o diretório não existe ou não contém o arquivo de instalação twsinst.vbs esperado."}
+{"code": "AWSFAB306E", "pt": "Quando um parâmetro é especificado, o segundo parâmetro também se torna obrigatório para a operação prosseguir."}
+{"code": "AWSFAB307E", "pt": "O parâmetro não pode ser utilizado porque esta imagem corresponde à versão de disponibilidade geral do produto."}
+{"code": "AWSFAB308E", "pt": "Esta é a imagem de disponibilidade geral, portanto é obrigatório informar o parâmetro indicado antes de continuar."}
+{"code": "AWSFAB309E", "pt": "O mesmo parâmetro foi fornecido mais de uma vez na linha de comando e isso não é permitido."}
+{"code": "AWSFAB310E", "pt": "Nenhum valor foi informado para o parâmetro exigido; é necessário fornecer um valor para que a operação continue."}
+{"code": "AWSFAB311E", "pt": "A sintaxe do valor atribuído ao parâmetro está incorreta e precisa ser ajustada para o formato esperado."}
+{"code": "AWSFAB312E", "pt": "Ocorreu uma falha ao acessar o serviço de instrumentação do Windows, retornando um código de erro específico."}
+{"code": "AWSFAB313I", "pt": "O grupo citado não contém recursos do produto, portanto não foi necessário aplicar a atualização nele."}
+{"code": "AWSFAB314W", "pt": "A atualização do grupo foi ignorada porque ele contém mais de um recurso do produto, situação não suportada."}
+{"code": "AWSFAB315E", "pt": "A atualização falhou para o grupo informado, pois ele não possui nenhum recurso do produto associado."}
+{"code": "AWSFAB316E", "pt": "A atualização falhou para o grupo informado, pois ele contém mais de um recurso do produto."}
+{"code": "AWSFAB317E", "pt": "Ocorreu um erro inesperado ao executar o comando cluster.exe para gerenciar o cluster."}
+{"code": "AWSFAB318E", "pt": "Houve uma falha interna ao interpretar os nomes dos nós fornecidos na operação de cluster."}
+{"code": "AWSFAB319I", "pt": "O nó informado já se encontra no estado pausado e nenhuma ação adicional é necessária."}
+{"code": "AWSFAB320E", "pt": "O produto não consegue pausar o nó porque ele está em um estado que não permite essa operação."}
+{"code": "AWSFAB321W", "pt": "A retomada do nó não foi executada porque ele está em um estado incompatível com essa ação."}
+{"code": "AWSFAB322W", "pt": "A retomada dos nós não foi executada porque houve falha na atualização de alguns grupos."}
+{"code": "AWSFAB324E", "pt": "Ocorreu um erro durante a tentativa de pausar o nó informado no cluster."}
+{"code": "AWSFAB326E", "pt": "O produto não conseguiu obter o estado atual do nó para avaliar a operação."}
+{"code": "AWSFAB327E", "pt": "O nó não foi pausado dentro do tempo limite estabelecido e a operação foi considerada malsucedida."}
+{"code": "AWSFAB329E", "pt": "Ocorreu um erro durante a tentativa de retomar a operação do nó informado."}
+{"code": "AWSFAB330E", "pt": "O nó não foi retomado dentro do tempo limite estabelecido e a operação foi considerada malsucedida."}
+{"code": "AWSFAB331E", "pt": "Houve uma falha interna ao interpretar as listas de nós e de grupos da operação."}
+{"code": "AWSFAB332E", "pt": "Houve uma falha interna ao interpretar as listas de nós e de recursos da operação."}
+{"code": "AWSFAB333E", "pt": "O produto não conseguiu localizar o caminho da biblioteca de recursos necessária para o funcionamento."}
+{"code": "AWSFAB335I", "pt": "O recurso permanece no seu estado atual e não será colocado offline porque essa condição não se aplica."}
+{"code": "AWSFAB336I", "pt": "O recurso informado foi colocado no estado offline com sucesso e já está disponível para essa condição."}
+{"code": "AWSFAB337E", "pt": "Ocorreu um erro ao tentar colocar o recurso informado no estado offline."}
+{"code": "AWSFAB338E", "pt": "O produto não conseguiu obter o estado atual do recurso para avaliar a operação."}
+{"code": "AWSFAB339E", "pt": "O recurso não foi colocado offline dentro do tempo limite estabelecido e a operação foi interrompida."}
+{"code": "AWSFAB340I", "pt": "O produto está iniciando o processo de colocar o recurso informado no estado online."}
+{"code": "AWSFAB341E", "pt": "Ocorreu um erro ao tentar colocar o recurso informado no estado online."}
+{"code": "AWSFAB342E", "pt": "O recurso não foi colocado online dentro do tempo limite estabelecido e a operação foi interrompida."}
+{"code": "AWSFAB343E", "pt": "Houve uma falha interna ao interpretar as listas de recursos e de grupos da operação."}
+{"code": "AWSFAB344I", "pt": "O produto está colocando todos os recursos de cluster do produto no nó informado para o estado offline."}
+{"code": "AWSFAB345I", "pt": "O produto está atualizando o grupo de cluster com o recurso indicado e essa operação pode demorar."}
+{"code": "AWSFAB346E", "pt": "A atualização do grupo de cluster não foi concluída com sucesso e precisa ser verificada."}
+{"code": "AWSFAB347I", "pt": "A atualização do grupo de cluster foi concluída com sucesso e não requer nenhuma ação adicional."}
+{"code": "AWSFAB348I", "pt": "O produto está colocando no estado online os recursos cuja atualização foi concluída com êxito."}
+{"code": "AWSFAB349E", "pt": "O arquivo necessário não existe, por isso a ferramenta não consegue atualizar o recurso indicado."}
+{"code": "AWSFAB350E", "pt": "O produto não conseguiu identificar a versão da biblioteca de recursos informada."}
+{"code": "AWSFAB351I", "pt": "A atualização para a versão indicada não é necessária, portanto esta etapa será ignorada."}
+{"code": "AWSFAB352E", "pt": "A atualização para a versão indicada é impossível porque a versão do produto na instância está incorreta."}
+{"code": "AWSFAB356E", "pt": "A quantidade de senhas informada não corresponde à quantidade de grupos a atualizar; revise os parâmetros correspondentes."}
+{"code": "AWSFAB357E", "pt": "Nenhum dos grupos informados contém recursos do produto que possam ser atualizados."}
+{"code": "AWSFAB372I", "pt": "O sistema está verificando os pré-requisitos necessários antes de prosseguir com a instalação."}
+{"code": "AWSFAB373I", "pt": "O sistema está configurando o agente do produto durante o processo de instalação."}
+{"code": "AWSFAB374E", "pt": "A porta JM já está em uso por outra instância, portanto é preciso informar um valor de porta diferente."}
+{"code": "AWSFAB375E", "pt": "Não foi possível criar a pasta indicada no computador e a instalação não pode continuar devido a esse erro do sistema."}
+{"code": "AWSFAB379E", "pt": "A conta de usuário informada não possui as políticas de segurança adequadas, ou elas não puderam ser verificadas, impedindo a operação."}
+{"code": "AWSFAB380E", "pt": "Faltou informar um parâmetro obrigatório, pois o parâmetro indicado exige que o outro também seja fornecido."}
+{"code": "AWSFAB381E", "pt": "Já existe uma instância instalada para o mesmo usuário no diretório indicado como diretório de instalação."}
+{"code": "AWSFAB382E", "pt": "É necessário aceitar a licença e os termos de uso antes de dar continuidade à instalação."}
+{"code": "AWSFAB384E", "pt": "Não foi possível obter o nome do domínio do usuário informado; verifique os direitos e as permissões da conta."}
+{"code": "AWSFAB385E", "pt": "Ao informar o parâmetro de domínio, o nome do usuário não pode estar no formato usuário do domínio."}
+{"code": "AWSFAB386E", "pt": "Não foi possível obter o nome do domínio do usuário informado; verifique os direitos e as permissões da conta."}
+{"code": "AWSFAB387I", "pt": "O sistema está instalando o método de extensão R3BATCH no ambiente para ampliar suas capacidades."}
+{"code": "AWSFAB388I", "pt": "O sistema está removendo o pacote do método de extensão R3BATCH do ambiente."}
+{"code": "AWSFAB389E", "pt": "O parâmetro informado só pode ser usado quando o outro parâmetro também tiver sido especificado."}
+{"code": "AWSFAB390I", "pt": "O sistema está atualizando o pacote do agente leve no ambiente para aplicar a versão mais recente."}
+{"code": "AWSFAB391I", "pt": "O sistema está limpando os componentes do agente do produto antes de finalizar a operação."}
+{"code": "AWSFAB392I", "pt": "O sistema está instalando o pacote do agente tolerante a falhas no ambiente."}
+{"code": "AWSFAB393I", "pt": "O sistema está atualizando o pacote do agente tolerante a falhas no ambiente."}
+{"code": "AWSFAB394I", "pt": "O sistema está removendo o pacote do agente tolerante a falhas do ambiente."}
+{"code": "AWSFAB395I", "pt": "O sistema está atualizando o pacote de extensão Java no ambiente para aplicar a versão mais recente."}
+{"code": "AWSFAB396I", "pt": "O sistema está instalando o método de extensão PeopleSoft no ambiente para ampliar suas capacidades."}
+{"code": "AWSFAB397I", "pt": "O sistema está removendo o método de extensão PeopleSoft do ambiente para desinstalá-lo por completo."}
+{"code": "AWSFAB398I", "pt": "O sistema está atualizando o método de extensão PeopleSoft no ambiente para aplicar a versão mais recente."}
+{"code": "AWSFAB399I", "pt": "O sistema está atualizando o método de processamento de lote R3BATCH."}
+{"code": "AWSFAB400I", "pt": "O instalador está copiando e configurando o componente chamado Option Editor."}
+{"code": "AWSFAB401I", "pt": "O instalador está aplicando atualizações sobre o componente Option Editor existente."}
+{"code": "AWSFAB402I", "pt": "O instalador está removendo o componente Option Editor do ambiente."}
+{"code": "AWSFAB403W", "pt": "Como você atualizou o método PeopleSoft, é preciso copiar o arquivo psjoa.jar para a pasta indicada para continuar agendando jobs."}
+{"code": "AWSFAB405E", "pt": "Uma instalação sem acessar a raiz só é permitida quando se faz a instalação do agente dinâmico."}
+{"code": "AWSFAB406E", "pt": "A instância do agente dinâmico só pode ser atualizada pelo mesmo usuário que a instalou originalmente."}
+{"code": "AWSFAB407W", "pt": "A instalação está prosseguindo mesmo que a verificação de pré-requisitos tenha apontado itens faltantes."}
+{"code": "AWSFAB409E", "pt": "O diretório pessoal do usuário indicado não existe, então crie-o antes de executar novamente o procedimento de instalação."}
+{"code": "AWSFAB410I", "pt": "O instalador está desinstalando o agente do tipo CIT."}
+{"code": "AWSFAB411E", "pt": "A porta de comunicação do gateway já está em uso por outro processo, então informe outro valor de porta."}
+{"code": "AWSFAB412I", "pt": "O instalador está instalando o método de processamento MVS."}
+{"code": "AWSFAB414I", "pt": "O instalador está removendo o método de processamento MVS do ambiente."}
+{"code": "AWSFAB417E", "pt": "Foi informado um valor incorreto para o parâmetro de senha no comando."}
+{"code": "AWSFAB418E", "pt": "O valor informado como número de porta não é válido, pois deve ser numérico e estar entre 1 e 65535."}
+{"code": "AWSFAB419E", "pt": "Este script precisa ser executado em um prompt de comando aberto como administrador, então abra o prompt elevado e rode novamente."}
+{"code": "AWSFAB435I", "pt": "O sistema está restaurando a versão anterior da instância."}
+{"code": "AWSFAB436E", "pt": "A atualização do agente falhou e os arquivos da versão anterior serão restaurados, mantendo o agente em funcionamento normal."}
+{"code": "AWSFAB437E", "pt": "A restauração da versão anterior terminou com erros no código de retorno indicado."}
+{"code": "AWSFAB438I", "pt": "A restauração da versão anterior precisa ser executada manualmente pelo administrador."}
+{"code": "AWSFAB439I", "pt": "O backup do agente falhou e o processo de atualização foi interrompido, mas o agente continua operando normalmente."}
+{"code": "AWSFAB440I", "pt": "O agente foi restaurado com sucesso para a versão anterior e foi reiniciado."}
+{"code": "AWSFAB441E", "pt": "O valor informado está incorreto, pois o conteúdo do parâmetro indicado não pode começar com um número."}
+{"code": "AWSFAB442E", "pt": "A versão atual do agente não é compatível, pois este patch só pode ser aplicado em agentes de uma versão específica."}
+{"code": "AWSFAB443E", "pt": "O arquivo indicado não foi encontrado no caminho esperado pelo instalador."}
+{"code": "AWSFAB444E", "pt": "Falta a propriedade informada dentro do arquivo de configuração indicado."}
+{"code": "AWSFAB445I", "pt": "O componente Master Domain Manager foi instalado com sucesso."}
+{"code": "AWSFAB448I", "pt": "O componente Dynamic Workload Broker foi instalado com sucesso."}
+{"code": "AWSFAB449E", "pt": "O diretório informado para a instalação do Websphere Liberty Profile não existe no sistema."}
+{"code": "AWSFAB450E", "pt": "O valor preenchido no campo indicado contém caracteres inválidos e precisa ser corrigido."}
+{"code": "AWSFAB451E", "pt": "A porta indicada já está em uso por outro processo, então execute o comando com a opção informada usando uma porta livre."}
+{"code": "AWSFAB452E", "pt": "O usuário do banco de dados indicado não existe, então execute o comando com a opção apontando para um usuário válido."}
+{"code": "AWSFAB455E", "pt": "O Websphere Liberty Profile ainda está em execução e impede o prosseguimento do comando, então pare-o e tente novamente."}
+{"code": "AWSFAB456I", "pt": "O sistema está verificando se o processo do Websphere Liberty Profile está ativo."}
+{"code": "AWSFAB457E", "pt": "O parâmetro informado precisa ser seguido de um caminho válido no comando."}
+{"code": "AWSFAB458E", "pt": "O usuário informado não possui permissões adequadas sobre o diretório apontado pela opção indicada."}
+{"code": "AWSFAB468E", "pt": "A porta de comunicação do gateway já está em uso por outra instância instalada no diretório indicado, então informe outro valor."}
+{"code": "AWSFAB471E", "pt": "O parâmetro informado precisa ser seguido de um valor válido no comando."}
+{"code": "AWSFAB472E", "pt": "O diretório informado para o parâmetro não contém o arquivo esperado pelo instalador."}
+{"code": "AWSFAB473E", "pt": "Foi informado um parâmetro, mas o parâmetro complementar exigido não foi fornecido no comando."}
+{"code": "AWSFAB474I", "pt": "O instalador está executando os scripts responsáveis pela configuração de segurança."}
+{"code": "AWSFAB479I", "pt": "O instalador está importando os certificados para o ambiente."}
+{"code": "AWSFAB480E", "pt": "O diretório indicado não existe no sistema e precisa ser validado."}
+{"code": "AWSFAB482E", "pt": "Ao ativar o parâmetro de criptografia, o parâmetro de adição do ambiente Java também deve ser ativado, pois o Java é necessário para configurá-la."}
+{"code": "AWSFAB483E", "pt": "O diretório indicado deve estar vazio antes que a instalação continue."}
+{"code": "AWSFAB484E", "pt": "A opção informada é inválida ou está faltando um valor após a opção no comando."}
+{"code": "AWSFAB485E", "pt": "Não é permitido desativar simultaneamente as duas opções indicadas, pois pelo menos uma das portas precisa permanecer habilitada."}
+{"code": "AWSFAB486E", "pt": "Os dois parâmetros informados são mutuamente exclusivos e não podem ser usados juntos no comando."}
+{"code": "AWSFAB490I", "pt": "O instalador está baixando os certificados do agente."}
+{"code": "AWSFAB491E", "pt": "Neste sistema operacional a variável JAVA_HOME é obrigatória, mas está vazia, então defina-a antes de executar o comando de instalação."}
+{"code": "AWSFAB493E", "pt": "O Java localizado no diretório indicado não é válido para o ambiente."}
+{"code": "AWSFAB494E", "pt": "Não é possível ativar o parâmetro de adição do Java porque ele não está disponível no Solaris i386."}
+{"code": "AWSFAB495E", "pt": "O diretório do Java indicado não foi encontrado, então instale uma versão adequada e execute novamente o script."}
+{"code": "AWSFAB497E", "pt": "Ao ativar o parâmetro de token, é preciso informar o host e a porta do broker, além de usuário e senha ou chave de API."}
+{"code": "AWSFAB498E", "pt": "Quando o parâmetro de token está ativo, os parâmetros de senha SSL, pasta de chaves SSL e identificador do agente não são suportados."}
+{"code": "AWSFAB502E", "pt": "Informe um dos conjuntos de credenciais: pasta e senha SSL, usuário e senha web, ou chave de API."}
+{"code": "AWSFAB503E", "pt": "Não foi possível baixar os certificados do master domain manager instalado no endereço indicado, pois a operação falhou com o código de retorno informado."}
+{"code": "AWSFAB504E", "pt": "Os dois parâmetros indicados são obrigatórios e precisam ser informados juntos no comando."}
+{"code": "AWSFAB505E", "pt": "O modo FIPS não é suportado e a operação não pode continuar, então informe que o FIPS deve ser desativado para prosseguir."}
+{"code": "AWSFAB507E", "pt": "A pasta indicada não pôde ser removida porque ela ou uma de suas subpastas está em uso por um processo."}
+{"code": "AWSFAB508E", "pt": "A pasta indicada não pôde ser copiada porque ela ou uma de suas subpastas está em uso por um processo."}
+{"code": "AWSFAB509W", "pt": "Como foi fornecida uma chave de API, os parâmetros de usuário e senha web serão ignorados."}
+{"code": "AWSFAB510W", "pt": "Como foi fornecida uma chave de API, os parâmetros de pasta e senha SSL serão ignorados."}
+{"code": "AWSFAB511I", "pt": "O modo FIPS foi configurado corretamente e está ativo no seu ambiente."}
+{"code": "AWSFAB512I", "pt": "O modo FIPS não está ativado no seu ambiente."}
+{"code": "AWSFAB513E", "pt": "Não foi possível configurar e ativar corretamente o modo FIPS no seu ambiente."}
+{"code": "AWSFAB514W", "pt": "O modo FIPS não pôde ser configurado corretamente, então a instalação continuará com o FIPS desativado."}
+{"code": "AWSFAB515I", "pt": "O modo FIPS foi configurado no seu ambiente, porém em modo fraco."}
+{"code": "AWSFAB516E", "pt": "Não é possível configurar o modo FIPS em modo fraco no seu ambiente."}
+{"code": "AWSFAB517I", "pt": "As etapas de pré-configuração do modo FIPS foram concluídas com sucesso."}
+{"code": "AWSFAB519E", "pt": "Os certificados fornecidos não são válidos ou não são compatíveis com a instalação atual."}
+{"code": "AWSFAB600W", "pt": "A instalação terminou com um ou mais avisos, então consulte o arquivo de log indicado para mais detalhes."}
+{"code": "AWSFAB601I", "pt": "O instalador está importando os certificados necessários para o ambiente."}
+{"code": "AWSFAF003E", "pt": "O script de aplicação de patch não pode ser executado no sistema operacional atual indicado."}
+{"code": "AWSFAF004E", "pt": "Somente o usuário raiz pode executar o script de aplicação de patch no sistema."}
+{"code": "AWSFAF005E", "pt": "Nenhum parâmetro foi informado ao executar o utilitário de aplicação de pacotes de correção, então a operação não possui o mínimo necessário para prosseguir."}
+{"code": "AWSFAF006I", "pt": "Execute o comando de ajuda do utilitário de aplicação de pacotes de correção para ver a lista completa de opções e parâmetros disponíveis."}
+{"code": "AWSFAF007E", "pt": "O tipo de instalação informado é inválido e deve corresponder exatamente a uma das modalidades aceitas, como instalar, desfazer, confirmar, remover ou reparar um pacote."}
+{"code": "AWSFAF008E", "pt": "Foi informado mais de um tipo de instalação para o pacote de correção, porém apenas uma modalidade de instalação pode ser especificada por execução."}
+{"code": "AWSFAF010E", "pt": "O valor informado para um parâmetro de execução é incorreto e precisa seguir exatamente o formato esperado pelo utilitário de aplicação de correções."}
+{"code": "AWSFAF011E", "pt": "Um mesmo parâmetro de comando foi repetido na linha de execução, o que não é permitido e invalida o processamento atual."}
+{"code": "AWSFAF012E", "pt": "O utilitário de aplicação de pacotes não pode continuar porque não encontrou o arquivo de registro que identifica a instalação ativa do produto de automação de cargas."}
+{"code": "AWSFAF014E", "pt": "O valor informado na linha de comando não corresponde a nenhum parâmetro de instalação reconhecido pelo utilitário de aplicação de correções."}
+{"code": "AWSFAF015E", "pt": "A opção responsável por especificar o nome do usuário que terá a instalação atualizada não foi fornecida e é obrigatória."}
+{"code": "AWSFAF017E", "pt": "O script não conseguiu localizar o diretório casa do usuário indicado, portanto não é possível associar a instalação a uma conta válida."}
+{"code": "AWSFAF019E", "pt": "O script falhou ao tentar identificar o tipo de instalação a partir do arquivo de registro do produto, que não continha as informações esperadas."}
+{"code": "AWSFAF020E", "pt": "O script não encontrou o arquivo de configuração da instância do produto à qual o pacote de correção deveria ser aplicado."}
+{"code": "AWSFAF022E", "pt": "Não foi possível determinar o diretório de instalação do produto a partir das informações do arquivo de registro, interrompendo a aplicação da correção."}
+{"code": "AWSFAF023E", "pt": "O componente instalado registrado no arquivo do produto, referente ao tipo de estação de trabalho, foi considerado inválido para o processamento."}
+{"code": "AWSFAF024I", "pt": "Verifique o componente instalado e o seu tipo de estação correspondente dentro do diretório indicado para confirmar a configuração do produto."}
+{"code": "AWSFAF025E", "pt": "Nenhuma instalação anterior do produto pertencente ao usuário informado foi localizada no arquivo de registro, então não há base para aplicar a correção."}
+{"code": "AWSFAF026I", "pt": "A instalação do pacote de correção concluiu com êxito e todas as etapas previstas foram finalizadas sem erros."}
+{"code": "AWSFAF027E", "pt": "A instalação do pacote de correção falhou durante o processamento e mais detalhes sobre a causa podem ser encontrados no arquivo de log indicado."}
+{"code": "AWSFAF028W", "pt": "Durante a instalação do pacote de correção foi emitida pelo menos uma mensagem de aviso que merece ser revisada antes da conclusão."}
+{"code": "AWSFAF029I", "pt": "Consulte o arquivo de log informado se precisar de informações mais detalhadas sobre o processamento realizado."}
+{"code": "AWSFAF030E", "pt": "O script de aplicação de correções está sendo executado a partir de um diretório incorreto, portanto deve ser invocado do local adequado."}
+{"code": "AWSFAF032E", "pt": "O script de instalação não localizou o arquivo necessário para configurar o ambiente operacional indicado, bloqueando a continuação do processo."}
+{"code": "AWSFAF033E", "pt": "O script de instalação foi executado do diretório errado e deve ser reprocessado a partir do local específico indicado na mensagem."}
+{"code": "AWSFAF035I", "pt": "Use o utilitário de instalação com a opção de desinstalação para remover a instância original do produto que pertence ao usuário informado."}
+{"code": "AWSFAF037E", "pt": "O script de aplicação de correções está sendo executado de um diretório incorreto e precisa ser rodado do caminho apropriado."}
+{"code": "AWSFAF046E", "pt": "A conta de usuário informada não existe na máquina local, então o processo de aplicação de correções não pode ser iniciado."}
+{"code": "AWSFAF047E", "pt": "A senha fornecida para o usuário indicado não está correta, o que impede a autenticação e a continuação do procedimento."}
+{"code": "AWSFAF048I", "pt": "A operação solicitada foi finalizada com sucesso e todas as suas etapas foram concluídas de forma satisfatória."}
+{"code": "AWSFAF132E", "pt": "A desinstalação falhou porque o usuário informado está incorreto ou porque o script de correções foi executado a partir do diretório errado."}
+{"code": "AWSFAF161E", "pt": "Ainda existem tarefas em execução e a operação de aplicação de correções precisa ser interrompida até que esses trabalhos terminem."}
+{"code": "AWSGTW101E", "pt": "O parâmetro especificado na chamada não é reconhecido como válido e deve ser corrigido antes de continuar a operação."}
+{"code": "AWSGTW102E", "pt": "O conjunto de argumentos fornecidos excedeu o tamanho máximo aceito pelo processamento, tornando a chamada inválida."}
+{"code": "AWSGTW103E", "pt": "O mesmo parâmetro foi informado mais de uma vez na chamada, situação que não é permitida pelo processamento."}
+{"code": "AWSGTW104E", "pt": "Os dois parâmetros foram fornecidos em uma ordem incorreta e precisam ser reapresentados na sequência esperada."}
+{"code": "AWSGTW105E", "pt": "O valor atribuído ao parâmetro indicado não é válido segundo as regras de validação do processo."}
+{"code": "AWSGTW106E", "pt": "Os parâmetros obrigatórios não foram informados na chamada, impossibilitando a execução da operação até que sejam fornecidos."}
+{"code": "AWSGTW107E", "pt": "O formato apresentado no argumento indicado está incorreto e deve ser ajustado para o padrão aceito."}
+{"code": "AWSGTW108E", "pt": "O parâmetro foi indicado sem o seu respectivo valor, mas ele exige um conteúdo obrigatório para funcionar."}
+{"code": "AWSGTW109E", "pt": "Ocorreu uma falha ao tentar abrir o arquivo de configuração informado, e o detalhe do erro deve ser verificado."}
+{"code": "AWSGTW110E", "pt": "Ocorreu uma falha ao gravar conteúdo no arquivo de configuração informado, e a causa deve ser examinada no detalhe do erro."}
+{"code": "AWSGTW111E", "pt": "Ocorreu uma falha interna durante a inicialização do agente responsável por integrar eventos ao console empresarial."}
+{"code": "AWSGTW112E", "pt": "Ocorreu uma falha interna ao criar o mecanismo responsável por integrar eventos ao sistema de facilidades de processamento."}
+{"code": "AWSGTW113I", "pt": "O evento foi processado e enviado corretamente ao destino configurado para a integração."}
+{"code": "AWSGTW114E", "pt": "Houve uma falha ao tentar enviar o evento para o destino final e a integração não foi concluída."}
+{"code": "AWSGTW115I", "pt": "O evento foi descartado pelo filtro configurado e não chegou a ser enviado ao destino final."}
+{"code": "AWSGTW116E", "pt": "O parâmetro obrigatório informado está ausente na chamada e precisa ser fornecido para que a operação prossiga."}
+{"code": "AWSGTW117E", "pt": "Ocorreu um erro interno ao abrir o arquivo de agenda do sistema durante o envio do evento, inviabilizando a transmissão."}
+{"code": "AWSGTW118W", "pt": "O evento não pôde ser enviado e foi temporariamente guardado em cache no arquivo indicado para uma tentativa posterior."}
+{"code": "AWSGTW120E", "pt": "Ocorreu uma falha ao abrir o arquivo de configuração modelo indicado, e o motivo deve ser verificado no detalhe do erro."}
+{"code": "AWSGTW121E", "pt": "Esses dois parâmetros são mutuamente exclusivos e não podem ser usados simultaneamente numa mesma chamada."}
+{"code": "AWSSAM001I", "pt": "O processo está configurando o módulo de automação de sistemas para o produto especificado na instância indicada."}
+{"code": "AWSSAM002E", "pt": "Somente o usuário raiz do sistema tem permissão para executar o script responsável pela criação dos recursos de configuração."}
+{"code": "AWSSAM003E", "pt": "O script de criação de recursos está sendo executado a partir de um diretório incorreto e precisa ser iniciado do local adequado."}
+{"code": "AWSSAM004I", "pt": "O script pode ser executado novamente para reprocessar a etapa que falhou e, uma vez resolvida, seguir com as etapas subsequentes."}
+{"code": "AWSSAM005I", "pt": "Está sendo verificada a instalação do módulo de automação de sistemas para confirmar que está corretamente configurado."}
+{"code": "AWSSAM006I", "pt": "Está sendo feita a verificação de presença do produto de automação de cargas dentro do domínio de pares configurado."}
+{"code": "AWSSAM007I", "pt": "Está sendo confirmado o status online do produto de automação de cargas dentro do domínio de pares."}
+{"code": "AWSSAM008I", "pt": "Está sendo recuperado o identificador do nó dentro do cluster para prosseguir com a configuração."}
+{"code": "AWSSAM010I", "pt": "A alteração do proprietário do diretório indicado está sendo executada para adequar as permissões ao ambiente configurado."}
+{"code": "AWSSAM011I", "pt": "A alteração de permissão de acesso ao diretório informado está sendo executada para adequá-la à configuração."}
+{"code": "AWSSAM012I", "pt": "Os scripts estão sendo copiados para o diretório indicado a fim de completar a configuração do ambiente."}
+{"code": "AWSSAM013I", "pt": "Está sendo verificada a condição de parada do servidor de aplicações web do ambiente configurado."}
+{"code": "AWSSAM014I", "pt": "O servidor de aplicações web está ativo no sistema e seu identificador de processo foi detectado."}
+{"code": "AWSSAM015I", "pt": "Está sendo checado o estado de parada dos processos relacionados ao produto de automação de cargas."}
+{"code": "AWSSAM017I", "pt": "O grupo de recursos informado está sendo criado para permitir o gerenciamento conjunto dos componentes."}
+{"code": "AWSSAM018I", "pt": "O grupo de recursos indicado está sendo preenchido com os componentes e valores necessários para a configuração."}
+{"code": "AWSSAM020I", "pt": "As relações entre as entidades indicadas estão sendo estabelecidas para completar a estrutura de dependência."}
+{"code": "AWSSAM021I", "pt": "Está sendo criado o recurso com privilégios mínimos indicado para restringir o acesso ao necessário."}
+{"code": "AWSSAM022I", "pt": "Está sendo criada a equivalência de sombreamento indicada para suportar a alta disponibilidade dos recursos."}
+{"code": "AWSSAM023I", "pt": "O grupo de recursos informado está sendo iniciado para ativar os componentes que fazem parte dele."}
+{"code": "AWSSAM024I", "pt": "A configuração do módulo de automação de sistemas para o produto foi concluída com sucesso na instância indicada."}
+{"code": "AWSSAM025I", "pt": "Execute este comando primeiro nos outros gerentes de domínio de apoio e só por último no gerente principal do domínio."}
+{"code": "AWSSAM026I", "pt": "Execute este comando primeiro nos gerentes de domínio dinâmico de apoio e por fim no gerente principal do domínio dinâmico."}
+{"code": "AWSSAM027E", "pt": "A configuração do módulo de automação de sistemas para o produto de automação de cargas falhou e precisa ser investigada."}
+{"code": "AWSSAM028I", "pt": "Está sendo verificada a versão do módulo de automação de sistemas instalada no ambiente."}
 {"code": "AWSSAS003E", "pt": "O valor informado para o parâmetro está incorreto; use o formato esperado indicado na mensagem."}
 {"code": "AWSSAS004E", "pt": "O parâmetro indicado foi informado mais de uma vez, o que não é permitido nesta execução."}
 {"code": "AWSSAS005E", "pt": "O parâmetro obrigatório indicado não foi informado na linha de comando da operação."}
