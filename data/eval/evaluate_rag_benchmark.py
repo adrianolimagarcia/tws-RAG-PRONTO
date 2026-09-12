@@ -259,6 +259,10 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
             score *= 1.20  # Prioridade para validações reais de laboratório
         elif dtype == "ragflow_runbook_chunk":
             score *= 1.15
+        elif dtype == "message_catalog":
+            # Catalogo de mensagens do produto: texto canonico da versao instalada.
+            # Sem boost, ficava sistematicamente atras das claims canonicas (que recebem 1.25).
+            score *= 1.10
 
         # Boost se a pergunta menciona um código/termo e o doc o tem no id/nome
         for token in list(query_tokens):

@@ -16,6 +16,67 @@ OUT = f"{BASE}/data/evidence/official-verification-2026-09-11-message-catalog-fu
 
 SEV = {"I": "informational", "W": "warning", "E": "error"}
 
+# Glossario EN->PT-BR construido a partir do vocabulario real das mensagens (frequencia medida).
+# Objetivo: dar TOKENS EM PORTUGUES ao texto indexado, para que perguntas em PT-BR (que descrevem
+# o sintoma) possam casar por BM25 com mensagens cujo texto original e em ingles.
+# Sem isto, perguntas virgens rankeiam a mensagem correta na posicao ~837 (mediana).
+PT_GLOSS = {
+    "error": "erro", "errors": "erros", "not": "nao", "file": "arquivo", "files": "arquivos",
+    "workstation": "estacao de trabalho", "job": "job", "occurred": "ocorreu",
+    "cannot": "nao pode", "name": "nome", "command": "comando", "commands": "comandos",
+    "supplied": "informado", "syntax": "sintaxe", "valid": "valido", "invalid": "invalido",
+    "user": "usuario", "unable": "nao conseguiu", "specified": "especificado",
+    "internal": "interno", "keyword": "palavra-chave", "domain": "dominio",
+    "found": "encontrado", "not found": "nao encontrado", "message": "mensagem",
+    "workload": "carga de trabalho", "number": "numero", "system": "sistema", "type": "tipo",
+    "parameter": "parametro", "parameters": "parametros", "symphony": "symphony",
+    "definition": "definicao", "stream": "fluxo", "value": "valor", "line": "linha",
+    "installation": "instalacao", "install": "instalar", "directory": "diretorio",
+    "option": "opcao", "options": "opcoes", "record": "registro", "run": "execucao",
+    "time": "tempo hora", "agent": "agente", "expired": "expirou venceu expirado",
+    "license": "licenca", "licensed": "licenciado", "demo": "demonstracao",
+    "demonstration": "demonstracao", "rental": "aluguel", "incompatible": "incompativel",
+    "cpu": "processador cpu", "program": "programa", "installed": "instalado",
+    "product": "produto", "too many": "excesso de", "enabled": "habilitado",
+    "disabled": "desabilitado", "memory": "memoria", "shared": "compartilhada",
+    "comarea": "area de comunicacao compartilhada", "isam": "arquivo indexado",
+    "operation": "operacao", "implemented": "implementado", "broker": "broker intermediario",
+    "supported": "suportado", "logon": "logon", "numeric": "numerico",
+    "argument": "argumento", "incorrect": "incorreto", "between": "entre",
+    "midnight": "meia-noite", "qualifier": "qualificador", "missing": "faltando",
+    "stopped": "parado", "started": "iniciado", "quantity": "quantidade",
+    "resource": "recurso", "expected": "esperado", "successfully": "com sucesso",
+    "completed": "concluido", "outdated": "desatualizado", "latest": "mais recente",
+    "version": "versao", "read": "ler leitura", "problem": "problema",
+    "inaccessible": "inacessivel", "failed": "falhou", "failure": "falha",
+    "abort": "abortar", "aborted": "abortado", "timeout": "tempo esgotado",
+    "connection": "conexao", "database": "banco de dados", "table": "tabela",
+    "authorization": "autorizacao", "password": "senha", "security": "seguranca",
+    "folder": "pasta", "plan": "plano", "schedule": "agendamento",
+    "calendar": "calendario", "priority": "prioridade", "limit": "limite",
+    "resource": "recurso", "start": "iniciar", "stop": "parar", "restart": "reiniciar",
+    "create": "criar", "delete": "excluir", "update": "atualizar", "display": "exibir",
+    "unsupported": "nao suportado", "unsuccessful": "sem sucesso", "refused": "recusado",
+    "denied": "negado", "expire": "expirar", "renew": "renovar", "renewal": "renovacao",
+}
+
+
+def pt_keywords(text):
+    """Deriva termos PT-BR a partir do texto em ingles da mensagem (matching lexical)."""
+    t = " " + (text or "").lower() + " "
+    out = []
+    for en, pt in PT_GLOSS.items():
+        if f" {en} " in t or f" {en}." in t or f" {en}," in t or f" {en}:" in t:
+            out.extend(pt.split())
+    # dedup preservando ordem
+    seen, res = set(), []
+    for w in out:
+        if w not in seen:
+            seen.add(w)
+            res.append(w)
+    return " ".join(res)
+
+
 FAM_LABEL = {
     "BHU": "conman", "BIA": "composer", "BIS": "plan library", "BCT": "conman/plan",
     "FAB": "installation (twsinst)", "DEM": "deployment", "DEG": "deployment engine",
@@ -59,9 +120,12 @@ def main():
                 continue
             sev = SEV.get(code[-1], "unknown")
             doc = docs.get(code)
+            ptkw = pt_keywords(texto)
             claim = (f"No HCL Workload Automation 10.2.8, a mensagem {code} "
                      f"(severidade: {sev}, familia AWS{code[3:6]} - {fam_label(code)}) "
                      f"tem o texto: \"{texto}\"")
+            if ptkw:
+                claim += f" Em portugues, esta mensagem trata de: {ptkw}."
             if doc:
                 enriched += 1
                 expl = clean(doc.get("explanation"))
