@@ -1,3 +1,278 @@
+{"code": "AWSBCT002E", "pt": "É obrigatório especificar um arquivo JCL antes de prosseguir com a submissão do job no ambiente de automação."}
+{"code": "AWSBCT003E", "pt": "O caminho informado para o arquivo JCL não pode ultrapassar o limite máximo de caracteres definido pelo sistema."}
+{"code": "AWSBCT004E", "pt": "A opção -u só pode ser utilizada por usuários com privilégios de root no sistema operacional."}
+{"code": "AWSBCT005W", "pt": "O JCL está sendo submetido como root e por isso é preciso indicar um usuário por meio da opção -u para a execução."}
+{"code": "AWSBCT006E", "pt": "Não foi encontrada uma entrada de senha para o usuário informado, resultando no erro indicado pelo sistema."}
+{"code": "AWSBCT007E", "pt": "O nome de usuário informado não pode exceder oito bytes de tamanho na definição."}
+{"code": "AWSBCT008E", "pt": "Este usuário precisa ter permissões de leitura e execução sobre o arquivo JCL para que a operação seja concluída."}
+{"code": "AWSBCT009E", "pt": "Não foi encontrada uma entrada de grupo para o usuário informado, gerando o erro reportado pelo sistema."}
+{"code": "AWSBCT010W", "pt": "O grupo de trabalho informado foi convertido em um job stream com o nome criado automaticamente pelo sistema."}
+{"code": "AWSBCT011W", "pt": "O sistema aceita apenas nomes de agenda com até oito bytes e está usando o valor ajustado automaticamente."}
+{"code": "AWSBCT012W", "pt": "O sistema suporta apenas nomes de job com até oito bytes e está utilizando o valor ajustado automaticamente."}
+{"code": "AWSBCT013W", "pt": "O nome de job foi derivado diretamente do nome do arquivo de origem informado na submissão."}
+{"code": "AWSBCT014E", "pt": "Ocorreu um erro ao tentar acessar o diretório de trabalho atual, impedindo a continuação da operação."}
+{"code": "AWSBCT015E", "pt": "Ocorreu uma falha durante a gravação no arquivo informado, conforme o erro detalhado pelo sistema."}
+{"code": "AWSBCT016E", "pt": "Ocorreu uma falha ao tentar abrir o arquivo informado, conforme o erro detalhado pelo sistema."}
+{"code": "AWSBCT017E", "pt": "Ocorreu um erro durante a leitura da entrada padrão, conforme o erro reportado pelo sistema."}
+{"code": "AWSBCT018E", "pt": "O sistema não conseguiu obter um arquivo temporário necessário para a operação em andamento."}
+{"code": "AWSBCT019E", "pt": "Ocorreu uma falha ao tentar fechar o arquivo informado, conforme o erro reportado pelo sistema."}
+{"code": "AWSBCT021E", "pt": "Não foi possível definir um nome de agenda automaticamente, sendo necessário usar a opção -s para informá-lo."}
+{"code": "AWSBCT022E", "pt": "Não foi possível atribuir um nome de job automaticamente, sendo necessário usar a opção -j para informá-lo."}
+{"code": "AWSBCT023E", "pt": "É obrigatório informar data e hora no formato YYMMDDHHmm para que o agendamento seja válido."}
+{"code": "AWSBCT024E", "pt": "A data e a hora devem conter exatamente dez dígitos no formato YYMMDDHHmm para serem aceitas pelo sistema."}
+{"code": "AWSBCT025E", "pt": "A prioridade deve ser um valor numérico de zero a cento e um, sendo também aceitos os valores hi e go para os extremos."}
+{"code": "AWSBCT026E", "pt": "O valor informado deve começar com uma letra do alfabeto para ser aceito na configuração."}
+{"code": "AWSBCT031E", "pt": "Neste sistema é necessário iniciar o Netman manualmente, pois ele não é iniciado de forma automática."}
+{"code": "AWSBCT032I", "pt": "O usuário atual não possui autorização para iniciar nenhum dos produtos disponíveis no ambiente."}
+{"code": "AWSBCT033E", "pt": "Ocorreu um erro ao iniciar o sistema local, conforme o tipo e a falha detalhados na mensagem."}
+{"code": "AWSBCT034E", "pt": "Ocorreu um erro ao iniciar o sistema NS/DS, conforme o erro detalhado na mensagem do sistema."}
+{"code": "AWSBCT035E", "pt": "Foi especificado um produto incorreto que não corresponde aos produtos disponíveis no ambiente."}
+{"code": "AWSBCT036E", "pt": "Ocorreu um erro ao iniciar o sistema TCP, conforme o erro detalhado na mensagem do sistema."}
+{"code": "AWSBCT037W", "pt": "Os nomes de sistema estão limitados a oito caracteres na configuração corrente."}
+{"code": "AWSBCT038E", "pt": "Ocorreu um erro ao acessar o PROCINFO, conforme os dois erros detalhados na mensagem."}
+{"code": "AWSBCT039E", "pt": "O sistema identificou um tipo de serviço desconhecido associado ao host informado na mensagem de erro."}
+{"code": "AWSBCT040E", "pt": "O serviço informado já está ativo no sistema indicado e não pode ser iniciado novamente."}
+{"code": "AWSBCT041I", "pt": "O serviço informado foi iniciado com sucesso no sistema indicado na mensagem."}
+{"code": "AWSBCT042E", "pt": "O serviço informado está desabilitado no sistema indicado e não está disponível para uso."}
+{"code": "AWSBCT043E", "pt": "O serviço informado gerou uma confirmação ou erro desconhecido no sistema indicado na mensagem."}
+{"code": "AWSBCT044E", "pt": "Foi identificado um cliente incorreto no sistema, fazendo com que o serviço solicitado fosse negado."}
+{"code": "AWSBCT045E", "pt": "Ocorreu um erro ao tentar acessar o banco de dados Mozart necessário para a operação."}
+{"code": "AWSBCT046E", "pt": "Ocorreu um erro durante a inicialização do módulo de segurança do ambiente."}
+{"code": "AWSBCT047E", "pt": "O usuário atual não está autorizado a exibir a estação de trabalho selecionada na interface."}
+{"code": "AWSBCT048E", "pt": "O roteador do sistema informado não conseguiu estabelecer conexão com o serviço solicitado."}
+{"code": "AWSBCT071W", "pt": "O Netman já está encerrado e não há necessidade de uma nova operação de parada."}
+{"code": "AWSBCT072E", "pt": "Ocorreu um erro ao tentar interromper o Netman local, conforme detalhado na mensagem."}
+{"code": "AWSBCT074W", "pt": "O Netman já está encerrado, portanto não é possível ou necessário encerrá-lo novamente."}
+{"code": "AWSBCT081E", "pt": "A variável de ambiente informada não foi encontrada, indicando que o processo não é um job do HCL Workload Automation."}
+{"code": "AWSBCT091E", "pt": "Ocorreu um erro ao tentar alterar as permissões do arquivo informado, conforme o erro detalhado."}
+{"code": "AWSBCT092E", "pt": "Ocorreu um erro ao tentar alterar o proprietário do arquivo informado, conforme o erro detalhado."}
+{"code": "AWSBCT094E", "pt": "Não foram informados comandos e por isso o job não foi submetido para execução."}
+{"code": "AWSBCT104I", "pt": "A opção informada requer um argumento para que possa ser utilizada corretamente."}
+{"code": "AWSBCT105E", "pt": "Foi identificada uma opção não reconhecida pelo sistema na linha de comando fornecida."}
+{"code": "AWSBCT107E", "pt": "Os bancos de dados não puderam ser convertidos e o processo está sendo encerrado."}
+{"code": "AWSBCT108E", "pt": "O arquivo de configuração globalopts não existe no local esperado pelo sistema."}
+{"code": "AWSBCT109E", "pt": "O arquivo globalopts precisa ter permissões de leitura e escrita, então verifique as permissões atuais."}
+{"code": "AWSBCT111W", "pt": "O valor informado é idêntico ao valor de comparação indicado na mensagem do sistema."}
+{"code": "AWSBCT112E", "pt": "Os bancos de dados não foram atualizados e o processo está sendo encerrado."}
+{"code": "AWSBCT113E", "pt": "Não foi possível obter informações do inode do arquivo informado, pois a chamada de sistema stat falhou."}
+{"code": "AWSBCT114I", "pt": "O arquivo informado foi identificado como um arquivo comum e não como um arquivo especial pelo sistema."}
+{"code": "AWSBCT116E", "pt": "O arquivo informado foi identificado como um arquivo especial, e não como um arquivo comum."}
+{"code": "AWSBCT119E", "pt": "Não foi possível obter o diretório de trabalho atual e o processo está sendo encerrado."}
+{"code": "AWSBCT120E", "pt": "Não foi possível criar o diretório de backup porque o caminho excede o limite permitido, encerrando o processo."}
+{"code": "AWSBCT121E", "pt": "Não foi possível criar o diretório de backup informado no sistema durante a operação."}
+{"code": "AWSBCT122E", "pt": "O diretório de backup informado não permite gravação, então verifique as permissões e a máscara de criação de arquivos."}
+{"code": "AWSBCT123E", "pt": "Não foi possível abrir o arquivo informado para leitura no ambiente do sistema."}
+{"code": "AWSBCT124E", "pt": "Não foi possível abrir o arquivo informado para gravação no ambiente do sistema."}
+{"code": "AWSBCT125E", "pt": "Ocorreu um erro durante a leitura do arquivo informado pelo sistema de automação."}
+{"code": "AWSBCT126E", "pt": "Ocorreu um erro durante a gravação do arquivo informado pelo sistema de automação."}
+{"code": "AWSBCT127E", "pt": "O banco de dados informado não pôde ser incluído no processo de backup."}
+{"code": "AWSBCT128E", "pt": "Ocorreu uma falha ao tentar converter o elemento informado na mensagem do sistema."}
+{"code": "AWSBCT129E", "pt": "Ocorreu uma falha ao tentar copiar o arquivo informado para o diretório de destino indicado."}
+{"code": "AWSBCT131I", "pt": "A opção -V exibe a versão do produto e encerra o programa em seguida."}
+{"code": "AWSBCT200E", "pt": "É necessário que o usuário informe o nome manualmente para prosseguir com a operação."}
+{"code": "AWSBCT202E", "pt": "O caminho informado está limitado a um número máximo de caracteres definido pelo sistema."}
+{"code": "AWSBCT203E", "pt": "O nome do arquivo é o único argumento permitido nesta operação da linha de comando."}
+{"code": "AWSBCT212E", "pt": "O serviço de token relatou um erro interno na posição indicada pela mensagem."}
+{"code": "AWSBCT213I", "pt": "O serviço de token emitiu uma mensagem informativa para o operador do ambiente."}
+{"code": "AWSBCT214I", "pt": "O serviço de token emitiu a mensagem informativa apresentada na saída do sistema."}
+{"code": "AWSBCT215I", "pt": "A solicitação de token foi concluída com sucesso para o usuário indicado na mensagem."}
+{"code": "AWSBCT216I", "pt": "A solicitação de token não foi concluída com sucesso para o usuário indicado na mensagem."}
+{"code": "AWSBCT301E", "pt": "O usuário atual não tem permissão para acessar o recurso informado, sendo necessário ser root ou o criador."}
+{"code": "AWSBCT302E", "pt": "Ocorreu um erro envolvendo o arquivo informado, conforme os detalhes apresentados na mensagem do sistema."}
+{"code": "AWSBCT303E", "pt": "A exclusão do arquivo informado falhou, conforme o erro apresentado pelo sistema."}
+{"code": "AWSBCT305E", "pt": "O utilitário de exclusão não consegue continuar por causa de um erro inesperado do Windows ao acessar os detalhes do usuário."}
+{"code": "AWSBCT306E", "pt": "A exclusão do arquivo informado falhou e os processos do sistema TWS precisam ser interrompidos para permitir a exclusão."}
+{"code": "AWSBCT307E", "pt": "A exclusão do arquivo informado falhou porque o caminho indicado corresponde a um diretório."}
+{"code": "AWSBCT308I", "pt": "A exclusão do arquivo informado não foi realizada porque não há arquivos para excluir."}
+{"code": "AWSBCT309E", "pt": "A exclusão do arquivo informado não foi realizada porque o caminho indicado é inválido."}
+{"code": "AWSBCT401E", "pt": "Ocorreu um erro ao abrir a tabela de jobs, conforme o tipo e a falha detalhados na mensagem."}
+{"code": "AWSBCT402E", "pt": "Não foi encontrada nenhuma entrada correspondente ao número do job informado na tabela."}
+{"code": "AWSBCT403E", "pt": "Está faltando a variável de ambiente informada para que a operação seja executada."}
+{"code": "AWSBCT404E", "pt": "O valor informado para o parâmetro indicado é inválido e por isso foi rejeitado pelo sistema."}
+{"code": "AWSBCT405E", "pt": "A palavra-chave informada não foi encontrada na configuração atual do sistema de automação."}
+{"code": "AWSBCT406E", "pt": "A palavra-chave informada não é única, existindo mais de uma ocorrência na configuração."}
+{"code": "AWSBCT407E", "pt": "A palavra-chave informada é longa demais e ultrapassa o limite aceito pelo sistema."}
+{"code": "AWSBCT602E", "pt": "O arquivo informado não existe ou não está acessível para leitura pelo sistema."}
+{"code": "AWSBCT651E", "pt": "É necessário estar no gerenciador de domínio mestre para executar este programa."}
+{"code": "AWSBCT652E", "pt": "É preciso ter acesso de build ao banco de dados informado para executar este programa."}
+{"code": "AWSBCT706I", "pt": "As opções -u e -d não podem ser informadas ao mesmo tempo na mesma execução."}
+{"code": "AWSBCT707I", "pt": "A opção -u exige que um nome de usuário seja informado juntamente com ela."}
+{"code": "AWSBCT710W", "pt": "As opções -u e -d não podem ser usadas simultaneamente na mesma chamada."}
+{"code": "AWSBCT712E", "pt": "Não foi possível obter o diretório atual do sistema durante a operação."}
+{"code": "AWSBCT713E", "pt": "Não foi possível obter o caminho completo do arquivo informado durante a operação."}
+{"code": "AWSBCT714E", "pt": "Não foi possível definir o diretório atual como o caminho informado na mensagem."}
+{"code": "AWSBCT715E", "pt": "Não foi possível obter o proprietário do arquivo informado durante a operação."}
+{"code": "AWSBCT716E", "pt": "Não foi possível obter o proprietário a partir do descritor de segurança do arquivo informado."}
+{"code": "AWSBCT717I", "pt": "O proprietário do arquivo informado é o usuário e domínio indicados na mensagem."}
+{"code": "AWSBCT719E", "pt": "Ocorreu um erro inesperado ao localizar arquivos durante a operação em andamento."}
+{"code": "AWSBCT720E", "pt": "Ocorreu um erro inesperado ao fechar o identificador de busca de arquivos na operação."}
+{"code": "AWSBCT721E", "pt": "Ocorreu um erro ao buscar arquivos que correspondem ao padrão informado na mensagem."}
+{"code": "AWSBCT722E", "pt": "Não foi possível obter o token do processo durante a operação de segurança."}
+{"code": "AWSBCT723E", "pt": "Não foi possível inicializar o descritor de segurança durante a operação em andamento."}
+{"code": "AWSBCT724E", "pt": "Não foi possível definir o proprietário no descritor de segurança durante a operação."}
+{"code": "AWSBCT725E", "pt": "Não foi possível ativar o privilégio de restauração durante a operação de segurança."}
+{"code": "AWSBCT727E", "pt": "Não foi possível alterar o proprietário do arquivo informado durante a operação."}
+{"code": "AWSBCT728E", "pt": "Não foi possível abrir o arquivo informado durante a operação em andamento."}
+{"code": "AWSBCT729E", "pt": "Não foi possível redefinir o privilégio de restauração durante a operação de segurança."}
+{"code": "AWSBCT751E", "pt": "O sistema apresentou uma mensagem de exceção com os detalhes informados na saída."}
+{"code": "AWSBCT752I", "pt": "O atributo de diretório inicial do TWS foi configurado com o valor informado na mensagem."}
+{"code": "AWSBCT753I", "pt": "O motor do sistema utilizou o diretório inicial do TWS indicado na mensagem."}
+{"code": "AWSBCT754I", "pt": "O componente de banco de dados usou o diretório inicial do TWS indicado na mensagem."}
+{"code": "AWSBCT755I", "pt": "O componente de plano usou o diretório inicial do TWS indicado na mensagem."}
+{"code": "AWSBCT758I", "pt": "O servidor informado foi interrompido com sucesso pelo sistema de automação de workloads."}
+{"code": "AWSBCT760I", "pt": "O banco de dados está sendo processado em sua versão expandida pelo sistema."}
+{"code": "AWSBCT761I", "pt": "O plano está sendo processado em sua versão expandida pelo sistema de automação."}
+{"code": "AWSBCT762I", "pt": "O banco de dados está sendo processado em sua versão não expandida pelo sistema."}
+{"code": "AWSBCT763I", "pt": "O plano está sendo processado em sua versão não expandida pelo sistema."}
+{"code": "AWSBCT764E", "pt": "O servidor informado encontrou um erro desconhecido durante a sua operação no ambiente."}
+{"code": "AWSBCT765E", "pt": "Não foi possível vincular a mensagem de exceção apresentada pelo sistema ao registro."}
+{"code": "AWSBCT766I", "pt": "Os servidores da instância do TWS indicada estão sendo interrompidos pelo sistema."}
+{"code": "AWSBCT790E", "pt": "O componente informado não está instalado no sistema e por isso não pode ser executado."}
+{"code": "AWSBCT791E", "pt": "O framework de automação não está instalado neste sistema, por isso o programa solicitado não consegue ser executado."}
+{"code": "AWSBCT865E", "pt": "Houve um erro ao abrir o gerenciador de serviços, e o sistema retornou o código de erro indicado."}
+{"code": "AWSBCT866E", "pt": "A opção -s é obrigatória e precisa receber o nome do serviço para que o comando funcione."}
+{"code": "AWSBCT867E", "pt": "A opção -u é obrigatória e deve ser acompanhada do nome de usuário correspondente."}
+{"code": "AWSBCT868E", "pt": "A opção -D exige que seja informada a especificação de dependência do serviço."}
+{"code": "AWSBCT869E", "pt": "A opção -d precisa que você informe o nome de exibição do serviço a ser criado."}
+{"code": "AWSBCT870E", "pt": "A opção -l requer o caminho completo do executável para localizar a instalação."}
+{"code": "AWSBCT871E", "pt": "A opção -p é obrigatória e deve ser informada a senha correspondente ao usuário."}
+{"code": "AWSBCT872E", "pt": "Foi passado um argumento desconhecido para o comando, representado pelo caractere indicado."}
+{"code": "AWSBCT873W", "pt": "Apenas uma das opções -i ou -r pode ser informada; indicar as duas ao mesmo tempo não é permitido."}
+{"code": "AWSBCT874E", "pt": "É obrigatório informar o nome do serviço para concluir a operação solicitada."}
+{"code": "AWSBCT875E", "pt": "É obrigatório informar a localização do serviço para que a operação seja executada."}
+{"code": "AWSBCT876E", "pt": "Tanto o nome de usuário quanto a senha precisam ser informados juntos na operação."}
+{"code": "AWSBCT877E", "pt": "Para a remoção do serviço basta informar apenas o nome dele, sem parâmetros adicionais."}
+{"code": "AWSBCT878W", "pt": "Argumentos extras fornecidos no comando foram simplesmente descartados pelo sistema, porque não eram necessários para a operação."}
+{"code": "AWSBCT879W", "pt": "Como nenhum usuário foi informado, o serviço será instalado usando a conta do sistema."}
+{"code": "AWSBCT880W", "pt": "Como o nome de exibição não foi informado, o próprio nome do serviço será utilizado."}
+{"code": "AWSBCT881E", "pt": "Não foi informada nenhuma dependência, mas essa informação é obrigatória para o comando."}
+{"code": "AWSBCT882E", "pt": "Houve uma falha ao tentar criar o serviço e o sistema retornou o código de erro indicado."}
+{"code": "AWSBCT883I", "pt": "O serviço foi criado com sucesso no gerenciador de serviços do sistema operacional."}
+{"code": "AWSBCT884E", "pt": "Houve um erro ao abrir o serviço indicado e o sistema retornou o código correspondente."}
+{"code": "AWSBCT885E", "pt": "Não é possível remover o serviço informado porque ele ainda não está no estado parado."}
+{"code": "AWSBCT886E", "pt": "Não foi possível excluir o serviço do sistema e o código de erro correspondente foi retornado."}
+{"code": "AWSBCT887I", "pt": "O serviço informado foi removido com sucesso do gerenciador de serviços do sistema operacional."}
+{"code": "AWSBCT888E", "pt": "O comando cpuinfo não consegue exibir informações da estação de trabalho indicada porque ela não faz parte do arquivo Symphony atual."}
+{"code": "AWSBCV001E", "pt": "O batchman falhou por um erro interno e retornou o código de status informado, exigindo análise do log para diagnóstico."}
+{"code": "AWSBCV002E", "pt": "Falha ao montar o componente informado, e o erro correspondente foi registrado para investigação."}
+{"code": "AWSBCV003E", "pt": "O mailman não conseguiu iniciar um componente interno do batchman e recebeu a mensagem de erro do sistema informada."}
+{"code": "AWSBCV004E", "pt": "O mailman falhou ao iniciar um de seus componentes internos por erro interno, com a mensagem do sistema operacional retornada no detalhe."}
+{"code": "AWSBCV005E", "pt": "O mailman encontrou um erro interno ao tentar abrir o arquivo informado, e a mensagem correspondente do sistema operacional foi registrada."}
+{"code": "AWSBCV006E", "pt": "A workstation informada não pôde ser cadastrada na tabela do mailman porque já se atingiu o limite máximo de estações permitidas."}
+{"code": "AWSBCV007E", "pt": "Não foi possível acessar a workstation informada, provavelmente por indisponibilidade de rede ou de serviço na estação."}
+{"code": "AWSBCV008E", "pt": "O arquivo de mensagens não pôde ser aberto, e o sistema operacional retornou o erro informado para diagnóstico."}
+{"code": "AWSBCV009E", "pt": "O mailman não conseguiu abrir o arquivo de mensagens da workstation na caixa postal, conforme o erro detalhado retornado."}
+{"code": "AWSBCV010E", "pt": "Falha ao iniciar a conexão Symphony na estação informada, indicando problema na comunicação com esse componente."}
+{"code": "AWSBCV011E", "pt": "Falha ao ler os registros de CPU da estação, e o código de erro correspondente foi retornado."}
+{"code": "AWSBCV012E", "pt": "O mailman não conseguiu ler uma mensagem do arquivo de mensagens, e o detalhe do erro ocorrido foi registrado."}
+{"code": "AWSBCV013E", "pt": "O servidor jcw foi considerado inválido para a estação informada, impedindo o processamento da comunicação."}
+{"code": "AWSBCV014E", "pt": "O mailman não conseguiu iniciar o servidor informado e registrou o detalhe do erro para investigação."}
+{"code": "AWSBCV015E", "pt": "O mailman falhou ao gravar uma mensagem no arquivo da caixa postal da estação informada, com detalhe do erro retornado."}
+{"code": "AWSBCV017I", "pt": "O tempo total de CPU consumido pelo mailman no processamento foi de segundos, como indicado na mensagem informativa."}
+{"code": "AWSBCV018I", "pt": "Foi registrado o comando emitido pelo operador, seguido da identificação do operador que o executou."}
+{"code": "AWSBCV019I", "pt": "O servidor informado falhou durante a operação, e a justificativa do erro foi registrada nos logs."}
+{"code": "AWSBCV020I", "pt": "O servidor externo informado está indisponível no momento, possivelmente por queda ou por não responder às verificações."}
+{"code": "AWSBCV021I", "pt": "O servidor informado está disponível e respondendo normalmente às solicitações de comunicação."}
+{"code": "AWSBCV022I", "pt": "O servidor informado realizou a derrubada do sinal de comunicação, indicando o término da sessão ativa."}
+{"code": "AWSBCV024W", "pt": "O mailman perdeu o canal de comunicação com a workstation informada, o que pode gerar mensagens retidas ou atrasadas."}
+{"code": "AWSBCV025W", "pt": "O mailman encerrou o vínculo de comunicação com a workstation informada, desfazendo a conexão anteriormente ativa."}
+{"code": "AWSBCV026I", "pt": "O servidor informado está sendo encerrado porque não há mais vínculos de comunicação ativos com ele."}
+{"code": "AWSBCV028I", "pt": "O mailman se desconectou da estação informada e passará a gravar as mensagens na caixa postal (PO box)."}
+{"code": "AWSBCV029I", "pt": "O mailman está tentando estabelecer a conexão de comunicação com a estação informada."}
+{"code": "AWSBCV034W", "pt": "O programa seguiu um caminho lógico que não deveria ocorrer, conforme indicado pelo arquivo e linha apontados na mensagem."}
+{"code": "AWSBCV035W", "pt": "O mailman não conseguiu estabelecer o vínculo com a workstation informada e, por isso, as mensagens passam a ser enviadas para a caixa postal."}
+{"code": "AWSBCV036W", "pt": "O mailman não pode se conectar à workstation informada por ela possuir um arquivo Symphony incompatível com a versão local."}
+{"code": "AWSBCV037E", "pt": "O mailman encontrou um erro interno ao ler o arquivo Sinfonia, e o detalhe da falha foi registrado nos logs."}
+{"code": "AWSBCV040W", "pt": "O mailman não conseguiu estabelecer o vínculo de comunicação com a workstation informada."}
+{"code": "AWSBCV041I", "pt": "O tipo de vínculo de comunicação da estação informada mudou, passando do valor anterior para o novo tipo registrado."}
+{"code": "AWSBCV042I", "pt": "O endereço de nó da estação informada foi alterado, passando do valor anterior para o novo endereço registrado."}
+{"code": "AWSBCV043I", "pt": "O nome do nó da estação informada foi alterado, passando do nome anterior para o novo nome registrado."}
+{"code": "AWSBCV044I", "pt": "O tipo de vínculo usado para a workstation informada é inválido para este programa, impedindo a comunicação adequada."}
+{"code": "AWSBCV045E", "pt": "Falha ao adicionar a CPU informada à tabela Symphony, e o erro correspondente foi retornado para análise."}
+{"code": "AWSBCV047E", "pt": "Erro ao obter as informações do arquivo Sinfonia, impedindo o acesso aos dados da configuração da estação."}
+{"code": "AWSBCV048E", "pt": "Falha ao renomear o arquivo Sinfonia na estação informada, e o sistema registrou o erro da operação."}
+{"code": "AWSBCV050E", "pt": "Falha ao gravar o arquivo Sinfonia na estação informada, impedindo a persistência das alterações de configuração."}
+{"code": "AWSBCV051E", "pt": "Falha ao limpar (purgar) o arquivo Sinfonia na estação informada, e o erro da operação foi registrado."}
+{"code": "AWSBCV052E", "pt": "Falha ao encerrar o arquivo Sinfonia na estação informada, e o sistema retornou o erro da operação de fechamento."}
+{"code": "AWSBCV053E", "pt": "Falha ao encerrar a conexão Symphony na estação informada, e o erro da operação de finalização foi registrado."}
+{"code": "AWSBCV054E", "pt": "Erro ao fechar a caixa de correio da estação informada, e o sistema registrou a falha da operação."}
+{"code": "AWSBCV055I", "pt": "O processo de inicialização do componente informado foi concluído com sucesso pelo sistema."}
+{"code": "AWSBCV056I", "pt": "A workstation informada já havia sido inicializada anteriormente, portanto a operação de inicialização foi dispensada."}
+{"code": "AWSBCV057E", "pt": "Falha ao gravar dados na caixa de correio remota da estação informada, e o erro foi registrado."}
+{"code": "AWSBCV058E", "pt": "Falha ao abrir a caixa de correio remota da estação informada, impedindo a troca de mensagens."}
+{"code": "AWSBCV059E", "pt": "Falha ao montar a caixa de correio remota da estação informada, e o erro da operação foi registrado."}
+{"code": "AWSBCV060E", "pt": "Falha ao abrir a linha de comunicação DS para a estação informada, com erro detalhado do tipo de conexão."}
+{"code": "AWSBCV061I", "pt": "O processo de inicialização do componente informado está sendo iniciado neste momento pelo sistema."}
+{"code": "AWSBCV062E", "pt": "O mailman encontrou um erro ao tentar abrir o arquivo Symphony, conforme detalhado na mensagem retornada."}
+{"code": "AWSBCV064E", "pt": "Falha ao tentar travar a tabela de vínculos de comunicação, e o erro da operação de bloqueio foi registrado."}
+{"code": "AWSBCV065E", "pt": "Falha ao criar o programa de inicialização informado, e o erro correspondente foi retornado."}
+{"code": "AWSBCV066E", "pt": "O mailman não conseguiu remover um registro do arquivo de mensagens informado, com detalhe do erro registrado."}
+{"code": "AWSBCV067E", "pt": "O mailman não conseguiu ler uma mensagem do arquivo da pasta pobox informado, com o detalhe do erro retornado."}
+{"code": "AWSBCV068E", "pt": "O mailman detectou uma inconsistência ao tentar excluir uma mensagem do arquivo Mailbox, com descrição do erro retornada."}
+{"code": "AWSBCV069E", "pt": "O mailman não encontrou a workstation informada no arquivo Symphony, indicando registro ausente na configuração."}
+{"code": "AWSBCV070I", "pt": "O status autolink da estação informada foi alterado, passando do valor anterior para o novo status registrado."}
+{"code": "AWSBCV071I", "pt": "O status full da estação informada foi alterado, passando do valor anterior para o novo status registrado."}
+{"code": "AWSBCV072I", "pt": "O tipo da workstation informada foi alterado, passando do tipo anterior para o novo tipo registrado."}
+{"code": "AWSBCV073I", "pt": "O servidor associado à estação informada foi alterado, passando do servidor anterior para o novo registrado."}
+{"code": "AWSBCV074I", "pt": "O host associado à estação informada foi alterado, passando do host anterior para o novo registrado."}
+{"code": "AWSBCV075I", "pt": "O tipo de nó da estação informada foi alterado, passando do tipo anterior para o novo registrado."}
+{"code": "AWSBCV076E", "pt": "O mailman não conseguiu gravar as informações da workstation no arquivo Symphony, com detalhe do erro retornado."}
+{"code": "AWSBCV078E", "pt": "Falha ao travar o arquivo Straus, indicando problema de acesso concorrente ao recurso de controle."}
+{"code": "AWSBCV079E", "pt": "Falha ao destravar o arquivo Straus, e o erro da operação de liberação foi registrado."}
+{"code": "AWSBCV080W", "pt": "Não foi encontrado no Straus o vínculo de comunicação com a estação informada, o que merece atenção do operador."}
+{"code": "AWSBCV081E", "pt": "Falha ao atualizar o arquivo Straus, e o erro da operação de atualização foi registrado."}
+{"code": "AWSBCV082I", "pt": "A workstation informada emitiu a mensagem de status registrada, para acompanhamento do operador."}
+{"code": "AWSBCV084E", "pt": "O mailman não pôde se conectar à workstation informada por ela usar um tipo de vínculo não válido para o sistema."}
+{"code": "AWSBCV085I", "pt": "Iniciando o processamento a partir do host informado, com o número de job indicado na mensagem."}
+{"code": "AWSBCV086I", "pt": "Iniciando o processamento localmente como o usuário informado, com o número de servidor e de job registrados."}
+{"code": "AWSBCV087I", "pt": "A workstation informada foi adicionada à tabela de estações com o nó, servidor, tipo de vínculo e flags indicados."}
+{"code": "AWSBCV088E", "pt": "O mailman não conseguiu gravar um registro de caixa de correio no arquivo Intercom, com detalhe do erro retornado."}
+{"code": "AWSBCV089E", "pt": "Falha ao gravar dados para a estação remota informada, e o erro correspondente foi registrado."}
+{"code": "AWSBCV095E", "pt": "O mailman não conseguiu repassar uma mensagem ao servidor informado por causa de um erro interno, com detalhe registrado."}
+{"code": "AWSBCV097E", "pt": "O mailman não conseguiu acessar o arquivo do programa batchman, indicando falha de permissão ou arquivo ausente."}
+{"code": "AWSBCV098W", "pt": "O mailman não recebeu a confirmação de recebimento de uma mensagem enviada à workstation informada, sugerindo perda de mensagem."}
+{"code": "AWSBCV099E", "pt": "O mailman perdeu a comunicação com a workstation informada, exigindo verificação do estado da conexão de rede."}
+{"code": "AWSBCV102I", "pt": "O mailman já está vinculado à estação informada usando a comunicação via TCP."}
+{"code": "AWSBCV103I", "pt": "O mailman já está vinculado à estação informada usando o mecanismo de comunicação DS."}
+{"code": "AWSBCV104I", "pt": "O mailman estabeleceu o vínculo de comunicação com a estação informada usando TCP."}
+{"code": "AWSBCV105I", "pt": "O mailman estabeleceu o vínculo de comunicação com a estação informada usando o mecanismo DS."}
+{"code": "AWSBCV107E", "pt": "O mailman não encontrou o registro da workstation informada no arquivo Symphony, o que configurou um erro interno."}
+{"code": "AWSBCV108I", "pt": "O processo batchman foi iniciado com sucesso, conforme identificado pelo pin informado."}
+{"code": "AWSBCV109I", "pt": "O processo jobman foi iniciado com sucesso, conforme identificado pelo pin informado."}
+{"code": "AWSBCV110E", "pt": "O mailman confirmou que o processo jobman encerrou inesperadamente, com o status de saída informado."}
+{"code": "AWSBCV111E", "pt": "Falha ao configurar a identificação do grupo de processos, com erro retornado pelo sistema."}
+{"code": "AWSBCV112E", "pt": "O mailman encontrou um erro ao tentar iniciar ou reiniciar uma workstation, com o detalhe da falha registrado."}
+{"code": "AWSBCV113E", "pt": "O processo principal do mailman encerrou de forma inesperada devido a um erro interno do sistema."}
+{"code": "AWSBCV114E", "pt": "O mailman não conseguiu configurar as rotinas de tratamento dos sinais de término, com o detalhe do erro retornado."}
+{"code": "AWSBCV115E", "pt": "O mailman não encontrou a nova workstation gerenciadora informada no arquivo Symphony, com o detalhe do erro registrado."}
+{"code": "AWSBCV116I", "pt": "A gerência do domínio informado está sendo transferida da workstation original para a nova workstation indicada."}
+{"code": "AWSBCV117E", "pt": "O mailman encontrou um erro interno ao tentar trocar o gerenciador do domínio informado."}
+{"code": "AWSBCV118E", "pt": "O mailman falhou internamente ao tentar atualizar o cabeçalho do registro no arquivo Symphony durante a inicialização."}
+{"code": "AWSBCV119E", "pt": "O mailman falhou internamente ao procurar o registro da própria workstation no arquivo Symphony durante a inicialização."}
+{"code": "AWSBCV120E", "pt": "O mailman falhou internamente ao tentar localizar a definição do seu próprio domínio no arquivo Symphony."}
+{"code": "AWSBCV121E", "pt": "O mailman não pode se conectar à workstation informada por ela ser gerenciadora de domínio e rodar uma versão anterior à 6.0."}
+{"code": "AWSBCV122E", "pt": "O mailman não conseguiu estabelecer o vínculo de comunicação com a workstation informada."}
+{"code": "AWSBCV124E", "pt": "O mailman não conseguiu se conectar à workstation via SSL por inconsistência na configuração de rede do HCL Workload Automation."}
+{"code": "AWSBCV125E", "pt": "O mailman não conseguiu gravar na caixa de transferência informada para a estação indicada, com o detalhe do erro retornado."}
+{"code": "AWSBCV126E", "pt": "O mailman interrompeu o contador de eventos por ter recebido um erro ao processá-lo, conforme detalhado na mensagem."}
+{"code": "AWSBCV127W", "pt": "O mailman recebeu um evento com o número zero vindo da estação que hospeda um agente, gerando o erro registrado."}
+{"code": "AWSBCV128E", "pt": "O mailman não conseguiu enviar a confirmação de recebimento ao processo escritor da workstation informada."}
+{"code": "AWSBCV129E", "pt": "O mailman não conseguiu enviar a notificação de problema de comunicação ao processo escritor da workstation informada."}
+{"code": "AWSBCV130I", "pt": "O mailman iniciou a primeira fase do protocolo de repetição com a workstation informada, transferindo a tabela de contadores remotos."}
+{"code": "AWSBCV132E", "pt": "O mailman não conseguiu criar o arquivo de repetição de eventos para a estação informada."}
+{"code": "AWSBCV133W", "pt": "O mailman não conseguiu truncar a caixa de transferência informada, e o erro foi registrado."}
+{"code": "AWSBCV134W", "pt": "A tabela de repetição não pôde ser enviada à workstation informada por causa de um erro interno do sistema."}
+{"code": "AWSBCV135W", "pt": "O mailman está em estado isolado, portanto não pode abrir nenhuma conexão de saída com outras estações."}
+{"code": "AWSBCV136W", "pt": "O evento informado foi cancelado durante o processamento, entre a origem e o destino indicados na iteração registrada."}
+{"code": "AWSBCV137W", "pt": "Foi detectada provável perda de mensagem no início do protocolo de repetição para o evento e a workstation informados."}
+{"code": "AWSBCV138I", "pt": "O processo mailman foi iniciado pelo netman, conforme os identificadores de processo e grupo indicados na mensagem."}
+{"code": "AWSBCV139E", "pt": "Ocorreu um erro interno ao atualizar o cabeçalho da caixa de correio, e a mensagem de erro foi registrada."}
+{"code": "AWSBCV141I", "pt": "O mailman se desconectou da estação informada, e os eventos pendentes permanecerão retidos na caixa postal."}
+{"code": "AWSBCV143E", "pt": "O mailman encontrou um erro ao tentar enviar o comando de troca de gerenciador para uma workstation, com detalhe registrado."}
+{"code": "AWSBCV144E", "pt": "O mailman não conseguiu gravar um registro de caixa de correio no arquivo auditbox, com o detalhe do erro registrado."}
+{"code": "AWSBHT001E", "pt": "O job informado, definido no arquivo indicado, falhou durante a execução com o erro descrito na mensagem."}
+{"code": "AWSBHT002W", "pt": "O comportamento de log do job diverge do que é descrito na documentação, merecendo verificação do operador."}
+{"code": "AWSBHT003E", "pt": "O batchman não conseguiu alocar memória para a tabela interna de registros durante o processo de inicialização."}
 {"code": "AWSBHU002E", "pt": "O Conman falhou ao abrir os arquivos Mailbox ou Intercom destinados às mensagens internas do sistema."}
 {"code": "AWSBHU003E", "pt": "O Conman não conseguiu inicializar porque o arquivo de segurança não existe ou não foi localizado pelo sistema."}
 {"code": "AWSBHU004E", "pt": "O nome de usuário de logon informado para o job não é válido estruturalmente e foi rejeitado pelo sistema de autenticação."}
@@ -526,6 +801,121 @@
 {"code": "AWSBIA511I", "pt": "Na primeira etapa da migração foram encontrados os erros e avisos nas quantidades indicadas."}
 {"code": "AWSBIA512I", "pt": "Na segunda etapa da migração foram encontrados os erros e avisos nas quantidades indicadas."}
 {"code": "AWSBIA513I", "pt": "Foi informada a quantidade total de objetos que foram importados na operação."}
+{"code": "AWSBIB001E", "pt": "O horário definido nos parâmetros at, until ou deadline está inválido porque deve estar entre 0000 e 2359 no formato hhmm."}
+{"code": "AWSBIB002E", "pt": "O valor do limite do job está fora do intervalo permitido, que deve estar entre 0 e 1024."}
+{"code": "AWSBIB003W", "pt": "O número do recurso informado está fora do intervalo válido, que deve estar entre 1 e 32."}
+{"code": "AWSBIB004W", "pt": "A prioridade deve ser um valor numérico entre 0 e 99, além das palavras hi equivalente a 100 e go equivalente a 101."}
+{"code": "AWSBIB012E", "pt": "A palavra-chave de trava do job de recuperação não possui uma sintaxe válida."}
+{"code": "AWSBIB013E", "pt": "A senha informada para o job de recuperação não possui uma sintaxe válida e precisa ser corrigida na definição."}
+{"code": "AWSBIB014E", "pt": "Falta o argumento obrigatório streamlogon com o nome de usuário na definição do job dentro do fluxo de jobs."}
+{"code": "AWSBIB015E", "pt": "O logon definido para o job MPE está inválido e impede a execução correta do job."}
+{"code": "AWSBIB017E", "pt": "O nome do grupo informado na definição não possui uma sintaxe válida e precisa ser corrigido."}
+{"code": "AWSBIB018E", "pt": "O nome da conta informado na definição não possui uma sintaxe válida e precisa ser corrigido."}
+{"code": "AWSBIB019E", "pt": "O nome do job de usuário informado na definição não possui uma sintaxe válida e precisa ser corrigido."}
+{"code": "AWSBIB020E", "pt": "O nome do arquivo informado na definição não possui uma sintaxe válida e precisa ser corrigido."}
+{"code": "AWSBIB021E", "pt": "O nome do grupo de arquivos informado na definição não possui uma sintaxe válida e precisa ser corrigido."}
+{"code": "AWSBIB022E", "pt": "O nome da conta de arquivo informado na definição não possui uma sintaxe válida e precisa ser corrigido."}
+{"code": "AWSBIB024E", "pt": "O nome do grupo presente no logon do job transmitido possui sintaxe inválida."}
+{"code": "AWSBIB025E", "pt": "O nome da conta presente no logon do job transmitido possui sintaxe inválida."}
+{"code": "AWSBIB026E", "pt": "A data informada não é válida e o formato aceito depende do que está configurado no arquivo useropts."}
+{"code": "AWSBIB027E", "pt": "A palavra-chave at não pode ser definida ao mesmo tempo no job e no fluxo de jobs; escolha apenas um dos dois."}
+{"code": "AWSBIB028E", "pt": "A palavra-chave until não pode ser definida ao mesmo tempo no job e no fluxo de jobs; escolha apenas um dos dois."}
+{"code": "AWSBIB029E", "pt": "A palavra-chave needs não pode ser definida ao mesmo tempo no job e no fluxo de jobs; escolha apenas um dos dois."}
+{"code": "AWSBIB030W", "pt": "O identificador de CPU do recurso deve ser igual ao cpuid definido no job ou no agendamento."}
+{"code": "AWSBIB033E", "pt": "Não foi possível abrir o arquivo indicado durante o processamento da definição."}
+{"code": "AWSBIB034E", "pt": "Foi informada uma palavra-chave duplicada na definição do job dentro do fluxo de jobs."}
+{"code": "AWSBIB035E", "pt": "Está faltando a palavra-chave obrigatória on na definição do job, o que impede o processamento correto."}
+{"code": "AWSBIB036E", "pt": "A definição do fluxo de jobs não começa com a palavra-chave obrigatória schedule."}
+{"code": "AWSBIB037E", "pt": "Esperava-se uma descrição de job no ponto atual da definição, mas ela não foi encontrada."}
+{"code": "AWSBIB038E", "pt": "Faltou um identificador de objeto, como por exemplo o nome de um job, na definição."}
+{"code": "AWSBIB039E", "pt": "Não foi fornecido um valor numérico obrigatório, como por exemplo o valor de prioridade."}
+{"code": "AWSBIB040E", "pt": "Faltou um identificador de objeto ou o curinga @ na definição do job."}
+{"code": "AWSBIB042E", "pt": "As palavras-chave day, weekday ou workday foram informadas sem que um valor de deslocamento viesse antes delas."}
+{"code": "AWSBIB043E", "pt": "Faltou uma especificação de dependência ou outra palavra-chave, ou ainda foi informada uma palavra-chave incorreta."}
+{"code": "AWSBIB044E", "pt": "Uma palavra-chave de tempo como every foi informada, mas o valor dela está ausente ou não é uma especificação de tempo válida."}
+{"code": "AWSBIB045E", "pt": "A palavra-chave opens foi informada, mas o valor está ausente ou não é um nome de arquivo válido."}
+{"code": "AWSBIB046E", "pt": "Esperava-se uma especificação de dia na definição, mas ela não foi fornecida."}
+{"code": "AWSBIB048E", "pt": "Esperava-se o nome de um calendário na definição, mas ele não foi fornecido."}
+{"code": "AWSBIB049E", "pt": "Esperava-se uma especificação de autodoc do job, mas ela não foi fornecida."}
+{"code": "AWSBIB050E", "pt": "Esperava-se uma opção de autodoc na definição, mas ela não foi fornecida."}
+{"code": "AWSBIB051E", "pt": "A palavra-chave prompt foi informada sem vir seguida de um nome de prompt ou do texto entre aspas."}
+{"code": "AWSBIB052E", "pt": "Não foi encontrada a palavra-chave end, que é necessária para encerrar a definição do fluxo de jobs."}
+{"code": "AWSBIB053E", "pt": "O nome de arquivo informado na definição possui uma sintaxe incorreta e precisa ser corrigido."}
+{"code": "AWSBIB054E", "pt": "O caminho totalmente qualificado informado é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB055E", "pt": "O nome de logon informado é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB056E", "pt": "O nome de arquivo informado é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB057E", "pt": "O valor do abendprompt informado é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB059E", "pt": "A palavra-chave timezone não é seguida de informações de fuso horário válidas na definição."}
+{"code": "AWSBIB060E", "pt": "A palavra-chave timezone não é seguida de um nome de fuso horário na definição."}
+{"code": "AWSBIB061E", "pt": "O nome de fuso horário informado não é reconhecido como um fuso horário válido."}
+{"code": "AWSBIB062E", "pt": "O nome de fuso horário informado possui mais de 40 bytes, excedendo o limite."}
+{"code": "AWSBIB063E", "pt": "O agendador identificou o início de uma instrução de job que não é precedido pelo caractere de dois pontos."}
+{"code": "AWSBIB065E", "pt": "O deslocamento de deadline não pode ser definido ao mesmo tempo no job e no fluxo de jobs; escolha apenas um dos dois."}
+{"code": "AWSBIB067E", "pt": "A expressão de condição de código de retorno informada possui sintaxe inválida conforme o detalhe indicado."}
+{"code": "AWSBIB069E", "pt": "O horário definido na cláusula de from até to das palavras-chave matching ou follows deve estar entre 0000 e 2359."}
+{"code": "AWSBIB200E", "pt": "O identificador de objeto, como o nome de um job, é mais longo do que o número máximo de bytes permitido."}
+{"code": "AWSBIB201E", "pt": "O identificador de objeto, como o nome de um job, deve começar com um caractere alfabético."}
+{"code": "AWSBIB202E", "pt": "O identificador de objeto, como o nome de um job, contém caracteres que não são válidos."}
+{"code": "AWSBIB206E", "pt": "Foi informado mais de um parâmetro na definição, o que não é permitido."}
+{"code": "AWSBIB208E", "pt": "O número de dependências do fluxo de jobs excede o limite máximo permitido."}
+{"code": "AWSBIB209E", "pt": "O número de dependências definido para o job excede o limite máximo que é permitido pelo sistema."}
+{"code": "AWSBIB210E", "pt": "Um parâmetro obrigatório está faltando na definição, conforme o indicado na mensagem."}
+{"code": "AWSBIB211W", "pt": "A palavra-chave IN ORDER deve aparecer como a última palavra-chave dentro da definição do job."}
+{"code": "AWSBIB212E", "pt": "Não é permitido definir dependências quando a palavra-chave IN ORDER é especificada na definição."}
+{"code": "AWSBIB213E", "pt": "Foi informado um nome em branco, mas isso não é aceito na definição."}
+{"code": "AWSBIB214E", "pt": "A palavra-chave onuntil possui um valor inválido; os valores aceitos são suppr, cont ou canc."}
+{"code": "AWSBIB216E", "pt": "Esperava-se o conjunto de palavras-chave from com horário de início até horário de fim na definição."}
+{"code": "AWSBIB219E", "pt": "Foi informada mais de uma ocorrência da palavra-chave matching, o que não é permitido."}
+{"code": "AWSBIB220E", "pt": "O alias de job informado na definição não é válido e precisa ser corrigido antes do uso."}
+{"code": "AWSBIB221E", "pt": "O nome de runcycle informado na definição não é válido e precisa ser corrigido antes do uso."}
+{"code": "AWSBIB222E", "pt": "O nome de runcycle informado já foi definido anteriormente e não pode ser duplicado."}
+{"code": "AWSBIB223E", "pt": "O valor informado para a palavra-chave description é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB224E", "pt": "A dependência de string externa informada é mais longa do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB225E", "pt": "O nome de iCalendar informado é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB227E", "pt": "O deslocamento em dias definido para as cláusulas at, until ou deadline é maior do que o máximo permitido de dias indicado."}
+{"code": "AWSBIB228E", "pt": "A palavra-chave every foi informada com uma taxa que está fora do intervalo permitido, que vai de zero até o valor indicado."}
+{"code": "AWSBIB229E", "pt": "A definição de iCalendar está vazia, mas ela não pode ficar sem conteúdo."}
+{"code": "AWSBIB230E", "pt": "A palavra-chave indicada não está na posição correta dentro da definição atual."}
+{"code": "AWSBIB232E", "pt": "O valor informado para onmaxdur é inválido; os valores aceitos são kill ou cont."}
+{"code": "AWSBIB233E", "pt": "O valor informado para onmindur é inválido; os valores aceitos são confirm, abend ou cont."}
+{"code": "AWSBIB234E", "pt": "É obrigatório informar um nome de condição de saída válido na definição."}
+{"code": "AWSBIB235E", "pt": "Os nomes de condição devem ser únicos e foi informado um nome de condição de saída duplicado."}
+{"code": "AWSBIB236E", "pt": "Os nomes de dependência condicional devem ser únicos e foi informado um nome duplicado."}
+{"code": "AWSBIB237E", "pt": "O nome da dependência condicional informado na definição não é válido e precisa ser corrigido."}
+{"code": "AWSBIB238E", "pt": "A expressão de dependência condicional não está relacionada a uma dependência baseada em condição de saída."}
+{"code": "AWSBIB239E", "pt": "A dependência condicional não está relacionada a uma dependência baseada no status final do job predecessor."}
+{"code": "AWSBIB315E", "pt": "Faltou o identificador do job ou do fluxo de jobs, ou então os critérios de correspondência informados são inválidos."}
+{"code": "AWSBIB316E", "pt": "A ação de recuperação informada não é válida; ela deve ser stop, continue ou rerun."}
+{"code": "AWSBIB317E", "pt": "O caminho de um nome de arquivo nas dependências opens, somado ao seu qualificador, não pode ultrapassar o limite de bytes indicado."}
+{"code": "AWSBIB318E", "pt": "Não é permitido especificar um fuso horário para as dependências de tempo do ciclo de execução."}
+{"code": "AWSBIB319E", "pt": "Na definição do job, a soma do tamanho da string docommand com a string rccondsucc não pode ultrapassar o limite de bytes indicado."}
+{"code": "AWSBIB320W", "pt": "A palavra-chave especificada não é permitida em uma definição de job quando ela está fora de um fluxo de jobs."}
+{"code": "AWSBIB321E", "pt": "Era esperado um nome de tabela de variáveis neste ponto, mas ele não foi informado."}
+{"code": "AWSBIB322E", "pt": "O nome da tabela de variáveis excede o limite máximo de bytes indicado."}
+{"code": "AWSBIB323W", "pt": "A palavra-chave tasktype foi informada para a definição de job indicada, para a qual ela não é necessária, e foi ignorada."}
+{"code": "AWSBIB324W", "pt": "A palavra-chave interactive foi informada para a definição de job indicada, para a qual ela não é necessária, e foi ignorada."}
+{"code": "AWSBIB325E", "pt": "A definição de tarefa fornecida para a definição de job indicada não está bem formatada."}
+{"code": "AWSBIB328E", "pt": "O subconjunto de ciclo de execução não pode ser especificado dentro da definição do fluxo de jobs."}
+{"code": "AWSBIB330W", "pt": "A palavra-chave especificada não pode ser definida dentro de uma definição de grupo de ciclo de execução."}
+{"code": "AWSBIB331E", "pt": "Está faltando a palavra-chave end na definição do grupo de ciclo de execução."}
+{"code": "AWSBIB332E", "pt": "O tipo de ciclo de execução chamado run cycle group não pode ser especificado dentro da própria definição desse grupo."}
+{"code": "AWSBIB333E", "pt": "O valor informado para a palavra-chave subset é mais longo do que o máximo permitido de bytes indicado."}
+{"code": "AWSBIB334E", "pt": "Está faltando a palavra-chave runcyclegroup no início da definição do grupo de ciclo de execução."}
+{"code": "AWSBIB335E", "pt": "A palavra-chave every precisa vir seguida da palavra-chave everyendtime dentro da definição, conforme o esperado."}
+{"code": "AWSBIB336E", "pt": "O valor informado para onoverlap é inválido; os valores aceitos são parallel, donotstart ou enqueue."}
+{"code": "AWSBIB337E", "pt": "O valor informado para statisticstype é inválido; os valores aceitos são automatic ou custom."}
+{"code": "AWSBIB338E", "pt": "O número de dependências condicionais unidas excede o limite máximo suportado pelo sistema."}
+{"code": "AWSBIB340E", "pt": "Os nomes das dependências condicionais unidas devem ser únicos e foi informado um nome duplicado."}
+{"code": "AWSBIB341E", "pt": "Faltou fechar a definição de dependências condicionais unidas com o nome desejado, porque após ele não foi informado o número de dependências a serem satisfeitas."}
+{"code": "AWSBIB342E", "pt": "A definição de dependências condicionais unidas não foi encerrada corretamente, pois faltou o comando endjoin para fechá-la."}
+{"code": "AWSBIB344E", "pt": "Não foi encontrada a palavra-chave follows na definição de dependências condicionais unidas, indicando erro de sintaxe na estrutura informada."}
+{"code": "AWSBIB345E", "pt": "A definição de dependências condicionais unidas foi recusada porque não aceita dependências que atravessam redes distintas."}
+{"code": "AWSBIB346E", "pt": "A palavra-chave description foi usada, mas o texto que a acompanha não está entre aspas ou simplesmente não foi informado."}
+{"code": "AWSBIB347E", "pt": "Faltou informar a condição do código de retorno ou o texto dela não está entre aspas, o que invalida a expressão definida."}
+{"code": "AWSBIB348E", "pt": "O nome escolhido para a condição de saída excedeu o limite máximo de bytes permitido pelo sistema."}
+{"code": "AWSBIB349E", "pt": "A análise do arquivo parou na linha informada por causa de um token inesperado no ponto indicado do processamento."}
+{"code": "AWSBIB350E", "pt": "O processamento do objeto informado foi interrompido porque houve erros de sintaxe durante a leitura da definição."}
+{"code": "AWSBIB351E", "pt": "A operação de análise foi interrompida abruptamente porque ocorreu um erro de sintaxe no conteúdo processado."}
 {"code": "AWSBIS001I", "pt": "Utilize o comando de personalização com a opção de uso para exibir as opções e a forma de utilização."}
 {"code": "AWSBIS002E", "pt": "Ocorreu um erro interno e o programa de personalização falhou ao executar o comando Unix informado durante a instalação."}
 {"code": "AWSBIS003E", "pt": "O arquivo de configuração do HCL Workload Automation indicado não existe no sistema."}
