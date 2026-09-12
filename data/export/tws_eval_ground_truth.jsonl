@@ -1,7 +1,7 @@
 {"question": "Como a palavra-chave draft impede que um job stream entre no plano de produção?", "target_claim_id": "com-change-0001", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Uma prática recomendada de configuração avançada é separar ambientes (dev/test/prod) usando folders/pastas distintas e instâncias dedicadas, e versionar as mudanças de configuração junto com as definições de jobs usando a auditoria de banco (dbAudit + auditStore=db)?", "target_claim_id": "com-config-0001", "category": "Arquitetura & Topologia Mesh"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "com-config-0002", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Uma prática recomendada de configuração avançada é sincronizar a configuração do site de recuperação de desastres (DR) com o site primário, incluindo o espelhamento do banco de dados e a cópia das chaves AES (TWA_DATA_DIR/ssl/aes) e certificados para o backup master domain manager, para garantir que o ambiente DR possa descriptografar o Symphony?", "target_claim_id": "com-config-0002", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "com-config-0002", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Uma prática recomendada de configuração avançada é sincronizar a configuração do site de recuperação de desastres (DR) com o site primário, incluindo o espelhamento do banco de dados e a cópia das chaves AES (TWA_DATA_DIR/ssl/aes) e certificados para o backup master domain manager, para garantir que o ambiente DR possa descriptografar o Symphony?", "target_claim_id": "com-config-0002", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como utilizar o utilitário composer no HCL Workload Automation?", "target_claim_id": "com-config-0003", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a sintaxe ou procedimento no composer para gerenciar composer?", "target_claim_id": "com-config-0003", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como utilizar o utilitário composer no HCL Workload Automation?", "target_claim_id": "com-monitoring-scripts-0004", "category": "Operacao CLI (conman/composer/planman)"}
@@ -106,9 +106,9 @@
 {"question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation Distributed 10.2.4, showjobs ou sj com ;props exibe a propriedade runtime Not Satisfied Dependencies da instância de job selecionada?", "target_claim_id": "hwa-10.2.4-showjobs-props-unsatisfied-dependencies-0025", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation 10.2.5, o User Object Credential Management permite atualizar de forma centralizada e segura as senhas armazenadas nos user objects, aplicando a mudança de forma consistente no banco e nas instâncias do plano em uma única ação?", "target_claim_id": "hwa-10.2.5-distributed-user-object-credential-0001", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para agent?", "target_claim_id": "hwa-10.2.6-centralized-agent-update-0001", "category": "Arquitetura & Topologia Mesh"}
-{"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.7-planman-resync-0051", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no planman para gerenciar planman?", "target_claim_id": "hwa-10.2.7-planman-resync-0051", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.7-planman-resync-0051", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.7-planman-resync-0051", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no planman para gerenciar planman?", "target_claim_id": "hwa-10.2.7-planman-resync-0051", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.7-planman-resync-0051", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual é o significado da mensagem de erro AWKZSJ001E no HWA?", "target_claim_id": "hwa-10.2.8-AWKZSJ-001E-0001", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Como solucionar ou diagnosticar o erro AWKZSJ001E no HWA?", "target_claim_id": "hwa-10.2.8-AWKZSJ-001E-0001", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Qual é o significado da mensagem de erro AWKZSJ001E no HWA e qual ação é recomendada?", "target_claim_id": "hwa-10.2.8-AWKZSJ-001E-0001", "category": "Arquitetura & Topologia Mesh"}
@@ -155,7 +155,7 @@
 {"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-awsbhv082e-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual é o significado da mensagem de erro AWSJPL526W no HWA?", "target_claim_id": "hwa-10.2.8-awsjpl526w-0001", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como solucionar ou diagnosticar o erro AWSJPL526W no HWA?", "target_claim_id": "hwa-10.2.8-awsjpl526w-0001", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: HWA Distributed 10.2.8 recommends frequently backing up master data files to offline storage or a backup master domain manager?", "target_claim_id": "hwa-10.2.8-backup-backup-master-data-0001", "category": "Instalacao & Manutencao"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: HWA Distributed 10.2.8 recommends frequently backing up master data files to offline storage or a backup master domain manager?", "target_claim_id": "hwa-10.2.8-backup-backup-master-data-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, um calendário pode ser criado no Graphical Designer pela aba Assets, clicando no ícone de adição (+), selecionando Calendar no menu suspenso, informando o nome e selecionando as datas desejadas?", "target_claim_id": "hwa-10.2.8-cal-graphical-designer-0001", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, um calendário criado pode ser adicionado a um job stream arrastando-o da aba Assets para o workspace do job stream no Graphical Designer e, em seguida, implantando (Deploy) o workspace?", "target_claim_id": "hwa-10.2.8-cal-job-stream-0002", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: O limite padrão documentado do número de jobs que podem rodar simultaneamente em uma workstation no HCL Workload Automation 10.2.8 é 1000 para cloud task launcher e 100 para todos os outros tipos de workstation?", "target_claim_id": "hwa-10.2.8-capacity-limit-cpu-0001", "category": "Agendamento Avancado & Workflows"}
@@ -479,11 +479,11 @@
 {"question": "Qual a sintaxe ou procedimento no conman para gerenciar conman?", "target_claim_id": "hwa-10.2.8-conman-submit-until-deadline-0132", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual o comportamento das opções until e deadline na submissão de jobs no conman?", "target_claim_id": "hwa-10.2.8-conman-submit-until-deadline-0132", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como definir limites de horário e prazo na submissão ad-hoc sbd do conman?", "target_claim_id": "hwa-10.2.8-conman-submit-until-deadline-0132", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como utilizar o utilitário switcheventprocessor no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no switcheventprocessor para gerenciar conman?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no conman para gerenciar conman?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como utilizar o comando conman 'switcheventprocessor' para gerenciar workstations e execução no HWA?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como utilizar o utilitário switcheventprocessor no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no switcheventprocessor para gerenciar conman?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no conman para gerenciar conman?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como utilizar o comando conman 'switcheventprocessor' para gerenciar workstations e execução no HWA?", "target_claim_id": "hwa-10.2.8-conman-switcheventprocessor-0010", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-conman-tellop-0007", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a sintaxe ou procedimento no conman para gerenciar conman?", "target_claim_id": "hwa-10.2.8-conman-tellop-0007", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A migração do banco de dados dos componentes de servidor do HCL Workload Automation 10.2.8 é executada pelo utilitário awspiupgrddb, que atualiza o esquema do banco de dados para a versão atual do produto?", "target_claim_id": "hwa-10.2.8-dbmigration-awspiupgrddb-0001", "category": "Instalacao & Manutencao"}
@@ -1197,10 +1197,10 @@
 {"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para database?", "target_claim_id": "hwa-10.2.8-incident-oracle-schema-config-0106", "category": "Instalacao & Manutencao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Sintoma: apos migrar de DB2 para Oracle (ou instalacao Oracle), o dynamic workload broker falha ao iniciar apos o upgrade?", "target_claim_id": "hwa-10.2.8-incident-oracle-schema-config-0106", "category": "Instalacao & Manutencao"}
 {"question": "O que causa e como solucionar o problema: apos migrar de DB2 para Oracle (ou instalacao Oracle), o dynamic workload broker falha ao iniciar apos o upgrade?", "target_claim_id": "hwa-10.2.8-incident-oracle-schema-config-0106", "category": "Instalacao & Manutencao"}
-{"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no planman para gerenciar planman?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "O que causa e como solucionar o problema: dados do plano no banco nao atualizados em relacao ao Symphony?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no planman para gerenciar planman?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que causa e como solucionar o problema: dados do plano no banco nao atualizados em relacao ao Symphony?", "target_claim_id": "hwa-10.2.8-incident-planman-resync-symphony-0064", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual é o significado da mensagem de erro AWSJPL017E no HWA?", "target_claim_id": "hwa-10.2.8-incident-planman-unlock-0011", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como solucionar ou diagnosticar o erro AWSJPL017E no HWA?", "target_claim_id": "hwa-10.2.8-incident-planman-unlock-0011", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-planman-unlock-0011", "category": "Operacao CLI (conman/composer/planman)"}
@@ -1217,11 +1217,11 @@
 {"question": "O que causa e como solucionar o problema: mensagens nos logs ou traces contem '???' (question marks) para o record type e object?", "target_claim_id": "hwa-10.2.8-incident-question-marks-stdlist-0114", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Sintoma: apos submeter um remote command job, AWSKRCE012E 'Could not establish a connection' indica erro ao estabelecer conexao?", "target_claim_id": "hwa-10.2.8-incident-rce012e-0078", "category": "Arquitetura & Topologia Mesh"}
 {"question": "O que causa e como solucionar o problema: apos submeter um remote command job, AWSKRCE012E 'Could not establish a connection' indica erro ao estabelecer conexao?", "target_claim_id": "hwa-10.2.8-incident-rce012e-0078", "category": "Arquitetura & Topologia Mesh"}
-{"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no planman para gerenciar symphony?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no conman para gerenciar symphony?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "O que causa e como solucionar o problema: Symphony corrompido no master e o procedimento com backup master domain manager nao pode ser executado?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como utilizar o utilitário planman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no planman para gerenciar symphony?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no conman para gerenciar symphony?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que causa e como solucionar o problema: Symphony corrompido no master e o procedimento com backup master domain manager nao pode ser executado?", "target_claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-incident-recovery-resetfta-0062", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "O que causa e como solucionar o problema: Symphony corrompido em um fault-tolerant agent?", "target_claim_id": "hwa-10.2.8-incident-recovery-resetfta-0062", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual é o significado da mensagem de erro AWKRCE012E no HWA?", "target_claim_id": "hwa-10.2.8-incident-remote-registry-0126", "category": "Agendamento Avancado & Workflows"}
@@ -1317,15 +1317,15 @@
 {"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-incident-zos-shadow-carryforward-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a sintaxe ou procedimento no conman para gerenciar planner?", "target_claim_id": "hwa-10.2.8-incident-zos-shadow-carryforward-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "O que causa e como solucionar o problema: um z/OS shadow job definido no ambiente distributed, ligado com sucesso a um job z/OS remoto, nunca completa e e carregado indefinidamente (carried forward)?", "target_claim_id": "hwa-10.2.8-incident-zos-shadow-carryforward-0001", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para install?", "target_claim_id": "hwa-10.2.8-install-configure-db-0001", "category": "Instalacao & Manutencao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação limpa do HCL Workload Automation 10.2.8, o banco de dados deve ser criado e populado (script configureDb) antes da instalação dos componentes; os componentes são então instalados na ordem: master domain manager e backup master domain manager, dynamic domain manager e backup dynamic domain manager, servidores Dynamic Workload Console e, por fim, dynamic agents?", "target_claim_id": "hwa-10.2.8-install-configure-db-0001", "category": "Instalacao & Manutencao"}
+{"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para install?", "target_claim_id": "hwa-10.2.8-install-configure-db-0001", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação limpa do HCL Workload Automation 10.2.8, o banco de dados deve ser criado e populado (script configureDb) antes da instalação dos componentes; os componentes são então instalados na ordem: master domain manager e backup master domain manager, dynamic domain manager e backup dynamic domain manager, servidores Dynamic Workload Console e, por fim, dynamic agents?", "target_claim_id": "hwa-10.2.8-install-configure-db-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-10.2.8-install-configure-db-0002", "category": "Instalacao & Manutencao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: O script configureDb cria e popula o banco de dados do HCL Workload Automation 10.2.8 e aceita os parâmetros rdbmstype, dbhostname, dbport, dbname, dbuser e dbpassword; os bancos suportados incluem DB2, PostgreSQL, MSSQL e Oracle; no DB2, a criação do banco e das tablespaces exige um dos grants mínimos SYSADM, SYSCTRL ou SELECT privilege no administrative view PRIVILEGES?", "target_claim_id": "hwa-10.2.8-install-configure-db-0002", "category": "Instalacao & Manutencao"}
-{"question": "Como utilizar o utilitário serverinst no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-install-serverinst-install-0003", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no serverinst para gerenciar install?", "target_claim_id": "hwa-10.2.8-install-serverinst-install-0003", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-10.2.8-install-serverinst-install-0003", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-install-backup-mdm-existing-db-0004", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: O backup master domain manager do HCL Workload Automation 10.2.8 é configurado para apontar para o banco de dados já existente do master domain manager (compartilhando o mesmo banco, sem banco próprio separado) e, após a instalação, as chaves de criptografia devem ser copiadas da pasta TWA_DATA_DIR/ssl/aes do master domain manager para a pasta TWA_DATA_DIR/ssl/aes do backup master domain manager para que ele consiga descriptografar arquivos como o Symphony?", "target_claim_id": "hwa-10.2.8-install-backup-mdm-existing-db-0004", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como utilizar o utilitário serverinst no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-install-serverinst-install-0003", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no serverinst para gerenciar install?", "target_claim_id": "hwa-10.2.8-install-serverinst-install-0003", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-10.2.8-install-serverinst-install-0003", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-install-backup-mdm-existing-db-0004", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: O backup master domain manager do HCL Workload Automation 10.2.8 é configurado para apontar para o banco de dados já existente do master domain manager (compartilhando o mesmo banco, sem banco próprio separado) e, após a instalação, as chaves de criptografia devem ser copiadas da pasta TWA_DATA_DIR/ssl/aes do master domain manager para a pasta TWA_DATA_DIR/ssl/aes do backup master domain manager para que ele consiga descriptografar arquivos como o Symphony?", "target_claim_id": "hwa-10.2.8-install-backup-mdm-existing-db-0004", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Certificados são obrigatórios na instalação do HCL Workload Automation 10.2.8: a pasta --sslkeysfolder deve conter os arquivos ca?", "target_claim_id": "hwa-10.2.8-install-sslkeysfolder-certs-0005", "category": "Instalacao & Manutencao"}
 {"question": "Como utilizar o utilitário serverinst no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-install-dwcinst-install-0006", "category": "Instalacao & Manutencao"}
 {"question": "Qual a sintaxe ou procedimento no serverinst para gerenciar install?", "target_claim_id": "hwa-10.2.8-install-dwcinst-install-0006", "category": "Instalacao & Manutencao"}
@@ -1335,8 +1335,8 @@
 {"question": "Qual a sintaxe ou procedimento no twsinst para gerenciar install?", "target_claim_id": "hwa-10.2.8-install-twsinst-agent-0007", "category": "Instalacao & Manutencao"}
 {"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-10.2.8-install-twsinst-agent-0007", "category": "Instalacao & Manutencao"}
 {"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para install?", "target_claim_id": "hwa-10.2.8-install-twsinst-agent-0007", "category": "Instalacao & Manutencao"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-install-jnextplan-after-backup-0008", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-10.2.8-install-jnextplan-after-backup-0008", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-install-jnextplan-after-backup-0008", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-10.2.8-install-jnextplan-after-backup-0008", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-jnextplan-activation-0002", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-10.2.8-jnextplan-activation-0002", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-jnextplan-architecture-0001", "category": "Operacao CLI (conman/composer/planman)"}
@@ -1350,8 +1350,8 @@
 {"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-limit-cpu-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a sintaxe ou procedimento no conman para gerenciar install?", "target_claim_id": "hwa-10.2.8-limit-cpu-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: limit cpu controla o número máximo de jobs executados simultaneamente em uma workstation; um job com dependências satisfeitas pode permanecer READY se o limite da workstation impedir a execução; uma workstation com limit cpu 0 bloqueia o início normal de jobs (apenas jobs hi/go executam)?", "target_claim_id": "hwa-10.2.8-limitcpu-ready-0001", "category": "Agendamento Avancado & Workflows"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-mdm-aes-keys-0005", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação de BMDM HWA 10.2.8, a documentação exige as mesmas chaves de criptografia do MDM para descriptografar arquivos como Symphony e orienta copiar os arquivos da pasta ssl/aes do MDM para a pasta correspondente do BMDM?", "target_claim_id": "hwa-10.2.8-mdm-aes-keys-0005", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-10.2.8-mdm-aes-keys-0005", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação de BMDM HWA 10.2.8, a documentação exige as mesmas chaves de criptografia do MDM para descriptografar arquivos como Symphony e orienta copiar os arquivos da pasta ssl/aes do MDM para a pasta correspondente do BMDM?", "target_claim_id": "hwa-10.2.8-mdm-aes-keys-0005", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual é o significado da mensagem de erro AWSBDD003E no HWA?", "target_claim_id": "hwa-10.2.8-message-bdd003e-0041", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como solucionar ou diagnosticar o erro AWSBDD003E no HWA?", "target_claim_id": "hwa-10.2.8-message-bdd003e-0041", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual é o significado da mensagem de erro AWSBDD003E no HWA e qual ação é recomendada?", "target_claim_id": "hwa-10.2.8-message-bdd003e-0041", "category": "Troubleshooting & Mensagens de Erro"}
@@ -1479,10 +1479,10 @@
 {"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-10.2.8-resetplan-scratch-option-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Um recurso é uma restrição de agendamento física ou lógica (unidades de fita, conexões de banco de dados, slots de aplicação); é associado a uma workstation com unidades disponíveis; jobs solicitam unidades via dependência needs; as unidades permanecem reservadas enquanto o job é executado e são liberadas ao concluir?", "target_claim_id": "hwa-10.2.8-resource-resource-units-0001", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Sintaxe de recurso: $resource workstation#resourcename units \"description\"; o nome do recurso pode ter até 8 caracteres alfanuméricos incluindo - e _, iniciando com letra; a quantidade normalmente varia de 0 a 1024.?", "target_claim_id": "hwa-10.2.8-resource-resource-syntax-0002", "category": "Agendamento Avancado & Workflows"}
-{"question": "Qual endpoint REST API V2 é utilizado para mdm no HWA?", "target_claim_id": "hwa-10.2.8-rest-api-v2-endpoint-0011", "category": "API REST v2 & Integracao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: REST API V2 is recommended for modern integrations; the documented REST endpoint is /twsd/ with default HTTPS port 31116 for MDM/BMDM?", "target_claim_id": "hwa-10.2.8-rest-api-v2-endpoint-0011", "category": "API REST v2 & Integracao"}
-{"question": "Qual endpoint REST API V2 é utilizado para mdm no HWA?", "target_claim_id": "hwa-10.2.8-rest-service-url-0002", "category": "API REST v2 & Integracao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Para MDM ou BMDM HWA Distributed 10.2.8, a URL documentada do serviço REST é https://hostname:port_number/twsd e a porta HTTPS padrão é 31116. Context: https://hostname:port_number/twsd?", "target_claim_id": "hwa-10.2.8-rest-service-url-0002", "category": "API REST v2 & Integracao"}
+{"question": "Qual endpoint REST API V2 é utilizado para mdm no HWA?", "target_claim_id": "hwa-10.2.8-rest-api-v2-endpoint-0011", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: REST API V2 is recommended for modern integrations; the documented REST endpoint is /twsd/ with default HTTPS port 31116 for MDM/BMDM?", "target_claim_id": "hwa-10.2.8-rest-api-v2-endpoint-0011", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual endpoint REST API V2 é utilizado para mdm no HWA?", "target_claim_id": "hwa-10.2.8-rest-service-url-0002", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Para MDM ou BMDM HWA Distributed 10.2.8, a URL documentada do serviço REST é https://hostname:port_number/twsd e a porta HTTPS padrão é 31116. Context: https://hostname:port_number/twsd?", "target_claim_id": "hwa-10.2.8-rest-service-url-0002", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-10.2.8-rest-v2-0001", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A documentação HWA 10.2.8 recomenda REST API V2 para integrações futuras?", "target_claim_id": "hwa-10.2.8-rest-v2-0001", "category": "API REST v2 & Integracao"}
 {"question": "Qual endpoint REST API V2 é utilizado para auth no HWA?", "target_claim_id": "hwa-10.2.8-restapi-auth-apikey-0002", "category": "API REST v2 & Integracao"}
@@ -1548,9 +1548,9 @@
 {"question": "Qual a regra documentada no HWA Distributed sobre: O comando version do Orchestration CLI no HCL Workload Automation 10.2.8 tem a sintaxe documentada ocli [context|model|plan|plugin] version|v e exibe a versão do Orchestration CLI instalada, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-restocli-version-command-0024", "category": "API REST v2 & Integracao"}
 {"question": "Qual endpoint REST API V2 é utilizado para ocli no HWA?", "target_claim_id": "hwa-10.2.8-restocli-ocli-wildcards-0025", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: O Orchestration CLI do HCL Workload Automation 10.2.8 suporta wildcards e delimitadores documentados, incluindo @ (padrão nulo ou um/múltiplos caracteres), ? (um único caractere), a sintaxe de pasta /@/ e delimitadores como +, ~, ;, , e =, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-restocli-ocli-wildcards-0025", "category": "API REST v2 & Integracao"}
-{"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-10.2.8-restore-backup-mdm-0001", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-10.2.8-restore-resolved-0017", "category": "API REST v2 & Integracao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: RESOLUCAO de hwa-10.2.8-restore-0001 (contradicted): na documentacao 10.2.8, a pagina 'Backing up and restoring the database' NAO fornece etapas explicitas de restore de banco; o que ela documenta como recuperacao e: (1) backup dos arquivos de configuracao e planos, (2) uso de um backup master domain manager acessando banco espelhado para disaster recovery, e (3) restauracao dos arquivos de configuracao?", "target_claim_id": "hwa-10.2.8-restore-resolved-0017", "category": "API REST v2 & Integracao"}
+{"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-10.2.8-restore-backup-mdm-0001", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-10.2.8-restore-resolved-0017", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: RESOLUCAO de hwa-10.2.8-restore-0001 (contradicted): na documentacao 10.2.8, a pagina 'Backing up and restoring the database' NAO fornece etapas explicitas de restore de banco; o que ela documenta como recuperacao e: (1) backup dos arquivos de configuracao e planos, (2) uso de um backup master domain manager acessando banco espelhado para disaster recovery, e (3) restauracao dos arquivos de configuracao?", "target_claim_id": "hwa-10.2.8-restore-resolved-0017", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual endpoint REST API V2 é utilizado para /twsd/api/v2/model/jobdefinition no HWA?", "target_claim_id": "hwa-10.2.8-restsubmit-rest-api-v2-0001", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Endpoints da REST API v2: GET /twsd/api/v2/model/jobdefinition, GET /twsd/api/v2/model/jobstream, GET /twsd/api/v2/plan/job, GET /twsd/api/v2/plan/jobstream e POST /twsd/api/v2/plan/jobstream/{id}/submit?", "target_claim_id": "hwa-10.2.8-restsubmit-rest-api-v2-0001", "category": "API REST v2 & Integracao"}
 {"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-10.2.8-restv2-rest-api-v2-0001", "category": "API REST v2 & Integracao"}
@@ -1685,7 +1685,7 @@
 {"question": "Qual o comportamento das opções until e deadline na submissão de jobs no conman?", "target_claim_id": "hwa-10.2.8-timezone-job-stream-level-0004", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, o fuso horário especificado no nível do job stream se aplica às definições de tempo dos run cycles e às restrições de tempo (definidas pelos keywords at, deadline, schedtime e until)?", "target_claim_id": "hwa-10.2.8-timezone-job-stream-level-0004", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Fresh HWA Distributed 10.2.8 installations install the master domain manager and dynamic domain manager in SSL mode by default?", "target_claim_id": "hwa-10.2.8-tls-ssl-default-install-0001", "category": "Instalacao & Manutencao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: HWA Distributed 10.2.8 explicitly documents SSL connectivity between a master domain manager and a backup master domain manager?", "target_claim_id": "hwa-10.2.8-tls-ssl-mdm-backup-0002", "category": "Instalacao & Manutencao"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: HWA Distributed 10.2.8 explicitly documents SSL connectivity between a master domain manager and a backup master domain manager?", "target_claim_id": "hwa-10.2.8-tls-ssl-mdm-backup-0002", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: TLS 1.2 is required for communication between 9.4.0.x and 10.2.8 components during parallel upgrade?", "target_claim_id": "hwa-10.2.8-tls12-parallel-upgrade-0007", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual é o significado da mensagem de erro AWSBHV082E no HWA?", "target_claim_id": "hwa-10.2.8-trouble-awsbhv082e-0006", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como solucionar ou diagnosticar o erro AWSBHV082E no HWA?", "target_claim_id": "hwa-10.2.8-trouble-awsbhv082e-0006", "category": "Operacao CLI (conman/composer/planman)"}
@@ -1740,8 +1740,8 @@
 {"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm read no localopts do HCL Workload Automation 10.2.8 especifica o número máximo de segundos que o Jobman aguarda por uma mensagem no arquivo courier?", "target_claim_id": "hwa-10.2.8-tune-jm-read-0009", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm look no localopts do HCL Workload Automation 10.2.8 especifica o número mínimo de segundos que o Jobman aguarda antes de procurar jobs concluídos e executar tarefas gerais de gerenciamento de jobs, com padrão documentado de 300 segundos?", "target_claim_id": "hwa-10.2.8-tune-jm-look-0010", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm nice, para sistemas UNIX e Linux, no localopts do HCL Workload Automation 10.2.8 especifica o valor nice aplicado aos jobs lançados pelo Jobman para alterar sua prioridade no scheduler do kernel, com padrão documentado de zero; aplica-se apenas a jobs agendados pelo usuário root?", "target_claim_id": "hwa-10.2.8-tune-jm-nice-0011", "category": "Arquitetura & Topologia Mesh"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm promoted nice, para sistemas UNIX e Linux, no localopts do HCL Workload Automation 10.2.8 atribui o valor de prioridade a um job crítico que precisa ser promovido no workload service assurance, com padrão documentado de -1; a promoção é efetiva apenas com valores negativos?", "target_claim_id": "hwa-10.2.8-tune-jm-promoted-nice-0012", "category": "Arquitetura & Topologia Mesh"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm promoted priority, para sistemas Windows, no localopts do HCL Workload Automation 10.2.8 define a prioridade pela qual o sistema operacional processa um job crítico quando é promovido, com padrão documentado de AboveNormal?", "target_claim_id": "hwa-10.2.8-tune-jm-promoted-priority-0013", "category": "Arquitetura & Topologia Mesh"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm promoted nice, para sistemas UNIX e Linux, no localopts do HCL Workload Automation 10.2.8 atribui o valor de prioridade a um job crítico que precisa ser promovido no workload service assurance, com padrão documentado de -1; a promoção é efetiva apenas com valores negativos?", "target_claim_id": "hwa-10.2.8-tune-jm-promoted-nice-0012", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm promoted priority, para sistemas Windows, no localopts do HCL Workload Automation 10.2.8 define a prioridade pela qual o sistema operacional processa um job crítico quando é promovido, com padrão documentado de AboveNormal?", "target_claim_id": "hwa-10.2.8-tune-jm-promoted-priority-0013", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm no root, para sistemas UNIX e Linux, no localopts do HCL Workload Automation 10.2.8 especifica yes para impedir que o Jobman lance jobs como root, com padrão documentado de yes?", "target_claim_id": "hwa-10.2.8-tune-jm-no-root-0014", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm file no root, para sistemas UNIX e Linux, no localopts do HCL Workload Automation 10.2.8 especifica yes para impedir que o Jobman execute comandos em dependências de arquivo como root, com padrão documentado de no?", "target_claim_id": "hwa-10.2.8-tune-jm-file-no-root-0015", "category": "Arquitetura & Topologia Mesh"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A opção jm loaduserprofile, somente em sistemas Windows, no localopts do HCL Workload Automation 10.2.8 especifica se o processo jobman carrega o perfil de usuário e suas variáveis de ambiente antes de iniciar jobs, com padrão documentado de on?", "target_claim_id": "hwa-10.2.8-tune-jm-loaduserprofile-0016", "category": "Arquitetura & Topologia Mesh"}
@@ -1859,8 +1859,8 @@
 {"question": "Qual o propósito e valor padrão da opção global deadlineOffset no optman do HWA?", "target_claim_id": "hwa-10.2.8-wsa-deadline-offset-0017", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, quando o critical start time de um trabalho está se aproximando e o trabalho ainda não iniciou, o mecanismo de promoção (promotion) é usado: o trabalho promovido recebe recursos adicionais do sistema operacional e sua submissão é priorizada, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-promoted-job-0018", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, os trabalhos promovidos são selecionados para submissão depois de trabalhos com prioridades 'high' e 'go', mas antes de todos os demais trabalhos, e o timing das promoções é controlado pela opção global promotionoffset, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-promotion-offset-0019", "category": "Arquitetura & Topologia Mesh"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, a opção local jm promoted nice define o valor nice atribuído a trabalhos críticos ou predecessores que precisam ser promovidos em sistemas UNIX e Linux, para que recebam mais recursos e sejam processados antes de outros trabalhos; o padrão é -1, números menores representam prioridades maiores, e se um inteiro positivo for especificado o valor padrão é usado, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-jm-promoted-nice-0020", "category": "Agendamento Avancado & Workflows"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, a opção local jm promoted priority define o valor de prioridade para trabalhos críticos ou predecessores que precisam ser promovidos em sistemas Windows, com valores possíveis High, AboveNormal, Normal, BelowNormal e Low ou Idle, sendo o padrão AboveNormal, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-jm-promoted-priority-0021", "category": "Arquitetura & Topologia Mesh"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, a opção local jm promoted nice define o valor nice atribuído a trabalhos críticos ou predecessores que precisam ser promovidos em sistemas UNIX e Linux, para que recebam mais recursos e sejam processados antes de outros trabalhos; o padrão é -1, números menores representam prioridades maiores, e se um inteiro positivo for especificado o valor padrão é usado, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-jm-promoted-nice-0020", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, a opção local jm promoted priority define o valor de prioridade para trabalhos críticos ou predecessores que precisam ser promovidos em sistemas Windows, com valores possíveis High, AboveNormal, Normal, BelowNormal e Low ou Idle, sendo o padrão AboveNormal, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-jm-promoted-priority-0021", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-10.2.8-wsa-localopts-wsa-0022", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, as opções locais do Workload Service Assurance são definidas editando o arquivo *twshome*\\localopts em cada workstation onde os trabalhos críticos serão executados, e é necessário executar JnextPlan ou reiniciar o agente para que as alterações nas opções locais entrem em vigor, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-localopts-wsa-0022", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, é obrigatório que os usuários que possuem as instâncias executando trabalhos críticos estejam autorizados a trabalhar com todos os trabalhos, job streams e workstations associados, devendo ter direitos DISPLAY, MODIFY e LIST no arquivo de segurança para todos os objetos JOB, SCHEDULE e CPU, conforme documentação oficial?", "target_claim_id": "hwa-10.2.8-wsa-security-file-0023", "category": "Agendamento Avancado & Workflows"}
@@ -1931,14 +1931,14 @@
 {"question": "Qual a sintaxe ou procedimento no switchmgr para gerenciar failover?", "target_claim_id": "hwa-9.5-real-switchmgr-0003", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-9.5-real-switchmgr-0003", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a sintaxe ou procedimento no conman para gerenciar failover?", "target_claim_id": "hwa-9.5-real-switchmgr-0003", "category": "Alta Disponibilidade & Failover"}
-{"question": "Qual endpoint REST API V2 é utilizado para /twsd/api no HWA?", "target_claim_id": "hwa-9.5-real-twsd-31116-0010", "category": "API REST v2 & Integracao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 9.5 Fix Pack 7 Distributed (MDM ou BMDM), o servico REST usa o contexto HTTPS /twsd e a porta padrao 31116; tambem em 10.2.8 o porto padrao do REST permanece 31116, mas em 9.5 o contexto e /twsd na raiz do servidor (não e o caminho /twsd/api da V2)?", "target_claim_id": "hwa-9.5-real-twsd-31116-0010", "category": "API REST v2 & Integracao"}
+{"question": "Qual endpoint REST API V2 é utilizado para /twsd/api no HWA?", "target_claim_id": "hwa-9.5-real-twsd-31116-0010", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 9.5 Fix Pack 7 Distributed (MDM ou BMDM), o servico REST usa o contexto HTTPS /twsd e a porta padrao 31116; tambem em 10.2.8 o porto padrao do REST permanece 31116, mas em 9.5 o contexto e /twsd na raiz do servidor (não e o caminho /twsd/api da V2)?", "target_claim_id": "hwa-9.5-real-twsd-31116-0010", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para deadline?", "target_claim_id": "hwa-9.5-real-wsa-basico-0002", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 9.5, o Workload Service Assurance (WSA) existe e e controlado pela opcao global enWorkloadServiceAssurance (wa, padrao yes) e gerencia o processamento privilegiado de jobs criticos (mission-critical) e seus predecessores, com offsets globais como approachingLateOffset, deadlineOffset e promotionOffset?", "target_claim_id": "hwa-9.5-real-wsa-basico-0002", "category": "API REST v2 & Integracao"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation Distributed 10.2.0, `cancel sched`/`cs` requer acesso `cancel`; com `;pend`, antes do lançamento aguarda a resolução das dependências e, após o lançamento, cancela os jobs restantes; em ambos os casos os dependentes são liberados da dependência?", "target_claim_id": "hwa-distributed-cancel-sched-pend-10.2.0-001", "category": "API REST v2 & Integracao"}
-{"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-distributed-rest-api-v2-base-url-0001", "category": "API REST v2 & Integracao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: A REST API V2 do HCL Workload Automation 10.2.8 é acessada pela URL base https://<hostname>:<port_number>/twsd, onde <hostname> é o master domain manager ou backup master domain manager e <port_number> é a porta HTTPS desses componentes, cujo padrão (default) é 31116.?", "target_claim_id": "hwa-distributed-rest-api-v2-base-url-0001", "category": "API REST v2 & Integracao"}
-{"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-install-1028-bkmdm-0001", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual endpoint REST API V2 é utilizado para rest no HWA?", "target_claim_id": "hwa-distributed-rest-api-v2-base-url-0001", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: A REST API V2 do HCL Workload Automation 10.2.8 é acessada pela URL base https://<hostname>:<port_number>/twsd, onde <hostname> é o master domain manager ou backup master domain manager e <port_number> é a porta HTTPS desses componentes, cujo padrão (default) é 31116.?", "target_claim_id": "hwa-distributed-rest-api-v2-base-url-0001", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-install-1028-bkmdm-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-install-1028-dm-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Na configuração de um domain manager HWA 10.2.8, a workstation manager deve ser definida em um novo domínio, incluída no plano com JnextPlan -for 0000 e receber limite de jobs utilizável?", "target_claim_id": "hwa-install-1028-dm-0001", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como utilizar o utilitário composer no HCL Workload Automation?", "target_claim_id": "hwa-install-1028-mdm-first-plan-0001", "category": "Operacao CLI (conman/composer/planman)"}
@@ -1952,17 +1952,17 @@
 {"question": "Como utilizar o utilitário twsinst no HCL Workload Automation?", "target_claim_id": "hwa-install-agent-1028-twsinst-0007", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a sintaxe ou procedimento no twsinst para gerenciar install?", "target_claim_id": "hwa-install-agent-1028-twsinst-0007", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para install?", "target_claim_id": "hwa-install-agent-1028-twsinst-0007", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-install-bkmdm-1028-keys-0004", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Ao instalar o backup master domain manager (BMDM) no HCL Workload Automation 10.2.8, a documentação exige usar as MESMAS chaves de criptografia AES do master domain manager (MDM) para que o BMDM possa descriptografar arquivos criptografados, como o arquivo Symphony?", "target_claim_id": "hwa-install-bkmdm-1028-keys-0004", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-install-bkmdm-1028-keys-0004", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Ao instalar o backup master domain manager (BMDM) no HCL Workload Automation 10.2.8, a documentação exige usar as MESMAS chaves de criptografia AES do master domain manager (MDM) para que o BMDM possa descriptografar arquivos criptografados, como o arquivo Symphony?", "target_claim_id": "hwa-install-bkmdm-1028-keys-0004", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-install-ddm-1028-prereqs-0006", "category": "Instalacao & Manutencao"}
 {"question": "Como configurar ou solucionar problemas no dynamic agent ou broker para install?", "target_claim_id": "hwa-install-ddm-1028-prereqs-0006", "category": "Instalacao & Manutencao"}
 {"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-install-dwc-1028-params-0005", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação DWC HWA 10.2.8, os parâmetros documentados incluem rdbmstype, user, password, dbname, dbuser, dbpassword, dbhostname, dbport, wlpdir, sslkeysfolder e sslpassword; duas instâncias podem compartilhar banco remoto?", "target_claim_id": "hwa-install-dwc-1028-params-0005", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação HWA 10.2.8, Open Liberty ou WebSphere Application Server Liberty Base é requerido em workstations de componentes server e DWC; a versão deve ser consultada no Related Software Report, e a instalação do produto usa o diretório via wlpdir?", "target_claim_id": "hwa-install-liberty-1028-procedure-0009", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: Na instalação de componentes server HWA 10.2.8, os certificados requeridos são ca?", "target_claim_id": "hwa-install-mdm-1028-certificates-0003", "category": "Instalacao & Manutencao"}
-{"question": "Como os parâmetros de instalação do MDM são configurados e validados no HWA 10.2.8?", "target_claim_id": "hwa-install-mdm-1028-params-0002", "category": "Instalacao & Manutencao"}
-{"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-install-mdm-1028-params-0002", "category": "Instalacao & Manutencao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Antes de instalar um MDM HWA 10.2.8, a documentação requer Liberty no nó, banco criado/populado, usuário administrativo, licença configurada e, em UNIX, umask 022; o BMDM aponta para o banco existente e não requer criar/popular o banco?", "target_claim_id": "hwa-install-mdm-1028-prereqs-0001", "category": "Instalacao & Manutencao"}
+{"question": "Como os parâmetros de instalação do MDM são configurados e validados no HWA 10.2.8?", "target_claim_id": "hwa-install-mdm-1028-params-0002", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-install-mdm-1028-params-0002", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Antes de instalar um MDM HWA 10.2.8, a documentação requer Liberty no nó, banco criado/populado, usuário administrativo, licença configurada e, em UNIX, umask 022; o BMDM aponta para o banco existente e não requer criar/popular o banco?", "target_claim_id": "hwa-install-mdm-1028-prereqs-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como executar a virada de plano ou recuperação com JnextPlan e ResetPlan?", "target_claim_id": "hwa-jnextplan-syntax-gap-0048", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: A sintaxe exata do comando JnextPlan no HCL Workload Automation 10.2.8 é: JnextPlan [-V | -U] | [-from mm/dd/[yy]yy[hh[:]mm[tz | timezone tzname]]] {-to mm/dd/[yy]yy[hh[:]mm[tz | timezone tzname]] | -for [h]hh[:]mm [-days n] | -days n} [-noremove]?", "target_claim_id": "hwa-jnextplan-syntax-gap-0048", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como utilizar o utilitário conman no HCL Workload Automation?", "target_claim_id": "hwa-lab-10.2.8-adhoc-dynamic-submit-ready-0018", "category": "Operacao CLI (conman/composer/planman)"}
@@ -2259,10 +2259,10 @@
 {"question": "Qual a sintaxe ou procedimento no conman para gerenciar conman?", "target_claim_id": "hwa-lab-10.2.8-submit-absolute-rejected-0024", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como utilizar o utilitário composer no HCL Workload Automation?", "target_claim_id": "hwa-lab-10.2.8-syntax-resolved-0069", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a sintaxe ou procedimento no composer para gerenciar mdm?", "target_claim_id": "hwa-lab-10.2.8-syntax-resolved-0069", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual é o significado da mensagem de erro AWSJCS029E no HWA?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como solucionar ou diagnosticar o erro AWSJCS029E no HWA?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Como utilizar o utilitário composer no HCL Workload Automation?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual a sintaxe ou procedimento no composer para gerenciar composer?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Qual é o significado da mensagem de erro AWSJCS029E no HWA?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como solucionar ou diagnosticar o erro AWSJCS029E no HWA?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como utilizar o utilitário composer no HCL Workload Automation?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a sintaxe ou procedimento no composer para gerenciar composer?", "target_claim_id": "hwa-lab-10.2.8-task-jsdl-validation-0012", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual é o significado da mensagem de erro AWSFAB164E no HWA?", "target_claim_id": "hwa-lab-10.2.8-thiscpu-displayname-scope-0008", "category": "Instalacao & Manutencao"}
 {"question": "Como solucionar ou diagnosticar o erro AWSFAB164E no HWA?", "target_claim_id": "hwa-lab-10.2.8-thiscpu-displayname-scope-0008", "category": "Instalacao & Manutencao"}
 {"question": "Como utilizar o utilitário serverinst no HCL Workload Automation?", "target_claim_id": "hwa-lab-10.2.8-thiscpu-displayname-scope-0008", "category": "Instalacao & Manutencao"}
@@ -2363,8 +2363,8 @@
 {"question": "Qual a sintaxe ou procedimento no planman para gerenciar planman?", "target_claim_id": "hwa-planman-showinfo-resync-unlock-0047", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "O que causa erro na resolução de local parameters em jobs e como solucionar?", "target_claim_id": "hwa-planman-showinfo-resync-unlock-0047", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?", "target_claim_id": "hwa-planman-showinfo-resync-unlock-0047", "category": "Operacao CLI (conman/composer/planman)"}
-{"question": "Qual endpoint REST API V2 é utilizado para mdm no HWA?", "target_claim_id": "hwa-rest-twsd-31116-official-0022", "category": "API REST v2 & Integracao"}
-{"question": "Qual a regra documentada no HWA Distributed sobre: Para HCL Workload Automation 9.5 Fix Pack 7 em ambiente Distributed com MDM ou BMDM, o serviço REST usa o contexto HTTPS /twsd e a porta padrão é 31116. Context: https://hostname:port_number/twsd?", "target_claim_id": "hwa-rest-twsd-31116-official-0022", "category": "API REST v2 & Integracao"}
+{"question": "Qual endpoint REST API V2 é utilizado para mdm no HWA?", "target_claim_id": "hwa-rest-twsd-31116-official-0022", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual a regra documentada no HWA Distributed sobre: Para HCL Workload Automation 9.5 Fix Pack 7 em ambiente Distributed com MDM ou BMDM, o serviço REST usa o contexto HTTPS /twsd e a porta padrão é 31116. Context: https://hostname:port_number/twsd?", "target_claim_id": "hwa-rest-twsd-31116-official-0022", "category": "Alta Disponibilidade & Failover"}
 {"question": "Como utilizar o utilitário twsinst no HCL Workload Automation?", "target_claim_id": "hwa-themaster-domain-manager-0001", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a sintaxe ou procedimento no twsinst para gerenciar twsinst?", "target_claim_id": "hwa-themaster-domain-manager-0001", "category": "Agendamento Avancado & Workflows"}
 {"question": "Qual a regra documentada no HWA Distributed sobre: O master domain manager é registrado no banco de dados do HCL Workload Automation com o nome de workstation 'master', conforme a documentação oficial?", "target_claim_id": "hwa-master-domain-manager-registered-master-0002", "category": "Agendamento Avancado & Workflows"}
@@ -4394,15 +4394,15 @@
 {"question": "O que significa a mensagem AWSBCV114E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv114e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV114E?", "target_claim_id": "hwa-msgcat-awsbcv114e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV114E?", "target_claim_id": "hwa-msgcat-awsbcv114e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBCV115E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv115e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBCV115E?", "target_claim_id": "hwa-msgcat-awsbcv115e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBCV115E?", "target_claim_id": "hwa-msgcat-awsbcv115e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBCV115E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBCV115E?", "target_claim_id": "hwa-msgcat-awsbcv115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBCV115E?", "target_claim_id": "hwa-msgcat-awsbcv115e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBCV116I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv116i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV116I?", "target_claim_id": "hwa-msgcat-awsbcv116i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV116I?", "target_claim_id": "hwa-msgcat-awsbcv116i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBCV117E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv117e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBCV117E?", "target_claim_id": "hwa-msgcat-awsbcv117e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBCV117E?", "target_claim_id": "hwa-msgcat-awsbcv117e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBCV117E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBCV117E?", "target_claim_id": "hwa-msgcat-awsbcv117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBCV117E?", "target_claim_id": "hwa-msgcat-awsbcv117e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBCV118E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv118e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV118E?", "target_claim_id": "hwa-msgcat-awsbcv118e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV118E?", "target_claim_id": "hwa-msgcat-awsbcv118e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -4457,9 +4457,9 @@
 {"question": "O que significa a mensagem AWSBCV136W no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv136w", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV136W?", "target_claim_id": "hwa-msgcat-awsbcv136w", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV136W?", "target_claim_id": "hwa-msgcat-awsbcv136w", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBCV137W no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv137w", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBCV137W?", "target_claim_id": "hwa-msgcat-awsbcv137w", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBCV137W?", "target_claim_id": "hwa-msgcat-awsbcv137w", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBCV137W no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv137w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBCV137W?", "target_claim_id": "hwa-msgcat-awsbcv137w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBCV137W?", "target_claim_id": "hwa-msgcat-awsbcv137w", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBCV138I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv138i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV138I?", "target_claim_id": "hwa-msgcat-awsbcv138i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV138I?", "target_claim_id": "hwa-msgcat-awsbcv138i", "category": "Troubleshooting & Mensagens de Erro"}
@@ -4472,9 +4472,9 @@
 {"question": "O que significa a mensagem AWSBCV141I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv141i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV141I?", "target_claim_id": "hwa-msgcat-awsbcv141i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV141I?", "target_claim_id": "hwa-msgcat-awsbcv141i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBCV143E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv143e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBCV143E?", "target_claim_id": "hwa-msgcat-awsbcv143e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBCV143E?", "target_claim_id": "hwa-msgcat-awsbcv143e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBCV143E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv143e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBCV143E?", "target_claim_id": "hwa-msgcat-awsbcv143e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBCV143E?", "target_claim_id": "hwa-msgcat-awsbcv143e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBCV144E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcv144e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCV144E?", "target_claim_id": "hwa-msgcat-awsbcv144e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCV144E?", "target_claim_id": "hwa-msgcat-awsbcv144e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -4592,9 +4592,9 @@
 {"question": "O que significa a mensagem AWSBCW043E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcw043e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCW043E?", "target_claim_id": "hwa-msgcat-awsbcw043e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCW043E?", "target_claim_id": "hwa-msgcat-awsbcw043e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBCW044I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcw044i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBCW044I?", "target_claim_id": "hwa-msgcat-awsbcw044i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBCW044I?", "target_claim_id": "hwa-msgcat-awsbcw044i", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBCW044I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcw044i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBCW044I?", "target_claim_id": "hwa-msgcat-awsbcw044i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBCW044I?", "target_claim_id": "hwa-msgcat-awsbcw044i", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBCW045E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbcw045e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBCW045E?", "target_claim_id": "hwa-msgcat-awsbcw045e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBCW045E?", "target_claim_id": "hwa-msgcat-awsbcw045e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -5363,9 +5363,9 @@
 {"question": "O que significa a mensagem AWSBDJ016E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbdj016e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBDJ016E?", "target_claim_id": "hwa-msgcat-awsbdj016e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBDJ016E?", "target_claim_id": "hwa-msgcat-awsbdj016e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBDJ017I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbdj017i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBDJ017I?", "target_claim_id": "hwa-msgcat-awsbdj017i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBDJ017I?", "target_claim_id": "hwa-msgcat-awsbdj017i", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBDJ017I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbdj017i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBDJ017I?", "target_claim_id": "hwa-msgcat-awsbdj017i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBDJ017I?", "target_claim_id": "hwa-msgcat-awsbdj017i", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBDJ018E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbdj018e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBDJ018E?", "target_claim_id": "hwa-msgcat-awsbdj018e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBDJ018E?", "target_claim_id": "hwa-msgcat-awsbdj018e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -6719,18 +6719,18 @@
 {"question": "O que significa a mensagem AWSBHU065E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu065e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBHU065E?", "target_claim_id": "hwa-msgcat-awsbhu065e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBHU065E?", "target_claim_id": "hwa-msgcat-awsbhu065e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU066E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu066e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU066E?", "target_claim_id": "hwa-msgcat-awsbhu066e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU066E?", "target_claim_id": "hwa-msgcat-awsbhu066e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU067E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu067e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU067E?", "target_claim_id": "hwa-msgcat-awsbhu067e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU067E?", "target_claim_id": "hwa-msgcat-awsbhu067e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU068E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu068e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU068E?", "target_claim_id": "hwa-msgcat-awsbhu068e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU068E?", "target_claim_id": "hwa-msgcat-awsbhu068e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU069E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu069e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU069E?", "target_claim_id": "hwa-msgcat-awsbhu069e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU069E?", "target_claim_id": "hwa-msgcat-awsbhu069e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBHU066E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu066e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU066E?", "target_claim_id": "hwa-msgcat-awsbhu066e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU066E?", "target_claim_id": "hwa-msgcat-awsbhu066e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU067E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu067e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU067E?", "target_claim_id": "hwa-msgcat-awsbhu067e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU067E?", "target_claim_id": "hwa-msgcat-awsbhu067e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU068E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu068e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU068E?", "target_claim_id": "hwa-msgcat-awsbhu068e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU068E?", "target_claim_id": "hwa-msgcat-awsbhu068e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU069E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu069e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU069E?", "target_claim_id": "hwa-msgcat-awsbhu069e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU069E?", "target_claim_id": "hwa-msgcat-awsbhu069e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBHU070E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu070e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBHU070E?", "target_claim_id": "hwa-msgcat-awsbhu070e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBHU070E?", "target_claim_id": "hwa-msgcat-awsbhu070e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -6827,27 +6827,27 @@
 {"question": "O que significa a mensagem AWSBHU113I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu113i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBHU113I?", "target_claim_id": "hwa-msgcat-awsbhu113i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBHU113I?", "target_claim_id": "hwa-msgcat-awsbhu113i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU114E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu114e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU114E?", "target_claim_id": "hwa-msgcat-awsbhu114e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU114E?", "target_claim_id": "hwa-msgcat-awsbhu114e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU115E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu115e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU115E?", "target_claim_id": "hwa-msgcat-awsbhu115e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU115E?", "target_claim_id": "hwa-msgcat-awsbhu115e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU116E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu116e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU116E?", "target_claim_id": "hwa-msgcat-awsbhu116e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU116E?", "target_claim_id": "hwa-msgcat-awsbhu116e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU117E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu117e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU117E?", "target_claim_id": "hwa-msgcat-awsbhu117e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU117E?", "target_claim_id": "hwa-msgcat-awsbhu117e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBHU114E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu114e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU114E?", "target_claim_id": "hwa-msgcat-awsbhu114e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU114E?", "target_claim_id": "hwa-msgcat-awsbhu114e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU115E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU115E?", "target_claim_id": "hwa-msgcat-awsbhu115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU115E?", "target_claim_id": "hwa-msgcat-awsbhu115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU116E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu116e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU116E?", "target_claim_id": "hwa-msgcat-awsbhu116e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU116E?", "target_claim_id": "hwa-msgcat-awsbhu116e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU117E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU117E?", "target_claim_id": "hwa-msgcat-awsbhu117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU117E?", "target_claim_id": "hwa-msgcat-awsbhu117e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBHU118W no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu118w", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBHU118W?", "target_claim_id": "hwa-msgcat-awsbhu118w", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBHU118W?", "target_claim_id": "hwa-msgcat-awsbhu118w", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU119E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu119e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU119E?", "target_claim_id": "hwa-msgcat-awsbhu119e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU119E?", "target_claim_id": "hwa-msgcat-awsbhu119e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSBHU120I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu120i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSBHU120I?", "target_claim_id": "hwa-msgcat-awsbhu120i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSBHU120I?", "target_claim_id": "hwa-msgcat-awsbhu120i", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBHU119E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu119e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU119E?", "target_claim_id": "hwa-msgcat-awsbhu119e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU119E?", "target_claim_id": "hwa-msgcat-awsbhu119e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU120I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu120i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSBHU120I?", "target_claim_id": "hwa-msgcat-awsbhu120i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSBHU120I?", "target_claim_id": "hwa-msgcat-awsbhu120i", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSBHU121E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsbhu121e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSBHU121E?", "target_claim_id": "hwa-msgcat-awsbhu121e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSBHU121E?", "target_claim_id": "hwa-msgcat-awsbhu121e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -13100,9 +13100,9 @@
 {"question": "O que significa a mensagem AWSDEK312E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsdek312e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSDEK312E?", "target_claim_id": "hwa-msgcat-awsdek312e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSDEK312E?", "target_claim_id": "hwa-msgcat-awsdek312e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSDEK313W no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsdek313w", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSDEK313W?", "target_claim_id": "hwa-msgcat-awsdek313w", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSDEK313W?", "target_claim_id": "hwa-msgcat-awsdek313w", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSDEK313W no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsdek313w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSDEK313W?", "target_claim_id": "hwa-msgcat-awsdek313w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSDEK313W?", "target_claim_id": "hwa-msgcat-awsdek313w", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSDEK401E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsdek401e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSDEK401E?", "target_claim_id": "hwa-msgcat-awsdek401e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSDEK401E?", "target_claim_id": "hwa-msgcat-awsdek401e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -14750,9 +14750,9 @@
 {"question": "O que significa a mensagem AWSFAB030E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab030e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSFAB030E?", "target_claim_id": "hwa-msgcat-awsfab030e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSFAB030E?", "target_claim_id": "hwa-msgcat-awsfab030e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSFAB031E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab031e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSFAB031E?", "target_claim_id": "hwa-msgcat-awsfab031e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSFAB031E?", "target_claim_id": "hwa-msgcat-awsfab031e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSFAB031E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSFAB031E?", "target_claim_id": "hwa-msgcat-awsfab031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSFAB031E?", "target_claim_id": "hwa-msgcat-awsfab031e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSFAB032E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab032e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSFAB032E?", "target_claim_id": "hwa-msgcat-awsfab032e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSFAB032E?", "target_claim_id": "hwa-msgcat-awsfab032e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -14900,9 +14900,9 @@
 {"question": "O que significa a mensagem AWSFAB098E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab098e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSFAB098E?", "target_claim_id": "hwa-msgcat-awsfab098e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSFAB098E?", "target_claim_id": "hwa-msgcat-awsfab098e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSFAB099E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab099e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSFAB099E?", "target_claim_id": "hwa-msgcat-awsfab099e", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSFAB099E?", "target_claim_id": "hwa-msgcat-awsfab099e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSFAB099E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab099e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSFAB099E?", "target_claim_id": "hwa-msgcat-awsfab099e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSFAB099E?", "target_claim_id": "hwa-msgcat-awsfab099e", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSFAB100E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awsfab100e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSFAB100E?", "target_claim_id": "hwa-msgcat-awsfab100e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSFAB100E?", "target_claim_id": "hwa-msgcat-awsfab100e", "category": "Troubleshooting & Mensagens de Erro"}
@@ -16061,9 +16061,9 @@
 {"question": "O que significa a mensagem AWSSAM024I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam024i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSSAM024I?", "target_claim_id": "hwa-msgcat-awssam024i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSSAM024I?", "target_claim_id": "hwa-msgcat-awssam024i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "O que significa a mensagem AWSSAM025I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam025i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Qual o texto e a severidade da mensagem AWSSAM025I?", "target_claim_id": "hwa-msgcat-awssam025i", "category": "Troubleshooting & Mensagens de Erro"}
-{"question": "Como diagnosticar a mensagem AWSSAM025I?", "target_claim_id": "hwa-msgcat-awssam025i", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSSAM025I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam025i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual o texto e a severidade da mensagem AWSSAM025I?", "target_claim_id": "hwa-msgcat-awssam025i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a mensagem AWSSAM025I?", "target_claim_id": "hwa-msgcat-awssam025i", "category": "Alta Disponibilidade & Failover"}
 {"question": "O que significa a mensagem AWSSAM026I no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssam026i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSSAM026I?", "target_claim_id": "hwa-msgcat-awssam026i", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSSAM026I?", "target_claim_id": "hwa-msgcat-awssam026i", "category": "Troubleshooting & Mensagens de Erro"}
@@ -16220,3 +16220,288 @@
 {"question": "O que significa a mensagem AWSSAS076E no HCL Workload Automation 10.2.8?", "target_claim_id": "hwa-msgcat-awssas076e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Qual o texto e a severidade da mensagem AWSSAS076E?", "target_claim_id": "hwa-msgcat-awssas076e", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Como diagnosticar a mensagem AWSSAS076E?", "target_claim_id": "hwa-msgcat-awssas076e", "category": "Troubleshooting & Mensagens de Erro"}
+{"question": "O que significa a mensagem AWSBCS029W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcs029w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcs029w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCS029W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcs029w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBCT651E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbct651e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbct651e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCT651E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbct651e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBCV071I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv071i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv071i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCV071I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv071i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBCV117E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCV117E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBCV121E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv121e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv121e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCV121E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv121e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBCV143E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv143e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv143e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCV143E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcv143e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBCW044I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcw044i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcw044i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBCW044I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbcw044i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA001W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda001w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda001w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA001W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda001w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA002W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda002w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda002w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA002W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda002w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA003W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda003w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda003w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA003W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda003w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA004W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda004w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda004w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA004W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda004w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA005W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda005w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda005w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA005W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda005w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA008W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda008w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda008w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA008W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda008w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA009W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda009w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda009w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA009W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda009w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA010W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda010w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda010w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA010W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda010w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA012W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda012w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda012w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA012W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda012w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA013W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda013w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda013w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA013W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda013w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA014W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda014w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda014w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA014W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda014w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA016W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda016w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda016w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA016W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda016w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA017W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda017w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda017w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA017W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda017w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA018W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda018w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda018w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA018W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda018w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA019W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda019w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda019w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA019W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda019w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDA020W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda020w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda020w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDA020W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbda020w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDG006W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbdg006w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbdg006w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDG006W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbdg006w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBDJ017I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbdj017i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbdj017i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBDJ017I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbdj017i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHT050E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbht050e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbht050e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHT050E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbht050e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU061E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu061e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu061e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU061E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu061e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU063E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu063e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu063e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU063E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu063e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU064E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu064e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu064e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU064E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu064e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU065E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu065e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu065e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU065E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu065e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU066E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu066e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu066e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU066E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu066e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU067E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu067e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu067e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU067E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu067e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU068E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu068e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu068e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU068E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu068e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU069E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu069e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu069e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU069E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu069e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU114E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu114e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu114e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU114E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu114e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU115E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU115E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu115e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU116E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu116e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu116e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU116E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu116e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU117E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU117E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu117e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU119E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu119e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu119e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU119E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu119e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU120I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu120i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu120i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU120I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu120i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU161E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu161e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu161e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU161E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu161e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU537E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu537e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu537e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU537E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu537e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHU559E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu559e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu559e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHU559E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhu559e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHV043E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhv043e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhv043e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHV043E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhv043e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBHZ001E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhz001e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhz001e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBHZ001E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbhz001e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA125W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia125w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia125w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA125W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia125w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA127W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia127w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia127w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA127W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia127w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA128W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia128w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia128w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA128W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia128w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA131E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia131e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia131e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA131E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia131e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA141W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia141w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia141w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA141W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia141w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA150W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia150w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia150w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA150W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia150w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA226W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia226w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia226w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA226W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia226w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA229E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia229e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia229e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA229E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia229e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA327W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia327w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia327w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA327W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia327w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA331W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia331w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia331w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA331W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia331w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA332W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia332w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia332w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA332W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia332w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA333W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia333w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia333w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA333W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia333w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIA363W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia363w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia363w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIA363W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbia363w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBID003E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbid003e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbid003e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBID003E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbid003e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBID013E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbid013e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbid013e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBID013E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbid013e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM006E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim006e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim006e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM006E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim006e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM008E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim008e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim008e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM008E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim008e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM009E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim009e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim009e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM009E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim009e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM010E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim010e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim010e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM010E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim010e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM012E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim012e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim012e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM012E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim012e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM017E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim017e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim017e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM017E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim017e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIM043W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim043w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim043w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIM043W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbim043w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIN003E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin003e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin003e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIN003E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin003e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIN004E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin004e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin004e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIN004E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin004e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIN005E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin005e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin005e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIN005E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin005e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIN031E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIN031E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbin031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSBIT507E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbit507e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbit507e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSBIT507E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsbit507e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEK313W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdek313w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdek313w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEK313W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdek313w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEM016E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem016e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem016e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEM016E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem016e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEM030E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem030e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem030e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEM030E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem030e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEM185E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem185e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem185e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEM185E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdem185e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEU027E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu027e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu027e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEU027E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu027e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEU028E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu028e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu028e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEU028E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu028e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSDEU056E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu056e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu056e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSDEU056E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsdeu056e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB031E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB031E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab031e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB099E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab099e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab099e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB099E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab099e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB165E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab165e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab165e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB165E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab165e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB167E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab167e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab167e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB167E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab167e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB240W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab240w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab240w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB240W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab240w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB246E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab246e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab246e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB246E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab246e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB294E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab294e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab294e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB294E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab294e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB295W em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab295w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab295w", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB295W?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab295w", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB392I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab392i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab392i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB392I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab392i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB393I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab393i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab393i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB393I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab393i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB394I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab394i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab394i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB394I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab394i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB445I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab445i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab445i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB445I?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab445i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB501E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab501e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab501e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB501E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab501e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSFAB503E em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab503e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab503e", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSFAB503E?", "target_claim_id": "hwa-10.2.8-ha-msg-awsfab503e", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSSAM025I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awssam025i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awssam025i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSSAM025I?", "target_claim_id": "hwa-10.2.8-ha-msg-awssam025i", "category": "Alta Disponibilidade & Failover"}
+{"question": "O que significa a mensagem AWSSAM026I em um cenario de failover?", "target_claim_id": "hwa-10.2.8-ha-msg-awssam026i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Qual mensagem o HWA emite sobre o domain manager?", "target_claim_id": "hwa-10.2.8-ha-msg-awssam026i", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como diagnosticar a situacao descrita por AWSSAM026I?", "target_claim_id": "hwa-10.2.8-ha-msg-awssam026i", "category": "Alta Disponibilidade & Failover"}

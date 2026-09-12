@@ -77,6 +77,78 @@ def pt_keywords(text):
     return " ".join(res)
 
 
+# Mapa palavra->palavra para traducao IN-PLACE (gera uma frase PT-BR crua, mais natural que keywords).
+# Multi-palavra ('estacao de trabalho') e aplicado antes; chaves unicas casam por word-boundary.
+_WORD_TRANSLATE = {
+    "error": "erro", "errors": "erros", "not": "nao", "file": "arquivo", "files": "arquivos",
+    "workstation": "estacao de trabalho", "job": "job", "cannot": "nao pode",
+    "name": "nome", "command": "comando", "commands": "comandos", "syntax": "sintaxe",
+    "valid": "valido", "invalid": "invalido", "user": "usuario", "users": "usuarios",
+    "internal": "interno", "domain": "dominio", "found": "encontrado", "message": "mensagem",
+    "number": "numero", "system": "sistema", "type": "tipo", "parameter": "parametro",
+    "parameters": "parametros", "definition": "definicao", "stream": "fluxo", "value": "valor",
+    "line": "linha", "installation": "instalacao", "directory": "diretorio", "option": "opcao",
+    "options": "opcoes", "record": "registro", "time": "tempo", "agent": "agente",
+    "expired": "expirou", "license": "licenca", "demo": "demonstracao", "rental": "aluguel",
+    "program": "programa", "installed": "instalado", "product": "produto",
+    "enabled": "habilitado", "disabled": "desabilitado", "memory": "memoria",
+    "operation": "operacao", "broker": "broker", "logon": "logon", "numeric": "numerico",
+    "argument": "argumento", "incorrect": "incorreto", "between": "entre",
+    "qualifier": "qualificador", "missing": "faltando", "stopped": "parado",
+    "started": "iniciado", "quantity": "quantidade", "resource": "recurso",
+    "expected": "esperado", "completed": "concluido", "version": "versao",
+    "problem": "problema", "failed": "falhou", "failure": "falha", "timeout": "tempo esgotado",
+    "connection": "conexao", "database": "banco de dados", "password": "senha",
+    "security": "seguranca", "folder": "pasta", "plan": "plano", "schedule": "agendamento",
+    "calendar": "calendario", "priority": "prioridade", "limit": "limite", "start": "iniciar",
+    "stop": "parar", "restart": "reiniciar", "create": "criar", "delete": "excluir",
+    "update": "atualizar", "display": "exibir", "master": "principal", "backup": "reserva",
+    "available": "disponivel", "unavailable": "indisponivel", "switch": "trocar",
+    "promote": "promover", "demote": "rebaixar", "standby": "espera",
+    "detected": "detectado", "received": "recebido", "sent": "enviado",
+    "processing": "processando", "waiting": "aguardando", "running": "em execucao",
+    "unknown": "desconhecido", "required": "obrigatorio", "optional": "opcional",
+    "invalid": "invalido", "maximum": "maximo", "minimum": "minimo", "allow": "permitir",
+    "deny": "negar", "accept": "aceitar", "reject": "rejeitar",
+    "incompatible": "incompativel", "cpu": "processador", "following": "seguinte",
+    "unable": "incapaz", "could": "conseguiu", "more": "mais", "because": "porque",
+    "been": "estado", "without": "sem", "within": "dentro de", "during": "durante",
+    "after": "apos", "before": "antes", "than": "que", "such": "tal", "each": "cada",
+    "specified": "especificado", "supplied": "informado", "occurred": "ocorreu",
+    "recursively": "recursivamente", "server": "servidor", "client": "cliente",
+    "host": "host servidor", "port": "porta", "network": "rede", "local": "local",
+    "remote": "remoto", "table": "tabela", "index": "indice", "column": "coluna",
+    "row": "linha registro", "status": "estado", "state": "estado", "condition": "condicao",
+    "reason": "motivo", "cause": "causa", "result": "resultado", "output": "saida",
+    "input": "entrada", "permission": "permissao", "access": "acesso", "write": "escrever",
+    "read": "ler", "directory": "diretorio", "path": "caminho", "owner": "dono",
+    "group": "grupo", "space": "espaco", "size": "tamanho", "length": "tamanho",
+    "configuration": "configuracao", "configure": "configurar", "instance": "instancia",
+    "environment": "ambiente", "variable": "variavel", "setting": "configuracao",
+    "request": "requisicao", "response": "resposta", "retry": "tentar novamente",
+    "attempt": "tentativa", "success": "sucesso", "verified": "verificado",
+    "working": "funcionando", "exist": "existe", "exists": "existe",
+}
+
+
+def pt_render(text):
+    """Traducao in-place crua EN->PT-BR para gerar uma frase PT-BR aproximada (p/ BM25)."""
+    t = (text or "").strip()
+    if not t:
+        return ""
+    low = t.lower()
+    # substitui frases/termos, por ordem de comprimento decrescente
+    items = sorted(_WORD_TRANSLATE.items(), key=lambda kv: -len(kv[0]))
+    for en, pt in items:
+        if " " in en:
+            low = low.replace(en, pt)
+    for en, pt in items:
+        if " " not in en:
+            low = re.sub(rf"\b{re.escape(en)}\b", pt, low)
+    return low
+
+
+
 FAM_LABEL = {
     "BHU": "conman", "BIA": "composer", "BIS": "plan library", "BCT": "conman/plan",
     "FAB": "installation (twsinst)", "DEM": "deployment", "DEG": "deployment engine",
@@ -121,11 +193,14 @@ def main():
             sev = SEV.get(code[-1], "unknown")
             doc = docs.get(code)
             ptkw = pt_keywords(texto)
+            pt_rend = pt_render(texto)
             claim = (f"No HCL Workload Automation 10.2.8, a mensagem {code} "
                      f"(severidade: {sev}, familia AWS{code[3:6]} - {fam_label(code)}) "
                      f"tem o texto: \"{texto}\"")
+            if pt_rend:
+                claim += f" Em portugues: \"{pt_rend}\"."
             if ptkw:
-                claim += f" Em portugues, esta mensagem trata de: {ptkw}."
+                claim += f" Temas: {ptkw}."
             if doc:
                 enriched += 1
                 expl = clean(doc.get("explanation"))

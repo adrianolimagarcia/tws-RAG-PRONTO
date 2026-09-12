@@ -4,7 +4,7 @@
   "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8336050061050063,
+  "mrr": 0.831224053724054,
   "details": [
     {
       "id": "eval-0001",
@@ -370,15 +370,15 @@
       "id": "eval-0023",
       "domain": "troubleshooting_conman",
       "question": "Qual a causa do erro AWSBEH021E / AWSBEH029E ao tentar usar comandos do conman ou planman contra o servidor?",
-      "rank": 2,
+      "rank": 3,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001"
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-msgcat-awsbeh029e",
-        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0041",
-        "hwa-msgcat-awsbeh021e"
+        "hwa-msgcat-awsbeh021e",
+        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0041"
       ]
     },
     {

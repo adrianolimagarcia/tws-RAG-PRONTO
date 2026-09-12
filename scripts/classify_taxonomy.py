@@ -56,6 +56,13 @@ RULES = [
 
 def classify(prefix, claim):
     t = f"{prefix} {claim}".lower()
+    # Prioridade ALTA para HA/failover: mensagens de failover (contem codigo AWS + 'mensagem')
+    # nao devem cair na regra de catalogo de mensagens (Troubleshooting) abaixo.
+    ha_strong = ["failover", "fail-over", "alta disponibilidade", "high availab", "switchmgr",
+                 "backup master", "standby", "switch domain manager", "takeover",
+                 "unavailable master", "promote", "demote"]
+    if any(k in t for k in ha_strong):
+        return "Alta Disponibilidade & Failover"
     # Alta prioridade: claim que E SOBRE uma mensagem de erro (catalogo de mensagens),
     # independentemente do componente citado no prefixo.
     if re.search(r"\baws[a-z]{3}\d{3}[iwe]\b", t) and ("mensagem" in t or "message" in t):
