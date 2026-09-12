@@ -78,7 +78,11 @@ def run_benchmark():
         print("Script de avaliacao nao encontrado.")
         return False
 
-    r = subprocess.run([sys.executable, str(eval_script)], capture_output=True, text=True)
+    # PYTHONHASHSEED=0: o harness de avaliacao e sensivel a ordem de iteracao de sets
+    # (soma de floats nao e associativa -> empates flipam entre processos). Fixar o seed
+    # torna a metrica reprodutivel; sem isso o Hit@10 oscilava entre 95,7% e 97,1%.
+    _env = dict(os.environ, PYTHONHASHSEED="0")
+    r = subprocess.run([sys.executable, str(eval_script)], capture_output=True, text=True, env=_env)
     print(r.stdout)
     if r.returncode != 0:
         print(f"FALHA no benchmark: {r.stderr}")

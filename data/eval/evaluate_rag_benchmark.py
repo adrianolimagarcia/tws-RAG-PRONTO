@@ -428,7 +428,9 @@ def run_evaluation():
             diversified_docs.append((s, doc))
 
         # Reordenar após penalização de repetição de fonte
-        diversified_docs.sort(key=lambda x: x[0], reverse=True)
+        # Desempate deterministico por id (mesma classe de bug dos outros sorts: sem ele,
+        # empates caiam na ordem de insercao e a metrica variava entre processos).
+        diversified_docs.sort(key=lambda x: (-x[0], str(x[1].get("id", ""))))
 
         # Segundo Estágio de Re-ranking: Desempate por N-Grams contíguos e Cobertura Semântica
         retrieved_docs = second_stage_rerank(q_text, diversified_docs, top_n=20)
