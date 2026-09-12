@@ -23,7 +23,7 @@ BENCHMARK_FILE = os.path.join(REPO_DIR, "data", "eval", "golden_qa_benchmark.jso
 CLAIMS_FILE = os.path.join(REPO_DIR, "data", "evidence", "claims.jsonl")
 AWS_MSGS_FILE = os.path.join(REPO_DIR, "data", "evidence", "aws_messages_dictionary.jsonl")
 OPTMAN_FILE = os.path.join(REPO_DIR, "data", "evidence", "optman_global_options_catalog.jsonl")
-LAB_FILES = glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl"))
+LAB_FILES = sorted(glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl")))
 RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
 
 SYNONYMS = {
@@ -356,7 +356,9 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
         reranked.append((score, doc))
 
     # Reordenar os top_n re-rankeados
-    reranked.sort(key=lambda x: x[0], reverse=True)
+    # Desempate deterministico por id do documento: sem isso, empates de score sao resolvidos
+    # pela ordem de insercao (que vem de glob.glob, dependente do filesystem) -> metrica nao reprodutivel.
+    reranked.sort(key=lambda x: (-x[0], str(x[1].get("id", ""))))
     # Manter o restante da cauda na ordem original
     return [r[1] for r in reranked] + [c[1] for c in candidates[top_n:]]
 
@@ -386,7 +388,8 @@ def run_evaluation():
             if score > 0:
                 scored.append([score, doc])
 
-        scored.sort(key=lambda x: x[0], reverse=True)
+        # Desempate deterministico por id do documento (ver nota em second_stage_rerank)
+        scored.sort(key=lambda x: (-x[0], str(x[1].get("id", ""))))
 
         # RAGFlow MMR / Source Diversity: Evitar que múltiplos chunks do mesmo runbook
         # monopolizem o top-K empurrando claims e respostas alternativas para baixo
