@@ -1,10 +1,10 @@
 {
   "total": 70,
   "hit_rate_at_1": 0.7714285714285715,
-  "hit_rate_at_3": 0.8857142857142857,
+  "hit_rate_at_3": 0.9,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8313827838827841,
+  "mrr": 0.8336220129077274,
   "details": [
     {
       "id": "eval-0001",
@@ -432,7 +432,7 @@
       "id": "eval-0027",
       "domain": "rest_api_v2",
       "question": "Como consultar se uma job stream no plano possui a flag de adiamento/transporte do dia anterior (carriedForward) via REST API V2?",
-      "rank": 4,
+      "rank": 3,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001",
         "hwa-10.2.8-restocli-get-0014"
@@ -441,7 +441,7 @@
       "top_3_retrieved": [
         "hwa-10.2.8-dwc-restv2-submit-0011",
         "hwa-10.2.8-timezone-job-stream-level-0004",
-        "hwa-lab-10.2.8-prompt-blocked-stream-0054"
+        "hwa-10.2.8-restocli-get-0014"
       ]
     },
     {
@@ -629,7 +629,7 @@
       "id": "eval-0039",
       "domain": "topologia_ha",
       "question": "Como alternar o processador de eventos entre master e backup no HWA 10.2.8?",
-      "rank": 8,
+      "rank": 6,
       "expected_claims": [
         "hwa-10.2.8-conman-switcheventprocessor-0010"
       ],
@@ -1006,7 +1006,7 @@
       "id": "eval-0062",
       "domain": "instalacao",
       "question": "Após instalar o BMDM, qual comando pode ser executado opcionalmente e com que efeito?",
-      "rank": 9,
+      "rank": 7,
       "expected_claims": [
         "hwa-lab-10.2.8-bmdm-container-install-0001",
         "hwa-lab-10.2.8-plan-timezone-consolidated-0047",
@@ -1016,8 +1016,8 @@
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-lab-10.2.8-trilha3-edwa-failover-scope-constraints-0001",
-        "hwa-msgcat-awsbhu086e",
-        "hwa-msgcat-awsbia386e"
+        "hwa-10.2.8-capacity-symphony-file-0017",
+        "ragflow:hwa-10.2.8-bmdm-promotion-demotion.md:0003"
       ]
     },
     {
