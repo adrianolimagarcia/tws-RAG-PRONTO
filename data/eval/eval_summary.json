@@ -84,8 +84,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "ragflow:hwa-10.2.8-container-rhel9-lab.md:0052",
-        "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0003",
-        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0022"
+        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0022",
+        "hwa-lab-10.2.8-boot-auto-container-mdm-0001"
       ]
     },
     {

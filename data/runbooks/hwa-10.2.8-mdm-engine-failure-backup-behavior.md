@@ -26,12 +26,16 @@ ar — e documentar se há promoção automática (default) e como o backup repo
    `ps -eo comm | grep -cE "^(batchman|JOBMAN)$"` — observou-se 0 → 2 em ~31s.
 
 ## Resultado (validado 2026-09-13)
-- **O backup NÃO promove automaticamente** com o default (enAutomaticFailover não configurado;
-  globalopts vazio). O `sc @` do backup manteve MDM como "UNIX MASTER" e MDM_BK como FTA por ~90s.
-- **O engine do MDM auto-recupera em ~31s** (supervisor CPA/tebctl religa batchman+jobman), então
-  o kill não gera indisponibilidade sustentada.
-- PostgreSQL permaneceu vivo; após a recuperação MDM voltou a master (planman rc=0).
-- Referência: `hwa-lab-10.2.8-mdm-engine-failure-no-autofailover-0001`.
+- **O backup NAO promove automaticamente quando apenas o agendador (batchman/jobman) cai**,
+  mesmo com `enAutomaticFailover=yes` (configurado via `optman`; `optman ls` mostra af=YES, aa=YES;
+  `mm resolve master = no`). Em teste de 300s com batchman/jobman re-mortos a cada 5s, o backup
+  manteve MDM como "UNIX MASTER" e MDM_BK como FTA — matar so o agendador NAO torna o MDM
+  indisponivel (netman/engineServer/mailman seguem vivos; mailman religa o batchman).
+- **O engine do MDM auto-recupera**: o pai `mailman` religa batchman/jobman em ~15-31s, entao o
+  kill sozinho nao gera indisponibilidade sustentada do agendador.
+- PostgreSQL permaneceu vivo; apos o teste MDM voltou a master (planman rc=0).
+- Referencias: `hwa-lab-10.2.8-autofailover-canonical-and-engine-only-trigger-0001` (revoga as duas
+  claims anteriores com interpretacao incorreta), e doc oficial HCL 10.2.8 (awsadenautofail.html).
 
 ## Reversão / stop_criterion
 - Auto-recuperação em ~31s; se não vier, religar manualmente:
