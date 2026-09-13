@@ -531,13 +531,12 @@ Estado factual do lab container (tws-hwa.lab, plano #22) registrado em
    switchmgr`. Manter tais claims como `official_primary` (não promovê-las a
    `lab_validated`). Pré-requisito: provisionar BMDM.
 
-2. **EDWA/FileMonitor (event engine ATIVO, mas CLI evtdef bloqueado por TLS):** o event
-   processor está rodando (ssmagent.bin com 2 configs) e a porta EIF SSL **31131 está em
-   LISTEN** (globalopts: ed=YES eh=YES ef=31131). Contudo `evtdef -host 127.0.0.1 -port
-   31131 [-protocol https] dumpdef` falha com AWSBEH023E/AWSBEH029E (handshake SSL do
-   cliente). A regra EDWA LAB_STATUS_RULE (TWSObjectsMonitor→MSGLOG) existe e está active
-   na base, mas a manipulação de event definitions via CLI está bloqueada até configurar a
-   confiança TLS do cliente (TWSClientKeyStore/TrustStore.p12). Resultado: PARTIAL.
+2. **EDWA/evtdef (RESOLVIDO 2026-09-13):** o CLI evtdef e desbloqueado usando a porta
+   **31116** (ITDWBServerSecurePort do CLIConfig), onde `evtdef dumpdef` retorna
+   `AWSBEH123I` + o XML completo das definicoes de evento. A porta 31131 (ef=31131) NAO tem
+   listener (Connection refused), daí o AWSBEH023E/029E — NAO era problema de truststore; a
+   truststore de cliente existente (TWSClientTrustStore.p12) ja funciona com 31116.
+   Evidencia: `lab-validation-2026-09-13-evtdef-tls-port-resolution.jsonl`.
 
 Trilhas de lab futuras (fora do escopo deste boot): (a) provisionar BMDM p/ failover;
 (b) habilitar truststore de cliente do evtdef e validar E2E FileMonitor FileCreated→MSGLOG.
