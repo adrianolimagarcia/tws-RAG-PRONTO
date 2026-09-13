@@ -111,6 +111,30 @@ certificate_validate(): SSL certificate validation succeded.
 
 ---
 
+## 5b. Mecanismo de seleção do TWSObjectsMonitor (forense read-only)
+
+- O `TWSObjectsMonitor.cfg` é **auto-gerado no Event Processor Server e deployado no agente**
+  (`/opt/hwa/TWS/TWSDATA/monconf/`); alterações locais são perdidas. A regra é **rule-based**:
+  `JobStatusChanged JobName=<JOB> Workstation=<POOL> Status=SUCCESSFUL JobStreamWorkstation=@ JobStreamName=@`
+  (sem filtro de `schedtime`). `activeRules.txt` traz o package date e a regra ativa.
+- **Ciclo do monitor** (linhas do trace): ao reagir a uma mudança de plano,
+  `ManageFilter::match, event unkwon` → `Realoading Symphony information` →
+  `EDWA proxy feature is disabled` → `Destroying Transport Controller` → reestabelece transporte
+  (`primary transport established [rc=1]`, `tec_create_handle Handle created!`). Eventos cujo tipo o
+  filtro não reconhece são logados como **`event unkwon`** (WARNING benigno) e **não emitem**.
+- **Por que instância de operador não emite:** na janela dos submits `sbs` o trace tem **apenas**
+  os periódicos `SSM Agent`/`SAP R/3` — **zero** `ManageFilter::match` e **zero** `Realoading Symphony`.
+  O monitor **não reage** ao `sbs` (não recarrega o plano), logo não há match nem emissão.
+- Objetos fora da regra também não emitem (ex.: `JS_ALTJOB3` SUCC sem linha EIF).
+
+## 5c. Pitfalls de sintaxe (conman)
+
+- `conman "sc @;noask"` → **AWSBHU153E** (`noask` só é válido com `getmon`).
+- `conman "sj @;noask"` → **AWSBHU039E**.
+- **Correto:** `conman "sc @"` / `conman "sj @"` (sem `;noask`).
+- Seleção de instância (contém `#`): `=` antes da seleção —
+  `conman "release =<ws>#<js>(<hhmm> <mm/dd>)"`, `conman "cs=<ws>#<js>(<hhmm> <mm/dd>);noask"`.
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
