@@ -1,10 +1,10 @@
 {
   "total": 70,
   "hit_rate_at_1": 0.7571428571428571,
-  "hit_rate_at_3": 0.8857142857142857,
+  "hit_rate_at_3": 0.8714285714285714,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8223335893497183,
+  "mrr": 0.8213982152000584,
   "details": [
     {
       "id": "eval-0001",
@@ -408,8 +408,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001",
-        "hwa-10.2.8-event-event-rule-instance-status-0038",
-        "hwa-10.2.8-conman-status-0001"
+        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0006",
+        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0000"
       ]
     },
     {
@@ -464,16 +464,16 @@
       "id": "eval-0029",
       "domain": "troubleshooting_engine",
       "question": "Qual arquivo de log registra a mensagem CWWKF0011I indicando que o Liberty engineServer está pronto para receber requisições?",
-      "rank": 3,
+      "rank": 4,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001",
         "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
+        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0001",
         "ragflow:hwa-10.2.8-autofailover-link-isolation-test.md:0001",
-        "ragflow:hwa-10.2.8-autofailover-link-isolation-test.md:0003",
-        "ragflow:hwa-10.2.8-wsl-lab.md:0160"
+        "ragflow:hwa-10.2.8-autofailover-link-isolation-test.md:0003"
       ]
     },
     {
@@ -629,7 +629,7 @@
       "id": "eval-0039",
       "domain": "topologia_ha",
       "question": "Como alternar o processador de eventos entre master e backup no HWA 10.2.8?",
-      "rank": 8,
+      "rank": 7,
       "expected_claims": [
         "hwa-10.2.8-conman-switcheventprocessor-0010"
       ],
