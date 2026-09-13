@@ -1,10 +1,10 @@
 {
   "total": 70,
   "hit_rate_at_1": 0.7714285714285715,
-  "hit_rate_at_3": 0.9,
+  "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8332818768533056,
+  "mrr": 0.8317723648599226,
   "details": [
     {
       "id": "eval-0001",
@@ -103,8 +103,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.8-composer-add-0001",
-        "hwa-10.2.8-composer-add-file-format-0135",
-        "hwa-10.2-composer-command-inventory-0024"
+        "hwa-10.2-composer-command-inventory-0024",
+        "hwa-msgcat-awsbia507i"
       ]
     },
     {
@@ -337,7 +337,7 @@
       "id": "eval-0021",
       "domain": "sincronizacao_planman",
       "question": "Qual comando do HWA ressincroniza o arquivo Symphony em memória com a base de dados relacional a quente?",
-      "rank": 26,
+      "rank": 62,
       "expected_claims": [
         "hwa-lab-10.2.8-planman-resync-hot-recovery-0001",
         "hwa-10.2.7-planman-resync-0051"
@@ -1055,7 +1055,7 @@
       "id": "eval-0065",
       "domain": "sintaxe_composer",
       "question": "Qual a função de composer new em relação a composer add?",
-      "rank": 3,
+      "rank": 2,
       "expected_claims": [
         "hwa-10.2.8-composer-new-0001",
         "hwa-10.2-distributed-composer-validate-syntax-0010",
@@ -1065,8 +1065,8 @@
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.8-composer-add-0001",
-        "hwa-10.2.8-composer-add-file-format-0135",
-        "hwa-10.2.8-composer-new-interactive-0122"
+        "hwa-10.2.8-composer-new-interactive-0122",
+        "hwa-lab-10.2.8-composer-name-order-errors-0035"
       ]
     },
     {
@@ -1120,15 +1120,15 @@
       "id": "eval-0069",
       "domain": "anti_alucinacao",
       "question": "O conman showjobs (sj) aceita o prefixo workstation# no jobselect para filtrar por workstation?",
-      "rank": 2,
+      "rank": 4,
       "expected_claims": [
         "hwa-10.2.8-showjobs-wildcard-ws-filter-0111"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-10.2-distributed-conman-showjobs-0001",
-        "hwa-10.2.8-showjobs-wildcard-ws-filter-0111",
-        "hwa-10.2.8-showjobs-wildcard-all-jobs-0110"
+        "hwa-10.2-conman-sj-root-folder-selector-0018",
+        "ragflow:sfinal-awsbhv082e-recovery.md:0002"
       ]
     },
     {
