@@ -111,21 +111,44 @@ certificate_validate(): SSL certificate validation succeded.
 
 ---
 
-## 5b. Mecanismo de seleção do TWSObjectsMonitor (forense read-only)
+## 5b. Mecanismo de seleção do TWSObjectsMonitor
 
-- O `TWSObjectsMonitor.cfg` é **auto-gerado no Event Processor Server e deployado no agente**
-  (`/opt/hwa/TWS/TWSDATA/monconf/`); alterações locais são perdidas. A regra é **rule-based**:
-  `JobStatusChanged JobName=<JOB> Workstation=<POOL> Status=SUCCESSFUL JobStreamWorkstation=@ JobStreamName=@`
-  (sem filtro de `schedtime`). `activeRules.txt` traz o package date e a regra ativa.
-- **Ciclo do monitor** (linhas do trace): ao reagir a uma mudança de plano,
-  `ManageFilter::match, event unkwon` → `Realoading Symphony information` →
-  `EDWA proxy feature is disabled` → `Destroying Transport Controller` → reestabelece transporte
-  (`primary transport established [rc=1]`, `tec_create_handle Handle created!`). Eventos cujo tipo o
-  filtro não reconhece são logados como **`event unkwon`** (WARNING benigno) e **não emitem**.
-- **Por que instância de operador não emite:** na janela dos submits `sbs` o trace tem **apenas**
-  os periódicos `SSM Agent`/`SAP R/3` — **zero** `ManageFilter::match` e **zero** `Realoading Symphony`.
-  O monitor **não reage** ao `sbs` (não recarrega o plano), logo não há match nem emissão.
+**Status: NÃO ESTABELECIDO.** O que segue é **observação direta**, sem inferir mecanismo.
+
+**OBSERVADO (evidência):**
+- Apenas as ocorrências **AGENDADAS** do plano (00:00 UTC, runcycle diário) emitiram EIF:
+  `Sending EIF Event` em 12/09 00:00:06 e 13/09 00:00:07, com `AWSEVP001I → AWSAHL004I →
+  AWSAHL002I → AWSAHL003I → AWSAHL005I` no `messages.log`.
+- Instâncias submetidas por **operador** **não** emitiram — nem **imediata** (`sbs` sem `at`:
+  2221/2230) nem **liberada pelo próprio plano** (`release`: 2251, `[Released]`, SUCC).
 - Objetos fora da regra também não emitem (ex.: `JS_ALTJOB3` SUCC sem linha EIF).
+
+**NÃO é evidência de mecanismo** (corrigido após verificação independente):
+- A **ausência** de `ManageFilter::match` / `Realoading Symphony` numa janela **não** indica
+  "o monitor não processou" — o dia de produção 20260911 tem `ManageFilter` = 0 e **mesmo assim**
+  emitiu `Sending EIF Event` às 00:00:06 de 12/09. Logo MF/reload **não** são precursores do EIF.
+- As rajadas `ManageFilter::match` + `Realoading Symphony` **correlacionam com operações de
+  domínio/plano**, não com jobs (probe read-only):
+  | rajada (UTC, bmdm) | evento no MDM (BR = UTC-3) |
+  |---|---|
+  | 09:07:15 / 09:08:27 / 09:10:03 | `AWSBCV116I Switching managers ... MDM_BK→MDM` ×4 (06:07:10 / 06:08:27 / 06:09:57) |
+  | 15:19:13 / 15:21:18 | `AWSBCV116I Switching managers ... MDM→MDM_BK` (12:19:13 / 12:21:12) |
+  | 20:07:13 | `AWSBDY109I ... MY:JOBMAN-DOWN` + `WRITER-DOWN/UP` (link MDM_BK reconfigurado, 17:07:03) |
+  ⇒ MF/reload = **ciclo de reload/transporte do monitor reativo a mudança do Symphony/domínio**,
+  não filtro de evento de job.
+- O `TWSObjectsMonitor.cfg` é auto-gerado no Event Processor Server e deployado no agente
+  (`monconf/`); a regra é `JobStatusChanged JobName=<JOB> Workstation=<POOL> Status=SUCCESSFUL`
+  (sem filtro de `schedtime`). Isto **não** explica por que a ocorrência agendada emite e a de
+  operador não — o mecanismo permanece **não estabelecido**.
+
+**Campos do payload do EIF** (evento positivo, 13/09 00:00:07):
+`JobStatusChanged; TimeStamp; EventProvider="TWSObjectsMonitor"; PlanNumber="68"; HostName;
+IPAddress; Workstation="LABPOOL"; JobStreamWorkstation="LABPOOL"; JobStreamId="0AAAAAAAAAAAAAHA";
+JobStreamName="POOL_STREAM"; JobStreamSchedTime="2026-09-13T00:05:00Z/GMT"; JobName="POOL_JOB";
+Priority="10"; **Monitored="false"**; ActualStart; EstimatedDuration; ActualDuration; ReturnCode="0";
+Status="Successful"; InternalStatus="SUCC"; Login; EveryFrequency="0"; JobNumber="219408871";
+ErrorMessage; END`. O significado de `Monitored="false"` **não** está provado neste lab — não usar
+como discriminador sem prova.
 
 ## 5c. Pitfalls de sintaxe (conman)
 
