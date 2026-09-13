@@ -1,7 +1,7 @@
 {
-  "total_unique_claims": 6978,
-  "total_synthetic_questions": 16507,
-  "total_evidence_files": 165,
+  "total_unique_claims": 6988,
+  "total_synthetic_questions": 16513,
+  "total_evidence_files": 172,
   "distribution_by_category": {
     "Troubleshooting & Mensagens de Erro": 4683,
     "Operacao CLI (conman/composer/planman)": 642,
@@ -9,7 +9,7 @@
     "Instalacao & Manutencao": 186,
     "Arquitetura & Topologia Mesh": 654,
     "Agendamento Avancado & Workflows": 444,
-    "Alta Disponibilidade & Failover": 177,
+    "Alta Disponibilidade & Failover": 187,
     "Outros": 40
   },
   "export_artifacts": {

@@ -151,8 +151,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.8-event-generic-event-plug-in-0025",
-        "hwa-10.2.8-event-orchestration-monitor-0032",
-        "hwa-10.2.8-wsclass-workstation-class-0001"
+        "hwa-10.2.8-globalopts-workstationeventmgrlistinautomaticfailover-0001",
+        "hwa-10.2.8-event-orchestration-monitor-0032"
       ]
     },
     {
@@ -589,8 +589,8 @@
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.8-globalopts-enautomaticfailover-0001",
-        "hwa-10.2.8-optman-wm-workstationmasterlistinautomaticfailover",
-        "ragflow:failover-mdm-fta.md:0001"
+        "hwa-10.2.8-globalopts-workstationmasterlistinautomaticfailover-0001",
+        "hwa-10.2.8-optman-wm-workstationmasterlistinautomaticfailover"
       ]
     },
     {
