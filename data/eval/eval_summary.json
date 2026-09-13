@@ -1,10 +1,10 @@
 {
   "total": 70,
-  "hit_rate_at_1": 0.7714285714285715,
+  "hit_rate_at_1": 0.7571428571428571,
   "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8317723648599226,
+  "mrr": 0.8222485553361129,
   "details": [
     {
       "id": "eval-0001",
@@ -464,16 +464,16 @@
       "id": "eval-0029",
       "domain": "troubleshooting_engine",
       "question": "Qual arquivo de log registra a mensagem CWWKF0011I indicando que o Liberty engineServer está pronto para receber requisições?",
-      "rank": 1,
+      "rank": 3,
       "expected_claims": [
         "hwa-lab-10.2.8-rest-api-v2-auth-0001",
         "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
-        "ragflow:hwa-10.2.8-wsl-lab.md:0160",
-        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0029",
-        "ragflow:hwa-10.2.8-wsl-lab.md:0159"
+        "ragflow:hwa-10.2.8-autofailover-link-isolation-test.md:0001",
+        "ragflow:hwa-10.2.8-autofailover-link-isolation-test.md:0003",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0160"
       ]
     },
     {
