@@ -89,6 +89,25 @@ def run_benchmark():
         return False
     return True
 
+def check_lab_session_schema():
+    """5. Valida o LAB_SESSION_FORMAT (schema + enum de result/risk + segredos).
+
+    O validador impoe o schema por maquina. Legados historicos sao CONGELADOS por arquivo
+    (data/evidence/lab_session_schema_baseline.json) e REPORTADOS, nunca silenciados;
+    registros NOVOS (arquivo fora do baseline) sao validados estritamente.
+    """
+    print("\n=== 5. Validando schema LAB_SESSION_FORMAT ===")
+    validator = REPO / "scripts" / "validate_lab_session.py"
+    if not validator.exists():
+        print("AVISO: scripts/validate_lab_session.py ausente — schema nao imposto.")
+        return True
+    r = subprocess.run([sys.executable, str(validator)], capture_output=True, text=True)
+    print(r.stdout.rstrip())
+    if r.returncode != 0:
+        print("FALHA: registros novos violam o LAB_SESSION_FORMAT.")
+        return False
+    return True
+
 def main():
     print("--------------------------------------------------")
     print("  CI / QUALITY GATE — DATASET HWA 10.2.8 (HAOS)   ")
@@ -97,8 +116,9 @@ def main():
     ok1 = check_jsonl_files()
     ok2 = check_secrets()
     ok3 = run_benchmark()
+    ok4 = check_lab_session_schema()
 
-    if ok1 and ok2 and ok3:
+    if ok1 and ok2 and ok3 and ok4:
         print("\n>>> TODOS OS QUALITY GATES PASSARAM COM SUCESSO! <<<")
         sys.exit(0)
     else:

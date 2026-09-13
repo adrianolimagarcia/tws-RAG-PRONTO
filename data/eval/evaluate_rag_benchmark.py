@@ -137,9 +137,14 @@ FAMILY_LEXICON = {
 }
 
 # Boost aditivo aplicado a cada doc de catalogo da familia detectada na query.
-# Configuravel via env RAG_FAMILY_BOOST (default 4): varrdura 0-12 mostrou que
-# 4 e o ponto de maior ganho no virgem SEM regressao no baseline (0 regressao,
-# baseline 54/70 @1 e 68/70 @10 preservados). Boosts >=5 regridem o baseline.
+# Configuravel via env RAG_FAMILY_BOOST (default 4): varredura 0-12 mostrou que
+# 4 e o ponto de maior ganho no virgem SEM regressao no baseline.
+# ATENCAO (metrica DEPENDENTE DO CORPUS): o baseline de referencia NAO e um numero
+# fixo. No HEAD d942790 (6869 docs) o baseline 70 e 53/70 @1, 68/70 @10, MRR 0.8214.
+# O valor 54/70 (MRR 0.8336) foi medido em 547d53b (corpus menor) e caiu para 53/70
+# em d742037 por CRESCIMENTO DE CORPUS (chunks novos competindo no rank 1 em eval-0029),
+# nao por nao-determinismo. Cite sempre o numero COM (HEAD, n_docs).
+# Ver docs/BENCHMARK_METRIC_PROVENANCE.md.
 FAMILY_BOOST = float(os.environ.get("RAG_FAMILY_BOOST", "4"))
 
 
