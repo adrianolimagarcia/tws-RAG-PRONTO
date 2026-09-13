@@ -4,7 +4,7 @@
   "hit_rate_at_3": 0.9,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8336220129077274,
+  "mrr": 0.8332818768533056,
   "details": [
     {
       "id": "eval-0001",
@@ -84,8 +84,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "ragflow:hwa-10.2.8-container-rhel9-lab.md:0052",
-        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0022",
-        "hwa-lab-10.2.8-boot-auto-container-mdm-0001"
+        "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0003",
+        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0022"
       ]
     },
     {
@@ -245,9 +245,9 @@
       ],
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
-        "hwa-install-liberty-1028-procedure-0009",
-        "hwa-10.2.8-wsa-service-class-0029",
-        "hwa-10.2.8-wsa-service-policy-0030"
+        "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0001",
+        "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0004",
+        "hwa-install-liberty-1028-procedure-0009"
       ]
     },
     {
@@ -629,15 +629,15 @@
       "id": "eval-0039",
       "domain": "topologia_ha",
       "question": "Como alternar o processador de eventos entre master e backup no HWA 10.2.8?",
-      "rank": 6,
+      "rank": 7,
       "expected_claims": [
         "hwa-10.2.8-conman-switcheventprocessor-0010"
       ],
       "expected_runbook": "hwa-10.2.8-wsl-lab.md",
       "top_3_retrieved": [
         "hwa-10.2.8-backup-backup-master-data-0001",
-        "hwa-10.2.8-tls-ssl-mdm-backup-0002",
-        "hwa-10.2.8-dynagent-backup-resource-advisor-urls-0025"
+        "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0000",
+        "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0001"
       ]
     },
     {
