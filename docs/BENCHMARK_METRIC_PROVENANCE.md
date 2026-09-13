@@ -10,8 +10,8 @@ atributos é **ambíguo** e não deve ser tratado como "o baseline".
 
 | atributo | valor |
 |---|---|
-| HEAD | `d942790` |
-| documentos indexados | **6869** |
+| HEAD | `dfff7b1` |
+| documentos indexados | **6868** |
 | benchmark 70 (Hit@1) | **53/70 (75,7%)** |
 | benchmark 70 (Hit@10) | **68/70 (97,1%)** |
 | benchmark 70 (MRR) | **0,8214** |
