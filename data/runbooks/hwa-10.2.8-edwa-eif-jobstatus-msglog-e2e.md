@@ -85,13 +85,29 @@ certificate_validate(): SSL certificate validation succeded.
 
 ## 5. Limitação conhecida (achado de lab)
 
-- **Submissão on-demand (`sbs`) NÃO gera o evento.** Testado V1 (`sbs LABPOOL#POOL_STREAM`):
-  o job concluiu SUCC mas o trace MONMAN teve **0** `Sending EIF Event` e o `messages.log`
-  **não** recebeu novo `AWSEVP001I`. O cfg do monitor não tem filtro de `schedtime`, logo o
-  gap é **comportamento de seleção do monitor** (reporta a ocorrência agendada), não filtro de regra.
+- **Instância submetida por operador NÃO gera o evento — nem imediata, nem liberada.**
+  - **V1 — imediata** (`sbs LABPOOL#POOL_STREAM`, sem `at`): transiciona na hora
+    (HOLD→READY→EXEC em 1–2 s), o job conclui SUCC, mas o trace MONMAN tem **0**
+    `Sending EIF Event` e o `messages.log` **não** recebe novo `AWSEVP001I`
+    (instâncias 2221 / 2230).
+  - **V2 — com `at=`** (`sbs ...;at=2236`): a instância fica **HOLD** e **não executa**.
+    A causa do HOLD é o **mecanismo de release**, não o monitor: `sbs <stream>;at=<hhmm>`
+    **não auto-libera** a instância (2236 ficou HOLD 16 min sem tentativa de release no TWSMERGE).
+  - **Release forçado** (`release =LABPOOL#POOL_STREAM(2251 09/13)`): a instância liberada
+    executa e conclui SUCC (TWSMERGE: READY→EXEC→SUCC), mas **também não emite**
+    (trace **0**, `AWSEVP001I` inalterado). Instância 2251.
+  - **Conclusão:** "instância submetida por operador (imediata **ou** liberada) não emite
+    `JobStatusChanged`" está **duplamente suportada**; a hipótese "o monitor reporta apenas a
+    ocorrência **planejada** do plano" sobe de hipótese para **suportada**. O cfg do monitor
+    não tem filtro de `schedtime`, logo é **seleção do monitor**, não filtro de regra.
 - **`LogEvents=NO`** no `monmaneif.conf` → não há log de recepção no listener; a prova de
   recepção é o `AWSEVP001I` do motor de regras.
-- **TZ:** o container do bmdm roda em **UTC**; o `messages.log` marca GMT real.
+- **Base de tempo do plano = UTC** (não BR): `at=` é lido em **UTC**; `sj`/batchman apenas
+  **renderizam** em BR (container `tws-hwa`) ou UTC (`tws-bmdm`). Prova: `sbs ...;at=1951`
+  submetido às 22:48 UTC voltou como `[(1951 09/14/26)]` (roll-forward — 19:51 UTC já passado).
+  O `messages.log` marca GMT real.
+- **Release de instância HOLD (sintaxe):** `conman "release =<ws>#<js>(<hhmm> <mm/dd>)"`
+  (o `=` precede a seleção que contém `#`). Cancelamento: `conman "cs=<ws>#<js>(<hhmm> <mm/dd>);noask"`.
 
 ---
 

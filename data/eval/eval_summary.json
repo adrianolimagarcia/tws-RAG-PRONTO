@@ -408,8 +408,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-lab-10.2.8-edwa-twsobjectmonitor-jobstatuschanged-0001",
-        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0006",
-        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0000"
+        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0000",
+        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0002"
       ]
     },
     {
