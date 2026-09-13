@@ -4,7 +4,7 @@
   "hit_rate_at_3": 0.8857142857142857,
   "hit_rate_at_5": 0.9285714285714286,
   "hit_rate_at_10": 0.9714285714285714,
-  "mrr": 0.8222485553361129,
+  "mrr": 0.8219934532952966,
   "details": [
     {
       "id": "eval-0001",
@@ -629,7 +629,7 @@
       "id": "eval-0039",
       "domain": "topologia_ha",
       "question": "Como alternar o processador de eventos entre master e backup no HWA 10.2.8?",
-      "rank": 7,
+      "rank": 8,
       "expected_claims": [
         "hwa-10.2.8-conman-switcheventprocessor-0010"
       ],
