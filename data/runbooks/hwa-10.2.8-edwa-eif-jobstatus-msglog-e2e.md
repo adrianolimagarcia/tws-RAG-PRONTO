@@ -191,6 +191,20 @@ ESTABELECIDO** — o bloqueio é do **mecanismo de limite de dia**, não do moni
 sinal de rollover. O sinal é a troca de stdlist (`AWSDDW100I SWITCHED`), que em 09/14 ocorreu às
 **00:08:33Z** (as capturas de B em 00:06:0x–00:06:46Z foram **antes** dessa troca).
 
+**DISCRIMINADOR (desfecho observado às 03:06:18Z): o master NÃO faz o pass do limite de PRODUÇÃO.**
+- **Pass da meia-noite LOCAL do MDM** (00:00:0x BR de 14.09) — **funcional**: **21 READY / 16 EXEC /
+  15 SUCC** (`POOL_BALANCING`, `AGT1#CROSS_STREAM`, `FRENTE1_STREAM[(0005 09/14)]` → `has completed
+  successfully` às 00:00:18). O processamento de plano do master está **vivo**.
+- **Pass do limite do dia de PRODUÇÃO do MDM** (21:00:0x BR = 00:00Z) — **ausente**: **0 READY /
+  0 EXEC** em 09/14 (controle 09/13 na mesma janela: **13 READY**).
+- O BMDM fez **os dois**: produção (20 READY / 0 launch) e local (3 READY às 02:59–03:0x).
+⇒ A anomalia é **específica do pass do limite do dia de PRODUÇÃO do master** — e é por isso que o
+dia de produção 09/14 só foi readiado no MDM **por ação de operador** (a única `READY 0005 09/14` no
+MDM antes do pass local era o `release` do teste (c), às 22:02:51 BR). O desfecho "processamento de
+plano do master parado" foi **descartado**.
+**Armadilha de método:** a contagem do pass local deve ser **separada por data** (`^00:00:0[0-9]
+14\.09\.2026` vs `13\.09\.2026`) — o mesmo arquivo `20260913_TWSMERGE.log` contém as duas meia-noites.
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
