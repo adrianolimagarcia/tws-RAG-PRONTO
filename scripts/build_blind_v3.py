@@ -114,6 +114,7 @@ def main(dry):
                 "has_anchor": has_anchor,
                 "embedded_in_corpus": False,
                 "expected_source_date": newest,
+                "runbook_ref": d.get("runbook_ref"),
             })
 
     # Fatia D manual: perguntas escritas a mao sobre as claims MAIS NOVAS (nao usa synthetic_questions,

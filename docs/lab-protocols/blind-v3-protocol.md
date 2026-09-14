@@ -55,3 +55,34 @@ Baseline completo (corpus 6894 docs, HEAD `0f308b9`, `RAG_DROP_*` desligado):
 2. **Reporte por fatia.** Um número agregado esconde 31 pontos de diferença.
 3. **Toda melhoria tem de aparecer em B e/ou D** — ganho só em A é ganho lexical, não de recuperação.
 4. **A fatia C exige métrica de abstenção** (hoje inexistente): declarar como limite em vez de inferir.
+
+---
+
+## Adendo — ataque às fatias B/D: teto medido e resultado negativo do re-rank lexical
+
+**Correção de baseline:** as fatias passaram a carregar `runbook_ref` (o v3 não o trazia, o que desligava o match por chunk de runbook do avaliador e deixava o v3 mais estrito que o real). Baseline corrigido: **A 90,7% · B 57,1% · D 40,0% @1**.
+
+**Sandbox:** `scripts/rerank_sandbox.py` replica o pipeline (bm25 → sort → diversidade → 2ª etapa) **sem alterar o avaliador**. A replicação foi validada: baseline replicado **183/262 (69,8%)** idêntico ao avaliador, e **232/232** ranks do matcher do sandbox coincidem com os do avaliador (0 divergências).
+
+**Resultado 1 — o re-rank existente é um lever só-de-âncora:**
+
+| estágio | A | B | D |
+|---|---|---|---|
+| 1º estágio (sem re-rank) | 78,5% | 57,1% | 40,0% |
+| após a 2ª etapa do avaliador | **90,7%** (+12,2) | 57,1% (**0,0**) | 40,0% (**0,0**) |
+
+**Resultado 2 — re-ranker linear sobre o top-50 é pior que o baseline** (features normalizadas em [0,1] não são comparáveis entre si nem com o boost aditivo sobre o score cru do BM25): paridade 76,6% (A) / 52,1% (B); especificidade 61,7% / 38,6%; esp+paridade 73,8% / 50,0%.
+
+**Resultado 3 — o boost de especificidade não transfere.** Preservando a ordem baseline e somando o sinal de especificidade em unidades de posição, a **ascensão coordenada na fatia A (tune) não encontrou nenhum peso** — o melhor em A é o próprio baseline. Efeito isolado (peso 2): `f_rarecov` B 57,9% (**+0,8** = 1 pergunta em 140); `f_minidf` B 56,4%; `f_type` B 55,7%; `f_contig` B 57,1%; `f_entity` A 89,7%. **Nenhum ganho transfere de A para B/D.**
+
+**Resultado 4 — o teto, que é o achado que importa:**
+
+| fatia | recall@50 | @1 hoje | **folga** |
+|---|---|---|---|
+| A | 97,2% | 90,7% | +6,5 pts |
+| B | 87,1% | 57,1% | **+30,0 pts** |
+| D | 73,3% | 40,0% | **+33,3 pts** |
+
+O doc correto **já está no pool de 50** em 87,1% (B) e 73,3% (D). Logo o gargalo de B/D é **ordenação semântica**, não recall — e o sinal necessário não é lexical.
+
+**Conclusão do adendo:** B/D **não** são atacáveis por re-ranking lexical. Exigem sinal semântico (embedding/cross-encoder), ausente no ambiente (sem `sentence_transformers`; cache HF só com whisper; ADR-002 descartou o `bge-reranker` por exigir `torch`+`transformers` ~2 GB). O próximo passo é **decisão de infra**, não mais tuning.
