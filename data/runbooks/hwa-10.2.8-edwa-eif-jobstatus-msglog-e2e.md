@@ -205,6 +205,37 @@ plano do master parado" foi **descartado**.
 **Armadilha de método:** a contagem do pass local deve ser **separada por data** (`^00:00:0[0-9]
 14\.09\.2026` vs `13\.09\.2026`) — o mesmo arquivo `20260913_TWSMERGE.log` contém as duas meia-noites.
 
+### 5e. Mecanismo do pass do limite de PRODUÇÃO (read-only, parcialmente determinado)
+
+**Cadeia causal identificada:**
+1. O pass do limite de produção do master é **disparado por mensagens `dR` vindas do backup
+   (MDM_BK)**. Contagem no `traces/20260913_TWSMERGE.log` do MDM: **13** `Received dR: … from cpu
+   MDM_BK` nos boundaries **09/12** e **09/13**; **0** em **09/14**. As linhas `AWSBHT075I … status to
+   READY` do master são **precedidas** por `Received dR: <pool>#<id> from cpu MDM_BK`. Sem `dR`, o
+   master não readia nada.
+2. **Em 09/14 o BMDM readiou e parou**: na visão do BMDM a janela do boundary tem **20 READY** e
+   depois apenas o `STUCK` — **0** `AWSBHT036I Attempting to launch` e **0** mensagens `Received`
+   (controle 09/13: **2** launches e **12** `Received` = `lB`/`jC`/`sJ`/`tJ`). Logo o backup não
+   notificou o master → **0 `dR`** → o master não fez o pass.
+3. **H1 POSITIVO — ADIAMENTO (~3 h), não ausência**: o pass da meia-noite local do MDM readiou
+   **19 objetos** com schedtime `0005 09/14`, dos quais **19 são exatamente os mesmos** do boundary
+   de produção do BMDM. A única exceção é **`POOL_STREAM`**, que já havia sido **consumido pelo
+   release de operador** (teste (c), SUCC às 01:02Z). Correlato explicado: o BMDM readiou 20 e **não
+   lançou nenhum** porque o **launch é do master**, que só processa no seu próprio pass.
+4. O pass **local** do MDM é **outro gatilho**: não usa `dR` (0 nas duas janelas 00:00:0x BR) e é
+   acionado por **start condition de arquivo** — `checking file lab_trigger.flag on cpu MDM` +
+   `Received fC: /tmp/lab_trigger.flag` + `test -f /tmp/lab_trigger.flag` (7× em 14.09; **0** nos
+   três boundaries de produção).
+
+**Descartados por evidência:** horizonte do plano (**H2** — `end 09/25 21:04 BR`, folgado);
+evento bloqueante no master (**H3** — janela 20:55–21:05 BR de 13.09 só tem o **ruído pré-existente
+AGT1**: `AWSBCV082I errno=111` / `AWSBCV035W` / `MY:UNLINK`, zero `AWSDDW100I`, zero `AWSBHT069E`);
+link AGT1 (controle negativo); ausência do pass (**H1** — foi **adiado**).
+
+**INCONCLUSIVO (read-only):** **por que** o boundary do BMDM parou após a fase de `READY` em 09/14 —
+o `STUCK` de `MDM#JS_PROMPT_RUN` ocorre nos **dois** dias e não bloqueou em 09/13; nenhum outro
+evento distingue as duas janelas. Determinar isso exigiria **mutação** (não autorizada nesta frente).
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
