@@ -1,0 +1,57 @@
+# Protocolo do conjunto cego v3 — fatias por propriedade
+
+**Artefato:** `data/eval/blind_v3_slices.jsonl` (262 perguntas scorable) + `data/eval/blind_v3_negatives.jsonl` (5 negativos).
+**Construtor:** `scripts/build_blind_v3.py` (reprodutível; `--dry-run` mostra as contagens sem gravar).
+**Fora do corpus indexado:** este protocolo vive em `docs/lab-protocols/` e não entra no glob de `data/evidence/`.
+
+## Por que existe
+
+O `@1` do mesmo retriever varia de **23,3% a 100%** conforme o conjunto. A causa dominante **não** é o conhecimento do sistema: é o **estilo/proveniência da pergunta**. Um número único de hit é, portanto, ininterpretável. O v3 quebra o conjunto por **propriedade da pergunta**, e cada fatia tem um teto próprio.
+
+## Regras de honestidade (aplicadas pelo construtor)
+
+1. **Sem vazamento:** nenhuma pergunta que case com **uma** `synthetic_question` do corpus (cobertura mútua ≥ 0,70) entra nas fatias A/B/D. 159 perguntas foram descartadas por isso.
+2. **Ground truth fechado por construção:** toda pergunta aponta para `relevant_claim_ids` existentes no corpus (verificado: 0 órfãs).
+3. **Fatia D gerada por humano, não pelo corpus:** as 15 perguntas do holdout temporal foram escritas à mão sobre as claims mais novas, **sem** reutilizar as `synthetic_questions` delas e **sem** copiar os tokens distintivos da resposta.
+4. **Negativos verificados:** cada termo-alvo da fatia C teve seus tokens **distintivos** conferidos como ausentes do corpus (0 ocorrências).
+5. **Métrica congelada:** cada rodada cita `(HEAD, n_docs)` e o `eval_summary.json` commitado é restaurado byte a byte após rodadas de diagnóstico.
+
+## As quatro fatias
+
+| fatia | definição | n | teto medido (@1) |
+|---|---|---|---|
+| **A — com âncora** | a pergunta carrega código de mensagem (`AWS*####`) ou termo exato em caixa alta | 107 | **86,0%** |
+| **B — sem âncora** | paráfrase sem código/termo exato | 140 | **55,0%** |
+| **C — negativos** | a resposta **não existe** no corpus; o correto é abster | 5 | métrica de abstenção (não implementada — limite declarado) |
+| **D — holdout temporal** | pergunta escrita sobre claims novas (`source_file` ≥ 2026-09-13) | 15 | **40,0%** |
+
+Baseline completo (corpus 6894 docs, HEAD `0f308b9`, `RAG_DROP_*` desligado):
+
+| fatia | @1 | @5 | @10 | MRR |
+|---|---|---|---|---|
+| A | 86,0% | 91,6% | 92,5% | 0,8840 |
+| B | 55,0% | 77,9% | 83,6% | 0,6422 |
+| D | 40,0% | 46,7% | 53,3% | 0,4400 |
+
+## Leitura
+
+- **A âncora é o fator dominante:** 86% com âncora contra 55% sem. A pergunta que traz o código/termo exato é quase resolvida por casamento lexical; a paráfrase cai 31 pontos.
+- **O conhecimento mais novo é o pior recuperado (D = 40%).** O holdout temporal é o teste mais duro e o mais relevante: é o que mede se o sistema aprende com o que o laboratório acabou de produzir.
+- **A fatia B é onde mora o ganho real de engenharia** (77,9% @5 → 55% @1: há 33 pontos de ordenação a recuperar sem tocar em recall).
+
+## Ablações de medição (interruptores no avaliador, default OFF)
+
+| ablação | efeito medido |
+|---|---|
+| `RAG_DROP_SYNTHETIC=1` (remove a pergunta embutida do índice) | `holdout100` 89%→80%; `holdout50` 98%→92%; `messages` 100%→100%; conjunto ativo 53→54 |
+| `RAG_DROP_CTXPREFIX=1` (remove o `context_prefix` repetido) | **nenhum** efeito (ativo 75,7%→75,7%; holdout100 89%→89%) |
+| A1+A2 combinados | ativo 54/70 (77,1%), holdout100 82% |
+
+**Conclusão corrigida:** o vazamento da pergunta embutida é real e vale **6–9 pontos** nos conjuntos derivados de claim — mas **não** explica o spread inteiro (o `messages` fica em 100% sem ele, e `pure_virgin` fica em 95% com 2,5% de embutimento). O que domina o número é o **estilo da pergunta**.
+
+## Como usar (regra de ouro)
+
+1. **Nunca tune e meça no mesmo conjunto.** Tune em A; valide em B/D.
+2. **Reporte por fatia.** Um número agregado esconde 31 pontos de diferença.
+3. **Toda melhoria tem de aparecer em B e/ou D** — ganho só em A é ganho lexical, não de recuperação.
+4. **A fatia C exige métrica de abstenção** (hoje inexistente): declarar como limite em vez de inferir.

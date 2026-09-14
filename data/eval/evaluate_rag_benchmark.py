@@ -228,6 +228,15 @@ def load_documents():
                 sq = c.get("supporting_quote") or ""
                 synth_q = " ".join(c.get("synthetic_questions", []))
                 ctx_pref = c.get("context_prefix", "")
+                # --- Ablacoes de MEDICAO (default OFF -> comportamento inalterado) ---
+                # RAG_DROP_SYNTHETIC=1: remove as perguntas sinteticas do texto indexado
+                #   (mede quanto do hit depende de a pergunta estar embutida no proprio doc).
+                # RAG_DROP_CTXPREFIX=1: remove o context_prefix repetido (boilerplate) do texto indexado
+                #   (mede quanto do IDF e consumido por prefixo comum a muitos docs).
+                if os.environ.get("RAG_DROP_SYNTHETIC") == "1":
+                    synth_q = ""
+                if os.environ.get("RAG_DROP_CTXPREFIX") == "1":
+                    ctx_pref = ""
                 text = f"{ctx_pref} {c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')} {sq} {nt_str} {synth_q}"
                 docs.append({"id": cid, "type": "canonical_claim", "text": text, "tokens": tokenize(text)})
 
@@ -270,7 +279,8 @@ def load_documents():
                 cid = c.get("claim_id", "")
                 if not cid:
                     continue
-                text = f"{c.get('claim','')} {c.get('supporting_quote','')} {c.get('context_prefix','')}"
+                _cp = "" if os.environ.get("RAG_DROP_CTXPREFIX") == "1" else c.get('context_prefix', '')
+                text = f"{c.get('claim','')} {c.get('supporting_quote','')} {_cp}"
                 docs.append({"id": cid, "type": "message_catalog", "text": text, "tokens": tokenize(text)})
 
     # 6. Chunks Estruturados RAGFlow dos Runbooks Markdown (com Breadcrumbs e Tabelas Íntegras)
