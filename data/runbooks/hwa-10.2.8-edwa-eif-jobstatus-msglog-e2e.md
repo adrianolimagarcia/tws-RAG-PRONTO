@@ -158,6 +158,30 @@ como discriminador sem prova.
 - Seleção de instância (contém `#`): `=` antes da seleção —
   `conman "release =<ws>#<js>(<hhmm> <mm/dd>)"`, `conman "cs=<ws>#<js>(<hhmm> <mm/dd>);noask"`.
 
+## 5d. Anomalia do limite do dia (mass-READY sem launch) — observação
+
+No boundary de **09/14 00:00:05Z** a passagem de release **readiou 20 streams** (schedtime `0005 09/14`)
+e **não lançou nenhum**: zero `AWSBHT036I Attempting to launch`, zero `status to EXEC`, zero SUCC —
+em qualquer merge. Contraste de 1 dia, **mesma passagem**: em 09/13 o mesmo `STUCK`
+(`MDM#JS_PROMPT_RUN` + `AWSBHT069E`) foi seguido de `AWSBHT036I ... POOL_BALANCING` /
+`... POOL_STREAM` → EXEC → SUCC em ~1 s → EIF às 00:00:07.
+
+| dia (schedtime `0005 <dia>`) | READY | launch | SUCC | STUCK |
+|---|---|---|---|---|
+| 09/12 | 13 | 2 | 2 | 1 |
+| 09/13 | 13 | 2 | 2 | 1 |
+| **09/14** | **20** | **0** | **0** | 1 |
+
+Candidatos (sem mutar): STUCK acumulado no plano (`JS_PROMPT_RUN` de 09/12 e 09/13 persistem) —
+mas o mesmo STUCK em 09/13 não bloqueou; link AGT1 caído (`MY:UNLINK` a cada ~10 min, AGT1 em
+**run 35** vs plano **69**) — candidato **fraco** para o `POOL_STREAM`, que em 09/13 rodou no pool
+hospedado no MDM; condição do plano (`run 69`/`confirm 69`, sem divergência). **Mecanismo NÃO
+ESTABELECIDO** — o bloqueio é do **mecanismo de limite de dia**, não do monitor de objetos.
+
+**Método:** o campo `Plan last update` do `planman` **não** acompanha o dia — **não** serve como
+sinal de rollover. O sinal é a troca de stdlist (`AWSDDW100I SWITCHED`), que em 09/14 ocorreu às
+**00:08:33Z** (as capturas de B em 00:06:0x–00:06:46Z foram **antes** dessa troca).
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
