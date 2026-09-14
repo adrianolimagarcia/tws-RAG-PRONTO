@@ -236,6 +236,46 @@ link AGT1 (controle negativo); ausência do pass (**H1** — foi **adiado**).
 o `STUCK` de `MDM#JS_PROMPT_RUN` ocorre nos **dois** dias e não bloqueou em 09/13; nenhum outro
 evento distingue as duas janelas. Determinar isso exigiria **mutação** (não autorizada nesta frente).
 
+## 5f. Série histórica do pass do boundary de PRODUÇÃO (read-only)
+
+O pass do limite de dia de **produção** do master ocorre às **21:0x BR** (00:00Z) e readia o dia
+de produção seguinte. Medido em `traces/` com filtro de data **estrito** (`^(20:5[89]|21:0[0-2]):.*<dd>\.09\.2026`
+no MDM; `^00:00:0[0-9] <dd>\.09\.2026` no BMDM):
+
+| arquivo (MDM) | linhas | READY | EXEC | SUCC | AWSBHT036I | Received | dR | PB/PS |
+|---|---|---|---|---|---|---|---|---|
+| 09/04–09/07 | — | 0–2 | 0–2 | 0–2 | 0–3 | 0–37 | 0 | 0/0 |
+| 09/08, 09/09 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| 09/10 | 481 | 3 | 2 | 2 | 0 | 94 | 2 | 0/0 |
+| **09/11** | 77 | **13** | 2 | 2 | 0 | 25 | **13** | **1/1** |
+| **09/12** | 79 | **13** | 2 | 2 | 0 | 26 | **13** | **1/1** |
+| **09/13** | 22 | **0** | 0 | 0 | 0 | 1 | **0** | **0/0** |
+
+| arquivo (BMDM, = `<dd−1>`) | linhas | READY | AWSBHT036I | Received | PB/PS |
+|---|---|---|---|---|---|
+| 09/09, 09/11 | 0 | 0 | 0 | 0 | 0/0 |
+| 09/10 | 4 | 4 | 0 | 0 | 0/1 |
+| **09/12** | 47 | 13 | **2** | **12** | 1/1 |
+| **09/13** | 46 | 13 | **2** | **12** | 1/1 |
+| **09/14** | 24 | **20** | **0** | **0** | 1/1 |
+
+**Conclusões.** (1) `0 READY` no master no pass de produção **não é exclusivo de 09/14** — recorre em
+09/08, 09/09 e 09/13 (janela vazia, só o ruído AGT1). É comportamento **intermitente** do mecanismo.
+(2) No BMDM, o launch só ocorreu em 09/12 e 09/13. (3) A cadeia `dR → READY` explica integralmente o
+pass do master: dR = 2/13/13/0 ↔ READY = 3/13/13/0. **Caveat:** 09/04–09/07 têm composição de plano
+diferente (sem `POOL_*`, que só aparecem a partir de 09/08) — fora da comparação.
+
+**Pitfalls de leitura (medidos):**
+- **Dois `TWSMERGE` por nó, conteúdo DIFERENTE** (`stdlist/traces/` vs `stdlist/logs/`, inodes
+  distintos). No MDM (20260912): `traces/` = 79 linhas/`dR=13`; `logs/` = 53 linhas/**`dR=0`**. No
+  BMDM (20260912): `traces/` = 46 linhas/`Received=12`; `logs/` = 33 linhas/**`Received=0`**.
+  ⇒ Quem medir `dR`/`Received` em `logs/` conclui **falsamente** "o dR nunca chega". **Rotular sempre
+  o caminho e usar `traces/`.**
+- **Pareamento arquivo↔dia**: os traces do MDM rolam à **00:00 BR**; os do BMDM à **00:04 UTC** — a
+  meia-noite UTC do dia D fica no **fim** do arquivo **D−1**. Sem isso, todas as contagens saem 0.
+- **Não derivar causa** de `stdlist/JM/JobManager_message.log` (só `AWSITA083I` periódico) nem de
+  `<dd>_NETMAN.log` (não escrito no boundary).
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
