@@ -141,6 +141,15 @@ certificate_validate(): SSL certificate validation succeded.
   (sem filtro de `schedtime`). Isto **não** explica por que a ocorrência agendada emite e a de
   operador não — o mecanismo permanece **não estabelecido**.
 
+**Discriminador (teste (c), bounded):** a ocorrência **PLANEJADA** `(0005 09/14)` — a mesma que **não
+executou** no boundary — foi **liberada fora do plan start** (`release`) e **executou** (`SUCC`,
+prova no TWSMERGE) **sem emitir** (trace = 0; `AWSEVP001I`/`AWSAHL004I` = 2/2; nenhum `ManageFilter`/
+reload no MONMAN em ~10 min). ⇒ O discriminador **não** é a origem "planejada", é o **PASS DO PLAN
+START**: "instância de operador (imediata **ou** liberada) não emite" fica **triplamente** suportada
+(2221/2230 imediatas; 2251 liberada; e a própria ocorrência planejada liberada fora do start).
+O par "ocorrida planejada emite" (2/2 em 09/12 e 09/13) deve ser lido como **"a ocorrência planejada
+DO PASS DO PLAN START emite"**.
+
 **Campos do payload do EIF** (evento positivo, 13/09 00:00:07):
 `JobStatusChanged; TimeStamp; EventProvider="TWSObjectsMonitor"; PlanNumber="68"; HostName;
 IPAddress; Workstation="LABPOOL"; JobStreamWorkstation="LABPOOL"; JobStreamId="0AAAAAAAAAAAAAHA";
