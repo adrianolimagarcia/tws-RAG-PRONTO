@@ -1,12 +1,12 @@
 {
-  "total_unique_claims": 7012,
+  "total_unique_claims": 7015,
   "total_synthetic_questions": 16513,
-  "total_evidence_files": 191,
+  "total_evidence_files": 194,
   "distribution_by_category": {
-    "Troubleshooting & Mensagens de Erro": 4691,
-    "Operacao CLI (conman/composer/planman)": 647,
+    "Troubleshooting & Mensagens de Erro": 4692,
+    "Operacao CLI (conman/composer/planman)": 648,
     "API REST v2 & Integracao": 152,
-    "Instalacao & Manutencao": 187,
+    "Instalacao & Manutencao": 188,
     "Arquitetura & Topologia Mesh": 658,
     "Agendamento Avancado & Workflows": 447,
     "Alta Disponibilidade & Failover": 190,

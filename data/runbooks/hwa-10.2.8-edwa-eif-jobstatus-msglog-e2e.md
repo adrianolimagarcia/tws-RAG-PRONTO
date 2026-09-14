@@ -276,6 +276,50 @@ diferente (sem `POOL_*`, que só aparecem a partir de 09/08) — fora da compara
 - **Não derivar causa** de `stdlist/JM/JobManager_message.log` (só `AWSITA083I` periódico) nem de
   `<dd>_NETMAN.log` (não escrito no boundary).
 
+## 5g. Série estendida + cruzamento com atividade de operador + origem do `dR`
+
+**Série estendida (read-only, `traces/`).** Inventário: MDM `20260904…20260914` (09/01–09/03
+ausentes); BMDM `20260908…20260914`. Mesmas janelas e pareamento do §5f. Números completos na
+evidência `hwa-lab-10.2.8-operator-activity-cross-and-dr-origin-0001`.
+
+**Marcador de atividade de operador (calibrado).** Aparece no merge como
+`BATCHMAN:#S…/Operator command: <TIPO>` (ex.: `Operator command: SUBMIT SCHED=…POOL_STREAM[(2221 09/13/26),…]`).
+Contagem **pré-boundary** (tempo `< 20:55` do próprio arquivo) de `Operator command: SUBMIT`:
+MDM `09/04=0, 05=0, 06=1, 07=0, 08=3, 09=8, 10=4, 11=0, 12=1, 13=8`.
+
+**Tabela cruzada** (evento do boundary no arquivo X : MDM READY/dR : BMDM READY/launch/Received : SUBMIT pré):
+
+| arquivo X | MDM READY/dR | BMDM READY/launch/Recvd | SUBMIT pré |
+|---|---|---|---|
+| 09/04 | 0/0 | — | 0 |
+| 09/05 | 2/0 | — | 0 |
+| 09/06 | 0/0 | — | 1 |
+| 09/07 | 1/0 | — | 0 |
+| 09/08 | 0/0 | 0/0/0 | 3 |
+| 09/09 | 0/0 | 4/0/0 | 8 |
+| 09/10 | 3/2 | 0/0/0 | 4 |
+| **09/11** | **13/13** | **13/2/12** | **0** |
+| **09/12** | **13/13** | **13/2/12** | **1** |
+| 09/13 | 0/0 | 20/0/0 | 8 |
+
+**Veredito:** **correlaciona 6/6** na faixa comparável (09/08–09/13, única com `POOL_*`): os dois
+únicos dias com pass **completo** são exatamente os dois com `SUBMIT ≤ 1`, e **todos** os dias com
+`SUBMIT ≥ 3` tiveram pass parcial/vazio. **Correlação não é causalidade** — o mecanismo não está
+estabelecido e a amostra é de 6 dias. **Limites declarados (sem inferir):** (L1) o marcador só vê o
+que o batchman registra como `Operator command:` — `composer`/REST podem não aparecer, logo silêncio
+de log **não** prova ausência de atividade; (L2) 09/04–09/07 são incomparáveis (sem `POOL_*`);
+(L3) sem registro fora do horário de operação. Os 8 `SUBMIT` do arquivo 09/13 são **os meus testes**
+de 13.09 ⇒ a hipótese 3 (efeito-de-operador) fica **suportada por correlação temporal**, com teste
+controlado = janela congelada 14.09 18:00Z → 15.09 00:00Z.
+
+**Origem do `dR` (parcial).** O `dR` é a **anunciação de READY entre master e backup**, bidirecional
+e **não logada no lado emissor**: no MDM, `Received dR: … from cpu MDM_BK` precede imediatamente
+`AWSBHT075I … status to READY` + `AWSBHT054I Resolving a dependency` (13 dR → 13 READY); no BMDM há
+`Received dR: MDM#… from cpu MDM` às **03:00:05** (o pass da meia-noite local do master, 7/dia) e
+`Received dR: MDMDA#JOBS from cpu MDM` (submits REST/API). **Limite (L4):** nenhum dos merges
+registra `Sending dR` ⇒ **o que dispara o envio não é observável por log read-only**; o gatilho do
+`dR` permanece **NÃO ESTABELECIDO** e exige mutação (Fase 2, não autorizada até o desfecho de C).
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
