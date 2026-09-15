@@ -507,8 +507,8 @@
       "expected_runbook": "hwa-10.2.8-container-rhel9-lab.md",
       "top_3_retrieved": [
         "hwa-themaster-finalpostreports-0015",
-        "hwa-10.2.8-incident-checksync-0028",
-        "hwa-lab-10.2.8-planman-showinfo-checksync-auditlog-0003"
+        "hwa-lab-10.2.8-esteira-unblocked-plan-advanced-run74-confirm74-0001",
+        "hwa-10.2.8-incident-checksync-0028"
       ]
     },
     {

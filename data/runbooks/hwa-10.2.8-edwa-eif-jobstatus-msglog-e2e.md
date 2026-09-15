@@ -828,3 +828,52 @@ canal de submit o aceita.
 instâncias retidas às `00:00Z`) — o mecanismo que **nunca foi observado**. **Não** reproduz o boundary de
 produção puro: as instâncias são **submetidas por nós**, não os alvos de produção originais.
 Nenhuma causalidade é afirmada; congelamento de mutação de plano/engine vigente.
+
+---
+
+## 5r. Ingestão das man pages do produto — o conhecimento entrou, o número **piorou** (medido)
+
+**Objetivo.** As man pages do produto (`/opt/hwa/TWS/man/{composer,conman}/cat1/`, 95 arquivos) tinham
+**0 referências no loader** — a fonte autoritativa da sintaxe estava fora do corpus. A tese era que isso
+explicava o buraco de recall da fatia procedimental.
+
+**O que foi entregue.** `scripts/extract_man_pages.py` (versionado) lê as páginas do container e gera
+`data/knowledge/man-pages-derived.jsonl` — 95 registros (composer 32 + conman 63) com paráfrase PT-BR,
+sintaxe essencial e citação curta; 17 marcados `observed_in_lab`. Mais
+`data/knowledge/lab-procedures-derived.jsonl` (item 2): 17 procedimentos desta sessão. **Licença respeitada**:
+o texto cru não entra no git — só o script e o derivado.
+
+**Armadilha de parser (corrigida, vale registrar).** A primeira versão citava a linha de **permissão**
+("You must have rerun access…") porque o filtro de tamanho descartava a linha semântica **curta**
+("Reruns a job.", 13 chars) e **não há seção `Authorization`** em várias páginas. E a extração de sintaxe
+pegava só a **primeira** seção `Syntax`: em `submit.1` isso omitia a variante **SCHED** — justamente o `sbs`
+usado no lab. Auditoria final: 0/95 com padrão de permissão.
+
+**Medição (HEAD `fded8c4`, `PYTHONHASHSEED=0`).**
+
+| cenário | n_docs | @1 | @5 | @10 | MRR |
+|---|---|---|---|---|---|
+| **default (fonte OFF)** | 6950 | **53/70** | 65 | 68 | **0,8214** |
+| abatido (`RAG_DROP_SYNTHETIC=1`) | 6950 | **52/70** | 64 | 68 | **0,8128** |
+| fonte **ON** | 7062 | **52/70** | 64 | 67 | **0,8105** |
+| ON + abatido | 7062 | **51/70** | 64 | 67 | **0,8034** |
+
+No benchmark cego v3 (262 perguntas): `@1` **183/262 → 180/262**; por fatia A `97/107 → 96/107`,
+B `80/140 → 78/140`, D `6/15 → 6/15`. **25 perguntas mudaram de rank e TODAS pioraram — 0 melhoraram.**
+
+**Mecanismo (diff por pergunta, não é não-determinismo).** Em `eval-0069` o top-3 passou a ser
+`[man-conman-showjobs, distributed-conman-showjobs, man-conman-jobselect]` e o claim específico esperado
+(`showjobs-wildcard-ws-filter-0111`) caiu para **19**. Em `eval-0031`, um doc do item 2
+(`proc-esteira-cadeia-final`) tomou o rank 1 do `finalpostreports` esperado. 22 das 70 perguntas têm algum
+doc derivado no top-3. As man pages são **vizinhas semânticas genérico-autoritativas** dos claims específicos
+do lab e ganham deles — **o mesmo padrão genérico × específico** já visto na adjudicação dos 17 misses.
+
+**Conclusão.** A ingestão **captura o conhecimento certo** mas **não melhora o recall medido**: nenhum
+benchmark atual pergunta a sintaxe, então o benefício é invisível e o custo é visível. **Stop criterion do
+vigia disparou** ("inflar o corpus a ponto de mover o número das 70 por competição de rank") e o caso foi
+reportado. Boost/rerank **não** foram tocados.
+
+**Estado deixado.** A fonte entra no loader atrás de `RAG_INGEST_DERIVED` (**default OFF**, o padrão
+`RAG_DROP_*` já usado no arquivo), para não deixar um baseline regredido em silêncio. Ligar é decisão
+explícita — e o ideal é existir uma **fatia de benchmark que pergunte a sintaxe**, senão o ganho não é medível.
+

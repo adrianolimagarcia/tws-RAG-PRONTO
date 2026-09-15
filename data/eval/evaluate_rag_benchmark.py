@@ -29,6 +29,14 @@ MSGCAT_FILE = os.path.join(REPO_DIR, "data", "evidence",
                            "official-verification-2026-09-11-message-catalog-full.jsonl")
 LAB_FILES = sorted(glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl")))
 RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
+# 7. Conhecimento DERIVADO (adicionado explicitamente: glob nao pega arquivo novo):
+#    (a) man-pages-derived.jsonl  — sintaxe/parafrase PT-BR das 95 man pages do produto,
+#        gerado por scripts/extract_man_pages.py (texto cru NAO versionado — licenca);
+#    (b) lab-procedures-derived.jsonl — procedimentos operacionais observados no lab.
+KNOWLEDGE_DERIVED = [
+    os.path.join(REPO_DIR, "data", "knowledge", "man-pages-derived.jsonl"),
+    os.path.join(REPO_DIR, "data", "knowledge", "lab-procedures-derived.jsonl"),
+]
 
 SYNONYMS = {
     "sfinal": ["makeplan", "switchplan", "startappserver", "checksync", "createpostreports", "updatestats", "2359", "final", "d+1"],
@@ -301,6 +309,40 @@ def load_documents():
                 })
         except Exception:
             pass
+
+    # 7. Conhecimento DERIVADO — man pages do produto (sintaxe/parafrase PT-BR) e
+    #    procedimentos operacionais do lab. Fonte adicionada EXPLICITAMENTE porque o
+    #    glob das outras fontes nao enxerga arquivo novo.
+    #
+    #    DEFAULT OFF — medido em 2026-09-15 (95 man pages + 17 procedimentos = 112 docs):
+    #      com a fonte ON : corpus 7062 | 70q @1 52/70 @10 67/70 MRR 0,8105
+    #                       v3  262q @1 180/262 (A 96/107 B 78/140 D 6/15), 25 pioraram, 0 melhoraram
+    #      com a fonte OFF: corpus 6950 | 70q @1 53/70 @10 68/70 MRR 0,8214
+    #                       v3  262q @1 183/262 (A 97/107 B 80/140 D 6/15)
+    #    O custo NAO e ruido: as man pages sao vizinhas semanticas generico-autoritativas
+    #    dos claims especificos do lab e ganham deles no ranking (competicao de rank).
+    #    O conhecimento e correto, mas nenhum benchmark atual pergunta a sintaxe — ligar
+    #    a fonte exige decisao explicita (e idealmente uma fatia de benchmark que a peca).
+    if os.environ.get("RAG_INGEST_DERIVED") == "1":
+        for kf in KNOWLEDGE_DERIVED:
+            if not os.path.exists(kf):
+                continue
+            for line in open(kf, encoding="utf-8"):
+                if not line.strip():
+                    continue
+                try:
+                    c = json.loads(line)
+                except Exception:
+                    continue
+                cid = c.get("claim_id")
+                if not cid:
+                    continue
+                text = " ".join(
+                    str(c.get(k, "")) for k in
+                    ("claim", "syntax", "supporting_quote", "tool", "command", "source_title")
+                )
+                docs.append({"id": cid, "type": c.get("kind", "derived_knowledge"),
+                             "text": text, "tokens": tokenize(text)})
 
     return docs
 
