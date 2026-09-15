@@ -435,11 +435,16 @@ snapshot `ha_snap_20260914-0035` (3 imagens, verificado) para restauração tota
 `/tmp/ha_fm/fase2/pre_*.txt`.
 
 **Métrica.** Re-rodada em **`(0c35f01, 6910 docs)`** — HEAD capturado no lançamento do avaliador
-(antes dos commits desta fase); o corpus tem o mesmo tamanho (`6910`) também em `82b03c2`, ou seja os
-artefatos desta fase não entram no glob indexado. Agregados **idênticos** ao baseline commitado —
+(antes dos commits desta fase). Agregados **idênticos** ao baseline commitado —
 `@1 53/70 (75,7%)` · `@3 61/70 (87,1%)` · `@5 65/70 (92,9%)` · `@10 68/70 (97,1%)` · `MRR 0,8214`.
 Apenas o metadado `expected_claims` de 31/70 entradas difere (resolução de GT dependente do corpus).
 Baseline intacto.
+
+> **CORREÇÃO (2026-09-15, após a re-rodada de `173096f`):** ao contrário do que afirmei aqui, os
+> artefatos desta fase **ENTRAM** no corpus indexado — a re-rodada em `173096f` reportou
+> **`6919 docs`** (não `6910`). O `n_docs` **não é invariante** aos artefatos de lab; o que se mantém é o
+> **agregado**: `@1 53/70` · `@10 68/70` · `MRR 0,8214` — idêntico em `0c35f01` (6910 docs) e em
+> `173096f` (6919 docs). Citar sempre `(HEAD, n_docs)` medidos **na própria execução**.
 
 **Limites declarados.** (i) A divergência **não** está provada como causa do boundary anômalo — é a causa
 candidata forte porque explica a recusa das operações de plano e a estagnação do `Plan last update`;
@@ -501,3 +506,9 @@ zero** (`Production plan end time: (same as the start time of the last extension
 **Reversão:** `ws_mdm.def.PRE-M1` e `ws_mdmbk.def.PRE-M1` (definições completas pré-mutação, extraídas pelo
 próprio produto, re-aplicáveis pelo mesmo `add`); snapshot `ha_snap_20260914-0035`. PostgreSQL não
 tocado; Sfinal intacto; nada fora do lab.
+
+**Métrica (re-rodada após a mutação, citando HEAD e n_docs medidos na execução):**
+**`(173096f, 6919 docs)`** → `@1 53/70 (75,7%)` · `@3 61/70 (87,1%)` · `@5 65/70 (92,9%)` ·
+`@10 68/70 (97,1%)` · `MRR 0,8214` — **agregados idênticos** ao baseline. A mutação M1 é do lab TWS e não
+toca o corpus do RAG; o `n_docs` subiu de `6910` (execução em `0c35f01`) para `6919` porque **os artefatos
+desta fase entram no glob indexado** — o agregado é que se mantém estável.
