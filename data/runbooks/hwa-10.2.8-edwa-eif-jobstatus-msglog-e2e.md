@@ -320,6 +320,48 @@ e **não logada no lado emissor**: no MDM, `Received dR: … from cpu MDM_BK` pr
 registra `Sending dR` ⇒ **o que dispara o envio não é observável por log read-only**; o gatilho do
 `dR` permanece **NÃO ESTABELECIDO** e exige mutação (Fase 2, não autorizada até o desfecho de C).
 
+## 5h. Desfecho da captura C (boundary de produção de 09/15) — anomalia repetida com janela limpa
+
+**Janela congelada confirmada limpa:** `Operator command:` no arquivo `20260914_TWSMERGE.log` do MDM em
+todo o 14.09 antes do boundary = **0**. O congelamento valeu de 14.09 ~11:20Z até o boundary de 00:00Z
+de 15.09 ⇒ o desfecho é um **teste controlado**.
+
+**Desfecho (B) — anomalia REPETIDA.** MDM na janela de produção (20:5x/21:0x BR de 14.09): **0 READY,
+0 dR, 0 AWSBHT036I** (contra 13/13/2 nos dias normais). BMDM na janela de 00:00:0x UTC de 15.09:
+**20 READY, 0 launch, 0 Received** — repetição exata de 09/14. Interseção (discriminador
+calendar-independent): BMDM readiou os pools (1/1), **MDM 0/0**.
+
+**O pass da meia-noite LOCAL do master FUNCIONA** (captura D, 03:01:50Z; controle embutido do método
+no pass de 14.09 = 462 linhas / 21 READY / 20 `AWSBHT036I`, exatamente o esperado): alvo de 15.09 =
+292 linhas / **21 READY / 12 EXEC / 10 SUCC / 13 AWSBHT036I**, e a instância `#POOL_STREAM 0005 09/15`
+chegou a **SUCC às 03:00**. Logo o processamento de plano do master está vivo — **o que falha é
+especificamente o boundary de PRODUÇÃO de 00:00Z**.
+
+**Assinatura por dia na janela de produção** (linhas/BATCHMAN/MAILMAN/READY/dR):
+
+| dia | linhas | BATCHMAN | MAILMAN | READY | dR |
+|---|---|---|---|---|---|
+| 09/11 | 77 | 77 | **0** | 13 | 13 |
+| 09/12 | 79 | 79 | **0** | 13 | 13 |
+| 09/13 | 22 | 2 | **20** | 0 | 0 |
+| 09/14 | 22 | 2 | **20** | 0 | 0 |
+
+Nos dias **normais** a janela é 100% BATCHMAN (o próprio processamento do boundary). Nos **anômalos** o
+processamento é substituído por **20 falhas de MAILMAN** no link do AGT1 (`ipc_send_bytes … Connection
+refused`, `AWSBCV035W Mailman was unable to link to workstation: AGT1`) e **não há dR nem READY**.
+
+**O que discrimina não é o UNLINK** (ele aparece em 09/12, 09/13 e 09/14) **e sim a falha de relink que
+se segue a ele** a partir de 09/13. Diferença de origem: em 09/12 o `UNLINK` vem `from workstation
+MDM_BK`; em 09/14 vem `from workstation MDM`. O `sc @` registra **run 69 desde 09/12/26 23:59** —
+imediatamente antes do primeiro boundary anômalo (09/13 21:00 BR).
+
+**Conclusões.** (1) **H\*-A (efeito-de-operador) REFUTADA**: a anomalia persistiu por 3 boundaries
+consecutivos com **zero** atividade de operador na janela. (2) O estado é **persistente desde 09/13
+21:00 BR**, não intermitente, co-localizado com o run 69. (3) Mecanismo candidato: o **relink do AGT1
+falha no boundary de produção** e aborta o processamento do dia, enquanto o pass local funciona ⇒
+aponta para **H\*-B (estado local do nó/link)**, não para operador nem calendário. O gatilho interno do
+relink permanece **não observável por log** (limite L4, §5g).
+
 ## 6. Reversão
 
 Procedimento é **read-only** — não há mutação a reverter. Se instâncias de teste ficarem
