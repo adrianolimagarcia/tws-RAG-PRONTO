@@ -1,0 +1,73 @@
+# Pré-registro — Fase 2: sincronização do plano para descartar o objeto legado AGT1
+
+**Autorização:** `[VIGIA-ARQUITETO]` — fase 2 autorizada como mutação reversível no lab, reutilizando o
+snapshot `ha_snap_20260914-0035`; proibido tocar o PostgreSQL compartilhado diretamente e destruir o
+Sfinal; pré-registro de comandos/stop criterion/mapa de reversão obrigatório.
+
+**Objetivo do teste:** fazer o **plano** descartar o registro estagnado do `AGT1` (run 35), que já foi
+removido do **modelo** (composer) pela M-C mas continua referenciado pelo plano — e então observar se
+os ciclos de relink cessam e se o boundary de produção normaliza.
+
+**ADENDO (após a execução do resync, que se mostrou NEUTRO):** o `planman resync` carrega o Symphony
+**PARA** a base (direção Symphony→DB) e não descartou o AGT1 do plano. A causa raiz do estado foi então
+encontrada na própria documentação do lab (`data/runbooks/hwa-10.2.8-stuck-plan-recovery.md`):
+*"o planner recusa uma segunda operação de plano enquanto uma anterior está PENDENTE; `planman ext`/`crt`
+cria um **Symnew pendente** (não ativado); um segundo `ext`/`crt` SEM `SwitchPlan` entre eles retorna
+`AWSJPL017E`... um `JnextPlan` interrompido no meio deixa um Symnew pendente, bloqueando operações
+seguintes **até `planman unlock` ou um novo ciclo completo**"*. O estado medido — **`Run number 70` ≠
+`Confirm run number 69`** — é exatamente o estado pendente, e o `checklist-jnextplan-eol.md` exige
+`Run number == Confirm run number` como **pré-condição** de qualquer JnextPlan. Portanto a extensão
+autorizada está **bloqueada** enquanto o pendente existir (retornaria AWSJPL017E).
+
+**Mecanismo executado (documentado, primeiro passo do runbook):** `planman unlock`
+(`AWSJPL504I` — libera lock órfão e limpa o flag *did not complete*), seguido de verificação. O runbook
+afirma: *"`planman unlock` sozinho resolve `AWSJPL017E` na grande maioria dos casos"*.
+Se o run continuar 70≠69 após o unlock, o próximo passo documentado é o ciclo `planman ext -days N`
+(`AWSJCL062I`) e, se necessário, a troca do Symnew pelo plano ativo (`SwitchPlan`).
+
+## Comandos (na ordem exata)
+
+1. `planman unlock` — primeiro passo documentado (`AWSJPL504I` esperado).
+2. Validação imediata: `planman showinfo` (esperado `Run number == Confirm run number`) e
+   `conman "sc @"` (o `AGT1` deve sumir do plano após a normalização).
+3. Observação: os ciclos de relink (`grep 'unable to link to workstation' <merge do dia>`) devem cessar.
+4. Se necessário e autorizado: `planman ext -days N` (`AWSJCL062I`) — extensão de plano.
+
+## Estado capturado ANTES (pré-condições verificadas)
+
+- `planman showinfo`: `Plan last update 09/12/2026 23:59`; `Run number 70`; `Confirm run number 69`.
+- `conman "sc @"`: `AGT1` presente (1 ocorrência, run 35).
+- Modelo: `composer display workstation=AGT1` → **0 objetos** (removido pela M-C).
+- Snapshot `ha_snap_20260914-0035`: **presente** (3 imagens: tws-hwa `45ead180ad56`, tws-bmdm
+  `005dccc5b2be`, tws-agent `45f7c268f77c`).
+- Backup adicional do plano: `Symphony.pre-extensao` e `planbox.msg.pre-extensao` copiados dentro do
+  container (`/tmp/ha_fm/fase2/`).
+- Captura `vigia-h-0916`: **active** (preservada).
+
+## Stop criterion (parar e escalar)
+
+- **S1** qualquer passo exigir acesso direto ao PostgreSQL compartilhado ou destruir o Sfinal.
+- **S2** qualquer caminho restante for irreversível.
+- **S3** o lab sair de estado saudável (engine/planman/plano inacessível) e a reversão conhecida não restaurar.
+- **S4** conflito de estado: a operação deixar o plano inconsistente (ex.: `sc @` falhando) sem reversão.
+- **S5** o snapshot estiver ausente/corrompido (verificado: presente).
+
+## Mapa de reversão
+
+1. **Primário (cirúrgico):** parar o engine (`conman "stop"` / `conman "stop&link"` conforme o caso),
+   restaurar `/opt/hwa/TWSDATA/Symphony` e `planbox.msg` a partir dos backups `*.pre-extensao`, e
+   reiniciar o engine (`conman "start&link @!/@/@;noask"`). Restaura o plano ao estado imediatamente
+   anterior à sincronização.
+2. **Secundário (total):** recriar o container `tws-hwa` a partir da imagem do snapshot
+   `ha_snap_20260914-0035_tws-hwa:latest` — reverte o lab ao estado de 2026-09-14 00:35, incluindo a
+   própria M-C.
+3. **Terceiro:** a remoção do AGT1 do modelo (M-C) é reversível por `composer add` com as definições
+   integrais capturadas em `/tmp/ha_fm/fase2/pre_*.txt`.
+
+## O que NÃO será feito
+
+- Não tocar o PostgreSQL compartilhado diretamente.
+- Não destruir/recriar o Sfinal.
+- Não apagar o plano corrente.
+- Não usar `conman switchmgr` como probe.
+- Não alterar o baseline/avaliador do RAG; a métrica commitada segue intacta.
