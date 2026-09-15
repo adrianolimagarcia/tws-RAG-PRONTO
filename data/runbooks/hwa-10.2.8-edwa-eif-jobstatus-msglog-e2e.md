@@ -634,3 +634,42 @@ mas **não purga as instâncias** — elas ficam presas em `READY` (`AGT1#CROSS_
 (ii) causalidade do boundary anômalo segue **não provada**. **Proibições respeitadas:** sem `date -s`/`timens`,
 sem `planman reset|crt`, sem `JnextPlan`, sem `SwitchPlan` manual, sem `conman sbs`, SGBD compartilhado
 intocado, `Sfinal` intacto.
+
+## 5m. Boundary de 16.09 — primeira leitura PREMATURA (ramo `c` da árvore pré-registrada)
+
+> Evidência: `lab-validation-2026-09-15-boundary-read-premature-branch-c.jsonl` (`result=PARTIAL`, `risk=read_only`).
+> Árvore: `docs/lab-protocols/preregistration-2026-09-15-POS-boundary-16-09-decision-tree.md`.
+
+**Fato decisivo (medido, não inferido).** A captura entregue abria com
+`H: iniciado 2026-09-15 14:18:20 UTC | alvo epoch=1789481898 (2026-09-15 14:18:18 UTC)` — o **alvo usado foi
+o instante atual**, não o epoch do boundary. O boundary de produção de 16.09 é o epoch **`1789516800` =
+`2026-09-16 00:00:00 UTC` = `2026-09-15 21:00:00 BR`**; na leitura eram `2026-09-15 14:19:15 UTC` (11:19 BR),
+**faltando 9,68 h**.
+
+**Consequência.** A janela vazia (0 linhas / 0 READY / 0 `dR` / 0 `AWSBHT036I` / 0 BATCHMAN / 0 MAILMAN) **não é
+anomalia nem normalidade: é ausência do evento**. É o ramo **(c)** — *"0 linhas na janela → leitura cedo
+demais → RE-LER no tick seguinte, NÃO concluir NEGATIVO"*. Não é o ramo (d): o arquivo
+`20260915_TWSMERGE.log` **existe** (325.171 B, modificado 10:59 BR) e só rola em ~03:05Z de 16.09 — logo o
+boundary de 00:00Z **será gravado nele**, e as capturas armadas que o leem estão corretas.
+
+**Nenhuma conclusão** de normalização ou de persistência da anomalia é emitida.
+
+**Estado pré-boundary registrado (estado, não desfecho):**
+
+| item | valor |
+|---|---|
+| `AGT1` no modelo / no plano | **0 / 0** (saiu dos dois; as **28 instâncias** seguem: 8 READY, 20 HOLD) |
+| avisos `AGT1` em 15.09 | **130** `is NOT a AGENT` · **64** `unable to link` (registros do plano ainda dirigem tentativas) |
+| master | `MDM 75 *UNIX MASTER ... 09/15/26 10:57` |
+| alvos do boundary | `LABPOOL#POOL_STREAM 2105 09/15 HOLD 10(09/16)(00:00)` (e `2105 09/16 HOLD 10(09/17)`) |
+
+**Critério reafirmado.** Os controles históricos `13 READY / 13 dR / 0 MAILMAN` (11–12.09) e
+`0 READY / 20 MAILMAN` (13–14.09) estão **OBSOLETOS**: 2 das 13 instâncias do controle eram streams do `AGT1`
+(removido do modelo pela M-C) e a composição mudou (as instâncias vigentes de `2105 09/15` são **20**, com
+prefixos `LABPOOL#`/`MDM#` e streams `MDM#JS_CAL_*`/`MDM#JS_P_*` inexistentes no controle). Comparar
+**conjunto × conjunto** (captura `vigia-boundary-set` → `/tmp/ha_fm/fase4/boundary_0916_SET.txt`), nunca
+contagem × contagem; contagem de estado sempre com **total e por estado**.
+
+**Limites.** O boundary segue **não observado** — a leitura correta ocorre ~5 min após `00:00Z` de 16.09;
+nenhuma causalidade é afirmada; o congelamento de mutação permanece vigente; as três capturas
+(`vigia-h-0916`, `vigia-chain-0916`, `vigia-boundary-set`) seguem **ACTIVE** com os alvos corretos.
