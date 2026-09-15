@@ -48,6 +48,10 @@ SELF=':(exclude)scripts/publish.sh'
 # --- padroes -----------------------------------------------------------------
 # Os literais sao MONTADOS EM PARTES de proposito: assim o proprio fonte nunca
 # contem a forma exata que procura (nem dispara redatores/varreduras de terceiros).
+# publish-patterns:start — unica regiao do repo isenta da varredura (as proprias
+# definicoes dos padroes; um regex de credencial casa consigo mesmo). O RESTO do
+# arquivo e varrido normalmente: excluir o script INTEIRO esconderia um segredo
+# real dentro dele.
 P_PEM="${P_PEM1:-$(printf '%s' '-----BE' 'GIN ')}"
 P_PEME="${P_PEM2:-$(printf '%s' 'PRIVA' 'TE KEY-----')}"
 P_GH="${P_GH:-$(printf '%s' 'gh' '[pousr]' '_')}"
@@ -63,6 +67,7 @@ PATTERNS=(
   'credencial_em_url://[^/@[:space:]]+:[^/@[:space:]]+@'
   'header_auth:(Bearer|Basic)[[:space:]]+[A-Za-z0-9+/=_-]{16,}'
 )
+# publish-patterns:end
 
 # --- auto-teste --------------------------------------------------------------
 # Um padrao que nao casa e um padrao QUEBRADO: a varredura passaria por engano.
@@ -121,7 +126,9 @@ if [ "$NCOMMITS" -eq 0 ]; then
   exit 0
 fi
 
-# ATENCAO (quatro defeitos reais ja corrigidos aqui):
+#  5. Excluir o script INTEIRO da varredura escondia segredo real dentro dele — e o
+#     conteudo dele E publicado. A isencao agora e so o bloco publish-patterns:*.
+# ATENCAO (cinco defeitos reais ja corrigidos aqui):
 #  1. `git grep <padrao> A..B` NAO funciona — git grep quer TREE/commit, nao
 #     intervalo; com range ele devolve vazio e a varredura PARECE limpa.
 #  2. `git grep <padrao> <rev>` varre a ARVORE INTEIRA daquele commit, inclusive
@@ -135,11 +142,18 @@ fi
 REVS=$(git rev-list "$RANGE")
 
 # Extrai rev:arquivo:linha:conteudo das linhas ADICIONADAS de um commit.
+# Unica isencao: o bloco delimitado por publish-patterns:start/end (as proprias
+# definicoes dos padroes). Excluir o arquivo INTEIRO esconderia segredo real nele.
 extract_added() {  # $1 = rev
   git show --format= --no-color --unified=0 "$1" 2>/dev/null | awk -v rev="$1" '
     /^\+\+\+ b\// { f = substr($0, 7); next }
     /^@@/ { if (match($0, /\+[0-9]+/)) n = substr($0, RSTART + 1, RLENGTH - 1) + 0; next }
-    /^\+/ { if (f != "scripts/publish.sh") print rev ":" f ":" n ":" $0; n++; next }
+    /^\+/ {
+      if ($0 ~ /publish-patterns:start/) { inpat = 1; n++; next }
+      if ($0 ~ /publish-patterns:end/)   { inpat = 0; n++; next }
+      if (!inpat) print rev ":" f ":" n ":" $0
+      n++; next
+    }
   '
 }
 
