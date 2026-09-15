@@ -711,3 +711,36 @@ LABPOOL#POOL_STREAM[(2105 09/15/26),(0AAAAAAAAAAAAAHD)]` (seletor validado read-
 medição do *pass* de ready do boundary, que segue **NÃO OBSERVADO** (leitura válida ~5 min após `00:00Z` de
 16.09, coberta pelas três capturas armadas). **Nenhuma causalidade é afirmada**; congelamento de mutação de
 plano/engine vigente (nada de `ext`/`SwitchPlan`/`composer`/purga).
+
+## 5o. Boundary acelerado em lote — 7/10 SUCC e as instâncias órfãs do `AGT1` são INERTES
+
+> Segunda ordem direta do dono. Evidência: `lab-validation-2026-09-15-boundary-accelerated-batch-agt1-inert.jsonl`
+> (`result=SUCCESS`, `risk=mutating`). Pré-estado em `/tmp/ha_fm/fase5b/`.
+
+Lote de **10 dos 19** alvos em HOLD liberados por `rs <stream>(2105 09/15);at;noask` (todos aceitos:
+`Command forwarded to batchman`), preservando **9** para o boundary das 21:00 BR.
+
+| alvo | desfecho |
+|---|---|
+| `LABPOOL#POOL_BALANCING` · `MDM#FRENTE1_STREAM` · `MDM#JS_ALTJOB_TEST` · `MDM#JS_CAL_BASE` · `MDM#JS_CAL_FREE` · `MDM#JS_CAL_NEXT` · `MDM#JS_CAL_PREV` | **SUCC** (7) |
+| `AGT1#CROSS_STREAM` · `AGT1#FTA_JOBSTREAM` | **READY — sem tentativa de launch e sem erro** |
+| `MDM#JS_ALTJOB3` | **READY** (causa não investigada) |
+
+**Estado dos alvos de boundary** (total **e** por estado): **20 totais = 8 SUCC + 3 READY + 9 HOLD**
+(os 7 do lote + o `LABPOOL#POOL_STREAM` do probe anterior = 8 SUCC).
+
+**Achado novo — as instâncias órfãs do `AGT1` são INERTES.** Liberadas da dependência de tempo, as duas
+instâncias do `AGT1` foram para `READY` **sem nenhuma tentativa de lançamento e sem erro** (`grep 'AGT1'`
+na janela do lote: **vazio**). É coerente com a estação estar ausente dos **dois** lados: sem definição de
+workstation no plano, o batchman não tem onde lançar e **não reclama** — os registros ficam parados em
+`READY`, **sem dano ao plano**. Não se confirma, portanto, que os órfãos do `AGT1` atrapalhem a execução.
+
+**Erros de plano:** `AWSJPL004E` = **0** e `AWSJPL017E` = **0**.
+
+**Medida preservada:** **9 alvos em HOLD** (`MDM#JS_LOGON_TEST`, `MDM#JS_P_29030/7069/9574`,
+`MDM#JS_PROMPT_RUN`, `MDM#JS_VAR_RUN`, `MDM#JS_VARTABLE_ERR/OK`, `TWS-AGENT_1#DYN_JOBSTREAM`) — o boundary
+segue comparável por **conjunto**, agora com 9 esperadas.
+
+**Limites.** O *pass* automático do boundary segue **não observado** e **não é antecipável** por comando de
+produto; antecipou-se o **efeito** em 11 dos 20 alvos. Nenhuma causalidade é afirmada; congelamento de
+mutação de plano/engine vigente.
