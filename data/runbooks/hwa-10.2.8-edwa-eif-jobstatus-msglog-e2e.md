@@ -434,9 +434,12 @@ desenho enquanto o pendente existir.
 snapshot `ha_snap_20260914-0035` (3 imagens, verificado) para restauração total; definições da M-C em
 `/tmp/ha_fm/fase2/pre_*.txt`.
 
-**Métrica.** Re-rodada em `(82b03c2, 6910 docs)`: agregados **idênticos** — `@1 53/70 (0,7571)` ·
-`@10 68/70 (0,9714)` · `MRR 0,8214`. Apenas o metadado `expected_claims` de 31/70 entradas difere
-(resolução de GT dependente do corpus). Baseline intacto.
+**Métrica.** Re-rodada em **`(0c35f01, 6910 docs)`** — HEAD capturado no lançamento do avaliador
+(antes dos commits desta fase); o corpus tem o mesmo tamanho (`6910`) também em `82b03c2`, ou seja os
+artefatos desta fase não entram no glob indexado. Agregados **idênticos** ao baseline commitado —
+`@1 53/70 (75,7%)` · `@3 61/70 (87,1%)` · `@5 65/70 (92,9%)` · `@10 68/70 (97,1%)` · `MRR 0,8214`.
+Apenas o metadado `expected_claims` de 31/70 entradas difere (resolução de GT dependente do corpus).
+Baseline intacto.
 
 **Limites declarados.** (i) A divergência **não** está provada como causa do boundary anômalo — é a causa
 candidata forte porque explica a recusa das operações de plano e a estagnação do `Plan last update`;
