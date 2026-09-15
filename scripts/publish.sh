@@ -121,7 +121,7 @@ if [ "$NCOMMITS" -eq 0 ]; then
   exit 0
 fi
 
-# ATENCAO (tres defeitos reais ja corrigidos aqui):
+# ATENCAO (quatro defeitos reais ja corrigidos aqui):
 #  1. `git grep <padrao> A..B` NAO funciona — git grep quer TREE/commit, nao
 #     intervalo; com range ele devolve vazio e a varredura PARECE limpa.
 #  2. `git grep <padrao> <rev>` varre a ARVORE INTEIRA daquele commit, inclusive
@@ -133,26 +133,33 @@ fi
 # awk so para EXTRAIR rev:arquivo:linha:conteudo das linhas ADICIONADAS, e o
 # casamento em grep -E. O `cut` descarta o conteudo: o valor nunca e impresso.
 REVS=$(git rev-list "$RANGE")
+
+# Extrai rev:arquivo:linha:conteudo das linhas ADICIONADAS de um commit.
+extract_added() {  # $1 = rev
+  git show --format= --no-color --unified=0 "$1" 2>/dev/null | awk -v rev="$1" '
+    /^\+\+\+ b\// { f = substr($0, 7); next }
+    /^@@/ { if (match($0, /\+[0-9]+/)) n = substr($0, RSTART + 1, RLENGTH - 1) + 0; next }
+    /^\+/ { if (f != "scripts/publish.sh") print rev ":" f ":" n ":" $0; n++; next }
+  '
+}
+
 scan_range() {  # $1 = regex ; imprime rev:arquivo:linha (NUNCA o conteudo)
   local rev
-  for rev in $REVS; do
-    git show --format= --no-color --unified=0 "$rev" 2>/dev/null | awk -v rev="$rev" '
-      /^\+\+\+ b\// { f = substr($0, 7); next }
-      /^@@/ { if (match($0, /\+[0-9]+/)) n = substr($0, RSTART + 1, RLENGTH - 1) + 0; next }
-      /^\+/ { if (f != "scripts/publish.sh") print rev ":" f ":" n ":" $0; n++; next }
-    '
-  done | grep -E -e "$1" | cut -d: -f1-3 | sort -u
+  for rev in $REVS; do extract_added "$rev"; done | grep -E -e "$1" | cut -d: -f1-3 | sort -u
 }
 
 HITS=0
 echo "publish: varredura de segredo (mostra TIPO rev:arquivo:linha, nunca o valor)"
-# Controle POSITIVO: sem isto, "0 hits" pode significar "varredura quebrada",
-# nao "limpo". Prova que o git grep esta de fato lendo o range.
-if [ -z "$(scan_range 'tws' | head -1)" ]; then
-  echo "publish: ABORTADO — controle positivo falhou: a varredura nao le o range." >&2
+# Controle POSITIVO do MECANISMO: a extracao das linhas adicionadas tem de
+# produzir saida. Sem isto, "0 hits" pode significar "extracao quebrada".
+# NAO ancore o controle em CONTEUDO (ex.: uma palavra que "deve" existir): da
+# falso negativo quando o range so mexe em arquivos excluidos, como o proprio
+# script (medido: um commit que so alterava o publish.sh abortou o controle).
+if [ -z "$(for rev in $REVS; do extract_added "$rev"; done | head -1)" ]; then
+  echo "publish: ABORTADO — controle positivo falhou: a extracao nao produz linhas adicionadas." >&2
   exit 3
 fi
-echo "publish: controle positivo OK (o range esta sendo lido)."
+echo "publish: controle positivo OK (a extracao le as linhas adicionadas do range)."
 for entry in "${PATTERNS[@]}"; do
   name="${entry%%:*}"; rx="${entry#*:}"
   found=$(scan_range "$rx")
