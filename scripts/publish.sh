@@ -43,7 +43,10 @@ done
 
 # Este proprio arquivo contem os padroes da varredura: fica fora do escopo,
 # senao ele se auto-acusa.
-SELF=':(exclude)scripts/publish.sh'
+# Path do proprio script. Usado para prender as isencoes AO ARQUIVO: sem isso, a
+# isencao de fixture casava por CONTEUDO em qualquer arquivo do repo (defeito 7 —
+# fail-OPEN, a direcao perigosa).
+SELF_PATH='scripts/publish.sh'
 
 # --- padroes -----------------------------------------------------------------
 # Os literais sao MONTADOS EM PARTES de proposito: assim o proprio fonte nunca
@@ -142,7 +145,10 @@ fi
 #     scanner abortava no seu conteudo (falso POSITIVO). Corrigido nas duas pontas:
 #     fixtures montadas em partes (como o s_gh) E isencao estreita das linhas de
 #     atribuicao de fixture, para que re-auditar o historico ja publicado passe.
-# ATENCAO (seis defeitos reais ja corrigidos aqui):
+#  7. A isencao nova NAO estava presa ao ARQUIVO: casava por CONTEUDO em qualquer
+#     arquivo do repo (fail-OPEN — o oposto do 6). Agora as DUAS isencoes exigem
+#     f == self. A variavel SELF (pathspec) tinha ficado morta: removida.
+# ATENCAO (sete defeitos reais ja corrigidos aqui):
 #  1. `git grep <padrao> A..B` NAO funciona — git grep quer TREE/commit, nao
 #     intervalo; com range ele devolve vazio e a varredura PARECE limpa.
 #  2. `git grep <padrao> <rev>` varre a ARVORE INTEIRA daquele commit, inclusive
@@ -159,17 +165,15 @@ REVS=$(git rev-list "$RANGE")
 # Unica isencao: o bloco delimitado por publish-patterns:start/end (as proprias
 # definicoes dos padroes). Excluir o arquivo INTEIRO esconderia segredo real nele.
 extract_added() {  # $1 = rev
-  git show --format= --no-color --unified=0 "$1" 2>/dev/null | awk -v rev="$1" '
+  git show --format= --no-color --unified=0 "$1" 2>/dev/null | awk -v rev="$1" -v self="$SELF_PATH" '
     /^\+\+\+ b\// { f = substr($0, 7); next }
     /^@@/ { if (match($0, /\+[0-9]+/)) n = substr($0, RSTART + 1, RLENGTH - 1) + 0; next }
     /^\+/ {
-      if ($0 ~ /^\+# publish-patterns:start$/) { inpat = 1; n++; next }
-      if ($0 ~ /^\+# publish-patterns:end$/)   { inpat = 0; n++; next }
-      # Fixture do auto-teste: sintetica POR CONSTRUCAO. Isencao ESTREITA — so a
-      # linha de atribuicao de fixture (local s_*), nunca o resto do arquivo.
-      # Existe para que re-auditar o historico ja publicado nao acuse as fixtures
-      # dos commits anteriores ao fix (defeito 6).
-      if ($0 ~ /^\+[[:space:]]*local s_(pem|gh|pat|aws|ip|url|auth)=/) { n++; next }
+      # As duas isencoes sao presas AO ARQUIVO (f == self). Sem isso a de fixture
+      # valia em qualquer arquivo do repo: fail-OPEN (defeito 7).
+      if (f == self && $0 ~ /^\+# publish-patterns:start$/) { inpat = 1; n++; next }
+      if (f == self && $0 ~ /^\+# publish-patterns:end$/)   { inpat = 0; n++; next }
+      if (f == self && $0 ~ /^\+[[:space:]]*local s_(pem|gh|pat|aws|ip|url|auth)=/) { n++; next }
       if (!inpat) print rev ":" f ":" n ":" $0
       n++; next
     }
