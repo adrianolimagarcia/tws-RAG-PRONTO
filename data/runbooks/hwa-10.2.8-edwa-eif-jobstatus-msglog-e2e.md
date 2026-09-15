@@ -744,3 +744,42 @@ segue comparável por **conjunto**, agora com 9 esperadas.
 **Limites.** O *pass* automático do boundary segue **não observado** e **não é antecipável** por comando de
 produto; antecipou-se o **efeito** em 11 dos 20 alvos. Nenhuma causalidade é afirmada; congelamento de
 mutação de plano/engine vigente.
+
+## 5p. Aceleração final — 16/20 SUCC e o conjunto do boundary ZERADO por consumo
+
+> Terceira ordem direta do dono. Evidência: `lab-validation-2026-09-15-boundary-accelerated-final-boundary-voided.jsonl`
+> (`result=SUCCESS`, `risk=mutating`). Pré-estado em `/tmp/ha_fm/fase5c/`.
+
+**Lote final:** os 9 alvos restantes liberados por `rs <stream>(2105 09/15);at;noask` (timeout defensivo nos
+dois interativos). **8 SUCC** (`JS_LOGON_TEST`, `JS_P_29030/7069/9574`, `JS_VAR_RUN`, `JS_VARTABLE_ERR/OK`,
+`DYN_JOBSTREAM`) e **1 STUCK** (`MDM#JS_PROMPT_RUN`).
+
+**O STUCK do `JS_PROMPT_RUN` é comportamento CORRETO, não falha.** O merge registra a sequência de um stream
+que exige prompt:
+
+```
+12:56:42 #S1231326/Operator command: DEPENDENCY RELEASED ON JS_PROMPT_RUN[(2105 09/15/26),(0AAAAAAAAAAAAAOL)];AT=
+12:56:44 AWSBHT075I Changing job stream ... status to READY.
+12:56:44 AWSBHT075I Changing job stream ... status to STUCK.
+12:56:44 * AWSBHT069E The following job stream is in the "stuck" state: JS_PROMPT_RUN[(2105 09/15/26),(0AAAAAAAAAAAAAOL)]
+```
+
+com o job `JOB_PROMPTED` em `HOLD` aguardando resposta.
+
+**Estado final dos 20 alvos de boundary** (total **e** por estado): **20 = 16 SUCC + 3 READY + 1 STUCK**.
+Os 3 `READY` são os 2 do `AGT1` (**inertes** — estação ausente dos dois lados) e `MDM#JS_ALTJOB3` (causa não
+investigada).
+
+| verificação | resultado |
+|---|---|
+| `AWSJPL004E` / `AWSJPL017E` | **0 / 0** |
+| plano | **inalterado** (`Run 75 == Confirm 75`) |
+| alvos em HOLD para o boundary das 21:00 BR | **0** |
+
+> ⚠️ **A MEDIÇÃO AUTOMÁTICA DO BOUNDARY DE 16.09 ESTÁ ANULADA POR CONSUMO.** Não haverá instâncias para
+> readiar às 21:00 BR, e as três capturas armadas registrarão uma **janela vazia por consumo**, **não** por
+> anomalia nem por normalidade. Este parágrafo existe para que esse `0 READY` não seja mal lido.
+
+**Leitura.** No estado pós-M1 a **produção executa limpa**: 16 dos 20 alvos de boundary concluíram **SUCC**
+sob demanda. **O *pass* automático do boundary segue NÃO OBSERVADO** e não é antecipável por comando de
+produto. Nenhuma causalidade é afirmada; congelamento de mutação de plano/engine vigente.
