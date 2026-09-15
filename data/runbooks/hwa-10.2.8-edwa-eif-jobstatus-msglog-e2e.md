@@ -522,3 +522,63 @@ tocado; Sfinal intacto; nada fora do lab.
 `@10 68/70 (97,1%)` · `MRR 0,8214` — **agregados idênticos** ao baseline. A mutação M1 é do lab TWS e não
 toca o corpus do RAG; o `n_docs` subiu de `6910` (execução em `0c35f01`) para `6919` porque **os artefatos
 desta fase entram no glob indexado** — o agregado é que se mantém estável.
+
+## 5k. Esteira desbloqueada e plano avançado — recuperação pelo caminho do produto
+
+> Autorização `[VIGIA-ARQUITETO]` (FASE 1 read-only + FASE 2 desbloqueio). Evidência:
+> `lab-validation-2026-09-15-esteira-unblocked-plan-advanced.jsonl`. Pré-estado em `/tmp/ha_fm/fase3/`.
+
+**Diagnóstico.** O ABEND do `MDMXA#FINAL[(2359 09/13/26)].MAKEPLAN` (`#J894375`, 09/14 02:59:09 BR, rc=8)
+morria em **`AWSJPL004E`** — a mesma divergência modelo×runtime que a M1 removeu. A cadeia estava
+cascateada em 3 dias (`FINAL 09/13` STUCK → `09/14` HOLD → `09/15` HOLD, e os `FINALPOSTREPORTS` atrás).
+
+**Medição read-only que corrige a premissa:** a anomalia do boundary **não é gated pela cadeia** — o
+boundary de 09/13 (a **primeira** anomalia, 0 READY) ocorreu com a cadeia **SUCC** (`STARTAPPSERVER`/
+`MAKEPLAN`/`SWITCHPLAN` SUCC em 09/13 00:00, `#J273030`); o ABEND só veio às 02:59 de 09/14. Cadeia e
+boundary são **duas manifestações da mesma causa raiz**; o ABEND não causou a primeira anomalia.
+
+**Sintaxe obtida na fonte (não inventada):** `/opt/hwa/TWS/man/conman/cat1/*.1`
+
+- `rerun` = `{rerun | rr} jobselect` — *"Reruns a job"*; `jobselect` =
+  `[jobstream_[folder/]workstation#]{jobstreamname(hhmm[date]).jobname}` (exemplo oficial: `rr main#sked1.job4`).
+- `start` = `start [domain!][folder/]workstation [;mgr] [;noask] [;demgr]` — **`;mgr`** = *"starts the local
+  workstation as the **domain manager**"* (o passo do protocolo do dono para a esteira).
+- **Pré-condição da man page**: `conman start` **não** pode ser emitido enquanto `JnextPlan`/`stageman` roda
+  (verificado: nenhum processo de plano em execução).
+
+**Sequência executada (3 passos, todos do produto):**
+
+| # | comando | resposta |
+|---|---|---|
+| A | `conman "start;mgr;noask"` | `AWSBHU507I A start command was issued for MDM.` |
+| B | `conman "rr MDMXA#FINAL(2359 09/13/26).MAKEPLAN;noask"` | job re-lançado (`#J1190144`) — **ABEND de novo, mas com erro DIFERENTE**: `AWSJPL017E` (*"a previous action on the production plan did not complete successfully"*); **`AWSJPL004E` = 0 ocorrências** |
+| C | `planman unlock` + novo `rerun` | `AWSJPL504I` + `AWSJCL050I`; então **MAKEPLAN SUCC** |
+
+**O `AWSJPL017E` é exatamente o erro documentado** em `hwa-10.2.8-stuck-plan-recovery.md`: o Symnew
+pendente deixa o ciclo incompleto, e *"`planman unlock` sozinho resolve `AWSJPL017E` na grande maioria dos
+casos"*. **`planman unlock` não está entre os comandos proibidos.**
+
+**Resultado.** A cadeia fez **o seu próprio `SWITCHPLAN`** (SUCC 10:28) — **nenhum `SwitchPlan` manual**:
+
+```
+FINAL 2359 09/13 -> SUCC      (MAKEPLAN SUCC, SWITCHPLAN SUCC)
+FINAL 2359 09/14 -> SUCC      (MAKEPLAN SUCC, SWITCHPLAN SUCC)
+FINAL 2359 09/15 -> HOLD (09/16)   FINAL 2359 09/16 -> HOLD (09/17)
+```
+
+E o estado preso terminou:
+
+```
+Production plan start of last extension: 09/26/2026 00:05
+Production plan end time:                09/27/2026 00:04   <- horizonte REAL de 24h
+Plan last update:                        09/15/2026 10:29
+Run number: 74        Confirm run number: 74                <- a igualdade exigida pelo checklist
+AWSJPL004E = 0        AWSJPL017E = 0
+```
+
+**Limites declarados.** (i) O boundary de 16.09 (20:58 BR) **segue não observado** — é a próxima medida, e
+agora com plano estendido e `Run == Confirm` ela é limpa; (ii) o plano ainda contém os registros órfãos do
+`AGT1` (`workstation AGT1` run 35 e `AGT1#CROSS_STREAM 0005 09/16 HOLD`), removidos do **modelo** na M-C;
+(iii) **causalidade não provada** — a M1 removeu o `AWSJPL004E` (0 ocorrências) e a cadeia voltou a andar,
+mas o boundary em si ainda não foi re-medido; (iv) não foram usados `planman reset|crt`, `JnextPlan`,
+`SwitchPlan` manual, `conman submit|sbs|cs|altjob|switchmgr` nem `composer add|update`.
