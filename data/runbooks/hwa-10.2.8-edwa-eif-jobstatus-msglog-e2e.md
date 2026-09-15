@@ -783,3 +783,48 @@ investigada).
 **Leitura.** No estado pós-M1 a **produção executa limpa**: 16 dos 20 alvos de boundary concluíram **SUCC**
 sob demanda. **O *pass* automático do boundary segue NÃO OBSERVADO** e não é antecipável por comando de
 produto. Nenhuma causalidade é afirmada; congelamento de mutação de plano/engine vigente.
+
+## 5q. Conjunto do boundary repovoado por `SUBMIT SCHED` — a medição de hoje voltou a ser observável
+
+> Quarta ordem direta do dono. Evidência: `lab-validation-2026-09-15-boundary-set-repopulated-via-submit-sched.jsonl`
+> (`result=SUCCESS`, `risk=mutating`). Pré-estado em `/tmp/ha_fm/fase6/`.
+
+**Como restaurar a medição depois de consumir o conjunto.** O `pass` de ready do boundary só tem o que
+readiar se houver instâncias retidas. Submetendo instâncias **novas** agendadas para a janela do boundary,
+o mecanismo volta a ser observável — sem custo adicional, porque o conjunto original já havia sido consumido.
+
+**Sintaxe (fonte: `/opt/hwa/TWS/man/conman/cat1/submit.1`, seção `SUBMIT SCHED` — é assim que a man page
+chama o submit de job stream, o `sbs`):**
+
+```
+{submit sched = | sbs =} [[folder/]workstation#][folder/]jstreamname [;jstreamoption[;...]] [;noask]
+```
+
+**Comando e resultado:** `conman "sbs = <stream>;at=0005;noask"` → 4 submetidos com sucesso
+(`LABPOOL#POOL_STREAM`, `LABPOOL#POOL_BALANCING`, `MDM#FRENTE1_STREAM`, `MDM#JS_VARTABLE_OK`), todos com
+
+```
+LABPOOL#POOL_STREAM  0005 09/16 ... HOLD 10(09/16)(00:00)
+```
+
+**Achado de método — o `at` do `sbs` é UTC, não BR.** `at=0005` criou a instância rotulada **`0005 09/16`**
+(= 00:05Z = 21:05 BR), que é **o mesmo instante** dos alvos de produção originais, estes rotulados
+**`2105 09/15`** (= 21:05 BR). O plano exibe o schedtime em **BR**; o `at` do `sbs` trabalha em **UTC**.
+A dualidade descrita em `hwa-lab-10.2.8-plan-timebase-utc-and-sbs-at-no-autorelease-0001` foi **reproduzida**.
+O `HOLD 10(09/16)(00:00)` confirma que a instância é liberada **exatamente no boundary** (21:00 BR / 00:00Z).
+
+**Recusa informativa:** `sbs = AGT1#CROSS_STREAM;at=0005` → `AWSJPL507E The submitted ad hoc job stream does
+not exist` — o stream **saiu do modelo** (removido pela M-C). O registro órfão do `AGT1` é **defunto**: nem o
+canal de submit o aceita.
+
+| verificação | resultado |
+|---|---|
+| plano | **inalterado** (`Run 75 == Confirm 75`) — submeter não estende plano |
+| `AWSJPL004E` / `AWSJPL017E` | **0 / 0** |
+| conjunto repovoado | **4 instâncias**, todas `HOLD` até `00:00Z` |
+| conjunto de **09/16** (boundary de **amanhã**, ~32 h) | **20 intactas em HOLD** — a medida limpa segue disponível |
+
+**O que permite e o que não permite.** Permite observar **hoje** o *pass* de ready (o batchman liberando as
+instâncias retidas às `00:00Z`) — o mecanismo que **nunca foi observado**. **Não** reproduz o boundary de
+produção puro: as instâncias são **submetidas por nós**, não os alvos de produção originais.
+Nenhuma causalidade é afirmada; congelamento de mutação de plano/engine vigente.
