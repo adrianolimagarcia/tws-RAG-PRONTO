@@ -29,11 +29,12 @@ BRANCH="${PUBLISH_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}"
 RANGE="${PUBLISH_RANGE:-origin/${BRANCH}..HEAD}"
 MSG="${PUBLISH_MSG:-}"
 SCAN_ONLY=0
+RANGE_EXPLICITO=0
 
 while [ $# -gt 0 ]; do
   case "$1" in
     --scan-only) SCAN_ONLY=1; shift ;;
-    --range)     RANGE="${2:?--range exige A..B}"; shift 2 ;;
+    --range)     RANGE="${2:?--range exige A..B}"; RANGE_EXPLICITO=1; shift 2 ;;
     --message)   MSG="${2:?--message exige texto}"; shift 2 ;;
     -h|--help)   sed -n '2,25p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
     *)           echo "publish: opcao desconhecida: $1" >&2; exit 2 ;;
@@ -90,13 +91,35 @@ selftest() {
 }
 selftest || exit 3
 
-echo "publish: branch=${BRANCH}  range=${RANGE}"
+echo "publish: branch=${BRANCH}"
+# PUBLISH_RANGE no ambiente tambem conta como range explicito (nao commitar).
+[ -n "${PUBLISH_RANGE:-}" ] && RANGE_EXPLICITO=1
+
+# --- commit ANTES do scan ----------------------------------------------------
+# O scan tem de cobrir EXATAMENTE o que sera empurrado. Na ordem ingenua
+# (scan -> commit -> push) uma alteracao PENDENTE nao esta no range: ela seria
+# commitada e publicada SEM varredura — buraco real. Por isso commitamos primeiro.
+# Guardas: nunca em --scan-only, e nunca com --range explicito (um teste nao pode
+# ter efeito colateral de commitar o worktree).
+if [ "$SCAN_ONLY" -eq 0 ] && [ "$RANGE_EXPLICITO" -eq 0 ] \
+   && [ -n "$(git status --porcelain -- . ':(exclude)**/__pycache__/**')" ]; then
+  echo "publish: ha alteracoes nao commitadas; commitando ANTES do scan (pycache excluido)"
+  git add -A -- . ':(exclude)**/__pycache__/**' || exit 1
+  git commit -q -m "${MSG:-publish: publica o estado verificado}" || exit 1
+  echo "publish: commit $(git rev-parse --short HEAD)"
+fi
+
+echo "publish: range=${RANGE}"
 # `rev-parse --verify` NAO aceita intervalo (A..B); quem valida range e o rev-list.
 if ! NCOMMITS=$(git rev-list --count "$RANGE" 2>/dev/null); then
   echo "publish: range invalido: ${RANGE}" >&2
   exit 2
 fi
 echo "publish: commits no range: ${NCOMMITS}"
+if [ "$NCOMMITS" -eq 0 ]; then
+  echo "publish: nada a publicar (range vazio)."
+  exit 0
+fi
 
 # ATENCAO (tres defeitos reais ja corrigidos aqui):
 #  1. `git grep <padrao> A..B` NAO funciona — git grep quer TREE/commit, nao
@@ -148,17 +171,9 @@ echo "publish: varredura limpa (0 hits em ${#PATTERNS[@]} padroes)."
 
 [ "$SCAN_ONLY" -eq 1 ] && { echo "publish: --scan-only, parando aqui."; exit 0; }
 
-# --- commit (se houver algo pendente) ---------------------------------------
-if [ -n "$(git status --porcelain -- . ':(exclude)**/__pycache__/**')" ]; then
-  echo "publish: ha alteracoes nao commitadas; commitando (pycache excluido)"
-  git add -A -- . ':(exclude)**/__pycache__/**' || exit 1
-  git commit -q -m "${MSG:-publish: publica o estado verificado}" || exit 1
-  echo "publish: commit $(git rev-parse --short HEAD)"
-else
-  echo "publish: nada pendente para commitar"
-fi
-
 # --- push (auth que o host JA tem; nada persistido) -------------------------
+# O commit ja aconteceu ANTES do scan (ver acima): o que se empurra aqui e
+# exatamente o que foi varrido.
 PUSH_ARGS=()
 if ! git config --get credential.helper >/dev/null 2>&1 \
    && command -v gh >/dev/null 2>&1 \
