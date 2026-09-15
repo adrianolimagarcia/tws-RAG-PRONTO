@@ -673,3 +673,41 @@ contagem × contagem; contagem de estado sempre com **total e por estado**.
 **Limites.** O boundary segue **não observado** — a leitura correta ocorre ~5 min após `00:00Z` de 16.09;
 nenhuma causalidade é afirmada; o congelamento de mutação permanece vigente; as três capturas
 (`vigia-h-0916`, `vigia-chain-0916`, `vigia-boundary-set`) seguem **ACTIVE** com os alvos corretos.
+
+## 5n. Boundary acelerado a pedido do dono — alvo executou limpo e a medida foi preservada
+
+> Ordem direta do dono (*"acele o processo novamente"*). Evidência:
+> `lab-validation-2026-09-15-boundary-accelerated-target-succ.jsonl` (`result=SUCCESS`, `risk=mutating`).
+> Pré-estado em `/tmp/ha_fm/fase5/`.
+
+**Como acelerar sem destruir a medida.** O *pass* automático do boundary (virada do dia do plano em `00:00Z`)
+**não tem comando de produto** que o force — verificado nas man pages. O que se antecipa é o **efeito**:
+liberar a dependência de tempo de um alvo. Liberar **todos** os 20 alvos deixaria o boundary sem nada para
+readiar (um `0 READY` indistinguível da anomalia). Liberando **um só**, o resultado sai agora **e** os 19
+restantes mantêm a leitura válida por **conjunto**.
+
+**Comando:** `conman "rs LABPOOL#POOL_STREAM(2105 09/15);at;noask"` → `Command forwarded to batchman for
+LABPOOL#POOL_STREAM[(2105 09/15/26),(0AAAAAAAAAAAAAHD)]` (seletor validado read-only antes).
+
+**Desfecho (~60 s):** o stream **executou limpo** —
+
+```
+11:40:36 Received lB: ...POOL_JOB
+11:40:36 AWSBHT083I ...POOL_JOB changing from state 16 to new state 15
+11:40:37 ... changing from state 15 to new state 3
+11:40:37 Job ...POOL_JOB has completed SUCCESSFULLY
+11:40:37 AWSBHT071I Job stream ...POOL_STREAM[(2105 09/15/26),(0AAAAAAAAAAAAAHD)] has completed successfully.
+11:40:37 AWSBHT075I Changing job stream ... status to SUCC.
+```
+
+| verificação | resultado |
+|---|---|
+| `AWSJPL004E` / `AWSJPL017E` no merge de 15.09 | **0 / 0** |
+| linhas citando `AGT1` na janela de execução | **0** (sem interferência) |
+| plano após a execução | **inalterado** (`Run 75 == Confirm 75`) — rodar stream não estende plano |
+| alvos de boundary remanescentes | **19 de 20 seguem em HOLD** (20 totais, 19 HOLD) |
+
+**Leitura.** O **alvo** do boundary executa limpo no estado pós-M1 — sinal **positivo**, mas **não** é a
+medição do *pass* de ready do boundary, que segue **NÃO OBSERVADO** (leitura válida ~5 min após `00:00Z` de
+16.09, coberta pelas três capturas armadas). **Nenhuma causalidade é afirmada**; congelamento de mutação de
+plano/engine vigente (nada de `ext`/`SwitchPlan`/`composer`/purga).
