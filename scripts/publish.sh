@@ -80,17 +80,27 @@ selftest() {
   local s_gh="$(printf '%s' 'gh' 'p' '_')${rep}"
   local s_pat="${P_PAT}${rep}"
   local s_aws="${P_AWS}${rep}"
-  local s_ip='10.99.0.7'
-  local s_url='https://u:s@exemplo.invalido/x'
+  # Fixtures montadas em PARTES (mesma tecnica do s_gh): literais sinteticos no
+  # fonte fazem o proprio scanner abortar no seu conteudo (defeito 6, medido —
+  # as fixtures ficavam FORA da janela de isencao). A janela NAO foi ampliada:
+  # ampliar isencao e pior que montar o literal em partes.
+  local s_ip="$(printf '%s' '10.' '99.0.7')"
+  local s_url="$(printf '%s' 'https://' 'u:s' '@' 'exemplo.invalido/x')"
   local s_auth="Authorization: $(printf '%s' 'Bea' 'rer') ${rep}"
+  # Os regexes vem da PROPRIA tabela de producao — nunca literais aqui. Assim o
+  # auto-teste nao pode divergir do que a varredura executa (defeito 3).
+  rx_of() {
+    local e
+    for e in "${PATTERNS[@]}"; do [ "${e%%:*}" = "$1" ] && { printf '%s' "${e#*:}"; return; }; done
+  }
   check() { printf '%s\n' "$2" | grep -qE -e "$1" || { echo "  selftest FALHOU: $3" >&2; ok=0; }; }
-  check "${P_PEM}[A-Z ]*${P_PEME}" "$s_pem" chave_privada
-  check "${P_GH}[A-Za-z0-9]{20,}"  "$s_gh"  token_github
-  check "${P_PAT}[A-Za-z0-9_]{20,}" "$s_pat" token_github_pat
-  check "${P_AWS}[0-9A-Z]{16}"     "$s_aws" chave_aws
-  check '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' "$s_ip" ipv4
-  check '://[^/@[:space:]]+:[^/@[:space:]]+@' "$s_url" credencial_em_url
-  check '(Bearer|Basic)[[:space:]]+[A-Za-z0-9+/=_-]{16,}' "$s_auth" header_auth
+  check "$(rx_of chave_privada)"     "$s_pem" chave_privada
+  check "$(rx_of token_github)"      "$s_gh"  token_github
+  check "$(rx_of token_github_pat)"  "$s_pat" token_github_pat
+  check "$(rx_of chave_aws)"         "$s_aws" chave_aws
+  check "$(rx_of ipv4)"              "$s_ip"  ipv4
+  check "$(rx_of credencial_em_url)" "$s_url" credencial_em_url
+  check "$(rx_of header_auth)"       "$s_auth" header_auth
   [ "$ok" -eq 1 ] && echo "publish: auto-teste dos padroes: OK (7/7 casam)"
   return $((1 - ok))
 }
@@ -128,7 +138,11 @@ fi
 
 #  5. Excluir o script INTEIRO da varredura escondia segredo real dentro dele — e o
 #     conteudo dele E publicado. A isencao agora e so o bloco publish-patterns:*.
-# ATENCAO (cinco defeitos reais ja corrigidos aqui):
+#  6. As FIXTURES do auto-teste ficavam FORA da janela de isencao e o proprio
+#     scanner abortava no seu conteudo (falso POSITIVO). Corrigido nas duas pontas:
+#     fixtures montadas em partes (como o s_gh) E isencao estreita das linhas de
+#     atribuicao de fixture, para que re-auditar o historico ja publicado passe.
+# ATENCAO (seis defeitos reais ja corrigidos aqui):
 #  1. `git grep <padrao> A..B` NAO funciona — git grep quer TREE/commit, nao
 #     intervalo; com range ele devolve vazio e a varredura PARECE limpa.
 #  2. `git grep <padrao> <rev>` varre a ARVORE INTEIRA daquele commit, inclusive
@@ -151,6 +165,11 @@ extract_added() {  # $1 = rev
     /^\+/ {
       if ($0 ~ /^\+# publish-patterns:start$/) { inpat = 1; n++; next }
       if ($0 ~ /^\+# publish-patterns:end$/)   { inpat = 0; n++; next }
+      # Fixture do auto-teste: sintetica POR CONSTRUCAO. Isencao ESTREITA — so a
+      # linha de atribuicao de fixture (local s_*), nunca o resto do arquivo.
+      # Existe para que re-auditar o historico ja publicado nao acuse as fixtures
+      # dos commits anteriores ao fix (defeito 6).
+      if ($0 ~ /^\+[[:space:]]*local s_(pem|gh|pat|aws|ip|url|auth)=/) { n++; next }
       if (!inpat) print rev ":" f ":" n ":" $0
       n++; next
     }
