@@ -29,6 +29,33 @@ origem.
   o horizonte zero é da *extensão pendente*, não do plano ativo.
 - `Batchman LIVES`; `MDM ... *UNIX MASTER`; modelo `*MANAGER MDM`.
 
+## PRIMEIRO DISCRIMINADOR DA JANELA (correção de medição do vigia, 15.09 19:50Z)
+
+**Leia o `dR` ANTES de qualquer conclusão.** Assinatura medida nos 4 arquivos, janela
+`^(20:5[89]|21:0[0-2]):` do merge do MDM:
+
+| grupo | linhas | BATCHMAN | `Received dR ... from cpu MDM_BK` | READY | MAILMAN |
+|---|---|---|---|---|---|
+| **NORMAL** (dias-alvo 11.09 e 12.09) | 77 / 79 | 100% | **13** | 13 | **0** |
+| **ANÔMALO** (13.09 e 14.09) | 22 | — | **0** | 0 | **20** (com `AWSBCV035W Mailman was unable to link to workstation: AGT1` + `AWSBCV082I ... (errno=111)`) |
+
+- **Discriminador:** **`dR > 0` E ausência do burst MAILMAN**. A contagem de READY só confirma depois.
+- **Correlação medida, causa NÃO estabelecida:** o `MY:UNLINK AGT1` aparece **também** na janela normal de
+  12.09 — o UNLINK sozinho **não** discrimina. E o link do AGT1 já falhava em 13.09, **antes** da M-C de hoje.
+
+## Enumeração do conjunto (correção: NÃO usar contagem crua de linhas do `sj`)
+
+Contagem crua de linhas que contêm `09/16` **não** é número de instâncias (inclui linhas de JOB filho e
+brancos). Enumerado por **instância de job stream**, o dia de plano 09/16 tem **26 instâncias, TODAS em HOLD**:
+
+- **20** do cohort de produção `2105 09/16` — **conjunto IDÊNTICO, nome a nome, ao `2105 09/15`**
+  (verificado por igualdade de conjuntos) → o boundary 16→17 tem conjunto de **20 ÍNTEGRO**, e é a
+  **leitura não contaminada** (a de hoje está contaminada pelo consumo das acelerações);
+- **4** repovoadas via `sbs` em `0005 09/16`;
+- **2** (`MDMXA#FINAL`, `#FINALPOSTREPORTS`) em `2359 09/16`.
+
+O BMDM enumera os mesmos 26 (a diferença de render é o par AGT1).
+
 ## ÁRVORE DE DECISÃO (a executar somente após a leitura)
 
 ### Ramo A — boundary de 16.09 NORMALIZOU (READY/`dR`/launch como em 09/11–09/12)
