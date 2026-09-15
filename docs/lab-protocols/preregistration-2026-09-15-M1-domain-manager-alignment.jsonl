@@ -1,0 +1,123 @@
+# Pré-registro — M1 (Opção A): alinhar o MODELO ao RUNTIME no domain manager
+
+**Autorização:** `[VIGIA-ARQUITETO / DONO: DECISAO M1 AUTORIZADA]` — Opção A, via composer.
+**Alvo:** `MDM` passa a ser o manager oficial do domínio `MASTERDM` no modelo, alinhando ao runtime.
+
+## Estado medido (pré-condições)
+
+| objeto | campo | valor ATUAL (modelo) | valor DESEJADO |
+|---|---|---|---|
+| `DOMAIN MASTERDM` | `*MANAGER` | `MDM_BK` | `MDM` |
+| `workstation MDM` | `TYPE` (em `FOR MAESTRO`) | `FTA` | `MANAGER` |
+| `workstation MDM_BK` | `TYPE` (em `FOR MAESTRO`) | `MANAGER` | `FTA` |
+
+As `DESCRIPTION` já declaram a intenção correta: `MDM` = *"MANAGER CPU"*, `MDM_BK` = *"FTA CPU"* — os
+`TYPE` é que estão invertidos. Runtime: `conman "sc @"` mostra `MDM ... *UNIX MASTER`; o container
+`tws-hwa` tem `this_cpu=MDM`. A extensão de plano é recusada com `AWSJPL004E`.
+
+## Risco conhecido ANTES de executar (declarado)
+
+O corpus do próprio lab contém uma refutação documentada deste caminho — claim
+`hwa-lab-10.2.8-plan-model-divergence-switchmgr-and-switchplan-internals-0007`:
+
+> *"O objeto DOMAIN do modelo **não é editável para trocar manager: sem ISMASTER retorna `AWSJDB313E`
+> 'A master domain cannot be modified...'"*
+
+Portanto o teste é: tentar o `replace` **com** o keyword `ISMASTER`. Se o produto recusar, **nenhuma
+mutação ocorre** e o caminho composer para o domínio está fechado — o que exige decisão nova do dono
+(não improvisar um caminho alternativo destrutivo).
+
+## Comandos (na ordem exata, com o keyword ISMASTER)
+
+1. Pré-estado capturado em `/tmp/ha_fm/fase2/pre_m1_*.txt` (domain + workstations).
+2. `replace domain=MASTERDM` com `MANAGER MDM` + `ISMASTER` (via stdin do composer).
+3. Se recusado (`AWSJDB313E`): **parar** — registrar o limite, não tentar variantes destrutivas.
+4. Se aceito: validar com `composer display domain=@` (`*MANAGER MDM`) e com o teste funcional
+   `planman ext -days 1` (esperado: **sem** `AWSJPL004E`).
+
+## Stop criterion
+
+- **S1** `AWSJDB313E` / qualquer recusa do produto → **parar e registrar o limite** (sem alternativas destrutivas).
+- **S2** divergência nova entre modelo e runtime após a mudança → parar e reportar.
+- **S3** qualquer efeito fora do lab, ou perda de capacidade de rollback → parar e escalar.
+- **S4** `planman`/`conman` deixarem de responder ou plano inconsistente → rollback pelo snapshot.
+
+## Mapa de reversão
+
+1. `Symphony.pre-extensao` + `planbox.msg.pre-extensao` (em `/tmp/ha_fm/fase2/`, dentro do container).
+2. Definições completas dos objetos em `/tmp/ha_fm/fase2/pre_m1_*.txt` (re-aplicáveis via composer).
+3. Snapshot `ha_snap_20260914-0035` (3 imagens: `tws-hwa` 9,28 GB · `tws-bmdm` 7,27 GB · `tws-agent`
+   4,34 GB) — restauração total do lab.
+4. Definições da M-C em `/tmp/ha_fm/fase2/pre_*.txt`.
+
+**Proibido nesta fase:** mutação destrutiva fora do lab; tocar o PostgreSQL compartilhado; destruir Sfinal.
+
+---
+
+## ABORTO POR INFRA (registrado antes de retomar) — 2026-09-15 12:45:41Z
+
+O turno foi **abortado por infra**, não por erro de execução: o `haos-webui.service` foi reiniciado pelo
+watcher `/usr/local/sbin/haos-webui-agent-watch.sh` (gatilho: checkout do agente mudou, `HEAD=de503e96ef`).
+O watcher espera ociosidade em `/health.active_streams` com **teto de 60 s** e reinicia mesmo sem
+ociosidade (`ocioso=no, tentativa=1/3`); o stream `564fb454…` ficou sem `stream_end` e o PID do turno
+(1312752) morreu.
+
+**Estado do lab após o aborto (medido read-only pelo vigia, 12:51Z) — NENHUMA MUTAÇÃO APLICADA:**
+
+| objeto | campo | valor | alterado? |
+|---|---|---|---|
+| `DOMAIN MASTERDM` | `*MANAGER` | `MDM_BK` | não |
+| `workstation MDM` | `TYPE` | `FTA` | não |
+| `workstation MDM_BK` | `TYPE` | `MANAGER` | não |
+| lock do domínio | — | **liberado** (`unlock domain=MASTERDM` → `AWSBIA308I`, 1 objeto) | **sim — benigno e reversível** |
+
+Snapshot `ha_snap_20260914-0035` íntegro (tws-hwa 9,28 GB · tws-bmdm 7,27 GB · tws-agent 4,34 GB);
+3 containers Up; `optman` af=YES aa=YES.
+
+**Recusas já medidas (não repetir por tentativa):**
+
+- `replace domain=MASTERDM` → `AWSBIA094E One of these keywords: "UNLOCK" was expected at this point.`
+- `replace workstation=MDM` (com e sem `unlock` na mesma sessão) → **mesmo** `AWSBIA094E`.
+- `replace <arquivo>` → `AWSBCZ021E A definition keyword was expected at this point` na 1ª linha do arquivo.
+- `update <arquivo>` → `AWSBHW008E` (o caminho foi interpretado como nome de jobstream).
+
+**Lead a verificar (do vigia):** a mensagem oficial **`AWSUI0818E`** — *"You have tried to change a
+workstation to become the master domain manager... the program must first change the definition of the
+existing master domain manager to **remove the manager attribute**"* — aponta caminho em **duas etapas no
+MODELO**: (i) remover o atributo de manager do `MDM_BK`; (ii) promover o `MDM`. Nesse caso o objeto a
+editar é a **WORKSTATION** (`TYPE` dentro de `FOR MAESTRO`), **não** o `DOMAIN` — e as recusas
+`AWSJDB313E`/`AWSJCO025E` do claim `…-plan-model-divergence-…-0007` seriam sobre o `DOMAIN`.
+
+**Próximo passo:** descobrir a **forma gramatical correta na fonte** (man/help do produto dentro do
+container; o `man` não existe, por isso o `mhelp` falhou) **antes** de qualquer nova tentativa, e testar
+a via da WORKSTATION **como no-op** primeiro.
+
+---
+
+## MECANISMO CORRETO — descoberto na fonte (man pages do produto) e validado como NO-OP
+
+As man pages do composer existem no container em **`/opt/hwa/TWS/man/composer/cat1/*.1`** (o comando
+`man` é que falta). Delas:
+
+- O verbo correto **não é `replace`** (a gramática dele pede `UNLOCK`): o verbo é **`add` (a)**, cuja
+  sintaxe é **`{add | a} filename [;unlock]`** — *"Adds a scheduling objects definition to the database
+  **from a text file**"*. `modify` (m) sem fonte de definição **abre editor e trava** (foi o que aconteceu).
+- O caminho documentado é o **round-trip**: **`extract`** (`{create|cr|extract|ext} filename from
+  [workstation|ws=...]` — o **arquivo vem primeiro**) → editar o arquivo → **`add <arquivo>`**.
+- O **formato do arquivo** (obtido por `extract`, e que a minha primeira tentativa errou) **não tem o
+  cabeçalho `WORKSTATION <nome>`**: começa em `CPUNAME <nome>` e termina em `END`.
+- O `add` **pergunta** *"Do you want to replace the object...?"* — sem `y` nada muda (`AWSJCL015W`).
+- **Lock**: um composer morto deixa lock órfão e o `add` falha com
+  `AWSJDB201E ... cannot be locked, updated, or deleted because it is locked by user "wauser"`. O
+  `unlock ws=MDM` simples falha com `AWSJCL012E ... locked by the user "wauser" in a **different
+  session**`. A solução está na própria man page: **`unlock ws=MDM;forced`** — *"allows the user who
+  locked the object to unlock it **regardless of the session**"* → `AWSBIA308I Total objects unlocked: 1`.
+
+**NO-OP executado (validação do mecanismo, sem alteração de conteúdo):** `add /tmp/ws_mdm.def` (o arquivo
+extraído sem nenhuma edição) + `y` →
+`AWSJCL003I The command "update" completed successfully on object "ws=MDM"` · `AWSBIA090I ... errors 0` ·
+`AWSBIA288I Total objects updated: 1`. A definição do `MDM` permaneceu **idêntica** (`TYPE FTA`).
+
+**Ordem da mutação (determinada pelo `AWSUI0818E`):** (i) **primeiro** remover o atributo de manager do
+`MDM_BK` (`TYPE MANAGER` → `TYPE FTA`); (ii) **depois** promover o `MDM` (`TYPE FTA` → `TYPE MANAGER`).
+O objeto editado é a **WORKSTATION**, não o `DOMAIN`.

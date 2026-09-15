@@ -446,3 +446,58 @@ candidata forte porque explica a recusa das operações de plano e a estagnaçã
 (ii) o objeto `DOMAIN` data de 09/04/2026, **anterior** ao início da anomalia (09/13), então a divergência
 pode ter sido latente e só passou a ter efeito quando o plano precisou de extensão; (iii) **causalidade
 não concluída**.
+
+## 5j. M1 executada — alinhamento do MODELO ao RUNTIME no domain manager (Opção A)
+
+> Autorização `[VIGIA-ARQUITETO / DONO: DECISAO M1 AUTORIZADA]`. Pré-registro, stop criterion e mapa de
+> reversão em `docs/lab-protocols/preregistration-2026-09-15-M1-domain-manager-alignment.jsonl`.
+> Evidência: `lab-validation-2026-09-15-M1-domain-manager-alignment-executed.jsonl`.
+
+**O objeto a editar é a WORKSTATION, não o DOMAIN.** O `DOMAIN` **não é editável**:
+`replace domain=MASTERDM` devolve `AWSBIA094E One of these keywords: "UNLOCK" was expected at this point`.
+A via correta é a das **duas etapas** prescritas pela mensagem oficial `AWSUI0818E`: *"the program must
+first change the definition of the existing master domain manager to **remove the manager attribute**"*.
+
+**Gramática correta (fonte: `/opt/hwa/TWS/man/composer/cat1/*.1` — o binário `man` não existe no container):**
+
+| passo | comando |
+|---|---|
+| extrair | `composer "extract <arquivo> from workstation=<nome>"` (**o arquivo vem primeiro**) |
+| editar | o arquivo **não** tem cabeçalho `WORKSTATION <nome>`: começa em `CPUNAME <nome>`, termina em `END` |
+| aplicar | `composer` → `add <arquivo>` → responder **`y`** ao *"Do you want to replace the object?"* |
+
+- O verbo é **`add` (a)** — `{add | a} filename [;unlock]`, *"from a text file"*. **`modify` (m) sem fonte
+  de definição abre EDITOR e trava** (aconteceu; o processo morto deixa **lock órfão**).
+- Sem `y` nada muda (`AWSJCL015W`). Sucesso = `AWSJCL003I ... completed successfully on object` +
+  `AWSBIA288I Total objects updated: 1`.
+- **Lock órfão:** `add` → `AWSJDB201E ... locked by user "wauser"`; `unlock ws=MDM` → `AWSJCL012E ...
+  locked by the user "wauser" in a **different session**`. Solução na man page do `unlock`:
+  **`unlock ws=<nome>;forced`** — *"allows the user who locked the object to unlock it regardless of the
+  session"* → `AWSBIA308I Total objects unlocked: 1`.
+
+**Mutação executada (15.09.2026, 13:04:57Z e 13:05:38Z):** (i) `MDM_BK`: `TYPE MANAGER` → `TYPE FTA`
+(o domínio passa a exibir `DOMAIN MASTERDM / ISMASTER / END`, **sem** a linha `*MANAGER` — o estado
+intermediário do `AWSUI0818E`); (ii) `MDM`: `TYPE FTA` → `TYPE MANAGER`.
+
+**Validação funcional — o erro desapareceu:**
+
+```
+planman ext -days 1
+AWSJPL504I The "planner" process unlocked the database.
+AWSJCL062I The production plan (Symnew) has been successfully extended.
+```
+
+`composer display domain=@` → `DOMAIN MASTERDM / *MANAGER MDM / ISMASTER` (**alvo atingido**).
+`Plan last update`: **`09/12/2026 23:59` → `09/15/2026 10:05`**.
+
+**Limite novo, declarado e NÃO improvisado.** O `showinfo` passou a reportar o sintoma de **horizonte
+zero** (`Production plan end time: (same as the start time of the last extension - ... "-for 0000")`;
+`Run 72` / `Confirm 69`) e o `Symnew` gerado tem **23.392 B** contra **474.368 B** do `Symphony`. O
+**plano ativo segue íntegro** (`tws-op sj` → `Scheduled for (Exp) 09/13/26 (#69) on MDM. Batchman LIVES.`;
+`MDM ... *UNIX MASTER`; cobertura até `09/25/2026 21:05`). **`SwitchPlan` NÃO foi executado** (ativaria o
+`Symnew` de horizonte zero) e a **recuperação pesada** do runbook (`planman reset` + `planman crt -days 3`
++ `SwitchPlan` + `planman ext`) **não foi executada** — é mutação nova, de escopo maior, que exige decisão.
+
+**Reversão:** `ws_mdm.def.PRE-M1` e `ws_mdmbk.def.PRE-M1` (definições completas pré-mutação, extraídas pelo
+próprio produto, re-aplicáveis pelo mesmo `add`); snapshot `ha_snap_20260914-0035`. PostgreSQL não
+tocado; Sfinal intacto; nada fora do lab.
