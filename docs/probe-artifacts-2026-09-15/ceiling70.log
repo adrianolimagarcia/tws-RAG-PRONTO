@@ -1,0 +1,80 @@
+eval-0001 pool= 6912 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0002 pool= 2449 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0003 pool= 1416 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=3
+eval-0004 pool= 3529 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0005 pool= 3714 harness_rank=1 via=runbook_match3 exp_id_rank=3 stage1_rank=1
+eval-0006 pool= 6587 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0007 pool= 6895 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=2
+eval-0008 pool=  981 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0009 pool= 1172 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0010 pool= 6896 harness_rank=3 via=claim exp_id_rank=3 stage1_rank=3
+eval-0011 pool= 3341 harness_rank=3 via=claim exp_id_rank=3 stage1_rank=2
+eval-0012 pool= 1960 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=7
+eval-0013 pool= 4145 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=13
+eval-0014 pool= 2153 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0015 pool= 2321 harness_rank=18 via=runbook_match3 exp_id_rank=19 stage1_rank=5
+eval-0016 pool= 2972 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0017 pool= 2147 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0018 pool= 2638 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=2
+eval-0019 pool= 3097 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0020 pool= 2216 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0021 pool= 3698 harness_rank=62 via=runbook_match3 exp_id_rank=233 stage1_rank=62
+eval-0022 pool=  970 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=3
+eval-0023 pool= 3269 harness_rank=3 via=runbook_match3 exp_id_rank=3237 stage1_rank=1
+eval-0024 pool= 3602 harness_rank=4 via=claim exp_id_rank=4 stage1_rank=7
+eval-0025 pool= 2418 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0026 pool= 2025 harness_rank=6 via=runbook_match3 exp_id_rank=22 stage1_rank=12
+eval-0027 pool= 2210 harness_rank=3 via=claim exp_id_rank=3 stage1_rank=2
+eval-0028 pool= 2058 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=5
+eval-0029 pool= 5858 harness_rank=4 via=runbook_match3 exp_id_rank=14 stage1_rank=4
+eval-0030 pool= 1672 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0031 pool= 1450 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0032 pool= 2495 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0033 pool= 2404 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0034 pool= 1015 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0035 pool= 2074 harness_rank=1 via=runbook_match3 exp_id_rank=29 stage1_rank=1
+eval-0036 pool= 6905 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0037 pool=  117 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0038 pool= 6899 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0039 pool= 6895 harness_rank=7 via=runbook_match3 exp_id_rank=8 stage1_rank=3
+eval-0040 pool= 2018 harness_rank=5 via=claim exp_id_rank=5 stage1_rank=4
+eval-0041 pool= 2318 harness_rank=3 via=claim exp_id_rank=3 stage1_rank=1
+eval-0042 pool= 1027 harness_rank=2 via=runbook_match3 exp_id_rank=5 stage1_rank=1
+eval-0043 pool= 6893 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0044 pool= 2763 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0045 pool= 6700 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0046 pool= 6876 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0047 pool=  596 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0048 pool= 1856 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=4
+eval-0049 pool= 1022 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0050 pool=  518 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=5
+eval-0051 pool=  912 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0052 pool=  964 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0053 pool= 1233 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0054 pool= 2298 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0055 pool= 4736 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0056 pool=  121 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0057 pool= 6510 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=8
+eval-0058 pool=  797 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=3
+eval-0059 pool= 1151 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0060 pool= 6880 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0061 pool= 1867 harness_rank=3 via=claim exp_id_rank=3 stage1_rank=3
+eval-0062 pool= 1090 harness_rank=6 via=claim exp_id_rank=6 stage1_rank=5
+eval-0063 pool= 6859 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0064 pool=  367 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=2
+eval-0065 pool=  970 harness_rank=2 via=claim exp_id_rank=2 stage1_rank=3
+eval-0066 pool= 2025 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0067 pool= 6563 harness_rank=1 via=runbook_match3 exp_id_rank=3 stage1_rank=4
+eval-0068 pool= 1153 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+eval-0069 pool= 1631 harness_rank=4 via=runbook_match3 exp_id_rank=40 stage1_rank=4
+eval-0070 pool= 6895 harness_rank=1 via=claim exp_id_rank=1 stage1_rank=1
+
+=== misses: 17 ===
+  misses com 1o match dentro do top-10 (re-ranker poderia fixar): 15 -> @1 max = 68/70
+  misses com 1o match dentro do top-20 (re-ranker poderia fixar): 16 -> @1 max = 69/70
+  misses com 1o match dentro do top-50 (re-ranker poderia fixar): 16 -> @1 max = 69/70
+  misses com 1o match dentro do top-100 (re-ranker poderia fixar): 17 -> @1 max = 70/70
+
+esperado presente no POOL (score>0), por id exato:
+  misses sem NENHUM doc esperado na ordem final: []
+  perguntas cujo doc esperado EXISTE no corpus: 70/70

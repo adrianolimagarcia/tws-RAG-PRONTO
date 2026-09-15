@@ -1,0 +1,147 @@
+=== CAP = None ===
+inputs ONNX: ['input_ids', 'attention_mask', 'token_type_ids']
+textmap: 7500 ids
+  70q cache eval-0001
+  70q cache eval-0002
+  70q cache eval-0003
+  70q cache eval-0004
+  70q cache eval-0005
+  70q cache eval-0006
+  70q cache eval-0007
+  70q cache eval-0008
+  70q cache eval-0009
+  70q cache eval-0010
+  70q cache eval-0011
+  70q cache eval-0012
+  70q cache eval-0013
+  70q cache eval-0014
+  70q cache eval-0015
+  70q cache eval-0016
+  70q cache eval-0017
+  70q cache eval-0018
+  70q cache eval-0019
+  70q cache eval-0020
+  70q cache eval-0021
+  70q cache eval-0022
+  70q cache eval-0023
+  70q cache eval-0024
+  70q cache eval-0025
+  70q cache eval-0026
+  70q cache eval-0027
+  70q cache eval-0028
+  70q cache eval-0029
+  70q cache eval-0030
+  70q cache eval-0031
+  70q cache eval-0032
+  70q cache eval-0033
+  70q cache eval-0034
+  70q cache eval-0035
+  70q cache eval-0036
+  70q cache eval-0037
+  70q cache eval-0038
+  70q cache eval-0039
+  70q cache eval-0040
+  70q cache eval-0041
+  70q cache eval-0042
+  70q cache eval-0043
+  70q cache eval-0044
+  70q cache eval-0045
+  70q cache eval-0046
+  70q cache eval-0047
+  70q cache eval-0048
+  70q cache eval-0049
+  70q cache eval-0050
+  70q cache eval-0051
+  70q cache eval-0052
+  70q cache eval-0053
+  70q cache eval-0054
+  70q cache eval-0055
+  70q cache eval-0056
+  70q cache eval-0057
+  70q cache eval-0058
+  70q cache eval-0059
+  70q cache eval-0060
+  70q cache eval-0061
+  70q cache eval-0062
+  70q cache eval-0063
+  70q cache eval-0064
+  70q cache eval-0065
+  70q cache eval-0066
+  70q cache eval-0067
+  70q cache eval-0068
+  70q cache eval-0069
+  70q cache eval-0070
+cache 70q: 70 perguntas
+docs unicos a embeddar: 3463
+   embed 0/3463 (1s)
+   embed 480/3463 (30s)
+   embed 960/3463 (51s)
+   embed 1440/3463 (102s)
+   embed 1920/3463 (125s)
+   embed 2400/3463 (147s)
+   embed 2880/3463 (164s)
+   embed 3360/3463 (224s)
+embeddings docs: (3463, 384) em 1789503843
+   embed 0/332 (0s)
+
+=== SANITY: top-3 denso da 1a pergunta v3 vs baseline ===
+Q: Qual é a ordem correta para configurar o modelo de plano 00:05 D+1 no HWA 10.2.8 e por que o JnextPl
+baseline: ['ragflow:recovery-jnextplan.md:0005', 'ragflow:checklist-jnextplan-eol.md:0005', 'ragflow:recovery-jnextplan.md:0000']
+denso   : [('ragflow:hwa-10.2.8-container-rhel9-lab.md:0014', 0.896), ('hwa-10.2.8-install-jnextplan-after-backup-0008', 0.896), ('ragflow:upgrade-9.5-para-10.2.3.md:0003', 0.895)]
+esperado: ['hwa-10.2.0-jnextplan-options-0049', 'hwa-10.2.8-conman-planman-0001', 'hwa-lab-10.2.8-startofday-0005-brt-anchor-0001', 'hwa-lab-10.2.8-final-cycle-d1-rollover-0001']
+
+=== RESULTADOS ===
+BASELINE (1o estagio, top-50)  
+A_com_ancora      n=107 @1  78.5 @3  88.8 @5  93.5 @10  95.3 MRR 0.8432
+B_sem_ancora      n=140 @1  57.1 @3  69.3 @5  78.6 @10  85.7 MRR 0.6499
+D_holdout_tempor  n= 15 @1  40.0 @3  46.7 @5  46.7 @10  60.0 MRR 0.4556
+q70               n= 70 @1  61.4 @3  78.6 @5  91.4 @10  95.7 MRR 0.7208
+DENSO e5-small cap=None       
+A_com_ancora      n=107 @1  46.7 @3  58.9 @5  67.3 @10  72.9 MRR 0.5605
+B_sem_ancora      n=140 @1  59.3 @3  72.9 @5  78.6 @10  82.9 MRR 0.6762
+D_holdout_tempor  n= 15 @1   6.7 @3  20.0 @5  26.7 @10  53.3 MRR 0.1759
+q70               n= 70 @1  64.3 @3  80.0 @5  90.0 @10  94.3 MRR 0.7441
+HIBRIDO e5 cap=None (anc=base)
+A_com_ancora      n=107 @1  68.2 @3  77.6 @5  84.1 @10  86.0 MRR 0.7464
+B_sem_ancora      n=140 @1  56.4 @3  70.7 @5  77.9 @10  83.6 MRR 0.6521
+D_holdout_tempor  n= 15 @1   6.7 @3  20.0 @5  26.7 @10  53.3 MRR 0.1759
+q70               n= 70 @1  62.9 @3  77.1 @5  88.6 @10  94.3 MRR 0.7283
+
+=== FLIPS por fatia (denso vs baseline, @1) ===
+  A_com_ancora           n=107  @1 base= 84 denso= 50  ganhou=9 perdeu=43
+  B_sem_ancora           n=140  @1 base= 80 denso= 83  ganhou=23 perdeu=20
+  D_holdout_temporal     n= 15  @1 base=  6 denso=  1  ganhou=0 perdeu=5
+      - v3-D-0004 base_rank=1 -> 4
+      - v3-D-0006 base_rank=1 -> 7
+      - v3-D-0007 base_rank=1 -> 3
+      - v3-D-0012 base_rank=1 -> 21
+      - v3-D-0015 base_rank=1 -> 6
+  q70                    n= 70  @1 base= 43 denso= 45  ganhou=14 perdeu=12
+      + eval-0003 base_rank=3 -> 1
+      + eval-0011 base_rank=2 -> 1
+      + eval-0013 base_rank=13 -> 1
+      + eval-0015 base_rank=5 -> 1
+      + eval-0028 base_rank=5 -> 1
+      + eval-0029 base_rank=4 -> 1
+      + eval-0040 base_rank=4 -> 1
+      + eval-0050 base_rank=5 -> 1
+      + eval-0057 base_rank=8 -> 1
+      + eval-0058 base_rank=3 -> 1
+      + eval-0061 base_rank=3 -> 1
+      + eval-0064 base_rank=2 -> 1
+      + eval-0065 base_rank=3 -> 1
+      + eval-0067 base_rank=4 -> 1
+      - eval-0001 base_rank=1 -> 5
+      - eval-0009 base_rank=1 -> 3
+      - eval-0014 base_rank=1 -> 13
+      - eval-0016 base_rank=1 -> 3
+      - eval-0019 base_rank=1 -> 2
+      - eval-0023 base_rank=1 -> 3
+      - eval-0030 base_rank=1 -> 2
+      - eval-0032 base_rank=1 -> 5
+      - eval-0033 base_rank=1 -> 2
+      - eval-0035 base_rank=1 -> 3
+      - eval-0038 base_rank=1 -> 6
+      - eval-0043 base_rank=1 -> 2
+wrote /root/workspace/dense_trial_capNone.json
+rc=0
