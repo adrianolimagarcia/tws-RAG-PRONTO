@@ -149,8 +149,8 @@ extract_added() {  # $1 = rev
     /^\+\+\+ b\// { f = substr($0, 7); next }
     /^@@/ { if (match($0, /\+[0-9]+/)) n = substr($0, RSTART + 1, RLENGTH - 1) + 0; next }
     /^\+/ {
-      if ($0 ~ /publish-patterns:start/) { inpat = 1; n++; next }
-      if ($0 ~ /publish-patterns:end/)   { inpat = 0; n++; next }
+      if ($0 ~ /^\+# publish-patterns:start$/) { inpat = 1; n++; next }
+      if ($0 ~ /^\+# publish-patterns:end$/)   { inpat = 0; n++; next }
       if (!inpat) print rev ":" f ":" n ":" $0
       n++; next
     }
