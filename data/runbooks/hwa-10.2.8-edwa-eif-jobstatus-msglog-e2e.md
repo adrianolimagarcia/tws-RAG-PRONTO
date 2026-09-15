@@ -383,3 +383,63 @@ Se qualquer mutação de config/modelo for necessária, tirar **snapshot docker 
 - `hwa-lab-10.2.8-eif-e2e-ondemand-vs-scheduled-addendum-0001` — objetos existentes; on-demand não reproduz.
 - `hwa-lab-10.2.8-twsobjectsmonitor-ondemand-not-reported-0001` — discriminante V1/V2 (observação negativa).
 - `hwa-lab-10.2.8-eif-listener-31131-active-on-bmdm-correction-0001` — listener EIF no bmdm (correção).
+
+## 5i. Fase 2 autorizada — divergência de DOMAIN MANAGER (modelo × runtime) e o `AWSJPL004E`
+
+> Ordem `[VIGIA-ARQUITETO]`, mutação reversível no lab. Pré-registro, stop criterion e mapa de reversão em
+> `docs/lab-protocols/preregistration-2026-09-15-fase2-resync-agt1.jsonl`. Evidência:
+> `lab-validation-2026-09-15-root-cause-domain-manager-divergence-awsjpl004e.jsonl`.
+
+**Achado central.** O **modelo** e o **runtime** divergem sobre quem é o domain manager:
+
+- **Modelo** (`composer display domain=@`): `DOMAIN MASTERDM / *MANAGER MDM_BK / ISMASTER` — o banco aponta
+  o **backup** como MANAGER do domínio (objeto atualizado em 09/04/2026).
+- **Runtime** (`conman "sc @"`): `MDM ... *UNIX MASTER`; o container `tws-hwa` é o MDM e seu `localopts`
+  usa `this_cpu = MDM`.
+
+**Prova executável.** A extensão de plano foi **recusada**:
+
+```
+AWSJPL004E The workstation is not the master domain manager. The workstation name in the
+"this_cpu" option: "MDM" in the localopts file does not match the workstation name of the
+master domain manager in the database. The plan can be managed only on the master domain manager.
+```
+
+O runbook `hwa-10.2.8-stuck-plan-recovery.md` já prescrevia este caminho: *"Se o erro for `AWSJPL004E`,
+o `planman` está sendo executado de um nó cujo `thiscpu` (localopts) não corresponde ao domain manager
+gravado no MODELO (objeto DOMAIN no banco). Execute a recuperação a partir do nó que o modelo indica
+(com `composer display domain=@`)."*
+
+**Mutações executadas (todas reversíveis, em ordem):**
+
+| # | Comando | Resultado | Efeito |
+|---|---|---|---|
+| 1 | `tws-op resync` (`planman resync` a quente) | `AWSBEH119I` + `AWSJCL072I`/`AWSJCL074I` *Symphony file successfully loaded in Database*; `BMPlanResync` copiou o Symphony para `Sinfonia.<epoch>` | **Neutro** — direção Symphony→DB; não descartou o AGT1 do plano |
+| 2 | `planman unlock` | `AWSJPL504I The "planner" process unlocked the database` + `AWSJCL050I Command "UNLOCK" completed successfully` | **Havia lock órfão** (confirma fluxo interrompido); lock liberado |
+| 3 | `planman ext -days 1` | **`AWSJPL004E`** — recusado | Nenhuma troca de Symnew; porém o `Run number` avançou 70 → 71 (o incremento ocorre antes da validação de nó) |
+
+**Estado pós-mutações.** Plano operacional e saudável (`conman "sc @"` responde); `Run number 71` /
+`Confirm run number 69`; `Plan last update` inalterado em `09/12/2026 23:59`; `AGT1` presente no plano
+(run 35) e ausente do modelo.
+
+**Sintomas que casam com o runbook.** `Run number` disparando (70 → 71) com `Confirm` parado em 69 é
+listado como sinal de plano preso; e o `checklist-jnextplan-eol.md` exige `Run number == Confirm run
+number` como **pré-condição** de qualquer `JnextPlan` — logo a extensão autorizada está **bloqueada** por
+desenho enquanto o pendente existir.
+
+**Conflito de estado — escalado, NÃO corrigido.** A correção exige decisão de papel/domínio (restaurar o
+`MANAGER` do modelo para `MDM`, ou operar a partir do nó que o modelo indica). Não executada.
+
+**Reversão disponível.** `Symphony.pre-extensao` e `planbox.msg.pre-extensao` (dentro do container);
+snapshot `ha_snap_20260914-0035` (3 imagens, verificado) para restauração total; definições da M-C em
+`/tmp/ha_fm/fase2/pre_*.txt`.
+
+**Métrica.** Re-rodada em `(82b03c2, 6910 docs)`: agregados **idênticos** — `@1 53/70 (0,7571)` ·
+`@10 68/70 (0,9714)` · `MRR 0,8214`. Apenas o metadado `expected_claims` de 31/70 entradas difere
+(resolução de GT dependente do corpus). Baseline intacto.
+
+**Limites declarados.** (i) A divergência **não** está provada como causa do boundary anômalo — é a causa
+candidata forte porque explica a recusa das operações de plano e a estagnação do `Plan last update`;
+(ii) o objeto `DOMAIN` data de 09/04/2026, **anterior** ao início da anomalia (09/13), então a divergência
+pode ter sido latente e só passou a ter efeito quando o plano precisou de extensão; (iii) **causalidade
+não concluída**.
