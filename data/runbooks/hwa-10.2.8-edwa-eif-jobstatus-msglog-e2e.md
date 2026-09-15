@@ -582,3 +582,55 @@ agora com plano estendido e `Run == Confirm` ela é limpa; (ii) o plano ainda co
 (iii) **causalidade não provada** — a M1 removeu o `AWSJPL004E` (0 ocorrências) e a cadeia voltou a andar,
 mas o boundary em si ainda não foi re-medido; (iv) não foram usados `planman reset|crt`, `JnextPlan`,
 `SwitchPlan` manual, `conman submit|sbs|cs|altjob|switchmgr` nem `composer add|update`.
+
+## 5l. Simulação do boundary — transição noturna antecipada por `RELEASE SCHED` (caminho do produto)
+
+> Autorização `[VIGIA-ARQUITETO / DONO]`. Evidência:
+> `lab-validation-2026-09-15-boundary-simulation-release-sched-clean.jsonl`. Pré-estado em `/tmp/ha_fm/fase4/`.
+> **Sem alterar o relógio do SO** (proibido) — a antecipação é feita liberando a dependência de tempo.
+
+**Sintaxe na fonte** (`/opt/hwa/TWS/man/conman/cat1/release.1`) — existem **dois** comandos distintos:
+
+| comando | sintaxe | escopo |
+|---|---|---|
+| `RELEASE JOB` | `{release job \| rj} jobselect [;dependency] [;noask]` | libera **o job** |
+| `RELEASE SCHED` | `{release sched \| rs} jstreamselect [;dependency] [;noask]` | *"Releases **job streams** from dependencies"* |
+
+**Armadilhas medidas (não repetir):**
+- `rj <stream>.<job>;at` libera **só o `at` do job** — o **stream continua HOLD**. Foi preciso `rs`.
+- `rj`/`rs` **sem** argumento de dependência libera **TODAS** as dependências, inclusive os `follows`
+  internos — poderia disparar o `SWITCHPLAN` antes do `MAKEPLAN` e **estragar a medição**. Sempre `;at`.
+- **Não** usar `conman sbs` (cria/realoca instância **nova**).
+
+**Comando executado:** `conman "rs MDMXA#FINAL(2359 09/15/26);at;noask"` →
+`Command forwarded to batchman for MDMXA#FINAL[(2359 09/15/26),(0AAAAAAAAAAAAADP)]`.
+
+**Sequência no merge (hora BR):**
+
+```
+10:57:13 BATCHMAN:#S1198843/Operator command: DEPENDENCY RELEASED ON MDMXA#FINAL[(2359 09/15/26),...];AT= 0259
+10:57:16 AWSBHT036I Attempting to launch ...STARTAPPSERVER on MDMXA
+10:57:18 ...STARTAPPSERVER (#J1198885) has completed SUCCESSFULLY
+10:57:22 AWSBHT036I Attempting to launch ...MAKEPLAN
+10:57:22 AWSBDW019I Launched job ...MAKEPLAN, #J1199022
+```
+
+**As 5 medições pedidas:**
+
+| # | medição | resultado |
+|---|---|---|
+| a | `MAKEPLAN` SUCC ou ABEND? | **SUCC** — nenhum `AWSJPL004E`/`AWSJPL017E` |
+| b | `SWITCHPLAN` via esteira? | **SUCC, limpo** — sem `SwitchPlan` manual |
+| c | `Run`/`Confirm` em paridade? | **75 == 75** (antes 74/74); `Plan last update 10:57`; horizonte `09/28/2026 00:04` |
+| d | órfãos do `AGT1` na transição? | **workstation desapareceu do plano** (`sc @` = 0, igual ao modelo) mas **28 instâncias persistem em READY** |
+| e | burst de READY do stream alvo | `STARTAPPSERVER` readiado e executado; `FINAL 09/16` e `09/17` enfileirados em HOLD |
+
+**Leitura do (d):** o switch **sincroniza a tabela de workstations** com o modelo (o `AGT1` sai do plano),
+mas **não purga as instâncias** — elas ficam presas em `READY` (`AGT1#CROSS_STREAM 2105 09/11…09/13`,
+`AGT1#FTA_JOBSTREAM`) porque a estação não existe mais. A purga é **decisão separada, não autorizada**.
+
+**Limites.** (i) Esta simulação antecipa a **transição noturna** (extensão/switch do plano); **não** mede o
+*pass* de ready do boundary de produção das 21:00 BR, que segue armado em `vigia-h-0916`;
+(ii) causalidade do boundary anômalo segue **não provada**. **Proibições respeitadas:** sem `date -s`/`timens`,
+sem `planman reset|crt`, sem `JnextPlan`, sem `SwitchPlan` manual, sem `conman sbs`, SGBD compartilhado
+intocado, `Sfinal` intacto.
