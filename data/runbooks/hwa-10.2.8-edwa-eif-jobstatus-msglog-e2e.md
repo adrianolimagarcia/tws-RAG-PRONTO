@@ -503,6 +503,16 @@ zero** (`Production plan end time: (same as the start time of the last extension
 `Symnew` de horizonte zero) e a **recuperação pesada** do runbook (`planman reset` + `planman crt -days 3`
 + `SwitchPlan` + `planman ext`) **não foi executada** — é mutação nova, de escopo maior, que exige decisão.
 
+> **MEDIÇÃO POSTERIOR (read-only, 15.09, com o freeze vigente) — dimensiona o limite corretamente:**
+> - **O plano ATIVO tem horizonte COMPLETO**, provado por `conman "sj @#@.@"`: **78 instâncias em 09/16** e
+>   cobertura contínua **até 09/25** (09/16–09/18 e 09/21–09/25 com 78/dia; 09/19 = 57; 09/20 = 69),
+>   incluindo `LABPOOL#POOL_STREAM 0005 09/16` e `POOL_JOB`. Portanto a leitura do boundary de 16.09 é
+>   **válida** e o congelamento de mutação **não custa cobertura**.
+> - O horizonte zero é da **extensão PENDENTE** (`Symnew`), **não** do plano ativo. E o `Symnew` de
+>   23.392 B **não é degenerado**: há precedente idêntico no lab — `Symnew.bak` = **19.584 B** (09/09).
+> - O risco de um `SwitchPlan` prematuro continua real (trocaria o plano ativo por uma extensão de 0 dias),
+>   mas a leitura correta é essa — **não** "o plano perdeu horizonte".
+
 **Reversão:** `ws_mdm.def.PRE-M1` e `ws_mdmbk.def.PRE-M1` (definições completas pré-mutação, extraídas pelo
 próprio produto, re-aplicáveis pelo mesmo `add`); snapshot `ha_snap_20260914-0035`. PostgreSQL não
 tocado; Sfinal intacto; nada fora do lab.
