@@ -622,7 +622,7 @@ mas o boundary em si ainda não foi re-medido; (iv) não foram usados `planman r
 | a | `MAKEPLAN` SUCC ou ABEND? | **SUCC** — nenhum `AWSJPL004E`/`AWSJPL017E` |
 | b | `SWITCHPLAN` via esteira? | **SUCC, limpo** — sem `SwitchPlan` manual |
 | c | `Run`/`Confirm` em paridade? | **75 == 75** (antes 74/74); `Plan last update 10:57`; horizonte `09/28/2026 00:04` |
-| d | órfãos do `AGT1` na transição? | **workstation desapareceu do plano** (`sc @` = 0, igual ao modelo) mas **28 instâncias persistem em READY** |
+| d | órfãos do `AGT1` na transição? | **workstation desapareceu do plano** (`sc @` = 0, igual ao modelo) mas **28 instâncias totais do `AGT1` persistem** — **8 em `READY`** (`AGT1#CROSS_STREAM` e `AGT1#FTA_JOBSTREAM`, de 09/11 a 09/14) e **20 em `HOLD`** (09/15 a 09/24) |
 | e | burst de READY do stream alvo | `STARTAPPSERVER` readiado e executado; `FINAL 09/16` e `09/17` enfileirados em HOLD |
 
 **Leitura do (d):** o switch **sincroniza a tabela de workstations** com o modelo (o `AGT1` sai do plano),
