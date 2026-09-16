@@ -951,3 +951,31 @@ mesma classe do defeito de `14:18:22Z` já documentado.
 `data/evidence/lab-validation-2026-09-16-boundary-16-09-reading-mdm-twsmerge-frozen.jsonl`
 (gate `validate_lab_session.py` = **VÁLIDO**).
 
+## 5t. Lab fora do ar em 16.09 — causa raiz e o evento do boundary **NÃO OBSERVADO**
+
+**Causa raiz** (medida pelo VIGIA-ARQUITETO por journal do host + output do comando; reconferida aqui read-only):
+
+| hora (BR) | evento |
+|---|---|
+| `15/09 23:55:32` | as capturas do boundary ficam `Deactivated successfully` — **nenhuma escreveu o alvo** |
+| `15/09 23:55:42` | **SHUTDOWN do host** (última entrada do boot `-1`) |
+| `16/09 01:03:35` | host volta (boot 0); `dockerd` restaura os 5 containers às `01:08:38` |
+| `16/09 02:28:08` | sessão irmã `e9b3b8b7e0c4` roda `docker container prune -f` — escopo aprovado pelo dono: "imagens dangling + **containers parados**". A saída lista exatamente os 3 do lab e fecha com `Total reclaimed space: 12.3GB` |
+| `16/09 02:28:14` | `docker image prune -f` (só dangling, 21,1 GB) — as imagens `ha_snap_20260914-0035_tws-*` e as tags `tws-hwa:lab-*` **sobrevivem** |
+
+**O lab não desapareceu sozinho:** parou no reboot (**não tem restart policy** — o `dockerd` restaurou os 5 mas deixou os 3 **parados**) e foi **removido por um prune cujo escopo "containers parados" pegou os 3**; a camada gravável foi junto. **O `tws-watchdog` está correto** (`CRITICAL` real, email desativado por default → alarme só no journal).
+
+**O evento do boundary está NÃO OBSERVADO, nunca negativo.** A janela da meia-noite local (`00:02–00:07 BR`, medida nos dias 10–15.09) caiu **integralmente dentro do período com o host desligado** (`23:55:42 → 01:03:35`). **Não há medição possível**; a medida limpa esperada para o dia de plano 09/16 está **perdida por indisponibilidade do host**. Não reinterpretar a série por isso.
+
+**Inventário do snapshot 112 (btrfs, ID 379) — read-only:**
+
+- Preserva `/var/lib/containerd`, inclusive a **camada gravável do `tws-hwa`** (containerd snapshot 7).
+- `20260915_TWSMERGE.log`: **386880 B, mtime `22:58:33`** — o crescimento de `386657 B` (mtime 19:58) até aqui é o **tick de 3 h do profiler do MAILMAN**, exatamente como previsto, **não** um "descongelamento".
+- `20260915_APPSRVMN.log` `23:54:48` · `20260915_MONMAN.log` `23:54:58` · banco `/var/lib/pgsql/18/data` `23:55:34`.
+- **Estado preservado = PÓS-M1** (a M1 foi aplicada em 09/15 10:57) — diferente das imagens `ha_snap_20260914-0035_*`, que são de 09/14 00:35 e **não** contêm a M1.
+
+**Não executado e não autorizado neste tick:** reconstrução dos containers ou `docker run` do lab — reconstruir a camada overlay a partir do snapshot btrfs **não é operação nativa do Docker** e mexe em infra do host com risco no banco do lab. **Decisão do dono.**
+
+**Estado deixado.** Nada mutado; o snapshot 112 permanece intacto como ponto de reconstrução. Evidência:
+`data/evidence/lab-validation-2026-09-16-lab-down-root-cause-and-snapshot-112-inventory.jsonl`.
+
