@@ -877,3 +877,47 @@ reportado. Boost/rerank **não** foram tocados.
 `RAG_DROP_*` já usado no arquivo), para não deixar um baseline regredido em silêncio. Ligar é decisão
 explícita — e o ideal é existir uma **fatia de benchmark que pergunte a sintaxe**, senão o ganho não é medível.
 
+## 5s. Leitura do boundary de 16.09 no alvo — o `TWSMERGE` do MDM **congelou antes do boundary**
+
+**Alvo**: `2026-09-16 00:00:00Z` (21:00 BR de 15.09). Leituras em `00:02:21Z` e `00:11:50Z`. Congelamento
+de mutação vigente; **nenhum** comando de mutação de plano foi usado.
+
+**Resultado: nenhum ramo da árvore pré-registrada cobre o estado observado.**
+
+| ramo | exigia | observado |
+|---|---|---|
+| (a) | janela do MDM não-vazia com `dR>0` E `MAILMAN=0`, **ou** PRIMÁRIO readiando por completo | janela **vazia**; `JS_VARTABLE_OK` segue HOLD → **não** |
+| (b) | burst de READY com `LAUNCH=0`/`SUCC=0`, **ou** 0 READY com janela **não-vazia** | janela vazia → **não** |
+| (c) | `0 linhas` = leitura cedo demais | confere o zero, mas a re-leitura 8 min depois dá o mesmo, com arquivo **inalterado** → **só em parte** |
+
+**O estado de hoje é novo:**
+
+- **O `TWSMERGE` do MDM parou às 19:58 BR** — ~1 h antes do boundary — e o arquivo não se moveu nas duas
+leituras (mtime e tamanho `386657 B` idênticos). Os últimos registros são do profiler do `MAILMAN`.
+- **O nó está vivo**: `mailman` (pid 1199354) e `batchman` (pid 1199373) ativos, e os **outros** logs do
+mesmo nó escrevem normalmente (`MONMAN` 21:10, `APPSRVMN` 21:09). **Só o `TWSMERGE` está congelado.**
+- **Série por arquivo** (mesma janela): `20260910=481`, `11=77`, `12=79`, `13=22`, `14=22`, **`15=0`**.
+Os saudáveis dão 77/79, os dois alvos anômalos dão 22 — **hoje dá 0, um terceiro estado**.
+- **O plano não avançou de dia**: `Scheduled for (Exp) 09/15/26 (#75)`, `Run 75 == Confirm 75`,
+`Plan last update 09/15/2026 10:57`. Os daemons subiram às 10:57 — a mesma hora do last update
+(coincidência registrada, sem interpretação causal).
+- **Conjunto desta janela (cohort `0005 09/16`)**: no T-120s eram `TOTAL=4 HOLD=4`; na virada **duas
+instâncias saíram do plano** (`POOL_STREAM`, `POOL_BALANCING` — 0 ocorrências em qualquer cohort) e
+**duas seguem HOLD** (`FRENTE1_STREAM`, `JS_VARTABLE_OK`). **2 das 3 limpas saíram; a terceira não.**
+- **BMDM**: 1 linha, `FINALPOSTREPORTS → READY` às `00:00:05Z`. É o nome que o **D11** exclui deste
+conjunto (0/4 dias de controle) — hoje ele readiou no instante do boundary de produção, não da
+meia-noite local. Diferença real contra o controle.
+
+**A pergunta aberta do `at` (o PASS libera o `at` do `sbs`?) continua NÃO respondida**: com 2 das 3
+limpas saindo e 1 permanecendo HOLD, o dado é ambíguo e não fecha nem o claim medido
+(`...plan-timebase-utc-and-sbs-at-no-autorelease-0001`) nem a inferência do `fded8c4`.
+
+**Defeitos do payload recebido**: (i) a captura `/tmp/d11test/ev_full.txt` (167 B) continha apenas
+**placeholders** (`"linha de merge com READY/dR/SUCC"` repetido), nenhum dado — **não usada**;
+(ii) a injeção disparou **~5,5 min antes** do alvo (relógio `23:54:39Z` contra alvo `00:00:00Z`),
+mesma classe do defeito de `14:18:22Z` já documentado.
+
+**Estado deixado.** Nada mutado. Evidência:
+`data/evidence/lab-validation-2026-09-16-boundary-16-09-reading-mdm-twsmerge-frozen.jsonl`
+(gate `validate_lab_session.py` = **VÁLIDO**).
+
