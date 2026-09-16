@@ -266,3 +266,24 @@ qualquer `prune`; `MakePlan`; `planman reset|crt`; `SwitchPlan` manual.
 **Via A** preserva a M1 e evita repetir trabalho; **Via B** é mais próxima do caminho conhecido (imagem
 commitada) mas **exige re-aplicar a M1** e parte de 09/14. Em ambos os casos, subir **com
 `--restart unless-stopped`** — o defeito que causou o incidente foi a ausência de restart policy.
+
+**Script de subida versionado:** `docs/lab-up-2026-09-16.sh` — **default = DRY-RUN** (nada é criado sem
+`--apply`). Deriva os argumentos de criação do `config.v2.json`/`hostconfig.json` do snapshot 112 e
+**aborta se a derivação falhar** (não há fallback para valor chutado). Uso:
+
+```bash
+./docs/lab-up-2026-09-16.sh                  # dry-run: imprime os comandos exatos
+./docs/lab-up-2026-09-16.sh --check          # só as pré-condições
+./docs/lab-up-2026-09-16.sh --apply          # executa (exige autorização do dono)
+./docs/lab-up-2026-09-16.sh --image B --apply # Via B (imagens de 09/14; exige re-aplicar a M1)
+./docs/lab-up-2026-09-16.sh --down --apply   # REVERSÃO: para e remove os 3 containers
+```
+
+> **Nota de escopo da Via A no script:** o flatten validado cobre **o MDM (`tws-hwa`)**, que é onde a M1 foi
+> aplicada. `tws-bmdm` e `tws-agent` **não têm flatten próprio** e são subidos das imagens commitadas de
+> 09/14 — comportamento explícito no código, não implícito.
+>
+> **Bugs que o dry-run pegou antes de qualquer execução** (registro de por que o dry-run é obrigatório):
+> (1) os binds perdiam o `:dst` (o mount viraria o path errado); (2) a Via A usava a imagem do `tws-hwa` nos
+> **três** containers; (3) sumia a rede primária, e o `tws-hwa` subiria com `hwa-lan` como default em vez de
+> `bridge`. Todos corrigidos e re-validados.
