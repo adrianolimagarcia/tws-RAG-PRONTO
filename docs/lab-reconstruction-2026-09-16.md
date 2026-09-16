@@ -91,20 +91,62 @@ echo "bmdm: mesh=$IP_BMDM_MESH   agent: mesh=$IP_AGENT_MESH"
 **Racional:** a camada gravável do `tws-hwa` no snapshot 112 contém a instalação do TWS já no estado
 **pós-M1** (M1 aplicada em 09/15 10:57). É o caminho que **não exige re-aplicar a M1**.
 
+> ### ⚠️ DEFEITO MATERIAL CORRIGIDO (medido por execução, 16.09)
+> A versão anterior deste passo mandava `tar -C $LAYER` + `docker import` direto. **Isso produz uma imagem
+> que NÃO BOOTA.** `$LAYER` é o **diff (upper) do overlay**, **não** o rootfs: medido, `/usr/bin/bash`,
+> `/sbin/init`, `/usr/lib/systemd/systemd`, `/usr/bin/systemctl` e `/etc/os-release` estão **AUSENTES**
+> dele (`/usr/bin` tem **50** itens contra **383** da base). O `docker import` retorna **rc=0 sem avisar**
+> e a falha só aparece no boot (`exec: "/bin/sh": stat /bin/sh: no such file or directory`).
+> **O teste do arquivo-sentinela NÃO prova completude** — o sentinela está no diff. **Não repetir.**
+
 ```bash
-# ---- A0. Verificações (READ-ONLY, sem criar nada) ----
+# ---- A0. Verificações (READ-ONLY) ----
 SNAP=/.snapshots/112/snapshot
 LAYER=$SNAP/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs
-test -f "$LAYER/opt/hwa/TWSDATA/stdlist/traces/20260915_TWSMERGE.log" && echo "camada OK"
-du -sh "$LAYER"      # esperado ~5,2G
-df -h /              # exigir >= 12G livres
+
+# o sentinela prova que o DIFF tem o TWS — NÃO prova que é o rootfs:
+stat -c '%s bytes' "$LAYER/opt/hwa/TWSDATA/stdlist/traces/20260915_TWSMERGE.log"   # esperado 386880
+
+# CONFERÊNCIA OBRIGATÓRIA: o rootfs da base NÃO está aqui — tem de dar AUSENTE
+for f in usr/bin/bash sbin/init usr/lib/systemd/systemd etc/os-release; do
+  test -e "$LAYER/$f" && echo "INESPERADO: /$f presente no diff" || echo "esperado AUSENTE: /$f"
+done
+du -sh "$LAYER"   # ~5,2G = tamanho do DIFF, não do rootfs
+df -h /           # exigir >= 20G livres (base + diff + tar flattened ~5,8G + imagem)
 # (rodar antes o §4.1 para ter $IP_HWA_MESH / $IP_HWA_LAN)
 
-# ---- A1. Materializar a camada como imagem (CRIA imagem; não cria container) ----
-tar -C "$LAYER" -cf /var/tmp/tws-hwa-layer-20260916.tar .
-docker import /var/tmp/tws-hwa-layer-20260916.tar tws-hwa:reconstruido-20260916
-docker image inspect tws-hwa:reconstruido-20260916 --format '{{.Size}}'
+# ---- A1. FLATTEN: base (export) + diff por cima + import ----
+# a base é EXATAMENTE a original — o digest tem de conferir com o campo Image do config.v2.json:
+docker image inspect registry.access.redhat.com/ubi9/ubi-init:latest --format '{{.Id}}'
+# esperado: sha256:5e25c1ed0c669e3a93dd82e0cbcdf7e663d9681a512278ec28d76675609cefaa
 
+rm -rf /var/tmp/flatten && mkdir -p /var/tmp/flatten
+docker create --name ubi9-flatten-base registry.access.redhat.com/ubi9/ubi-init:latest >/dev/null
+docker export ubi9-flatten-base | tar -C /var/tmp/flatten -xf -
+docker rm ubi9-flatten-base >/dev/null
+tar -C "$LAYER" -cf - . | tar -C /var/tmp/flatten -xf -   # o DIFF por cima (diff ganha da base)
+tar -C /var/tmp/flatten -cf /var/tmp/tws-hwa-flat-20260916.tar .
+docker import /var/tmp/tws-hwa-flat-20260916.tar tws-hwa:reconstruido-20260916
+
+# ---- A1.5. GATE OBRIGATÓRIO: a imagem BOOTA? (antes de qualquer docker run de verdade) ----
+docker run --rm --entrypoint /bin/sh tws-hwa:reconstruido-20260916 \
+  -c 'ls -la /sbin/init; ls -l /usr/lib/systemd/systemd; ls -l /usr/bin/bash; head -2 /etc/os-release'
+# esperado: /sbin/init -> ../lib/systemd/systemd PRESENTE, bash PRESENTE, os-release RHEL 9.x
+# Se /sbin/init ou bash faltarem, a imagem está QUEBRADA — NÃO subir o lab.
+```
+
+> **Artefato de validação já pronto no host:** a imagem `tws-hwa:vigia-validacao-20260916`
+> (id `d9ad09693a1c`) é o resultado do flatten acima, construído e **validado ponta-a-ponta pelo vigia**:
+> `/sbin/init`, `/usr/bin/bash`, `systemctl` presentes, `/etc/os-release` = RHEL 9.8,
+> `/opt/hwa/TWS/bin/conman` e `/opt/hwa/TWSDATA` presentes, `/usr/pgsql-18/bin/postgres` presente, e o
+> **sentinela preservado** (`20260915_TWSMERGE.log` 386880 B, mtime `22:58:33`).
+> **Controle de completude** (conjunto × conjunto): árvore da reconstruída = **97.915** caminhos vs
+> **97.908** do commit `ha_snap_20260914-0035_tws-hwa`; as 162 diferenças são **integralmente ruído
+> transitório** (`/tmp`, cache do dnf, logs do engineServer, `postmaster.pid`, um `pg_wal`, um socket de
+> EDWA) — **nenhum binário, nenhuma unidade, nenhum dado de `/opt/hwa` ou do banco**. Não há perda real.
+> Pode ser usada como resultado de A1 ou removida depois. Custo do flatten: ~4 min.
+
+```bash
 # ---- A2. Subir o MDM com a config EXATA (ordem: agent -> bmdm -> hwa) ----
 BIND=/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/hermes/docker
 docker run -d --name tws-hwa --hostname tws-hwa \
