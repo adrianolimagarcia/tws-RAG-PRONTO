@@ -979,3 +979,43 @@ mesma classe do defeito de `14:18:22Z` já documentado.
 **Estado deixado.** Nada mutado; o snapshot 112 permanece intacto como ponto de reconstrução. Evidência:
 `data/evidence/lab-validation-2026-09-16-lab-down-root-cause-and-snapshot-112-inventory.jsonl`.
 
+## 5u. Reconstrução do lab **APLICADA** (autorizada pelo dono) — 3 containers de pé, binds no SDB, backup único e limpeza
+
+**Aplicação**: `./docs/lab-up-2026-09-16.sh --image A --apply`, na ordem agent → bmdm → hwa. Os três subiram
+(`UP` no stop_criterion). O `tws-hwa` usou o caminho **create + network connect + start**.
+
+| container | imagem | rede primária | restart |
+|---|---|---|---|
+| `tws-agent` | `ha_snap_20260914-0035_tws-agent` | `hwa-mesh` | `unless-stopped` |
+| `tws-bmdm` | `ha_snap_20260914-0035_tws-bmdm` | `hwa-mesh` | `unless-stopped` |
+| `tws-hwa` | `tws-hwa:vigia-validacao-20260916` (**flatten do snapshot 112, PÓS-M1**) | `bridge` | `unless-stopped` |
+
+**Diretriz 1 — binds no SDB (cumprida)**: todos os mounts de persistência apontam para
+`/run/media/adriano/e681b5ac-…/hermes/docker/{tws-hwa,tws-bmdm,tws-agent}/…`. **Nenhum dado de lab no SDA.**
+
+**Lab funcional**: `conman sj @#@.@` lê o plano (`TWS-AGENT_1 #DYN_JOBSTREAM 2105 09/25..27 HOLD`);
+`conman sc @` mostra `MDMDA, MDMXA, MDM_BK, MDM_BKA, MDM_DWB` em **run 75** com papel `MASTER`;
+`batchman`+`mailman` ativos no MDM e no BMDM. Portas no `tws-hwa`: **31116** (engineServer), 31114 (agent),
+31113/31111 (netman), 5432 (postgres), 22 (sshd).
+
+**Diretriz 2 — backup único**: a pasta `hermes/tws-lab-snapshots/` estava **vazia** (criada no mesmo dia),
+logo **não havia snapshot anterior a substituir ou expurgar**; foi gravada **1 cópia** (`docker save` das
+3 imagens em uso).
+
+**Diretriz 3 — limpeza**: `crazy_banzai` removido; **3 imagens legadas removidas** —
+`ha_snap_20260914-0035_tws-hwa` (9,28 GB), `tws-hwa:lab-10.2.8-dwc` (9,04 GB) e `tws-hwa:lab-10.2.8`
+(5,44 GB), **~23,8 GB**. Restam no Docker apenas as **3 imagens estritamente ativas**.
+
+**Ressalvas registradas:**
+- As imagens `ha_snap_20260914-0035_tws-bmdm` e `_tws-agent` **não** foram removidas: estão **em uso** — são
+  exatamente as "imagens estritamente ativas" que a diretriz manda manter.
+- O `df` do SDA **não se moveu** após as remoções (138 G usados / 94 G livres); `du /var/lib/docker` = 14 G e
+  o btrfs reporta 129,33 GiB usados em Data. Em btrfs a devolução de espaço de camadas removidas pode não
+  aparecer no `df` sem rebalance — **o ganho está confirmado no inventário do docker, não no `df`**.
+
+**Reversão**: `./docs/lab-up-2026-09-16.sh --down --apply` — os binds `/data` não são tocados; o backup e o
+snapshot btrfs 112 permanecem.
+
+**Estado deixado.** Nenhum `prune` executado; snapshot 112 intacto; `/data` intocado. Evidência:
+`data/evidence/lab-validation-2026-09-16-lab-reconstruction-applied-and-cleanup.jsonl`.
+
