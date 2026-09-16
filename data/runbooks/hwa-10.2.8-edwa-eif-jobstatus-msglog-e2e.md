@@ -901,16 +901,30 @@ Os saudáveis dão 77/79, os dois alvos anômalos dão 22 — **hoje dá 0, um t
 - **O plano não avançou de dia**: `Scheduled for (Exp) 09/15/26 (#75)`, `Run 75 == Confirm 75`,
 `Plan last update 09/15/2026 10:57`. Os daemons subiram às 10:57 — a mesma hora do last update
 (coincidência registrada, sem interpretação causal).
-- **Conjunto desta janela (cohort `0005 09/16`)**: no T-120s eram `TOTAL=4 HOLD=4`; na virada **duas
-instâncias saíram do plano** (`POOL_STREAM`, `POOL_BALANCING` — 0 ocorrências em qualquer cohort) e
-**duas seguem HOLD** (`FRENTE1_STREAM`, `JS_VARTABLE_OK`). **2 das 3 limpas saíram; a terceira não.**
+- **Conjunto desta janela (cohort `0005 09/16`)**: **QUATRO instâncias, TODAS HOLD no MDM** —
+  `LABPOOL#POOL_STREAM`, `LABPOOL#POOL_BALANCING`, `MDM#FRENTE1_STREAM`, `MDM#JS_VARTABLE_OK`
+  (censo por **ENUMERAÇÃO** `sj @#@.@`, 953 linhas). **ERRATA — erro de medição corrigido**: a primeira
+  versão desta seção afirmava que `POOL_STREAM` e `POOL_BALANCING` "saíram do plano"; **é falso**. Os dois
+  streams pertencem à workstation **LABPOOL**, não a MDM/MDMXA — `sj MDM#POOL_STREAM.@` devolve
+  `AWSBHU072E There are no objects` (**falso negativo de seletor**) mesmo com o objeto existindo.
+  Confirmado: `sj LABPOOL#POOL_STREAM.@` → `HOLD 10(09/16)(00:00)`; `composer display jobstream=LABPOOL#POOL_STREAM`
+  → 1 objeto contra 0 para `MDM#POOL_STREAM`. **O pitfall já estava documentado na skill `tws-hwa` e ainda
+  assim foi violado** — a lição operacional é que censo de conjunto se faz por **enumeração**, nunca por nome
+  nu com qualificador presumido.
+- **O pass do boundary FUNCIONOU — no BMDM** (achado novo): o stdlist virou às `00:05:03Z`
+  (`AWSDDW100I SWITCHED`, arquivo novo `20260916_TWSMERGE.log`) e o pass readiou **as quatro** instâncias
+  ad-hoc — `POOL_STREAM`, `POOL_BALANCING`, `FRENTE1_STREAM`, `JS_VARTABLE_OK` → **READY**. O `sj` do BMDM
+  concorda; o `sj` do MDM mantém as 4 em **HOLD**. É o **mesmo par de visões divergentes** já medido em
+  13.09 e 14.09 (MDM sem o burst, BMDM com ele).
 - **BMDM**: 1 linha, `FINALPOSTREPORTS → READY` às `00:00:05Z`. É o nome que o **D11** exclui deste
 conjunto (0/4 dias de controle) — hoje ele readiou no instante do boundary de produção, não da
 meia-noite local. Diferença real contra o controle.
 
-**A pergunta aberta do `at` (o PASS libera o `at` do `sbs`?) continua NÃO respondida**: com 2 das 3
-limpas saindo e 1 permanecendo HOLD, o dado é ambíguo e não fecha nem o claim medido
-(`...plan-timebase-utc-and-sbs-at-no-autorelease-0001`) nem a inferência do `fded8c4`.
+**Pergunta aberta do `at` (o PASS libera o `at` do `sbs`?) — RESPOSTA PARCIAL**: um PASS **liberou** as 4
+instâncias submetidas com `;at=` — **mas no BMDM, não no MDM**. É coerente com o claim medido
+(`...plan-timebase-utc-and-sbs-at-no-autorelease-0001`: o `sbs;at` **não** auto-libera **fora** de um pass)
+e agora há um caso **dentro** de um pass. **Ressalva registrada**: o pass que liberou foi o do **BMDM** e a
+instância foi criada pelo **MDM** — **não** se pode escrever "o pass do MDM libera o `at`".
 
 **Defeitos do payload recebido**: (i) a captura `/tmp/d11test/ev_full.txt` (167 B) continha apenas
 **placeholders** (`"linha de merge com READY/dR/SUCC"` repetido), nenhum dado — **não usada**;
