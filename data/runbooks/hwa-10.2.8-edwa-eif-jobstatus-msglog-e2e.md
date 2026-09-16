@@ -890,14 +890,30 @@ de mutação vigente; **nenhum** comando de mutação de plano foi usado.
 | (b) | burst de READY com `LAUNCH=0`/`SUCC=0`, **ou** 0 READY com janela **não-vazia** | janela vazia → **não** |
 | (c) | `0 linhas` = leitura cedo demais | confere o zero, mas a re-leitura 8 min depois dá o mesmo, com arquivo **inalterado** → **só em parte** |
 
-**O estado de hoje é novo:**
+**O que se sustenta e o que foi erratado:**
 
-- **O `TWSMERGE` do MDM parou às 19:58 BR** — ~1 h antes do boundary — e o arquivo não se moveu nas duas
-leituras (mtime e tamanho `386657 B` idênticos). Os últimos registros são do profiler do `MAILMAN`.
-- **O nó está vivo**: `mailman` (pid 1199354) e `batchman` (pid 1199373) ativos, e os **outros** logs do
-mesmo nó escrevem normalmente (`MONMAN` 21:10, `APPSRVMN` 21:09). **Só o `TWSMERGE` está congelado.**
-- **Série por arquivo** (mesma janela): `20260910=481`, `11=77`, `12=79`, `13=22`, `14=22`, **`15=0`**.
-Os saudáveis dão 77/79, os dois alvos anômalos dão 22 — **hoje dá 0, um terceiro estado**.
+- **O `TWSMERGE` do MDM NÃO congelou** (errata de interpretação, `VIGIA-CORR-0916-MEDICAO-2`): o último
+escritor é o **tick de 3 h do profiler do `MAILMAN`**, e o próprio produto reporta o período na linha
+(`MAILMAN WORKING PROFILER OF THE LAST ===> 10815 seconds`). Cadência medida: `13:57:47 → 16:58:03 → 19:58:18`
+(deltas `3:00:15` e `3:00:16`). **Próximo tick ~22:58:33 BR (01:58:33Z)** — se o arquivo se mover então,
+**não** é "descongelamento", é o mesmo tick de 3 h. O mtime/tamanho idênticos em 4 leituras são coerentes
+com o tick, não com travamento.
+- **O silêncio tem causa medida**: o escritor periódico dos dias saudáveis era o **heartbeat de 10 min do
+`AGT1`** (`MY:UNLINK AGT1`; **159 ocorrências em 12.09 contra 100 em 15.09**). Com o `AGT1` fora do **modelo**,
+o heartbeat e as tentativas de link morreram — última menção a `AGT1` no arquivo: **`12:44:46`**, e
+`unable to link` deixa de aparecer após a hora 10. **O silêncio é consequência da remoção do `AGT1`, não um
+estado novo do log.** O nó está vivo (`mailman`/`batchman` ativos; `MONMAN` e `APPSRVMN` escrevendo).
+- **Série por arquivo** (mesma janela): `10=481`, `11=77`, `12=79`, `13=22`, `14=22`, **`15=0`**. **ERRATA:**
+as 22 linhas de 13.09/14.09 **não** são "pass degradado" — composição medida nos dois dias: **total 22 =
+20 MAILMAN** (falhas de link do `AGT1`: `AWSBCV035W` + `AWSBCV082I`) **+ 2 BATCHMAN** (o próprio heartbeat
+`MY:UNLINK AGT1`). Comparar 22 (com ruído do `AGT1`) com 0 (sem) compara **piso de ruído, não mecanismo**:
+o 0 de hoje é **esperado** após a remoção. **O "terceiro estado" que a 1ª versão descreveu NÃO existe.**
+- **O discriminador que sobrevive** (não afetado pelo `AGT1`): `Received dR: ... from cpu MDM_BK` e
+`status to READY` do BATCHMAN. Série: `11.09 = 77/13 READY/13 dR/0 MAILMAN`, `12.09 = 79/13/13/0`,
+`13.09 = 22/0/0/20`, `14.09 = 22/0/0/20`, **`15.09 = 0/0/0/0`** (no 15.09 não há nem o piso de ruído).
+O que se sustenta é **`0 dR` E `0 READY`** — o master **não processou o boundary**.
+- **Próximo evento de hora marcada**: o pass da **meia-noite local**, quando o stdlist do MDM vira —
+medido `00:02–00:07 BR` nos dias 10 a 15.09.
 - **O plano não avançou de dia**: `Scheduled for (Exp) 09/15/26 (#75)`, `Run 75 == Confirm 75`,
 `Plan last update 09/15/2026 10:57`. Os daemons subiram às 10:57 — a mesma hora do last update
 (coincidência registrada, sem interpretação causal).
