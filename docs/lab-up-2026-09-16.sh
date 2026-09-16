@@ -198,16 +198,27 @@ preconditions() {
 # --------------------------------------------------------------------------------------
 # Montagem e execucao
 # --------------------------------------------------------------------------------------
+stop_criterion() {   # <nome>: o container tem de estar RUNNING (roda DEPOIS do start)
+  local name="$1" i
+  for i in 1 2 3 4 5; do
+    sleep 1
+    if docker container inspect -f '{{.State.Running}}' "$name" 2>/dev/null | grep -q true; then
+      log "   $name: UP"
+      return 0
+    fi
+  done
+  die "$name nao subiu em 5 s (State.Running != true). Veja: docker logs $name" 2
+}
+
 build_and_maybe_run() {
   local name="$1" blk="$2"
-  local image mem memswap shm hostname
+  local image mem memswap shm hostname netmode
   mem=$(printf '%s\n' "$blk" | sed -n 's/^MEM=//p')
   memswap=$(printf '%s\n' "$blk" | sed -n 's/^MEMSWAP=//p')
   shm=$(printf '%s\n' "$blk" | sed -n 's/^SHM=//p')
   hostname=$(printf '%s\n' "$blk" | sed -n 's/^HOSTNAME=//p')
-
-  local netmode
   netmode=$(printf '%s\n' "$blk" | sed -n 's/^NETMODE=//p')
+  netmode="${netmode:-bridge}"
 
   case "$VIA" in
     A) # a reconstrucao do snapshot cobre o MDM (tws-hwa), que e onde a M1 foi aplicada;
@@ -217,49 +228,79 @@ build_and_maybe_run() {
     B) image="ha_snap_20260914-0035_${name}:latest" ;;
   esac
 
-  local args=(run -d --name "$name" --hostname "$hostname"
+  # args comuns as duas formas (run e create)
+  local common=(--name "$name" --hostname "$hostname"
     --privileged --security-opt label=disable --cgroupns private
     --memory "$((mem/1024/1024))m" --memory-swap "$((memswap/1024/1024))m"
     --shm-size "$((shm/1024/1024))m")
-  # a rede PRIMARIA vem do NetworkMode original (bridge no hwa, hwa-mesh nos outros):
-  # e ela que define a rota default. As redes extras entram DEPOIS.
-  [ -n "$netmode" ] && args+=(--network "$netmode")
 
   local i=0 nb
   nb=$(printf '%s\n' "$blk" | sed -n 's/^NBINDS=//p')
   while [ "$i" -lt "$nb" ]; do
-    args+=(-v "$(printf '%s\n' "$blk" | sed -n "s/^BIND_${i}=//p")")
+    common+=(-v "$(printf '%s\n' "$blk" | sed -n "s/^BIND_${i}=//p")")
     i=$((i+1))
   done
+  common+=(--restart unless-stopped)   # PROPOSTA (ver cabecalho)
 
-  local line
+  # redes extras = todas menos a primaria
+  local extras=() line net
   while IFS= read -r line; do
     case "$line" in
-      NET=*) local net="${line#NET=}"
-             args+=(--network "$net")
-             local ip alias
-             ip=$(printf '%s\n' "$blk" | sed -n "s/^NET_${net}_IP=//p")
-             [ -n "$ip" ] && args+=(--ip "$ip")
-             alias=$(printf '%s\n' "$blk" | sed -n "s/^NET_${net}_ALIAS=//p")
-             [ -n "$alias" ] && args+=(--network-alias "$alias") ;;
+      NET=*) net="${line#NET=}"; [ "$net" = "$netmode" ] || extras+=("$net") ;;
     esac
   done <<< "$blk"
 
-  # ---- PROPOSTA: restart policy. O original tinha `no`; e a causa do incidente de 16.09.
-  args+=(--restart unless-stopped)
+  # Primaria NAO-user-defined + redes extras NAO e expressavel num unico `docker run` (MEDIDO):
+  #   --network bridge --network hwa-mesh --ip X --network-alias Y  => rc=125
+  #   "network-scoped aliases are only supported for user-defined networks"
+  #   e --ip/--network-alias so valem para a PRIMEIRA rede. O caminho validado por execucao e:
+  #   docker create na primaria -> docker network connect das extras -> docker start.
+  local precisa_split=0
+  case "$netmode" in bridge|host|none) [ "${#extras[@]}" -gt 0 ] && precisa_split=1 ;; esac
 
+  if [ "$precisa_split" = 1 ]; then
+    log "docker create ${common[*]} --network $netmode $image /sbin/init"
+    local e
+    for e in "${extras[@]}"; do
+      local eip ealias
+      eip=$(printf '%s\n' "$blk" | sed -n "s/^NET_${e}_IP=//p")
+      ealias=$(printf '%s\n' "$blk" | sed -n "s/^NET_${e}_ALIAS=//p")
+      log "docker network connect ${eip:+--ip $eip }${ealias:+--alias $ealias }$e $name"
+    done
+    log "docker start $name"
+    if [ "$MODE" = "apply" ]; then
+      docker create "${common[@]}" --network "$netmode" "$image" /sbin/init >/dev/null
+      for e in "${extras[@]}"; do
+        local eip ealias
+        eip=$(printf '%s\n' "$blk" | sed -n "s/^NET_${e}_IP=//p")
+        ealias=$(printf '%s\n' "$blk" | sed -n "s/^NET_${e}_ALIAS=//p")
+        docker network connect ${eip:+--ip "$eip"} ${ealias:+--alias "$ealias"} "$e" "$name"
+      done
+      docker start "$name" >/dev/null
+      stop_criterion "$name"
+    fi
+    return 0
+  fi
+
+  local args=(run -d "${common[@]}" --network "$netmode")
+  while IFS= read -r line; do
+    case "$line" in
+      NET=*) net="${line#NET=}"
+             [ "$net" = "$netmode" ] && continue   # a primaria ja foi passada acima
+             args+=(--network "$net")
+             local aip aalias
+             aip=$(printf '%s\n' "$blk" | sed -n "s/^NET_${net}_IP=//p")
+             [ -n "$aip" ] && args+=(--ip "$aip")
+             aalias=$(printf '%s\n' "$blk" | sed -n "s/^NET_${net}_ALIAS=//p")
+             [ -n "$aalias" ] && args+=(--network-alias "$aalias") ;;
+    esac
+  done <<< "$blk"
   args+=("$image" /sbin/init)
 
   log "docker ${args[*]}"
   if [ "$MODE" = "apply" ]; then
-    docker "${args[@]}"
-    # stop_criterion por etapa: o container tem de sobreviver ao boot
-    sleep 5
-    if docker container inspect -f '{{.State.Running}}' "$name" 2>/dev/null | grep -q true; then
-      log "   $name: UP"
-    else
-      die "$name nao subiu (State.Running != true). Veja: docker logs $name" 2
-    fi
+    docker "${args[@]}" >/dev/null
+    stop_criterion "$name"
   fi
 }
 

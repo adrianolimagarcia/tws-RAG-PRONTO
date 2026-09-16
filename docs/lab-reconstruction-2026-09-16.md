@@ -147,18 +147,27 @@ docker run --rm --entrypoint /bin/sh tws-hwa:reconstruido-20260916 \
 > Pode ser usada como resultado de A1 ou removida depois. Custo do flatten: ~4 min.
 
 ```bash
-# ---- A2. Subir o MDM com a config EXATA (ordem: agent -> bmdm -> hwa) ----
+# ---- A2. Subir o MDM (ordem: agent -> bmdm -> hwa) ----
+#
+# ATENCAO — o `docker run` NAO expressa a topologia do tws-hwa (MEDIDO, rc=125):
+#   --network bridge --network hwa-mesh --ip X --network-alias Y
+#   => "network-scoped aliases are only supported for user-defined networks"
+#   e --ip/--network-alias so valem para a PRIMEIRA rede; misturar bridge com rede
+#   user-defined tambem e recusado. O caminho validado por execucao e create + connect + start.
 BIND=/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/hermes/docker
-docker run -d --name tws-hwa --hostname tws-hwa \
+docker create --name tws-hwa --hostname tws-hwa --network bridge \
   --privileged --security-opt label=disable --cgroupns private \
   --memory 4g --memory-swap 6g --shm-size 64m \
   -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
   -v "$BIND/tws-hwa/installers:/installers" \
   -v "$BIND/tws-hwa/data:/data" \
-  --network hwa-mesh --ip "$IP_HWA_MESH" --network-alias tws-hwa.lab \
-  --network hwa-lan --ip "$IP_HWA_LAN" \
   --restart unless-stopped \
   tws-hwa:reconstruido-20260916 /sbin/init
+docker network connect --ip "$IP_HWA_LAN"  hwa-lan  tws-hwa
+docker network connect --ip "$IP_HWA_MESH" --alias tws-hwa.lab hwa-mesh tws-hwa
+docker start tws-hwa
+# resultado medido num teste descartavel com os MESMOS IPs/alias: eth0=bridge (rota default pela bridge),
+# eth1=hwa-lan, eth2=hwa-mesh com o alias tws-hwa.lab — identico ao config.v2.json do snapshot.
 ```
 
 > **`--restart unless-stopped` é deliberado e é a correção do defeito de origem** — o original tinha
@@ -201,16 +210,18 @@ docker run -d --name tws-bmdm --hostname tws-bmdm \
   --restart unless-stopped \
   ha_snap_20260914-0035_tws-bmdm:latest /sbin/init
 
-docker run -d --name tws-hwa --hostname tws-hwa \
+docker create --name tws-hwa --hostname tws-hwa --network bridge \
   --privileged --security-opt label=disable --cgroupns private \
   --memory 4g --memory-swap 6g --shm-size 64m \
   -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
   -v "$BIND/tws-hwa/installers:/installers" \
   -v "$BIND/tws-hwa/data:/data" \
-  --network hwa-mesh --ip "$IP_HWA_MESH" --network-alias tws-hwa.lab \
-  --network hwa-lan --ip "$IP_HWA_LAN" \
   --restart unless-stopped \
   ha_snap_20260914-0035_tws-hwa:latest /sbin/init
+docker network connect --ip "$IP_HWA_LAN"  hwa-lan  tws-hwa
+docker network connect --ip "$IP_HWA_MESH" --alias tws-hwa.lab hwa-mesh tws-hwa
+docker start tws-hwa
+# (mesma correcao do §5-A2: o `docker run` nao expressa bridge + redes user-defined com --ip/--alias)
 ```
 
 Depois, **re-aplicar a M1** (alinhamento do domain manager, via `composer` em duas etapas
