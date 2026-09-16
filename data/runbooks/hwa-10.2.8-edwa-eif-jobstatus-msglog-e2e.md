@@ -999,8 +999,9 @@ mesma classe do defeito de `14:18:22Z` já documentado.
 31113/31111 (netman), 5432 (postgres), 22 (sshd).
 
 **Diretriz 2 — backup único**: a pasta `hermes/tws-lab-snapshots/` estava **vazia** (criada no mesmo dia),
-logo **não havia snapshot anterior a substituir ou expurgar**; foi gravada **1 cópia** (`docker save` das
-3 imagens em uso).
+logo **não havia snapshot anterior a substituir ou expurgar**. Gravada **1 cópia** — `tws-lab-20260916.tar`,
+**7675786240 bytes (7,68 GB)**, `rc=0` em **2m57s**, e a pasta contém **apenas esse arquivo** (nenhum
+`.tmp`, nenhuma cópia solta). SDB após o backup: **121 G usados / 809 G livres**.
 
 **Diretriz 3 — limpeza**: `crazy_banzai` removido; **3 imagens legadas removidas** —
 `ha_snap_20260914-0035_tws-hwa` (9,28 GB), `tws-hwa:lab-10.2.8-dwc` (9,04 GB) e `tws-hwa:lab-10.2.8`
