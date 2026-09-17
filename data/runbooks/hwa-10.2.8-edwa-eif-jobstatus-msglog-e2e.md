@@ -1155,3 +1155,43 @@ própria. O que vale em D é a estrutura (40% em rank 21–50), não a contagem.
 Evidência: `data/evidence/lab-validation-2026-09-17-ordering-anatomy-and-second-stage-ablation.jsonl`.
 Scripts: `scripts/diagnose_ordering.py`, `ablate_second_stage.py`, `diagnose_rank1_flips.py`.
 
+## 5y. Frente RAG — o re-ranker **desafiante** dá ganho real, mas **dependente de regime**
+
+**Desenho testado** (não precisa de modelo novo): o rank-1 de produção só cai se um candidato de rank 2–20 o
+superar **por margem**, segundo o **score denso** do índice v2.
+
+**Varredura da margem** (262 perguntas do blind v3) — existe ótimo, e o controle de sanidade fecha:
+
+| margem | @1 total | A | B | D |
+|---|---|---|---|---|
+| 0,06 | 190/262 (72,5%) | 86/107 | 95/140 | 9/15 |
+| 0,08 | 195/262 (74,4%) | 89/107 | 97/140 | 9/15 |
+| **0,10** | **198/262 (75,6%)** | 90/107 | **98/140** | 10/15 |
+| 0,12 | 197/262 (75,2%) | 93/107 | 96/140 | 8/15 |
+| 0,30 | 182/262 (69,5%) | 96/107 | 80/140 | 6/15 |
+
+Trade-off exatamente o projetado: **A cede 7, B ganha 18**. Com promoção ≈0 (0,30) volta a ≈baseline ⇒ sanidade OK.
+
+**Validação held-out externa** (margem **fixada em 0,10 antes** de ver estes dados): `holdout_100_unseen`
+89→**85** (−4) · `blind_holdout_50_vault` 49→**48** (−1) · `realistic_blind_holdout_30` 28→**27** (−1).
+**−6 em 180 perguntas.**
+
+**Ressalva de controle:** esses três têm baseline de **89%, 98% e 93%** — são **fáceis, sem headroom**; testam
+"em conjunto fácil o desafiante atrapalha", **não** o regime de quase-acertos onde ele deveria ajudar.
+
+**Validação cruzada dentro do regime difícil** (5 folds, 262): em **cada** fold a margem vencedora escolhida
+**fora do fold** foi **0,10**, e o held-out deu **198/262** ⇒ o **+15 sobrevive à validação cruzada**; a escolha
+da margem é **estável**, não ponto de sorte.
+
+**Consolidado nas 442 perguntas:** baseline **349 (79,0%)** vs desafiante **358 (81,0%)** = **+9 (+2,0 pp)**.
+
+**Veredito:** o mecanismo está **provado** e o ganho é **real e reprodutível no regime com quase-acertos** —
+o primeiro mecanismo de *ordenação* desta série a dar ganho líquido com controle honesto. Mas é
+**dependente de regime** e **NÃO está pronto para produção**: falta uma **guarda** que desligue o desafiante
+quando o baseline está confiante. A guarda por limiar do score do top-1 está **refutada** (§5x). Candidatas a
+testar: (a) o **gap** rank-1↔rank-2 (não o score absoluto); (b) limiar **absoluto** de similaridade densa do
+desafiante; (c) aplicar só quando o rank-1 **não** for claim exato.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-challenger-reranker-sweep-heldout-crossval.jsonl`.
+Scripts: `scripts/challenger_margin_sweep.py`, `validate_challenger_holdout.py`, `challenger_crossval.py`.
+
