@@ -1248,3 +1248,72 @@ e 13 nos externos (1 ganho / 6 perdas).
 Evidência: `data/evidence/lab-validation-2026-09-17-challenger-guards-tested-and-rejected.jsonl`.
 Script: `scripts/guard_probe.py` (+ `data/eval/guard_probe_records.json`).
 
+## 5aa. Frente RAG / Opção B — anatomia dos quase-acertos e o **IDF** como única alavanca viva
+
+Read-only. Sem fine-tuning (dataset de produto só para indexação/avaliação). Sem mutação no lab.
+
+**O diagnóstico dos 49 quase-acertos separa DOIS problemas:**
+
+| causa | n | % |
+|---|---|---|
+| **defeito de ordenação** — o scorer já tinha o certo em 1º e o `second_stage_rerank` inverteu | **19** | 39% |
+| **erro real do scorer** — o rank-1 errado tem score maior | **30** | 61% |
+
+Mecanismo do defeito: os boosts do `second_stage_rerank` são **absolutos e enormes** (`+32` termo-no-id,
+`+45/+55` código-no-id, `+35` par-CLI, `+15/+20` trigram) contra base BM25 de ~5–20. Caso medido:
+`message_catalog` com **34,673** recebeu **+45** pelo código no id → passou um chunk correto de **77,824**.
+
+Nos 30 erros reais o padrão é **claim quase-duplicada** (`canonical_claim>canonical_claim` 11×,
+`message_catalog>message_catalog` 5×) e o doc certo é o **mais longo em 17/30** (a penalidade de comprimento
+morde o documento mais rico). O doc certo casa **110 termos exclusivos** (df mediano 164, 28 raros) contra
+**40** do lado errado — **tem mais evidência textual e perde mesmo assim**.
+
+`avg_dl` real = **58,33** (mediana 47, máx 447) vs **60 hardcoded** ⇒ normalização de comprimento **não é alavanca**.
+
+**Experimento 1** (controle embutido: base chama as funções de produção e reproduz 183/262 e 166/180):
+
+| variante | v3 | externos |
+|---|---|---|
+| base | 183 | 166 |
+| boosts ×0,5 | 183 | 164 |
+| boosts ×0,25 | 183 | 162 |
+| boosts ×0,1 | 181 | 157 |
+| boosts ×0,0 | 179 | 146 |
+| **IDF** | **189** | **167** |
+| IDF + boosts ×0,25 | 193 | 163 |
+
+**Hipótese refutada:** reduzir os boosts **piora**. Os boosts enormes são **ganho líquido** e as 19 demissões
+estão **entrelaçadas** com os ganhos (o second stage ganha 28 rank-1 e perde 14) — não dá para separar escalonando.
+
+**O IDF é a única alavanca viva.** O scorer **não tem IDF**: termo em todos os 6969 docs pesa igual a termo em
+um. Adicionar o fator clássico `ln((N−df+0,5)/(df+0,5)+1)`:
+
+| conjunto | base | IDF | Δ |
+|---|---|---|---|
+| blind v3 | 183 | **189** | **+6** |
+| holdout_100 | 89 | 89 | 0 |
+| blind_holdout_50 | 49 | 49 | 0 |
+| realistic_30 | 28 | **29** | +1 |
+
+Por fatia (v3): **A 97→95 (−2) · B 80→87 (+7) · D 6→7 (+1)**.
+
+**Vantagem metodológica decisiva:** o IDF **não tem parâmetro livre** — é a fórmula clássica aplicada direto,
+então **não há ajuste no conjunto de teste a temer**, ao contrário do desafiante (margem escolhida no v3) e
+das guardas. É a primeira variante que **melhora o v3 sem regredir em nenhum externo**.
+
+**Mas não é resultado fechado:** McNemar no v3 ganhou 13 / perdeu 7, **p = 0,2632**; bootstrap pareado
+(10.000) **+6,03 com IC95% [−3, +15]** — **o IC inclui zero**. ≈0,81 erro-padrão. **Promissor, não conclusivo.**
+Não promover a produção antes de ampliar a amostra.
+
+**Lições.**
+1. **O controle embutido pegou um bug meu:** a 1ª versão do scorer de teste omitia o `FAMILY_BOOST` do
+   `message_catalog` e dava base **178** em vez de **183** — sem o controle, todo o sweep seria reportado com
+   base errada.
+2. **Critério binário não basta:** um ganho pode satisfazer "melhora no v3 e não regride fora" e ainda ser
+   ruído (p=0,26, IC incluindo zero). Exige-se o **intervalo**, não só o sinal.
+3. **`n_docs` não é invariante:** 6969 quando o índice foi construído, **6993** nesta execução — cada evidência
+   gravada em `data/evidence/lab-validation-*.jsonl` **entra no glob indexado**.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-nearmiss-diagnosis-and-lexical-enrichment-exp1.jsonl`.
+Scripts: `scripts/diagnose_nearmiss_terms.py`, `lexical_enrichment_exp1.py`, `validate_idf_gain.py`.
+
