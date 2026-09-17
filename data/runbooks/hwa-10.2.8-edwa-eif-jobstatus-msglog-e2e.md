@@ -1109,3 +1109,49 @@ Evidência: `data/evidence/lab-validation-2026-09-17-dense-index-rebuild-and-fus
 Scripts: `scripts/build_dense_index_v2.py`, `check_index_coverage.py`, `measure_fusion_v3.py`,
 `probe_recall_at_50.py`.
 
+## 5x. Frente RAG — anatomia da ordenação: **o gargalo é desempate fino entre claims quase-duplicados**
+
+Três medições, todas nas 262 perguntas do blind v3, com o pool da união ordenado pelo lexical.
+
+**(1) Onde está o documento certo** — a falha é de **quase-acerto**, não de recuperação:
+
+| fatia | rank 1 | 2-3 | 4-10 | 11-20 | 21-50 | fora |
+|---|---|---|---|---|---|---|
+| A | 84/107 (78,5%) | 8 | 9 | 2 | 4 | 0 |
+| B | 78/140 (55,7%) | 15 | **24** | 3 | 12 | 8 |
+| D | 5/15 (33,3%) | 2 | 2 | 0 | **6 (40%)** | 0 |
+
+**58 perguntas** têm o documento certo em **rank 2–10**.
+
+**(2) O score do top-1 serve de gate?** Dentro de A sim (acertou mediana 34,97 vs errou 14,93); em B quase
+não (13,61 vs 11,75). A vs B+D: medianas 34,04 vs 12,81 — mas **as faixas se sobrepõem** (mínimo de A = 6,04;
+máximo de B+D = 58,18). ⇒ **gate por limiar puro de score está DESCARTADO por medição.**
+
+**(3) Ablação do re-ranker que já existe** (`second_stage_rerank`): sem ele `@1 169/262` (MRR 0,7146); com ele
+`@1 183/262` (MRR 0,7577). **É ganho líquido de +14 — não remover.**
+
+**(4) Flips de rank-1:** mantém 155 · **perde 14** (A 1, B 13, D 0) · **ganha 28** (A 14, B 13, D 1) ⇒
+`28 − 14 = +14`, exatamente o delta da ablação (consistência conferida). **A regressão concentra-se em B.**
+
+**(5) Quem ocupa o rank-1 nos quase-acertos** (n=49): `canonical_claim` **29 (59,2%)**, `message_catalog` 8,
+`lab_evidence` 7, `ragflow_runbook_chunk` 5. Distribuição do rank do doc certo: **r2=13, r3=13**, r4=8, r5=4,
+r6=2, r7=4, r8=2, r9=1, r10=2.
+
+**Hipótese refutada por medição:** eu ia propor *reforçar claims sobre chunks de runbook* — em 59% dos
+quase-acertos o rank-1 **já é** outro `canonical_claim`, e a massa está em **r2–r3 (26 de 49)**.
+
+**Diagnóstico:** o scorer lexical **não discrimina entre claims quase-duplicados**. Não falta candidato, não é
+tipo errado no topo — é **desempate fino entre documentos parecidos**.
+
+**Teto oracle:** corrigir só os quase-acertos de rank 2–10 levaria o `@1` de 183 para **232/262 (88,5%)**, sem
+nenhum candidato novo. É o tamanho do prêmio.
+
+**Desenho que o dado indica** — re-ranker **desafiante**: o rank-1 só cai se um candidato de rank 2–10 o
+superar **por margem**. Protege A (rank-1 certo em 78,5%, perde só 1) e ataca B (perde 13).
+
+**Ressalva de rigor:** a fatia D tem **n=15** — diferenças de 1–2 nela são **ruído** e não sustentam conclusão
+própria. O que vale em D é a estrutura (40% em rank 21–50), não a contagem.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-ordering-anatomy-and-second-stage-ablation.jsonl`.
+Scripts: `scripts/diagnose_ordering.py`, `ablate_second_stage.py`, `diagnose_rank1_flips.py`.
+
