@@ -1195,3 +1195,56 @@ desafiante; (c) aplicar só quando o rank-1 **não** for claim exato.
 Evidência: `data/evidence/lab-validation-2026-09-17-challenger-reranker-sweep-heldout-crossval.jsonl`.
 Scripts: `scripts/challenger_margin_sweep.py`, `validate_challenger_holdout.py`, `challenger_crossval.py`.
 
+## 5z. Frente RAG — as três guardas de confiança **testadas e reprovadas**: desafiante **REJEITADO**
+
+Sandbox/read-only. Margem do desafiante **fixada em 0,10 antes** de ver os holdouts. Limiares das guardas
+varridos **no v3** e aplicados **sem alteração** aos 180 externos. Critério declarado de antemão: ganho no v3
+**E** não-negativo nos 180.
+
+**Métricas por conjunto** (`n_docs` lido nesta execução = **6987**; índice construído com 6969):
+
+| conjunto | n | baseline | desafiante | delta | ganhou | perdeu |
+|---|---|---|---|---|---|---|
+| blind v3 | 262 | 183 (69,8%) | 198 (75,6%) | **+15** | 26 | 11 |
+| holdout_100 | 100 | 89 (89,0%) | 85 (85,0%) | −4 | 1 | 5 |
+| holdout_50 | 50 | 49 (98,0%) | 48 (96,0%) | −1 | 0 | 1 |
+| realistic_30 | 30 | 28 (93,3%) | 27 (90,0%) | −1 | 0 | 1 |
+| **TOTAL** | **442** | **349 (79,0%)** | **358 (81,0%)** | **+9** | | |
+
+**Guardas testadas** (v3 / externos):
+
+| guarda | v3 @1 | Δ | externos | Δ | passa? |
+|---|---|---|---|---|---|
+| (a) `gap<−1,14` | 184 | **+1** | 166 | **+0** | literalmente sim |
+| (a) `gap<0,08` | 186 | +3 | 164 | −2 | não |
+| (a) `gap<0,596` | 188 | +5 | 160 | −6 | não |
+| (a) `gap<1,707` | 196 | +13 | 161 | −5 | não |
+| (b) `denso>0,64` | 200 | +17 | 161 | −5 | não |
+| (b) `denso>0,731` | 186 | +3 | 165 | −1 | não |
+| (c1) rank-1 não-claim | 190 | +7 | 165 | −1 | não |
+| (c2) sem âncora exata | 200 | +17 | 162 | −4 | não |
+
+**Por que o único "aprovado" não vale:** `gap<−1,14` dispara em **27/262**, muda **uma** pergunta
+(**+0,38 pp** ≈ **0,13 erro-padrão** = ruído) e nos externos é **inerte** — 16 aplicações, **0 ganhos e
+0 perdas**: o "+0" não é segurança, é **ausência de ação**. Além disso é **condição degenerada** (rank-2 com
+score lexical *maior* que o rank-1 — ocorre em 47/262 e 25/180).
+
+**Causa do fracasso (medida):** a **precisão do desafiante não transfere**. Quando dispara, acerta
+**26/37 = 70,3%** no v3 e **1/8 = 12,5%** nos externos. E **nenhuma das três guardas prediz essa diferença**:
+o mesmo regime de score denso tem precisão oposta — `denso>0,64` aplica 50 vezes no v3 (24 ganhos / 7 perdas)
+e 13 nos externos (1 ganho / 6 perdas).
+
+**DECISÃO: o re-ranker desafiante fica REJEITADO para produção.** Nenhuma alteração em
+`data/eval/evaluate_rag_benchmark.py`; nenhuma mutação no lab.
+
+**Lições registradas.**
+1. **Critério binário pode ser satisfeito por ruído.** "Ganho no v3 E não-negativo nos externos" passou com
+   **uma** pergunta. Critério correto: o efeito tem de **exceder o erro-padrão** *e* a guarda tem de
+   **realmente atuar** no conjunto de validação (aplicações que não mudam nada não são evidência).
+2. **`n_docs` não é invariante e o índice denso envelhece.** Nesta sessão o corpus foi de **6969 → 6987**
+   (cada evidência gravada em `data/evidence/lab-validation-*.jsonl` **entra no glob indexado**). Reconstruir
+   o índice após mudança material do corpus é **pré-requisito** de qualquer medição densa.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-challenger-guards-tested-and-rejected.jsonl`.
+Script: `scripts/guard_probe.py` (+ `data/eval/guard_probe_records.json`).
+
