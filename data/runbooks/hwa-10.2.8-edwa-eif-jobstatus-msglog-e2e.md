@@ -1317,3 +1317,57 @@ Não promover a produção antes de ampliar a amostra.
 Evidência: `data/evidence/lab-validation-2026-09-17-nearmiss-diagnosis-and-lexical-enrichment-exp1.jsonl`.
 Scripts: `scripts/diagnose_nearmiss_terms.py`, `lexical_enrichment_exp1.py`, `validate_idf_gain.py`.
 
+### 5aa.1 O teste pedido pelo dono — a amostra ampliada **não** decide (e a contagem bruta mentiu)
+
+Rodado base vs IDF em **toda a suite** (15 benchmarks, 819 linhas):
+
+| medição | n | base | IDF | Δ | McNemar | p |
+|---|---|---|---|---|---|---|
+| suite **bruta** | 819 | 579 (70,7%) | 594 (72,5%) | +15 (+1,8 pp) | 36/21 | 0,0627 |
+| suite **deduplicada** | **517** | 380 (73,5%) | 386 (74,7%) | **+6 (+1,2 pp)** | 18/12 | **0,3616** |
+| blind v3 (onde nasceu) | 262 | 183 | 189 | +6 (+2,3 pp) | 13/7 | 0,2632 |
+
+**A checagem de integridade invalidou o número bruto:** 270 dos 819 itens são **perguntas de texto repetido**
+entre conjuntos (302 linhas extras) e **267 dos 270 grupos repetidos têm desfecho idêntico** — são
+**duplicatas reais**, não itens distintos. A suite tem **517 perguntas únicas**. O `+15` com p=0,063 era
+**artefato de contagem dupla**; o honesto é **+6, p=0,36**.
+
+**IC95%:** simples `[+0, +30]` (limite inferior exatamente 0) · estratificado `[-1, +32]` (inclui 0).
+
+**Por conjunto:** os **fáceis dão zero** (100%→100%, 98%→98%, 95%→95%, 89%→89%) — não há teto para ganhar;
+os **difíceis dão o ganho** (v3 +6, virgin_expanded +3, virgin +3, virgin_en +3, golden_qa +1, fresh +1,
+realistic +1, slice_d +1), com **uma exceção**: `holdout_40_test` **−4** (1 ganho / 5 perdidos, **p=1,0** —
+indistinguível de ruído com n=40). Consistência: **8 positivos, 6 neutros, 1 negativo**.
+
+**Quanto faltaria:** com a taxa honesta de ganho nas discordâncias (18/30 = 0,600) e taxa de discordância de
+0,058, seriam necessárias **~101 discordâncias ≈ 1741 perguntas únicas** para p<0,05 — **3,4× a suite atual**.
+
+**Veredito: o IDF permanece NEM CONFIRMADO NEM REFUTADO.** Direcionalmente positivo, nunca regride de forma
+material, mas o efeito (+1,2 pp) está **abaixo do que 517 perguntas resolvem**. O teste pedido **não** mudou o
+status — ao contrário do que a leitura bruta de 819 sugeria. **Não promover.**
+
+**Lições.**
+1. **Contar perguntas não é contar itens.** A suite parecia ter 819; 267 grupos são duplicatas reais. Sem a
+   dedup eu teria reportado "**+15, p=0,063, a 14 perguntas de decidir**" — **falso por contagem dupla**.
+   Regra: antes de calcular poder sobre suite agregada, deduplicar por texto **e** verificar se os grupos
+   repetidos têm o mesmo desfecho (se tiverem → duplicata; se não → itens correlacionados, e o IC correto é o
+   **estratificado**).
+2. **Conjuntos fáceis diluem.** Baseline ≥89% dá zero por construção (sem teto): incluí-los aumenta o `n` sem
+   aumentar o poder. Ganho de ordenação mede-se nos **difíceis** (baseline<85%): ali o IDF dá **+14/549
+   (2,6 pp, p=0,076)**.
+3. **Testar um ganho pequeno é caro.** +1,2 pp com ~6% de discordância exige ~1741 itens. A decisão econômica
+   ("vale mudar o scorer por 1,2–2,6 pp?") pode ser tomada **antes** da significância, sem fingir que se obteve.
+
+4. **Falso positivo do scanner de segredo ≠ segredo.** O `publish.sh` **abortou** o publish porque a string
+   `10.2.8` seguida de `.00` casou o padrão de IPv4 — mas é a **versão do produto** ("HWA 10.2.8"), texto **já versionado**
+   em `data/eval/blind_v3_slices.jsonl` e `data/evidence/claims.jsonl`. O script é **fail-closed por projeto**
+   (as únicas isenções são o bloco `publish-patterns` e as fixtures do auto-teste): **não existe allowlist para
+   arquivo legítimo, e a saída não é burlar o scanner.** A causa foi minha: o registro por pergunta guardava o
+   **texto** da pergunta (campo `q`) — redundante, pois os benchmarks já o têm. Trocado pelo **índice** dentro
+   do conjunto (campo `i`), seguindo a convenção de `idf_validation_perquestion.json` e
+   `challenger_cv_perquestion.json`. **Medições idênticas antes e depois** (579/819 e 594/819).
+   **Regra:** registros derivados **não** duplicam texto de entrada — guardar índice/referência, não conteúdo.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-idf-full-suite-test-inconclusive.jsonl`
+(`result: PARTIAL`). Script: `scripts/idf_full_suite.py` (+ `data/eval/idf_suite_perquestion.json`).
+
