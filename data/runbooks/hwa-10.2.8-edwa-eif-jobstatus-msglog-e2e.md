@@ -1020,3 +1020,92 @@ snapshot btrfs 112 permanecem.
 **Estado deixado.** Nenhum `prune` executado; snapshot 112 intacto; `/data` intocado. Evidência:
 `data/evidence/lab-validation-2026-09-16-lab-reconstruction-applied-and-cleanup.jsonl`.
 
+## 5v. Boundary de produção de 16.09 — **LIDO**, e o MDM perde o `MDM_BK` por falha de resolução de nome
+
+Leitura executada **depois** do alvo (`2026-09-17 00:00:00Z` = 21:00 BR de 16.09), às `01:49Z`. Frente
+read-only pré-registrada em `docs/lab-protocols/preregistration-2026-09-17-boundary-producao-16-09.md`.
+
+| ramo | janela | linhas | `dR` | `READY` | veredito |
+|---|---|---|---|---|---|
+| **MDM** | `^(20:5[89]\|21:0[0-2]):` (BR) | 38 | **0** | **0** | **NÃO processado** |
+| **BMDM** | `^00:00:0[0-9]` (UTC) | 24 | — | **20** | **processado** |
+
+**Controles positivos no mesmo tick** (obrigatórios): MDM `20260912` = **79 linhas** (esperado 79) ✓ ·
+BMDM `20260913` = **24/20** (esperado 24/20) ✓. Sem eles o resultado seria inconclusivo, não negativo.
+
+**O achado:** as 38 linhas do MDM **não são silêncio** — são falha de resolução de nome no instante do boundary:
+
+```
+21:00:20 |MAILMAN:CRITICAL:getaddrinfo: gai_strerror=Name or service not known
+21:00:20 |MAILMAN:CRITICAL:ipc_connect, error in getaddrinfo for server tws-bmdm
+21:00:20 |MAILMAN:+ AWSBCV082I Workstation MDM_BK, message: AWSDEB052E
+21:00:20 |MAILMAN:+ AWSBCV035W Mailman was unable to link to workstation: MDM_BK
+21:00:20 |BATCHMAN:Workstation MDM_BK State is being changed: UNSETTING: LINKED
+```
+
+O MDM **perde o link com o `MDM_BK`** (o backup master) — e sem o backup master não há `dR` nem `READY`.
+
+**Correção de conclusão prematura (registrada de propósito).** A tabela de correlação abaixo sugere 4/4 e
+eu quase fechei causa raiz nela. **Não fecha:** o mecanismo **difere por dia**.
+
+| arquivo | linhas | `dR` | `READY` | erro de resolução | qual erro |
+|---|---|---|---|---|---|
+| 10.09 | 481 | 2 | 3 | 0 | — |
+| 11.09 | 77 | 13 | 13 | 0 | — |
+| 12.09 | 79 | 13 | 13 | 0 | — |
+| 13.09 | 22 | 0 | 0 | 1 | `unable to link ... AGT1` |
+| 14.09 | 22 | 0 | 0 | 1 | `unable to link ... AGT1` |
+| 15.09 | 0 | 0 | 0 | 0 | host desligado na janela |
+| 16.09 | 38 | 0 | 0 | 7 | **`getaddrinfo` → `unable to link ... MDM_BK`** |
+
+O unlink do **`AGT1`** é **normal** — o dia bom (12.09, 20:59:23) também o apresenta, seguido de
+`Received dR: … from cpu MDM_BK` às 21:00:05. Logo **13.09 e 14.09 não são explicados por este mecanismo**.
+O defeito de **hoje** é distinto e tem gatilho medido.
+
+**Divergência de topologia (medida):** no snapshot 112 a `hwa-mesh` do `tws-bmdm` era estática (`…11`) e a do
+`tws-agent` (`…12`); na reconstrução os dois subiram com **IP dinâmico**, enquanto o `tws-hwa` manteve o IP
+fixo derivado do snapshot (`…10`). O MDM **não tem `tws-bmdm` em `/etc/hosts`** — depende do DNS embutido do
+Docker, que respondeu NXDOMAIN naquele instante.
+
+**O que NÃO se pode escrever:** "causa raiz fechada". A resolução de `tws-bmdm` **funciona agora** (medido:
+`getent hosts tws-bmdm` responde), então o defeito é **intermitente** e exige teste dirigido. Hipótese a
+testar: fixar a resolução do broker (IP estático na mesh como no original, ou entrada explícita) e observar o
+boundary seguinte.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-boundary-producao-16-09-reading.jsonl` (gate VÁLIDO).
+
+## 5w. Frente RAG — índice denso reconstruído (cobertura 100%) e a fusão **medida de verdade**
+
+**O pré-requisito que faltava.** O índice em uso (`data/indexes/corpus_bge_m3.pt`, 09-09) tinha 2427 entradas
+e cobria A `105/139`, B `149/188` e **D `0/16`** — medir fusão com ele devolvia **nulo artefatural**. Sem
+isso, "a união não ajuda" seria conclusão sobre o índice, não sobre o método.
+
+**Reconstruído** com a receita **exata** do gerador original (texto `[:500]`, `max_length=128`, CLS
+normalizado L2, fp16, batch 64, `bge-m3`): **6969 docs em 570,2 s**, matriz `(6969, 1024)` fp16 = 13,61 MB.
+`scripts/build_dense_index_v2.py`. Cobertura nova: **343/343 = 100%** (A, B e D).
+
+**A fusão, medida com o baseline do próprio harness** (controle embutido: se o baseline não reproduzir
+`@1 183/262`, o script declara a medição inválida — foi o que faltou nos trials anteriores):
+
+| variante | @1 | @3 | @5 | @10 | MRR |
+|---|---|---|---|---|---|
+| **baseline** (lexical) | **183/262** | 209 | 221 | 232 | **0,7576** |
+| cobertura (união, ordem lexical) | 181/262 | 207 | 219 | 230 | 0,7510 |
+| rrf (fusão por rank) | 149/262 | 196 | 212 | 233 | 0,6771 |
+
+Por fatia (@1): A `97→97→57` · B `80→78→86` · D `6→6→6`. O RRF repete o padrão dos 4 trials anteriores —
+**ganha sem âncora (+6) e destrói com âncora (−40)**.
+
+**Por que (recall@50 por ramo):** D — lexical `10/16` (62,5%), **denso `15/16` (93,8%)**, união **`16/16`**;
+total — lexical 83,5%, denso 83,8%, união **93,8%**.
+
+**Veredito:** o ramo denso **acha** os documentos (a união leva o recall@50 a 93,8% e a fatia D a 100%), mas o
+`@1` **não melhora**. O gargalo é a **ordenação**, não a geração de candidatos: o scorer lexical dá ~0 aos
+documentos que só o denso trouxe e os afunda, e no RRF os documentos de D ficam em ranks densos > 20 e não
+alcançam o top-20 final. **"Embeddings como cobertura" fica refutado nas fatias reais**; o alvo passa a ser o
+**re-ranker**.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-dense-index-rebuild-and-fusion-measured.jsonl`.
+Scripts: `scripts/build_dense_index_v2.py`, `check_index_coverage.py`, `measure_fusion_v3.py`,
+`probe_recall_at_50.py`.
+
