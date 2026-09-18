@@ -28,6 +28,20 @@ OPTMAN_FILE = os.path.join(REPO_DIR, "data", "evidence", "optman_global_options_
 MSGCAT_FILE = os.path.join(REPO_DIR, "data", "evidence",
                            "official-verification-2026-09-11-message-catalog-full.jsonl")
 LAB_FILES = sorted(glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl")))
+# SWITCH DE MEDICAO (opt-in, DEFAULT OFF = comportamento inalterado):
+# `RAG_MEASURE_EXCLUDE_EVIDENCE=1` exclui os arquivos lab-validation-* do corpus.
+#
+# POR QUE EXISTE: sem isto, o corpus e' funcao da PROPRIA SAIDA do agente - cada
+# evidencia que ele registra entra no corpus e move as metricas. Medido: remover os 171
+# documentos lab_evidence muda o BM25 @1 de 4/40 para 6/40 e o @10 de 12/40 para 14/40
+# (hibrido: 6->8 e 25->27). Ou seja, o ATO DE REGISTRAR A MEDICAO PERTURBA O OBJETO
+# MEDIDO, e um numero publicado deixa de valer no instante em que e' gravado.
+#
+# Isto NAO e' uma decisao sobre a producao: as evidencias sao conteudo legitimo e
+# continuam ingeridas por default. O switch serve a REPRODUTIBILIDADE DA MEDICAO - rodar
+# o benchmark sobre um corpus estavel e comparavel ao longo do tempo.
+if os.environ.get("RAG_MEASURE_EXCLUDE_EVIDENCE") == "1":
+    LAB_FILES = []
 RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
 # 7. Conhecimento DERIVADO (adicionado explicitamente: glob nao pega arquivo novo):
 #    (a) man-pages-derived.jsonl  — sintaxe/parafrase PT-BR das 95 man pages do produto,
