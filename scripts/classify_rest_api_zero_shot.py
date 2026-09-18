@@ -56,6 +56,7 @@ MAX_CHAMADAS = 200          # teto de gasto: aborta em vez de continuar
 # `finish_reason` e' gravado: truncamento tem de ficar VISIVEL, nao virar erro do
 # modelo na contabilidade.
 MAX_TOKENS_RESPOSTA = 8192
+MAX_SUMMARIES_POR_FAMILIA = 8  # contexto da variante B: quantos summaries da spec por familia
 
 
 def credencial() -> tuple[str, str]:
@@ -128,16 +129,43 @@ def familias_do_bench() -> tuple[list[str], list[dict]]:
 
 
 def descricoes_da_spec() -> dict[str, str]:
-    """Descricao que a PROPRIA spec da' para cada tag. Vazio se a spec nao estiver acessivel."""
+    """Contexto que a PROPRIA spec da' para cada familia. Vazio se a spec nao estiver acessivel.
+
+    CORRECAO IMPORTANTE (medida): a spec NAO tem descricao de tag - o array `tags` traz
+    SO' `name` (verificado: 24 tags, chaves=['name']). Uma primeira rodada da variante B
+    rodou com `descricoes da spec disponiveis: 0/24`, ou seja, SEM descricao nenhuma, e a
+    conclusao tirada dali ("a descricao da spec nao ajuda") era sobre um prompt que nunca
+    teve descricao - foi RETIRADA.
+
+    O que a spec de fato oferece e' o `summary` de cada operacao. Aqui a familia recebe os
+    summaries das suas operacoes, que e' texto da propria spec - zero contato com a redacao
+    das perguntas do benchmark.
+    """
     spec_path = os.environ.get("REST_API_SPEC", "")
     if not spec_path or not os.path.exists(spec_path):
         return {}
     spec = json.load(open(spec_path, encoding="utf-8"))
-    out = {}
+
+    # a spec nomeia as tags como 'V2 APIs - Calendar'; o benchmark usa 'Calendar'
+    def curto(nome: str) -> str:
+        return re.sub(r"^V2 APIs\s*-\s*", "", str(nome)).strip()
+
+    out: dict[str, list[str]] = {}
     for t in spec.get("tags") or []:
-        if isinstance(t, dict) and t.get("name") and t.get("description"):
-            out[t["name"]] = " ".join(str(t["description"]).split())[:220]
-    return out
+        if isinstance(t, dict) and t.get("name"):
+            out.setdefault(curto(t["name"]), [])
+    for _path, item in (spec.get("paths") or {}).items():
+        if not isinstance(item, dict):
+            continue
+        for metodo, op in item.items():
+            if metodo.lower() not in ("get", "post", "put", "delete", "patch") or not isinstance(op, dict):
+                continue
+            for tag in op.get("tags") or []:
+                resumo = str(op.get("summary") or "").strip()
+                if resumo:
+                    out.setdefault(curto(tag), []).append(" ".join(resumo.split()))
+
+    return {k: "; ".join(v[:MAX_SUMMARIES_POR_FAMILIA])[:220] for k, v in out.items() if v}
 
 
 def prompt(variant: str, familias: list[str], descs: dict[str, str], pergunta: str) -> list[dict]:
