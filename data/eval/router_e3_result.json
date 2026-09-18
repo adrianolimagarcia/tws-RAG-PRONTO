@@ -1,35 +1,59 @@
 {
- "v3": {
-  "base": 183,
-  "ce": 173,
-  "route": 188,
-  "n_anc": 68,
-  "n_nao": 194
+ "n_docs": 7020,
+ "top_n": 20,
+ "resultados": {
+  "v3": {
+   "base": 183,
+   "ce": 173,
+   "route": 188,
+   "n_anc": 68,
+   "n_nao": 194
+  },
+  "h100": {
+   "base": 89,
+   "ce": 76,
+   "route": 79,
+   "n_anc": 32,
+   "n_nao": 68
+  },
+  "h50": {
+   "base": 49,
+   "ce": 44,
+   "route": 44,
+   "n_anc": 10,
+   "n_nao": 40
+  },
+  "r30": {
+   "base": 28,
+   "ce": 26,
+   "route": 27,
+   "n_anc": 11,
+   "n_nao": 19
+  },
+  "ext": {
+   "h100": 89,
+   "h50": 49,
+   "r30": 28
+  }
  },
- "h100": {
-  "base": 89,
-  "ce": 76,
-  "route": 79,
-  "n_anc": 32,
-  "n_nao": 68
+ "controle_1_baseline": {
+  "v3": 183,
+  "externos": 166,
+  "esperado": [
+   183,
+   166
+  ],
+  "status": "OK"
  },
- "h50": {
-  "base": 49,
-  "ce": 44,
-  "route": 44,
-  "n_anc": 10,
-  "n_nao": 40
+ "controle_2_alinhamento": {
+  "identicos": 437,
+  "total": 442,
+  "divergentes": 5,
+  "status": "FALHOU"
  },
- "r30": {
-  "base": 28,
-  "ce": 26,
-  "route": 27,
-  "n_anc": 11,
-  "n_nao": 19
- },
- "ext": {
-  "h100": 89,
-  "h50": 49,
-  "r30": 28
+ "rota_e3": {
+  "v3": 188,
+  "externos": 150,
+  "veredito": "NAO PASSA"
  }
 }

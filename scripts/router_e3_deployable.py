@@ -137,7 +137,16 @@ def main():
     print(f"       externos {PROD['ext']} -> {ext_r}  ({ext_r-PROD['ext']:+d})")
     print(f"\n[e3] veredito: {'PASSA' if res['v3']['route'] > PROD['v3'] and ext_r >= PROD['ext'] else 'NAO PASSA'}"
           f"   ({time.time()-t0:.0f}s)")
-    json.dump(res, open(os.path.join(REPO, "data", "eval", "router_e3_result.json"), "w"), indent=1)
+    json.dump({"n_docs": len(docs), "top_n": TOP_N, "resultados": res,
+               "controle_1_baseline": {"v3": res["v3"]["base"], "externos": ext_b,
+                                       "esperado": [183, 166],
+                                       "status": "OK" if (res["v3"]["base"], ext_b) == (183, 166) else "FALHOU"},
+               "controle_2_alinhamento": {"identicos": align_tot - align_bad, "total": align_tot,
+                                          "divergentes": align_bad,
+                                          "status": "OK" if align_bad == 0 else "FALHOU"},
+               "rota_e3": {"v3": res["v3"]["route"], "externos": ext_r,
+                           "veredito": "PASSA" if res["v3"]["route"] > PROD["v3"] and ext_r >= PROD["ext"] else "NAO PASSA"}},
+              open(os.path.join(REPO, "data", "eval", "router_e3_result.json"), "w"), indent=1)
 
 
 if __name__ == "__main__":
