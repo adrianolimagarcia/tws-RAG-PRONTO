@@ -1371,3 +1371,55 @@ status — ao contrário do que a leitura bruta de 819 sugeria. **Não promover.
 Evidência: `data/evidence/lab-validation-2026-09-17-idf-full-suite-test-inconclusive.jsonl`
 (`result: PARTIAL`). Script: `scripts/idf_full_suite.py` (+ `data/eval/idf_suite_perquestion.json`).
 
+## 5ab. Frente RAG — Fases 1 e 2 da ordenação: o defeito está localizado e não é consertável; o sinal semântico existe e a rota é o bloqueio
+
+**Fase 1 — atribuição por componente (`scripts/attribute_ordering_flips.py`).** Controle **duplo**:
+a ordenação instrumentada reproduz 183/262 **e** o score instrumentado de cada documento é idêntico ao de
+produção (`max|diff| = 2,8e-14`). Dos 49 quase-acertos, **19 foram demotados** pelo 2º estágio e 30 são erro
+real do scorer. Nos 19, o componente que dá a margem ao documento **errado** é **`ss_entidade_id` em 16/19
+(84%)** — e em **14/19 o certo levou ZERO**. Dois defeitos de desenho: o boost **acumula sem teto** (medido
+`+64` e `+102` sobre uma base de ordem 5–20) e **chaveia no ID**, que é artefato de nomenclatura
+(`message_catalog` tem o código AWS no ID por construção).
+
+**Fase 1b — o conserto NÃO existe (`scripts/entity_boost_fix_sweep.py`).** Controle `copy_asis` == produção
+(183/262, 166/180):
+
+| variante | v3 | externos | delta |
+|---|---|---|---|
+| base / copy_asis | 183 | 166 | — |
+| `ent_cap1` (teto de 1 aplicação) | 183 | 165 | +0 / −1 |
+| `ent_codes_only` (remove o genérico) | 186 | 159 | **+3 / −7** |
+| `ent_off` (remove o bloco) | 185 | 154 | **+2 / −12** |
+| `ent_cap_all` | 183 | 165 | +0 / −1 |
+
+**Nenhuma passa.** As 16 demissões são o **preço** do +12,2 que o 2º estágio ganha nas perguntas com âncora —
+trade estrutural, não bug. *Ressalva declarada: os externos são ricos em âncora, então o critério favorece
+estruturalmente manter o boost.*
+
+**Fase 2 — cross-encoder LARGE na GPU (`scripts/crossencoder_large_trial.py`, `scripts/crossencoder_route_eval.py`).**
+O que faltava em 14.09 agora existe: `sentence-transformers 6.0.1` + `torch 2.5.1+cu121` + **`bge-reranker-large`
+(2,2 GB) já em disco**. Controles: 183/262, 89/100, 49/50, 28/30 — todos batendo.
+
+| rota | v3 | A | B | D | externos |
+|---|---|---|---|---|---|
+| baseline | 183 | 97 | 80 | 6 | 166 |
+| CE puro (top-20) | 173 | — | — | — | — |
+| CE puro (top-50) | 167 | 69 | **93** | 5 | 147 |
+| híbrido pelo **campo `has_anchor`** | **197** | 97 | **97** | 3 | — |
+| híbrido pelo **proxy (regex)** | 184 | — | — | — | **153** |
+
+**Achado:** na fatia B o CE **large** leva **80 → 93 (+13)** — o modelo **médio** de 14.09 capturava só +3,6.
+"Modelo médio falhou" **não era** "o método falhou"; valeu reabrir com o modelo maior já em disco.
+
+**O bloqueio é a ROTA.** Com o campo `has_anchor` (rótulo do benchmark) o híbrido dá **197/262 (+14)** com A
+**intacta** e B **+17**. Mas o proxy derivável acerta só **176/262 = 67,2%** (44 falso-âncora, 42 falso-não-âncora)
+e o ganho **desaparece**: v3 +1 e externos **−13**. Usar o campo `has_anchor` em produção seria **usar o gabarito**.
+
+**Próximo passo (não é "outro modelo"):** um **roteador confiável** — ou trocar a rota dura por um **blend de
+scores** baseline+CE, que **elimina o roteador**. Vazamento medido: 15/262, 25/100, 17/50, 0/30.
+Caches ficaram em `hermes/neural-reranker/` (fora do repo, **não em `/tmp`** como em 14.09, cujo footprint
+foi removido e custou ~300 s de reconstrução).
+
+Evidências: `…ordering-attribution-and-entity-boost-fix-rejected.jsonl` (`result: REJECTED`) e
+`…crossencoder-large-signal-exists-router-is-blocker.jsonl` (`result: PARTIAL`).
+
