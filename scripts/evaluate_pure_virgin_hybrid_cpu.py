@@ -6,8 +6,10 @@ sem depender de GPU em runtime.
 
 Atualizado 18.09.2026: o indice era `corpus_bge_m3.pt` (v1, 09/09, 2427 linhas)
 e cobria apenas 2309 dos 6903 ids unicos do corpus (~33.5%) - dois tercos do
-corpus nao tinham vetor denso. Repontado para `corpus_bge_m3_v3.pt`, reconstruido
-sobre os 7020 documentos atuais (6903 ids unicos, 117 duplicados de id).
+corpus nao tinham vetor denso. Repontado para `corpus_bge_m3_v4.pt`, reconstruido
+sobre o corpus corrigido (6873 docs, 6873 ids unicos, 0 colisoes): a correcao
+removeu 106 registros de execucao tratados como evidencia e fundiu 99 ids que
+eram compartilhados por um canonical_claim e um lab_evidence.
 """
 import sys, os, time, json, re
 import torch
