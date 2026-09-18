@@ -1,0 +1,435 @@
+{
+ "model": "gemini-3.8-flash-none",
+ "n": 60,
+ "acc": 0.6333333333333333,
+ "prec_A": 0.6176470588235294,
+ "recall_A": 0.7,
+ "tp": 21,
+ "fp": 13,
+ "fn": 9,
+ "tn": 17,
+ "prompt_tokens": 54465,
+ "completion_tokens": 52,
+ "records": [
+  {
+   "i": 0,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 1,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 2,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 3,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 4,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 5,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 6,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 7,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 8,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 9,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 10,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 11,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 12,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 13,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 14,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 15,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 16,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 17,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 18,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 19,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 20,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 21,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 22,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 23,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 24,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 25,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 26,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 27,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 28,
+   "slice": "A_com_ancora",
+   "pred": true,
+   "real": true,
+   "raw": "A"
+  },
+  {
+   "i": 29,
+   "slice": "A_com_ancora",
+   "pred": false,
+   "real": true,
+   "raw": "B"
+  },
+  {
+   "i": 30,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 31,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 32,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 33,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 34,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 35,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 36,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 37,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 38,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 39,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 40,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 41,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 42,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 43,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 44,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 45,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 46,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 47,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 48,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 49,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 50,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 51,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 52,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 53,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 54,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 55,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 56,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 57,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  },
+  {
+   "i": 58,
+   "slice": "B_sem_ancora",
+   "pred": true,
+   "real": false,
+   "raw": "A"
+  },
+  {
+   "i": 59,
+   "slice": "B_sem_ancora",
+   "pred": false,
+   "real": false,
+   "raw": "B"
+  }
+ ]
+}

@@ -1470,6 +1470,61 @@ classificação **zero-shot** por LLM é **inferência** — via não testada.
 Evidência: `data/evidence/lab-validation-2026-09-17-blend-base-ce-rejected-both-designs.jsonl`
 (`result: REJECTED`). Scripts: `scripts/blend_base_ce.py`, `scripts/blend_on_top_of_stage2.py`.
 Scores crus do CE salvos em `hermes/neural-reranker/ce_scores_top20.json` (evita re-inferência).
+
+## 5ad — O ROTEADOR: LLM e regex deployável, ambos REJEITADOS
+
+**Achado prévio que muda o problema.** O campo `has_anchor` **é a própria fatia** (A=True 107/107,
+B/D=False 155/155 — correlação perfeita). Não é "contém um código", é o rótulo da partição. Meu proxy
+original procurava a coisa errada: incluía **nomes de comando** (`composer`, `conman`, `planman`, `helm`,
+`kubernetes`) como "âncora" — mas os comandos aparecem justamente nas perguntas **B**. Isso explica os 44
+falsos-âncora e os 67,2%.
+
+**Bug de formato meu, confundido com falta de sinal.** Eu exigia `AWS`+3 letras+3 dígitos+letra, mas os
+códigos AWSUI são `AWS`+2 letras+**4** dígitos+letra (`AWSUI0286E`). Corrigir o formato levou o detector de
+**67,2% → 79,8% sem nenhum LLM**.
+
+**Detectores medidos no v3** (contra o campo):
+
+```
+sempre-nao                       59,2%
+proxy original (comandos)        67,2%   prec A 59,6%  rec 60,7%
+E1 codigos (formato corrigido)   79,8%   prec A 100%   rec 50,5%   fp=0
+E2 + secoes/views                83,6%   prec A 100%   rec 59,8%   fp=0
+E3 + REST API V2                 85,1%   prec A 100%   rec 63,6%   fp=0  fn=39   <- MELHOR
+T1 prefixos de template          63,7%   prec A  64,3% rec 25,2%   <- TAUTOLOGICO, recusado
+LLM gemini-3.8-flash-none        63,3%   prec A  61,8% rec 70,0%   tp=21 fp=13 fn=9 tn=17
+```
+
+**O LLM foi pior que um regex trivial** (63,3% vs 80,2%) e apenas 4 pontos acima de "sempre não". Sugere
+que A/B **não é uma distinção semântica que o modelo leia da pergunta** — provavelmente porque a partição
+foi construída pelo autor do benchmark, não por uma propriedade do texto. Custo: 54.517 tokens em 60
+chamadas → **401.609 tokens projetados** para 442, para um resultado pior.
+
+**Recusei o detector tautológico.** Prefixos como *"Como solucionar ou diagnosticar a mensagem de erro"*
+separam A de B a 63,7%, mas são o **template de geração do benchmark**, não propriedade da pergunta. Um
+roteador baseado neles não funcionaria com pergunta real e inflaria a métrica. Reportado separado.
+
+**A rota E3, medida** (controle 1 OK — baseline reconstruído == produção, 183/262 e 166/180):
+
+```
+  v3    baseline 183   CE 173   ROTA-E3 188 (+5)   | 68 p/ baseline, 194 p/ CE
+  h100  baseline  89   CE  76   ROTA-E3  79 (-10)  | 32 p/ baseline,  68 p/ CE
+  h50   baseline  49   CE  44   ROTA-E3  44 ( -5)  | 10 p/ baseline,  40 p/ CE
+  r30   baseline  28   CE  26   ROTA-E3  27 ( -1)  | 11 p/ baseline,  19 p/ CE
+  -> v3 +5 mas EXTERNOS 166 -> 150 (-16)  =>  NAO PASSA
+```
+
+**O muro real, agora com nome: a partição A/B do v3 NÃO descreve os externos.** O E3 roteia 68/262 para o
+baseline no v3, mas só **32/100 no h100 e 10/50 no h50** — e esses conjuntos têm baseline de **89%** e
+**98%**, ou seja, **comportam-se como A**. O detector não os vê, manda-os para o CE, e o CE os destrói.
+**Um roteador calibrado no v3 não generaliza.**
+
+**Ressalva declarada:** o controle de **alinhamento** falhou em **3 de 442** perguntas (o corpus cresce a
+cada evidência gravada, mudando o top-20 entre a construção do cache e a reconstrução). O controle 1 passou
+exato, então a medição é válida em geral, mas o `+5` do v3 carrega incerteza de **até 3 pontos**.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-llm-router-and-regex-router-both-rejected.jsonl`
+(`result: REJECTED`). Scripts: `scripts/llm_router_pilot.py`, `scripts/router_e3_deployable.py`.
 Caches ficaram em `hermes/neural-reranker/` (fora do repo, **não em `/tmp`** como em 14.09, cujo footprint
 foi removido e custou ~300 s de reconstrução).
 
