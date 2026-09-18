@@ -184,7 +184,7 @@ def tokenize(text):
     if not text:
         return set()
     raw_words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+\@]+", text.lower())
-    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde", "ser", "sao", "entre", "este", "esta", "pode", "deve", "utilizar", "usar", "para o", "naquele", "daquele", "nesses", "desses", "quando", "apos", "antes", "atraves"}
+    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde", "ser", "sao", "entre", "este", "esta", "pode", "deve", "utilizar", "usar", "para o", "naquele", "daquele", "nesses", "desses", "quando", "apos", "antes", "atraves", "quero", "preciso", "isso", "pela", "sem", "uso", "existe", "apenas", "inteira", "exemplo", "faco", "consigo"}
     cleaned = set()
     for w in raw_words:
         w_clean = w.strip(".,;:?!'\"()[]{}")
@@ -227,6 +227,79 @@ def _expand_tokens(tokens):
 def expand_query(text):
     """Expande a CONSULTA apenas, com jargão HWA + mapa bilíngue, via _expand_tokens."""
     return _expand_tokens(tokenize(text))
+
+
+# ---------------------------------------------------------------------------
+# MODO HIBRIDO (RAG_HYBRID=1) — mede o benchmark pelo caminho que a PRODUCAO usa.
+#
+# POR QUE EXISTE: o caminho padrao deste avaliador e' BM25 puro. A PRODUCAO usa
+# busca hibrida (denso BGE-M3 + BM25) fundida por RRF k=60, conforme
+# `scripts/evaluate_pure_virgin_hybrid_cpu.py`. Medir o benchmark REST em BM25 puro
+# media uma fonte SEM vetor denso com METADE do recuperador real - e o problema
+# medido (cobertura de tokens pergunta<->registro de apenas 26%) e' exatamente do
+# tipo que o ramo denso cobre: a pergunta diz 'contagem de objetos' e o registro
+# diz 'object count'.
+#
+# A FUSAO replica a producao: denso top-30 + BM25 top-30 -> RRF 1/(60+r) -> top-20.
+# O `top_n` do segundo estagio fica IGUAL ao do caminho BM25 (20) de proposito:
+# assim o UNICO delta entre as duas medicoes e' o ramo denso, e o efeito da fonte
+# nao se confunde com mudanca de fluxo.
+# ---------------------------------------------------------------------------
+HYBRID = os.environ.get("RAG_HYBRID") == "1"
+HYBRID_INDEX = os.environ.get("RAG_DENSE_INDEX") or os.path.join(
+    REPO_DIR, "data", "indexes", "corpus_bge_m3_v5.pt")
+HYBRID_META = os.environ.get("RAG_DENSE_META") or os.path.join(
+    REPO_DIR, "data", "indexes", "corpus_docs_meta_v5.json")
+_DENSE: dict = {}
+
+
+def _dense_init():
+    """Carrega matriz densa + BGE-M3. So' executa no modo hibrido."""
+    if _DENSE:
+        return _DENSE
+    import torch
+    from transformers import AutoModel, AutoTokenizer
+
+    cache = os.environ.get("HF_HOME") or os.path.join(
+        os.path.dirname(REPO_DIR), "neural-reranker", "cache")
+    device = torch.device("cpu")
+    matriz = torch.load(HYBRID_INDEX, map_location=device, weights_only=False).float()
+    with open(HYBRID_META) as f:
+        ids = json.load(f)
+    tok = AutoTokenizer.from_pretrained("BAAI/bge-m3", cache_dir=cache)
+    mod = AutoModel.from_pretrained("BAAI/bge-m3", cache_dir=cache, use_safetensors=True).to(device)
+    mod.eval()
+    _DENSE.update(matriz=matriz, ids=ids, tok=tok, mod=mod, device=device)
+    return _DENSE
+
+
+def _dense_top30(q_text, k=30):
+    """Top-k do ramo denso, identico a producao: CLS normalizado, cosseno."""
+    import torch
+
+    d = _dense_init()
+    with torch.no_grad():
+        qi = d["tok"]([q_text], padding=True, truncation=True, max_length=128,
+                      return_tensors="pt").to(d["device"])
+        qo = d["mod"](**qi)
+        qe = torch.nn.functional.normalize(qo.last_hidden_state[:, 0, :], p=2, dim=1).float()
+        sc = torch.mm(qe, d["matriz"].T).squeeze(0)
+        top = torch.topk(sc, k=min(k, int(sc.shape[0]))).indices.tolist()
+    return [d["ids"][i] for i in top]
+
+
+def _rrf_fuse(q_text, sparse_docs, docs, k_dense=30, k_sparse=30, top=20):
+    """Fusao RRF k=60 do ramo denso com o esparso, como na producao."""
+    dense_ids = _dense_top30(q_text, k_dense)
+    sparse_ids = [d["id"] for _, d in sparse_docs[:k_sparse]]
+    rrf: dict = {}
+    for r, did in enumerate(dense_ids, 1):
+        rrf[did] = rrf.get(did, 0.0) + 1.0 / (60.0 + r)
+    for r, did in enumerate(sparse_ids, 1):
+        rrf[did] = rrf.get(did, 0.0) + 1.0 / (60.0 + r)
+    fundidos = sorted(rrf.keys(), key=lambda x: (-rrf[x], str(x)))[:top]
+    por_id = {d["id"]: d for d in docs}
+    return [(rrf[i], por_id[i]) for i in fundidos if i in por_id]
 
 def load_documents():
     docs = []
@@ -628,8 +701,15 @@ def run_evaluation():
         # empates caiam na ordem de insercao e a metrica variava entre processos).
         diversified_docs.sort(key=lambda x: (-x[0], str(x[1].get("id", ""))))
 
+        # MODO HIBRIDO: funde o ramo esparso com o denso (RRF k=60) antes do
+        # segundo estagio. Sem o switch, o comportamento e' o de sempre (BM25 puro).
+        if HYBRID:
+            candidatos = _rrf_fuse(q_text, diversified_docs, docs)
+        else:
+            candidatos = diversified_docs
+
         # Segundo Estágio de Re-ranking: Desempate por N-Grams contíguos e Cobertura Semântica
-        retrieved_docs = second_stage_rerank(q_text, diversified_docs, top_n=20)
+        retrieved_docs = second_stage_rerank(q_text, candidatos, top_n=20)
 
         rank = None
         for idx, d in enumerate(retrieved_docs):
