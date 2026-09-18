@@ -40,31 +40,40 @@ QUOTE_LIMIT = 160
 OPS_LIMIT = 40  # operacoes listadas por registro; o resto vira contagem
 
 # Descricao PT-BR por familia de recurso. Escrita por nos, nao e' traducao da spec.
+#
+# ACENTUACAO OBRIGATORIA (medido, nao estetica): o tokenizador do avaliador usa
+# [A-Za-z0-9_...] e QUEBRA palavras no acento. Texto derivado em ASCII contra
+# pergunta em PT-BR acentuado nunca casa ('producao' vs 'produção' -> 'produ').
+# Medido no benchmark REST: @1 1/40 (ASCII) -> 3/40 (acentuado), @10 7 -> 9, e sem
+# custo nos outros benchmarks (blind v3 184 e 70q 53 inalterados). Corrigir o
+# tokenizador em vez do dado foi testado e REGRIDE: normalizar acento derruba
+# singular/plural de 8/8 para 0/8 e custa -5 no blind v3; com stem volta a 6/6 mas
+# custa -7. O acento aqui e' o fix correto.
 DESC: dict[str, str] = {
-    "V2 APIs - Engine": "Estado e operacao do proprio motor: informacoes do engine, grupos, usuarios e acesso ao servidor de licenca. E por aqui que se consulta a saude do motor pela API, sem usar o conman.",
-    "V2 APIs - Calendar": "Calendarios do modelo: consulta, criacao, alteracao, remocao e as acoes de travar/destravar um calendario antes de edita-lo. O par lock/unlock e o que evita que duas sessoes escrevam no mesmo objeto.",
-    "V2 APIs - Credentials": "Objetos de credencial do modelo (usuario/senha usados por jobs): CRUD mais as acoes de lock/unlock. A senha nunca e' lida de volta pela API.",
-    "V2 APIs - Domain": "Dominio do modelo: consulta e as acoes de lock/unlock. Descreve a topologia de dominio que o motor usa.",
-    "V2 APIs - Folder": "Pastas do modelo: CRUD e lock/unlock. Pastas sao o mecanismo de organizacao e de permissao dos objetos de agendamento.",
-    "V2 APIs - Job Definition": "Definicoes de job no MODELO (o que o composer manipula): CRUD e lock/unlock. Nao confundir com 'Job In Plan', que e' a instancia em execucao.",
-    "V2 APIs - Job In Plan": "Jobs no PLANO de producao (a instancia agendada, equivalente ao que o conman mostra): consulta, alteracao, cancelamento, re-execucao e manipulacao de dependencias. E a maior familia da API.",
-    "V2 APIs - Job Stream": "Job streams no MODELO: CRUD e lock/unlock das definicoes de fluxo.",
-    "V2 APIs - Job Stream In Plan": "Job streams no PLANO: consulta e operacao das instancias agendadas — liberar, cancelar, re-executar e inspecionar o estado.",
-    "V2 APIs - Prompt": "Prompts do modelo: CRUD e lock/unlock das definicoes de prompt.",
-    "V2 APIs - Prompt In Plan": "Prompts no plano: consulta e resposta a prompts que estao aguardando (o equivalente API do 'conman reply').",
-    "V2 APIs - Resource": "Recursos do modelo: CRUD e lock/unlock. Recursos sao os contadores de unidades que limitam concorrencia.",
-    "V2 APIs - Resource In Plan": "Recursos no plano: consulta e alteracao do numero de unidades disponiveis em producao.",
-    "V2 APIs - Run Cycle Group": "Grupos de ciclos de execucao: consulta e operacao dos grupos que agrupam instancias de job stream em producao.",
-    "V2 APIs - Variable": "Variaveis do modelo: CRUD e lock/unlock.",
-    "V2 APIs - Variable Table": "Tabelas de variaveis do modelo: CRUD e lock/unlock.",
-    "V2 APIs - Workload Application Template": "Templates de aplicacao de workload: CRUD e lock/unlock dos modelos reutilizaveis de aplicacao.",
-    "V2 APIs - Workstation": "Workstations no MODELO: CRUD e lock/unlock das definicoes de no.",
+    "V2 APIs - Engine": "Estado e operação do próprio motor: informações do engine, grupos, usuários e acesso ao servidor de licença. É por aqui que se consulta a saúde do motor pela API, sem usar o conman.",
+    "V2 APIs - Calendar": "Calendários do modelo: consulta, criação, alteração, remoção e as ações de travar/destravar um calendário antes de editá-lo. O par lock/unlock é o que evita que duas sessões escrevam no mesmo objeto.",
+    "V2 APIs - Credentials": "Objetos de credencial do modelo (usuário/senha usados por jobs): CRUD mais as ações de lock/unlock. A senha nunca é lida de volta pela API.",
+    "V2 APIs - Domain": "Domínio do modelo: consulta e as ações de lock/unlock. Descreve a topologia de domínio que o motor usa.",
+    "V2 APIs - Folder": "Pastas do modelo: CRUD e lock/unlock. Pastas são o mecanismo de organização e de permissão dos objetos de agendamento.",
+    "V2 APIs - Job Definition": "Definições de job no MODELO (o que o composer manipula): CRUD e lock/unlock. Não confundir com 'Job In Plan', que é a instância em execução.",
+    "V2 APIs - Job In Plan": "Jobs no PLANO de produção (a instância agendada, equivalente ao que o conman mostra): consulta, alteração, cancelamento, re-execução e manipulação de dependências. É a maior família da API.",
+    "V2 APIs - Job Stream": "Job streams no MODELO: CRUD e lock/unlock das definições de fluxo.",
+    "V2 APIs - Job Stream In Plan": "Job streams no PLANO: consulta e operação das instâncias agendadas — liberar, cancelar, re-executar e inspecionar o estado.",
+    "V2 APIs - Prompt": "Prompts do modelo: CRUD e lock/unlock das definições de prompt.",
+    "V2 APIs - Prompt In Plan": "Prompts no plano: consulta e resposta a prompts que estão aguardando (o equivalente API do 'conman reply').",
+    "V2 APIs - Resource": "Recursos do modelo: CRUD e lock/unlock. Recursos são os contadores de unidades que limitam concorrência.",
+    "V2 APIs - Resource In Plan": "Recursos no plano: consulta e alteração do número de unidades disponíveis em produção.",
+    "V2 APIs - Run Cycle Group": "Grupos de ciclos de execução: consulta e operação dos grupos que agrupam instâncias de job stream em produção.",
+    "V2 APIs - Variable": "Variáveis do modelo: CRUD e lock/unlock.",
+    "V2 APIs - Variable Table": "Tabelas de variáveis do modelo: CRUD e lock/unlock.",
+    "V2 APIs - Workload Application Template": "Templates de aplicação de workload: CRUD e lock/unlock dos modelos reutilizáveis de aplicação.",
+    "V2 APIs - Workstation": "Workstations no MODELO: CRUD e lock/unlock das definições de nó.",
     "V2 APIs - Workstation Class": "Classes de workstation no modelo: CRUD e lock/unlock.",
     "V2 APIs - Workstation In Plan": "Workstations no PLANO: consulta de estado, link/unlink, fence e limite de jobs concorrentes — o equivalente API do que o conman mostra em showcpus.",
-    "V2 APIs - File In Plan": "Dependencias de ARQUIVO no plano: consulta das dependencias de arquivo das instancias agendadas.",
-    "V2 APIs - Workspace": "Workspaces: agrupamento de nivel mais alto para os objetos de agendamento.",
-    "V2 APIs - Objects Info": "Informacoes consolidadas sobre objetos: consulta agregada que atravessa varios tipos.",
-    "V2 APIs - Folder plan": "Pastas no plano de producao: consulta e navegacao das pastas na instancia em execucao.",
+    "V2 APIs - File In Plan": "Dependências de ARQUIVO no plano: consulta das dependências de arquivo das instâncias agendadas.",
+    "V2 APIs - Workspace": "Workspaces: agrupamento de nível mais alto para os objetos de agendamento.",
+    "V2 APIs - Objects Info": "Informações consolidadas sobre objetos: consulta agregada que atravessa vários tipos.",
+    "V2 APIs - Folder plan": "Pastas no plano de produção: consulta e navegação das pastas na instância em execução.",
 }
 
 
