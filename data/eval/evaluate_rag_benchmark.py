@@ -444,9 +444,12 @@ def load_documents():
                 cid = c.get("claim_id")
                 if not cid:
                     continue
+                # `vocab_spec` entra no texto indexado: e' o vocabulario extraido
+                # mecanicamente da spec (summary/description completos, parametros,
+                # schemas e campos). Ver a REGRA DECLARADA em scripts/extract_rest_api.py.
                 text = " ".join(
                     str(c.get(k, "")) for k in
-                    ("claim", "syntax", "resource", "supporting_quote", "source_title")
+                    ("claim", "syntax", "resource", "supporting_quote", "source_title", "vocab_spec")
                 )
                 docs.append({"id": cid, "type": c.get("kind", "rest_api_surface"),
                              "text": text, "tokens": tokenize(text)})

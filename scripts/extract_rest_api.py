@@ -26,6 +26,7 @@ import argparse
 import collections
 import json
 import os
+import re
 import sys
 
 DEFAULT_SPEC = os.environ.get(
@@ -101,13 +102,75 @@ def resumo_curto(op: dict) -> str:
     return s[:QUOTE_LIMIT]
 
 
-def build(spec_path: str) -> list[dict]:
+MAX_CAMPOS_SCHEMA = 25  # campos de schema por familia (limita o tamanho do texto)
+
+
+def vocab_da_spec(spec: dict, tag: str, brutos: list[tuple[str, str, dict]]) -> str:
+    """Vocabulario da familia extraido MECANICAMENTE da spec OpenAPI do produto.
+
+    REGRA DECLARADA (e' o que torna este enriquecimento legitimo, e nao tautologia):
+    este texto vem SO' da spec. Nenhum termo e' escrito a mao, e nenhum foi escolhido
+    olhando a redacao das perguntas do benchmark. Qualquer terceiro que re-execute
+    este extrator sobre a mesma spec obtem exatamente o mesmo texto - a regra e'
+    VERIFICAVEL por re-execucao, nao uma promessa.
+
+    Motivo: a cobertura de tokens pergunta<->registro-alvo medida era de 26%, e a
+    pergunta usa o vocabulario do operador enquanto o registro trazia apenas o resumo
+    curto da operacao. Aqui entram os textos que a PROPRIA spec ja' trazia e que
+    ficavam de fora: descricao da tag, summary e description COMPLETOS de cada
+    operacao, nomes de parametro, e nomes de schema e de campo dos schemas
+    referenciados por essas operacoes.
+    """
+    partes: list[str] = []
+
+    for t in spec.get("tags") or []:
+        if isinstance(t, dict) and t.get("name") == tag and t.get("description"):
+            partes.append(str(t["description"]))
+
+    schemas = ((spec.get("components") or {}).get("schemas") or {})
+    nomes_schema: set[str] = set()
+
+    for _path, _metodo, op in brutos:
+        if op.get("summary"):
+            partes.append(str(op["summary"]))
+        if op.get("description"):
+            partes.append(str(op["description"]))
+        for par in op.get("parameters") or []:
+            if isinstance(par, dict) and par.get("name"):
+                partes.append(str(par["name"]))
+        for m in re.findall(r"#/components/schemas/([A-Za-z0-9_.\-]+)",
+                            json.dumps(op, ensure_ascii=False)):
+            nomes_schema.add(m)
+
+    for nome in sorted(nomes_schema):
+        partes.append(nome)
+        props = ((schemas.get(nome) or {}).get("properties") or {})
+        for campo in list(props)[:MAX_CAMPOS_SCHEMA]:
+            partes.append(str(campo))
+
+    return " ".join(dict.fromkeys(" ".join(partes).split()))
+
+
+def build(spec_path: str, incluir_vocab: bool = False) -> list[dict]:
+    """Monta os registros derivados. `incluir_vocab` e' OPT-IN e default OFF.
+
+    POR QUE O DEFAULT E' OFF — MEDIDO E REJEITADO: enriquecer os registros com o
+    vocabulario da spec elevou a cobertura de tokens pergunta<->registro de 26,0%
+    para 31,6% e mesmo assim PIOROU a recuperacao: benchmark REST @1 5/40 -> 3/40,
+    @10 12/40 -> 7/40, MRR 0,1942 -> 0,1077. Causa: os registros passaram de ~50
+    tokens para mediana de 754 caracteres, e o vocabulario acrescentado e'
+    COMPARTILHADO entre as familias ('REST API', 'model', 'plan', 'object', 'id'),
+    logo tem IDF baixo, nao discrimina, e a normalizacao por tamanho do BM25 pune.
+    Mesmo padrao ja' observado nas man pages. Fica atras do flag para que a
+    regeneracao padrao produza a versao BOA e o experimento siga reproduzivel.
+    """
     spec = carregar(spec_path)
     paths = spec.get("paths") or {}
     info = spec.get("info") or {}
     versao = str(info.get("version") or "?")
 
     familias: dict[str, list[tuple[str, str, str]]] = collections.defaultdict(list)
+    brutos: dict[str, list[tuple[str, str, dict]]] = collections.defaultdict(list)
     sem_tag = 0
     for path, item in sorted(paths.items()):
         for metodo, op in item.items():
@@ -119,6 +182,7 @@ def build(spec_path: str) -> list[dict]:
                 tags = ["(sem tag)"]
             for t in tags:
                 familias[t].append((metodo.upper(), path, resumo_curto(op)))
+                brutos[t].append((path, metodo, op))
 
     if sem_tag:
         print(f"AVISO: {sem_tag} operacoes sem tag", file=sys.stderr)
@@ -140,6 +204,7 @@ def build(spec_path: str) -> list[dict]:
             "resource": recurso,
             "claim": f"REST API V2 — {recurso}: {desc}",
             "syntax": superficie,
+            "vocab_spec": (vocab_da_spec(spec, tag, brutos[tag]) if incluir_vocab else ""),
             "operations": [
                 {"method": m, "path": p, "summary": s} for m, p, s in listadas
             ],
@@ -157,9 +222,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="nao escreve; so reporta")
     ap.add_argument("--spec", default=DEFAULT_SPEC, help="caminho da spec OpenAPI")
+    ap.add_argument("--vocab-spec", action="store_true",
+                    help="enriquece com o vocabulario da spec. MEDIDO E REJEITADO: "
+                         "melhora a cobertura de tokens mas piora a recuperacao "
+                         "(REST @1 5/40 -> 3/40). Default OFF de proposito.")
     args = ap.parse_args()
 
-    recs = build(args.spec)
+    recs = build(args.spec, incluir_vocab=args.vocab_spec)
     if args.check:
         tot_ops = sum(r["n_operations"] for r in recs)
         print(f"seriam gerados {len(recs)} registros")
