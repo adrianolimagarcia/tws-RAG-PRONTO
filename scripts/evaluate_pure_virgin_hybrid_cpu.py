@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """Busca Híbrida 100% em CPU:
-Combina os Embeddings Densos pré-computados (corpus_bge_m3.pt, 4.8MB)
+Combina os Embeddings Densos pré-computados (corpus_bge_m3_v3.pt, 13.7MB)
 com o BM25 Léxico usando Reciprocal Rank Fusion (RRF) na CPU pura,
 sem depender de GPU em runtime.
+
+Atualizado 18.09.2026: o indice era `corpus_bge_m3.pt` (v1, 09/09, 2427 linhas)
+e cobria apenas 2309 dos 6903 ids unicos do corpus (~33.5%) - dois tercos do
+corpus nao tinham vetor denso. Repontado para `corpus_bge_m3_v3.pt`, reconstruido
+sobre os 7020 documentos atuais (6903 ids unicos, 117 duplicados de id).
 """
 import sys, os, time, json, re
 import torch
@@ -11,8 +16,8 @@ sys.path.insert(0, "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/proj
 import evaluate_rag_benchmark as lex_engine
 
 CACHE_DIR = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/hermes/neural-reranker/hf_cache"
-INDEX_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_bge_m3.pt"
-DOCS_META_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_docs_meta.json"
+INDEX_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_bge_m3_v3.pt"
+DOCS_META_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_docs_meta_v3.json"
 TEST_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/eval/pure_virgin_test_40.jsonl"
 os.environ["HF_HOME"] = CACHE_DIR
 
