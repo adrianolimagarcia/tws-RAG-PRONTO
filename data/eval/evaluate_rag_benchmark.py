@@ -273,7 +273,10 @@ def load_documents():
                 try:
                     c = json.loads(line)
                     cid = c.get("claim_id", "")
-                    if cid:
+                    # Entradas sem `claim` sao registros de EXECUCAO (result: PASS/BLOCKED),
+                    # nao evidencia. Sem este filtro viram documento de texto quase vazio
+                    # (' PASS ') e ainda colidem com ids de canonical_claim.
+                    if cid and (c.get("claim") or "").strip():
                         text = f"{c.get('claim', '')} {c.get('result', '')} {c.get('observations', '')} {c.get('sanitized_output', '')}"
                         docs.append({"id": cid, "type": "lab_evidence", "text": text, "tokens": tokenize(text)})
                 except Exception:
@@ -343,6 +346,29 @@ def load_documents():
                 )
                 docs.append({"id": cid, "type": c.get("kind", "derived_knowledge"),
                              "text": text, "tokens": tokenize(text)})
+
+    # Um id = um documento. Ids repetidos (canonical_claim + lab_evidence da MESMA claim)
+    # sao fundidos. Sem isso, `relevant_claim_ids` do benchmark casa com qualquer copia
+    # do id - inclusive uma vazia - e um acerto pode ser FALSO (metrica inflada).
+    por_id = {}
+    ordem = []
+    fundidos = 0
+    for d in docs:
+        i = d["id"]
+        if i not in por_id:
+            por_id[i] = d
+            ordem.append(i)
+        else:
+            base = por_id[i]
+            fundidos += 1
+            if d.get("text") and d["text"] not in base.get("text", ""):
+                base["text"] = (base.get("text", "").rstrip() + " " + d["text"].strip()).strip()
+                base["tokens"] = tokenize(base["text"])
+            base.setdefault("merged_types", [base.get("type")])
+            if d.get("type") not in base["merged_types"]:
+                base["merged_types"].append(d.get("type"))
+    if fundidos:
+        docs = [por_id[i] for i in ordem]
 
     return docs
 

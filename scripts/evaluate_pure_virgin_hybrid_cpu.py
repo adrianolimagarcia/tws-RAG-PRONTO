@@ -16,8 +16,8 @@ sys.path.insert(0, "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/proj
 import evaluate_rag_benchmark as lex_engine
 
 CACHE_DIR = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/hermes/neural-reranker/hf_cache"
-INDEX_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_bge_m3_v3.pt"
-DOCS_META_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_docs_meta_v3.json"
+INDEX_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_bge_m3_v4.pt"
+DOCS_META_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/indexes/corpus_docs_meta_v4.json"
 TEST_FILE = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/eval/pure_virgin_test_40.jsonl"
 os.environ["HF_HOME"] = CACHE_DIR
 
