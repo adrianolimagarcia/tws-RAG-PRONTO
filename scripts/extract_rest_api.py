@@ -35,6 +35,8 @@ DEFAULT_SPEC = os.environ.get(
 )
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUT = os.path.join(REPO, "data", "knowledge", "rest-api-derived.jsonl")
+# Granularidade por OPERACAO (opt-in no corpus via RAG_REST_GRANULARITY=operation):
+OUT_OPS = os.path.join(REPO, "data", "knowledge", "rest-api-derived-ops.jsonl")
 
 METODOS = ("get", "post", "put", "delete", "patch")
 QUOTE_LIMIT = 160
@@ -151,6 +153,69 @@ def vocab_da_spec(spec: dict, tag: str, brutos: list[tuple[str, str, dict]]) -> 
     return " ".join(dict.fromkeys(" ".join(partes).split()))
 
 
+def slug_operacao(metodo: str, path: str) -> str:
+    """Id estavel para uma operacao. `operationId` existe em apenas 1 das 276 operacoes da
+    spec, entao o id vem de METODO+PATH, que e' unico por construcao."""
+    bruto = f"{metodo}-{path}"
+    return re.sub(r"[^a-z0-9]+", "-", bruto.lower()).strip("-")[:90]
+
+
+def build_por_operacao(spec_path: str) -> list[dict]:
+    """UM REGISTRO POR OPERACAO (276 na spec), em vez de um por familia (24).
+
+    POR QUE EXISTE: com um registro por familia o benchmark SATURA na acuracia do
+    classificador - nao ha' o que escolher dentro da familia, entao nenhuma melhoria de
+    RANKING e' mensuravel. Medido: rotear para a familia prevista da 94,4% e e'
+    aritmeticamente identico a acertar a classificacao. Com um registro por operacao o
+    recuperador tem de escolher entre 276 candidatos e o ground truth passa a ser a
+    OPERACAO, o que torna a medicao de ranking possivel.
+
+    REGRA DECLARADA (mesma dos outros derivados): o texto do registro vem SO' da spec -
+    summary e description da propria operacao, mais metodo e path. Nada e' escrito a mao
+    e nada vem da redacao das perguntas do benchmark. Qualquer terceiro re-executa o
+    extrator sobre a mesma spec e obtem o mesmo texto.
+
+    GRANULARIDADE E' OPT-IN: este arquivo so' entra no corpus com
+    RAG_REST_GRANULARITY=operation. O default continua sendo um registro por familia.
+    """
+    spec = carregar(spec_path)
+    info = spec.get("info") or {}
+    versao = str(info.get("version") or "?")
+    records: list[dict] = []
+    vistos: set[str] = set()
+
+    for path, item in sorted((spec.get("paths") or {}).items()):
+        if not isinstance(item, dict):
+            continue
+        for metodo, op in item.items():
+            if metodo not in METODOS or not isinstance(op, dict):
+                continue
+            tags = op.get("tags") or ["(sem tag)"]
+            recurso = str(tags[0]).replace("V2 APIs - ", "").strip()
+            resumo = " ".join(str(op.get("summary") or "").split())
+            descricao = " ".join(str(op.get("description") or "").split())
+            m = metodo.upper()
+            oid = f"hwa-10.2.8-rest-op-{slug_operacao(m, path)}-0001"
+            if oid in vistos:
+                raise SystemExit(f"COLISAO de id de operacao: {oid} ({m} {path})")
+            vistos.add(oid)
+            texto = f"REST API V2 — {recurso} — {m} {path}: {resumo}. {descricao}".strip()
+            records.append({
+                "claim_id": oid,
+                "kind": "rest_api_operation",
+                "resource": recurso,
+                "operation": f"{m} {path}",
+                "claim": texto,
+                "syntax": f"{m} {path}",
+                "supporting_quote": resumo[:QUOTE_LIMIT],
+                "source_title": f"REST API V2 — {recurso} (HWA 10.2.8, spec v{versao})",
+                "source_url": f"/twsd/api/v2 — {m} {path}",
+                "status": "documented_not_exercised_in_lab",
+                "result": "SUCCESS",
+            })
+    return records
+
+
 def build(spec_path: str, incluir_vocab: bool = False) -> list[dict]:
     """Monta os registros derivados. `incluir_vocab` e' OPT-IN e default OFF.
 
@@ -226,23 +291,43 @@ def main() -> int:
                     help="enriquece com o vocabulario da spec. MEDIDO E REJEITADO: "
                          "melhora a cobertura de tokens mas piora a recuperacao "
                          "(REST @1 5/40 -> 3/40). Default OFF de proposito.")
+    ap.add_argument("--granularity", choices=("familia", "operacao"), default="familia",
+                    help="'familia' (default) = 24 registros, um por familia - o corpus "
+                         "atual. 'operacao' = 276 registros, um por operacao, com ground "
+                         "truth por OPERACAO, que e' o unico jeito de medir RANKING "
+                         "(com um registro por familia o benchmark satura na acuracia do "
+                         "classificador). O arquivo de operacao e' opt-in no corpus: "
+                         "RAG_REST_GRANULARITY=operation.")
     args = ap.parse_args()
 
-    recs = build(args.spec, incluir_vocab=args.vocab_spec)
-    if args.check:
-        tot_ops = sum(r["n_operations"] for r in recs)
-        print(f"seriam gerados {len(recs)} registros")
-        print(f"  operacoes cobertas : {tot_ops}")
-        print(f"  com descricao PT-BR: {sum(1 for r in recs if 'pendente' not in r['claim'])}")
-        print(f"  com sintaxe        : {sum(1 for r in recs if r['syntax'])}")
-        print(f"  quote > {QUOTE_LIMIT} chars  : {sum(1 for r in recs if len(r['supporting_quote']) > QUOTE_LIMIT)}")
-        return 0
+    if args.granularity == "operacao":
+        recs = build_por_operacao(args.spec)
+        destino = OUT_OPS
+        if args.check:
+            recursos = {r["resource"] for r in recs}
+            ids = {r["claim_id"] for r in recs}
+            print(f"seriam gerados {len(recs)} registros (granularidade=operacao)")
+            print(f"  ids unicos         : {len(ids)}")
+            print(f"  familias cobertas  : {len(recursos)}")
+            print(f"  sem summary        : {sum(1 for r in recs if not r['supporting_quote'].strip())}")
+            return 0
+    else:
+        recs = build(args.spec, incluir_vocab=args.vocab_spec)
+        destino = OUT
+        if args.check:
+            tot_ops = sum(r["n_operations"] for r in recs)
+            print(f"seriam gerados {len(recs)} registros (granularidade=familia)")
+            print(f"  operacoes cobertas : {tot_ops}")
+            print(f"  com descricao PT-BR: {sum(1 for r in recs if 'pendente' not in r['claim'])}")
+            print(f"  com sintaxe        : {sum(1 for r in recs if r['syntax'])}")
+            print(f"  quote > {QUOTE_LIMIT} chars  : {sum(1 for r in recs if len(r['supporting_quote']) > QUOTE_LIMIT)}")
+            return 0
 
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w", encoding="utf-8") as fh:
+    os.makedirs(os.path.dirname(destino), exist_ok=True)
+    with open(destino, "w", encoding="utf-8") as fh:
         for r in recs:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
-    print(f"gravado {OUT} com {len(recs)} registros")
+    print(f"gravado {destino} com {len(recs)} registros")
     return 0
 
 

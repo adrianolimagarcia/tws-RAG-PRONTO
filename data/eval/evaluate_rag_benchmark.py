@@ -58,6 +58,30 @@ KNOWLEDGE_DERIVED = [
 KNOWLEDGE_REST_API = [
     os.path.join(REPO_DIR, "data", "knowledge", "rest-api-derived.jsonl"),
 ]
+# GRANULARIDADE DA FONTE REST (opt-in, DEFAULT = familia, comportamento inalterado):
+# `RAG_REST_GRANULARITY=operation` troca os 24 registros (um por familia) pelos 276 (um
+# por operacao). POR QUE EXISTE: com um registro por familia o benchmark SATURA na
+# acuracia do classificador - nao ha' o que escolher dentro da familia, entao nenhuma
+# melhoria de RANKING e' mensuravel (medido: rotear para a familia prevista da 94,4% e e'
+# aritmeticamente identico a acertar a classificacao). Com um registro por operacao o
+# ground truth passa a ser a OPERACAO e a medicao de ranking fica possivel.
+# Os dois arquivos tem ids disjuntos, entao nao ha' colisao - mas so' um entra por vez.
+KNOWLEDGE_REST_OPS = [
+    os.path.join(REPO_DIR, "data", "knowledge", "rest-api-derived-ops.jsonl"),
+]
+if os.environ.get("RAG_REST_GRANULARITY"):
+    # VALIDACAO EXPLICITA: um valor nao reconhecido tem de GRITAR, nao silenciar. Sem
+    # isto, escrever 'operacao' (PT) em vez de 'operation' (EN) nao ativava nada, o corpus
+    # ficava com os 24 registros de familia, os ids de operacao do benchmark NAO existiam
+    # e a medicao dava 0/40 em todas as configuracoes - um falso negativo que parece
+    # resultado. Aconteceu exatamente assim na primeira rodada.
+    _gran = os.environ["RAG_REST_GRANULARITY"].strip().lower()
+    if _gran in ("operation", "operacao", "ops", "op"):
+        KNOWLEDGE_REST_API = KNOWLEDGE_REST_OPS
+    elif _gran not in ("familia", "family", "fam"):
+        raise SystemExit(
+            f"RAG_REST_GRANULARITY={os.environ['RAG_REST_GRANULARITY']!r} nao reconhecido. "
+            "Use 'operation' (276 registros) ou 'familia' (24 registros, default).")
 
 SYNONYMS = {
     "sfinal": ["makeplan", "switchplan", "startappserver", "checksync", "createpostreports", "updatestats", "2359", "final", "d+1"],
