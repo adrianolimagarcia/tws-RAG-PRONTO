@@ -33,9 +33,16 @@ RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
 #    (a) man-pages-derived.jsonl  — sintaxe/parafrase PT-BR das 95 man pages do produto,
 #        gerado por scripts/extract_man_pages.py (texto cru NAO versionado — licenca);
 #    (b) lab-procedures-derived.jsonl — procedimentos operacionais observados no lab.
+#    (c) rest-api-derived.jsonl — superficie funcional da REST API V2 (24 familias,
+#        276 operacoes), gerado por scripts/extract_rest_api.py. Switch PROPRIO
+#        (RAG_INGEST_REST_API) para poder medir esta fonte isolada das man pages:
+#        as duas tem efeito de competicao de rank e nao devem ser ligadas em bloco.
 KNOWLEDGE_DERIVED = [
     os.path.join(REPO_DIR, "data", "knowledge", "man-pages-derived.jsonl"),
     os.path.join(REPO_DIR, "data", "knowledge", "lab-procedures-derived.jsonl"),
+]
+KNOWLEDGE_REST_API = [
+    os.path.join(REPO_DIR, "data", "knowledge", "rest-api-derived.jsonl"),
 ]
 
 SYNONYMS = {
@@ -345,6 +352,30 @@ def load_documents():
                     ("claim", "syntax", "supporting_quote", "tool", "command", "source_title")
                 )
                 docs.append({"id": cid, "type": c.get("kind", "derived_knowledge"),
+                             "text": text, "tokens": tokenize(text)})
+
+    # 6b. Superficie da REST API V2 — switch PROPRIO (default OFF).
+    #     Medido: a fonte entra isolada para que o efeito dela seja separavel do
+    #     efeito das man pages, que ja' se mostrou negativo por competicao de rank.
+    if os.environ.get("RAG_INGEST_REST_API") == "1":
+        for kf in KNOWLEDGE_REST_API:
+            if not os.path.exists(kf):
+                continue
+            for line in open(kf, encoding="utf-8"):
+                if not line.strip():
+                    continue
+                try:
+                    c = json.loads(line)
+                except Exception:
+                    continue
+                cid = c.get("claim_id")
+                if not cid:
+                    continue
+                text = " ".join(
+                    str(c.get(k, "")) for k in
+                    ("claim", "syntax", "resource", "supporting_quote", "source_title")
+                )
+                docs.append({"id": cid, "type": c.get("kind", "rest_api_surface"),
                              "text": text, "tokens": tokenize(text)})
 
     # Um id = um documento. Ids repetidos (canonical_claim + lab_evidence da MESMA claim)
