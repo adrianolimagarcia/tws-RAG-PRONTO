@@ -284,6 +284,17 @@ def expand_query(text):
 # nao se confunde com mudanca de fluxo.
 # ---------------------------------------------------------------------------
 HYBRID = os.environ.get("RAG_HYBRID") == "1"
+# MODO DENSO-PURO (opt-in, DEFAULT OFF). Isola o ramo denso para medir a travessia
+# PT->EN: 'raw' devolve o ranking do proprio BGE-M3 sem o segundo estagio (mede o
+# sinal cross-lingual do embedding); 'rerank' passa o denso pelo mesmo
+# second_stage_rerank da producao. VALIDACAO EXPLICITA: valor nao reconhecido
+# levanta erro - a licao do RAG_REST_GRANULARITY, onde um valor errado silenciava
+# e produzia um falso negativo que parecia resultado.
+DENSE_ONLY = os.environ.get("RAG_DENSE_ONLY", "").strip().lower()
+if DENSE_ONLY and DENSE_ONLY not in ("raw", "rerank"):
+    raise SystemExit(
+        f"RAG_DENSE_ONLY={os.environ['RAG_DENSE_ONLY']!r} nao reconhecido. Use 'raw' ou 'rerank'.")
+DENSE_ONLY_TOP = int(os.environ.get("RAG_DENSE_TOP", "30"))
 HYBRID_INDEX = os.environ.get("RAG_DENSE_INDEX") or os.path.join(
     REPO_DIR, "data", "indexes", "corpus_bge_m3_v5.pt")
 HYBRID_META = os.environ.get("RAG_DENSE_META") or os.path.join(
@@ -744,13 +755,29 @@ def run_evaluation():
 
         # MODO HIBRIDO: funde o ramo esparso com o denso (RRF k=60) antes do
         # segundo estagio. Sem o switch, o comportamento e' o de sempre (BM25 puro).
-        if HYBRID:
+        # MODO DENSO-PURO (RAG_DENSE_ONLY): isola o ramo denso para medir a travessia
+        # PT->EN. 'raw' = o ranking do proprio BGE-M3, SEM o segundo estagio (mede o
+        # sinal cross-lingual do embedding, que e' a pergunta); 'rerank' = o denso
+        # passando pelo mesmo second_stage_rerank da producao (mede a forma final).
+        if DENSE_ONLY:
+            _por_id = {d["id"]: d for d in docs}
+            _dids = _dense_top30(q_text, DENSE_ONLY_TOP)
+            # NOTA: o score e' so' um portador de ORDEM (1.0, 0.999999, ...) - o que
+            # vale aqui e' a posicao do BGE-M3. Nomear os dois lados do enumerate
+            # separadamente nao e' estilo: `for i, i in ...` sombreia o INDICE com a
+            # string do id e quebra em `i * 1e-6` (TypeError, ja' aconteceu).
+            candidatos = [(1.0 - _r * 1e-6, _por_id[_did])
+                          for _r, _did in enumerate(_dids) if _did in _por_id]
+        elif HYBRID:
             candidatos = _rrf_fuse(q_text, diversified_docs, docs)
         else:
             candidatos = diversified_docs
 
         # Segundo Estágio de Re-ranking: Desempate por N-Grams contíguos e Cobertura Semântica
-        retrieved_docs = second_stage_rerank(q_text, candidatos, top_n=20)
+        if DENSE_ONLY == "raw":
+            retrieved_docs = [d for _, d in candidatos[:20]]
+        else:
+            retrieved_docs = second_stage_rerank(q_text, candidatos, top_n=20)
 
         rank = None
         for idx, d in enumerate(retrieved_docs):
