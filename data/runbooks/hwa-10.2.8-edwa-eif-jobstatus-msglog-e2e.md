@@ -1420,6 +1420,12 @@ e o ganho **desaparece**: v3 +1 e externos **−13**. Usar o campo `has_anchor` 
 
 **Próximo passo (não é "outro modelo"):** um **roteador confiável** — ou trocar a rota dura por um **blend de
 scores** baseline+CE, que **elimina o roteador**. Vazamento medido: 15/262, 25/100, 17/50, 0/30.
+
+**Evidência a favor do blend (sinal abaixo do rank 1).** Mesmo com o proxy **quebrado** (67%), o híbrido
+melhora **@3 (79,8% → 81,3%)** e **MRR (0,7577 → 0,7668)** no v3 com o **@1 em paridade (183)**. Isto é, o
+cross-encoder agrega sinal de ordenação **abaixo do rank 1** que a rota dura desperdiça — precisamente o que
+um blend de scores aproveita **sem roteador**. É o argumento medido para atacar o blend em vez de melhorar o
+classificador.
 Caches ficaram em `hermes/neural-reranker/` (fora do repo, **não em `/tmp`** como em 14.09, cujo footprint
 foi removido e custou ~300 s de reconstrução).
 
