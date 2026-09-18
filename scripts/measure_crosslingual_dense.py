@@ -60,6 +60,13 @@ CONFIGS: dict[str, dict] = {
     "bm25": {},
     "dense_raw": {**DENSE, "RAG_DENSE_ONLY": "raw"},
     "dense_rerank": {**DENSE, "RAG_DENSE_ONLY": "rerank"},
+    # (a) candidatos MISTOS: denso + esparso fundidos por RRF antes do segundo estagio.
+    "hibrido_rrf": {**DENSE, "RAG_HYBRID": "1"},
+    # (b) o segundo estagio corta o pool em top_n=20: dar mais candidatos densos.
+    "dense_pool100": {**DENSE, "RAG_DENSE_ONLY": "rerank", "RAG_DENSE_TOP": "100"},
+    "dense_pool300": {**DENSE, "RAG_DENSE_ONLY": "rerank", "RAG_DENSE_TOP": "300"},
+    # (b') deixar o proprio segundo estagio processar mais (nao cortar em 20).
+    "dense_rerank_top100": {**DENSE, "RAG_DENSE_ONLY": "rerank", "RAG_RERANK_TOP": "100"},
     "dense_off": {**DENSE, "RAG_DENSE_ONLY": "raw", "_fonte_off": "1"},
 }
 

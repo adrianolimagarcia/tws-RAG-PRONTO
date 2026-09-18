@@ -295,6 +295,8 @@ if DENSE_ONLY and DENSE_ONLY not in ("raw", "rerank"):
     raise SystemExit(
         f"RAG_DENSE_ONLY={os.environ['RAG_DENSE_ONLY']!r} nao reconhecido. Use 'raw' ou 'rerank'.")
 DENSE_ONLY_TOP = int(os.environ.get("RAG_DENSE_TOP", "30"))
+# Quantos candidatos o segundo estagio processa (default 20 = comportamento de sempre).
+RERANK_TOP = int(os.environ.get("RAG_RERANK_TOP", "20"))
 HYBRID_INDEX = os.environ.get("RAG_DENSE_INDEX") or os.path.join(
     REPO_DIR, "data", "indexes", "corpus_bge_m3_v5.pt")
 HYBRID_META = os.environ.get("RAG_DENSE_META") or os.path.join(
@@ -774,10 +776,12 @@ def run_evaluation():
             candidatos = diversified_docs
 
         # Segundo Estágio de Re-ranking: Desempate por N-Grams contíguos e Cobertura Semântica
+        # RAG_RERANK_TOP (default 20 = comportamento de sempre): o reranker processa
+        # SOMENTE candidates[:top_n] - ou seja, ele CORTA o pool, nao so' reordena.
         if DENSE_ONLY == "raw":
             retrieved_docs = [d for _, d in candidatos[:20]]
         else:
-            retrieved_docs = second_stage_rerank(q_text, candidatos, top_n=20)
+            retrieved_docs = second_stage_rerank(q_text, candidatos, top_n=RERANK_TOP)
 
         rank = None
         for idx, d in enumerate(retrieved_docs):
