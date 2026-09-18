@@ -1377,7 +1377,10 @@ Evidência: `data/evidence/lab-validation-2026-09-17-idf-full-suite-test-inconcl
 a ordenação instrumentada reproduz 183/262 **e** o score instrumentado de cada documento é idêntico ao de
 produção (`max|diff| = 2,8e-14`). Dos 49 quase-acertos, **19 foram demotados** pelo 2º estágio e 30 são erro
 real do scorer. Nos 19, o componente que dá a margem ao documento **errado** é **`ss_entidade_id` em 16/19
-(84%)** — e em **14/19 o certo levou ZERO**. Dois defeitos de desenho: o boost **acumula sem teto** (medido
+(84%)** — e em **14/19 o certo levou ZERO**. No conjunto **inteiro** dos 49, ele é o componente que favorece
+o errado em **30/49 (61%)**: ou seja, além dos 16 demotados, ele também empurra o documento errado em **14
+dos 30** casos que eu classifiquei como "erro real do scorer" — o dano é maior que o da demissão sozinha.
+Delta médio `+37,6` (soma `+1204`, n=32). Dois defeitos de desenho: o boost **acumula sem teto** (medido
 `+64` e `+102` sobre uma base de ordem 5–20) e **chaveia no ID**, que é artefato de nomenclatura
 (`message_catalog` tem o código AWS no ID por construção).
 
