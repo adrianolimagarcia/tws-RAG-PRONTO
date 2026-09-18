@@ -1426,6 +1426,50 @@ melhora **@3 (79,8% → 81,3%)** e **MRR (0,7577 → 0,7668)** no v3 com o **@1 
 cross-encoder agrega sinal de ordenação **abaixo do rank 1** que a rota dura desperdiça — precisamente o que
 um blend de scores aproveita **sem roteador**. É o argumento medido para atacar o blend em vez de melhorar o
 classificador.
+
+**Mas o blend foi TESTADO e REJEITADO — nos dois desenhos (§5ac).** O argumento acima estava incompleto.
+
+## 5ac — O BLEND baseline×CE foi testado e REJEITADO (os dois desenhos)
+
+**Desenho 1 — CE no LUGAR do 2º estágio** (`scripts/blend_base_ce.py`). Defeito **meu**, encontrado pelo
+próprio controle: o script blendeou o CE com o score **pré-2ª-etapa**, ou seja, **substituiu** o 2º estágio.
+O controle `alpha=0` reproduziu **169/262 e 141/180** (1º estágio), **não** a produção (183/166). Como o 2º
+estágio vale **+14 no v3 e +25 nos externos**, o teste começava 25 pontos atrás. Nenhum alpha passa.
+
+**Desenho 2 — CE SOMADO ao 2º estágio** (`scripts/blend_on_top_of_stage2.py`), que é o correto:
+`final = (1−λ)·minmax(score_2ª_etapa) + λ·minmax(score_CE)`. **Controle `λ=0` reproduz a produção
+EXATAMENTE (183/262, 166/180).**
+
+```
+  lam=0.0  v3 183 (+0)   externos 166 (+0)    <- controle
+  lam=0.1  v3 179 (-4)   externos 162 (-4)
+  lam=0.3  v3 179 (-4)   externos 159 (-7)
+  lam=0.5  v3 185 (+2)   externos 156 (-10)
+  lam=0.6  v3 186 (+3)   externos 156 (-10)   <- melhor v3, custa 10 externos
+  lam=1.0  v3 173 (-10)  externos 146 (-20)
+  -> NENHUM lambda passa
+```
+
+O `+3` no v3 é **nível-ruído**: o SE do @1 com n=262 e p≈0,70 é √(0,7·0,3/262) = 0,0283 → **~7,4 pontos**.
+
+**Leitura (a parte que importa).** O blend **não elimina o roteador — ele HERDA o problema do roteador**.
+A utilidade do CE é **dependente da fatia**: ganha +13 onde o baseline é fraco (B, sem âncora) e perde −28
+onde é forte (A, com âncora). **Não existe peso global que separe os dois regimes** — é o mesmo muro da rota
+dura, apenas redistribuído: trocar rota por blend não elimina a necessidade de decidir **por pergunta**,
+apenas esconde a decisão dentro de um escalar que não pode estar certo nos dois regimes ao mesmo tempo.
+
+**O que isto NÃO refuta:** o **sinal** do CE existe e é grande (B 80→97, **+17**, com rota perfeita). O que
+está refutado é a hipótese de explorá-lo **sem uma decisão por pergunta confiável**.
+
+**Em aberto (honesto):** (1) o ganho do CE só foi medido com rota **perfeita** no v3 — e `has_anchor` é
+**rótulo de benchmark**; nos externos não existe rota perfeita medida, só o proxy de **67,2%** (44
+falsos-âncora, 42 falsos-não-âncora); logo "o CE ajuda" está demonstrado **apenas no v3**. (2) O roteador
+confiável segue **não resolvido**. (3) A regra do dono proíbe **treino** sobre datasets de produto, mas
+classificação **zero-shot** por LLM é **inferência** — via não testada.
+
+Evidência: `data/evidence/lab-validation-2026-09-17-blend-base-ce-rejected-both-designs.jsonl`
+(`result: REJECTED`). Scripts: `scripts/blend_base_ce.py`, `scripts/blend_on_top_of_stage2.py`.
+Scores crus do CE salvos em `hermes/neural-reranker/ce_scores_top20.json` (evita re-inferência).
 Caches ficaram em `hermes/neural-reranker/` (fora do repo, **não em `/tmp`** como em 14.09, cujo footprint
 foi removido e custou ~300 s de reconstrução).
 
