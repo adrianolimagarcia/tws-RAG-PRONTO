@@ -139,13 +139,27 @@ def main() -> int:
     crit: dict[str, dict] = {}
 
     # --- 1. controle reproduz exatamente -----------------------------------
+    # Em modo A/B o controle e' o braco A (a linha de base), NAO o --summary:
+    # `eval_summary.json` e' sobrescrito a cada rodada, entao ler o default aqui
+    # compara o controle com o ultimo braco executado (medido: deu n=100, FAIL).
+    fonte_controle = Path(args.run_a) if args.run_a else Path(args.summary)
     try:
-        s = carrega_summary(Path(args.summary))
-        ok = (s["n"] == CONTROLE["total"] and s["mrr"] is not None
-              and abs(s["mrr"] - CONTROLE["mrr"]) < 1e-4)
-        detalhe = f"n={s['n']} MRR={s['mrr']}"
-        # n=262 com MRR batendo e' o sinal do blind v3; o corpus e' conferido a parte
-        crit["controle_reproduz"] = {"estado": "PASS" if ok else "FAIL", "detalhe": detalhe}
+        s = carrega_summary(fonte_controle)
+        if s["n"] != CONTROLE["total"]:
+            # O controle e' do blind_v3 (262 perguntas). Um A/B em OUTRO benchmark
+            # nao pode ser julgado por ele: marcar FAIL aqui tornava todo A/B fora do
+            # blind_v3 INVALID por construcao (medido no holdout_100, n=100).
+            crit["controle_reproduz"] = {
+                "estado": "UNKNOWN",
+                "detalhe": (f"braco A tem n={s['n']}, nao e' o benchmark do controle "
+                            f"(n={CONTROLE['total']}); controle nao aplicavel a este A/B"),
+            }
+        else:
+            ok = (s["mrr"] is not None and abs(s["mrr"] - CONTROLE["mrr"]) < 1e-4)
+            crit["controle_reproduz"] = {
+                "estado": "PASS" if ok else "FAIL",
+                "detalhe": f"n={s['n']} MRR={s['mrr']} (fonte: {fonte_controle.name})",
+            }
     except Exception as e:  # noqa: BLE001
         crit["controle_reproduz"] = {"estado": "FAIL", "detalhe": f"erro: {e}"}
 

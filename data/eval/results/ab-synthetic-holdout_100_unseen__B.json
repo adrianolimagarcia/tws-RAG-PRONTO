@@ -1,0 +1,1527 @@
+{
+  "total": 100,
+  "hit_rate_at_1": 0.81,
+  "hit_rate_at_3": 0.9,
+  "hit_rate_at_5": 0.93,
+  "hit_rate_at_10": 0.94,
+  "hit_rate_at_15": 0.94,
+  "recall_at_15": 0.89,
+  "mrr": 0.8594780514761382,
+  "details": [
+    {
+      "id": "holdout-100-0001",
+      "domain": null,
+      "question": "Qual é a interface de operação padrão do HCL Workload Automation for Z (z/OS)?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-version-matrix-zos-operator-commands-0022",
+        "hwa-10.2.8-vm-ispf-0015"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-version-matrix-zos-operator-commands-0022",
+        "hwa-10.2.8-AWKZSJ-001E-0001",
+        "hwa-operational-limit-zero-not-unlimited-0030"
+      ]
+    },
+    {
+      "id": "holdout-100-0002",
+      "domain": null,
+      "question": "Qual usuário deve ser o proprietário dos arquivos de certificado UNIX na instalação do DWC?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-orphan-reverify-0090"
+      ],
+      "expected_runbook": "mdm-serverinst-twsinst-complete-reference.md",
+      "top_3_retrieved": [
+        "ragflow:mdm-serverinst-twsinst-complete-reference.md:0005",
+        "ragflow:mdm-serverinst-twsinst-complete-reference.md:0021",
+        "ragflow:hwa-10.2.8-container-rhel9-lab.md:0010"
+      ]
+    },
+    {
+      "id": "holdout-100-0003",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A propriedade ExecutorsMinThreads, na seção [Launchers] do JobManager?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-tune-executors-min-threads-0002"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-tune-executors-min-threads-0002",
+        "hwa-10.2-distributed-conman-release-job-dependencies-0016",
+        "hwa-10.2.8-eqq199e-distributed-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0004",
+      "domain": null,
+      "question": "Como utilizar o utilitário composer no HCL Workload Automation?",
+      "rank": 48,
+      "expected_claims": [
+        "hwa-10.2-composer-command-inventory-0024",
+        "hwa-lab-10.2.8-every-schedule-valid-0017"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.4-composer-lock-contention-0040",
+        "hwa-msgcat-awsbia295i",
+        "hwa-msgcat-awsbia257e"
+      ]
+    },
+    {
+      "id": "holdout-100-0005",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: UNIX certificate files in the documented DWC installation flow must be owned by the MDM installation user?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-cert-ownership-0006"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-dwc-cert-ownership-0006",
+        "hwa-10.2.8-dwc-certs-0005",
+        "hwa-10.2.8-certman-output-files-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0006",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: O job stream FINAL executa a sequência de arquivos de script descrita em JnextPlan para gerar o novo plano de produção no HCL Workload Automation, conforme a documentação oficial?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-themaster-final-0004"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-themaster-final-0004",
+        "hwa-themaster-final-0013",
+        "hwa-themaster-jnext-plan-0008"
+      ]
+    },
+    {
+      "id": "holdout-100-0007",
+      "domain": null,
+      "question": "Como remover definições e objetos de teste EDWA do banco de dados utilizando o composer?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-edwa-cleanup-0086",
+        "hwa-10.2-composer-command-inventory-0024"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2-composer-command-inventory-0024",
+        "hwa-10.2.8-govern-composer-version-0002",
+        "hwa-10.2.8-composer-replace-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0008",
+      "domain": null,
+      "question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?",
+      "rank": 58,
+      "expected_claims": [
+        "hwa-10.2-resetfta-xagent-safety-0028",
+        "hwa-10.2.8-incident-symphony-corrupt-0024"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-msgcat-awsbhu605e",
+        "hwa-msgcat-awsbhu113i",
+        "hwa-msgcat-awsbhu739e"
+      ]
+    },
+    {
+      "id": "holdout-100-0009",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation Distributed 10.2.8, a boa prática de upgrade começa pelo Dynamic Workload Console; o upgrade direto de 9.5/10.x atualiza DWC e banco, depois dynamic domain manager e backups, master domain manager e backups, e por fim domain managers e agents?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-upgrade-order-0006"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-upgrade-order-0006",
+        "hwa-10.2.8-runbook-upgrade-order-dwc-0029",
+        "hwa-master-domain-manager-registered-master-0002"
+      ]
+    },
+    {
+      "id": "holdout-100-0010",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A propriedade ExecutorsMaxThreads, na seção [Launchers] do arquivo JobManager?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-tune-executors-max-threads-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-tune-executors-max-threads-0001",
+        "hwa-10.2-distributed-conman-release-job-dependencies-0016",
+        "hwa-10.2.8-eqq199e-distributed-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0011",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: HCL Workload Automation 10.2.8 does not document a rollback/downgrade procedure after upgrade?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-rollback-no-rollback-doc-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-rollback-no-rollback-doc-0001",
+        "hwa-upgrade-1028-rollback-0001",
+        "hwa-10.2-distributed-rollback-requires-backup-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0012",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Sintoma: apos instalar o HWA criando o diretorio de instalacao com o usuario root default, ao trocar para o usuario de administracao do Oracle nao e possivel fazer manutencao Oracle em UNIX?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-oracle-permission-0105"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-oracle-permission-0105",
+        "hwa-10.2.8-tls-ssl-default-install-0001",
+        "hwa-8.3-default-certs-dwc-connector-0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0013",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A opção nm read no localopts do HCL Workload Automation 10.2.8 especifica o número máximo de segundos que o Netman aguarda por uma requisição de conexão antes de verificar sua fila de mensagens para comandos stop e start, com padrão documentado de 10 segundos?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-tune-nm-read-0037"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-tune-nm-read-0037",
+        "hwa-10.2.8-tune-jm-read-0009",
+        "hwa-10.2.8-tune-mm-response-0032"
+      ]
+    },
+    {
+      "id": "holdout-100-0014",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Em HWA Distributed 10.2.8, a documentação oficial de tuning de replicação recomenda configurar com?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-official-tuning-10.2.8-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-official-tuning-10.2.8-0001",
+        "hwa-10.2.8-tune-tuning-the-database-0041",
+        "hwa-10.2.8-perf-file-deps-tuning-0164"
+      ]
+    },
+    {
+      "id": "holdout-100-0015",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, o comando rerun usa a opção ;noask para suprimir a solicitação de confirmação antes que o agente execute a ação em cada job qualificado?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-runbook-rerun-0002"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-runbook-rerun-0002",
+        "hwa-10.2.8-runbook-rerun-0004",
+        "hwa-10.2-distributed-conman-rerun-0005"
+      ]
+    },
+    {
+      "id": "holdout-100-0016",
+      "domain": null,
+      "question": "Como funciona a política de higienização e redação de credenciais no corpus do HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-corpus-redaction-reclass-0101"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-corpus-redaction-reclass-0101",
+        "hwa-lab-10.2.8-rest-api-corpus-incorporation-0081",
+        "hwa-lab-10.2.8-corpus-edwa-expansion-0089"
+      ]
+    },
+    {
+      "id": "holdout-100-0017",
+      "domain": null,
+      "question": "Qual a diferença de suporte a failover em agentes FTA entre as versões 9.5 e 10.2.8?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-9.5-conman-fta-contrast-0008"
+      ],
+      "expected_runbook": "failover-mdm-fta.md",
+      "top_3_retrieved": [
+        "ragflow:failover-mdm-fta.md:0006",
+        "ragflow:failover-mdm-fta.md:0007",
+        "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0018",
+      "domain": null,
+      "question": "Como configurar ou solucionar problemas no dynamic agent ou broker para topology?",
+      "rank": 100,
+      "expected_claims": [
+        "hwa-lab-10.2.8-rest-api-0063"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-agent-dynamic-broker-0003",
+        "hwa-10.2.8-dynagent-concurrency-broker-0014",
+        "hwa-10.2.8-dynagent-workstation-broker-0015"
+      ]
+    },
+    {
+      "id": "holdout-100-0019",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSITA031I no HWA e qual ação é recomendada?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-lab-10.2.8-message-ita031i-0150"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "ragflow:hwa-10.2.8-wsl-lab.md:0040",
+        "hwa-lab-10.2.8-message-ita031i-0150",
+        "hwa-lab-10.2.8-limit-zero-ready-rootcause-0027"
+      ]
+    },
+    {
+      "id": "holdout-100-0020",
+      "domain": null,
+      "question": "Como configurar ou solucionar problemas no dynamic agent ou broker para agent?",
+      "rank": 123,
+      "expected_claims": [
+        "hwa-10.2.8-sec-encryption-at-rest-0003"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-agent-dynamic-broker-0003",
+        "hwa-10.2.8-dynagent-concurrency-broker-0014",
+        "hwa-10.2.8-dynagent-workstation-broker-0015"
+      ]
+    },
+    {
+      "id": "holdout-100-0021",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A opção global workstationLimit (wl) no HCL Workload Automation 10.2.8 especifica o valor de limite de workstation que um dynamic agent assume após ser adicionado ao plano, com valores válidos de 0 a 1024 e padrão 100, efetivo imediatamente?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-capacity-workstation-limit-0002"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-capacity-workstation-limit-0002",
+        "hwa-10.2.8-capacity-workstation-limit-0006",
+        "hwa-10.2.8-dynagent-en-add-workstation-0021"
+      ]
+    },
+    {
+      "id": "holdout-100-0022",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSJCL017W no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-cleanup-test-0076"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-cleanup-test-0076",
+        "ragflow:hwa-10.2.8-stuck-plan-recovery.md:0003",
+        "ragflow:hwa-10.2.8-stuck-plan-recovery.md:0008"
+      ]
+    },
+    {
+      "id": "holdout-100-0023",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: In the HWA laboratory, job definitions using TASKTYPE DB, WEB and FTP all validated, were added and executed SUCC on dynamic agent MDMDA, confirming these integration job-type keywords are accepted and run?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-jobtypes-0064"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-jobtypes-0064",
+        "hwa-lab-10.2.8-agent-restart-reconnect-0048",
+        "hwa-10.2.8-dynagent-job-types-com-opes-avanadas-0019"
+      ]
+    },
+    {
+      "id": "holdout-100-0024",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A opção jm file no root, para sistemas UNIX e Linux, no localopts do HCL Workload Automation 10.2.8 especifica yes para impedir que o Jobman execute comandos em dependências de arquivo como root, com padrão documentado de no?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-tune-jm-file-no-root-0015"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-tune-jm-file-no-root-0015",
+        "hwa-10.2.8-tune-jm-no-root-0014",
+        "hwa-10.2.8-tune-jm-nice-0011"
+      ]
+    },
+    {
+      "id": "holdout-100-0025",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A documentação de performance do HCL Workload Automation 10.2.8 recomenda, para Oracle (RDBMS), alocar tamanho adequado de tablespace/datafile e, como exemplo, para uma carga de 500000 jobs por dia recomenda cerca de 80GB de tamanho de arquivo?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-capacity-oracle-tablespace-size-0014"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-capacity-oracle-tablespace-size-0014",
+        "hwa-10.2.8-capacity-fault-tolerant-0020",
+        "hwa-10.2.8-capacity-oracle-tablespace-0015"
+      ]
+    },
+    {
+      "id": "holdout-100-0026",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI3075E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui3075e-0194"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui3075e-0194",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0027",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Sintoma: erro de CLI do HWA com mensagem 'Either a required impersonation level was not provided, or the provided impersonation level is invalid' em Windows?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-impersonate-right-0096"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-impersonate-right-0096",
+        "hwa-10.2.8-incident-session-invalid-0135",
+        "hwa-10.2.8-EEL-IT01E-0002"
+      ]
+    },
+    {
+      "id": "holdout-100-0028",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0727E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0727e-0146"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0727e-0146",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0029",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: um z/OS shadow job definido no ambiente distributed, ligado com sucesso a um job z/OS remoto, nunca completa e e carregado indefinidamente (carried forward)?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-zos-shadow-carryforward-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-zos-shadow-carryforward-0001",
+        "hwa-official-10.2.8-limit-fence-carryforward-0033",
+        "hwa-10.2.8-globalopts-encarryforward-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0030",
+      "domain": null,
+      "question": "Qual a função do arquivo Symphony e como ele é gerado ou sincronizado?",
+      "rank": 58,
+      "expected_claims": [
+        "hwa-10.2.8-incident-symphony-corrupt-0024",
+        "hwa-10.2.8-awsbhv082e-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-msgcat-awsbhu605e",
+        "hwa-msgcat-awsbhu113i",
+        "hwa-msgcat-awsbhu739e"
+      ]
+    },
+    {
+      "id": "holdout-100-0031",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: ha um mismatch entre as instancias de Job Scheduler no Symphony file e o preproduction plan — instancias que deveriam ter sido removidas aparecem?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-carrystates-0098"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-carrystates-0098",
+        "hwa-lab-10.2.8-mdmhost-dns-symphony-mismatch-0160",
+        "hwa-10.2.8-capacity-symphony-file-0016"
+      ]
+    },
+    {
+      "id": "holdout-100-0032",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: ao lanca r programas CLI (como composer) e tentar rodar um comando, o erro 'user is not authorized to access server' e dado?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-incident-null-password-cli-0111"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-govern-composer-version-0002",
+        "hwa-10.2.8-incident-null-password-cli-0111",
+        "hwa-10.2.4-composer-lock-contention-0040"
+      ]
+    },
+    {
+      "id": "holdout-100-0033",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0283E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0283e-0084"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0283e-0084",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0034",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0111E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0111e-0039"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0111e-0039",
+        "hwa-10.2.8-messages-awsui0544e-0111",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0111"
+      ]
+    },
+    {
+      "id": "holdout-100-0035",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0333E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0333e-0096"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0333e-0096",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0036",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: Symphony corrompido no master e o procedimento com backup master domain manager nao pode ser executado?",
+      "rank": 4,
+      "expected_claims": [
+        "hwa-10.2.8-incident-recovery-logman-resetplan-0061",
+        "hwa-10.2.8-incident-symphony-master-0060"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-master-domain-manager-registered-master-0002",
+        "hwa-themaster-domain-manager-0001",
+        "hwa-10.2.8-backup-backup-master-data-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0037",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0810E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0810e-0157"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0810e-0157",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0038",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0847E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0847e-0162"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0847e-0162",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0039",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0311E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0311e-0092"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0311e-0092",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0040",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: ao rodar um job interativo remotamente em um fault-tolerant agent Windows via Terminal Services (Dynamic Workload Console ou linha de comando), a janela do programa de aplicacao nao abre na tela do Terminal Services, embora o programa esteja rodando no FTA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-terminal-services-interactive-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-terminal-services-interactive-0001",
+        "hwa-10.2.6-centralized-agent-update-0001",
+        "hwa-10.2.8-agent-dynamic-broker-0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0041",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI3126W no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui3126w-0205"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui3126w-0205",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0042",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0327E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0327e-0095"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0327e-0095",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0043",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0132E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0132e-0048"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0132e-0048",
+        "hwa-10.2.8-messages-awsui0589e-0132",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0132"
+      ]
+    },
+    {
+      "id": "holdout-100-0044",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: FTA perde eventos ou para de reportar?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-fta-events-0029"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-fta-events-0029",
+        "ragflow:failover-mdm-fta.md:0008",
+        "ragflow:failover-mdm-fta.md:0002"
+      ]
+    },
+    {
+      "id": "holdout-100-0045",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0206E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0206e-0077"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0206e-0077",
+        "hwa-10.2.8-messages-awsui3130e-0206",
+        "hwa-10.2.8-messages-awsui0292e-0087"
+      ]
+    },
+    {
+      "id": "holdout-100-0046",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: UpdateStats em plano grande falha com AWSJCO084E 'The user UNAUTHENTICATED is not authorized to work with the planner process' porque o job run time excedeu duas horas?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-jco084e-timeout-config-0101"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-jco084e-timeout-config-0101",
+        "hwa-10.2.8-trouble-awsjco084e-0009",
+        "hwa-10.2.8-sec-awsjco084-e-0032"
+      ]
+    },
+    {
+      "id": "holdout-100-0047",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI0747E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui0747e-0150"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui0747e-0150",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0048",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: deadlock de banco ao usar comandos composer com banco Informix — duas transacoes concorrentes nao progridem porque cada uma espera o lock que a outra detem?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-informix-composer-deadlock-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-informix-composer-deadlock-0001",
+        "hwa-10.2-composer-command-inventory-0024",
+        "hwa-lab-10.2.8-composer-jwt-lock-0108"
+      ]
+    },
+    {
+      "id": "holdout-100-0049",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSUI5038E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-messages-awsui5038e-0219"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-messages-awsui5038e-0219",
+        "hwa-10.2.8-messages-awsui0292e-0087",
+        "hwa-10.2.8-messages-awsui0975e-0184"
+      ]
+    },
+    {
+      "id": "holdout-100-0050",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSJOM138E no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-vm-9f-0008",
+        "hwa-10.2.8-trouble-awsjom138e-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-trouble-awsjom138e-0001",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0070",
+        "hwa-10.2.8-vm-9f-0008-contrast-0015"
+      ]
+    },
+    {
+      "id": "holdout-100-0051",
+      "domain": null,
+      "question": "Como a automação orientada a eventos (event rules) funciona no HWA 10.2.8?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-event-editing-event-rules-0035",
+        "hwa-9.5-conman-eventrules-contrast-0009"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-9.5-conman-eventrules-contrast-0009",
+        "hwa-10.2.8-event-monitor-event-rules-0034",
+        "hwa-10.2.8-event-editing-event-rules-0035"
+      ]
+    },
+    {
+      "id": "holdout-100-0052",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSJSY404E no HWA?",
+      "rank": 3,
+      "expected_claims": [
+        "hwa-10.2.8-incident-jsy404e-0038",
+        "hwa-10.2.8-trouble-awsbin091e-0004"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "ragflow:hwa-10.2.8-wsl-lab.md:0132",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0089",
+        "hwa-10.2.8-incident-jsy404e-0038"
+      ]
+    },
+    {
+      "id": "holdout-100-0053",
+      "domain": null,
+      "question": "Como utilizar o parâmetro planFilter na REST API V2 para filtrar instâncias no plano?",
+      "rank": 3,
+      "expected_claims": [
+        "hwa-10.1-restv2-planfilter-0041"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-restv2-planfilter-0151",
+        "hwa-10.1-real-restv2-planfilter-0016",
+        "hwa-10.1-restv2-planfilter-0041"
+      ]
+    },
+    {
+      "id": "holdout-100-0054",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation 10.2.8 Orchestration CLI, ocli plan submit docommand (alias sbd) agenda o inicio de um comando como um job e requer acesso submit ao job; deve-se especificar o usuario com logon (linha de comando) ou user (config?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-ocli-plan-submit-docommand-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-ocli-plan-submit-docommand-0001",
+        "hwa-10.2.8-ocli-plan-submit-job-0001",
+        "hwa-10.2.8-submit-docommand-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0055",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, a opção global approachingLateOffset (abreviação al) determina o intervalo de tempo antes do critical start time a partir do qual um trabalho da rede crítica que ainda não iniciou é alertado como risco potencial, sendo adicionado à hot list; o padrão é 120 segundos e o valor é verificado regularmente, sem necessidade de executar JnextPlan para as mudanças entrarem em vigor, conforme documentação oficial?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-wsa-approaching-late-offset-0016"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-wsa-approaching-late-offset-0016",
+        "hwa-10.2.8-wsa-critical-start-time-0005",
+        "hwa-10.2.8-wsa-critical-start-0007"
+      ]
+    },
+    {
+      "id": "holdout-100-0056",
+      "domain": null,
+      "question": "Como consultar informações detalhadas e estatísticas do plano com planman showinfo?",
+      "rank": 3,
+      "expected_claims": [
+        "hwa-10.2.8-planman-showinfo-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-planman-showinfo-localopts-0012",
+        "hwa-planman-showinfo-resync-unlock-0047",
+        "hwa-10.2.8-planman-showinfo-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0057",
+      "domain": null,
+      "question": "Qual a recomendação de governança para monitorar a taxa de incidentes recorrentes no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "com-quality-0002"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "com-quality-0002",
+        "hwa-10.2.8-observability-splunk-0007",
+        "ragflow:failover-mdm-fta.md:0007"
+      ]
+    },
+    {
+      "id": "holdout-100-0058",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSJCO125I no HWA?",
+      "rank": 6,
+      "expected_claims": [
+        "hwa-lab-10.2.8-edwa-rule-builder-put-0101"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0002",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0118",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0088"
+      ]
+    },
+    {
+      "id": "holdout-100-0059",
+      "domain": null,
+      "question": "Como as definições de objetos são gravadas fisicamente no banco relacional via composer?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-govern-composer-write-to-db-0005"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-sec-user-definition-0007",
+        "hwa-10.2.8-govern-composer-write-to-db-0005",
+        "hwa-10.2.8-composer-task-0002"
+      ]
+    },
+    {
+      "id": "holdout-100-0060",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSDEQ024E no HWA e qual ação é recomendada?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-awsdeq024-e-0003",
+        "hwa-10.2.8-trouble-awsdeq024e-0011"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-trouble-awsdeq024e-0011",
+        "hwa-msgcat-awsdeq024e",
+        "hwa-10.2.8-incident-awsdeq024-e-0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0061",
+      "domain": null,
+      "question": "Como o modelo de segurança baseado em funções (role-based security) restringe objetos no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-sec-access-control-list-0022",
+        "hwa-10.2.8-rbac-role-based-security-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-rbac-role-based-security-0001",
+        "hwa-10.2.8-vm-en-role-based-security-file-creation-0004",
+        "hwa-10.2.8-vm-en-role-based-security-file-creation-0005"
+      ]
+    },
+    {
+      "id": "holdout-100-0062",
+      "domain": null,
+      "question": "Para que servem os comandos conman startmon e stopmon no monitoramento de eventos?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-startmon-stopmon-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-startmon-stopmon-0001",
+        "hwa-10.2.8-runbook-conman-start-0019",
+        "hwa-10.2-conman-batch-double-quotes-0017"
+      ]
+    },
+    {
+      "id": "holdout-100-0063",
+      "domain": null,
+      "question": "Qual a sintaxe ou procedimento no planman para gerenciar planman?",
+      "rank": 5,
+      "expected_claims": [
+        "hwa-official-planman-10.2.8-0003"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-version-matrix-planman-cli-scope-0011",
+        "hwa-10.2.8-conman-planman-0001",
+        "hwa-10.2.8-incident-planman-unlock-0011"
+      ]
+    },
+    {
+      "id": "holdout-100-0064",
+      "domain": null,
+      "question": "Como as definições de embedded jobs em job streams diferem entre versões do HWA?",
+      "rank": 130,
+      "expected_claims": [
+        "hwa-10.2.8-vm-9f-0010-contrast-0016"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-event-batch-jobs-and-job-streams-0004",
+        "hwa-10.2.3-plan-definition-instance-0043",
+        "hwa-10.2.8-monitor-plan-job-streams-v-0004"
+      ]
+    },
+    {
+      "id": "holdout-100-0065",
+      "domain": null,
+      "question": "Qual é o limite máximo de caracteres permitido para o nome de um objeto PROMPT no composer?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-composer-prompt-name-limit-0126"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-composer-prompt-name-limit-0126",
+        "hwa-10.2.8-composer-prompt-db-object-0127",
+        "hwa-10.2.8-composer-prompt-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0066",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation 10.2.8 Orchestration CLI, ocli model replace (alias rep) substitui definicoes de itens existentes a partir de um arquivo: se o item existe, e substituido; se nao, e criado; requer acesso modify para substituir ou add para criar, detecta dependencias de loop e com ;unlock pode atualizar itens bloqueados por outros (exigindo modify e unlock)?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-ocli-model-replace-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-ocli-model-replace-0001",
+        "hwa-10.2.8-ocli-model-modify-0001",
+        "hwa-10.2.8-ocli-model-add-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0067",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation Distributed, o Orchestration CLI (OCLI) foi introduzido na versao 10.1 Fix Pack 1 como a interface de linha de comando para executar jobs/job streams no plano e interagir com o servidor; nao existe documentacao oficial de OCLI para a versao 9.5.?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-version-matrix-ocli-intro-10.1-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-version-matrix-ocli-intro-10.1-0001",
+        "hwa-9.5-real-ocli-absent-0008",
+        "hwa-10.1-real-ocli-intro-0013"
+      ]
+    },
+    {
+      "id": "holdout-100-0068",
+      "domain": null,
+      "question": "Qual a sintaxe e comportamento do comando composer extract ao exportar objetos?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-composer-extract-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-composer-extract-0001",
+        "hwa-10.2.8-composer-validate-interdependent-0001",
+        "hwa-10.2-distributed-composer-validate-syntax-0010"
+      ]
+    },
+    {
+      "id": "holdout-100-0069",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Na documentação oficial do HCL Workload Automation 10.2.0, JnextPlan aceita -from, -to, -for, -days e -noremove; -to é mutuamente exclusivo com -for e -days?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.0-jnextplan-options-0049"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.0-jnextplan-options-0049",
+        "hwa-jnextplan-syntax-gap-0048",
+        "hwa-official-10.2.8-jnextplan-noremove-0014"
+      ]
+    },
+    {
+      "id": "holdout-100-0070",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: In the WSL2 HWA 10.2.8 laboratory, JnextPlan -for 0000 created a zero-duration production plan with no job stream instances, while JnextPlan -for 2400 produced FINAL and FINALPOSTREPORTS instances with three jobs each at 23:59.?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-sfinal-plan-horizon-0007"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-sfinal-plan-horizon-0007",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0003",
+        "hwa-10.2-distributed-jnextplan-for0000-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0071",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A REST API V2 é a nova versão das REST APIs do HCL Workload Automation 10.2.8, projetada para operar o produto tanto pela Interface de Usuário quanto pela Interface de Linha de Comando, conforme documentação oficial?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-restocli-rest-api-v2-0002"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-restocli-rest-api-v2-0002",
+        "hwa-version-matrix-restv2-intro-10.1-0016",
+        "hwa-10.1-real-restv2-intro-0011"
+      ]
+    },
+    {
+      "id": "holdout-100-0072",
+      "domain": null,
+      "question": "Qual é o efeito operacional de executar o comando conman limit cpu 0 em uma workstation?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-capacity-limit-cpu-0011"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-conman-limitcpu-0001",
+        "hwa-10.2.8-capacity-limit-cpu-0011",
+        "hwa-10.2.8-capacity-workstation-limit-0006"
+      ]
+    },
+    {
+      "id": "holdout-100-0073",
+      "domain": null,
+      "question": "Como o comando planman checksync verifica o sincronismo entre o banco e o plano de produção?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-official-planman-10.2.8-0001",
+        "hwa-10.2.8-conman-planman-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-conman-planman-0001",
+        "hwa-10.2.7-planman-resync-0051",
+        "hwa-official-planman-10.2.8-0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0074",
+      "domain": null,
+      "question": "Qual é a sintaxe documentada para definição de usuários (user) no utilitário composer?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-composer-user-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-composer-user-0001",
+        "hwa-10.2.8-sec-user-definition-0007",
+        "hwa-10.2.4-composer-lock-contention-0040"
+      ]
+    },
+    {
+      "id": "holdout-100-0075",
+      "domain": null,
+      "question": "O que causa e como solucionar o problema: SwitchPlan falha ao iniciar, ou AWSJCL054E 'The command CONFIRM has failed' + AWSJPL016E 'An internal error has occurred?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-switchplan-confirm-0057"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-switchplan-confirm-0057",
+        "hwa-official-message-10.2.8-0006",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0143"
+      ]
+    },
+    {
+      "id": "holdout-100-0076",
+      "domain": null,
+      "question": "Em relação ao HCL Workload Automation Distributed, como proceder com: A view JOB_STATISTICS_V no HCL Workload Automation 10.2.8 é documentada com colunas de estatísticas de jobs como Successful_runs, Abended_runs, Late_start_runs, Late_end_runs, Total_reruns, Average_elapsed_time, Total_elapsed_time e Total_cpu_time, conforme documentação oficial?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-monitor-job-statistics-v-0020"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-monitor-job-statistics-v-0020",
+        "hwa-10.2.8-monitor-job-statistics-v-0010",
+        "hwa-10.2.8-monitor-plan-jobs-v-0019"
+      ]
+    },
+    {
+      "id": "holdout-100-0077",
+      "domain": null,
+      "question": "Em relação ao HCL Workload Automation Distributed, como proceder com: No HCL Workload Automation 10.2.8, a interface do AI Data Advisor (UI web) e acessivel em https://<aida-ip>:9432/ (porta default configurável via AIDA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-aida-ui-0007"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-aida-ui-0007",
+        "hwa-10.2.8-aida-alerts-default-0015",
+        "hwa-8.3-default-certs-dwc-connector-0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0078",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSJCO084E no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-trouble-awsjco084e-0009",
+        "hwa-10.2.8-sec-awsjco084-e-0032"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-trouble-awsjco084e-0009",
+        "hwa-10.2.8-sec-awsjco084-e-0032",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0141"
+      ]
+    },
+    {
+      "id": "holdout-100-0079",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation Distributed 10.2.8, a opção global smtpUseSSL (alias us) tem valor 'NO' neste ambiente?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-globalopts-smtpusessl-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-globalopts-smtpusessl-0001",
+        "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001",
+        "hwa-10.2.8-globalopts-zosuserpassword-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0080",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Em HCL Workload Automation Distributed 10.2.8, o template trace?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-trace-template-0002"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-dwc-trace-template-0002",
+        "hwa-10.2.8-dwc-trace-configdropins-0001",
+        "hwa-10.2.8-srv-traces-0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0081",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation Distributed 10.2.8, a opção global servicenowUserPassword (alias np) tem valor '****' neste ambiente?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-globalopts-servicenowuserpassword-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-globalopts-servicenowuserpassword-0001",
+        "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001",
+        "hwa-10.2.8-globalopts-zosuserpassword-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0082",
+      "domain": null,
+      "question": "Qual o valor recomendado do parâmetro logbufsz em ambientes com grande volume de jobs no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-tune-logbufsz-0042"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-tune-logbufsz-0042",
+        "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0000",
+        "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0003"
+      ]
+    },
+    {
+      "id": "holdout-100-0083",
+      "domain": null,
+      "question": "Em relação ao HCL Workload Automation Distributed, como proceder com: A documentação do HWA 10.2.8 (página \"Configuring the TLS V1.3 security protocol\") descreve a configuração do protocolo TLS V1.3 e afirma que ele só pode ser configurado usando certificados customizados com chaves RSA de no mínimo 2K, recomendando o uso de um certificado de 4K; o suporte a TLS V1.3 está disponível a partir do HCL Workload Automation 10.1 FP4.?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-tls-custom-certificates-0003"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-tls-custom-certificates-0003",
+        "hwa-10.2.8-security-sso-0002",
+        "hwa-10.2.8-sec-tls-1-3-0011"
+      ]
+    },
+    {
+      "id": "holdout-100-0084",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: RESOLUCAO de hwa-10.2.8-restore-0001 (contradicted): na documentacao 10.2.8, a pagina 'Backing up and restoring the database' NAO fornece etapas explicitas de restore de banco; o que ela documenta como recuperacao e: (1) backup dos arquivos de configuracao e planos, (2) uso de um backup master domain manager acessando banco espelhado para disaster recovery, e (3) restauracao dos arquivos de configuracao?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-restore-resolved-0017"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-restore-resolved-0017",
+        "hwa-10.2.8-restore-backup-mdm-0001",
+        "hwa-10.2.8-backup-backup-master-data-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0085",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: A documentação HWA 10.2.8 recomenda REST API V2 para integrações futuras?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-rest-v2-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-rest-v2-0001",
+        "hwa-10.2.8-restocli-rest-api-v2-0002",
+        "hwa-10.2.8-rest-service-url-0002"
+      ]
+    },
+    {
+      "id": "holdout-100-0086",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, o recurso de versionamento de objetos mantém todas as versões anteriores de objetos de agendamento e de segurança, e no Dynamic Workload Console é possível ver o histórico, comparar versões e restaurar uma versão anterior; o recurso exige as opções globais dbAudit=1 e auditStore=db ou both?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-govern-object-versioning-0003"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-govern-object-versioning-0003",
+        "hwa-10.2.8-agent-dynamic-broker-0003",
+        "hwa-version-matrix-oql-distributed-zos-0018"
+      ]
+    },
+    {
+      "id": "holdout-100-0087",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: O procedimento documentado no HCL Workload Automation 10.2.8 para submeter um job com dependência no plano atual via REST API V2 consiste em obter o ID do job sucessor com GET /twsd/api/v2/model/jobdefinition e os dados do job predecessor com GET /twsd/api/v2/plan/job e então adicionar a dependência com POST /twsd/api/v2/plan/job/{job_id}/action/add-dependencies (corpo com array dependencies contendo dependencyType e jobId do predecessor); operação mutating, conforme documentação oficial?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-api-0006"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-dwc-api-0006",
+        "hwa-10.2.8-dwc-api-0009",
+        "hwa-10.2.8-dwc-api-0007"
+      ]
+    },
+    {
+      "id": "holdout-100-0088",
+      "domain": null,
+      "question": "Qual é o significado da mensagem de erro AWSBDD003E no HWA e qual ação é recomendada?",
+      "rank": 4,
+      "expected_claims": [
+        "hwa-10.2.8-message-bdd003e-0041"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-msgcat-awsbdd003e",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0076",
+        "ragflow:hwa-10.2.8-wsl-lab.md:0132"
+      ]
+    },
+    {
+      "id": "holdout-100-0089",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: Sintoma: diagnosticar por que um job falhou ou nao iniciou?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-incident-schedlog-0027"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-incident-schedlog-0027",
+        "hwa-10.2-distributed-conman-release-job-dependencies-0016",
+        "hwa-10.2-distributed-conman-showjobs-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0090",
+      "domain": null,
+      "question": "Qual endpoint REST API V2 é utilizado para /twsd/api/v2/model/jobstream no HWA?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-restv2-model-query-0012",
+        "hwa-10.2.8-restapi-devguide-0006"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-dwc-restv2-model-query-0012",
+        "hwa-10.2.8-restocli-model-layer-0004",
+        "hwa-10.2.8-restv2-endpoints-0148"
+      ]
+    },
+    {
+      "id": "holdout-100-0091",
+      "domain": null,
+      "question": "Em relação ao HCL Workload Automation Distributed, como proceder com: No laboratório WSL2 HWA 10.2.8, o endpoint POST /twsd/eventrule/engine/action_run/action/run (documentado no código como 'POST operation for run a List of ActionRun') sempre retorna HTTP 400 nesta versão (10.2.8.00): o provider RESTActionRunJsonListProvider chama por reflexão ActionRun?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-edwa-action-run-defect-0102"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-edwa-action-run-defect-0102",
+        "hwa-lab-10.2.8-eventrule-rest-discovery-0097",
+        "hwa-10.2.8-event-generic-action-0020"
+      ]
+    },
+    {
+      "id": "holdout-100-0092",
+      "domain": null,
+      "question": "Qual endpoint REST API V2 é utilizado para /twsd/api/v2/plan/jobstream no HWA?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-restv2-endpoints-0148",
+        "hwa-10.2.8-dwc-api-0009"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-rest-job-stream-in-plan-0001",
+        "hwa-10.2.8-restv2-endpoints-0148",
+        "hwa-10.2.8-rest-api-v2-endpoint-0011"
+      ]
+    },
+    {
+      "id": "holdout-100-0093",
+      "domain": null,
+      "question": "Qual é o propósito da view de banco PLAN_JOBS_V no HCL Workload Automation?",
+      "rank": 2,
+      "expected_claims": [
+        "hwa-10.2.8-monitor-plan-jobs-v-0003"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-monitor-plan-jobs-v-0019",
+        "hwa-10.2.8-monitor-plan-jobs-v-0003",
+        "hwa-10.2.8-dbviews-plan-jobs-0169"
+      ]
+    },
+    {
+      "id": "holdout-100-0094",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation Distributed 10.2.8, os traces do application server (Liberty) para os processos principais usam tws_info por padrão; o nível é alterado editando trace?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-srv-traces-0003"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-srv-traces-0003",
+        "hwa-liberty-install-10.2.0-0001",
+        "hwa-install-liberty-1028-procedure-0009"
+      ]
+    },
+    {
+      "id": "holdout-100-0095",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: O comando startmon inicia o processo monman, que ativa o mecanismo de monitoramento de eventos em uma workstation; o monman é iniciado automaticamente na próxima ativação do plano de produção quando a opção autostart monman = yes (padrão)?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-startmon-event-monitoring-engine-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-startmon-event-monitoring-engine-0001",
+        "hwa-10.2.8-startmon-stopmon-0001",
+        "hwa-10.2.8-dynagent-en-add-workstation-0021"
+      ]
+    },
+    {
+      "id": "holdout-100-0096",
+      "domain": null,
+      "question": "Qual é o propósito da view de banco PLAN_WORKSTATIONS_V no HCL Workload Automation?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-monitor-plan-workstations-v-0008"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-monitor-plan-workstations-v-0008",
+        "hwa-10.2.8-dbviews-audit-0172",
+        "hwa-10.2.8-monitor-db-views-0001"
+      ]
+    },
+    {
+      "id": "holdout-100-0097",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8, a REST API V2 introduziu payloads melhorados para facilitar o consumo, com estrutura/hierarquia reformulada em relacao a V1.?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-dwc-restv2-payload-0009"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-dwc-restv2-payload-0009",
+        "hwa-10.2.8-dwc-restv2-v1-diff-0014",
+        "hwa-10.2.8-rest-service-url-0002"
+      ]
+    },
+    {
+      "id": "holdout-100-0098",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: No HCL Workload Automation 10.2.8 o comando altpass, usado para alterar a senha de um usuário (credencial de logon), exige a definição de usuário no formato workstation#username, podendo-se omitir o nome da workstation somente ao alterar a senha da workstation a partir da qual o comando é executado?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-sec-user-definition-0008"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-sec-user-definition-0008",
+        "hwa-10.2.8-govern-streamlogon-user-name-0015",
+        "hwa-10.2.8-sec-user-definition-0007"
+      ]
+    },
+    {
+      "id": "holdout-100-0099",
+      "domain": null,
+      "question": "Qual a regra documentada no HWA Distributed sobre: O Dynamic Workload Console (DWC) do HCL Workload Automation 10.2.8 utiliza a porta 9443 como HTTPS_PORT padrão e a porta 9444 como HTTP_PORT, além das portas de bootstrap 12809 e 19402.?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-10.2.8-ports-https-port-0001"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-10.2.8-ports-https-port-0001",
+        "hwa-install-1028-ports-0001",
+        "hwa-10.2.8-dwc-restv2-https-tls-0018"
+      ]
+    },
+    {
+      "id": "holdout-100-0100",
+      "domain": null,
+      "question": "Em relação ao HCL Workload Automation Distributed, como proceder com: The HCL Workload Automation 10.2.8 training corpus was expanded with 22 official documentation pages covering EDWA (event-driven workload automation), BmEvents?",
+      "rank": 1,
+      "expected_claims": [
+        "hwa-lab-10.2.8-corpus-edwa-expansion-0089"
+      ],
+      "expected_runbook": null,
+      "top_3_retrieved": [
+        "hwa-lab-10.2.8-corpus-edwa-expansion-0089",
+        "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001",
+        "hwa-10.2.8-capacity-en-event-driven-0005"
+      ]
+    }
+  ]
+}
