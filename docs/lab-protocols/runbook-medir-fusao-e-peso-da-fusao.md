@@ -9,14 +9,55 @@ fez o híbrido parecer melhor do que é.
 ## Regra zero
 
 **Toda medição de fusão tem um CONTROLE OBRIGATÓRIO embutido: o baseline lexical do
-harness tem de reproduzir `@1 172/262` no blind v3** (corpus congelado = 6732 docs,
-`@10 218/262`, `MRR 0,7133`).
+harness tem de reproduzir, no blind v3 com o corpus congelado, exatamente:**
+
+```
+Total de documentos indexados no corpus RAG: 6732
+Hit Rate @ 1:  172/262 (65.6%)
+Hit Rate @ 10: 218/262 (83.2%)
+Hit Rate @ 15: 221/262 (84.4%)
+Recall @ 15:   0.7345
+Mean Reciprocal Rank (MRR):    0.7134
+```
+
+Ambiente do controle (não omitir nenhuma variável):
+
+```bash
+export PYTHONHASHSEED=0
+export RAG_MEASURE_EXCLUDE_EVIDENCE=1     # corpus congelado = 6732
+export RAG_INGEST_REST_API=1              # granularidade FAMÍLIA = +24 docs
+export RAG_BENCHMARK_FILE=$PWD/data/eval/blind_v3_slices.jsonl
+python data/eval/evaluate_rag_benchmark.py
+```
 
 Se não reproduzir, a medição é **INVÁLIDA** e nada pode ser concluído. Não "ajuste" o
 baseline para fechar o número — investigue por que divergiu.
 
 Motivo: o único jeito de comparar duas configurações é as duas passarem pelo **mesmo**
 recuperador e o **mesmo** reranker. Baseline diferente = delta inventado.
+
+### O controle NÃO é o `w=0.0` da varredura
+
+Os dois parecem o mesmo baseline lexical e **não são**:
+
+| caminho | @1 | @10 | @15 |
+|---|---|---|---|
+| controle (BM25 puro, sem `RAG_HYBRID`, sem rerank) | 172/262 | **218/262** | 221/262 |
+| `RAG_HYBRID=1 RAG_RRF_W=0.0 RAG_RERANK_TOP=15` | 172/262 | **217/262** | 220/262 |
+
+`w=0.0` zera o peso denso mas ainda passa pelo caminho híbrido e pelo `second_stage_rerank`,
+que reordena dentro do topo. O `@1` coincide; `@10` e `@15` **não**. Não use um no lugar do
+outro ao declarar controle.
+
+### Correção do MRR do controle (2026-09-19)
+
+O controle foi re-baselinado antes com `MRR 0,7133` — **estava errado**. O valor do
+evaluator é **0,7134**. O `0,7133` veio de `scripts/measure_fusion_v3.py`, que replica o
+pipeline lexical por conta própria e concorda em `@1`/`@10` mas divergia em MRR na quarta
+decimal. Erro de processo: a segunda fonte foi usada como confirmação sem ser confrontada
+na métrica inteira. Verificado rodando o código do HEAD **sem** a refatoração do `rag_core`:
+também dá `0,7134`. Se um dia `0,7133` for vinculante, falta identificar qual estado de
+código/corpus o produziu — o HEAD não é esse estado.
 
 ### Por que o controle deixou de ser 183/262 (re-baselinado em 19/09)
 

@@ -19,252 +19,35 @@ if REPO_DIR not in sys.path:
     sys.path.insert(0, REPO_DIR)
 
 from scripts.ragflow_chunker import parse_markdown_ragflow
-BENCHMARK_FILE = os.environ.get(
-    "RAG_BENCHMARK_FILE",
-    os.path.join(REPO_DIR, "data", "eval", "golden_qa_benchmark.jsonl"))
-CLAIMS_FILE = os.path.join(REPO_DIR, "data", "evidence", "claims.jsonl")
-AWS_MSGS_FILE = os.path.join(REPO_DIR, "data", "evidence", "aws_messages_dictionary.jsonl")
-OPTMAN_FILE = os.path.join(REPO_DIR, "data", "evidence", "optman_global_options_catalog.jsonl")
-MSGCAT_FILE = os.path.join(REPO_DIR, "data", "evidence",
-                           "official-verification-2026-09-11-message-catalog-full.jsonl")
-LAB_FILES = sorted(glob.glob(os.path.join(REPO_DIR, "data", "evidence", "lab-validation-*.jsonl")))
-# SWITCH DE MEDICAO (opt-in, DEFAULT OFF = comportamento inalterado):
-# `RAG_MEASURE_EXCLUDE_EVIDENCE=1` exclui os arquivos lab-validation-* do corpus.
-#
-# POR QUE EXISTE: sem isto, o corpus e' funcao da PROPRIA SAIDA do agente - cada
-# evidencia que ele registra entra no corpus e move as metricas. Medido: remover os 171
-# documentos lab_evidence muda o BM25 @1 de 4/40 para 6/40 e o @10 de 12/40 para 14/40
-# (hibrido: 6->8 e 25->27). Ou seja, o ATO DE REGISTRAR A MEDICAO PERTURBA O OBJETO
-# MEDIDO, e um numero publicado deixa de valer no instante em que e' gravado.
-#
-# Isto NAO e' uma decisao sobre a producao: as evidencias sao conteudo legitimo e
-# continuam ingeridas por default. O switch serve a REPRODUTIBILIDADE DA MEDICAO - rodar
-# o benchmark sobre um corpus estavel e comparavel ao longo do tempo.
-if os.environ.get("RAG_MEASURE_EXCLUDE_EVIDENCE") == "1":
-    LAB_FILES = []
-RUNBOOKS_DIR = os.path.join(REPO_DIR, "data", "runbooks")
-# 7. Conhecimento DERIVADO (adicionado explicitamente: glob nao pega arquivo novo):
-#    (a) man-pages-derived.jsonl  — sintaxe/parafrase PT-BR das 95 man pages do produto,
-#        gerado por scripts/extract_man_pages.py (texto cru NAO versionado — licenca);
-#    (b) lab-procedures-derived.jsonl — procedimentos operacionais observados no lab.
-#    (c) rest-api-derived.jsonl — superficie funcional da REST API V2 (24 familias,
-#        276 operacoes), gerado por scripts/extract_rest_api.py. Switch PROPRIO
-#        (RAG_INGEST_REST_API) para poder medir esta fonte isolada das man pages:
-#        as duas tem efeito de competicao de rank e nao devem ser ligadas em bloco.
-KNOWLEDGE_DERIVED = [
-    os.path.join(REPO_DIR, "data", "knowledge", "man-pages-derived.jsonl"),
-    os.path.join(REPO_DIR, "data", "knowledge", "lab-procedures-derived.jsonl"),
-]
-KNOWLEDGE_REST_API = [
-    os.path.join(REPO_DIR, "data", "knowledge", "rest-api-derived.jsonl"),
-]
-# GRANULARIDADE DA FONTE REST (opt-in, DEFAULT = familia, comportamento inalterado):
-# `RAG_REST_GRANULARITY=operation` troca os 24 registros (um por familia) pelos 276 (um
-# por operacao). POR QUE EXISTE: com um registro por familia o benchmark SATURA na
-# acuracia do classificador - nao ha' o que escolher dentro da familia, entao nenhuma
-# melhoria de RANKING e' mensuravel (medido: rotear para a familia prevista da 94,4% e e'
-# aritmeticamente identico a acertar a classificacao). Com um registro por operacao o
-# ground truth passa a ser a OPERACAO e a medicao de ranking fica possivel.
-# Os dois arquivos tem ids disjuntos, entao nao ha' colisao - mas so' um entra por vez.
-KNOWLEDGE_REST_OPS = [
-    os.path.join(REPO_DIR, "data", "knowledge", "rest-api-derived-ops.jsonl"),
-]
-if os.environ.get("RAG_REST_GRANULARITY"):
-    # VALIDACAO EXPLICITA: um valor nao reconhecido tem de GRITAR, nao silenciar. Sem
-    # isto, escrever 'operacao' (PT) em vez de 'operation' (EN) nao ativava nada, o corpus
-    # ficava com os 24 registros de familia, os ids de operacao do benchmark NAO existiam
-    # e a medicao dava 0/40 em todas as configuracoes - um falso negativo que parece
-    # resultado. Aconteceu exatamente assim na primeira rodada.
-    _gran = os.environ["RAG_REST_GRANULARITY"].strip().lower()
-    if _gran in ("operation", "operacao", "ops", "op"):
-        KNOWLEDGE_REST_API = KNOWLEDGE_REST_OPS
-    elif _gran not in ("familia", "family", "fam"):
-        raise SystemExit(
-            f"RAG_REST_GRANULARITY={os.environ['RAG_REST_GRANULARITY']!r} nao reconhecido. "
-            "Use 'operation' (276 registros) ou 'familia' (24 registros, default).")
-
-SYNONYMS = {
-    "sfinal": ["makeplan", "switchplan", "startappserver", "checksync", "createpostreports", "updatestats", "2359", "final", "d+1"],
-    "planman": ["showinfo", "resync", "checksync", "resetplan", "symphony", "preproduction", "scratch"],
-    "conman": ["batchman", "mailman", "jobman", "showcpus", "showjobs", "start", "stop", "link", "limit", "lc", "confirm", "status"],
-    "composer": ["vartable", "runcycle", "schedule", "jsdl", "erule", "lock", "unlock", "pool", "cpuname", "broker"],
-    "edwa": ["eventrule", "genericeventplugin", "twsobjectmonitor", "filemonitor", "sendevent", "event1", "jobstatuschanged", "msglog", "objectkey"],
-    "rest": ["twsd", "31116", "submit-ad-hoc-job", "joblog", "rerun", "update-priority", "release", "hold", "openapi", "bearer", "apikey"],
-    "boot": ["systemd", "tebctl", "tws-domain-start", "hosts", "pidfile", "postgresql", "restart"]
-}
-
-# Mapa bilíngue termo->sinônimos (PT<->EN + jargão HWA). Aplicado na expansão de
-# consulta e de documento para elevar recall sem recorrer a rótulos de avaliação.
-TERM_EXPAND = {
-    "senha": ["password", "credential", "passwd", "senha", "credencial"],
-    "password": ["password", "senha", "credential"],
-    "credencial": ["credential", "password", "senha", "apikey"],
-    "autenticacao": ["authentication", "auth", "login", "jwt", "bearer", "apikey"],
-    "authentication": ["authentication", "auth", "login", "jwt", "bearer"],
-    "jwt": ["jwt", "token", "apikey", "api key", "bearer"],
-    "api key": ["apikey", "jwt", "token", "api key"],
-    "chave": ["key", "token", "chave"],
-    "falha": ["error", "fail", "erro", "problema", "falha", "failure"],
-    "error": ["error", "fail", "erro", "falha", "failure", "problema"],
-    "erro": ["error", "erro", "fail", "falha"],
-    "mensagem": ["message", "msg", "mensagem", "codigo", "code"],
-    "procedimento": ["procedure", "command", "procedimento", "comando", "passo", "step"],
-    "comando": ["command", "comando", "cli"],
-    "bloqueio": ["lockout", "lock", "bloqueio", "retry", "bind", "ldap"],
-    "critica": ["critical", "hot", "list", "wsa", "deadline", "hotlist"],
-    "dependencia": ["dependency", "deps", "dependencia", "predecessor", "follows", "conddep"],
-    "ad-hoc": ["ad-hoc", "adhoc", "submit", "pontual"],
-    "limpeza": ["cleanup", "purge", "limpeza", "logcleanupfrequency"],
-    "repeticao": ["repeat", "every", "periodic", "interval"],
-    "consulta": ["query", "showinfo", "display", "show", "consulta"],
-    "plano": ["plan", "symphony", "plano", "production plan"],
-    "production plan": ["plan", "symphony", "plano de producao", "plano"],
-    "agenda": ["schedule", "schedule", "job stream", "stream", "agendamento"],
-    "backup": ["backup", "backup", "restore", "copia", "copia de seguranca"],
-    "restore": ["restore", "restauracao", "recuperacao", "backup"],
-    "restauracao": ["restore", "recuperacao", "backup"],
-    "agente": ["agent", "agente", "fta", "dynamic agent", "workstation"],
-    "workstation": ["workstation", "cpu", "ws", "maestro host", "node", "agente"],
-    "pool": ["pool", "dynamic pool", "broker", "workstation pool"],
-    "virada": ["rollover", "jnextplan", "sfinal", "makeplan", "switchplan", "virada", "final"],
-    "failover": ["failover", "switchmgr", "switch", "backup", "fta", "alta disponibilidade", "ha"],
-    "seguranca": ["security", "seguranca", "tls", "ssl", "certificado", "ldap", "sso"],
-    "security": ["security", "seguranca", "tls", "ssl", "sso", "authorization"],
-    "console": ["dwc", "console", "dynamic workload console", "ui", "web"],
-    "variavel": ["variable", "vartable", "variavel", "substituicao", "caret", "circunflexo", "expand"],
-    "recurso": ["resource", "recurso", "resource advisor", "needs"],
-    "evento": ["event", "evento", "event rule", "edwa", "trigger", "dispara"],
-    "regra": ["rule", "event rule", "regra", "erule"],
-    "plano de producao": ["production plan", "symphony", "plano"],
-    "jnextplan": ["jnextplan", "makeplan", "virada", "rollover", "switchplan"],
-    "diario": ["daily", "everyday", "diario", "23:59", "2359"],
-    "processador": ["processador", "processor", "switcheventprocessor", "switchevtp", "event processor"],
-    "alternar": ["alternar", "switch", "switchmgr", "switcheventprocessor", "switchevtp"],
-}
 
 # ---------------------------------------------------------------------------
-# FAMILY_LEXICON: mapeia sintomas/termos de consulta para a FAMILIA de mensagem
-# AWS (prefixo de 3 letras). Baseado no dominio semantico de cada familia no
-# catalogo 10.2.8 (nao afinado as 39 perguntas do benchmark virgem):
-#   BHU  = runtime Conman/Symphony + validacao de argumento/estacao
-#   BIA  = parser/declaracao do Composer (sintaxe, identificador, job stream)
-#   DAH  = licenca/ativacao do produto (demo, aluguel, cpu, instalacao)
-#   DEG  = banco de dados/memoria compartilhada (comarea, isam)
-#   DBY  = execucao de programa RUN (params, capacidade, recursos)
-#   FAB  = instalacao (twsinst/install)
-# Permite boost de ranking: se a consulta menciona um sintoma, prioriza
-# mensagens do catalogo da familia correspondente.
-FAMILY_LEXICON = {
-    "BHU": [
-        "comando de parada", "stop", "intermediario", "outro dominio", "broker",
-        "logon", "nao existe no sistema", "submissao rejeitada", "valor numerico",
-        "numero excessivo", "formato de quatro digitos", "horario fora", "meia-noite",
-        "conman", "symphony", "console recusou", "final do dia", "mais de quatro",
-        "informado", "rejeitou a submissao", "recusou",
-    ],
-    "BIA": [
-        "composer", "job stream", "jobstream", "referenciei", "nao existe dentro",
-        "ja existe", "duplicidade", "adicionar um job", "mestre de jobs", "declaracao",
-        "identificador", "job que nao existe", "nao foi localizado pelo nome",
-        "defini", "sintaxe", "esperado", "nao encontrado", "devolveu",
-    ],
-    "DAH": [
-        "licenca", "periodo de demonstracao", "demo", "aluguel", "venceu",
-        "valida para o processador", "processador desta maquina", "incompativel com",
-        "binario", "incompativel", "instalacao atual", "nao faz parte",
-        "software", "expirou", "valido",
-    ],
-    "DEG": [
-        "memoria compartilhada", "comarea", "isam", "arquivo indexado",
-        "rotina interna", "area de memoria", "entre processos", "nao foi criada",
-    ],
-    "DBY": [
-        "execucao de programa", "numero excessivo de parametros", "parametros",
-        "demais parametros", "run command", "capacidade", "recursos do sistema",
-        "nao pode executar", "muitos parametros",
-    ],
-    "FAB": [
-        "instalacao terminou", "instalacao", "install", "twsinst", "terminou com exito",
-        "exito", "final da instalacao", "script de instalacao",
-    ],
-}
-
-# Boost aditivo aplicado a cada doc de catalogo da familia detectada na query.
-# Configuravel via env RAG_FAMILY_BOOST (default 4): varredura 0-12 mostrou que
-# 4 e o ponto de maior ganho no virgem SEM regressao no baseline.
-# ATENCAO (metrica DEPENDENTE DO CORPUS): o baseline de referencia NAO e um numero
-# fixo. No HEAD d942790 (6869 docs) o baseline 70 e 53/70 @1, 68/70 @10, MRR 0.8214.
-# O valor 54/70 (MRR 0.8336) foi medido em 547d53b (corpus menor) e caiu para 53/70
-# em d742037 por CRESCIMENTO DE CORPUS (chunks novos competindo no rank 1 em eval-0029),
-# nao por nao-determinismo. Cite sempre o numero COM (HEAD, n_docs).
-# Ver docs/BENCHMARK_METRIC_PROVENANCE.md.
-FAMILY_BOOST = float(os.environ.get("RAG_FAMILY_BOOST", "4"))
-
-
-def detect_families(query_raw):
-    """Detecta (deterministico) a(s) familia(s) AWS que a consulta sugere.
-
-    Retorna o conjunto de prefixos de familia (3 letras) referenciados pelos
-    termos do FAMILY_LEXICON presentes na consulta.
-    """
-    q_low = query_raw.lower()
-    fams = set()
-    for fam, terms in FAMILY_LEXICON.items():
-        for term in terms:
-            if term.lower() in q_low:
-                fams.add(fam)
-                break
-    return fams
-
-
-def tokenize(text):
-    """Tokeniza texto e devolve tokens limpos, removendo pontuação das bordas."""
-    if not text:
-        return set()
-    raw_words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+\@]+", text.lower())
-    stop = {"de", "a", "o", "que", "e", "do", "da", "em", "um", "para", "com", "nao", "uma", "os", "no", "se", "na", "por", "mais", "as", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "qual", "quais", "por que", "onde", "ser", "sao", "entre", "este", "esta", "pode", "deve", "utilizar", "usar", "para o", "naquele", "daquele", "nesses", "desses", "quando", "apos", "antes", "atraves", "quero", "preciso", "isso", "pela", "sem", "uso", "existe", "apenas", "inteira", "exemplo", "faco", "consigo"}
-    cleaned = set()
-    for w in raw_words:
-        w_clean = w.strip(".,;:?!'\"()[]{}")
-        if len(w_clean) > 2 and w_clean not in stop:
-            cleaned.add(w_clean)
-            # Normalização de códigos de erro divididos por hífen (ex: awkzsj-001e -> awkzsj001e)
-            if "-" in w_clean and any(w_clean.startswith(p) for p in ["aws", "awk", "eqq", "cww", "dsra"]):
-                cleaned.add(w_clean.replace("-", ""))
-            # Normalização de variações awswui -> awsui
-            if "awswui" in w_clean:
-                cleaned.add(w_clean.replace("awswui", "awsui"))
-            elif "awsui" in w_clean:
-                cleaned.add(w_clean.replace("awsui", "awswui"))
-
-            # CamelCase e Subword Decomposition (ex: enRetainNameOnRerunFrom -> enretain, mmResolveMaster -> mmresolve)
-            subwords = re.findall(r'[A-Za-z]?[a-z]+|[A-Z]+(?=[A-Z][a-z]|\d|\W|$)|[0-9]+', w)
-            if len(subwords) > 1:
-                for sw in subwords:
-                    if len(sw) > 2 and sw.lower() not in stop:
-                        cleaned.add(sw.lower())
-                # Prefixo composto (primeiras 2 partes)
-                combo = (subwords[0] + subwords[1]).lower()
-                if len(combo) > 3:
-                    cleaned.add(combo)
-    return cleaned
-
-def _expand_tokens(tokens):
-    """Expande tokens apenas para a consulta (jargão HWA + mapa bilíngue)."""
-    out = set(tokens)
-    for t in sorted(tokens):  # ordem deterministica (set -> hash-seed)
-        tl = t.lower()
-        for root, syns in SYNONYMS.items():
-            if root in tl:
-                out.update(syns)
-        for term, syns in TERM_EXPAND.items():
-            if term in tl or tl in term:
-                out.update(syns)
-    return out
-
-def expand_query(text):
-    """Expande a CONSULTA apenas, com jargão HWA + mapa bilíngue, via _expand_tokens."""
-    return _expand_tokens(tokenize(text))
+# NUCLEO COMPARTILHADO (rag_core): a tokenizacao, a expansao de consulta, o BM25
+# e a montagem do corpus vivem num pacote unico, para que o benchmark e a
+# producao possam usar o MESMO recuperador. Este arquivo continua sendo o
+# ENTRYPOINT executavel (`python data/eval/evaluate_rag_benchmark.py`) e
+# RE-EXPORTA os nomes historicos, porque varios scripts fazem
+# `import evaluate_rag_benchmark as engine` e usam engine.tokenize,
+# engine.load_documents, engine.compute_bm25, engine.detect_families, etc.
+#
+# FATIA DE REFATORACAO PURA: nada de scorer mudou. O controle obrigatorio tem de
+# reproduzir identico ao HEAD. Medido (mesmo env/benchmark, HEAD vs refatorado):
+#   6732 docs / @1 172-262 / @10 218-262 / MRR 0.7134  ->  eval_summary.json
+#   byte-identico (mesmo sha256) nos dois. ATENCAO: o controle declarado no card
+#   citava MRR 0,7133; o valor que o HEAD reproduz e' 0.7134 (0.7134243778091006).
+#   A divergencia de 1 digito existe SEM a refatoracao - nao foi ela que a criou.
+# ---------------------------------------------------------------------------
+from rag_core import config
+from rag_core.config import (
+    BENCHMARK_FILE, CLAIMS_FILE, AWS_MSGS_FILE, OPTMAN_FILE, MSGCAT_FILE,
+    LAB_FILES, RUNBOOKS_DIR, KNOWLEDGE_DERIVED, KNOWLEDGE_REST_API,
+    KNOWLEDGE_REST_OPS, HYBRID_INDEX, HYBRID_META, FAMILY_BOOST,
+)
+from rag_core.lexical import (
+    SYNONYMS, TERM_EXPAND, FAMILY_LEXICON,
+    tokenize, _expand_tokens, expand_query, compute_bm25, extract_ngrams,
+    detect_families,
+)
+from rag_core.corpus import load_documents
 
 
 # ---------------------------------------------------------------------------
@@ -297,21 +80,15 @@ if DENSE_ONLY and DENSE_ONLY not in ("raw", "rerank"):
 DENSE_ONLY_TOP = int(os.environ.get("RAG_DENSE_TOP", "30"))
 # Quantos candidatos o segundo estagio processa (default 20 = comportamento de sempre).
 RERANK_TOP = int(os.environ.get("RAG_RERANK_TOP", "20"))
-# MASCARA DO RAMO DENSO (opt-in, DEFAULT OFF): quando ligada, o ramo denso so' pode
-# devolver documentos que estejam no corpus CARREGADO. Sem isso, um indice construido
-# sobre um corpus maior (com evidencia e fontes extra) devolve candidatos que o ramo
-# lexical nem enxerga, e a comparacao denso x lexical deixa de ser sobre o MESMO
-# conjunto. Preenchida em load_documents(); `set()` vazio = ligada mas ainda nao cheia.
-DENSE_MASK = set() if os.environ.get("RAG_DENSE_MASK_TO_CORPUS") == "1" else None
+# MASCARA DO RAMO DENSO: definida em `rag_core.config` (DENSE_MASK), porque quem a
+# PREENCHE e' `rag_core.corpus.load_documents()`. Aqui le-se SEMPRE via `config.`
+# (atributo do modulo), nunca por valor - senao a mutacao feita pelo corpus nao
+# seria vista por _dense_top30.
 # PESO DA FUSAO RRF (default 0.5 = peso igual, comportamento de sempre): peso do ramo
 # DENSO; o esparso recebe 1-w. Ver o docstring de _rrf_fuse.
 RRF_W = float(os.environ.get("RAG_RRF_W", "0.5"))
 if not (0.0 <= RRF_W <= 1.0):
     raise SystemExit(f"RAG_RRF_W={RRF_W} fora de [0,1].")
-HYBRID_INDEX = os.environ.get("RAG_DENSE_INDEX") or os.path.join(
-    REPO_DIR, "data", "indexes", "corpus_bge_m3_v5.pt")
-HYBRID_META = os.environ.get("RAG_DENSE_META") or os.path.join(
-    REPO_DIR, "data", "indexes", "corpus_docs_meta_v5.json")
 _DENSE: dict = {}
 
 
@@ -352,9 +129,9 @@ def _dense_top30(q_text, k=30):
         qo = d["mod"](**qi)
         qe = torch.nn.functional.normalize(qo.last_hidden_state[:, 0, :], p=2, dim=1).float()
         sc = torch.mm(qe, d["matriz"].T).squeeze(0)
-        if DENSE_MASK:
+        if config.DENSE_MASK:
             for i, did in enumerate(d["ids"]):
-                if did not in DENSE_MASK:
+                if did not in config.DENSE_MASK:
                     sc[i] = float("-inf")
         k = min(k, int((sc > float("-inf")).sum().item()))
         if k <= 0:
@@ -390,278 +167,6 @@ def _rrf_fuse(q_text, sparse_docs, docs, k_dense=30, k_sparse=30, top=20):
     por_id = {d["id"]: d for d in docs}
     return [(rrf[i], por_id[i]) for i in fundidos if i in por_id]
 
-def load_documents():
-    docs = []
-    
-    # 1. Claims canonicas
-    if os.path.exists(CLAIMS_FILE):
-        for line in open(CLAIMS_FILE):
-            if line.strip():
-                c = json.loads(line)
-                cid = c.get("claim_id", "")
-                # Enriquecer texto indexado: context_prefix (Anthropic) + claim + notes + topico + citação oficial + terminologia normalizada + perguntas sintéticas
-                nt = c.get("normalized_terminology") or {}
-                nt_str = " ".join(str(v) for v in nt.values()) if isinstance(nt, dict) else str(nt)
-                sq = c.get("supporting_quote") or ""
-                synth_q = " ".join(c.get("synthetic_questions", []))
-                ctx_pref = c.get("context_prefix", "")
-                # --- Ablacoes de MEDICAO (default OFF -> comportamento inalterado) ---
-                # RAG_DROP_SYNTHETIC=1: remove as perguntas sinteticas do texto indexado
-                #   (mede quanto do hit depende de a pergunta estar embutida no proprio doc).
-                # RAG_DROP_CTXPREFIX=1: remove o context_prefix repetido (boilerplate) do texto indexado
-                #   (mede quanto do IDF e consumido por prefixo comum a muitos docs).
-                if os.environ.get("RAG_DROP_SYNTHETIC") == "1":
-                    synth_q = ""
-                if os.environ.get("RAG_DROP_CTXPREFIX") == "1":
-                    ctx_pref = ""
-                text = f"{ctx_pref} {c.get('claim', '')} {c.get('notes', '')} {c.get('topic', '')} {c.get('subtopic', '')} {sq} {nt_str} {synth_q}"
-                docs.append({"id": cid, "type": "canonical_claim", "text": text, "tokens": tokenize(text)})
-
-    # 2. Dicionario de Mensagens AWS*
-    if os.path.exists(AWS_MSGS_FILE):
-        for line in open(AWS_MSGS_FILE):
-            if line.strip():
-                c = json.loads(line)
-                cid = c.get("claim_id", "")
-                text = f"{c.get('code', '')} {c.get('component', '')} {c.get('message', '')} {c.get('claim', '')}"
-                docs.append({"id": cid, "type": "aws_message", "code": c.get("code"), "text": text, "tokens": tokenize(text)})
-
-    # 3. Catalogo Optman
-    if os.path.exists(OPTMAN_FILE):
-        for line in open(OPTMAN_FILE):
-            if line.strip():
-                c = json.loads(line)
-                cid = c.get("claim_id", "")
-                text = f"{c.get('name', '')} {c.get('alias', '')} {c.get('value', '')} {c.get('claim', '')}"
-                docs.append({"id": cid, "type": "optman_option", "text": text, "tokens": tokenize(text)})
-
-    # 4. Lab validation claims
-    for lf in LAB_FILES:
-        for line in open(lf):
-            if line.strip():
-                try:
-                    c = json.loads(line)
-                    cid = c.get("claim_id", "")
-                    # Entradas sem `claim` sao registros de EXECUCAO (result: PASS/BLOCKED),
-                    # nao evidencia. Sem este filtro viram documento de texto quase vazio
-                    # (' PASS ') e ainda colidem com ids de canonical_claim.
-                    if cid and (c.get("claim") or "").strip():
-                        text = f"{c.get('claim', '')} {c.get('result', '')} {c.get('observations', '')} {c.get('sanitized_output', '')}"
-                        docs.append({"id": cid, "type": "lab_evidence", "text": text, "tokens": tokenize(text)})
-                except Exception:
-                    pass
-
-    # 5. Catalogo de mensagens do produto (10.2.8) — texto canonico de TODOS os codigos
-    if os.path.exists(MSGCAT_FILE):
-        for line in open(MSGCAT_FILE):
-            if line.strip():
-                c = json.loads(line)
-                cid = c.get("claim_id", "")
-                if not cid:
-                    continue
-                _cp = "" if os.environ.get("RAG_DROP_CTXPREFIX") == "1" else c.get('context_prefix', '')
-                text = f"{c.get('claim','')} {c.get('supporting_quote','')} {_cp}"
-                docs.append({"id": cid, "type": "message_catalog", "text": text, "tokens": tokenize(text)})
-
-    # 6. Chunks Estruturados RAGFlow dos Runbooks Markdown (com Breadcrumbs e Tabelas Íntegras)
-    for rbf in sorted(glob.glob(os.path.join(RUNBOOKS_DIR, "*.md"))):
-        fname = os.path.basename(rbf)
-        try:
-            rf_chunks = parse_markdown_ragflow(rbf)
-            for ch in rf_chunks:
-                docs.append({
-                    "id": ch["id"],
-                    "type": "ragflow_runbook_chunk",
-                    "runbook": fname,
-                    "title": ch.get("path", fname),
-                    "path": ch.get("path", ""),
-                    "text": ch["text"],
-                    "metadata": ch.get("metadata", {}),
-                    "tokens": tokenize(ch["text"])
-                })
-        except Exception:
-            pass
-
-    # 7. Conhecimento DERIVADO — man pages do produto (sintaxe/parafrase PT-BR) e
-    #    procedimentos operacionais do lab. Fonte adicionada EXPLICITAMENTE porque o
-    #    glob das outras fontes nao enxerga arquivo novo.
-    #
-    #    DEFAULT OFF — medido em 2026-09-15 (95 man pages + 17 procedimentos = 112 docs):
-    #      com a fonte ON : corpus 7062 | 70q @1 52/70 @10 67/70 MRR 0,8105
-    #                       v3  262q @1 180/262 (A 96/107 B 78/140 D 6/15), 25 pioraram, 0 melhoraram
-    #      com a fonte OFF: corpus 6950 | 70q @1 53/70 @10 68/70 MRR 0,8214
-    #                       v3  262q @1 183/262 (A 97/107 B 80/140 D 6/15)
-    #    O custo NAO e ruido: as man pages sao vizinhas semanticas generico-autoritativas
-    #    dos claims especificos do lab e ganham deles no ranking (competicao de rank).
-    #    O conhecimento e correto, mas nenhum benchmark atual pergunta a sintaxe — ligar
-    #    a fonte exige decisao explicita (e idealmente uma fatia de benchmark que a peca).
-    if os.environ.get("RAG_INGEST_DERIVED") == "1":
-        for kf in KNOWLEDGE_DERIVED:
-            if not os.path.exists(kf):
-                continue
-            for line in open(kf, encoding="utf-8"):
-                if not line.strip():
-                    continue
-                try:
-                    c = json.loads(line)
-                except Exception:
-                    continue
-                cid = c.get("claim_id")
-                if not cid:
-                    continue
-                text = " ".join(
-                    str(c.get(k, "")) for k in
-                    ("claim", "syntax", "supporting_quote", "tool", "command", "source_title")
-                )
-                docs.append({"id": cid, "type": c.get("kind", "derived_knowledge"),
-                             "text": text, "tokens": tokenize(text)})
-
-    # 6b. Superficie da REST API V2 — switch PROPRIO (default OFF).
-    #     Medido: a fonte entra isolada para que o efeito dela seja separavel do
-    #     efeito das man pages, que ja' se mostrou negativo por competicao de rank.
-    if os.environ.get("RAG_INGEST_REST_API") == "1":
-        for kf in KNOWLEDGE_REST_API:
-            if not os.path.exists(kf):
-                continue
-            for line in open(kf, encoding="utf-8"):
-                if not line.strip():
-                    continue
-                try:
-                    c = json.loads(line)
-                except Exception:
-                    continue
-                cid = c.get("claim_id")
-                if not cid:
-                    continue
-                # `vocab_spec` entra no texto indexado: e' o vocabulario extraido
-                # mecanicamente da spec (summary/description completos, parametros,
-                # schemas e campos). Ver a REGRA DECLARADA em scripts/extract_rest_api.py.
-                text = " ".join(
-                    str(c.get(k, "")) for k in
-                    ("claim", "syntax", "resource", "supporting_quote", "source_title", "vocab_spec")
-                )
-                docs.append({"id": cid, "type": c.get("kind", "rest_api_surface"),
-                             "text": text, "tokens": tokenize(text)})
-
-    # Um id = um documento. Ids repetidos (canonical_claim + lab_evidence da MESMA claim)
-    # sao fundidos. Sem isso, `relevant_claim_ids` do benchmark casa com qualquer copia
-    # do id - inclusive uma vazia - e um acerto pode ser FALSO (metrica inflada).
-    por_id = {}
-    ordem = []
-    fundidos = 0
-    for d in docs:
-        i = d["id"]
-        if i not in por_id:
-            por_id[i] = d
-            ordem.append(i)
-        else:
-            base = por_id[i]
-            fundidos += 1
-            if d.get("text") and d["text"] not in base.get("text", ""):
-                base["text"] = (base.get("text", "").rstrip() + " " + d["text"].strip()).strip()
-                base["tokens"] = tokenize(base["text"])
-            base.setdefault("merged_types", [base.get("type")])
-            if d.get("type") not in base["merged_types"]:
-                base["merged_types"].append(d.get("type"))
-    if fundidos:
-        docs = [por_id[i] for i in ordem]
-
-    # Conjunto de ids que o ramo denso pode devolver (ver DENSE_MASK no topo).
-    global DENSE_MASK
-    if DENSE_MASK is not None:
-        DENSE_MASK = {d["id"] for d in docs}
-
-    return docs
-
-def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl=60):
-    if not doc_tokens:
-        return 0.0
-    k1 = 1.2
-    b = 0.75
-    overlap = query_tokens.intersection(doc_tokens)
-    if not overlap:
-        return 0.0
-    score = 0.0
-    dl = len(doc_tokens)
-    doc_lower = doc_text.lower()
-
-    # 1. Base BM25 com boost em termos HWA
-    # Iterar em ordem DETERMINISTICA: `overlap` e um set, cuja ordem depende do PYTHONHASHSEED
-    # (randomizado por processo). Como a soma de floats nao e associativa, a ordem de iteracao
-    # mudava os scores em ~1e-16 e flipava empates -> metrica nao-reprodutivel (95,7% x 97,1%).
-    for t in sorted(overlap):
-        boost = 1.0
-        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl", "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt", "aida", "carryforward"]):
-            boost = 4.0
-        score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
-
-    # 1.1 Boost em Frases Operacionais HWA na Query
-    q_low = query_raw.lower()
-    if "processador de eventos" in q_low or "event processor" in q_low:
-        if "switcheventprocessor" in doc_lower or "switchevtp" in doc_lower:
-            score += 15.0
-
-    # 2. Boost em codigos de erro exatos (ex: AWSJDB802E, AWSVAL006E, AWSBEH021E)
-    codes_in_query = re.findall(r"aws[a-z]{3}[0-9]{3}[iew]", query_raw.lower())
-    for code in codes_in_query:
-        if code in doc_lower:
-            score += 15.0  # boost forte para match de código de erro
-
-    # 2.1 Boost por familia de mensagem AWS (FAMILY_LEXICON)
-    # Se a consulta menciona um sintoma caracteristico de uma familia (ex.: licenca->DAH,
-    # comarea->DEG), prioriza as mensagens do catalogo daquela familia. Detectado de forma
-    # deterministica apenas a partir do texto da consulta (sem rotulos de avaliacao).
-    if doc and doc.get("type") == "message_catalog":
-        doc_fam = re.search(r"aws([a-z]{3})", doc.get("id", "").lower())
-        if doc_fam:
-            for fam in detect_families(query_raw):
-                if fam.lower() == doc_fam.group(1):
-                    score += FAMILY_BOOST
-                    break
-
-    # 3. Re-ranking por tipo e autoridade da evidência
-    if doc:
-        dtype = doc.get("type")
-        if dtype == "canonical_claim":
-            score *= 1.25  # Prioridade para claims canônicas verificadas
-        elif dtype == "lab_evidence":
-            score *= 1.20  # Prioridade para validações reais de laboratório
-        elif dtype == "ragflow_runbook_chunk":
-            score *= 1.15
-        elif dtype == "message_catalog":
-            # Catalogo de mensagens do produto: texto canonico da versao instalada.
-            # Sem boost, ficava sistematicamente atras das claims canonicas (que recebem 1.25).
-            score *= 1.10
-
-        # Boost se a pergunta menciona um código/termo e o doc o tem no id/nome
-        for token in sorted(query_tokens):  # ordem deterministica (set -> hash-seed)
-            if token.isalnum() and len(token) > 3 and token in (doc.get("id") or "").lower():
-                score += 4.0
-        # Heading/runbook relevante reforça score
-        if doc.get("title") and query_tokens.intersection(tokenize(doc["title"])):
-            score *= 1.15
-        if doc.get("runbook") and doc.get("runbook").replace(".md","").replace("-","") in query_raw.lower().replace("-",""):
-            score *= 1.1
-
-        # 4. Boost RAGFlow: Casamento de Breadcrumbs Hierárquicos e Metadados Extraídos
-        if dtype == "ragflow_runbook_chunk":
-            meta = doc.get("metadata", {})
-            # Match exato de comandos no chunk
-            for cmd in meta.get("commands", []):
-                if cmd.lower() in query_raw.lower():
-                    score += 3.5
-            # Match exato de códigos AWS extraídos pelo DeepDoc
-            for c_code in meta.get("aws_codes", []):
-                if c_code.lower() in query_raw.lower():
-                    score += 12.0
-            # Breadcrumbs overlap
-            if doc.get("path") and query_tokens.intersection(tokenize(doc["path"])):
-                score *= 1.2
-
-    return score
-
-def extract_ngrams(words, n=2):
-    return [" ".join(words[i:i+n]) for i in range(len(words)-n+1)]
 
 def second_stage_rerank(query_raw, candidates, top_n=20):
     """Segundo Estágio de Re-ranking: Proximidade de Termos, N-grams Exatos e Cobertura.
