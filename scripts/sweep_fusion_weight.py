@@ -75,10 +75,17 @@ def roda(bench: str, rest: bool, w: float) -> dict:
         # Benchmark por operacao: granularidade OPERACAO (276 registros) -> corpus 6984.
         env["RAG_INGEST_REST_API"] = "1"
         env["RAG_REST_GRANULARITY"] = "operation"
+        # O INDICE DENSO TEM DE CONTER OS 276 REGISTROS DE OPERACAO. O v5 tem os 24 de
+        # FAMILIA e zero dos 276; com RAG_DENSE_MASK_TO_CORPUS=1 o ramo denso recupera so'
+        # docs fora do corpus e e' ZERADO pela mascara -> o ramo denso deixa de existir e
+        # w=1.0 devolve 0/40, que PARECE resultado e nao e'. Usar o v6 aqui.
+        env["RAG_DENSE_INDEX"] = "data/indexes/corpus_bge_m3_v6.pt"
+        env["RAG_DENSE_META"] = "data/indexes/corpus_docs_meta_v6.json"
     else:
         # Conjuntos gerais: a fonte REST entra na granularidade FAMILIA (24 registros),
         # que e' o que compoe o corpus congelado do runbook (6708 + 24 = 6732). Sem isto
         # a varredura media 6708 - um corpus DIFERENTE do que produziu o controle.
+        # Aqui o v5 e' o indice certo: ele contem os documentos gerais.
         env["RAG_INGEST_REST_API"] = "1"
     r = subprocess.run([PY, "data/eval/evaluate_rag_benchmark.py"], cwd=REPO, env=env,
                        capture_output=True, text=True)
