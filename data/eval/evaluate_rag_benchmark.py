@@ -303,6 +303,11 @@ RERANK_TOP = int(os.environ.get("RAG_RERANK_TOP", "20"))
 # lexical nem enxerga, e a comparacao denso x lexical deixa de ser sobre o MESMO
 # conjunto. Preenchida em load_documents(); `set()` vazio = ligada mas ainda nao cheia.
 DENSE_MASK = set() if os.environ.get("RAG_DENSE_MASK_TO_CORPUS") == "1" else None
+# PESO DA FUSAO RRF (default 0.5 = peso igual, comportamento de sempre): peso do ramo
+# DENSO; o esparso recebe 1-w. Ver o docstring de _rrf_fuse.
+RRF_W = float(os.environ.get("RAG_RRF_W", "0.5"))
+if not (0.0 <= RRF_W <= 1.0):
+    raise SystemExit(f"RAG_RRF_W={RRF_W} fora de [0,1].")
 HYBRID_INDEX = os.environ.get("RAG_DENSE_INDEX") or os.path.join(
     REPO_DIR, "data", "indexes", "corpus_bge_m3_v5.pt")
 HYBRID_META = os.environ.get("RAG_DENSE_META") or os.path.join(
@@ -359,14 +364,28 @@ def _dense_top30(q_text, k=30):
 
 
 def _rrf_fuse(q_text, sparse_docs, docs, k_dense=30, k_sparse=30, top=20):
-    """Fusao RRF k=60 do ramo denso com o esparso, como na producao."""
+    """Fusao RRF k=60 do ramo denso com o esparso, como na producao.
+
+    RAG_RRF_W (default 0.5 = RRF de peso igual, comportamento de sempre): peso do ramo
+    DENSO; o esparso recebe 1-w. Existe porque foi medido que a fusao de peso igual
+    aterrissa ENTRE os dois ramos e perde o melhor, nos DOIS sentidos (corpus REST, onde
+    o fraco e' o esparso; corpus geral, onde o fraco e' o denso). O ponto do switch NAO e'
+    achar um peso bom: e' medir a CURVA e ver se o peso otimo e' ESTAVEL entre conjuntos.
+    Se nao for, a fusao ponderada herda o mesmo defeito da particao - nao existe peso
+    global que sirva.
+    """
     dense_ids = _dense_top30(q_text, k_dense)
     sparse_ids = [d["id"] for _, d in sparse_docs[:k_sparse]]
+    # 2*w e 2*(1-w): com w=0.5 isto da' 1.0 nos DOIS ramos, reproduzindo EXATAMENTE a
+    # escala do RRF anterior. Nao usar w/(1-w) direto - com w=0.5 ele daria metade da
+    # escala, e como o segundo estagio SOMA bonus fixos ao score recebido, mudar a escala
+    # muda o balanco mesmo quando a ordem dos candidatos e' a mesma.
+    w = 2.0 * RRF_W
     rrf: dict = {}
     for r, did in enumerate(dense_ids, 1):
-        rrf[did] = rrf.get(did, 0.0) + 1.0 / (60.0 + r)
+        rrf[did] = rrf.get(did, 0.0) + w / (60.0 + r)
     for r, did in enumerate(sparse_ids, 1):
-        rrf[did] = rrf.get(did, 0.0) + 1.0 / (60.0 + r)
+        rrf[did] = rrf.get(did, 0.0) + (2.0 - w) / (60.0 + r)
     fundidos = sorted(rrf.keys(), key=lambda x: (-rrf[x], str(x)))[:top]
     por_id = {d["id"]: d for d in docs}
     return [(rrf[i], por_id[i]) for i in fundidos if i in por_id]
