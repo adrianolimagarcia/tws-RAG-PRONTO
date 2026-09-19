@@ -94,6 +94,62 @@ Medido em 18/09 nos 3 held-outs externos: denso puro é pior em todos (@15 81/46
 97/50/30), e o oráculo **não tem o que colher** (`so_denso` = 0, 0, 0). `bm25_rerank` é
 **idêntico** a `bm25` — o reranker não move nada ali; todo o dano é da **fusão**.
 
+## RESPOSTA: não existe peso único (medido em 19/09)
+
+Varredura completa de `RAG_RRF_W` em {0.0, 0.5, 1.0}, 5 conjuntos, controle OK. As curvas
+são **monotônicas em direções opostas**:
+
+| conjunto | w=0.0 | w=0.5 | w=1.0 |
+|---|---|---|---|
+| geral_blind_v3 | **0.6565** | 0.6336 | 0.5496 |
+| holdout_100 | **0.9100** | 0.8400 | 0.7400 |
+| blind_holdout_50 | **0.9600** | 0.9600 | 0.9200 |
+| realistic_30 | **0.9333** | 0.9333 | 0.8000 |
+| **rest_ops_40** | 0.0250 | 0.1500 | **0.2500** |
+
+`peso_otimo_estavel_no_tune = False`. **Um índice único com um peso único está
+estruturalmente errado para esta mistura de fontes**: qualquer valor é compromisso que
+paga preço nos dois lados.
+
+**Leitura por ramo:** no geral o denso gera candidatos úteis mas atrapalha a *ordenação*
+no topo (recall@15 melhora com w=0.5 em dois conjuntos, mas o @1 só piora). No REST o
+esparso não tem o que casar (cobertura lexical mediana 0,00) — é o denso que recupera.
+
+### O REST não deve ser recuperado: é CLASSIFICAÇÃO
+
+O espaço de resposta do REST é **fechado e enumerado** (276 operações, com método/path/
+família). Isso não é busca, é escolha entre alternativas conhecidas. Medido no **mesmo**
+benchmark e **mesmo** corpus:
+
+| método | @1 |
+|---|---|
+| recuperação, melhor ramo (denso puro) | 0.2500 |
+| **classificação, 276 classes** | **0.9250** (37/40) |
+| classificação, sem as perguntas com vazamento (34/37) | 0.9189 |
+
+**3,7×.** O vazamento de rótulo (3/40) **não** sustenta o número. `deepseek-v4-flash` via
+a6api, 0 erros de API, 40 chamadas (piloto de 5 antes). Script: `scripts/classify_rest_ops_276.py`.
+
+**Consequência arquitetural:** se o REST sai do índice e vira classificação, o problema da
+fusão **desaparece** do lado REST em vez de ser calibrado, e o corpus geral fica livre para
+operar no seu ramo ótimo — lexical puro, onde ganha nos quatro conjuntos.
+
+### Armadilha do índice denso (custou uma medição inteira)
+
+O braço REST da varredura nasceu inválido por usar o índice **v5**, que tem os 24 registros
+de FAMÍLIA e **zero** dos 276 de OPERAÇÃO. Com `RAG_DENSE_MASK_TO_CORPUS=1` o ramo denso
+recupera só docs fora do corpus e é **zerado pela máscara** → `w=1.0` devolvia `0/40` em
+tudo, que **parece** resultado.
+
+| índice | granularidade | `w=1.0` no rest_ops_40 |
+|---|---|---|
+| v5 | operação | 0.0000 @1 (ramo denso inexistente) |
+| v6 | operação | **0.2500 @1**, 0.7250 @10 |
+
+Regra: **conferir `n_docs` do índice contra `n_docs` do corpus ANTES de concluir.** Se uma
+variante que deveria usar o ramo denso dá exatamente `0.0000` em tudo — ou exatamente o
+mesmo número do ramo esparso puro — suspeitar de índice incompleto antes de reportar.
+
 ## Como rodar a varredura do peso
 
 ```
