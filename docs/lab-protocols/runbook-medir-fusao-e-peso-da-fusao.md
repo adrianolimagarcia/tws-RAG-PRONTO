@@ -131,8 +131,29 @@ benchmark e **mesmo** corpus:
 a6api, 0 erros de API, 40 chamadas (piloto de 5 antes). Script: `scripts/classify_rest_ops_276.py`.
 
 **Consequência arquitetural:** se o REST sai do índice e vira classificação, o problema da
-fusão **desaparece** do lado REST em vez de ser calibrado, e o corpus geral fica livre para
-operar no seu ramo ótimo — lexical puro, onde ganha nos quatro conjuntos.
+fusão **desaparece** do lado REST em vez de ser calibrado.
+
+### CUIDADO: `@1` e `recall@15` contam histórias opostas
+
+A tabela acima é de `@1`. A **segunda métrica da mesma rodada diz o contrário**:
+
+| conjunto | Δ`@1` (w=0.5 vs w=0.0) | Δ`recall@15` |
+|---|---|---|
+| geral_blind_v3 | −2,29pt | **+5,40pt** |
+| holdout_100 | −7,00pt | **+1,50pt** |
+| blind_holdout_50 | 0,00 | 0,00 (teto) |
+| realistic_30 | 0,00 | −4,44pt |
+
+O híbrido **perde `@1` em dois conjuntos e ganha `recall@15` em dois** — é uma **troca**, não
+um vencedor. E a produção **entrega 15 documentos** (`top_n=15`, pool de 20 do RRF, em
+`evaluate_pure_virgin_hybrid_cpu.py`), então `recall@15` é a métrica da janela que o consumidor
+realmente recebe.
+
+**Portanto NÃO desligar `RAG_HYBRID` por causa da tabela de `@1`.** Antes de mexer no default,
+responder: o consumidor usa a **ordem** (`@1`) ou a **presença na janela** (`recall@15`)? Se as
+duas divergem, não há recomendação — há decisão de produto pendente. O default `0.5` foi
+escolhido por convenção ("peso igual por default", padrão da indústria), não por medição; agora
+está medido, e o resultado é misto.
 
 ### Armadilha do índice denso (custou uma medição inteira)
 
