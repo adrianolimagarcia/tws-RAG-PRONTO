@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 *.bak-*
 *.bak_*
+
+# Benchmarks descontaminados: DERIVADOS (regeneraveis por scripts/decontaminate_benchmarks.py)
+# Nao versionar: sao copia filtrada dos originais e re-introduzem conteudo ja existente.
+data/eval/decontaminated/

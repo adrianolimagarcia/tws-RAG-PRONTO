@@ -1,0 +1,1310 @@
+{
+ "gerado_por": "scripts/decontaminate_benchmarks.py",
+ "entrada": "relatorio --json do scripts/audit_eval_leakage.py",
+ "regra": "nenhuma pergunta de benchmark pode ser (quase) identica a uma synthetic_question da propria claim relevante",
+ "checks_contaminantes": [
+  "1-exato",
+  "2-ngrama",
+  "3-jaccard"
+ ],
+ "escopo_nao_corrigido": [
+  "7-split (309 FAIL)",
+  "8-duplicata (446 FAIL)"
+ ],
+ "nota_dedup": "contado por qid unico; uma pergunta sinalizada por dois checks e' removida uma vez",
+ "total_perguntas_removidas": 182,
+ "por_arquivo": {
+  "blind_holdout_50_vault.jsonl": [
+   {
+    "qid": "vault-50-0002",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-graphical-designer-java-0132"
+   },
+   {
+    "qid": "vault-50-0003",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-conman-fence-0001"
+   },
+   {
+    "qid": "vault-50-0006",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-globalopts-riskconfidence-0001"
+   },
+   {
+    "qid": "vault-50-0007",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-apikey-expiry-0002"
+   },
+   {
+    "qid": "vault-50-0008",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-govern-workstation-name-0013"
+   },
+   {
+    "qid": "vault-50-0009",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-event-showcpus-getmon-0014"
+   },
+   {
+    "qid": "vault-50-0010",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-ocli-model-rmfolder-0001"
+   },
+   {
+    "qid": "vault-50-0012",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0844e-0160"
+   },
+   {
+    "qid": "vault-50-0013",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-runbook-command-list-0014"
+   },
+   {
+    "qid": "vault-50-0014",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-themaster-finalpostreports-0014"
+   },
+   {
+    "qid": "vault-50-0015",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui5018e-0215"
+   },
+   {
+    "qid": "vault-50-0016",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-tune-tuning-the-database-0041"
+   },
+   {
+    "qid": "vault-50-0017",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-install-mdm-1028-params-0002"
+   },
+   {
+    "qid": "vault-50-0018",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-restocli-multi-item-endpoints-0003"
+   },
+   {
+    "qid": "vault-50-0021",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-composer-validate-interdependent-0001"
+   },
+   {
+    "qid": "vault-50-0022",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-tune-command-handler-max-threads-0003"
+   },
+   {
+    "qid": "vault-50-0023",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-awsjcl070i-0023"
+   },
+   {
+    "qid": "vault-50-0024",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0922e-0179"
+   },
+   {
+    "qid": "vault-50-0025",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-capacity-log-cleanup-frequency-0004"
+   },
+   {
+    "qid": "vault-50-0026",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0045e-0027"
+   },
+   {
+    "qid": "vault-50-0028",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-wsa-en-service-assurance-0003"
+   },
+   {
+    "qid": "vault-50-0030",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-event-event-rule-definition-0005"
+   },
+   {
+    "qid": "vault-50-0033",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0592e-0133"
+   },
+   {
+    "qid": "vault-50-0034",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-import-dwc-privileges-0133"
+   },
+   {
+    "qid": "vault-50-0035",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.3-production-plan-control-0042"
+   },
+   {
+    "qid": "vault-50-0036",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0143e-0055"
+   },
+   {
+    "qid": "vault-50-0037",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-globalopts-logmanminmaxpolicy-0001"
+   },
+   {
+    "qid": "vault-50-0040",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-composer-onlate-0001"
+   },
+   {
+    "qid": "vault-50-0041",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-dynagent-job-error-0082"
+   },
+   {
+    "qid": "vault-50-0043",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-globalopts-smtpservername-0001"
+   },
+   {
+    "qid": "vault-50-0044",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-globalopts-licenseproxypassword-0001"
+   },
+   {
+    "qid": "vault-50-0045",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-9.5-conman-showcpus-contrast-0011"
+   },
+   {
+    "qid": "vault-50-0046",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-oracle-reports-privileges-0139"
+   },
+   {
+    "qid": "vault-50-0047",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-evtsize-0014"
+   },
+   {
+    "qid": "vault-50-0049",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-event-predefined-set-of-actions-0037"
+   }
+  ],
+  "blind_holdout_qa_30.jsonl": [
+   {
+    "qid": "blind-0001",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0011",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0019",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0021",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0023",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0027",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   }
+  ],
+  "fresh_blind_test_40.jsonl": [
+   {
+    "qid": "fresh-blind-0001",
+    "checks": [
+     "2-ngrama"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "fresh-blind-0002",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0243e-0079"
+   },
+   {
+    "qid": "fresh-blind-0003",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0314e-0094"
+   },
+   {
+    "qid": "fresh-blind-0004",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0005e-0009"
+   },
+   {
+    "qid": "fresh-blind-0005",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-fab164e-0025"
+   },
+   {
+    "qid": "fresh-blind-0006",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "fresh-blind-0008",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-restocli-get-0013"
+   },
+   {
+    "qid": "fresh-blind-0012",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-message-ita047i-0153"
+   },
+   {
+    "qid": "fresh-blind-0013",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0291e-0086"
+   },
+   {
+    "qid": "fresh-blind-0014",
+    "checks": [
+     "3-jaccard",
+     "2-ngrama"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "fresh-blind-0015",
+    "checks": [
+     "2-ngrama"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "fresh-blind-0017",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-quality-0002"
+   },
+   {
+    "qid": "fresh-blind-0018",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui5016e-0214"
+   },
+   {
+    "qid": "fresh-blind-0019",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-monitoring-scripts-0004"
+   },
+   {
+    "qid": "fresh-blind-0020",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0003"
+   },
+   {
+    "qid": "fresh-blind-0022",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0002"
+   },
+   {
+    "qid": "fresh-blind-0023",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-beh023e-0069"
+   },
+   {
+    "qid": "fresh-blind-0024",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-jpl018e-0048"
+   },
+   {
+    "qid": "fresh-blind-0025",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0003"
+   },
+   {
+    "qid": "fresh-blind-0026",
+    "checks": [
+     "3-jaccard",
+     "2-ngrama"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "fresh-blind-0027",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-monitoring-scripts-0004"
+   },
+   {
+    "qid": "fresh-blind-0028",
+    "checks": [
+     "2-ngrama"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "fresh-blind-0029",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-monitoring-scripts-0004"
+   },
+   {
+    "qid": "fresh-blind-0030",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0130e-0047"
+   },
+   {
+    "qid": "fresh-blind-0031",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0620e-0138"
+   },
+   {
+    "qid": "fresh-blind-0033",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-jco084e-0058"
+   },
+   {
+    "qid": "fresh-blind-0034",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2-perfreport-benchmark-jobs-per-min-0002"
+   },
+   {
+    "qid": "fresh-blind-0035",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.1-fp6-final-postreports-0050"
+   },
+   {
+    "qid": "fresh-blind-0036",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0002"
+   },
+   {
+    "qid": "fresh-blind-0037",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0002"
+   },
+   {
+    "qid": "fresh-blind-0038",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-agent-auth-combinations-0002"
+   },
+   {
+    "qid": "fresh-blind-0039",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-remote-registry-0126"
+   }
+  ],
+  "golden_qa_messages_benchmark.jsonl": [
+   {
+    "qid": "msg-awsbct876e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsbct876e"
+   },
+   {
+    "qid": "msg-awsbhu038e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsbhu038e"
+   },
+   {
+    "qid": "msg-awsbia123w",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsbia123w"
+   },
+   {
+    "qid": "msg-awsdah101e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdah101e"
+   },
+   {
+    "qid": "msg-awsdby025e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdby025e"
+   },
+   {
+    "qid": "msg-awsdcj202w",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdcj202w"
+   },
+   {
+    "qid": "msg-awsdeg002e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdeg002e"
+   },
+   {
+    "qid": "msg-awsdeh007e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdeh007e"
+   },
+   {
+    "qid": "msg-awsdel011e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdel011e"
+   },
+   {
+    "qid": "msg-awsdeo113e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdeo113e"
+   },
+   {
+    "qid": "msg-awsdep017e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdep017e"
+   },
+   {
+    "qid": "msg-awsdeq013e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdeq013e"
+   },
+   {
+    "qid": "msg-awsdes007e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdes007e"
+   },
+   {
+    "qid": "msg-awsdfd067e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsdfd067e"
+   },
+   {
+    "qid": "msg-awsfab387i",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awsfab387i"
+   },
+   {
+    "qid": "msg-awssas057e",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-msgcat-awssas057e"
+   }
+  ],
+  "holdout_100_unseen.jsonl": [
+   {
+    "qid": "holdout-100-0003",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-tune-executors-min-threads-0002"
+   },
+   {
+    "qid": "holdout-100-0004",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0003"
+   },
+   {
+    "qid": "holdout-100-0005",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-cert-ownership-0006"
+   },
+   {
+    "qid": "holdout-100-0006",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-themaster-final-0004"
+   },
+   {
+    "qid": "holdout-100-0008",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0002"
+   },
+   {
+    "qid": "holdout-100-0009",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-upgrade-order-0006"
+   },
+   {
+    "qid": "holdout-100-0010",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-tune-executors-max-threads-0001"
+   },
+   {
+    "qid": "holdout-100-0011",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-rollback-no-rollback-doc-0001"
+   },
+   {
+    "qid": "holdout-100-0012",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-oracle-permission-0105"
+   },
+   {
+    "qid": "holdout-100-0013",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-tune-nm-read-0037"
+   },
+   {
+    "qid": "holdout-100-0014",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-official-tuning-10.2.8-0001"
+   },
+   {
+    "qid": "holdout-100-0015",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-runbook-rerun-0002"
+   },
+   {
+    "qid": "holdout-100-0018",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "holdout-100-0019",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-lab-10.2.8-message-ita031i-0150"
+   },
+   {
+    "qid": "holdout-100-0020",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2-perfreport-benchmark-jobs-per-min-0002"
+   },
+   {
+    "qid": "holdout-100-0021",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-capacity-workstation-limit-0002"
+   },
+   {
+    "qid": "holdout-100-0024",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-tune-jm-file-no-root-0015"
+   },
+   {
+    "qid": "holdout-100-0025",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-capacity-oracle-tablespace-size-0014"
+   },
+   {
+    "qid": "holdout-100-0026",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui3075e-0194"
+   },
+   {
+    "qid": "holdout-100-0027",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-impersonate-right-0096"
+   },
+   {
+    "qid": "holdout-100-0028",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0727e-0146"
+   },
+   {
+    "qid": "holdout-100-0029",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-zos-shadow-carryforward-0001"
+   },
+   {
+    "qid": "holdout-100-0030",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "com-config-0002"
+   },
+   {
+    "qid": "holdout-100-0031",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-carrystates-0098"
+   },
+   {
+    "qid": "holdout-100-0032",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-null-password-cli-0111"
+   },
+   {
+    "qid": "holdout-100-0033",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0283e-0084"
+   },
+   {
+    "qid": "holdout-100-0034",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0111e-0039"
+   },
+   {
+    "qid": "holdout-100-0035",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0333e-0096"
+   },
+   {
+    "qid": "holdout-100-0036",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-recovery-logman-resetplan-0061"
+   },
+   {
+    "qid": "holdout-100-0037",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0810e-0157"
+   },
+   {
+    "qid": "holdout-100-0038",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0847e-0162"
+   },
+   {
+    "qid": "holdout-100-0039",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0311e-0092"
+   },
+   {
+    "qid": "holdout-100-0040",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-terminal-services-interactive-0001"
+   },
+   {
+    "qid": "holdout-100-0041",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui3126w-0205"
+   },
+   {
+    "qid": "holdout-100-0042",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0327e-0095"
+   },
+   {
+    "qid": "holdout-100-0043",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0132e-0048"
+   },
+   {
+    "qid": "holdout-100-0044",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-fta-events-0029"
+   },
+   {
+    "qid": "holdout-100-0045",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0206e-0077"
+   },
+   {
+    "qid": "holdout-100-0046",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-jco084e-timeout-config-0101"
+   },
+   {
+    "qid": "holdout-100-0047",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0747e-0150"
+   },
+   {
+    "qid": "holdout-100-0048",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-informix-composer-deadlock-0001"
+   },
+   {
+    "qid": "holdout-100-0049",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui5038e-0219"
+   },
+   {
+    "qid": "holdout-100-0050",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-trouble-awsjom138e-0001"
+   },
+   {
+    "qid": "holdout-100-0051",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-capacity-deployment-frequency-0003"
+   },
+   {
+    "qid": "holdout-100-0052",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-jsy404e-0038"
+   },
+   {
+    "qid": "holdout-100-0054",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-ocli-plan-submit-docommand-0001"
+   },
+   {
+    "qid": "holdout-100-0055",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-wsa-approaching-late-offset-0016"
+   },
+   {
+    "qid": "holdout-100-0060",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-awsdeq024-e-0003"
+   },
+   {
+    "qid": "holdout-100-0063",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.1-fp6-final-postreports-0050"
+   },
+   {
+    "qid": "holdout-100-0066",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-ocli-model-replace-0001"
+   },
+   {
+    "qid": "holdout-100-0067",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-version-matrix-ocli-intro-10.1-0001"
+   },
+   {
+    "qid": "holdout-100-0069",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.0-jnextplan-options-0049"
+   },
+   {
+    "qid": "holdout-100-0071",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-restocli-rest-api-v2-0002"
+   },
+   {
+    "qid": "holdout-100-0075",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-switchplan-confirm-0057"
+   },
+   {
+    "qid": "holdout-100-0078",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-jco084e-0058"
+   },
+   {
+    "qid": "holdout-100-0079",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-globalopts-smtpusessl-0001"
+   },
+   {
+    "qid": "holdout-100-0080",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-trace-template-0002"
+   },
+   {
+    "qid": "holdout-100-0081",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-globalopts-servicenowuserpassword-0001"
+   },
+   {
+    "qid": "holdout-100-0084",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-restore-resolved-0017"
+   },
+   {
+    "qid": "holdout-100-0085",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-rest-v2-0001"
+   },
+   {
+    "qid": "holdout-100-0086",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-govern-object-versioning-0003"
+   },
+   {
+    "qid": "holdout-100-0087",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-api-0006"
+   },
+   {
+    "qid": "holdout-100-0088",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-message-bdd003e-0041"
+   },
+   {
+    "qid": "holdout-100-0089",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-incident-schedlog-0027"
+   },
+   {
+    "qid": "holdout-100-0090",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-api-0004"
+   },
+   {
+    "qid": "holdout-100-0092",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-api-0007"
+   },
+   {
+    "qid": "holdout-100-0093",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dbviews-plan-jobs-0169"
+   },
+   {
+    "qid": "holdout-100-0094",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-srv-traces-0003"
+   },
+   {
+    "qid": "holdout-100-0095",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-startmon-event-monitoring-engine-0001"
+   },
+   {
+    "qid": "holdout-100-0096",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-monitor-plan-workstations-v-0008"
+   },
+   {
+    "qid": "holdout-100-0097",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-restv2-payload-0009"
+   },
+   {
+    "qid": "holdout-100-0098",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-sec-user-definition-0008"
+   },
+   {
+    "qid": "holdout-100-0099",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-ports-https-port-0001"
+   }
+  ],
+  "holdout_40_test.jsonl": [
+   {
+    "qid": "eval-40-0011",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-messages-awsui0243e-0079"
+   }
+  ],
+  "pure_virgin_test_40.jsonl": [
+   {
+    "qid": "pure-blind-0001",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   }
+  ],
+  "realistic_blind_holdout_30.jsonl": [
+   {
+    "qid": "blind-0001",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0002",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-dwc-api-0013"
+   },
+   {
+    "qid": "blind-0003",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2-distributed-jnextplan-for0000-0001"
+   },
+   {
+    "qid": "blind-0004",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-k8s-deploy-0003"
+   },
+   {
+    "qid": "blind-0005",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-agent-auth-combinations-0002"
+   },
+   {
+    "qid": "blind-0007",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-capacity-deployment-frequency-0003"
+   },
+   {
+    "qid": "blind-0008",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2-distributed-conman-release-job-0006"
+   },
+   {
+    "qid": "blind-0009",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-version-matrix-distributed-tools-not-zos-0010"
+   },
+   {
+    "qid": "blind-0011",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0012",
+    "checks": [
+     "1-exato"
+    ],
+    "claim_id": "hwa-10.2.8-wa-pull-info-0001"
+   },
+   {
+    "qid": "blind-0013",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0014",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0018",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0019",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0021",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0023",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0025",
+    "checks": [
+     "2-ngrama"
+    ],
+    "claim_id": null
+   },
+   {
+    "qid": "blind-0027",
+    "checks": [
+     "3-jaccard"
+    ],
+    "claim_id": null
+   }
+  ]
+ }
+}

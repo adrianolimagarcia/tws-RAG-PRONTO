@@ -195,7 +195,7 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
                 cid, _ = syn_norm[nq]
                 add("FAIL", "1-exato",
                     f"{fname}:{d['_qid']} e' IDENTICA a uma synthetic_question indexada",
-                    claim_id=cid)
+                    arquivo=fname, qid=d["_qid"], claim_id=cid)
                 continue
             qt = set(toks(d["_q"]))
             melhor_j, melhor_q = 0.0, ""
@@ -207,7 +207,7 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
                 nivel = "FAIL" if melhor_j >= JACCARD_FAIL else "WARN"
                 add(nivel, "3-jaccard",
                     f"{fname}:{d['_qid']} Jaccard {melhor_j:.2f} com synthetic_question",
-                    similar=melhor_q[:120])
+                    arquivo=fname, qid=d["_qid"], similar=melhor_q[:120])
             qseq = toks(d["_q"])
             melhor_n = 0
             for sq, sseq in syn_seq.items():
@@ -217,7 +217,8 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
             if melhor_n >= NGRAM_WARN:
                 nivel = "FAIL" if melhor_n >= NGRAM_FAIL else "WARN"
                 add(nivel, "2-ngrama",
-                    f"{fname}:{d['_qid']} n-grama contiguo de {melhor_n} tokens com synthetic_question")
+                    f"{fname}:{d['_qid']} n-grama contiguo de {melhor_n} tokens com synthetic_question",
+                    arquivo=fname, qid=d["_qid"])
 
     # --- check 7: mesma pergunta em mais de um arquivo --------------------------
     onde: dict[str, list[str]] = defaultdict(list)
@@ -248,7 +249,8 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
             if sim >= DUP_WARN:
                 nivel = "FAIL" if sim >= DUP_FAIL else "WARN"
                 add(nivel, "8-duplicata",
-                    f"{fi}:{di['_qid']} ~ {fj}:{dj['_qid']} similaridade {sim:.2f}")
+                    f"{fi}:{di['_qid']} ~ {fj}:{dj['_qid']} similaridade {sim:.2f}",
+                    arquivo=fi, qid=di["_qid"], par=f"{fj}:{dj['_qid']}")
 
     # --- check 5: codigo/ID explicito na pergunta -------------------------------
     for fname, rows in benchmarks.items():
@@ -257,7 +259,8 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
             if codigos:
                 add("WARN", "5-codigo",
                     f"{fname}:{d['_qid']} contem codigo explicito {codigos[:3]} — "
-                    f"se a tarefa nao for exact lookup, e' vazamento de chave")
+                    f"se a tarefa nao for exact lookup, e' vazamento de chave",
+                    arquivo=fname, qid=d["_qid"])
 
     # --- check 10: relevancia ampla demais --------------------------------------
     for fname, rows in benchmarks.items():
@@ -265,7 +268,8 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
             n = len(d["_rel"])
             if n >= RELEVANCIA_AMPLA:
                 add("WARN", "10-relevancia-ampla",
-                    f"{fname}:{d['_qid']} tem {n} claims relevantes — Hit@1 pouco informativo")
+                    f"{fname}:{d['_qid']} tem {n} claims relevantes — Hit@1 pouco informativo",
+                    arquivo=fname, qid=d["_qid"])
 
     # --- check 9: templates repetidos -------------------------------------------
     shapes: dict[str, list[str]] = defaultdict(list)
@@ -276,7 +280,7 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
         if len(qids) >= TEMPLATE_MIN:
             add("WARN", "9-template",
                 f"{len(qids)} perguntas com a mesma casca: {qids[:4]}",
-                shape=shape[:120])
+                shape=shape[:120], qids=qids)
 
     # --- check 6: texto da claim copiado na pergunta ----------------------------
     for fname, rows in benchmarks.items():
@@ -291,7 +295,8 @@ def audita(benchmarks: dict[str, list[dict]], syn: dict[str, list[str]],
                 n = longest_common_ngram(qseq, toks(cl))
                 if n >= NGRAM_FAIL:
                     add("FAIL", "6-copia-da-claim",
-                        f"{fname}:{d['_qid']} copia {n} tokens contiguos da claim {cid}")
+                        f"{fname}:{d['_qid']} copia {n} tokens contiguos da claim {cid}",
+                        arquivo=fname, qid=d["_qid"], claim_id=cid)
                     break
 
     por_nivel = Counter(a["nivel"] for a in achados)
