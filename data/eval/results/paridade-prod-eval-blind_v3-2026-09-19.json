@@ -1,0 +1,2638 @@
+{
+  "benchmark": "blind_v3_slices.jsonl",
+  "top": 15,
+  "n_consultas": 262,
+  "n_docs_evaluator": 6732,
+  "n_docs_mcp": 7019,
+  "jaccard15": {
+    "media": 0.1325183008004966,
+    "mediana": 0.07142857142857142,
+    "min": 0.0,
+    "max": 0.6666666666666666
+  },
+  "overlap_at_1": 0.4351145038167939,
+  "tau_medio": 0.39527292630740907,
+  "consultas_com_paridade_exata": 0,
+  "por_consulta": [
+    {
+      "qid": "v3-B-0000",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:recovery-jnextplan.md:0005",
+      "top1_mcp": "hwa-lab-10.2.8-startofday-0005-brt-anchor-0001"
+    },
+    {
+      "qid": "v3-A-0001",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:sfinal-validate-and-correct.md:0000",
+      "top1_mcp": "hwa-themaster-home-0010"
+    },
+    {
+      "qid": "v3-B-0002",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0038",
+      "top1_mcp": "hwa-10.2.8-tune-limit-cpu-0006"
+    },
+    {
+      "qid": "v3-A-0003",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-container-rhel9-lab.md:0016",
+      "top1_mcp": "hwa-lab-10.2.8-postgres-disabled-after-container-restart-0001"
+    },
+    {
+      "qid": "v3-B-0004",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-container-rhel9-lab.md:0051",
+      "top1_mcp": "hwa-lab-10.2.8-boot-auto-container-mdm-0001"
+    },
+    {
+      "qid": "v3-B-0005",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2-composer-command-inventory-0024",
+      "top1_mcp": "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001"
+    },
+    {
+      "qid": "v3-A-0006",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-rerun-recovery-cross-domain-0116",
+      "top1_mcp": "hwa-lab-10.2.8-scheduling-recovery-rerun-0002"
+    },
+    {
+      "qid": "v3-A-0007",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-conman-eventrules-0001",
+      "top1_mcp": "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001"
+    },
+    {
+      "qid": "v3-B-0008",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-generic-event-plug-in-0025",
+      "top1_mcp": "hwa-lab-10.2.8-edwa-event-rule-e2e-container-0001"
+    },
+    {
+      "qid": "v3-B-0009",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-master-domain-manager-registered-master-0002",
+      "top1_mcp": "hwa-10.2.8-install-configure-db-0001"
+    },
+    {
+      "qid": "v3-A-0010",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-rest-credentials-0001",
+      "top1_mcp": "hwa-lab-10.2.8-rest-api-v2-auth-0001"
+    },
+    {
+      "qid": "v3-A-0011",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 1.0,
+      "tau": 0.2857142857142857,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restocli-post-0010",
+      "top1_mcp": "hwa-10.2.8-restocli-post-0010"
+    },
+    {
+      "qid": "v3-A-0012",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restocli-plan-commands-0021",
+      "top1_mcp": "hwa-lab-10.2.8-rest-v2-job-mutation-actions-0001"
+    },
+    {
+      "qid": "v3-A-0013",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restv2-endpoints-0148",
+      "top1_mcp": "hwa-10.2.8-restocli-post-0010"
+    },
+    {
+      "qid": "v3-B-0014",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0001",
+      "top1_mcp": "hwa-lab-10.2.8-single-user-wauser-unification-0001"
+    },
+    {
+      "qid": "v3-A-0015",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.7333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2-composer-xagent-host-check-0029",
+      "top1_mcp": "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001"
+    },
+    {
+      "qid": "v3-A-0016",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-vartable-position-0116",
+      "top1_mcp": "hwa-10.2.8-composer-vartable-position-0116"
+    },
+    {
+      "qid": "v3-A-0017",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": -0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-vartable-variable-table-0005",
+      "top1_mcp": "hwa-lab-10.2.8-vartable-resolution-and-missing-vars-0002"
+    },
+    {
+      "qid": "v3-A-0018",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-jobsstate-ready-0001",
+      "top1_mcp": "hwa-10.2.8-limitcpu-ready-0001"
+    },
+    {
+      "qid": "v3-A-0019",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-container-rhel9-lab.md:0021",
+      "top1_mcp": "hwa-lab-10.2.8-opens-file-dep-hostname-0001"
+    },
+    {
+      "qid": "v3-B-0020",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.3-symphony-database-replication-0044",
+      "top1_mcp": "hwa-lab-10.2.8-planman-resync-hot-recovery-0001"
+    },
+    {
+      "qid": "v3-A-0021",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0001",
+      "top1_mcp": "hwa-lab-10.2.8-edwa-twsobjectmonitor-0094"
+    },
+    {
+      "qid": "v3-A-0022",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-container-rhel9-lab.md:0041",
+      "top1_mcp": "hwa-10.2.8-incident-bhu158e-0035"
+    },
+    {
+      "qid": "v3-B-0023",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:upgrade-agente.md:0003",
+      "top1_mcp": "hwa-lab-10.2.8-dynamic-pool-load-balancing-0002"
+    },
+    {
+      "qid": "v3-B-0024",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0000",
+      "top1_mcp": "hwa-lab-10.2.8-twsobjectsmonitor-ondemand-not-reported-0001"
+    },
+    {
+      "qid": "v3-B-0025",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-install-liberty-1028-procedure-0009",
+      "top1_mcp": "hwa-10.2.8-dwc-engine-connection-0002"
+    },
+    {
+      "qid": "v3-A-0026",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 0.8,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-rest-job-stream-in-plan-0001",
+      "top1_mcp": "hwa-10.2.8-dwc-api-0008"
+    },
+    {
+      "qid": "v3-A-0027",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": -0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-priority-in-jobs-0124",
+      "top1_mcp": "hwa-lab-10.2.8-composer-syntax-slash-vs-multiline-0001"
+    },
+    {
+      "qid": "v3-A-0028",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-autofailover-link-isolation-test.md:0001",
+      "top1_mcp": "hwa-10.2.8-sec-config-dropins-0031"
+    },
+    {
+      "qid": "v3-A-0029",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.4-showjobs-props-unsatisfied-dependencies-0025",
+      "top1_mcp": "hwa-10.2.8-wsa-critical-path-0024"
+    },
+    {
+      "qid": "v3-A-0030",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.4,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-themaster-finalpostreports-0015",
+      "top1_mcp": "hwa-themaster-finalpostreports-0015"
+    },
+    {
+      "qid": "v3-B-0031",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": -0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-postgresql-configuredb-0001",
+      "top1_mcp": "hwa-10.2.8-dwc-install-0023"
+    },
+    {
+      "qid": "v3-A-0032",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 0.0,
+      "tau": 0.5238095238095238,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dwc-restv2-https-tls-0018",
+      "top1_mcp": "hwa-distributed-rest-api-v2-base-url-0001"
+    },
+    {
+      "qid": "v3-B-0033",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.4-composer-lock-contention-0040",
+      "top1_mcp": "hwa-10.2.8-govern-composer-lock-0008"
+    },
+    {
+      "qid": "v3-A-0034",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:sfinal-awsbhv082e-recovery.md:0010",
+      "top1_mcp": "hwa-lab-10.2.8-nightly-rollover-d1-real-0001"
+    },
+    {
+      "qid": "v3-B-0035",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-globalopts-enautomaticfailover-0001",
+      "top1_mcp": "hwa-10.2.8-globalopts-enautomaticfailover-0001"
+    },
+    {
+      "qid": "v3-B-0036",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 1.0,
+      "tau": 0.7142857142857143,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-globalopts-carrystates-0001",
+      "top1_mcp": "hwa-10.2.8-globalopts-carrystates-0001"
+    },
+    {
+      "qid": "v3-B-0037",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-container-rhel9-lab.md:0049",
+      "top1_mcp": "hwa-lab-10.2.8-plan-model-divergence-switchmgr-and-switchplan-internals-0007"
+    },
+    {
+      "qid": "v3-B-0038",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-autofailover-real-trigger-test-plan.md:0001",
+      "top1_mcp": "hwa-10.2.8-incident-switchmgr-thiscpu-0067"
+    },
+    {
+      "qid": "v3-B-0039",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 0.4,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-symphony-master-0060",
+      "top1_mcp": "hwa-10.2.8-incident-switchmgr-thiscpu-0067"
+    },
+    {
+      "qid": "v3-B-0040",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-version-matrix-ocli-replaces-conman-10.2.8-0006",
+      "top1_mcp": "hwa-10.2.8-dwc-restv2-jwt-cli-0015"
+    },
+    {
+      "qid": "v3-B-0041",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 1.0,
+      "tau": -0.07142857142857142,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sec-api-key-0017",
+      "top1_mcp": "hwa-10.2.8-sec-api-key-0017"
+    },
+    {
+      "qid": "v3-A-0042",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 1.0,
+      "tau": 0.6428571428571429,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-distributed-rest-api-v2-base-url-0001",
+      "top1_mcp": "hwa-distributed-rest-api-v2-base-url-0001"
+    },
+    {
+      "qid": "v3-B-0043",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2-distributed-conman-showjobs-0001",
+      "top1_mcp": "hwa-10.2.8-showjobs-wildcard-all-jobs-0110"
+    },
+    {
+      "qid": "v3-B-0044",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dynagent-resource-advisor-0012",
+      "top1_mcp": "hwa-10.2.8-dynagent-concurrency-broker-0014"
+    },
+    {
+      "qid": "v3-B-0045",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dynamic-pool-job-promotion-0032",
+      "top1_mcp": "hwa-10.2.8-dynamic-pool-job-promotion-0032"
+    },
+    {
+      "qid": "v3-B-0046",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-planman-deploy-0028",
+      "top1_mcp": "hwa-10.2.8-event-planman-deploy-0028"
+    },
+    {
+      "qid": "v3-B-0047",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": -0.06666666666666667,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-event-rule-definition-0005",
+      "top1_mcp": "hwa-10.2.8-incident-event-rule-notrigger-0001"
+    },
+    {
+      "qid": "v3-A-0048",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:recovery-jnextplan.md:0006",
+      "top1_mcp": "com-quality-0002"
+    },
+    {
+      "qid": "v3-B-0049",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0038",
+      "top1_mcp": "hwa-10.2.8-resetplan-scratch-option-0001"
+    },
+    {
+      "qid": "v3-A-0050",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0010",
+      "top1_mcp": "hwa-10.2.8-incident-mrc019e-0022"
+    },
+    {
+      "qid": "v3-A-0051",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:checklist-jnextplan-eol.md:0003",
+      "top1_mcp": "hwa-10.2.8-incident-jdb801e-0046"
+    },
+    {
+      "qid": "v3-A-0052",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0143",
+      "top1_mcp": "hwa-10.2.8-incident-jpl006e-0008"
+    },
+    {
+      "qid": "v3-A-0053",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.8,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-trouble-awsjom179e-0010",
+      "top1_mcp": "hwa-10.2.8-trouble-awsjom179e-0010"
+    },
+    {
+      "qid": "v3-A-0054",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": -0.4,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0109",
+      "top1_mcp": "hwa-10.2.8-incident-ita238e-0045"
+    },
+    {
+      "qid": "v3-A-0055",
+      "jaccard15": 0.6666666666666666,
+      "overlap1": 0.0,
+      "tau": 0.5454545454545454,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-aida-alert-definitions-0008",
+      "top1_mcp": "hwa-10.2.8-aida-kpi-catalog-0009"
+    },
+    {
+      "qid": "v3-A-0056",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 0.0,
+      "tau": 0.07142857142857142,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-aida-metric-format-0010",
+      "top1_mcp": "hwa-10.2.8-aida-credentials-0005"
+    },
+    {
+      "qid": "v3-A-0057",
+      "jaccard15": 0.6666666666666666,
+      "overlap1": 1.0,
+      "tau": 0.030303030303030304,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-aida-es-oom-0003",
+      "top1_mcp": "hwa-10.2.8-aida-es-oom-0003"
+    },
+    {
+      "qid": "v3-A-0058",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-aida-rest-api-0012",
+      "top1_mcp": "hwa-10.2.8-aida-rest-api-0012"
+    },
+    {
+      "qid": "v3-B-0059",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-install-configure-db-0001",
+      "top1_mcp": "hwa-10.2.8-install-configure-db-0001"
+    },
+    {
+      "qid": "v3-B-0060",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-themaster-domain-manager-0001",
+      "top1_mcp": "hwa-10.2.8-install-configure-db-0001"
+    },
+    {
+      "qid": "v3-A-0061",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-bmdm-promotion-demotion.md:0003",
+      "top1_mcp": "hwa-10.2.8-install-jnextplan-after-backup-0008"
+    },
+    {
+      "qid": "v3-B-0062",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 0.0,
+      "tau": 0.7142857142857143,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-k8s-deploy-0008",
+      "top1_mcp": "hwa-10.2.8-k8s-deploy-0005"
+    },
+    {
+      "qid": "v3-B-0063",
+      "jaccard15": 0.5789473684210527,
+      "overlap1": 0.0,
+      "tau": 0.2727272727272727,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-k8s-deploy-0003",
+      "top1_mcp": "hwa-10.2.8-k8s-deploy-0007"
+    },
+    {
+      "qid": "v3-B-0064",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia011i",
+      "top1_mcp": "hwa-10.2.8-composer-new-interactive-0122"
+    },
+    {
+      "qid": "v3-B-0065",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-recovery-0001",
+      "top1_mcp": "hwa-10.2.8-composer-recovery-0001"
+    },
+    {
+      "qid": "v3-B-0066",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-hadr-db2-console-0131",
+      "top1_mcp": "hwa-10.2.8-dwc-login-0001"
+    },
+    {
+      "qid": "v3-B-0067",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sap-r3batch-0001",
+      "top1_mcp": "hwa-10.2.8-sap-r3batch-0001"
+    },
+    {
+      "qid": "v3-B-0068",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2-distributed-conman-showjobs-0001",
+      "top1_mcp": "hwa-10.2.8-showjobs-wildcard-ws-filter-0111"
+    },
+    {
+      "qid": "v3-B-0069",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dynagent-concurrency-broker-0014",
+      "top1_mcp": "hwa-10.2.8-dynagent-concurrency-broker-0014"
+    },
+    {
+      "qid": "v3-B-0070",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001",
+      "top1_mcp": "hwa-10.2.8-vm-ispf-0015"
+    },
+    {
+      "qid": "v3-A-0071",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:mdm-serverinst-twsinst-complete-reference.md:0005",
+      "top1_mcp": "hwa-liberty-install-10.2.0-0001"
+    },
+    {
+      "qid": "v3-A-0072",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0003",
+      "top1_mcp": "hwa-10.2.8-govern-composer-version-0002"
+    },
+    {
+      "qid": "v3-B-0073",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-corpus-redaction-reclass-0101",
+      "top1_mcp": "hwa-lab-10.2.8-corpus-redaction-reclass-0101"
+    },
+    {
+      "qid": "v3-B-0074",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:failover-mdm-fta.md:0006",
+      "top1_mcp": "hwa-10.2.8-vm-en-role-based-security-file-creation-0006"
+    },
+    {
+      "qid": "v3-A-0075",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-jobtypes-0064",
+      "top1_mcp": "hwa-lab-10.2.8-jobtypes-0064"
+    },
+    {
+      "qid": "v3-A-0076",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restv2-planfilter-0151",
+      "top1_mcp": "hwa-10.1-real-restv2-planfilter-0016"
+    },
+    {
+      "qid": "v3-B-0077",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-planman-showinfo-localopts-0012",
+      "top1_mcp": "hwa-10.2.8-planman-showinfo-0001"
+    },
+    {
+      "qid": "v3-B-0078",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "com-quality-0002",
+      "top1_mcp": "com-quality-0002"
+    },
+    {
+      "qid": "v3-B-0079",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 0.0,
+      "tau": 0.047619047619047616,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sec-user-definition-0007",
+      "top1_mcp": "hwa-10.2.8-govern-composer-write-to-db-0005"
+    },
+    {
+      "qid": "v3-B-0080",
+      "jaccard15": 0.42857142857142855,
+      "overlap1": 0.0,
+      "tau": 0.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-rbac-role-based-security-0001",
+      "top1_mcp": "hwa-10.2.8-sec-access-control-list-0022"
+    },
+    {
+      "qid": "v3-B-0081",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-startmon-stopmon-0001",
+      "top1_mcp": "hwa-10.2.8-event-showcpus-getmon-0014"
+    },
+    {
+      "qid": "v3-B-0082",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-batch-jobs-and-job-streams-0004",
+      "top1_mcp": "hwa-10.2.8-dbviews-deps-0171"
+    },
+    {
+      "qid": "v3-B-0083",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 0.0,
+      "tau": -0.42857142857142855,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-extract-0001",
+      "top1_mcp": "hwa-official-composer-10.2.8-0001"
+    },
+    {
+      "qid": "v3-A-0084",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-sfinal-plan-horizon-0007",
+      "top1_mcp": "hwa-lab-10.2.8-sfinal-plan-horizon-0007"
+    },
+    {
+      "qid": "v3-B-0085",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 0.4,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-conman-limitcpu-0001",
+      "top1_mcp": "hwa-10.2.8-capacity-limit-cpu-0010"
+    },
+    {
+      "qid": "v3-B-0086",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-conman-planman-0001",
+      "top1_mcp": "hwa-lab-10.2.8-planman-showinfo-checksync-auditlog-0003"
+    },
+    {
+      "qid": "v3-B-0087",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sec-user-definition-0007",
+      "top1_mcp": "hwa-10.2.8-composer-user-0001"
+    },
+    {
+      "qid": "v3-A-0088",
+      "jaccard15": 0.42857142857142855,
+      "overlap1": 1.0,
+      "tau": 0.6111111111111112,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-monitor-job-statistics-v-0020",
+      "top1_mcp": "hwa-10.2.8-monitor-job-statistics-v-0020"
+    },
+    {
+      "qid": "v3-A-0089",
+      "jaccard15": 0.6666666666666666,
+      "overlap1": 1.0,
+      "tau": 0.030303030303030304,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-aida-ui-0007",
+      "top1_mcp": "hwa-10.2.8-aida-ui-0007"
+    },
+    {
+      "qid": "v3-B-0090",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0000",
+      "top1_mcp": "hwa-10.2.8-tune-logbufsz-0042"
+    },
+    {
+      "qid": "v3-B-0091",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-tls-custom-certificates-0003",
+      "top1_mcp": "hwa-10.2.8-tls-custom-certificates-0003"
+    },
+    {
+      "qid": "v3-A-0092",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-edwa-action-run-defect-0102",
+      "top1_mcp": "hwa-lab-10.2.8-edwa-action-run-defect-0102"
+    },
+    {
+      "qid": "v3-A-0093",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001",
+      "top1_mcp": "hwa-lab-10.2.8-corpus-edwa-expansion-0089"
+    },
+    {
+      "qid": "v3-A-0094",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0286e-0085",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0286e-0085"
+    },
+    {
+      "qid": "v3-A-0095",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sec-retry-bind-0029",
+      "top1_mcp": "hwa-10.2.8-sec-retry-bind-0029"
+    },
+    {
+      "qid": "v3-A-0096",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:sfinal-awsbhv082e-recovery.md:0006",
+      "top1_mcp": "hwa-10.2.8-incident-bhv082e-0009"
+    },
+    {
+      "qid": "v3-B-0097",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": -0.06666666666666667,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-wsa-en-service-assurance-0003",
+      "top1_mcp": "hwa-10.2.8-wsa-sla-report-0028"
+    },
+    {
+      "qid": "v3-B-0098",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-rename-positional-0136",
+      "top1_mcp": "hwa-10.2.8-composer-rename-0003"
+    },
+    {
+      "qid": "v3-A-0099",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-globalopts-encarryforward-0001",
+      "top1_mcp": "hwa-10.2.8-conman-release-sched-0001"
+    },
+    {
+      "qid": "v3-B-0100",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-js-name-limit-0114",
+      "top1_mcp": "hwa-msgcat-awsbhw007e"
+    },
+    {
+      "qid": "v3-A-0101",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0544e-0111",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0544e-0111"
+    },
+    {
+      "qid": "v3-A-0102",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0735e-0148",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0735e-0148"
+    },
+    {
+      "qid": "v3-A-0103",
+      "jaccard15": 0.6666666666666666,
+      "overlap1": 0.0,
+      "tau": 0.2727272727272727,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-aida-special-days-0011",
+      "top1_mcp": "hwa-10.2.8-aida-ui-0007"
+    },
+    {
+      "qid": "v3-A-0104",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0025e-0017",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0025e-0017"
+    },
+    {
+      "qid": "v3-A-0105",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0543e-0110",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0543e-0110"
+    },
+    {
+      "qid": "v3-B-0106",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-stuck-plan-recovery.md:0001",
+      "top1_mcp": "hwa-official-planman-10.2.8-0001"
+    },
+    {
+      "qid": "v3-A-0107",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0062",
+      "top1_mcp": "hwa-10.2.8-incident-bhu072e-0051"
+    },
+    {
+      "qid": "v3-B-0108",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-fta-events-0029",
+      "top1_mcp": "hwa-10.2.8-incident-fta-events-0029"
+    },
+    {
+      "qid": "v3-A-0109",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.0-every-jobstream-0011",
+      "top1_mcp": "hwa-10.2.8-perf-every-minimal-0166"
+    },
+    {
+      "qid": "v3-A-0110",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0004e-0008",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0004e-0008"
+    },
+    {
+      "qid": "v3-A-0111",
+      "jaccard15": 0.42857142857142855,
+      "overlap1": 1.0,
+      "tau": 0.5555555555555556,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dbviews-events-0170",
+      "top1_mcp": "hwa-10.2.8-dbviews-events-0170"
+    },
+    {
+      "qid": "v3-A-0112",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0062",
+      "top1_mcp": "hwa-10.2.8-incident-bhu072e-0051"
+    },
+    {
+      "qid": "v3-A-0113",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0158e-0060",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0158e-0060"
+    },
+    {
+      "qid": "v3-B-0114",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-editing-event-rules-0035",
+      "top1_mcp": "hwa-10.2.8-govern-pt-br-0016"
+    },
+    {
+      "qid": "v3-B-0115",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 1.0,
+      "tau": 0.047619047619047616,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-monitor-workload-dashboard-0017",
+      "top1_mcp": "hwa-10.2.8-monitor-workload-dashboard-0017"
+    },
+    {
+      "qid": "v3-B-0116",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:recovery-jnextplan.md:0000",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-0017"
+    },
+    {
+      "qid": "v3-B-0117",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 0.0,
+      "tau": 0.6428571428571429,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-monitor-dashboard-widgets-0018",
+      "top1_mcp": "hwa-10.2.8-monitor-workload-dashboard-0017"
+    },
+    {
+      "qid": "v3-B-0118",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0000",
+      "top1_mcp": "hwa-10.2-conman-ss-optional-selector-0019"
+    },
+    {
+      "qid": "v3-B-0119",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-conman-nologin-0031",
+      "top1_mcp": "hwa-10.2.8-incident-conman-nologin-0031"
+    },
+    {
+      "qid": "v3-B-0120",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-install-sslkeysfolder-certs-0005",
+      "top1_mcp": "hwa-10.2.8-agent-ssl-folder-0001"
+    },
+    {
+      "qid": "v3-B-0121",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-schedlog-0027",
+      "top1_mcp": "hwa-10.2.8-incident-schedlog-0027"
+    },
+    {
+      "qid": "v3-A-0122",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": 0.4,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dynagent-broker-0011",
+      "top1_mcp": "hwa-liberty-install-10.2.0-0001"
+    },
+    {
+      "qid": "v3-B-0123",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.8,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-version-matrix-certman-intro-10.2.3-0012",
+      "top1_mcp": "hwa-version-matrix-certman-intro-10.2.3-0012"
+    },
+    {
+      "qid": "v3-A-0124",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restocli-version-command-0024",
+      "top1_mcp": "hwa-9.5-real-ocli-absent-0008"
+    },
+    {
+      "qid": "v3-B-0125",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-wsa-critical-start-dates-0034",
+      "top1_mcp": "hwa-9.5-real-wsa-basico-0002"
+    },
+    {
+      "qid": "v3-B-0126",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-symphony-fta-manual-0063",
+      "top1_mcp": "hwa-10.2.8-incident-symphony-fta-manual-0063"
+    },
+    {
+      "qid": "v3-A-0127",
+      "jaccard15": 0.42857142857142855,
+      "overlap1": 1.0,
+      "tau": 0.7777777777777778,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dwc-restv2-model-query-0012",
+      "top1_mcp": "hwa-10.2.8-dwc-restv2-model-query-0012"
+    },
+    {
+      "qid": "v3-B-0128",
+      "jaccard15": 0.25,
+      "overlap1": 1.0,
+      "tau": -0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-capacity-application-heap-0022",
+      "top1_mcp": "hwa-10.2.8-capacity-application-heap-0022"
+    },
+    {
+      "qid": "v3-A-0129",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": -0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-wsl-lab.md:0137",
+      "top1_mcp": "hwa-10.2.8-incident-deq024e-0050"
+    },
+    {
+      "qid": "v3-B-0130",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": -0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-version-matrix-certman-distributed-only-0014",
+      "top1_mcp": "hwa-version-matrix-certman-not-zos-0015"
+    },
+    {
+      "qid": "v3-A-0131",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-messages-awsui0916e-0174",
+      "top1_mcp": "hwa-10.2.8-messages-awsui0916e-0174"
+    },
+    {
+      "qid": "v3-B-0132",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-workstation-fault-tolerant-0001",
+      "top1_mcp": "hwa-10.2.8-proc-tree-0003"
+    },
+    {
+      "qid": "v3-A-0133",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-deadline-onlate-0056",
+      "top1_mcp": "hwa-lab-10.2.8-deadline-onlate-0056"
+    },
+    {
+      "qid": "v3-A-0134",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-keyjob-0058",
+      "top1_mcp": "hwa-lab-10.2.8-keyjob-0058"
+    },
+    {
+      "qid": "v3-B-0135",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-dynamic-agent-dispatch-pending-0011",
+      "top1_mcp": "hwa-10.2.8-dynagent-gateway-local-0029"
+    },
+    {
+      "qid": "v3-B-0136",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.4,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-recusal-resumecond-0001",
+      "top1_mcp": "hwa-10.2.8-recusal-resumecond-0001"
+    },
+    {
+      "qid": "v3-B-0137",
+      "jaccard15": 0.42857142857142855,
+      "overlap1": 1.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-rbac-role-based-security-0001",
+      "top1_mcp": "hwa-10.2.8-rbac-role-based-security-0001"
+    },
+    {
+      "qid": "v3-B-0138",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 1.0,
+      "tau": 0.7142857142857143,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-submit-docommand-0001",
+      "top1_mcp": "hwa-10.2.8-submit-docommand-0001"
+    },
+    {
+      "qid": "v3-A-0139",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-operational-agent-naming-suffix-0009",
+      "top1_mcp": "hwa-operational-agent-naming-suffix-0009"
+    },
+    {
+      "qid": "v3-B-0140",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-dwc-not-installed-0049",
+      "top1_mcp": "hwa-10.2.8-dwc-install-0022"
+    },
+    {
+      "qid": "v3-B-0141",
+      "jaccard15": 0.5,
+      "overlap1": 0.0,
+      "tau": 0.4222222222222222,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2-distributed-composer-delete-0009",
+      "top1_mcp": "hwa-10.2.8-composer-delete-0001"
+    },
+    {
+      "qid": "v3-A-0142",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-govern-audit-files-0018",
+      "top1_mcp": "hwa-10.2.8-govern-audit-files-0018"
+    },
+    {
+      "qid": "v3-B-0143",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sec-fault-tolerant-0024",
+      "top1_mcp": "hwa-10.2.8-sec-fault-tolerant-0024"
+    },
+    {
+      "qid": "v3-B-0144",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.2,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-operational-jnextplan-caution-0015",
+      "top1_mcp": "hwa-operational-jnextplan-caution-0015"
+    },
+    {
+      "qid": "v3-B-0145",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-needs-missing-resource-0040",
+      "top1_mcp": "hwa-lab-10.2.8-scheduling-needs-resource-naming-0001"
+    },
+    {
+      "qid": "v3-B-0146",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 1.0,
+      "tau": 0.23809523809523808,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-batch-jobs-and-job-streams-0004",
+      "top1_mcp": "hwa-10.2.8-event-batch-jobs-and-job-streams-0004"
+    },
+    {
+      "qid": "v3-A-0147",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.6666666666666666,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dbviews-deps-0171",
+      "top1_mcp": "hwa-10.2.8-dbviews-deps-0171"
+    },
+    {
+      "qid": "v3-B-0148",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-globalopts-eneventdrivenworkloadautomationproxy-0001",
+      "top1_mcp": "hwa-10.2.8-govern-pt-br-0021"
+    },
+    {
+      "qid": "v3-B-0149",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-distributed-rest-api-v2-base-url-0001",
+      "top1_mcp": "hwa-10.2.8-evtsize-evtsize-message-size-0001"
+    },
+    {
+      "qid": "v3-B-0150",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-vm-en-role-based-security-file-creation-0006",
+      "top1_mcp": "hwa-10.2.8-vm-en-role-based-security-file-creation-0006"
+    },
+    {
+      "qid": "v3-A-0151",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-monitor-plan-job-streams-v-0004",
+      "top1_mcp": "hwa-10.2.8-monitor-plan-job-streams-v-0004"
+    },
+    {
+      "qid": "v3-A-0152",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-host-alias-gateway-0019",
+      "top1_mcp": "hwa-lab-10.2.8-host-alias-gateway-0019"
+    },
+    {
+      "qid": "v3-A-0153",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeg470e",
+      "top1_mcp": "hwa-msgcat-awsdeg470e"
+    },
+    {
+      "qid": "v3-A-0154",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeg243e",
+      "top1_mcp": "hwa-msgcat-awsdeg243e"
+    },
+    {
+      "qid": "v3-A-0155",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeo230e",
+      "top1_mcp": "hwa-msgcat-awsdeo230e"
+    },
+    {
+      "qid": "v3-A-0156",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeo101e",
+      "top1_mcp": "hwa-msgcat-awsdeo101e"
+    },
+    {
+      "qid": "v3-A-0157",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdab002i",
+      "top1_mcp": "hwa-msgcat-awsdab002i"
+    },
+    {
+      "qid": "v3-A-0158",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdab001i",
+      "top1_mcp": "hwa-msgcat-awsdab001i"
+    },
+    {
+      "qid": "v3-A-0159",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awssas020i",
+      "top1_mcp": "hwa-msgcat-awssas020i"
+    },
+    {
+      "qid": "v3-A-0160",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awssas011e",
+      "top1_mcp": "hwa-msgcat-awssas011e"
+    },
+    {
+      "qid": "v3-A-0161",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdfd300e",
+      "top1_mcp": "hwa-msgcat-awsdfd300e"
+    },
+    {
+      "qid": "v3-A-0162",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdfd018i",
+      "top1_mcp": "hwa-msgcat-awsdfd018i"
+    },
+    {
+      "qid": "v3-A-0163",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdcj006e",
+      "top1_mcp": "hwa-msgcat-awsdcj006e"
+    },
+    {
+      "qid": "v3-A-0164",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdcj118e",
+      "top1_mcp": "hwa-msgcat-awsdcj118e"
+    },
+    {
+      "qid": "v3-A-0165",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeq004e",
+      "top1_mcp": "hwa-msgcat-awsdeq004e"
+    },
+    {
+      "qid": "v3-A-0166",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeq019e",
+      "top1_mcp": "hwa-msgcat-awsdeq019e"
+    },
+    {
+      "qid": "v3-A-0167",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdby028e",
+      "top1_mcp": "hwa-msgcat-awsdby028e"
+    },
+    {
+      "qid": "v3-A-0168",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdby033e",
+      "top1_mcp": "hwa-msgcat-awsdby033e"
+    },
+    {
+      "qid": "v3-A-0169",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdep016e",
+      "top1_mcp": "hwa-msgcat-awsdep016e"
+    },
+    {
+      "qid": "v3-A-0170",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdep018e",
+      "top1_mcp": "hwa-msgcat-awsdep018e"
+    },
+    {
+      "qid": "v3-A-0171",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdel015e",
+      "top1_mcp": "hwa-msgcat-awsdel015e"
+    },
+    {
+      "qid": "v3-A-0172",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdel002e",
+      "top1_mcp": "hwa-msgcat-awsdel002e"
+    },
+    {
+      "qid": "v3-A-0173",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeh011e",
+      "top1_mcp": "hwa-msgcat-awsdeh011e"
+    },
+    {
+      "qid": "v3-A-0174",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeh003w",
+      "top1_mcp": "hwa-msgcat-awsdeh003w"
+    },
+    {
+      "qid": "v3-A-0175",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdes003e",
+      "top1_mcp": "hwa-msgcat-awsdes003e"
+    },
+    {
+      "qid": "v3-A-0176",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdes010e",
+      "top1_mcp": "hwa-msgcat-awsdes010e"
+    },
+    {
+      "qid": "v3-A-0177",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah001i",
+      "top1_mcp": "hwa-msgcat-awsdah001i"
+    },
+    {
+      "qid": "v3-A-0178",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah010i",
+      "top1_mcp": "hwa-msgcat-awsdah010i"
+    },
+    {
+      "qid": "v3-A-0179",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu726e",
+      "top1_mcp": "hwa-msgcat-awsbhu726e"
+    },
+    {
+      "qid": "v3-A-0180",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia153w",
+      "top1_mcp": "hwa-msgcat-awsbia153w"
+    },
+    {
+      "qid": "v3-A-0181",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbis050e",
+      "top1_mcp": "hwa-msgcat-awsbis050e"
+    },
+    {
+      "qid": "v3-A-0182",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbis005i",
+      "top1_mcp": "hwa-msgcat-awsbis005i"
+    },
+    {
+      "qid": "v3-A-0183",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbct304i",
+      "top1_mcp": "hwa-msgcat-awsbct304i"
+    },
+    {
+      "qid": "v3-A-0184",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsfab038i",
+      "top1_mcp": "hwa-msgcat-awsfab038i"
+    },
+    {
+      "qid": "v3-A-0185",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbht028e",
+      "top1_mcp": "hwa-msgcat-awsbht028e"
+    },
+    {
+      "qid": "v3-A-0186",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbht158e",
+      "top1_mcp": "hwa-msgcat-awsbht158e"
+    },
+    {
+      "qid": "v3-B-0187",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah001i",
+      "top1_mcp": "hwa-msgcat-awsbis208e"
+    },
+    {
+      "qid": "v3-B-0188",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah003e",
+      "top1_mcp": "hwa-msgcat-awsdah003e"
+    },
+    {
+      "qid": "v3-B-0189",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah007e",
+      "top1_mcp": "hwa-msgcat-awsdah007e"
+    },
+    {
+      "qid": "v3-B-0190",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah011e",
+      "top1_mcp": "hwa-msgcat-awsdah011e"
+    },
+    {
+      "qid": "v3-B-0191",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdah012e",
+      "top1_mcp": "hwa-msgcat-awsdah012e"
+    },
+    {
+      "qid": "v3-B-0192",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdby002e",
+      "top1_mcp": "hwa-10.2.8-incident-terminal-services-interactive-0001"
+    },
+    {
+      "qid": "v3-B-0193",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 1.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdcj014e",
+      "top1_mcp": "hwa-msgcat-awsdcj014e"
+    },
+    {
+      "qid": "v3-B-0194",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeg001e",
+      "top1_mcp": "hwa-msgcat-awsdef009e"
+    },
+    {
+      "qid": "v3-B-0195",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeg002e",
+      "top1_mcp": "hwa-msgcat-awsdeg002e"
+    },
+    {
+      "qid": "v3-B-0196",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsdeg003w",
+      "top1_mcp": "hwa-msgcat-awsdeg003w"
+    },
+    {
+      "qid": "v3-B-0197",
+      "jaccard15": 0.5789473684210527,
+      "overlap1": 1.0,
+      "tau": 0.5272727272727272,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu174e",
+      "top1_mcp": "hwa-msgcat-awsbhu174e"
+    },
+    {
+      "qid": "v3-B-0198",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu004e",
+      "top1_mcp": "hwa-lab-10.2.8-streamlogon-missing-os-user-and-conman-altjob-0003"
+    },
+    {
+      "qid": "v3-B-0199",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.8666666666666667,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu139e",
+      "top1_mcp": "hwa-msgcat-awssas074e"
+    },
+    {
+      "qid": "v3-B-0200",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu151e",
+      "top1_mcp": "hwa-lab-10.2.8-dayboundary-pass-master-outcome-a-0001"
+    },
+    {
+      "qid": "v3-B-0201",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu023e",
+      "top1_mcp": "hwa-msgcat-awsbhu023e"
+    },
+    {
+      "qid": "v3-B-0202",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 0.0,
+      "tau": 0.42857142857142855,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-delete-noask-0137",
+      "top1_mcp": "hwa-msgcat-awsbhu024e"
+    },
+    {
+      "qid": "v3-B-0203",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu025e",
+      "top1_mcp": "hwa-msgcat-awsbht049e"
+    },
+    {
+      "qid": "v3-B-0204",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu021e",
+      "top1_mcp": "hwa-10.2.8-incident-exec-status-race-0092"
+    },
+    {
+      "qid": "v3-B-0205",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu009e",
+      "top1_mcp": "hwa-msgcat-awsbhu009e"
+    },
+    {
+      "qid": "v3-B-0206",
+      "jaccard15": 0.25,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu451i",
+      "top1_mcp": "hwa-msgcat-awsbhu451i"
+    },
+    {
+      "qid": "v3-B-0207",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.8,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu026i",
+      "top1_mcp": "hwa-msgcat-awsbhu026i"
+    },
+    {
+      "qid": "v3-B-0208",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbis202e",
+      "top1_mcp": "hwa-msgcat-awsbis202e"
+    },
+    {
+      "qid": "v3-B-0209",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 0.8,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbhu019i",
+      "top1_mcp": "hwa-msgcat-awsbhu019i"
+    },
+    {
+      "qid": "v3-B-0210",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:sfinal-validate-and-correct.md:0005",
+      "top1_mcp": "hwa-msgcat-awsfab033i"
+    },
+    {
+      "qid": "v3-B-0211",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia008e",
+      "top1_mcp": "hwa-10.2.8-composer-critical-0001"
+    },
+    {
+      "qid": "v3-B-0212",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-stream-keyword-order-0129",
+      "top1_mcp": "hwa-msgcat-awsbia021e"
+    },
+    {
+      "qid": "v3-B-0213",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-stream-keyword-order-0129",
+      "top1_mcp": "hwa-10.2.8-composer-join-0001"
+    },
+    {
+      "qid": "v3-B-0214",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-priority-in-jobs-0124",
+      "top1_mcp": "hwa-10.2.8-incident-bcz021e-0042"
+    },
+    {
+      "qid": "v3-B-0215",
+      "jaccard15": 0.2,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia024e",
+      "top1_mcp": "hwa-msgcat-awsbia024e"
+    },
+    {
+      "qid": "v3-B-0216",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 1.0,
+      "tau": 0.5,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia014e",
+      "top1_mcp": "hwa-msgcat-awsbia014e"
+    },
+    {
+      "qid": "v3-B-0217",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia015i",
+      "top1_mcp": "hwa-lab-10.2.8-message-bia302i-0151"
+    },
+    {
+      "qid": "v3-B-0218",
+      "jaccard15": 0.25,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia002e",
+      "top1_mcp": "hwa-msgcat-awsbia002e"
+    },
+    {
+      "qid": "v3-B-0219",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 1.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia003e",
+      "top1_mcp": "hwa-msgcat-awsbia003e"
+    },
+    {
+      "qid": "v3-B-0220",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia004e",
+      "top1_mcp": "hwa-msgcat-awsbia004e"
+    },
+    {
+      "qid": "v3-B-0221",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia019e",
+      "top1_mcp": "hwa-msgcat-awsbia019e"
+    },
+    {
+      "qid": "v3-B-0222",
+      "jaccard15": 0.25,
+      "overlap1": 1.0,
+      "tau": 0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia010e",
+      "top1_mcp": "hwa-msgcat-awsbia010e"
+    },
+    {
+      "qid": "v3-B-0223",
+      "jaccard15": 0.15384615384615385,
+      "overlap1": 1.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia006e",
+      "top1_mcp": "hwa-msgcat-awsbia006e"
+    },
+    {
+      "qid": "v3-B-0224",
+      "jaccard15": 0.36363636363636365,
+      "overlap1": 1.0,
+      "tau": 0.8571428571428571,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia034e",
+      "top1_mcp": "hwa-msgcat-awsbia034e"
+    },
+    {
+      "qid": "v3-B-0225",
+      "jaccard15": 0.5789473684210527,
+      "overlap1": 1.0,
+      "tau": 0.9272727272727272,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia035i",
+      "top1_mcp": "hwa-msgcat-awsbia035i"
+    },
+    {
+      "qid": "v3-A-0226",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restv2-planfilter-0151",
+      "top1_mcp": "hwa-10.2.8-dwc-api-0013"
+    },
+    {
+      "qid": "v3-B-0227",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.3-plan-definition-instance-0043",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-for-0000-0018"
+    },
+    {
+      "qid": "v3-B-0228",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:twsinst-flags-complete-reference.md:0014",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-for-0000-0018"
+    },
+    {
+      "qid": "v3-B-0229",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-vm-conman-distributed-only-0013",
+      "top1_mcp": "hwa-10.2-showcpus-xagent-host-preflight-0030"
+    },
+    {
+      "qid": "v3-B-0230",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-dynamicagent-resource-advisor-url-0001",
+      "top1_mcp": "hwa-10.2.8-pool-broker-0001"
+    },
+    {
+      "qid": "v3-B-0231",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-event-file-monitor-events-0019",
+      "top1_mcp": "hwa-10.2-showcpus-xagent-host-preflight-0030"
+    },
+    {
+      "qid": "v3-B-0232",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2-distributed-conman-showschedules-0002",
+      "top1_mcp": "hwa-10.2.8-runbook-command-list-0014"
+    },
+    {
+      "qid": "v3-B-0233",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:twsinst-flags-complete-reference.md:0014",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-for-0000-0018"
+    },
+    {
+      "qid": "v3-B-0234",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-runbook-conman-stop-0021",
+      "top1_mcp": "hwa-10.2.8-conman-switcheventprocessor-0010"
+    },
+    {
+      "qid": "v3-B-0235",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-sec-ssl-auth-mode-0016",
+      "top1_mcp": "hwa-10.2-showcpus-xagent-host-preflight-0030"
+    },
+    {
+      "qid": "v3-B-0236",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-vm-conman-distributed-only-0013",
+      "top1_mcp": "hwa-10.2-showcpus-xagent-host-preflight-0030"
+    },
+    {
+      "qid": "v3-B-0237",
+      "jaccard15": 0.1111111111111111,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-conman-nologin-0031",
+      "top1_mcp": "hwa-10.2.8-incident-ffdc-cleanup-0086"
+    },
+    {
+      "qid": "v3-B-0238",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-version-matrix-agent-zos-distributed-0023",
+      "top1_mcp": "hwa-10.2-showcpus-xagent-host-preflight-0030"
+    },
+    {
+      "qid": "v3-A-0239",
+      "jaccard15": 0.30434782608695654,
+      "overlap1": 0.0,
+      "tau": 0.14285714285714285,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restocli-multi-item-endpoints-0003",
+      "top1_mcp": "hwa-10.2.8-dwc-engine-restart-0016"
+    },
+    {
+      "qid": "v3-B-0240",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:twsinst-flags-complete-reference.md:0014",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-for-0000-0018"
+    },
+    {
+      "qid": "v3-B-0241",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-vm-conman-distributed-only-0013",
+      "top1_mcp": "hwa-10.2-showcpus-xagent-host-preflight-0030"
+    },
+    {
+      "qid": "v3-B-0242",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-runcycle-weekly-every-0133",
+      "top1_mcp": "hwa-10.2.8-composer-vartable-position-0116"
+    },
+    {
+      "qid": "v3-B-0243",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:twsinst-flags-complete-reference.md:0014",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-for-0000-0018"
+    },
+    {
+      "qid": "v3-B-0244",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0000",
+      "top1_mcp": "hwa-9.5-real-mmrresolve-fp2-0005"
+    },
+    {
+      "qid": "v3-A-0245",
+      "jaccard15": 0.25,
+      "overlap1": 0.0,
+      "tau": 0.3333333333333333,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-restocli-multi-item-endpoints-0003",
+      "top1_mcp": "hwa-10.2.8-dwc-engine-restart-0016"
+    },
+    {
+      "qid": "v3-B-0246",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:recovery-jnextplan.md:0000",
+      "top1_mcp": "hwa-10.2.8-runbook-jnext-plan-for-0000-0018"
+    },
+    {
+      "qid": "v3-D-0001",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-backup-backup-master-data-0001",
+      "top1_mcp": "hwa-lab-10.2.8-switchmgr-failover-switchback-0001"
+    },
+    {
+      "qid": "v3-D-0002",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-msgcat-awsbia321i",
+      "top1_mcp": "hwa-lab-10.2.8-filemonitor-e2e-blocked-0001"
+    },
+    {
+      "qid": "v3-D-0003",
+      "jaccard15": 0.2,
+      "overlap1": 0.0,
+      "tau": -0.6,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-composer-stream-keyword-order-0129",
+      "top1_mcp": "hwa-lab-10.2.8-dynamic-pool-workstation-e2e-0001"
+    },
+    {
+      "qid": "v3-D-0004",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-cal-job-stream-0002",
+      "top1_mcp": "hwa-10.2.8-incident-bhu510e-0033"
+    },
+    {
+      "qid": "v3-D-0005",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-incident-symphony-master-0060",
+      "top1_mcp": "hwa-lab-10.2.8-switchmgr-timing-0001"
+    },
+    {
+      "qid": "v3-D-0006",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": -1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-failover-running-jobs-continuity.md:0005",
+      "top1_mcp": "hwa-lab-10.2.8-adhoc-rest-jobmanager-planview-0001"
+    },
+    {
+      "qid": "v3-D-0007",
+      "jaccard15": 0.034482758620689655,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0000",
+      "top1_mcp": "hwa-lab-10.2.8-eif-listener-31131-active-on-bmdm-correction-0001"
+    },
+    {
+      "qid": "v3-D-0008",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0103",
+      "top1_mcp": "hwa-lab-10.2.8-harness-ha-claims-index-coverage-negative-0001"
+    },
+    {
+      "qid": "v3-D-0009",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-edwa-eif-jobstatus-msglog-e2e.md:0012",
+      "top1_mcp": "hwa-lab-10.2.8-boundary-launch-anomaly-calendar-independent-0001"
+    },
+    {
+      "qid": "v3-D-0010",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-lab-10.2.8-rest-api-corpus-incorporation-0081",
+      "top1_mcp": "hwa-lab-10.2.8-lab-protocol-leak-out-of-rag-corpus-0001"
+    },
+    {
+      "qid": "v3-D-0011",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-10.2.8-startmon-event-monitoring-engine-0001",
+      "top1_mcp": "hwa-lab-10.2.8-eif-e2e-ondemand-vs-scheduled-addendum-0001"
+    },
+    {
+      "qid": "v3-D-0012",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:failover-mdm-fta.md:0000",
+      "top1_mcp": "hwa-lab-10.2.8-autofailover-network-link-isolation-no-trigger-0001"
+    },
+    {
+      "qid": "v3-D-0013",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-themaster-estados-internos-de-job-0009",
+      "top1_mcp": "hwa-lab-10.2.8-dayboundary-pass-master-outcome-a-0001"
+    },
+    {
+      "qid": "v3-D-0014",
+      "jaccard15": 0.0,
+      "overlap1": 0.0,
+      "tau": null,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "ragflow:hwa-10.2.8-mdm-engine-failure-backup-behavior.md:0004",
+      "top1_mcp": "hwa-lab-10.2.8-mdm-bmdm-view-divergence-refined-correction-0001"
+    },
+    {
+      "qid": "v3-D-0015",
+      "jaccard15": 0.07142857142857142,
+      "overlap1": 0.0,
+      "tau": 1.0,
+      "n_eval": 15,
+      "n_mcp": 15,
+      "top1_eval": "hwa-themaster-switchplan-0006",
+      "top1_mcp": "hwa-lab-10.2.8-production-boundary-historical-series-0001"
+    }
+  ]
+}

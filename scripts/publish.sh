@@ -51,7 +51,10 @@ SELF_PATH='scripts/publish.sh'
 # --- padroes -----------------------------------------------------------------
 # Os literais sao MONTADOS EM PARTES de proposito: assim o proprio fonte nunca
 # contem a forma exata que procura (nem dispara redatores/varreduras de terceiros).
-# publish-patterns:start — unica regiao do repo isenta da varredura (as proprias
+# unica regiao do repo isenta da varredura (as proprias definicoes dos padroes).
+# O marcador tem de ser a linha INTEIRA: o awk casa /^\+# publish-patterns:start$/.
+# Com texto depois do marcador a isencao NAO ativa e o bloco e' varrido (defeito 8).
+# publish-patterns:start
 # definicoes dos padroes; um regex de credencial casa consigo mesmo). O RESTO do
 # arquivo e varrido normalmente: excluir o script INTEIRO esconderia um segredo
 # real dentro dele.
@@ -66,7 +69,19 @@ PATTERNS=(
   "token_github:${P_GH}[A-Za-z0-9]{20,}"
   "token_github_pat:${P_PAT}[A-Za-z0-9_]{20,}"
   "chave_aws:${P_AWS}[0-9A-Z]{16}"
-  'ipv4:\b([0-9]{1,3}[.]){3}[0-9]{1,3}\b'
+  # IPv4 estrito: octetos <=255 e SEM zero a esquerda. A versao antiga
+  # (\b([0-9]{1,3}\.){3}[0-9]{1,3}\b) casava a versao do HCL Workload Automation
+  # "10.2.8.00" - e barrava toda publicacao de arquivo que a citasse. Zero a
+  # esquerda nao e' IPv4 valido em notacao moderna, entao excluir e' correto.
+  #
+  # RESIDUO CONHECIDO (nao corrigido de proposito): a variante da versao com o
+  # ULTIMO OCTETO em zero simples (em vez de zero duplo) CONTINUA casando, e existe
+  # em varios arquivos de data/. Ela e' genuinamente ambigua com IP privado real,
+  # entao a saida seria uma isencao por CONTEUDO - exatamente o defeito 7 deste
+  # arquivo (isencao por conteudo = fail-OPEN, esconde vazamento). Preferimos
+  # bloquear e revisar a mao. (Os digitos nao aparecem aqui de proposito: escreve-los
+  # faria este proprio comentario disparar a varredura.)
+  'ipv4:\b((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\b'
   'credencial_em_url://[^/@[:space:]]+:[^/@[:space:]]+@'
   'header_auth:(Bearer|Basic)[[:space:]]+[A-Za-z0-9+/=_-]{16,}'
 )
