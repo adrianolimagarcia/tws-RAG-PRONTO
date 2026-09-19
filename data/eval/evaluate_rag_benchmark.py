@@ -297,6 +297,12 @@ if DENSE_ONLY and DENSE_ONLY not in ("raw", "rerank"):
 DENSE_ONLY_TOP = int(os.environ.get("RAG_DENSE_TOP", "30"))
 # Quantos candidatos o segundo estagio processa (default 20 = comportamento de sempre).
 RERANK_TOP = int(os.environ.get("RAG_RERANK_TOP", "20"))
+# MASCARA DO RAMO DENSO (opt-in, DEFAULT OFF): quando ligada, o ramo denso so' pode
+# devolver documentos que estejam no corpus CARREGADO. Sem isso, um indice construido
+# sobre um corpus maior (com evidencia e fontes extra) devolve candidatos que o ramo
+# lexical nem enxerga, e a comparacao denso x lexical deixa de ser sobre o MESMO
+# conjunto. Preenchida em load_documents(); `set()` vazio = ligada mas ainda nao cheia.
+DENSE_MASK = set() if os.environ.get("RAG_DENSE_MASK_TO_CORPUS") == "1" else None
 HYBRID_INDEX = os.environ.get("RAG_DENSE_INDEX") or os.path.join(
     REPO_DIR, "data", "indexes", "corpus_bge_m3_v5.pt")
 HYBRID_META = os.environ.get("RAG_DENSE_META") or os.path.join(
@@ -325,7 +331,13 @@ def _dense_init():
 
 
 def _dense_top30(q_text, k=30):
-    """Top-k do ramo denso, identico a producao: CLS normalizado, cosseno."""
+    """Top-k do ramo denso, identico a producao: CLS normalizado, cosseno.
+
+    RAG_DENSE_MASK_TO_CORPUS=1 (opt-in, default OFF): zera o score de qualquer doc do
+    indice que NAO esteja no corpus carregado. Sem isso, um indice construido sobre um
+    corpus maior pode devolver candidatos que o ramo lexical nem enxerga - e a
+    comparacao denso x lexical deixa de ser sobre o MESMO conjunto de documentos.
+    """
     import torch
 
     d = _dense_init()
@@ -335,7 +347,14 @@ def _dense_top30(q_text, k=30):
         qo = d["mod"](**qi)
         qe = torch.nn.functional.normalize(qo.last_hidden_state[:, 0, :], p=2, dim=1).float()
         sc = torch.mm(qe, d["matriz"].T).squeeze(0)
-        top = torch.topk(sc, k=min(k, int(sc.shape[0]))).indices.tolist()
+        if DENSE_MASK:
+            for i, did in enumerate(d["ids"]):
+                if did not in DENSE_MASK:
+                    sc[i] = float("-inf")
+        k = min(k, int((sc > float("-inf")).sum().item()))
+        if k <= 0:
+            return []
+        top = torch.topk(sc, k=k).indices.tolist()
     return [d["ids"][i] for i in top]
 
 
@@ -528,6 +547,11 @@ def load_documents():
     if fundidos:
         docs = [por_id[i] for i in ordem]
 
+    # Conjunto de ids que o ramo denso pode devolver (ver DENSE_MASK no topo).
+    global DENSE_MASK
+    if DENSE_MASK is not None:
+        DENSE_MASK = {d["id"] for d in docs}
+
     return docs
 
 def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl=60):
@@ -716,8 +740,13 @@ def run_evaluation():
     docs = load_documents()
     print(f"Total de documentos indexados no corpus RAG: {len(docs)}")
 
-    top_k_hits = {1: 0, 3: 0, 5: 0, 10: 0}
+    top_k_hits = {1: 0, 3: 0, 5: 0, 10: 0, 15: 0}
     reciprocal_ranks = []
+    # RECALL@15 (metrica propria, nao derivavel do rank): fracao dos documentos
+    # relevantes que aparecem no top-15. Hit@15 diz "achou ALGUM"; recall@15 diz
+    # "achou QUANTOS". A producao entrega 15 documentos ao LLM, entao o que limita a
+    # resposta e' a fracao que chega, nao a existencia de um acerto.
+    recalls15 = []
     results = []
 
     for b in benchmark:
@@ -810,8 +839,13 @@ def run_evaluation():
             if rank <= 3: top_k_hits[3] += 1
             if rank <= 5: top_k_hits[5] += 1
             if rank <= 10: top_k_hits[10] += 1
+            if rank <= 15: top_k_hits[15] += 1
         else:
             reciprocal_ranks.append(0.0)
+
+        # recall@15: fracao dos relevantes presentes no top-15 (o que a producao entrega)
+        _top15 = {d.get("id") for d in retrieved_docs[:15]}
+        recalls15.append(len(_top15.intersection(expected_cids)) / max(1, len(expected_cids)))
 
         results.append({
             "id": qid,
@@ -834,6 +868,8 @@ def run_evaluation():
     print(f"Hit Rate @ 3:  {top_k_hits[3]}/{total} ({top_k_hits[3]/total*100:.1f}%)")
     print(f"Hit Rate @ 5:  {top_k_hits[5]}/{total} ({top_k_hits[5]/total*100:.1f}%)")
     print(f"Hit Rate @ 10: {top_k_hits[10]}/{total} ({top_k_hits[10]/total*100:.1f}%)")
+    print(f"Hit Rate @ 15: {top_k_hits[15]}/{total} ({top_k_hits[15]/total*100:.1f}%)")
+    print(f"Recall @ 15:   {sum(recalls15)/max(1,len(recalls15)):.4f}")
     print(f"Mean Reciprocal Rank (MRR):    {mrr:.4f}")
     print("==================================================")
 
@@ -845,6 +881,8 @@ def run_evaluation():
             "hit_rate_at_3": top_k_hits[3] / total,
             "hit_rate_at_5": top_k_hits[5] / total,
             "hit_rate_at_10": top_k_hits[10] / total,
+            "hit_rate_at_15": top_k_hits[15] / total,
+            "recall_at_15": sum(recalls15) / max(1, len(recalls15)),
             "mrr": mrr,
             "details": results
         }, f, indent=2, ensure_ascii=False)
