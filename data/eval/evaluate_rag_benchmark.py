@@ -315,6 +315,12 @@ def run_evaluation():
     # "achou QUANTOS". A producao entrega 15 documentos ao LLM, entao o que limita a
     # resposta e' a fracao que chega, nao a existencia de um acerto.
     recalls15 = []
+    # MARGEM por pergunta e o limiar de abstencao. CALIBRADO em 423 perguntas; a
+    # distribuicao de perguntas do benchmark e' a mesma dos dados de calibracao, entao o
+    # limiar se aplica. NAO reutilize este numero noutro scorer: e' livre de escala
+    # (1 - top2/top1), mas a distribuicao de margem depende do scorer.
+    margens = []
+    LIMIAR_ABSTENCAO = 0.177
     results = []
 
     for b in benchmark:
@@ -334,6 +340,41 @@ def run_evaluation():
 
         # Desempate deterministico por id do documento (ver nota em second_stage_rerank)
         scored.sort(key=lambda x: (-x[0], str(x[1].get("id", ""))))
+
+        # MARGEM NORMALIZADA = 1 - top2/top1 sobre o BM25 CRU, antes de diversificacao e
+        # rerank. Mesma definicao que a producao usa para decidir abstencao, para que a
+        # metrica medida aqui seja a metrica que a producao executa. E' o melhor preditor
+        # de "o top-1 e' a evidencia certa" de que se tem registro: AUC 0,842 (producao
+        # 0,850), contra 0,669 do score absoluto.
+        if scored:
+            _s1 = scored[0][0]
+            _s2 = scored[1][0] if len(scored) > 1 else 0.0
+            margem_norm = (_s1 - _s2) / _s1 if _s1 > 0 else 0.0
+        else:
+            margem_norm = 0.0
+
+        # RANK CRU: posicao da evidencia esperada ANTES de diversificacao/rerank, no mesmo
+        # ranking que produziu `margem_norm`. A producao NAO tem rerank - ela entrega o
+        # ranking do BM25 direto. Medir a abstencao contra o ranking pos-rerank do
+        # benchmark misturaria dois pipelines e daria um numero que a producao nao executa.
+        rank_raw = None
+        for _i, (_s, _d) in enumerate(scored[:15], start=1):
+            if _d["id"] in expected_cids:
+                rank_raw = _i
+                break
+            if _d.get("type") == "aws_message":
+                for _ecid in expected_cids:
+                    if _d.get("code", "").lower() in _ecid.lower():
+                        rank_raw = _i
+                        break
+            if (rank_raw is None and expected_runbook
+                    and (_d.get("type") in ("ragflow_runbook_chunk", "runbook_section"))
+                    and _d.get("runbook") == expected_runbook):
+                _ov = len(q_tokens.intersection(_d["tokens"]))
+                if _ov >= 2 and (_ov / max(1, len(q_tokens))) >= 0.25:
+                    rank_raw = _i
+            if rank_raw is not None:
+                break
 
         # RAGFlow MMR / Source Diversity: Evitar que múltiplos chunks do mesmo runbook
         # monopolizem o top-K empurrando claims e respostas alternativas para baixo
@@ -416,12 +457,16 @@ def run_evaluation():
         # recall@15: fracao dos relevantes presentes no top-15 (o que a producao entrega)
         _top15 = {d.get("id") for d in retrieved_docs[:15]}
         recalls15.append(len(_top15.intersection(expected_cids)) / max(1, len(expected_cids)))
+        margens.append(margem_norm)
 
         results.append({
             "id": qid,
             "domain": b.get("domain"),
             "question": q_text,
             "rank": rank,
+            "rank_raw": rank_raw,
+            "margin_norm": round(margem_norm, 4),
+            "abstained": margem_norm < LIMIAR_ABSTENCAO,
             "expected_claims": list(expected_cids),
             "expected_runbook": expected_runbook,
             "top_3_retrieved": [d["id"] for d in retrieved_docs[:3]]
@@ -453,6 +498,38 @@ def run_evaluation():
     if respondiveis:
         print(f"Hit @ 1 entre as respondiveis: {top_k_hits[1]}/{respondiveis}"
               f" ({top_k_hits[1]/respondiveis*100:.1f}%)")
+
+    # ------------------------------------------------------------------
+    # METRICAS DE RESPOSTA SEGURA — "responder certo ou admitir que nao sabe"
+    # ------------------------------------------------------------------
+    # Hit@1 responde "o top-1 esta' certo?". Isto NAO responde a pergunta que o dono
+    # tem: quando o sistema entrega uma resposta, ela esta' ancorada em evidencia? E
+    # quantas vezes ele entrega algo errado em silencio?
+    #
+    # Usa `rank_raw` (ranking do BM25 PURO), nao `rank` (pos-rerank), porque a abstencao
+    # decide sobre o ranking do BM25 - e a producao ENTREGA o BM25 direto, sem rerank.
+    # Usar o pos-rerank misturaria dois pipelines e faria os numeros de "ha' evidencia"
+    # contarem documentos que no BM25 puro nem aparecem.
+    #   RESPONDE CERTO  : nao absteve E a evidencia esperada e' o top-1 do BM25
+    #   RESPONDE ERRADO : nao absteve E o top-1 do BM25 esta' errado  <- risco de alucinacao
+    #   ABSTEVE CERTO   : absteve E a evidencia NAO estava no top-15 (nao havia o que achar)
+    #   ABSTEVE PERDEU  : absteve E a evidencia ESTAVA no top-15 (resposta boa descartada)
+    ev = [r for r in results if not r["abstained"]]
+    ab = [r for r in results if r["abstained"]]
+    resp_certo = sum(1 for r in ev if r["rank_raw"] == 1)
+    resp_errado = len(ev) - resp_certo
+    ab_certo = sum(1 for r in ab if r["rank_raw"] is None)
+    ab_errado = len(ab) - ab_certo
+    precisao = resp_certo / len(ev) if ev else 0.0
+    print("--------------------------------------------------")
+    print("RESPOSTA SEGURA (limiar de abstencao = %.3f)" % LIMIAR_ABSTENCAO)
+    print(f"  Respondeu com top-1 CERTO:   {resp_certo}/{total} ({resp_certo/max(1,total)*100:.1f}%)")
+    print(f"  Respondeu com top-1 ERRADO:  {resp_errado}/{total}"
+          f" ({resp_errado/max(1,total)*100:.1f}%)   <- risco de alucinacao")
+    print(f"  Absteve corretamente:        {ab_certo}/{total} ({ab_certo/max(1,total)*100:.1f}%)")
+    print(f"  Absteve perdendo resposta:   {ab_errado}/{total} ({ab_errado/max(1,total)*100:.1f}%)")
+    print(f"  PRECISAO quando responde:    {precisao*100:.1f}%   "
+          f"(sem abstencao: {top_k_hits[1]/max(1,total)*100:.1f}%)")
     print("==================================================")
 
     out_file = os.path.join(REPO_DIR, "data", "eval", "eval_summary.json")
@@ -470,6 +547,15 @@ def run_evaluation():
             "hit_rate_at_1_entre_respondiveis": (top_k_hits[1] / respondiveis
                                                  if respondiveis else 0.0),
             "mrr": mrr,
+            "resposta_segura": {
+                "limiar_abstencao": LIMIAR_ABSTENCAO,
+                "respondeu_certo": resp_certo,
+                "respondeu_errado": resp_errado,
+                "absteve_certo": ab_certo,
+                "absteve_perdendo_resposta": ab_errado,
+                "precisao_quando_responde": precisao,
+                "precisao_sem_abstencao": top_k_hits[1] / total if total else 0.0,
+            },
             "details": results
         }, f, indent=2, ensure_ascii=False)
     print(f"Sumário de avaliação gravado em {out_file}")

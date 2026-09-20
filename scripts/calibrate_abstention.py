@@ -36,12 +36,21 @@ os.chdir(REPO)
 POOL = REPO / "data" / "eval" / "splits" / "honest_v1" / "test.jsonl"
 
 
-def carrega_pool():
-    """Pool de perguntas distintas, do split honesto se existir; senao do decontaminado."""
-    caminhos = [POOL]
-    if not POOL.exists():
+def carrega_pool(usar_split_honesto=True):
+    """Pool de perguntas distintas.
+
+    Default: o split honesto (disjunto por evidencia) - e' a estimativa nao inflada.
+    Com `--pool-completo`: o pool decontaminado inteiro, que tem ~3x mais perguntas e
+    da' um limiar mais estavel, ao custo de incluir perguntas que ja' foram vistas.
+    Os dois numeros divergem; reporte qual foi usado.
+    """
+    if usar_split_honesto and POOL.exists():
+        caminhos = [POOL]
+        fonte = str(POOL.relative_to(REPO))
+    else:
         dec = REPO / "data" / "eval" / "decontaminated"
         caminhos = sorted(p for p in dec.glob("*.jsonl") if "negatives" not in p.name)
+        fonte = "decontaminated/*"
     pool = {}
     for p in caminhos:
         for line in p.read_text(encoding="utf-8").splitlines():
@@ -51,10 +60,11 @@ def carrega_pool():
             q = r.get("question", "").strip().lower()
             if q and q not in pool:
                 pool[q] = r
-    return list(pool.values()), (caminhos[0].relative_to(REPO) if len(caminhos) == 1 else "decontaminated/*")
+    return list(pool.values()), fonte
 
 
 def calibra_rag_core(bench):
+    """Mesmo sinal do MCP: MARGEM (top1 - top2), para os dois serem comparaveis."""
     from rag_core.corpus import load_documents
     from rag_core.lexical import tokenize, compute_bm25, prepare_corpus
     docs = load_documents()
@@ -64,49 +74,71 @@ def calibra_rag_core(bench):
     for b in bench:
         q = b.get("question", "")
         qt = tokenize(q)
-        best = 0.0
+        pontuados = []
         for d in docs:
             s = compute_bm25(qt, d["tokens"], q, d["text"], doc=d)
-            if s > best:
-                best = s
-        scores.append(best)
+            if s > 0:
+                pontuados.append(s)
+        pontuados.sort(reverse=True)
+        s1 = pontuados[0] if pontuados else 0.0
+        s2 = pontuados[1] if len(pontuados) > 1 else 0.0
+        scores.append(s1 - s2)
         rotulo.append(bool(set(b.get("relevant_claim_ids", []) or []) & ids))
-    return docs, scores, rotulo
+    return docs, scores, rotulo, "margem (top1-top2)"
 
 
 def calibra_mcp(bench):
-    """Corpus de PRODUCAO: o mesmo que o mcp_server indexa."""
+    """Corpus de PRODUCAO: o mesmo que o mcp_server indexa.
+
+    Usa a MARGEM (top1 - top2) como sinal, nao o score absoluto: a margem separa
+    "top-1 e' a claim certa" com AUC 0,850 contra 0,669 do score absoluto.
+    """
     sys.path.insert(0, str(REPO / "mcp_server"))
     import tws_expert_mcp as mcp
+    import re
     scores, rotulo = [], []
     for b in bench:
         q = b.get("question", "")
-        toks = __import__("re").findall(r"\w+", q.lower())
-        # top-1 mesmo com top_k alto, para nao depender do top_k default
-        top = None
+        toks = re.findall(r"\w+", q.lower())
         try:
-            res = mcp.search_bm25(toks, top_k=1)
-            top = res[0]["score"] if res else 0.0
+            # top_k=2 basta para a margem; mais que isso so' custa tempo
+            res = mcp.search_bm25(toks, top_k=2)
+            s1 = res[0]["score"] if res else 0.0
+            s2 = res[1]["score"] if len(res) > 1 else 0.0
         except Exception:
-            top = 0.0
-        scores.append(top)
-        rotulo.append(bool(set(b.get("relevant_claim_ids", []) or []) & set(mcp.doc_ids)))
-    return mcp.docs, scores, rotulo
+            s1, s2 = 0.0, 0.0
+        scores.append((s1 - s2) / s1 if s1 > 0 else 0.0)
+        # ROTULO = a decisao real: "o top-1 e' a evidencia esperada?". Usar "a evidencia
+        # existe no corpus" como rotulo da um alvo mais fraco (AUC ~0,75 em vez de ~0,85),
+        # porque o sistema ainda pode errar qual documento entrega - e e' esse erro que
+        # chega ao usuario como alucinacao.
+        rel = set(b.get("relevant_claim_ids", []) or [])
+        top1 = res[0]["claim_id"] if res else None
+        rotulo.append(bool(top1 and top1 in rel))
+    return mcp.docs, scores, rotulo, "margem normalizada (1 - top2/top1)"
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--mcp", action="store_true", help="calibra o scorer de PRODUCAO")
+    ap.add_argument("--pool-completo", action="store_true",
+                    help="usa o pool decontaminado inteiro (~423 perguntas) em vez do "
+                         "split honesto (140). Limiar mais estavel, porem inclui "
+                         "perguntas ja' vistas - reporte junto com o numero.")
+    ap.add_argument("--aplicar", type=float, metavar="LIMIAR",
+                    help="grava o limiar em data/eval/abstention.json para o MCP usar "
+                         "sem precisar de variavel de ambiente")
     args = ap.parse_args()
-    bench, fonte = carrega_pool()
+    bench, fonte = carrega_pool(usar_split_honesto=not args.pool_completo)
     print(f"perguntas: {len(bench)}  (fonte: {fonte})")
 
     if args.mcp:
-        docs, scores, rotulo = calibra_mcp(bench)
+        docs, scores, rotulo, sinal = calibra_mcp(bench)
         nome = "mcp_server.search_bm25 (PRODUCAO)"
     else:
-        docs, scores, rotulo = calibra_rag_core(bench)
+        docs, scores, rotulo, sinal = calibra_rag_core(bench)
         nome = "rag_core.compute_bm25 (BENCHMARK)"
+    print(f"sinal: {sinal}")
 
     resp = [s for s, ok in zip(scores, rotulo) if ok]
     nao = [s for s, ok in zip(scores, rotulo) if not ok]
