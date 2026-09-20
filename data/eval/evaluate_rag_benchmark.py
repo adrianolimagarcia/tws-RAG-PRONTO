@@ -11,7 +11,7 @@ Mede:
 - Hit Rate @ 1, @ 3, @ 5, @ 10
 - Mean Reciprocal Rank (MRR)
 """
-import glob, json, math, os, re, sys
+import glob, hashlib, json, math, os, re, sys
 from collections import defaultdict
 
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -315,12 +315,13 @@ def run_evaluation():
     # "achou QUANTOS". A producao entrega 15 documentos ao LLM, entao o que limita a
     # resposta e' a fracao que chega, nao a existencia de um acerto.
     recalls15 = []
-    # MARGEM por pergunta e o limiar de abstencao. CALIBRADO em 423 perguntas; a
-    # distribuicao de perguntas do benchmark e' a mesma dos dados de calibracao, entao o
-    # limiar se aplica. NAO reutilize este numero noutro scorer: e' livre de escala
-    # (1 - top2/top1), mas a distribuicao de margem depende do scorer.
     margens = []
-    LIMIAR_ABSTENCAO = 0.177
+    # Limiares das faixas de confianca. CALIBRADOS em 423 perguntas e verificados
+    # out-of-sample (o limiar nao muda entre as metades; as taxas por faixa sim).
+    # NAO reutilize estes numeros noutro scorer: a margem e' livre de escala
+    # (1 - top2/top1), mas a distribuicao depende do scorer.
+    LIMIAR_ALTA = 0.177
+    LIMIAR_MEDIA = 0.05
     results = []
 
     for b in benchmark:
@@ -466,7 +467,8 @@ def run_evaluation():
             "rank": rank,
             "rank_raw": rank_raw,
             "margin_norm": round(margem_norm, 4),
-            "abstained": margem_norm < LIMIAR_ABSTENCAO,
+            "confianca": ("alta" if margem_norm >= LIMIAR_ALTA
+                          else ("media" if margem_norm >= LIMIAR_MEDIA else "baixa")),
             "expected_claims": list(expected_cids),
             "expected_runbook": expected_runbook,
             "top_3_retrieved": [d["id"] for d in retrieved_docs[:3]]
@@ -499,38 +501,59 @@ def run_evaluation():
         print(f"Hit @ 1 entre as respondiveis: {top_k_hits[1]}/{respondiveis}"
               f" ({top_k_hits[1]/respondiveis*100:.1f}%)")
 
-    # ------------------------------------------------------------------
-    # METRICAS DE RESPOSTA SEGURA — "responder certo ou admitir que nao sabe"
-    # ------------------------------------------------------------------
-    # Hit@1 responde "o top-1 esta' certo?". Isto NAO responde a pergunta que o dono
-    # tem: quando o sistema entrega uma resposta, ela esta' ancorada em evidencia? E
-    # quantas vezes ele entrega algo errado em silencio?
-    #
-    # Usa `rank_raw` (ranking do BM25 PURO), nao `rank` (pos-rerank), porque a abstencao
-    # decide sobre o ranking do BM25 - e a producao ENTREGA o BM25 direto, sem rerank.
+    # Usa `rank_raw` (ranking do BM25 PURO), nao `rank` (pos-rerank), porque a confianca
+    # e' calculada sobre o ranking do BM25 - e a producao ENTREGA o BM25 direto, sem rerank.
     # Usar o pos-rerank misturaria dois pipelines e faria os numeros de "ha' evidencia"
     # contarem documentos que no BM25 puro nem aparecem.
-    #   RESPONDE CERTO  : nao absteve E a evidencia esperada e' o top-1 do BM25
-    #   RESPONDE ERRADO : nao absteve E o top-1 do BM25 esta' errado  <- risco de alucinacao
-    #   ABSTEVE CERTO   : absteve E a evidencia NAO estava no top-15 (nao havia o que achar)
-    #   ABSTEVE PERDEU  : absteve E a evidencia ESTAVA no top-15 (resposta boa descartada)
-    ev = [r for r in results if not r["abstained"]]
-    ab = [r for r in results if r["abstained"]]
-    resp_certo = sum(1 for r in ev if r["rank_raw"] == 1)
-    resp_errado = len(ev) - resp_certo
-    ab_certo = sum(1 for r in ab if r["rank_raw"] is None)
-    ab_errado = len(ab) - ab_certo
-    precisao = resp_certo / len(ev) if ev else 0.0
+    def _faixa(r):
+        m = r["margin_norm"]
+        return "alta" if m >= LIMIAR_ALTA else ("media" if m >= LIMIAR_MEDIA else "baixa")
+
     print("--------------------------------------------------")
-    print("RESPOSTA SEGURA (limiar de abstencao = %.3f)" % LIMIAR_ABSTENCAO)
-    print(f"  Respondeu com top-1 CERTO:   {resp_certo}/{total} ({resp_certo/max(1,total)*100:.1f}%)")
-    print(f"  Respondeu com top-1 ERRADO:  {resp_errado}/{total}"
-          f" ({resp_errado/max(1,total)*100:.1f}%)   <- risco de alucinacao")
-    print(f"  Absteve corretamente:        {ab_certo}/{total} ({ab_certo/max(1,total)*100:.1f}%)")
-    print(f"  Absteve perdendo resposta:   {ab_errado}/{total} ({ab_errado/max(1,total)*100:.1f}%)")
-    print(f"  PRECISAO quando responde:    {precisao*100:.1f}%   "
-          f"(sem abstencao: {top_k_hits[1]/max(1,total)*100:.1f}%)")
+    print("CONFIANCA (margem normalizada; NUNCA descarta a resposta)")
+    print(f"  alta  (>= {LIMIAR_ALTA:.3f}): ", end="")
+    g = [r for r in results if _faixa(r) == "alta"]
+    ac = sum(1 for r in g if r["rank_raw"] == 1)
+    print(f"{len(g):3d} perguntas ({len(g)/max(1,total)*100:4.1f}%) | top-1 correto "
+          f"{ac:3d} ({100*ac/max(1,len(g)):4.1f}%)")
+    print(f"  media (>= {LIMIAR_MEDIA:.3f}): ", end="")
+    g = [r for r in results if _faixa(r) == "media"]
+    ac = sum(1 for r in g if r["rank_raw"] == 1)
+    print(f"{len(g):3d} perguntas ({len(g)/max(1,total)*100:4.1f}%) | top-1 correto "
+          f"{ac:3d} ({100*ac/max(1,len(g)):4.1f}%)")
+    print(f"  baixa (<  {LIMIAR_MEDIA:.3f}): ", end="")
+    g = [r for r in results if _faixa(r) == "baixa"]
+    ac = sum(1 for r in g if r["rank_raw"] == 1)
+    print(f"{len(g):3d} perguntas ({len(g)/max(1,total)*100:4.1f}%) | top-1 correto "
+          f"{ac:3d} ({100*ac/max(1,len(g)):4.1f}%)")
+    # O erro concentra-se nas faixas nao-alta? E' o que da valor ao aviso ao LLM.
+    erros_nao_alta = sum(1 for r in results if _faixa(r) != "alta" and r["rank_raw"] != 1)
+    erro_total = sum(1 for r in results if r["rank_raw"] != 1)
+    print(f"  -> {erros_nao_alta}/{erro_total} dos erros "
+          f"({100*erros_nao_alta/max(1,erro_total):.1f}%) caem em media+baixa")
+
+    # VERIFICACAO OUT-OF-SAMPLE no proprio scorer em uso. As taxas por faixa foram
+    # calibradas num scorer; transferi-las para outro seria afirmar sem medir. Aqui o
+    # limiar e' fixo e a medicao e' feita em metades independentes: se as duas metades
+    # concordam, a faixa generaliza; se divergem, a faixa nao vale neste scorer.
+    def _metade(rid):
+        return int(hashlib.md5(str(rid).encode()).hexdigest(), 16) % 2
+
+    for rot, sel in (("metade 0", 0), ("metade 1", 1)):
+        sub = [r for r in results if _metade(r["id"]) == sel]
+        partes = []
+        for f in ("alta", "media", "baixa"):
+            g = [r for r in sub if _faixa(r) == f]
+            if g:
+                ac = sum(1 for r in g if r["rank_raw"] == 1)
+                partes.append(f"{f} {100*ac/len(g):.0f}% (n={len(g)})")
+        print(f"  -> out-of-sample {rot}: " + " | ".join(partes))
     print("==================================================")
+
+    conf_alta = sum(1 for r in results if _faixa(r) == "alta" and r["rank_raw"] == 1)
+    conf_media = sum(1 for r in results if _faixa(r) == "media" and r["rank_raw"] == 1)
+    conf_baixa = sum(1 for r in results if _faixa(r) == "baixa" and r["rank_raw"] == 1)
+    conf_erro_nao_alta = erros_nao_alta
 
     out_file = os.path.join(REPO_DIR, "data", "eval", "eval_summary.json")
     with open(out_file, "w") as f:
@@ -547,14 +570,14 @@ def run_evaluation():
             "hit_rate_at_1_entre_respondiveis": (top_k_hits[1] / respondiveis
                                                  if respondiveis else 0.0),
             "mrr": mrr,
-            "resposta_segura": {
-                "limiar_abstencao": LIMIAR_ABSTENCAO,
-                "respondeu_certo": resp_certo,
-                "respondeu_errado": resp_errado,
-                "absteve_certo": ab_certo,
-                "absteve_perdendo_resposta": ab_errado,
-                "precisao_quando_responde": precisao,
-                "precisao_sem_abstencao": top_k_hits[1] / total if total else 0.0,
+            "confianca": {
+                "limiar_alta": LIMIAR_ALTA,
+                "limiar_media": LIMIAR_MEDIA,
+                "top1_correto_faixa_alta": conf_alta,
+                "top1_correto_faixa_media": conf_media,
+                "top1_correto_faixa_baixa": conf_baixa,
+                "erros_em_media_ou_baixa": conf_erro_nao_alta,
+                "sem_abstencao": True,
             },
             "details": results
         }, f, indent=2, ensure_ascii=False)

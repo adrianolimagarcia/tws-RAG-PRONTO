@@ -90,76 +90,65 @@ def search_bm25(query_tokens, category=None, top_k=5):
 
 
 # ---------------------------------------------------------------------------
-# ABSTENCAO — "responder certo ou admitir que nao sabe"
+# CONFIANCA — NUNCA descarta a resposta; informa a confiabilidade dela
 # ---------------------------------------------------------------------------
-# Sem isto, a busca SEMPRE devolvia top_k documentos com um score, e nao havia nenhum
-# caminho para o consumidor distinguir "achei a evidencia" de "preenchi 5 vagas". O LLM
-# recebia 5 resultados sempre e escrevia em cima do errado - esse era o mecanismo da
-# alucinacao.
+# HISTORICO (o que foi tentado e por que NAO ficou assim):
+# A versao anterior ABSTINHA em silencio quando a margem ficava abaixo do limiar:
+# zerava `results` e mandava o LLM dizer que nao havia base. Isso foi MEDIDO e
+# rejeitado pelo dono, com razao:
+#   - no limiar 0,177 descartava 66 respostas CORRETAS para chegar a 84% de precisao;
+#   - 0 de 423 perguntas tem zero resultados de BM25, ou seja, o "nao ha base" quase
+#     nunca era literalmente verdadeiro - era um chute do classificador;
+#   - falar "nao sei" sabendo e' REGRESSAO.
+# Agora o sistema SEMPRE devolve os resultados e anexa a confianca medida. Quem decide
+# (o LLM, com o material na mao) recebe a informacao em vez de um portao fechado.
 #
-# DOIS SINAIS, porque um so' nao cobre os DOIS formatos de consulta que a producao recebe:
+# SINAL: margem normalizada = 1 - top2/top1. Medida em 423 perguntas:
+#   AUC 0,842 (producao) / 0,818 (rag_core), contra 0,669 do score absoluto.
+#   A margem ABSOLUTA foi testada e rejeitada: correlaciona 0,706 com o TAMANHO da
+#   consulta, e fazia consulta real de producao ("AWSITA081E") cair de faixa.
 #
-# 1) MARGEM NORMALIZADA = 1 - top2/top1, em [0,1).  Medido em 423 perguntas naturais:
-#      score absoluto   AUC 0,669   (quase inutil)
-#      margem absoluta  AUC 0,850   mas correlaciona 0,706 com o TAMANHO da consulta
-#      margem normal.   AUC 0,842   correlacao so' 0,171  <- adotada
-#    A margem ABSOLUTA foi rejeitada por um defeito medido: uma consulta valida de
-#    producao ("AWSITA081E") abstinha, porque consulta curta acumula pouca massa de
-#    BM25. O limiar tem de ser livre de escala.
-#    Com margem_norm >= 0,177: precisao 47,8% -> 84,0%, evitando 88% dos erros,
-#    cobrindo 67,3% dos acertos.
+# FAIXAS MEDIDAS (n=423; base = 47,8% de top-1 correto):
+#   alta  (>= 0,177): 162 perguntas (38,3%) -> 84,0% de acerto  (+36,2 pp)
+#   media (>= 0,050): 139 perguntas (32,9%) -> 29,5% de acerto  (-18,3 pp)
+#   baixa (<  0,050): 122 perguntas (28,8%) -> 20,5% de acerto  (-27,3 pp)
+# ESTAVEIS out-of-sample (metades independentes):
+#   alta: 85,0% (n=80) x 82,9% (n=82) | media: 27,0% x 31,6% | baixa: 21,3% x 19,7%
 #
-# 2) ESCAPE DE BUSCA CURTA (so' para consulta <= 5 tokens):
-#    se a consulta e' CURTA e casou no indice, ela e' um LOOKUP, nao uma pergunta. O
-#    documento devolvido contem o termo -> a resposta fica ancorada nele, e nao ha' como
-#    alucinar sobre um termo que o indice confirma existir. Nao abstem.
-#    Motivo: "AWSITA081E" (1 token) aparece em 3 docs com scores quase iguais, entao a
-#    margem e' ~0,06 - mas aqui empate NAO e' ambiguidade, e' prova de que existe. O mesmo
-#    vale para jargao de produto (planman, switchmgr, conman), que tem idf 2,2-5,1.
-#
-#    O corte de idf foi calibrado nos DOIS sentidos (21 consultas curtas REAIS do dominio
-#    x 16 FORA do dominio):
-#      corte idf  falso-abster  abstem-certo
-#        6,0        18/21          9/16     <- rejeitado: inutilizavel
-#        2,0         2/21          7/16
-#        1,0         1/21          7/16     <- adotado
-#    O corte 6,0 (so' identificador de mensagem) foi REJEITADO por medicao: destruia
-#    consultas legitimas de jargao. Em pergunta natural o escape NUNCA dispara (0/423),
-#    inclusive no corte 2,0 - verificado. Ou seja: cobre o formato curto sem afetar o
-#    comportamento medido no benchmark.
-#
-# LIGADO POR DEFAULT. `RAG_ABSTAIN_MARGIN=0` desliga; `data/eval/abstention.json`
-# (gravado por `calibrate_abstention.py --mcp --aplicar`) sobrescreve os parametros.
-MARGEM_NORM_DEFAULT = 0.177
-IDF_RARO_DEFAULT = 1.0
-TOKENS_CURTOS_DEFAULT = 5
+# O ERRO SE CONCENTRA nao-alta: 195 de 221 erros (88,2%) caem em media+baixa, que sao
+# 61,7% dos casos. E' onde o aviso ao LLM vale.
+FAIXA_ALTA = 0.177
+FAIXA_MEDIA = 0.05
+
+# Marcadores de versao != 10.2.8 (o corpus mistura 9.x e 10.2.0-10.2.7).
+RE_VERSAO_DIFERENTE = re.compile(r"\b9\.\d|\b10\.2\.[0-7]\b")
 
 
-def _params_abstencao():
-    p = {"margem_norm": MARGEM_NORM_DEFAULT, "idf_raros": IDF_RARO_DEFAULT,
-         "tokens_curtos": TOKENS_CURTOS_DEFAULT}
+def _params_confianca():
+    p = {"faixa_alta": FAIXA_ALTA, "faixa_media": FAIXA_MEDIA}
     arq = os.path.join(BASE_DIR, "data", "eval", "abstention.json")
     if os.path.exists(arq):
         try:
             with open(arq, encoding="utf-8") as f:
-                p.update(json.load(f))
+                d = json.load(f)
+            p["faixa_alta"] = float(d.get("faixa_alta", d.get("margem_norm", p["faixa_alta"])))
+            p["faixa_media"] = float(d.get("faixa_media", p["faixa_media"]))
         except Exception:
-            pass
-    env = os.environ.get("RAG_ABSTAIN_MARGIN")
-    if env is not None:
-        try:
-            p["margem_norm"] = float(env)
-        except ValueError:
             pass
     return p
 
 
-MSG_ABSTER = (
-    "Nao ha' base verificada no material para esta consulta. Responda exatamente que "
-    "nao encontrou base verificada e sugira refrasear (codigo de erro, comando ou "
-    "componente). NAO responda com conhecimento proprio nem use os candidatos abaixo "
-    "como se fossem evidencia."
-)
+MSG_CONFIANCA = {
+    "alta": ("Evidencia com boa correspondencia. Responda normalmente, citando o "
+             "claim_id como fonte."),
+    "media": ("Correspondencia PARCIAL: o melhor candidato nao se destaca dos demais. "
+              "Confirme com um termo mais especifico (codigo de erro, comando ou "
+              "componente) antes de afirmar. Se o material nao cobrir a pergunta, diga "
+              "que nao encontrou base verificada."),
+    "baixa": ("Correspondencia FRACA: nenhum candidato corresponde bem. NAO afirme nada "
+              "com base nestes resultados - trate-os como pistas, reformule a consulta "
+              "ou diga que nao encontrou base verificada."),
+}
 
 
 def handle_tool_call(name, args):
@@ -169,28 +158,51 @@ def handle_tool_call(name, args):
         top_k = int(args.get("top_k", 5))
         tokens = re.findall(r"\w+", q.lower())
         results = search_bm25(tokens, category=cat, top_k=top_k)
+
+        # Modo antigo (portao duro). OPT-IN e DESLIGADO por padrao: descartar resposta
+        # que existia e' regressao (66 acertos perdidos no limiar 0,177). Mantido apenas
+        # para quem quiser medir aquele desenho.
+        limiar_duro = os.environ.get("RAG_ABSTAIN_MARGIN")
+        if limiar_duro is not None and results:
+            try:
+                lim = float(limiar_duro)
+            except ValueError:
+                lim = 0.0
+            if lim > 0:
+                s1 = results[0]["score"]
+                s2 = results[1]["score"] if len(results) > 1 else 0.0
+                mn = (s1 - s2) / s1 if s1 > 0 else 0.0
+                if mn < lim:
+                    return {"results": [], "count": 0, "abstained": True, "margin": round(mn, 4),
+                            "message": "Abstencao DURA ativa (RAG_ABSTAIN_MARGIN); "
+                                       "respostas boas sao descartadas por desenho."}
+
         out = {"results": results, "count": len(results)}
 
-        p = _params_abstencao()
-        if p["margem_norm"] > 0:
-            s1 = results[0]["score"] if results else 0.0
+        if results:
+            s1 = results[0]["score"]
             s2 = results[1]["score"] if len(results) > 1 else 0.0
-            margem_norm = ((s1 - s2) / s1) if s1 > 0 else 0.0
-            # idf do termo mais raro da consulta que casou no indice
-            casados = [idf[t] for t in set(tokens) if t in postings]
-            max_idf = max(casados) if casados else 0.0
-            escape = (len(tokens) <= p["tokens_curtos"]) and (max_idf >= p["idf_raros"])
-
-            out["margin"] = round(margem_norm, 4)
-            out["abstain_margin"] = p["margem_norm"]
-            out["matched_rare_idf"] = round(max_idf, 2)
-            if margem_norm < p["margem_norm"] and not escape:
-                out["abstained"] = True
-                out["results"] = []
-                out["count"] = 0
-                out["message"] = MSG_ABSTER
+            margem_norm = (s1 - s2) / s1 if s1 > 0 else 0.0
+            p = _params_confianca()
+            if margem_norm >= p["faixa_alta"]:
+                faixa = "alta"
+            elif margem_norm >= p["faixa_media"]:
+                faixa = "media"
             else:
-                out["abstained"] = False
+                faixa = "baixa"
+            out["confianca"] = faixa
+            out["margin"] = round(margem_norm, 4)
+            out["orientacao"] = MSG_CONFIANCA[faixa]
+
+            # Aviso de versao: o corpus mistura 9.x/10.2.0-10.2.7 com 10.2.8. Medido:
+            # quando o top-1 e' de versao diferente, ele acerta 33,3% contra 48,6% das
+            # demais ocorrencias - e' sinal util de que a resposta pode nao valer.
+            texto_top1 = f"{results[0].get('claim','')} {results[0].get('claim_id','')}"
+            if RE_VERSAO_DIFERENTE.search(texto_top1):
+                out["alerta_versao"] = (
+                    "A evidencia mais bem colocada e' de versao diferente de 10.2.8. "
+                    "Confirme a versao antes de afirmar."
+                )
         return out
 
     elif name == "tws_get_claim":
@@ -229,11 +241,11 @@ def main():
                             "name": "tws_expert_search",
                             "description": (
                                 "Busca contextual em alta precisão (BM25) no corpus de claims canônicas do HWA 10.2.8. "
-                                "A resposta pode conter `abstained: true`: isso significa que NÃO há base verificada no "
-                                "material para a consulta. Nesse caso responda que não há base verificada e sugira "
-                                "refrasear (código de erro, comando ou componente) — NÃO responda com conhecimento "
-                                "próprio e NÃO trate os candidatos como evidência. O campo `margin` mede a confiança: "
-                                "quanto maior, mais destacada é a claim que responde."
+                                "A resposta traz `confianca` = alta|media|baixa, medida e calibrada: alta acerta ~84%, "
+                                "media ~30%, baixa ~20% no benchmark. Use-a ANTES de afirmar: em `baixa`, trate os "
+                                "resultados como pistas e não afirme nada; em `media`, confirme com um termo mais "
+                                "específico. `alerta_versao` avisa que a evidência é de versão diferente de 10.2.8 "
+                                "(o corpus mistura 9.x e 10.2.x). Sempre cite o claim_id como fonte."
                             ),
                             "inputSchema": {
                                 "type": "object",
