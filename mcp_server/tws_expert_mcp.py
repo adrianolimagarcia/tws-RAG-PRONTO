@@ -88,7 +88,40 @@ def handle_tool_call(name, args):
         top_k = int(args.get("top_k", 5))
         tokens = re.findall(r"\w+", q.lower())
         results = search_bm25(tokens, category=cat, top_k=top_k)
-        return {"results": results, "count": len(results)}
+        out = {"results": results, "count": len(results)}
+
+        # ABSTENCAO (opt-in, DEFAULT OFF = comportamento inalterado):
+        # `RAG_ABSTAIN_THRESHOLD=<float>` faz a busca ADMITIR que nao sabe quando o
+        # melhor score esta' abaixo do limiar, em vez de devolver top_k documentos
+        # ruins como se fossem evidencia. Sem isso, o consumidor sempre recebe 5
+        # 'resultados' e o LLM inventa em cima do errado - nao ha' caminho de abstencao.
+        #
+        # LIMIAR: e' na ESCALA DESTE scorer (BM25 com k1=1.5, b=0.75 sobre o corpus
+        # consolidado), NAO na escala do `rag_core`. Nao transfira um valor de um para
+        # o outro: a calibracao e' por scorer. Para calibrar, use
+        # scripts/calibrate_abstention.py.
+        t = os.environ.get("RAG_ABSTAIN_THRESHOLD")
+        if t is not None and results:
+            try:
+                lim = float(t)
+            except ValueError:
+                lim = None
+            if lim is not None:
+                top = results[0]["score"]
+                out["top_score"] = top
+                out["threshold"] = lim
+                if top < lim:
+                    out["abstained"] = True
+                    out["results"] = []
+                    out["count"] = 0
+                    out["message"] = (
+                        "Evidencia insuficiente no corpus para esta consulta "
+                        f"(melhor score {top} < limiar {lim}). Nao responda com "
+                        "conhecimento proprio: informe que nao ha' base verificada."
+                    )
+                else:
+                    out["abstained"] = False
+        return out
 
     elif name == "tws_get_claim":
         cid = args.get("claim_id", "").strip()
