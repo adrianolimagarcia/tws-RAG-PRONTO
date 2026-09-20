@@ -264,9 +264,102 @@ precisar de qualificação:
 
 ---
 
-## 8. Como reproduzir
+## 8. Splits disjuntos por evidência — e o número honesto é 53,0%
 
-```bash
+### 8.1 O que faltava
+
+O `decontaminated-manifest.json` admitia explicitamente o que **não** foi corrigido:
+
+```json
+"escopo_nao_corrigido": ["7-split (309 FAIL)", "8-duplicata (446 FAIL)"]
+```
+
+E os checks 7 e 8 do `audit_eval_leakage.py` só pegam "pergunta em dois arquivos".
+Nenhum deles pega o vazamento mais grave: **a mesma evidência (claim) fundamentando uma
+pergunta de treino e uma de teste.**
+
+`scripts/build_honest_splits.py` ataca isso por união-find: duas perguntas entram no mesmo
+cluster se compartilham qualquer claim, e o **cluster é indivisível**. Distribuição
+determinística (tamanho, depois hash do conteúdo) — sem RNG, reproduzível por construção.
+`scripts/gate_honest_splits.py` **re-verifica do zero** o que foi gravado, sem confiar no
+builder.
+
+### 8.2 O compromisso, medido (não escondido)
+
+O harness emite **duas** variantes em vez de escolher uma:
+
+| variante | pergunta | claim | runbook | maior cluster | representatividade |
+|---|---|---|---|---|---|
+| `honest_v1` (estrita) | 0 | **0** | **0** | **106** | ruim: um tema inteiro vai para o treino |
+| `honest_v1_claim` | 0 | **0** | 4 | 20 | melhor |
+
+A variante estrita é limpa mas concentra as 106 perguntas dos labs RHEL9/WSL num único
+cluster indivisível, que vai **todo** para o treino — o teste fica sem esse tema. Nenhuma
+das duas é "a certa"; o script mostra o número das duas.
+
+### 8.3 O resultado inesperado: minha hipótese estava ERRADA
+
+Eu esperava que o vazamento inflasse os números. **Não infla.** Isolando por contraste
+(mesmo recuperador, perguntas de evidência vazada × evidência exclusiva):
+
+| posição | vazada − exclusiva | IC95 | veredito |
+|---|---|---|---|
+| @1 | **−7,68pp** | [−18,47, +3,50] | não significativo |
+| @10 | +3,77pp | [−6,33, +13,33] | não significativo |
+
+Hipótese de inflação por vazamento **refutada**.
+
+### 8.4 A causa real: seleção de pergunta
+
+As 262 perguntas do `blind_v3_slices` são uma **fatia mais fácil** do pool:
+
+| grupo | n | @1 | @10 | @15 | MRR |
+|---|---|---|---|---|---|
+| perguntas do `blind_v3` | 262 | **0,656** | 0,832 | 0,844 | 0,7134 |
+| mesmas perguntas, fora do `blind_v3` | 161 | **0,323** | 0,460 | 0,478 | 0,3685 |
+
+**+33,4pp @1 mais fáceis**, IC95 [+23,8, +42,8], **significativo em todas as posições**.
+
+Este é o número que faltava no projeto: a inflação **não** vem de vazamento de evidência —
+vem de o benchmark ser composto das perguntas fáceis. E note: uma fração dos arquivos
+"sintéticos" (`golden_qa_virgin`, `pure_virgin`, `blind_holdout_qa_30`) pontua **0,23–0,33**
+@1, muito abaixo do `blind_v3`. O projeto publicava o subconjunto favorável.
+
+### 8.5 O número honesto
+
+No pool **completo e deduplicado** (423 perguntas distintas):
+
+| métrica | valor | teto |
+|---|---|---|
+| **Hit@1** | **224/423 = 53,0%** | 83,7% |
+| Hit@10 | 292/423 = 69,0% | — |
+| Hit@15 | 298/423 = 70,4% | — |
+| MRR | 0,5821 | — |
+| perguntas sem resposta no índice | 69/423 (16,3%) | — |
+| Hit@1 entre as respondíveis | 224/354 = 63,3% | — |
+
+Contra os **65,6%** publicados do `blind_v3`, a inflação por seleção é de **~12,6pp**.
+
+### 8.6 O BM25 real sobrevive ao teste honesto? Não significativamente
+
+| conjunto | Δ@1 | IC95 | Δ@15 | IC95 |
+|---|---|---|---|---|
+| `honest_v1` TESTE | −2,86pp | [−7,14, +1,43] | +4,29pp | [−0,71, +9,29] |
+| `honest_v1` TREINO | +3,53pp | [0,00, +7,07] | **+3,53pp** | [+0,71, +6,71] |
+| `honest_v1_claim` TESTE | −1,43pp | [−5,71, +2,14] | +2,14pp | [−2,14, +7,14] |
+
+**O BM25 real ajuda a PROFUNDIDADE (@10/@15) mas não o top-1.** Exatamente o que o split
+honesto existe para detectar — e o que o `blind_v3` sozinho escondia.
+
+### 8.7 O que continua bloqueado
+
+O **benchmark V4 (sealed holdout)** segue bloqueado por entrada humana. Não por falta de
+método: por medição. Gerar perguntas do corpus produz perguntas tautológicas — e a §8.4
+agora dá a magnitude desse problema (+33,4pp), que é maior do que se supunha.
+
+---
+
+## 9. Como reproduzir
 P=/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO
 cd $P
 
@@ -291,6 +384,20 @@ env PYTHONHASHSEED=0 RAG_MEASURE_EXCLUDE_EVIDENCE=1 RAG_INGEST_REST_API=1 \
 
 # gate -> INVALID
 python3 scripts/gate_rag_v4.py
+
+# SPLITS HONESTOS: constroi as duas variantes e verifica do zero
+python3 scripts/build_honest_splits.py --ambos
+python3 scripts/gate_honest_splits.py --variant honest_v1
+
+# O NUMERO HONESTO: pool completo deduplicado -> Hit@1 224/423 (53,0%), teto 83,7%
+env PYTHONHASHSEED=0 RAG_MEASURE_EXCLUDE_EVIDENCE=1 RAG_INGEST_REST_API=1 \
+    RAG_BENCHMARK_FILE=$PWD/data/eval/splits/honest_v1/test.jsonl \
+  python3 data/eval/evaluate_rag_benchmark.py
+
+# e com o scorer novo -> 58/140 (41,4%), @10 60,7%, @15 65,0%
+env PYTHONHASHSEED=0 RAG_MEASURE_EXCLUDE_EVIDENCE=1 RAG_INGEST_REST_API=1 RAG_BM25_REAL=1 \
+    RAG_BENCHMARK_FILE=$PWD/data/eval/splits/honest_v1/test.jsonl \
+  python3 data/eval/evaluate_rag_benchmark.py
 ```
 
 Os três switches são opt-in e default OFF: `RAG_BM25_REAL` (scorer),
