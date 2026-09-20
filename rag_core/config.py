@@ -79,6 +79,14 @@ if os.environ.get("RAG_REST_GRANULARITY"):
             f"RAG_REST_GRANULARITY={os.environ['RAG_REST_GRANULARITY']!r} nao reconhecido. "
             "Use 'operation' (276 registros) ou 'familia' (24 registros, default).")
 
+# Switch do SCORER (opt-in, DEFAULT OFF = comportamento inalterado).
+# `RAG_BM25_REAL=1` troca o scorer esparso pelo BM25 de verdade (TF saturado x IDF x
+# normalizacao pelo comprimento real do documento). Ver a nota longa em
+# `rag_core/lexical.py` sobre o que o scorer legado faz de diferente e o que foi medido.
+# Exige `rag_core.lexical.prepare_corpus(docs)` antes de pontuar - o avaliador ja' faz
+# isso, e o scorer FALHA (SystemExit) se as estatisticas nao existirem.
+BM25_REAL = os.environ.get("RAG_BM25_REAL") == "1"
+
 # Boost aditivo aplicado a cada doc de catalogo da familia detectada na query.
 # Configuravel via env RAG_FAMILY_BOOST (default 4): varredura 0-12 mostrou que
 # 4 e o ponto de maior ganho no virgem SEM regressao no baseline.

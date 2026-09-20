@@ -6,10 +6,23 @@ VERBATIM de `data/eval/evaluate_rag_benchmark.py` (fatia de refatoracao pura:
 mesmo comportamento, sem 'melhorias'). Nao altere o scorer aqui sem medicao
 propria - o controle obrigatorio do projeto depende deste comportamento exato.
 """
+import math
 import os
 import re
 
+from . import config
 from .config import AVG_DL, FAMILY_BOOST
+
+# Termos de jargao HWA que recebem peso extra na base de similaridade. Constante nomeada
+# (era uma lista literal dentro do laco de `compute_bm25`) para que o caminho legado e o
+# BM25 real usem a MESMA lista - antes eram duas copias logicas.
+HWA_JARGON = [
+    "sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer",
+    "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens",
+    "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor",
+    "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl",
+    "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt", "aida", "carryforward",
+]
 
 SYNONYMS = {
     "sfinal": ["makeplan", "switchplan", "startappserver", "checksync", "createpostreports", "updatestats", "2359", "final", "d+1"],
@@ -184,36 +197,25 @@ def expand_query(text):
     return _expand_tokens(tokenize(text))
 
 
-def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl=AVG_DL):
-    if not doc_tokens:
-        return 0.0
-    k1 = 1.2
-    b = 0.75
-    overlap = query_tokens.intersection(doc_tokens)
-    if not overlap:
-        return 0.0
-    score = 0.0
-    dl = len(doc_tokens)
-    doc_lower = doc_text.lower()
+def _apply_doc_boosts(score, query_tokens, query_raw, doc, doc_text):
+    """Bonus pos-BM25: frase operacional, codigo de erro, familia AWS, tipo/autoridade
+    da evidencia, match no id, heading, runbook e metadados RAGFlow.
 
-    # 1. Base BM25 com boost em termos HWA
-    # Iterar em ordem DETERMINISTICA: `overlap` e um set, cuja ordem depende do PYTHONHASHSEED
-    # (randomizado por processo). Como a soma de floats nao e associativa, a ordem de iteracao
-    # mudava os scores em ~1e-16 e flipava empates -> metrica nao-reprodutivel (95,7% x 97,1%).
-    for t in sorted(overlap):
-        boost = 1.0
-        if any(term in t for term in ["sfinal", "jnextplan", "resetplan", "makeplan", "switchplan", "checksync", "composer", "conman", "planman", "joblog", "vartable", "rerun", "generic", "event1", "sbs", "opens", "limit", "securityutility", "resync", "twsobjectmonitor", "switcheventprocessor", "switchevtp", "helm", "chart", "kubernetes", "tebctl", "cwwkf0011i", "enretain", "wapl", "mmrresolve", "symnew", "conddep", "wa_pull_info", "baserecprompt", "aida", "carryforward"]):
-            boost = 4.0
-        score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
+    Extraido VERBATIM de `compute_bm25` para que o scorer legado e o BM25 real
+    compartilhem o MESMO conjunto de bonus - sem isso, comparar os dois mediria a
+    diferenca de bonus junto com a diferenca de similaridade, e nao daria para atribuir
+    o efeito. Nao contem a base de similaridade: recebe o `score` ja' calculado.
+    """
+    doc_lower = doc_text.lower()
+    q_low = query_raw.lower()
 
     # 1.1 Boost em Frases Operacionais HWA na Query
-    q_low = query_raw.lower()
     if "processador de eventos" in q_low or "event processor" in q_low:
         if "switcheventprocessor" in doc_lower or "switchevtp" in doc_lower:
             score += 15.0
 
     # 2. Boost em codigos de erro exatos (ex: AWSJDB802E, AWSVAL006E, AWSBEH021E)
-    codes_in_query = re.findall(r"aws[a-z]{3}[0-9]{3}[iew]", query_raw.lower())
+    codes_in_query = re.findall(r"aws[a-z]{3}[0-9]{3}[iew]", q_low)
     for code in codes_in_query:
         if code in doc_lower:
             score += 15.0  # boost forte para match de código de erro
@@ -251,7 +253,7 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
         # Heading/runbook relevante reforça score
         if doc.get("title") and query_tokens.intersection(tokenize(doc["title"])):
             score *= 1.15
-        if doc.get("runbook") and doc.get("runbook").replace(".md","").replace("-","") in query_raw.lower().replace("-",""):
+        if doc.get("runbook") and doc.get("runbook").replace(".md","").replace("-","") in q_low.replace("-",""):
             score *= 1.1
 
         # 4. Boost RAGFlow: Casamento de Breadcrumbs Hierárquicos e Metadados Extraídos
@@ -259,17 +261,132 @@ def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl
             meta = doc.get("metadata", {})
             # Match exato de comandos no chunk
             for cmd in meta.get("commands", []):
-                if cmd.lower() in query_raw.lower():
+                if cmd.lower() in q_low:
                     score += 3.5
             # Match exato de códigos AWS extraídos pelo DeepDoc
             for c_code in meta.get("aws_codes", []):
-                if c_code.lower() in query_raw.lower():
+                if c_code.lower() in q_low:
                     score += 12.0
             # Breadcrumbs overlap
             if doc.get("path") and query_tokens.intersection(tokenize(doc["path"])):
                 score *= 1.2
 
     return score
+
+
+# ---------------------------------------------------------------------------
+# BM25 REAL (opt-in, DEFAULT OFF = comportamento inalterado)
+# ---------------------------------------------------------------------------
+# POR QUE EXISTE: o scorer legado NAO e' BM25 apesar do nome. Tres desvios medidos:
+#   (a) `tokenize()` devolve `set`, entao a FREQUENCIA do termo (TF) e' destruida - o
+#       loop soma uma constante por termo apenas PRESENTE, tratando um termo que ocorre
+#       20x igual a um que ocorre 1x;
+#   (b) nao ha' IDF em lugar nenhum. No corpus de 6732 docs, '10.2.8' tem df=96,2%,
+#       'workload' 95,4%, 'hcl' 95,1% - todos vindos do context_prefix indexado nas 4315
+#       message_catalog. Sem IDF, citar '10.2.8' empurra ~6479 documentos para cima com o
+#       MESMO peso de um termo distintivo;
+#   (c) `dl` e' o tamanho do SET de tokens e `avg_dl=60` esta' hardcoded, enquanto o
+#       comprimento real medio e' 118,4 palavras (medido). A normalizacao por tamanho
+#       nunca e' aplicada como o BM25 define.
+# Medido (1o estagio, 6732 docs, sem o 2o estagio): ligar isto da' +8,6pp @1 e +5,7pp @10
+# no golden_qa (70q) e +1,9pp @1 e +1,1pp @10 no blind_v3 (262q), com ganho em TODAS as
+# posicoes medidas. Medido em 7 benchmarks: melhora em 7, com +7,1pp a +14,3pp de @1 no
+# golden_qa e +0,8pp a +3,3pp no blind_v3.
+#
+# Estatisticas do corpus (TF por doc, DF global, comprimento real). Preenchidas por
+# `prepare_corpus(docs)`; `None` = ainda nao preparado. O corpus e' fixo por processo, como
+# os demais switches deste pacote. O switch mora em `rag_core.config` (BM25_REAL), junto
+# dos demais switches de MEDICAO.
+_CORPUS_STATS = None
+
+
+def prepare_corpus(docs):
+    """Calcula TF/DF/avgdl REAIS do corpus. Obrigatorio antes de `compute_bm25` com
+    `RAG_BM25_REAL=1` (fail-closed: sem isto o scorer real nao tem IDF)."""
+    global _CORPUS_STATS
+    tf_docs = []
+    df = {}
+    total = 0
+    for d in docs:
+        words = re.findall(r"[A-Za-z0-9_\-\.\:\^\/\+\@]+", d["text"].lower())
+        tf = {}
+        for w in words:
+            tf[w] = tf.get(w, 0) + 1
+        tf_docs.append(tf)
+        total += len(words)
+        for t in tf:
+            df[t] = df.get(t, 0) + 1
+    n = len(docs)
+    _CORPUS_STATS = {
+        "tf": tf_docs,
+        "df": df,
+        "n": n,
+        "avgdl": (total / n) if n else 1.0,
+        "index": {id(d): i for i, d in enumerate(docs)},
+    }
+    return _CORPUS_STATS
+
+
+def compute_bm25_real(query_tokens, doc, query_raw, doc_text):
+    """BM25 de verdade: TF saturado x IDF x normalizacao pelo comprimento real."""
+    st = _CORPUS_STATS
+    if st is None:
+        raise SystemExit(
+            "RAG_BM25_REAL=1 exige rag_core.lexical.prepare_corpus(docs) antes de pontuar. "
+            "Sem as estatisticas do corpus nao ha' IDF nem avgdl reais.")
+    i = st["index"].get(id(doc))
+    if i is None:
+        return 0.0
+    tf = st["tf"][i]
+    dl = sum(tf.values())
+    if not tf:
+        return 0.0
+    k1, b = 1.2, 0.75
+    n, df, avgdl = st["n"], st["df"], st["avgdl"]
+    den = k1 * (1.0 - b + b * (dl / avgdl))
+    score = 0.0
+    for t in sorted(query_tokens):
+        f = tf.get(t)
+        if not f:
+            continue
+        idf = math.log(1.0 + (n - df.get(t, 0) + 0.5) / (df.get(t, 0) + 0.5))
+        if any(term in t for term in HWA_JARGON):
+            idf *= 4.0
+        score += idf * (f * (k1 + 1.0)) / (f + den)
+    if score <= 0.0:
+        return 0.0
+    return _apply_doc_boosts(score, query_tokens, query_raw, doc, doc_text)
+
+
+def compute_bm25(query_tokens, doc_tokens, query_raw, doc_text, doc=None, avg_dl=AVG_DL):
+    if config.BM25_REAL:
+        return compute_bm25_real(query_tokens, doc, query_raw, doc_text)
+    if not doc_tokens:
+        return 0.0
+    k1 = 1.2
+    b = 0.75
+    overlap = query_tokens.intersection(doc_tokens)
+    if not overlap:
+        return 0.0
+    score = 0.0
+    dl = len(doc_tokens)
+
+    # 1. Base BM25 com boost em termos HWA
+    # Iterar em ordem DETERMINISTICA: `overlap` e um set, cuja ordem depende do PYTHONHASHSEED
+    # (randomizado por processo). Como a soma de floats nao e associativa, a ordem de iteracao
+    # mudava os scores em ~1e-16 e flipava empates -> metrica nao-reprodutivel (95,7% x 97,1%).
+    #
+    # ESTE E' O CAMINHO LEGADO - nao "otimize" esta expressao. `den` depende so' de `dl`,
+    # entao parece seguro fatorar, mas `sum(b_i * c)` nao e' bit-identico a `c * sum(b_i)`
+    # em ponto flutuante, e o controle obrigatorio do repo exige reproducao exata.
+    for t in sorted(overlap):
+        boost = 1.0
+        if any(term in t for term in HWA_JARGON):
+            boost = 4.0
+        score += boost * ((k1 + 1) / (1.0 + k1 * (1.0 - b + b * (dl / avg_dl))))
+
+    return _apply_doc_boosts(score, query_tokens, query_raw, doc, doc_text)
+
 
 def extract_ngrams(words, n=2):
     return [" ".join(words[i:i+n]) for i in range(len(words)-n+1)]

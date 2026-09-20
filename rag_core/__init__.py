@@ -18,13 +18,16 @@ from . import config, lexical
 from .config import AVG_DL, FAMILY_BOOST
 from .lexical import (
     FAMILY_LEXICON,
+    HWA_JARGON,
     SYNONYMS,
     TERM_EXPAND,
     _expand_tokens,
     compute_bm25,
+    compute_bm25_real,
     detect_families,
     expand_query,
     extract_ngrams,
+    prepare_corpus,
     tokenize,
 )
 
@@ -34,12 +37,15 @@ __all__ = [
     "AVG_DL",
     "FAMILY_BOOST",
     "FAMILY_LEXICON",
+    "HWA_JARGON",
     "SYNONYMS",
     "TERM_EXPAND",
     "tokenize",
     "_expand_tokens",
     "expand_query",
     "compute_bm25",
+    "compute_bm25_real",
+    "prepare_corpus",
     "extract_ngrams",
     "detect_families",
 ]
