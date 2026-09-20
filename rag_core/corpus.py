@@ -100,6 +100,17 @@ def load_documents():
                 docs.append({"id": cid, "type": "optman_option", "text": text, "tokens": tokenize(text)})
 
     # 4. Lab validation claims
+    # SWITCH DE MEDICAO (opt-in, DEFAULT OFF = comportamento inalterado):
+    # `RAG_LAB_RICHER=1` recupera dois descartes MEDIDOS por scripts/audit_corpus_losses.py:
+    #   (a) 54 records sem campo `claim` (registros de EXECUCAO) eram jogados fora com
+    #       `pass`, levando junto 42,5 KB de `command`/`observations`/`sanitized_output`
+    #       reais. Aqui eles entram pelo mesmo claim_id (o merge de ids e' ADITIVO, entao
+    #       eles se fundem ao doc existente em vez de competir com ele).
+    #   (b) `performed_at` estava preenchido em 153 records e NAO era indexado. A fatia
+    #       D_holdout_temporal (15 perguntas, hoje 0/15) referencia 16 claim_ids que TODOS
+    #       tem `performed_at` upstream. Indexar a proveniencia temporal e' o teste direto
+    #       da hipotese "as perguntas temporais falham porque a data nao esta' no indice".
+    _lab_richer = os.environ.get("RAG_LAB_RICHER") == "1"
     for lf in LAB_FILES:
         for line in open(lf):
             if line.strip():
@@ -111,7 +122,16 @@ def load_documents():
                     # (' PASS ') e ainda colidem com ids de canonical_claim.
                     if cid and (c.get("claim") or "").strip():
                         text = f"{c.get('claim', '')} {c.get('result', '')} {c.get('observations', '')} {c.get('sanitized_output', '')}"
+                        if _lab_richer:
+                            text += f" {c.get('performed_at', '')} {c.get('performed_by', '')} {c.get('platform', '')}"
                         docs.append({"id": cid, "type": "lab_evidence", "text": text, "tokens": tokenize(text)})
+                    elif _lab_richer and cid:
+                        text = " ".join(str(c.get(k) or "") for k in
+                                        ("command", "result", "observations",
+                                         "sanitized_output", "performed_at"))
+                        if text.strip():
+                            docs.append({"id": cid, "type": "lab_execution",
+                                         "text": text, "tokens": tokenize(text)})
                 except Exception:
                     pass
 
