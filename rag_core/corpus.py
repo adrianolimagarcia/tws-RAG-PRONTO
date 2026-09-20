@@ -65,12 +65,30 @@ def load_documents():
 
     # 2. Dicionario de Mensagens AWS*
     if os.path.exists(AWS_MSGS_FILE):
+        # SWITCH DE MEDICAO (opt-in, DEFAULT OFF = comportamento inalterado):
+        # `RAG_AWS_SPLIT=1` conserta dois defeitos medidos na construcao deste documento:
+        #   (a) o campo `message` concatena com NUL as mensagens vizinhas do mesmo prefixo
+        #       (78,5% dos docs tem 2+ mensagens; 973 IDs de mensagem espremidos em 335 docs);
+        #   (b) o campo `claim` e' um wrapper que REPETE o `message` (100% dos docs), e
+        #       `text` concatena os dois -> o payload aparece 2x e dilui o sinal.
+        # Emitir uma mensagem por documento devolve ao indice conteudo que o template
+        # empurrava para fora do orcamento de tokens.
+        _aws_split = os.environ.get("RAG_AWS_SPLIT") == "1"
         for line in open(AWS_MSGS_FILE):
             if line.strip():
                 c = json.loads(line)
                 cid = c.get("claim_id", "")
-                text = f"{c.get('code', '')} {c.get('component', '')} {c.get('message', '')} {c.get('claim', '')}"
-                docs.append({"id": cid, "type": "aws_message", "code": c.get("code"), "text": text, "tokens": tokenize(text)})
+                if _aws_split:
+                    partes = str(c.get("message") or "").split("\x00")
+                    for i, parte in enumerate(p.strip() for p in partes):
+                        if not parte:
+                            continue
+                        text = f"{c.get('code', '')} {c.get('component', '')} {parte}"
+                        docs.append({"id": f"{cid}-p{i}", "type": "aws_message",
+                                     "code": c.get("code"), "text": text, "tokens": tokenize(text)})
+                else:
+                    text = f"{c.get('code', '')} {c.get('component', '')} {c.get('message', '')} {c.get('claim', '')}"
+                    docs.append({"id": cid, "type": "aws_message", "code": c.get("code"), "text": text, "tokens": tokenize(text)})
 
     # 3. Catalogo Optman
     if os.path.exists(OPTMAN_FILE):
