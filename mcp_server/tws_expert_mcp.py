@@ -123,6 +123,14 @@ FAIXA_MEDIA = 0.05
 # Marcadores de versao != 10.2.8 (o corpus mistura 9.x e 10.2.0-10.2.7).
 RE_VERSAO_DIFERENTE = re.compile(r"\b9\.\d|\b10\.2\.[0-7]\b")
 
+# Ponte EN->PT da consulta. Import tolerante: se o modulo faltar, a busca segue sem a
+# ponte (o servidor nao pode deixar de subir por causa de um acrescimo opcional).
+try:
+    from tws_traduz import traduz_para_pt as _traduz
+except Exception:  # pragma: no cover - caminho de degradacao
+    def _traduz(_consulta):
+        return None
+
 
 def _params_confianca():
     p = {"faixa_alta": FAIXA_ALTA, "faixa_media": FAIXA_MEDIA}
@@ -158,6 +166,25 @@ def handle_tool_call(name, args):
         top_k = int(args.get("top_k", 5))
         tokens = re.findall(r"\w+", q.lower())
         results = search_bm25(tokens, category=cat, top_k=top_k)
+
+        # PONTE EN->PT. Motivo medido: a consulta inglesa e' a lacuna real deste sistema.
+        # No proprio buscador abaixo, as 24 perguntas virgens em ingles dao @1 25,0% e
+        # @5 50,0%, contra 54,2% e 70,8% quando traduzidas - o corpus e' portugues e a
+        # ponte lexical nao existia. A traducao automatica empata com a manual.
+        # Desenho: se a consulta NAO e' portuguesa, e' ELA que vai a busca (traduzida),
+        # porque toda a evidencia de acerto esta' do lado portugues. Consulta em portugues
+        # nao passa pelo tradutor (custo zero) e, sem o modelo instalado, isto vira no-op.
+        #
+        # NAO usar "melhor dos dois" por score: o score BM25 de duas consultas diferentes
+        # nao e' comparavel (depende da IDF dos termos que cada uma contem). Medido: essa
+        # comparacao perdia 2 acertos (11 contra 13) porque o score alto da consulta
+        # original ganhava com a resposta errada no topo.
+        traducao = _traduz(q)
+        if traducao:
+            results_t = search_bm25(re.findall(r"\w+", traducao.lower()),
+                                    category=cat, top_k=top_k)
+            if results_t:
+                results = results_t
 
         # Modo antigo (portao duro). OPT-IN e DESLIGADO por padrao: descartar resposta
         # que existia e' regressao (66 acertos perdidos no limiar 0,177). Mantido apenas
