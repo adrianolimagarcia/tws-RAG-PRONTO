@@ -272,3 +272,77 @@ fatia EN, que este pool não tem.
 - **Se o lab ainda bate a produção corrigida**: o pareado lab × produção +REST deu 44/64
   (p=0,0670), contra 38/67 (p=0,0060) antes — deixou de ser significativo, mas ninguém mediu
   lab × produção **final** (7381) ainda.
+
+---
+
+# Adendo (commit e93e2cd): o denso foi implementado na produção — e a fusão foi FALSIFICADA
+
+O ramo denso não existia em `mcp_server/tws_expert_mcp.py`. Ele agora existe, **opt-in**
+(`RAG_DENSE_MODE=fuse`), com `mcp_server/tws_dense.py`, `scripts/build_dense_index_mcp.py` e o
+índice `data/indexes/mcp_bge_m3.pt` (7381 × 1024, derivado e no `.gitignore`).
+
+## O que a medição mostrou (duas medições, mesmo caminho real `handle_tool_call`)
+
+**Medição 1 — pool 423.** A fusão *parece* ganhar, e de forma robusta:
+
+| modo | @1 | @5 | @10 | MRR |
+|---|---|---|---|---|
+| off (BM25 + ponte) | 215 | 271 | 299 | 0,5738 |
+| fuse (RRF + denso) | **225** | **308** | **349** | **0,6243** |
+
+@1 ganha 37 / perde 27, p=0,26; **@3 283 vs 257, @5 308 vs 271, @10 349 vs 299 (todos
+p<0,0001)**. E sobrevive à descontaminação: no subconjunto sem vazamento (n-grama pergunta↔alvo
+≤ 4, n=328) o MRR ganha **+0,0605**. A fatia `ops` sai de 1/40 para 10/40 @5; `rest` de 8 para 21.
+
+**Medição 2 — os 10 conjuntos independentes do repo (n=450).** A fusão **REGRIDE**:
+
+| conjunto | off @1 | fuse @1 | delta |
+|---|---|---|---|
+| mensagens | 50 | 31 | **−19** |
+| holdout_100 | 79 | 69 | **−10** |
+| holdout_qa_30 | 8 | 6 | −2 |
+| holdout_40 / realistico / pure_virgin | 22/22/26 | 21/21/25 | −1 cada |
+| geral_70 | 47 | 49 | +2 |
+| virgem+mensagens | 17 | 20 | +3 |
+| virgem_INGLES | 14 | 17 | +3 |
+| virgem_expandido | 24 | 30 | +6 |
+| **AGREGADO** | **309** | **289** | **−20 (McNemar p=0,0308 contra a fusão)** |
+
+## Por que o pool 423 enganou
+
+Composição. O pool 423 é **54% `blind_v3`** (227 linhas), onde a fusão quase não move o ranking
+(158→155 @1), mais a fatia sintética `rest/ops`, onde ela ganha muito. Um pool dominado por um
+benchmark que **não se move**, somado a uma fatia onde a fusão ganha, produz um ganho agregado
+que **não existe** nos conjuntos medidos independentemente. É literalmente o *"o pior critério é
+a média"* que o gate de promoção v4 deste repo existe para barrar.
+
+O resultado de 20/09 (laboratório, corpus pré-REST, 202×181, p=0,0111) **não caducou**: a fonte
+REST não o reverteu. Meu experimento o reproduz, no corpus atual e pelo caminho real.
+
+## Decisão
+
+**Default permanece `off`** (BM25 + ponte). Verificado: reproduz 215/257/271/299, MRR 0,5738,
+ausente 22 — idêntico ao registrado. A fusão fica **opt-in**. Onde ela ganha de forma
+consistente em **duas medições independentes**: benchmark virgem de **mensagem em inglês**
+(@1 +3, @5 +4) e `virgem_expandido` (@1 +6) — o caso em que a pergunta descreve um sintoma sem
+citar código nem texto, e o lexical tem pouco o que casar.
+
+**Roteamento por fatia também foi rejeitado**: @1 214 / @5 282 (pior que a fusão global) e piora
+fatias não roteadas (`virgin` @1 14→7).
+
+## Dois defeitos de contrato corrigidos no processo
+
+1. A **confiança** estava a ser calculada sobre o score RRF. As faixas de `_params_confianca()`
+   foram calibradas no score BM25 (AUC 0,850) — rotular "alta" a partir de outra escala seria
+   afirmação não calibrada. Agora a margem vem do **ramo esparso**.
+2. O top-1 da fusão volta a trazer `margin` (1º menos 2º, em unidades RRF), como o BM25 já fazia.
+
+## Erros meus nesta sessão (registrados para não se repetirem)
+
+- Atribuí `ausente 22→35` à truncagem do ramo esparso; era **ponte OFF vs ON** comparadas sem controle.
+- Removi a truncagem em `RRF_K=30` convencido de que "fundir deve somar, nunca remover" — derrubou
+  o @5 de 306 para 274, porque o BM25 devolvia até 10.000 candidatos e a cauda longa reordenava o topo.
+- Calculei estatística com uma closure que capturava a variável errada (`+328/−0` em todos os cortes).
+- **O mais grave**: quase commitei a fusão como default reportando só o pool 423 e o subconjunto
+  limpo — os dois a favoreciam. O teste multi-conjunto só foi rodado porque o repo já tinha um
+  veredito NEGATIVO registrado que eu tive de reconciliar. **Medir onde é fácil não é medir.**
