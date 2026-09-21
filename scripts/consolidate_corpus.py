@@ -81,8 +81,14 @@ for fpath in evidence_files:
 # (rag_core/corpus.py). A fonte entrou na medicao em 2026-09-18 e NUNCA neste artefato, que
 # e' o que a PRODUCAO consome - resultado medido: os alvos de 40 perguntas `rest-*` e 40
 # `ops-*` nao existiam no indice de producao e pontuavam 0 por construcao.
-# `synthetic_questions` fica VAZIO de proposito: o MCP indexa esse campo, e as perguntas do
-# benchmark nao podem entrar no indice (isso seria vazamento de gabarito).
+# `synthetic_questions` fica vazio, mas NAO por supressao: a propria fonte REST nao traz
+# esse campo (verificado - 0 dos 300 docs). Deixar assim e' o correto; se a fonte ganhar
+# perguntas sinteticas, elas entram como expansao de vocabulario. ATENCAO: um registro de
+# 2026-09-19 mediu que SUPRIMIR esse campo custa recall real (2,67pt de @1 em dado limpo) e
+# esta' REJEITADO como correcao - o vies se corrige no BENCHMARK, nunca tirando dado do indice.
+# O risco aqui e' o oposto do que parece: uma pergunta de benchmark que coincida com uma
+# synthetic_question indexada seria gabarito no corpus, entao a varredura de vazamento e'
+# obrigatoria a cada mudanca de fonte.
 #
 # As DUAS granularidades entram (familia + operacao), com ids DISJUNTOS - verificado: 24
 # ids de familia e 276 de operacao, intersecao vazia. O laboratorio nao pode carregar as

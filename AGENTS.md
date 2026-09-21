@@ -84,11 +84,16 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
   outros caem em ranks 18, 89, 202, 900, 1237, 7065). Causa medida: os registros de operação
   são **texto de spec OpenAPI em inglês** e as perguntas são PT-BR; mediana de sobreposição de
   tokens **0,00**, com 21/40 casos zerados. Não é ajuste de peso — é falta de sinal.
-- **A produção é BM25 puro: não há ramo denso** em `mcp_server/tws_expert_mcp.py`. O repo já
-  mediu (18/09) que o denso (BGE-M3) faz **13/40 @1** nessa fatia contra **1/40** do BM25 — mas
-  o veredito de 20/09 diz que a **fusão** densa **piora** no conjunto grande (202×181 em 296,
-  p=0,0111). Denso com **roteamento por fatia** nunca foi testado nem ligado na produção: é
-  `UNKNOWN`, não um ganho disponível.
+- **A produção é BM25 puro por default, mas o ramo denso EXISTE** (`RAG_DENSE_MODE=fuse`, em
+  `mcp_server/tws_expert_mcp.py` + `mcp_server/tws_dense.py` + índice `mcp_bge_m3.pt`). Medido
+  pelo caminho real nos 10 conjuntos do repo (n=450): a fusão **regride** @1 de 309 para 289
+  (-20, McNemar p=0,0308), com `mensagens` 50→31 e `holdout_100` 79→69. NÃO ligar como default.
+  O pool 423 diz o contrário (@1 209→222, @5 265→306, p<0,0001) porque é **54% blind_v3**, que
+  a fusão quase não move: o ganho do pool é artefato de composição. Registro:
+  `data/evidence/lab-validation-2026-09-19-fusao-densa-na-producao-falsificada-por-conjunto.jsonl`.
+- **Denso com roteamento por fatia** (rest/ops): medido e **REJEITADO**. @1 214/@5 282 (pior que
+  a fusão global) e piora fatias não roteadas (`virgin` @1 14→7). Onde a fusão ganha de forma
+  consistente é em **virgem de mensagem em inglês** (@1 +3, @5 +4) e `virgem_expandido` (@1 +6).
 
 ## O que funciona
 
@@ -99,8 +104,10 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
 
 ## `UNKNOWN` (não afirmar sem medir)
 
-- **Denso com roteamento por fatia** (rest/ops) na produção, no pool 423. Maior teto conhecido,
-  nunca medido no caminho real.
+- **Denso no caminho real de produção**: medido. Fundido regride (@1 309→289 nos 10 conjuntos,
+  p=0,0308); roteado por fatia também (ver "não funciona"). O que **não** foi medido é um gate
+  por TIPO de pergunta que ligue a fusão só em pergunta de sintoma/sem termo literal — o único
+  domínio onde ela ganha de forma consistente.
 - **Lab × produção final (7381)**: o pareado contra o corpus +REST deu 44/64 (p=0,0670), contra
   38/67 (p=0,0060) antes — mas ninguém mediu lab × produção **final**.
 - **Taxa de disparo da ponte** e o efeito numa fatia EN (este pool é majoritariamente PT-BR).

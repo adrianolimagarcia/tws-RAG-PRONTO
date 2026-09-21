@@ -12,6 +12,41 @@ import math
 import os
 from collections import defaultdict
 
+# Ramo denso (BGE-M3). Import TOLERANTE: o MCP nao pode deixar de subir porque o denso
+# faltou. Ver o cabecalho de mcp_server/tws_dense.py para a medicao que motivou isto.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    import tws_dense
+except Exception:
+    tws_dense = None
+
+# MODO DENSO. OPT-IN, DEFAULT OFF - sem RAG_DENSE_MODE=fuse, nada muda.
+#
+# ATENCAO: `fuse` parece ganhar no pool de 423 e NAO GANHA no sistema real. Medido:
+#   pool 423: off @1 209 @5 265 MRR 0,5588 -> fuse @1 222 @5 306 MRR 0,6182 (@5 p<0,0001)
+#   mas nos 10 conjuntos independentes do repo (n=450): @1 309 -> 289, -20,
+#   McNemar p=0,0308 CONTRA a fusao; mensagens 50->31 @1 e holdout_100 79->69 @1.
+# O pool engana por COMPOSICAO: e' 54% blind_v3 (onde a fusao nao muda nada) mais uma
+# fatia sintetica rest/ops onde ela ganha. E' exatamente o "pior criterio e' a media" que
+# o gate de promocao v4 do repo existe para barrar. Ver o registro de evidencia
+# data/evidence/lab-validation-2026-09-19-fusao-densa-na-producao-falsificada-por-conjunto.jsonl
+# e o veredito anterior de 2026-09-20 (dense-fusion-pooled-verdict).
+#
+# ONDE a fusao ajuda de forma consistente (2 medicoes independentes): benchmark virgem de
+# MENSAGEM EM INGLES (@1 +3, @5 +4) e virgem_expandido (@1 +6). E' o caso em que a pergunta
+# descreve um sintoma sem citar codigo nem texto - o lexical tem pouco a casar.
+# Custo em CPU: ~215ms a mais por consulta. Sem o indice denso instalado, cai em off sozinho.
+DENSE_MODE = (os.environ.get("RAG_DENSE_MODE") or "off").strip().lower()
+if DENSE_MODE not in ("off", "fuse"):
+    raise SystemExit("RAG_DENSE_MODE=%r nao reconhecido. Use 'off' ou 'fuse'." % DENSE_MODE)
+# Profundidade de candidatos de cada ramo na fusao. 30 e' o valor do laboratorio
+# (data/eval/evaluate_rag_benchmark.py: k_dense=30, k_sparse=30) - replicar aqui e' o que
+# torna a medicao da producao comparavel com a que ja' existe.
+RRF_K = int(os.environ.get("RAG_DENSE_RRF_K", "30"))
+RAG_RRF_W = float(os.environ.get("RAG_RRF_W", "0.5"))
+if not (0.0 <= RAG_RRF_W <= 1.0):
+    raise SystemExit("RAG_RRF_W=%s fora de [0,1]." % RAG_RRF_W)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # CORPUS_FILE aceita override por ambiente SO' para MEDICAO (comparar variantes de corpus
 # no caminho real de producao). Default inalterado: sem a variavel, o arquivo de sempre.
@@ -165,6 +200,49 @@ MSG_CONFIANCA = {
 }
 
 
+def _funde_rrf(q_texto, esparsos, top_k):
+    """RRF k=60 denso+esparso com o MESMO peso do laboratorio (w=2*RAG_RRF_W no denso,
+    2-w no esparso). Reproduzir a escala importa: o segundo estagio soma bonus FIXOS ao
+    score recebido, entao mudar a escala muda o balanco mesmo com a mesma ordem."""
+    if tws_dense is None or not tws_dense.disponivel():
+        return esparsos
+    densos = [c for c, _ in tws_dense.busca(q_texto, top_k=RRF_K)]
+    # Os DOIS ramos entram com a MESMA profundidade RRF_K (30), como no laboratorio. Isto
+    # NAO e' um detalhe de desempenho: medido no pool 423, com o ramo esparso indo ate' o
+    # fim (10.000 candidatos) o @5 CAI de 306 para 274, porque a cauda longa do BM25 soma
+    # valores pequenos a milhares de docs e reordena o topo - o ganho dos dois ramos de
+    # profundidade igual se perde. A contrapartida e' mais alvo "ausente" (a faixa 31+ sai
+    # do conjunto fundido), e isso e' aceito: o que se mostra ao usuario e' o topo.
+    esparsos_ids = [r["claim_id"] for r in esparsos[:RRF_K]]
+    w = 2.0 * RAG_RRF_W
+    rrf = {}
+    for r, cid in enumerate(densos, 1):
+        rrf[cid] = rrf.get(cid, 0.0) + w / (60.0 + r)
+    for r, cid in enumerate(esparsos_ids, 1):
+        rrf[cid] = rrf.get(cid, 0.0) + (2.0 - w) / (60.0 + r)
+    por_id = {d["claim_id"]: d for d in docs}
+    ordenados = sorted(rrf, key=lambda x: (-rrf[x], str(x)))[:top_k]
+    # `margin` = 1o menos 2o, mesma definicao do BM25, mas em unidades RRF. NAO comparar
+    # com as faixas de `_params_confianca()` (calibradas em score BM25): a confianca do
+    # topo do sistema e' calculada sobre o ramo esparso, nao sobre este numero.
+    margem_rrf = rrf[ordenados[0]] - rrf[ordenados[1]] if len(ordenados) > 1 else 0.0
+    saida = []
+    for pos, cid in enumerate(ordenados):
+        d = por_id.get(cid)
+        if not d:
+            continue
+        saida.append({
+            "claim_id": d["claim_id"],
+            "score": round(rrf[cid], 6),
+            "margin": round(margem_rrf, 6) if pos == 0 else None,
+            "category": d.get("category"),
+            "claim": d["claim"],
+            "context_prefix": d.get("context_prefix"),
+            "platform": d.get("platform"),
+        })
+    return saida
+
+
 def handle_tool_call(name, args):
     if name == "tws_expert_search":
         q = args.get("query", "")
@@ -172,6 +250,7 @@ def handle_tool_call(name, args):
         top_k = int(args.get("top_k", 5))
         tokens = re.findall(r"\w+", q.lower())
         results = search_bm25(tokens, category=cat, top_k=top_k)
+        base_conf = results
 
         # PONTE EN->PT. Motivo medido: a consulta inglesa e' a lacuna real deste sistema.
         # No proprio buscador abaixo, as 24 perguntas virgens em ingles dao @1 25,0% e
@@ -186,24 +265,46 @@ def handle_tool_call(name, args):
         # comparacao perdia 2 acertos (11 contra 13) porque o score alto da consulta
         # original ganhava com a resposta errada no topo.
         traducao = _traduz(q)
+        tokens_finais = tokens
         if traducao:
-            results_t = search_bm25(re.findall(r"\w+", traducao.lower()),
-                                    category=cat, top_k=top_k)
+            tokens_t = re.findall(r"\w+", traducao.lower())
+            results_t = search_bm25(tokens_t, category=cat, top_k=top_k)
             if results_t:
                 results = results_t
+                tokens_finais = tokens_t
+
+        # FUSAO DENSA. Ver RAG_DENSE_MODE no topo do arquivo. Aplicada DEPOIS da ponte,
+        # sobre a consulta ORIGINAL: denso multilingue nao precisa da traducao, e usar a
+        # traduzida mediria a ponte duas vezes. Sem indice/deps instalados, `_funde_rrf`
+        # devolve o resultado esparso intacto - a producao nao quebra, so' nao ganha.
+        # O ramo esparso e' relido com PELO MENOS RRF_K candidatos: a fusao do laboratorio
+        # (a que tem evidencia medida) usa esparso top-30 + denso top-30, e fundir com so'
+        # `top_k` candidatos mede OUTRA coisa - foi assim que uma versao intermediaria
+        # escondeu alvos (ausentes 22 -> 35) e outra os reposicionou (ausentes 7, @5 pior).
+        # A CONFIANCA fica ancorada no ramo ESPARSO, nao no score fundido. Motivo medido: as
+        # faixas de `_params_confianca()` foram calibradas sobre o score BM25 (AUC 0,850 no
+        # `margin`), e o score RRF vive em outra escala (~0,03 contra ~5 do BM25). Rotular
+        # "alta" a partir de um numero de outra escala seria uma afirmacao nao calibrada -
+        # exatamente o que este sistema nao pode fazer. O RRF muda a ORDEM; a confianca
+        # continua vindo do sinal que foi calibrado.
+        base_conf = results
+        if DENSE_MODE == "fuse":
+            esparsos = search_bm25(tokens_finais, category=cat, top_k=max(top_k, RRF_K))
+            base_conf = esparsos[:top_k]
+            results = _funde_rrf(q, esparsos, top_k)
 
         # Modo antigo (portao duro). OPT-IN e DESLIGADO por padrao: descartar resposta
         # que existia e' regressao (66 acertos perdidos no limiar 0,177). Mantido apenas
         # para quem quiser medir aquele desenho.
         limiar_duro = os.environ.get("RAG_ABSTAIN_MARGIN")
-        if limiar_duro is not None and results:
+        if limiar_duro is not None and results and base_conf:
             try:
                 lim = float(limiar_duro)
             except ValueError:
                 lim = 0.0
             if lim > 0:
-                s1 = results[0]["score"]
-                s2 = results[1]["score"] if len(results) > 1 else 0.0
+                s1 = base_conf[0]["score"]
+                s2 = base_conf[1]["score"] if len(base_conf) > 1 else 0.0
                 mn = (s1 - s2) / s1 if s1 > 0 else 0.0
                 if mn < lim:
                     return {"results": [], "count": 0, "abstained": True, "margin": round(mn, 4),
@@ -213,8 +314,9 @@ def handle_tool_call(name, args):
         out = {"results": results, "count": len(results)}
 
         if results:
-            s1 = results[0]["score"]
-            s2 = results[1]["score"] if len(results) > 1 else 0.0
+            # Margem do ramo esparso (escala calibrada), nao do score fundido.
+            s1 = base_conf[0]["score"] if base_conf else 0.0
+            s2 = base_conf[1]["score"] if base_conf and len(base_conf) > 1 else 0.0
             margem_norm = (s1 - s2) / s1 if s1 > 0 else 0.0
             p = _params_confianca()
             if margem_norm >= p["faixa_alta"]:
