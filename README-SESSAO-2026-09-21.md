@@ -116,6 +116,11 @@ o BM25 real ligado no harness, nas **mesmas 24 perguntas EN**:
 | harness com `RAG_BM25_REAL=1` | 4/24 (16,7%) | 9/24 (37,5%) |
 | **MCP de produção** (BM25 real) | **6/24 (25,0%)** | **12/24 (50,0%)** |
 
+ATENÇÃO ao ler: **os `6/24 @1` e `12/24 @5` são a MESMA corrida** (a do MCP, com a ponte
+DESLIGADA). Não são "@1 sem ponte, @5 com ponte" nem dois experimentos. E este `6/24` é
+justamente o ponto de partida da ponte: com a ponte ligada o MCP vai a **13/24 @1 e
+17/24 @5** (medido e registrado na sessão 2026-09-20).
+
 prova que os três indexam o mesmo gabarito: 24/24 ids-alvo presentes nos dois índices.
 
 ### Ligar o BM25 real no harness: o único ganho que transfere
@@ -165,16 +170,61 @@ Instrumentos persistidos no repo (antes viviam só em `/tmp`):
 
 ---
 
+## 5b. A PRODUÇÃO foi medida no pool de 423 (a lacuna mais importante fechou)
+
+Não existia instrumento que dirigisse o buscador real (`mcp_server.search_bm25`). Criei
+`data/eval/measure_producao_pool423.py`. **Validação**: nas 24 perguntas EN ele reproduz
+exatamente o registrado (6/24 @1, 12/24 @5) — então o instrumento está certo.
+
+| sistema | @1 | @5 | @10 | MRR | alvo ausente |
+|---|---|---|---|---|---|
+| lab (controle) | 230 (54,4%) | 287 (67,8%) | 301 | 0,6016 | 47 (11,1%) |
+| **produção** (corpus atual) | **202 (47,8%)** | **256 (60,5%)** | 281 | 0,5381 | **82 (19,4%)** |
+| produção + fonte REST | 211 (49,9%) | 270 (63,8%) | 295 | 0,5665 | 22 (5,2%) |
+
+Pareado: **lab bate a produção por 38 a 67 (p=0,0060)**. Ou seja, a produção é pior que o
+laboratório — **não** melhor, ao contrário do que as 24 perguntas EN sugeriam. Minha
+inferência anterior (n=24) está aqui **corrigida**: n=24 não generalizou para n=423.
+
+## 5c. A maior alavanca não é ranking — é COBERTURA
+
+**O corpus que a produção consome não tem a fonte REST API.** Causa, por medida:
+
+- os alvos das 40 perguntas `rest-*` e das 40 `ops-*` existem em
+  `data/knowledge/rest-api-derived(+-ops).jsonl` e **não** existem no corpus de produção;
+- o corpus foi commitado em **14/09 18:16**; a fonte REST entrou em **18/09 11:59**
+  (`1de2308`) — **4 dias depois**. O switch `RAG_INGEST_REST_API` só existe em
+  `rag_core/corpus.py`, o carregador do **laboratório**;
+- então a fonte entrou na medição e **nunca** no artefato que a produção usa.
+
+Consequência: **80 das 423 perguntas (18,9%) pontuavam 0 por construção** — o alvo não
+estava no índice. Não era falha de recuperação.
+
+`data/eval/augmenta_corpus_rest.py` monta a variante aumentada (só acrescenta, de fontes
+**já versionadas** — nenhuma man page). Resultado medido (`TWS_CORPUS_FILE`, opt-in):
+
+- +24 docs (família): ausente 82 → **43**; @1 202 → **211**; @5 256 → **268**; MRR 0,5381 → 0,5655
+- +300 docs (família ∪ operações, ids disjuntos): ausente → **22 (5,2%)**; @5 → 270; MRR 0,5665
+- **Pareto: ganha 9 / perde 0, p=0,0039** — e **nenhuma** pergunta piorou
+- Pareado contra o lab: lab bate produção por 44/64 (p=0,0670) — o conserto **remove** uma
+  diferença que era significativa
+
+**Caveat de atribuição que eu não quero esconder:** os +9 são perguntas cujo alvo *não
+estava no índice*. Parte é recuperação real, mas perguntas `rest-*` com vários itens
+apontando para o mesmo id de família **inflam** a contagem. O número defensável é:
+**alvo ausente 82 → 22**, e a vantagem do lab deixa de ser significativa.
+
+Com a fonte REST o lab vai a @1 232 (54,8%) / @5 287 / **MRR 0,6098** — mesmo patamar de
+antes. Ou seja: **o lab tira nota alta porque sempre teve o corpus certo; a produção estava
+avaliada (pela primeira vez) contra um corpus incompleto.**
+
 ## 6. UNKNOWN (não medido — não inventar)
 
-- **Qual o desempenho da produção no pool de 423.** Não existe harness que dirija
-  `mcp_server/tws_expert_mcp.search_bm25`; os 6/24 acima são só as 24 perguntas EN. O
-  baseline de produção no conjunto principal é `UNKNOWN`. Essa é a lacuna mais importante
-  que sobra.
-- **Se o `RAG_BM25_REAL` melhora a produção.** A produção já é BM25 real; o ganho medido é
-  sobre o scorer do lab. O efeito marginal em produção é `UNKNOWN`.
-- **As 47 perguntas sem resposta no índice** (11,1% do pool). Não sei se é lacuna de corpus
-  ou falha de recuperação. Não investigado nesta sessão.
+- **Se a ponte EN→PT ajuda a produção no pool de 423.** Medi só com a ponte OFF; ela ficou
+  desligada de propósito, para o número não misturar duas mudanças. Com n=24 o efeito tem
+  que ser medido antes de qualquer conclusão.
+- **O efeito real de ranking do conserto de corpus**, separado de cobertura (ver caveat 5c).
+- **As 20 perguntas que nem o lab nem a produção acham** (o lab tem o doc para 2 delas).
 - **Se a ponte ajuda em algum domínio real.** O único sinal com alguma força é
   instalação/upgrade (+7, p=0,119). Precisa de amostra real de consultas EN do usuário.
 

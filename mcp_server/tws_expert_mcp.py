@@ -13,7 +13,13 @@ import os
 from collections import defaultdict
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CORPUS_FILE = os.path.join(BASE_DIR, "data", "export", "tws_corpus_master_consolidated.jsonl")
+# CORPUS_FILE aceita override por ambiente SO' para MEDICAO (comparar variantes de corpus
+# no caminho real de producao). Default inalterado: sem a variavel, o arquivo de sempre.
+# Existe porque, ate' agora, nao havia COMO medir a producao contra um corpus candidato -
+# e foi assim que a fonte REST ficou de fora sem ninguem perceber (ver
+# data/eval/augmenta_corpus_rest.py).
+CORPUS_FILE = (os.environ.get("TWS_CORPUS_FILE")
+               or os.path.join(BASE_DIR, "data", "export", "tws_corpus_master_consolidated.jsonl"))
 
 # Index state
 docs = []

@@ -29,6 +29,27 @@ python3 data/eval/evaluate_rag_benchmark.py
   **diferentes** — o harness subestima a produção (mesmas 24 perguntas EN: 2/24 vs 6/24 @1).
   Não comparar número de lab com número de produção sem dizer isso.
 - Corpus do lab (`load_documents()`) tem **6913** docs; o do MCP, **7019**. Não são o mesmo índice.
+- **O corpus da produção está DESATUALIZADO em relação às fontes de conhecimento.** Ele é
+  gerado por `scripts/consolidate_corpus.py`, que **não inclui a fonte REST API** — então os
+  alvos de 80 das 423 perguntas (`rest-*`, `ops-*`) não existem no índice de produção e
+  pontuam 0 por construção. `RAG_INGEST_REST_API` só afeta `rag_core/corpus.py` (lab).
+  Regenerar/promover o corpus é decisão explícita, não um efeito colateral de switch.
+- `TWS_CORPUS_FILE` troca o corpus da produção **só para medição** (default inalterado).
+  `data/eval/augmenta_corpus_rest.py` monta a variante aumentada; o lab continua com
+  `RAG_BM25_REAL=1` como melhor config.
+
+## Medir a produção (antes de concluir qualquer coisa sobre o sistema)
+
+```bash
+python3 data/eval/measure_producao_pool423.py
+TWS_CORPUS_FILE=$PWD/data/export/tws_corpus_master_with_rest_both.jsonl \
+  python3 data/eval/measure_producao_pool423.py
+```
+
+Medido em 2026-09-21 (ponte OFF, pool 423): produção **202 @1 / 256 @5 / MRR 0,5381**, alvo
+ausente 82 (19,4%). Com a união REST: **211 @1 / 270 @5 / MRR 0,5665**, ausente 22 (5,2%),
+ganha 9 / perde 0. O lab bate a produção (p=0,0060; deixa de ser significativo com o corpus
+consertado). **Não** inferir a produção a partir das 24 perguntas EN — isso já deu errado.
 - `compute_bm25` e o laço de float do legado são caminho congelado: fatorar a expressão muda
   o resultado no último bit e quebra o controle. Não "otimizar" sem controle bit-idêntico.
 - Switch com valor inválido deve **falhar alto** (`SystemExit`), nunca silenciar — foi assim
@@ -47,6 +68,8 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
 - `RAG_TYPE_PRIOR=flat` (iguala os multiplicadores de tipo): −5/−3/−2. O prior de tipo
   correlaciona com o erro (o alvo que perde é `message_catalog`/`rest_api_surface`), mas
   removê-lo piora.
+- Escalas de `RAG_REST_GRANULARITY` inválidas (`0`, `1`) **abortam a corrida inteira** — se
+  um loop de configurações não imprime nada, é provavelmente isso, não "0/40 de verdade".
 
 ## O que funciona
 
@@ -57,7 +80,7 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
 
 ## `UNKNOWN` (não afirmar sem medir)
 
-- Desempenho da **produção** no pool de 423 (não existe harness que dirija o `search_bm25`
-  do MCP; só as 24 perguntas EN foram medidas na produção).
-- Efeito marginal do `RAG_BM25_REAL` **na produção** (lá já se usa BM25 real).
-- As **47 perguntas** (11,1% do pool) sem resposta no índice: lacuna de corpus ou de recuperação.
+- Efeito da **ponte EN→PT** na produção no pool de 423 (medido só com a ponte OFF).
+- Efeito de **ranking** do conserto de corpus separado de cobertura (os +9 vêm de perguntas
+  cujo alvo não estava no índice; itens `rest-*` que apontam para o mesmo id de família inflam).
+- As **20 perguntas** que nem lab nem produção acham (o lab tem o doc para 2 delas).
