@@ -39,7 +39,11 @@ def main():
     itens = [json.loads(l) for l in open(POOL, encoding="utf-8") if l.strip()]
     ranks, t0 = [], time.time()
 
-    for o in itens:
+    # ATENCAO: `ranks` e' indexado pela POSICAO da linha, nunca pelo `id`. Medido: o pool tem
+    # 423 linhas mas apenas 413 ids unicos - 10 rotulos `blind-XXXX` sao reusados por perguntas
+    # DISTINTAS (6 delas com alvos diferentes). Um dicionario por id colapsa essas 10 linhas e
+    # a contagem por subconjunto fica 413 em vez de 423.
+    for pos_linha, o in enumerate(itens):
         esperados = set(o.get("relevant_claim_ids") or [])
         if not esperados:
             continue
@@ -47,15 +51,16 @@ def main():
                                    {"query": o["question"], "top_k": TOP_K})
         achados = [x["claim_id"] for x in res.get("results", [])]
         pos = next((i + 1 for i, c in enumerate(achados) if c in esperados), None)
-        ranks.append((o["id"], pos))
+        ranks.append((pos_linha, o["id"], pos))
 
     n = len(ranks)
     dur = time.time() - t0
 
     def hit(k):
-        return sum(1 for _i, p in ranks if p is not None and p <= k)
+        return sum(1 for _i, _d, p in ranks if p is not None and p <= k)
 
-    mrr = sum(1.0 / p for _i, p in ranks if p is not None) / n
+    mrr = sum(1.0 / p for _i, _d, p in ranks if p is not None) / n
+    n_ids = len({d for _i, d, _p in ranks})
 
     ponte = "OFF" if os.environ.get("RAG_TRADUZ_EN") == "0" else "ON"
     print("=" * 76)
@@ -66,13 +71,16 @@ def main():
     for k in (1, 3, 5, 10):
         print("  Hit@%-3d %4d/%d (%5.1f%%)" % (k, hit(k), n, 100 * hit(k) / n))
     print("  MRR    %.4f" % mrr)
+    if n_ids != n:
+        print("  NOTA: %d linhas mas %d ids unicos (o pool reusa rotulos) - nao indexar por id"
+              % (n, n_ids))
 
     print("\n  distribuicao de rank do alvo (1..10 e ausente):")
     for k in range(1, 11):
-        q = sum(1 for _i, p in ranks if p == k)
+        q = sum(1 for _i, _d, p in ranks if p == k)
         if q:
             print("     rank %2d: %3d" % (k, q))
-    aus = sum(1 for _i, p in ranks if p is None)
+    aus = sum(1 for _i, _d, p in ranks if p is None)
     print("     ausente: %3d (%.1f%%)" % (aus, 100 * aus / n))
 
     # comparacao com o harness, no MESMO conjunto
@@ -94,8 +102,8 @@ def main():
         "ms_por_pergunta": round(1000 * dur / n, 2),
         "hit@1": hit(1), "hit@3": hit(3), "hit@5": hit(5), "hit@10": hit(10),
         "mrr": round(mrr, 4),
-        "ausente": sum(1 for _i, p in ranks if p is None),
-        "ranks": {str(i): p for i, p in ranks},
+        "ausente": sum(1 for _i, _d, p in ranks if p is None),
+        "ranks": [{"linha": i, "id": d, "rank": p} for i, d, p in ranks],
     }
     destino = os.environ.get("RAG_OUT", "/tmp/ragexp/producao_pool423.json")
     os.makedirs(os.path.dirname(destino), exist_ok=True)

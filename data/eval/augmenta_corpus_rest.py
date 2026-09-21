@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""Gera data/export/tws_corpus_master_with_rest.jsonl = corpus de producao + fonte REST API.
+"""SUPERSEDED em 2026-09-21 por scripts/consolidate_corpus.py (mantido como registro).
+
+Este script provou que a fonte REST faltava e mediu o conserto de forma ADITIVA. O conserto de
+verdade passou a viver no corretor de corpus (scripts/consolidate_corpus.py), que agora ingere
+as DUAS granularidades (familia + operacao, 300 docs) e regenera o artefato de producao
+versionado. Nao rodar este script para promover nada: `claim` aqui carrega so' a frase-resumo
+(223 chars), enquanto o corretor poe a spec inteira (780 chars) no campo que o MCP indexa - os
+dois nao sao comparaveis, e o corretor e' o que a producao usa.
+
+Gera data/export/tws_corpus_master_with_rest.jsonl = corpus de producao + fonte REST API.
 
 POR QUE: o corpus que a PRODUCAO consome (`tws_corpus_master_consolidated.jsonl`, gerado
 em 2026-09-14) e' ANTERIOR a' fonte REST API (commit de 2026-09-18, `1de2308`). O switch

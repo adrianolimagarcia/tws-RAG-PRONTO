@@ -174,120 +174,101 @@ Instrumentos persistidos no repo (antes viviam só em `/tmp`):
 
 Não existia instrumento que dirigisse o buscador real (`mcp_server.search_bm25`). Criei
 `data/eval/measure_producao_pool423.py`. **Validação**: nas 24 perguntas EN ele reproduz
-exatamente o registrado (6/24 @1, 12/24 @5) — então o instrumento está certo.
+exatamente o registrado (6/24 @1, 12/24 @5).
 
-| sistema | @1 | @5 | @10 | MRR | alvo ausente |
-|---|---|---|---|---|---|
-| lab (controle) | 230 (54,4%) | 287 (67,8%) | 301 | 0,6016 | 47 (11,1%) |
-| **produção** (corpus atual) | **202 (47,8%)** | **256 (60,5%)** | 281 | 0,5381 | **82 (19,4%)** |
-| produção + fonte REST | 211 (49,9%) | 270 (63,8%) | 295 | 0,5665 | 22 (5,2%) |
+| sistema | @1 | @3 | @5 | @10 | MRR | alvo ausente |
+|---|---|---|---|---|---|---|
+| lab (controle, corpus do lab) | 230 (54,4%) | — | 287 (67,8%) | 301 | 0,6016 | 47 (11,1%) |
+| **produção** (corpus de 14/09, 7019 docs) | **202 (47,8%)** | 240 | **256 (60,5%)** | 281 | 0,5381 | **82 (19,4%)** |
+| **produção final** (corpus corrigido, 7381) | **209 (49,4%)** | 250 | **265 (62,6%)** | 293 | 0,5588 | **22 (5,2%)** |
+| produção final, com a ponte EN→PT | 215 (50,8%) | 257 | 271 (64,1%) | 299 | 0,5738 | 22 (5,2%) |
 
-Pareado: **lab bate a produção por 38 a 67 (p=0,0060)**. Ou seja, a produção é pior que o
+Pareado: **lab bate a produção antiga por 38 a 67 (p=0,0060)**. A produção era pior que o
 laboratório — **não** melhor, ao contrário do que as 24 perguntas EN sugeriam. Minha
-inferência anterior (n=24) está aqui **corrigida**: n=24 não generalizou para n=423.
+inferência anterior (n=24) está **corrigida**: n=24 não generalizou para n=423.
 
-## 5c. A maior alavanca não é ranking — é COBERTURA
+## 5c. A maior alavanca era COBERTURA — e ela foi corrigida
 
-**O corpus que a produção consome não tem a fonte REST API.** Causa, por medida:
+**O corpus que a produção consome não tinha a fonte REST API.** Causa, por medida:
 
 - os alvos das 40 perguntas `rest-*` e das 40 `ops-*` existem em
-  `data/knowledge/rest-api-derived(+-ops).jsonl` e **não** existem no corpus de produção;
+  `data/knowledge/rest-api-derived(+-ops).jsonl` e **não** existiam no corpus de produção;
 - o corpus foi commitado em **14/09 18:16**; a fonte REST entrou em **18/09 11:59**
   (`1de2308`) — **4 dias depois**. O switch `RAG_INGEST_REST_API` só existe em
   `rag_core/corpus.py`, o carregador do **laboratório**;
-- então a fonte entrou na medição e **nunca** no artefato que a produção usa.
+- **80 das 423 perguntas (18,9%) pontuavam 0 por construção** — o alvo não estava no índice.
+  Não era falha de recuperação.
 
-Consequência: **80 das 423 perguntas (18,9%) pontuavam 0 por construção** — o alvo não
-estava no índice. Não era falha de recuperação.
+**Correção aplicada** em `scripts/consolidate_corpus.py` (o corretor de corpus), agora
+ingerindo as **duas** granularidades REST: 24 famílias + 276 operações, ids **disjuntos**
+(verificado), com `synthetic_questions` vazio de propósito — o MCP indexa esse campo, e
+pergunta no índice seria vazamento de gabarito. Também corrigi um `base_dir` **hardcoded**
+(o script só rodava na máquina do autor) e adicionei verificação de que a regeneração é
+**puramente aditiva**: 359 novos, **0 alterados, 0 removidos**.
 
-`data/eval/augmenta_corpus_rest.py` monta a variante aumentada (só acrescenta, de fontes
-**já versionadas** — nenhuma man page). Resultado medido (`TWS_CORPUS_FILE`, opt-in):
+**Varredura de vazamento**: **0 das 423** perguntas aparece literalmente no texto indexado, em
+todas as variantes testadas — inclusive com os 59 registros de evidência que a regeneração
+também capturou.
 
-- +24 docs (família): ausente 82 → **43**; @1 202 → **211**; @5 256 → **268**; MRR 0,5381 → 0,5655
-- +300 docs (família ∪ operações, ids disjuntos): ausente → **22 (5,2%)**; @5 → 270; MRR 0,5665
-- **Pareto: ganha 9 / perde 0, p=0,0039** — e **nenhuma** pergunta piorou
-- Pareado contra o lab: lab bate produção por 44/64 (p=0,0670) — o conserto **remove** uma
-  diferença que era significativa
+Efeito medido (pareado, por linha):
 
-**Caveat de atribuição que eu não quero esconder:** os +9 são perguntas cujo alvo *não
-estava no índice*. Parte é recuperação real, mas perguntas `rest-*` com vários itens
-apontando para o mesmo id de família **inflam** a contagem. O número defensável é:
-**alvo ausente 82 → 22**, e a vantagem do lab deixa de ser significativa.
+| passo | @1 | @5 | @10 | MRR |
+|---|---|---|---|---|
+| só famílias REST (7102) | ganha 7 / perde 1, p=0,07 | **ganha 10 / perde 1, p=0,0117** | **+14/−0, p=0,0001** | +0,0200 |
+| + operações (7381) | +1 / −0, p=1,0 | +2 / −2, p=1,0 | — | +0,0007 |
 
-Com a fonte REST o lab vai a @1 232 (54,8%) / @5 287 / **MRR 0,6098** — mesmo patamar de
-antes. Ou seja: **o lab tira nota alta porque sempre teve o corpus certo; a produção estava
-avaliada (pela primeira vez) contra um corpus incompleto.**
+Resultado final: **@1 202 → 209, @5 256 → 265, alvo ausente 82 → 22 (5,2%)**.
+
+## 5d. Mas cobertura resolvida ≠ recuperação resolvida — e o motivo é cross-lingual
+
+O passo das 276 **operações** reduz os alvos ausentes de 43 para 22 e **não move métrica**
+(@1 +1, @5 +2/−2, p=1,0). Não é inutilidade: dos **21 alvos** que a operação tornou
+*presentes*, **apenas 1 entra no top-5** — os outros caem nos ranks **18, 89, 202, 900, 1237,
+7065**. A fatia `ops-*` está em **0/40 @1 e 0/40 @5**.
+
+**Causa, medida antes no próprio repo** (`lab-validation-2026-09-18-benchmark-por-operacao…`):
+os registros de operação são **texto da spec OpenAPI em inglês** e as perguntas são PT-BR.
+Sobreposição de tokens pergunta↔alvo: **mediana 0,00**, com **21 dos 40 casos zerados**. Sem
+termo compartilhado, o BM25 não tem sinal — por construção, não por ajuste de peso.
+
+E o registro irmão (`…busca-densa-bge-m3-cross-lingual…`) já havia medido, **no mesmo corpus e
+nas mesmas 40 perguntas**: BM25 **1/40 @1**; ramo **denso puro (BGE-M3) 13/40 @1 (32,5%)**,
+29/40 @10, MRR 0,4649. O pior rank do denso é **11**; o único acerto do BM25 caiu no rank
+**1447**. Conclusão literal daquele registro: a travessia PT→EN *"o ramo denso faz, e o ramo
+denso simplesmente não estava sendo usado"*.
+
+**Verificado agora**: o MCP de produção é **BM25 puro — zero menções a embedding/BGE/denso**.
+Ou seja, o achado de 18/09 nunca chegou à produção.
+
+**Mas eu não vou vender essa alavanca como ganho, porque há uma tensão não resolvida no
+repo**: o veredito de 20/09 (`…dense-fusion-pooled-verdict`) mediu a **fusão** densa em 296
+perguntas e ela **piora de forma significativa** (lexical 202/296 contra fusão 181/296,
+p=0,0111), com direção incoerente entre conjuntos. Então: o denso resolve a fatia
+cross-lingual **e** a fusão densa global perde. O desenho que **nunca foi testado** é denso
+com **roteamento por fatia** em vez de fusão global — e o denso **nunca foi ligado na
+produção** para medir no pool de 423. Isso é `UNKNOWN`, não promessa.
+
+## 5e. A ponte EN→PT no pool inteiro: direção positiva, não significativa
+
+Medida na produção, no pool de 423, com o corpus corrigido:
+
+- ponte OFF: @1 209 (49,4%), @5 265, MRR 0,5588 — **27 ms/pergunta**
+- ponte ON: @1 215 (50,8%), @5 271, MRR 0,5738 — **156 ms/pergunta**
+
+Pareado por linha: @1 **ganha 8 / perde 2 (p=0,1094)**; @5 **ganha 7 / perde 1 (p=0,0703)**;
+MRR **+0,0151**. **Positivo em @1, @3, @5, @10 e MRR ao mesmo tempo** — mais coerente que
+qualquer alavanca já falsificada — mas **dentro do ruído** em n=423, e **6× mais lenta**.
+O pool é majoritariamente PT-BR, onde a ponte nem dispara; o efeito deveria ser maior numa
+fatia EN, que este pool não tem.
 
 ## 6. UNKNOWN (não medido — não inventar)
 
-- **Se a ponte EN→PT ajuda a produção no pool de 423.** Medi só com a ponte OFF; ela ficou
-  desligada de propósito, para o número não misturar duas mudanças. Com n=24 o efeito tem
-  que ser medido antes de qualquer conclusão.
-- **O efeito real de ranking do conserto de corpus**, separado de cobertura (ver caveat 5c).
-- **As 20 perguntas que nem o lab nem a produção acham** (o lab tem o doc para 2 delas).
-- **Se a ponte ajuda em algum domínio real.** O único sinal com alguma força é
-  instalação/upgrade (+7, p=0,119). Precisa de amostra real de consultas EN do usuário.
-
----
-
-## 7. Próximos passos
-
-**Desbloqueado** (posso fazer já):
-
-1. Escrever um harness que dirija o buscador da **produção** sobre o pool de 423. Fecha a
-   lacuna lab×produção e dá o baseline de produção que hoje é `UNKNOWN`.
-2. Investigar as 47 perguntas sem resposta no índice (limite de recall, não de ordenação).
-3. Para o BM25 real: medir a transferência também no caminho de produção, antes de qualquer
-   discussão de ligá-lo lá.
-
-**Bloqueado por entrada humana:**
-
-4. Amostra real de perguntas EN que o usuário de fato faz — para decidir se a ponte merece
-   ser mantida, e em qual domínio.
-
-**Bloqueado pelo gate:**
-
-5. Ligar `RAG_BM25_REAL` na produção — exige o item 1 e o item 3 antes.
-
----
-
-## 8. Como reproduzir
-
-Controle (tem de dar 230/423, 287/423, MRR 0,6016):
-
-```bash
-RAG_DENSE_MASK_TO_CORPUS=1 RAG_INGEST_REST_API=1 PYTHONHASHSEED=0 \
-RAG_BENCHMARK_FILE=data/eval/decontaminated/pool423_reconstruido_2026-09-21.jsonl \
-python3 data/eval/evaluate_rag_benchmark.py
-```
-
-Reconstruir o pool do zero (confere o md5 `119b61b596948e30cdf6b25655aa3268`; sem
-argumentos usa o summary versionado em `data/evidence/`):
-
-```bash
-python3 data/eval/reconstroi_pool423.py                     # -> /tmp/ragexp/pool_recon.jsonl
-python3 data/eval/reconstroi_pool423.py <summary> <saida>   # caminhos explicitos
-```
-
-Matriz BM25 real × escala adaptativa (a medição da seção 4):
-
-```bash
-python3 data/eval/measure_escala_e_bm25_real.py
-```
-
-Ponte EN→PT no caminho de produção (reproduz 6/24 sem ponte e 13/24 com):
-
-```bash
-python3 data/eval/measure_ponte_en_pt.py            # com ponte
-RAG_TRADUZ_EN=0 python3 data/eval/measure_ponte_en_pt.py   # controle sem ponte
-```
-
----
-
-## 9. Resumo em uma frase
-
-A ponte EN→PT **não generaliza** além do catálogo de mensagens (0/5 domínios
-significativos); das três hipóteses de ordenação, **todas as três pioram** quando testadas;
-e o achado que sobra é que **o laboratório mede um scorer que a produção não usa** — ligar o
-BM25 real no harness é o único ganho que transfere (3/3 benchmarks, @5 p=0,0201), enquanto o
-top-1 segue sendo, com honestidade, um problema em aberto.
+- **Denso com roteamento por fatia (rest/ops) na produção, no pool 423.** A alavanca com maior
+  teto conhecido (13/40 @1 contra 1/40 do esparso na fatia), mas o denso **nunca** foi ligado na
+  produção e a fusão global já foi falsificada. Não afirmar ganho sem medir.
+- **Taxa de disparo da ponte e o efeito na fatia EN** do pool (que não existe neste pool).
+- **Efeito de ranking puro do conserto de corpus**, separado da cobertura.
+- **As 20 perguntas que nem lab nem produção acham** (o lab tem o doc para 2 delas).
+- **Se o lab ainda bate a produção corrigida**: o pareado lab × produção +REST deu 44/64
+  (p=0,0670), contra 38/67 (p=0,0060) antes — deixou de ser significativo, mas ninguém mediu
+  lab × produção **final** (7381) ainda.
