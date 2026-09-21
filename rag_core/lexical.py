@@ -233,18 +233,25 @@ def _apply_doc_boosts(score, query_tokens, query_raw, doc, doc_text):
                     break
 
     # 3. Re-ranking por tipo e autoridade da evidência
+    # SWITCH DE MEDICAO `RAG_TYPE_PRIOR=flat` (opt-in, default 'on' = comportamento de
+    # sempre): iguala os multiplicadores de tipo em 1.0 e isola o efeito do prior.
+    # MOTIVO: nas 84 perguntas do pool 423 com alvo em rank 2-15, o documento que vence e'
+    # canonical_claim em 49 casos, enquanto o alvo que perde e' message_catalog (24) ou
+    # rest_api_surface (11) - exatamente a ordem dos multiplicadores abaixo. Medido: o
+    # tamanho do doc NAO explica (vencedor maior em 43 casos, menor em 40).
+    _tp = 1.0 if config.TYPE_PRIOR_FLAT else None
     if doc:
         dtype = doc.get("type")
         if dtype == "canonical_claim":
-            score *= 1.25  # Prioridade para claims canônicas verificadas
+            score *= _tp or 1.25  # Prioridade para claims canônicas verificadas
         elif dtype == "lab_evidence":
-            score *= 1.20  # Prioridade para validações reais de laboratório
+            score *= _tp or 1.20  # Prioridade para validações reais de laboratório
         elif dtype == "ragflow_runbook_chunk":
-            score *= 1.15
+            score *= _tp or 1.15
         elif dtype == "message_catalog":
             # Catalogo de mensagens do produto: texto canonico da versao instalada.
             # Sem boost, ficava sistematicamente atras das claims canonicas (que recebem 1.25).
-            score *= 1.10
+            score *= _tp or 1.10
 
         # Boost se a pergunta menciona um código/termo e o doc o tem no id/nome
         for token in sorted(query_tokens):  # ordem deterministica (set -> hash-seed)

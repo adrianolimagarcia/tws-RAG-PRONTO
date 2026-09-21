@@ -76,6 +76,25 @@ RERANK_UNIT = float(os.environ.get("RAG_RERANK_UNIT", "1"))
 
 
 # ---------------------------------------------------------------------------
+# ESCALA ADAPTATIVA DO 2o ESTAGIO (opt-in, DEFAULT OFF = comportamento inalterado)
+# ---------------------------------------------------------------------------
+# O DEFEITO: os bonus do 2o estagio sao constantes (+8, +12, +15, +20, +32, +45, +55)
+# somadas a um score cuja ESCALA muda por pergunta e por benchmark. A nota do proprio
+# `RERANK_UNIT` acima ja' registrava a suspeita ("se nao transferir, a conclusao correta e'
+# que a constante fixa e' o defeito") - aqui isso e' implementado e medido.
+#
+# MECANISMO: em vez de constante, cada bonus vira `K * escala`, onde `escala` e' a media dos
+# scores do 1o estagio no proprio pool que o reranker recebe. Assim o bonus vale o mesmo
+# FRACAO da escala do candidato, em vez de um valor absoluto que so' esta' certo para um
+# scorer de uma unidade especifica.
+#
+# `RAG_RERANK_ADAPT=K` liga com fator K (ex: 2.0). `K=0` desliga os bonus aditivos.
+# Calibracao: com o scorer legado o topo vale ~1-5, entao as constantes antigas
+# (+8..+55) equivaliam a K ~ 3-25. Esta varredura cobre essa faixa e alem.
+RERANK_ADAPT = float(os.environ.get("RAG_RERANK_ADAPT", "0"))
+
+
+# ---------------------------------------------------------------------------
 # MODO HIBRIDO (RAG_HYBRID=1) — mede o benchmark pelo caminho que a PRODUCAO usa.
 #
 # POR QUE EXISTE: o caminho padrao deste avaliador e' BM25 puro. A PRODUCAO usa
@@ -204,6 +223,19 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
     """
     _B = 1.0 / RERANK_UNIT
     clean_words = [w.strip(".,;:?!'\"()[]{}").lower() for w in re.findall(r"[A-Za-z0-9_\-]+", query_raw) if len(w) > 2]
+
+    # ESCALA ADAPTATIVA (opt-in): se ligada, cada bonus aditivo vira `K * escala`, onde
+    # `escala` e' a media dos scores do 1o estagio NO PROPRIO POOL recebido. Sem isso
+    # (default), `_A` e' um multiplicador NEUTRO: `x * _A == x` exatamente, de modo que o
+    # controle do repo segue bit-identico. Com `_adapt=0` os bonus aditivos sao zerados.
+    _adapt = RERANK_ADAPT
+    if _adapt:
+        _pool_scores = [s for s, _d in candidates[:top_n]]
+        _escala = (sum(_pool_scores) / len(_pool_scores)) if _pool_scores else 0.0
+        _A = _adapt * _escala
+    else:
+        _A = 1.0
+
     unique_q_terms = set(clean_words) - {"qual", "quais", "como", "onde", "por", "que", "para", "com", "dos", "das", "uma", "não", "mais"}
     bigrams = extract_ngrams(clean_words, 2)
     trigrams = extract_ngrams(clean_words, 3)
@@ -218,16 +250,16 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
         # 1. Bônus de Bigrams Contíguos da Pergunta
         for bg in bigrams:
             if len(bg) > 6 and bg in text_lower:
-                score += 8.0 * _B
+                score += 8.0 * _A * _B
             if len(bg) > 6 and bg in title_lower:
-                score += 12.0 * _B
+                score += 12.0 * _A * _B
 
         # 2. Bônus de Trigrams Contíguos da Pergunta
         for tg in trigrams:
             if len(tg) > 10 and tg in text_lower:
-                score += 15.0 * _B
+                score += 15.0 * _A * _B
             if len(tg) > 10 and tg in title_lower:
-                score += 20.0 * _B
+                score += 20.0 * _A * _B
 
         # 3. Cobertura de Termos Únicos (Coverage Ratio)
         doc_tokens = doc["tokens"]
@@ -246,21 +278,21 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
             clean_term = term.replace("-", "").replace("_", "")
             if len(clean_term) >= 5 and clean_term not in ignore_meta_terms:
                 if clean_term in doc_id_lower.replace("-", "").replace("_", ""):
-                    score += 32.0 * _B
+                    score += 32.0 * _A * _B
             # Códigos de erro canônicos (AWS* ou AWK*)
             if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term):
                 if clean_term in doc_id_lower.replace("-", ""):
                     # Se for a claim oficial de troubleshooting daquele erro, boost de Top-1
                     if "trouble" in doc_id_lower or "messages" in doc_id_lower or "incident" in doc_id_lower:
-                        score += 55.0 * _B
+                        score += 55.0 * _A * _B
                     else:
-                        score += 45.0 * _B
+                        score += 45.0 * _A * _B
                 elif clean_term in text_lower:
-                    score += 25.0 * _B
+                    score += 25.0 * _A * _B
             # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
             num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
             if num_match and num_match.group(0) in doc_id_lower:
-                score += 25.0 * _B
+                score += 25.0 * _A * _B
 
         # 5. Exact Command & Subcommand Pairing Boost (ex: 'composer add', 'conman start', 'optman ls', 'planman showinfo')
         cli_pairs = [
@@ -275,7 +307,7 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
         for cmd, sub in cli_pairs:
             if cmd in q_raw_lower and sub in q_raw_lower:
                 if (cmd in doc_id_lower and sub in doc_id_lower) or (f"{cmd} {sub}" in text_lower[:200]):
-                    score += 35.0 * _B
+                    score += 35.0 * _A * _B
 
         reranked.append((score, doc))
 
