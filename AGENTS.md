@@ -84,30 +84,40 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
   outros caem em ranks 18, 89, 202, 900, 1237, 7065). Causa medida: os registros de operação
   são **texto de spec OpenAPI em inglês** e as perguntas são PT-BR; mediana de sobreposição de
   tokens **0,00**, com 21/40 casos zerados. Não é ajuste de peso — é falta de sinal.
-- **A produção é BM25 puro por default, mas o ramo denso EXISTE** (`RAG_DENSE_MODE=fuse`, em
-  `mcp_server/tws_expert_mcp.py` + `mcp_server/tws_dense.py` + índice `mcp_bge_m3.pt`). Medido
-  pelo caminho real nos 10 conjuntos do repo (n=450): a fusão **regride** @1 de 309 para 289
-  (-20, McNemar p=0,0308), com `mensagens` 50→31 e `holdout_100` 79→69. NÃO ligar como default.
-  O pool 423 diz o contrário (@1 209→222, @5 265→306, p<0,0001) porque é **54% blind_v3**, que
-  a fusão quase não move: o ganho do pool é artefato de composição. Registro:
-  `data/evidence/lab-validation-2026-09-19-fusao-densa-na-producao-falsificada-por-conjunto.jsonl`.
-- **Denso com roteamento por fatia** (rest/ops): medido e **REJEITADO**. @1 214/@5 282 (pior que
-  a fusão global) e piora fatias não roteadas (`virgin` @1 14→7). Onde a fusão ganha de forma
-  consistente é em **virgem de mensagem em inglês** (@1 +3, @5 +4) e `virgem_expandido` (@1 +6).
+- **A fusão densa GLOBAL não transfere** (`RAG_DENSE_MODE=fuse`): medido pelo caminho real nos
+  10 conjuntos do repo (n=450), regride @1 de 309 para 289 (-20, McNemar p=0,0308), com
+  `mensagens` 50→31 e `holdout_100` 79→69. NÃO ligar. O pool 423 diz o contrário (@1 209→222)
+  porque é **54% blind_v3**, que a fusão quase não move: o ganho do pool é artefato de
+  composição ("o pior critério é a média"). Registros:
+  `lab-validation-2026-09-19-fusao-densa-na-producao-falsificada-por-conjunto.jsonl`.
+- **Denso com roteamento por fatia** (rest/ops): medido e **REJEITADO** (@1 214/@5 282; piora
+  fatias não roteadas, `virgin` @1 14→7).
 
 ## O que funciona
 
-- `RAG_BM25_REAL=1` é o único ganho que transfere: @1 +5/+4/+3 e @5 +12/+4/+3 em 3/3
+- **Gate denso por confiança (`RAG_DENSE_MODE=gate`, DEFAULT desde 19/09)**: a fusão densa roda
+  **só quando a margem do BM25 é fraca** (confiança `baixa`, ~27% das consultas). Converte a
+  alavanca que regredia em uma que ganha: no **desenho** (n=450) @1 +12/-3 (p=0,0352), nenhum
+  conjunto regride; no **holdout** (n=447, conjuntos que NÃO desenharam o gate) @1 +11/-2
+  (p=0,0225), @5 +24/-2 (p<0,0001), @10 +22/-5 (p=0,0015). Sem o `blind_v3`, @5 +14/-0. No pool
+  423: @1 215→225, @5 271→293, MRR 0,5738→0,6046, e `ausente` **22→16** (melhor que o baseline).
+  Custo: +54ms só nas 27% que disparam. Usa as faixas de confiança JÁ calibradas no BM25 — nenhum
+  limiar novo para o denso. Registro: `lab-validation-2026-09-19-gate-por-confianca-transfere.jsonl`.
+- `RAG_BM25_REAL=1` é um ganho que transfere: @1 +5/+4/+3 e @5 +12/+4/+3 em 3/3
   benchmarks; combinado (n=493) @5 p=0,0201 significativo, @1 p=0,28 não significativo.
 - Ponte EN→PT (`RAG_TRADUZ_EN`) só tem ganho medido no **catálogo de mensagens**; em 5
   domínios testados, 0 com ganho significativo e 2 com sinal negativo. Não vender como ganho geral.
 
 ## `UNKNOWN` (não afirmar sem medir)
 
-- **Denso no caminho real de produção**: medido. Fundido regride (@1 309→289 nos 10 conjuntos,
-  p=0,0308); roteado por fatia também (ver "não funciona"). O que **não** foi medido é um gate
-  por TIPO de pergunta que ligue a fusão só em pergunta de sintoma/sem termo literal — o único
-  domínio onde ela ganha de forma consistente.
+- **Gate denso**: medido e promovido (ver "o que funciona"). O que segue `UNKNOWN` é se o gate
+  **combinado com a ponte EN→PT** muda o disparo numa fatia EN real (o pool é majoritariamente
+  PT-BR), e se um gate por RECURSO melhoraria sobre o gate por confiança (o de confiança foi o
+  melhor dos testados: margem AUC 0,111).
+- **Roteamento por fatia/por recurso**: o denso puro na fatia `rest_api_ops` ainda é baixo
+  (gate: @1 0/40, @5 5/40, @10 9/40, contra 1/10/22 do `fuse` puro). A fatia responde a' fusão
+  global, mas a fusão global custa caro em `fresh_blind`. Um roteador que ligue `fuse` puro só
+  em `rest/ops` não foi medido NO CAMINHO DA PRODUÇÃO.
 - **Lab × produção final (7381)**: o pareado contra o corpus +REST deu 44/64 (p=0,0670), contra
   38/67 (p=0,0060) antes — mas ninguém mediu lab × produção **final**.
 - **Taxa de disparo da ponte** e o efeito numa fatia EN (este pool é majoritariamente PT-BR).

@@ -20,7 +20,7 @@ try:
 except Exception:
     tws_dense = None
 
-# MODO DENSO. OPT-IN, DEFAULT OFF - sem RAG_DENSE_MODE=fuse, nada muda.
+# MODO DENSO. DEFAULT `gate`: funde so' quando o LEXICO esta' fraco (ver _deve_fundir).
 #
 # ATENCAO: `fuse` parece ganhar no pool de 423 e NAO GANHA no sistema real. Medido:
 #   pool 423: off @1 209 @5 265 MRR 0,5588 -> fuse @1 222 @5 306 MRR 0,6182 (@5 p<0,0001)
@@ -36,9 +36,19 @@ except Exception:
 # MENSAGEM EM INGLES (@1 +3, @5 +4) e virgem_expandido (@1 +6). E' o caso em que a pergunta
 # descreve um sintoma sem citar codigo nem texto - o lexical tem pouco a casar.
 # Custo em CPU: ~215ms a mais por consulta. Sem o indice denso instalado, cai em off sozinho.
-DENSE_MODE = (os.environ.get("RAG_DENSE_MODE") or "off").strip().lower()
-if DENSE_MODE not in ("off", "fuse"):
-    raise SystemExit("RAG_DENSE_MODE=%r nao reconhecido. Use 'off' ou 'fuse'." % DENSE_MODE)
+DENSE_MODE = (os.environ.get("RAG_DENSE_MODE") or "gate").strip().lower()
+if DENSE_MODE not in ("off", "fuse", "gate"):
+    raise SystemExit("RAG_DENSE_MODE=%r nao reconhecido. Use 'off', 'fuse' ou 'gate'." % DENSE_MODE)
+# Limiar do modo `gate`: fundir quando a confianca esparsa for PIOR que isto.
+# "media" -> funde em media+baixa (nao funde em alta); "baixa" -> so' em baixa.
+# DEFAULT `baixa` (nao `media`): media funde em 60% dos casos e chega a regredir em
+# holdout_100 (-3) e realistico (-1). `baixa` funde em 27% e nao regride em NENHUM conjunto.
+# A escolha entre os dois foi feita no conjunto de DESENHO; o holdout (447 perguntas nunca
+# usadas para desenhar o gate) confirmou `baixa`: +11/-2 @1 (p=0,0225), +24/-2 @5 (p<0,0001).
+DENSE_GATE_CONF = (os.environ.get("RAG_DENSE_GATE_CONF") or "baixa").strip().lower()
+if DENSE_GATE_CONF not in ("media", "baixa"):
+    raise SystemExit("RAG_DENSE_GATE_CONF=%r nao reconhecido. Use 'media' ou 'baixa'."
+                     % DENSE_GATE_CONF)
 # Profundidade de candidatos de cada ramo na fusao. 30 e' o valor do laboratorio
 # (data/eval/evaluate_rag_benchmark.py: k_dense=30, k_sparse=30) - replicar aqui e' o que
 # torna a medicao da producao comparavel com a que ja' existe.
@@ -204,8 +214,14 @@ def _funde_rrf(q_texto, esparsos, top_k):
     """RRF k=60 denso+esparso com o MESMO peso do laboratorio (w=2*RAG_RRF_W no denso,
     2-w no esparso). Reproduzir a escala importa: o segundo estagio soma bonus FIXOS ao
     score recebido, entao mudar a escala muda o balanco mesmo com a mesma ordem."""
+    # `[:top_k]`: o chamador releu o esparso com max(top_k, RRF_K) candidatos, entao
+    # devolver `esparsos` cru ignoraria o top_k pedido (medido: top_k=3 devolvia 30).
     if tws_dense is None or not tws_dense.disponivel():
-        return esparsos
+        return esparsos[:top_k]
+    # Guarda de obsolescencia: indice que nao cobre EXATAMENTE o corpus em uso e' pior que
+    # nao ter indice (ver alinhado() em tws_dense), porque some com ids em silencio.
+    if not tws_dense.alinhado(d["claim_id"] for d in docs):
+        return esparsos[:top_k]
     densos = [c for c, _ in tws_dense.busca(q_texto, top_k=RRF_K)]
     # Os DOIS ramos entram com a MESMA profundidade RRF_K (30), como no laboratorio. Isto
     # NAO e' um detalhe de desempenho: medido no pool 423, com o ramo esparso indo ate' o
@@ -221,11 +237,34 @@ def _funde_rrf(q_texto, esparsos, top_k):
     for r, cid in enumerate(esparsos_ids, 1):
         rrf[cid] = rrf.get(cid, 0.0) + (2.0 - w) / (60.0 + r)
     por_id = {d["claim_id"]: d for d in docs}
-    ordenados = sorted(rrf, key=lambda x: (-rrf[x], str(x)))[:top_k]
-    # `margin` = 1o menos 2o, mesma definicao do BM25, mas em unidades RRF. NAO comparar
-    # com as faixas de `_params_confianca()` (calibradas em score BM25): a confianca do
-    # topo do sistema e' calculada sobre o ramo esparso, nao sobre este numero.
-    margem_rrf = rrf[ordenados[0]] - rrf[ordenados[1]] if len(ordenados) > 1 else 0.0
+    # Cabeca fundida na ordem RRF, depois a CAUDA ESPARSA anexada sem repetir. Ligar a fusao
+    # nao pode DESCARTAR candidato: como os ramos tem profundidade RRF_K=30, um alvo que
+    # so' aparece em BM25 rank 31+ sumiria do resultado - medido no pool 423, `ausente`
+    # subia de 22 (off) para 30. Anexar a cauda mantem a ordem do topo (que e' o que foi
+    # medido como ganho) e devolve a cobertura integral do esparso.
+    ordenados, vistos = [], set()
+    for cid in sorted(rrf, key=lambda x: (-rrf[x], str(x))):
+        if cid not in vistos:
+            vistos.add(cid)
+            ordenados.append(cid)
+    for r in esparsos:
+        cid = r["claim_id"]
+        if cid not in vistos:
+            vistos.add(cid)
+            ordenados.append(cid)
+    ordenados = ordenados[:top_k]
+    # `margin` = 1o menos 2o, mesma DEFINICAO do BM25, mas em unidades RRF.
+    #
+    # CONTRATO DO CAMPO `score` sob fusao: e' o valor RRF, que e' MONOTONO na ordem devolvida
+    # (propriedade que o score BM25 tambem tinha). A magnitude, porem, muda de escala
+    # (~0,03 contra ~5 do BM25) porque a cauda anexada nao tem valor RRF proprio. NAO
+    # comparar com as faixas de `_params_confianca()`: a confianca do sistema e' calculada
+    # sobre o ramo esparso (base_conf), nao sobre estes numeros. Para nao perder o valor
+    # lexical, `score_bm25` traz o score esparso quando o id existe nesse ramo (None se so'
+    # o denso o trouxe).
+    bm25_de = {r["claim_id"]: r["score"] for r in esparsos}
+    margem_rrf = (rrf.get(ordenados[0], 0.0) - rrf.get(ordenados[1], 0.0)
+                  ) if len(ordenados) > 1 else 0.0
     saida = []
     for pos, cid in enumerate(ordenados):
         d = por_id.get(cid)
@@ -233,7 +272,8 @@ def _funde_rrf(q_texto, esparsos, top_k):
             continue
         saida.append({
             "claim_id": d["claim_id"],
-            "score": round(rrf[cid], 6),
+            "score": round(rrf.get(cid, 0.0), 6),
+            "score_bm25": bm25_de.get(cid),
             "margin": round(margem_rrf, 6) if pos == 0 else None,
             "category": d.get("category"),
             "claim": d["claim"],
@@ -243,6 +283,29 @@ def _funde_rrf(q_texto, esparsos, top_k):
     return saida
 
 
+def _deve_fundir(base_conf):
+    """True se a fusao densa deve ser aplicada nesta consulta.
+
+    Motivo medido (analise de oraculo, data/eval/oraculo_gate.py, n=450): a fusao ajuda
+    onde o LEXICO NAO TEM SINAL. Das perguntas em que ela ganha, 48,3% tem confianca baixa
+    e so' 13,8% alta; das em que ela perde, 73,5% sao alta. A separabilidade e' a melhor
+    entre as features testadas: AUC da margem BM25 = 0,111 (invertido), contra 0,515 do
+    score absoluto. Ou seja: margem alta = o lexical ja' acertou, nao mexer; margem baixa
+    = o lexical esta' perdido, e' onde o denso traz informacao nova.
+
+    Usa as MESMAS faixas calibradas de _params_confianca() (BM25, AUC 0,850) - nenhum
+    limiar novo e' inventado para o denso.
+    """
+    if DENSE_MODE != "gate" or not base_conf:
+        return DENSE_MODE == "fuse"
+    s1 = base_conf[0].get("score") or 0.0
+    s2 = base_conf[1].get("score") if len(base_conf) > 1 else 0.0
+    margem = (s1 - s2) / s1 if s1 > 0 else 0.0
+    p = _params_confianca()
+    corte = p["faixa_alta"] if DENSE_GATE_CONF == "media" else p["faixa_media"]
+    return margem < corte
+
+
 def handle_tool_call(name, args):
     if name == "tws_expert_search":
         q = args.get("query", "")
@@ -250,7 +313,6 @@ def handle_tool_call(name, args):
         top_k = int(args.get("top_k", 5))
         tokens = re.findall(r"\w+", q.lower())
         results = search_bm25(tokens, category=cat, top_k=top_k)
-        base_conf = results
 
         # PONTE EN->PT. Motivo medido: a consulta inglesa e' a lacuna real deste sistema.
         # No proprio buscador abaixo, as 24 perguntas virgens em ingles dao @1 25,0% e
@@ -287,11 +349,14 @@ def handle_tool_call(name, args):
         # "alta" a partir de um numero de outra escala seria uma afirmacao nao calibrada -
         # exatamente o que este sistema nao pode fazer. O RRF muda a ORDEM; a confianca
         # continua vindo do sinal que foi calibrado.
+        # A base de calibracao e' o resultado POS-PONTE: e' ele que o usuario veria sem
+        # fusao, entao a confianca e a decisao do gate devem sair dele, nao da consulta
+        # original (que pode nem ter encontrado o documento que a traducao encontra).
         base_conf = results
-        if DENSE_MODE == "fuse":
+        if _deve_fundir(base_conf):
             esparsos = search_bm25(tokens_finais, category=cat, top_k=max(top_k, RRF_K))
-            base_conf = esparsos[:top_k]
             results = _funde_rrf(q, esparsos, top_k)
+            base_conf = esparsos[:top_k]
 
         # Modo antigo (portao duro). OPT-IN e DESLIGADO por padrao: descartar resposta
         # que existia e' regressao (66 acertos perdidos no limiar 0,177). Mantido apenas

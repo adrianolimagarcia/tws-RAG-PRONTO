@@ -17,6 +17,7 @@ que NUNCA foi testado - denso aplicado como RECUPERADOR, nao fundido no ranking 
 """
 import json
 import os
+import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDICE_PADRAO = os.path.join(RAIZ, "data", "indexes", "mcp_bge_m3.pt")
@@ -46,7 +47,9 @@ def disponivel(indice=None, meta=None):
 
 
 def _carrega(indice=None, meta=None):
-    if _CACHE:
+    # Checa a CHAVE, nao o dicionario: `alinhado()` tambem escreve em _CACHE ("meta_ids"),
+    # e um `if _CACHE:` aqui devolveria o cache sem modelo/tokenizer (KeyError: 'tok').
+    if "matriz" in _CACHE:
         return _CACHE
     import torch
     from transformers import AutoModel, AutoTokenizer
@@ -58,16 +61,59 @@ def _carrega(indice=None, meta=None):
     matriz = torch.load(indice, map_location=device, weights_only=False).float()
     with open(meta, encoding="utf-8") as f:
         ids = json.load(f)
-    tok = AutoTokenizer.from_pretrained("BAAI/bge-m3", cache_dir=cache)
+    # local_files_only: o modelo ja' esta' no cache. Ir a' rede aqui e' o que produz o
+    # 429 do HuggingFace (observado num lote de execucoes) e, sem tratamento, derruba a
+    # busca INTEIRA por causa de um ramo OPCIONAL. Se faltar o cache, levanta e cai no
+    # fallback - que e' exatamente o comportamento desejado.
+    tok = AutoTokenizer.from_pretrained("BAAI/bge-m3", cache_dir=cache,
+                                        local_files_only=True)
     mod = AutoModel.from_pretrained("BAAI/bge-m3", cache_dir=cache,
-                                    use_safetensors=True).to(device)
+                                    use_safetensors=True, local_files_only=True).to(device)
     mod.eval()
     _CACHE.update(matriz=matriz, ids=ids, tok=tok, mod=mod, device=device)
     return _CACHE
 
 
+def alinhado(corpus_ids):
+    """O indice cobre EXATAMENTE este corpus? Guarda de obsolescencia.
+
+    Motivo: `disponivel()` so' olha se os arquivos existem. Se o corpus de producao for
+    reconstruido (foi reconstruido nesta sessao: 7019 -> 7381) e o `.pt` nao for regerado,
+    o indice continua "disponivel" e a fusao passa a operar sobre um ranking PARCIAL - os
+    ids ausentes ficam invisiveis ao ramo denso e pior que o BM25 puro, sem erro nenhum.
+    Como o RAMO ESPARSO ainda e' o piso, o dano e' silencioso, que e' o pior tipo.
+
+    Compara conjuntos (nao ordem): o indice guarda so' os ids, na ordem de construcao.
+    """
+    try:
+        if "meta_ids" not in _CACHE:
+            with open(os.environ.get("RAG_DENSE_META") or META_PADRAO, encoding="utf-8") as f:
+                _CACHE["meta_ids"] = set(json.load(f))
+        return _CACHE["meta_ids"] == set(corpus_ids)
+    except Exception:
+        return False
+
+
 def busca(query, top_k=30):
-    """[(claim_id, score_cosseno)] ordenado. Lista vazia se o denso nao estiver disponivel."""
+    """[(claim_id, score_cosseno)] ordenado. Lista vazia se o denso nao estiver disponivel.
+
+    NUNCA levanta: o contrato do sistema e' degradar para o BM25, nao quebrar. `disponivel()`
+    verifica arquivos e imports, mas o carregamento real do modelo ainda pode falhar (rede,
+    disco, memoria); sem este try a busca inteira morreria por causa do ramo opcional.
+    """
+    try:
+        return _busca(query, top_k)
+    except Exception as e:  # noqa: BLE001 - degradacao e o contrato
+        # Avisa UMA vez em stderr: silencio total esconderia um indice/modelo quebrado, e a
+        # producao passaria a medir BM25 achando que estava medindo a fusao.
+        if not _CACHE.get("avisou_falha"):
+            _CACHE["avisou_falha"] = True
+            print("tws_dense: falha ao recuperar (%s: %s); seguindo com BM25."
+                  % (type(e).__name__, e), file=sys.stderr)
+        return []
+
+
+def _busca(query, top_k=30):
     import torch
 
     d = _carrega()
@@ -96,9 +142,14 @@ def constroi(docs, indice=None, meta=None, lote=64, max_chars=500, dtype=None):
     meta = meta or META_PADRAO
     cache = _cache_dir()
     device = "cpu"
-    tok = AutoTokenizer.from_pretrained("BAAI/bge-m3", cache_dir=cache)
+    # local_files_only: o modelo ja' esta' no cache. Ir a' rede aqui e' o que produz o
+    # 429 do HuggingFace (observado num lote de execucoes) e, sem tratamento, derruba a
+    # busca INTEIRA por causa de um ramo OPCIONAL. Se faltar o cache, levanta e cai no
+    # fallback - que e' exatamente o comportamento desejado.
+    tok = AutoTokenizer.from_pretrained("BAAI/bge-m3", cache_dir=cache,
+                                        local_files_only=True)
     mod = AutoModel.from_pretrained("BAAI/bge-m3", cache_dir=cache,
-                                    use_safetensors=True).to(device)
+                                    use_safetensors=True, local_files_only=True).to(device)
     mod.eval()
 
     ids = [cid for cid, _ in docs]
