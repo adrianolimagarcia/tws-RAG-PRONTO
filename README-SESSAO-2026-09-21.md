@@ -346,3 +346,63 @@ fatias não roteadas (`virgin` @1 14→7).
 - **O mais grave**: quase commitei a fusão como default reportando só o pool 423 e o subconjunto
   limpo — os dois a favoreciam. O teste multi-conjunto só foi rodado porque o repo já tinha um
   veredito NEGATIVO registrado que eu tive de reconciliar. **Medir onde é fácil não é medir.**
+
+---
+
+## Addendo 2 (19/09): o gate por confiança — a alavanca que regredia passa a ganhar
+
+A fusão densa reprovou **duas vezes** (lab 20/09: 202x181, p=0,0111; produção 19/09: 309x289,
+p=0,0308). Mas o efeito era **específico**, não nulo: ganhava onde o léxico não tem termo
+literal e perdia onde o BM25 já acerta (`mensagens` 50→31 @1).
+
+**Antes de varrer limiar, testei se havia sinal separável** — porque varrer limiar sobre o
+mesmo conjunto que revelou a hipótese é treinar e testar no mesmo dado. Havia, e **invertido**:
+a margem do BM25 separa o ganho da fusão com **AUC 0,111** (o score absoluto, 0,515, é inútil).
+Das perguntas que a fusão **ganha**, 48,3% são confiança baixa e só 13,8% alta; das que
+**perde**, 73,5% são alta. A leitura mecânica: a fusão ajuda exatamente quando o léxico não tem
+sinal. (A margem se mostrou a melhor de três features — `n_tok` 0,777, útil, mas a margem venceu.)
+
+O gate então é trivial: **fundir só quando a margem do BM25 for fraca**. Nenhum limiar novo para
+o denso — reusa as faixas de `_params_confianca()`, já calibradas no BM25 (AUC 0,850).
+
+### O teste que importa: transferência
+
+O desenho do gate saiu de 10 conjuntos/450 perguntas. Validar nele seria circular, então separei
+**6 conjuntos/447 perguntas que nunca entraram no oráculo nem na escolha do limiar**:
+
+| | @1 | @5 | @10 | MRR |
+|---|---|---|---|---|
+| `off` | 247 | 296 | 322 | 0,6097 |
+| **`gate/baixa`** | **256** | **318** | **339** | **0,6355** |
+| `fuse` | 239 | 325 | 369 | 0,6232 |
+
+`gate/baixa` vs `off`: @1 **+11/−2** (p=0,0225), @5 **+24/−2** (p<0,0001), @10 +22/−5 (p=0,0015).
+**Nenhum dos 6 conjuntos regride** — 4 não perdem *nenhuma* pergunta a mais. E a fusão **pura**
+desaba no holdout (`fresh_blind` 22→12, `vault` 44→41): é o dano que o gate evita. Sem o
+`blind_v3` (58% do holdout, o mesmo que dominou o pool 423): @5 **+14/−0**.
+
+No desenho, `baixa` venceu `media` por **não regredir em nenhum conjunto** (media regride em
+`holdout_100` e `realistico`) — e foi *essa* a razão da escolha, feita só ali.
+
+### Cobertura não pode ser descartada
+
+Ligar a fusão levantou `ausente` de 22 para **30**: com os ramos em profundidade 30, alvo no
+BM25 rank 31+ sumia. Corrigido anexando a **cauda esparsa depois da cabeça fundida** — o RRF
+continua somando só `esparsos[:RRF_K]`, a cauda **não participa da soma**, então não reordena
+(este é exatamente o erro do addendo 1, em que a cauda longa dentro do RRF derrubou o @5).
+Resultado: `ausente` 22→**16** e MRR 0,5738→0,6046 no pool 423; @1/@5/@10 **idênticos** antes
+e depois do append.
+
+### Bugs de contrato que o caminho revelou (todos corrigidos)
+
+1. `_carrega()` usava `if _CACHE:`; a guarda nova escreve no mesmo dict, e o cache passava a ser
+   devolvido **sem modelo** (`KeyError: 'tok'`).
+2. **429 do HuggingFace propagava e derrubava a busca inteira** por causa de um ramo opcional.
+   Agora carrega `local_files_only` e `busca()` **nunca levanta**: avisa uma vez e cai no BM25.
+3. O caminho de degradação ignorava o `top_k` (`top_k=3` devolvia 30).
+4. `disponivel()` só olhava se os arquivos existem: corpus reconstruído (7019→7381) com `.pt`
+   velho faria a fusão operar sobre ranking **parcial em silêncio**. Adicionada `alinhado()`.
+
+Default promovido para `gate/baixa` (verificado sem nenhuma env var, nos dois perfis: reproduz
+exatamente). `off` e `fuse` seguem disponíveis. Controle do `AGENTS.md` intacto: 230/287/301,
+MRR 0,6016. Custo: dispara em **27%** das consultas, **+54 ms** só nelas.
