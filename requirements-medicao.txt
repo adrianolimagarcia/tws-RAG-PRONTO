@@ -1,0 +1,19 @@
+# Ambiente de MEDICAO do caminho de PRODUCAO (embeddings BGE-M3).
+#
+# POR QUE ESTE ARQUIVO EXISTE: o controle LAB (scorer lexical) reproduz bit-a-bit em qualquer
+# ambiente, mas a producao usa embeddings e MUDA DE NUMERO quando torch/transformers mudam de
+# versao. Medido em 19/09: o MESMO commit deu 221/268/291/314 (MRR 0,5970) com o ambiente abaixo
+# e 225/270/293/317 (MRR 0,6046) com o venv anterior. Sem lock, "melhorou/piorou" pode ser so'
+# drift de biblioteca.
+#
+# UNKNOWN: as versoes exatas do venv ORIGINAL (nao foram registradas antes de /tmp ser limpo).
+# Estas sao as do venv reconstruido, que passou a ser o ambiente de referencia.
+#
+# Uso:
+#   uv venv /tmp/ragexp/venv --python 3.12
+#   uv pip install --python /tmp/ragexp/venv/bin/python -r requirements-medicao.txt
+#   HF_HOME=/tmp/ragexp/hfhome   # modelos BGE-M3 (nao versionados)
+torch==2.14.0
+transformers==5.17.0
+tokenizers==0.23.2
+numpy

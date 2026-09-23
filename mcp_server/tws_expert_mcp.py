@@ -37,8 +37,9 @@ except Exception:
 # descreve um sintoma sem citar codigo nem texto - o lexical tem pouco a casar.
 # Custo em CPU: ~215ms a mais por consulta. Sem o indice denso instalado, cai em off sozinho.
 DENSE_MODE = (os.environ.get("RAG_DENSE_MODE") or "gate").strip().lower()
-if DENSE_MODE not in ("off", "fuse", "gate"):
-    raise SystemExit("RAG_DENSE_MODE=%r nao reconhecido. Use 'off', 'fuse' ou 'gate'." % DENSE_MODE)
+if DENSE_MODE not in ("off", "fuse", "gate", "rest"):
+    raise SystemExit("RAG_DENSE_MODE=%r nao reconhecido. Use 'off', 'fuse', 'gate' ou 'rest'."
+                     % DENSE_MODE)
 # Limiar do modo `gate`: fundir quando a confianca esparsa for PIOR que isto.
 # "media" -> funde em media+baixa (nao funde em alta); "baixa" -> so' em baixa.
 # DEFAULT `baixa` (nao `media`): media funde em 60% dos casos e chega a regredir em
@@ -53,6 +54,10 @@ if DENSE_GATE_CONF not in ("media", "baixa"):
 # (data/eval/evaluate_rag_benchmark.py: k_dense=30, k_sparse=30) - replicar aqui e' o que
 # torna a medicao da producao comparavel com a que ja' existe.
 RRF_K = int(os.environ.get("RAG_DENSE_RRF_K", "30"))
+# Peso do denso na rota REST: 2.0 = denso PURO (o esparso so' fornece cauda). Nao e' um
+# limiar calibrado - e' a escolha "usar o ramo que funciona nesta fatia", medida contra a
+# fusao (que dilui). Configuravel para poder re-medir outro ponto.
+REST_PESO = float(os.environ.get("RAG_REST_PESO", "2.0"))
 RAG_RRF_W = float(os.environ.get("RAG_RRF_W", "0.5"))
 if not (0.0 <= RAG_RRF_W <= 1.0):
     raise SystemExit("RAG_RRF_W=%s fora de [0,1]." % RAG_RRF_W)
@@ -210,10 +215,11 @@ MSG_CONFIANCA = {
 }
 
 
-def _funde_rrf(q_texto, esparsos, top_k):
-    """RRF k=60 denso+esparso com o MESMO peso do laboratorio (w=2*RAG_RRF_W no denso,
-    2-w no esparso). Reproduzir a escala importa: o segundo estagio soma bonus FIXOS ao
-    score recebido, entao mudar a escala muda o balanco mesmo com a mesma ordem."""
+def _funde_rrf(q_texto, esparsos, top_k, peso_denso=None):
+    """RRF k=60 denso+esparso. `peso_denso=None` usa o peso do laboratorio (2*RAG_RRF_W);
+    `peso_denso=2.0` zera o voto do esparso e devolve o DENSO PURO (com a cauda esparsa
+    anexada, para nao perder cobertura). Reproduzir a escala importa: o segundo estagio soma
+    bonus FIXOS ao score recebido, entao mudar a escala muda o balanco mesmo com a ordem."""
     # `[:top_k]`: o chamador releu o esparso com max(top_k, RRF_K) candidatos, entao
     # devolver `esparsos` cru ignoraria o top_k pedido (medido: top_k=3 devolvia 30).
     if tws_dense is None or not tws_dense.disponivel():
@@ -230,7 +236,7 @@ def _funde_rrf(q_texto, esparsos, top_k):
     # profundidade igual se perde. A contrapartida e' mais alvo "ausente" (a faixa 31+ sai
     # do conjunto fundido), e isso e' aceito: o que se mostra ao usuario e' o topo.
     esparsos_ids = [r["claim_id"] for r in esparsos[:RRF_K]]
-    w = 2.0 * RAG_RRF_W
+    w = 2.0 * RAG_RRF_W if peso_denso is None else float(peso_denso)
     rrf = {}
     for r, cid in enumerate(densos, 1):
         rrf[cid] = rrf.get(cid, 0.0) + w / (60.0 + r)
@@ -281,6 +287,50 @@ def _funde_rrf(q_texto, esparsos, top_k):
             "platform": d.get("platform"),
         })
     return saida
+
+
+# DETECTOR DE CONSULTA REST/API. Sinal LEXICAL PURO (sem LLM, sem gabarito): as perguntas da
+# fatia rest/ops sao, por construcao, SOBRE a API, e dizem isso - "pela API", "endpoint",
+# "REST", "swagger". Medido nos conjuntos do repo: dispara em 42,5% das perguntas REST
+# (34/80) contra 6,3% das nao-REST do holdout (23/367) e 6,9% do desenho (31/450) - ou seja,
+# ~7x mais denso no alvo, com precisao ~60%.
+#
+# NAO e' deteccao de idioma: a ponte EN->PT ja' cuida do idioma. E' deteccao de FATIA.
+# Um parametro (`RAG_REST_ROTA`), nao uma cascata: liga/desliga. Limiar e lista de termos
+# sao configuraveis para quem quiser re-medir, mas o default e' o medido.
+_REST_PADRAO = (r"api|apis|rest|restful|endpoint|endpoints|swagger|openapi|curl|http|https|"
+                r"json|payload|requisicao|request|response|get|post|put|delete|patch")
+REST_TERMOS = re.compile(
+    r"\b(" + (os.environ.get("RAG_REST_TERMOS") or _REST_PADRAO) + r")\b", re.I)
+
+
+def _rest_rota_ativa():
+    """A fatia REST esta' ligada?
+
+    DEFAULT LIGADA quando o modo denso e' `gate` (o default). `RAG_REST_ROTA=0` desliga;
+    `RAG_DENSE_MODE=off` tambem (nao ha' denso para rotear). `RAG_DENSE_MODE=rest` liga
+    sozinho. Um booleano, nao uma cascata: o detector de fatia ja' e' a estratificacao.
+    """
+    if DENSE_MODE == "off":
+        return False
+    if DENSE_MODE == "rest":
+        return True
+    v = (os.environ.get("RAG_REST_ROTA") or "").strip().lower()
+    if v in ("0", "off", "false"):
+        return False
+    if v in ("1", "on", "true"):
+        return True
+    return DENSE_MODE == "gate"
+
+
+def _rest_guarda_ativa():
+    """Guarda opcional da rota REST (default DESLIGADO). Ver comentario no roteamento."""
+    return (os.environ.get("RAG_REST_GUARD") or "").strip().lower() in ("1", "on", "true")
+
+
+def _e_consulta_rest(q):
+    """A pergunta e' sobre a API REST? Heuristica lexical, sem modelo e sem gabarito."""
+    return bool(REST_TERMOS.search(q or ""))
 
 
 def _deve_fundir(base_conf):
@@ -353,7 +403,24 @@ def handle_tool_call(name, args):
         # fusao, entao a confianca e a decisao do gate devem sair dele, nao da consulta
         # original (que pode nem ter encontrado o documento que a traducao encontra).
         base_conf = results
-        if _deve_fundir(base_conf):
+        # ROTEADOR REST (RAG_REST_ROTA=1 ou RAG_DENSE_MODE=rest; default DESLIGADO).
+        # Medido: nesta fatia o DENSO PURO vale 18/40 e 8/40 @1 contra 7/40 e 0/40 do
+        # esparso; a FUSAO (que a producao usa) piora o denso (8/40 e 0/40) porque o voto
+        # lexical errado dilui o vetorial. O fato que explica os dois lados: nesta fatia o
+        # vocabulario compartilhado com o corpus e' quase nulo, entao o lexical nao tem o
+        # que casar e quem carrega a semantica e' o embedding.
+        # Efeito no holdout (n=447, o mesmo usado para validar o gate): @1 +4 / @5 +12 /
+        # @10 +11, com colateral NAO significativo (blind_v3 p=0,22; vault p=0,13).
+        # A CONFIANCA CONTINUA VINDO DO RAMO ESPARSO (base_conf): se o gate denso ligar na
+        # sequencia, ele decide com o mesmo sinal de sempre. Nao se recalibra nada aqui.
+        rota_rest = _rest_rota_ativa() and _e_consulta_rest(q)
+        if rota_rest:
+            if _rest_guarda_ativa() and not _deve_fundir(base_conf):
+                rota_rest = False
+        if rota_rest:
+            esparsos = search_bm25(tokens_finais, category=cat, top_k=max(top_k, RRF_K))
+            results = _funde_rrf(q, esparsos, top_k, peso_denso=REST_PESO)
+        elif _deve_fundir(base_conf):
             esparsos = search_bm25(tokens_finais, category=cat, top_k=max(top_k, RRF_K))
             results = _funde_rrf(q, esparsos, top_k)
             base_conf = esparsos[:top_k]

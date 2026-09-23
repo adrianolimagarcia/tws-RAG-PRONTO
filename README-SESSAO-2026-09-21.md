@@ -406,3 +406,58 @@ e depois do append.
 Default promovido para `gate/baixa` (verificado sem nenhuma env var, nos dois perfis: reproduz
 exatamente). `off` e `fuse` seguem disponíveis. Controle do `AGENTS.md` intacto: 230/287/301,
 MRR 0,6016. Custo: dispara em **27%** das consultas, **+54 ms** só nelas.
+
+---
+
+## Addendo 3 (19/09): o roteador de fatia REST — o ponto cego que o lexical não alcança
+
+O `AGENTS.md` deixara explícito: *"Um roteador que ligue `fuse` puro só em `rest/ops` não foi
+medido NO CAMINHO DA PRODUÇÃO."* Medi.
+
+**O sintoma.** Sob o gate, `rest_api_ops` ficava em **0/40 @1**. A tentação era registrar "o
+denso não ajuda aqui". Antes disso, olhei o registro antigo: havia denso **puro** a 32,5% no
+mesmo conjunto, com o braço invalidado. Medi os três caminhos no mesmo harness:
+
+| conjunto | esparso @1 | **denso puro @1** | fundido @1 |
+|---|---|---|---|
+| `rest_api` (40) | 7 | **18** | 8 |
+| `rest_api_ops` (40) | 0 | **8** | 0 |
+| `mensagens` (50) | 50 | 9 | 50 |
+
+**Não é que o denso falhe — é que a fusão o dilui.** O RRF soma o voto lexical errado ao
+vetorial. O fato que explica os dois lados da tabela: nesta fatia a sobreposição de vocabulário
+com o corpus é ~0 (mediana 0,00), então o lexical não tem o que casar e erra — e o embedding
+carrega a semântica. Denso e lexical vencem em fatias **disjuntas**. A correção é **roteamento**,
+não troca de ramo.
+
+**O detector é um sinal legítimo, não gabarito.** As perguntas REST dizem "api" porque *são*
+sobre a API. Separação medida: dispara em **42,5%** das REST (34/80) contra **6,3%** das não-REST
+do holdout (23/367) — ~7x mais denso no alvo. Robustez: dos 17 termos candidatos, **só `api`
+aparece** nas perguntas REST; a lista completa e a lista mínima dão números **idênticos**. E a
+regra descoberta no `rest_api` **transfere** para `rest_api_ops` (conjunto independente) sem
+ajuste: 0→1 @1, 5→11 @5.
+
+**Efeito.** Holdout (n=447, o mesmo do gate): **@1 258→262, @5 318→330, @10 339→350**. Pool 423:
+**@1 221→223, @3 268→281, @5 291→303, @10 314→325, MRR 0,5970→0,6119**.
+
+**A perda de colateral é ilusória, e provei.** As 5 perguntas "não-REST" que perdem são *todas
+REST genuínas* — o detector acertou; o denso é que não é uniformemente melhor. Testei a hipótese
+de guardar a rota pelo gate do BM25 ("rotear só se o esparso também estiver fraco"): **zera o
+colateral, mas corta o ganho pela metade** (`rest_api` 15→9, `ops` 1→0), e o colateral que ela
+elimina **não é significativo** (p=0,22/0,13/0,13). O mecanismo condena a guarda: a margem do
+BM25 foi calibrada no corpus **geral** e **não calibra nesta fatia** — aqui o lexical pontua alto
+e erra. Fica opt-in (`RAG_REST_GUARD=1`), desligada.
+
+### O achado mais importante desta sessão: o ambiente muda o número
+
+O venv de medição estava em `/tmp` e foi **apagado** no meio do trabalho. Reconstruí (torch 2.14,
+transformers 5.17). Então o baseline de produção não reproduziu: deu **221/268/291/314, MRR
+0,5970** em vez dos 225/270/293/317 registrados. Antes de suspeitar do meu código, rodei o commit
+anterior **intacto** no ambiente novo: deu **exatamente 221/268/291/314**. Não era o código — era
+o venv. O controle LAB (lexical, sem torch) reproduz **bit-a-bit** (230/287/301, MRR 0,6016), o
+que isola a causa nos embeddings do BGE-M3.
+
+Consequência registrada: **comparação de produção só vale intra-ambiente**. Gravei
+`requirements-medicao.txt` para fechar essa lacuna. Permaneceram `UNKNOWN` as versões exatas do
+venv original (nunca foram registradas) — os números absolutos de produção desta sessão não são
+comparáveis aos de sessões anteriores; o que vale é o pareado (off × on), que é intra-run.

@@ -19,6 +19,14 @@ python3 data/eval/evaluate_rag_benchmark.py
 - `data/eval/eval_summary.json` é **artefato de execução**: `git checkout --` nele antes de
   commitar. Duas corridas em paralelo se sobrescrevem — rode sequencialmente.
 - Modelos de tradução vivem em `/tmp/ragexp/hfhome` com `HF_HUB_OFFLINE=1`.
+- **O venv de medição some quando `/tmp` é limpo.** O controle LAB (scorer lexical, sem torch)
+  reproduz bit-a-bit em qualquer ambiente, mas o caminho de **produção** depende dos embeddings
+  do BGE-M3 e **muda de número** quando `torch`/`transformers` mudam de versão. Medido 19/09: com
+  `torch 2.14/transformers 5.17` o gate deu `221/268/291/314`, MRR 0,5970, contra `225/270/293/317`,
+  MRR 0,6046 com o venv anterior — e o commit `7ddb891` rodado intacto no ambiente novo deu
+  221/268/291/314, provando que foi o ambiente, não o código. **Comparação de produção só vale
+  INTRA-ambiente** (mesma corrida, ligado × desligado). Há um `UNKNOWN`: as versões exatas do venv
+  original (lock não foi gravado).
 
 ## Armadilhas do repositório
 
@@ -103,6 +111,17 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
   423: @1 215→225, @5 271→293, MRR 0,5738→0,6046, e `ausente` **22→16** (melhor que o baseline).
   Custo: +54ms só nas 27% que disparam. Usa as faixas de confiança JÁ calibradas no BM25 — nenhum
   limiar novo para o denso. Registro: `lab-validation-2026-09-19-gate-por-confianca-transfere.jsonl`.
+- **Roteador de fatia REST (`RAG_REST_ROTA`, DEFAULT ON desde 19/09 no modo `gate`)**: a fatia
+  REST é o ponto cego do lexical — o esparso faz **7/40** e **0/40** @1, o denso **puro** faz
+  **18/40** e **8/40**, e a produção media 0-1/40 porque a fusão (RRF) **dilui** o denso com o
+  voto lexical errado. O roteador troca fusão por denso puro **só nesta fatia**, detectada por
+  heurística lexical (`api`). Efeito no holdout (n=447): **@1 +4, @5 +12, @10 +11**; pool 423:
+  **@1 221→223, @3 268→281, @5 291→303, @10 314→325, MRR 0,5970→0,6119**. O que "perde" no
+  colateral são perguntas REST genuínas (o detector acerta; o denso é que não é uniformemente
+  melhor) e não é significativo (blind_v3 p=0,22). Uma guarda condicionando a rota ao gate do
+  BM25 foi testada e **rejeitada**: zera o colateral mas corta o ganho pela metade, porque a
+  margem do BM25 não calibra nesta fatia. Registro:
+  `lab-validation-2026-09-19-roteador-rest-a-fatia-que-o-lexical-nao-alcanca.jsonl`.
 - `RAG_BM25_REAL=1` é um ganho que transfere: @1 +5/+4/+3 e @5 +12/+4/+3 em 3/3
   benchmarks; combinado (n=493) @5 p=0,0201 significativo, @1 p=0,28 não significativo.
 - Ponte EN→PT (`RAG_TRADUZ_EN`) só tem ganho medido no **catálogo de mensagens**; em 5
@@ -114,10 +133,10 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
   **combinado com a ponte EN→PT** muda o disparo numa fatia EN real (o pool é majoritariamente
   PT-BR), e se um gate por RECURSO melhoraria sobre o gate por confiança (o de confiança foi o
   melhor dos testados: margem AUC 0,111).
-- **Roteamento por fatia/por recurso**: o denso puro na fatia `rest_api_ops` ainda é baixo
-  (gate: @1 0/40, @5 5/40, @10 9/40, contra 1/10/22 do `fuse` puro). A fatia responde a' fusão
-  global, mas a fusão global custa caro em `fresh_blind`. Um roteador que ligue `fuse` puro só
-  em `rest/ops` não foi medido NO CAMINHO DA PRODUÇÃO.
+- **Roteamento por fatia/por recurso**: MEDIDO e promovido em 19/09 (ver "o que funciona").
+  O detector de fatia é lexical ('api'), não LLM: em pergunta de usuário real que fale de REST
+  sem a palavra `api`, a rota NÃO dispara (robustez da lista foi medida; cobertura de sinônimos
+  não). Um classificador por RECURSO (não por palavra) segue não medido.
 - **Lab × produção final (7381)**: o pareado contra o corpus +REST deu 44/64 (p=0,0670), contra
   38/67 (p=0,0060) antes — mas ninguém mediu lab × produção **final**.
 - **Taxa de disparo da ponte** e o efeito numa fatia EN (este pool é majoritariamente PT-BR).
