@@ -20,6 +20,17 @@ try:
 except Exception:
     tws_dense = None
 
+# MODO RESTO_CLASS. DEFAULT `auto`. A fatia REST nao e' problema de RECUPERACAO, e' de
+# CLASSIFICACAO: o espaco de resposta e' FECHADO e ENUMERADO (276 operacoes, estrutura
+# conhecida: metodo, path, familia). Medido no mesmo benchmark: recuperacao no melhor ramo
+# 25,0% @1; classificacao pelo catalogo 92,5% @1 (3,7x). Quando a consulta e' REST E ha'
+# chave, a resposta vem da CLASSIFICACAO, nao do ranking. Sem chave, degrada para o denso/
+# recuperacao - o MCP nao pode deixar de responder por falta de credencial.
+# Ver data/evidence/lab-validation-2026-09-19-rest-e-classificacao-nao-recuperacao-276-
+# classes-a-92-5-por-cento-contra-25-por-cento.jsonl
+# RAG_RESTO_CLASS = auto (default) | off (desliga) | on (exige; sem chave, erro explicito)
+RESTO_CLASS = (os.environ.get("RAG_RESTO_CLASS") or "auto").strip().lower()
+
 # MODO DENSO. DEFAULT `gate`: funde so' quando o LEXICO esta' fraco (ver _deve_fundir).
 #
 # ATENCAO: `fuse` parece ganhar no pool de 423 e NAO GANHA no sistema real. Medido:
@@ -307,20 +318,42 @@ REST_TERMOS = re.compile(
 def _rest_rota_ativa():
     """A fatia REST esta' ligada?
 
-    DEFAULT LIGADA quando o modo denso e' `gate` (o default). `RAG_REST_ROTA=0` desliga;
-    `RAG_DENSE_MODE=off` tambem (nao ha' denso para rotear). `RAG_DENSE_MODE=rest` liga
-    sozinho. Um booleano, nao uma cascata: o detector de fatia ja' e' a estratificacao.
+    DEFAULT DESLIGADA. O codigo e a medicao ficam (a evidencia mostra que o roteamento
+    melhora a RECUPERACAO na fatia REST), mas o default foi revertido em 19/09: a fatia
+    REST nao e' problema de busca, e' de CLASSIFICACAO (92,5% @1 contra 25% do melhor ramo
+    de recuperacao - ver `lab-validation-2026-09-19-rest-e-classificacao-nao-recuperacao`).
+    Melhorar 8->15 @1 dentro de um teto de 25 e' otimizar a classe de problema errada.
+    Mantido opt-in para quem quiser medir/reproduzir o roteamento.
     """
     if DENSE_MODE == "off":
         return False
     if DENSE_MODE == "rest":
         return True
-    v = (os.environ.get("RAG_REST_ROTA") or "").strip().lower()
-    if v in ("0", "off", "false"):
+    return (os.environ.get("RAG_REST_ROTA") or "").strip().lower() in ("1", "on", "true")
+
+
+# Import TOLERANTE do classificador REST: o MCP nao pode deixar de subir porque o modulo
+# ou a chave faltaram. Sem eles, a fatia REST volta ao roteador denso/recuperacao.
+try:
+    import tws_rest_classifier as _rest_cls
+except Exception:  # noqa: BLE001
+    _rest_cls = None
+
+
+def _rest_class_disponivel():
+    """Ha' classificador E chave? Sem os dois, a fatia REST volta a recuperacao."""
+    try:
+        return _rest_cls is not None and _rest_cls.disponivel()
+    except Exception:  # noqa: BLE001
         return False
-    if v in ("1", "on", "true"):
-        return True
-    return DENSE_MODE == "gate"
+
+
+def _rest_classifica(q):
+    """Chama o classificador. Nunca propaga excecao: falha = None = degrada."""
+    try:
+        return _rest_cls.classifica(q)
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def _rest_guarda_ativa():
@@ -361,6 +394,27 @@ def handle_tool_call(name, args):
         q = args.get("query", "")
         cat = args.get("category")
         top_k = int(args.get("top_k", 5))
+
+        # CLASSIFICADOR REST. Ver MODO RESTO_CLASS no topo. A fatia REST e' escolha entre
+        # 276 operacoes conhecidas, nao busca - entao NAO passa por BM25 nem denso. So'
+        # dispara em consulta REST E com chave; devolve a operacao escolhida com a evidencia
+        # que a sustenta. O desfecho e' escolha discreta, nao posicao de ranking.
+        if _e_consulta_rest(q):
+            if RESTO_CLASS != "off" and _rest_class_disponivel():
+                escolha = _rest_classifica(q)
+                if escolha:
+                    return {
+                        "results": [escolha],
+                        "count": 1,
+                        "metodo": "classificacao_rest_276",
+                        "nota": "Escolha entre as 276 operacoes conhecidas (nao e' "
+                                "recuperacao). A evidencia acima sustenta a escolha.",
+                    }
+            elif RESTO_CLASS == "on" and not _rest_class_disponivel():
+                return {"results": [], "count": 0, "metodo": "classificacao_rest_276",
+                        "error": "RAG_RESTO_CLASS=on mas nao ha' chave para o classificador "
+                                 "(A6API_KEY, ou a variavel declarada no config do HAOS)."}
+
         tokens = re.findall(r"\w+", q.lower())
         results = search_bm25(tokens, category=cat, top_k=top_k)
 
