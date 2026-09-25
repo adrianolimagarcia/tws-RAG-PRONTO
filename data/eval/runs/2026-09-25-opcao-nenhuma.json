@@ -1,0 +1,11 @@
+{
+ "rest": {
+  "acertos": 33,
+  "nenhuma": 1,
+  "erros": 6
+ },
+ "pool_pior_caso": {
+  "nenhuma": 5,
+  "forcou_errado": 25
+ }
+}

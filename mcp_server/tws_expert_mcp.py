@@ -28,8 +28,16 @@ except Exception:
 # recuperacao - o MCP nao pode deixar de responder por falta de credencial.
 # Ver data/evidence/lab-validation-2026-09-19-rest-e-classificacao-nao-recuperacao-276-
 # classes-a-92-5-por-cento-contra-25-por-cento.jsonl
-# RAG_RESTO_CLASS = auto (default) | off (desliga) | on (exige; sem chave, erro explicito)
-RESTO_CLASS = (os.environ.get("RAG_RESTO_CLASS") or "auto").strip().lower()
+# DEFAULT `off`. MEDIDO (25/09, provider real, 40 ops @1 = 34/40): a classificacao ganha
+# MUITO na fatia REST, mas o GATILHO nao e' confiavel - no pool de 423 a rota automatica
+# LEVOU 221 acertos para 201 (-20): das 60 perguntas que "parecem REST", 23 eram acertos da
+# recuperacao e viraram 3. O detector lexical nao dispara nas perguntas REAIS de operacao
+# (recall 17,5% no benchmark - elas descrevem a operacao, sem dizer "api") e dispara em
+# perguntas do pool que CITAM endpoint/API. As duas distribuicoes sao INVERTIDAS para esse
+# sinal. Entao `auto` fica desligado ate' haver gatilho com precisao medida; `on` liga para
+# cargas do tipo benchmark de ops (onde a fatia REST e' o caso, nao a excecao).
+# RAG_RESTO_CLASS = off (default) | auto | on (exige; sem chave, erro explicito)
+RESTO_CLASS = (os.environ.get("RAG_RESTO_CLASS") or "off").strip().lower()
 
 # MODO DENSO. DEFAULT `gate`: funde so' quando o LEXICO esta' fraco (ver _deve_fundir).
 #
@@ -88,6 +96,9 @@ doc_ids = []
 doc_lens = []
 postings = defaultdict(list)
 categories = Counter = defaultdict(int)
+# Indice claim_id -> doc. Usado pelo ramo de CLASSIFICACAO REST para devolver a claim do
+# CORPUS (o arquivo de ops guarda versoes curtas; ver _rest_classifica).
+_DOC_POR_ID = {}
 
 if os.path.exists(CORPUS_FILE):
     with open(CORPUS_FILE, "r", encoding="utf-8") as f:
@@ -96,6 +107,7 @@ if os.path.exists(CORPUS_FILE):
             item = json.loads(line)
             docs.append(item)
             doc_ids.append(item["claim_id"])
+            _DOC_POR_ID[item["claim_id"]] = item
             categories[item.get("category", "Geral")] += 1
             
             text = f"{item['claim']} {item.get('context_prefix', '')} {' '.join(item.get('synthetic_questions', []))}"
@@ -349,11 +361,26 @@ def _rest_class_disponivel():
 
 
 def _rest_classifica(q):
-    """Chama o classificador. Nunca propaga excecao: falha = None = degrada."""
+    """Chama o classificador. Nunca propaga excecao: falha = None = degrada.
+
+    DEVOLVE A CLAIM DO CORPUS, nao a do arquivo de operacoes. Medido: as 276 claims de
+    `rest-api-derived-ops.jsonl` sao VERSOES CURTAS - 0/276 batem byte a byte com o corpus
+    (o corpus tem conteudo anexado). Devolver a do arquivo quebraria a garantia de
+    `evidencia_verbatim` que o benchmark de resposta confere: a resposta deixaria de ser o
+    que o corpus sustenta. Aqui a escolha vem do classificador, mas a EVIDENCIA vem do
+    mesmo corpus que a recuperacao usa.
+    """
     try:
-        return _rest_cls.classifica(q)
+        escolha = _rest_cls.classifica(q)
     except Exception:  # noqa: BLE001
         return None
+    if not escolha:
+        return None
+    d = _DOC_POR_ID.get(escolha.get("claim_id"))
+    if d is None:
+        return None
+    return dict(escolha, claim=d.get("claim"), category=d.get("category"),
+                source_file=d.get("source_file"))
 
 
 def _rest_guarda_ativa():

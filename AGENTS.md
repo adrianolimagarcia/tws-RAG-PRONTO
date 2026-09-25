@@ -172,3 +172,34 @@ Regras de medicao que esta sessao custou a aprender:
   devolve True com modelo quebrado; a run cai para BM25 sem erro. Use SMOKE TEST.
 - `HF_HOME` deve apontar para o diretorio `hub` (o `tws_dense` passa `cache_dir=HF_HOME`).
 - Hit@1 do ranking e `acertou` do benchmark de resposta batem (221) - use como cross-check.
+
+### Correcao (2026-09-25, medida com provider real)
+
+O default anterior (`auto`) estava ERRADO e foi medido: ligado, leva o pool de 221 acertos
+para 201 (-20). O classificador em si e' bom - `gemini-3.8-flash-medium` faz 34/40 (85,0%)
+no benchmark de ops - mas o GATILHO nao separa a fatia:
+
+- detector lexical: recall **17,5%** (7/40) no benchmark de ops. As perguntas REAIS de
+  operacao DESCREVEM a operacao ("travar varios calendarios por filtro") e nao citam
+  "api"/"endpoint"; as perguntas do pool que citam endpoint frequentemente NAO sao de
+  operacao. As distribuicoes sao INVERTIDAS para esse sinal.
+- detector denso (sim. maxima as 276 ops): AUC 0,87 mas, com 40 positivos contra 423
+  negativos, precisao 25% em recall 90% - sem ponto de operacao util.
+- opcao "NENHUMA" no catalogo: REJEITADA. No pior caso do pool (30 mais parecidas com
+  REST), 25/30 escolheram uma operacao em vez de abster - nao contem o dano.
+
+**Default agora e' `off`.** Para a fatia REST legitima (benchmark de ops), ligar
+`RAG_RESTO_CLASS=on`. O gatilho por carga ainda NAO existe.
+
+**Proveniencia (bug corrigido):** `_rest_classifica()` devolve a claim do **CORPUS** via
+`_DOC_POR_ID`, nao a do arquivo de ops - 0/276 claims do arquivo batem byte a byte com o
+corpus. Sem isso o `evidencia_verbatim` do benchmark cai de 100% para 85,8%.
+
+**Padrao dos erros do classificador:** ambiguidade real BULK vs ID
+(`/plan/job/action/confirm-succ` vs `/plan/job/{job_id}/action/confirm-succ`, idem
+abend/hold/kill, release-dependencies vs release-all-dependencies). Ele acerta a FAMILIA
+e erra a VARIANTE. `-high` NAO melhora (80% < 85% do `-medium`).
+
+Provider usado: `http://100.77.31.78:8790/v1`. `gemini-3.8-flash` exato da'
+`model_not_in_plan`; use `-medium` (melhor), `-high`, `-low` ou `-none`.
+Runs em `data/eval/runs/`.
