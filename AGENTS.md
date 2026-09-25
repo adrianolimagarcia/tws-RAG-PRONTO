@@ -141,3 +141,34 @@ Medido em pool 423 / blind_v3 / golden_qa, todos pioram quando ligados:
   38/67 (p=0,0060) antes — mas ninguém mediu lab × produção **final**.
 - **Taxa de disparo da ponte** e o efeito numa fatia EN (este pool é majoritariamente PT-BR).
 - As **20 perguntas** que nem lab nem produção acham (o lab tem o doc para 2 delas).
+
+## REST: classificar, nao recuperar (2026-09-25)
+
+A fatia REST tem espaco de resposta FECHADO (276 operacoes, `data/knowledge/rest-api-derived-ops.jsonl`).
+Medido: recuperacao no melhor ramo 25,0% @1; classificacao pelo catalogo 92,5% @1 (3,7x).
+Evidencia: `data/evidence/lab-validation-2026-09-19-rest-e-classificacao-nao-recuperacao-*.jsonl`.
+
+No MCP:
+- `RAG_RESTO_CLASS` (default `auto`): consulta REST + chave -> resposta vem do
+  classificador (`mcp_server/tws_rest_classifier.py`), no INICIO do handler (nao passa por
+  BM25 nem denso). Sem chave -> degrada para recuperacao. `on` exige a chave (erro
+  explicito); `off` desliga.
+- `RAG_REST_ROTA` (default **OFF** desde 25/09): o roteamento denso+RRF da fatia REST fica
+  opt-in. Codigo e evidencia ficam; so' o default saiu.
+- `tws_rest_classifier.py` e' a UNICA implementacao da chamada; `scripts/classify_rest_ops_276.py`
+  usa o modulo (nao duplicar o prompt).
+- A chave (`A6API_KEY`/`HERMES_CUSTOM_API_A6API_COM_API_KEY`) nao existe neste ambiente: a
+  acuracia real pela API continua UNKNOWN aqui. Em teste, aponte `A6API_BASE_URL` para um stub.
+
+## Medicao: nivel-resposta, nao so' ranking
+
+`data/eval/measure_resposta.py` mede a RESPOSTA (nao a posicao). O MCP devolve a `claim`
+verbatim, entao alucinacao = evidencia errada no topo. Desfechos: acertou/errou/ausente.
+Pool 423, default: acertou 221 (52,2%), errou 134, ausente 68; evidencia verbatim 423/423;
+afirmou com suporte lexical <0,05: 57 (13,5%, LIMITE INFERIOR - nao e' a taxa de alucinacao).
+
+Regras de medicao que esta sessao custou a aprender:
+- Registre a CONFIG no cabecalho e no JSON: `denso presente` != `denso vivo`. `tws_dense.disponivel()`
+  devolve True com modelo quebrado; a run cai para BM25 sem erro. Use SMOKE TEST.
+- `HF_HOME` deve apontar para o diretorio `hub` (o `tws_dense` passa `cache_dir=HF_HOME`).
+- Hit@1 do ranking e `acertou` do benchmark de resposta batem (221) - use como cross-check.
