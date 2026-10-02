@@ -29,7 +29,7 @@ _CACHE = {}
 def _cache_dir():
     # Mesma convencao do harness do laboratorio: HF_HOME, senao o cache do reranker.
     return os.environ.get("HF_HOME") or os.path.join(
-        os.path.dirname(RAIZ), "hermes", "neural-reranker", "hf_cache")
+        os.path.dirname(os.path.dirname(RAIZ)), "hermes", "neural-reranker", "hf_cache")
 
 
 def disponivel(indice=None, meta=None):

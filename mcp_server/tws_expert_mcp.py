@@ -20,6 +20,12 @@ try:
 except Exception:
     tws_dense = None
 
+# Segundo estagio neural (Cross-Encoder). Import TOLERANTE.
+try:
+    import tws_reranker
+except Exception:
+    tws_reranker = None
+
 # MODO RESTO_CLASS. DEFAULT `auto`. A fatia REST nao e' problema de RECUPERACAO, e' de
 # CLASSIFICACAO: o espaco de resposta e' FECHADO e ENUMERADO (276 operacoes, estrutura
 # conhecida: metodo, path, familia). Medido no mesmo benchmark: recuperacao no melhor ramo
@@ -442,8 +448,12 @@ def handle_tool_call(name, args):
                         "error": "RAG_RESTO_CLASS=on mas nao ha' chave para o classificador "
                                  "(A6API_KEY, ou a variavel declarada no config do HAOS)."}
 
+        k_pool = top_k
+        if tws_reranker and tws_reranker.ativo():
+            k_pool = max(top_k, tws_reranker.top_n())
+
         tokens = re.findall(r"\w+", q.lower())
-        results = search_bm25(tokens, category=cat, top_k=top_k)
+        results = search_bm25(tokens, category=cat, top_k=k_pool)
 
         # PONTE EN->PT. Motivo medido: a consulta inglesa e' a lacuna real deste sistema.
         # No proprio buscador abaixo, as 24 perguntas virgens em ingles dao @1 25,0% e
@@ -461,7 +471,7 @@ def handle_tool_call(name, args):
         tokens_finais = tokens
         if traducao:
             tokens_t = re.findall(r"\w+", traducao.lower())
-            results_t = search_bm25(tokens_t, category=cat, top_k=top_k)
+            results_t = search_bm25(tokens_t, category=cat, top_k=k_pool)
             if results_t:
                 results = results_t
                 tokens_finais = tokens_t
@@ -499,12 +509,27 @@ def handle_tool_call(name, args):
             if _rest_guarda_ativa() and not _deve_fundir(base_conf):
                 rota_rest = False
         if rota_rest:
-            esparsos = search_bm25(tokens_finais, category=cat, top_k=max(top_k, RRF_K))
-            results = _funde_rrf(q, esparsos, top_k, peso_denso=REST_PESO)
+            esparsos = search_bm25(tokens_finais, category=cat, top_k=max(k_pool, RRF_K))
+            results = _funde_rrf(q, esparsos, k_pool, peso_denso=REST_PESO)
         elif _deve_fundir(base_conf):
-            esparsos = search_bm25(tokens_finais, category=cat, top_k=max(top_k, RRF_K))
-            results = _funde_rrf(q, esparsos, top_k)
+            esparsos = search_bm25(tokens_finais, category=cat, top_k=max(k_pool, RRF_K))
+            results = _funde_rrf(q, esparsos, k_pool)
             base_conf = esparsos[:top_k]
+
+        # Margem do ramo esparso (escala calibrada), nao do score fundido.
+        faixa = "baixa"
+        margem_norm = 0.0
+        if base_conf:
+            s1 = base_conf[0]["score"]
+            s2 = base_conf[1]["score"] if len(base_conf) > 1 else 0.0
+            margem_norm = (s1 - s2) / s1 if s1 > 0 else 0.0
+            p = _params_confianca()
+            if margem_norm >= p["faixa_alta"]:
+                faixa = "alta"
+            elif margem_norm >= p["faixa_media"]:
+                faixa = "media"
+            else:
+                faixa = "baixa"
 
         # Modo antigo (portao duro). OPT-IN e DESLIGADO por padrao: descartar resposta
         # que existia e' regressao (66 acertos perdidos no limiar 0,177). Mantido apenas
@@ -515,32 +540,24 @@ def handle_tool_call(name, args):
                 lim = float(limiar_duro)
             except ValueError:
                 lim = 0.0
-            if lim > 0:
-                s1 = base_conf[0]["score"]
-                s2 = base_conf[1]["score"] if len(base_conf) > 1 else 0.0
-                mn = (s1 - s2) / s1 if s1 > 0 else 0.0
-                if mn < lim:
-                    return {"results": [], "count": 0, "abstained": True, "margin": round(mn, 4),
-                            "message": "Abstencao DURA ativa (RAG_ABSTAIN_MARGIN); "
-                                       "respostas boas sao descartadas por desenho."}
+            if lim > 0 and margem_norm < lim:
+                return {"results": [], "count": 0, "abstained": True, "margin": round(margem_norm, 4),
+                        "message": "Abstencao DURA ativa (RAG_ABSTAIN_MARGIN); "
+                                   "respostas boas sao descartadas por desenho."}
 
+        # RE-RANKER NEURAL (2o estagio).
+        if tws_reranker and tws_reranker.ativo() and results:
+            results = tws_reranker.rerank(q, results, confianca=faixa)
+
+        results = results[:top_k]
         out = {"results": results, "count": len(results)}
 
         if results:
-            # Margem do ramo esparso (escala calibrada), nao do score fundido.
-            s1 = base_conf[0]["score"] if base_conf else 0.0
-            s2 = base_conf[1]["score"] if base_conf and len(base_conf) > 1 else 0.0
-            margem_norm = (s1 - s2) / s1 if s1 > 0 else 0.0
-            p = _params_confianca()
-            if margem_norm >= p["faixa_alta"]:
-                faixa = "alta"
-            elif margem_norm >= p["faixa_media"]:
-                faixa = "media"
-            else:
-                faixa = "baixa"
             out["confianca"] = faixa
             out["margin"] = round(margem_norm, 4)
             out["orientacao"] = MSG_CONFIANCA[faixa]
+            if tws_reranker and tws_reranker.ativo():
+                out["rerank_mode"] = tws_reranker.modo()
 
             # Aviso de versao: o corpus mistura 9.x/10.2.0-10.2.7 com 10.2.8. Medido:
             # quando o top-1 e' de versao diferente, ele acerta 33,3% contra 48,6% das

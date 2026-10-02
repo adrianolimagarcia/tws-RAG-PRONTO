@@ -24,7 +24,7 @@ import time
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(RAIZ, "mcp_server"))
 
-POOL = os.path.join(RAIZ, "data/eval/decontaminated/pool423_reconstruido_2026-09-21.jsonl")
+POOL = os.environ.get("RAG_POOL") or os.path.join(RAIZ, "data/eval/decontaminated/pool423_reconstruido_2026-09-21.jsonl")
 # top_k alto de proposito: aqui nao queremos o top-5 que o usuario ve, queremos a POSICAO
 # do alvo no ranking completo (senao Hit@10 e MRR ficam truncados e o numero mente).
 TOP_K = 10000
