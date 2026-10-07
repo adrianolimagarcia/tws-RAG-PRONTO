@@ -136,6 +136,40 @@ for rest_file in rest_files:
                 }
                 n_rest += 1
 
+# 1c. Fonte Procedimentos de Laboratorio (data/knowledge/lab-procedures-derived.jsonl).
+# Procedimentos operacionais validados em laboratorio (inclui conman, composer, vartable, etc.).
+lab_proc_file = os.path.join(base_dir, "data", "knowledge", "lab-procedures-derived.jsonl")
+n_lab_proc = 0
+if os.path.exists(lab_proc_file) and os.environ.get("SKIP_LAB_PROCEDURES") != "1":
+    with open(lab_proc_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                c = json.loads(line)
+            except Exception:
+                continue
+            cid = c.get("claim_id")
+            if not cid or cid in claims_by_id:
+                continue
+            texto = " ".join(str(c.get(k, "")) for k in
+                             ("claim", "syntax", "supporting_quote", "tool", "command", "source_title"))
+            prefix = c.get("source_title") or ""
+            categoria = classify_claim(prefix, texto)
+            taxonomy_counter[categoria] += 1
+            claims_by_id[cid] = {
+                "claim_id": cid,
+                "claim": texto,
+                "context_prefix": prefix,
+                "category": categoria,
+                "result": c.get("result", "SUCCESS"),
+                "platform": "HWA 10.2.8 Distributed",
+                "source_file": os.path.basename(lab_proc_file),
+                "synthetic_questions": [],
+            }
+            n_lab_proc += 1
+
 # Gravar Master Consolidated
 with open(master_file, "w", encoding="utf-8") as f:
     for cid in sorted(claims_by_id.keys()):
@@ -170,6 +204,7 @@ print(f"\nConsolidacao concluida com sucesso:")
 print(f"- Total de claims unicas: {len(claims_by_id)}")
 print(f"- Total de perguntas sinteticas indexadas: {len(all_questions)}")
 print(f"- Documentos REST API V2 acrescentados: {n_rest}")
+print(f"- Documentos Procedimentos de Lab acrescentados: {n_lab_proc}")
 print(f"- Distribuicao por categoria:")
 for cat, count in taxonomy_counter.most_common():
     print(f"  {count:4d}x {cat}")
