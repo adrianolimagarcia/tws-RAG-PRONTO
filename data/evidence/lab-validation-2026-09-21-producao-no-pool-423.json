@@ -1,0 +1,16 @@
+{
+ "claim_id": "tws-rag-producao-medida-no-pool-423-2026-09-21-0001",
+ "claim": "MEDIDA A PRODUCAO PELA PRIMEIRA VEZ NO CONJUNTO PRINCIPAL (423). Ate' aqui todo numero de metrica do projeto vinha do harness de laboratorio, que usa o scorer de rag_core/lexical.py - um scorer que a producao NAO usa. Nao existia instrumento que dirigisse o buscador real (mcp_server/tws_expert_mcp.search_bm25). Criado data/eval/measure_producao_pool423.py. VALIDACAO do instrumento: nas 24 perguntas virgens EN ele reproduz EXATAMENTE o registrado na sessao 2026-09-20 (6/24 @1, 12/24 @5).",
+ "result": "NEUTRAL - a producao e' PIOR que o laboratorio, nao melhor.",
+ "status": "verified",
+ "risk": "read_only",
+ "performed_at": "2026-09-21T10:40:00Z",
+ "performed_by": "agente OpenHands (agent-canvas)",
+ "product_version": "HWA 10.2.8 (corpus do produto)",
+ "platform": "cachyos, python 3.12, MCP mcp_server/tws_expert_mcp.py (BM25 k1=1.5, b=0.75)",
+ "sanitized_output": "producao, corpus atual (7019 docs), ponte OFF: @1 202/423 (47,8%) | @3 240 | @5 256 (60,5%) | @10 281 (66,4%) | MRR 0,5381. Alvo ausente: 82/423 (19,4%). Lab no mesmo conjunto: @1 230/423 (54,4%), @5 287 (67,8%), MRR 0,6016. Pareado: lab ganha 38 / perde 67 (p=0,0060) - a diferenca e' SIGNIFICATIVA, na direcao do lab. HIPOTESE MINHA QUE CAIU: eu havia inferido, das 24 perguntas EN, que a producao estaria a frente do lab. No conjunto grande esta' 6,6pp atras. A amostra de 24 nao generalizava.",
+ "evidence_url": "repo:data/eval/measure_producao_pool423.py + repo:data/eval/augmenta_corpus_rest.py",
+ "reversibility": "TWS_CORPUS_FILE desliga o override; sem a variavel o MCP usa o corpus de sempre (verificado: 7019 docs, 6/24 @1 nas 24 EN)",
+ "observations": "As 24 perguntas EN nao generalizam para o pool: a inferencia 'producao melhor' foi feita sobre n=24 e nao se sustentou em n=423. Registrado para nao repetir.",
+ "stop_criterion": "nenhum - medicao, nao mudanca"
+}

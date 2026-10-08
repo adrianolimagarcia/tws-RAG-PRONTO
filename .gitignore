@@ -6,3 +6,8 @@ __pycache__/
 # Benchmarks descontaminados: DERIVADOS (regeneraveis por scripts/decontaminate_benchmarks.py)
 # Nao versionar: sao copia filtrada dos originais e re-introduzem conteudo ja existente.
 data/eval/decontaminated/
+
+# Indice denso do MCP (29MB): DERIVADO, regeneravel do corpus versionado por
+# `scripts/build_dense_index_mcp.py` (~56min em CPU; segundos se houver torch com CUDA).
+# Sem o .pt, `RAG_DENSE_MODE=fuse` degrada para `off`: a producao nao quebra, so' nao ganha.
+data/indexes/mcp_bge_m3.pt

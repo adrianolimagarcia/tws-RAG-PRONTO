@@ -1,0 +1,34 @@
+{
+ "pool423": {
+  "on": 230,
+  "flat": 225,
+  "n": 423,
+  "ganha": 1,
+  "perde": 6,
+  "p": 0.125
+ },
+ "blind_v3": {
+  "on": 182,
+  "flat": 179,
+  "n": 262,
+  "ganha": 0,
+  "perde": 3,
+  "p": 0.25
+ },
+ "golden_qa": {
+  "on": 53,
+  "flat": 51,
+  "n": 70,
+  "ganha": 0,
+  "perde": 2,
+  "p": 0.5
+ },
+ "virgin_en": {
+  "on": 2,
+  "flat": 2,
+  "n": 24,
+  "ganha": 0,
+  "perde": 0,
+  "p": 1.0
+ }
+}

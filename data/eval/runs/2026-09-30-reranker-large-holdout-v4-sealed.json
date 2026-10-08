@@ -1,0 +1,615 @@
+{
+  "n": 60,
+  "top_k": 1,
+  "dense_mode": "gate",
+  "denso_disponivel": true,
+  "corpus_docs": 7381,
+  "acertou": 27,
+  "errou": 14,
+  "ausente": 19,
+  "evidencia_verbatim": 60,
+  "sem_suporte_lexical": 5,
+  "suporte_mediana": 0.1071,
+  "linhas": [
+    {
+      "id": "clean-v4-0001",
+      "top1": "hwa-10.2.8-runbook-recovery-option-0005",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0526,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0002",
+      "top1": "hwa-10.2.8-wsa-security-file-0023",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1071,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0003",
+      "top1": "hwa-10.2.8-jobsstate-ready-0001",
+      "desfecho": "errou",
+      "pos_alvo": 4,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0004",
+      "top1": "hwa-10.2.8-messages-awsui0904w-0342",
+      "desfecho": "errou",
+      "pos_alvo": 21,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1852,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0005",
+      "top1": "hwa-10.2.8-incident-dwc-role-task-0129",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0882,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0006",
+      "top1": "hwa-10.2.8-monitor-predefined-reports-0012",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1364,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0007",
+      "top1": "hwa-10.2.8-messages-awsui0569e-0205",
+      "desfecho": "errou",
+      "pos_alvo": 2,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0588,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0008",
+      "top1": "hwa-10.2.8-messages-awsui0121e-0049",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0345,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0009",
+      "top1": "hwa-10.2.8-EEL-HT15E-0001",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0811,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0010",
+      "top1": "hwa-10.2.8-wsa-confidence-factor-0012",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1905,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0011",
+      "top1": "hwa-10.2.8-aida-retrain-specialdays-0016",
+      "desfecho": "errou",
+      "pos_alvo": 2,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.038,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0012",
+      "top1": "hwa-10.2.8-messages-awsui0562e-0201",
+      "desfecho": "errou",
+      "pos_alvo": 2,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0938,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0013",
+      "top1": "hwa-10.2.8-runbook-showjobs-0024",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0357,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0014",
+      "top1": "hwa-10.2.8-k8s-deploy-0010",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1081,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0015",
+      "top1": "hwa-10.2.8-sec-config-dropins-0031",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0625,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0016",
+      "top1": "hwa-10.2.8-incident-big-joblog-mdm-stop-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0667,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0017",
+      "top1": "hwa-10.2.8-incident-jom179e-0047",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0018",
+      "top1": "hwa-10.2.8-incident-hadr-db2-console-0131",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1034,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0019",
+      "top1": "hwa-lab-10.2.8-fta-offline-autonomy-vs-dynamic-agent-0004",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0571,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0020",
+      "top1": "hwa-10.2.8-sec-ssl-version-0012",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1905,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0021",
+      "top1": "hwa-10.2.8-incident-big-joblog-mdm-stop-0001",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0889,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0022",
+      "top1": "hwa-10.2.8-messages-awsui5023e-0456",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1154,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0023",
+      "top1": "hwa-10.2.8-EEL-IT01E-0002",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.2273,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0024",
+      "top1": "hwa-10.2.8-EEL-HT15E-0001",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0811,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0025",
+      "top1": "hwa-10.2.8-globalopts-smtpusername-0001",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1071,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0026",
+      "top1": "hwa-10.2.8-optman-se-enstrencrypt",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.375,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0027",
+      "top1": "hwa-10.2.8-incident-abend-recovery-0030",
+      "desfecho": "errou",
+      "pos_alvo": 25,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.08,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0028",
+      "top1": "hwa-10.2.8-globalopts-encfinternetworkdeps-0001",
+      "desfecho": "errou",
+      "pos_alvo": 2,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.15,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0029",
+      "top1": "hwa-10.2.8-optman-wl-workstationlimit",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.5,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0030",
+      "top1": "hwa-10.2.8-tune-mm-retrylink-0033",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0952,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0031",
+      "top1": "hwa-10.2.8-conman-release-sched-0001",
+      "desfecho": "errou",
+      "pos_alvo": 3,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1176,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0032",
+      "top1": "hwa-lab-10.2.8-twsinst-libcrypt-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1538,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0033",
+      "top1": "hwa-10.2.8-globalopts-enstartcondsucccrondeadline-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1875,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0034",
+      "top1": "hwa-10.2.8-globalopts-smtpusername-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1071,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0035",
+      "top1": "hwa-lab-10.2.8-man-pages-ingestion-measured-rank-competition-cost-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0469,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0036",
+      "top1": "hwa-10.2.8-wsa-promotion-offset-0014",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.087,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0037",
+      "top1": "hwa-msgcat-awsfab165e",
+      "desfecho": "errou",
+      "pos_alvo": 35,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0938,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0038",
+      "top1": "hwa-msgcat-awsbhu116e",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1351,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0039",
+      "top1": "hwa-msgcat-awsbhu559e",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0278,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0040",
+      "top1": "hwa-10.2.8-ha-msg-awsfab295w",
+      "desfecho": "errou",
+      "pos_alvo": 3,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0041",
+      "top1": "hwa-msgcat-awsbcw044i",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1111,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0042",
+      "top1": "hwa-10.2.8-ha-msg-awsbda005w",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.2,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0043",
+      "top1": "hwa-install-bkmdm-1028-keys-0004",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1212,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0044",
+      "top1": "hwa-10.2.8-showjobs-agent-ready-0034",
+      "desfecho": "errou",
+      "pos_alvo": 20,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.087,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0045",
+      "top1": "hwa-10.2.8-messages-awsui0002e-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0769,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0046",
+      "top1": "hwa-10.2.8-incident-hadr-db2-console-0131",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1379,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0047",
+      "top1": "hwa-10.2.8-postgresql-postgresql-mdm-db-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.2353,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0048",
+      "top1": "hwa-liberty-install-10.2.0-0001",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.2,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0049",
+      "top1": "hwa-10.2.8-messages-awsui0087e-0035",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1316,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0050",
+      "top1": "hwa-lab-10.2.8-agent-docker-install-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0625,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0051",
+      "top1": "hwa-10.2.8-install-dwcinst-install-0006",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1724,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0052",
+      "top1": "hwa-10.2.8-dynagent-database-job-0006",
+      "desfecho": "errou",
+      "pos_alvo": 27,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1481,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0053",
+      "top1": "hwa-10.2.8-rest-api-v2-endpoint-0011",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1111,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0054",
+      "top1": "hwa-10.2.8-rest-run-cycle-group-0001",
+      "desfecho": "ausente",
+      "pos_alvo": null,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1154,
+      "confianca": "media"
+    },
+    {
+      "id": "clean-v4-0055",
+      "top1": "hwa-10.2.8-gui-sap-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0857,
+      "confianca": "alta"
+    },
+    {
+      "id": "clean-v4-0056",
+      "top1": "hwa-10.2.8-rest-op-put-twsd-api-v2-model-runcyclegroup-action-unlock-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0714,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0057",
+      "top1": "hwa-10.2.8-rest-op-put-twsd-api-v2-model-workstationclass-workstationclass-id-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.2727,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0058",
+      "top1": "hwa-10.2.8-dwc-api-0006",
+      "desfecho": "errou",
+      "pos_alvo": 2,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.0882,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0059",
+      "top1": "hwa-10.2.8-rest-op-put-twsd-api-v2-model-runcyclegroup-action-lock-0001",
+      "desfecho": "acertou",
+      "pos_alvo": 1,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1429,
+      "confianca": "baixa"
+    },
+    {
+      "id": "clean-v4-0060",
+      "top1": "hwa-10.2.8-rest-job-stream-in-plan-0001",
+      "desfecho": "errou",
+      "pos_alvo": 3,
+      "metodo": "recuperacao",
+      "evidencia_verbatim": true,
+      "suporte_lexical": 0.1613,
+      "confianca": "baixa"
+    }
+  ]
+}

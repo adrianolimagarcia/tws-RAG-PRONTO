@@ -1,0 +1,47 @@
+[
+ {
+  "dominio": "catalogo de mensagens (controle ja' medido)",
+  "pt": 8,
+  "en": 2,
+  "enpt": 7,
+  "ganha": 6,
+  "perde": 1,
+  "p": 0.125
+ },
+ {
+  "dominio": "API REST",
+  "pt": 4,
+  "en": 3,
+  "enpt": 4,
+  "ganha": 3,
+  "perde": 2,
+  "p": 1.0
+ },
+ {
+  "dominio": "planejamento de modelo",
+  "pt": 53,
+  "en": 38,
+  "enpt": 35,
+  "ganha": 10,
+  "perde": 13,
+  "p": 0.6776394844055176
+ },
+ {
+  "dominio": "instalacao/upgrade",
+  "pt": 28,
+  "en": 16,
+  "enpt": 23,
+  "ganha": 11,
+  "perde": 4,
+  "p": 0.11846923828125
+ },
+ {
+  "dominio": "mensagens (pure_virgin)",
+  "pt": 36,
+  "en": 24,
+  "enpt": 23,
+  "ganha": 3,
+  "perde": 4,
+  "p": 1.0
+ }
+]

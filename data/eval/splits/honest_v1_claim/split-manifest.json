@@ -1,0 +1,40 @@
+{
+  "gerado_por": "scripts/build_honest_splits.py",
+  "entrada": "data/eval/decontaminated/*.jsonl",
+  "regra": "clusters de evidencia (uniao por claim compartilhada); cluster e indivisivel",
+  "agrupar_por_runbook": false,
+  "test_pct_alvo": 33.0,
+  "linhas_lidas": 792,
+  "perguntas_distintas": 423,
+  "duplicatas_por_texto_removidas": {
+    "blind_holdout_qa_30.jsonl": 2,
+    "blind_v3_slices.jsonl": 50,
+    "fresh_blind_test_40.jsonl": 7,
+    "golden_qa_benchmark.jsonl": 70,
+    "golden_qa_messages_benchmark.jsonl": 34,
+    "golden_qa_virgin_benchmark.jsonl": 24,
+    "golden_qa_virgin_expanded.jsonl": 39,
+    "holdout_100_unseen.jsonl": 24,
+    "pure_virgin_test_40.jsonl": 39,
+    "rest_api_zeroshot_variantA.jsonl": 40,
+    "rest_api_zeroshot_variantB.jsonl": 40
+  },
+  "clusters": 317,
+  "cluster_maior": 20,
+  "clusters_de_1_pergunta": 262,
+  "treino": {
+    "perguntas": 283,
+    "claims": 303,
+    "runbooks": 8
+  },
+  "teste": {
+    "perguntas": 140,
+    "claims": 153,
+    "runbooks": 5,
+    "sem_resposta_no_corpus": 21
+  },
+  "violacoes": [
+    "runbook em treino E teste: 4"
+  ],
+  "veredito": "FAIL"
+}
