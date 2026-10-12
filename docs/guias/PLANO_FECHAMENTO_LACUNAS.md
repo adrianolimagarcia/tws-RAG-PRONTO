@@ -14,7 +14,7 @@ evidência real e troubleshooting.
 | # | Objeto | Status |
 |---|--------|--------|
 | 1.1 | PROMPT (prom) — ciclo de vida, STUCK, limpeza | ✅ documentado (runbook hwa-10.2.8-prompt-job-lifecycle.md) |
-| 1.2 | JOB (jd) UNIX docommand — criar, rodar, ver saída | pendente |
+| 1.2 | JOB (jd) UNIX docommand — criar, rodar, ver saída | DONE (runbook hwa-10.2.8-unix-docommand-basico.md) |
 | 1.3 | JOB (jd) UNIX script — TASKTYPE UNIXSCRIPT | pendente |
 | 1.4 | JOBSTREAM (sched) — ciclo de vida completo no plano | pendente |
 | 1.5 | WORKSTATION (ws/cpu) — tipos FTA, dynamic agent, pool | pendente |
