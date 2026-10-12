@@ -1,15 +1,15 @@
 {
-  "total_unique_claims": 7408,
+  "total_unique_claims": 7457,
   "total_synthetic_questions": 16519,
-  "total_evidence_files": 267,
+  "total_evidence_files": 288,
   "distribution_by_category": {
-    "API REST v2 & Integracao": 459,
-    "Outros": 64,
-    "Troubleshooting & Mensagens de Erro": 4705,
-    "Operacao CLI (conman/composer/planman)": 679,
-    "Instalacao & Manutencao": 190,
+    "API REST v2 & Integracao": 463,
+    "Outros": 65,
+    "Troubleshooting & Mensagens de Erro": 4708,
+    "Operacao CLI (conman/composer/planman)": 706,
+    "Instalacao & Manutencao": 196,
     "Arquitetura & Topologia Mesh": 663,
-    "Agendamento Avancado & Workflows": 454,
+    "Agendamento Avancado & Workflows": 462,
     "Alta Disponibilidade & Failover": 194
   },
   "export_artifacts": {
