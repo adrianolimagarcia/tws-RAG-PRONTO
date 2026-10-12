@@ -49,11 +49,11 @@ Cada item gera: runbook em `data/runbooks/` + claims `lab-validation-*` em
 - 3.3 Configuração de mailman, batchman, planman no lab — DONE (runbook hwa-10.2.8-config-processos-mdm.md)
 - 3.4 Referência de segurança: SSL entre componentes, autenticação — DONE (runbook hwa-10.2.8-config-seguranca-ssl.md)
 
-## Fase 4 — Backup/restore e disaster recovery testado
+## Fase 4 — Backup/restore e disaster recovery testado (CONCLUÍDA)
 
-- 4.1 Backup do banco de dados TWS (procedimento + restore testado)
-- 4.2 Backup do plano (JnextPlan) e recovery
-- 4.3 Cenário DR completo documentado passo a passo
+- 4.1 Backup do banco de dados TWS (procedimento + restore testado) — DONE (runbook hwa-10.2.8-backup-banco.md; pg_dump 658K/1s, restore 3,5s, 0 divergências)
+- 4.2 Backup do plano (JnextPlan) e arquivos críticos — DONE (runbook hwa-10.2.8-backup-arquivos.md; tar TWSDATA 17MB/504 arquivos, restore validado)
+- 4.3 Cenário DR completo documentado passo a passo — DONE (runbook hwa-10.2.8-disaster-recovery.md)
 
 ## Fase 5 — Integração na base RAG + re-benchmark
 
