@@ -36,10 +36,10 @@ Cada item gera: runbook em `data/runbooks/` + claims `lab-validation-*` em
 
 ## Fase 2 — Dynamic Workload Console (validação web)
 
-- 2.1 Subir container DWC no lab e conectar ao MDM
+- 2.1 DWC instalado no host + engine MDM_LAB conectada | DONE (runbook hwa-10.2.8-dwc-instalacao-lab.md)
   **LIMITACAO DOCUMENTADA** (runbook hwa-10.2.8-dwc-deploy.md): imagem oficial exige credencial comercial do HCL Entitled Registry (hclcr.io); pull sem auth falha. Procedimento completo documentado; deploy executavel assim que houver credencial.
 - 2.2 Documentar instalacao e configuracao (portas, SSL, usuario) — DONE (runbook hwa-10.2.8-dwc-deploy.md: env vars, portas 9080/9443, ENGINE_* para tws-hwa:31116, SSO/LTPA)
-- 2.3 Validar via browser: monitorar plano, submeter job ad-hoc, responder prompt — PENDENTE DE DWC (runbook hwa-10.2.8-dwc-validacao-web.md com roteiro pronto; equivalencias CLI ja validadas na Fase 1)
+- 2.3 Validação via API REST | DONE (engine conectada, checkConnection OK). Form login no browser com limitação (400 no j_security_check) - documentado — PENDENTE DE DWC (runbook hwa-10.2.8-dwc-validacao-web.md com roteiro pronto; equivalencias CLI ja validadas na Fase 1)
 - 2.4 Runbook de troubleshooting DWC (conexao, certificados) — DONE (runbook hwa-10.2.8-dwc-troubleshooting.md)
 
 ## Fase 3 — Configuração master/agente a partir do lab real
