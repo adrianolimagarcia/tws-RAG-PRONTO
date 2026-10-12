@@ -44,10 +44,10 @@ Cada item gera: runbook em `data/runbooks/` + claims `lab-validation-*` em
 
 ## Fase 3 — Configuração master/agente a partir do lab real
 
-- 3.1 localopts e globalopts do MDM: documentar cada parâmetro em uso
-- 3.2 JobManager.ini do dynamic agent (tws-agent): parâmetros e tuning
-- 3.3 Configuração de mailman, batchman, planman no lab
-- 3.4 Referência de segurança: SSL entre componentes, autenticação
+- 3.1 localopts e globalopts do MDM: documentar cada parâmetro em uso — DONE (runbook hwa-10.2.8-config-localopts-globalopts.md)
+- 3.2 JobManager.ini do dynamic agent (tws-agent): parâmetros e tuning — DONE (runbook hwa-10.2.8-config-jobmanager-ini.md)
+- 3.3 Configuração de mailman, batchman, planman no lab — DONE (runbook hwa-10.2.8-config-processos-mdm.md)
+- 3.4 Referência de segurança: SSL entre componentes, autenticação — DONE (runbook hwa-10.2.8-config-seguranca-ssl.md)
 
 ## Fase 4 — Backup/restore e disaster recovery testado
 
