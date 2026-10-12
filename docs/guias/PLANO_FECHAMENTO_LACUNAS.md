@@ -15,16 +15,16 @@ evidência real e troubleshooting.
 |---|--------|--------|
 | 1.1 | PROMPT (prom) — ciclo de vida, STUCK, limpeza | ✅ documentado (runbook hwa-10.2.8-prompt-job-lifecycle.md) |
 | 1.2 | JOB (jd) UNIX docommand — criar, rodar, ver saída | DONE (runbook hwa-10.2.8-unix-docommand-basico.md) |
-| 1.3 | JOB (jd) UNIX script — TASKTYPE UNIXSCRIPT | pendente |
-| 1.4 | JOBSTREAM (sched) — ciclo de vida completo no plano | pendente |
-| 1.5 | WORKSTATION (ws/cpu) — tipos FTA, dynamic agent, pool | pendente |
-| 1.6 | RESOURCE (res) — number/numbered resources, alocação | pendente |
-| 1.7 | CALENDAR (cal) — runcycles, feriados | pendente |
-| 1.8 | VARIABLE TABLE (vartable) — variáveis em jobs | pendente |
+| 1.3 | JOB (jd) UNIX script — TASKTYPE UNIXSCRIPT | DONE (runbook hwa-10.2.8-unix-script.md) |
+| 1.4 | JOBSTREAM (sched) — ciclo de vida completo no plano | DONE (runbook hwa-10.2.8-jobstream-ciclo-vida.md) |
+| 1.5 | WORKSTATION (ws/cpu) — tipos FTA, dynamic agent, pool | DONE (runbook hwa-10.2.8-workstations.md) |
+| 1.6 | RESOURCE (res) — number/numbered resources, alocação | DONE (runbook hwa-10.2.8-resource.md) |
+| 1.7 | CALENDAR (cal) — runcycles, feriados | DONE (runbook hwa-10.2.8-calendar.md) |
+| 1.8 | VARIABLE TABLE (vartable) — variáveis em jobs | DONE (runbook hwa-10.2.8-vartable.md) |
 | 1.9 | EVENT RULE (evtrule) — EDWA, ações automáticas | pendente |
-| 1.10 | PARAMETER (par) — parâmetros de job stream | pendente |
-| 1.11 | USER (user) — logon de execução | pendente |
-| 1.12 | WORKSTATION CLASS — classes e herança | pendente |
+| 1.10 | PARAMETER (par) — parâmetros de job stream | DONE (runbook hwa-10.2.8-parameter.md) |
+| 1.11 | USER (user) — logon de execução | DONE (runbook hwa-10.2.8-user.md) |
+| 1.12 | WORKSTATION CLASS — classes e herança | DONE (runbook hwa-10.2.8-workstation-class.md) |
 
 ### Variações de job a testar dentro do item 1.2/1.3
 
@@ -59,3 +59,13 @@ Cada item gera: runbook em `data/runbooks/` + claims `lab-validation-*` em
 - 5.1 Aplicar enriquecimento (apply_enrichment_safe.py)
 - 5.2 Reindexar (build_dense_index_mcp.py)
 - 5.3 Re-benchmark (calibrated_full_benchmark.py) vs baseline 93,5% / 0,948
+
+### Variações de job testadas
+
+| # | Variação | Status |
+|---|----------|--------|
+| V1 | filemon (file monitor via utilitário) | DONE (runbook hwa-10.2.8-job-filemonitor.md) |
+| V2 | FOLLOWS (dependência entre jobs) | DONE (runbook hwa-10.2.8-job-dependency-follows.md) |
+| V3 | Recovery (ABEND, RECOVERY STOP, rerun) | DONE (runbook hwa-10.2.8-job-recovery-rerun.md) |
+| V4 | Time restriction (AT) | DONE (documentado no runbook do item 1.4) |
+
