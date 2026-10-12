@@ -1,0 +1,18 @@
+{
+ "n": 84,
+ "tipos_vencem": {
+  "message_catalog": 9,
+  "canonical_claim": 49,
+  "ragflow_runbook_chunk": 15,
+  "lab_evidence": 10,
+  "rest_api_surface": 1
+ },
+ "tipos_alvo": {
+  "canonical_claim": 40,
+  "lab_evidence": 9,
+  "message_catalog": 24,
+  "rest_api_surface": 11
+ },
+ "maior": 43,
+ "menor": 40
+}

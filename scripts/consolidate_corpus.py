@@ -4,7 +4,10 @@ from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from classify_taxonomy import classify as classify_claim  # noqa: E402
 
-base_dir = "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO"
+# Caminho do proprio arquivo, nao hardcoded: o repositorio pode estar em qualquer
+# lugar (o usuario o mantem em /run/media/adriano/..., que nao existe em outra maquina).
+# `scripts/` fica na raiz, entao subir um nivel chega na raiz.
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 evidence_dir = os.path.join(base_dir, "data", "evidence")
 export_dir = os.path.join(base_dir, "data", "export")
 os.makedirs(export_dir, exist_ok=True)
@@ -73,6 +76,100 @@ for fpath in evidence_files:
                     "category": category
                 })
 
+# 1b. Fonte REST API V2 — superficie funcional (data/knowledge/rest-api-derived.jsonl).
+# POR QUE ENTRA AQUI: o switch RAG_INGEST_REST_API so' existe no carregador do LABORATORIO
+# (rag_core/corpus.py). A fonte entrou na medicao em 2026-09-18 e NUNCA neste artefato, que
+# e' o que a PRODUCAO consome - resultado medido: os alvos de 40 perguntas `rest-*` e 40
+# `ops-*` nao existiam no indice de producao e pontuavam 0 por construcao.
+# `synthetic_questions` fica vazio, mas NAO por supressao: a propria fonte REST nao traz
+# esse campo (verificado - 0 dos 300 docs). Deixar assim e' o correto; se a fonte ganhar
+# perguntas sinteticas, elas entram como expansao de vocabulario. ATENCAO: um registro de
+# 2026-09-19 mediu que SUPRIMIR esse campo custa recall real (2,67pt de @1 em dado limpo) e
+# esta' REJEITADO como correcao - o vies se corrige no BENCHMARK, nunca tirando dado do indice.
+# O risco aqui e' o oposto do que parece: uma pergunta de benchmark que coincida com uma
+# synthetic_question indexada seria gabarito no corpus, entao a varredura de vazamento e'
+# obrigatoria a cada mudanca de fonte.
+#
+# As DUAS granularidades entram (familia + operacao), com ids DISJUNTOS - verificado: 24
+# ids de familia e 276 de operacao, intersecao vazia. O laboratorio nao pode carregar as
+# duas ao mesmo tempo (RAG_REST_GRANULARITY troca uma pela outra), entao a familia sozinha
+# deixa as 40 perguntas `ops-*` sem alvo. A producao nao tem essa restricao: um documento de
+# operacao serve quem pergunta o detalhe, o de familia serve quem pergunta o geral.
+rest_files = [
+    os.path.join(base_dir, "data", "knowledge", "rest-api-derived.jsonl"),
+    os.path.join(base_dir, "data", "knowledge", "rest-api-derived-ops.jsonl"),
+]
+n_rest = 0
+for rest_file in rest_files:
+    if not os.path.exists(rest_file) or os.environ.get("SKIP_REST_API") == "1":
+        continue
+    with open(rest_file, "r", encoding="utf-8") as f:
+        for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    c = json.loads(line)
+                except Exception:
+                    continue
+                cid = c.get("claim_id")
+                if not cid or cid in claims_by_id:
+                    continue
+                # Mesmo texto que o laboratorio indexa (rag_core/corpus.py): claim, syntax,
+                # resource, supporting_quote, source_title e vocab_spec (o vocabulario extraido
+                # da spec OpenAPI). `claim` recebe tudo porque e' o campo que o MCP indexa.
+                texto = " ".join(str(c.get(k, "")) for k in
+                                 ("claim", "syntax", "resource", "supporting_quote",
+                                  "source_title", "vocab_spec"))
+                prefix = c.get("source_title") or ""
+                categoria = classify_claim(prefix, texto)
+                taxonomy_counter[categoria] += 1
+                claims_by_id[cid] = {
+                    "claim_id": cid,
+                    "claim": texto,
+                    "context_prefix": prefix,
+                    "category": categoria,
+                    "result": c.get("result", "SUCCESS"),
+                    "platform": "HWA 10.2.8 Distributed",
+                    "source_file": os.path.basename(rest_file),
+                    "synthetic_questions": [],
+                }
+                n_rest += 1
+
+# 1c. Fonte Procedimentos de Laboratorio (data/knowledge/lab-procedures-derived.jsonl).
+# Procedimentos operacionais validados em laboratorio (inclui conman, composer, vartable, etc.).
+lab_proc_file = os.path.join(base_dir, "data", "knowledge", "lab-procedures-derived.jsonl")
+n_lab_proc = 0
+if os.path.exists(lab_proc_file) and os.environ.get("SKIP_LAB_PROCEDURES") != "1":
+    with open(lab_proc_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                c = json.loads(line)
+            except Exception:
+                continue
+            cid = c.get("claim_id")
+            if not cid or cid in claims_by_id:
+                continue
+            texto = " ".join(str(c.get(k, "")) for k in
+                             ("claim", "syntax", "supporting_quote", "tool", "command", "source_title"))
+            prefix = c.get("source_title") or ""
+            categoria = classify_claim(prefix, texto)
+            taxonomy_counter[categoria] += 1
+            claims_by_id[cid] = {
+                "claim_id": cid,
+                "claim": texto,
+                "context_prefix": prefix,
+                "category": categoria,
+                "result": c.get("result", "SUCCESS"),
+                "platform": "HWA 10.2.8 Distributed",
+                "source_file": os.path.basename(lab_proc_file),
+                "synthetic_questions": [],
+            }
+            n_lab_proc += 1
+
 # Gravar Master Consolidated
 with open(master_file, "w", encoding="utf-8") as f:
     for cid in sorted(claims_by_id.keys()):
@@ -106,6 +203,8 @@ with open(taxonomy_report_file, "w", encoding="utf-8") as f:
 print(f"\nConsolidacao concluida com sucesso:")
 print(f"- Total de claims unicas: {len(claims_by_id)}")
 print(f"- Total de perguntas sinteticas indexadas: {len(all_questions)}")
+print(f"- Documentos REST API V2 acrescentados: {n_rest}")
+print(f"- Documentos Procedimentos de Lab acrescentados: {n_lab_proc}")
 print(f"- Distribuicao por categoria:")
 for cat, count in taxonomy_counter.most_common():
     print(f"  {count:4d}x {cat}")

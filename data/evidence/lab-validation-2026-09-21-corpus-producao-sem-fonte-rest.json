@@ -1,0 +1,16 @@
+{
+ "claim_id": "tws-rag-corpus-producao-sem-fonte-rest-2026-09-21-0002",
+ "claim": "O CORPUS DA PRODUCAO NAO CONTEM A FONTE REST API. Causa medida por diff de conjuntos de ids: os alvos das 40 perguntas rest-* e das 40 ops-* existem em data/knowledge/rest-api-derived(+-ops).jsonl e NAO existem em data/export/tws_corpus_master_consolidated.jsonl. Causa por linha do tempo: o corpus foi commitado em 2026-09-14 18:16 e a fonte REST entrou em 2026-09-18 11:59 (commit 1de2308) - 4 dias DEPOIS. O switch RAG_INGEST_REST_API existe apenas em rag_core/corpus.py, o carregador do LABORATORIO, entao a fonte entrou na medicao e nunca no artefato que a producao consome. CONSEQUENCIA METRICA: 80 das 423 perguntas (18,9%) tinham alvo AUSENTE no indice de producao - pontuavam 0 por construcao, nao por falha de recuperacao.",
+ "result": "POSITIVE - cobertura corrigida, medido; ganho de metrica e' artefato de cobertura, ver caveat.",
+ "status": "verified",
+ "risk": "read_only",
+ "performed_at": "2026-09-21T10:40:00Z",
+ "performed_by": "agente OpenHands (agent-canvas)",
+ "product_version": "HWA 10.2.8 (corpus do produto)",
+ "platform": "cachyos, python 3.12, MCP mcp_server/tws_expert_mcp.py (BM25 k1=1.5, b=0.75)",
+ "sanitized_output": "corpus atual: 82 ausentes (19,4%). +familia REST (24 docs): 43 ausentes (10,2%) - @1 211 (49,9%), @5 268 (63,4%), MRR 0,5655. +uniao familia+operacoes (300 docs, ids disjuntos): 22 ausentes (5,2%) - @1 211 (49,9%), @5 270 (63,8%), MRR 0,5665. Pareto producao: corpus atual -> corpus+REST ganha 9 / perde 0, p=0,0039 SIGNIFICATIVO. Pareado contra o lab: lab->producao+REST ganha 44 / perde 64, p=0,0670 (nao significativo; com o corpus atual era p=0,0060 significativo) - ou seja, o conserto de corpus REMOVE uma diferenca que ERA significativa.",
+ "evidence_url": "repo:data/eval/measure_producao_pool423.py + repo:data/eval/augmenta_corpus_rest.py",
+ "reversibility": "remover data/export/tws_corpus_master_with_rest*.jsonl e nao usar TWS_CORPUS_FILE",
+ "observations": "CAVEAT DE ATRIBUICAO: os +9 acertos sao perguntas cujo alvo NAO estava no indice. Parte e' recuperacao real, mas perguntas rest-* com varias perguntas apontando para o mesmo id de familia inflam a contagem. NAO atribuir os +9 inteiramente a qualidade de ranking. O numero defensavel e': alvo ausente 82 -> 22, e a diferenca deixa de ser significativa contra o lab.",
+ "stop_criterion": "promover a corpus de producao exige decisao explicita + regenerar via scripts/consolidate_corpus.py (que hoje nao inclui a fonte REST)"
+}

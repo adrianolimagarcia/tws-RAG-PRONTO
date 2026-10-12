@@ -1,16 +1,16 @@
 {
-  "total_unique_claims": 7019,
-  "total_synthetic_questions": 16513,
-  "total_evidence_files": 198,
+  "total_unique_claims": 7408,
+  "total_synthetic_questions": 16519,
+  "total_evidence_files": 267,
   "distribution_by_category": {
-    "Troubleshooting & Mensagens de Erro": 4693,
-    "Operacao CLI (conman/composer/planman)": 648,
-    "API REST v2 & Integracao": 152,
-    "Instalacao & Manutencao": 188,
-    "Arquitetura & Topologia Mesh": 660,
-    "Agendamento Avancado & Workflows": 448,
-    "Alta Disponibilidade & Failover": 190,
-    "Outros": 40
+    "API REST v2 & Integracao": 459,
+    "Outros": 64,
+    "Troubleshooting & Mensagens de Erro": 4705,
+    "Operacao CLI (conman/composer/planman)": 679,
+    "Instalacao & Manutencao": 190,
+    "Arquitetura & Topologia Mesh": 663,
+    "Agendamento Avancado & Workflows": 454,
+    "Alta Disponibilidade & Failover": 194
   },
   "export_artifacts": {
     "master_corpus": "/run/media/adriano/e681b5ac-a4fb-44d4-aebf-9d6584065787/projetos/tws-RAG-PRONTO/data/export/tws_corpus_master_consolidated.jsonl",

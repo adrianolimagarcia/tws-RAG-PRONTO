@@ -79,6 +79,14 @@ if os.environ.get("RAG_REST_GRANULARITY"):
             f"RAG_REST_GRANULARITY={os.environ['RAG_REST_GRANULARITY']!r} nao reconhecido. "
             "Use 'operation' (276 registros) ou 'familia' (24 registros, default).")
 
+# Switch do SCORER (opt-in, DEFAULT OFF = comportamento inalterado).
+# `RAG_BM25_REAL=1` troca o scorer esparso pelo BM25 de verdade (TF saturado x IDF x
+# normalizacao pelo comprimento real do documento). Ver a nota longa em
+# `rag_core/lexical.py` sobre o que o scorer legado faz de diferente e o que foi medido.
+# Exige `rag_core.lexical.prepare_corpus(docs)` antes de pontuar - o avaliador ja' faz
+# isso, e o scorer FALHA (SystemExit) se as estatisticas nao existirem.
+BM25_REAL = os.environ.get("RAG_BM25_REAL") == "1"
+
 # Boost aditivo aplicado a cada doc de catalogo da familia detectada na query.
 # Configuravel via env RAG_FAMILY_BOOST (default 4): varredura 0-12 mostrou que
 # 4 e o ponto de maior ganho no virgem SEM regressao no baseline.
@@ -91,7 +99,41 @@ if os.environ.get("RAG_REST_GRANULARITY"):
 FAMILY_BOOST = float(os.environ.get("RAG_FAMILY_BOOST", "4"))
 
 # Tamanho medio de documento usado no termo de normalizacao do BM25 (compute_bm25).
-AVG_DL = 60
+# MEDIDO em 7019 docs do corpus: |set(tokens)| medio = 46,9 (max 348), contra 60 hardcoded.
+# Com `b=0,75`, normalizar por um avg_dl diferente NAO e' transformacao monotonica entre
+# documentos de tamanhos diferentes - ou seja, mexer aqui MUDA a ordem do ranking.
+#
+# VEREDITO MEDIDO (pool 423 / blind_v3 / golden_qa): corrigir para o valor real (46,9)
+# PIORA nos tres: @1 -4 / -3 / -2; valores menores pioram mais (40: -7/-6/-5, p=0,039).
+# Ou seja o 60 nao e' erro de digitacao: e' calibracao embutida do scorer legado. O switch
+# existe para MEDIR isso, nao como correcao recomendada - default 60 = comportamento de sempre.
+#   RAG_AVG_DL=46.9  usa o valor medido
+#   RAG_AVG_DL=0     desliga a normalizacao por tamanho (fator constante)
+# Validacao explicita: valor nao numerico ou negativo levanta erro - a licao do
+# RAG_REST_GRANULARITY, onde um valor errado silenciava e produzia falso negativo.
+def _avg_dl():
+    bruto = os.environ.get("RAG_AVG_DL")
+    if bruto is None:
+        return 60
+    try:
+        v = float(bruto)
+    except ValueError:
+        raise SystemExit(f"RAG_AVG_DL={bruto!r} nao e' numero. Use um float (ex: 46.9) ou 0.")
+    if v < 0:
+        raise SystemExit(f"RAG_AVG_DL={bruto!r} e' negativo. Use um float ou 0.")
+    return v if v > 0 else 1e9  # 0 => normalizacao desligada (fator ~constante)
+
+
+AVG_DL = _avg_dl()
+
+# Prior de TIPO do 1o estagio (opt-in, default 'on' = comportamento de sempre).
+# `RAG_TYPE_PRIOR=flat` iguala os multiplicadores de tipo (canonical_claim 1.25,
+# lab_evidence 1.20, ragflow 1.15, message_catalog 1.10) em 1.0 - ver o comentario longo
+# no ponto de uso, em `lexical._apply_doc_boosts`, para a medicao que motivou o switch.
+_type_prior = os.environ.get("RAG_TYPE_PRIOR", "on").strip().lower()
+if _type_prior not in ("on", "flat"):
+    raise SystemExit(f"RAG_TYPE_PRIOR={_type_prior!r} nao reconhecido. Use 'on' ou 'flat'.")
+TYPE_PRIOR_FLAT = _type_prior == "flat"
 
 # ---------------------------------------------------------------------------
 # Caminhos do indice denso (BGE-M3) usados pelo modo hibrido/denso-puro.

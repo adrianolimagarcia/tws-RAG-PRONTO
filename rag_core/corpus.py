@@ -65,12 +65,30 @@ def load_documents():
 
     # 2. Dicionario de Mensagens AWS*
     if os.path.exists(AWS_MSGS_FILE):
+        # SWITCH DE MEDICAO (opt-in, DEFAULT OFF = comportamento inalterado):
+        # `RAG_AWS_SPLIT=1` conserta dois defeitos medidos na construcao deste documento:
+        #   (a) o campo `message` concatena com NUL as mensagens vizinhas do mesmo prefixo
+        #       (78,5% dos docs tem 2+ mensagens; 973 IDs de mensagem espremidos em 335 docs);
+        #   (b) o campo `claim` e' um wrapper que REPETE o `message` (100% dos docs), e
+        #       `text` concatena os dois -> o payload aparece 2x e dilui o sinal.
+        # Emitir uma mensagem por documento devolve ao indice conteudo que o template
+        # empurrava para fora do orcamento de tokens.
+        _aws_split = os.environ.get("RAG_AWS_SPLIT") == "1"
         for line in open(AWS_MSGS_FILE):
             if line.strip():
                 c = json.loads(line)
                 cid = c.get("claim_id", "")
-                text = f"{c.get('code', '')} {c.get('component', '')} {c.get('message', '')} {c.get('claim', '')}"
-                docs.append({"id": cid, "type": "aws_message", "code": c.get("code"), "text": text, "tokens": tokenize(text)})
+                if _aws_split:
+                    partes = str(c.get("message") or "").split("\x00")
+                    for i, parte in enumerate(p.strip() for p in partes):
+                        if not parte:
+                            continue
+                        text = f"{c.get('code', '')} {c.get('component', '')} {parte}"
+                        docs.append({"id": f"{cid}-p{i}", "type": "aws_message",
+                                     "code": c.get("code"), "text": text, "tokens": tokenize(text)})
+                else:
+                    text = f"{c.get('code', '')} {c.get('component', '')} {c.get('message', '')} {c.get('claim', '')}"
+                    docs.append({"id": cid, "type": "aws_message", "code": c.get("code"), "text": text, "tokens": tokenize(text)})
 
     # 3. Catalogo Optman
     if os.path.exists(OPTMAN_FILE):
@@ -82,6 +100,17 @@ def load_documents():
                 docs.append({"id": cid, "type": "optman_option", "text": text, "tokens": tokenize(text)})
 
     # 4. Lab validation claims
+    # SWITCH DE MEDICAO (opt-in, DEFAULT OFF = comportamento inalterado):
+    # `RAG_LAB_RICHER=1` recupera dois descartes MEDIDOS por scripts/audit_corpus_losses.py:
+    #   (a) 54 records sem campo `claim` (registros de EXECUCAO) eram jogados fora com
+    #       `pass`, levando junto 42,5 KB de `command`/`observations`/`sanitized_output`
+    #       reais. Aqui eles entram pelo mesmo claim_id (o merge de ids e' ADITIVO, entao
+    #       eles se fundem ao doc existente em vez de competir com ele).
+    #   (b) `performed_at` estava preenchido em 153 records e NAO era indexado. A fatia
+    #       D_holdout_temporal (15 perguntas, hoje 0/15) referencia 16 claim_ids que TODOS
+    #       tem `performed_at` upstream. Indexar a proveniencia temporal e' o teste direto
+    #       da hipotese "as perguntas temporais falham porque a data nao esta' no indice".
+    _lab_richer = os.environ.get("RAG_LAB_RICHER") == "1"
     for lf in LAB_FILES:
         for line in open(lf):
             if line.strip():
@@ -93,7 +122,16 @@ def load_documents():
                     # (' PASS ') e ainda colidem com ids de canonical_claim.
                     if cid and (c.get("claim") or "").strip():
                         text = f"{c.get('claim', '')} {c.get('result', '')} {c.get('observations', '')} {c.get('sanitized_output', '')}"
+                        if _lab_richer:
+                            text += f" {c.get('performed_at', '')} {c.get('performed_by', '')} {c.get('platform', '')}"
                         docs.append({"id": cid, "type": "lab_evidence", "text": text, "tokens": tokenize(text)})
+                    elif _lab_richer and cid:
+                        text = " ".join(str(c.get(k) or "") for k in
+                                        ("command", "result", "observations",
+                                         "sanitized_output", "performed_at"))
+                        if text.strip():
+                            docs.append({"id": cid, "type": "lab_execution",
+                                         "text": text, "tokens": tokenize(text)})
                 except Exception:
                     pass
 

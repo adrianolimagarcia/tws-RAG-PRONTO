@@ -11,7 +11,7 @@ Mede:
 - Hit Rate @ 1, @ 3, @ 5, @ 10
 - Mean Reciprocal Rank (MRR)
 """
-import glob, json, math, os, re, sys
+import glob, hashlib, json, math, os, re, sys
 from collections import defaultdict
 
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -45,9 +45,53 @@ from rag_core.config import (
 from rag_core.lexical import (
     SYNONYMS, TERM_EXPAND, FAMILY_LEXICON,
     tokenize, _expand_tokens, expand_query, compute_bm25, extract_ngrams,
-    detect_families,
+    detect_families, prepare_corpus,
 )
 from rag_core.corpus import load_documents
+
+# ---------------------------------------------------------------------------
+# ESCALA DO 2o ESTAGIO (opt-in, DEFAULT 1.0 = comportamento inalterado)
+# ---------------------------------------------------------------------------
+# `second_stage_rerank` NAO so' reordena: ele soma bonus CONSTANTES (+8, +12, +15, +20,
+# +32, +45, +55) ao score que recebe do 1o estagio E corta o pool em `RERANK_TOP`. Essas
+# constantes foram calibradas por varredura contra o scorer LEGADO, cujo topo vale ~1-5.
+#
+# Medido: trocar so' o 1o estagio pelo BM25 real (RAG_BM25_REAL=1) faz o score de topo
+# passar a ~10-40, e as MESMAS constantes passam a pesar ~10x menos - o ganho do 1o estagio
+# fica MASCARADO pelo 2o (blind_v3: o 1o estagio sozinho sobe @10 de 0,832 para 0,885, mas
+# com o 2o na escala antiga o resultado final fica em 0,844). Ver a nota de escala do
+# `_rrf_fuse` mais abaixo: mesma classe de defeito (constantes fixas somadas a um score
+# cuja unidade mudou).
+#
+# `RAG_RERANK_UNIT=scale` divide TODOS os bonus do 2o estagio por `scale`. Use 0 para
+# desligar os bonus e medir so' a ordem do 1o estagio + o corte do pool.
+#
+# ATENCAO: NAO foi encontrado um valor de `scale` ESTAVEL entre benchmarks. Medido
+# (bonus_normalizado = media_do_pool / k): k=0.5 e k=1 dao o mesmo sinal nos dois
+# conjuntos, mas k=8 favorece o golden_qa (+0,18 de MRR) e quase nada o blind_v3. O ponto
+# do switch NAO e' achar o scale "certo": e' medir a CURVA e ver se ele transfere. Se nao
+# transferir, a conclusao correta e' que a constante fixa e' o defeito - nao que o scale
+# escolhido estava errado.
+RERANK_UNIT = float(os.environ.get("RAG_RERANK_UNIT", "1"))
+
+
+# ---------------------------------------------------------------------------
+# ESCALA ADAPTATIVA DO 2o ESTAGIO (opt-in, DEFAULT OFF = comportamento inalterado)
+# ---------------------------------------------------------------------------
+# O DEFEITO: os bonus do 2o estagio sao constantes (+8, +12, +15, +20, +32, +45, +55)
+# somadas a um score cuja ESCALA muda por pergunta e por benchmark. A nota do proprio
+# `RERANK_UNIT` acima ja' registrava a suspeita ("se nao transferir, a conclusao correta e'
+# que a constante fixa e' o defeito") - aqui isso e' implementado e medido.
+#
+# MECANISMO: em vez de constante, cada bonus vira `K * escala`, onde `escala` e' a media dos
+# scores do 1o estagio no proprio pool que o reranker recebe. Assim o bonus vale o mesmo
+# FRACAO da escala do candidato, em vez de um valor absoluto que so' esta' certo para um
+# scorer de uma unidade especifica.
+#
+# `RAG_RERANK_ADAPT=K` liga com fator K (ex: 2.0). `K=0` desliga os bonus aditivos.
+# Calibracao: com o scorer legado o topo vale ~1-5, entao as constantes antigas
+# (+8..+55) equivaliam a K ~ 3-25. Esta varredura cobre essa faixa e alem.
+RERANK_ADAPT = float(os.environ.get("RAG_RERANK_ADAPT", "0"))
 
 
 # ---------------------------------------------------------------------------
@@ -171,8 +215,27 @@ def _rrf_fuse(q_text, sparse_docs, docs, k_dense=30, k_sparse=30, top=20):
 def second_stage_rerank(query_raw, candidates, top_n=20):
     """Segundo Estágio de Re-ranking: Proximidade de Termos, N-grams Exatos e Cobertura.
     Desempata candidatos do primeiro estágio avaliando frases contíguas e densidade.
+
+    `_B` (ver RERANK_UNIT no topo do arquivo) divide os bonus ADITIVOS. Com o default 1.0,
+    `_B == 1.0` e `x * _B == x` de forma EXATA em ponto flutuante, de modo que o controle do
+    repo permanece bit-identico. Os multiplicadores (cobertura) nao sao escalados: a escala
+    deles e' relativa e nao depende da unidade do score do 1o estagio.
     """
+    _B = 1.0 / RERANK_UNIT
     clean_words = [w.strip(".,;:?!'\"()[]{}").lower() for w in re.findall(r"[A-Za-z0-9_\-]+", query_raw) if len(w) > 2]
+
+    # ESCALA ADAPTATIVA (opt-in): se ligada, cada bonus aditivo vira `K * escala`, onde
+    # `escala` e' a media dos scores do 1o estagio NO PROPRIO POOL recebido. Sem isso
+    # (default), `_A` e' um multiplicador NEUTRO: `x * _A == x` exatamente, de modo que o
+    # controle do repo segue bit-identico. Com `_adapt=0` os bonus aditivos sao zerados.
+    _adapt = RERANK_ADAPT
+    if _adapt:
+        _pool_scores = [s for s, _d in candidates[:top_n]]
+        _escala = (sum(_pool_scores) / len(_pool_scores)) if _pool_scores else 0.0
+        _A = _adapt * _escala
+    else:
+        _A = 1.0
+
     unique_q_terms = set(clean_words) - {"qual", "quais", "como", "onde", "por", "que", "para", "com", "dos", "das", "uma", "não", "mais"}
     bigrams = extract_ngrams(clean_words, 2)
     trigrams = extract_ngrams(clean_words, 3)
@@ -187,16 +250,16 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
         # 1. Bônus de Bigrams Contíguos da Pergunta
         for bg in bigrams:
             if len(bg) > 6 and bg in text_lower:
-                score += 8.0
+                score += 8.0 * _A * _B
             if len(bg) > 6 and bg in title_lower:
-                score += 12.0
+                score += 12.0 * _A * _B
 
         # 2. Bônus de Trigrams Contíguos da Pergunta
         for tg in trigrams:
             if len(tg) > 10 and tg in text_lower:
-                score += 15.0
+                score += 15.0 * _A * _B
             if len(tg) > 10 and tg in title_lower:
-                score += 20.0
+                score += 20.0 * _A * _B
 
         # 3. Cobertura de Termos Únicos (Coverage Ratio)
         doc_tokens = doc["tokens"]
@@ -215,21 +278,21 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
             clean_term = term.replace("-", "").replace("_", "")
             if len(clean_term) >= 5 and clean_term not in ignore_meta_terms:
                 if clean_term in doc_id_lower.replace("-", "").replace("_", ""):
-                    score += 32.0
+                    score += 32.0 * _A * _B
             # Códigos de erro canônicos (AWS* ou AWK*)
             if re.match(r"^[a-z]{3,6}[0-9]{3,5}[a-z]?$", clean_term):
                 if clean_term in doc_id_lower.replace("-", ""):
                     # Se for a claim oficial de troubleshooting daquele erro, boost de Top-1
                     if "trouble" in doc_id_lower or "messages" in doc_id_lower or "incident" in doc_id_lower:
-                        score += 55.0
+                        score += 55.0 * _A * _B
                     else:
-                        score += 45.0
+                        score += 45.0 * _A * _B
                 elif clean_term in text_lower:
-                    score += 25.0
+                    score += 25.0 * _A * _B
             # Casamento por sufixo numérico de erro (ex: 0100e, 001e, 035w)
             num_match = re.search(r"[0-9]{3,5}[a-z]$", clean_term)
             if num_match and num_match.group(0) in doc_id_lower:
-                score += 25.0
+                score += 25.0 * _A * _B
 
         # 5. Exact Command & Subcommand Pairing Boost (ex: 'composer add', 'conman start', 'optman ls', 'planman showinfo')
         cli_pairs = [
@@ -244,7 +307,7 @@ def second_stage_rerank(query_raw, candidates, top_n=20):
         for cmd, sub in cli_pairs:
             if cmd in q_raw_lower and sub in q_raw_lower:
                 if (cmd in doc_id_lower and sub in doc_id_lower) or (f"{cmd} {sub}" in text_lower[:200]):
-                    score += 35.0
+                    score += 35.0 * _A * _B
 
         reranked.append((score, doc))
 
@@ -263,14 +326,34 @@ def run_evaluation():
     benchmark = [json.loads(line) for line in open(BENCHMARK_FILE)]
     docs = load_documents()
     print(f"Total de documentos indexados no corpus RAG: {len(docs)}")
+    # RAG_BM25_REAL=1 exige as estatisticas REAIS do corpus (TF/DF/avgdl). Sob o default
+    # o switch esta' desligado e isto e' um no-op. Fail-closed dentro do scorer se faltar.
+    if config.BM25_REAL:
+        stats = prepare_corpus(docs)
+        print(f"BM25 real ligado: avgdl real {stats['avgdl']:.1f} palavras, vocab {len(stats['df'])} termos")
 
     top_k_hits = {1: 0, 3: 0, 5: 0, 10: 0, 15: 0}
     reciprocal_ranks = []
+    # TETO DE RESPOSTA (diagnostico, nao metrica): quantas perguntas do benchmark nao tem
+    # NENHUM `relevant_claim_ids` presente no corpus carregado. Para essas, nenhum
+    # recuperador pode acertar em posicao alguma - nem no pool inteiro. Sem este numero, um
+    # Hit@1 publicado esconde que parte do erro e' do BENCHMARK (pergunta sem resposta no
+    # indice), nao do recuperador. Medido no blind_v3_slices: 27/262 (10,3%), sendo 15/262
+    # a fatia D_holdout_temporal com 0 acertos em QUALQUER posicao.
+    corpus_ids = {d["id"] for d in docs}
+    sem_resposta = 0
     # RECALL@15 (metrica propria, nao derivavel do rank): fracao dos documentos
     # relevantes que aparecem no top-15. Hit@15 diz "achou ALGUM"; recall@15 diz
     # "achou QUANTOS". A producao entrega 15 documentos ao LLM, entao o que limita a
     # resposta e' a fracao que chega, nao a existencia de um acerto.
     recalls15 = []
+    margens = []
+    # Limiares das faixas de confianca. CALIBRADOS em 423 perguntas e verificados
+    # out-of-sample (o limiar nao muda entre as metades; as taxas por faixa sim).
+    # NAO reutilize estes numeros noutro scorer: a margem e' livre de escala
+    # (1 - top2/top1), mas a distribuicao depende do scorer.
+    LIMIAR_ALTA = 0.177
+    LIMIAR_MEDIA = 0.05
     results = []
 
     for b in benchmark:
@@ -279,6 +362,8 @@ def run_evaluation():
         expected_cids = set(b.get("relevant_claim_ids", []))
         expected_runbook = b.get("runbook_ref")
         q_tokens = tokenize(q_text)
+        if not (expected_cids & corpus_ids):
+            sem_resposta += 1
 
         scored = []
         for doc in docs:
@@ -288,6 +373,41 @@ def run_evaluation():
 
         # Desempate deterministico por id do documento (ver nota em second_stage_rerank)
         scored.sort(key=lambda x: (-x[0], str(x[1].get("id", ""))))
+
+        # MARGEM NORMALIZADA = 1 - top2/top1 sobre o BM25 CRU, antes de diversificacao e
+        # rerank. Mesma definicao que a producao usa para decidir abstencao, para que a
+        # metrica medida aqui seja a metrica que a producao executa. E' o melhor preditor
+        # de "o top-1 e' a evidencia certa" de que se tem registro: AUC 0,842 (producao
+        # 0,850), contra 0,669 do score absoluto.
+        if scored:
+            _s1 = scored[0][0]
+            _s2 = scored[1][0] if len(scored) > 1 else 0.0
+            margem_norm = (_s1 - _s2) / _s1 if _s1 > 0 else 0.0
+        else:
+            margem_norm = 0.0
+
+        # RANK CRU: posicao da evidencia esperada ANTES de diversificacao/rerank, no mesmo
+        # ranking que produziu `margem_norm`. A producao NAO tem rerank - ela entrega o
+        # ranking do BM25 direto. Medir a abstencao contra o ranking pos-rerank do
+        # benchmark misturaria dois pipelines e daria um numero que a producao nao executa.
+        rank_raw = None
+        for _i, (_s, _d) in enumerate(scored[:15], start=1):
+            if _d["id"] in expected_cids:
+                rank_raw = _i
+                break
+            if _d.get("type") == "aws_message":
+                for _ecid in expected_cids:
+                    if _d.get("code", "").lower() in _ecid.lower():
+                        rank_raw = _i
+                        break
+            if (rank_raw is None and expected_runbook
+                    and (_d.get("type") in ("ragflow_runbook_chunk", "runbook_section"))
+                    and _d.get("runbook") == expected_runbook):
+                _ov = len(q_tokens.intersection(_d["tokens"]))
+                if _ov >= 2 and (_ov / max(1, len(q_tokens))) >= 0.25:
+                    rank_raw = _i
+            if rank_raw is not None:
+                break
 
         # RAGFlow MMR / Source Diversity: Evitar que múltiplos chunks do mesmo runbook
         # monopolizem o top-K empurrando claims e respostas alternativas para baixo
@@ -370,12 +490,17 @@ def run_evaluation():
         # recall@15: fracao dos relevantes presentes no top-15 (o que a producao entrega)
         _top15 = {d.get("id") for d in retrieved_docs[:15]}
         recalls15.append(len(_top15.intersection(expected_cids)) / max(1, len(expected_cids)))
+        margens.append(margem_norm)
 
         results.append({
             "id": qid,
             "domain": b.get("domain"),
             "question": q_text,
             "rank": rank,
+            "rank_raw": rank_raw,
+            "margin_norm": round(margem_norm, 4),
+            "confianca": ("alta" if margem_norm >= LIMIAR_ALTA
+                          else ("media" if margem_norm >= LIMIAR_MEDIA else "baixa")),
             "expected_claims": list(expected_cids),
             "expected_runbook": expected_runbook,
             "top_3_retrieved": [d["id"] for d in retrieved_docs[:3]]
@@ -383,6 +508,9 @@ def run_evaluation():
 
     total = len(benchmark)
     mrr = sum(reciprocal_ranks) / total if total else 0.0
+    # Hit@1 restrito as perguntas RESPONDIVEIS. E' o numero comparavel entre benchmarks:
+    # Hit@1 cru mistura erro de recuperacao com pergunta sem resposta no indice.
+    respondiveis = total - sem_resposta
 
     print("==================================================")
     print("      RELATÓRIO DE AVALIAÇÃO DO RAG BENCHMARK     ")
@@ -395,7 +523,69 @@ def run_evaluation():
     print(f"Hit Rate @ 15: {top_k_hits[15]}/{total} ({top_k_hits[15]/total*100:.1f}%)")
     print(f"Recall @ 15:   {sum(recalls15)/max(1,len(recalls15)):.4f}")
     print(f"Mean Reciprocal Rank (MRR):    {mrr:.4f}")
+    # TETO: o melhor Hit@1 possivel neste benchmark E' 1 - sem_resposta/total. Publicar
+    # Hit@1 sem isto e' publicar um numero cujo denominador inclui perguntas impossiveis.
+    print("--------------------------------------------------")
+    print(f"Perguntas SEM resposta no indice: {sem_resposta}/{total}"
+          f" ({sem_resposta/max(1,total)*100:.1f}%)")
+    print(f"TETO do benchmark (melhor Hit@1 possivel): {respondiveis/max(1,total)*100:.1f}%")
+    if respondiveis:
+        print(f"Hit @ 1 entre as respondiveis: {top_k_hits[1]}/{respondiveis}"
+              f" ({top_k_hits[1]/respondiveis*100:.1f}%)")
+
+    # Usa `rank_raw` (ranking do BM25 PURO), nao `rank` (pos-rerank), porque a confianca
+    # e' calculada sobre o ranking do BM25 - e a producao ENTREGA o BM25 direto, sem rerank.
+    # Usar o pos-rerank misturaria dois pipelines e faria os numeros de "ha' evidencia"
+    # contarem documentos que no BM25 puro nem aparecem.
+    def _faixa(r):
+        m = r["margin_norm"]
+        return "alta" if m >= LIMIAR_ALTA else ("media" if m >= LIMIAR_MEDIA else "baixa")
+
+    print("--------------------------------------------------")
+    print("CONFIANCA (margem normalizada; NUNCA descarta a resposta)")
+    print(f"  alta  (>= {LIMIAR_ALTA:.3f}): ", end="")
+    g = [r for r in results if _faixa(r) == "alta"]
+    ac = sum(1 for r in g if r["rank_raw"] == 1)
+    print(f"{len(g):3d} perguntas ({len(g)/max(1,total)*100:4.1f}%) | top-1 correto "
+          f"{ac:3d} ({100*ac/max(1,len(g)):4.1f}%)")
+    print(f"  media (>= {LIMIAR_MEDIA:.3f}): ", end="")
+    g = [r for r in results if _faixa(r) == "media"]
+    ac = sum(1 for r in g if r["rank_raw"] == 1)
+    print(f"{len(g):3d} perguntas ({len(g)/max(1,total)*100:4.1f}%) | top-1 correto "
+          f"{ac:3d} ({100*ac/max(1,len(g)):4.1f}%)")
+    print(f"  baixa (<  {LIMIAR_MEDIA:.3f}): ", end="")
+    g = [r for r in results if _faixa(r) == "baixa"]
+    ac = sum(1 for r in g if r["rank_raw"] == 1)
+    print(f"{len(g):3d} perguntas ({len(g)/max(1,total)*100:4.1f}%) | top-1 correto "
+          f"{ac:3d} ({100*ac/max(1,len(g)):4.1f}%)")
+    # O erro concentra-se nas faixas nao-alta? E' o que da valor ao aviso ao LLM.
+    erros_nao_alta = sum(1 for r in results if _faixa(r) != "alta" and r["rank_raw"] != 1)
+    erro_total = sum(1 for r in results if r["rank_raw"] != 1)
+    print(f"  -> {erros_nao_alta}/{erro_total} dos erros "
+          f"({100*erros_nao_alta/max(1,erro_total):.1f}%) caem em media+baixa")
+
+    # VERIFICACAO OUT-OF-SAMPLE no proprio scorer em uso. As taxas por faixa foram
+    # calibradas num scorer; transferi-las para outro seria afirmar sem medir. Aqui o
+    # limiar e' fixo e a medicao e' feita em metades independentes: se as duas metades
+    # concordam, a faixa generaliza; se divergem, a faixa nao vale neste scorer.
+    def _metade(rid):
+        return int(hashlib.md5(str(rid).encode()).hexdigest(), 16) % 2
+
+    for rot, sel in (("metade 0", 0), ("metade 1", 1)):
+        sub = [r for r in results if _metade(r["id"]) == sel]
+        partes = []
+        for f in ("alta", "media", "baixa"):
+            g = [r for r in sub if _faixa(r) == f]
+            if g:
+                ac = sum(1 for r in g if r["rank_raw"] == 1)
+                partes.append(f"{f} {100*ac/len(g):.0f}% (n={len(g)})")
+        print(f"  -> out-of-sample {rot}: " + " | ".join(partes))
     print("==================================================")
+
+    conf_alta = sum(1 for r in results if _faixa(r) == "alta" and r["rank_raw"] == 1)
+    conf_media = sum(1 for r in results if _faixa(r) == "media" and r["rank_raw"] == 1)
+    conf_baixa = sum(1 for r in results if _faixa(r) == "baixa" and r["rank_raw"] == 1)
+    conf_erro_nao_alta = erros_nao_alta
 
     out_file = os.path.join(REPO_DIR, "data", "eval", "eval_summary.json")
     with open(out_file, "w") as f:
@@ -407,7 +597,20 @@ def run_evaluation():
             "hit_rate_at_10": top_k_hits[10] / total,
             "hit_rate_at_15": top_k_hits[15] / total,
             "recall_at_15": sum(recalls15) / max(1, len(recalls15)),
+            "perguntas_sem_resposta_no_indice": sem_resposta,
+            "teto_do_benchmark": respondiveis / total if total else 0.0,
+            "hit_rate_at_1_entre_respondiveis": (top_k_hits[1] / respondiveis
+                                                 if respondiveis else 0.0),
             "mrr": mrr,
+            "confianca": {
+                "limiar_alta": LIMIAR_ALTA,
+                "limiar_media": LIMIAR_MEDIA,
+                "top1_correto_faixa_alta": conf_alta,
+                "top1_correto_faixa_media": conf_media,
+                "top1_correto_faixa_baixa": conf_baixa,
+                "erros_em_media_ou_baixa": conf_erro_nao_alta,
+                "sem_abstencao": True,
+            },
             "details": results
         }, f, indent=2, ensure_ascii=False)
     print(f"Sumário de avaliação gravado em {out_file}")
