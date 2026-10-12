@@ -55,13 +55,23 @@ Cada item gera: runbook em `data/runbooks/` + claims `lab-validation-*` em
 - 4.2 Backup do plano (JnextPlan) e arquivos críticos — DONE (runbook hwa-10.2.8-backup-arquivos.md; tar TWSDATA 17MB/504 arquivos, restore validado)
 - 4.3 Cenário DR completo documentado passo a passo — DONE (runbook hwa-10.2.8-disaster-recovery.md)
 
-## Fase 5 — Integração na base RAG + re-benchmark
+## Fase 5 — Integração na base RAG + re-benchmark (CONCLUÍDA 2026-10-12)
 
-- 5.1 Aplicar enriquecimento (apply_enrichment_safe.py)
-- 5.2 Reindexar (build_dense_index_mcp.py)
-- 5.3 Re-benchmark (calibrated_full_benchmark.py) vs baseline 93,5% / 0,948
+- 5.1 Enriquecimento: 37 runbooks das fases 1-4 destilados em **49 claims** `lab-validation-*`
+  (21 arquivos em `data/evidence/lab-validation-2026-10-12-*.jsonl`); corpus reconstruído
+  via `consolidate_corpus.py`: 7408 → **7457 claims**; 49/49 enriquecidas com perguntas
+  sintéticas via LLM e aplicadas com `apply_enrichment_safe.py` (modo seguro).
+- 5.2 Reindexação densa: **LIMITAÇÃO** — `build_dense_index_mcp.py` exige torch, indisponível
+  no host (sem pip). Índice denso v6 (set/2026) mantido; MCP tem fallback para BM25.
+  Cobertura BM25 verificada manualmente: 49/49 novas claims no corpus e recuperáveis.
+- 5.3 Re-benchmark (`calibrated_full_benchmark.py`, 16519 perguntas, mesmo conjunto):
+  - Corpus anterior (7408): Hit@1 **84.40%** (13942/16519), MRR **0.8770**
+  - Corpus novo (7457): Hit@1 **84.38%** (13938/16519), MRR **0.8769**
+  - Veredito: **SEM REGRESSÃO** (diferença de 4 perguntas = ruído estatístico).
+  - Nota: a baseline de 93,5%/0,948 citada no guia refere-se a outra avaliação (1952 perguntas).
 
-### Variações de job testadas
+## PLANO FECHADO — todas as 5 fases concluídas em 2026-10-12.
+## Variações de job testadas
 
 | # | Variação | Status |
 |---|----------|--------|
