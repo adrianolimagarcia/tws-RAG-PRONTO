@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""validate_lab_session.py — Validador do LAB_SESSION_FORMAT (docs/LAB_SESSION_FORMAT.md).
+"""validate_lab_session.py — Validador do LAB_SESSION_FORMAT (docs/guias/LAB_SESSION_FORMAT.md).
 
 Motivo: o workflow de laboratório documentava um validador que NUNCA foi versionado
 (`scripts/add_lab_evidence.py` nao existe no repo) e o `ci_dataset_gate.py` validava

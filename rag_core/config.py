@@ -95,7 +95,7 @@ BM25_REAL = os.environ.get("RAG_BM25_REAL") == "1"
 # O valor 54/70 (MRR 0.8336) foi medido em 547d53b (corpus menor) e caiu para 53/70
 # em d742037 por CRESCIMENTO DE CORPUS (chunks novos competindo no rank 1 em eval-0029),
 # nao por nao-determinismo. Cite sempre o numero COM (HEAD, n_docs).
-# Ver docs/BENCHMARK_METRIC_PROVENANCE.md.
+# Ver docs/specs/BENCHMARK_METRIC_PROVENANCE.md.
 FAMILY_BOOST = float(os.environ.get("RAG_FAMILY_BOOST", "4"))
 
 # Tamanho medio de documento usado no termo de normalizacao do BM25 (compute_bm25).

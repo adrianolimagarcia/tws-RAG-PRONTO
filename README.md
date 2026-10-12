@@ -1,92 +1,72 @@
-# HCL Workload Automation 10.2.8 (Distributed) — SOTA RAG Dataset & Knowledge Base
-> **Versão:** `v1.0.0-gold`  
-> **Status:** Concluído, Validado em Lab Físico/Containerizado e Auditado por CI Gates.  
-> **Plataforma Canônica:** RHEL 9 (UBI9), HWA 10.2.8.00, Liberty engineServer, PostgreSQL, FTA clássico e Dynamic Agent.
+# TWS RAG — Base de Conhecimento HCL Workload Automation 10.2.8
 
----
+> **Status:** `v1.0.0-gold` — validado em lab físico/containerizado e auditado por CI gates.
 
-## Resumo Executivo da Linha de Base
+Base de conhecimento empírica sobre **HCL Workload Automation (TWS/HWA) 10.2.8**,
+construída com rigor de engenharia: cada afirmação técnica foi validada contra o
+comportamento real de um cluster distribuído de 3 containers Docker:
 
-Este repositório contém a mais abrangente base de conhecimento empírica, estruturada e canonizada sobre o **HCL Workload Automation (TWS/HWA) 10.2.8**. Construída com rigor de engenharia (HAOS SOTA), cada afirmação técnica foi validada contra o comportamento de runtime real de um cluster distribuído com 3 containers:
-- **`tws-hwa`**: Master Domain Manager (MDM), Dynamic Workload Broker, Liberty engineServer, Open DWC.
-- **`tws-bmdm`**: Backup Master Domain Manager (BMDM) com replicação ativa de Symphony e banco compartilhado.
-- **`tws-agent`**: Agente híbrido isolado em rede contendo Fault-Tolerant Agent (`AGT1`) e Dynamic Agent (`TWS-AGENT_1`).
+| Container | Papel |
+|---|---|
+| `tws-hwa` | Master Domain Manager (MDM), broker dinâmico, Liberty, DWC |
+| `tws-bmdm` | Backup Master (BMDM) com replicação de Symphony |
+| `tws-agent` | Agente híbrido (FTA `AGT1` + Dynamic Agent `TWS-AGENT_1`) |
 
----
+**Benchmark:** 1.952 perguntas únicas — Hit@1 **93,5%**, Hit@5 **96,5%**, MRR **0,948**.
 
-## Métricas & Resultados do Benchmark Canônico Multi-Label (1.952 Perguntas Únicas)
+## Mapa do projeto
 
-Avaliamos o corpus em escala total (1.952 perguntas cegas únicas sem viés de colisão, cobrindo as 2.548 claims canônicas) utilizando o pipeline de Information Retrieval de dois estágios (BM25 Calibrado + Reranker de N-Grams e Cobertura Semântica):
+```
+tws-RAG-PRONTO/
+├── README.md            ← você está aqui
+├── AGENTS.md            ← instruções para agentes de IA
+├── data/
+│   ├── knowledge/       ← BASE DE CONHECIMENTO (jsonl: lab, man-pages, rest-api)
+│   ├── runbooks/        ← runbooks operacionais
+│   ├── indexes/         ← índices densos (BM25 + embeddings)
+│   ├── eval/            ← perguntas e resultados de benchmark
+│   ├── evidence/        ← evidências de lab que sustentam as claims
+│   ├── ontology/        ← taxonomia do domínio
+│   ├── export/          ← corpus consolidado + exports multiformato
+│   ├── lab/             ← dados brutos das sessões de lab
+│   └── sft/             ← dataset para fine-tuning
+├── docs/
+│   ├── INDICE.md        ← índice da documentação
+│   ├── guias/           ← como fazer (treinamento, troubleshooting, enriquecimento)
+│   ├── specs/           ← especificações técnicas (SPECs, PRDs, contratos)
+│   ├── releases/        ← histórico de releases
+│   ├── sessoes/         ← registros de sessões de trabalho
+│   └── lab-protocols/   ← protocolos dos experimentos
+├── rag_core/            ← pipeline de retrieval (BM25 + reranker)
+├── mcp_server/          ← servidor MCP: `tws_expert_mcp.py`
+└── scripts/             ← 120 scripts de build, eval e enriquecimento
+```
 
-| Métrica | Resultado Geral |
-| :--- | :--- |
-| **Total de Perguntas Únicas Avaliadas** | **1.952 perguntas** |
-| **Tempo de Execução** | **7.75 segundos** (251.8 consultas/segundo) |
-| **Hit Rate @ 1** | **93.49%** (1.825 / 1.952) |
-| **Hit Rate @ 3** | **95.65%** (1.867 / 1.952) |
-| **Hit Rate @ 5** | **96.47%** (1.883 / 1.952) |
-| **Hit Rate @ 10** | **97.44%** (1.902 / 1.952) |
-| **Mean Reciprocal Rank (MRR)** | **0.9480** |
+## Uso rápido
 
-### Destaques por Especialidade:
-- **Alta Disponibilidade & Failover**: **100.0% Hit@1 \| 100.0% Hit@5 \| MRR 1.0000** (15 q)
-- **Troubleshooting & Mensagens de Erro (AWS***)**: **99.9% Hit@1 \| 99.9% Hit@5 \| MRR 0.9985** (664 q)
-- **Agendamento Avançado & Workflows (NEEDS, RECOVERY)**: **96.0% Hit@1 \| 97.3% Hit@5 \| MRR 0.9640** (74 q)
-- **Instalação & Manutenção**: **90.7% Hit@1 \| 96.0% Hit@5 \| MRR 0.9356** (75 q)
-- **Operação CLI (conman/composer/planman)**: **88.8% Hit@1 \| 92.9% Hit@5 \| MRR 0.9056** (392 q)
-- **API REST v2 & Integração**: **83.3% Hit@1 \| 92.7% Hit@5 \| MRR 0.8641** (150 q)
-
----
-
-## Estrutura de Artefatos para Consumo
-
-### 1. Servidor MCP para Agentes de IA (Hermes, Claude Code, OpenCode)
-Localizado em `mcp_server/tws_expert_mcp.py`. Permite consulta nativa stdio JSON-RPC:
 ```bash
-# Execução direta:
+# Consultar via MCP (para agentes: Hermes, Claude Code, OpenCode)
 python3 mcp_server/tws_expert_mcp.py
+# ferramenta: tws_expert_search(query, category, top_k)
 
-# Ferramentas expostas:
-# - tws_expert_search(query, category, top_k)
-# - tws_get_claim(claim_id)
-# - tws_list_categories()
+# Rodar benchmark completo
+python3 scripts/calibrated_full_benchmark.py
 ```
 
-### 2. Formato LLM / NotebookLM / Perplexity Spaces / ChatGPT
-Documentos Markdown de alta densidade em `data/export/llm_knowledge_bases/`.
+## Enriquecer a base (o fluxo principal)
 
-**Versão v2 — completa (recomendada):**
-- `tws_hwa_10.2.8_knowledge_book_v2_complete.md` — **5,3 MB / ~809 mil palavras**: livro único com todos os campos, ressalvas de uso, níveis de evidência e os 14 runbooks operacionais integrados. Para ChatGPT/Claude Projects.
-- `parts_v2/` — **24 arquivos temáticos**, todos abaixo do limite de 500k palavras por fonte do NotebookLM (use estes para o NotebookLM).
-- `README_CONSUMO.md` — guia de qual artefato usar em cada ferramenta e a regra anti-contaminação (fato oficial x prática de comunidade).
-- `BOOK_V2_MANIFEST.json` — manifesto com contagem por categoria, runbooks e tamanhos.
+Quer adicionar manuais, interações documentadas ou novas evidências de lab?
+O passo a passo está em **[docs/guias/ENRIQUECIMENTO.md](docs/guias/ENRIQUECIMENTO.md)**.
 
-**Versão v1 — digest de claims (mantida para compatibilidade):**
-- `tws_hwa_10.2.8_knowledge_book_complete.md` — 1,9 MB, apenas 5 campos por registro e sem runbooks.
-- `01_alta_disponibilidade_failover.md` … `08_procedimentos_e_referencias_adicionais.md`
+Resumo: documente em `data/knowledge/` (ou `data/runbooks/`) →
+valide com `scripts/apply_enrichment_safe.py` →
+reindexe com `scripts/build_dense_index_mcp.py` →
+rode o benchmark para medir o ganho.
 
-### 3. Dados Mestres para Treinamento e RAG Corporativo
-Em `data/export/`:
-- `tws_corpus_master_consolidated.jsonl`: 2.548 claims únicas desduplicadas e indexadas.
-- `tws_eval_ground_truth_multilabel.jsonl`: 1.952 perguntas canônicas com listas de relevância multi-label.
-- `multilabel_benchmark_report.json`: Relatório analítico completo do benchmark.
-- `tws_taxonomy_audit_report.json`: Distribuição analítica por tema.
+## Documentação
 
----
+Comece por **[docs/INDICE.md](docs/INDICE.md)**. Destaques:
 
-## Gerenciamento do Laboratório Local (CachyOS Host)
-
-Para economizar recursos de hardware (RAM/CPU) quando o lab não estiver sob teste:
-```bash
-# Pausar lab (libera ~6-8 GB de memória RAM):
-docker stop tws-hwa tws-bmdm tws-agent
-
-# Retomar lab:
-docker start tws-hwa tws-bmdm tws-agent
-
-# Monitorar saúde:
-docker exec tws-hwa su - wauser -c "conman 'sc @'"
-```
-
----
-*Compilado e homologado via HAOS SOTA Pipeline — 2026.*
+- `docs/guias/TRAINING_GUIDE.md` — como treinar com o material
+- `docs/guias/PLANO_ENRIQUECIMENTO_DATASET.md` — lacunas medidas e ações priorizadas
+- `docs/specs/RAG_EVIDENCE_CONTRACT.md` — contrato de evidência das claims
