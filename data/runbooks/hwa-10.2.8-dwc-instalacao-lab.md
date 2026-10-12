@@ -3,12 +3,20 @@
 Data: 2026-10-12. Fase 2, itens 2.1/2.2 do PLANO_FECHAMENTO_LACUNAS.
 Procedimento base: /root/hwa/dwc-install-validation.jsonl (validado em 2026-08-25 no WSL2/Ubuntu).
 
-## Arquitetura
+## Arquitetura (canônica do lab)
 
 - DWC instalado **no host** em /opt/hwa/DWC (não em container — o procedimento validado era host-direct)
-- PostgreSQL 18 em container `tws-dwcdb` na rede hwa-mesh (172.18.0.2:5432)
+- **Banco de dados COMPARTILHADO com o TWS Master:** o DWC usa a mesma instância
+  PostgreSQL 18 que roda no container tws-hwa (172.18.0.10:5432) — padrão suportado:
+  mesma instância, databases separados (`TDWC` para o DWC, `TWS` para o engine)
 - Open Liberty 26.0.0.3 em /opt/liberty/wlp (download de public.dhe.ibm.com)
 - MDM: container tws-hwa (172.18.0.10:31116)
+
+> **Nota de migração (2026-10-12):** inicialmente foi usado um PostgreSQL separado
+> em container (`tws-dwcdb`). Por sugestão do usuário, migrou-se para a instância
+> do Master: o database TDWC (55 tabelas) e a role `postgresdwc` já existiam no
+> PostgreSQL do tws-hwa; o datasource do DWC foi apontado para 172.18.0.10 e o
+> container separado foi removido.
 
 ## Pré-requisitos (desvios do procedimento validado)
 
@@ -23,10 +31,11 @@ Procedimento base: /root/hwa/dwc-install-validation.jsonl (validado em 2026-08-2
 ## Passo 1 — Banco de dados (configureDb.sh)
 
 ```bash
-# postgres em container
-docker run -d --name tws-dwcdb --network hwa-mesh \
-  -e POSTGRES_PASSWORD=dwcdbadmin postgres:18
-docker exec tws-dwcdb psql -U postgres -c "CREATE ROLE postgresdwc WITH LOGIN PASSWORD 'dwcdbuser' CREATEDB;"
+# USA A INSTÂNCIA DO MASTER (tws-hwa) — não subir postgres separado
+# O database TDWC e a role postgresdwc já existem no PostgreSQL do tws-hwa.
+# Se precisar recriar:
+docker exec -u postgres tws-hwa psql -c "CREATE ROLE postgresdwc WITH LOGIN PASSWORD 'dwcdbuser' CREATEDB;"
+# (o configureDb.sh cria o database TDWC automaticamente se não existir)
 
 # certificados
 mkdir -p /root/hwa/dwc-certs
@@ -34,7 +43,8 @@ openssl req -x509 -newkey rsa:2048 -keyout tls.key -out tls.crt -days 825 -nodes
 cp tls.crt ca.crt && chown wauser:wauser tls.key tls.crt ca.crt
 
 # properties (/root/hwa/configureDbPostgresql-lab.properties)
-# DB_HOST_NAME=172.18.0.2, DB_ADMIN_USER=postgres, DB_ADMIN_USER_PWD=dwcdbadmin
+# DB_HOST_NAME=172.18.0.10 (PostgreSQL do Master), DB_ADMIN_USER=postgres
+# (admin via peer auth no container; senha não necessária para configureDb)
 # DB_USER=postgresdwc, DB_PASSWORD=dwcdbuser, DB_NAME=TDWC
 # SSL_KEY_FOLDER=/root/hwa/dwc-certs, SSL_PASSWORD=twslab2026
 
@@ -48,7 +58,7 @@ Saída: WAINST052I comando concluído com êxito. 55 tabelas (48 tdwc + 7 fed).
 ```bash
 # /root/hwa/dwcinst-lab.properties:
 # ACCEPTLICENSE=yes, DWC_INST_DIR=/opt/hwa/DWC, DWC_ADMIN_USER=wauser, DWC_ADMIN_PW=twslab2026
-# RDBMS_TYPE=POSTGRESQL, DB_NAME=TDWC, DB_HOST_NAME=172.18.0.2
+# RDBMS_TYPE=POSTGRESQL, DB_NAME=TDWC, DB_HOST_NAME=172.18.0.10 (Master)
 # WLP_INSTALL_DIR=/opt/liberty/wlp, START_WLP=false
 # SKIPCHECKPREREQ=true (CachyOS não reconhecido)
 
@@ -132,4 +142,4 @@ curl -sk -u wauser:twslab2026 https://localhost:9443/dwc/api/v1/engine/2/checkCo
 - DWC: https://cachyos-x8664:9443/console/ (ou https://localhost:9443/console/)
 - Usuário DWC: wauser / twslab2026 (via API basic auth; form login com limitação)
 - Engine: MDM_LAB -> tws-hwa:31116 (conectado)
-- Banco: TDWC no container tws-dwcdb (172.18.0.2:5432)
+- Banco: TDWC na instância PostgreSQL do Master (tws-hwa, 172.18.0.10:5432) — compartilhado com o database TWS do engine
