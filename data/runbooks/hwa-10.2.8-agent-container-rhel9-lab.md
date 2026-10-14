@@ -63,7 +63,15 @@ validando execução de jobs de ponta a ponta. Complementa o runbook do BMDM
    ```
 6. **Registro no broker** (automático, ~1-2 min): o JobManager do agente envia recursos
    (`AWSITA083I Resource information was sent to https://tws-hwa.lab:31116/JobManagerRESTWeb/...`).
-   O broker cria a workstation no banco — **nome = TWS-AGENT** (base), NÃO o `-thiscpu`.
+   O broker cria a workstation no banco — o nome registrado deriva do **hostname do
+   container**:
+   - Neste lab (09/09), o hostname era `tws-agent` e o `-thiscpu` era `AGT1` →
+     o broker registrou **`TWS-AGENT`** (base do hostname), NÃO o `-thiscpu`.
+   - Nos labs de 13/10 (caminhos B e C), o hostname do container foi feito **igual**
+     ao `-thiscpu` (ex.: `TWS-LAB-AUTH-C`) → o broker registrou **exatamente o
+     `-thiscpu`**.
+   - **Recomendação prática:** dar ao container um hostname igual ao `-thiscpu`
+     pretendido, para os dois baterem (ver "Achados", item 1).
 7. **Incluir no plano** (a workstation só aparece após virada/extensão do plano):
    ```bash
    # no MDM, como wauser:
@@ -140,10 +148,193 @@ Dynamic Agent moderno (Broker / JobManager na porta 31114).
 ## Pitfalls (todos observados no lab)
 
 - Kit AGENT ≠ kit MDM: só `twsinst` (sem `serverinst.sh`).
-- Nome de workstation do broker é `TWS-AGENT` (prefixo do produto), não o `-thiscpu`.
+- Nome da workstation no broker deriva do **hostname do container** (lab 09/09:
+  `tws-agent` → `TWS-AGENT`; labs 13/10: hostname = `-thiscpu` → registra o
+  `-thiscpu` exato). Para os dois baterem, hostname do container = `-thiscpu`.
 - Workstation dinâmica só entra no plano via JnextPlan/ResetPlan (não em tempo real).
 - `AWSJPL006E` na virada: node sem FQDN resolvível → adicionar alias `.lab` no /etc/hosts do MDM.
 - Job stream name máx. 16 chars (`AWSJOM012E`); job referenciado sem definição inline → `AWSJDB303E`.
 - `-sslkeysfolder` deve ser gravável (instalador gera keystores; mount `:ro` falha).
 - Limit default 0 pós-entrada no plano → `conman "limit <WS>#;10"` (o `#` evita AWSBHU048E
   quando o nome é prefixo de outro, ex.: MDM_BK vs MDM_BKA).
+
+## Achados do lab twsinst (caminhos de autenticação B/A, 2026-10-13)
+
+1. **`-thishost` não existe no twsinst 10.2.8** (verificado via `twsinst -u`).
+   O hostname do container cumpre o papel de identificar o host. O nome que vai para o
+   master é o `-thiscpu` (máx. 16 chars, sem espaços, não começa com número, ≠ nome
+   do master). Observação do lab: para dynamic agents, o broker pode registrar o nome
+   derivado do **hostname** em vez do `-thiscpu` — dar ao container um hostname igual
+   ao `-thiscpu` pretendido para os dois baterem.
+
+2. **A senha vaza em plaintext no log de instalação.** O `-wapassword` é mascarado
+   (`****`), mas o `tdwb_pwd` (mesma credencial, usada no download REST) é registrado
+   em claro: 1x na linha de comando java do instalador + 3x em
+   `INFO: key tdwb_pwd value ...` no log
+   `TWSDATA/installation/logs/twsinst_LINUX_X86_64_wauser_10.2.8.00.log`.
+   Destruir o log (ou redigir o `tdwb_pwd`) após a instalação. Em containers throwaway
+   o log é destruído com a remoção do container.
+
+3. **Workstation auto-criada nasce com `LIMIT 0` no plano** — jobs submetidos ficam
+   em `READY` eternamente. Liberar antes de testar:
+   `conman "limit cpu=<NOME>;10"` (com ponto-e-vírgula; a forma com espaço,
+   `limit cpu=<nome> <n>`, dá "ambiguous selector").
+
+4. **Sintaxe do composer 10.2.8 (lab):** `; noask` quebra o `display`
+   (usar sem: `composer "display cpu=@"`); `composer add` lê arquivo **dentro do
+   container** (fazer `docker cp` + `chmod 644` antes); definição de job usa header
+   `$JOBS` e keyword `DOCOMMAND` (não `SCRIPTNAME`/`ARGS`); o job precisa existir
+   antes do stream que o referencia (criar o job primeiro, depois o stream).
+
+5. **Caminho C (JWT via `-apikey`, 2026-10-13):** gerar a API key via
+   `POST https://<MDM>:31116/twsd/api/v2/apikey` (basic auth com usuário/senha
+   do TWS; body `{"label":"<nome>","type":"PERSONAL"}` — o campo de nome é
+   `label`, e `type` é enum **maiúsculo**: `PERSONAL` ou `SERVICE`); instalar com
+   `./twsinst ... -thiscpu <NOME> -tdwbhostname <mdm> -tdwbport 31116 -apikey <JWT>`
+   (cenário C puro: sem `-wauser`/`-wapassword`, sem flags de certificado).
+   O JWT vaza em plaintext no log de instalação (`APIKEY = <JWT>` na seção
+   `checkSSLValuesForAgent`) — destruir o log após a instalação.
+   Nota: o endpoint do DWC (`:9443/twsd/api/v2/apikey`) exigiu o parâmetro
+   `engines` e retornou erro de autenticação com basic auth neste lab; o endpoint
+   do engine MDM (`:31116`) funcionou.
+   **Variante não validada neste lab:** `-jwt true` + `-wauser`/`-wapassword`
+   (sem `-apikey`) — o instalador baixa o token JWT do broker usando as
+   credenciais, em vez de exigir o JWT pronto. Ver
+   `twsinst-flags-complete-reference.md`, seção 4.
+## Como criar e apagar uma API key (JWT) — 2026-10-13
+
+Operações validadas no lab contra o **engine do MDM** (`tws-hwa`, 172.18.0.10).
+O endpoint do DWC (`https://<DWC>:9443/twsd/api/v2/apikey`) **não** funcionou
+neste lab: exigiu o parâmetro `engines` e retornou `AUTHORIZATION_ERROR` com
+basic auth. Usar o endpoint do engine, em **HTTPS** (HTTP puro na 31116 não
+responde — é a porta do netman; o `twsd` REST do engine atende em TLS).
+
+- **Criar:** `POST https://<MDM>:31116/twsd/api/v2/apikey`
+  - basic auth com usuário/senha do TWS, `-k` (cert self-signed),
+    `Content-Type: application/json`
+  - body exato: `{"label":"<nome>","type":"PERSONAL"}` — o campo de nome é
+    `label` (outros nomes dão `AWSJOM001E`); `type` é obrigatório e o enum é
+    **maiúsculo**: `PERSONAL` ou `SERVICE` (minúsculas dão `AWSMAC020E`)
+  - resposta `201`: `{"token":"<JWT>"}` (JWT RS256, ~1132 bytes, TTL 1 ano)
+  - efeito colateral observado: criar uma key `PERSONAL` com label X também
+    cria uma key `SERVICE` de mesmo label (com usuário derivado `<label>-<hash>`)
+- **Descobrir o id da key:** o UUID está no claim `apikeyUuid` do payload do
+  JWT (decodificar o segmento do meio em base64url); ou consultar o banco:
+  tabela `mdl.aky_api_keys` no postgres (DB `TWS`, dentro do container do MDM)
+  — colunas `aky_id` (uuid, PK), `aky_label`, `aky_user`, `aky_type` (`P`/`S`),
+  `aky_created`, `aky_expiration`
+- **Listar:** `GET https://<MDM>:31116/twsd/api/v2/apikey` — ⚠️ **não
+  confiável nesta versão**: retornou `{"count":0}` mesmo com 5 keys válidas no
+  banco (e `?limit=100` devolveu HTTP 500). Para conferir de verdade, usar o
+  banco (`SELECT count(*) FROM mdl.aky_api_keys;`) ou `GET` por id
+- **Apagar:** `DELETE https://<MDM>:31116/twsd/api/v2/apikey/{apiKeyId}`
+  (basic auth) → `200`; `GET` do mesmo id depois retorna `404`. Ciclo
+  completo validado em 2026-10-13 (criar → apagar → 404; tabela zerada no banco)
+- **Segurança:** o token JWT só é exibido **uma vez**, na resposta do POST —
+  não salvar em disco (ou salvar `0600` e destruir com `shred -u` após o uso).
+  Sem o token, a key é inutilizável, mas o registro continua válido por 1 ano:
+  apagar o registro via `DELETE` quando não for mais preciso. Nos relatórios,
+  segredos sempre redigidos como `<JWT>` / `<senha>` — nunca valores reais.
+
+## Caminho A funcional em deploy real: PKI compartilhada com o master (procedimento)
+
+O lab do caminho A (2026-10-13, relatório em
+`docs/sessoes/lab-twsinst-auth-paths/RELATORIO-caminho-A-sslkeys.md`) provou que o
+`twsinst` instala perfeitamente com `-sslkeysfolder` + `-sslpassword`, mas a
+workstation **nunca foi registrada** no master: com CA fresca e isolada, a
+confiança PKI não é mútua — o agente não confia no broker (cert `CN=tws-hwa.lab`
+emitido pela CA do ecossistema) e o broker não confia no agente (cert emitido
+pela CA fresca). Para o caminho A funcionar, a CA usada precisa ser confiável
+pelos dois lados. Este é o procedimento.
+
+### 1. Onde fica a CA do master
+
+No container do MDM (`tws-hwa`, verificado em 2026-10-14):
+
+| Item | Caminho |
+|---|---|
+| CA do ecossistema (cert) | `/opt/hwa/TWSDATA/ssl/depot/ca.crt` (também em `/opt/ssl-certs/ca.crt`) — `CN=TWS-HWA-Lab-CA`, self-signed |
+| Truststore do master | `/opt/hwa/TWSDATA/ssl/certs/TWSClientTrustStore.p12` e `.pem` |
+| Keystore do master | `/opt/hwa/TWSDATA/ssl/certs/TWSClientKeyStore.p12` |
+
+⚠️ **A `ca.key` (chave privada da CA) NÃO está no master** (verificado com
+`find` no container). Sem ela, o operador não consegue assinar certificados
+novos a partir do container. Opções:
+- (a) usar a `ca.key` do ponto onde os certificados foram gerados originalmente
+  (neste lab, fora do container);
+- (b) gerar uma CA nova dedicada e distribuí-la (ver item 4).
+
+### 2. Assinar o certificado do agente com a CA do ecossistema
+
+Com a `ca.key` + `ca.crt` da CA do ecossistema em mãos (no host, nunca dentro do
+container do agente):
+
+```bash
+# Chave do agente + CSR (CN = hostname do agente; SAN com hostname e FQDN —
+# o broker valida o hostname)
+openssl genrsa -out agent-tls.key 2048
+openssl req -new -key agent-tls.key -out agent-tls.csr -subj "/CN=<hostname-agente>" \
+  -addext "subjectAltName=DNS:<hostname-agente>,DNS:<hostname-agente>.lab"
+# Assinar com a CA do ecossistema
+openssl x509 -req -in agent-tls.csr -CA ca-ecossistema.crt -CAkey ca-ecossistema.key \
+  -CAcreateserial -out agent-tls.crt -days 365 -sha256 \
+  -extfile <(printf "[v3_req]\nsubjectAltName=DNS:<hostname-agente>,DNS:<hostname-agente>.lab\n")
+openssl verify -CAfile ca-ecossistema.crt agent-tls.crt   # agent-tls.crt: OK
+```
+
+### 3. Direção agente→broker: o agente confia no master
+
+Monte a pasta PEM para o `twsinst` com **a CA do ecossistema** + o cert do agente:
+
+```bash
+# /opt/agent-ssl (gravável, dono wauser):
+#   ca.crt          <- CA do ecossistema (/opt/hwa/TWSDATA/ssl/depot/ca.crt do master)
+#   tls.key         <- agent-tls.key (600)
+#   tls.crt         <- agent-tls.crt (644)
+./twsinst -new -agent dynamic -acceptlicense yes -uname wauser \
+  -thiscpu <NOME> -tdwbhostname <master> -tdwbport 31116 \
+  -sslkeysfolder /opt/agent-ssl -sslpassword <senha>
+```
+
+O instalador gera os keystores do agente
+(`TWSDATA/ssl/certs/TWSClientKeyStore.p12` e `TWSClientTrustStore.{p12,pem}`) já
+confiando no broker — foi exatamente assim que o lab original (09/09) funcionou:
+mesma CA nos 3 nós (MDM, BMDM, agente).
+
+Correção pós-instalação (se o agente já foi instalado com outra CA): anexar a CA
+do ecossistema ao truststore do agente e reiniciar o JobManager (o agente ITA o
+reinicia sozinho):
+
+```bash
+# no container do agente, como root:
+TS=/opt/HCL/TWA_wauser/TWSDATA/ssl/certs
+cat /caminho/ca-ecossistema.crt >> $TS/TWSClientTrustStore.pem
+keytool -importcert -trustcacerts -alias ecossistema-ca \
+  -file /caminho/ca-ecossistema.crt -keystore $TS/TWSClientTrustStore.p12 \
+  -storetype PKCS12 -storepass <senha-do-keystore>   # VERIFICAR NO AMBIENTE
+```
+
+### 4. Direção broker→agente: o master confia no agente (CA própria isolada)
+
+Se em vez da CA do ecossistema você optou por CA própria isolada, o broker
+encerra o handshake (`Failure when receiving data from the peer` — observado no
+lab). É preciso adicionar sua CA ao truststore do **master**:
+
+```bash
+# no container do master (tws-hwa), como root:
+TS=/opt/hwa/TWSDATA/ssl/certs
+cp /caminho/sua-ca.crt $TS/   # guardar cópia junto aos demais certs
+cat /caminho/sua-ca.crt >> $TS/TWSClientTrustStore.pem
+keytool -importcert -trustcacerts -alias minha-ca-isolada \
+  -file /caminho/sua-ca.crt -keystore $TS/TWSClientTrustStore.p12 \
+  -storetype PKCS12 -storepass <senha-do-keystore>   # VERIFICAR NO AMBIENTE
+# reiniciar o broker/master para recarregar o truststore   # VERIFICAR NO AMBIENTE
+```
+
+### Resumo da decisão
+
+| Situação | O que fazer |
+|---|---|
+| Você tem a `ca.key` da CA do ecossistema | Itens 2 + 3: assine o cert do agente com ela |
+| Você NÃO tem a `ca.key` | Item 4: distribua sua CA própria para o truststore do master |
+| Dúvida sobre a senha do keystore `.p12` | Gerenciada pelo produto; não invente — verifique no ambiente antes de rodar o keytool |

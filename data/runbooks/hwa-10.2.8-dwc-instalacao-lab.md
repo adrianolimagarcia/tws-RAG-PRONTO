@@ -143,3 +143,75 @@ curl -sk -u wauser:twslab2026 https://localhost:9443/dwc/api/v1/engine/2/checkCo
 - Usuário DWC: wauser / twslab2026 (via API basic auth; form login com limitação)
 - Engine: MDM_LAB -> tws-hwa:31116 (conectado)
 - Banco: TDWC na instância PostgreSQL do Master (tws-hwa, 172.18.0.10:5432) — compartilhado com o database TWS do engine
+
+---
+
+## Migração para Docker (2026-10-12) — container `tws-dwc`
+
+**Decisão do usuário:** DWC roda em container (`tws-dwc`), como o resto do lab.
+**Estratégia:** lift-and-shift — a instalação em `/opt/hwa/DWC` + `/opt/liberty` foi
+mantida intacta no host e montada no container via bind mounts. O banco (TDWC no
+tws-hwa) **não mudou**.
+
+### Arquitetura do container
+
+| Item | Valor |
+|------|-------|
+| Nome | `tws-dwc` |
+| Imagem | `debian:bookworm-slim` (glibc; Alpine/musl NÃO serve pro JRE Semeru) |
+| Rede | `hwa-mesh`, IP fixo `172.18.0.13` |
+| Volumes | `/opt/hwa/DWC:/opt/hwa/DWC`, `/opt/liberty:/opt/liberty`, `dwc-home:/home/wauser` |
+| Portas | `9443:9443` (https), `9444:9444` (http), `12809`, `19402` (bootstrap) |
+| Usuário | `1001:1001` (wauser — preserva permissões dos arquivos) |
+| Env | `WLP_USER_DIR=/opt/hwa/DWC/usr`, `JAVA_HOME=/opt/hwa/DWC/java/jre` |
+| Comando | `/opt/liberty/wlp/bin/server run dwcServer` (foreground; `server start` sai do container) |
+| Restart | `unless-stopped` |
+
+DNS: `tws-hwa` resolve para 172.18.0.10 via DNS embutido do Docker na hwa-mesh
+(o datasource já apontava para o IP; a conexão do engine usa o hostname).
+
+### Comando de criação
+
+```bash
+docker create --name tws-dwc --hostname tws-dwc \
+  --network hwa-mesh --ip 172.18.0.13 \
+  -p 9443:9443 -p 9444:9444 -p 12809:12809 -p 19402:19402 \
+  -v /opt/hwa/DWC:/opt/hwa/DWC -v /opt/liberty:/opt/liberty \
+  -v dwc-home:/home/wauser \
+  --user 1001:1001 \
+  -e WLP_USER_DIR=/opt/hwa/DWC/usr -e JAVA_HOME=/opt/hwa/DWC/java/jre \
+  -e HOME=/home/wauser -e LANG=pt_BR.UTF-8 \
+  -w /opt/hwa/DWC/usr/servers/dwcServer \
+  --restart unless-stopped \
+  debian:bookworm-slim /opt/liberty/wlp/bin/server run dwcServer
+docker start tws-dwc
+```
+
+### Validação pós-migração (2026-10-12 — tudo OK)
+
+- `https://localhost:9443/console/` → 302 (redirect pro login, normal)
+- `https://localhost:9443/console/login.jsp` → 200 (fix JSTL preservado)
+- API basic auth (`wauser:twslab2026`) → OK
+- `GET /dwc/api/v1/engine/1/checkConnection` → `{"successful":true,"message":"Connection to MDM_LAB: successful."}`
+- Engine MDM_LAB (id=1, tws-hwa:31116) intacto no banco TDWC
+- Outros containers (tws-hwa, tws-bmdm, tws-agent) inalterados
+
+### Rollback (instalação do host preservada)
+
+**/opt/hwa/DWC e /opt/liberty NÃO foram deletados** — rollback é só parar o
+container e subir o servidor no host:
+
+```bash
+docker stop tws-dwc
+su - wauser -c "WLP_USER_DIR=/opt/hwa/DWC/usr /opt/liberty/wlp/bin/server start dwcServer"
+```
+
+**Ponto de não-retorno:** não há — enquanto os bind mounts existirem, host e
+container usam os mesmos arquivos. Só não rode os dois ao mesmo tempo (lock do Liberty).
+
+### Limitação conhecida (cosmética)
+
+No log do container: `JVMSHRC155E Error copying username into cache name` —
+o JRE não resolve o username do uid 1001 (sem entrada no /etc/passwd do container).
+É **nonfatal** (está no IBM_JAVA_OPTIONS): o servidor sobe normalmente sem o
+shared class cache. Não afeta funcionamento.

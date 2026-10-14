@@ -60,19 +60,22 @@ O `twsinst` exige a declaração de exatamente um dos 5 modos de operação mutu
 A partir da versão 10.2.x, o HWA exige securitização com certificados ou tokens. O instalador possui 3 caminhos de autenticação bem definidos:
 
 ### Matriz de Combinações:
-| Parâmetro | Cenário A: Custom PEM | Cenário B: Download via REST | Cenário C: API Key (DWC) |
+| Parâmetro | Cenário A: Custom PEM | Cenário B: Download via REST | Cenário C: API Key (engine) |
 |---|---|---|---|
 | `-jwt` | `false` ou omitido | `true` | `true` ou omitido |
 | `-sslkeysfolder` | **Obrigatório** (pasta com ca.crt, tls.key, tls.crt) | **Proibido** (ignorado/erro 498) | **Proibido** (ignorado/erro 510) |
 | `-sslpassword` | **Obrigatório** (senha p/ gerar keystore) | **Proibido** | **Proibido** |
 | `-wauser` | **Proibido** (erro 486 com sslkeysfolder) | **Obrigatório** | **Proibido** (ignorado/erro 509) |
 | `-wapassword` | **Proibido** (erro 486 com sslkeysfolder) | **Obrigatório** | **Proibido** |
-| `-apikey` | **Proibido** | **Proibido** | **Obrigatório** (JWT gerado no DWC) |
+| `-apikey` | **Proibido** | **Proibido** | **Obrigatório** (JWT gerado via REST no engine) |
 | `-tdwbhostname` | Recomendado / Obrigatório se dinâmico | **Obrigatório** | **Obrigatório** |
 | `-tdwbport` | Recomendado / Obrigatório se dinâmico | **Obrigatório** (`31116`) | **Obrigatório** (`31116`) |
 
 * **Regra de Omissão Total (Erro `AWSFAB502E`)**: Se o operador não fornecer nenhum dos três grupos (`-sslkeysfolder`, `-wauser/-wapassword` ou `-apikey`), a instalação é abortada: `"Specify either the sslkeysfolder and sslpassword parameters, or the wauser and wapassword parameters, or apikey parameter."`.
 * **Regra de Auto-Ativação do JWT**: Se `-jwt` for omitido, mas `-wauser` + `-wapassword` ou `-apikey` forem passados, o instalador infere automaticamente `-jwt true`.
+
+* **Endpoints de geração da API key (lab 2026-10-13)**: o cenário C foi validado gerando o JWT no **engine do MDM** (`POST https://<MDM>:31116/twsd/api/v2/apikey`, basic auth) — **funcionou**. O endpoint equivalente no **DWC** (`https://<DWC>:9443/twsd/api/v2/apikey`) **falhou** neste lab (exigiu o parâmetro `engines` e retornou `AUTHORIZATION_ERROR` com basic auth). Em outros ambientes o DWC pode funcionar — o comportamento varia por configuração; se o DWC falhar, usar o endpoint do engine.
+* **Variante `-jwt true`**: além do cenário C puro (`-apikey <JWT>`), o instalador aceita `-jwt true` + `-wauser`/`-wapassword` — nesse caso ele **baixa o token JWT do broker usando as credenciais** em vez de exigir o JWT pronto. Não validada neste lab (o caminho C puro usa só `-apikey`).
 
 ---
 
