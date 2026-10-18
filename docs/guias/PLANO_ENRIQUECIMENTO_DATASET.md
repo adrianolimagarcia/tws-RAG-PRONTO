@@ -53,3 +53,17 @@ Desproporcional; ha muito material de lab nao convertido.
 - P2: melhorar a heuristica em `scripts/consolidate_corpus.py` (funcao de classificacao).
 - Toda claim nova entra como `lab-validation-*` (lab) ou com `source_url` (oficial), nunca
   editando `claims.jsonl` diretamente.
+
+## Lacuna preenchida: Extended Agents (XA) — 2026-10-18
+
+> Gap identificado em 2026-10-18: **zero ocorrências** de "extended agent" e "access method"
+> em `docs/`; "r3batch" aparecia só num JSON de benchmark; "SAP" só em menções incidentais.
+> Nenhum documento sustentava a resposta correta sobre o ciclo de vida do XA
+> (o XA **não** aceita `conman start`; o access method é invocado pela FTA hospedeira
+> sob demanda a cada job submetido).
+
+| Item | Detalhe |
+|---|---|
+| Guia criado | `docs/guias/EXTENDED_AGENTS_XA.md` (conceito, configuração passo a passo com exemplo SAP r3batch, ciclo de vida/operações, r3batch em detalhe incl. options files e XBP 2.0/3.0, troubleshooting) |
+| Fontes | documentação oficial HCL (help.hcl-software.com), todas as afirmações com `source_url` na seção 6 do guia |
+| Status | preenchida |
