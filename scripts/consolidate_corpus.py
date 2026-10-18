@@ -170,6 +170,43 @@ if os.path.exists(lab_proc_file) and os.environ.get("SKIP_LAB_PROCEDURES") != "1
             }
             n_lab_proc += 1
 
+# 1d. Fonte Extended Agents / XA (data/knowledge/xa-derived.jsonl).
+# Conhecimento oficial HCL sobre extended agents: conceito, sintaxe TYPE X-AGENT,
+# SAP r3batch, ciclo de vida (XA nao aceita conman start) e troubleshooting.
+# Adicionado em 2026-10-18 para preencher a lacuna medida (zero ocorrencias de
+# "extended agent"/"access method" no corpus). Espelha o padrao da secao 1c.
+xa_file = os.path.join(base_dir, "data", "knowledge", "xa-derived.jsonl")
+n_xa = 0
+if os.path.exists(xa_file) and os.environ.get("SKIP_XA") != "1":
+    with open(xa_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                c = json.loads(line)
+            except Exception:
+                continue
+            cid = c.get("claim_id")
+            if not cid or cid in claims_by_id:
+                continue
+            texto = " ".join(str(c.get(k, "")) for k in
+                             ("claim", "syntax", "supporting_quote", "source_title", "source_url"))
+            prefix = c.get("source_title") or ""
+            categoria = classify_claim(prefix, texto)
+            taxonomy_counter[categoria] += 1
+            claims_by_id[cid] = {
+                "claim_id": cid,
+                "claim": texto,
+                "context_prefix": prefix,
+                "category": categoria,
+                "result": c.get("result", "SUCCESS"),
+                "platform": "HWA 10.2.8 Distributed",
+                "source_file": os.path.basename(xa_file),
+                "synthetic_questions": [],
+            }
+            n_xa += 1
+
 # Gravar Master Consolidated
 with open(master_file, "w", encoding="utf-8") as f:
     for cid in sorted(claims_by_id.keys()):

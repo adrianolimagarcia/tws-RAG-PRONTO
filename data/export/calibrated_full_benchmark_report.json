@@ -1,61 +1,61 @@
 {
   "total_questions_evaluated": 16519,
-  "elapsed_seconds": 136.5,
-  "queries_per_second": 121.0,
-  "hit_rate_at_1": 0.844,
-  "hit_rate_at_3": 0.9056,
-  "hit_rate_at_5": 0.9169,
-  "hit_rate_at_10": 0.9324,
-  "mean_reciprocal_rank_mrr": 0.877,
+  "elapsed_seconds": 117.76,
+  "queries_per_second": 140.3,
+  "hit_rate_at_1": 0.8436,
+  "hit_rate_at_3": 0.905,
+  "hit_rate_at_5": 0.9166,
+  "hit_rate_at_10": 0.9326,
+  "mean_reciprocal_rank_mrr": 0.8764,
   "category_breakdown": {
     "Agendamento Avancado & Workflows": {
       "total_questions": 500,
       "hit_rate_at_1": 0.356,
-      "hit_rate_at_5": 0.774,
+      "hit_rate_at_5": 0.772,
       "hit_rate_at_10": 0.912,
-      "mrr": 0.5504
+      "mrr": 0.5466
     },
     "Arquitetura & Topologia Mesh": {
       "total_questions": 558,
       "hit_rate_at_1": 0.3369,
       "hit_rate_at_5": 0.8333,
-      "hit_rate_at_10": 0.9337,
-      "mrr": 0.5546
+      "hit_rate_at_10": 0.9319,
+      "mrr": 0.5491
     },
     "Alta Disponibilidade & Failover": {
       "total_questions": 478,
-      "hit_rate_at_1": 0.4268,
+      "hit_rate_at_1": 0.4226,
       "hit_rate_at_5": 0.682,
       "hit_rate_at_10": 0.6946,
-      "mrr": 0.5483
+      "mrr": 0.5462
     },
     "Operacao CLI (conman/composer/planman)": {
       "total_questions": 1319,
-      "hit_rate_at_1": 0.26,
-      "hit_rate_at_5": 0.4215,
-      "hit_rate_at_10": 0.4685,
-      "mrr": 0.3284
+      "hit_rate_at_1": 0.2593,
+      "hit_rate_at_5": 0.4185,
+      "hit_rate_at_10": 0.4693,
+      "mrr": 0.3278
     },
     "API REST v2 & Integracao": {
       "total_questions": 317,
       "hit_rate_at_1": 0.3943,
       "hit_rate_at_5": 0.5647,
-      "hit_rate_at_10": 0.6498,
-      "mrr": 0.4716
+      "hit_rate_at_10": 0.6562,
+      "mrr": 0.4719
     },
     "Troubleshooting & Mensagens de Erro": {
       "total_questions": 13090,
-      "hit_rate_at_1": 0.9782,
+      "hit_rate_at_1": 0.978,
       "hit_rate_at_5": 0.9954,
       "hit_rate_at_10": 0.9962,
-      "mrr": 0.9864
+      "mrr": 0.9863
     },
     "Instalacao & Manutencao": {
       "total_questions": 257,
       "hit_rate_at_1": 0.3852,
       "hit_rate_at_5": 0.7938,
-      "hit_rate_at_10": 0.8949,
-      "mrr": 0.5667
+      "hit_rate_at_10": 0.8988,
+      "mrr": 0.5635
     }
   }
 }
