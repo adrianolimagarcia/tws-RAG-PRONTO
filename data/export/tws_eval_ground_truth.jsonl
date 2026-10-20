@@ -3142,6 +3142,11 @@
 {"question": "Como a lista de backups do master influencia a ordem do failover automatico?", "target_claim_id": "hwa-10.2.8-globalopts-workstationmasterlistinautomaticfailover-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual a regra da opcao global workstationEventMgrListInAutomaticFailover (we) no HWA 10.2.8?", "target_claim_id": "hwa-10.2.8-globalopts-workstationeventmgrlistinautomaticfailover-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "O backup do event processor pode ser diferente do backup do master?", "target_claim_id": "hwa-10.2.8-globalopts-workstationeventmgrlistinautomaticfailover-0001", "category": "Alta Disponibilidade & Failover"}
+{"question": "Como listar toda arvore de folders no TWS?", "target_claim_id": "hwa-1028-folder-listfolder-20261020", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como mudar o folder corrente no composer?", "target_claim_id": "hwa-1028-folder-chfolder-20261020", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como criar folder no HWA usando composer?", "target_claim_id": "hwa-1028-folder-mkfolder-20261020", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Quais permissoes para renomear folder no composer?", "target_claim_id": "hwa-1028-folder-renamefolder-20261020", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Posso excluir folder com jobs e o que acontece ao omitir argumento no rmfolder?", "target_claim_id": "hwa-1028-folder-rmfolder-20261020", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Como realizar o failover manual do Master para o Backup Master utilizando o comando switchmgr?", "target_claim_id": "hwa-lab-10.2.8-switchmgr-failover-switchback-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual é o procedimento de switchback para devolver a gestão do domínio ao Master Domain Manager original?", "target_claim_id": "hwa-lab-10.2.8-switchmgr-failover-switchback-0001", "category": "Alta Disponibilidade & Failover"}
 {"question": "Qual mensagem conman confirma a comutação de domain manager com sucesso?", "target_claim_id": "hwa-lab-10.2.8-switchmgr-failover-switchback-0001", "category": "Alta Disponibilidade & Failover"}
@@ -3282,6 +3287,11 @@
 {"question": "Variaveis definidas na VARTABLE sao exportadas como variaveis de ambiente no Linux da FTA?", "target_claim_id": "hwa-lab-10.2.8-jobmanrc-vartable-env-isolation-guard-0002", "category": "Agendamento Avancado & Workflows"}
 {"question": "Como criar um guard hook no .jobmanrc para proteger contra variaveis de VARTABLE nao resolvidas?", "target_claim_id": "hwa-lab-10.2.8-jobmanrc-vartable-env-isolation-guard-0002", "category": "Agendamento Avancado & Workflows"}
 {"question": "Quais variaveis de ambiente o binario JOBMAN exporta antes de chamar o jobmanrc?", "target_claim_id": "hwa-lab-10.2.8-jobmanrc-vartable-env-isolation-guard-0002", "category": "Agendamento Avancado & Workflows"}
+{"question": "Como o DRAFT impede a submissão de job streams no TWS?", "target_claim_id": "lab-20261020-folders-draft-block", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Por que job UNIX em workstation broker MDM_DWB falha AWKSED102E?", "target_claim_id": "lab-20261020-folders-broker-failure", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Por que job de folder QA aparece em MDM#JOBS após sbj?", "target_claim_id": "lab-20261020-folders-job-root", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como listar e executar com conman job stream no subfolder QA?", "target_claim_id": "lab-20261020-folders-stream-success", "category": "Operacao CLI (conman/composer/planman)"}
+{"question": "Como interpretar o cabeçalho de folder da saída conman ss?", "target_claim_id": "lab-20261020-folders-list-context", "category": "Operacao CLI (conman/composer/planman)"}
 {"question": "Quais sao as causas documentadas da mensagem AWSJPL017E no HWA?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "O que fazer quando o JnextPlan falha com AWSJPL017E?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Troubleshooting & Mensagens de Erro"}
 {"question": "Por que executar uma extensao de plano antes de a criacao completar gera AWSJPL017E?", "target_claim_id": "hwa-10.2.8-official-awsjpl017e-overlapping-plan-operations", "category": "Troubleshooting & Mensagens de Erro"}
